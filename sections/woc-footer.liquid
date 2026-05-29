@@ -1,0 +1,242 @@
+<footer class="bg-charcoal border-t border-border mt-auto w-full">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
+      
+      <!-- Columns based on blocks -->
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          
+          {%- when 'brand' -%}
+            <div class="lg:col-span-4" {{ block.shopify_attributes }}>
+              {%- if block.settings.logo != blank -%}
+                <img
+                  src="{{ block.settings.logo | image_url: width: 300 }}"
+                  alt="{{ shop.name }}"
+                  class="h-10 w-auto mb-6 object-contain brightness-110"
+                  loading="lazy"
+                >
+              {%- else -%}
+                <h3 class="font-display text-2xl font-light tracking-[0.15em] text-foreground mb-6">
+                  {{ block.settings.title }}
+                </h3>
+              {%- endif -%}
+              <p class="font-body text-sm font-light text-muted-foreground leading-relaxed max-w-sm">
+                {{ block.settings.description }}
+              </p>
+
+              <!-- Social Icons -->
+              {%- if block.settings.show_socials -%}
+                <div class="flex items-center gap-4 mt-6">
+                  {%- if settings.social_facebook_link != blank -%}
+                    <a href="{{ settings.social_facebook_link }}" class="text-muted-foreground hover:text-gold transition-colors" aria-label="Facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4.5 w-4.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                  {%- endif -%}
+                  {%- if settings.social_instagram_link != blank -%}
+                    <a href="{{ settings.social_instagram_link }}" class="text-muted-foreground hover:text-gold transition-colors" aria-label="Instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4.5 w-4.5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                  {%- endif -%}
+                  {%- if settings.social_youtube_link != blank -%}
+                    <a href="{{ settings.social_youtube_link }}" class="text-muted-foreground hover:text-gold transition-colors" aria-label="YouTube">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4.5 w-4.5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"></path><polygon points="10 15 15 12 10 9 10 15"></polygon></svg>
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </div>
+
+          {%- when 'menu' -%}
+            <div class="lg:col-span-2" {{ block.shopify_attributes }}>
+              <h4 class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">
+                {{ block.settings.title }}
+              </h4>
+              <div class="space-y-3">
+                {%- for link in linklists[block.settings.menu].links -%}
+                  <a
+                    href="{{ link.url }}"
+                    class="block font-body text-xs font-light text-muted-foreground hover:text-gold transition-colors duration-500"
+                  >
+                    {{ link.title }}
+                  </a>
+                {%- endfor -%}
+              </div>
+            </div>
+
+          {%- when 'newsletter' -%}
+            <div class="lg:col-span-4" {{ block.shopify_attributes }}>
+              <h4 class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">
+                {{ block.settings.title }}
+              </h4>
+              <p class="font-body text-xs font-light text-muted-foreground leading-relaxed mb-4">
+                {{ block.settings.description }}
+              </p>
+              
+              {%- form 'customer', class: 'relative mt-2 max-w-sm' -%}
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div class="flex rounded border border-border bg-background overflow-hidden focus-within:border-gold transition-colors">
+                  <input
+                    type="email"
+                    name="contact[email]"
+                    value="{{ form.email }}"
+                    aria-label="Email Address"
+                    required
+                    placeholder="{{ block.settings.placeholder }}"
+                    class="w-full h-10 px-3 bg-transparent text-xs text-foreground focus:outline-none placeholder-muted-foreground"
+                  >
+                  <button
+                    type="submit"
+                    class="h-10 px-4 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs uppercase tracking-wider font-semibold transition-colors"
+                  >
+                    OK
+                  </button>
+                </div>
+                {%- if form.posted_successfully? -%}
+                  <p class="text-forest text-[11px] font-body mt-2">
+                    {{ block.settings.success_text }}
+                  </p>
+                {%- endif -%}
+              {%- endform -%}
+            </div>
+
+        {%- endcase -%}
+      {%- endfor -%}
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-border py-6 bg-black/30">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="font-body text-[10px] font-light text-muted-foreground tracking-wider">
+        &copy; {{ 'now' | date: '%Y' }} {{ section.settings.copyright_text }}
+      </p>
+      <p class="font-body text-[10px] font-light text-muted-foreground tracking-wider uppercase">
+        {{ section.settings.regions_text }}
+      </p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "WOC Footer",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright text",
+      "default": "World of Comfort. Alle rettigheder forbeholdes."
+    },
+    {
+      "type": "text",
+      "id": "regions_text",
+      "label": "Regions / Countries text",
+      "default": "Danmark · Sverige · Norge · Tyskland"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand Branding",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Fallback Brand Title",
+          "default": "WORLD OF COMFORT"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Brand Description",
+          "default": "Skandinaviens førende forhandler af premium velværeteknologi. Massagestole, smart-senge, beauty-teknologi og recovery. Altid 20+ showrooms og 5 års garanti."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_socials",
+          "label": "Show Social Media Icons",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "Navigation Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Column Title",
+          "default": "Menu"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu Select"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter Signup",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Column Title",
+          "default": "Nyhedsbrev"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Tilmeld dig vores nyhedsbrev og modtag eksklusive tilbud, nyheder og sundhedstips."
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder email input",
+          "default": "Din e-mailadresse..."
+        },
+        {
+          "type": "text",
+          "id": "success_text",
+          "label": "Success message text",
+          "default": "Tilmeldt! Tak fordi du tilmeldte dig."
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "brand"
+      },
+      {
+        "type": "menu",
+        "settings": {
+          "title": "Produkter"
+        }
+      },
+      {
+        "type": "menu",
+        "settings": {
+          "title": "Virksomheden"
+        }
+      },
+      {
+        "type": "newsletter"
+      }
+    ]
+  }
+}
+{% endschema %}

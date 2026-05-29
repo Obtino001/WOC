@@ -1,0 +1,150 @@
+<section class="py-12 bg-white text-neutral-900 border-t border-neutral-200">
+  <div class="max-w-[800px] mx-auto px-4">
+    
+    <!-- Title -->
+    <div class="text-center mb-10">
+      <h3 class="font-body text-sm font-semibold text-neutral-800 uppercase tracking-widest mb-2">
+        {{ section.settings.subtitle }}
+      </h3>
+      <h2 class="woc-display-font text-2xl lg:text-3xl font-light text-neutral-900">
+        {{ section.settings.title }}
+      </h2>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b-2 border-neutral-200">
+            <th class="py-3.5 font-body text-xs font-bold text-neutral-500 uppercase tracking-wider w-[50%]">
+              {{ section.settings.th_feature }}
+            </th>
+            <th class="py-3.5 px-4 font-body text-xs font-bold text-copper uppercase tracking-wider text-center bg-copper/5 rounded-t w-[25%]">
+              {{ section.settings.th_woc }}
+            </th>
+            <th class="py-3.5 px-4 font-body text-xs font-bold text-neutral-400 uppercase tracking-wider text-center w-[25%]">
+              {{ section.settings.th_comp }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'row' -%}
+              
+              <tr class="border-b border-neutral-100 hover:bg-neutral-50 transition-colors" {{ block.shopify_attributes }}>
+                <td class="py-4 font-body text-xs font-medium text-neutral-700">
+                  {{ block.settings.feature }}
+                </td>
+                
+                <!-- WOC value -->
+                <td class="py-4 px-4 text-center bg-copper/5">
+                  {%- if block.settings.woc_val -%}
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                  {%- else -%}
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-100 text-red-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </span>
+                  {%- endif -%}
+                </td>
+
+                <!-- Competitor value -->
+                <td class="py-4 px-4 text-center">
+                  {%- if block.settings.comp_val -%}
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                  {%- else -%}
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-neutral-100 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </span>
+                  {%- endif -%}
+                </td>
+              </tr>
+
+            {%- endif -%}
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP Product Comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "SAMMENLIGN DETALJER"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Hvorfor vælge os?"
+    },
+    {
+      "type": "text",
+      "id": "th_feature",
+      "label": "Column 1 Header",
+      "default": "Funktioner"
+    },
+    {
+      "type": "text",
+      "id": "th_woc",
+      "label": "Column 2 Header (WOC)",
+      "default": "World of Comfort"
+    },
+    {
+      "type": "text",
+      "id": "th_comp",
+      "label": "Column 3 Header (Competitors)",
+      "default": "Andre mærker"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature Description",
+          "default": "Avanceret overophednings-beskyttelse"
+        },
+        {
+          "type": "checkbox",
+          "id": "woc_val",
+          "label": "World of Comfort Has Feature",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "comp_val",
+          "label": "Competitors Have Feature",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Product Comparison",
+      "blocks": [
+        { "type": "row", "settings": { "feature": "Overophedningsbeskyttelse i 3 zoner", "woc_val": true, "comp_val": false } },
+        { "type": "row", "settings": { "feature": "Japanske karbon varmefibre", "woc_val": true, "comp_val": false } },
+        { "type": "row", "settings": { "feature": "Miljøvenligt PU-læder (fri for giftstoffer)", "woc_val": true, "comp_val": true } },
+        { "type": "row", "settings": { "feature": "Ultra-lav EMF (elektromagnetisk stråling)", "woc_val": true, "comp_val": false } },
+        { "type": "row", "settings": { "feature": "30 dages fuld tilfredshedsgaranti", "woc_val": true, "comp_val": false } },
+        { "type": "row", "settings": { "feature": "Dansk kundeservice & landsdækkende showrooms", "woc_val": true, "comp_val": false } }
+      ]
+    }
+  ]
+}
+{% endschema %}

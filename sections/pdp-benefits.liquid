@@ -1,0 +1,86 @@
+<section class="py-12 bg-white text-neutral-900 border-t border-neutral-100">
+  <div class="max-w-[1200px] mx-auto px-4">
+    
+    <!-- Heading -->
+    {%- if section.settings.title != blank -%}
+      <div class="mb-8">
+        <h3 class="font-body text-sm font-semibold text-neutral-800 uppercase tracking-widest">
+          {{ section.settings.title }}
+        </h3>
+      </div>
+    {%- endif -%}
+
+    <!-- Benefits Checklist Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'benefit' -%}
+          
+          <div class="flex items-start gap-3.5" {{ block.shopify_attributes }}>
+            <!-- Checkmark circle -->
+            <span class="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-copper/10 flex items-center justify-center text-copper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <div>
+              <p class="font-body text-sm font-bold text-neutral-800 leading-tight">
+                {{ block.settings.title }}
+              </p>
+              {%- if block.settings.description != blank -%}
+                <p class="font-body text-xs text-neutral-500 mt-1 leading-relaxed">
+                  {{ block.settings.description }}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
+
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP Product Benefits",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "BRUGERNE OPLEVER EFTER BEHANDLING:"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Benefit Title",
+          "default": "Lindring af muskel- og ledsmerter"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Detail description (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Product Benefits",
+      "blocks": [
+        { "type": "benefit", "settings": { "title": "Lindring af muskel- og ledsmerter" } },
+        { "type": "benefit", "settings": { "title": "Bedre ro og søvnkvalitet efter brug" } },
+        { "type": "benefit", "settings": { "title": "Forbedring af smerter forbundet med Fibromyalgi og Gigt" } },
+        { "type": "benefit", "settings": { "title": "Ekstrem lang levetid – japanske kulstoffibre" } },
+        { "type": "benefit", "settings": { "title": "Ultra-lav EMF vha. afskærmet teknologi" } },
+        { "type": "benefit", "settings": { "title": "Top-anmeldt wellnessbehandling i eget hjem" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

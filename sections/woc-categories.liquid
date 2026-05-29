@@ -1,0 +1,148 @@
+<section class="py-20 bg-charcoal">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Heading -->
+    <div class="text-center mb-16">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+        {{ section.settings.label }}
+      </p>
+      <h2 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">
+        {{ section.settings.heading }}
+      </h2>
+      <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        {{ section.settings.description }}
+      </p>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 md:gap-2">
+      {%- for block in section.blocks -%}
+        {%- assign block_index = forloop.index0 -%}
+        
+        <div
+          class="group relative overflow-hidden {% if block_index == 0 %}lg:col-span-2 lg:row-span-2 min-h-[350px] md:min-h-[450px] lg:min-h-[600px]{% else %}aspect-[4/5]{% endif %} bg-muted"
+          {{ block.shopify_attributes }}
+        >
+          <a href="{{ block.settings.link }}" class="block w-full h-full">
+            <!-- Background Image -->
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | image_url: width: 1000 }}"
+                alt="{{ block.settings.title }}"
+                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
+                style="width: 100%; height: 100%; object-fit: cover;"
+                loading="lazy"
+              >
+            {%- else -%}
+              <div class="w-full h-full flex items-center justify-center bg-zinc-800 text-gold/30">
+                Udforsk {{ block.settings.title }}
+              </div>
+            {%- endif -%}
+
+            <!-- Overlay Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+            <!-- Content Card -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-10">
+              <p class="font-body text-[9px] font-light uppercase tracking-luxury text-gold mb-2">
+                {{ block.settings.subtitle }}
+              </p>
+              
+              <div class="flex items-end justify-between">
+                <h3 class="woc-display-font font-light text-foreground {% if block_index == 0 %}text-2xl lg:text-4xl{% else %}text-xl lg:text-2xl{% endif %}">
+                  {{ block.settings.title }}
+                </h3>
+                
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-4.5 h-4.5 text-gold opacity-0 translate-x-[-8px] transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Categories Grid",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "KOLLEKTIONER"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Eksklusive Wellness Serier"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Hvert produkt i vores sortiment er udviklet efter de strengeste kvalitetskrav med vores egne teknologiske specifikationer."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category Title",
+          "default": "Massagestole"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Category Subtitle",
+          "default": "EKSKLUSIV VELVÆRE"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Category Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Categories Grid",
+      "blocks": [
+        { "type": "category", "settings": { "title": "Massagestole", "subtitle": "EKSKLUSIV VELVÆRE" } },
+        { "type": "category", "settings": { "title": "Smart-Senge", "subtitle": "SMART SOVESYSTEM" } },
+        { "type": "category", "settings": { "title": "Sportsrestitution", "subtitle": "SPORT & RECOVERY" } },
+        { "type": "category", "settings": { "title": "Massagedevice", "subtitle": "HÅNDHOLDT TERAPI" } },
+        { "type": "category", "settings": { "title": "Beauty-Teknologi", "subtitle": "KLINISK HUDPLEJE" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

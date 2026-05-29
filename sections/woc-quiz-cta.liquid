@@ -1,0 +1,76 @@
+<section class="py-24 bg-linen border-t border-border relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <div class="max-w-3xl mx-auto">
+      
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">
+        {{ section.settings.subtitle }}
+      </p>
+      
+      <h2 class="woc-display-font text-4xl lg:text-5xl font-light text-foreground mb-6 leading-tight">
+        {{ section.settings.title }}
+      </h2>
+      
+      <p class="font-body text-sm font-light text-muted-foreground mb-10 max-w-lg mx-auto leading-relaxed">
+        {{ section.settings.description }}
+      </p>
+
+      {%- if section.settings.button_text != blank -%}
+        <a
+          href="{{ section.settings.button_link | default: '/pages/quiz' }}"
+          class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-elevated"
+        >
+          {{ section.settings.button_text }}
+        </a>
+      {%- endif -%}
+
+    </div>
+  </div>
+  
+  <!-- Subtle dotted grid overlay -->
+  <div
+    class="absolute inset-0 opacity-[0.03] pointer-events-none"
+    style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"
+  ></div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Quiz CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "PRØV VORES INTERAKTIVE TEST-GUIDE"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Find den massagestol eller madras, der matcher din krop"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Tag vores hurtige 2-minutters test og få en skræddersyet anbefaling baseret på din kropsform, dine spændinger og dit budget."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Start testen nu"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Quiz CTA"
+    }
+  ]
+}
+{% endschema %}

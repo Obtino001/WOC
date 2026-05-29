@@ -1,0 +1,162 @@
+<section class="py-16 lg:py-20 bg-card border-y border-border overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Awards Heading -->
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-3">
+        {{ section.settings.awards_subtitle }}
+      </p>
+      <h2 class="woc-display-font text-2xl lg:text-3xl font-light text-foreground">
+        {{ section.settings.awards_title }}
+      </h2>
+    </div>
+
+    <!-- Awards Continuous Marquee Row -->
+    <div class="relative mb-16 select-none">
+      <!-- Fade edges gradients -->
+      <div class="absolute left-0 top-0 bottom-0 w-16 md:w-28 bg-gradient-to-r from-card to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-16 md:w-28 bg-gradient-to-l from-card to-transparent z-10 pointer-events-none"></div>
+
+      <!-- Marquee track -->
+      <div class="overflow-hidden w-full">
+        <div class="animate-marquee py-2">
+          
+          <!-- Triple items to ensure smooth infinite loop coverage -->
+          {%- for i in (1..3) -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'award' -%}
+                <div class="flex items-center gap-4 px-6 py-3 mx-3 border border-border/50 rounded-lg bg-background/50 backdrop-blur-sm shrink-0 hover:border-gold/30 transition-colors duration-500 group">
+                  {%- if block.settings.image != blank -%}
+                    <img
+                      src="{{ block.settings.image | image_url: width: 150 }}"
+                      alt="{{ block.settings.name }}"
+                      class="w-14 h-14 object-contain shrink-0"
+                      loading="lazy"
+                    >
+                  {%- else -%}
+                    <div class="w-14 h-14 bg-muted/50 rounded flex items-center justify-center shrink-0">🏆</div>
+                  {%- endif -%}
+                  <div class="flex flex-col">
+                    <span class="font-body text-xs font-semibold text-foreground whitespace-nowrap">{{ block.settings.name }}</span>
+                    <span class="font-body text-[9px] text-muted-foreground whitespace-nowrap">{{ block.settings.details }}</span>
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Partners & Certifications Grid -->
+    <div class="text-center">
+      <p class="font-body text-[10px] uppercase tracking-luxury text-muted-foreground mb-8">
+        {{ section.settings.partners_title }}
+      </p>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 items-center justify-items-center gap-8 md:gap-12 bg-white rounded-xl py-10 px-8 mx-auto max-w-5xl shadow-sm">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'partner' -%}
+            <div class="flex items-center justify-center h-12 lg:h-16 w-full max-w-[140px] hover:scale-105 transition-transform duration-500" {{ block.shopify_attributes }}>
+              {%- if block.settings.logo != blank -%}
+                <img
+                  src="{{ block.settings.logo | image_url: width: 250 }}"
+                  alt="{{ block.settings.name }}"
+                  class="h-full w-auto max-h-[48px] lg:max-h-[64px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="lazy"
+                >
+              {%- else -%}
+                <span class="text-xs font-semibold text-charcoal">{{ block.settings.name }}</span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Awards & Partners",
+  "settings": [
+    {
+      "type": "text",
+      "id": "awards_subtitle",
+      "label": "Awards Subtitle",
+      "default": "Anerkendt Excellence"
+    },
+    {
+      "type": "text",
+      "id": "awards_title",
+      "label": "Awards Title",
+      "default": "Prisvindende Velværeteknologi & Komfort"
+    },
+    {
+      "type": "text",
+      "id": "partners_title",
+      "label": "Partners Title",
+      "default": "Betroede Partnere & Certificeringer"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "award",
+      "name": "Award Badge",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Award Logo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Award Name",
+          "default": "Børsen Gazelle"
+        },
+        {
+          "type": "text",
+          "id": "details",
+          "label": "Year & Category",
+          "default": "2025 · Vækstvirksomhed"
+        }
+      ]
+    },
+    {
+      "type": "partner",
+      "name": "Partner Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Partner Logo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Partner Name",
+          "default": "Brand Partner"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Awards & Partners",
+      "blocks": [
+        { "type": "award", "settings": { "name": "Børsen Gazelle", "details": "2025 · Vækstvirksomhed" } },
+        { "type": "award", "settings": { "name": "Global Wellness Innovation Award", "details": "2025 · Best Wellness Tech" } },
+        { "type": "award", "settings": { "name": "Scandinavian Business Awards", "details": "2024 · Excellence in Wellness" } },
+        { "type": "award", "settings": { "name": "Healthcare & Pharmaceutical Awards", "details": "2024 · Leading Innovator" } },
+        { "type": "partner", "settings": { "name": "Disney" } },
+        { "type": "partner", "settings": { "name": "Samsung" } },
+        { "type": "partner", "settings": { "name": "Monster" } },
+        { "type": "partner", "settings": { "name": "Bang & Olufsen" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

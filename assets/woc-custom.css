@@ -1,0 +1,239 @@
+/* 
+  World of Comfort Premium Theme Variables and Overrides
+  Maps to the React style configurations in index.css
+*/
+
+:root {
+  /* Core palette - Ultra Luxury Dark */
+  --woc-background: 0 0% 4%;
+  --woc-foreground: 40 20% 95%;
+
+  --woc-card: 0 0% 7%;
+  --woc-card-foreground: 40 20% 95%;
+
+  --woc-popover: 0 0% 7%;
+  --woc-popover-foreground: 40 20% 95%;
+
+  --woc-primary: 40 20% 95%;
+  --woc-primary-foreground: 0 0% 4%;
+
+  --woc-secondary: 40 20% 95%;
+  --woc-secondary-foreground: 0 0% 4%;
+
+  --woc-muted: 0 0% 12%;
+  --woc-muted-foreground: 40 10% 55%;
+
+  --woc-accent: 38 60% 52%;
+  --woc-accent-foreground: 0 0% 4%;
+
+  --woc-border: 0 0% 14%;
+  --woc-input: 0 0% 14%;
+  --woc-ring: 38 60% 52%;
+
+  /* Custom tokens */
+  --woc-gold: 36 72% 45%;
+  --woc-gold-hover: 34 75% 38%;
+  --woc-gold-subtle: 36 45% 22%;
+  --woc-linen: 0 0% 7%;
+  --woc-forest: 145 55% 33%;
+  --woc-charcoal: 0 0% 4%;
+  --woc-cream: 40 20% 95%;
+  --woc-warm-gray: 30 5% 30%;
+  --woc-sale-red: 0 78% 55%;
+  --woc-sale-red-hover: 0 78% 48%;
+  --woc-copper: 25 80% 45%;
+  --woc-copper-hover: 25 80% 38%;
+  --woc-copper-light: 25 60% 92%;
+  --woc-corporate: 153 30% 48%;
+  --woc-corporate-dark: 160 25% 12%;
+  --woc-corporate-light: 153 25% 94%;
+
+  /* Gradients */
+  --woc-gradient-gold: linear-gradient(135deg, hsl(36 72% 45%), hsl(40 55% 55%));
+  --woc-gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 8%));
+  --woc-gradient-linen: linear-gradient(180deg, hsl(0 0% 7%), hsl(0 0% 4%));
+  --woc-gradient-fade: linear-gradient(180deg, transparent, hsl(0 0% 4%));
+
+  /* Shadows */
+  --woc-shadow-soft: 0 4px 30px -4px hsl(0 0% 0% / 0.4);
+  --woc-shadow-elevated: 0 20px 60px -12px hsl(0 0% 0% / 0.6);
+  --woc-shadow-gold: 0 4px 30px -4px hsl(38 60% 52% / 0.15);
+}
+
+/* Base resets & typography mapping */
+.woc-theme-wrapper {
+  font-family: 'Outfit', sans-serif !important;
+  background-color: hsl(var(--woc-background));
+  color: hsl(var(--woc-foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+.woc-theme-wrapper h1, 
+.woc-theme-wrapper h2, 
+.woc-theme-wrapper h3, 
+.woc-theme-wrapper h4,
+.woc-display-font {
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+/* Custom scrollbar matching React app */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  border-radius: 3px;
+}
+
+/* Custom utility styles from React */
+.text-gold {
+  color: #bf8f30 !important;
+}
+.text-cream {
+  color: #f5f2eb !important;
+}
+.bg-gold {
+  background-color: #bf8f30 !important;
+}
+.bg-linen {
+  background-color: #121212 !important;
+}
+.bg-charcoal {
+  background-color: #0a0a0a !important;
+}
+.text-charcoal {
+  color: #0a0a0a !important;
+}
+.bg-forest {
+  background-color: #265935 !important;
+}
+.text-forest {
+  color: #265935 !important;
+}
+.bg-copper {
+  background-color: #d2542a !important;
+}
+.text-copper {
+  color: #d2542a !important;
+}
+
+.shadow-soft {
+  box-shadow: var(--woc-shadow-soft);
+}
+.shadow-elevated {
+  box-shadow: var(--woc-shadow-elevated);
+}
+.shadow-gold {
+  box-shadow: var(--woc-shadow-gold);
+}
+.gradient-gold {
+  background: var(--woc-gradient-gold);
+}
+.gradient-dark {
+  background: var(--woc-gradient-dark);
+}
+.gradient-linen {
+  background: var(--woc-gradient-linen);
+}
+
+.luxury-line {
+  width: 60px;
+  height: 1px;
+  background: #bf8f30;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.35em;
+}
+
+/* Light theme overrides for specific PDP/landing sections */
+.section-light {
+  --woc-background: 40 30% 97%;
+  --woc-foreground: 0 0% 12%;
+  --woc-card: 40 25% 95%;
+  --woc-card-foreground: 0 0% 12%;
+  --woc-muted: 40 15% 92%;
+  --woc-muted-foreground: 0 0% 40%;
+  --woc-border: 40 15% 88%;
+  --woc-linen: 40 25% 95%;
+  background-color: hsl(var(--woc-background)) !important;
+  color: hsl(var(--woc-foreground)) !important;
+}
+
+.section-flowlight {
+  --woc-background: 0 0% 100%;
+  --woc-foreground: 0 0% 12%;
+  --woc-card: 0 0% 100%;
+  --woc-card-foreground: 0 0% 12%;
+  --woc-popover: 0 0% 100%;
+  --woc-popover-foreground: 0 0% 12%;
+  --woc-secondary: 0 0% 97%;
+  --woc-secondary-foreground: 0 0% 12%;
+  --woc-muted: 0 0% 96%;
+  --woc-muted-foreground: 0 0% 42%;
+  --woc-border: 0 0% 90%;
+  --woc-input: 0 0% 90%;
+  --woc-linen: 0 0% 99%;
+  background-color: hsl(var(--woc-background)) !important;
+  color: hsl(var(--woc-foreground)) !important;
+}
+
+.section-light-warm {
+  --woc-background: 38 30% 95%;
+  --woc-foreground: 0 0% 12%;
+  --woc-card: 38 20% 92%;
+  --woc-card-foreground: 0 0% 12%;
+  --woc-muted: 38 15% 89%;
+  --woc-muted-foreground: 0 0% 40%;
+  --woc-border: 38 15% 85%;
+  --woc-linen: 38 20% 92%;
+  background-color: hsl(var(--woc-background)) !important;
+  color: hsl(var(--woc-foreground)) !important;
+}
+
+/* Continuous Marquee Scrolling */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 25s ease-out forwards;
+}
+
+/* Custom styling for floating CTA and quiz elements */
+.woc-quiz-option-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.woc-quiz-option-card:hover {
+  border-color: #bf8f30;
+  box-shadow: var(--woc-shadow-gold);
+  transform: translateY(-2px);
+}
+
+.woc-floating-btn {
+  box-shadow: 0 4px 20px rgba(191, 143, 48, 0.3);
+  transition: all 0.3s ease;
+}
+.woc-floating-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(191, 143, 48, 0.4);
+}

@@ -1,1 +1,425 @@
-{"sections":{"hero_YXHeGD":{"type":"hero","blocks":{"usp_iMhkUq":{"type":"usp","settings":{"title":"Nordic's Leading Brand","svg_icon":"<svg fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"><\/path><\/svg>"}},"usp_qhx8rV":{"type":"usp","settings":{"title":"Advanced AI Technology","svg_icon":"<svg fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"><\/path><\/svg>"}},"usp_mcbyFa":{"type":"usp","settings":{"title":"Healthcare Recommended","svg_icon":"<svg fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"><\/path><\/svg>"}},"usp_iWhjAE":{"type":"usp","settings":{"title":"White-Glove Delivery","svg_icon":"<svg fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"><\/path><\/svg>"}}},"block_order":["usp_iMhkUq","usp_qhx8rV","usp_mcbyFa","usp_iWhjAE"],"name":"Hero Section","settings":{"color_scheme":"","accent_color":"#d4af37","overlay_opacity":60,"shopify_video":"shopify:\/\/files\/videos\/hero.mp4","external_video_url":"","video_source_url":"","title1":"Discover the Art of","title2":"True Relaxation","subtitle":"Experience the life-changing impact of Scandinavian wellness technology, engineered to elevate your daily routine.","btn1_text":"Explore Collection","btn1_link":"","btn2_text":"Book a Demo","btn2_link":""}},"trust_section_hJtrRC":{"type":"trust-section","blocks":{"stat_AfEQcz":{"type":"stat","settings":{"color_scheme":"","is_icon":true,"value":"5","icon_svg":"<svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"><\/path><\/svg>","label":"Yıl Garanti"}},"stat_hGXaTM":{"type":"stat","settings":{"color_scheme":"","is_icon":true,"value":"20+","icon_svg":"<svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path d=\"m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7\"><\/path><path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"><\/path><path d=\"M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4\"><\/path><path d=\"M2 7h20\"><\/path><path d=\"M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7\"><\/path><\/svg>","label":"Showroom"}},"stat_PphCGy":{"type":"stat","settings":{"color_scheme":"","is_icon":true,"value":"50K+","icon_svg":"<svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"><\/path><circle cx=\"9\" cy=\"7\" r=\"4\"><\/circle><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"><\/path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"><\/path><\/svg>","label":"Mutlu Müşteri"}},"stat_tHVBGq":{"type":"stat","settings":{"color_scheme":"","is_icon":true,"value":"24\/7","icon_svg":"<svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewbox=\"0 0 24 24\"><path d=\"M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3\"><\/path><\/svg>","label":"Uzman Desteği"}}},"block_order":["stat_AfEQcz","stat_hGXaTM","stat_PphCGy","stat_tHVBGq"],"name":"Trust Section","settings":{"color_scheme":"","show_google":true,"google_rating":"4.9","google_count":"847","google_link":"","show_trustpilot":true,"trustpilot_rating":"4.6","trustpilot_count":"1.243","trustpilot_link":""}}},"order":["hero_YXHeGD","trust_section_hJtrRC"]}
+{
+  "sections": {
+    "woc_hero": {
+      "type": "woc-hero",
+      "blocks": {
+        "usp_1": {
+          "type": "usp",
+          "settings": {
+            "icon": "award",
+            "text": "Nordens Førende Velværevirksomhed"
+          }
+        },
+        "usp_2": {
+          "type": "usp",
+          "settings": {
+            "icon": "cpu",
+            "text": "Unik AI Teknologi"
+          }
+        },
+        "usp_3": {
+          "type": "usp",
+          "settings": {
+            "icon": "heart",
+            "text": "Sundhedsfagligt Anbefalet"
+          }
+        },
+        "usp_4": {
+          "type": "usp",
+          "settings": {
+            "icon": "truck",
+            "text": "White-Glove Levering"
+          }
+        }
+      },
+      "block_order": [
+        "usp_1",
+        "usp_2",
+        "usp_3",
+        "usp_4"
+      ],
+      "settings": {
+        "video_url": "https://worldofcomfort.dk/wp-content/uploads/2025/02/video-forside.mp4",
+        "title_line1": "Skandinaviens Førende",
+        "title_line2": "Wellness-Teknologi",
+        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "btn1_text": "Se Massagestole",
+        "btn1_url": "/collections/massage-chairs",
+        "btn2_text": "Find Showroom",
+        "btn2_url": "/pages/showrooms"
+      }
+    },
+    "woc_trust": {
+      "type": "woc-trust",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "icon": "shield",
+            "value": "5",
+            "label": "Års Garanti"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "icon": "store",
+            "value": "20+",
+            "label": "Europæiske Showrooms"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "icon": "users",
+            "value": "50.000+",
+            "label": "Glade Kunder"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "icon": "support",
+            "value": "24/7",
+            "label": "Personlig Support"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
+      "settings": {
+        "google_score": "4.9",
+        "google_count": "847",
+        "google_url": "https://google.com",
+        "trustpilot_score": "4.6",
+        "trustpilot_count": "1.243",
+        "trustpilot_url": "https://trustpilot.com"
+      }
+    },
+    "woc_awards": {
+      "type": "woc-awards",
+      "blocks": {
+        "award_1": {
+          "type": "award",
+          "settings": {
+            "name": "Børsen Gazelle",
+            "details": "2025 · Vækstvirksomhed"
+          }
+        },
+        "award_2": {
+          "type": "award",
+          "settings": {
+            "name": "Global Wellness Innovation Award",
+            "details": "2025 · Best Wellness Tech"
+          }
+        },
+        "award_3": {
+          "type": "award",
+          "settings": {
+            "name": "Scandinavian Business Awards",
+            "details": "2024 · Excellence in Wellness"
+          }
+        },
+        "award_4": {
+          "type": "award",
+          "settings": {
+            "name": "Healthcare & Pharmaceutical Awards",
+            "details": "2024 · Leading Innovator"
+          }
+        },
+        "partner_1": {
+          "type": "partner",
+          "settings": {
+            "name": "Disney"
+          }
+        },
+        "partner_2": {
+          "type": "partner",
+          "settings": {
+            "name": "Samsung"
+          }
+        },
+        "partner_3": {
+          "type": "partner",
+          "settings": {
+            "name": "Monster"
+          }
+        },
+        "partner_4": {
+          "type": "partner",
+          "settings": {
+            "name": "Bang & Olufsen"
+          }
+        }
+      },
+      "block_order": [
+        "award_1",
+        "award_2",
+        "award_3",
+        "award_4",
+        "partner_1",
+        "partner_2",
+        "partner_3",
+        "partner_4"
+      ],
+      "settings": {
+        "awards_subtitle": "Anerkendt Excellence",
+        "awards_title": "Prisvindende Velværeteknologi & Komfort",
+        "partners_title": "Betroede Partnere & Certificeringer"
+      }
+    },
+    "woc_categories": {
+      "type": "woc-categories",
+      "blocks": {
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "title": "Massagestole",
+            "subtitle": "EKSKLUSIV VELVÆRE",
+            "link": "/collections/massage-chairs"
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "title": "Smart-Senge",
+            "subtitle": "SMART SOVESYSTEM",
+            "link": "/collections/smart-beds"
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "title": "Sportsrestitution",
+            "subtitle": "SPORT & RECOVERY",
+            "link": "/collections/home-wellness"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "title": "Massagedevice",
+            "subtitle": "HÅNDHOLDT TERAPI",
+            "link": "/collections/massage-devices"
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "title": "Beauty-Teknologi",
+            "subtitle": "KLINISK HUDPLEJE",
+            "link": "/collections/beauty-technology"
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5"
+      ],
+      "settings": {
+        "label": "KOLLEKTIONER",
+        "heading": "Eksklusive Wellness Serier",
+        "description": "Hvert produkt i vores sortiment er udviklet efter de strengeste kvalitetskrav med vores egne teknologiske specifikationer."
+      }
+    },
+    "woc_doctor": {
+      "type": "woc-doctor",
+      "blocks": {
+        "ben_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dybdegående muskelrestitution",
+            "accent": "gold",
+            "icon": "pulse"
+          }
+        },
+        "ben_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret blodcirkulation",
+            "accent": "forest",
+            "icon": "alignment"
+          }
+        },
+        "ben_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Lindring af gigt- & ledsmerter",
+            "accent": "gold",
+            "icon": "bone"
+          }
+        },
+        "ben_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Effektiv afgiftning (Sved)",
+            "accent": "forest",
+            "icon": "droplet"
+          }
+        },
+        "ben_5": {
+          "type": "benefit",
+          "settings": {
+            "text": "Øget smidighed & fleksibilitet",
+            "accent": "gold",
+            "icon": "stretch"
+          }
+        },
+        "ben_6": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dybere søvn & bedre ro",
+            "accent": "forest",
+            "icon": "moon"
+          }
+        },
+        "ben_7": {
+          "type": "benefit",
+          "settings": {
+            "text": "Stress- og spændingsreduktion",
+            "accent": "gold",
+            "icon": "brain"
+          }
+        },
+        "ben_8": {
+          "type": "benefit",
+          "settings": {
+            "text": "Styrket immunforsvar",
+            "accent": "forest",
+            "icon": "shield"
+          }
+        },
+        "ben_9": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret kropsholdning",
+            "accent": "gold",
+            "icon": "alignment"
+          }
+        },
+        "ben_10": {
+          "type": "benefit",
+          "settings": {
+            "text": "Cellefornyelse & smuk hud",
+            "accent": "forest",
+            "icon": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "ben_1",
+        "ben_2",
+        "ben_3",
+        "ben_4",
+        "ben_5",
+        "ben_6",
+        "ben_7",
+        "ben_8",
+        "ben_9",
+        "ben_10"
+      ],
+      "settings": {
+        "label": "SUNDHEDSFAGLIG ANBEFALING",
+        "heading": "Wellness understøttet af",
+        "heading_accent": "Sundhedsfaglig Ekspertise",
+        "quote": "Regelmæssig brug af dybdegående massage og infrarød varmeterapi kan bidrage markant til øget blodcirkulation, muskelrestitution og lindring af kroniske spændinger. Teknologien understøtter kroppens naturlige helingsprocesser og fremmer dyb mental afslapning.",
+        "doctor_name": "Dr. Carsten Rosendahl",
+        "doctor_title": "Læge & Ekspert i Wellness-Teknologi",
+        "benefits_label": "10 DOKUMENTEREDE FORDELE VED VORES VELVÆRETEKNOLOGI"
+      }
+    },
+    "woc_testimonials": {
+      "type": "woc-testimonials",
+      "blocks": {
+        "vid_1": {
+          "type": "video_review",
+          "settings": {
+            "youtube_id": "dQw4w9WgXcQ",
+            "reviewer_name": "Lars Poulsen",
+            "product": "Biovis Pro Massagestol",
+            "title": "Helt fantastisk lindring",
+            "quote": "Min ryg og mine lægge har aldrig haft det bedre. Efter jeg fik massagestolen har jeg reduceret mine spændinger markant."
+          }
+        },
+        "vid_2": {
+          "type": "video_review",
+          "settings": {
+            "youtube_id": "dQw4w9WgXcQ",
+            "reviewer_name": "Mette Rosengren",
+            "product": "Nordic Sauna Blanket",
+            "title": "Utrolig afslappende varme",
+            "quote": "Bruger det hver aften inden sengetid. Varmen går i dybden og giver den bedste nattesøvn."
+          }
+        },
+        "txt_1": {
+          "type": "text_review",
+          "settings": {
+            "stars": 5,
+            "text": "Jeg har lidt af kroniske rygproblemer i mange år, og efter jeg købte mit saunatæppe, har jeg mærket en utrolig lettelse. Varmen går virkelig i dybden!",
+            "name": "Charlotte S.",
+            "purchased_product": "Nordic Sauna Blanket"
+          }
+        },
+        "txt_2": {
+          "type": "text_review",
+          "settings": {
+            "stars": 5,
+            "text": "Fremragende massagestol med god dybdegående massage der tager fat de rigtige steder. Hele familien bruger den dagligt.",
+            "name": "Morten T.",
+            "purchased_product": "Physio Plus Massagestol"
+          }
+        }
+      },
+      "block_order": [
+        "vid_1",
+        "vid_2",
+        "txt_1",
+        "txt_2"
+      ],
+      "settings": {
+        "label": "KUNDERNES ERFARINGER",
+        "heading": "Hvad siger vores kunder?",
+        "description": "Over 50.000 skandinaver har forbedret deres livskvalitet med vores wellnessprodukter. Her kan du høre og læse nogle af deres historier."
+      }
+    },
+    "woc_quiz_cta": {
+      "type": "woc-quiz-cta",
+      "settings": {
+        "subtitle": "PRØV VORES INTERAKTIVE TEST-GUIDE",
+        "title": "Find den massagestol eller madras, der matcher din krop",
+        "description": "Tag vores hurtige 2-minutters test og få en skræddersyet anbefaling baseret på din kropsform, dine spændinger og dit budget.",
+        "button_text": "Start testen nu",
+        "button_link": "/pages/quiz"
+      }
+    },
+    "woc_showroom_cta": {
+      "type": "woc-showroom-cta",
+      "settings": {
+        "subtitle": "20+ SHOWROOMS I EUROPA",
+        "title": "Oplev produkterne selv i vores showrooms",
+        "description": "Kom ind og få en personlig, uforpligtende fremvisning af en af vores rådgivere. Prøv massagestolene, mærk saunatæppets dybe varme og oplev komforten ved vores smarte sovesystem.",
+        "btn1_text": "Find showroom",
+        "btn1_url": "/pages/showrooms",
+        "btn2_text": "Kontakt os",
+        "btn2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "woc_hero",
+    "woc_trust",
+    "woc_awards",
+    "woc_categories",
+    "woc_doctor",
+    "woc_testimonials",
+    "woc_quiz_cta",
+    "woc_showroom_cta"
+  ]
+}

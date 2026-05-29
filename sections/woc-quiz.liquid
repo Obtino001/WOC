@@ -1,0 +1,300 @@
+<div class="min-h-[70vh] flex items-center justify-center py-12 bg-charcoal text-foreground woc-theme-wrapper">
+  <div class="w-full max-w-2xl mx-auto px-4">
+    
+    <!-- Progress Indicator Bar -->
+    <div id="woc-quiz-progress-container" class="mb-12">
+      <div class="flex justify-between items-center mb-3">
+        <span id="woc-quiz-progress-text" class="font-body text-xs text-muted-foreground uppercase tracking-wider">
+          Spørgsmål 1 af 6
+        </span>
+        <span id="woc-quiz-progress-percentage" class="font-body text-xs text-gold font-semibold">
+          17%
+        </span>
+      </div>
+      <div class="h-1 bg-muted rounded-full overflow-hidden">
+        <div id="woc-quiz-progress-bar" class="h-full bg-gold rounded-full transition-all duration-300" style="width: 17%;"></div>
+      </div>
+    </div>
+
+    <!-- QUIZ STEPS CONTAINER -->
+    <div id="woc-quiz-steps">
+      
+      <!-- Question 1 -->
+      <div class="woc-quiz-step block" data-step="1">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Hvad er dit primære mål?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">Vælg hvad der er vigtigst for dig</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(1, 'Stressreduktion')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Stressreduktion
+          </button>
+          <button type="button" onclick="answerWocQuestion(1, 'Rygsmertelindring')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Rygsmertelindring
+          </button>
+          <button type="button" onclick="answerWocQuestion(1, 'Recovery & Performance')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Recovery & Performance
+          </button>
+          <button type="button" onclick="answerWocQuestion(1, 'Generelt Velvære')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Generelt Velvære
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="woc-quiz-step hidden" data-step="2">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Hvor ofte vil du bruge den?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">Dit brugsmønster hjælper os med at finde det rette match</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(2, 'Dagligt')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Dagligt
+          </button>
+          <button type="button" onclick="answerWocQuestion(2, 'Flere gange om ugen')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Flere gange om ugen
+          </button>
+          <button type="button" onclick="answerWocQuestion(2, 'Lejlighedsvist')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Lejlighedsvist
+          </button>
+        </div>
+        <button type="button" onclick="prevWocQuizStep()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Forrige spørgsmål
+        </button>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="woc-quiz-step hidden" data-step="3">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Hvad er din højde?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">For at sikre den perfekte ergonomiske pasform</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(3, 'Under 165 cm')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Under 165 cm
+          </button>
+          <button type="button" onclick="answerWocQuestion(3, '165–180 cm')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            165–180 cm
+          </button>
+          <button type="button" onclick="answerWocQuestion(3, '180–195 cm')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            180–195 cm
+          </button>
+          <button type="button" onclick="answerWocQuestion(3, 'Over 195 cm')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Over 195 cm
+          </button>
+        </div>
+        <button type="button" onclick="prevWocQuizStep()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Forrige spørgsmål
+        </button>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="woc-quiz-step hidden" data-step="4">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Hvilken oplevelse foretrækker du?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">Hver stol har sin egen karakter</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(4, 'Premium Komfort')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Premium Komfort
+          </button>
+          <button type="button" onclick="answerWocQuestion(4, 'Terapeutisk Dyb Vævs')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Terapeutisk Dyb Vævs
+          </button>
+          <button type="button" onclick="answerWocQuestion(4, 'Luksus Fuldkrops')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Luksus Fuldkrops
+          </button>
+          <button type="button" onclick="answerWocQuestion(4, 'AI-Drevet Adaptiv')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            AI-Drevet Adaptiv
+          </button>
+        </div>
+        <button type="button" onclick="prevWocQuizStep()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Forrige spørgsmål
+        </button>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="woc-quiz-step hidden" data-step="5">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Hvad er dit budget?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">Vi har muligheder for alle investeringsniveauer</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(5, 'Entry Level')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Entry Level
+          </button>
+          <button type="button" onclick="answerWocQuestion(5, 'Mellemklasse')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Mellemklasse
+          </button>
+          <button type="button" onclick="answerWocQuestion(5, 'High End')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            High End
+          </button>
+        </div>
+        <button type="button" onclick="prevWocQuizStep()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Forrige spørgsmål
+        </button>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="woc-quiz-step hidden" data-step="6">
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-2">Vil du besøge et showroom?</h2>
+        <p class="font-body text-sm text-muted-foreground mb-10">Oplev din stol før du beslutter dig</p>
+        <div class="space-y-3">
+          <button type="button" onclick="answerWocQuestion(6, 'Ja, helt sikkert')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Ja, helt sikkert
+          </button>
+          <button type="button" onclick="answerWocQuestion(6, 'Måske senere')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Måske senere
+          </button>
+          <button type="button" onclick="answerWocQuestion(6, 'Nej, jeg beslutter online')" class="woc-quiz-option-card w-full text-left px-6 py-5 rounded border border-border bg-card font-body text-base font-medium hover:border-gold/50 text-foreground transition-all duration-200">
+            Nej, jeg beslutter online
+          </button>
+        </div>
+        <button type="button" onclick="prevWocQuizStep()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Forrige spørgsmål
+        </button>
+      </div>
+
+      <!-- Lead Capture Step (Form) -->
+      <div id="woc-quiz-lead" class="hidden">
+        <h2 class="woc-display-font text-3xl font-light text-foreground mb-2">Få Din Anbefaling</h2>
+        <p class="font-body text-sm text-muted-foreground mb-8">Indtast dine oplysninger og vi sender dit personlige match.</p>
+        
+        {% form 'contact', class: 'space-y-4' %}
+          {%- if form.posted_successfully? -%}
+            <div class="py-8 text-center" id="woc-quiz-success-view">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-forest/10 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#265935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h2 class="woc-display-font text-3xl font-light text-foreground mb-4">Dit Perfekte Match er Klar</h2>
+              <p class="font-body text-sm text-muted-foreground mb-8 max-w-md mx-auto">
+                Tak! Vores wellness-eksperter har modtaget dine svar og kontakter dig hurtigst muligt med din personlige anbefaling.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/collections/massage-chairs" class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded">
+                  Se Massagestole
+                </a>
+                <a href="/pages/showrooms" class="inline-flex items-center justify-center px-8 py-3.5 border border-gold/50 text-gold hover:bg-gold hover:text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded">
+                  Find Showrooms
+                </a>
+              </div>
+            </div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                // Ensure form progress state is updated to 100 on post success
+                document.getElementById('woc-quiz-progress-container').classList.add('hidden');
+                document.getElementById('woc-quiz-steps').classList.add('hidden');
+                document.getElementById('woc-quiz-success-view').parentNode.classList.remove('hidden');
+              });
+            </script>
+          {%- endif -%}
+
+          {%- if form.errors -%}
+            <div class="p-3 bg-red-900/20 border border-red-900/50 text-red-200 text-xs rounded">
+              {{ form.errors | default_errors }}
+            </div>
+          {%- endif -%}
+
+          <!-- Hidden inputs saving quiz answers -->
+          <input type="hidden" id="woc-quiz-ans-field" name="contact[Quiz Result]" value="">
+
+          <div>
+            <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">Fulde Navn *</label>
+            <input
+              type="text"
+              name="contact[name]"
+              required
+              class="w-full h-14 px-5 rounded border border-border bg-background font-body text-foreground focus:border-gold focus:outline-none"
+            >
+          </div>
+
+          <div>
+            <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">E-mailadresse *</label>
+            <input
+              type="email"
+              name="contact[email]"
+              required
+              class="w-full h-14 px-5 rounded border border-border bg-background font-body text-foreground focus:border-gold focus:outline-none"
+            >
+          </div>
+
+          <div>
+            <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">Telefon (Valgfrit)</label>
+            <input
+              type="tel"
+              name="contact[phone]"
+              class="w-full h-14 px-5 rounded border border-border bg-background font-body text-foreground focus:border-gold focus:outline-none"
+            >
+          </div>
+
+          <button
+            type="submit"
+            class="w-full h-14 bg-gold hover:bg-gold-hover text-charcoal font-body text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300"
+          >
+            Få Min Anbefaling
+          </button>
+        {% endform %}
+
+        <button type="button" onclick="backToWocQuizQuestions()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
+          &larr; Tilbage til spørgsmål
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  let currentQuizStep = 1;
+  const totalQuizSteps = 6;
+  const userQuizAnswers = {};
+
+  function updateQuizProgress() {
+    const textEl = document.getElementById('woc-quiz-progress-text');
+    const pctEl = document.getElementById('woc-quiz-progress-percentage');
+    const barEl = document.getElementById('woc-quiz-progress-bar');
+    
+    if (currentQuizStep <= totalQuizSteps) {
+      const pct = Math.round((currentQuizStep / totalQuizSteps) * 100);
+      textEl.innerText = `Spørgsmål ${currentQuizStep} af ${totalQuizSteps}`;
+      pctEl.innerText = pct + '%';
+      barEl.style.width = pct + '%';
+    } else {
+      textEl.innerText = "Næsten færdig";
+      pctEl.innerText = "100%";
+      barEl.style.width = "100%";
+    }
+  }
+
+  function answerWocQuestion(step, answer) {
+    userQuizAnswers[step] = answer;
+    
+    if (currentQuizStep < totalQuizSteps) {
+      // Hide current step, show next
+      document.querySelector(`.woc-quiz-step[data-step="${currentQuizStep}"]`).classList.add('hidden');
+      currentQuizStep++;
+      document.querySelector(`.woc-quiz-step[data-step="${currentQuizStep}"]`).classList.remove('hidden');
+      updateQuizProgress();
+    } else {
+      // Compile answers and go to lead form
+      document.querySelector(`.woc-quiz-step[data-step="${totalQuizSteps}"]`).classList.add('hidden');
+      currentQuizStep++;
+      document.getElementById('woc-quiz-lead').classList.remove('hidden');
+      updateQuizProgress();
+
+      // Aggregate answers into hidden inputs
+      let answersSummary = "";
+      for(let key in userQuizAnswers) {
+        answersSummary += `Spørgsmål ${key}: ${userQuizAnswers[key]}; `;
+      }
+      document.getElementById('woc-quiz-ans-field').value = answersSummary;
+    }
+  }
+
+  function prevWocQuizStep() {
+    if (currentQuizStep > 1) {
+      document.querySelector(`.woc-quiz-step[data-step="${currentQuizStep}"]`).classList.add('hidden');
+      currentQuizStep--;
+      document.querySelector(`.woc-quiz-step[data-step="${currentQuizStep}"]`).classList.remove('hidden');
+      updateQuizProgress();
+    }
+  }
+
+  function backToWocQuizQuestions() {
+    document.getElementById('woc-quiz-lead').classList.add('hidden');
+    currentQuizStep = totalQuizSteps;
+    document.querySelector(`.woc-quiz-step[data-step="${totalQuizSteps}"]`).classList.remove('hidden');
+    updateQuizProgress();
+  }
+</script>

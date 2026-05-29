@@ -625,10 +625,6 @@ class ModalDialog extends HTMLElement {
   }
 
   show(opener) {
-    // Prevent bugs if opened while still closing
-    if (this.closeTimeout) clearTimeout(this.closeTimeout);
-    this.classList.remove('is-closing');
-
     this.openedBy = opener;
     const popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
@@ -641,17 +637,7 @@ class ModalDialog extends HTMLElement {
   hide() {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
-    
-    // --- START CLOSING ANIMATION PHASE ---
-    this.classList.add('is-closing');
-    
-    if (this.closeTimeout) clearTimeout(this.closeTimeout);
-    this.closeTimeout = setTimeout(() => {
-      this.removeAttribute('open');
-      this.classList.remove('is-closing');
-    }, 400); // Wait 400ms for the CSS slide-out to finish
-    // --- END CLOSING ANIMATION PHASE ---
-
+    this.removeAttribute('open');
     removeTrapFocus(this.openedBy);
     window.pauseAllMedia();
   }

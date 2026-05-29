@@ -1,0 +1,111 @@
+<section class="py-16 bg-neutral-50 text-neutral-900 border-t border-neutral-200">
+  <div class="max-w-[800px] mx-auto px-4">
+    
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h3 class="font-body text-sm font-semibold text-neutral-800 uppercase tracking-widest mb-2">
+        {{ section.settings.subtitle }}
+      </h3>
+      <h2 class="woc-display-font text-2xl lg:text-3xl font-light text-neutral-900">
+        {{ section.settings.title }}
+      </h2>
+    </div>
+
+    <!-- FAQ Accordions -->
+    <div class="space-y-3">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'faq' -%}
+          
+          <details
+            class="group border border-neutral-200 rounded-lg bg-white overflow-hidden transition-all duration-300"
+            {{ block.shopify_attributes }}
+          >
+            <summary class="flex justify-between items-center p-4 font-body text-xs font-bold text-neutral-800 uppercase cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+              <span>{{ block.settings.question }}</span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-neutral-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </summary>
+            <div class="px-4 pb-4 font-body text-xs text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+              {{ block.settings.answer }}
+            </div>
+          </details>
+
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+<!-- JSON-LD FAQ Schema Generation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'faq' -%}
+        {
+          "@type": "Question",
+          "name": {{ block.settings.question | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ block.settings.answer | strip_html | json }}
+          }
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+{% schema %}
+{
+  "name": "PDP Product FAQs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "OFTE STILLEDE SPØRGSMÅL"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Spørgsmål & Svar"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Hvad er et infrarødt saunatæppe?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Et infrarødt saunatæppe er en personlig mini-sauna, du kan bruge derhjemme. Det bruger infrarød varmeteknologi til at opvarme kroppen dybt indefra."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Product FAQs",
+      "blocks": [
+        { "type": "faq", "settings": { "question": "Hvor meget strøm bruger saunatæppet?", "answer": "Saunatæppet har et elforbrug på ca. 400-650W, hvilket svarer til ca. 1.50 kr. i timen ved højeste indstilling." } },
+        { "type": "faq", "settings": { "question": "Hvordan rengør jeg saunatæppet?", "answer": "Det er nemt! Lad saunatæppet køle af, åben det helt op og tør indersiden af med en fugtig klud. Da indersiden er lavet af vandafvisende PU-læder, tørres sved nemt væk." } },
+        { "type": "faq", "settings": { "question": "Hvor ofte må jeg bruge det?", "answer": "Du kan roligt bruge saunatæppet hver dag. Vi anbefaler dog at starte med 2-3 gange om ugen i 20-30 minutter, hvorefter du kan øge varigheden og frekvensen." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

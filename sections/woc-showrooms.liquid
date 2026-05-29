@@ -1,0 +1,352 @@
+<section class="py-12 bg-charcoal text-foreground woc-theme-wrapper">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Header -->
+    <div class="mb-10 text-center lg:text-left">
+      <div class="luxury-line mb-4 mx-auto lg:mx-0"></div>
+      <h1 class="woc-display-font text-4xl lg:text-5xl font-light text-foreground mb-4">Vores Showrooms</h1>
+      <p class="font-body text-sm text-muted-foreground max-w-xl">
+        Besøg os i et af vores europæiske showrooms og få en personlig, uforpligtende fremvisning af vores wellness-teknologi.
+      </p>
+    </div>
+
+    <!-- Interactive Showrooms Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- SIDEBAR LIST (4 cols) -->
+      <div class="lg:col-span-4 space-y-3 max-h-[700px] overflow-y-auto pr-2">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'showroom' -%}
+            
+            <button
+              type="button"
+              id="showroom-btn-{{ block.id }}"
+              onclick="showWocShowroom('{{ block.id }}')"
+              class="woc-showroom-card w-full text-left p-4 rounded border border-border bg-card hover:border-gold/50 transition-all duration-300 {% if forloop.first %}border-gold/80 bg-gold/5{% endif %}"
+              data-showroom-id="{{ block.id }}"
+            >
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-sm select-none">{{ block.settings.flag }}</span>
+                <span class="font-body text-[10px] uppercase tracking-wider text-gold font-semibold">
+                  {{ block.settings.city }}, {{ block.settings.country }}
+                </span>
+              </div>
+              <h3 class="woc-display-font text-lg font-medium text-foreground mb-2">
+                {{ block.settings.name }}
+              </h3>
+              <p class="font-body text-xs text-muted-foreground line-clamp-2">
+                {{ block.settings.address | replace: '\n', ', ' }}
+              </p>
+            </button>
+
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <!-- DETAILS VIEWPORT (8 cols) -->
+      <div class="lg:col-span-8 bg-card border border-border rounded-lg overflow-hidden flex flex-col min-h-[600px]">
+        
+        <!-- Interactive contents replaced by JS -->
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'showroom' -%}
+            
+            <div
+              id="showroom-detail-{{ block.id }}"
+              class="woc-showroom-detail {% unless forloop.first %}hidden{% endunless %} flex flex-col h-full"
+            >
+              <!-- Visual Hero / Banner -->
+              <div class="relative h-[250px] bg-zinc-900 shrink-0">
+                {%- if block.settings.image != blank -%}
+                  <img
+                    src="{{ block.settings.image | image_url: width: 1000 }}"
+                    alt="{{ block.settings.name }}"
+                    class="w-full h-full object-cover opacity-80"
+                    style="width: 100%; height: 100%; object-fit: cover;"
+                    loading="lazy"
+                  >
+                {%- else -%}
+                  <div class="w-full h-full flex items-center justify-center text-zinc-700 bg-zinc-950">Showroom Billede</div>
+                {%- endif -%}
+                <div class="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent"></div>
+              </div>
+
+              <!-- Main Detail body -->
+              <div class="p-6 sm:p-8 flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  
+                  <!-- Info Left -->
+                  <div>
+                    <h2 class="woc-display-font text-2xl lg:text-3xl font-light text-foreground mb-4">
+                      {{ block.settings.name }}
+                    </h2>
+                    <p class="font-body text-xs text-muted-foreground leading-relaxed mb-6">
+                      {{ block.settings.description }}
+                    </p>
+
+                    <!-- Highlights Checklist -->
+                    {%- if block.settings.highlights != blank -%}
+                      <h4 class="font-body text-[9px] uppercase tracking-luxury text-gold mb-3">Highlights</h4>
+                      <ul class="space-y-2 mb-6">
+                        {%- assign items = block.settings.highlights | split: "," -%}
+                        {%- for highlight in items -%}
+                          <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#bf8f30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 mt-0.5 text-gold shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span class="font-body text-xs text-foreground/80">{{ highlight | strip }}</span>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  </div>
+
+                  <!-- Contact / Timings Right -->
+                  <div class="space-y-6">
+                    <!-- Address detail -->
+                    <div>
+                      <h4 class="font-body text-[9px] uppercase tracking-luxury text-gold mb-2.5">Adresse</h4>
+                      <p class="font-body text-xs text-foreground/90 leading-relaxed">
+                        {{ block.settings.address | replace: ',', '<br>' }}
+                      </p>
+                    </div>
+
+                    <!-- Open Hours -->
+                    <div>
+                      <h4 class="font-body text-[9px] uppercase tracking-luxury text-gold mb-2.5">Åbningstider</h4>
+                      <div class="space-y-1.5">
+                        {%- if block.settings.hours_week != blank -%}
+                          <div class="flex justify-between font-body text-xs text-foreground/80 border-b border-border/40 pb-1">
+                            <span>Hverdage</span>
+                            <span>{{ block.settings.hours_week }}</span>
+                          </div>
+                        {%- endif -%}
+                        {%- if block.settings.hours_sat != blank -%}
+                          <div class="flex justify-between font-body text-xs text-foreground/80 border-b border-border/40 pb-1">
+                            <span>Lørdag</span>
+                            <span>{{ block.settings.hours_sat }}</span>
+                          </div>
+                        {%- endif -%}
+                        {%- if block.settings.hours_sun != blank -%}
+                          <div class="flex justify-between font-body text-xs text-foreground/80 border-b border-border/40 pb-1">
+                            <span>Søndag</span>
+                            <span>{{ block.settings.hours_sun }}</span>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+
+                    <!-- Contact coordinates -->
+                    <div>
+                      <h4 class="font-body text-[9px] uppercase tracking-luxury text-gold mb-2.5">Kontakt</h4>
+                      <div class="space-y-1 font-body text-xs text-muted-foreground">
+                        <p class="flex items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 text-gold"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 9.72z"></path></svg>
+                          <a href="tel:{{ block.settings.phone | replace: ' ', '' }}" class="hover:text-gold transition-colors">{{ block.settings.phone }}</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 text-gold"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                          <a href="mailto:{{ block.settings.email }}" class="hover:text-gold transition-colors">{{ block.settings.email }}</a>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Google Maps Embedded iframe -->
+                {%- if block.settings.map_url != blank -%}
+                  <div class="h-[280px] w-full rounded border border-border overflow-hidden bg-zinc-900 shadow-soft">
+                    <iframe
+                      src="{{ block.settings.map_url }}"
+                      class="w-full h-full"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                {%- endif -%}
+
+              </div>
+            </div>
+
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function showWocShowroom(blockId) {
+    // 1. Remove active outline classes on sidebar cards
+    const cards = document.querySelectorAll('.woc-showroom-card');
+    cards.forEach(card => {
+      card.classList.remove('border-gold/80', 'bg-gold/5');
+    });
+
+    // 2. Add active classes to selected card
+    const activeCard = document.getElementById('showroom-btn-' + blockId);
+    if (activeCard) {
+      activeCard.classList.add('border-gold/80', 'bg-gold/5');
+    }
+
+    // 3. Hide all details panels
+    const details = document.querySelectorAll('.woc-showroom-detail');
+    details.forEach(detail => {
+      detail.classList.add('hidden');
+    });
+
+    // 4. Reveal active details panel
+    const activeDetail = document.getElementById('showroom-detail-' + blockId);
+    if (activeDetail) {
+      activeDetail.classList.remove('hidden');
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "WOC Showrooms Locator",
+  "max_blocks": 12,
+  "blocks": [
+    {
+      "type": "showroom",
+      "name": "Showroom Location",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Showroom Photo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Showroom Name",
+          "default": "København Flagship Store"
+        },
+        {
+          "type": "text",
+          "id": "flag",
+          "label": "Flag Icon",
+          "default": "🇩🇰"
+        },
+        {
+          "type": "text",
+          "id": "city",
+          "label": "City",
+          "default": "København"
+        },
+        {
+          "type": "text",
+          "id": "country",
+          "label": "Country",
+          "default": "Danmark"
+        },
+        {
+          "type": "textarea",
+          "id": "address",
+          "label": "Showroom Address",
+          "default": "Winghouse, Ørestads Boulevard 73, 2300 København S, Danmark"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Contact Phone",
+          "default": "+45 70 20 30 40"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Contact Email",
+          "default": "copenhagen@worldofcomfort.dk"
+        },
+        {
+          "type": "text",
+          "id": "hours_week",
+          "label": "Hours: Weekdays",
+          "default": "10:00 – 18:00"
+        },
+        {
+          "type": "text",
+          "id": "hours_sat",
+          "label": "Hours: Saturday",
+          "default": "10:00 – 15:00"
+        },
+        {
+          "type": "text",
+          "id": "hours_sun",
+          "label": "Hours: Sunday",
+          "default": "Lukket"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Showroom Description",
+          "default": "Oplev vores fulde kollektion af massagestole og sovesystemer i vores smukke flagskibsbutik i Winghouse bygningen i Ørestad."
+        },
+        {
+          "type": "textarea",
+          "id": "highlights",
+          "label": "Highlights (comma separated)",
+          "default": "9+ massagestole klar til test, SOVESYSTEM® kropsscanning, Gratis parkering foran butikken, Friskbrygget kaffe & te"
+        },
+        {
+          "type": "text",
+          "id": "map_url",
+          "label": "Google Maps Embed URL",
+          "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.029841804297!2d12.57685657732296!3d55.630044573037346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525381f215d2a9%3A0xeab50d32bc13d5cf!2zV29ybGQgb2YgQ29tZm9ydCAtIEvDuGhlbmhhdm4!5e0!3m2!1sda!2sdk!4v1716942000000!5m2!1sda!2sdk"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Showrooms Locator",
+      "blocks": [
+        {
+          "type": "showroom",
+          "settings": {
+            "name": "København Flagship Store",
+            "flag": "🇩🇰",
+            "city": "København",
+            "country": "Danmark",
+            "address": "Winghouse, Ørestads Boulevard 73, 2300 København S, Danmark",
+            "phone": "+45 70 20 30 40",
+            "email": "copenhagen@worldofcomfort.dk",
+            "description": "Vores smukke flagskibsbutik i Winghouse bygningen i Ørestad. Oplev vores fulde kollektion af massageudstyr og få kropsscanning til sovesystemer i en rolig, luksuriøs atmosfære.",
+            "highlights": "9+ massagestole klar til test, SOVESYSTEM® kropsscanning, Gratis parkering foran butikken, Friskbrygget kaffe & te"
+          }
+        },
+        {
+          "type": "showroom",
+          "settings": {
+            "name": "Fredericia HQ Showroom",
+            "flag": "🇩🇰",
+            "city": "Fredericia",
+            "country": "Danmark",
+            "address": "Kringsvej 4, 7000 Fredericia, Danmark",
+            "phone": "+45 70 20 30 41",
+            "email": "fredericia@worldofcomfort.dk",
+            "description": "Vores hovedsæde og showroom i Fredericia. Her kan du prøve alle vores produkter direkte ved kilden og få personlig rådgivning af vores landsdækkende specialister.",
+            "highlights": "Eget servicecenter & lager, Kæmpe udstilling (12+ stole), Nem adgang fra E20 motorvejen, Gratis parkering ved døren"
+          }
+        },
+        {
+          "type": "showroom",
+          "settings": {
+            "name": "Malmö Showroom",
+            "flag": "🇸🇪",
+            "city": "Malmö",
+            "country": "Sverige",
+            "address": "Ymers Gata 25A, 215 35 Malmö, Sverige",
+            "phone": "+46 40 123 456",
+            "email": "malmo@worldofcomfort.se",
+            "description": "Vores svenske showroom beliggende i Hyllie distriktet i Malmø, blot 30 minutter fra København via Øresundsbroen. Her tilbydes fuld rådgivning på svensk og svenske priser.",
+            "highlights": "Svensktalende rådgivere, Fuld udstilling (SEK priser), SOVESYSTEM® trykanalyse, Let adgang via offentlig transport"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

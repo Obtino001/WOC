@@ -142,7 +142,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 
 .predictive-search__item {
   display: flex;
-  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem;
   text-align: left;
   text-decoration: none;
   width: 100%;
@@ -178,7 +178,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 }
 
 .predictive-search__item-query-result mark {
-  color: rgba(var(--color-foreground));
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .predictive-search__item-query-result mark {

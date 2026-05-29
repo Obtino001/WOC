@@ -27,8 +27,7 @@
   }
 {%- endstyle -%}
 
-<div style="padding-top: var(--overlay-value); " class="gradient color-{{ section.settings.color_scheme }}">
-<footer class="footer section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -50,28 +49,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
-      <div class="footer__content-top">
-        <div class="footer-block__brand-info">
-          {%- if section.settings.brand_image != blank -%}
-            {%- assign brand_image_height = section.settings.brand_image_width
-              | divided_by: section.settings.brand_image.aspect_ratio
-            -%}
-            <div
-              class="footer-block__image-wrapper"
-              style="max-width: min(100%, {{ section.settings.brand_image_width }}px);"
-            >
-              {{
-                section.settings.brand_image
-                | image_url: width: 1100
-                | image_tag:
-                  loading: 'lazy',
-                  widths: '1100',
-                  height: brand_image_height,
-                  width: section.settings.brand_image_width
-              }}
-            </div>
-          {%- endif -%}
-        </div>
+      <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -79,11 +57,11 @@
             elsif section.blocks.size > 6
               assign footer_grid_class = 'grid--4-col-desktop'
             elsif section.blocks.size > 4
-              assign footer_grid_class = 'grid--5-col-tablet'
+              assign footer_grid_class = 'grid--3-col-tablet'
             endif
           -%}
           <div
-            class="footer__blocks-wrapper grid grid--1-col grid--2-col  {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
@@ -98,14 +76,7 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext mobile-accordion-toggle">
-                    {{- block.settings.heading -}}
-                    <span class="accordion-icon">
-                      <svg viewBox="0 0 14 8" width="12" height="7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </span>
-                  </h2>
+                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -131,7 +102,7 @@
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
-                    <div class="footer-block__brand-info footer-block__details-content">
+                    <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
                           | divided_by: settings.brand_image.aspect_ratio
@@ -157,7 +128,7 @@
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
-                      {%- if block.settings.show_social -%}
+                      {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
                     </div>
@@ -285,7 +256,7 @@
       data-cascade
     {% endif %}
   >
-    <div class="footer__content-bottom-wrapper">
+    <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form>
@@ -326,12 +297,13 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="footer__content-bottom-wrapper{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}} - All rights reserved.
+          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        {% comment %} {%- if section.settings.show_policy -%}
+        <small class="copyright__content">{{ powered_by_link }}</small>
+        {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
@@ -343,18 +315,11 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
-        {%- endif -%} {% endcomment %}
-      </div>
-      <div class="footer-right">
-        {% assign active_payments = 'visa,master,klarna,vipps' | split: ',' %}
-        {% for type in active_payments %}
-          {{ type | payment_type_svg_tag: class: 'dp-payment-icon' }}
-        {% endfor %}
+        {%- endif -%}
       </div>
     </div>
   </div>
 </footer>
-</div>
 
 {% schema %}
 {
@@ -459,21 +424,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "brand_image",
-      "label": "Brand Image"
-    },
-    {
-      "type": "range",
-      "id": "brand_image_width",
-      "min": 50,
-      "max": 550,
-      "step": 5,
-      "unit": "px",
-      "label": "Image width",
-      "default": 100
-    },
     {
       "type": "color_scheme",
       "id": "color_scheme",

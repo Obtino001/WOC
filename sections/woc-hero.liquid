@@ -1,0 +1,196 @@
+<section class="relative h-screen flex flex-col overflow-hidden bg-charcoal">
+  <!-- Background Video / Image -->
+  <div class="absolute inset-0 z-1">
+    {%- if section.settings.video_url != blank -%}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover animate-slow-zoom"
+        style="width: 100%; height: 100%; object-fit: cover;"
+        {% if section.settings.fallback_image != blank %}poster="{{ section.settings.fallback_image | image_url: width: 1920 }}"{% endif %}
+      >
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+      </video>
+    {%- elsif section.settings.fallback_image != blank -%}
+      <img
+        src="{{ section.settings.fallback_image | image_url: width: 1920 }}"
+        alt="Hero Background"
+        class="w-full h-full object-cover"
+        style="width: 100%; height: 100%; object-fit: cover;"
+        loading="eager"
+      >
+    {%- endif -%}
+    <!-- Overlay Gradients -->
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-transparent to-transparent"></div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full">
+    <div class="max-w-3xl">
+      <div class="luxury-line mb-8"></div>
+      
+      <h1 class="woc-display-font text-5xl md:text-6xl lg:text-8xl font-light text-foreground leading-[0.95] mb-6">
+        {{ section.settings.title_line1 }}
+        <span class="block italic text-gold font-light mt-2">{{ section.settings.title_line2 }}</span>
+      </h1>
+      
+      <p class="font-body text-sm font-light text-foreground/80 mb-10 max-w-md leading-relaxed tracking-wide">
+        {{ section.settings.subtitle }}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        {%- if section.settings.btn1_text != blank -%}
+          <a
+            href="{{ section.settings.btn1_url }}"
+            class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
+          >
+            {{ section.settings.btn1_text }}
+          </a>
+        {%- endif -%}
+        {%- if section.settings.btn2_text != blank -%}
+          <a
+            href="{{ section.settings.btn2_url }}"
+            class="inline-flex items-center justify-center px-8 py-3.5 border border-white hover:bg-white hover:text-charcoal text-white font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
+          >
+            {{ section.settings.btn2_text }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom USP Bar -->
+  <div class="relative z-10 border-t border-gold/15 bg-background/60 backdrop-blur-md py-4 lg:py-5">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        
+        {%- for block in section.blocks -%}
+          <div class="flex items-center gap-2.5" {{ block.shopify_attributes }}>
+            {%- if forloop.index > 1 -%}
+              <div class="hidden lg:block w-px h-5 bg-gold/20 mr-4"></div>
+            {%- endif -%}
+            
+            <!-- Icon Render -->
+            <span class="text-gold shrink-0">
+              {%- case block.settings.icon -%}
+                {%- when 'award' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                {%- when 'cpu' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+                {%- when 'heart' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                {%- when 'truck' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              {%- endcase -%}
+            </span>
+
+            <span class="font-body text-[10px] lg:text-xs font-medium uppercase tracking-[0.15em] text-foreground/75">
+              {{ block.settings.text }}
+            </span>
+          </div>
+        {%- endfor -%}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Hero Banner",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "MP4 Video URL",
+      "default": "https://worldofcomfort.dk/wp-content/uploads/2025/02/video-forside.mp4"
+    },
+    {
+      "type": "image_picker",
+      "id": "fallback_image",
+      "label": "Fallback Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Skandinaviens Førende"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Italic Gold)",
+      "default": "Wellness-Teknologi"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Hero Subtitle",
+      "default": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms."
+    },
+    {
+      "type": "text",
+      "id": "btn1_text",
+      "label": "Button 1 Text",
+      "default": "Se Massagestole"
+    },
+    {
+      "type": "url",
+      "id": "btn1_url",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "btn2_text",
+      "label": "Button 2 Text",
+      "default": "Find Showroom"
+    },
+    {
+      "type": "url",
+      "id": "btn2_url",
+      "label": "Button 2 Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "USP Indicator",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon Type",
+          "options": [
+            { "value": "award", "label": "Award Medal" },
+            { "value": "cpu", "label": "AI Microchip" },
+            { "value": "heart", "label": "Heart Pulse" },
+            { "value": "truck", "label": "Delivery Truck" }
+          ],
+          "default": "award"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "USP Label",
+          "default": "Nordens førende velværevirksomhed"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Hero Banner",
+      "blocks": [
+        { "type": "usp", "settings": { "icon": "award", "text": "Nordens Førende Velværevirksomhed" } },
+        { "type": "usp", "settings": { "icon": "cpu", "text": "Unik AI Teknologi" } },
+        { "type": "usp", "settings": { "icon": "heart", "text": "Sundhedsfagligt Anbefalet" } },
+        { "type": "usp", "settings": { "icon": "truck", "text": "White-Glove Levering" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

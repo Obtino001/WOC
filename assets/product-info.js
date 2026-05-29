@@ -167,10 +167,9 @@ if (!customElements.get('product-info')) {
 
           this.pickupAvailability?.update(variant);
           this.updateOptionValues(html);
-          if(!this.classList.contains('quick-view-product')){
-            this.updateURL(productUrl, variant?.id);
-          }
+          this.updateURL(productUrl, variant?.id);
           this.updateVariantInputs(variant?.id);
+
           if (!variant) {
             this.setUnavailable();
             return;
