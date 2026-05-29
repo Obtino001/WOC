@@ -1,0 +1,119 @@
+<section class="py-20 bg-charcoal text-foreground border-t border-border relative overflow-hidden">
+  <!-- Glow effect -->
+  <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 50% 50%, hsl(var(--gold)), transparent 60%);"></div>
+
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      {%- if section.settings.label != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+          {{ section.settings.label }}
+        </p>
+      {%- endif -%}
+      <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground leading-[1.05]">
+        {{ section.settings.title }}
+      </h2>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto relative">
+      <!-- Connection line on desktop -->
+      <div class="hidden md:block absolute top-[68px] left-[15%] right-[15%] h-[1px] bg-gold/15 z-1"></div>
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'step' -%}
+          <div class="flex flex-col items-center text-center group z-10" {{ block.shopify_attributes }}>
+            <!-- Step number bubble -->
+            <div class="w-14 h-14 rounded-full bg-charcoal border border-gold/20 flex items-center justify-center mb-6 text-gold woc-display-font text-xl font-light group-hover:border-gold/50 group-hover:scale-105 transition-all duration-300 shadow-lg">
+              {{ block.settings.number }}
+            </div>
+            
+            <h3 class="woc-display-font text-lg font-medium text-foreground mb-3">{{ block.settings.title }}</h3>
+            <p class="font-body text-xs font-light text-foreground/60 leading-relaxed max-w-sm">{{ block.settings.description }}</p>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Process Steps",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "BRUGSANVISNING"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Så nemt er det at bruge"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Process Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Step Number",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step Title",
+          "default": "Gør produktet klar"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Step Description",
+          "default": "Placér produktet på en behagelig overflade og tænd for strømmen."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Process Steps",
+      "blocks": [
+        { 
+          "type": "step", 
+          "settings": { 
+            "number": "1", 
+            "title": "Gør dit saunatæppe klar", 
+            "description": "Placér dit Nordic Sauna Blanket på en behagelig overflade som f.eks. din seng, en madras eller en sofa, og rul det ud. Indstil tæppet til den ønskede varme ved hjælp af controlleren." 
+          } 
+        },
+        { 
+          "type": "step", 
+          "settings": { 
+            "number": "2", 
+            "title": "Mærk forskellen", 
+            "description": "Nyd din behandling i 20-60 minutter. Du vil begynde at mærke varmen brede sig dybt ind i kroppen. Modtag de mange fordele og mærk forskellen." 
+          } 
+        },
+        { 
+          "type": "step", 
+          "settings": { 
+            "number": "3", 
+            "title": "Efter sessionen", 
+            "description": "Let saunatæppet køle ned og tør forsigtigt indersiden af med en klud. Tæppet er fuldstændig vandafvisende, hvilket gør det nemt at tørre sveden af." 
+          } 
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

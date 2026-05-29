@@ -1,0 +1,151 @@
+<section class="py-24 section-light-warm relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent pointer-events-none"></div>
+  
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      {%- if section.settings.label != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+          {{ section.settings.label }}
+        </p>
+      {%- endif -%}
+      <h2 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">
+        {{ section.settings.title }}
+      </h2>
+      {%- if section.settings.description != blank -%}
+        <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          {{ section.settings.description }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-border/20 max-w-6xl mx-auto border border-border/10 rounded-lg overflow-hidden">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'pillar' -%}
+          <div 
+            class="bg-white p-10 group hover:bg-gold/[0.04] transition-all duration-500"
+            {{ block.shopify_attributes }}
+          >
+            <!-- SVG Icon slot -->
+            <div class="w-10 h-10 flex items-center justify-center text-gold mb-6 group-hover:scale-105 transition-all duration-300">
+              {%- if block.settings.custom_icon_svg != blank -%}
+                {{ block.settings.custom_icon_svg }}
+              {%- else -%}
+                <!-- Fallback Shield -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              {%- endif -%}
+            </div>
+            
+            <h3 class="woc-display-font text-lg font-medium text-foreground mb-3">{{ block.settings.title }}</h3>
+            <p class="font-body text-xs font-light text-muted-foreground leading-[1.8]">{{ block.settings.description }}</p>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Why Us Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "EKSKLUSIV WELLNESS"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Hvorfor vælge World of Comfort?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Vi går ikke på kompromis med kvaliteten. Vores produkter er designet til at forbedre din livskvalitet."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Value Pillar",
+      "settings": [
+        {
+          "type": "html",
+          "id": "custom_icon_svg",
+          "label": "Custom SVG Icon",
+          "info": "Paste raw SVG XML code here to show an icon."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Pillar Title",
+          "default": "German-Engineered Precision"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Pillar Description",
+          "default": "Handmade with custom calibrations to suit your specific body type."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Why Us Grid",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Tysk Præcision & Kvalitet",
+            "description": "Vores senge og saunatæpper er fremstillet af de fineste, certificerede materialer, udviklet under strenge europæiske kvalitetsstandarder."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Avanceret AI-Teknologi",
+            "description": "Vi integrerer avanceret tryksensorik og intelligente algoritmer for at tilpasse fasthed, tryk og varme præcist til din krop."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Sundhedsfaglig Godkendelse",
+            "description": "Anbefalet af læger og fysioterapeuter for sin dokumenterede evne til at øge blodcirkulation, lindre spændinger og fremme restitution."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Tryg Egenproduktion",
+            "description": "Vi designer og fremstiller selv vores kerneprodukter. Det garanterer direkte kontrol med kvaliteten og de bedste priser på markedet."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Premium Showrooms",
+            "description": "Besøg et af vores 20+ showrooms i Europa for at opleve, mærke og prøve produkterne personligt inden dit køb."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "White-Glove Levering",
+            "description": "Vi leverer, bærer ind, samler og opsætter dit nye wellnessprodukt for dig. Vi kan endda tage dit gamle produkt med retur."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

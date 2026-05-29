@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Håndholdt Restitution &",
+        "title_line2": "Dybdegående Terapi",
+        "subtitle": "Fra massageguns og ben-recovery boots til vores populære infrarøde saunatæpper. Professionelt wellnessudstyr skabt til hjemmebrug.",
+        "btn1_text": "Se alle devices",
+        "btn2_text": "Find dit produkt"
+      }
+    },
+    "categories": {
+      "type": "woc-categories",
+      "settings": {
+        "label": "PRO-DEVICES",
+        "heading": "Udforsk Håndholdt Terapi"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "TERAPEUTISK EFFEKT",
+        "title": "Hvorfor vælge vores restitution-devices?",
+        "description": "Vores pro-devices giver dig klinisk bevist smertelindring og muskelafslapning direkte i din egen stue."
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvilken garanti er der på apparaterne?",
+            "answer": "Der er altid 2 års fuld reklamationsret på alle vores elektroniske massageapparater og devices."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "why_us",
+    "faqs"
+  ]
+}

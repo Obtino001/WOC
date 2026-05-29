@@ -1,0 +1,252 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Del produkt"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "highlights": {
+      "type": "woc-highlights",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "icon": "waves",
+            "title": "7 Massage Programmes",
+            "desc": "4 full-body modes (Auto, Stretch, Wave, Cradle) plus 3 targeted zone modes for shoulders, lumbar, and legs.",
+            "stat": "7",
+            "stat_label": "Programs"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "icon": "flame",
+            "title": "3-Level Soothing Heat",
+            "desc": "Integrated heating with low, medium, and high settings. Timer up to 12 hours for overnight warmth and muscle relaxation.",
+            "stat": "12h",
+            "stat_label": "Heat Timer"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "icon": "brain",
+            "title": "AI Sleep Tracking",
+            "desc": "Via the companion app, monitor heart rate, breathing, movement, and sleep stages. Receive personalised sleep recommendations.",
+            "stat": "24/7",
+            "stat_label": "Monitoring"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
+      "settings": {
+        "label": "INTELLIGENT WELLNESS",
+        "title": "Massage. Heat. AI Intelligence."
+      }
+    },
+    "programs": {
+      "type": "woc-programs",
+      "settings": {
+        "label": "INTELLIGENT PROGRAMMES",
+        "title": "7 Ways to Unwind"
+      }
+    },
+    "comparison": {
+      "type": "pdp-comparison",
+      "blocks": {
+        "row_1": { "type": "row", "settings": { "feature": "Air Compression Massage", "woc_val": true, "comp_val": false } },
+        "row_2": { "type": "row", "settings": { "feature": "7 Preset Massage Programmes", "woc_val": true, "comp_val": false } },
+        "row_3": { "type": "row", "settings": { "feature": "3-Level Integrated Heat", "woc_val": true, "comp_val": false } },
+        "row_4": { "type": "row", "settings": { "feature": "AI Sleep Tracking (App)", "woc_val": true, "comp_val": false } },
+        "row_5": { "type": "row", "settings": { "feature": "Multi-Zone Targeting", "woc_val": true, "comp_val": false } },
+        "row_6": { "type": "row", "settings": { "feature": "Fits Any Existing Mattress", "woc_val": true, "comp_val": false } },
+        "row_7": { "type": "row", "settings": { "feature": "Wireless Remote Control", "woc_val": true, "comp_val": false } },
+        "row_8": { "type": "row", "settings": { "feature": "Zero Renovation Required", "woc_val": true, "comp_val": false } }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6",
+        "row_7",
+        "row_8"
+      ],
+      "settings": {
+        "subtitle": "THE DIFFERENCE",
+        "title": "SYNTHERA™ AI vs. Regular Toppers",
+        "th_feature": "Feature",
+        "th_woc": "SYNTHERA™ AI",
+        "th_comp": "Regular Topper"
+      }
+    },
+    "whats_included": {
+      "type": "pdp-whats-included",
+      "blocks": {
+        "item_1": { "type": "item", "settings": { "name": "SYNTHERA™ AI Topper", "detail": "90 × 200 × 6 cm smart topper" } },
+        "item_2": { "type": "item", "settings": { "name": "Wireless Remote Controller", "detail": "For easy zone and mode adjustments" } },
+        "item_3": { "type": "item", "settings": { "name": "Companion App Access", "detail": "For AI tracking and sleep stage reports" } },
+        "gift_1": { "type": "gift", "settings": { "name": "Ergonomic Pillow", "desc": "Contoured memory foam support.", "value": "Free (Value 799,-)" } },
+        "gift_2": { "type": "gift", "settings": { "name": "Travel Cover Bag", "desc": "For protection and easy storage.", "value": "Free (Value 499,-)" } },
+        "spec_1": { "type": "spec", "settings": { "key": "Dimensions", "value": "90 × 200 × 6 cm" } },
+        "spec_2": { "type": "spec", "settings": { "key": "Zones", "value": "Multi-zone air compression" } },
+        "spec_3": { "type": "spec", "settings": { "key": "Heat settings", "value": "Low, medium, high (up to 12h timer)" } },
+        "spec_4": { "type": "spec", "settings": { "key": "Sensor Type", "value": "Non-contact sleep sensor matrix" } },
+        "spec_5": { "type": "spec", "settings": { "key": "App Compatibility", "value": "iOS & Android companion app" } }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "gift_1",
+        "gift_2",
+        "spec_1",
+        "spec_2",
+        "spec_3",
+        "spec_4",
+        "spec_5"
+      ],
+      "settings": {
+        "included_title": "WHAT'S INCLUDED",
+        "gifts_title": "INCLUDED FREE GIFTS:",
+        "specs_title": "TECHNICAL SPECIFICATIONS"
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it fit my current mattress?",
+            "answer": "Yes! The SYNTHERA™ AI Topper is designed to sit on top of any standard mattress. Secure straps keep it firmly in place so you don't need a new bed."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "How does the air massage work?",
+            "answer": "Using silent built-in air compressors, the topper gently inflates and deflates targeted air cells to massage, stretch, and cradle your muscles, helping you release tension before sleep."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the sleep tracking safe?",
+            "answer": "Absolutely. The sleep monitoring uses medical-grade, non-contact sensor grids which emit zero radiation and transmit metrics securely to your app via Bluetooth."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3"
+      ],
+      "settings": {
+        "subtitle": "FREQUENTLY ASKED QUESTIONS",
+        "title": "Questions & Answers"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You might also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "highlights",
+    "programs",
+    "comparison",
+    "whats_included",
+    "faqs",
+    "related-products"
+  ]
+}

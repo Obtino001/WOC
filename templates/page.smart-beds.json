@@ -1,0 +1,230 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Fremtidens",
+        "title_line2": "Sovesystemer & AI Madras",
+        "subtitle": "Premium smart-senge med SOVESYSTEM®, SYNTHERA™ AI madras og topper. Håndlavet i Tyskland med trykaflastende IntelliFoam™.",
+        "btn1_text": "Se Kollektionen",
+        "btn2_text": "Book Rådgivning"
+      }
+    },
+    "philosophy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_1": {
+          "type": "caption",
+          "settings": {
+            "text": "FILOSOFIEN BAG VORES SENGE",
+            "text_style": "subtitle"
+          }
+        },
+        "text_2": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h1",
+            "heading": "Ingen krop er ens.<br>Din seng skal heller ikke være det."
+          }
+        },
+        "text_3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Standardmadrasser tvinger din krop til at tilpasse sig sengen. Vi gør det omvendt. Vores sovesystemer er skræddersyet efter din rygsøjles anatomi, vægtfordeling og personlige præferencer, så du får den perfekte støtte hele natten.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_1",
+        "text_2",
+        "text_3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "categories": {
+      "type": "woc-categories",
+      "settings": {
+        "label": "SMART SLEEP PRODUKTER",
+        "heading": "Udforsk Sovekollektionen"
+      }
+    },
+    "sovesystem_showcase": {
+      "type": "woc-product-showcase",
+      "blocks": {
+        "bullet_1": { "type": "bullet", "settings": { "text": "Håndlavet i Tyskland" } },
+        "bullet_2": { "type": "bullet", "settings": { "text": "Anatomisk tilpasning" } },
+        "bullet_3": { "type": "bullet", "settings": { "text": "15 års fabriksgaranti" } },
+        "bullet_4": { "type": "bullet", "settings": { "text": "Antibakterielt sølv-betræk" } },
+        "step_1": { "type": "step", "settings": { "text": "Book gratis rygscanning & måling i showroom." } },
+        "step_2": { "type": "step", "settings": { "text": "Sengen kalibreres præcist til dine mål." } },
+        "step_3": { "type": "step", "settings": { "text": "Håndbygges på fabrikken i Tyskland." } },
+        "step_4": { "type": "step", "settings": { "text": "White-glove levering og montering." } }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "bullet_4",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "bg_style": "light",
+        "media_position": "right",
+        "badge_text": "SMART SOVESYSTEM",
+        "title": "SOVESYSTEM®",
+        "tagline": "En seng bygget udelukkende til din krop",
+        "country_flag": "🇩🇪",
+        "country_text": "Handmade in Germany",
+        "description_1": "SOVESYSTEM® er ikke en almindelig seng. Det er et patenteret, ergonomisk hvilesystem, hvor hver enkelt zone i bunden og madrassen kalibreres efter din kropsvægt, skulderbredde og rygsøjlekrumning.",
+        "price_text": "Fra 15.000,-",
+        "weekly_price_text": "Eller finansieret rentefrit ugentligt",
+        "btn_text": "Læs mere om Sovesystemet",
+        "process_title": "Få dit sovesystem i 4 enkle trin",
+        "process_note": "Skræddersyet"
+      }
+    },
+    "ai_mattress_showcase": {
+      "type": "woc-product-showcase",
+      "blocks": {
+        "bullet_1": { "type": "bullet", "settings": { "text": "Aktiv luftkompressions-støtte" } },
+        "bullet_2": { "type": "bullet", "settings": { "text": "Automatisk fasthedsjustering (1-5)" } },
+        "bullet_3": { "type": "bullet", "settings": { "text": "Integreret sleep-tracker matrix" } },
+        "bullet_4": { "type": "bullet", "settings": { "text": "Smart app til iOS & Android" } }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "bullet_4"
+      ],
+      "settings": {
+        "bg_style": "dark",
+        "media_position": "left",
+        "badge_text": "AI INTELLIGENS",
+        "title": "SYNTHERA™ AI Madras",
+        "tagline": "Madrassen der lærer din krop at kende",
+        "country_flag": "🤖",
+        "country_text": "AI-Sleep Technology",
+        "description_1": "SYNTHERA™ AI madrassen benytter et avanceret netværk af tryksensorer, der løbende overvåger din sovestilling. Sengen justerer automatisk fastheden og lufttrykket i madrassen under din søvn, så din rygsøjle altid ligger vandret.",
+        "price_text": "Fra 9.999,-",
+        "btn_text": "Se SYNTHERA™ AI Madras"
+      }
+    },
+    "ai_topper_showcase": {
+      "type": "woc-product-showcase",
+      "blocks": {
+        "bullet_1": { "type": "bullet", "settings": { "text": "Passer på alle eksisterende madrasser" } },
+        "bullet_2": { "type": "bullet", "settings": { "text": "7 indbyggede massageprogrammer" } },
+        "bullet_3": { "type": "bullet", "settings": { "text": "3-niveaus beroligende varmeterapi" } },
+        "bullet_4": { "type": "bullet", "settings": { "text": "Dybdegående luftstrækmassage" } }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "bullet_4"
+      ],
+      "settings": {
+        "bg_style": "light",
+        "media_position": "right",
+        "badge_text": "AI TOPPER",
+        "title": "SYNTHERA™ AI Topper",
+        "tagline": "Opgrader din nuværende seng",
+        "country_flag": "🤖",
+        "country_text": "AI-Sleep Technology",
+        "description_1": "Vil du have fordelene ved en smart-seng uden at udskifte din nuværende madras? SYNTHERA™ AI Topper lægges direkte ovenpå din seng og giver dig vibrationsterapi, beroligende varme, og aktiv udstrækning før og under din søvn.",
+        "price_text": "4.999,-",
+        "btn_text": "Se SYNTHERA™ AI Topper"
+      }
+    },
+    "universal_beds_showcase": {
+      "type": "woc-product-showcase",
+      "blocks": {
+        "bullet_1": { "type": "bullet", "settings": { "text": "Dansk produceret kvalitet" } },
+        "bullet_2": { "type": "bullet", "settings": { "text": "Luksuriøst elevationssystem" } },
+        "bullet_3": { "type": "bullet", "settings": { "text": "Klassisk skandinavisk design" } },
+        "bullet_4": { "type": "bullet", "settings": { "text": "Oeko-Tex certificerede tekstiler" } }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "bullet_4"
+      ],
+      "settings": {
+        "bg_style": "dark",
+        "media_position": "left",
+        "badge_text": "KLASSISKE SENGE",
+        "title": "Universal Senge & Elevation",
+        "tagline": "Dansk håndværk og tidløs komfort",
+        "country_flag": "🇩🇰",
+        "country_text": "Made in Denmark",
+        "description_1": "Vores serie af klassiske elevationssenge og kontinentalsenge er bygget på vores værksted i Danmark. Fås i et bredt udvalg af slidstærke møbelstoffer, træsorter og luksuriøse polstringer.",
+        "price_text": "Fra 12.999,-",
+        "btn_text": "Se Universal Senge"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "SOVESYSTEM UNIKE FORDELE",
+        "title": "Hvad gør vores sovesystemer unikke?",
+        "description": "Vi forener videnskabelig ergonomi, førsteklasses europæisk håndværk og moderne intelligens for at sikre dig den absolut bedste søvnkvalitet."
+      }
+    },
+    "testimonials": {
+      "type": "woc-testimonials",
+      "settings": {
+        "label": "KUNDEUDELELSER",
+        "heading": "De sover bedre i dag"
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvorfor skal jeg vælge et sovesystem frem for en almindelig seng?",
+            "answer": "Et sovesystem tilpasses individuelt til dine kropsmål efter en rygscanning. Det sikrer, at din rygsøjle holdes i en ergonomisk korrekt og lige position hele natten, hvilket forebygger og lindrer ryg- og lændesmerter."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvad er leveringstiden på en skræddersyet seng?",
+            "answer": "Da sengen håndbygges specifikt til dine mål på vores tyske fabrik, er den typiske leveringstid 4-6 uger. Vi leverer, samler og finjusterer sengen i dit soveværelse."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "philosophy",
+    "categories",
+    "sovesystem_showcase",
+    "ai_mattress_showcase",
+    "ai_topper_showcase",
+    "universal_beds_showcase",
+    "why_us",
+    "testimonials",
+    "faqs"
+  ]
+}

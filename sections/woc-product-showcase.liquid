@@ -1,0 +1,377 @@
+<section class="py-24 {% if section.settings.bg_style == 'dark' %}bg-charcoal text-foreground border-y border-border{% else %}section-light-warm text-neutral-900 border-t border-neutral-200{% endif %} relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Side: Content or Media depending on layout -->
+        <div class="{% if section.settings.media_position == 'left' %}order-2 lg:order-1{% else %}order-2 lg:order-2{% endif %} flex flex-col justify-center">
+          
+          <!-- Badge -->
+          {%- if section.settings.badge_text != blank -%}
+            <span class="inline-block font-body text-xs uppercase tracking-[0.3em] {% if section.settings.bg_style == 'dark' %}text-gold bg-gold/10{% else %}text-forest bg-forest/10{% endif %} px-4 py-1.5 rounded-full mb-6 max-w-fit">
+              {{ section.settings.badge_text }}
+            </span>
+          {%- endif -%}
+
+          <!-- Title -->
+          <h3 class="woc-display-font text-3xl md:text-4xl font-bold mb-3">
+            {{ section.settings.title }}
+          </h3>
+
+          <!-- Tagline -->
+          {%- if section.settings.tagline != blank -%}
+            <p class="font-display text-lg italic {% if section.settings.bg_style == 'dark' %}text-gold/80{% else %}text-forest/80{% endif %} mb-4">
+              {{ section.settings.tagline }}
+            </p>
+          {%- endif -%}
+
+          <!-- Country Badge -->
+          {%- if section.settings.country_text != blank -%}
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 border {% if section.settings.bg_style == 'dark' %}border-gold/30 bg-gold/10 shadow-[0_0_10px_rgba(212,175,55,0.15)]{% else %}border-forest/20 bg-forest/5{% endif %} rounded-full mb-6 max-w-fit">
+              <span class="text-base">{{ section.settings.country_flag }}</span>
+              <span class="font-body text-[11px] font-semibold uppercase tracking-[0.12em] {% if section.settings.bg_style == 'dark' %}text-gold{% else %}text-forest{% endif %}">{{ section.settings.country_text }}</span>
+            </div>
+          {%- endif -%}
+
+          <!-- Descriptions -->
+          {%- if section.settings.description_1 != blank -%}
+            <p class="font-body text-sm {% if section.settings.bg_style == 'dark' %}text-foreground/75{% else %}text-neutral-600{% endif %} leading-relaxed mb-4">
+              {{ section.settings.description_1 }}
+            </p>
+          {%- endif -%}
+          {%- if section.settings.description_2 != blank -%}
+            <p class="font-body text-sm {% if section.settings.bg_style == 'dark' %}text-foreground/75{% else %}text-neutral-600{% endif %} leading-relaxed mb-8">
+              {{ section.settings.description_2 }}
+            </p>
+          {%- endif -%}
+
+          <!-- Bullet features grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'bullet' -%}
+                <div class="flex items-center gap-3" {{ block.shopify_attributes }}>
+                  <div class="w-8 h-8 rounded-full {% if section.settings.bg_style == 'dark' %}bg-gold/15{% else %}bg-forest/10{% endif %} flex items-center justify-center flex-shrink-0">
+                    <span class="{% if section.settings.bg_style == 'dark' %}text-gold{% else %}text-forest{% endif %} shrink-0 flex items-center justify-center">
+                      {%- if block.settings.custom_icon_svg != blank -%}
+                        {{ block.settings.custom_icon_svg }}
+                      {%- else -%}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      {%- endif -%}
+                    </span>
+                  </div>
+                  <span class="font-body text-sm">{{ block.settings.text }}</span>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
+          <!-- Price & Trustpilot notice -->
+          <div class="flex flex-wrap items-center gap-6 mb-8">
+            {%- if section.settings.price_text != blank -%}
+              <div>
+                <span class="font-body text-xs text-muted-foreground">{{ section.settings.price_label }}</span>
+                <p class="woc-display-font text-3xl font-bold">{{ section.settings.price_text }}</p>
+                {%- if section.settings.weekly_price_text != blank -%}
+                  <p class="font-body text-xs text-gold mt-1">{{ section.settings.weekly_price_text }}</p>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            
+            {%- if section.settings.show_stars -%}
+              <div class="flex items-center gap-1.5">
+                <div class="flex text-[#FBBC05]">
+                  {%- for i in (1..5) -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" /></svg>
+                  {%- endfor -%}
+                </div>
+                <span class="font-body text-xs text-muted-foreground ml-1">{{ section.settings.stars_label }}</span>
+              </div>
+            {%- endif -%}
+          </div>
+
+          <!-- CTA Button -->
+          {%- if section.settings.btn_text != blank -%}
+            <a 
+              href="{{ section.settings.btn_link }}" 
+              class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded max-w-fit"
+            >
+              {{ section.settings.btn_text }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          {%- endif -%}
+
+        </div>
+
+        <!-- Right Side: Media (Image or Video) -->
+        <div class="{% if section.settings.media_position == 'left' %}order-1 lg:order-2{% else %}order-1 lg:order-1{% endif %}">
+          <div class="relative rounded-2xl overflow-hidden shadow-elevated group w-full aspect-[16/10] bg-neutral-900 flex items-center justify-center">
+            
+            {%- if section.settings.video_url != blank -%}
+              <!-- Video Showcase Playable -->
+              <video 
+                id="woc-showcase-video-{{ section.id }}" 
+                src="{{ section.settings.video_url }}" 
+                class="w-full h-full object-cover hidden"
+                controls
+                playsInline
+              ></video>
+              
+              <div 
+                id="woc-showcase-cover-{{ section.id }}"
+                class="absolute inset-0 cursor-pointer"
+                onclick="playWocShowcaseVideo('{{ section.id }}')"
+              >
+                {%- if section.settings.cover_image != blank -%}
+                  <img src="{{ section.settings.cover_image | image_url: width: 1000 }}" alt="{{ section.settings.title }}" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
+                {%- else -%}
+                  <div class="w-full h-full bg-zinc-800 flex items-center justify-center text-gold/30">Afspil Video</div>
+                {%- endif -%}
+                
+                <div class="absolute inset-0 bg-charcoal/20 flex items-center justify-center group-hover:bg-charcoal/10 transition-colors">
+                  <div class="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-charcoal ml-1"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+            {%- elsif section.settings.cover_image != blank -%}
+              <!-- Static Image -->
+              <img src="{{ section.settings.cover_image | image_url: width: 1000 }}" alt="{{ section.settings.title }}" class="w-full h-full object-cover">
+            {%- else -%}
+              <div class="w-full h-full bg-zinc-800 flex items-center justify-center text-gold/30">No Media Configured</div>
+            {%- endif -%}
+
+            {%- if section.settings.corner_text != blank -%}
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 pointer-events-none">
+                <p class="font-body text-xs uppercase tracking-widest text-white/80">
+                  {{ section.settings.corner_text }}
+                </p>
+              </div>
+            {%- endif -%}
+          </div>
+
+          <!-- Optional 4-step process below the media/video -->
+          {%- assign has_steps = false -%}
+          {%- for block in section.blocks -%}{%- if block.type == 'step' -%}{%- assign has_steps = true -%}{%- endif -%}{%- endfor -%}
+          {%- if has_steps -%}
+            <div class="mt-8 p-6 rounded-2xl border {% if section.settings.bg_style == 'dark' %}border-border/30 bg-background/50{% else %}border-neutral-200 bg-white shadow-soft{% endif %}">
+              <h4 class="font-display text-lg font-bold mb-5 flex items-center gap-2">
+                {{ section.settings.process_title }}
+                {%- if section.settings.process_note != blank -%}
+                  <span class="font-body text-[10px] font-normal uppercase tracking-widest text-gold bg-gold/10 px-3 py-1 rounded-full">
+                    {{ section.settings.process_note }}
+                  </span>
+                {%- endif -%}
+              </h4>
+              <div class="grid grid-cols-2 gap-4">
+                {%- assign step_num = 1 -%}
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'step' -%}
+                    <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
+                      <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <!-- Step Icon -->
+                        <span class="text-gold font-body text-xs font-semibold">{{ step_num }}.</span>
+                      </div>
+                      <div>
+                        <p class="font-body text-xs font-semibold text-gold uppercase tracking-wider mb-0.5">Trin {{ step_num }}</p>
+                        <p class="font-body text-sm leading-snug">{{ block.settings.text }}</p>
+                      </div>
+                    </div>
+                    {%- assign step_num = step_num | plus: 1 -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function playWocShowcaseVideo(id) {
+    const cover = document.getElementById('woc-showcase-cover-' + id);
+    const video = document.getElementById('woc-showcase-video-' + id);
+    if (cover && video) {
+      cover.classList.add('hidden');
+      video.classList.remove('hidden');
+      video.play();
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "WOC Product Showcase",
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg_style",
+      "label": "Section Theme Background",
+      "options": [
+        { "value": "light", "label": "Light Warm Theme" },
+        { "value": "dark", "label": "Dark Charcoal Theme" }
+      ],
+      "default": "light"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "Media Column Side",
+      "options": [
+        { "value": "left", "label": "Media Left / Text Right" },
+        { "value": "right", "label": "Media Right / Text Left" }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Showcase Image / Video Cover"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Optional MP4 Video URL"
+    },
+    {
+      "type": "text",
+      "id": "corner_text",
+      "label": "Media Corner Label",
+      "default": "Handcrafted in Europe"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text label",
+      "default": "SMART SOVESYSTEM"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Showcase Title",
+      "default": "SOVESYSTEM®"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Showcase Tagline",
+      "default": "Den ultimative sengeløsning til din krop"
+    },
+    {
+      "type": "text",
+      "id": "country_flag",
+      "label": "Country Flag Emoji",
+      "default": "🇩🇪"
+    },
+    {
+      "type": "text",
+      "id": "country_text",
+      "label": "Country Label Text",
+      "default": "Handmade in Germany"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Main Description Block 1"
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Main Description Block 2"
+    },
+    {
+      "type": "text",
+      "id": "price_label",
+      "label": "Price Prefix Label",
+      "default": "Startpris:"
+    },
+    {
+      "type": "text",
+      "id": "price_text",
+      "label": "Starting Price (e.g. 15.000,-)"
+    },
+    {
+      "type": "text",
+      "id": "weekly_price_text",
+      "label": "Financing text (e.g. Eller fra 240 / uge)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stars",
+      "label": "Show Trustpilot Rating Stars",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "stars_label",
+      "label": "Trustpilot Rating text",
+      "default": "Fremragende på Trustpilot"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button CTA Text",
+      "default": "Læs mere om Sovesystemet"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "process_title",
+      "label": "Process Grid Title",
+      "default": "Processen"
+    },
+    {
+      "type": "text",
+      "id": "process_note",
+      "label": "Process Grid Tag",
+      "default": "Nem & Tryg"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bullet",
+      "name": "Bullet Benefit",
+      "settings": [
+        {
+          "type": "html",
+          "id": "custom_icon_svg",
+          "label": "Custom SVG Icon",
+          "info": "Paste raw SVG XML code here to show a custom icon."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Benefit Label",
+          "default": "Trykaflastende IntelliFoam™"
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "name": "Process Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Step description",
+          "default": "Gratis personlig rådgivning & rygscanning."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Product Showcase"
+    }
+  ]
+}
+{% endschema %}

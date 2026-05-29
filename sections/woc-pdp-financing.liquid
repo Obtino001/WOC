@@ -1,0 +1,161 @@
+<section class="py-20 bg-charcoal border-y border-border relative overflow-hidden">
+  <!-- Background Glow -->
+  <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 50% 50%, hsl(var(--gold)), transparent 60%);"></div>
+
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      {%- if section.settings.label != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+          {{ section.settings.label }}
+        </p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05] mb-6">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <p class="font-body text-sm text-muted-foreground mb-12 max-w-lg mx-auto leading-relaxed">
+          {{ section.settings.description }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <!-- Options Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {%- assign base_price = product.price | default: 1999900 -%}
+      
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'option' -%}
+          <div 
+            class="relative p-8 rounded-2xl bg-[#0F0F0F] border border-border/10 group hover:border-gold/20 transition-all duration-500 hover:scale-[1.01] text-center"
+            {{ block.shopify_attributes }}
+          >
+            <!-- Option Name/Label -->
+            <p class="font-body text-xs uppercase tracking-luxury text-gold mb-4">
+              {{ block.settings.title }}
+            </p>
+
+            <!-- Price Calculation -->
+            {%- assign months = block.settings.months | plus: 0 -%}
+            {%- if months <= 1 -%}
+              <p class="woc-display-font text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {{ base_price | money }}
+              </p>
+            {%- else -%}
+              {%- assign pct = 100 | minus: block.settings.down_payment_percent -%}
+              {%- assign principal = base_price | times: pct | divided_by: 100 -%}
+              {%- assign monthly_payment = principal | divided_by: months -%}
+              <p class="woc-display-font text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {{ monthly_payment | money }}<span class="font-body text-sm font-normal text-muted-foreground">/md.</span>
+              </p>
+            {%- endif -%}
+
+            <!-- Option Detail -->
+            {%- if block.settings.desc != blank -%}
+              <p class="font-body text-xs text-muted-foreground mt-2">{{ block.settings.desc }}</p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC PDP Financing Options",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "FLEXIBEL BETALING"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Invester i dit velvære"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Gør velvære tilgængeligt med vores fleksible finansieringsmuligheder. Start din wellnessrejse i dag."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "option",
+      "name": "Financing Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Option Title (e.g. Betal på én gang)",
+          "default": "Betal på én gang"
+        },
+        {
+          "type": "number",
+          "id": "months",
+          "label": "Payment Terms (months)",
+          "default": 1,
+          "info": "Set to 1 or 0 for full payment at once."
+        },
+        {
+          "type": "number",
+          "id": "down_payment_percent",
+          "label": "Down Payment (%)",
+          "default": 0,
+          "info": "Only applies if terms are greater than 1 month."
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "Option Description",
+          "default": "Fuld betaling — ingen ekstra omkostninger"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC PDP Financing Options",
+      "blocks": [
+        {
+          "type": "option",
+          "settings": {
+            "title": "Betal på én gang",
+            "months": 1,
+            "down_payment_percent": 0,
+            "desc": "Fuld betaling — ingen ekstra omkostninger"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "title": "24 måneder",
+            "months": 24,
+            "down_payment_percent": 0,
+            "desc": "0% udbetaling og 0% renter"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "title": "60 måneder",
+            "months": 60,
+            "down_payment_percent": 20,
+            "desc": "20% udbetaling og lave månedlige rater"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

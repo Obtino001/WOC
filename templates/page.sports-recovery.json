@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Fremskynd Din Restitution &",
+        "title_line2": "Maksimér Din Præstation",
+        "subtitle": "Kompressionsterapi, kraftfulde massagepistoler og infrarøde lysterapi-paneler, der hjælper atleter med at reducere restitutionstid, mindske muskelømhed og forebygge skader.",
+        "btn1_text": "Se Restitution Devices",
+        "btn2_text": "Læs om Lysterapi"
+      }
+    },
+    "categories": {
+      "type": "woc-categories",
+      "settings": {
+        "label": "SPORT & RECOVERY",
+        "heading": "Udforsk Restitutionsserier"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "DOKUMENTERET EFFEKT",
+        "title": "Hvorfor vælge vores sportsrestitution-udstyr?",
+        "description": "Brugt af professionelle sportsudøvere og fysioterapeuter for sin evne til at fremskynde kroppens naturlige genopbygning efter træning."
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor ofte skal man bruge recovery boots?",
+            "answer": "Vi anbefaler 20-30 minutters brug efter træning eller efter en lang arbejdsdag for at dræne affaldsstoffer og øge blodgennemstrømningen."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "why_us",
+    "faqs"
+  ]
+}

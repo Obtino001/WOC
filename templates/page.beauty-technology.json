@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Klinisk Skønhedspleje &",
+        "title_line2": "LED Lys-Teknologi",
+        "subtitle": "Klinisk dokumenterede ansigtsrensere, LED-masker og lysterapi-paneler, der stimulerer kollagenproduktionen, reducerer fine linjer og forbedrer hudens glød.",
+        "btn1_text": "Se Beauty Kollektionen",
+        "btn2_text": "Læs om LED lysterapi"
+      }
+    },
+    "categories": {
+      "type": "woc-categories",
+      "settings": {
+        "label": "BEAUTY & TECH",
+        "heading": "Udforsk Skønhedsteknologi"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "KLINISK DOKUMENTATION",
+        "title": "Hvorfor vælge vores skønhedsteknologi?",
+        "description": "Vores LED- og ultralydsapparater er udviklet i samarbejde med dermatologer for at sikre effektiv, skånsom hudpleje med synlige resultater."
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Er LED lysterapi sikkert for øjnene?",
+            "answer": "Ja, vores LED-skønhedsmasker er CE-godkendte og benytter afskærmede dioder, som er helt sikre at bruge uden beskyttelsesbriller."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "why_us",
+    "faqs"
+  ]
+}

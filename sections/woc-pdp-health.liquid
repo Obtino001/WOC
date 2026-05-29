@@ -1,0 +1,126 @@
+<section class="py-20 bg-charcoal border-y border-border relative overflow-hidden">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+      
+      <!-- Left Column: Benefits Checklist -->
+      <div>
+        <div class="luxury-line mb-8"></div>
+        {%- if section.settings.label != blank -%}
+          <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+            {{ section.settings.label }}
+          </p>
+        {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground mb-6 leading-[1.1]">
+            {{ section.settings.title }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.description != blank -%}
+          <p class="font-body text-sm text-muted-foreground mb-10 leading-relaxed max-w-md">
+            {{ section.settings.description }}
+          </p>
+        {%- endif -%}
+
+        <div class="space-y-4">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'benefit' -%}
+              <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
+                <span class="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5 text-gold">
+                  {%- if block.settings.custom_icon_svg != blank -%}
+                    {{ block.settings.custom_icon_svg }}
+                  {%- else -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {%- endif -%}
+                </span>
+                <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <!-- Right Column: Product/Custom Image -->
+      <div class="relative">
+        <div class="aspect-square bg-[#0F0F0F] rounded-sm overflow-hidden border border-border/10 flex items-center justify-center p-6">
+          {%- assign benefit_image = section.settings.image | default: product.featured_media -%}
+          {%- if benefit_image != blank -%}
+            {{ benefit_image | image_url: width: 800 | image_tag: class: 'w-full h-full object-contain p-4' }}
+          {%- else -%}
+            <svg class="w-20 h-20 text-gold/20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          {%- endif -%}
+        </div>
+        <!-- Gold Decorative Corners -->
+        <div class="absolute -top-3 -right-3 w-16 h-16 border-t-2 border-r-2 border-gold/30"></div>
+        <div class="absolute -bottom-3 -left-3 w-16 h-16 border-b-2 border-l-2 border-gold/30"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC PDP Health Benefits",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "KLINISK DOKUMENTERET"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Reelle Sundhedsfordele"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Støttet af klinisk forskning og godkendt af fysioterapeuter samt sundhedsfaglige eksperter i Skandinavien."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Benefit Image",
+      "info": "Leave empty to display the product's main image."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Benefit Text",
+          "default": "Reducerer kroniske rygsmerter og nakkespændinger"
+        },
+        {
+          "type": "html",
+          "id": "custom_icon_svg",
+          "label": "Custom SVG Checkmark (optional)",
+          "info": "Paste raw SVG XML code here to override the default checkmark icon."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC PDP Health Benefits",
+      "blocks": [
+        { "type": "benefit", "settings": { "text": "Reducerer kroniske rygsmerter og nakkespændinger" } },
+        { "type": "benefit", "settings": { "text": "Forbedrer blodcirkulationen med op til 30%" } },
+        { "type": "benefit", "settings": { "text": "Sænker kortisolniveauet og mindsker stress" } },
+        { "type": "benefit", "settings": { "text": "Fremmer dybere og mere restituerende søvn" } },
+        { "type": "benefit", "settings": { "text": "Øger ledmobilitet og smidighed i hele kroppen" } },
+        { "type": "benefit", "settings": { "text": "Accelererer muskelrestitution efter træning" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

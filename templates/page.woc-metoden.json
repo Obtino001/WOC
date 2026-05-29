@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Vores Videnskab &",
+        "title_line2": "WOC METODEN®",
+        "subtitle": "En holistisk tilgang til smertereduktion og velvære. Læs hvordan vores kombination af infrarød varmeterapi, trykmassage og ergonomi ændrer liv.",
+        "btn1_text": "Læs Metoden",
+        "btn2_text": "Se vore produkter"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "TERAPEUTISK METODE",
+        "title": "De 3 søjler i WOC Metoden",
+        "description": "Infrarød dybdevarme, anatomisk zone-massage og intelligens tilpasset din krops naturlige cirkulation."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "why_us"
+  ]
+}

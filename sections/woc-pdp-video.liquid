@@ -1,0 +1,111 @@
+<section class="py-20 lg:py-28 bg-charcoal border-y border-border relative overflow-hidden">
+  <div class="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <div class="luxury-line mx-auto mb-6"></div>
+      {%- if section.settings.label != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">
+          {{ section.settings.label }}
+        </p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="woc-display-font text-3xl md:text-4xl font-light text-foreground">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+    </div>
+
+    <!-- Video Aspect Ratio Container -->
+    <div class="relative rounded-2xl overflow-hidden border border-border/10 bg-[#0F0F0F] aspect-video shadow-2xl">
+      {%- assign video_id = section.settings.video_url.id | default: 'A2orbjhs6iw' -%}
+      {%- assign video_provider = section.settings.video_url.type | default: 'youtube' -%}
+      
+      {%- if section.settings.cover_image != blank -%}
+        <!-- Performant Click-to-Play Video Cover -->
+        <div 
+          class="relative w-full h-full group cursor-pointer"
+          onclick="
+            const container = this;
+            {%- if video_provider == 'youtube' -%}
+              container.innerHTML = `<iframe src='https://www.youtube.com/embed/{{ video_id }}?autoplay=1&rel=0&modestbranding=1' class='absolute inset-0 w-full h-full' allow='autoplay; encrypted-media' allowfullscreen frameborder='0'></iframe>`;
+            {%- else -%}
+              container.innerHTML = `<iframe src='https://player.vimeo.com/video/{{ video_id }}?autoplay=1' class='absolute inset-0 w-full h-full' allow='autoplay; encrypted-media' allowfullscreen frameborder='0'></iframe>`;
+            {%- endif -%}
+          "
+        >
+          <!-- Cover Image -->
+          {{ section.settings.cover_image | image_url: width: 1500 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105' }}
+          
+          <!-- Play Button Overlay -->
+          <div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors duration-500 group-hover:bg-black/45">
+            <div class="w-20 h-20 rounded-full bg-gold/90 text-background flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110">
+              <!-- Play Icon SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 translate-x-0.5">
+                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      {%- else -%}
+        <!-- Simple direct iframe loading -->
+        {%- if video_provider == 'youtube' -%}
+          <iframe 
+            src="https://www.youtube.com/embed/{{ video_id }}?rel=0&modestbranding=1" 
+            class="absolute inset-0 w-full h-full" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen 
+            frameborder="0"
+          ></iframe>
+        {%- else -%}
+          <iframe 
+            src="https://player.vimeo.com/video/{{ video_id }}" 
+            class="absolute inset-0 w-full h-full" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen 
+            frameborder="0"
+          ></iframe>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC PDP Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "SE PRODUKTET I AKTION"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Oplev produktet"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=A2orbjhs6iw",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Lazy-Load Cover Image",
+      "info": "Upload an image to overlay the video container before it plays. Recommended for page performance."
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC PDP Video"
+    }
+  ]
+}
+{% endschema %}

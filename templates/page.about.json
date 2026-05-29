@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Skaberen af Nordisk",
+        "title_line2": "Hjemme-Wellness",
+        "subtitle": "Historien bag World of Comfort — fra en enkelt idé om bedre smertelindring til over 20 showrooms på tværs af Europa og 50.000 glade kunder.",
+        "btn1_text": "Læs Vores Historie",
+        "btn2_text": "Find Showroom"
+      }
+    },
+    "trust": {
+      "type": "woc-trust",
+      "settings": {
+        "google_score": "4.9",
+        "google_count": "1.200",
+        "trustpilot_score": "4.7",
+        "trustpilot_count": "1.400"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "MISSION & VISION",
+        "title": "Hvad vi kæmper for hver dag",
+        "description": "Vores mission er at gøre avanceret, terapeutisk wellness-teknologi tilgængelig i ethvert skandinavisk hjem."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust",
+    "why_us"
+  ]
+}
