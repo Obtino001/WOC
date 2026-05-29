@@ -1,40 +1,19 @@
 {
   "sections": {
-    "cart-items": {
-      "type": "main-cart-items",
+    "main": {
+      "type": "woc-cart-page",
       "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "page_title": "Din indkøbskurv",
+        "empty_title": "Din kurv er tom",
+        "empty_desc": "Tilføj produkter for at komme i gang med din wellness-rejse.",
+        "continue_shopping_label": "Fortsæt med at shoppe",
+        "checkout_label": "Gå til sikker kasse",
+        "enable_promo_banner": true,
+        "bundle_title": "Mangler du noget? Køb sammen & spar"
       }
-    },
-    "cart-footer": {
-      "type": "main-cart-footer",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      },
-      "blocks": {
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "subtotal",
-        "buttons"
-      ]
     }
   },
   "order": [
-    "cart-items",
-    "cart-footer"
+    "main"
   ]
 }
