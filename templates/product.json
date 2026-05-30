@@ -29,6 +29,13 @@
             "swatch_shape": "circle"
           }
         },
+        "feature_list_kNjYmM": {
+          "type": "feature_list",
+          "settings": {
+            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
+            "custom_icon_svg": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -55,6 +62,7 @@
         "title",
         "price",
         "variant_picker",
+        "feature_list_kNjYmM",
         "buy_buttons",
         "trust_badges_N7QkXf"
       ],
