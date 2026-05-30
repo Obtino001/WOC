@@ -12,13 +12,13 @@
     "hero": {
       "type": "woc-hero",
       "settings": {
-        "hero_label": "PREMIUM S�VN-TEKNOLOGI",
-        "title_line1": "Fremtidens",
-        "title_line2": "Smart-Senge & AI Madras",
-        "subtitle": "Premium smart-senge med SOVESYSTEM�, SYNTHERA� AI madras og topper. H�ndlavet i Tyskland med patenteret trykaflastning.",
-        "btn1_text": "Se Kollektionen",
+        "hero_label": "Bespoke Sleeping Systems",
+        "title_line1": "No Two Bodies",
+        "title_line2": "Are the Same",
+        "subtitle": "Why should your bed be mass-produced?",
+        "btn1_text": "Discover the Collection",
         "btn1_url": "#collection",
-        "btn2_text": "Hvordan det fungerer",
+        "btn2_text": "How it Works",
         "btn2_url": "#process"
       }
     },
@@ -32,13 +32,13 @@
         "text_2": {
           "type": "heading",
           "settings": {
-            "heading": "Ingen krop er ens. Din seng skal heller ikke v�re det."
+            "heading": "A bed should be as unique as the person sleeping in it."
           }
         },
         "text_3": {
           "type": "text",
           "settings": {
-            "text": "<p>Standardmadrasser tvinger din krop til at tilpasse sig sengen. Vi g�r det omvendt. Vores sovesystemer er skr�ddersyet efter din rygs�jles anatomi, v�gtfordeling og personlige pr�ferencer, s� du f�r den perfekte st�tte hele natten.</p>"
+            "text": "<p>Mass-produced mattresses are designed for the average body. But there is no such thing as an average body. Your spinal curvature, weight distribution, shoulder width, and sleeping position are entirely your own.</p><p>That is why we build every sleeping system following a personal body analysis � we measure, scan, and consult before a single component is selected. The result is a bed that fits you, not the other way around.</p>"
           }
         }
       },
@@ -47,7 +47,12 @@
         "text_2",
         "text_3"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     },
     "categories": {
       "type": "woc-categories",
@@ -55,24 +60,25 @@
         "cat_1": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/sengebillede-1024x620.jpg",
             "title": "SOVESYSTEM�",
-            "subtitle": "Skr�ddersyet efter dine m�l",
+            "subtitle": "The Original Bespoke Sleeping System",
             "link": "#sovesystem"
           }
         },
         "cat_2": {
           "type": "category",
           "settings": {
-            "title": "SYNTHERA� AI Madras",
-            "subtitle": "Intelligent trykaflastning",
+            "title": "SYNTHERA� AI MATTRESS",
+            "subtitle": "AI-Driven Firmness. 5-Zone Air Massage. Cooling Comfort.",
             "link": "#ai-mattress"
           }
         },
         "cat_3": {
           "type": "category",
           "settings": {
-            "title": "SYNTHERA� AI Topper",
-            "subtitle": "G�r din nuv�rende seng smart",
+            "title": "SYNTHERA� AI TOPPER",
+            "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
             "link": "#ai-topper"
           }
         },
@@ -80,15 +86,15 @@
           "type": "category",
           "settings": {
             "title": "Universal Beds",
-            "subtitle": "Klassiske kontinentalsenge",
+            "subtitle": "Quality beds for every lifestyle",
             "link": "#universal-beds"
           }
         },
         "cat_5": {
           "type": "category",
           "settings": {
-            "title": "Dyner & Puder",
-            "subtitle": "Premium sovetilbeh�r",
+            "title": "Duvets & Pillows",
+            "subtitle": "Premium bedding accessories from our own brand",
             "link": "#duvets-pillows"
           }
         }
@@ -100,7 +106,10 @@
         "cat_4",
         "cat_5"
       ],
-      "settings": {}
+      "settings": {
+        "label": "The Collection",
+        "description": "From bespoke sleeping systems to premium duvets and pillows � everything you need for the perfect night's sleep."
+      }
     },
     "sovesystem_showcase": {
       "type": "woc-product-showcase",
@@ -108,32 +117,94 @@
         "bullet_1": {
           "type": "bullet",
           "settings": {
-            "text": "H�ndlavet i Tyskland"
+            "text": "Personal Body Scanning"
           }
         },
         "bullet_2": {
           "type": "bullet",
           "settings": {
-            "text": "Anatomisk tilpasning"
+            "text": "1:1 Custom Made"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Oscillation Massage"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Silver Antibacterial"
+          }
+        },
+        "bullet_5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Hypoallergenic Materials"
+          }
+        },
+        "bullet_6": {
+          "type": "bullet",
+          "settings": {
+            "text": "Aloe Vera & Carbon-Z"
           }
         },
         "step_1": {
           "type": "step",
           "settings": {
-            "text": "Book gratis rygscanning i showroom."
+            "text": "Book free body analysis"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "text": "Consultation and needs analysis"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "text": "Body measurement and scanning"
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "text": "Personal recommendation and solution"
           }
         }
       },
       "block_order": [
         "bullet_1",
         "bullet_2",
-        "step_1"
+        "bullet_3",
+        "bullet_4",
+        "bullet_5",
+        "bullet_6",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
       ],
       "settings": {
+        "bg_style": "light",
+        "corner_text": "Handcrafted in Europe",
+        "badge_text": "Our Signature",
         "title": "SOVESYSTEM�",
-        "tagline": "En seng bygget udelukkende til din krop",
-        "description_1": "SOVESYSTEM� er ikke en almindelig seng. Det er et patenteret, ergonomisk hvilesystem, hvor hver enkelt zone i bunden og madrassen kalibreres efter din kropsv�gt, skulderbredde og rygs�jlekrumning.",
-        "btn_text": "L�s mere om Sovesystemet"
+        "tagline": "The Original Bespoke Sleeping System",
+        "country_flag": "????",
+        "country_text": "Handmade in Germany",
+        "description_1": "Developed by a leading German sleep professor, SOVESYSTEM� is our signature product � a fully custom-built sleeping system created following a personal body analysis and consultation. Every component is selected based on your unique body measurements, from the spring frame to the mattress core, topper, duvet, and antibacterial silver treatments.",
+        "description_2": "SOVESYSTEM� is designed as a tailored sleep solution that supports the body's natural alignment and evenly distributes pressure throughout the night.",
+        "price_label": "From",
+        "price_text": "�1,650",
+        "weekly_price_text": "or from �6 / week",
+        "show_stars": true,
+        "stars_label": "4.7 (Trustpilot)",
+        "btn_text": "Book Free Body Analysis",
+        "process_title": "The Process",
+        "process_note": "4 steps"
       }
     },
     "ai_mattress_showcase": {
@@ -142,25 +213,58 @@
         "bullet_1": {
           "type": "bullet",
           "settings": {
-            "text": "Aktiv luftkompressions-st�tte"
+            "text": "AI Firmness Adjustment (1-10)"
           }
         },
-        "step_1": {
-          "type": "step",
+        "bullet_2": {
+          "type": "bullet",
           "settings": {
-            "text": "Bestil online og f� gratis levering."
+            "text": "5-Zone Air Massage"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "4 Massage Programmes"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "3 Intensity Levels"
+          }
+        },
+        "bullet_5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Cool-Touch Ice Silk"
+          }
+        },
+        "bullet_6": {
+          "type": "bullet",
+          "settings": {
+            "text": "Slow-Rebound Memory Foam"
           }
         }
       },
       "block_order": [
         "bullet_1",
-        "step_1"
+        "bullet_2",
+        "bullet_3",
+        "bullet_4",
+        "bullet_5",
+        "bullet_6"
       ],
       "settings": {
-        "title": "SYNTHERA� AI Madras",
-        "tagline": "Fremtidens intelligens i dit sovev�relse",
-        "description_1": "SYNTHERA� AI Madras er udstyret med hundredvis af sensorer der overv�ger dit s�vnm�nster, mens integrerede luftceller automatisk justerer fastheden gennem natten.",
-        "btn_text": "Se SYNTHERA� Madras"
+        "bg_style": "light",
+        "corner_text": "NEW 2026",
+        "badge_text": "World Premiere",
+        "title": "SYNTHERA� AI MATTRESS",
+        "tagline": "AI-Driven Firmness. 5-Zone Air Massage. Cooling Comfort.",
+        "description_1": "The world's first mattress that adapts to you in real-time. The SYNTHERA� AI Mattress combines advanced AI pressure sensing with 5-zone air compression massage and a cooling Ice Silk surface. Lie down, press one button � and the mattress automatically scans your body pressure and recommends the ideal firmness from 1-10. You can also manually adjust the firmness exactly as you wish.",
+        "price_label": "90 � 200 � 27 cm",
+        "price_text": "�1,980",
+        "btn_text": "Add to basket"
       }
     },
     "ai_topper_showcase": {
@@ -169,25 +273,59 @@
         "bullet_1": {
           "type": "bullet",
           "settings": {
-            "text": "Passer til alle senge"
+            "text": "7 Massage Programmes"
           }
         },
-        "step_1": {
-          "type": "step",
+        "bullet_2": {
+          "type": "bullet",
           "settings": {
-            "text": "Klar til brug p� 5 minutter."
+            "text": "3-Level Heat"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "AI Sleep Tracking"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Multi-Zone Air Massage"
+          }
+        },
+        "bullet_5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Fits all 90�200"
+          }
+        },
+        "bullet_6": {
+          "type": "bullet",
+          "settings": {
+            "text": "Remote Incl."
           }
         }
       },
       "block_order": [
         "bullet_1",
-        "step_1"
+        "bullet_2",
+        "bullet_3",
+        "bullet_4",
+        "bullet_5",
+        "bullet_6"
       ],
       "settings": {
-        "title": "SYNTHERA� AI Topmadras",
-        "tagline": "Opgrader din nuv�rende seng",
-        "description_1": "F� gl�de af SYNTHERA� AI teknologi uden at skifte hele din seng. Topmadrassen l�gges blot ovenp� din eksisterende madras, hvorefter den straks begynder at afl�se og tilpasse sig din krop.",
-        "btn_text": "Se SYNTHERA� Topmadras"
+        "bg_style": "light",
+        "corner_text": "NEW 2026",
+        "badge_text": "Upgrade Your Sleep",
+        "title": "SYNTHERA� AI TOPPER",
+        "tagline": "Transform any mattress into an intelligent massage and heat surface.",
+        "description_1": "Place it on top of your existing mattress � no renovation required. The SYNTHERA� AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat. Designed for relaxation, stress relief, and faster sleep onset.",
+        "price_label": "90 � 200 cm",
+        "price_text": "�550",
+        "weekly_price_text": "Save �110",
+        "btn_text": "Add to basket"
       }
     },
     "universal_beds_showcase": {
@@ -196,25 +334,43 @@
         "bullet_1": {
           "type": "bullet",
           "settings": {
-            "text": "Dansk design"
+            "text": "101-night trial"
           }
         },
-        "step_1": {
-          "type": "step",
+        "bullet_2": {
+          "type": "bullet",
           "settings": {
-            "text": "V�lg din fasthed og farve."
+            "text": "Free delivery"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Danish-made"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "15-year warranty"
           }
         }
       },
       "block_order": [
         "bullet_1",
-        "step_1"
+        "bullet_2",
+        "bullet_3",
+        "bullet_4"
       ],
       "settings": {
+        "bg_style": "light",
+        "badge_text": "Universal Beds",
         "title": "Universal Beds",
-        "tagline": "Klassisk design m�der moderne komfort",
-        "description_1": "Foretr�kker du en mere traditionel sengel�sning uden at g� p� kompromis med kvaliteten? Universal Beds er vores bud p� den perfekte kontinentalseng, designet i Danmark.",
-        "btn_text": "Se Universal Beds"
+        "tagline": "Quality beds for every lifestyle",
+        "country_flag": "????",
+        "country_text": "Made in Denmark",
+        "description_1": "Not everyone needs a bespoke sleeping system. Our Universal Beds collection offers premium quality beds with advanced materials � from memory foam to pocket springs � to suit every budget and bedroom.",
+        "btn_text": "View Collection"
       }
     },
     "duvets_pillows": {
@@ -227,28 +383,56 @@
         "text_2": {
           "type": "heading",
           "settings": {
-            "heading": "Dyner & Puder"
+            "heading": "Duvets & Pillows"
           }
         },
         "text_3": {
           "type": "text",
           "settings": {
-            "text": "<p>Premium dyner og puder fra vores eget brand � h�ndplukket kvalitet med dunfyld for den perfekte nattes�vn.</p>"
+            "text": "<p>Premium bedding accessories from our own brand � handpicked quality with down filling for the perfect night's sleep.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Collection",
+            "button_link": "/collections/bedding"
           }
         }
       },
       "block_order": [
         "text_1",
         "text_2",
-        "text_3"
+        "text_3",
+        "button"
       ],
       "settings": {}
     },
-    "why_us": {
-      "type": "woc-why-us",
+    "comparison": {
+      "type": "multicolumn",
+      "blocks": {
+        "col_1": {
+          "type": "column",
+          "settings": {
+            "title": "Standard Mattress",
+            "text": "<p>Mass-produced<br>Average body design<br>Standard firmness</p>"
+          }
+        },
+        "col_2": {
+          "type": "column",
+          "settings": {
+            "title": "World of Comfort",
+            "text": "<p>1:1 Custom Made<br>Personal body scanning<br>AI-driven or bespoke firmness</p>"
+          }
+        }
+      },
+      "block_order": [
+        "col_1",
+        "col_2"
+      ],
       "settings": {
-        "title": "What Makes Our Sleep Systems Unique",
-        "description": "We don't just sell beds � we engineer personalised sleep solutions backed by German craftsmanship, AI technology, and decades of sleep science."
+        "title": "Standard Mattress vs World of Comfort",
+        "background_style": "none"
       }
     },
     "faqs": {
@@ -257,26 +441,41 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "Kan sengen tilpasses hvis min v�gt �ndrer sig?",
-            "answer": "Ja! SOVESYSTEM� lader dig udskifte individuelle zoner, og SYNTHERA� tilpasser sig automatisk."
+            "question": "Can the bed be adjusted if my weight changes?",
+            "answer": "Yes! SOVESYSTEM� allows you to replace individual zones, and SYNTHERA� adapts automatically."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer a trial period?",
+            "answer": "We offer thorough consultation in our showrooms, and a 101-night trial on selected models like Universal Beds."
           }
         }
       },
       "block_order": [
-        "faq_1"
+        "faq_1",
+        "faq_2"
       ],
       "settings": {
-        "subtitle": "F� svar p� de mest almindelige sp�rgsm�l om vores smart-senge.",
-        "title": "Ofte stillede sp�rgsm�l"
+        "subtitle": "Everything you need to know about our smart beds.",
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "title": "What Makes Our Sleep Systems Unique",
+        "description": "We don't just sell beds � we engineer personalised sleep solutions backed by German craftsmanship, AI technology, and decades of sleep science."
       }
     },
     "bottom_cta": {
       "type": "woc-bottom-cta",
       "settings": {
-        "title_line1": "Oplev fremtidens s�vn.",
-        "title_line2": "Find din perfekte seng.",
-        "btn1_text": "Book en gratis rygscanning",
-        "btn2_text": "Se showrooms"
+        "title_line1": "Experience the future of sleep.",
+        "title_line2": "Find your perfect bed.",
+        "btn1_text": "Book free body analysis",
+        "btn2_text": "Find showroom"
       }
     }
   },
@@ -289,6 +488,7 @@
     "ai_topper_showcase",
     "universal_beds_showcase",
     "duvets_pillows",
+    "comparison",
     "faqs",
     "why_us",
     "bottom_cta"
