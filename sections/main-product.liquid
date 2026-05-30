@@ -1,6 +1,6 @@
 <product-info
   id="MainProduct-{{ section.id }}"
-  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
+  class="section-{{ section.id }}-padding bg-charcoal text-foreground"
   data-section="{{ section.id }}"
   data-product-id="{{ product.id }}"
   data-update-url="true"
@@ -45,6 +45,58 @@
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
+
+  <style>
+    /* Custom Styling for Product Info to match Dark Luxury Theme */
+    .product__info-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    /* Variant Swatch Styling Override */
+    .product-form__input input[type=radio] + label {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      color: var(--color-foreground);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+    }
+    .product-form__input input[type=radio]:checked + label {
+      border-color: #d8b261; /* Gold */
+      background-color: rgba(216, 178, 97, 0.1);
+      color: #d8b261;
+    }
+    
+    /* Price Styling Override */
+    .price .price-item {
+      font-family: var(--font-heading-family);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--color-foreground);
+    }
+    .price .price__regular, .price .price__sale {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* General text coloring */
+    .product__text.subtitle {
+      color: #d8b261; /* Gold */
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .product__text.caption-with-letter-spacing {
+      color: var(--color-foreground);
+      opacity: 0.8;
+    }
+  </style>
 
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
@@ -97,22 +149,22 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
-                  <a href="{{ product.url }}" class="product__title">
-                    <h2 class="h1">
-                      {{ product.title | escape }}
-                    </h2>
-                  </a>
+                <div class="product__title mb-2" {{ block.shopify_attributes }}>
+                  <h1 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight">{{ product.title | escape }}</h1>
                 </div>
               {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }} class="mb-4">
                   {%- render 'price',
                     product: product,
                     use_variant: true,
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
+                  {%- if block.settings.subprice_text != blank -%}
+                    <div class="mt-1 font-body text-xs text-gold/80">
+                      {{ block.settings.subprice_text }}
+                    </div>
+                  {%- endif -%}
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -485,6 +537,47 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'feature_list' -%}
+                <div class="product__feature-list my-6" {{ block.shopify_attributes }}>
+                  {%- if block.settings.features != blank -%}
+                    {%- assign features = block.settings.features | split: ',' -%}
+                    <ul class="space-y-3 font-body text-xs text-foreground font-semibold">
+                      {%- for feature in features -%}
+                        <li class="flex items-start gap-3">
+                          <span class="text-gold mt-0.5 shrink-0">
+                            {%- if block.settings.custom_icon_svg != blank -%}
+                              {{ block.settings.custom_icon_svg }}
+                            {%- else -%}
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            {%- endif -%}
+                          </span>
+                          <span class="leading-snug">{{ feature | strip }}</span>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+              {%- when 'trust_badges' -%}
+                <div class="product__trust-badges flex items-center justify-between gap-2 mt-6 pt-6 border-t border-white/5" {{ block.shopify_attributes }}>
+                  <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
+                    <span class="text-gold shrink-0">
+                      {{ block.settings.icon_1_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>' }}
+                    </span>
+                    <span>{{ block.settings.text_1 }}</span>
+                  </div>
+                  <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
+                    <span class="text-gold shrink-0">
+                      {{ block.settings.icon_2_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>' }}
+                    </span>
+                    <span>{{ block.settings.text_2 }}</span>
+                  </div>
+                  <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
+                    <span class="text-gold shrink-0">
+                      {{ block.settings.icon_3_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>' }}
+                    </span>
+                    <span>{{ block.settings.text_3 }}</span>
+                  </div>
+                </div>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -787,7 +880,15 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "subprice_text",
+          "label": "Sub-price Text",
+          "default": "or from £22/week"
+        }
+      ]
     },
     {
       "type": "sku",
@@ -925,6 +1026,27 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button (Book Demo)"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_demo_button",
+          "label": "Show Demo Button",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "demo_text",
+          "label": "Demo Button Text",
+          "default": "Book a Demo"
+        },
+        {
+          "type": "url",
+          "id": "demo_link",
+          "label": "Demo Button Link",
         }
       ]
     },
@@ -2084,6 +2206,75 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "feature_list",
+      "name": "Feature List",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features",
+          "info": "Comma-separated list of features. E.g. 'Dual System Rollers, Advanced 3D Massage, AI Body Scanning'",
+          "default": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning"
+        },
+        {
+          "type": "html",
+          "id": "custom_icon_svg",
+          "label": "Custom Checkmark SVG Icon"
+        }
+      ]
+    },
+    {
+      "type": "trust_badges",
+      "name": "Trust Badges",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Badge 1"
+        },
+        {
+          "type": "text",
+          "id": "text_1",
+          "label": "Text",
+          "default": "Free White-Glove Delivery"
+        },
+        {
+          "type": "html",
+          "id": "icon_1_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "header",
+          "content": "Badge 2"
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "Text",
+          "default": "5-Year Warranty"
+        },
+        {
+          "type": "html",
+          "id": "icon_2_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "header",
+          "content": "Badge 3"
+        },
+        {
+          "type": "text",
+          "id": "text_3",
+          "label": "Text",
+          "default": "Flexible Monthly Payments"
+        },
+        {
+          "type": "html",
+          "id": "icon_3_svg",
+          "label": "Icon SVG"
         }
       ]
     }
