@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_cxx9Wc": {
+          "type": "text",
+          "settings": {
+            "text": "Metin bloku",
+            "text_style": "body"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -71,6 +78,7 @@
         }
       },
       "block_order": [
+        "text_cxx9Wc",
         "title",
         "price",
         "rating_98edkt",
