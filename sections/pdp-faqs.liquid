@@ -23,7 +23,11 @@
             <summary class="flex justify-between items-center p-4 font-body text-xs font-bold text-neutral-800 uppercase cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
               <span>{{ block.settings.question }}</span>
               <span class="transition-transform duration-300 group-open:rotate-180 text-neutral-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                {%- if section.settings.accordion_icon_svg != blank -%}
+                  {{ section.settings.accordion_icon_svg }}
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                {%- endif -%}
               </span>
             </summary>
             <div class="px-4 pb-4 font-body text-xs text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
@@ -75,6 +79,11 @@
       "id": "title",
       "label": "Section Title",
       "default": "Spørgsmål & Svar"
+    },
+    {
+      "type": "html",
+      "id": "accordion_icon_svg",
+      "label": "Accordion Arrow SVG Icon"
     }
   ],
   "blocks": [
