@@ -28,38 +28,111 @@
   </div>
 
   <!-- Content Container -->
-  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full">
-    <div class="max-w-3xl">
-      <div class="luxury-line mb-8"></div>
-      
-      <h1 class="woc-display-font text-5xl md:text-6xl lg:text-8xl font-light text-foreground leading-[0.95] mb-6">
-        {{ section.settings.title_line1 }}
-        <span class="block italic text-gold font-light mt-2">{{ section.settings.title_line2 }}</span>
-      </h1>
-      
-      <p class="font-body text-sm font-light text-foreground/80 mb-10 max-w-md leading-relaxed tracking-wide">
-        {{ section.settings.subtitle }}
-      </p>
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full pt-40">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 w-full">
+      <div class="max-w-3xl">
+        <div class="luxury-line mb-8"></div>
+        
+        {%- if section.settings.hero_label != blank -%}
+          <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-6">
+            {{ section.settings.hero_label }}
+          </p>
+        {%- endif -%}
 
-      <div class="flex flex-col sm:flex-row gap-4">
-        {%- if section.settings.btn1_text != blank -%}
-          <a
-            href="{{ section.settings.btn1_url }}"
-            class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
-          >
-            {{ section.settings.btn1_text }}
-          </a>
+        <h1 class="woc-display-font text-4xl md:text-5xl lg:text-7xl font-light text-foreground leading-[1.05] mb-6">
+          {{ section.settings.title_line1 }}
+          {%- if section.settings.title_line2 != blank -%}
+            <br/><span class="italic text-gold font-light mt-2">{{ section.settings.title_line2 }}</span>
+          {%- endif -%}
+        </h1>
+        
+        <p class="font-body text-base md:text-lg text-foreground/70 leading-relaxed mb-8 max-w-xl">
+          {{ section.settings.subtitle }}
+        </p>
+
+        {%- if section.settings.show_reviews -%}
+          <div class="flex items-center gap-6 mb-10">
+            <div class="flex items-center gap-2">
+              <div class="flex">
+                {%- for i in (1..5) -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {%- endfor -%}
+              </div>
+              <span class="font-display text-2xl font-bold text-white">4.9</span>
+              <span class="font-body text-xs text-white/50">/5</span>
+            </div>
+            <div class="h-6 w-px bg-white/20"></div>
+            <div class="flex items-center gap-3">
+              <span class="font-body text-[10px] text-white/60 uppercase tracking-wider">Google Reviews</span>
+              <span class="font-body text-[10px] text-white/60">·</span>
+              <span class="font-body text-[10px] text-white/60 uppercase tracking-wider">Trustpilot</span>
+            </div>
+          </div>
         {%- endif -%}
-        {%- if section.settings.btn2_text != blank -%}
-          <a
-            href="{{ section.settings.btn2_url }}"
-            class="inline-flex items-center justify-center px-8 py-3.5 border border-white hover:bg-white hover:text-charcoal text-white font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
-          >
-            {{ section.settings.btn2_text }}
-          </a>
-        {%- endif -%}
+
+        <div class="flex flex-col sm:flex-row gap-4 flex-wrap">
+          {%- if section.settings.btn1_text != blank -%}
+            <a
+              href="{{ section.settings.btn1_url }}"
+              class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)] animate-pulse-subtle gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              {{ section.settings.btn1_text }}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.btn2_text != blank -%}
+            <a
+              href="{{ section.settings.btn2_url }}"
+              class="inline-flex items-center justify-center px-10 py-3.5 border border-white hover:bg-white hover:text-charcoal text-white font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
+            >
+              {{ section.settings.btn2_text }}
+            </a>
+          {%- endif -%}
+        </div>
       </div>
+
+      {%- if section.settings.expert_name != blank -%}
+        <div class="hidden lg:block max-w-xs animate-fade-in-right delay-500">
+          <div class="bg-charcoal/60 backdrop-blur-md border border-white/10 rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border border-gold/30 shrink-0">
+                {%- if section.settings.expert_image != blank -%}
+                  <img src="{{ section.settings.expert_image | image_url: width: 100 }}" alt="{{ section.settings.expert_name }}" class="w-full h-full object-cover">
+                {%- else -%}
+                  <div class="w-full h-full bg-white/10"></div>
+                {%- endif -%}
+              </div>
+              <div>
+                <p class="font-body text-xs font-semibold text-white">{{ section.settings.expert_name }}</p>
+                <p class="font-body text-[10px] text-white/50">{{ section.settings.expert_title }}</p>
+              </div>
+            </div>
+            <p class="font-display text-sm italic text-white/80 leading-relaxed">
+              "{{ section.settings.expert_quote }}"
+            </p>
+            <div class="flex items-center gap-1 mt-3">
+              {%- for i in (1..5) -%}
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              {%- endfor -%}
+              <span class="font-body text-[9px] text-white/40 ml-1">Lægefagligt anbefalet</span>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
     </div>
+
+    <!-- Stats row underneath -->
+    {%- assign stats_blocks = section.blocks | where: 'type', 'stat' -%}
+    {%- if stats_blocks.size > 0 -%}
+      <div class="mt-12 flex items-center gap-8 animate-fade-in delay-700">
+        {%- for block in stats_blocks -%}
+          <div class="text-center" {{ block.shopify_attributes }}>
+            <p class="font-display text-xl font-bold text-gold">{{ block.settings.stat_value }}</p>
+            <p class="font-body text-[9px] text-white/50 uppercase tracking-wider">{{ block.settings.stat_label }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
   </div>
 
   <!-- Bottom USP Bar -->
@@ -120,6 +193,12 @@
     },
     {
       "type": "text",
+      "id": "hero_label",
+      "label": "Hero Label (Tiny text above title)",
+      "default": "PREMIUM WELLNESS"
+    },
+    {
+      "type": "text",
       "id": "title_line1",
       "label": "Title Line 1",
       "default": "Skandinaviens Førende"
@@ -135,6 +214,16 @@
       "id": "subtitle",
       "label": "Hero Subtitle",
       "default": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews",
+      "label": "Show 4.9/5 Reviews Badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
     },
     {
       "type": "text",
@@ -157,6 +246,33 @@
       "type": "url",
       "id": "btn2_url",
       "label": "Button 2 Link"
+    },
+    {
+      "type": "header",
+      "content": "Expert Endorsement Card (Optional)"
+    },
+    {
+      "type": "image_picker",
+      "id": "expert_image",
+      "label": "Expert Image"
+    },
+    {
+      "type": "text",
+      "id": "expert_name",
+      "label": "Expert Name",
+      "default": "Dr. Carsten Rosendahl"
+    },
+    {
+      "type": "text",
+      "id": "expert_title",
+      "label": "Expert Title",
+      "default": "Speciallæge & Kiropraktor"
+    },
+    {
+      "type": "textarea",
+      "id": "expert_quote",
+      "label": "Expert Quote",
+      "default": "Den mest effektive forebyggelse af rygproblemer."
     }
   ],
   "blocks": [
@@ -187,6 +303,24 @@
           "id": "text",
           "label": "USP Label",
           "default": "Nordens førende velværevirksomhed"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "name": "Stat Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "stat_value",
+          "label": "Stat Value (e.g. 50.000+)",
+          "default": "50.000+"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Stat Label",
+          "default": "Tilfredse kunder"
         }
       ]
     }

@@ -1,0 +1,80 @@
+{% schema %}
+{
+  "name": "WOC Marquee",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#d8b261"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#151515"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "SKANDINAVIENS FØRENDE MASSAGESTOLE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Marquee",
+      "blocks": [
+        { "type": "text", "settings": { "text": "SKANDINAVIENS FØRENDE MASSAGESTOLE" } },
+        { "type": "text", "settings": { "text": "5 ÅRS GARANTI" } },
+        { "type": "text", "settings": { "text": "FRI LEVERING" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee-custom {
+    animation: marquee 25s linear infinite;
+  }
+  .marquee-wrapper {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .marquee-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+</style>
+
+<div class="marquee-wrapper relative z-10 py-2 mt-20 lg:mt-24" style="background-color: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  <div class="animate-marquee-custom inline-flex">
+    {%- for i in (1..3) -%}
+      <span class="marquee-content font-body text-[11px] font-semibold uppercase tracking-wider">
+        {%- for block in section.blocks -%}
+          <span class="contents" {{ block.shopify_attributes }}>
+            <span>{{ block.settings.text }}</span>
+            <span style="opacity: 0.4">✦</span>
+          </span>
+        {%- endfor -%}
+      </span>
+    {%- endfor -%}
+  </div>
+</div>

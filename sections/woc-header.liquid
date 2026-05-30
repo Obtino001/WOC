@@ -133,11 +133,28 @@
       {%- if section.settings.menu != blank -%}
         {%- for link in section.settings.menu.links -%}
           {%- if link.links != blank -%}
+<<<<<<< Updated upstream
             <div class="py-2 border-b border-white/5">
               <a href="{{ link.url }}" class="font-display text-2xl font-light text-white/60 hover:text-gold mb-2 inline-block">
                 {{ link.title | escape }}
               </a>
               <div class="pl-4 flex flex-col gap-2 mt-2">
+=======
+            <!-- Dropdown Menu -->
+            <div class="relative group woc-nav-dropdown">
+              <button
+                type="button"
+                class="flex items-center gap-1 px-3 py-2 font-body text-[11px] font-medium uppercase tracking-[0.12em] text-foreground/75 hover:text-gold transition-colors duration-300 whitespace-nowrap"
+              >
+                {{ link.title }}
+                {%- if section.settings.dropdown_icon_svg != blank -%}
+                  {{ section.settings.dropdown_icon_svg }}
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-2.5 h-2.5 transition-transform duration-200 group-hover:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                {%- endif -%}
+              </button>
+              <div class="absolute left-0 top-full mt-1 hidden group-hover:block min-w-[200px] rounded border border-border bg-card py-2 shadow-elevated z-[600]">
+>>>>>>> Stashed changes
                 {%- for childlink in link.links -%}
                   <a href="{{ childlink.url }}" class="block py-2 font-display text-xl font-light text-white/40 hover:text-gold transition-colors">
                     {{ childlink.title | escape }}
@@ -153,12 +170,168 @@
         {%- endfor -%}
       {%- endif -%}
 
+<<<<<<< Updated upstream
       {%- if section.settings.show_action_button and section.settings.action_button_label != blank -%}
         <a href="{{ section.settings.action_button_link | default: '#' }}" class="mt-6 flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-4 font-body text-sm font-semibold uppercase tracking-[0.15em] text-charcoal shadow-elevated" id="mobile-menu-close">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="1.5"/><path stroke-width="1.5" d="M16 2v4M8 2v4M3 10h18"/></svg>
           {{ section.settings.action_button_label | escape }}
         </a>
       {%- endif -%}
+=======
+        <!-- Country/Language Selectors -->
+        <div class="desktop-localization-wrapper flex items-center gap-3 ml-2">
+          {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+            <localization-form data-prevent-hide>
+              {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
+                <div>
+                  <h2 class="visually-hidden" id="HeaderCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                  {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
+                </div>
+              {%- endform -%}
+            </localization-form>
+          {% endif %}
+
+          {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+            <localization-form data-prevent-hide>
+              {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
+                <div>
+                  <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                  {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
+                </div>
+              {%- endform -%}
+            </localization-form>
+          {%- endif -%}
+        </div>
+
+        <!-- Dynamic Book Demo CTA -->
+        <button
+          type="button"
+          id="woc-hdr-demo-btn"
+          class="ml-3 hidden xl:flex items-center gap-1.5 px-3.5 py-2 font-body text-[10px] font-semibold uppercase tracking-[0.1em] rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-charcoal transition-all duration-300 whitespace-nowrap"
+        >
+          {%- if section.settings.demo_icon_svg != blank -%}
+            {{ section.settings.demo_icon_svg }}
+          {%- else -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          {%- endif -%}
+          <span>{{ section.settings.demo_text }}</span>
+        </button>
+
+        <!-- Call CTA -->
+        <a
+          href="tel:{{ section.settings.phone_number | replace: ' ', '' }}"
+          class="ml-2 flex items-center gap-1.5 px-4 py-2 font-body text-[10px] font-semibold uppercase tracking-[0.1em] rounded-full gradient-gold text-charcoal hover:opacity-90 transition-all duration-300 whitespace-nowrap"
+        >
+          {%- if section.settings.phone_icon_svg != blank -%}
+            {{ section.settings.phone_icon_svg }}
+          {%- else -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 9.72z"></path></svg>
+          {%- endif -%}
+          <span>{{ section.settings.phone_text }}</span>
+        </a>
+
+        <!-- Cart Icon Trigger (Dawn native wrapper) -->
+        <a href="{{ routes.cart_url }}" class="p-2 ml-1 text-foreground/75 hover:text-gold shrink-0 relative woc-cart-trigger" id="cart-icon-bubble">
+          {%- if section.settings.cart_icon_svg != blank -%}
+            {{ section.settings.cart_icon_svg }}
+          {%- else -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          {%- endif -%}
+          {%- if cart != empty -%}
+            <div class="cart-count-bubble absolute -top-1.5 -right-1.5 bg-gold text-charcoal font-body text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+              {{ cart.item_count }}
+            </div>
+          {%- endif -%}
+        </a>
+      </nav>
+
+      <!-- MOBILE TRIGGER & UTILITIES -->
+      <div class="lg:hidden flex items-center gap-2">
+        {%- if section.settings.show_badge -%}
+          <div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-gold/30 bg-gold/10 shadow-[0_0_10px_rgba(212,175,55,0.15)] shrink-0">
+            <span class="text-xs select-none">{{ section.settings.badge_flag }}</span>
+            <span class="font-body text-[8px] font-semibold uppercase tracking-[0.1em] text-gold whitespace-nowrap">
+              {{ section.settings.badge_text }}
+            </span>
+          </div>
+        {%- endif -%}
+
+        <a href="tel:{{ section.settings.phone_number | replace: ' ', '' }}" class="p-2 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 9.72z"></path></svg>
+        </a>
+
+        <!-- Cart Trigger (Mobile) -->
+        <a href="{{ routes.cart_url }}" class="p-2 text-foreground/75 relative woc-cart-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4.5 h-4.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <div class="woc-mobile-cart-bubble {% if cart == empty %}hidden{% else %}flex{% endif %} absolute top-0 right-0 bg-gold text-charcoal font-body text-[8px] font-bold rounded-full w-3.5 h-3.5 items-center justify-center">
+            {%- if cart != empty -%}{{ cart.item_count }}{%- endif -%}
+          </div>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button
+          type="button"
+          id="woc-menu-toggle"
+          class="p-2 text-foreground"
+          aria-label="Toggle menu"
+        >
+          <svg id="woc-menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg id="woc-menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div
+    id="woc-mobile-drawer"
+    class="fixed inset-x-0 bottom-0 top-20 bg-background/98 backdrop-blur-xl z-[450] hidden flex-col overflow-y-auto px-4 py-8"
+  >
+    <div class="flex flex-col gap-1 max-w-md mx-auto w-full">
+      {%- for link in linklists[section.settings.menu].links -%}
+        <a
+          href="{{ link.url }}"
+          class="block py-4 font-display text-2xl font-light text-foreground/80 hover:text-gold border-b border-border/50 transition-colors"
+        >
+          {{ link.title }}
+        </a>
+      {%- endfor -%}
+
+      <!-- Mobile Localization Selectors -->
+      <div class="flex flex-col gap-4 mt-6 pt-6 border-t border-border/40">
+        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+          <localization-form>
+            {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="HeaderCountryMobileLabel">{{ 'localization.country_label' | t }}</h2>
+                {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {% endif %}
+
+        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+          <localization-form>
+            {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">{{ 'localization.language_label' | t }}</h2>
+                {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {%- endif -%}
+      </div>
+
+      <button
+        type="button"
+        id="woc-mob-demo-btn"
+        class="mt-8 flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-4 font-body text-xs font-semibold uppercase tracking-[0.15em] text-charcoal shadow-elevated"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        {{ section.settings.demo_text }}
+      </button>
+>>>>>>> Stashed changes
     </div>
   </div>
 </header>
@@ -200,6 +373,18 @@
     {
       "type": "header",
       "content": "Company Badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "label": "Enable country/region selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "label": "Enable language selector",
+      "default": true
     },
     {
       "type": "checkbox",
@@ -259,6 +444,7 @@
     {
       "type": "text",
       "id": "phone_number",
+<<<<<<< Updated upstream
       "default": "+905425971734",
       "label": "Phone number",
       "info": "Include country code. Example: +1234567890"
@@ -273,6 +459,30 @@
       "default": true,
       "label": "Show language selector",
       "info": "To add a language, go to your language settings."
+=======
+      "label": "Phone Number",
+      "default": "+45 70 70 70 70"
+    },
+    {
+      "type": "html",
+      "id": "dropdown_icon_svg",
+      "label": "Dropdown Arrow SVG"
+    },
+    {
+      "type": "html",
+      "id": "demo_icon_svg",
+      "label": "Book Demo SVG Icon"
+    },
+    {
+      "type": "html",
+      "id": "phone_icon_svg",
+      "label": "Phone SVG Icon"
+    },
+    {
+      "type": "html",
+      "id": "cart_icon_svg",
+      "label": "Cart SVG Icon"
+>>>>>>> Stashed changes
     }
   ]
 }

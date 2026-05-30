@@ -41,9 +41,13 @@
           <div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors duration-500 group-hover:bg-black/45">
             <div class="w-20 h-20 rounded-full bg-gold/90 text-background flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110">
               <!-- Play Icon SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 translate-x-0.5">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
-              </svg>
+              {%- if section.settings.play_icon_svg != blank -%}
+                {{ section.settings.play_icon_svg }}
+              {%- else -%}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 translate-x-0.5">
+                  <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                </svg>
+              {%- endif -%}
             </div>
           </div>
         </div>
@@ -100,6 +104,11 @@
       "id": "cover_image",
       "label": "Lazy-Load Cover Image",
       "info": "Upload an image to overlay the video container before it plays. Recommended for page performance."
+    },
+    {
+      "type": "html",
+      "id": "play_icon_svg",
+      "label": "Play Button SVG Icon"
     }
   ],
   "presets": [

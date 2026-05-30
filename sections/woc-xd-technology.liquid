@@ -1,0 +1,123 @@
+{% schema %}
+{
+  "name": "WOC XD Technology",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre-title",
+      "default": "FREMTIDENS MASSAGE"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Patenteret XD"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Gold Italic)",
+      "default": "Trykteknologi"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Vores avancerede XD-teknologi tilpasser sig din kropskurve med millimeterpræcision og leverer en dybdegående, tredimensionel massage, der overgår menneskelige hænder."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Showcase Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "AI Kropsscanning"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Scanner rygsøjlens kontur og justerer rullerne for optimalt tryk."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC XD Technology",
+      "blocks": [
+        { "type": "feature", "settings": { "title": "AI Kropsscanning", "description": "Scanner rygsøjlens kontur og justerer rullerne for optimalt tryk." } },
+        { "type": "feature", "settings": { "title": "Dybdevirkende 4D", "description": "Rullerne bevæger sig op, ned, til siden og i dybden op til 12 cm." } },
+        { "type": "feature", "settings": { "title": "Intelligent Varmeterapi", "description": "Indbygget varme i rullerne løsner spændte muskler før massagen." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="py-24 lg:py-32 bg-background relative overflow-hidden">
+  <div class="container max-w-[1400px] mx-auto px-4 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Text / Content -->
+      <div class="order-2 lg:order-1">
+        <div class="luxury-line mb-8"></div>
+        {%- if section.settings.pre_title != blank -%}
+          <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-4">
+            {{ section.settings.pre_title }}
+          </p>
+        {%- endif -%}
+        <h2 class="woc-display-font text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05] mb-6">
+          {{ section.settings.title_line1 }}<br/>
+          {%- if section.settings.title_line2 != blank -%}
+            <span class="italic text-gold">{{ section.settings.title_line2 }}</span>
+          {%- endif -%}
+        </h2>
+        {%- if section.settings.description != blank -%}
+          <p class="font-body text-sm text-foreground/70 mb-12 max-w-lg leading-relaxed">
+            {{ section.settings.description }}
+          </p>
+        {%- endif -%}
+
+        <div class="space-y-8">
+          {%- for block in section.blocks -%}
+            <div class="flex gap-4 group" {{ block.shopify_attributes }}>
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 border border-gold/20 group-hover:bg-gold/20 transition-colors">
+                <span class="font-display text-gold font-bold">0{{ forloop.index }}</span>
+              </div>
+              <div>
+                <h3 class="font-body text-lg font-bold text-foreground mb-1 group-hover:text-gold transition-colors">{{ block.settings.title }}</h3>
+                <p class="font-body text-sm text-foreground/60 leading-relaxed">{{ block.settings.description }}</p>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <!-- Image Area -->
+      <div class="order-1 lg:order-2 relative">
+        <div class="absolute inset-0 bg-gold/10 blur-[100px] rounded-full"></div>
+        <div class="relative z-10 bg-charcoal/50 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+          {%- if section.settings.image != blank -%}
+            <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.title_line1 }}" class="w-full h-auto object-contain">
+          {%- else -%}
+            <div class="aspect-square bg-white/5 flex items-center justify-center rounded-xl">
+              <span class="text-white/30">Vælg et billede</span>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

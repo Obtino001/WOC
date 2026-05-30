@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Det Komplette",
+        "title_line2": "Sovesystem",
+        "subtitle": "Fremtidens sovesystem med avanceret teknologi og uovertruffen komfort. Skræddersyet til at revolutionere din nattesøvn.",
+        "btn1_text": "Udforsk sovesystemer",
+        "btn2_text": "Se funktioner"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "FREMTIDENS SØVN",
+        "title": "Oplev forskellen med et intelligent sovesystem",
+        "description": "Vores sovesystemer integrerer de nyeste teknologier inden for trykaflastning og ergonomi for at sikre optimal restitution."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "why_us"
+  ]
+}

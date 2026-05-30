@@ -1,0 +1,104 @@
+{% schema %}
+{
+  "name": "WOC Health Benefits",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre-title",
+      "default": "10 GRUNDE TIL"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Sundhedsmæssige"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Gold Italic)",
+      "default": "Fordele"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Benefit Text",
+          "default": "Smertelindring"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Health Benefits",
+      "blocks": [
+        { "type": "benefit", "settings": { "text": "Effektiv lindring af ryg- og nakkesmerter" } },
+        { "type": "benefit", "settings": { "text": "Forbedret blodcirkulation" } },
+        { "type": "benefit", "settings": { "text": "Stressreduktion og lavere kortisol" } },
+        { "type": "benefit", "settings": { "text": "Hurtigere restitution efter sport" } },
+        { "type": "benefit", "settings": { "text": "Bedre og dybere søvnkvalitet" } },
+        { "type": "benefit", "settings": { "text": "Løsning af muskelspændinger" } },
+        { "type": "benefit", "settings": { "text": "Forbedret kropsholdning" } },
+        { "type": "benefit", "settings": { "text": "Styrket immunforsvar" } },
+        { "type": "benefit", "settings": { "text": "Mental klarhed" } },
+        { "type": "benefit", "settings": { "text": "Øget fleksibilitet" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="bg-[#1c1c1c] py-24 lg:py-32 border-y border-white/5">
+  <div class="container max-w-[1400px] mx-auto px-4 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      {%- if section.settings.pre_title != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-4">
+          {{ section.settings.pre_title }}
+        </p>
+      {%- endif -%}
+      <h2 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05]">
+        {{ section.settings.title_line1 }}<br/>
+        {%- if section.settings.title_line2 != blank -%}
+          <span class="italic text-gold">{{ section.settings.title_line2 }}</span>
+        {%- endif -%}
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+      {%- for block in section.blocks -%}
+        {%- assign modulo = forloop.index | modulo: 2 -%}
+        
+        {%- if modulo != 0 -%}
+          <!-- Odd (Gold) -->
+          <div class="border p-6 text-center group hover:scale-[1.02] transition-all duration-500 bg-gradient-to-br from-[#d8b261]/20 to-[#d8b261]/5 border-[#d8b261]/30 hover:border-[#d8b261]/50" {{ block.shopify_attributes }}>
+            <span class="woc-display-font text-3xl font-bold transition-colors duration-500 text-[#d8b261]/30 group-hover:text-[#d8b261]/60">
+              {%- if forloop.index < 10 -%}0{%- endif -%}{{ forloop.index }}
+            </span>
+            <h3 class="font-body text-sm font-medium text-foreground mt-3 leading-snug">
+              {{ block.settings.text }}
+            </h3>
+          </div>
+        {%- else -%}
+          <!-- Even (Forest Green) -->
+          <div class="border p-6 text-center group hover:scale-[1.02] transition-all duration-500 bg-gradient-to-br from-[#1a3b2a]/40 to-[#1a3b2a]/10 border-[#1a3b2a]/60 hover:border-[#2e6248]/80" {{ block.shopify_attributes }}>
+            <span class="woc-display-font text-3xl font-bold transition-colors duration-500 text-[#2e6248]/50 group-hover:text-[#2e6248]">
+              {%- if forloop.index < 10 -%}0{%- endif -%}{{ forloop.index }}
+            </span>
+            <h3 class="font-body text-sm font-medium text-foreground mt-3 leading-snug">
+              {{ block.settings.text }}
+            </h3>
+          </div>
+        {%- endif -%}
+
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

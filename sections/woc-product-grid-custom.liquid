@@ -1,0 +1,260 @@
+{% schema %}
+{
+  "name": "WOC Product Showcase",
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg_style",
+      "label": "Background Style",
+      "options": [
+        { "value": "bg-charcoal", "label": "Dark Charcoal" },
+        { "value": "bg-charcoal/95", "label": "Lighter Dark" }
+      ],
+      "default": "bg-charcoal"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre-title (Small Gold)",
+      "default": "MEST POPULÆRE"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Vores"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Gold Italic)",
+      "default": "Bestsellere"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "De mest elskede massagestole blandt vores kunder — udvalgt for overlegen komfort, avanceret teknologi og uovertruffen kvalitet."
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on Desktop",
+      "default": 3
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Custom Badge (Top Left)"
+        },
+        {
+          "type": "text",
+          "id": "status_label",
+          "label": "Status Label (Red Bar under image)",
+          "info": "e.g. Få demomodeller tilbage"
+        },
+        {
+          "type": "text",
+          "id": "tagline",
+          "label": "Tagline Override",
+          "info": "Leave blank to use product vendor or default text"
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Comma separated features",
+          "default": "3D Massage, Zero Gravity, Varmeterapi",
+          "info": "e.g. 3D Massage, Zero Gravity, Varmeterapi"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Product Showcase",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{%- assign cols = section.settings.columns_desktop -%}
+{%- capture grid_class -%}
+  {%- if cols == 2 -%}md:grid-cols-2 lg:grid-cols-2
+  {%- elsif cols == 3 -%}md:grid-cols-3 lg:grid-cols-3
+  {%- elsif cols == 4 -%}grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+  {%- else -%}md:grid-cols-3
+  {%- endif -%}
+{%- endcapture -%}
+
+<section class="py-20 lg:py-28 relative overflow-hidden {{ section.settings.bg_style }}">
+  <div class="container max-w-[1400px] mx-auto px-4 lg:px-8 relative">
+    
+    <!-- Header -->
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <div class="luxury-line mx-auto mb-8"></div>
+      {%- if section.settings.pre_title != blank -%}
+        <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-4">
+          {{ section.settings.pre_title }}
+        </p>
+      {%- endif -%}
+      <h2 class="woc-display-font text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
+        {{ section.settings.title_line1 }}
+        {%- if section.settings.title_line2 != blank -%}
+          <span class="italic text-gold">{{ section.settings.title_line2 }}</span>
+        {%- endif -%}
+      </h2>
+      {%- if section.settings.description != blank -%}
+        <p class="font-body text-sm text-foreground/70 mt-4 max-w-2xl mx-auto">
+          {{ section.settings.description }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid {{ grid_class }} gap-4 lg:gap-6">
+      {%- for block in section.blocks -%}
+        {%- assign prod = block.settings.product -%}
+        <div class="group relative bg-[#1c1c1c] border border-white/10 rounded-xl overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(216,178,97,0.15)] flex flex-col" {{ block.shopify_attributes }}>
+          
+          {%- if prod != blank -%}
+            <!-- Image Area -->
+            <a href="{{ prod.url }}" class="block relative aspect-square bg-[#f5f5f0] overflow-hidden">
+              {%- if block.settings.badge != blank -%}
+                <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
+                  {{ block.settings.badge }}
+                </span>
+              {%- endif -%}
+              
+              {%- if prod.compare_at_price > prod.price -%}
+                {%- assign save_amount = prod.compare_at_price | minus: prod.price | money_without_trailing_zeros -%}
+                <span class="absolute top-4 right-4 z-10 bg-red-600 text-white font-body text-[10px] font-bold px-2.5 py-1.5 rounded-sm">
+                  Spar {{ save_amount }}
+                </span>
+              {%- endif -%}
+
+              <img src="{{ prod.featured_image | image_url: width: 600 }}" alt="{{ prod.title }}" class="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105">
+            </a>
+
+            <!-- Status Banner -->
+            {%- if block.settings.status_label != blank -%}
+              <div class="bg-red-900/20 border-t border-red-900/30 px-4 py-2 text-center">
+                <span class="font-body text-[11px] font-semibold text-red-500">
+                  {{ block.settings.status_label }}
+                </span>
+              </div>
+            {%- endif -%}
+
+            <!-- Content -->
+            <div class="p-5 lg:p-6 flex flex-col flex-1">
+              <!-- Rating -->
+              <div class="flex items-center gap-1 mb-2">
+                {%- for i in (1..5) -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {%- endfor -%}
+                <span class="font-body text-[10px] text-foreground/50 ml-1">5.0 (42)</span>
+              </div>
+
+              <!-- Title -->
+              <a href="{{ prod.url }}">
+                <h3 class="woc-display-font text-xl lg:text-2xl font-bold text-foreground mb-1 group-hover:text-gold transition-colors">
+                  {{ prod.title }}
+                </h3>
+              </a>
+              
+              <!-- Tagline -->
+              <p class="font-body text-xs text-foreground/60 mb-4 line-clamp-2 leading-relaxed">
+                {%- if block.settings.tagline != blank -%}{{ block.settings.tagline }}{%- else -%}{{ prod.vendor }}{%- endif -%}
+              </p>
+
+              <!-- Features (Custom CSV) -->
+              {%- if block.settings.features != blank -%}
+                {%- assign feature_list = block.settings.features | split: ',' -%}
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                  {%- for f in feature_list -%}
+                    <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-md px-2 py-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span class="font-body text-[10px] text-foreground/80 whitespace-nowrap">{{ f | strip }}</span>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+
+              <!-- Fixed USPs -->
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <div class="flex items-center gap-1.5 bg-green-900/20 border border-green-900/30 rounded-md px-2 py-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                  <span class="font-body text-[10px] text-green-500 font-medium whitespace-nowrap">Gratis levering</span>
+                </div>
+                <div class="flex items-center gap-1.5 bg-gold/10 border border-gold/20 rounded-md px-2 py-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 11 2 2 4-4"></path></svg>
+                  <span class="font-body text-[10px] text-gold font-medium whitespace-nowrap">5 års garanti</span>
+                </div>
+              </div>
+
+              <div class="mt-auto pt-4 border-t border-white/10">
+                <!-- Price -->
+                <div class="flex items-baseline gap-2 mb-1">
+                  <span class="woc-display-font text-2xl font-bold text-foreground">
+                    {{ prod.price | money_without_trailing_zeros }}
+                  </span>
+                  {%- if prod.compare_at_price > prod.price -%}
+                    <span class="font-body text-sm text-foreground/50 line-through">
+                      {{ prod.compare_at_price | money_without_trailing_zeros }}
+                    </span>
+                  {%- endif -%}
+                </div>
+                
+                <p class="font-body text-[11px] text-gold mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline mr-1"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                  Eller fra 249,- / md
+                </p>
+
+                <!-- Stock Pulse -->
+                <div class="flex items-center gap-1.5 mb-4">
+                  <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  <span class="font-body text-[10px] text-green-500 font-medium">På lager</span>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex gap-2">
+                  <a href="{{ prod.url }}" class="flex-1 inline-flex items-center justify-center bg-gold text-charcoal font-body text-xs font-semibold px-3 py-2 rounded gap-1.5 hover:bg-gold-hover transition-colors">
+                    Se mere
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+                  <a href="/pages/showrooms" class="inline-flex items-center justify-center border border-gold/30 text-gold hover:bg-gold/10 font-body text-xs font-semibold px-3 py-2 rounded gap-1.5 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    Prøv stol
+                  </a>
+                </div>
+              </div>
+            </div>
+          {%- else -%}
+            <div class="p-10 text-center text-white/50">Select a product to preview layout.</div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

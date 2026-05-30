@@ -1,0 +1,228 @@
+{% schema %}
+{
+  "name": "WOC Financing Options",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre-title",
+      "default": "INVESTER I DIT HELBRED"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Fleksibel"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Gold Italic)",
+      "default": "Finansiering"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Vi tilbyder flere forskellige måder at få din drømmestol hjem på. Vælg den løsning, der passer bedst til din økonomi."
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Bottom Disclaimer text",
+      "default": "*Kreditvurdering påkrævet ved finansiering. Leasing forudsætter CVR-nummer."
+    },
+    {
+      "type": "text",
+      "id": "btn1_text",
+      "label": "Button 1 Text",
+      "default": "Få et Tilbud"
+    },
+    {
+      "type": "url",
+      "id": "btn1_url",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "btn2_text",
+      "label": "Button 2 Text",
+      "default": "Ring til os"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pricing_card",
+      "name": "Pricing Card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "is_highlighted",
+          "label": "Highlight as Most Popular (Gold border)",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "highlight_badge",
+          "label": "Highlight Badge Text",
+          "default": "MEST POPULÆRE"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "shield", "label": "Shield Check" },
+            { "value": "creditcard", "label": "Credit Card" },
+            { "value": "award", "label": "Award Medal" }
+          ],
+          "default": "shield"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Køb Kontant"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Fuld ejerskab fra dag et."
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features (Comma separated)",
+          "default": "Ingen renter,Ingen binding,Fuld ejerskab"
+        },
+        {
+          "type": "text",
+          "id": "price_prefix",
+          "label": "Price Prefix",
+          "default": "Fra"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price String",
+          "default": "24.999,-"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Financing Options",
+      "blocks": [
+        { "type": "pricing_card", "settings": { "icon": "shield", "title": "Køb Kontant", "is_highlighted": false, "price": "24.999,-" } },
+        { "type": "pricing_card", "settings": { "icon": "creditcard", "title": "Finansiering", "is_highlighted": true, "price": "249,- / md" } },
+        { "type": "pricing_card", "settings": { "icon": "award", "title": "Erhvervsleasing", "is_highlighted": false, "price": "1.250,- / md" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="py-24 lg:py-32 bg-[#1c1c1c] border-y border-white/10 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 70% 30%, #d8b261, transparent 50%)"></div>
+  <div class="container max-w-[1400px] mx-auto px-4 lg:px-8 relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <div class="luxury-line mx-auto mb-8"></div>
+        {%- if section.settings.pre_title != blank -%}
+          <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-4">
+            {{ section.settings.pre_title }}
+          </p>
+        {%- endif -%}
+        <h2 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05]">
+          {{ section.settings.title_line1 }}<br/>
+          {%- if section.settings.title_line2 != blank -%}
+            <span class="italic text-gold">{{ section.settings.title_line2 }}</span>
+          {%- endif -%}
+        </h2>
+        {%- if section.settings.description != blank -%}
+          <p class="font-body text-sm text-foreground/70 mt-4 max-w-xl mx-auto">
+            {{ section.settings.description }}
+          </p>
+        {%- endif -%}
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="grid md:grid-cols-3 gap-6">
+        {%- for block in section.blocks -%}
+          {%- assign is_highlighted = block.settings.is_highlighted -%}
+          <div class="relative {% if is_highlighted %}bg-charcoal border-2 border-gold shadow-[0_0_20px_rgba(216,178,97,0.15)]{% else %}bg-charcoal border border-white/10 hover:border-gold/30 transition-all duration-500{% endif %} rounded-xl p-8 text-center flex flex-col group" {{ block.shopify_attributes }}>
+            
+            {%- if is_highlighted and block.settings.highlight_badge != blank -%}
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-charcoal font-body text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
+                {{ block.settings.highlight_badge }}
+              </span>
+            {%- endif -%}
+
+            <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-gold/20 transition-colors shrink-0">
+              {%- case block.settings.icon -%}
+                {%- when 'shield' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 11 2 2 4-4"></path></svg>
+                {%- when 'creditcard' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                {%- when 'award' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              {%- endcase -%}
+            </div>
+            
+            <h3 class="woc-display-font text-xl font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+            
+            <p class="font-body text-xs text-foreground/70 mb-6 leading-relaxed">
+              {{ block.settings.description }}
+            </p>
+            
+            {%- if block.settings.features != blank -%}
+              {%- assign features = block.settings.features | split: ',' -%}
+              <div class="space-y-2 text-left mb-8 flex-1">
+                {%- for f in features -%}
+                  <div class="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="font-body text-[11px] text-foreground/80">{{ f | strip }}</span>
+                  </div>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+
+            <div class="mt-auto">
+              <p class="font-body text-[10px] text-foreground/60">{{ block.settings.price_prefix }}</p>
+              <p class="woc-display-font text-2xl font-bold {% if is_highlighted %}text-gold{% else %}text-foreground{% endif %}">{{ block.settings.price }}</p>
+            </div>
+
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <!-- CTA Underneath -->
+      <div class="text-center mt-12">
+        {%- if section.settings.disclaimer != blank -%}
+          <p class="font-body text-xs text-foreground/50 mb-6">
+            {{ section.settings.disclaimer }}
+          </p>
+        {%- endif -%}
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-3">
+          {%- if section.settings.btn1_text != blank -%}
+            <a href="{{ section.settings.btn1_url }}" class="inline-flex items-center justify-center bg-gold text-charcoal font-body text-xs font-semibold px-8 py-3.5 rounded gap-2 hover:bg-gold-hover transition-colors">
+              {{ section.settings.btn1_text }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          {%- endif -%}
+          {%- if section.settings.btn2_text != blank -%}
+            <a href="tel:+4570707090" class="inline-flex items-center justify-center border border-gold/30 text-gold hover:bg-gold/10 font-body text-xs font-semibold px-8 py-3.5 rounded gap-2 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+              {{ section.settings.btn2_text }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
