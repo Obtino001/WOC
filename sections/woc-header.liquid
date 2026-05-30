@@ -21,7 +21,7 @@
 
       <!-- BRAND BADGE (Desktop) -->
       {%- if section.settings.show_badge -%}
-        <div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/10 shadow-[0_0_12px_rgba(212,175,55,0.15)] shrink-0">
+        <div class="xl:flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/10 shadow-[0_0_12px_rgba(212,175,55,0.15)] shrink-0">
           <span class="text-sm select-none">{{ section.settings.badge_flag }}</span>
           <span class="font-body text-[10px] font-semibold uppercase tracking-[0.12em] text-gold whitespace-nowrap">
             {{ section.settings.badge_text }}
@@ -30,7 +30,7 @@
       {%- endif -%}
 
       <!-- NAVIGATION (Desktop) -->
-      <nav class="hidden lg:flex items-center gap-1 min-w-0">
+      <nav class="lg:flex items-center gap-1 min-w-0">
         {%- for link in linklists[section.settings.menu].links -%}
           {%- if link.links != blank -%}
             <!-- Dropdown Menu -->
