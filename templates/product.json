@@ -12,13 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -36,10 +29,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -50,26 +39,24 @@
             "demo_link": ""
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
+        "trust_badges_N7QkXf": {
+          "type": "trust_badges",
           "settings": {
-            "share_label": "Del produkt"
+            "text_1": "Free White-Glove Delivery",
+            "icon_1_svg": "",
+            "text_2": "5-Year Warranty",
+            "icon_2_svg": "",
+            "text_3": "Flexible Monthly Payments",
+            "icon_3_svg": ""
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "trust_badges_N7QkXf"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -300,7 +287,9 @@
         "title": "Hvorfor vælge os?",
         "th_feature": "Funktioner",
         "th_woc": "World of Comfort",
-        "th_comp": "Andre mærker"
+        "th_comp": "Andre mærker",
+        "check_icon_svg": "",
+        "cross_icon_svg": ""
       }
     },
     "financing": {
@@ -377,7 +366,8 @@
       ],
       "settings": {
         "subtitle": "OFTE STILLEDE SPØRGSMÅL",
-        "title": "Spørgsmål & Svar"
+        "title": "Spørgsmål & Svar",
+        "accordion_icon_svg": ""
       }
     },
     "bottom_cta": {
