@@ -40,11 +40,19 @@
                 <td class="py-4 px-4 text-center bg-copper/5">
                   {%- if block.settings.woc_val -%}
                     <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      {%- if section.settings.check_icon_svg != blank -%}
+                        {{ section.settings.check_icon_svg }}
+                      {%- else -%}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      {%- endif -%}
                     </span>
                   {%- else -%}
                     <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-100 text-red-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                      {%- if section.settings.cross_icon_svg != blank -%}
+                        {{ section.settings.cross_icon_svg }}
+                      {%- else -%}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                      {%- endif -%}
                     </span>
                   {%- endif -%}
                 </td>
@@ -53,11 +61,19 @@
                 <td class="py-4 px-4 text-center">
                   {%- if block.settings.comp_val -%}
                     <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      {%- if section.settings.check_icon_svg != blank -%}
+                        {{ section.settings.check_icon_svg }}
+                      {%- else -%}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      {%- endif -%}
                     </span>
                   {%- else -%}
                     <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-neutral-100 text-neutral-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                      {%- if section.settings.cross_icon_svg != blank -%}
+                        {{ section.settings.cross_icon_svg }}
+                      {%- else -%}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                      {%- endif -%}
                     </span>
                   {%- endif -%}
                 </td>
@@ -105,6 +121,16 @@
       "id": "th_comp",
       "label": "Column 3 Header (Competitors)",
       "default": "Andre mærker"
+    },
+    {
+      "type": "html",
+      "id": "check_icon_svg",
+      "label": "Checkmark SVG Icon"
+    },
+    {
+      "type": "html",
+      "id": "cross_icon_svg",
+      "label": "Cross/X SVG Icon"
     }
   ],
   "blocks": [
