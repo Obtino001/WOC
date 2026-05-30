@@ -1,0 +1,35 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Universal Senge",
+        "title_line2": "Design & Komfort i Særklasse",
+        "subtitle": "Oplev Universal Beds — skræddersyet ergonomisk støtte kombineret med tidløst design, skabt til at forbedre din livskvalitet.",
+        "btn1_text": "Se udvalget",
+        "btn2_text": "Læs mere"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "UNIVERSAL BEDS",
+        "title": "Senge i verdensklasse",
+        "description": "Få den ultimative søvnoplevelse med senge, der er designet til at støtte din krops unikke behov og sikre uforstyrret nattesøvn."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "why_us"
+  ]
+}
