@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "title_line1": "Sov Bedre Med",
+        "title_line2": "Premium Dyner & Puder",
+        "subtitle": "Naturligt dun og temperaturregulerende komfort. Danskproduceret kvalitet, der giver dig en dybere og mere restituerende søvn.",
+        "btn1_text": "Se udvalget",
+        "btn2_text": "Find dit produkt"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "HVORFOR DET ER VIGTIGT",
+        "title": "Du tilbringer en tredjedel af dit liv i sengen",
+        "description": "Vores dyner og puder er skabt i Danmark til at sikre den optimale temperaturregulering og støtte, så du opnår længere og dybere søvncyklusser."
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Er produkterne allergivenlige?",
+            "answer": "Ja, alle vores dyner og puder er Nomite-mærket og OEKO-TEX® certificeret, så de er sikre for selv de mest følsomme sovere."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "why_us",
+    "faqs"
+  ]
+}
