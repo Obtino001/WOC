@@ -12,21 +12,9 @@
   "type": "header",
   "sections": {
     "header": {
-      "type": "woc-header",
+      "type": "header",
       "settings": {
-        "logo": "shopify://shop_images/woc-logo-white_4ddf169e-2e01-4d82-9b5f-1b404584358b.webp",
-        "logo_width": 150,
-        "menu": "main-menu",
-        "show_badge": true,
-        "badge_icon": "🇩🇰",
-        "badge_text": "Dansk Virksomhed",
-        "show_action_button": true,
-        "action_button_label": "Book Demo",
-        "action_button_link": "",
-        "show_phone": true,
-        "phone_label": "Call Us",
-        "phone_number": "+45 70 70 70 70",
-        "show_language_selector": true
+        "menu": "main-menu"
       }
     }
   },
