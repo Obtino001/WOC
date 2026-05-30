@@ -63,43 +63,30 @@
           {%- endif -%}
         {%- endfor -%}
 
-        <!-- Shopify Native Language Selector Dropdown -->
-        {%- if localization.available_languages.size > 1 -%}
-          <div class="relative group woc-lang-dropdown ml-2">
-            <button
-              type="button"
-              class="flex items-center gap-1.5 px-2 py-2 font-body text-xs text-foreground/60 hover:text-gold transition-colors duration-300"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-              <span>{{ localization.language.iso_code | upcase }}</span>
-            </button>
-            <div class="absolute right-0 top-full mt-1 hidden group-hover:block min-w-[150px] border border-border bg-card py-1 shadow-soft z-[600]">
-              {%- form 'localization', id: 'HeaderLanguageForm' -%}
-                <input type="hidden" name="locale_code" id="LocaleCode" value="{{ localization.language.iso_code }}">
-                {%- for language in localization.available_languages -%}
-                  <button
-                    type="submit"
-                    name="locale_code"
-                    value="{{ language.iso_code }}"
-                    class="flex w-full items-center gap-3 px-4 py-2 text-left font-body text-xs text-foreground/75 hover:bg-muted hover:text-gold transition-colors {% if language.iso_code == localization.language.iso_code %}bg-muted text-gold{% endif %}"
-                  >
-                    <span>
-                      {%- case language.iso_code -%}
-                        {%- when 'da' -%}🇩🇰
-                        {%- when 'en' -%}🇬🇧
-                        {%- when 'sv' -%}🇸🇪
-                        {%- when 'no' -%}🇳🇴
-                        {%- when 'de' -%}🇩🇪
-                        {%- else -%}🌐
-                      {%- endcase -%}
-                    </span>
-                    <span>{{ language.endonym_name | capitalize }}</span>
-                  </button>
-                {%- endfor -%}
+        <!-- Country/Language Selectors -->
+        <div class="desktop-localization-wrapper flex items-center gap-3 ml-2">
+          {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+            <localization-form data-prevent-hide>
+              {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
+                <div>
+                  <h2 class="visually-hidden" id="HeaderCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                  {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
+                </div>
               {%- endform -%}
-            </div>
-          </div>
-        {%- endif -%}
+            </localization-form>
+          {% endif %}
+
+          {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+            <localization-form data-prevent-hide>
+              {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
+                <div>
+                  <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                  {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
+                </div>
+              {%- endform -%}
+            </localization-form>
+          {%- endif -%}
+        </div>
 
         <!-- Dynamic Book Demo CTA -->
         <button
@@ -183,6 +170,31 @@
           {{ link.title }}
         </a>
       {%- endfor -%}
+
+      <!-- Mobile Localization Selectors -->
+      <div class="flex flex-col gap-4 mt-6 pt-6 border-t border-border/40">
+        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+          <localization-form>
+            {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="HeaderCountryMobileLabel">{{ 'localization.country_label' | t }}</h2>
+                {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {% endif %}
+
+        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+          <localization-form>
+            {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">{{ 'localization.language_label' | t }}</h2>
+                {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {%- endif -%}
+      </div>
 
       <button
         type="button"
@@ -305,6 +317,18 @@
       "id": "menu",
       "label": "Navigation Menu",
       "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "label": "Enable country/region selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "label": "Enable language selector",
+      "default": true
     },
     {
       "type": "checkbox",
