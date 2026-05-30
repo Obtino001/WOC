@@ -1,103 +1,3 @@
-<<<<<<< Updated upstream
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-{
-  "sections": {
-    "hero": {
-      "type": "woc-hero",
-      "settings": {
-        "video_url": "https://worldofcomfort.dk/cdn/shop/videos/c/vp/84feabde2ae74f59b46413fe7254d5a2/84feabde2ae74f59b46413fe7254d5a2.HD-1080p-7.2Mbps-44453992.mp4?v=0",
-        "title_line1": "Skandinaviens Førende",
-        "title_line2": "Massagestole med AI",
-        "subtitle": "Oplev terapeutisk smertelindring og dybdegående restitution. Vores massagestole forener japansk præcision, 3D/4D/XD trykteknologi og medicinsk godkendte spændingslindringer.",
-        "btn1_text": "Se Massagestole",
-        "btn2_text": "Book Prøvning"
-      }
-    },
-    "trust": {
-      "type": "woc-trust",
-      "settings": {
-        "google_score": "4.9",
-        "google_count": "1.200",
-        "trustpilot_score": "4.7",
-        "trustpilot_count": "1.400"
-      }
-    },
-    "showcase_bestsellers": {
-      "type": "woc-product-showcase",
-      "blocks": {
-        "bullet_1": { "type": "bullet", "settings": { "text": "Avanceret 4D & 5D rygmassage" } },
-        "bullet_2": { "type": "bullet", "settings": { "text": "AI kropsscanning & tryksensor" } },
-        "bullet_3": { "type": "bullet", "settings": { "text": "Leddrevet Zero Gravity recline" } },
-        "bullet_4": { "type": "bullet", "settings": { "text": "Bluetooth surround sound & aroma" } }
-      },
-      "block_order": [
-        "bullet_1",
-        "bullet_2",
-        "bullet_3",
-        "bullet_4"
-      ],
-      "settings": {
-        "bg_style": "light",
-        "media_position": "right",
-        "badge_text": "POPULÆRT VALG",
-        "title": "Pharaoh Neo Massagestol",
-        "tagline": "Den mest avancerede wellness-oplevelse",
-        "country_flag": "🤖",
-        "country_text": "Advanced 4D Massage Technology",
-        "description_1": "Pharaoh Neo er vores absolutte topmodel. Udstyret med intelligente massageruller, der tilpasser trykket efter din rygsøjles kontur via en indledende AI-kropsscanning.",
-        "price_text": "Fra 89.999,-",
-        "btn_text": "Udforsk Pharaoh Neo"
-      }
-    },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {
-        "label": "TERAPEUTISK EFFEKT",
-        "title": "Hvorfor vælge vores massagestole?",
-        "description": "Vores stole er medicinsk godkendte wellnessapparater udviklet til at forebygge og lindre kroniske ryg-, nakke- og lændesmerter."
-      }
-    },
-    "testimonials": {
-      "type": "woc-testimonials",
-      "settings": {
-        "label": "BRUGERNES ERFARINGER",
-        "heading": "Hvad siger eksperterne og kunderne?"
-      }
-    },
-    "faqs": {
-      "type": "pdp-faqs",
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "Kan jeg prøve massagestolene inden et køb?",
-            "answer": "Ja, absolut! Vi anbefaler altid, at du besøger et af vores 20+ showrooms i Danmark eller resten af Europa for at prøve stolene personligt. Vores erfarne wellness-konsulenter står klar til at rådgive dig."
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvor meget strøm bruger en massagestol?",
-            "answer": "En massagestol bruger typisk mellem 150W og 250W under drift, hvilket svarer til elforbruget på en stationær computer. Det koster under 50 øre per massagebehandling."
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2"
-      ],
-      "settings": {
-        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
-        "title": "Spørgsmål & Svar"
-=======
 {
   "sections": {
     "marquee": {
@@ -107,11 +7,30 @@
         "text_color": "#151515"
       },
       "blocks": {
-        "text_1": { "type": "text", "settings": { "text": "SKANDINAVIENS FØRENDE MASSAGESTOLE" } },
-        "text_2": { "type": "text", "settings": { "text": "5 ÅRS GARANTI" } },
-        "text_3": { "type": "text", "settings": { "text": "GRATIS LEVERING" } }
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "SKANDINAVIENS FØRENDE MASSAGESTOLE"
+          }
+        },
+        "text_2": {
+          "type": "text",
+          "settings": {
+            "text": "5 ÅRS GARANTI"
+          }
+        },
+        "text_3": {
+          "type": "text",
+          "settings": {
+            "text": "GRATIS LEVERING"
+          }
+        }
       },
-      "block_order": ["text_1", "text_2", "text_3"]
+      "block_order": [
+        "text_1",
+        "text_2",
+        "text_3"
+      ]
     },
     "hero": {
       "type": "woc-hero",
@@ -129,22 +48,77 @@
         "expert_quote": "Den mest effektive forebyggelse af rygproblemer."
       },
       "blocks": {
-        "stat_1": { "type": "stat", "settings": { "stat_value": "50.000+", "stat_label": "Tilfredse Kunder" } },
-        "stat_2": { "type": "stat", "settings": { "stat_value": "20+", "stat_label": "Showrooms" } },
-        "stat_3": { "type": "stat", "settings": { "stat_value": "15+", "stat_label": "Års Erfaring" } }
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "50.000+",
+            "stat_label": "Tilfredse Kunder"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "20+",
+            "stat_label": "Showrooms"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "15+",
+            "stat_label": "Års Erfaring"
+          }
+        }
       },
-      "block_order": ["stat_1", "stat_2", "stat_3"]
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3"
+      ]
     },
     "trust_bar": {
       "type": "woc-trust-bar",
       "settings": {},
       "blocks": {
-        "trust_1": { "type": "trust_item", "settings": { "icon": "truck", "label": "Gratis Levering", "sub": "I hele Skandinavien" } },
-        "trust_2": { "type": "trust_item", "settings": { "icon": "shield", "label": "5 Års Garanti", "sub": "På alle modeller" } },
-        "trust_3": { "type": "trust_item", "settings": { "icon": "award", "label": "Prisvindende", "sub": "Skandinavisk Design" } },
-        "trust_4": { "type": "trust_item", "settings": { "icon": "creditcard", "label": "0% Rente", "sub": "Finansiering tilbydes" } }
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "truck",
+            "label": "Gratis Levering",
+            "sub": "I hele Skandinavien"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "shield",
+            "label": "5 Års Garanti",
+            "sub": "På alle modeller"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "award",
+            "label": "Prisvindende",
+            "sub": "Skandinavisk Design"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "creditcard",
+            "label": "0% Rente",
+            "sub": "Finansiering tilbydes"
+          }
+        }
       },
-      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"]
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ]
     },
     "bestsellers": {
       "type": "woc-product-grid-custom",
@@ -157,11 +131,33 @@
         "columns_desktop": 3
       },
       "blocks": {
-        "prod_1": { "type": "product", "settings": { "badge": "POPULÆRT VALG", "status_label": "Få demomodeller tilbage", "tagline": "Den mest avancerede wellness-oplevelse" } },
-        "prod_2": { "type": "product", "settings": { "badge": "NYHED", "tagline": "Dybdegående 4D massage" } },
-        "prod_3": { "type": "product", "settings": { "tagline": "Bedst til prisen" } }
+        "prod_1": {
+          "type": "product",
+          "settings": {
+            "badge": "POPULÆRT VALG",
+            "status_label": "Få demomodeller tilbage",
+            "tagline": "Den mest avancerede wellness-oplevelse"
+          }
+        },
+        "prod_2": {
+          "type": "product",
+          "settings": {
+            "badge": "NYHED",
+            "tagline": "Dybdegående 4D massage"
+          }
+        },
+        "prod_3": {
+          "type": "product",
+          "settings": {
+            "tagline": "Bedst til prisen"
+          }
+        }
       },
-      "block_order": ["prod_1", "prod_2", "prod_3"]
+      "block_order": [
+        "prod_1",
+        "prod_2",
+        "prod_3"
+      ]
     },
     "core_models": {
       "type": "woc-product-grid-custom",
@@ -174,12 +170,25 @@
         "columns_desktop": 4
       },
       "blocks": {
-        "prod_1": { "type": "product" },
-        "prod_2": { "type": "product" },
-        "prod_3": { "type": "product" },
-        "prod_4": { "type": "product" }
+        "prod_1": {
+          "type": "product"
+        },
+        "prod_2": {
+          "type": "product"
+        },
+        "prod_3": {
+          "type": "product"
+        },
+        "prod_4": {
+          "type": "product"
+        }
       },
-      "block_order": ["prod_1", "prod_2", "prod_3", "prod_4"]
+      "block_order": [
+        "prod_1",
+        "prod_2",
+        "prod_3",
+        "prod_4"
+      ]
     },
     "collection": {
       "type": "woc-collection-grid",
@@ -200,11 +209,40 @@
         "btn2_text": "Ring til os"
       },
       "blocks": {
-        "card_1": { "type": "pricing_card", "settings": { "icon": "shield", "title": "Køb Kontant", "is_highlighted": false, "price": "24.999,-" } },
-        "card_2": { "type": "pricing_card", "settings": { "icon": "creditcard", "title": "Finansiering", "is_highlighted": true, "price": "249,- / md", "highlight_badge": "MEST POPULÆRE" } },
-        "card_3": { "type": "pricing_card", "settings": { "icon": "award", "title": "Erhvervsleasing", "is_highlighted": false, "price": "1.250,- / md" } }
+        "card_1": {
+          "type": "pricing_card",
+          "settings": {
+            "icon": "shield",
+            "title": "Køb Kontant",
+            "is_highlighted": false,
+            "price": "24.999,-"
+          }
+        },
+        "card_2": {
+          "type": "pricing_card",
+          "settings": {
+            "icon": "creditcard",
+            "title": "Finansiering",
+            "is_highlighted": true,
+            "price": "249,- / md",
+            "highlight_badge": "MEST POPULÆRE"
+          }
+        },
+        "card_3": {
+          "type": "pricing_card",
+          "settings": {
+            "icon": "award",
+            "title": "Erhvervsleasing",
+            "is_highlighted": false,
+            "price": "1.250,- / md"
+          }
+        }
       },
-      "block_order": ["card_1", "card_2", "card_3"]
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ]
     },
     "endorsement": {
       "type": "woc-endorsement",
@@ -222,41 +260,138 @@
         "title_line2": "Fordele"
       },
       "blocks": {
-        "ben_1": { "type": "benefit", "settings": { "text": "Effektiv lindring af ryg- og nakkesmerter" } },
-        "ben_2": { "type": "benefit", "settings": { "text": "Forbedret blodcirkulation" } },
-        "ben_3": { "type": "benefit", "settings": { "text": "Stressreduktion og lavere kortisol" } },
-        "ben_4": { "type": "benefit", "settings": { "text": "Hurtigere restitution efter sport" } },
-        "ben_5": { "type": "benefit", "settings": { "text": "Bedre og dybere søvnkvalitet" } },
-        "ben_6": { "type": "benefit", "settings": { "text": "Løsning af muskelspændinger" } },
-        "ben_7": { "type": "benefit", "settings": { "text": "Forbedret kropsholdning" } },
-        "ben_8": { "type": "benefit", "settings": { "text": "Styrket immunforsvar" } },
-        "ben_9": { "type": "benefit", "settings": { "text": "Mental klarhed" } },
-        "ben_10": { "type": "benefit", "settings": { "text": "Øget fleksibilitet" } }
+        "ben_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Effektiv lindring af ryg- og nakkesmerter"
+          }
+        },
+        "ben_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret blodcirkulation"
+          }
+        },
+        "ben_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Stressreduktion og lavere kortisol"
+          }
+        },
+        "ben_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Hurtigere restitution efter sport"
+          }
+        },
+        "ben_5": {
+          "type": "benefit",
+          "settings": {
+            "text": "Bedre og dybere søvnkvalitet"
+          }
+        },
+        "ben_6": {
+          "type": "benefit",
+          "settings": {
+            "text": "Løsning af muskelspændinger"
+          }
+        },
+        "ben_7": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret kropsholdning"
+          }
+        },
+        "ben_8": {
+          "type": "benefit",
+          "settings": {
+            "text": "Styrket immunforsvar"
+          }
+        },
+        "ben_9": {
+          "type": "benefit",
+          "settings": {
+            "text": "Mental klarhed"
+          }
+        },
+        "ben_10": {
+          "type": "benefit",
+          "settings": {
+            "text": "Øget fleksibilitet"
+          }
+        }
       },
-      "block_order": ["ben_1", "ben_2", "ben_3", "ben_4", "ben_5", "ben_6", "ben_7", "ben_8", "ben_9", "ben_10"]
+      "block_order": [
+        "ben_1",
+        "ben_2",
+        "ben_3",
+        "ben_4",
+        "ben_5",
+        "ben_6",
+        "ben_7",
+        "ben_8",
+        "ben_9",
+        "ben_10"
+      ]
     },
     "xd": {
       "type": "woc-xd-technology",
       "settings": {},
       "blocks": {
-        "feat_1": { "type": "feature", "settings": { "title": "AI Kropsscanning", "description": "Scanner rygsøjlens kontur og justerer rullerne for optimalt tryk." } },
-        "feat_2": { "type": "feature", "settings": { "title": "Dybdevirkende 4D", "description": "Rullerne bevæger sig op, ned, til siden og i dybden op til 12 cm." } },
-        "feat_3": { "type": "feature", "settings": { "title": "Intelligent Varmeterapi", "description": "Indbygget varme i rullerne løsner spændte muskler før massagen." } }
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "AI Kropsscanning",
+            "description": "Scanner rygsøjlens kontur og justerer rullerne for optimalt tryk."
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Dybdevirkende 4D",
+            "description": "Rullerne bevæger sig op, ned, til siden og i dybden op til 12 cm."
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Intelligent Varmeterapi",
+            "description": "Indbygget varme i rullerne løsner spændte muskler før massagen."
+          }
+        }
       },
-      "block_order": ["feat_1", "feat_2", "feat_3"]
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3"
+      ]
     },
     "faqs": {
       "type": "pdp-faqs",
       "settings": {
-        "pre_title": "HAR DU SPØRGSMÅL?",
         "title": "Ofte stillede spørgsmål",
         "subtitle": "Her finder du svar på de mest almindelige spørgsmål om vores massagestole."
       },
       "blocks": {
-        "faq_1": { "type": "faq", "settings": { "question": "Hvor meget plads kræver en massagestol?", "answer": "De fleste af vores modeller har 'Zero Space' teknologi og kræver kun 5-10 cm fra væggen bagtil." } },
-        "faq_2": { "type": "faq", "settings": { "question": "Hvor meget strøm bruger den?", "answer": "Ved normalt brug svarer strømforbruget cirka til en almindelig bærbar computer (100-200W)." } }
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor meget plads kræver en massagestol?",
+            "answer": "De fleste af vores modeller har 'Zero Space' teknologi og kræver kun 5-10 cm fra væggen bagtil."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor meget strøm bruger den?",
+            "answer": "Ved normalt brug svarer strømforbruget cirka til en almindelig bærbar computer (100-200W)."
+          }
+        }
       },
-      "block_order": ["faq_1", "faq_2"]
+      "block_order": [
+        "faq_1",
+        "faq_2"
+      ]
     },
     "why_us": {
       "type": "woc-why-us",
@@ -269,19 +404,10 @@
         "title_line2": "Find din perfekte stol.",
         "btn1_text": "Tag testen nu",
         "btn2_text": "Book en gratis prøvning"
->>>>>>> Stashed changes
       }
     }
   },
   "order": [
-<<<<<<< Updated upstream
-    "hero",
-    "trust",
-    "showcase_bestsellers",
-    "why_us",
-    "testimonials",
-    "faqs"
-=======
     "marquee",
     "hero",
     "trust_bar",
@@ -295,6 +421,5 @@
     "faqs",
     "why_us",
     "bottom_cta"
->>>>>>> Stashed changes
   ]
 }
