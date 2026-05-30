@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -16,15 +25,14 @@
         "text_1": {
           "type": "caption",
           "settings": {
-            "text": "FILOSOFIEN BAG VORES SENGE",
             "text_style": "subtitle"
           }
         },
         "text_2": {
           "type": "heading",
           "settings": {
-            "heading_size": "h1",
-            "heading": "Ingen krop er ens. Din seng skal heller ikke være det."
+            "heading": "Ingen krop er ens. Din seng skal heller ikke være det.",
+            "heading_size": "h1"
           }
         },
         "text_3": {
@@ -56,14 +64,54 @@
     "sovesystem_showcase": {
       "type": "woc-product-showcase",
       "blocks": {
-        "bullet_1": { "type": "bullet", "settings": { "text": "Håndlavet i Tyskland" } },
-        "bullet_2": { "type": "bullet", "settings": { "text": "Anatomisk tilpasning" } },
-        "bullet_3": { "type": "bullet", "settings": { "text": "15 års fabriksgaranti" } },
-        "bullet_4": { "type": "bullet", "settings": { "text": "Antibakterielt sølv-betræk" } },
-        "step_1": { "type": "step", "settings": { "text": "Book gratis rygscanning & måling i showroom." } },
-        "step_2": { "type": "step", "settings": { "text": "Sengen kalibreres præcist til dine mål." } },
-        "step_3": { "type": "step", "settings": { "text": "Håndbygges på fabrikken i Tyskland." } },
-        "step_4": { "type": "step", "settings": { "text": "White-glove levering og montering." } }
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Håndlavet i Tyskland"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Anatomisk tilpasning"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "15 års fabriksgaranti"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Antibakterielt sølv-betræk"
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "text": "Book gratis rygscanning & måling i showroom."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "text": "Sengen kalibreres præcist til dine mål."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "text": "Håndbygges på fabrikken i Tyskland."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "text": "White-glove levering og montering."
+          }
+        }
       },
       "block_order": [
         "bullet_1",
@@ -94,10 +142,30 @@
     "ai_mattress_showcase": {
       "type": "woc-product-showcase",
       "blocks": {
-        "bullet_1": { "type": "bullet", "settings": { "text": "Aktiv luftkompressions-støtte" } },
-        "bullet_2": { "type": "bullet", "settings": { "text": "Automatisk fasthedsjustering (1-5)" } },
-        "bullet_3": { "type": "bullet", "settings": { "text": "Integreret sleep-tracker matrix" } },
-        "bullet_4": { "type": "bullet", "settings": { "text": "Smart app til iOS & Android" } }
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Aktiv luftkompressions-støtte"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Automatisk fasthedsjustering (1-5)"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Integreret sleep-tracker matrix"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Smart app til iOS & Android"
+          }
+        }
       },
       "block_order": [
         "bullet_1",
@@ -121,10 +189,30 @@
     "ai_topper_showcase": {
       "type": "woc-product-showcase",
       "blocks": {
-        "bullet_1": { "type": "bullet", "settings": { "text": "Passer på alle eksisterende madrasser" } },
-        "bullet_2": { "type": "bullet", "settings": { "text": "7 indbyggede massageprogrammer" } },
-        "bullet_3": { "type": "bullet", "settings": { "text": "3-niveaus beroligende varmeterapi" } },
-        "bullet_4": { "type": "bullet", "settings": { "text": "Dybdegående luftstrækmassage" } }
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Passer på alle eksisterende madrasser"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "text": "7 indbyggede massageprogrammer"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "3-niveaus beroligende varmeterapi"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Dybdegående luftstrækmassage"
+          }
+        }
       },
       "block_order": [
         "bullet_1",
@@ -148,10 +236,30 @@
     "universal_beds_showcase": {
       "type": "woc-product-showcase",
       "blocks": {
-        "bullet_1": { "type": "bullet", "settings": { "text": "Dansk produceret kvalitet" } },
-        "bullet_2": { "type": "bullet", "settings": { "text": "Luksuriøst elevationssystem" } },
-        "bullet_3": { "type": "bullet", "settings": { "text": "Klassisk skandinavisk design" } },
-        "bullet_4": { "type": "bullet", "settings": { "text": "Oeko-Tex certificerede tekstiler" } }
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Dansk produceret kvalitet"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Luksuriøst elevationssystem"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Klassisk skandinavisk design"
+          }
+        },
+        "bullet_4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Oeko-Tex certificerede tekstiler"
+          }
+        }
       },
       "block_order": [
         "bullet_1",

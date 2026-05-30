@@ -1,11 +1,16 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "marquee": {
       "type": "woc-marquee",
-      "settings": {
-        "bg_color": "#d8b261",
-        "text_color": "#151515"
-      },
       "blocks": {
         "text_1": {
           "type": "text",
@@ -30,23 +35,14 @@
         "text_1",
         "text_2",
         "text_3"
-      ]
+      ],
+      "settings": {
+        "bg_color": "#d8b261",
+        "text_color": "#151515"
+      }
     },
     "hero": {
       "type": "woc-hero",
-      "settings": {
-        "hero_label": "PREMIUM WELLNESS",
-        "title_line1": "Skandinaviens Førende",
-        "title_line2": "Wellness-Teknologi",
-        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
-        "show_reviews": true,
-        "btn1_text": "Se Massagestole",
-        "btn1_url": "#collection",
-        "btn2_text": "Find Showroom",
-        "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Speciallæge & Kiropraktor",
-        "expert_quote": "Den mest effektive forebyggelse af rygproblemer."
-      },
       "blocks": {
         "stat_1": {
           "type": "stat",
@@ -74,11 +70,23 @@
         "stat_1",
         "stat_2",
         "stat_3"
-      ]
+      ],
+      "settings": {
+        "hero_label": "PREMIUM WELLNESS",
+        "title_line1": "Skandinaviens Førende",
+        "title_line2": "Wellness-Teknologi",
+        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "show_reviews": true,
+        "btn1_text": "Se Massagestole",
+        "btn1_url": "#collection",
+        "btn2_text": "Find Showroom",
+        "expert_name": "Dr. Carsten Rosendahl",
+        "expert_title": "Speciallæge & Kiropraktor",
+        "expert_quote": "Den mest effektive forebyggelse af rygproblemer."
+      }
     },
     "trust_bar": {
       "type": "woc-trust-bar",
-      "settings": {},
       "blocks": {
         "trust_1": {
           "type": "trust_item",
@@ -118,18 +126,11 @@
         "trust_2",
         "trust_3",
         "trust_4"
-      ]
+      ],
+      "settings": {}
     },
     "bestsellers": {
       "type": "woc-product-grid-custom",
-      "settings": {
-        "bg_style": "bg-charcoal",
-        "pre_title": "MEST POPULÆRE",
-        "title_line1": "Vores",
-        "title_line2": "Bestsellere",
-        "description": "De mest elskede massagestole blandt vores kunder — udvalgt for overlegen komfort, avanceret teknologi og uovertruffen kvalitet.",
-        "columns_desktop": 3
-      },
       "blocks": {
         "prod_1": {
           "type": "product",
@@ -157,30 +158,34 @@
         "prod_1",
         "prod_2",
         "prod_3"
-      ]
+      ],
+      "settings": {
+        "bg_style": "bg-charcoal",
+        "pre_title": "MEST POPULÆRE",
+        "title_line1": "Vores",
+        "title_line2": "Bestsellere",
+        "description": "De mest elskede massagestole blandt vores kunder — udvalgt for overlegen komfort, avanceret teknologi og uovertruffen kvalitet.",
+        "columns_desktop": 3
+      }
     },
     "core_models": {
       "type": "woc-product-grid-custom",
-      "settings": {
-        "bg_style": "bg-charcoal/95",
-        "pre_title": "EGEN PRODUKTION",
-        "title_line1": "Kerne",
-        "title_line2": "Modeller",
-        "description": "Vores egen serie af præcisionsudviklede massagestole, designet med fokus på ergonomi og dybdegående smertelindring.",
-        "columns_desktop": 4
-      },
       "blocks": {
         "prod_1": {
-          "type": "product"
+          "type": "product",
+          "settings": {}
         },
         "prod_2": {
-          "type": "product"
+          "type": "product",
+          "settings": {}
         },
         "prod_3": {
-          "type": "product"
+          "type": "product",
+          "settings": {}
         },
         "prod_4": {
-          "type": "product"
+          "type": "product",
+          "settings": {}
         }
       },
       "block_order": [
@@ -188,7 +193,15 @@
         "prod_2",
         "prod_3",
         "prod_4"
-      ]
+      ],
+      "settings": {
+        "bg_style": "bg-charcoal/95",
+        "pre_title": "EGEN PRODUKTION",
+        "title_line1": "Kerne",
+        "title_line2": "Modeller",
+        "description": "Vores egen serie af præcisionsudviklede massagestole, designet med fokus på ergonomi og dybdegående smertelindring.",
+        "columns_desktop": 4
+      }
     },
     "collection": {
       "type": "woc-collection-grid",
@@ -201,39 +214,32 @@
     },
     "financing": {
       "type": "woc-financing-options",
-      "settings": {
-        "pre_title": "INVESTER I DIT HELBRED",
-        "title_line1": "Fleksibel",
-        "title_line2": "Finansiering",
-        "btn1_text": "Få et Tilbud",
-        "btn2_text": "Ring til os"
-      },
       "blocks": {
         "card_1": {
           "type": "pricing_card",
           "settings": {
+            "is_highlighted": false,
             "icon": "shield",
             "title": "Køb Kontant",
-            "is_highlighted": false,
             "price": "24.999,-"
           }
         },
         "card_2": {
           "type": "pricing_card",
           "settings": {
+            "is_highlighted": true,
+            "highlight_badge": "MEST POPULÆRE",
             "icon": "creditcard",
             "title": "Finansiering",
-            "is_highlighted": true,
-            "price": "249,- / md",
-            "highlight_badge": "MEST POPULÆRE"
+            "price": "249,- / md"
           }
         },
         "card_3": {
           "type": "pricing_card",
           "settings": {
+            "is_highlighted": false,
             "icon": "award",
             "title": "Erhvervsleasing",
-            "is_highlighted": false,
             "price": "1.250,- / md"
           }
         }
@@ -242,7 +248,14 @@
         "card_1",
         "card_2",
         "card_3"
-      ]
+      ],
+      "settings": {
+        "pre_title": "INVESTER I DIT HELBRED",
+        "title_line1": "Fleksibel",
+        "title_line2": "Finansiering",
+        "btn1_text": "Få et Tilbud",
+        "btn2_text": "Ring til os"
+      }
     },
     "endorsement": {
       "type": "woc-endorsement",
@@ -254,11 +267,6 @@
     },
     "benefits": {
       "type": "woc-health-benefits",
-      "settings": {
-        "pre_title": "10 GRUNDE TIL",
-        "title_line1": "Sundhedsmæssige",
-        "title_line2": "Fordele"
-      },
       "blocks": {
         "ben_1": {
           "type": "benefit",
@@ -332,11 +340,15 @@
         "ben_8",
         "ben_9",
         "ben_10"
-      ]
+      ],
+      "settings": {
+        "pre_title": "10 GRUNDE TIL",
+        "title_line1": "Sundhedsmæssige",
+        "title_line2": "Fordele"
+      }
     },
     "xd": {
       "type": "woc-xd-technology",
-      "settings": {},
       "blocks": {
         "feat_1": {
           "type": "feature",
@@ -364,14 +376,11 @@
         "feat_1",
         "feat_2",
         "feat_3"
-      ]
+      ],
+      "settings": {}
     },
     "faqs": {
       "type": "pdp-faqs",
-      "settings": {
-        "title": "Ofte stillede spørgsmål",
-        "subtitle": "Her finder du svar på de mest almindelige spørgsmål om vores massagestole."
-      },
       "blocks": {
         "faq_1": {
           "type": "faq",
@@ -391,7 +400,11 @@
       "block_order": [
         "faq_1",
         "faq_2"
-      ]
+      ],
+      "settings": {
+        "subtitle": "Her finder du svar på de mest almindelige spørgsmål om vores massagestole.",
+        "title": "Ofte stillede spørgsmål"
+      }
     },
     "why_us": {
       "type": "woc-why-us",
