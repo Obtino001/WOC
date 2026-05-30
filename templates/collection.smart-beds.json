@@ -9,25 +9,36 @@
  */
 {
   "sections": {
-    "marquee": {
-      "type": "woc-marquee",
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "hero_label": "PREMIUM S�VN-TEKNOLOGI",
+        "title_line1": "Fremtidens",
+        "title_line2": "Smart-Senge & AI Madras",
+        "subtitle": "Premium smart-senge med SOVESYSTEM�, SYNTHERA� AI madras og topper. H�ndlavet i Tyskland med patenteret trykaflastning.",
+        "btn1_text": "Se Kollektionen",
+        "btn1_url": "#collection",
+        "btn2_text": "Hvordan det fungerer",
+        "btn2_url": "#process"
+      }
+    },
+    "philosophy": {
+      "type": "rich-text",
       "blocks": {
         "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "SKANDINAVIENS F�RENDE SOVESYSTEMER"
-          }
+          "type": "caption",
+          "settings": {}
         },
         "text_2": {
-          "type": "text",
+          "type": "heading",
           "settings": {
-            "text": "15 �RS GARANTI"
+            "heading": "Ingen krop er ens. Din seng skal heller ikke v�re det."
           }
         },
         "text_3": {
           "type": "text",
           "settings": {
-            "text": "GRATIS LEVERING"
+            "text": "<p>Standardmadrasser tvinger din krop til at tilpasse sig sengen. Vi g�r det omvendt. Vores sovesystemer er skr�ddersyet efter din rygs�jles anatomi, v�gtfordeling og personlige pr�ferencer, s� du f�r den perfekte st�tte hele natten.</p>"
           }
         }
       },
@@ -36,347 +47,209 @@
         "text_2",
         "text_3"
       ],
-      "settings": {
-        "bg_color": "#d8b261",
-        "text_color": "#151515"
-      }
+      "settings": {}
     },
-    "hero": {
-      "type": "woc-hero",
+    "categories": {
+      "type": "woc-categories",
       "blocks": {
-        "stat_1": {
-          "type": "stat",
+        "cat_1": {
+          "type": "category",
           "settings": {
-            "stat_value": "15",
-            "stat_label": "�rs Garanti"
+            "title": "SOVESYSTEM�",
+            "subtitle": "Skr�ddersyet efter dine m�l",
+            "link": "#sovesystem"
           }
         },
-        "stat_2": {
-          "type": "stat",
+        "cat_2": {
+          "type": "category",
           "settings": {
-            "stat_value": "100%",
-            "stat_label": "H�ndlavet i Tyskland"
+            "title": "SYNTHERA� AI Madras",
+            "subtitle": "Intelligent trykaflastning",
+            "link": "#ai-mattress"
           }
         },
-        "stat_3": {
-          "type": "stat",
+        "cat_3": {
+          "type": "category",
           "settings": {
-            "stat_value": "20+",
-            "stat_label": "Showrooms"
+            "title": "SYNTHERA� AI Topper",
+            "subtitle": "G�r din nuv�rende seng smart",
+            "link": "#ai-topper"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "title": "Universal Beds",
+            "subtitle": "Klassiske kontinentalsenge",
+            "link": "#universal-beds"
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "title": "Dyner & Puder",
+            "subtitle": "Premium sovetilbeh�r",
+            "link": "#duvets-pillows"
           }
         }
       },
       "block_order": [
-        "stat_1",
-        "stat_2",
-        "stat_3"
-      ],
-      "settings": {
-        "hero_label": "PREMIUM S�VN-TEKNOLOGI",
-        "title_line1": "Fremtidens",
-        "title_line2": "Smart-Senge & AI Madras",
-        "subtitle": "Premium smart-senge med SOVESYSTEM�, SYNTHERA� AI madras og topper. H�ndlavet i Tyskland med patenteret trykaflastning.",
-        "show_reviews": true,
-        "btn1_text": "Se Senge",
-        "btn2_text": "Book R�dgivning",
-        "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Speciall�ge & Kiropraktor",
-        "expert_quote": "Den korrekte st�tte til din rygs�jle natten igennem er afg�rende."
-      }
-    },
-    "trust_bar": {
-      "type": "woc-trust-bar",
-      "blocks": {
-        "trust_1": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "truck",
-            "label": "Gratis Levering",
-            "sub": "I hele Skandinavien"
-          }
-        },
-        "trust_2": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "shield",
-            "label": "15 �rs Garanti",
-            "sub": "P� fabrikationsfejl"
-          }
-        },
-        "trust_3": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "award",
-            "label": "OEKO-TEX",
-            "sub": "Certificerede materialer"
-          }
-        },
-        "trust_4": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "creditcard",
-            "label": "0% Rente",
-            "sub": "Finansiering tilbydes"
-          }
-        }
-      },
-      "block_order": [
-        "trust_1",
-        "trust_2",
-        "trust_3",
-        "trust_4"
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5"
       ],
       "settings": {}
     },
-    "bestsellers": {
-      "type": "woc-product-grid-custom",
+    "sovesystem_showcase": {
+      "type": "woc-product-showcase",
       "blocks": {
-        "prod_1": {
-          "type": "product",
+        "bullet_1": {
+          "type": "bullet",
           "settings": {
-            "badge": "POPUL�RT VALG",
-            "status_label": "P� lager",
-            "tagline": "Den mest avancerede s�vnoplevelse",
-            "features": "AI Kropsscanning, Aktiv Luftkompression, App-styring"
+            "text": "H�ndlavet i Tyskland"
           }
         },
-        "prod_2": {
-          "type": "product",
+        "bullet_2": {
+          "type": "bullet",
           "settings": {
-            "badge": "NYHED",
-            "tagline": "Komplet SOVESYSTEM�",
-            "features": "Skr�ddersyet, H�ndlavet i Tyskland, Vaskbart s�lv-betr�k"
+            "text": "Anatomisk tilpasning"
           }
         },
-        "prod_3": {
-          "type": "product",
+        "step_1": {
+          "type": "step",
           "settings": {
-            "tagline": "Bedst til prisen",
-            "features": "Trykaflastende skum, �ndbar struktur, Ergonomisk"
+            "text": "Book gratis rygscanning i showroom."
           }
         }
       },
       "block_order": [
-        "prod_1",
-        "prod_2",
-        "prod_3"
+        "bullet_1",
+        "bullet_2",
+        "step_1"
       ],
       "settings": {
-        "bg_style": "bg-charcoal",
-        "pre_title": "MEST POPUL�RE",
-        "title_line1": "Vores",
-        "title_line2": "Bestsellere",
-        "description": "De mest foretrukne smart-senge blandt vores kunder � valgt for overlegen s�vnkvalitet og avanceret teknologi.",
-        "columns_desktop": 3
+        "title": "SOVESYSTEM�",
+        "tagline": "En seng bygget udelukkende til din krop",
+        "description_1": "SOVESYSTEM� er ikke en almindelig seng. Det er et patenteret, ergonomisk hvilesystem, hvor hver enkelt zone i bunden og madrassen kalibreres efter din kropsv�gt, skulderbredde og rygs�jlekrumning.",
+        "btn_text": "L�s mere om Sovesystemet"
       }
     },
-    "core_models": {
-      "type": "woc-product-grid-custom",
+    "ai_mattress_showcase": {
+      "type": "woc-product-showcase",
       "blocks": {
-        "prod_1": {
-          "type": "product",
-          "settings": {}
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Aktiv luftkompressions-st�tte"
+          }
         },
-        "prod_2": {
-          "type": "product",
-          "settings": {}
-        },
-        "prod_3": {
-          "type": "product",
-          "settings": {}
-        },
-        "prod_4": {
-          "type": "product",
-          "settings": {}
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "text": "Bestil online og f� gratis levering."
+          }
         }
       },
       "block_order": [
-        "prod_1",
-        "prod_2",
-        "prod_3",
-        "prod_4"
+        "bullet_1",
+        "step_1"
       ],
       "settings": {
-        "bg_style": "bg-charcoal/95",
-        "pre_title": "SOVESYSTEM�",
-        "title_line1": "Skr�ddersyede",
-        "title_line2": "Senge",
-        "description": "Senge designet udelukkende til dig. Hver zone kalibreres pr�cist til din v�gt og kropsbygning.",
-        "columns_desktop": 4
+        "title": "SYNTHERA� AI Madras",
+        "tagline": "Fremtidens intelligens i dit sovev�relse",
+        "description_1": "SYNTHERA� AI Madras er udstyret med hundredvis af sensorer der overv�ger dit s�vnm�nster, mens integrerede luftceller automatisk justerer fastheden gennem natten.",
+        "btn_text": "Se SYNTHERA� Madras"
       }
     },
-    "collection": {
-      "type": "woc-collection-grid",
-      "settings": {
-        "pre_title": "UDFORSK KOLLEKTIONEN",
-        "title": "Alle Smart Senge",
-        "description": "Find det sovesystem der passer bedst til din krop og dine behov.",
-        "products_per_page": 12
-      }
-    },
-    "financing": {
-      "type": "woc-financing-options",
+    "ai_topper_showcase": {
+      "type": "woc-product-showcase",
       "blocks": {
-        "card_1": {
-          "type": "pricing_card",
+        "bullet_1": {
+          "type": "bullet",
           "settings": {
-            "is_highlighted": false,
-            "icon": "shield",
-            "title": "K�b Kontant",
-            "price": "19.999,-"
+            "text": "Passer til alle senge"
           }
         },
-        "card_2": {
-          "type": "pricing_card",
+        "step_1": {
+          "type": "step",
           "settings": {
-            "is_highlighted": true,
-            "highlight_badge": "MEST POPUL�RE",
-            "icon": "creditcard",
-            "title": "Finansiering",
-            "price": "199,- / md"
-          }
-        },
-        "card_3": {
-          "type": "pricing_card",
-          "settings": {
-            "is_highlighted": false,
-            "icon": "award",
-            "title": "Sengeleasing",
-            "price": "950,- / md"
+            "text": "Klar til brug p� 5 minutter."
           }
         }
       },
       "block_order": [
-        "card_1",
-        "card_2",
-        "card_3"
+        "bullet_1",
+        "step_1"
       ],
       "settings": {
-        "pre_title": "INVESTER I DIN S�VN",
-        "title_line1": "Fleksibel",
-        "title_line2": "Finansiering",
-        "btn1_text": "F� et Tilbud",
-        "btn2_text": "Ring til os"
+        "title": "SYNTHERA� AI Topmadras",
+        "tagline": "Opgrader din nuv�rende seng",
+        "description_1": "F� gl�de af SYNTHERA� AI teknologi uden at skifte hele din seng. Topmadrassen l�gges blot ovenp� din eksisterende madras, hvorefter den straks begynder at afl�se og tilpasse sig din krop.",
+        "btn_text": "Se SYNTHERA� Topmadras"
       }
     },
-    "endorsement": {
-      "type": "woc-endorsement",
-      "settings": {
-        "pre_title": "FAGLIGT ANBEFALET",
-        "title_line1": "Din Ryg Fortjener",
-        "title_line2": "Perfekt St�tte"
-      }
-    },
-    "benefits": {
-      "type": "woc-health-benefits",
+    "universal_beds_showcase": {
+      "type": "woc-product-showcase",
       "blocks": {
-        "ben_1": {
-          "type": "benefit",
+        "bullet_1": {
+          "type": "bullet",
           "settings": {
-            "text": "Mindre afbrudt s�vn"
+            "text": "Dansk design"
           }
         },
-        "ben_2": {
-          "type": "benefit",
+        "step_1": {
+          "type": "step",
           "settings": {
-            "text": "Forebygger ryg- og l�ndesmerter"
-          }
-        },
-        "ben_3": {
-          "type": "benefit",
-          "settings": {
-            "text": "Optimal temperaturregulering"
-          }
-        },
-        "ben_4": {
-          "type": "benefit",
-          "settings": {
-            "text": "Dyb restitution"
-          }
-        },
-        "ben_5": {
-          "type": "benefit",
-          "settings": {
-            "text": "Mindre at vende og dreje sig"
-          }
-        },
-        "ben_6": {
-          "type": "benefit",
-          "settings": {
-            "text": "St�tte til alle kropstyper"
-          }
-        },
-        "ben_7": {
-          "type": "benefit",
-          "settings": {
-            "text": "Antibakterielle materialer"
-          }
-        },
-        "ben_8": {
-          "type": "benefit",
-          "settings": {
-            "text": "Forbedret blodcirkulation"
-          }
-        },
-        "ben_9": {
-          "type": "benefit",
-          "settings": {
-            "text": "Afhj�lper snorken (via elevation)"
-          }
-        },
-        "ben_10": {
-          "type": "benefit",
-          "settings": {
-            "text": "�get energi om dagen"
+            "text": "V�lg din fasthed og farve."
           }
         }
       },
       "block_order": [
-        "ben_1",
-        "ben_2",
-        "ben_3",
-        "ben_4",
-        "ben_5",
-        "ben_6",
-        "ben_7",
-        "ben_8",
-        "ben_9",
-        "ben_10"
+        "bullet_1",
+        "step_1"
       ],
       "settings": {
-        "pre_title": "S�VNKVALITET",
-        "title_line1": "Sundhedsm�ssige",
-        "title_line2": "Fordele"
+        "title": "Universal Beds",
+        "tagline": "Klassisk design m�der moderne komfort",
+        "description_1": "Foretr�kker du en mere traditionel sengel�sning uden at g� p� kompromis med kvaliteten? Universal Beds er vores bud p� den perfekte kontinentalseng, designet i Danmark.",
+        "btn_text": "Se Universal Beds"
       }
     },
-    "xd": {
-      "type": "woc-xd-technology",
+    "duvets_pillows": {
+      "type": "image-with-text",
       "blocks": {
-        "feat_1": {
-          "type": "feature",
+        "text_1": {
+          "type": "caption",
+          "settings": {}
+        },
+        "text_2": {
+          "type": "heading",
           "settings": {
-            "title": "AI Kropsscanning"
+            "heading": "Dyner & Puder"
           }
         },
-        "feat_2": {
-          "type": "feature",
+        "text_3": {
+          "type": "text",
           "settings": {
-            "title": "Aktiv Luftkompression"
-          }
-        },
-        "feat_3": {
-          "type": "feature",
-          "settings": {
-            "title": "Intelligent S�vn-Tracker"
+            "text": "<p>Premium dyner og puder fra vores eget brand � h�ndplukket kvalitet med dunfyld for den perfekte nattes�vn.</p>"
           }
         }
       },
       "block_order": [
-        "feat_1",
-        "feat_2",
-        "feat_3"
+        "text_1",
+        "text_2",
+        "text_3"
       ],
       "settings": {}
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "title": "What Makes Our Sleep Systems Unique",
+        "description": "We don't just sell beds � we engineer personalised sleep solutions backed by German craftsmanship, AI technology, and decades of sleep science."
+      }
     },
     "faqs": {
       "type": "pdp-faqs",
@@ -387,49 +260,35 @@
             "question": "Kan sengen tilpasses hvis min v�gt �ndrer sig?",
             "answer": "Ja! SOVESYSTEM� lader dig udskifte individuelle zoner, og SYNTHERA� tilpasser sig automatisk."
           }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Er der pr�veperiode?",
-            "answer": "Vi tilbyder altid grundig r�dgivning i vores showrooms, og vores 15 �rs garanti d�kker konstruktionsfejl."
-          }
         }
       },
       "block_order": [
-        "faq_1",
-        "faq_2"
+        "faq_1"
       ],
       "settings": {
         "subtitle": "F� svar p� de mest almindelige sp�rgsm�l om vores smart-senge.",
         "title": "Ofte stillede sp�rgsm�l"
       }
     },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {}
-    },
     "bottom_cta": {
       "type": "woc-bottom-cta",
       "settings": {
         "title_line1": "Oplev fremtidens s�vn.",
         "title_line2": "Find din perfekte seng.",
-        "btn1_text": "Se alle modeller",
-        "btn2_text": "Book en gratis rygscanning"
+        "btn1_text": "Book en gratis rygscanning",
+        "btn2_text": "Se showrooms"
       }
     }
   },
   "order": [
-    "marquee",
     "hero",
-    "trust_bar",
-    "bestsellers",
-    "core_models",
-    "collection",
-    "financing",
-    "endorsement",
-    "benefits",
-    "xd",
+    "philosophy",
+    "categories",
+    "sovesystem_showcase",
+    "ai_mattress_showcase",
+    "ai_topper_showcase",
+    "universal_beds_showcase",
+    "duvets_pillows",
     "faqs",
     "why_us",
     "bottom_cta"
