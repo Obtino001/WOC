@@ -25,7 +25,9 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "subprice_text": "or from £22/week"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -42,7 +44,10 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": true,
+            "show_demo_button": true,
+            "demo_text": "Book a Demo",
+            "demo_link": ""
           }
         },
         "description": {
@@ -69,7 +74,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
@@ -89,6 +94,7 @@
           "type": "feature",
           "settings": {
             "icon": "brain",
+            "custom_icon_svg": "",
             "title": "AI Kropsscanning",
             "desc": "Intelligente sensorer kortlægger din kropskontur for en personlig oplevelse."
           }
@@ -97,6 +103,7 @@
           "type": "feature",
           "settings": {
             "icon": "activity",
+            "custom_icon_svg": "",
             "title": "Zero Gravity position",
             "desc": "NASA-inspireret liggestilling fordeler vægten jævnt for at mindske tryk."
           }
@@ -105,6 +112,7 @@
           "type": "feature",
           "settings": {
             "icon": "flame",
+            "custom_icon_svg": "",
             "title": "Infrarød varmeterapi",
             "desc": "Dybdegående varme trænger dybt ind i musklerne og fremmer restitution."
           }
@@ -113,6 +121,7 @@
           "type": "feature",
           "settings": {
             "icon": "waves",
+            "custom_icon_svg": "",
             "title": "Dual-Core Mekanisme",
             "desc": "Avanceret ryg- og lændebehandling for optimal afslapning."
           }
@@ -135,37 +144,43 @@
         "health_1": {
           "type": "benefit",
           "settings": {
-            "text": "Reducerer kroniske rygsmerter og nakkespændinger"
+            "text": "Reducerer kroniske rygsmerter og nakkespændinger",
+            "custom_icon_svg": ""
           }
         },
         "health_2": {
           "type": "benefit",
           "settings": {
-            "text": "Forbedrer blodcirkulationen med op til 30%"
+            "text": "Forbedrer blodcirkulationen med op til 30%",
+            "custom_icon_svg": ""
           }
         },
         "health_3": {
           "type": "benefit",
           "settings": {
-            "text": "Sænker kortisolniveauet og mindsker stress"
+            "text": "Sænker kortisolniveauet og mindsker stress",
+            "custom_icon_svg": ""
           }
         },
         "health_4": {
           "type": "benefit",
           "settings": {
-            "text": "Fremmer dybere og mere restituerende søvn"
+            "text": "Fremmer dybere og mere restituerende søvn",
+            "custom_icon_svg": ""
           }
         },
         "health_5": {
           "type": "benefit",
           "settings": {
-            "text": "Øger ledmobilitet og smidighed i hele kroppen"
+            "text": "Øger ledmobilitet og smidighed i hele kroppen",
+            "custom_icon_svg": ""
           }
         },
         "health_6": {
           "type": "benefit",
           "settings": {
-            "text": "Accelererer muskelrestitution efter træning"
+            "text": "Accelererer muskelrestitution efter træning",
+            "custom_icon_svg": ""
           }
         }
       },
@@ -198,14 +213,16 @@
           "type": "item",
           "settings": {
             "name": "Standard komfortenhed",
-            "detail": "Kvalitetskomponent med fuld funktionalitet"
+            "detail": "Kvalitetskomponent med fuld funktionalitet",
+            "custom_icon_svg": ""
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
             "name": "Trådløs betjening",
-            "detail": "Fjernbetjening eller app-styring medfølger"
+            "detail": "Fjernbetjening eller app-styring medfølger",
+            "custom_icon_svg": ""
           }
         },
         "gift_1": {
@@ -213,7 +230,8 @@
           "settings": {
             "name": "E-bog & Vejledning",
             "desc": "Komplet guide til dit wellnessprodukt.",
-            "value": "Gratis (Værdi 299,-)"
+            "value": "Gratis (Værdi 299,-)",
+            "custom_icon_svg": ""
           }
         },
         "spec_1": {
