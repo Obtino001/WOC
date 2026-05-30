@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "woc-hero",
+      "settings": {
+        "video_url": "https://worldofcomfort.dk/cdn/shop/videos/c/vp/84feabde2ae74f59b46413fe7254d5a2/84feabde2ae74f59b46413fe7254d5a2.HD-1080p-7.2Mbps-44453992.mp4?v=0",
+        "title_line1": "Skandinaviens Førende",
+        "title_line2": "Massagestole med AI",
+        "subtitle": "Oplev terapeutisk smertelindring og dybdegående restitution. Vores massagestole forener japansk præcision, 3D/4D/XD trykteknologi og medicinsk godkendte spændingslindringer.",
+        "btn1_text": "Se Massagestole",
+        "btn2_text": "Book Prøvning"
+      }
+    },
+    "trust": {
+      "type": "woc-trust",
+      "settings": {
+        "google_score": "4.9",
+        "google_count": "1.200",
+        "trustpilot_score": "4.7",
+        "trustpilot_count": "1.400"
+      }
+    },
+    "showcase_bestsellers": {
+      "type": "woc-product-showcase",
+      "blocks": {
+        "bullet_1": { "type": "bullet", "settings": { "text": "Avanceret 4D & 5D rygmassage" } },
+        "bullet_2": { "type": "bullet", "settings": { "text": "AI kropsscanning & tryksensor" } },
+        "bullet_3": { "type": "bullet", "settings": { "text": "Leddrevet Zero Gravity recline" } },
+        "bullet_4": { "type": "bullet", "settings": { "text": "Bluetooth surround sound & aroma" } }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "bullet_4"
+      ],
+      "settings": {
+        "bg_style": "light",
+        "media_position": "right",
+        "badge_text": "POPULÆRT VALG",
+        "title": "Pharaoh Neo Massagestol",
+        "tagline": "Den mest avancerede wellness-oplevelse",
+        "country_flag": "🤖",
+        "country_text": "Advanced 4D Massage Technology",
+        "description_1": "Pharaoh Neo er vores absolutte topmodel. Udstyret med intelligente massageruller, der tilpasser trykket efter din rygsøjles kontur via en indledende AI-kropsscanning.",
+        "price_text": "Fra 89.999,-",
+        "btn_text": "Udforsk Pharaoh Neo"
+      }
+    },
+    "why_us": {
+      "type": "woc-why-us",
+      "settings": {
+        "label": "TERAPEUTISK EFFEKT",
+        "title": "Hvorfor vælge vores massagestole?",
+        "description": "Vores stole er medicinsk godkendte wellnessapparater udviklet til at forebygge og lindre kroniske ryg-, nakke- og lændesmerter."
+      }
+    },
+    "testimonials": {
+      "type": "woc-testimonials",
+      "settings": {
+        "label": "BRUGERNES ERFARINGER",
+        "heading": "Hvad siger eksperterne og kunderne?"
+      }
+    },
+    "faqs": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Kan jeg prøve massagestolene inden et køb?",
+            "answer": "Ja, absolut! Vi anbefaler altid, at du besøger et af vores 20+ showrooms i Danmark eller resten af Europa for at prøve stolene personligt. Vores erfarne wellness-konsulenter står klar til at rådgive dig."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor meget strøm bruger en massagestol?",
+            "answer": "En massagestol bruger typisk mellem 150W og 250W under drift, hvilket svarer til elforbruget på en stationær computer. Det koster under 50 øre per massagebehandling."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2"
+      ],
+      "settings": {
+        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
+        "title": "Spørgsmål & Svar"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust",
+    "showcase_bestsellers",
+    "why_us",
+    "testimonials",
+    "faqs"
+  ]
+}
