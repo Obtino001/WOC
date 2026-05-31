@@ -1,0 +1,125 @@
+<section id="calculator" class="py-20">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="font-body text-sm font-semibold tracking-widest uppercase text-corporate mb-3">{{ section.settings.subheading }}</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">{{ section.settings.heading }}</h2>
+      <p class="font-body text-muted-foreground max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto">
+      <div class="grid lg:grid-cols-5 gap-8 items-start">
+        
+        <div class="lg:col-span-3">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
+            <h3 class="font-display text-lg font-semibold text-foreground mb-6">Your Company Details</h3>
+            
+            <div class="space-y-6">
+              <div class="space-y-2">
+                <label class="font-body text-sm font-medium text-foreground">Number of Employees</label>
+                <input type="range" min="1" max="1000" value="50" class="w-full accent-corporate">
+                <div class="flex justify-between text-xs text-muted-foreground"><span>1</span><span>1000</span></div>
+              </div>
+              
+              <div class="space-y-2">
+                <label class="font-body text-sm font-medium text-foreground">Average Monthly Salary (DKK)</label>
+                <input type="range" min="15000" max="80000" value="35000" class="w-full accent-corporate">
+                <div class="flex justify-between text-xs text-muted-foreground"><span>15.000 kr.</span><span>80.000 kr.</span></div>
+              </div>
+
+              <div class="space-y-2">
+                <label class="font-body text-sm font-medium text-foreground">Current Sick Leave Percentage</label>
+                <input type="range" min="1" max="15" value="5" class="w-full accent-corporate">
+                <div class="flex justify-between text-xs text-muted-foreground"><span>1%</span><span>15%</span></div>
+              </div>
+            </div>
+
+            <div class="mt-8 rounded-lg border border-corporate/30 bg-accent/5 p-4 flex items-center justify-between">
+              <div>
+                <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
+                <p class="font-body text-xs text-muted-foreground">Full program included</p>
+              </div>
+              <div class="text-right">
+                <p class="font-display text-2xl font-bold text-corporate">{{ section.settings.price_text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 sticky top-24">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-corporate/30 overflow-hidden">
+            <div class="bg-charcoal p-6">
+              <h3 class="font-display text-lg font-semibold text-secondary">Your Annual Results</h3>
+            </div>
+            <div class="p-6 space-y-5">
+              <div class="flex justify-between items-center">
+                <span class="font-body text-sm text-muted-foreground">Gross Annual Savings</span>
+                <span class="font-display text-lg font-bold text-corporate">315.000 kr.</span>
+              </div>
+              <div class="bg-card rounded-lg p-4 space-y-3">
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm font-semibold text-foreground">Net Annual Savings</span>
+                  <span class="font-display text-xl font-bold text-corporate">297.000 kr.</span>
+                </div>
+                <div class="border-t border-border pt-3 flex justify-between items-center">
+                  <span class="font-body text-sm text-muted-foreground">Payback Period</span>
+                  <span class="font-display text-lg font-bold text-corporate">1 month</span>
+                </div>
+              </div>
+              <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center w-full bg-corporate text-white font-medium hover:bg-corporate-dark transition-all duration-500 uppercase text-xs h-12 px-10">
+                {{ section.settings.button_text }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "ROI Calculator",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "ROI Calculator"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Calculate Your Savings"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "price_text",
+      "label": "Price Display Text",
+      "default": "1.500 kr. / mo"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Get Your Custom Proposal"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ROI Calculator"
+    }
+  ]
+}
+{% endschema %}

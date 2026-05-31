@@ -1,0 +1,84 @@
+<section class="relative h-[90vh] min-h-[650px] flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager', preload: true }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full object-cover' }}
+    {% endif %}
+    <div class="absolute inset-0 bg-gradient-to-r from-[hsl(160_25%_8%/0.88)] via-[hsl(160_20%_10%/0.65)] to-transparent"></div>
+  </div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <div class="max-w-2xl">
+      <span class="inline-block font-body text-sm font-semibold tracking-widest uppercase text-corporate mb-4">{{ section.settings.subheading }}</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">{{ section.settings.heading | newline_to_br }}</h1>
+      <div class="font-body text-lg text-white/70 leading-relaxed mb-8 max-w-xl">{{ section.settings.description }}</div>
+      
+      <div class="flex flex-wrap gap-4">
+        {% if section.settings.button_1_text != blank %}
+          <a href="{{ section.settings.button_1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-corporate hover:bg-corporate/90 text-white font-body font-semibold px-8 py-5 h-auto rounded-full text-sm uppercase tracking-wider transition-all duration-500">
+            {{ section.settings.button_1_text }}
+          </a>
+        {% endif %}
+        {% if section.settings.button_2_text != blank %}
+          <a href="{{ section.settings.button_2_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 font-body font-semibold px-8 py-5 h-auto rounded-full text-sm uppercase tracking-wider transition-all duration-500">
+            {{ section.settings.button_2_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Corporate Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Workplace Wellness Experts"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Primary Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Secondary Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Secondary Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Corporate Hero"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,91 @@
+<div class="container mx-auto px-4 lg:px-8 pb-24">
+  <div class="max-w-6xl mx-auto">
+    {% for block in section.blocks %}
+      <div class="relative group" style="border-top: 1px solid #d4cbc4; {% if forloop.last %}border-bottom: 1px solid #d4cbc4;{% endif %}" {{ block.shopify_attributes }}>
+        
+        <div class="absolute left-0 top-0 bottom-0 w-[2px] origin-top transition-transform duration-700 ease-out scale-y-0 group-hover:scale-y-100 {% if block.settings.highlight %}scale-y-100{% endif %}" style="background-color: #a64030;"></div>
+        
+        <div class="grid grid-cols-12 gap-4 md:gap-8 items-center px-2 md:px-6 py-10 md:py-14">
+          <div class="col-span-2 md:col-span-1">
+            <span class="font-display text-4xl md:text-6xl font-light leading-none tracking-tight transition-colors duration-500 {% if block.settings.highlight %}text-[#a64030]{% endif %}">{{ forloop.index | prepend: '0' }}</span>
+          </div>
+          
+          <div class="col-span-10 {% if block.settings.large_stat != blank %}md:col-span-7{% else %}md:col-span-11{% endif %} min-w-0">
+            <h3 class="font-display text-2xl md:text-3xl lg:text-[34px] font-semibold leading-[1.15] tracking-tight whitespace-pre-line {% if block.settings.highlight %}text-[#a64030]{% else %}text-[#261d17]{% endif %}">{{ block.settings.title }}</h3>
+            {% if block.settings.subtitle != blank %}
+              <p class="font-body text-sm md:text-base mt-4 max-w-2xl leading-relaxed text-[#52463d]">{{ block.settings.subtitle }}</p>
+            {% endif %}
+          </div>
+          
+          {% if block.settings.large_stat != blank %}
+            <div class="col-span-12 md:col-span-4 flex items-center justify-start md:justify-end mt-4 md:mt-0">
+              <div class="hidden md:block w-px h-20 mr-8" style="background-color: #d4cbc4;"></div>
+              <div class="text-left md:text-right">
+                <span class="font-display text-6xl md:text-7xl lg:text-8xl font-light tabular-nums leading-none tracking-tight text-[#a64030]">
+                  {{ block.settings.large_stat }}
+                  {% if block.settings.stat_suffix != blank %}
+                    <span class="text-3xl md:text-4xl lg:text-5xl font-light ml-0.5 opacity-60 text-[#a64030]">{{ block.settings.stat_suffix }}</span>
+                  {% endif %}
+                </span>
+                <p class="font-body text-[10px] tracking-[0.28em] uppercase mt-3 font-semibold text-[#7e7167]">{{ block.settings.stat_label }}</p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Numbered Insights",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "insight",
+      "name": "Insight Row",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "large_stat",
+          "label": "Large Statistic (Optional)",
+          "info": "e.g., 26"
+        },
+        {
+          "type": "text",
+          "id": "stat_suffix",
+          "label": "Statistic Suffix (Optional)",
+          "info": "e.g., M or +"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Statistic Label"
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight Row (Red Text/Line)",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Numbered Insights"
+    }
+  ]
+}
+{% endschema %}

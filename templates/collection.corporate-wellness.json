@@ -1,35 +1,130 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
-      "type": "woc-hero",
+      "type": "corporate-hero",
       "settings": {
-        "title_line1": "Sundere Medarbejdere",
-        "title_line2": "Med Corporate Wellness",
-        "subtitle": "Invester i dine medarbejderes sundhed og trivsel med vores B2B løsninger inden for massage og wellness. Færre sygedage, mere overskud.",
-        "btn1_text": "Få et tilbud",
-        "btn2_text": "Læs mere"
+        "subheading": "Workplace Wellness Experts",
+        "heading": "Stress & Back Pain Cost Your Business Millions",
+        "description": "<p>46% of all sick days in Denmark are due to stress and musculoskeletal disorders. We offer a <strong>free on-site APV assessment</strong> to identify risks and recommend solutions — completely non-binding.</p>",
+        "button_1_text": "Book Free APV Visit",
+        "button_1_link": "#contact",
+        "button_2_text": "Calculate Your Savings",
+        "button_2_link": "#calculator"
       }
     },
-    "why_us": {
-      "type": "woc-why-us",
+    "problem": {
+      "type": "corporate-problem",
       "settings": {
-        "label": "B2B LØSNINGER",
-        "title": "Hvorfor Corporate Wellness?",
-        "description": "En massagestol på arbejdspladsen betaler sig selv hjem på få måneder ved blot en håndfuld færre sygedage og øget produktivitet."
+        "subheading": "The problem is real",
+        "heading": "From fatigue\n<i style=\"color:#a64030\">to loss</i>",
+        "avatar_text": "They trust prevention",
+        "stat_number": "76%",
+        "stat_text": "of Danish employees experience physical discomfort at the workplace"
+      },
+      "blocks": {
+        "avatar_1": { "type": "avatar" },
+        "avatar_2": { "type": "avatar" },
+        "avatar_3": { "type": "avatar" }
+      },
+      "block_order": ["avatar_1", "avatar_2", "avatar_3"]
+    },
+    "insights": {
+      "type": "corporate-numbered-list",
+      "blocks": {
+        "row_1": {
+          "type": "insight",
+          "settings": {
+            "title": "Your employees are tired",
+            "subtitle": "You notice it too late"
+          }
+        },
+        "row_2": {
+          "type": "insight",
+          "settings": {
+            "title": "Fatigue turns into absence",
+            "subtitle": "Actually 26 million sick days a year",
+            "large_stat": "26",
+            "stat_suffix": "M",
+            "stat_label": "sick days / year"
+          }
+        },
+        "row_3": {
+          "type": "insight",
+          "settings": {
+            "title": "Absence is expensive.\nReplacement is more expensive.",
+            "subtitle": "850,000 resignations a year",
+            "large_stat": "850",
+            "stat_suffix": "k",
+            "stat_label": "resignations / year"
+          }
+        },
+        "row_4": {
+          "type": "insight",
+          "settings": {
+            "title": "Over 250 companies have chosen systematic prevention.",
+            "large_stat": "250",
+            "stat_suffix": "+",
+            "stat_label": "companies",
+            "highlight": true
+          }
+        }
+      },
+      "block_order": ["row_1", "row_2", "row_3", "row_4"]
+    },
+    "method_grid": {
+      "type": "corporate-features-grid",
+      "settings": {
+        "background_color": "bg-white",
+        "card_style": "border-none bg-transparent",
+        "columns_md": 3,
+        "columns_lg": 3,
+        "center_content": true,
+        "subheading": "Our method",
+        "heading": "The WOC Method®",
+        "description": "Sustainable performance through smart recovery. The WOC Method is built on science, experience, and humanity's natural need for recharging — proven since 2015 across industries and company sizes."
+      },
+      "blocks": {
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Recovery",
+            "text": "<p>WOC Balance Pro combines soothing massage with mental focus through mindfulness. Based on Carsten Rosendahl's research into the body's reaction to touch, rhythm, and warmth — a state we call active recovery.</p>"
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Development",
+            "text": "<p>Since 2015, we have collaborated with leading researchers in stress management, mindfulness, and recovery. We inspire every employee to take responsibility for their own well-being and contribute to the well-being of colleagues.</p>"
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Analysis",
+            "text": "<p>Continuous follow-up and employee surveys ensure real impact. Sustainable routines become a natural part of everyday life — documented with measurable results per workplace.</p>"
+          }
+        }
+      },
+      "block_order": ["feature_1", "feature_2", "feature_3"]
+    },
+    "roi_calculator": {
+      "type": "corporate-calculator",
+      "settings": {
+        "subheading": "ROI Calculator",
+        "heading": "Calculate Your Savings",
+        "description": "Our wellness solution costs only 1.500 kr./month. See how it pays for itself through reduced sick leave.",
+        "price_text": "1.500 kr.",
+        "button_text": "Get Your Custom Proposal",
+        "button_link": "#contact"
       }
     }
   },
   "order": [
     "hero",
-    "why_us"
+    "problem",
+    "insights",
+    "method_grid",
+    "roi_calculator"
   ]
 }
