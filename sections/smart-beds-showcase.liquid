@@ -113,7 +113,7 @@
                   </div>
                 </div>
                 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/60 to-transparent p-6">
-                  <p class="font-body text-xs uppercase tracking-widest text-secondary/80">Watch Video</p>
+                  <p class="font-body text-xs uppercase tracking-widest text-secondary/80">{{ section.settings.video_label }}</p>
                 </div>
               {% endif %}
             </div>
@@ -121,25 +121,25 @@
             {% if section.settings.show_process_box %}
               <div class="mt-8 p-6 rounded-2xl border border-border/30 bg-background/50">
                 <h4 class="font-display text-lg font-bold text-foreground mb-5 flex items-center gap-2">
-                  The Process
-                  <span class="font-body text-[10px] font-normal uppercase tracking-widest text-gold bg-gold/10 px-3 py-1 rounded-full">4 steps</span>
+                  {{ section.settings.process_heading }}
+                  <span class="font-body text-[10px] font-normal uppercase tracking-widest text-gold bg-gold/10 px-3 py-1 rounded-full">{{ section.settings.process_badge }}</span>
                 </h4>
                 <div class="grid grid-cols-2 gap-4">
                    <div class="flex items-start gap-3">
                      <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg></div>
-                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">1.</span><p class="font-body text-sm text-foreground leading-snug">Book free body analysis</p></div>
+                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">1.</span><p class="font-body text-sm text-foreground leading-snug">{{ section.settings.process_step_1 }}</p></div>
                    </div>
                    <div class="flex items-start gap-3">
                      <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></div>
-                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">2.</span><p class="font-body text-sm text-foreground leading-snug">Consultation and needs analysis</p></div>
+                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">2.</span><p class="font-body text-sm text-foreground leading-snug">{{ section.settings.process_step_2 }}</p></div>
                    </div>
                    <div class="flex items-start gap-3">
                      <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg></div>
-                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">3.</span><p class="font-body text-sm text-foreground leading-snug">Body measurement and scanning</p></div>
+                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">3.</span><p class="font-body text-sm text-foreground leading-snug">{{ section.settings.process_step_3 }}</p></div>
                    </div>
                    <div class="flex items-start gap-3">
                      <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path></svg></div>
-                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">4.</span><p class="font-body text-sm text-foreground leading-snug">Personal recommendation</p></div>
+                     <div><span class="font-body text-[10px] font-semibold uppercase tracking-widest text-gold">4.</span><p class="font-body text-sm text-foreground leading-snug">{{ section.settings.process_step_4 }}</p></div>
                    </div>
                 </div>
               </div>
@@ -324,6 +324,48 @@
       "type": "url",
       "id": "btn2_link",
       "label": "Secondary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "video_label",
+      "label": "Video Label",
+      "default": "Watch Video"
+    },
+    {
+      "type": "text",
+      "id": "process_heading",
+      "label": "Process Box Heading",
+      "default": "The Process"
+    },
+    {
+      "type": "text",
+      "id": "process_badge",
+      "label": "Process Box Badge",
+      "default": "4 steps"
+    },
+    {
+      "type": "text",
+      "id": "process_step_1",
+      "label": "Process Step 1 Text",
+      "default": "Book free body analysis"
+    },
+    {
+      "type": "text",
+      "id": "process_step_2",
+      "label": "Process Step 2 Text",
+      "default": "Consultation and needs analysis"
+    },
+    {
+      "type": "text",
+      "id": "process_step_3",
+      "label": "Process Step 3 Text",
+      "default": "Body measurement and scanning"
+    },
+    {
+      "type": "text",
+      "id": "process_step_4",
+      "label": "Process Step 4 Text",
+      "default": "Personal recommendation"
     },
     {
       "type": "header",
