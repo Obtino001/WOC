@@ -34,7 +34,7 @@
     100vw
   {%- else -%}
     (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px)
-    calc(100vw - 10rem), 100vw
+    calc(100vw - 6.25rem), 100vw
   {%- endif %}
 {%- endcapture -%}
 
