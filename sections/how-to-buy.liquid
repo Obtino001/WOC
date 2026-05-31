@@ -1,0 +1,59 @@
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 lg:px-8">
+    <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900 text-center mb-12">{{ section.settings.heading }}</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      {% for block in section.blocks %}
+        <div class="text-center" {{ block.shopify_attributes }}>
+          <div class="w-16 h-16 rounded-full bg-copper-light flex items-center justify-center mx-auto mb-4 [&>svg]:w-7 [&>svg]:h-7 [&>svg]:text-copper">
+            {{ block.settings.icon_svg }}
+          </div>
+          <h3 class="font-display text-lg font-bold text-neutral-900 mb-2">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-neutral-600 leading-relaxed">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How To Buy",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hvordan gør jeg?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How To Buy"
+    }
+  ]
+}
+{% endschema %}

@@ -1,63 +1,217 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "hero": {
-      "type": "woc-hero",
+    "trust_banner": {
+      "type": "trust-banner",
       "settings": {
-        "title_line1": "Håndholdt Restitution &",
-        "title_line2": "Dybdegående Terapi",
-        "subtitle": "Fra massageguns og ben-recovery boots til vores populære infrarøde saunatæpper. Professionelt wellnessudstyr skabt til hjemmebrug.",
-        "btn1_text": "Se alle devices",
-        "btn2_text": "Find dit produkt"
-      }
-    },
-    "categories": {
-      "type": "woc-categories",
-      "settings": {
-        "label": "PRO-DEVICES",
-        "heading": "Udforsk Håndholdt Terapi"
-      }
-    },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {
-        "label": "TERAPEUTISK EFFEKT",
-        "title": "Hvorfor vælge vores restitution-devices?",
-        "description": "Vores pro-devices giver dig klinisk bevist smertelindring og muskelafslapning direkte i din egen stue."
-      }
-    },
-    "faqs": {
-      "type": "pdp-faqs",
+        "top_bar_text": "UDVALGTE TILBUD PÅ MASSAGEAPPARATER 👉",
+        "middle_bar_text": "Gratis levering | 30 dages tilfredshedsgaranti",
+        "middle_bar_flag": "🇩🇰",
+        "middle_bar_suffix": "Dansk nethandel"
+      },
       "blocks": {
-        "faq_1": {
-          "type": "faq",
+        "trust_1": {
+          "type": "trust_item",
           "settings": {
-            "question": "Hvilken garanti er der på apparaterne?",
-            "answer": "Der er altid 2 års fuld reklamationsret på alle vores elektroniske massageapparater og devices."
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "title": "Gratis levering",
+            "subtitle": "1-3 dage"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>",
+            "title": "Prøv risikofrit",
+            "subtitle": "30 dage"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path><path d=\"M3 3v5h5\"></path></svg>",
+            "title": "Nem retur",
+            "subtitle": "Dansk nethandel"
           }
         }
       },
-      "block_order": [
-        "faq_1"
-      ],
+      "block_order": ["trust_1", "trust_2", "trust_3"]
+    },
+    "category_nav": {
+      "type": "category-navigation",
+      "blocks": {
+        "cat_1": { "type": "category", "settings": { "title": "All Products", "is_active": true } },
+        "cat_2": { "type": "category", "settings": { "title": "Neck & Shoulder" } },
+        "cat_3": { "type": "category", "settings": { "title": "Eye Care" } },
+        "cat_4": { "type": "category", "settings": { "title": "Foot Massage" } },
+        "cat_5": { "type": "category", "settings": { "title": "Portable" } },
+        "cat_6": { "type": "category", "settings": { "title": "Infrarød" } }
+      },
+      "block_order": ["cat_1", "cat_2", "cat_3", "cat_4", "cat_5", "cat_6"]
+    },
+    "hero": {
+      "type": "collection-hero",
       "settings": {
-        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
-        "title": "Spørgsmål & Svar"
+        "rating_text": "4,9/5 baseret på +1.100 anmeldelser",
+        "heading": "Massage Devices",
+        "subheading": "+30.000 glade kunder",
+        "button_1_text": "SE ALLE PRODUKTER 👉",
+        "button_1_link": "#products",
+        "button_2_text": "BESTSELLERS 👉",
+        "button_2_link": "#bestsellers"
+      }
+    },
+    "how_to_buy": {
+      "type": "how-to-buy",
+      "settings": {
+        "heading": "Hvordan gør jeg?"
+      },
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"21\" r=\"1\"></circle><circle cx=\"19\" cy=\"21\" r=\"1\"></circle><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"></path></svg>",
+            "title": "1. Bestil dit produkt",
+            "text": "Bestil dit produkt her på vores hjemmeside. Du kan betale 100% sikkert med alle kort og MobilePay."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "title": "2. Vi sender straks",
+            "text": "Vi står klar til at sende dit produkt dag-til-dag fra vores lager i Skandinavien."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "title": "3. Du modtager produktet",
+            "text": "Nu er det bare at nyde dit produkt. Du har 30 dage fra modtagelse til at afprøve produktet."
+          }
+        }
+      },
+      "block_order": ["step_1", "step_2", "step_3"]
+    },
+    "bestsellers_grid": {
+      "type": "featured-collection-grid",
+      "settings": {
+        "section_id": "bestsellers",
+        "heading": "Bedst sælgende produkter",
+        "limit": 4,
+        "show_filters": false,
+        "show_discount_banner": false
+      }
+    },
+    "about": {
+      "type": "about-collection",
+      "settings": {
+        "heading": "Om vores massageapparater",
+        "text": "<p>Vores mission er at gøre professionel massage tilgængelig for alle. Vi har cuttet dyre mellemled og leverer direkte til den kvalitetsbevidste forbruger, som ikke ønsker at betale overpris.</p><p>Hvor kvalitet og pris går hånd i hånd ❤️</p><p>Vi tilbyder en tilfredshedsgaranti på alle vores produkter. Vi ønsker, at du skal føle dig tryg ved dit køb, og derfor giver vi dig mulighed for at prøve produktet. Hvis du mod forventning ikke er fuldt ud tilfreds, kan du returnere det og få pengene tilbage.</p>"
+      }
+    },
+    "contact_help": {
+      "type": "contact-help",
+      "blocks": {
+        "contact_1": {
+          "type": "contact_method",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"></rect><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"></path></svg>",
+            "label": "E-mail",
+            "value": "kontakt@example.dk"
+          }
+        },
+        "contact_2": {
+          "type": "contact_method",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"></path></svg>",
+            "label": "Livechat",
+            "value": "Tilgængelig"
+          }
+        },
+        "contact_3": {
+          "type": "contact_method",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>",
+            "label": "Telephone 8:30 - 12",
+            "value": "70 60 83 03"
+          }
+        }
+      },
+      "block_order": ["contact_1", "contact_2", "contact_3"]
+    },
+    "all_products_grid": {
+      "type": "featured-collection-grid",
+      "settings": {
+        "section_id": "products",
+        "heading": "ALLE PRODUKTER",
+        "limit": 12,
+        "show_filters": true,
+        "show_discount_banner": true
+      }
+    },
+    "bundle_offers": {
+      "type": "bundle-offers",
+      "blocks": {
+        "bundle_1": {
+          "type": "bundle",
+          "settings": {
+            "savings_text": "Spar 15%",
+            "title": "Komplet Afslapningspakke",
+            "subtitle": "Massagestol + Nakke & Skulder Massageapparat",
+            "item_1_name": "Nakke & Skulder Massageapparat",
+            "price": "£200",
+            "compare_price": "£235"
+          }
+        },
+        "bundle_2": {
+          "type": "bundle",
+          "settings": {
+            "savings_text": "Spar 10%",
+            "title": "Recovery Pro Pakke",
+            "subtitle": "Massagepistol Elite + Recovery Kompressions-kit",
+            "item_1_name": "Pro Massagepistol Elite",
+            "item_2_name": "Recovery Kompressions-kit",
+            "price": "£44",
+            "compare_price": "£49"
+          }
+        },
+        "bundle_3": {
+          "type": "bundle",
+          "settings": {
+            "savings_text": "Spar 20%",
+            "title": "Hjemme-spa Pakke",
+            "subtitle": "Fodmassageapparat + Øjenmassageapparat + LED Ansigtsmaske",
+            "item_1_name": "Fodmassageapparat Pro",
+            "item_2_name": "Øjenmassageapparat Deluxe",
+            "item_3_name": "LED Ansigtsmaske Pro",
+            "price": "£7",
+            "compare_price": "£9"
+          }
+        }
+      },
+      "block_order": ["bundle_1", "bundle_2", "bundle_3"]
+    },
+    "bottom_cta": {
+      "type": "bottom-cta",
+      "settings": {
+        "heading": "Explore Our Full-Body <span class=\"text-copper\">Massage Chairs</span>",
+        "text": "For the ultimate relaxation experience, discover our premium massage chair collection with AI-driven technology.",
+        "button_text": "View Massage Chairs",
+        "button_link": "/collections/massage-chairs"
       }
     }
   },
   "order": [
+    "trust_banner",
+    "category_nav",
     "hero",
-    "categories",
-    "why_us",
-    "faqs"
+    "how_to_buy",
+    "bestsellers_grid",
+    "about",
+    "contact_help",
+    "all_products_grid",
+    "bundle_offers",
+    "bottom_cta"
   ]
 }

@@ -1,0 +1,61 @@
+<div class="py-10 bg-background">
+  <div class="container mx-auto px-4">
+    <div class="flex items-start justify-center gap-4 md:gap-8 overflow-x-auto pb-2">
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.link }}" class="flex flex-col items-center gap-2 group flex-shrink-0" {{ block.shopify_attributes }}>
+          <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 bg-white transition-all duration-300 {% if block.settings.is_active %}border-copper shadow-[0_0_0_3px_hsl(var(--copper)/0.2)]{% else %}border-border group-hover:border-copper/50{% endif %}">
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 150 | image_tag: class: 'w-full h-full object-cover', loading: 'lazy' }}
+            {% else %}
+              {{ 'collection-1' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-100' }}
+            {% endif %}
+          </div>
+          <span class="font-body text-[11px] md:text-xs font-medium text-center leading-tight transition-colors {% if block.settings.is_active %}text-copper{% else %}text-muted-foreground group-hover:text-foreground{% endif %}">
+            {{ block.settings.title }}
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Category Navigation",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_active",
+          "label": "Set as Active",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category Navigation"
+    }
+  ]
+}
+{% endschema %}
