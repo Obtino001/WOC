@@ -1,0 +1,77 @@
+<section class="py-20 bg-linen relative">
+  <div class="absolute inset-0 bg-gradient-to-t from-forest/[0.02] to-transparent pointer-events-none"></div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <div class="w-2 h-2 rounded-full bg-forest"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-forest">{{ section.settings.subheading }}</p>
+    </div>
+    <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6">{{ section.settings.heading }}</h2>
+    <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">{{ section.settings.description }}</p>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-items-center gap-8 lg:gap-12 bg-white rounded-xl py-10 px-10 mx-auto max-w-5xl shadow-sm">
+      {% for block in section.blocks %}
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+        {% endif %}
+        
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | image_url: width: 300 | image_tag: class: 'h-8 lg:h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity', loading: 'lazy' }}
+        {% else %}
+           {{ 'logo' | placeholder_svg_tag: 'h-8 lg:h-10 w-auto text-gray-300' }}
+        {% endif %}
+
+        {% if block.settings.link != blank %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Logo List",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Our Partners"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Trusted by the World’s Leading Brands"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Logo Link (Optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo List"
+    }
+  ]
+}
+{% endschema %}
