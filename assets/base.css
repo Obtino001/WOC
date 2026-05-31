@@ -876,7 +876,7 @@ summary::-webkit-details-marker {
 }
 
 /* component-grid */
-.product .grid {
+.product.grid {
   display: flex !important;
   flex-wrap: wrap;
   margin-bottom: 2rem;
