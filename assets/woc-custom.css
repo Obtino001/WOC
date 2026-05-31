@@ -237,3 +237,39 @@
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 24px rgba(191, 143, 48, 0.4);
 }
+
+/* WOC Header Dropdown Navigation Styling */
+.woc-nav-dropdown:hover .woc-dropdown-menu,
+.woc-nav-dropdown.is-open .woc-dropdown-menu {
+  display: block !important;
+}
+
+/* Pseudo-element bridge to prevent hover loss due to gap (top-full mt-1) */
+.woc-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
+/* SVG Arrow rotation */
+.woc-nav-dropdown:hover svg,
+.woc-nav-dropdown.is-open svg {
+  transform: rotate(180deg);
+}
+
+/* Mobile drawer sub-menu transition styles */
+.woc-mobile-sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+.woc-mobile-sub-menu.is-open {
+  max-height: 500px;
+  opacity: 1;
+}
+

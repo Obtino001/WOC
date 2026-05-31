@@ -46,7 +46,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-2.5 h-2.5 transition-transform duration-200 group-hover:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 {%- endif -%}
               </button>
-              <div class="absolute left-0 top-full mt-1 hidden group-hover:block min-w-[200px] rounded border border-border bg-card py-2 shadow-elevated z-[600]">
+              <div class="woc-dropdown-menu absolute left-0 top-full mt-1 hidden group-hover:block min-w-[200px] rounded border border-border bg-card py-2 shadow-elevated z-[600]">
                 {%- for childlink in link.links -%}
                   <a
                     href="{{ childlink.url }}"
@@ -179,12 +179,35 @@
   >
     <div class="flex flex-col gap-1 max-w-md mx-auto w-full">
       {%- for link in linklists[section.settings.menu].links -%}
-        <a
-          href="{{ link.url }}"
-          class="block py-4 font-display text-2xl font-light text-foreground/80 hover:text-gold border-b border-border/50 transition-colors"
-        >
-          {{ link.title }}
-        </a>
+        {%- if link.links != blank -%}
+          <div class="woc-mobile-nav-item border-b border-border/50">
+            <button
+              type="button"
+              class="w-full flex items-center justify-between py-4 font-display text-2xl font-light text-foreground/80 hover:text-gold transition-colors woc-mobile-nav-toggle"
+              aria-expanded="false"
+            >
+              <span>{{ link.title }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 transition-transform duration-300 woc-chevron-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="woc-mobile-sub-menu flex flex-col pl-4 pb-4 gap-2">
+              {%- for childlink in link.links -%}
+                <a
+                  href="{{ childlink.url }}"
+                  class="block py-2 font-body text-base font-light text-foreground/60 hover:text-gold transition-colors"
+                >
+                  {{ childlink.title }}
+                </a>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- else -%}
+          <a
+            href="{{ link.url }}"
+            class="block py-4 font-display text-2xl font-light text-foreground/80 hover:text-gold border-b border-border/50 transition-colors"
+          >
+            {{ link.title }}
+          </a>
+        {%- endif -%}
       {%- endfor -%}
 
       <!-- Mobile Localization Selectors -->
@@ -231,6 +254,55 @@
     const mobileDrawer = document.getElementById('woc-mobile-drawer');
     const menuIconOpen = document.getElementById('woc-menu-icon-open');
     const menuIconClose = document.getElementById('woc-menu-icon-close');
+
+    // Desktop dropdown click/tap support
+    const desktopDropdowns = document.querySelectorAll('.woc-nav-dropdown');
+    desktopDropdowns.forEach(dropdown => {
+      const button = dropdown.querySelector('button');
+      
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        
+        // Toggle this one
+        const isOpen = dropdown.classList.toggle('is-open');
+        
+        // Close others
+        desktopDropdowns.forEach(other => {
+          if (other !== dropdown) {
+            other.classList.remove('is-open');
+          }
+        });
+      });
+    });
+
+    // Close desktop dropdowns on click outside
+    document.addEventListener('click', function() {
+      desktopDropdowns.forEach(dropdown => {
+        dropdown.classList.remove('is-open');
+      });
+    });
+
+    // Mobile drawer accordion toggle
+    const mobileToggles = document.querySelectorAll('.woc-mobile-nav-toggle');
+    mobileToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const subMenu = this.nextElementSibling;
+        const chevron = this.querySelector('.woc-chevron-icon');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        
+        this.setAttribute('aria-expanded', !isExpanded);
+        if (!isExpanded) {
+          subMenu.classList.add('is-open');
+          if (chevron) chevron.classList.add('rotate-180');
+        } else {
+          subMenu.classList.remove('is-open');
+          if (chevron) chevron.classList.remove('rotate-180');
+        }
+      });
+    });
 
     // Sticky background scroll effect
     window.addEventListener('scroll', function() {
