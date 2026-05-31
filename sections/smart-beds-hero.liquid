@@ -1,0 +1,102 @@
+<section class="relative min-h-[85vh] flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager', preload: true }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-200' }}
+    {% endif %}
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/50 to-transparent"></div>
+  </div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10 py-24">
+    <div class="max-w-2xl">
+      <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-6">{{ section.settings.kicker }}</p>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-secondary leading-[1.05] mb-6">
+        {{ section.settings.heading | newline_to_br }}
+      </h1>
+      {% if section.settings.subheading != blank %}
+        <p class="font-display text-xl md:text-2xl italic text-secondary/70 mb-4">{{ section.settings.subheading }}</p>
+      {% endif %}
+      <p class="font-body text-base text-secondary/55 leading-relaxed mb-10 max-w-xl">
+        {{ section.settings.description }}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        {% if section.settings.button_1_text != blank %}
+          <a href="{{ section.settings.button_1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 gradient-gold text-charcoal font-semibold hover:opacity-90 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10 py-6">
+            {{ section.settings.button_1_text }}
+          </a>
+        {% endif %}
+        {% if section.settings.button_2_text != blank %}
+          <a href="{{ section.settings.button_2_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 border-2 font-semibold hover:border-gold tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 border-secondary/40 text-secondary hover:bg-secondary hover:text-charcoal">
+            {{ section.settings.button_2_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary/40 animate-bounce">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="m6 9 6 6 6-6"></path></svg>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Smart Beds Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Bespoke Sleeping Systems"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "No Two Bodies\nAre the Same"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Why should your bed be mass-produced?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Primary Button Text",
+      "default": "Discover the Collection"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Secondary Button Text",
+      "default": "How it Works"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Secondary Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Smart Beds Hero"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,101 @@
+<section class="py-16 bg-charcoal">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-secondary">{{ section.settings.heading }}</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+      <div class="rounded-lg border text-card-foreground shadow-sm p-8 bg-charcoal border-border/20 h-full">
+        <div class="p-0 space-y-4">
+          <h3 class="font-display text-xl font-bold text-secondary/40">{{ section.settings.col1_title }}</h3>
+          {% for block in section.blocks %}
+            {% if block.type == 'col1_item' %}
+              <div class="flex items-center gap-3 text-secondary/30" {{ block.shopify_attributes }}>
+                <span class="w-1.5 h-1.5 rounded-full bg-secondary/20 flex-shrink-0"></span>
+                <span class="font-body text-sm">{{ block.settings.text }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="rounded-lg border text-card-foreground shadow-sm p-8 bg-charcoal border-gold/30 h-full">
+        <div class="p-0 space-y-4">
+          <h3 class="font-display text-xl font-bold text-gold">{{ section.settings.col2_title }}</h3>
+          {% for block in section.blocks %}
+            {% if block.type == 'col2_item' %}
+              <div class="flex items-center gap-3 text-secondary" {{ block.shopify_attributes }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="font-body text-sm">{{ block.settings.text }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Why Bespoke?"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Mass-produced vs. Made for You"
+    },
+    {
+      "type": "text",
+      "id": "col1_title",
+      "label": "Column 1 Title",
+      "default": "Standard Mattress"
+    },
+    {
+      "type": "text",
+      "id": "col2_title",
+      "label": "Column 2 Title",
+      "default": "World of Comfort"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "col1_item",
+      "name": "Col 1 Feature (Negative)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "col2_item",
+      "name": "Col 2 Feature (Positive)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison Grid"
+    }
+  ]
+}
+{% endschema %}

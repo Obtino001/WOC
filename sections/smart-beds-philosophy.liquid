@@ -1,0 +1,45 @@
+<section class="py-24 section-light-warm relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-forest/[0.03] to-transparent pointer-events-none"></div>
+  <div class="container mx-auto px-4 lg:px-8 max-w-3xl text-center relative z-10">
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <div class="w-2 h-2 rounded-full bg-forest"></div>
+      <p class="font-body text-sm uppercase tracking-[0.25em] text-forest">{{ section.settings.kicker }}</p>
+    </div>
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground leading-snug mb-6">
+      {{ section.settings.heading | newline_to_br }}
+    </h2>
+    <div class="font-body text-muted-foreground leading-relaxed text-lg space-y-4">
+      {{ section.settings.content }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Philosophy Block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Our Philosophy"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Use HTML like <span class='italic text-forest'> for styling specific words."
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Philosophy Block"
+    }
+  ]
+}
+{% endschema %}

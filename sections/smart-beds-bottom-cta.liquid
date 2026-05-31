@@ -1,0 +1,76 @@
+<section class="py-24 bg-linen">
+  <div class="container mx-auto px-4 lg:px-8 text-center">
+    <div class="max-w-2xl mx-auto">
+      <p class="font-body text-sm uppercase tracking-[0.3em] text-gold mb-6">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+      <p class="font-body text-lg text-muted-foreground mb-10 max-w-xl mx-auto">{{ section.settings.description }}</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        {% if section.settings.btn1_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 py-6" href="{{ section.settings.btn1_link }}">
+            {{ section.settings.btn1_text }}
+          </a>
+        {% endif %}
+        {% if section.settings.btn2_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-500 h-12 px-10 py-6" href="{{ section.settings.btn2_link }}">
+            {{ section.settings.btn2_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bottom CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "The Bespoke Experience"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Use HTML tags for italics.",
+      "default": "Your Body Deserves\n<span class=\"italic text-gold\">Better Than Average</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "btn1_text",
+      "label": "Primary Button Text",
+      "default": "Book a free consultation"
+    },
+    {
+      "type": "url",
+      "id": "btn1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "btn2_text",
+      "label": "Secondary Button Text",
+      "default": "Visit a Showroom"
+    },
+    {
+      "type": "url",
+      "id": "btn2_link",
+      "label": "Secondary Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bottom CTA"
+    }
+  ]
+}
+{% endschema %}

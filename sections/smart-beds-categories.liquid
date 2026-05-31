@@ -1,0 +1,132 @@
+<section id="collection" class="py-20 section-light">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-14">
+      <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">{{ section.settings.heading }}</h2>
+      <p class="font-body text-muted-foreground mt-4 max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-7xl mx-auto">
+      {% for block in section.blocks %}
+        <div class="group relative rounded-2xl overflow-hidden border border-border/10 bg-background shadow-subtle hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col" {{ block.shopify_attributes }}>
+          <a href="{{ block.settings.link }}" class="block flex flex-col h-full">
+            <div class="h-48 bg-charcoal/5 overflow-hidden flex-shrink-0">
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 400 | image_tag: class: 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500', loading: 'lazy' }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-100' }}
+              {% endif %}
+            </div>
+            
+            <div class="p-4 flex flex-col flex-1">
+              {% if block.settings.badge_text != blank %}
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="font-body text-[10px] uppercase tracking-widest px-2.5 py-0.5 rounded-full {% if block.settings.badge_color == 'forest' %}bg-forest/10 text-forest{% else %}bg-gold/10 text-gold{% endif %}">
+                    {{ block.settings.badge_text }}
+                  </span>
+                </div>
+              {% endif %}
+              
+              <h3 class="font-display text-sm font-bold text-foreground mb-1 group-hover:text-gold transition-colors">{{ block.settings.title }}</h3>
+              <p class="font-body text-xs text-muted-foreground line-clamp-2">{{ block.settings.subtitle }}</p>
+              
+              {% if block.settings.flag_emoji != blank %}
+                <div class="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 border border-gold/20 rounded-full bg-gold/5 w-fit">
+                  <span class="text-xs">{{ block.settings.flag_emoji }}</span>
+                  <span class="font-body text-[9px] font-semibold uppercase tracking-[0.1em] text-gold">{{ block.settings.flag_text }}</span>
+                </div>
+              {% endif %}
+            </div>
+            
+            <div class="absolute top-3 right-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold opacity-0 group-hover:opacity-100 transition-opacity"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Categories Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "The Collection"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Five Categories. One Philosophy."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text"
+        },
+        {
+          "type": "select",
+          "id": "badge_color",
+          "label": "Badge Color",
+          "options": [
+            { "value": "gold", "label": "Gold" },
+            { "value": "forest", "label": "Forest Green" }
+          ],
+          "default": "gold"
+        },
+        {
+          "type": "text",
+          "id": "flag_emoji",
+          "label": "Origin Emoji (e.g. 🇩🇪)"
+        },
+        {
+          "type": "text",
+          "id": "flag_text",
+          "label": "Origin Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Categories Grid"
+    }
+  ]
+}
+{% endschema %}
