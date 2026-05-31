@@ -22,10 +22,12 @@
               <div class="hidden md:block w-px h-20 mr-8" style="background-color: #d4cbc4;"></div>
               <div class="text-left md:text-right">
                 <span class="font-display text-6xl md:text-7xl lg:text-8xl font-light tabular-nums leading-none tracking-tight text-[#a64030]">
-                  {{ block.settings.large_stat }}
-                  {% if block.settings.stat_suffix != blank %}
-                    <span class="text-3xl md:text-4xl lg:text-5xl font-light ml-0.5 opacity-60 text-[#a64030]">{{ block.settings.stat_suffix }}</span>
-                  {% endif %}
+                  <animated-counter value="{{ block.settings.large_stat }}" suffix="{{ block.settings.stat_suffix }}">
+                    {{ block.settings.large_stat }}
+                    {% if block.settings.stat_suffix != blank %}
+                      <span class="text-3xl md:text-4xl lg:text-5xl font-light ml-0.5 opacity-60 text-[#a64030]">{{ block.settings.stat_suffix }}</span>
+                    {% endif %}
+                  </animated-counter>
                 </span>
                 <p class="font-body text-[10px] tracking-[0.28em] uppercase mt-3 font-semibold text-[#7e7167]">{{ block.settings.stat_label }}</p>
               </div>

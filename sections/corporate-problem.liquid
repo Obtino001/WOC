@@ -41,7 +41,9 @@
         </div>
         
         <div class="absolute -bottom-6 -left-6 lg:-left-12 backdrop-blur-sm px-6 py-5 shadow-xl rounded-sm max-w-[220px]" style="background-color: rgba(255, 255, 255, 0.97); border: 1px solid #d4cbc4;">
-          <p class="font-display text-3xl font-bold leading-none text-[#a64030]">{{ section.settings.stat_number }}</p>
+          <p class="font-display text-3xl font-bold leading-none text-[#a64030]">
+            <animated-counter value="{{ section.settings.stat_number }}">{{ section.settings.stat_number }}</animated-counter>
+          </p>
           <p class="font-body text-xs mt-2 leading-relaxed text-[#52463d]">{{ section.settings.stat_text }}</p>
         </div>
       </div>
