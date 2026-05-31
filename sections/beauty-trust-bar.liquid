@@ -1,0 +1,42 @@
+<section class="border-y border-neutral-100 bg-white">
+  <div class="container mx-auto px-4 py-8 flex flex-wrap justify-center gap-10 md:gap-16">
+    {% for block in section.blocks %}
+      <div class="flex items-center gap-2.5" {{ block.shopify_attributes }}>
+        <div class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:text-neutral-300">
+           {{ block.settings.icon_svg }}
+        </div>
+        <span class="font-body text-[10px] uppercase tracking-[0.2em] text-neutral-400">{{ block.settings.text }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Beauty Trust Bar",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Trust Item",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Beauty Trust Bar"
+    }
+  ]
+}
+{% endschema %}

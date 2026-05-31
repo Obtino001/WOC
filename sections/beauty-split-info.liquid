@@ -1,0 +1,190 @@
+<section class="{% if section.settings.theme == 'dark' %}bg-neutral-900{% else %}bg-[#f8f7f4]{% endif %} {% if section.settings.margin_top %}mt-10{% endif %}">
+  <div class="grid lg:grid-cols-2 min-h-[{% if section.settings.height == 'tall' %}70vh{% else %}50vh{% endif %}]">
+    
+    {% capture text_content %}
+      <div class="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 lg:py-20">
+        <div>
+          {% if section.settings.kicker != blank %}
+            {% if section.settings.theme == 'light' and section.settings.show_kicker_dot %}
+               <div class="flex items-center gap-2 mb-8">
+                 <span class="w-2 h-2 rounded-full bg-neutral-800"></span>
+                 <span class="font-body text-[10px] uppercase tracking-[0.2em] text-neutral-500">{{ section.settings.kicker }}</span>
+               </div>
+            {% else %}
+               <p class="font-body text-[10px] uppercase tracking-[0.25em] {% if section.settings.theme == 'dark' %}text-neutral-500{% else %}text-neutral-400{% endif %} mb-6">{{ section.settings.kicker }}</p>
+            {% endif %}
+          {% endif %}
+          
+          <h2 class="font-display text-3xl md:text-4xl {% if section.settings.height == 'tall' %}lg:text-5xl{% endif %} font-light {% if section.settings.theme == 'dark' %}text-white{% else %}text-neutral-800{% endif %} leading-tight mb-2">
+            {{ section.settings.heading_1 | newline_to_br }}
+          </h2>
+          {% if section.settings.heading_2 != blank %}
+            <h2 class="font-display text-3xl md:text-4xl {% if section.settings.height == 'tall' %}lg:text-5xl{% endif %} font-light {% if section.settings.theme == 'dark' %}text-white{% else %}text-neutral-800{% endif %} leading-tight mb-6 italic">
+              {{ section.settings.heading_2 }}
+            </h2>
+          {% endif %}
+          
+          <div class="font-body text-sm {% if section.settings.theme == 'dark' %}text-neutral-400{% else %}text-neutral-500{% endif %} leading-[1.9] mb-8 max-w-md space-y-3">
+            {{ section.settings.description }}
+          </div>
+          
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 {% if section.settings.theme == 'dark' %}bg-white hover:bg-neutral-100 text-neutral-900{% else %}bg-neutral-900 hover:bg-neutral-800 text-white{% endif %} uppercase tracking-[0.15em] text-[11px] px-10 h-12">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endcapture %}
+
+    {% capture media_content %}
+      <div class="relative overflow-hidden {% if section.settings.theme == 'light' and section.blocks.size > 0 %}bg-[#eae7e0]{% else %}aspect-video lg:aspect-auto{% endif %}">
+        {% if section.blocks.size > 0 %}
+          <div class="absolute inset-0 grid grid-cols-2">
+            {% for block in section.blocks limit: 2 %}
+              <a class="relative overflow-hidden group" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105', loading: 'lazy' }}
+                {% endif %}
+                <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/40 via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 inset-x-0 p-6">
+                  <h3 class="font-display text-lg md:text-xl font-light text-white text-center italic">{{ block.settings.title }}</h3>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% if section.settings.main_image != blank %}
+            {{ section.settings.main_image | image_url: width: 1200 | image_tag: class: 'w-full h-full object-cover opacity-80', loading: 'lazy' }}
+          {% endif %}
+          {% if section.settings.theme == 'dark' %}
+             <div class="absolute inset-0 bg-gradient-to-r from-transparent to-neutral-900/50 hidden lg:block"></div>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endcapture %}
+
+    {% if section.settings.media_alignment == 'left' %}
+      {{ media_content }}
+      {{ text_content }}
+    {% else %}
+      {{ text_content }}
+      {{ media_content }}
+    {% endif %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Beauty Split Info",
+  "settings": [
+    {
+      "type": "select",
+      "id": "theme",
+      "label": "Color Theme",
+      "options": [
+        { "value": "dark", "label": "Dark" },
+        { "value": "light", "label": "Light" }
+      ],
+      "default": "dark"
+    },
+    {
+      "type": "select",
+      "id": "media_alignment",
+      "label": "Media Alignment (Desktop)",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Section Height",
+      "options": [
+        { "value": "standard", "label": "Standard (50vh)" },
+        { "value": "tall", "label": "Tall (70vh)" }
+      ],
+      "default": "standard"
+    },
+    {
+      "type": "checkbox",
+      "id": "margin_top",
+      "label": "Add Top Margin",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_kicker_dot",
+      "label": "Show Dot beside Kicker (Light theme only)",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "heading_1",
+      "label": "Heading Line 1"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading Line 2 (Italic)"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Single Image (if not using grid blocks)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "grid_image",
+      "name": "Split Grid Image",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Beauty Split Info"
+    }
+  ]
+}
+{% endschema %}

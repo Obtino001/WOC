@@ -1,0 +1,79 @@
+<section class="py-10 bg-white">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-neutral-100">
+    {% for block in section.blocks %}
+      <a class="relative group overflow-hidden aspect-[3/4] bg-[#f0ede8] block" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | image_url: width: 600 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[2s] group-hover:scale-105', loading: 'lazy' }}
+        {% else %}
+           {{ 'image' | placeholder_svg_tag: 'absolute inset-0 w-full h-full bg-gray-200' }}
+        {% endif %}
+        
+        {% if section.settings.style == 'gradient' %}
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/40 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-6">
+            <h3 class="font-display text-lg md:text-xl font-light text-white text-center italic">{{ block.settings.title }}</h3>
+          </div>
+        {% else %}
+          <div class="absolute inset-x-0 bottom-8 flex justify-center">
+            <span class="bg-white/90 backdrop-blur-sm text-neutral-800 font-display text-[11px] uppercase tracking-[0.15em] px-6 py-2.5 rounded-full shadow-sm">{{ block.settings.title }}</span>
+          </div>
+        {% endif %}
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Beauty Image Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Desktop Columns",
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Text Style",
+      "options": [
+        { "value": "gradient", "label": "Gradient overlay with italic text" },
+        { "value": "pill", "label": "White pill badge" }
+      ],
+      "default": "gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_card",
+      "name": "Image Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Beauty Image Grid"
+    }
+  ]
+}
+{% endschema %}

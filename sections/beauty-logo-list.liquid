@@ -1,0 +1,87 @@
+<section class="py-20 {% if section.settings.background == 'gray' %}bg-neutral-50{% else %}bg-white{% endif %}">
+  <div class="container mx-auto px-4 text-center">
+    
+    {% if section.settings.kicker != blank %}
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.3em] text-neutral-400 mb-12">{{ section.settings.kicker }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h3 class="font-display text-xl md:text-2xl font-light text-neutral-800 italic mb-3">{{ section.settings.heading }}</h3>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <p class="font-body text-sm text-neutral-400 mb-12 max-w-lg mx-auto">{{ section.settings.description }}</p>
+    {% endif %}
+
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 max-w-4xl mx-auto {% if section.settings.opacity_fade %}opacity-40{% endif %}">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+           {{ block.settings.image | image_url: width: 300 | image_tag: class: 'h-16 md:h-20 object-contain opacity-50 hover:opacity-100 transition-opacity duration-500', loading: 'lazy' }}
+        {% elsif block.settings.text != blank %}
+           <span class="font-display text-sm md:text-base font-light uppercase tracking-[0.15em] text-neutral-600">{{ block.settings.text }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Beauty Logo List",
+  "settings": [
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "white", "label": "White" },
+        { "value": "gray", "label": "Light Gray" }
+      ],
+      "default": "white"
+    },
+    {
+      "type": "checkbox",
+      "id": "opacity_fade",
+      "label": "Fade Entire Row",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker (e.g. AWARD-WINNING PRODUCTS)"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo / Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image Logo"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text Logo (If no image)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Beauty Logo List"
+    }
+  ]
+}
+{% endschema %}

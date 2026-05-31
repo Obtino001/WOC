@@ -1,0 +1,49 @@
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0">
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager', preload: true }}
+    {% else %}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full h-full object-cover' }}
+    {% endif %}
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/5 to-white/80"></div>
+  </div>
+  <div class="relative z-10 text-center px-4 max-w-4xl">
+    <h1 class="font-display text-5xl md:text-7xl lg:text-[110px] font-extralight text-white uppercase tracking-[0.08em] leading-none" style="letter-spacing: 0.12em;">
+      <span class="block opacity-70">{{ section.settings.heading_line_1 }}</span>
+      <span class="block text-4xl md:text-5xl lg:text-6xl mt-4 tracking-[0.25em] opacity-70 font-light">{{ section.settings.heading_line_2 }}</span>
+    </h1>
+  </div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white/40 animate-bounce"><path d="m6 9 6 6 6-6"></path></svg>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Beauty Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading Line 1",
+      "default": "REJUVENATE"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_2",
+      "label": "Heading Line 2",
+      "default": "YOUR SKIN"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Beauty Hero"
+    }
+  ]
+}
+{% endschema %}
