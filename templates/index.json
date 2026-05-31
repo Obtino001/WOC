@@ -16,6 +16,7 @@
           "type": "usp",
           "settings": {
             "icon": "award",
+            "custom_icon_svg": "",
             "text": "Nordens Førende Velværevirksomhed"
           }
         },
@@ -23,6 +24,7 @@
           "type": "usp",
           "settings": {
             "icon": "cpu",
+            "custom_icon_svg": "",
             "text": "Unik AI Teknologi"
           }
         },
@@ -30,6 +32,7 @@
           "type": "usp",
           "settings": {
             "icon": "heart",
+            "custom_icon_svg": "",
             "text": "Sundhedsfagligt Anbefalet"
           }
         },
@@ -37,6 +40,7 @@
           "type": "usp",
           "settings": {
             "icon": "truck",
+            "custom_icon_svg": "",
             "text": "White-Glove Levering"
           }
         }
@@ -49,13 +53,23 @@
       ],
       "settings": {
         "video_url": "https://worldofcomfort.dk/wp-content/uploads/2025/02/video-forside.mp4",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "hero_label": "FLAGSHIP COLLECTION",
         "title_line1": "Skandinaviens Førende",
         "title_line2": "Wellness-Teknologi",
         "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "show_reviews": true,
         "btn1_text": "Se Massagestole",
         "btn1_url": "/collections/massage-chairs",
         "btn2_text": "Find Showroom",
-        "btn2_url": "/pages/showrooms"
+        "btn2_url": "/pages/showrooms",
+        "btn3_text": "BOOK A DEMO",
+        "btn3_url": "",
+        "expert_name": "Dr. Carsten Rosendahl",
+        "expert_title": "Chiropractor · Nordic Spine & Wellness",
+        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
+        "expert_badge_text": "Professionally recommended"
       }
     },
     "woc_trust": {
@@ -65,6 +79,7 @@
           "type": "stat",
           "settings": {
             "icon": "shield",
+            "custom_icon_svg": "",
             "value": "5",
             "label": "Års Garanti"
           }
@@ -73,6 +88,7 @@
           "type": "stat",
           "settings": {
             "icon": "store",
+            "custom_icon_svg": "",
             "value": "20+",
             "label": "Europæiske Showrooms"
           }
@@ -81,6 +97,7 @@
           "type": "stat",
           "settings": {
             "icon": "users",
+            "custom_icon_svg": "",
             "value": "50.000+",
             "label": "Glade Kunder"
           }
@@ -89,6 +106,7 @@
           "type": "stat",
           "settings": {
             "icon": "support",
+            "custom_icon_svg": "",
             "value": "24/7",
             "label": "Personlig Support"
           }
@@ -246,7 +264,8 @@
           "settings": {
             "text": "Dybdegående muskelrestitution",
             "accent": "gold",
-            "icon": "pulse"
+            "icon": "pulse",
+            "custom_icon_svg": ""
           }
         },
         "ben_2": {
@@ -254,7 +273,8 @@
           "settings": {
             "text": "Forbedret blodcirkulation",
             "accent": "forest",
-            "icon": "alignment"
+            "icon": "alignment",
+            "custom_icon_svg": ""
           }
         },
         "ben_3": {
@@ -262,7 +282,8 @@
           "settings": {
             "text": "Lindring af gigt- & ledsmerter",
             "accent": "gold",
-            "icon": "bone"
+            "icon": "bone",
+            "custom_icon_svg": ""
           }
         },
         "ben_4": {
@@ -270,7 +291,8 @@
           "settings": {
             "text": "Effektiv afgiftning (Sved)",
             "accent": "forest",
-            "icon": "droplet"
+            "icon": "droplet",
+            "custom_icon_svg": ""
           }
         },
         "ben_5": {
@@ -278,7 +300,8 @@
           "settings": {
             "text": "Øget smidighed & fleksibilitet",
             "accent": "gold",
-            "icon": "stretch"
+            "icon": "stretch",
+            "custom_icon_svg": ""
           }
         },
         "ben_6": {
@@ -286,7 +309,8 @@
           "settings": {
             "text": "Dybere søvn & bedre ro",
             "accent": "forest",
-            "icon": "moon"
+            "icon": "moon",
+            "custom_icon_svg": ""
           }
         },
         "ben_7": {
@@ -294,7 +318,8 @@
           "settings": {
             "text": "Stress- og spændingsreduktion",
             "accent": "gold",
-            "icon": "brain"
+            "icon": "brain",
+            "custom_icon_svg": ""
           }
         },
         "ben_8": {
@@ -302,7 +327,8 @@
           "settings": {
             "text": "Styrket immunforsvar",
             "accent": "forest",
-            "icon": "shield"
+            "icon": "shield",
+            "custom_icon_svg": ""
           }
         },
         "ben_9": {
@@ -310,7 +336,8 @@
           "settings": {
             "text": "Forbedret kropsholdning",
             "accent": "gold",
-            "icon": "alignment"
+            "icon": "alignment",
+            "custom_icon_svg": ""
           }
         },
         "ben_10": {
@@ -318,7 +345,8 @@
           "settings": {
             "text": "Cellefornyelse & smuk hud",
             "accent": "forest",
-            "icon": "circle"
+            "icon": "circle",
+            "custom_icon_svg": ""
           }
         }
       },
@@ -420,30 +448,11 @@
         "btn2_url": "/pages/contact"
       }
     },
-    "hero": {
-      "type": "showroom-hero",
-      "settings": {
-        "kicker": "Experience It Personally",
-        "heading": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>",
-        "description": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation.",
-        "button_text": "Book a Visit",
-        "button_link": "/pages/showrooms"
-      },
-      "blocks": {
-        "s1": { "type": "location", "settings": { "emoji": "🇩🇰", "city": "Copenhagen", "country": "Denmark" } },
-        "s2": { "type": "location", "settings": { "emoji": "🇸🇪", "city": "Malmö", "country": "Sweden" } },
-        "s3": { "type": "location", "settings": { "emoji": "🇳🇴", "city": "Oslo", "country": "Norway" } },
-        "s4": { "type": "location", "settings": { "emoji": "🇩🇪", "city": "Frankfurt", "country": "Germany" } },
-        "s5": { "type": "location", "settings": { "emoji": "🇫🇷", "city": "Paris", "country": "France" } },
-        "s6": { "type": "location", "settings": { "emoji": "🇳🇱", "city": "Amsterdam", "country": "Netherlands" } },
-        "s7": { "type": "location", "settings": { "emoji": "🇹🇷", "city": "Istanbul", "country": "Turkey" } },
-        "s8": { "type": "location", "settings": { "emoji": "🇩🇰", "city": "Fredericia", "country": "Denmark" } }
-      },
-      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"]
-    },
     "quiz": {
       "type": "quiz-cta",
       "settings": {
+        "padding_top": 128,
+        "padding_bottom": 128,
         "kicker": "Personal Guidance",
         "heading": "Find Your Perfect\n<span class=\"block italic text-gold\">Massage Chair</span>",
         "description": "Take our 2-minute quiz and find the chair that matches your body, lifestyle, and wellness goals.",
@@ -453,41 +462,176 @@
     },
     "testimonials": {
       "type": "testimonials-grid-marquee",
+      "blocks": {
+        "t1": {
+          "type": "text_card",
+          "settings": {
+            "quote": "My chronic back pain is almost gone after switching to the smart bed. It truly adapts to my body.",
+            "author": "Nikolaj Eriksen",
+            "product": "Herning · Smart Bed"
+          }
+        },
+        "t2": {
+          "type": "text_card",
+          "settings": {
+            "quote": "I've spent thousands on serums over the years. The LED mask does more than all of them combined.",
+            "author": "Maja Kristiansen",
+            "product": "Slagelse · Beauty Technology"
+          }
+        },
+        "t3": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "t4": {
+          "type": "text_card",
+          "settings": {
+            "quote": "I play handball professionally. These recovery tools keep me on the court.",
+            "author": "Tobias Berg",
+            "product": "Ishøj · Sports Recovery"
+          }
+        },
+        "t5": {
+          "type": "text_card",
+          "settings": {
+            "quote": "We upgraded from memory foam. The difference is staggering. My husband's back pain is completely gone.",
+            "author": "Fie Nissen",
+            "product": "Vanløse · Smart Bed"
+          }
+        },
+        "t6": {
+          "type": "text_card",
+          "settings": {
+            "quote": "My dermatologist was genuinely surprised by my skin improvement.",
+            "author": "Susanne Brandt",
+            "product": "Middelfart · Beauty Technology"
+          }
+        },
+        "t7": {
+          "type": "text_card",
+          "settings": {
+            "quote": "As a marathon runner, these tools are indispensable. My recovery time has improved dramatically.",
+            "author": "Helene Krogh",
+            "product": "Kerteminde · Sports Recovery"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7"
+      ],
       "settings": {
+        "padding_top": 96,
+        "padding_bottom": 96,
         "kicker": "Real Stories",
         "heading": "Hear From Our Customers",
         "description": "Real people share their experience with World of Comfort products"
-      },
-      "blocks": {
-        "v1": { "type": "video_card", "settings": { "quote": "A fantastic experience from start to finish", "author": "Martin & Louise", "product": "Cosmos Massage Chair" } },
-        "v2": { "type": "video_card", "settings": { "quote": "My Apollo is the best purchase I have ever made", "author": "Henrik P.", "product": "Apollo Massage Chair" } },
-        "v3": { "type": "video_card", "settings": { "quote": "The quality is absolutely top-notch", "author": "Camilla & Anders", "product": "Cosmos Massage Chair" } },
-        "v4": { "type": "video_card", "settings": { "quote": "We use the massage guns for the boys' recovery.", "author": "Jesper M.", "product": "Business Solution" } },
-        "t1": { "type": "text_card", "settings": { "quote": "My chronic back pain is almost gone after switching to the smart bed. It truly adapts to my body.", "author": "Nikolaj Eriksen", "product": "Herning · Smart Bed" } },
-        "t2": { "type": "text_card", "settings": { "quote": "I've spent thousands on serums over the years. The LED mask does more than all of them combined.", "author": "Maja Kristiansen", "product": "Slagelse · Beauty Technology" } },
-        "t3": { "type": "text_card", "settings": { "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.", "author": "Jens Rasmussen", "product": "Horsens · Massager" } },
-        "t4": { "type": "text_card", "settings": { "quote": "I play handball professionally. These recovery tools keep me on the court.", "author": "Tobias Berg", "product": "Ishøj · Sports Recovery" } },
-        "t5": { "type": "text_card", "settings": { "quote": "We upgraded from memory foam. The difference is staggering. My husband's back pain is completely gone.", "author": "Fie Nissen", "product": "Vanløse · Smart Bed" } },
-        "t6": { "type": "text_card", "settings": { "quote": "My dermatologist was genuinely surprised by my skin improvement.", "author": "Susanne Brandt", "product": "Middelfart · Beauty Technology" } },
-        "t7": { "type": "text_card", "settings": { "quote": "As a marathon runner, these tools are indispensable. My recovery time has improved dramatically.", "author": "Helene Krogh", "product": "Kerteminde · Sports Recovery" } }
-      },
-      "block_order": ["v1", "v2", "v3", "v4", "t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      }
     },
-    "trust_cta": {
-      "type": "trust-bottom-cta",
-      "settings": {
-        "heading": "Experience in person",
-        "description": "Visit one of our showrooms and experience Séduisante products in real life. Our experts will guide you to the perfect solution.",
-        "button_text": "FIND YOUR SHOWROOM",
-        "button_link": "/pages/showrooms"
-      },
+    "hero": {
+      "type": "showroom-hero",
       "blocks": {
-        "b1": { "type": "trust_badge", "settings": { "text": "30 Day Returns", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>" } },
-        "b2": { "type": "trust_badge", "settings": { "text": "Lifetime Service", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>" } },
-        "b3": { "type": "trust_badge", "settings": { "text": "CE Certified", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>" } },
-        "b4": { "type": "trust_badge", "settings": { "text": "Loved by +45,000", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>" } }
+        "s1": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇰",
+            "city": "Copenhagen",
+            "country": "Denmark",
+            "link": ""
+          }
+        },
+        "s2": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇸🇪",
+            "city": "Malmö",
+            "country": "Sweden",
+            "link": ""
+          }
+        },
+        "s3": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇳🇴",
+            "city": "Oslo",
+            "country": "Norway",
+            "link": ""
+          }
+        },
+        "s4": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇪",
+            "city": "Frankfurt",
+            "country": "Germany",
+            "link": ""
+          }
+        },
+        "s5": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇫🇷",
+            "city": "Paris",
+            "country": "France",
+            "link": ""
+          }
+        },
+        "s6": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇳🇱",
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "link": ""
+          }
+        },
+        "s7": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇹🇷",
+            "city": "Istanbul",
+            "country": "Turkey",
+            "link": ""
+          }
+        },
+        "s8": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇰",
+            "city": "Fredericia",
+            "country": "Denmark",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4"]
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "settings": {
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "kicker": "Experience It Personally",
+        "heading": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>",
+        "description": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation.",
+        "button_text": "Book a Visit",
+        "button_link": "/pages/showrooms"
+      }
     }
   },
   "order": [
@@ -499,9 +643,8 @@
     "woc_testimonials",
     "woc_quiz_cta",
     "woc_showroom_cta",
-    "hero",
     "quiz",
     "testimonials",
-    "trust_cta"
+    "hero"
   ]
 }
