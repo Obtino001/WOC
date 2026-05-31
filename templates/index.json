@@ -372,82 +372,6 @@
         "benefits_label": "10 DOKUMENTEREDE FORDELE VED VORES VELVÆRETEKNOLOGI"
       }
     },
-    "woc_testimonials": {
-      "type": "woc-testimonials",
-      "blocks": {
-        "vid_1": {
-          "type": "video_review",
-          "settings": {
-            "youtube_id": "dQw4w9WgXcQ",
-            "reviewer_name": "Lars Poulsen",
-            "product": "Biovis Pro Massagestol",
-            "title": "Helt fantastisk lindring",
-            "quote": "Min ryg og mine lægge har aldrig haft det bedre. Efter jeg fik massagestolen har jeg reduceret mine spændinger markant."
-          }
-        },
-        "vid_2": {
-          "type": "video_review",
-          "settings": {
-            "youtube_id": "dQw4w9WgXcQ",
-            "reviewer_name": "Mette Rosengren",
-            "product": "Nordic Sauna Blanket",
-            "title": "Utrolig afslappende varme",
-            "quote": "Bruger det hver aften inden sengetid. Varmen går i dybden og giver den bedste nattesøvn."
-          }
-        },
-        "txt_1": {
-          "type": "text_review",
-          "settings": {
-            "stars": 5,
-            "text": "Jeg har lidt af kroniske rygproblemer i mange år, og efter jeg købte mit saunatæppe, har jeg mærket en utrolig lettelse. Varmen går virkelig i dybden!",
-            "name": "Charlotte S.",
-            "purchased_product": "Nordic Sauna Blanket"
-          }
-        },
-        "txt_2": {
-          "type": "text_review",
-          "settings": {
-            "stars": 5,
-            "text": "Fremragende massagestol med god dybdegående massage der tager fat de rigtige steder. Hele familien bruger den dagligt.",
-            "name": "Morten T.",
-            "purchased_product": "Physio Plus Massagestol"
-          }
-        }
-      },
-      "block_order": [
-        "vid_1",
-        "vid_2",
-        "txt_1",
-        "txt_2"
-      ],
-      "settings": {
-        "label": "KUNDERNES ERFARINGER",
-        "heading": "Hvad siger vores kunder?",
-        "description": "Over 50.000 skandinaver har forbedret deres livskvalitet med vores wellnessprodukter. Her kan du høre og læse nogle af deres historier."
-      }
-    },
-    "woc_quiz_cta": {
-      "type": "woc-quiz-cta",
-      "settings": {
-        "subtitle": "PRØV VORES INTERAKTIVE TEST-GUIDE",
-        "title": "Find den massagestol eller madras, der matcher din krop",
-        "description": "Tag vores hurtige 2-minutters test og få en skræddersyet anbefaling baseret på din kropsform, dine spændinger og dit budget.",
-        "button_text": "Start testen nu",
-        "button_link": "/pages/quiz"
-      }
-    },
-    "woc_showroom_cta": {
-      "type": "woc-showroom-cta",
-      "settings": {
-        "subtitle": "20+ SHOWROOMS I EUROPA",
-        "title": "Oplev produkterne selv i vores showrooms",
-        "description": "Kom ind og få en personlig, uforpligtende fremvisning af en af vores rådgivere. Prøv massagestolene, mærk saunatæppets dybe varme og oplev komforten ved vores smarte sovesystem.",
-        "btn1_text": "Find showroom",
-        "btn1_url": "/pages/showrooms",
-        "btn2_text": "Kontakt os",
-        "btn2_url": "/pages/contact"
-      }
-    },
     "quiz": {
       "type": "quiz-cta",
       "settings": {
@@ -640,9 +564,6 @@
     "woc_awards",
     "woc_categories",
     "woc_doctor",
-    "woc_testimonials",
-    "woc_quiz_cta",
-    "woc_showroom_cta",
     "quiz",
     "testimonials",
     "hero"
