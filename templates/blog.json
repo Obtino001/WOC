@@ -1,19 +1,66 @@
 {
   "sections": {
-    "main": {
-      "type": "main-blog",
+    "blog_hero": {
+      "type": "blog-hero",
       "settings": {
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "subheading": "World of Comfort Journal",
+        "heading": "Insights that elevate <em class=\"text-gold not-italic\">your well-being</em>",
+        "description": "Expert articles on sleep, pain relief, recovery, and beauty — curated by our medical advisor Dr. Carsten Rosendahl and the World of Comfort Wellness Team."
       }
+    },
+    "main_grid": {
+      "type": "main-blog-grid",
+      "settings": {
+        "articles_per_page": 12
+      }
+    },
+    "ebooks": {
+      "type": "blog-ebooks",
+      "settings": {
+        "subheading": "Free e-books",
+        "heading": "Download our expert guides",
+        "description": "Practical, evidence-based guides written by our experts. Completely free — receive your PDF by email.",
+        "button_text": "Get free e-book"
+      },
+      "blocks": {
+        "book_1": {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "bg-gradient-to-br from-gold/20 to-gold/5 border-gold/30",
+            "kicker": "How to choose the right massage chair",
+            "title": "The Massage Chair Guide",
+            "description": "50+ page guide on XD technology, health effects, financing, and what to look for."
+          }
+        },
+        "book_2": {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "bg-gradient-to-br from-forest/20 to-forest/5 border-forest/30",
+            "kicker": "AI Sleep Technology Explained",
+            "title": "Smart Sleep Guide",
+            "description": "Complete introduction to SOVESYSTEM, SYNTHERA AI, and how to design the perfect sleep environment."
+          }
+        },
+        "book_3": {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "bg-gradient-to-br from-copper/20 to-copper/5 border-copper/30",
+            "kicker": "Anti-aging at home",
+            "title": "LED Beauty Guide",
+            "description": "The science behind red, yellow, and infrared LED light — and how to achieve clinic-level results."
+          }
+        }
+      },
+      "block_order": [
+        "book_1",
+        "book_2",
+        "book_3"
+      ]
     }
   },
   "order": [
-    "main"
+    "blog_hero",
+    "main_grid",
+    "ebooks"
   ]
 }

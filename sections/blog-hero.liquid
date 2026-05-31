@@ -1,0 +1,45 @@
+<section class="container mx-auto px-4 lg:px-8 mb-16 pt-32">
+  <div class="max-w-3xl">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-2 h-2 rounded-full bg-gold"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold">{{ section.settings.subheading }}</p>
+    </div>
+    <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-6 leading-tight">
+      {{ section.settings.heading | newline_to_br }}
+    </h1>
+    <p class="font-body text-lg text-muted-foreground leading-relaxed max-w-2xl">
+      {{ section.settings.description }}
+    </p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Blog Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "World of Comfort Journal"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Insights that elevate <em class=\"text-gold not-italic\">your well-being</em>"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Expert articles on sleep, pain relief, recovery, and beauty — curated by our medical advisor Dr. Carsten Rosendahl and the World of Comfort Wellness Team."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Hero"
+    }
+  ]
+}
+{% endschema %}
