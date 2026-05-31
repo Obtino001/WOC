@@ -1,0 +1,72 @@
+<section class="relative bg-charcoal py-24 pt-32 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/90"></div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+    
+    <div>
+      <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6">{{ section.settings.heading }}</h1>
+      <p class="font-body text-lg text-secondary/60 max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+    
+    <div class="flex flex-wrap justify-center gap-8 mt-12">
+      {% for block in section.blocks %}
+        <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
+          <div class="[&>svg]:w-5 [&>svg]:h-5 [&>svg]:text-gold">
+            {{ block.settings.icon_svg }}
+          </div>
+          <span class="font-body text-sm font-semibold text-secondary">{{ block.settings.text }}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Should We Visit You?"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Contact World of Comfort"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Book a free consultation — in our showroom or at your home. We come to you with expert advice, body analysis, and product demonstrations."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust_badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Hero"
+    }
+  ]
+}
+{% endschema %}
