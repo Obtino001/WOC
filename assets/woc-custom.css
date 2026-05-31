@@ -312,3 +312,37 @@
   animation-delay: 700ms;
 }
 
+/* Premium Cart Drawer Transitions */
+cart-drawer.drawer {
+  visibility: hidden;
+  transition: visibility 450ms ease !important;
+}
+
+cart-drawer.drawer.active {
+  visibility: visible;
+}
+
+#CartDrawer-Overlay {
+  background-color: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  transition: background-color 450ms cubic-bezier(0.16, 1, 0.3, 1), backdrop-filter 450ms ease !important;
+  pointer-events: none;
+}
+
+cart-drawer.active #CartDrawer-Overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  pointer-events: auto;
+}
+
+.drawer__inner {
+  transform: translate3d(100%, 0, 0) !important;
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+cart-drawer.active .drawer__inner {
+  transform: translate3d(0, 0, 0) !important;
+}
+
