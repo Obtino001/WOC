@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "hero": {
+      "type": "register-product-hero",
+      "settings": {
+        "kicker": "● REGISTER MY PRODUCT",
+        "heading": "LIFETIME WARRANTY",
+        "description": "<p><strong>NOTE:</strong> Please submit a separate warranty registration for each product where the receipt number used is different.</p>"
+      }
+    },
+    "form": {
+      "type": "register-product-form",
+      "settings": {
+        "heading": "Register Your Product",
+        "success_message": "Thank you! Your lifetime warranty has been successfully activated. We will contact you if we need further information.",
+        "button_text": "Activate Lifetime Warranty"
+      },
+      "blocks": {
+        "prod_1": { "type": "product", "settings": { "title": "BOSS LADY" } },
+        "prod_2": { "type": "product", "settings": { "title": "NEFERTITI" } },
+        "prod_3": { "type": "product", "settings": { "title": "CLEAN MY SOUL" } },
+        "prod_4": { "type": "product", "settings": { "title": "COMFORT CLEANER" } },
+        "prod_5": { "type": "product", "settings": { "title": "LIFT ME UP" } },
+        "prod_6": { "type": "product", "settings": { "title": "LIGHT UP" } },
+        "prod_7": { "type": "product", "settings": { "title": "EYEPADS" } },
+        "prod_8": { "type": "product", "settings": { "title": "SERUM SET" } }
+      },
+      "block_order": [
+        "prod_1",
+        "prod_2",
+        "prod_3",
+        "prod_4",
+        "prod_5",
+        "prod_6",
+        "prod_7",
+        "prod_8"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "form"
+  ]
+}

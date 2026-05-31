@@ -1,0 +1,101 @@
+<section class="py-20 bg-charcoal/5">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <a class="block group" href="{{ section.settings.link }}">
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden border-gold/20 hover:border-gold/50 transition-all duration-500 hover:shadow-elevated">
+        <div class="grid md:grid-cols-2">
+          
+          <div class="relative aspect-[16/10] md:aspect-auto overflow-hidden">
+            {% if section.settings.image != blank %}
+              {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105', loading: 'lazy' }}
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-200' }}
+            {% endif %}
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent md:bg-gradient-to-r"></div>
+          </div>
+          
+          <div class="p-8 md:p-10 flex flex-col justify-center space-y-4">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+              <span class="font-body text-[10px] font-semibold uppercase tracking-luxury text-gold">{{ section.settings.badge }}</span>
+            </div>
+            
+            <h3 class="font-display text-2xl md:text-3xl font-bold text-foreground group-hover:text-gold transition-colors">{{ section.settings.title }}</h3>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ section.settings.description }}</p>
+            
+            <div class="flex items-center gap-2 text-muted-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-body text-sm">{{ section.settings.address }}</span>
+            </div>
+            
+            <div class="flex items-center gap-2 text-muted-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span class="font-body text-sm">{{ section.settings.hours }}</span>
+            </div>
+            
+            <div class="flex items-center gap-1 font-body text-sm font-semibold text-gold pt-2">
+              {{ section.settings.button_text }} 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Showroom",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge Text",
+      "default": "Global Headquarters"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Fredericia HQ & Showroom"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "address",
+      "label": "Address"
+    },
+    {
+      "type": "text",
+      "id": "hours",
+      "label": "Opening Hours"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Book a Free Demo"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Showroom"
+    }
+  ]
+}
+{% endschema %}

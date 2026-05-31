@@ -1,0 +1,40 @@
+<section class="bg-charcoal py-24 pt-32">
+  <div class="container mx-auto px-4 lg:px-8 text-center">
+    <div>
+      <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6">{{ section.settings.title }}</h1>
+      <p class="font-body text-lg text-secondary/60 max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Showrooms Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Experience It In Person"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Our Showrooms"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Nothing beats experiencing our products in person. Visit one of our showrooms across Scandinavia and Europe for a free, personal demonstration."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Showrooms Hero"
+    }
+  ]
+}
+{% endschema %}

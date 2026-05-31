@@ -1,0 +1,122 @@
+<section class="bg-white py-16 md:py-24">
+  <div class="container mx-auto px-4 max-w-2xl">
+    
+    {% form 'contact', id: 'ProductRegistrationForm', class: 'space-y-8' %}
+      
+      {%- if form.posted_successfully? -%}
+        <div class="p-4 mb-8 text-sm text-green-800 rounded-sm border border-green-200 bg-green-50" style="font-family: system-ui, sans-serif;">
+          {{ section.settings.success_message }}
+        </div>
+      {%- elsif form.errors -%}
+        <div class="p-4 mb-8 text-sm text-red-800 rounded-sm border border-red-200 bg-red-50" style="font-family: system-ui, sans-serif;">
+          {{ form.errors | default_errors }}
+        </div>
+      {%- endif -%}
+
+      <input type="hidden" name="contact[tags]" value="product-registration, warranty">
+
+      <div>
+        <h2 class="text-xl text-amber-600 font-light tracking-wider mb-2">{{ section.settings.heading }}</h2>
+        
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-6 mt-8" style="font-family: system-ui, sans-serif;">Customer Details</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="contact[first_name]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="First Name*" required maxlength="100" style="font-family: system-ui, sans-serif;">
+          <input type="text" name="contact[last_name]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Last Name*" required maxlength="100" style="font-family: system-ui, sans-serif;">
+        </div>
+        
+        <input type="email" name="contact[email]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Email*" required maxlength="255" style="font-family: system-ui, sans-serif;">
+        
+        <input type="text" name="contact[address]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Address" maxlength="300" style="font-family: system-ui, sans-serif;">
+        
+        <select name="contact[country]" required class="flex h-10 w-full items-center justify-between border bg-background px-3 py-2 text-sm rounded-sm border-neutral-300 mt-4 focus:outline-none focus:ring-2 focus:ring-neutral-400" style="font-family: system-ui, sans-serif;">
+          <option value="" disabled selected>Country*</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Norway">Norway</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Finland">Finland</option>
+          <option value="Germany">Germany</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="France">France</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Turkey">Turkey</option>
+        </select>
+        
+        <input type="tel" name="contact[phone]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Phone" maxlength="20" style="font-family: system-ui, sans-serif;">
+        
+        <input type="text" name="contact[dob]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Date of Birth (DD/MM/YYYY)" maxlength="10" style="font-family: system-ui, sans-serif;">
+      </div>
+
+      <div>
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-4" style="font-family: system-ui, sans-serif;">Product Details</p>
+        <p class="text-sm text-neutral-600 mb-4" style="font-family: system-ui, sans-serif;">Please select your product/s*</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {% for block in section.blocks %}
+            {% assign input_name = 'contact[product_' | append: forloop.index | append: ']' %}
+            <label class="flex items-center gap-3 cursor-pointer text-sm text-neutral-700 hover:text-neutral-900 transition-colors" style="font-family: system-ui, sans-serif;" {{ block.shopify_attributes }}>
+              <input type="checkbox" name="{{ input_name }}" value="{{ block.settings.title }}" class="h-4 w-4 shrink-0 rounded-sm border-neutral-300 text-neutral-900 focus:ring-neutral-900 focus:ring-offset-2">
+              {{ block.settings.title }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-4 mt-8" style="font-family: system-ui, sans-serif;">Receipt Number</p>
+        <input type="text" name="contact[receipt_number]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="Receipt Number*" required maxlength="100" style="font-family: system-ui, sans-serif;">
+      </div>
+
+      <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-4 py-2 w-full bg-neutral-900 hover:bg-neutral-800 text-white rounded-sm h-12 text-sm tracking-[0.2em] uppercase mt-8" style="font-family: system-ui, sans-serif;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+        {{ section.settings.button_text }}
+      </button>
+      
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Registration Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Register Your Product"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "Thank you! Your lifetime warranty has been successfully activated. We will contact you if we need further information."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Activate Lifetime Warranty"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Product Name",
+          "info": "This will appear as a checkbox option."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Registration Form"
+    }
+  ]
+}
+{% endschema %}

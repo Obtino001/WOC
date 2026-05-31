@@ -1,0 +1,102 @@
+<section class="py-20">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+          <a class="block group" href="{{ block.settings.link }}">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden border-border hover:border-gold/30 transition-all duration-500 hover:shadow-elevated">
+              
+              <div class="relative aspect-[16/10] overflow-hidden">
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105', loading: 'lazy' }}
+                {% else %}
+                  {{ 'collection-1' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-200' }}
+                {% endif %}
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                  <span class="font-body text-xs uppercase tracking-widest text-secondary/80">{{ block.settings.country }}</span>
+                </div>
+              </div>
+              
+              <div class="p-6 space-y-3">
+                <h3 class="font-display text-xl font-bold text-foreground group-hover:text-gold transition-colors">{{ block.settings.title }}</h3>
+                
+                <div class="flex items-center gap-2 text-muted-foreground">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span class="font-body text-sm">{{ block.settings.address }}</span>
+                </div>
+                
+                <div class="flex items-center gap-2 text-muted-foreground">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span class="font-body text-sm">{{ block.settings.hours }}</span>
+                </div>
+                
+                <div class="flex items-center gap-1 font-body text-sm font-semibold text-gold pt-2">
+                  {{ block.settings.button_text | default: 'Book a Free Demo' }} 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </div>
+              </div>
+              
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Showrooms Grid",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "showroom",
+      "name": "Showroom",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "country",
+          "label": "Country Badge (e.g., 🇩🇰 Denmark)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "label": "Address"
+        },
+        {
+          "type": "text",
+          "id": "hours",
+          "label": "Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Book a Free Demo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Showrooms Grid"
+    }
+  ]
+}
+{% endschema %}

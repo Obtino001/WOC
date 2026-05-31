@@ -1,11 +1,178 @@
 {
   "sections": {
-    "main": {
-      "type": "woc-showrooms",
-      "settings": {}
+    "hero": {
+      "type": "showrooms-hero",
+      "settings": {
+        "kicker": "Experience It In Person",
+        "title": "Our Showrooms",
+        "description": "Nothing beats experiencing our products in person. Visit one of our showrooms across Scandinavia and Europe for a free, personal demonstration."
+      }
+    },
+    "featured": {
+      "type": "showrooms-featured",
+      "settings": {
+        "badge": "Global Headquarters",
+        "title": "Fredericia HQ & Showroom",
+        "description": "Our global headquarters and Jutland showroom in Fredericia. A comprehensive space where you can try our most popular massage chairs and experience the SOVESYSTEM® body analysis in a relaxed, personal setting. This is also the home of our entire organisation.",
+        "address": "Kringsvej 4, 7000 Fredericia",
+        "hours": "Monday – Friday: 10:00 – 17:30",
+        "button_text": "Book a Free Demo",
+        "link": "/pages/fredericia"
+      }
+    },
+    "grid": {
+      "type": "showrooms-grid",
+      "blocks": {
+        "copenhagen": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇩🇰 Denmark",
+            "title": "Copenhagen Flagship",
+            "address": "Winghouse, Ørestads Boulevard 73, Copenhagen",
+            "hours": "Monday – Friday: 10:00 – 18:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/copenhagen"
+          }
+        },
+        "malmo": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇸🇪 Sweden",
+            "title": "Malmö Showroom",
+            "address": "Ymers Gata 25A, Malmö",
+            "hours": "Monday – Friday: 10:00 – 18:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/malmo"
+          }
+        },
+        "istanbul": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇹🇷 Turkey",
+            "title": "Istanbul Showroom",
+            "address": "Bahçelievler Mah. Ali Reşat Paşa Sok. No:14 A, Istanbul",
+            "hours": "Monday – Saturday: 10:00 – 20:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/turkey"
+          }
+        },
+        "ankara": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇹🇷 Turkey",
+            "title": "Ankara Showroom",
+            "address": "Mesa Plaza AVM, Ankara",
+            "hours": "Monday – Saturday: 10:00 – 22:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/ankara"
+          }
+        },
+        "antalya": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇹🇷 Turkey",
+            "title": "Antalya Showroom",
+            "address": "Molla Yusuf Mah. 1476. Sok., Antalya",
+            "hours": "Monday – Saturday: 10:00 – 21:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/antalya"
+          }
+        },
+        "izmir": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇹🇷 Turkey",
+            "title": "Izmir Showroom",
+            "address": "Yeni Mahalle Mah. 8041 Sok. No:43 D:43/A, Izmir",
+            "hours": "Monday – Saturday: 10:00 – 20:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/izmir"
+          }
+        },
+        "gaziantep": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇹🇷 Turkey",
+            "title": "Gaziantep Showroom",
+            "address": "Suburcu Mahallesi, Gaziler Caddesi No. 55, Gaziantep",
+            "hours": "Monday – Saturday: 10:00 – 20:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/gaziantep"
+          }
+        },
+        "oslo": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇳🇴 Norway",
+            "title": "Oslo Showroom",
+            "address": "Karl Johans gate 25, Oslo",
+            "hours": "Monday – Friday: 10:00 – 18:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/oslo"
+          }
+        },
+        "frankfurt": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇩🇪 Germany",
+            "title": "Frankfurt Showroom",
+            "address": "Kaiserstraße 50, Frankfurt",
+            "hours": "Monday – Friday: 10:00 – 19:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/frankfurt"
+          }
+        },
+        "paris": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇫🇷 France",
+            "title": "Paris Showroom",
+            "address": "45 Avenue des Champs-Élysées, Paris",
+            "hours": "Monday – Friday: 10:00 – 19:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/paris"
+          }
+        },
+        "amsterdam": {
+          "type": "showroom",
+          "settings": {
+            "country": "🇳🇱 Netherlands",
+            "title": "Amsterdam Showroom",
+            "address": "Keizersgracht 120, Amsterdam",
+            "hours": "Monday – Friday: 10:00 – 18:00",
+            "button_text": "Book a Free Demo",
+            "link": "/pages/amsterdam"
+          }
+        }
+      },
+      "block_order": [
+        "copenhagen",
+        "malmo",
+        "istanbul",
+        "ankara",
+        "antalya",
+        "izmir",
+        "gaziantep",
+        "oslo",
+        "frankfurt",
+        "paris",
+        "amsterdam"
+      ]
+    },
+    "cta": {
+      "type": "showrooms-cta",
+      "settings": {
+        "title": "Can't visit a showroom?",
+        "description": "We also offer home visits and virtual consultations. Our experts come to you — throughout Denmark, Sweden, and beyond.",
+        "button_text": "Request Home Visit",
+        "button_link": "/pages/contact"
+      }
     }
   },
   "order": [
-    "main"
+    "hero",
+    "featured",
+    "grid",
+    "cta"
   ]
 }
