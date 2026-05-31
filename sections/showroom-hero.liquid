@@ -1,0 +1,122 @@
+<section class="relative flex items-center overflow-hidden" style="min-height: 70vh; padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="absolute inset-0">
+    {% if section.settings.bg_image != blank %}
+      {{ section.settings.bg_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}
+    {% else %}
+      <img src="/assets/showroom-cta-hero-SWNcv-vT.jpg" alt="Showroom" class="w-full h-full object-cover">
+    {% endif %}
+    <div class="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-background/30"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <div>
+        <div class="luxury-line mb-8"></div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ section.settings.kicker }}</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-6 leading-[1.05]">
+          {{ section.settings.heading | newline_to_br }}
+        </h2>
+        <p class="font-body text-sm font-light text-muted-foreground mb-10 leading-relaxed max-w-md">
+          {{ section.settings.description }}
+        </p>
+        {% if section.settings.button_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 gradient-gold text-charcoal font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10" href="{{ section.settings.button_link }}">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+      
+      <div class="grid grid-cols-2 gap-[1px]">
+        {% for block in section.blocks %}
+          <a class="bg-background/50 backdrop-blur-sm p-8 hover:bg-gold/5 transition-colors duration-500 group" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+            <p class="font-display text-xl font-light text-foreground group-hover:text-gold transition-colors duration-500">
+              {{ block.settings.emoji }} {{ block.settings.city }}
+            </p>
+            <p class="font-body text-[10px] font-light uppercase tracking-luxury text-muted-foreground mt-1">{{ block.settings.country }}</p>
+          </a>
+        {% endfor %}
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Showroom Hero Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 96
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Experience It Personally"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Book a Visit"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location",
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Flag Emoji", "default": "🇩🇰" },
+        { "type": "text", "id": "city", "label": "City", "default": "Copenhagen" },
+        { "type": "text", "id": "country", "label": "Country", "default": "Denmark" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Showroom Hero Grid"
+    }
+  ]
+}
+{% endschema %}
