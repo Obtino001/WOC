@@ -1,0 +1,22 @@
+<section class="py-24 bg-linen relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent pointer-events-none"></div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ section.settings.subheading }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-[1px] max-w-5xl mx-auto">
+      {% for block in section.blocks %}
+        <div class="bg-background p-10 text-center group hover:bg-gold/[0.04] transition-colors duration-700" {{ block.shopify_attributes }}>
+          {% if block.settings.icon_svg != blank %}
+            <div class="w-6 h-6 text-gold mx-auto mb-6 [&>svg]:w-full [&>svg]:h-full">
+              {{ block.settings.icon_svg }}
+            </div>
+          {% endif %}
+          <h3 class="font-display text-lg font-light text-foreground mb-3">{{ block.settings.title }}</h3>
+          <p class="font-body text-xs font-light text-muted-foreground leading-[1.8]">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
