@@ -52,6 +52,10 @@
         "usp_4"
       ],
       "settings": {
+<<<<<<< Updated upstream
+=======
+        "video_url": "",
+>>>>>>> Stashed changes
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "hero_label": "FLAGSHIP COLLECTION",
