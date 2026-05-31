@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "marquee": {
@@ -87,23 +96,18 @@
         "trust_1": {
           "type": "trust_item",
           "settings": {
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
-            "title": "Gratis Levering",
             "subtitle": "I hele Skandinavien"
           }
         },
         "trust_2": {
           "type": "trust_item",
           "settings": {
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>",
-            "title": "5 Års Garanti",
             "subtitle": "På alle modeller"
           }
         },
         "trust_3": {
           "type": "trust_item",
           "settings": {
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"7\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"></polyline></svg>",
             "title": "Prisvindende",
             "subtitle": "Skandinavisk Design"
           }
@@ -111,7 +115,6 @@
         "trust_4": {
           "type": "trust_item",
           "settings": {
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"1\" y=\"4\" width=\"22\" height=\"16\" rx=\"2\" ry="2\"></rect><line x1=\"1\" y1=\"10\" x2=\"23\" y2=\"10\"></line></svg>",
             "title": "0% Rente",
             "subtitle": "Finansiering tilbydes"
           }
@@ -149,8 +152,8 @@
         "heading": "Kerne <span class=\"italic text-gold\">Modeller</span>",
         "description": "Vores egen serie af præcisionsudviklede massagestole, designet med fokus på ergonomi og dybdegående smertelindring.",
         "collection": "massage-chairs",
-        "limit": 4,
-        "desktop_columns": 4,
+        "limit": 3,
+        "desktop_columns": 3,
         "bg_color": "warm",
         "show_glow": false,
         "show_contact_card": false
@@ -173,10 +176,9 @@
           "settings": {
             "highlight": false,
             "highlight_text": "",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path><path d=\"m9 11 2 2 4-4\"></path></svg>",
             "title": "Køb Kontant",
             "description": "Fuld ejerskab fra dag et.",
-            "features": "<li>5-års fuld garanti</li><li>Gratis levering & installation</li><li>14 dages returret</li><li>Livslang service support</li>",
+            "features": "<p>5-års fuld garanti</p><p>Gratis levering & installation</p><p>14 dages returret</p><p>Livslang service support</p>",
             "price_label": "Fra",
             "price": "24.999,-"
           }
@@ -186,10 +188,9 @@
           "settings": {
             "highlight": true,
             "highlight_text": "MEST POPULÆRE",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"1\" y=\"4\" width=\"22\" height=\"16\" rx=\"2\" ry=\"2\"></rect><line x1=\"1\" y1=\"10\" x2=\"23\" y2=\"10\"></line></svg>",
             "title": "Finansiering",
             "description": "Fuld ejerskab fra dag et med fleksible betalinger.",
-            "features": "<li>0% i rente og gebyrer</li><li>0 kr. i udbetaling</li><li>Valgfri løbetid op til 60 mdr</li><li>Fast lav månedlig ydelse</li>",
+            "features": "<p>0% i rente og gebyrer</p><p>0 kr. i udbetaling</p><p>Valgfri løbetid op til 60 mdr</p><p>Fast lav månedlig ydelse</p>",
             "price_label": "Fra kun",
             "price": "249,- / md"
           }
@@ -199,10 +200,9 @@
           "settings": {
             "highlight": false,
             "highlight_text": "",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"7\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"></polyline></svg>",
             "title": "Erhvervsleasing",
             "description": "Fuld ejerskab fra dag et for virksomheder.",
-            "features": "<li>Fuldt skattefradrag</li><li>Ingen binding af likviditet</li><li>Levering & service inkluderet</li><li>Mulighed for frikøb efter leasing</li>",
+            "features": "<p>Fuldt skattefradrag</p><p>Ingen binding af likviditet</p><p>Levering & service inkluderet</p><p>Mulighed for frikøb efter leasing</p>",
             "price_label": "Fra",
             "price": "1.250,- / md"
           }
