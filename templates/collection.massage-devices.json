@@ -1,13 +1,16 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "trust_banner": {
       "type": "trust-banner",
-      "settings": {
-        "top_bar_text": "UDVALGTE TILBUD PÅ MASSAGEAPPARATER 👉",
-        "middle_bar_text": "Gratis levering | 30 dages tilfredshedsgaranti",
-        "middle_bar_flag": "🇩🇰",
-        "middle_bar_suffix": "Dansk nethandel"
-      },
       "blocks": {
         "trust_1": {
           "type": "trust_item",
@@ -34,19 +37,68 @@
           }
         }
       },
-      "block_order": ["trust_1", "trust_2", "trust_3"]
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3"
+      ],
+      "settings": {
+        "top_bar_text": "UDVALGTE TILBUD PÅ MASSAGEAPPARATER 👉",
+        "middle_bar_text": "Gratis levering | 30 dages tilfredshedsgaranti",
+        "middle_bar_flag": "🇩🇰",
+        "middle_bar_suffix": "Dansk nethandel"
+      }
     },
     "category_nav": {
       "type": "category-navigation",
       "blocks": {
-        "cat_1": { "type": "category", "settings": { "title": "All Products", "is_active": true } },
-        "cat_2": { "type": "category", "settings": { "title": "Neck & Shoulder" } },
-        "cat_3": { "type": "category", "settings": { "title": "Eye Care" } },
-        "cat_4": { "type": "category", "settings": { "title": "Foot Massage" } },
-        "cat_5": { "type": "category", "settings": { "title": "Portable" } },
-        "cat_6": { "type": "category", "settings": { "title": "Infrarød" } }
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "title": "All Products",
+            "is_active": true
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "title": "Neck & Shoulder"
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "title": "Eye Care"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "title": "Foot Massage"
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "title": "Portable"
+          }
+        },
+        "cat_6": {
+          "type": "category",
+          "settings": {
+            "title": "Infrarød"
+          }
+        }
       },
-      "block_order": ["cat_1", "cat_2", "cat_3", "cat_4", "cat_5", "cat_6"]
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5",
+        "cat_6"
+      ],
+      "settings": {}
     },
     "hero": {
       "type": "collection-hero",
@@ -62,9 +114,6 @@
     },
     "how_to_buy": {
       "type": "how-to-buy",
-      "settings": {
-        "heading": "Hvordan gør jeg?"
-      },
       "blocks": {
         "step_1": {
           "type": "step",
@@ -91,7 +140,14 @@
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3"]
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "heading": "Hvordan gør jeg?"
+      }
     },
     "bestsellers_grid": {
       "type": "featured-collection-grid",
@@ -138,7 +194,12 @@
           }
         }
       },
-      "block_order": ["contact_1", "contact_2", "contact_3"]
+      "block_order": [
+        "contact_1",
+        "contact_2",
+        "contact_3"
+      ],
+      "settings": {}
     },
     "all_products_grid": {
       "type": "featured-collection-grid",
@@ -190,7 +251,12 @@
           }
         }
       },
-      "block_order": ["bundle_1", "bundle_2", "bundle_3"]
+      "block_order": [
+        "bundle_1",
+        "bundle_2",
+        "bundle_3"
+      ],
+      "settings": {}
     },
     "bottom_cta": {
       "type": "bottom-cta",

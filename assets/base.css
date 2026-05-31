@@ -2320,11 +2320,7 @@ input[type='checkbox'] {
 
 /* section-header */
 .section-header.shopify-section-group-header-group {
-<<<<<<< Updated upstream
   z-index: 20;
-=======
-  z-index: 500;
->>>>>>> Stashed changes
 }
 
 .shopify-section-header-sticky {
@@ -2345,11 +2341,7 @@ input[type='checkbox'] {
 }
 
 .shopify-section-group-header-group {
-<<<<<<< Updated upstream
   z-index: 40;
-=======
-  z-index: 500;
->>>>>>> Stashed changes
 }
 
 .section-header ~ .shopify-section-group-header-group {
