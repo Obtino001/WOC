@@ -1,0 +1,60 @@
+<section class="py-16 bg-linen border-b border-border">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      {% for block in section.blocks %}
+        <div class="text-center" {{ block.shopify_attributes }}>
+          {% if block.settings.icon_svg != blank %}
+            <div class="w-5 h-5 text-gold mx-auto mb-3 [&>svg]:w-full [&>svg]:h-full">
+              {{ block.settings.icon_svg }}
+            </div>
+          {% endif %}
+          <p class="font-display text-3xl md:text-4xl font-light text-foreground mb-1">{{ block.settings.number }}</p>
+          <p class="font-body text-xs text-muted-foreground uppercase tracking-widest">{{ block.settings.label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Statistics Banner",
+  "settings": [],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "250+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Corporate Clients"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Statistics Banner",
+      "blocks": [
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "stat" }
+      ]
+    }
+  ]
+}
+{% endschema %}
