@@ -542,6 +542,57 @@
         "description": "Real people share their experience with World of Comfort products"
       }
     },
+    "testimonials_showcase_CENJJc": {
+      "type": "testimonials-showcase",
+      "blocks": {
+        "video_testimonial_Lb9q8m": {
+          "type": "video_testimonial",
+          "settings": {
+            "quote": "",
+            "author": "",
+            "location_product": ""
+          }
+        },
+        "video_testimonial_368dgx": {
+          "type": "video_testimonial",
+          "settings": {
+            "quote": "",
+            "author": "",
+            "location_product": ""
+          }
+        },
+        "video_testimonial_43nJbe": {
+          "type": "video_testimonial",
+          "settings": {
+            "quote": "",
+            "author": "",
+            "location_product": ""
+          }
+        },
+        "video_testimonial_bKJgFb": {
+          "type": "video_testimonial",
+          "settings": {
+            "quote": "",
+            "author": "",
+            "location_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_testimonial_Lb9q8m",
+        "video_testimonial_368dgx",
+        "video_testimonial_43nJbe",
+        "video_testimonial_bKJgFb"
+      ],
+      "name": "Testimonials Showcase",
+      "settings": {
+        "padding_top": 96,
+        "padding_bottom": 128,
+        "kicker": "Real Stories",
+        "heading": "Hear From Our Customers",
+        "description": "Real people share their experience with World of Comfort products"
+      }
+    },
     "hero": {
       "type": "showroom-hero",
       "blocks": {
@@ -647,6 +698,7 @@
     "woc_doctor",
     "quiz",
     "testimonials",
+    "testimonials_showcase_CENJJc",
     "hero"
   ]
 }
