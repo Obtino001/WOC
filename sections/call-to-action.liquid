@@ -1,0 +1,40 @@
+{% assign is_dark = false %}
+{% if section.settings.color_scheme == 'dark' %}
+  {% assign is_dark = true %}
+{% endif %}
+
+<section class="{% if is_dark %}py-28 gradient-dark{% else %}py-20 lg:py-28 bg-card border-t border-border{% endif %}">
+  <div class="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+    {% if is_dark %}
+      <div class="luxury-line mx-auto mb-10"></div>
+    {% else %}
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-semibold uppercase tracking-[0.4em] text-gold mb-4">{{ section.settings.subheading }}</p>
+    {% endif %}
+
+    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light {% if is_dark %}text-secondary{% else %}text-foreground{% endif %} mb-6 leading-tight">
+      {{ section.settings.heading | newline_to_br }}
+    </h2>
+    
+    <p class="font-body {% if is_dark %}text-lg text-secondary/50{% else %}text-base text-muted-foreground{% endif %} mb-10 max-w-xl mx-auto leading-relaxed">
+      {{ section.settings.description }}
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      {% if section.settings.button_1_text != blank %}
+        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap {% if is_dark %}gradient-gold text-charcoal shadow-gold{% else %}bg-gold hover:bg-gold/90 text-charcoal rounded-full{% endif %} font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6" href="{{ section.settings.button_1_link }}">
+          {{ section.settings.button_1_text }}
+          {% unless is_dark %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          {% endunless %}
+        </a>
+      {% endif %}
+      
+      {% if section.settings.button_2_text != blank %}
+        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap border-2 font-semibold hover:border-gold transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 {% if is_dark %}border-secondary/30 text-secondary hover:bg-secondary hover:text-charcoal{% else %}border-border text-foreground hover:bg-muted{% endif %}" href="{{ section.settings.button_2_link }}">
+          {{ section.settings.button_2_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
