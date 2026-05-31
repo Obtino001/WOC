@@ -321,15 +321,6 @@
         "description": ""
       }
     },
-    "main_collection": {
-      "type": "main-collection-product-grid",
-      "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "enable_filtering": true,
-        "enable_sorting": true
-      }
-    }
   },
   "order": [
     "hero",
@@ -340,6 +331,5 @@
     "calculator",
     "cases",
     "steps",
-    "main_collection"
   ]
 }
