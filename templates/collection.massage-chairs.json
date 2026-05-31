@@ -73,6 +73,7 @@
       ],
       "settings": {
         "video_url": "",
+        "fallback_image": "shopify://shop_images/massage-chairs-hero-new-ePO3FKLW.jpg",
         "hero_label": "PREMIUM WELLNESS",
         "title_line1": "Skandinaviens Førende",
         "title_line2": "Wellness-Teknologi",
