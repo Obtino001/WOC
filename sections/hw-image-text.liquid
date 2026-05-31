@@ -1,0 +1,100 @@
+<section class="border-t border-border bg-background py-24">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      
+      {% capture image_block %}
+        <div>
+          <div class="overflow-hidden rounded-[2rem] border border-border bg-card shadow-soft">
+            {% if section.settings.image != blank %}
+              {{ section.settings.image | image_url: width: 1000 | image_tag: class: 'aspect-[4/5] w-full object-cover', loading: 'lazy' }}
+            {% else %}
+              {{ 'collection-2' | placeholder_svg_tag: 'aspect-[4/5] w-full object-cover bg-gray-100' }}
+            {% endif %}
+          </div>
+        </div>
+      {% endcapture %}
+
+      {% capture text_block %}
+        <div class="max-w-xl">
+          <p class="mb-4 font-body text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">{{ section.settings.kicker }}</p>
+          <h2 class="mb-6 font-display text-3xl font-semibold leading-tight text-foreground md:text-4xl">{{ section.settings.title }}</h2>
+          <div class="font-body text-base leading-relaxed text-muted-foreground space-y-5 mb-8">
+            {{ section.settings.content }}
+          </div>
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_link }}" class="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-foreground transition-colors hover:bg-muted">
+              {{ section.settings.button_text }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          {% endif %}
+        </div>
+      {% endcapture %}
+
+      {% if section.settings.layout == 'left' %}
+        {{ image_block }}
+        {{ text_block }}
+      {% else %}
+        {{ text_block }}
+        {{ image_block }}
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW Image with Text",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Image Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Train At Home — On Your Terms"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "No excuses. Just results."
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Dark mornings, long workdays, freezing winter days — there's always a reason to skip your workout. But with the right equipment at home, the barriers disappear.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop the collection"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HW Image with Text"
+    }
+  ]
+}
+{% endschema %}

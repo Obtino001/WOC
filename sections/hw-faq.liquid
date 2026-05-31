@@ -1,0 +1,60 @@
+<section class="bg-background py-16 md:py-24 border-t border-border" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="container mx-auto px-6 lg:px-12">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">{{ section.settings.heading }}</h2>
+    
+    <div class="max-w-3xl mx-auto">
+      <div class="space-y-3">
+        {% for block in section.blocks %}
+          <details class="group border border-border rounded-lg px-5 [&_svg]:open:-rotate-180" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
+            <summary class="flex cursor-pointer list-none items-center justify-between py-4 font-body text-sm font-semibold text-foreground transition-all hover:underline outline-none [&::-webkit-details-marker]:hidden">
+              <span itemprop="name">{{ block.settings.question }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200 text-foreground"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <div class="pb-4 font-body text-sm text-muted-foreground leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                {{ block.settings.answer }}
+              </div>
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently asked questions"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "HW FAQ"
+    }
+  ]
+}
+{% endschema %}

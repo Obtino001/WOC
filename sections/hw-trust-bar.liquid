@@ -1,0 +1,43 @@
+<section class="border-y border-border bg-card py-12">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+      {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+          <p class="font-body text-sm font-bold tracking-wide text-foreground">{{ block.settings.title }}</p>
+          <p class="mt-1 font-body text-xs text-muted-foreground">{{ block.settings.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW Trust Bar",
+  "max_blocks": 4,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Trust Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subheading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "HW Trust Bar"
+    }
+  ]
+}
+{% endschema %}

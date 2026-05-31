@@ -1,0 +1,49 @@
+<section class="bg-background py-24">
+  <div class="container mx-auto px-6 text-center lg:px-12">
+    <div class="mx-auto max-w-2xl rounded-[2rem] border border-border bg-card px-8 py-12 shadow-soft md:px-12">
+      <h2 class="mb-6 font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+      <p class="mb-10 font-body text-lg text-muted-foreground">{{ section.settings.text }}</p>
+      <div class="flex justify-center">
+        <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90">
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW Bottom CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Ready to get started?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Order today with free delivery and 30-day satisfaction guarantee."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Buy now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HW Bottom CTA"
+    }
+  ]
+}
+{% endschema %}

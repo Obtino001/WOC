@@ -1,45 +1,167 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "hero": {
+      "type": "hw-hero",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "heading_1": "Home Training &",
+        "heading_2": "Red Light"
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "product_grid": {
+      "type": "hw-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "section_id": "shop",
+        "heading": "Shop all products",
+        "limit": 6
       }
+    },
+    "image_text": {
+      "type": "hw-image-text",
+      "settings": {
+        "layout": "left",
+        "kicker": "Train At Home — On Your Terms",
+        "title": "No excuses. Just results.",
+        "content": "<p>Dark mornings, long workdays, freezing winter days — there's always a reason to skip your workout. But with the right equipment at home, the barriers disappear. No driving to the gym. No waiting for machines. Just you, your home and 15 minutes that make a real difference.</p><p>Even a short daily session delivers noticeable results over time. Strength, balance, circulation, recovery — consistent training always beats one hard session a week. It's not about perfection — it's about consistency.</p><p>Our vibration plates, pilates reformers and compact treadmills are designed to fit into your home — not dominate it. Fold them away, slide them under the sofa or place them elegantly in your living room. They're ready when you are.</p><p>Combine with clinically documented red light therapy for optimal recovery and wellbeing. Free delivery, 30-day returns and a 2-year warranty on everything.</p>",
+        "button_text": "Shop the collection",
+        "button_link": "#shop"
+      }
+    },
+    "trust_bar": {
+      "type": "hw-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "title": "Free delivery",
+            "subtitle": "On all orders"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "title": "Easy returns",
+            "subtitle": "Free returns"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "title": "5-Year Warranty",
+            "subtitle": "On all products"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "title": "Expert advice",
+            "subtitle": "Book a free consultation"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ]
+    },
+    "bottom_cta": {
+      "type": "hw-bottom-cta",
+      "settings": {
+        "heading": "Ready to get started?",
+        "text": "Order today with free delivery and 30-day satisfaction guarantee.",
+        "button_text": "Buy now",
+        "button_link": "#shop"
+      }
+    },
+    "faq": {
+      "type": "hw-faq",
+      "settings": {
+        "heading": "Frequently asked questions"
+      },
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What home training products do you offer?",
+            "answer": "<p>We offer a curated selection of premium home fitness equipment including compact treadmills, vibration plates, and pilates reformers.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "What is red light therapy?",
+            "answer": "<p>Red light therapy is a natural, non-invasive treatment that uses clinically proven wavelengths of red and near-infrared light to improve cellular function, recovery, and skin health.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the difference between Red Light Panel 300 and Pro?",
+            "answer": "<p>The Red Light Panel 300 is our compact model ideal for targeted therapy, while the Pro is a full-size panel designed for full-body coverage and faster results.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are your red light panels FDA approved?",
+            "answer": "<p>Yes, our red light therapy panels meet rigorous international safety standards and hold the necessary CE and FDA registrations.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "What is FitnessPlate XD?",
+            "answer": "<p>FitnessPlate XD is our advanced vibration plate utilizing XD oscillation to stimulate muscles, improve circulation, and assist in lymphatic drainage.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can the Compact Treadmill Pro be folded?",
+            "answer": "<p>Yes, the Compact Treadmill Pro features an ultra-slim design that folds down to just 10.8 cm, easily sliding under a sofa or bed.</p>"
+          }
+        },
+        "q7": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer warranty?",
+            "answer": "<p>Absolutely. We provide up to a 5-year warranty on our home wellness products.</p>"
+          }
+        },
+        "q8": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer free delivery?",
+            "answer": "<p>Yes, we offer free standard delivery on all home wellness orders.</p>"
+          }
+        },
+        "q9": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I try the products?",
+            "answer": "<p>You can try our products in any of our 7 showrooms across Europe, or take advantage of our 30-day satisfaction guarantee to try them at home.</p>"
+          }
+        },
+        "q10": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>We offer a hassle-free 30-day return policy. If you're not completely satisfied, you can return the product for a full refund.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"
+      ]
     }
   },
   "order": [
-    "banner",
-    "product-grid"
+    "hero",
+    "product_grid",
+    "image_text",
+    "trust_bar",
+    "bottom_cta",
+    "faq"
   ]
 }
