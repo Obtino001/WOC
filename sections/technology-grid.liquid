@@ -18,22 +18,54 @@
   </div>
 </section>
 
-<section class="py-24 gradient-dark overflow-hidden">
-  <div class="container mx-auto px-4 lg:px-8">
-    <div class="text-center mb-16">
-      <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.subheading }}</p>
-      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-4">{{ section.settings.heading }}</h2>
-      <p class="font-body text-secondary/50 max-w-2xl mx-auto">{{ section.settings.description }}</p>
-    </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      {% for block in section.blocks %}
-        <div class="border border-border/20 p-8 group hover:border-gold/30 transition-colors duration-500" {{ block.shopify_attributes }}>
-          <span class="font-display text-4xl font-light text-gold/30 group-hover:text-gold/60 transition-colors">{{ block.settings.step_number }}</span>
-          <h3 class="font-display text-lg font-light text-secondary mt-4 mb-3">{{ block.settings.title }}</h3>
-          <p class="font-body text-sm text-secondary/50 leading-relaxed">{{ block.settings.description }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+{% schema %}
+{
+  "name": "Technology Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Our Unique Technology"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_number",
+          "label": "Number Overlay (e.g. 01)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technology Grid"
+    }
+  ]
+}
+{% endschema %}
