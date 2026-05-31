@@ -48,21 +48,21 @@
           "type": "stat",
           "settings": {
             "stat_value": "50.000+",
-            "stat_label": "Tilfredse Kunder"
+            "stat_label": "SATISFIED CUSTOMERS"
           }
         },
         "stat_2": {
           "type": "stat",
           "settings": {
             "stat_value": "20+",
-            "stat_label": "Showrooms"
+            "stat_label": "SHOWROOMS IN EUROPE"
           }
         },
         "stat_3": {
           "type": "stat",
           "settings": {
             "stat_value": "15+",
-            "stat_label": "Års Erfaring"
+            "stat_label": "YEARS OF EXPERIENCE"
           }
         }
       },
@@ -74,19 +74,24 @@
       "settings": {
         "video_url": "",
         "fallback_image": "shopify://shop_images/massage-chairs-hero-new-ePO3FKLW.jpg",
-        "hero_label": "PREMIUM WELLNESS",
-        "title_line1": "Skandinaviens Førende",
-        "title_line2": "Wellness-Teknologi",
-        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "hero_label": "FLAGSHIP COLLECTION",
+        "title_line1": "Premium Massage Chairs",
+        "title_line2": "For the Body",
+        "subtitle": "Experience world-class massage chairs that combine Scandinavian design with ground-breaking wellness technology. From AI-driven precision to zero-gravity relaxation.",
         "show_reviews": true,
-        "btn1_text": "Se Massagestole",
+        "btn1_text": "Find your perfect chair — 60 sec",
         "btn1_url": "#collection",
-        "btn2_text": "Find Showroom",
-        "btn2_url": "",
+        "btn2_text": "VIEW ALL MODELS",
+        "btn2_url": "#collection",
+        "btn3_text": "BOOK A DEMO",
+        "btn3_url": "#demo",
         "expert_image": "shopify://shop_images/sed-lift-me-up.jpg",
         "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Speciallæge & Kiropraktor",
-        "expert_quote": "Den mest effektive forebyggelse af rygproblemer."
+        "expert_title": "Chiropractor · Nordic Spine & Wellness",
+        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
+        "expert_badge_text": "Professionally recommended"
       }
     },
     "trust_bar": {

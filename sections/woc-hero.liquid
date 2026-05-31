@@ -22,13 +22,15 @@
         loading="eager"
       >
     {%- endif -%}
+    <!-- Adjustable Solid Overlay -->
+    <div class="absolute inset-0" style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
     <!-- Overlay Gradients -->
     <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-transparent to-transparent"></div>
   </div>
 
   <!-- Content Container -->
-  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full pt-40">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full pt-40">
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 w-full">
       <div class="max-w-3xl">
         <div class="luxury-line mb-8"></div>
@@ -70,29 +72,42 @@
           </div>
         {%- endif -%}
 
-        <div class="flex flex-col sm:flex-row gap-4 flex-wrap">
-          {%- if section.settings.btn1_text != blank -%}
-            <a
-              href="{{ section.settings.btn1_url }}"
-              class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)] animate-pulse-subtle gap-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-              {{ section.settings.btn1_text }}
-            </a>
-          {%- endif -%}
-          {%- if section.settings.btn2_text != blank -%}
-            <a
-              href="{{ section.settings.btn2_url }}"
-              class="inline-flex items-center justify-center px-10 py-3.5 border border-white hover:bg-white hover:text-charcoal text-white font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded"
-            >
-              {{ section.settings.btn2_text }}
-            </a>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 flex-wrap">
+            {%- if section.settings.btn1_text != blank -%}
+              <a
+                href="{{ section.settings.btn1_url }}"
+                class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)] animate-pulse-subtle gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {{ section.settings.btn1_text }}
+              </a>
+            {%- endif -%}
+            {%- if section.settings.btn2_text != blank -%}
+              <a
+                href="{{ section.settings.btn2_url }}"
+                class="inline-flex items-center justify-center px-10 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)]"
+              >
+                {{ section.settings.btn2_text }}
+              </a>
+            {%- endif -%}
+          </div>
+          {%- if section.settings.btn3_text != blank -%}
+            <div class="flex">
+              <a
+                href="{{ section.settings.btn3_url }}"
+                class="inline-flex items-center justify-center px-8 py-3.5 border border-gold/50 text-gold hover:bg-gold hover:text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded gap-2 max-w-max bg-transparent"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                {{ section.settings.btn3_text }}
+              </a>
+            </div>
           {%- endif -%}
         </div>
       </div>
 
       {%- if section.settings.expert_name != blank -%}
-        <div class="hidden lg:block max-w-xs animate-fade-in-right delay-500">
+        <div class="hidden md:block max-w-xs animate-fade-in-right delay-500">
           <div class="bg-charcoal/60 backdrop-blur-md border border-white/10 rounded-xl p-6">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-full overflow-hidden border border-gold/30 shrink-0">
@@ -114,7 +129,7 @@
               {%- for i in (1..5) -%}
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               {%- endfor -%}
-              <span class="font-body text-[9px] text-white/40 ml-1">Lægefagligt anbefalet</span>
+              <span class="font-body text-[9px] text-white/40 ml-1">{{ section.settings.expert_badge_text | default: "Professionally recommended" }}</span>
             </div>
           </div>
         </div>
@@ -192,28 +207,44 @@
       "label": "Fallback Background Image"
     },
     {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
       "type": "text",
       "id": "hero_label",
       "label": "Hero Label (Tiny text above title)",
-      "default": "PREMIUM WELLNESS"
+      "default": "FLAGSHIP COLLECTION"
     },
     {
       "type": "text",
       "id": "title_line1",
       "label": "Title Line 1",
-      "default": "Skandinaviens Førende"
+      "default": "Premium Massage Chairs"
     },
     {
       "type": "text",
       "id": "title_line2",
       "label": "Title Line 2 (Italic Gold)",
-      "default": "Wellness-Teknologi"
+      "default": "For the Body"
     },
     {
       "type": "textarea",
       "id": "subtitle",
       "label": "Hero Subtitle",
-      "default": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms."
+      "default": "Experience world-class massage chairs that combine Scandinavian design with ground-breaking wellness technology. From AI-driven precision to zero-gravity relaxation."
     },
     {
       "type": "checkbox",
@@ -229,7 +260,7 @@
       "type": "text",
       "id": "btn1_text",
       "label": "Button 1 Text",
-      "default": "Se Massagestole"
+      "default": "Find your perfect chair — 60 sec"
     },
     {
       "type": "url",
@@ -240,12 +271,23 @@
       "type": "text",
       "id": "btn2_text",
       "label": "Button 2 Text",
-      "default": "Find Showroom"
+      "default": "VIEW ALL MODELS"
     },
     {
       "type": "url",
       "id": "btn2_url",
       "label": "Button 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "btn3_text",
+      "label": "Button 3 Text",
+      "default": "BOOK A DEMO"
+    },
+    {
+      "type": "url",
+      "id": "btn3_url",
+      "label": "Button 3 Link"
     },
     {
       "type": "header",
@@ -266,13 +308,19 @@
       "type": "text",
       "id": "expert_title",
       "label": "Expert Title",
-      "default": "Speciallæge & Kiropraktor"
+      "default": "Chiropractor · Nordic Spine & Wellness"
     },
     {
       "type": "textarea",
       "id": "expert_quote",
       "label": "Expert Quote",
-      "default": "Den mest effektive forebyggelse af rygproblemer."
+      "default": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks."
+    },
+    {
+      "type": "text",
+      "id": "expert_badge_text",
+      "label": "Expert Badge Text",
+      "default": "Professionally recommended"
     }
   ],
   "blocks": [
@@ -302,7 +350,7 @@
           "type": "text",
           "id": "text",
           "label": "USP Label",
-          "default": "Nordens førende velværevirksomhed"
+          "default": "Nordic Wellness Leader"
         }
       ]
     },
@@ -320,7 +368,7 @@
           "type": "text",
           "id": "stat_label",
           "label": "Stat Label",
-          "default": "Tilfredse kunder"
+          "default": "SATISFIED CUSTOMERS"
         }
       ]
     }
@@ -329,10 +377,10 @@
     {
       "name": "WOC Hero Banner",
       "blocks": [
-        { "type": "usp", "settings": { "icon": "award", "text": "Nordens Førende Velværevirksomhed" } },
-        { "type": "usp", "settings": { "icon": "cpu", "text": "Unik AI Teknologi" } },
-        { "type": "usp", "settings": { "icon": "heart", "text": "Sundhedsfagligt Anbefalet" } },
-        { "type": "usp", "settings": { "icon": "truck", "text": "White-Glove Levering" } }
+        { "type": "usp", "settings": { "icon": "award", "text": "Nordic Wellness Leader" } },
+        { "type": "usp", "settings": { "icon": "cpu", "text": "Unique AI Technology" } },
+        { "type": "usp", "settings": { "icon": "heart", "text": "Professionally Recommended" } },
+        { "type": "usp", "settings": { "icon": "truck", "text": "White-Glove Delivery" } }
       ]
     }
   ]
