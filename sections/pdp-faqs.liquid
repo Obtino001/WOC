@@ -1,4 +1,18 @@
-<section class="py-16 bg-neutral-50 text-neutral-900 border-t border-neutral-200">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bg-neutral-50 text-neutral-900 border-t border-neutral-200 section-{{ section.id }}-padding">
   <div class="max-w-[800px] mx-auto px-4">
     
     <!-- Title -->
@@ -84,6 +98,30 @@
       "type": "html",
       "id": "accordion_icon_svg",
       "label": "Accordion Arrow SVG Icon"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "blocks": [
@@ -110,9 +148,27 @@
     {
       "name": "PDP Product FAQs",
       "blocks": [
-        { "type": "faq", "settings": { "question": "Hvor meget strøm bruger saunatæppet?", "answer": "Saunatæppet har et elforbrug på ca. 400-650W, hvilket svarer til ca. 1.50 kr. i timen ved højeste indstilling." } },
-        { "type": "faq", "settings": { "question": "Hvordan rengør jeg saunatæppet?", "answer": "Det er nemt! Lad saunatæppet køle af, åben det helt op og tør indersiden af med en fugtig klud. Da indersiden er lavet af vandafvisende PU-læder, tørres sved nemt væk." } },
-        { "type": "faq", "settings": { "question": "Hvor ofte må jeg bruge det?", "answer": "Du kan roligt bruge saunatæppet hver dag. Vi anbefaler dog at starte med 2-3 gange om ugen i 20-30 minutter, hvorefter du kan øge varigheden og frekvensen." } }
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor meget strøm bruger saunatæppet?",
+            "answer": "Saunatæppet har et elforbrug på ca. 400-650W, hvilket svarer til ca. 1.50 kr. i timen ved højeste indstilling."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Hvordan rengør jeg saunatæppet?",
+            "answer": "Det er nemt! Lad saunatæppet køle af, åben det helt op og tør indersiden af med en fugtig klud. Da indersiden er lavet af vandafvisende PU-læder, tørres sved nemt væk."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Hvor ofte må jeg bruge det?",
+            "answer": "Du kan roligt bruge saunatæppet hver dag. Vi anbefaler dog at starte med 2-3 gange om ugen i 20-30 minutter, hvorefter du kan øge varigheden og frekvensen."
+          }
+        }
       ]
     }
   ]

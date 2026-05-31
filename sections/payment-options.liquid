@@ -1,4 +1,18 @@
-<section class="py-24 lg:py-32 bg-card border-y border-border relative overflow-hidden" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bg-card border-y border-border relative overflow-hidden section-{{ section.id }}-padding">
   <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 70% 30%, hsl(var(--gold)), transparent 50%);"></div>
   <div class="container mx-auto px-4 lg:px-8 relative z-10">
     
@@ -43,11 +57,48 @@
 {
   "name": "Payment Options",
   "settings": [
-    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
-    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
-    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Flexible payment" },
-    { "type": "html", "id": "heading", "label": "Heading", "default": "Buy, rent, or<br><span class=\"italic text-gold\">finance your chair</span>" },
-    { "type": "textarea", "id": "description", "label": "Description", "default": "We offer flexible payment solutions so you can enjoy your massage chair today — regardless of budget." }
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Flexible payment"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Buy, rent, or<br><span class=\"italic text-gold\">finance your chair</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "We offer flexible payment solutions so you can enjoy your massage chair today — regardless of budget."
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
   ],
   "blocks": [
     {
@@ -55,14 +106,47 @@
       "name": "Payment Card",
       "limit": 3,
       "settings": [
-        { "type": "checkbox", "id": "highlight", "label": "Highlight Card", "default": false },
-        { "type": "text", "id": "highlight_text", "label": "Highlight Badge Text" },
-        { "type": "html", "id": "icon", "label": "SVG Icon" },
-        { "type": "text", "id": "title", "label": "Title" },
-        { "type": "textarea", "id": "description", "label": "Description" },
-        { "type": "richtext", "id": "features", "label": "Features (Bulleted List)" },
-        { "type": "text", "id": "price_label", "label": "Price Label" },
-        { "type": "text", "id": "price", "label": "Price Value" }
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight Card",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "highlight_text",
+          "label": "Highlight Badge Text"
+        },
+        {
+          "type": "html",
+          "id": "icon",
+          "label": "SVG Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "richtext",
+          "id": "features",
+          "label": "Features (Bulleted List)"
+        },
+        {
+          "type": "text",
+          "id": "price_label",
+          "label": "Price Label"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price Value"
+        }
       ]
     }
   ]

@@ -1,4 +1,18 @@
-<section id="{{ section.settings.section_id }}" class="py-24 {% if section.settings.bg_color == 'warm' %}section-light-warm{% else %}section-light{% endif %}">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section id="{{ section.settings.section_id }}" class="{% if section.settings.bg_color == 'warm' %}section-light-warm{% else %}section-light{% endif %} section-{{ section.id }}-padding">
   {% if section.settings.show_divider_top %}
     <div class="w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent absolute top-0 left-0 right-0"></div>
   {% endif %}
@@ -160,8 +174,14 @@
       "id": "bg_color",
       "label": "Background Tone",
       "options": [
-        { "value": "light", "label": "Light" },
-        { "value": "warm", "label": "Warm Light" }
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "warm",
+          "label": "Warm Light"
+        }
       ],
       "default": "light"
     },
@@ -170,8 +190,14 @@
       "id": "layout",
       "label": "Text Alignment (Desktop)",
       "options": [
-        { "value": "left", "label": "Left" },
-        { "value": "right", "label": "Right" }
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
       ],
       "default": "left"
     },
@@ -208,8 +234,14 @@
       "id": "kicker_color",
       "label": "Kicker Color",
       "options": [
-        { "value": "gold", "label": "Gold" },
-        { "value": "forest", "label": "Forest" }
+        {
+          "value": "gold",
+          "label": "Gold"
+        },
+        {
+          "value": "forest",
+          "label": "Forest"
+        }
       ],
       "default": "gold"
     },
@@ -292,6 +324,30 @@
       "type": "url",
       "id": "btn2_link",
       "label": "Secondary Button Link"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "blocks": [

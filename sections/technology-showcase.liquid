@@ -1,4 +1,18 @@
-<section class="relative py-32 lg:py-44 overflow-hidden bg-[hsl(0,0%,3%)]" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="relative overflow-hidden bg-[hsl(0,0%,3%)] section-{{ section.id }}-padding">
   <div class="absolute inset-0 opacity-[0.035]" style="background-image: radial-gradient(circle at 30% 20%, hsl(var(--gold)), transparent 45%), radial-gradient(circle at 70% 80%, hsl(var(--gold)), transparent 45%);"></div>
   <div class="absolute inset-0 opacity-[0.015]" style="background-image: linear-gradient(hsl(var(--gold) / 0.2) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--gold) / 0.2) 1px, transparent 1px); background-size: 80px 80px;"></div>
   <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[hsl(0,0%,2%)] to-transparent"></div>
@@ -166,26 +180,6 @@
   "name": "XD Technology Showcase",
   "settings": [
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 160,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding Top",
-      "default": 128
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 160,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding Bottom",
-      "default": 128
-    },
-    {
       "type": "text",
       "id": "badge",
       "label": "Badge Text",
@@ -231,6 +225,30 @@
       "id": "footer_quote",
       "label": "Footer Quote",
       "default": "Technology that doesn't just massage — but understands you"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "blocks": [

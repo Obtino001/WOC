@@ -1,4 +1,18 @@
-<section class="relative min-h-[85vh] flex items-center overflow-hidden">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="relative min-h-[85vh] flex items-center overflow-hidden section-{{ section.id }}-padding">
   <div class="absolute inset-0">
     {% if section.settings.image != blank %}
       {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager', preload: true }}
@@ -57,7 +71,8 @@
       "type": "textarea",
       "id": "heading",
       "label": "Heading",
-      "default": "No Two Bodies\nAre the Same"
+      "default": "No Two Bodies
+Are the Same"
     },
     {
       "type": "text",
@@ -91,6 +106,30 @@
       "type": "url",
       "id": "button_2_link",
       "label": "Secondary Button Link"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "presets": [

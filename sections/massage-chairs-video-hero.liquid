@@ -3,7 +3,8 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -11,7 +12,7 @@
   }
 {%- endstyle -%}
 
-<section class="relative min-h-[90vh] flex items-end overflow-hidden section-{{ section.id }}-padding">
+<section class="relative min-h-[90vh] flex items-end overflow-hidden section-{{ section.id }}-padding section-{{ section.id }}-padding">
   <div class="absolute inset-0">
     {% if section.settings.video_url != blank %}
       <video autoplay loop muted playsinline poster="{{ section.settings.fallback_image | image_url: width: 2000 }}" class="w-full h-full object-cover">
@@ -123,26 +124,6 @@
   "name": "Video Hero",
   "settings": [
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 160,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding Top",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 160,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding Bottom",
-      "default": 0
-    },
-    {
       "type": "text",
       "id": "video_url",
       "label": "Video URL (.mp4)"
@@ -162,7 +143,8 @@
       "type": "textarea",
       "id": "heading",
       "label": "Heading",
-      "default": "Premium Massage Chairs\n<span class=\"italic text-gold\">For the Body</span>"
+      "default": "Premium Massage Chairs
+<span class=\"italic text-gold\">For the Body</span>"
     },
     {
       "type": "textarea",
@@ -235,6 +217,30 @@
       "id": "expert_quote",
       "label": "Expert Quote",
       "default": "\"Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.\""
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "blocks": [

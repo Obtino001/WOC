@@ -3,7 +3,8 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -11,7 +12,7 @@
   }
 {%- endstyle -%}
 
-<section class="bg-card border-y border-border section-{{ section.id }}-padding">
+<section class="bg-card border-y border-border section-{{ section.id }}-padding section-{{ section.id }}-padding">
   <div class="container mx-auto px-4 lg:px-8">
     <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
       {% for block in section.blocks %}
@@ -34,14 +35,18 @@
   "name": "Trust Bar Advanced",
   "settings": [
     {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Padding Top",
-      "default": 0
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
     },
     {
       "type": "range",
@@ -50,8 +55,8 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Padding Bottom",
-      "default": 0
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
     }
   ],
   "blocks": [
