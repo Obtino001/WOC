@@ -1,0 +1,234 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding bg-background relative overflow-hidden">
+  <!-- Background glow effect -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-gold/[0.03] rounded-full blur-[120px]"></div>
+  </div>
+
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-8 h-px bg-gold/40"></div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold">{{ section.settings.kicker }}</p>
+        <div class="w-8 h-px bg-gold/40"></div>
+      </div>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-5">{{ section.settings.heading }}</h2>
+      <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">{{ section.settings.description }}</p>
+    </div>
+
+    <!-- Video Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-20">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'video_testimonial' -%}
+          <div class="group relative cursor-pointer" {{ block.shopify_attributes }}>
+            <div class="relative rounded-xl overflow-hidden border border-border/50 hover:border-gold/30 transition-all duration-700 shadow-soft hover:shadow-gold h-full flex flex-col">
+              
+              <div class="relative aspect-[3/4] overflow-hidden">
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110', loading: 'lazy' }}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 bg-muted' }}
+                {% endif %}
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-700"></div>
+                <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%20256%20256%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20baseFrequency%3D%220.9%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23noise)%22%2F%3E%3C%2Fsvg%3E')]"></div>
+                
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gold/10 backdrop-blur-md border border-gold/40 flex items-center justify-center group-hover:bg-gold/20 transition-all duration-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 text-gold fill-gold/60 ml-0.5"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                    </div>
+                    <div class="absolute inset-0 rounded-full border border-gold/20 animate-ping opacity-0 group-hover:opacity-30" style="animation-duration: 2s;"></div>
+                  </div>
+                </div>
+
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-5 h-5 text-gold/40"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                </div>
+              </div>
+
+              <div class="relative bg-card/80 backdrop-blur-sm p-5 border-t border-border/30 flex-1 flex flex-col justify-end">
+                <div class="flex gap-0.5 mb-2">
+                  {% for i in (1..5) %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-3 h-3 text-gold fill-gold"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                  {% endfor %}
+                </div>
+                <p class="font-body text-[13px] text-foreground/60 italic mb-3 leading-relaxed line-clamp-2">"{{ block.settings.quote }}"</p>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="font-body text-xs font-semibold text-foreground tracking-wide">{{ block.settings.author }}</p>
+                    <p class="font-body text-[10px] text-gold/70 uppercase tracking-widest mt-0.5">{{ block.settings.location_product }}</p>
+                  </div>
+                  <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-3.5 h-3.5 text-gold fill-gold/50 ml-px"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <!-- Text Testimonials Marquees -->
+  {% assign text_reviews = section.blocks | where: 'type', 'text_testimonial' %}
+  
+  {% if text_reviews.size > 0 %}
+    <div class="space-y-4 overflow-hidden w-full max-w-[100vw]">
+      
+      <!-- Row 1 (Left to Right) -->
+      <div class="flex w-max animate-marquee hover:[animation-play-state:paused]" style="--marquee-duration: 70s; direction: ltr;">
+        {% for i in (1..2) %}
+          {% for block in text_reviews %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 0 %}
+              {% render 'testimonial-text-card', block: block %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+
+      <!-- Row 2 (Right to Left) -->
+      <div class="flex w-max animate-marquee hover:[animation-play-state:paused]" style="--marquee-duration: 65s; direction: rtl;">
+        {% for i in (1..2) %}
+          {% for block in text_reviews %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 1 %}
+              {% render 'testimonial-text-card', block: block %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+
+      <!-- Row 3 (Left to Right) -->
+      <div class="flex w-max animate-marquee hover:[animation-play-state:paused]" style="--marquee-duration: 75s; direction: ltr;">
+        {% for i in (1..2) %}
+          {% for block in text_reviews %}
+            {% assign mod = forloop.index0 | modulo: 3 %}
+            {% if mod == 2 %}
+              {% render 'testimonial-text-card', block: block %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+      
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials Showcase",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 128
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Real Stories"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hear From Our Customers"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Real people share their experience with World of Comfort products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_testimonial",
+      "name": "Video Testimonial",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Cover Image"
+        },
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Short Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name"
+        },
+        {
+          "type": "text",
+          "id": "location_product",
+          "label": "Location & Product"
+        }
+      ]
+    },
+    {
+      "type": "text_testimonial",
+      "name": "Text Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name"
+        },
+        {
+          "type": "text",
+          "id": "location_product",
+          "label": "Location & Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials Showcase"
+    }
+  ]
+}
+{% endschema %}
