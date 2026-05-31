@@ -74,8 +74,6 @@
       "settings": {
         "video_url": "",
         "fallback_image": "shopify://shop_images/massage-chairs-hero-new-ePO3FKLW.jpg",
-        "overlay_color": "#000000",
-        "overlay_opacity": 40,
         "hero_label": "FLAGSHIP COLLECTION",
         "title_line1": "Premium Massage Chairs",
         "title_line2": "For the Body",
@@ -85,13 +83,10 @@
         "btn1_url": "#collection",
         "btn2_text": "VIEW ALL MODELS",
         "btn2_url": "#collection",
-        "btn3_text": "BOOK A DEMO",
-        "btn3_url": "#demo",
         "expert_image": "shopify://shop_images/sed-lift-me-up.jpg",
         "expert_name": "Dr. Carsten Rosendahl",
         "expert_title": "Chiropractor · Nordic Spine & Wellness",
-        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
-        "expert_badge_text": "Professionally recommended"
+        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks."
       }
     },
     "trust_bar": {
