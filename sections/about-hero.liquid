@@ -1,0 +1,33 @@
+<header class="relative min-h-[80vh] flex items-center overflow-hidden" role="banner">
+  <div class="absolute inset-0">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager', preload: true }}
+    {% else %}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full h-full object-cover' }}
+    {% endif %}
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-transparent"></div>
+  </div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10 py-24">
+    <div class="max-w-2xl">
+      <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-6">{{ section.settings.subheading }}</p>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-7xl font-light text-secondary leading-[1.05] mb-6">{{ section.settings.heading | newline_to_br }}</h1>
+      <p class="font-body text-lg text-secondary/70 mb-10 max-w-xl leading-relaxed">{{ section.settings.description }}</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        {% if section.settings.button_1_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap gradient-gold text-charcoal font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10 py-6" href="{{ section.settings.button_1_link }}">
+            {{ section.settings.button_1_text }}
+          </a>
+        {% endif %}
+        {% if section.settings.button_2_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap border-2 font-semibold hover:border-gold transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 border-secondary/30 text-secondary hover:bg-secondary hover:text-charcoal" href="{{ section.settings.button_2_link }}">
+            {{ section.settings.button_2_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary/40">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-6 h-6"><path d="m6 9 6 6 6-6"></path></svg>
+  </div>
+</header>
