@@ -1,0 +1,70 @@
+<section class="py-24 lg:py-32 bg-card border-y border-border relative overflow-hidden" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 70% 30%, hsl(var(--gold)), transparent 50%);"></div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="luxury-line mx-auto mb-8"></div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05]">{{ section.settings.heading }}</h2>
+        <p class="font-body text-sm text-muted-foreground mt-4 max-w-xl mx-auto">{{ section.settings.description }}</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {% for block in section.blocks %}
+          <div class="{% if block.settings.highlight %}bg-background border-2 border-gold shadow-gold{% else %}bg-background border border-border hover:border-gold/30{% endif %} rounded-xl p-8 text-center transition-all duration-500 relative group" {{ block.shopify_attributes }}>
+            
+            {% if block.settings.highlight_text != blank %}
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-background font-body text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-wider">{{ block.settings.highlight_text }}</span>
+            {% endif %}
+
+            <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-gold/20 transition-colors [&>svg]:w-6 [&>svg]:h-6 [&>svg]:text-gold">
+              {{ block.settings.icon }}
+            </div>
+            
+            <h3 class="font-display text-xl font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+            <p class="font-body text-xs text-muted-foreground mb-6 leading-relaxed">{{ block.settings.description }}</p>
+            
+            <div class="space-y-2 text-left mb-6">
+              {{ block.settings.features | replace: '<li>', '<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg><span class="font-body text-[11px] text-foreground/80">' | replace: '</li>', '</span></div>' }}
+            </div>
+            
+            <p class="font-body text-[10px] text-muted-foreground">{{ block.settings.price_label }}</p>
+            <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">{{ block.settings.price }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Payment Options",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Flexible payment" },
+    { "type": "html", "id": "heading", "label": "Heading", "default": "Buy, rent, or<br><span class=\"italic text-gold\">finance your chair</span>" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "We offer flexible payment solutions so you can enjoy your massage chair today — regardless of budget." }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Payment Card",
+      "limit": 3,
+      "settings": [
+        { "type": "checkbox", "id": "highlight", "label": "Highlight Card", "default": false },
+        { "type": "text", "id": "highlight_text", "label": "Highlight Badge Text" },
+        { "type": "html", "id": "icon", "label": "SVG Icon" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "richtext", "id": "features", "label": "Features (Bulleted List)" },
+        { "type": "text", "id": "price_label", "label": "Price Label" },
+        { "type": "text", "id": "price", "label": "Price Value" }
+      ]
+    }
+  ]
+}
+{% endschema %}

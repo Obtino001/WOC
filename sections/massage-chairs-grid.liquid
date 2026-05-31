@@ -1,0 +1,264 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="{% if section.settings.bg_color == 'warm' %}section-light-warm{% else %}bg-background{% endif %} relative overflow-hidden section-{{ section.id }}-padding">
+  
+  {% if section.settings.show_glow %}
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 30% 50%, hsl(var(--gold)), transparent 60%);"></div>
+  {% endif %}
+
+  <div class="container mx-auto px-4 lg:px-8 relative">
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05]">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+      <p class="font-body text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-{{ section.settings.desktop_columns }} gap-3 lg:gap-6">
+      {% assign collection = section.settings.collection %}
+      {% for product in collection.products limit: section.settings.limit %}
+        
+        <div class="group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:border-gold/30 hover:shadow-gold transition-all duration-400 h-full">
+          <a class="block" href="{{ product.url }}">
+            <div class="relative aspect-square bg-linen overflow-hidden">
+              {% if product.featured_image != blank %}
+                {{ product.featured_image | image_url: width: 600 | image_tag: class: 'w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105', loading: 'lazy' }}
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-contain p-6 bg-gray-100' }}
+              {% endif %}
+              
+              {% if product.tags contains 'New' %}
+                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">New</span>
+              {% elsif product.tags contains 'Award' %}
+                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">Award-Winning</span>
+              {% elsif product.tags contains 'Flagship' %}
+                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">Flagship</span>
+              {% elsif product.tags contains 'Top Seller' %}
+                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">Top Seller</span>
+              {% endif %}
+            </div>
+          </a>
+
+          {% if product.metafields.custom.promo_banner != blank %}
+             <div class="bg-sale-red/10 border-t border-sale-red/20 px-4 py-2 text-center">
+                <span class="font-body text-[11px] font-semibold text-sale-red">{{ product.metafields.custom.promo_banner }}</span>
+             </div>
+          {% endif %}
+
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center gap-1 mb-2">
+              {% for i in (1..5) %}
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 fill-gold text-gold"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+              {% endfor %}
+              <span class="font-body text-[10px] text-muted-foreground ml-1">{{ product.metafields.reviews.rating.value | default: '4.8' }} ({{ product.metafields.reviews.rating_count.value | default: '102' }})</span>
+            </div>
+            
+            <a href="{{ product.url }}">
+              <h3 class="font-display text-lg lg:text-2xl font-bold text-foreground mb-1 hover:text-gold transition-colors">{{ product.title }}</h3>
+            </a>
+            
+            <p class="font-body text-xs lg:text-sm text-muted-foreground mb-3 line-clamp-2 leading-relaxed">
+              {{ product.metafields.custom.short_description | default: product.description | strip_html | truncatewords: 8 }}
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              {% if product.metafields.custom.features != blank %}
+                {% assign features = product.metafields.custom.features.value %}
+                {% for feature in features limit: 6 %}
+                  <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">{{ feature }}</span>
+                  </div>
+                {% endfor %}
+              {% else %}
+                 <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">XD Massage Technology</span>
+                 </div>
+                 <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                    <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">Zero Gravity</span>
+                 </div>
+              {% endif %}
+            </div>
+
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <div class="flex items-center gap-1.5 bg-forest/10 border border-forest/20 rounded-md px-2 py-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-forest flex-shrink-0"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+                <span class="font-body text-[10px] text-forest font-medium whitespace-nowrap">Free delivery</span>
+              </div>
+              <div class="flex items-center gap-1.5 bg-gold/10 border border-gold/20 rounded-md px-2 py-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <span class="font-body text-[10px] text-gold font-medium whitespace-nowrap">5-year warranty</span>
+              </div>
+            </div>
+
+            <div class="mt-auto pt-3 border-t border-border/50">
+              <div class="flex items-baseline gap-2 mb-1">
+                <span class="font-display text-xl lg:text-2xl font-bold text-foreground">{{ product.price | money }}</span>
+              </div>
+              {% assign weekly_price = product.price | divided_by: 52 %}
+              <p class="font-body text-[11px] text-gold mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 inline mr-1"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+                From {{ weekly_price | money_without_trailing_zeros }} / week
+              </p>
+              
+              <div class="flex items-center gap-1.5 mb-4">
+                {% if product.available %}
+                  <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-forest opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-forest"></span>
+                  </span>
+                  <span class="font-body text-[10px] text-forest font-medium">In stock · 1-2 days free delivery</span>
+                {% else %}
+                   <span class="relative flex h-2 w-2 bg-amber-500 rounded-full"></span>
+                   <span class="font-body text-[10px] text-amber-700 font-medium">Out of stock</span>
+                {% endif %}
+              </div>
+              
+              <div class="flex gap-2">
+                <a href="{{ product.url }}" class="inline-flex items-center justify-center whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase h-9 px-3 flex-1 gap-1.5 text-xs">
+                  See more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="/pages/showrooms" class="inline-flex items-center justify-center whitespace-nowrap font-medium border bg-background h-9 px-3 gap-1.5 text-xs border-gold/30 text-gold hover:bg-gold/10 hover:text-gold transition-all duration-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg> Try
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      {% else %}
+        <p>No products found in this collection.</p>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.show_contact_card %}
+      <div class="mt-16 bg-card border border-gold/20 rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex-1">
+          <h3 class="font-display text-2xl font-light text-foreground mb-2">Not sure which model?</h3>
+          <p class="font-body text-sm text-muted-foreground">Take our quiz or book a free trial session in one of our showrooms.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/pages/quiz" class="inline-flex items-center justify-center whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-10 px-4 py-2 gap-2">
+            Take the quiz <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="/pages/contact" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border bg-background hover:text-accent-foreground h-10 px-4 py-2 gap-2 border-gold/30 text-gold hover:bg-gold/10 transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Contact us
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Advanced Product Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 112
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 112
+    },
+    {
+      "type": "select",
+      "id": "bg_color",
+      "label": "Background Color",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "warm", "label": "Warm Light" }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_glow",
+      "label": "Show Gold Glow Background",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Most popular"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our <span class=\"italic text-gold\">Bestsellers</span>",
+      "info": "Use HTML tags for italics."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The most loved massage chairs among our customers — selected for superior comfort, advanced technology, and unmatched quality."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection to Display"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "label": "Product Limit",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Desktop Columns",
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_contact_card",
+      "label": "Show Contact Card at Bottom",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advanced Product Grid"
+    }
+  ]
+}
+{% endschema %}

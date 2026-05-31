@@ -1,0 +1,47 @@
+<section class="py-28 gradient-dark relative overflow-hidden" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 30% 50%, hsl(var(--gold)), transparent 60%);"></div>
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl relative z-10">
+    <div class="text-center">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12 leading-[1.05]">
+        {{ section.settings.heading }}
+      </h2>
+      
+      <blockquote class="relative">
+        <div class="font-display text-8xl text-gold/10 absolute -top-8 left-1/2 -translate-x-1/2 select-none">"</div>
+        <p class="font-display text-xl md:text-2xl italic text-foreground/80 leading-relaxed max-w-3xl mx-auto pt-8">
+          {{ section.settings.quote }}
+        </p>
+      </blockquote>
+      
+      <div class="mt-12 flex flex-col items-center gap-4">
+        <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 shadow-gold">
+          {% if section.settings.image != blank %}
+             {{ section.settings.image | image_url: width: 160 | image_tag: class: 'w-full h-full object-cover', loading: 'lazy' }}
+          {% endif %}
+        </div>
+        <div>
+          <p class="font-body text-sm font-semibold text-foreground">{{ section.settings.author }}</p>
+          <p class="font-body text-[10px] uppercase tracking-luxury text-muted-foreground mt-1">{{ section.settings.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Expert Recommendation",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 112 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Expert Recommendation" },
+    { "type": "html", "id": "heading", "label": "Heading" },
+    { "type": "textarea", "id": "quote", "label": "Quote" },
+    { "type": "image_picker", "id": "image", "label": "Author Image" },
+    { "type": "text", "id": "author", "label": "Author Name" },
+    { "type": "text", "id": "title", "label": "Author Title" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,42 @@
+<section class="section-light-warm py-24 lg:py-32" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-[1.05]">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+      {% for block in section.blocks %}
+        {% assign is_gold = forloop.index | modulo: 2 %}
+        <div class="border p-6 text-center group hover:scale-[1.02] transition-all duration-500 {% if is_gold != 0 %}bg-gradient-to-br from-gold/20 to-gold/5 border-gold/30 hover:border-gold/50{% else %}bg-gradient-to-br from-forest/20 to-forest/5 border-forest/30 hover:border-forest/50{% endif %}" {{ block.shopify_attributes }}>
+          <span class="font-display text-3xl font-bold transition-colors duration-500 {% if is_gold != 0 %}text-gold/30 group-hover:text-gold/60{% else %}text-forest/30 group-hover:text-forest/60{% endif %}">
+            {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}
+          </span>
+          <h3 class="font-body text-sm font-medium text-foreground mt-3 leading-snug">{{ block.settings.title }}</h3>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Health Benefits",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Evidence-Based Wellness" },
+    { "type": "html", "id": "heading", "label": "Heading" }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "limit": 10,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" }
+      ]
+    }
+  ]
+}
+{% endschema %}
