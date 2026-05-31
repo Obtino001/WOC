@@ -1,20 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
     "footer": {
       "type": "woc-footer",
-      "settings": {
-        "copyright_text": "World of Comfort. Alle rettigheder forbeholdes.",
-        "regions_text": "Danmark · Sverige · Norge · Tyskland"
-      },
       "blocks": {
         "brand_block": {
           "type": "brand",
           "settings": {
             "title": "WORLD OF COMFORT",
             "description": "Skandinaviens førende forhandler af premium velværeteknologi. Massagestole, smart-senge, beauty-teknologi og recovery. Altid 20+ showrooms og 5 års garanti.",
-            "show_socials": true
+            "show_socials": true,
+            "facebook_icon_svg": "",
+            "instagram_icon_svg": "",
+            "youtube_icon_svg": ""
           }
         },
         "menu_products": {
@@ -52,7 +60,15 @@
         "menu_company",
         "menu_showrooms",
         "menu_legal"
-      ]
+      ],
+      "settings": {
+        "copyright_text": "World of Comfort. Alle rettigheder forbeholdes.",
+        "regions_text": "Danmark · Sverige · Norge · Tyskland",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true
+      }
     }
   },
   "order": [
