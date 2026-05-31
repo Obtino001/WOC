@@ -1,86 +1,629 @@
-<section id="calculator" class="py-20">
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* Scoped Calculator Custom Styles */
+  #WocCalculator-{{ section.id }} {
+    --color-gold: #d8b261;
+    --color-gold-hover: #c59b4f;
+    --color-charcoal: #0b0f19;
+  }
+
+  #WocCalculator-{{ section.id }} .bg-muted {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  #WocCalculator-{{ section.id }} .text-muted-foreground {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #WocCalculator-{{ section.id }} .bg-charcoal {
+    background-color: #0b0f19;
+  }
+
+  #WocCalculator-{{ section.id }} .bg-accent\/5 {
+    background-color: rgba(216, 178, 97, 0.05);
+  }
+
+  #WocCalculator-{{ section.id }} .border-gold\/30 {
+    border-color: rgba(216, 178, 97, 0.3);
+  }
+
+  #WocCalculator-{{ section.id }} .border-border {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #WocCalculator-{{ section.id }} .bg-card {
+    background-color: #121824;
+  }
+
+  #WocCalculator-{{ section.id }} .tab-trigger {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  #WocCalculator-{{ section.id }} .tab-trigger[data-state="active"] {
+    background-color: #121824;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Custom Range Slider Styling */
+  #WocCalculator-{{ section.id }} .calc-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 9999px;
+    background: #374151;
+    outline: none;
+    cursor: pointer;
+    margin: 12px 0;
+  }
+
+  #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 9999px;
+  }
+
+  #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--color-gold);
+    background: #0b0f19;
+    cursor: pointer;
+    margin-top: -6px;
+    box-shadow: 0 0 10px rgba(216, 178, 97, 0.3);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+
+  #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    background: var(--color-gold);
+  }
+
+  #WocCalculator-{{ section.id }} .calc-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--color-gold);
+    background: #0b0f19;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(216, 178, 97, 0.3);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+
+  #WocCalculator-{{ section.id }} .calc-slider::-moz-range-thumb:hover {
+    transform: scale(1.15);
+    background: var(--color-gold);
+  }
+{%- endstyle -%}
+
+<section id="calculator" class="section-{{ section.id }}-padding bg-background" id="WocCalculator-{{ section.id }}">
   <div class="container mx-auto px-4 lg:px-8">
+    
     <div class="text-center mb-12">
-      <span class="font-body text-sm font-semibold tracking-widest uppercase text-corporate mb-3">{{ section.settings.subheading }}</span>
+      <span class="font-body text-sm font-semibold tracking-widest uppercase text-gold">{{ section.settings.subheading }}</span>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">{{ section.settings.heading }}</h2>
       <p class="font-body text-muted-foreground max-w-2xl mx-auto">{{ section.settings.description }}</p>
     </div>
 
     <div class="max-w-5xl mx-auto">
-      <div class="grid lg:grid-cols-5 gap-8 items-start">
-        
-        <div class="lg:col-span-3">
-          <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
-            <h3 class="font-display text-lg font-semibold text-foreground mb-6">Your Company Details</h3>
-            
-            <div class="space-y-6">
-              <div class="space-y-2">
-                <label class="font-body text-sm font-medium text-foreground">Number of Employees</label>
-                <input type="range" min="1" max="1000" value="50" class="w-full accent-corporate">
-                <div class="flex justify-between text-xs text-muted-foreground"><span>1</span><span>1000</span></div>
-              </div>
-              
-              <div class="space-y-2">
-                <label class="font-body text-sm font-medium text-foreground">Average Monthly Salary (DKK)</label>
-                <input type="range" min="15000" max="80000" value="35000" class="w-full accent-corporate">
-                <div class="flex justify-between text-xs text-muted-foreground"><span>15.000 kr.</span><span>80.000 kr.</span></div>
-              </div>
-
-              <div class="space-y-2">
-                <label class="font-body text-sm font-medium text-foreground">Current Sick Leave Percentage</label>
-                <input type="range" min="1" max="15" value="5" class="w-full accent-corporate">
-                <div class="flex justify-between text-xs text-muted-foreground"><span>1%</span><span>15%</span></div>
-              </div>
-            </div>
-
-            <div class="mt-8 rounded-lg border border-corporate/30 bg-accent/5 p-4 flex items-center justify-between">
-              <div>
-                <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
-                <p class="font-body text-xs text-muted-foreground">Full program included</p>
-              </div>
-              <div class="text-right">
-                <p class="font-display text-2xl font-bold text-corporate">{{ section.settings.price_text }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 sticky top-24">
-          <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-corporate/30 overflow-hidden">
-            <div class="bg-charcoal p-6">
-              <h3 class="font-display text-lg font-semibold text-secondary">Your Annual Results</h3>
-            </div>
-            <div class="p-6 space-y-5">
-              <div class="flex justify-between items-center">
-                <span class="font-body text-sm text-muted-foreground">Gross Annual Savings</span>
-                <span class="font-display text-lg font-bold text-corporate">315.000 kr.</span>
-              </div>
-              <div class="bg-card rounded-lg p-4 space-y-3">
-                <div class="flex justify-between items-center">
-                  <span class="font-body text-sm font-semibold text-foreground">Net Annual Savings</span>
-                  <span class="font-display text-xl font-bold text-corporate">297.000 kr.</span>
-                </div>
-                <div class="border-t border-border pt-3 flex justify-between items-center">
-                  <span class="font-body text-sm text-muted-foreground">Payback Period</span>
-                  <span class="font-display text-lg font-bold text-corporate">1 month</span>
-                </div>
-              </div>
-              <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center w-full bg-corporate text-white font-medium hover:bg-corporate-dark transition-all duration-500 uppercase text-xs h-12 px-10">
-                {{ section.settings.button_text }}
-              </a>
-            </div>
-          </div>
-        </div>
-
+      
+      <!-- Tabs Control List -->
+      <div role="tablist" aria-orientation="horizontal" class="h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground grid w-full max-w-md mx-auto grid-cols-2 mb-8" style="outline: none;">
+        <button type="button" role="tab" aria-selected="true" aria-controls="panel-sick-leave" data-state="active" id="trigger-sick-leave" class="tab-trigger inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 font-medium transition-all font-body text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank w-4 h-4 mr-2"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
+          Sick Leave Savings
+        </button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="panel-sessions" data-state="inactive" id="trigger-sessions" class="tab-trigger inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 font-medium transition-all font-body text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair w-4 h-4 mr-2"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
+          Calculate Sessions
+        </button>
       </div>
+
+      <!-- Tab Panel 1: Sick Leave Savings -->
+      <div id="panel-sick-leave" class="tab-panel active" data-state="active" role="tabpanel" aria-labelledby="trigger-sick-leave">
+        <div class="grid lg:grid-cols-5 gap-8 items-start">
+          
+          <div class="lg:col-span-3">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
+              <div class="p-0 space-y-8">
+                
+                <div class="flex items-center gap-3 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-5 h-5 text-gold"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                  <h3 class="font-display text-lg font-semibold text-foreground">Your Company Details</h3>
+                </div>
+
+                <!-- Slider 1: Employees -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Number of Employees</label>
+                    <span id="val-employees" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">50</span>
+                  </div>
+                  <input type="range" id="slider-employees" min="1" max="1000" value="50" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">1</span>
+                    <span class="font-body text-xs text-muted-foreground">1000</span>
+                  </div>
+                </div>
+
+                <!-- Slider 2: Average Monthly Salary -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Average Monthly Salary (DKK)</label>
+                    <span id="val-salary" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">35.000&nbsp;kr.</span>
+                  </div>
+                  <input type="range" id="slider-salary" min="15000" max="80000" step="1000" value="35000" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">15.000&nbsp;kr.</span>
+                    <span class="font-body text-xs text-muted-foreground">80.000&nbsp;kr.</span>
+                  </div>
+                </div>
+
+                <!-- Slider 3: Current Sick Leave Percentage -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Current Sick Leave Percentage</label>
+                    <span id="val-current-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">5 %</span>
+                  </div>
+                  <input type="range" id="slider-current-sick" min="1" max="15" step="0.1" value="5" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">1 %</span>
+                    <span class="font-body text-xs text-muted-foreground">15 %</span>
+                  </div>
+                  <p class="font-body text-xs text-muted-foreground italic">The national average in Denmark is ~4.5%</p>
+                </div>
+
+                <!-- Slider 4: Target Sick Leave Percentage -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Target Sick Leave Percentage (after wellness program)</label>
+                    <span id="val-target-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">3.5 %</span>
+                  </div>
+                  <input type="range" id="slider-target-sick" min="0.5" max="15" step="0.1" value="3.5" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">0.5 %</span>
+                    <span class="font-body text-xs text-muted-foreground">15 %</span>
+                  </div>
+                  <p class="font-body text-xs text-muted-foreground italic">Our clients typically see a 20–35% reduction</p>
+                </div>
+
+                <!-- Info Box: WOC Solution Cost -->
+                <div class="rounded-lg border border-gold/30 bg-accent/5 p-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-gold"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                    <div>
+                      <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
+                      <p class="font-body text-xs text-muted-foreground">Full massage chair program, maintenance &amp; support included</p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <p class="font-display text-2xl font-bold text-gold">{{ section.settings.price_text }}</p>
+                    <p class="font-body text-xs text-muted-foreground">per month</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticky Results Column -->
+          <div class="lg:col-span-2 sticky top-24">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-gold/30 overflow-hidden">
+              <div class="bg-charcoal p-6">
+                <h3 class="font-display text-lg font-semibold text-white">Your Annual Results</h3>
+                <p class="font-body text-sm text-white/60 mt-1">Based on your inputs</p>
+              </div>
+              <div class="p-6 space-y-5">
+                
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down w-4 h-4 text-muted-foreground"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>
+                    <span class="font-body text-sm text-muted-foreground">Current Sick Leave Cost</span>
+                  </div>
+                  <span id="out-current-cost" class="font-display text-lg font-bold text-foreground">1.050.000&nbsp;kr.</span>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-muted-foreground"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    <span class="font-body text-sm text-muted-foreground">New Sick Leave Cost</span>
+                  </div>
+                  <span id="out-new-cost" class="font-display text-lg font-bold text-foreground">735.000&nbsp;kr.</span>
+                </div>
+
+                <div class="border-t border-border"></div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank w-4 h-4 text-gold"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
+                    <span class="font-body text-sm text-muted-foreground">Gross Annual Savings</span>
+                  </div>
+                  <span id="out-gross-save" class="font-display text-lg font-bold text-gold">315.000&nbsp;kr.</span>
+                </div>
+
+                <div class="bg-card rounded-lg p-4 space-y-3 border border-border">
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">Our Solution (annual)</span>
+                    <span id="out-annual-price" class="font-body text-sm font-semibold text-foreground">18.000&nbsp;kr.</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm font-semibold text-foreground">Net Annual Savings</span>
+                    <span id="out-net-save" class="font-display text-xl font-bold text-gold">297.000&nbsp;kr.</span>
+                  </div>
+                  <div class="border-t border-border pt-3 flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">Return on Investment</span>
+                    <span id="out-roi" class="font-display text-lg font-bold text-gold">1750%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">Payback Period</span>
+                    <span id="out-payback" class="font-display text-lg font-bold text-gold">1 month</span>
+                  </div>
+                </div>
+
+                <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full rounded">
+                  {{ section.settings.button_text }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <p class="font-body text-xs text-muted-foreground text-center">{{ section.settings.disclaimer }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab Panel 2: Calculate Sessions -->
+      <div id="panel-sessions" class="tab-panel" data-state="inactive" role="tabpanel" aria-labelledby="trigger-sessions" hidden>
+        <div class="grid lg:grid-cols-5 gap-8 items-start">
+          
+          <div class="lg:col-span-3">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
+              <div class="p-0 space-y-8">
+                
+                <div class="flex items-center gap-3 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-5 h-5 text-gold"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                  <h3 class="font-display text-lg font-semibold text-foreground">Usage Metrics</h3>
+                </div>
+
+                <!-- Slider 1: Sessions Employees -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Active Employees Using Program</label>
+                    <span id="val-sess-employees" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">50</span>
+                  </div>
+                  <input type="range" id="slider-sess-employees" min="1" max="1000" value="50" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">1</span>
+                    <span class="font-body text-xs text-muted-foreground">1000</span>
+                  </div>
+                </div>
+
+                <!-- Slider 2: Weekly Sessions per Employee -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Average Sessions Per Week Per Employee</label>
+                    <span id="val-sessions-freq" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">2</span>
+                  </div>
+                  <input type="range" id="slider-sessions-freq" min="1" max="5" value="2" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">1</span>
+                    <span class="font-body text-xs text-muted-foreground">5</span>
+                  </div>
+                </div>
+
+                <!-- Slider 3: Clinic Cost -->
+                <div class="space-y-3">
+                  <div class="flex justify-between items-center">
+                    <label class="font-body text-sm font-medium text-foreground">Average Clinic/Therapist Cost Per Session (DKK)</label>
+                    <span id="val-external-cost" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">250&nbsp;kr.</span>
+                  </div>
+                  <input type="range" id="slider-external-cost" min="100" max="500" step="10" value="250" class="calc-slider">
+                  <div class="flex justify-between">
+                    <span class="font-body text-xs text-muted-foreground">100&nbsp;kr.</span>
+                    <span class="font-body text-xs text-muted-foreground">500&nbsp;kr.</span>
+                  </div>
+                </div>
+
+                <!-- Info Box: WOC Solution Cost -->
+                <div class="rounded-lg border border-gold/30 bg-accent/5 p-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-gold"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                    <div>
+                      <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
+                      <p class="font-body text-xs text-muted-foreground">Full massage chair program, maintenance &amp; support included</p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <p class="font-display text-2xl font-bold text-gold">{{ section.settings.price_text }}</p>
+                    <p class="font-body text-xs text-muted-foreground">per month</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticky Results Column -->
+          <div class="lg:col-span-2 sticky top-24">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-gold/30 overflow-hidden">
+              <div class="bg-charcoal p-6">
+                <h3 class="font-display text-lg font-semibold text-white">Your Annual Results</h3>
+                <p class="font-body text-sm text-white/60 mt-1">Based on session outputs</p>
+              </div>
+              <div class="p-6 space-y-5">
+                
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair w-4 h-4 text-muted-foreground"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
+                    <span class="font-body text-sm text-muted-foreground">Total Sessions / Year</span>
+                  </div>
+                  <span id="out-total-sessions" class="font-display text-lg font-bold text-foreground">5.200</span>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-muted-foreground"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    <span class="font-body text-sm text-muted-foreground">Equivalent Clinic Cost</span>
+                  </div>
+                  <span id="out-equivalent-cost" class="font-display text-lg font-bold text-foreground">1.300.000&nbsp;kr.</span>
+                </div>
+
+                <div class="border-t border-border"></div>
+
+                <div class="bg-card rounded-lg p-4 space-y-3 border border-border">
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">Our Solution (annual)</span>
+                    <span id="out-sess-annual-price" class="font-body text-sm font-semibold text-foreground">18.000&nbsp;kr.</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm font-semibold text-foreground">Net Annual Savings</span>
+                    <span id="out-sess-net-save" class="font-display text-xl font-bold text-gold">1.282.000&nbsp;kr.</span>
+                  </div>
+                  <div class="border-t border-border pt-3 flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">Return on Investment</span>
+                    <span id="out-sess-roi" class="font-display text-lg font-bold text-gold">7222%</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-body text-sm text-muted-foreground">WOC Cost Per Session</span>
+                    <span id="out-per-session-cost" class="font-display text-lg font-bold text-gold">3&nbsp;kr.</span>
+                  </div>
+                </div>
+
+                <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full rounded">
+                  {{ section.settings.button_text }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <p class="font-body text-xs text-muted-foreground text-center">{{ section.settings.disclaimer }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const calcSection = document.getElementById('calculator');
+    if (!calcSection) return;
+
+    // Tabs navigation
+    const tabTriggers = calcSection.querySelectorAll('.tab-trigger');
+    const tabPanels = calcSection.querySelectorAll('.tab-panel');
+
+    tabTriggers.forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        tabTriggers.forEach(t => {
+          t.setAttribute('aria-selected', 'false');
+          t.setAttribute('data-state', 'inactive');
+          t.classList.remove('bg-card', 'text-white', 'shadow-sm');
+          t.classList.add('text-muted-foreground');
+        });
+
+        this.setAttribute('aria-selected', 'true');
+        this.setAttribute('data-state', 'active');
+        this.classList.add('bg-card', 'text-white', 'shadow-sm');
+        this.classList.remove('text-muted-foreground');
+
+        const targetPanelId = this.getAttribute('aria-controls');
+        tabPanels.forEach(panel => {
+          if (panel.id === targetPanelId) {
+            panel.removeAttribute('hidden');
+            panel.setAttribute('data-state', 'active');
+            panel.classList.add('active');
+          } else {
+            panel.setAttribute('hidden', '');
+            panel.setAttribute('data-state', 'inactive');
+            panel.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Inputs/Outputs logic
+    const monthlyPrice = parseInt('{{ section.settings.monthly_price | default: 1500 }}', 10);
+    const annualPrice = monthlyPrice * 12;
+
+    // Sick leave elements
+    const empSlider = calcSection.querySelector('#slider-employees');
+    const empVal = calcSection.querySelector('#val-employees');
+    const salSlider = calcSection.querySelector('#slider-salary');
+    const salVal = calcSection.querySelector('#val-salary');
+    const curSickSlider = calcSection.querySelector('#slider-current-sick');
+    const curSickVal = calcSection.querySelector('#val-current-sick');
+    const tarSickSlider = calcSection.querySelector('#slider-target-sick');
+    const tarSickVal = calcSection.querySelector('#val-target-sick');
+
+    const outCurCost = calcSection.querySelector('#out-current-cost');
+    const outNewCost = calcSection.querySelector('#out-new-cost');
+    const outGrossSave = calcSection.querySelector('#out-gross-save');
+    const outAnnPrice = calcSection.querySelector('#out-annual-price');
+    const outNetSave = calcSection.querySelector('#out-net-save');
+    const outRoi = calcSection.querySelector('#out-roi');
+    const outPayback = calcSection.querySelector('#out-payback');
+
+    function formatDanish(num, isPercent = false, decimals = 0) {
+      const formatted = num.toLocaleString('da-DK', { 
+        minimumFractionDigits: decimals, 
+        maximumFractionDigits: decimals 
+      });
+      if (isPercent) return formatted + ' %';
+      return formatted + ' kr.';
+    }
+
+    function updateSliderProgress(slider) {
+      if (!slider) return;
+      const min = parseFloat(slider.min) || 0;
+      const max = parseFloat(slider.max) || 100;
+      const val = parseFloat(slider.value) || 0;
+      const percent = ((val - min) / (max - min)) * 100;
+      slider.style.background = `linear-gradient(to right, var(--color-gold) 0%, var(--color-gold) ${percent}%, #374151 ${percent}%, #374151 100%)`;
+    }
+
+    function calculateSickLeave() {
+      const employees = parseInt(empSlider.value, 10);
+      const salary = parseInt(salSlider.value, 10);
+      const currentSick = parseFloat(curSickSlider.value);
+      const targetSick = parseFloat(tarSickSlider.value);
+
+      // Render slider output texts
+      empVal.textContent = employees;
+      salVal.innerHTML = formatDanish(salary).replace(/\s/g, '&nbsp;');
+      curSickVal.textContent = currentSick + ' %';
+      tarSickVal.textContent = targetSick + ' %';
+
+      // Calculations
+      const currentCost = Math.round(employees * salary * 12 * (currentSick / 100));
+      const newCost = Math.round(employees * salary * 12 * (targetSick / 100));
+      const grossSavings = currentCost - newCost;
+      const netSavings = grossSavings - annualPrice;
+      const roi = annualPrice > 0 ? Math.round((grossSavings / annualPrice) * 100) : 0;
+
+      let paybackText = "1 month";
+      if (grossSavings > 0) {
+        const monthlyGross = grossSavings / 12;
+        const paybackMonths = Math.ceil(monthlyPrice / monthlyGross);
+        paybackText = paybackMonths > 1 ? paybackMonths + " months" : "1 month";
+      } else {
+        paybackText = "-";
+      }
+
+      // Display outputs
+      outCurCost.innerHTML = formatDanish(currentCost).replace(/\s/g, '&nbsp;');
+      outNewCost.innerHTML = formatDanish(newCost).replace(/\s/g, '&nbsp;');
+      outGrossSave.innerHTML = formatDanish(grossSavings).replace(/\s/g, '&nbsp;');
+      outAnnPrice.innerHTML = formatDanish(annualPrice).replace(/\s/g, '&nbsp;');
+      outNetSave.innerHTML = formatDanish(netSavings).replace(/\s/g, '&nbsp;');
+      outRoi.textContent = roi + '%';
+      outPayback.textContent = paybackText;
+
+      updateSliderProgress(empSlider);
+      updateSliderProgress(salSlider);
+      updateSliderProgress(curSickSlider);
+      updateSliderProgress(tarSickSlider);
+    }
+
+    // Sessions elements
+    const sessEmpSlider = calcSection.querySelector('#slider-sess-employees');
+    const sessEmpVal = calcSection.querySelector('#val-sess-employees');
+    const freqSlider = calcSection.querySelector('#slider-sessions-freq');
+    const freqVal = calcSection.querySelector('#val-sessions-freq');
+    const extCostSlider = calcSection.querySelector('#slider-external-cost');
+    const extCostVal = calcSection.querySelector('#val-external-cost');
+
+    const outTotalSess = calcSection.querySelector('#out-total-sessions');
+    const outExtCost = calcSection.querySelector('#out-equivalent-cost');
+    const outAnnSessPrice = calcSection.querySelector('#out-sess-annual-price');
+    const outNetSessSave = calcSection.querySelector('#out-sess-net-save');
+    const outSessRoi = calcSection.querySelector('#out-sess-roi');
+    const outPerSessCost = calcSection.querySelector('#out-per-session-cost');
+
+    function calculateSessions() {
+      const employees = parseInt(sessEmpSlider.value, 10);
+      const freq = parseInt(freqSlider.value, 10);
+      const extCost = parseInt(extCostSlider.value, 10);
+
+      // Render slider output texts
+      sessEmpVal.textContent = employees;
+      freqVal.textContent = freq + (freq === 1 ? ' session / week' : ' sessions / week');
+      extCostVal.innerHTML = formatDanish(extCost).replace(/\s/g, '&nbsp;');
+
+      // Calculations
+      const totalSessions = employees * freq * 52;
+      const equivalentCost = totalSessions * extCost;
+      const netSavings = equivalentCost - annualPrice;
+      const roi = annualPrice > 0 ? Math.round((equivalentCost / annualPrice) * 100) : 0;
+      const perSessionCost = totalSessions > 0 ? Math.round(annualPrice / totalSessions) : 0;
+
+      // Display outputs
+      outTotalSess.textContent = totalSessions.toLocaleString('da-DK');
+      outExtCost.innerHTML = formatDanish(equivalentCost).replace(/\s/g, '&nbsp;');
+      outAnnSessPrice.innerHTML = formatDanish(annualPrice).replace(/\s/g, '&nbsp;');
+      outNetSessSave.innerHTML = formatDanish(netSavings).replace(/\s/g, '&nbsp;');
+      outSessRoi.textContent = roi + '%';
+      outPerSessCost.innerHTML = formatDanish(perSessionCost).replace(/\s/g, '&nbsp;');
+
+      updateSliderProgress(sessEmpSlider);
+      updateSliderProgress(freqSlider);
+      updateSliderProgress(extCostSlider);
+    }
+
+    // Event listeners
+    if (empSlider) empSlider.addEventListener('input', calculateSickLeave);
+    if (salSlider) salSlider.addEventListener('input', calculateSickLeave);
+    if (curSickSlider) curSickSlider.addEventListener('input', calculateSickLeave);
+    if (tarSickSlider) tarSickSlider.addEventListener('input', calculateSickLeave);
+
+    if (sessEmpSlider) sessEmpSlider.addEventListener('input', calculateSessions);
+    if (freqSlider) freqSlider.addEventListener('input', calculateSessions);
+    if (extCostSlider) extCostSlider.addEventListener('input', calculateSessions);
+
+    // Run initial calculations
+    calculateSickLeave();
+    calculateSessions();
+  });
+</script>
 
 {% schema %}
 {
   "name": "ROI Calculator",
   "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 52
+    },
     {
       "type": "text",
       "id": "subheading",
@@ -96,13 +639,20 @@
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description"
+      "label": "Description",
+      "default": "Our wellness solution costs only 1.500 kr./month. See how it pays for itself through reduced sick leave — or estimate daily usage for your team."
+    },
+    {
+      "type": "number",
+      "id": "monthly_price",
+      "label": "Monthly Solution Price (DKK)",
+      "default": 1500
     },
     {
       "type": "text",
       "id": "price_text",
       "label": "Price Display Text",
-      "default": "1.500 kr. / mo"
+      "default": "1.500 kr."
     },
     {
       "type": "text",
@@ -114,6 +664,12 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "disclaimer",
+      "label": "Disclaimer text",
+      "default": "These are estimates. We provide precise projections tailored to your company."
     }
   ],
   "presets": [
