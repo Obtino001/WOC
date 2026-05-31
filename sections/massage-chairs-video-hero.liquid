@@ -16,7 +16,9 @@
   <div class="absolute inset-0">
     {% if section.settings.video_url != blank %}
       <video autoplay loop muted playsinline poster="{{ section.settings.fallback_image | image_url: width: 2000 }}" class="w-full h-full object-cover">
-        <source src="{{ section.settings.video_url }}" type="video/mp4">
+        {% for source in section.settings.video_url.sources %}
+          <source src="{{ source.url }}" type="{{ source.mime_type }}">
+        {% endfor %}
       </video>
     {% elsif section.settings.fallback_image != blank %}
        {{ section.settings.fallback_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}
@@ -124,9 +126,9 @@
   "name": "Video Hero",
   "settings": [
     {
-      "type": "text",
+      "type": "video",
       "id": "video_url",
-      "label": "Video URL (.mp4)"
+      "label": "Shopify-hosted Video"
     },
     {
       "type": "image_picker",

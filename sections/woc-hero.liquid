@@ -11,7 +11,9 @@
         style="width: 100%; height: 100%; object-fit: cover;"
         {% if section.settings.fallback_image != blank %}poster="{{ section.settings.fallback_image | image_url: width: 1920 }}"{% endif %}
       >
-        <source src="{{ section.settings.video_url }}" type="video/mp4">
+        {% for source in section.settings.video_url.sources %}
+          <source src="{{ source.url }}" type="{{ source.mime_type }}">
+        {% endfor %}
       </video>
     {%- elsif section.settings.fallback_image != blank -%}
       <img
@@ -196,10 +198,9 @@
   "max_blocks": 4,
   "settings": [
     {
-      "type": "text",
+      "type": "video",
       "id": "video_url",
-      "label": "MP4 Video URL",
-      "default": "https://worldofcomfort.dk/wp-content/uploads/2025/02/video-forside.mp4"
+      "label": "Shopify-hosted Video"
     },
     {
       "type": "image_picker",
