@@ -38,3 +38,60 @@
     </div>
   </div>
 </section>
+{% schema %}
+{
+  "name": "Call to Action",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        { "value": "dark", "label": "Dark (Gradient)" },
+        { "value": "light", "label": "Light (Card)" }
+      ],
+      "default": "dark"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Primary Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Secondary Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Secondary Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Call to Action"
+    }
+  ]
+}
+{% endschema %}
