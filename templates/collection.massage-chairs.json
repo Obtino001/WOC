@@ -72,6 +72,7 @@
         "stat_3"
       ],
       "settings": {
+        "video_url": "https://worldofcomfort.dk/wp-content/uploads/2025/02/video-forside.mp4",
         "hero_label": "PREMIUM WELLNESS",
         "title_line1": "Skandinaviens Førende",
         "title_line2": "Wellness-Teknologi",
@@ -80,6 +81,7 @@
         "btn1_text": "Se Massagestole",
         "btn1_url": "#collection",
         "btn2_text": "Find Showroom",
+        "btn2_url": "",
         "expert_name": "Dr. Carsten Rosendahl",
         "expert_title": "Speciallæge & Kiropraktor",
         "expert_quote": "Den mest effektive forebyggelse af rygproblemer."
@@ -92,6 +94,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "truck",
+            "custom_icon_svg": "",
             "label": "Gratis Levering",
             "sub": "I hele Skandinavien"
           }
@@ -100,6 +103,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "shield",
+            "custom_icon_svg": "",
             "label": "5 Års Garanti",
             "sub": "På alle modeller"
           }
@@ -108,6 +112,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "award",
+            "custom_icon_svg": "",
             "label": "Prisvindende",
             "sub": "Skandinavisk Design"
           }
@@ -116,6 +121,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "creditcard",
+            "custom_icon_svg": "",
             "label": "0% Rente",
             "sub": "Finansiering tilbydes"
           }
@@ -132,30 +138,39 @@
     "bestsellers": {
       "type": "woc-product-grid-custom",
       "blocks": {
-        "prod_1": {
+        "product_8rbRdq": {
           "type": "product",
           "settings": {
-            "badge": "POPULÆRT VALG",
-            "status_label": "Få demomodeller tilbage",
-            "tagline": "Den mest avancerede wellness-oplevelse"
+            "product": "therapeutic-dual-pro",
+            "badge": "",
+            "status_label": "",
+            "tagline": "",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
           }
         },
         "prod_2": {
           "type": "product",
           "settings": {
+            "product": "medical-dual-pro®",
             "badge": "NYHED",
-            "tagline": "Dybdegående 4D massage"
+            "status_label": "",
+            "tagline": "Dybdegående 4D massage",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
           }
         },
         "prod_3": {
           "type": "product",
           "settings": {
-            "tagline": "Bedst til prisen"
+            "product": "comfort-pro",
+            "badge": "",
+            "status_label": "",
+            "tagline": "Bedst til prisen",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
           }
         }
       },
       "block_order": [
-        "prod_1",
+        "product_8rbRdq",
         "prod_2",
         "prod_3"
       ],
@@ -173,19 +188,43 @@
       "blocks": {
         "prod_1": {
           "type": "product",
-          "settings": {}
+          "settings": {
+            "product": "",
+            "badge": "",
+            "status_label": "",
+            "tagline": "",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
+          }
         },
         "prod_2": {
           "type": "product",
-          "settings": {}
+          "settings": {
+            "product": "",
+            "badge": "",
+            "status_label": "",
+            "tagline": "",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
+          }
         },
         "prod_3": {
           "type": "product",
-          "settings": {}
+          "settings": {
+            "product": "",
+            "badge": "",
+            "status_label": "",
+            "tagline": "",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
+          }
         },
         "prod_4": {
           "type": "product",
-          "settings": {}
+          "settings": {
+            "product": "",
+            "badge": "",
+            "status_label": "",
+            "tagline": "",
+            "features": "3D Massage, Zero Gravity, Varmeterapi"
+          }
         }
       },
       "block_order": [
@@ -219,8 +258,12 @@
           "type": "pricing_card",
           "settings": {
             "is_highlighted": false,
+            "highlight_badge": "MEST POPULÆRE",
             "icon": "shield",
             "title": "Køb Kontant",
+            "description": "Fuld ejerskab fra dag et.",
+            "features": "Ingen renter,Ingen binding,Fuld ejerskab",
+            "price_prefix": "Fra",
             "price": "24.999,-"
           }
         },
@@ -231,6 +274,9 @@
             "highlight_badge": "MEST POPULÆRE",
             "icon": "creditcard",
             "title": "Finansiering",
+            "description": "Fuld ejerskab fra dag et.",
+            "features": "Ingen renter,Ingen binding,Fuld ejerskab",
+            "price_prefix": "Fra",
             "price": "249,- / md"
           }
         },
@@ -238,8 +284,12 @@
           "type": "pricing_card",
           "settings": {
             "is_highlighted": false,
+            "highlight_badge": "MEST POPULÆRE",
             "icon": "award",
             "title": "Erhvervsleasing",
+            "description": "Fuld ejerskab fra dag et.",
+            "features": "Ingen renter,Ingen binding,Fuld ejerskab",
+            "price_prefix": "Fra",
             "price": "1.250,- / md"
           }
         }
@@ -253,7 +303,10 @@
         "pre_title": "INVESTER I DIT HELBRED",
         "title_line1": "Fleksibel",
         "title_line2": "Finansiering",
+        "description": "Vi tilbyder flere forskellige måder at få din drømmestol hjem på. Vælg den løsning, der passer bedst til din økonomi.",
+        "disclaimer": "*Kreditvurdering påkrævet ved finansiering. Leasing forudsætter CVR-nummer.",
         "btn1_text": "Få et Tilbud",
+        "btn1_url": "",
         "btn2_text": "Ring til os"
       }
     },
@@ -262,7 +315,10 @@
       "settings": {
         "pre_title": "LÆGEFAGLIGT ANBEFALET",
         "title_line1": "Din Ryg Fortjener",
-        "title_line2": "Ekspertise"
+        "title_line2": "Ekspertise",
+        "quote": "Som kiropraktor gennem 30 år kan jeg bekræfte, at World of Comfort's massagestole leverer en yderst effektiv, dybdegående og terapeutisk korrekt behandling. Den kunstige intelligens sikrer, at trykket tilpasses individuelt til rygsøjlen – præcis som ved en professionel behandling.",
+        "author_name": "Dr. Carsten Rosendahl",
+        "author_title": "SPECIALLÆGE & KIROPRAKTOR"
       }
     },
     "benefits": {
@@ -353,22 +409,40 @@
         "feat_1": {
           "type": "feature",
           "settings": {
+            "subtitle": "Proprietary XD Technology",
             "title": "AI Kropsscanning",
-            "description": "Scanner rygsøjlens kontur og justerer rullerne for optimalt tryk."
+            "text": "<p>Our patented dual-core processor analyzes your body in real time...</p>",
+            "tag_1": "240 measurements/sec",
+            "tag_2": "Dual AI Core",
+            "tag_3": "Real-time Adaptation",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "feat_2": {
           "type": "feature",
           "settings": {
+            "subtitle": "Proprietary XD Technology",
             "title": "Dybdevirkende 4D",
-            "description": "Rullerne bevæger sig op, ned, til siden og i dybden op til 12 cm."
+            "text": "<p>Our patented dual-core processor analyzes your body in real time...</p>",
+            "tag_1": "240 measurements/sec",
+            "tag_2": "Dual AI Core",
+            "tag_3": "Real-time Adaptation",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "feat_3": {
           "type": "feature",
           "settings": {
+            "subtitle": "Proprietary XD Technology",
             "title": "Intelligent Varmeterapi",
-            "description": "Indbygget varme i rullerne løsner spændte muskler før massagen."
+            "text": "<p>Our patented dual-core processor analyzes your body in real time...</p>",
+            "tag_1": "240 measurements/sec",
+            "tag_2": "Dual AI Core",
+            "tag_3": "Real-time Adaptation",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
@@ -377,7 +451,15 @@
         "feat_2",
         "feat_3"
       ],
-      "settings": {}
+      "settings": {
+        "badge_text": "Proprietary XD Technology",
+        "heading": "Forget Everything About<br><span class=\"relative inline-block mt-2\"><span class=\"italic text-gold\">3D, 4D and 5D</span><span class=\"absolute -bottom-3 left-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent\" style=\"width: 100%;\"></span></span>",
+        "description": "While competitors struggle to add another dimension, we have reinvented the entire massage experience...",
+        "comparison_subtitle": "Movement Range",
+        "comparison_title": "XD vs. Competitors",
+        "comparison_note": "XD = eXtended Dimension — our patented massage system...",
+        "footer_quote": "Technology that doesn't just massage — but understands you"
+      }
     },
     "faqs": {
       "type": "pdp-faqs",
@@ -403,20 +485,28 @@
       ],
       "settings": {
         "subtitle": "Her finder du svar på de mest almindelige spørgsmål om vores massagestole.",
-        "title": "Ofte stillede spørgsmål"
+        "title": "Ofte stillede spørgsmål",
+        "accordion_icon_svg": ""
       }
     },
     "why_us": {
       "type": "woc-why-us",
-      "settings": {}
+      "settings": {
+        "label": "EKSKLUSIV WELLNESS",
+        "title": "Hvorfor vælge World of Comfort?",
+        "description": "Vi går ikke på kompromis med kvaliteten. Vores produkter er designet til at forbedre din livskvalitet."
+      }
     },
     "bottom_cta": {
       "type": "woc-bottom-cta",
       "settings": {
         "title_line1": "Tag testen.",
         "title_line2": "Find din perfekte stol.",
+        "description": "Vores AI-drevne quiz analyserer dine behov, din kropstype og dine præferencer for at matche dig med den ideelle massagestol på under 60 sekunder.",
         "btn1_text": "Tag testen nu",
-        "btn2_text": "Book en gratis prøvning"
+        "btn1_url": "",
+        "btn2_text": "Book en gratis prøvning",
+        "btn2_url": ""
       }
     }
   },
