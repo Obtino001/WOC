@@ -1,0 +1,93 @@
+<section class="relative py-28 lg:py-36 overflow-hidden" id="faq" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="absolute inset-0 bg-gradient-to-b from-[hsl(var(--background))] via-[hsl(var(--card))] to-[hsl(var(--background))]"></div>
+  <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 30% 20%, hsl(var(--gold)), transparent 50%);"></div>
+  
+  <div class="container relative mx-auto px-4 lg:px-8">
+    
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.05] mb-5">{{ section.settings.heading }}</h2>
+      <p class="font-body text-base text-muted-foreground max-w-2xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="max-w-xl mx-auto mb-12">
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" placeholder="Search questions..." class="w-full pl-11 pr-4 py-3.5 bg-card border border-border rounded-lg font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/40 transition-colors">
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-14">
+      {% for block in section.blocks %}
+        {% if block.type == 'category' %}
+          <button class="flex items-center gap-2 px-5 py-2.5 rounded-full font-body text-xs font-medium tracking-wide transition-all duration-300 {% if forloop.first %}bg-gold/10 text-gold border border-gold/30{% else %}bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold/20{% endif %}" {{ block.shopify_attributes }}>
+            {{ block.settings.icon_svg }}
+            {{ block.settings.title }}
+            <span class="text-[10px] rounded-full px-1.5 py-0.5 ml-0.5 {% if forloop.first %}bg-gold/20 text-gold{% else %}bg-muted text-muted-foreground{% endif %}">1</span>
+          </button>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      <div class="space-y-3">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq_item' %}
+            <div class="border rounded-lg transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/10" {{ block.shopify_attributes }}>
+              <button class="flex items-start justify-between w-full text-left px-6 py-5 gap-4">
+                <h3 class="font-display text-base font-semibold leading-snug transition-colors text-foreground">{{ block.settings.question }}</h3>
+                <span class="mt-0.5 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-muted-foreground"><path d="m6 9 6 6 6-6"></path></svg></span>
+              </button>
+              <div class="hidden px-6 pb-5 pt-0 text-sm text-muted-foreground font-body leading-relaxed">
+                {{ block.settings.answer }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div class="mt-16 text-center">
+      <div class="inline-flex items-center gap-3 bg-card border border-border rounded-xl px-8 py-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5 text-gold"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+        <div class="text-left">
+          <p class="font-display text-sm font-semibold text-foreground">Still have questions?</p>
+          <p class="font-body text-xs text-muted-foreground">Call us on +45 XX XX XX XX or book a free showroom demo — our experts are ready to help.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ Interactive",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 112 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 144 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Frequently Asked Questions" },
+    { "type": "html", "id": "heading", "label": "Heading", "default": "FAQ <span class=\"italic text-gold\">to know</span>" },
+    { "type": "textarea", "id": "description", "label": "Description" }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Filter Category",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Category Title" },
+        { "type": "html", "id": "icon_svg", "label": "Icon SVG" }
+      ]
+    },
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ]
+}
+{% endschema %}
