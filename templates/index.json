@@ -52,10 +52,7 @@
         "usp_4"
       ],
       "settings": {
-<<<<<<< Updated upstream
-=======
-        "video_url": "",
->>>>>>> Stashed changes
+        "video_url": "shopify://files/videos/hero.mp4",
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "hero_label": "FLAGSHIP COLLECTION",
@@ -378,7 +375,7 @@
     "quiz": {
       "type": "quiz-cta",
       "settings": {
-        "padding_top":80,
+        "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "Personal Guidance",
         "heading": "Find Your Perfect\n<span class=\"block italic text-gold\">Massage Chair</span>",
@@ -538,11 +535,11 @@
         "t7"
       ],
       "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
         "kicker": "Real Stories",
         "heading": "Hear From Our Customers",
-        "description": "Real people share their experience with World of Comfort products"
+        "description": "Real people share their experience with World of Comfort products",
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     },
     "testimonials_showcase_CENJJc": {
