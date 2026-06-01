@@ -598,22 +598,6 @@
         "btn2_link": "/pages/showrooms"
       }
     },
-    "related": {
-      "type": "massage-chairs-grid",
-      "settings": {
-        "bg_color": "warm",
-        "show_glow": false,
-        "kicker": "You May Also Like",
-        "heading": "Related Products",
-        "description": "",
-        "collection": "",
-        "limit": 3,
-        "desktop_columns": 4,
-        "show_contact_card": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "tech": {
       "type": "woc-pdp-tech",
       "blocks": {
@@ -968,7 +952,6 @@
     "pricing_plans",
     "faq",
     "cta",
-    "related",
     "tech",
     "health",
     "video",
