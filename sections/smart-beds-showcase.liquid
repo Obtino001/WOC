@@ -82,18 +82,24 @@
                 {%- assign current_variant = product.selected_or_first_available_variant -%}
                 {%- assign product_form_id = 'product-form-' | append: section.id -%}
                 <product-form class="w-full sm:w-auto">
+                  <div class="product-form__error-message-wrapper" role="alert" hidden>
+                    <span class="product-form__error-message"></span>
+                  </div>
                   {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                    <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+                    <input type="hidden" name="id" value="{{ current_variant.id }}" class="product-variant-id" disabled>
                     <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full disabled:opacity-50 disabled:cursor-not-allowed"
                       {% if current_variant.available == false %}disabled{% endif %}>
                       {% if section.settings.btn1_icon != blank %}
                          <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
                       {% endif %}
-                      {%- if current_variant.available -%}
-                        {{ section.settings.btn1_text | default: 'Add to basket' }}
-                      {%- else -%}
-                        {{ 'products.product.sold_out' | t | default: 'Udsolgt' }}
-                      {%- endif -%}
+                      <span>
+                        {%- if current_variant.available -%}
+                          {{ section.settings.btn1_text | default: 'Add to basket' }}
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t | default: 'Udsolgt' }}
+                        {%- endif -%}
+                      </span>
+                      {%- render 'loading-spinner' -%}
                     </button>
                   {%- endform -%}
                 </product-form>

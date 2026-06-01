@@ -1,0 +1,77 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient border-b border-border section-{{ section.id }}-padding">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      {% if section.settings.kicker != blank %}
+        <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">{{ section.settings.kicker }}</p>
+      {% endif %}
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+      {% if section.settings.description != blank %}
+        <p class="mt-4 font-body text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="grid md:grid-cols-{{ section.settings.columns }} gap-6">
+      {% for block in section.blocks %}
+        <div class="rounded-2xl border border-border bg-card p-8 hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center flex-shrink-0 [&>svg]:w-6 [&>svg]:h-6 [&>svg]:text-foreground">
+              {{ block.settings.icon_svg }}
+            </div>
+            {% if block.settings.stat_value != blank %}
+              <div>
+                <span class="font-display text-2xl font-bold text-foreground">{{ block.settings.stat_value }}</span>
+                <span class="font-body text-xs text-muted-foreground ml-1.5">{{ block.settings.stat_label }}</span>
+              </div>
+            {% endif %}
+          </div>
+          <h3 class="font-display text-lg font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FP Simple Feature Grid",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "range", "id": "columns", "min": 2, "max": 4, "step": 1, "label": "Desktop Columns", "default": 3 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "STOP PUTTING OFF YOUR TRAINING" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Why home training wins" },
+    { "type": "textarea", "id": "description", "label": "Description" }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Card",
+      "settings": [
+        { "type": "html", "id": "icon_svg", "label": "Icon SVG" },
+        { "type": "text", "id": "stat_value", "label": "Stat Value (optional)" },
+        { "type": "text", "id": "stat_label", "label": "Stat Label (optional)" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "FP Simple Feature Grid" }
+  ]
+}
+{% endschema %}

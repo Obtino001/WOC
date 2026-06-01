@@ -26,14 +26,20 @@
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
           {%- assign current_variant = product.selected_or_first_available_variant -%}
           <product-form>
+            <div class="product-form__error-message-wrapper" role="alert" hidden>
+              <span class="product-form__error-message"></span>
+            </div>
             {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-              <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+              <input type="hidden" name="id" value="{{ current_variant.id }}" class="product-variant-id" disabled>
               <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90 disabled:opacity-50" {% if current_variant.available == false %}disabled{% endif %}>
-                {%- if current_variant.available -%}
-                  {{ section.settings.btn_text | default: 'Buy now' }}
-                {%- else -%}
-                  {{ 'products.product.sold_out' | t | default: 'Sold out' }}
-                {%- endif -%}
+                <span>
+                  {%- if current_variant.available -%}
+                    {{ section.settings.btn_text | default: 'Buy now' }}
+                  {%- else -%}
+                    {{ 'products.product.sold_out' | t | default: 'Sold out' }}
+                  {%- endif -%}
+                </span>
+                {%- render 'loading-spinner' -%}
               </button>
             {%- endform -%}
           </product-form>
