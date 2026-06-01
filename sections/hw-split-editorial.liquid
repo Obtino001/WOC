@@ -1,0 +1,62 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient border-t border-border section-{{ section.id }}-padding">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      
+      <div>
+        <div class="overflow-hidden rounded-[2rem] border border-border bg-card shadow-soft">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 1000 | image_tag: class: 'aspect-[4/5] w-full object-cover', loading: 'lazy' }}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'aspect-[4/5] w-full object-cover bg-gray-200' }}
+          {% endif %}
+        </div>
+      </div>
+      
+      <div class="max-w-xl">
+        <p class="mb-4 font-body text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">{{ section.settings.kicker }}</p>
+        <h2 class="mb-6 font-display text-3xl font-semibold leading-tight text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+        <div class="font-body text-base leading-relaxed text-muted-foreground space-y-5 mb-8">
+          {{ section.settings.text }}
+        </div>
+        <a href="{{ section.settings.btn_link }}" class="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-foreground transition-colors hover:bg-muted">
+          {{ section.settings.btn_text }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide lucide-arrow-right h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW Split Editorial",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Train At Home — On Your Terms" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "No excuses. Just results." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Dark mornings, long workdays, freezing winter days...</p>" },
+    { "type": "text", "id": "btn_text", "label": "Button Text", "default": "Shop the collection" },
+    { "type": "url", "id": "btn_link", "label": "Button Link" }
+  ],
+  "presets": [
+    { "name": "HW Split Editorial" }
+  ]
+}
+{% endschema %}

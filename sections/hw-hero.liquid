@@ -1,15 +1,14 @@
-<section class="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end overflow-hidden">
-  {% if section.settings.background_image != blank %}
-    {{ section.settings.background_image | image_url: width: 2000 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center', loading: 'eager', preload: true }}
+<section class="color-{{ section.settings.color_scheme }} gradient relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end overflow-hidden">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center', loading: 'eager' }}
   {% else %}
-    {{ 'lifestyle-2' | placeholder_svg_tag: 'absolute inset-0 w-full h-full object-cover object-center bg-gray-200' }}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'absolute inset-0 w-full h-full object-cover bg-gray-800' }}
   {% endif %}
   <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
   <div class="container mx-auto px-6 lg:px-12 relative z-10 pb-16 lg:pb-24">
     <div>
       <h1 class="font-display text-5xl md:text-6xl lg:text-8xl font-light text-white leading-[0.95]">
-        {{ section.settings.heading_1 }}<br>
-        <span class="italic text-white/90">{{ section.settings.heading_2 }}</span>
+        {{ section.settings.heading | newline_to_br }}
       </h1>
     </div>
   </div>
@@ -19,28 +18,12 @@
 {
   "name": "HW Hero",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background Image"
-    },
-    {
-      "type": "text",
-      "id": "heading_1",
-      "label": "Heading Line 1",
-      "default": "Home Training &"
-    },
-    {
-      "type": "text",
-      "id": "heading_2",
-      "label": "Heading Line 2 (Italic)",
-      "default": "Red Light"
-    }
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "image_picker", "id": "image", "label": "Background Image" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Home Training &\n<span class=\"italic text-white/90\">Red Light</span>" }
   ],
   "presets": [
-    {
-      "name": "HW Hero"
-    }
+    { "name": "HW Hero" }
   ]
 }
 {% endschema %}

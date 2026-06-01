@@ -1,0 +1,67 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- if section.settings.product != blank -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-6 text-center lg:px-12">
+    <div class="mx-auto max-w-2xl rounded-[2rem] border border-border bg-card px-8 py-12 shadow-soft md:px-12">
+      <h2 class="mb-6 font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+      <p class="mb-10 font-body text-lg text-muted-foreground">{{ section.settings.description }}</p>
+      <div class="flex justify-center">
+        {%- if section.settings.product != blank -%}
+          {%- assign product = section.settings.product -%}
+          {%- assign product_form_id = 'product-form-' | append: section.id -%}
+          {%- assign current_variant = product.selected_or_first_available_variant -%}
+          <product-form>
+            {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+              <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90 disabled:opacity-50" {% if current_variant.available == false %}disabled{% endif %}>
+                {%- if current_variant.available -%}
+                  {{ section.settings.btn_text | default: 'Buy now' }}
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t | default: 'Sold out' }}
+                {%- endif -%}
+              </button>
+            {%- endform -%}
+          </product-form>
+        {%- else -%}
+          <a href="{{ section.settings.btn_link }}" class="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90">
+            {{ section.settings.btn_text }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HW CTA Box",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "product", "id": "product", "label": "Select Product (Enables Add to Cart)" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Ready to get started?" },
+    { "type": "text", "id": "description", "label": "Description", "default": "Order today with free delivery and 30-day satisfaction guarantee." },
+    { "type": "text", "id": "btn_text", "label": "Button Text", "default": "Buy now" },
+    { "type": "url", "id": "btn_link", "label": "Button Link" }
+  ],
+  "presets": [
+    { "name": "HW CTA Box" }
+  ]
+}
+{% endschema %}
