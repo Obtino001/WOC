@@ -278,6 +278,25 @@
           }
         }
       });
+
+      // Listen to clicks on any elements with text or class containing "Book Demo" or "Book a Demo"
+      document.addEventListener('click', function(e) {
+        const target = e.target.closest('a, button, [role="button"]');
+        if (!target) return;
+        if (target.closest('#woc-demo-modal')) return;
+        
+        const text = target.textContent.trim().toLowerCase();
+        if (text.includes('book demo') || text.includes('book a demo') || target.classList.contains('book-demo-trigger')) {
+          if (target.id === 'woc-floating-trigger') return;
+          
+          e.preventDefault();
+          window.dispatchEvent(new CustomEvent('open-book-demo', {
+            detail: {
+              productName: document.querySelector('.product__title h1')?.textContent.trim() || ''
+            }
+          }));
+        }
+      });
     }
   });
 

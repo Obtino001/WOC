@@ -381,3 +381,87 @@ cart-drawer.active .drawer__inner {
 .grid:not([class*="grid-cols-"]):not([class*="grid-rows-"]):not([class*="grid-flow-"]) {
   display: flex !important;
 }
+
+/* WOC Header Custom Buttons styling */
+.header__globe-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 1.25rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header__globe-language svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header__book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #bf8f30 !important;
+  background-color: transparent !important;
+  color: #bf8f30 !important;
+  border-radius: 9999px !important;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Outfit', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.75rem;
+}
+.header__book-demo-btn:hover {
+  background-color: rgba(191, 143, 48, 0.05) !important;
+  border-color: rgba(191, 143, 48, 0.8) !important;
+}
+
+.header__call-us-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none !important;
+  background-color: #bf8f30 !important;
+  color: #0a0a0a !important;
+  border-radius: 9999px !important;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Outfit', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+.header__call-us-btn:hover {
+  background-color: #a37622 !important;
+}
+
+/* Cart Icon Bubble Override */
+#cart-icon-bubble {
+  position: relative;
+}
+#cart-icon-bubble .cart-count-bubble {
+  background-color: #bf8f30 !important;
+  color: #0a0a0a !important;
+  border-radius: 50% !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  font-size: 0.6rem !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: -4px !important;
+  right: -4px !important;
+}
