@@ -1,0 +1,111 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    
+    <div class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-light tracking-wider mb-2">{{ section.settings.heading }}</h2>
+      <p class="text-sm text-muted-foreground" style="font-family: system-ui, sans-serif;">{{ section.settings.subtitle }}</p>
+    </div>
+
+    <div id="before-after-{{ section.id }}" class="relative w-full aspect-[4/5] max-w-lg mx-auto rounded-2xl overflow-hidden shadow-xl cursor-col-resize select-none">
+      
+      {% if section.settings.image_after != blank %}
+        {{ section.settings.image_after | image_url: width: 800 | image_tag: class: 'absolute inset-0 w-full h-full object-cover' }}
+      {% else %}
+        <div class="absolute inset-0 w-full h-full bg-gray-200"></div>
+      {% endif %}
+
+      <div class="before-container absolute inset-y-0 left-0 overflow-hidden" style="width: 50%;">
+        {% if section.settings.image_before != blank %}
+          {{ section.settings.image_before | image_url: width: 800 | image_tag: class: 'absolute inset-0 h-full object-cover', style: 'width: 100vw; max-width: none;' }}
+        {% else %}
+          <div class="absolute inset-0 h-full bg-gray-400" style="width: 100vw; max-width: none;"></div>
+        {% endif %}
+      </div>
+
+      <div class="slider-handle absolute top-0 bottom-0 w-0.5 bg-white/90 shadow-lg pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+        <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center pointer-events-auto">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7 4L3 10L7 16" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13 4L17 10L13 16" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+
+      <span class="absolute top-4 left-4 bg-black/60 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm font-sans">BEFORE</span>
+      <span class="absolute top-4 right-4 bg-white/80 text-black text-xs px-3 py-1 rounded-full backdrop-blur-sm font-sans">AFTER</span>
+    </div>
+    
+    <p class="text-center text-xs text-muted-foreground mt-6" style="font-family: system-ui, sans-serif;">
+      {{ section.settings.bottom_text }}
+    </p>
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('before-after-{{ section.id }}');
+    if (!slider) return;
+    const beforeContainer = slider.querySelector('.before-container');
+    const handle = slider.querySelector('.slider-handle');
+    
+    let isDragging = false;
+    
+    function setPosition(x) {
+      const rect = slider.getBoundingClientRect();
+      let percentage = ((x - rect.left) / rect.width) * 100;
+      if (percentage < 0) percentage = 0;
+      if (percentage > 100) percentage = 100;
+      beforeContainer.style.width = percentage + '%';
+      handle.style.left = percentage + '%';
+    }
+    
+    function onStart() { isDragging = true; }
+    function onEnd() { isDragging = false; }
+    function onMove(e) {
+      if (!isDragging) return;
+      const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+      if (clientX) setPosition(clientX);
+    }
+    
+    slider.addEventListener('mousedown', onStart);
+    window.addEventListener('mouseup', onEnd);
+    window.addEventListener('mousemove', onMove);
+    
+    slider.addEventListener('touchstart', onStart);
+    window.addEventListener('touchend', onEnd);
+    window.addEventListener('touchmove', onMove);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "SED Before After",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 64 },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Before & After" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Drag the slider to see the difference — real results after 8 weeks" },
+    { "type": "image_picker", "id": "image_before", "label": "Before Image" },
+    { "type": "image_picker", "id": "image_after", "label": "After Image" },
+    { "type": "text", "id": "bottom_text", "label": "Bottom Disclaimer Text", "default": "Result after 8 weeks of daily use with Boss Lady" }
+  ],
+  "presets": [
+    { "name": "SED Before After" }
+  ]
+}
+{% endschema %}
