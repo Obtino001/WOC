@@ -1,0 +1,66 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bg-background border-b border-border section-{{ section.id }}-padding">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+      <p class="mt-4 font-body text-base text-muted-foreground max-w-xl mx-auto">{{ section.settings.description }}</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      {% for block in section.blocks %}
+        <div class="relative overflow-hidden rounded-2xl border border-border bg-card" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 800 | image_tag: class: 'w-full aspect-[4/3] object-cover', loading: 'lazy' }}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full aspect-[4/3] object-cover bg-gray-200' }}
+          {% endif %}
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-background/90 to-transparent p-6">
+            <p class="font-display text-lg font-bold text-foreground">{{ block.settings.title }}</p>
+            <p class="font-body text-sm text-muted-foreground">{{ block.settings.subtitle }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Treadmill Dual Image",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "SPACE-SAVING DESIGN" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Fold up — store against the wall" },
+    { "type": "textarea", "id": "description", "label": "Description" }
+  ],
+  "blocks": [
+    {
+      "type": "image_card",
+      "name": "Image Card",
+      "limit": 2,
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Treadmill Dual Image" }
+  ]
+}
+{% endschema %}
