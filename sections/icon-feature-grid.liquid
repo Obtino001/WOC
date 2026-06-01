@@ -1,4 +1,4 @@
-{%- style -%}
+﻿{%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -11,7 +11,7 @@
   }
 {%- endstyle -%}
 
-<section class="{% if section.settings.bg_color == 'warm' %}section-light-warm{% elsif section.settings.bg_color == 'dark' %}gradient-dark{% else %}section-light{% endif %} section-{{ section.id }}-padding">
+<section class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.bg_color == 'warm' %}section-light-warm{% elsif section.settings.bg_color == 'dark' %}gradient-dark{% else %}section-light{% endif %} section-{{ section.id }}-padding">
   <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
     <div class="text-center mb-14">
       <div class="luxury-line mx-auto mb-6"></div>
@@ -57,6 +57,13 @@
 {
   "name": "Icon Feature Grid",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
     { "type": "select", "id": "bg_color", "label": "Background Style", "options": [ { "value": "light", "label": "Light" }, { "value": "warm", "label": "Light Warm" }, { "value": "dark", "label": "Dark Gradient" } ], "default": "warm" },

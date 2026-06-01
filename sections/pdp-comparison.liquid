@@ -1,4 +1,4 @@
-<section class="py-12 bg-white text-neutral-900 border-t border-neutral-200">
+﻿<section class="color-{{ section.settings.color_scheme }} gradient py-12 bg-white text-neutral-900 border-t border-neutral-200">
   <div class="max-w-[800px] mx-auto px-4">
     
     <!-- Title -->
@@ -92,6 +92,13 @@
 {
   "name": "PDP Product Comparison",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
     {
       "type": "text",
       "id": "subtitle",

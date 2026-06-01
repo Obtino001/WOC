@@ -1,4 +1,4 @@
-<section class="py-20 lg:py-28 bg-charcoal border-y border-border relative overflow-hidden">
+﻿<section class="color-{{ section.settings.color_scheme }} gradient py-20 lg:py-28 bg-charcoal border-y border-border relative overflow-hidden">
   <div class="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
     <!-- Heading -->
@@ -80,6 +80,13 @@
 {
   "name": "WOC PDP Video",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
     {
       "type": "text",
       "id": "label",

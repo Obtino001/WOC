@@ -1,4 +1,4 @@
-<section class="py-24 bg-charcoal border-t border-border relative overflow-hidden">
+﻿<section class="color-{{ section.settings.color_scheme }} gradient py-24 bg-charcoal border-t border-border relative overflow-hidden">
   <!-- Subtle background glow -->
   <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 50% 50%, hsl(var(--gold)), transparent 60%);"></div>
 
@@ -70,6 +70,13 @@
 {
   "name": "WOC PDP Bottom CTA",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    },
     {
       "type": "text",
       "id": "title",
