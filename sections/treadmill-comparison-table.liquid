@@ -1,0 +1,81 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="border-y border-border bg-card section-{{ section.id }}-padding">
+  <div class="container mx-auto px-6 lg:px-12 max-w-3xl">
+    
+    <div class="text-center mb-10">
+      <h2 class="font-display text-2xl font-semibold text-foreground md:text-3xl">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="overflow-hidden rounded-[1.5rem] border border-border bg-background">
+      
+      <div class="grid grid-cols-[1fr_auto_auto] border-b border-border bg-muted px-6 py-4">
+        <span class="font-body text-xs font-semibold uppercase tracking-wider text-muted-foreground"></span>
+        <span class="w-28 text-center font-body text-xs font-bold uppercase tracking-wider text-foreground">{{ section.settings.col_good }}</span>
+        <span class="w-28 text-center font-body text-xs font-semibold uppercase tracking-wider text-muted-foreground">{{ section.settings.col_bad }}</span>
+      </div>
+      
+      {% for block in section.blocks %}
+        <div class="grid grid-cols-[1fr_auto_auto] items-center px-6 py-3.5 border-b border-border last:border-b-0" {{ block.shopify_attributes }}>
+          <span class="font-body text-sm text-foreground">{{ block.settings.feature }}</span>
+          
+          <span class="w-28 text-center text-green-600">
+            {% if block.settings.good_val != blank %}
+              <span class="font-body text-xs font-bold">{{ block.settings.good_val }}</span>
+            {% else %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mx-auto h-5 w-5"><path d="M20 6 9 17l-5-5"></path></svg>
+            {% endif %}
+          </span>
+          
+          <span class="w-28 text-center text-destructive">
+            {% if block.settings.bad_val != blank %}
+              <span class="font-body text-xs text-muted-foreground">{{ block.settings.bad_val }}</span>
+            {% else %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x mx-auto h-5 w-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            {% endif %}
+          </span>
+          
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Treadmill Comparison",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Why choose WOC over other treadmills?" },
+    { "type": "text", "id": "col_good", "label": "Good Column Title", "default": "WOC" },
+    { "type": "text", "id": "col_bad", "label": "Bad Column Title", "default": "Others" }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        { "type": "text", "id": "feature", "label": "Feature Name" },
+        { "type": "text", "id": "good_val", "label": "Good Value (Leave blank for Checkmark)" },
+        { "type": "text", "id": "bad_val", "label": "Bad Value (Leave blank for X mark)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Treadmill Comparison" }
+  ]
+}
+{% endschema %}
