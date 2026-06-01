@@ -153,221 +153,215 @@
         "padding_bottom": 12
       }
     },
-    "overview": {
-      "type": "product-overview",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "Product Overview",
-        "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs. Features include ankle twisting therapy, cool air venting, deep tissue percussion, and 8-point postural stretching — all controlled via a seamless touch screen or intelligent voice commands."
-      }
-    },
-    "ideal_for": {
-      "type": "icon-feature-grid",
+    "awards_marquee": {
+      "type": "sed-awards-marquee",
       "blocks": {
-        "b1": {
-          "type": "card",
+        "a1": {
+          "type": "award",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
-            "title": "Chronic Pain Relief",
-            "description": "3D heated rollers and AI scanning relieve persistent back, neck, and shoulder pain with precise deep tissue massage."
+            "title": "Beauty Award 2024",
+            "subtitle": "Gold Winner"
           }
         },
-        "b2": {
-          "type": "card",
+        "a2": {
+          "type": "award",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "Improved Mobility",
-            "description": "Targeted programs focus on joint flexibility and muscle relaxation for those with stiffness or limited mobility."
+            "title": "Innovation Award",
+            "subtitle": "Finalist"
           }
         },
-        "b3": {
-          "type": "card",
+        "a3": {
+          "type": "award",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "Circulatory Support",
-            "description": "Integrated air compression and heat therapy promote blood circulation, benefiting individuals with circulatory issues."
+            "title": "Best Device 2023",
+            "subtitle": "Bronze"
           }
         },
-        "b4": {
-          "type": "card",
+        "a4": {
+          "type": "award",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
-            "title": "Stress & Fatigue Relief",
-            "description": "Zero Gravity positioning and surround sound reduce stress levels and combat fatigue for better sleep quality."
+            "title": "Editor's Choice",
+            "subtitle": "Top Pick"
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
+        "a1",
+        "a2",
+        "a3",
+        "a4"
       ],
       "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "bg_color": "light",
-        "card_style": "bordered",
-        "columns": 4,
-        "kicker": "Ideal For",
-        "heading": "Who is this for?"
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "speed": 30
       }
     },
-    "highlights": {
-      "type": "icon-feature-grid",
+    "brand_intro": {
+      "type": "sed-brand-intro",
+      "settings": {
+        "text": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home"
+      }
+    },
+    "promo_split": {
+      "type": "sed-category-split",
       "blocks": {
-        "h1": {
-          "type": "card",
+        "c1": {
+          "type": "category",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
-            "title": "therapeutic.highlight1Title",
-            "description": "therapeutic.highlight1Desc"
+            "subtitle": "INNOVATIVE FORMULAS",
+            "title": "HIGH-PERFORMANCE SKINCARE",
+            "link_text": "SHOP SKINCARE",
+            "link": "#skincare-section"
           }
         },
-        "h2": {
-          "type": "card",
+        "c2": {
+          "type": "category",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
-            "title": "therapeutic.highlight2Title",
-            "description": "therapeutic.highlight2Desc"
-          }
-        },
-        "h3": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "therapeutic.highlight3Title",
-            "description": "therapeutic.highlight3Desc"
+            "subtitle": "CUTTING-EDGE TECHNOLOGY",
+            "title": "ADVANCED BEAUTY DEVICES",
+            "link_text": "SHOP DEVICES",
+            "link": "#devices-section"
           }
         }
       },
       "block_order": [
-        "h1",
-        "h2",
-        "h3"
+        "c1",
+        "c2"
       ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "bg_color": "dark",
-        "card_style": "dark_box",
-        "columns": 3,
-        "kicker": "",
-        "heading": ""
-      }
+      "settings": {}
     },
-    "gallery": {
-      "type": "image-grid-gallery",
+    "carousel": {
+      "type": "sed-product-carousel",
       "blocks": {
-        "i1": {
-          "type": "image",
-          "settings": {}
-        },
-        "i2": {
-          "type": "image",
-          "settings": {}
-        },
-        "i3": {
-          "type": "image",
-          "settings": {}
-        },
-        "i4": {
-          "type": "image",
-          "settings": {}
-        },
-        "i5": {
-          "type": "image",
-          "settings": {}
-        },
-        "i6": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "kicker": "Technology in detail",
-        "heading": "Beneath the surface"
-      }
-    },
-    "specs": {
-      "type": "product-specifications",
-      "blocks": {
-        "s1": {
-          "type": "spec",
+        "p1": {
+          "type": "product",
           "settings": {
-            "label": "Weight",
-            "value": "120 kg"
+            "tag": "BESTSELLER",
+            "title": "BOSS LADY",
+            "subtitle": "FACELIFT",
+            "compare_price": "£550",
+            "price": "£385",
+            "product_url": "/products/boss-lady"
           }
         },
-        "s2": {
-          "type": "spec",
+        "p2": {
+          "type": "product",
           "settings": {
-            "label": "Dimensions",
-            "value": "150 x 80 x 120 cm"
+            "tag": "AWARD WINNER",
+            "title": "NEFERTITI",
+            "subtitle": "NECKLIFT",
+            "compare_price": "£550",
+            "price": "£385",
+            "product_url": "/products/nefertiti"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "tag": "BESTSELLER",
+            "title": "COMFORT CLEANER",
+            "subtitle": "",
+            "compare_price": "£330",
+            "price": "£165",
+            "product_url": "/products/comfort-cleaner"
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "tag": "",
+            "title": "LIGHT UP",
+            "subtitle": "EYE LIFT",
+            "compare_price": "£660",
+            "price": "£330",
+            "product_url": "/products/light-up"
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "tag": "LUXURY",
+            "title": "COLLAGEN 24K GOLD",
+            "subtitle": "EYEPADS",
+            "compare_price": "£99",
+            "price": "£66",
+            "product_url": "/products/eyepads"
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "tag": "NY",
+            "title": "POWER SERUM SET",
+            "subtitle": "",
+            "compare_price": "£176",
+            "price": "£98",
+            "product_url": "/products/serum-set"
           }
         }
       },
       "block_order": [
-        "s1",
-        "s2"
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
       ],
       "settings": {
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "kicker": "Specifications",
-        "heading": "Everything you need to know",
-        "half_limit": 4
+        "tab_1": "Best Sellers",
+        "tab_2": "Trending Now",
+        "subtitle": "Our most awarded products, chosen by experts worldwide."
       }
     },
-    "advanced_tech": {
-      "type": "icon-feature-grid",
+    "routine_split": {
+      "type": "sed-routine-split",
+      "settings": {
+        "kicker": "YOUR NEW ROUTINE",
+        "heading": "BOSS LADY: ALL-IN-ONE SKINCARE",
+        "text": "<p>Boss Lady is a skincare device that helps lift, tighten, eliminate fine lines and wrinkles, relax muscles and boost blood circulation. Together with your serum range, it helps your skin contract and become more youthful.</p><p>The design is shaped to be used everywhere. It's fantastic under the eyes like the Light Up device and fantastic for neck and jawline like the Nefertiti device. That's why we believe this one has it all.</p>",
+        "btn_text": "Buy Now",
+        "btn_link": "/products/boss-lady"
+      }
+    },
+    "science_tabs": {
+      "type": "sed-science-tabs",
       "blocks": {
         "t1": {
-          "type": "card",
+          "type": "tab",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
-            "title": "AI Body Scanning",
-            "description": "Intelligent sensors map your body profile for a 100% personalised massage experience"
+            "tab_name": "EMS",
+            "title": "EMS Microcurrent",
+            "description": "Electrical muscle stimulation sends gentle impulses to facial muscles to tighten, tone and lift. It's like a workout for your face — without the effort. EMS technology is clinically proven to improve muscle tone and give a more lifted appearance.",
+            "bullets": "Tightens facial muscles, Tones and lifts, Non-invasive treatment"
           }
         },
         "t2": {
-          "type": "card",
+          "type": "tab",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "Zero Gravity Function",
-            "description": "NASA-inspired position distributes weight evenly and provides maximum spinal relief"
+            "tab_name": "LED",
+            "title": "LED Light Therapy",
+            "description": "Advanced LED technology.",
+            "bullets": "Collagen production, Reduces fine lines"
           }
         },
         "t3": {
-          "type": "card",
+          "type": "tab",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "Infrared Heat Therapy",
-            "description": "Targeted heat penetrates deep into the musculature for deeper relaxation and recovery"
+            "tab_name": "Vibration",
+            "title": "Sonic Vibration",
+            "description": "Enhances serum absorption.",
+            "bullets": "Increases circulation, Relaxes facial tension"
           }
         },
         "t4": {
-          "type": "card",
+          "type": "tab",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
-            "title": "8XD Dual-Core Mechanism",
-            "description": "Proprietary 8XD Dual Core massage system with two independent motors for full-body relief"
+            "tab_name": "Heat",
+            "title": "Therapeutic Heat",
+            "description": "Opens pores for deep cleansing.",
+            "bullets": "Soothing warmth, Enhances product efficacy"
           }
         }
       },
@@ -378,544 +372,273 @@
         "t4"
       ],
       "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "bg_color": "dark",
-        "card_style": "flat",
-        "columns": 4,
-        "kicker": "Advanced Technology",
-        "heading": "Engineered for <span class=\"italic text-gold\">Perfection</span>"
-      }
-    },
-    "health_benefits": {
-      "type": "feature-split-image",
-      "blocks": {
-        "b1": {
-          "type": "bullet",
-          "settings": {
-            "text": "Reduces chronic back and neck pain"
-          }
-        },
-        "b2": {
-          "type": "bullet",
-          "settings": {
-            "text": "Improves blood circulation by up to 30%"
-          }
-        },
-        "b3": {
-          "type": "bullet",
-          "settings": {
-            "text": "Lowers cortisol levels and reduces stress"
-          }
-        },
-        "b4": {
-          "type": "bullet",
-          "settings": {
-            "text": "Promotes deeper, more restorative sleep"
-          }
-        },
-        "b5": {
-          "type": "bullet",
-          "settings": {
-            "text": "Increases joint mobility and range of motion"
-          }
-        },
-        "b6": {
-          "type": "bullet",
-          "settings": {
-            "text": "Accelerates muscle recovery after exercise"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "Clinically Proven",
-        "heading": "Health Benefits <span class=\"italic text-gold\">Benefits</span>",
-        "description": "Backed by research and endorsed by healthcare professionals across Scandinavia."
-      }
-    },
-    "pricing_plans": {
-      "type": "flexible-pricing-plans",
-      "blocks": {
-        "p1": {
-          "type": "plan",
-          "settings": {
-            "title": "Pay Once",
-            "price": "£6,600",
-            "price_suffix": "",
-            "subtitle": "Full payment — no extra cost"
-          }
-        },
-        "p2": {
-          "type": "plan",
-          "settings": {
-            "title": "24 Months",
-            "price": "£275",
-            "price_suffix": "/md.",
-            "subtitle": "0% down payment"
-          }
-        },
-        "p3": {
-          "type": "plan",
-          "settings": {
-            "title": "60 Months",
-            "price": "£88",
-            "price_suffix": "/md.",
-            "subtitle": "20% down payment"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "Flexible Payment",
-        "heading": "Invest in Your <span class=\"italic text-gold\">Wellbeing</span>",
-        "description": "Make wellness accessible with our flexible financing options. Start your wellness journey today."
-      }
-    },
-    "faq": {
-      "type": "faq-interactive",
-      "blocks": {
-        "q1": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is World of Comfort BioVis Pro® and how does it differ from other massage chairs?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q2": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What does the 5-year warranty cover?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q3": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does the AI health detection on BioVis Pro® work?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q4": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What financing and payment options are available for BioVis Pro®?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q5": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can I try BioVis Pro® before I buy?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q6": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How is BioVis Pro® delivered and installed?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q7": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Which massage programmes does BioVis Pro® have?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q8": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is the 8XD Dual Core massage system and how does it compare to 4D?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q9": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How much space does BioVis Pro® require?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        },
-        "q10": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Does BioVis Pro® have Bluetooth speakers and voice control?",
-            "answer": "<p>Content goes here.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5",
-        "q6",
-        "q7",
-        "q8",
-        "q9",
-        "q10"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "Questions & Answers",
-        "heading": "Frequently Asked Questions <span class=\"italic text-gold\">Questions</span>",
-        "description": ""
-      }
-    },
-    "cta": {
-      "type": "simple-cta-banner",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 96,
+        "padding_top": 64,
         "padding_bottom": 96,
-        "heading": "Ready to Experience<br><span class=\"block italic text-gold\">Therapeutic Dual-Pro®?</span>",
-        "description": "Visit a showroom for a personal demonstration or order online with free delivery.",
-        "btn1_text": "Buy Now — £6,600",
-        "btn2_text": "Book a Demo",
-        "btn2_link": "/pages/showrooms"
+        "heading": "The Science Behind Boss Lady"
       }
     },
-    "tech": {
-      "type": "woc-pdp-tech",
+    "before_after": {
+      "type": "sed-before-after",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 96,
+        "heading": "Before & After",
+        "subtitle": "Drag the slider to see the difference — real results after 8 weeks",
+        "bottom_text": "Result after 8 weeks of daily use with Boss Lady"
+      }
+    },
+    "reviews_horizontal": {
+      "type": "sed-reviews-horizontal",
       "blocks": {
-        "tech_1": {
-          "type": "feature",
+        "r1": {
+          "type": "review",
           "settings": {
-            "icon": "brain",
-            "custom_icon_svg": "",
-            "title": "AI Kropsscanning",
-            "desc": "Intelligente sensorer kortlægger din kropskontur for en personlig oplevelse."
+            "quote": "Super practical because it can be used on so many different areas. And it just feels luxurious after a long day.",
+            "author": "Josefine"
           }
         },
-        "tech_2": {
-          "type": "feature",
+        "r2": {
+          "type": "review",
           "settings": {
-            "icon": "activity",
-            "custom_icon_svg": "",
-            "title": "Zero Gravity position",
-            "desc": "NASA-inspireret liggestilling fordeler vægten jævnt for at mindske tryk."
+            "quote": "My warmest recommendations for Boss Lady! It helped me achieve an even sharper jawline.",
+            "author": "Anne-Sofie Nielsen"
           }
         },
-        "tech_3": {
-          "type": "feature",
+        "r3": {
+          "type": "review",
           "settings": {
-            "icon": "flame",
-            "custom_icon_svg": "",
-            "title": "Infrarød varmeterapi",
-            "desc": "Dybdegående varme trænger dybt ind i musklerne og fremmer restitution."
+            "quote": "Love love love it! FANTASTIC!",
+            "author": "Lotte Nielsen"
           }
         },
-        "tech_4": {
-          "type": "feature",
+        "r4": {
+          "type": "review",
           "settings": {
-            "icon": "waves",
-            "custom_icon_svg": "",
-            "title": "Dual-Core Mekanisme",
-            "desc": "Avanceret ryg- og lændebehandling for optimal afslapning."
+            "quote": "Fantastic product — easy to take on the go, and makes a big difference with my lines around the eyes — and my sometimes swollen eyes 🙏",
+            "author": "Nancy"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "quote": "Lovely competent customer service. Highly recommended.",
+            "author": "Tine Bjerregaard"
           }
         }
       },
       "block_order": [
-        "tech_1",
-        "tech_2",
-        "tech_3",
-        "tech_4"
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
       ],
       "settings": {
-        "color_scheme": "",
-        "label": "AVANCERET TEKNOLOGI",
-        "title": "Udviklet til perfektion"
+        "padding_top": 64,
+        "padding_bottom": 96,
+        "rating_text": "4,7 out of 5",
+        "heading": "We Have Many Happy Customers!"
       }
     },
-    "health": {
-      "type": "woc-pdp-health",
+    "faq_training": {
+      "type": "fp-simple-faq",
       "blocks": {
-        "health_1": {
-          "type": "benefit",
+        "f1": {
+          "type": "faq_item",
           "settings": {
-            "text": "Reducerer kroniske rygsmerter og nakkespændinger",
-            "custom_icon_svg": ""
+            "question": "How do the electronic beauty devices work?",
+            "answer": "<p>Content goes here.</p>"
           }
         },
-        "health_2": {
-          "type": "benefit",
+        "f2": {
+          "type": "faq_item",
           "settings": {
-            "text": "Forbedrer blodcirkulationen med op til 30%",
-            "custom_icon_svg": ""
+            "question": "Which devices work for my skin type?",
+            "answer": "<p>Content goes here.</p>"
           }
         },
-        "health_3": {
-          "type": "benefit",
+        "f3": {
+          "type": "faq_item",
           "settings": {
-            "text": "Sænker kortisolniveauet og mindsker stress",
-            "custom_icon_svg": ""
+            "question": "How do I know which device works for me?",
+            "answer": "<p>Content goes here.</p>"
           }
         },
-        "health_4": {
-          "type": "benefit",
+        "f4": {
+          "type": "faq_item",
           "settings": {
-            "text": "Fremmer dybere og mere restituerende søvn",
-            "custom_icon_svg": ""
+            "question": "Which device works for dry skin?",
+            "answer": "<p>Content goes here.</p>"
           }
         },
-        "health_5": {
-          "type": "benefit",
+        "f5": {
+          "type": "faq_item",
           "settings": {
-            "text": "Øger ledmobilitet og smidighed i hele kroppen",
-            "custom_icon_svg": ""
+            "question": "Which device works for impure skin?",
+            "answer": "<p>Content goes here.</p>"
           }
         },
-        "health_6": {
-          "type": "benefit",
+        "f6": {
+          "type": "faq_item",
           "settings": {
-            "text": "Accelererer muskelrestitution efter træning",
-            "custom_icon_svg": ""
+            "question": "Which device works for skin with pigmentation or dark circles?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does LED light therapy work and what is it?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I use the LED light therapy devices?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's the difference between EMS microcurrent and RF technology?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What are the Collagen 24K Gold Eyepads?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f11": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is there a warranty on the products?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f12": {
+          "type": "faq_item",
+          "settings": {
+            "question": "When can I expect delivery?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f13": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I return an item?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f14": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's included in the Power Serum Set?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f15": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are Séduisante products tested on animals?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f16": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the products be used during pregnancy?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f17": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where is Séduisante based and can I test the products?",
+            "answer": "<p>Content goes here.</p>"
           }
         }
       },
       "block_order": [
-        "health_1",
-        "health_2",
-        "health_3",
-        "health_4",
-        "health_5",
-        "health_6"
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
       ],
       "settings": {
-        "color_scheme": "",
-        "label": "KLINISK DOKUMENTERET",
-        "title": "Reelle Sundhedsfordele",
-        "description": "Støttet af klinisk forskning og godkendt af fysioterapeuter samt sundhedsfaglige eksperter i Skandinavien."
+        "padding_top": 64,
+        "padding_bottom": 96,
+        "heading": "FAQ"
       }
     },
-    "video": {
-      "type": "woc-pdp-video",
-      "settings": {
-        "color_scheme": "",
-        "label": "SE PRODUKTET I AKTION",
-        "title": "Oplev produktet",
-        "video_url": "",
-        "play_icon_svg": ""
-      }
-    },
-    "whats_included": {
-      "type": "pdp-whats-included",
+    "related_grid": {
+      "type": "sed-product-grid",
       "blocks": {
-        "item_1": {
-          "type": "item",
+        "d1": {
+          "type": "product",
           "settings": {
-            "name": "Standard komfortenhed",
-            "detail": "Kvalitetskomponent med fuld funktionalitet",
-            "custom_icon_svg": ""
+            "title": "NEFERTITI",
+            "product_url": "/products/nefertiti"
           }
         },
-        "item_2": {
-          "type": "item",
+        "d2": {
+          "type": "product",
           "settings": {
-            "name": "Trådløs betjening",
-            "detail": "Fjernbetjening eller app-styring medfølger",
-            "custom_icon_svg": ""
+            "title": "LIGHT UP",
+            "product_url": "/products/light-up"
           }
         },
-        "gift_1": {
-          "type": "gift",
+        "d3": {
+          "type": "product",
           "settings": {
-            "name": "E-bog & Vejledning",
-            "desc": "Komplet guide til dit wellnessprodukt.",
-            "value": "Gratis (Værdi 299,-)",
-            "custom_icon_svg": ""
+            "title": "LIFT ME UP",
+            "product_url": "/products/lift-me-up"
           }
         },
-        "spec_1": {
-          "type": "spec",
+        "d4": {
+          "type": "product",
           "settings": {
-            "key": "Strømforsyning",
-            "value": "Standard 220-240V stik"
-          }
-        },
-        "spec_2": {
-          "type": "spec",
-          "settings": {
-            "key": "Garanti",
-            "value": "3-års udvidet fabriksgaranti"
+            "title": "CLEAN MY SOUL",
+            "product_url": "/products/clean-my-soul"
           }
         }
       },
       "block_order": [
-        "item_1",
-        "item_2",
-        "gift_1",
-        "spec_1",
-        "spec_2"
+        "d1",
+        "d2",
+        "d3",
+        "d4"
       ],
       "settings": {
-        "color_scheme": "",
-        "included_title": "Hvad følger med i kassen?",
-        "gifts_title": "INKLUDEREDE GRATIS GAVER:",
-        "specs_title": "Tekniske Specifikationer"
+        "section_id": "related-products",
+        "kicker": "",
+        "columns": 4
       }
     },
-    "comparison": {
-      "type": "pdp-comparison",
-      "blocks": {
-        "row_1": {
-          "type": "row",
-          "settings": {
-            "feature": "3-års fuld garanti",
-            "woc_val": true,
-            "comp_val": false
-          }
-        },
-        "row_2": {
-          "type": "row",
-          "settings": {
-            "feature": "Skandinavisk support & showrooms",
-            "woc_val": true,
-            "comp_val": false
-          }
-        },
-        "row_3": {
-          "type": "row",
-          "settings": {
-            "feature": "Premium finish & materialer",
-            "woc_val": true,
-            "comp_val": true
-          }
-        }
-      },
-      "block_order": [
-        "row_1",
-        "row_2",
-        "row_3"
-      ],
+    "cta_final": {
+      "type": "sed-experience-cta",
       "settings": {
-        "color_scheme": "",
-        "subtitle": "SAMMENLIGN DETALJER",
-        "title": "Hvorfor vælge os?",
-        "th_feature": "Funktioner",
-        "th_woc": "World of Comfort",
-        "th_comp": "Andre mærker",
-        "check_icon_svg": "",
-        "cross_icon_svg": ""
-      }
-    },
-    "financing": {
-      "type": "woc-pdp-financing",
-      "blocks": {
-        "opt_1": {
-          "type": "option",
-          "settings": {
-            "title": "Betal på én gang",
-            "months": 1,
-            "down_payment_percent": 0,
-            "desc": "Fuld betaling — ingen ekstra omkostninger"
-          }
-        },
-        "opt_2": {
-          "type": "option",
-          "settings": {
-            "title": "24 måneder",
-            "months": 24,
-            "down_payment_percent": 0,
-            "desc": "0% udbetaling og 0% renter"
-          }
-        },
-        "opt_3": {
-          "type": "option",
-          "settings": {
-            "title": "60 måneder",
-            "months": 60,
-            "down_payment_percent": 20,
-            "desc": "20% udbetaling og lave månedlige rater"
-          }
-        }
-      },
-      "block_order": [
-        "opt_1",
-        "opt_2",
-        "opt_3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "label": "FLEXIBEL BETALING",
-        "title": "Invester i dit velvære",
-        "description": "Gør velvære tilgængeligt med vores fleksible finansieringsmuligheder. Start din wellnessrejse i dag."
-      }
-    },
-    "faqs": {
-      "type": "pdp-faqs",
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvad er garantien på produktet?",
-            "answer": "Der ydes en omfattende 3-års fabriksgaranti, som dækker både reservedele og arbejdskraft."
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvordan leveres produktet?",
-            "answer": "Vi tilbyder gratis levering direkte til din dør i hele Danmark og Skandinavien."
-          }
-        },
-        "faq_3": {
-          "type": "faq",
-          "settings": {
-            "question": "Kan jeg prøve produktet før køb?",
-            "answer": "Ja, du er altid velkommen til at besøge et af vores showrooms for at opleve produktet fysisk."
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
-        "title": "Spørgsmål & Svar",
-        "accordion_icon_svg": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "bottom_cta": {
-      "type": "woc-pdp-bottom-cta",
-      "settings": {
-        "color_scheme": "",
-        "title": "Klar til at opleve [product]?",
-        "description": "Besøg et showroom for en personlig demonstration eller bestil online med gratis levering.",
-        "buy_now_text": "Køb nu",
-        "show_demo_button": true,
-        "demo_text": "Book Demo",
-        "demo_link": "/pages/showrooms",
-        "buy_icon_svg": "",
-        "demo_icon_svg": ""
+        "heading": "Ready For Your Transformation?",
+        "description": "Experience the difference with Boss Lady — your daily facelift in just 10 minutes.",
+        "btn_text": "BUY NOW — £385",
+        "btn_link": "/products/boss-lady"
       }
     },
     "related-products": {
@@ -942,24 +665,17 @@
   "order": [
     "woc_trust_bar_km4wNG",
     "main",
-    "overview",
-    "ideal_for",
-    "highlights",
-    "gallery",
-    "specs",
-    "advanced_tech",
-    "health_benefits",
-    "pricing_plans",
-    "faq",
-    "cta",
-    "tech",
-    "health",
-    "video",
-    "whats_included",
-    "comparison",
-    "financing",
-    "faqs",
-    "bottom_cta",
+    "awards_marquee",
+    "brand_intro",
+    "promo_split",
+    "carousel",
+    "routine_split",
+    "science_tabs",
+    "before_after",
+    "reviews_horizontal",
+    "faq_training",
+    "related_grid",
+    "cta_final",
     "related-products"
   ]
 }
