@@ -9,6 +9,55 @@
  */
 {
   "sections": {
+    "woc_trust_bar_km4wNG": {
+      "type": "woc-trust-bar",
+      "blocks": {
+        "trust_item_YaeDFb": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "truck",
+            "custom_icon_svg": "",
+            "label": "Gratis Levering",
+            "sub": "I hele Skandinavien"
+          }
+        },
+        "trust_item_RNdYJD": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "shield",
+            "custom_icon_svg": "",
+            "label": "5 Års Garanti",
+            "sub": "På alle modeller"
+          }
+        },
+        "trust_item_jNHzdN": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "award",
+            "custom_icon_svg": "",
+            "label": "Prisvindende",
+            "sub": "Skandinavisk Design"
+          }
+        },
+        "trust_item_iDNiXH": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "creditcard",
+            "custom_icon_svg": "",
+            "label": "0% Rente",
+            "sub": "Finansiering tilbydes"
+          }
+        }
+      },
+      "block_order": [
+        "trust_item_YaeDFb",
+        "trust_item_RNdYJD",
+        "trust_item_jNHzdN",
+        "trust_item_iDNiXH"
+      ],
+      "name": "WOC Trust Bar",
+      "settings": {}
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -119,7 +168,7 @@
         "b1": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
             "title": "Chronic Pain Relief",
             "description": "3D heated rollers and AI scanning relieve persistent back, neck, and shoulder pain with precise deep tissue massage."
           }
@@ -127,7 +176,7 @@
         "b2": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
             "title": "Improved Mobility",
             "description": "Targeted programs focus on joint flexibility and muscle relaxation for those with stiffness or limited mobility."
           }
@@ -135,7 +184,7 @@
         "b3": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "title": "Circulatory Support",
             "description": "Integrated air compression and heat therapy promote blood circulation, benefiting individuals with circulatory issues."
           }
@@ -143,7 +192,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
             "title": "Stress & Fatigue Relief",
             "description": "Zero Gravity positioning and surround sound reduce stress levels and combat fatigue for better sleep quality."
           }
@@ -171,7 +220,7 @@
         "h1": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
             "title": "therapeutic.highlight1Title",
             "description": "therapeutic.highlight1Desc"
           }
@@ -179,7 +228,7 @@
         "h2": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
             "title": "therapeutic.highlight2Title",
             "description": "therapeutic.highlight2Desc"
           }
@@ -187,7 +236,7 @@
         "h3": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
             "title": "therapeutic.highlight3Title",
             "description": "therapeutic.highlight3Desc"
           }
@@ -277,7 +326,8 @@
         "padding_top": 64,
         "padding_bottom": 64,
         "kicker": "Specifications",
-        "heading": "Everything you need to know"
+        "heading": "Everything you need to know",
+        "half_limit": 4
       }
     },
     "advanced_tech": {
@@ -286,7 +336,7 @@
         "t1": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
             "title": "AI Body Scanning",
             "description": "Intelligent sensors map your body profile for a 100% personalised massage experience"
           }
@@ -294,7 +344,7 @@
         "t2": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
             "title": "Zero Gravity Function",
             "description": "NASA-inspired position distributes weight evenly and provides maximum spinal relief"
           }
@@ -302,7 +352,7 @@
         "t3": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "title": "Infrared Heat Therapy",
             "description": "Targeted heat penetrates deep into the musculature for deeper relaxation and recovery"
           }
@@ -310,7 +360,7 @@
         "t4": {
           "type": "card",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
             "title": "8XD Dual-Core Mechanism",
             "description": "Proprietary 8XD Dual Core massage system with two independent motors for full-body relief"
           }
@@ -522,7 +572,8 @@
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "Questions & Answers",
-        "heading": "Frequently Asked Questions <span class=\"italic text-gold\">Questions</span>"
+        "heading": "Frequently Asked Questions <span class=\"italic text-gold\">Questions</span>",
+        "description": ""
       }
     },
     "cta": {
@@ -545,6 +596,7 @@
         "kicker": "You May Also Like",
         "heading": "Related Products",
         "description": "",
+        "collection": "",
         "limit": 3,
         "desktop_columns": 4,
         "show_contact_card": false,
@@ -668,7 +720,8 @@
       "settings": {
         "label": "SE PRODUKTET I AKTION",
         "title": "Oplev produktet",
-        "video_url": ""
+        "video_url": "",
+        "play_icon_svg": ""
       }
     },
     "whats_included": {
@@ -845,7 +898,9 @@
       "settings": {
         "subtitle": "OFTE STILLEDE SPØRGSMÅL",
         "title": "Spørgsmål & Svar",
-        "accordion_icon_svg": ""
+        "accordion_icon_svg": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "bottom_cta": {
@@ -856,12 +911,16 @@
         "buy_now_text": "Køb nu",
         "show_demo_button": true,
         "demo_text": "Book Demo",
-        "demo_link": "/pages/showrooms"
+        "demo_link": "/pages/showrooms",
+        "buy_icon_svg": "",
+        "demo_icon_svg": ""
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
+        "bg_color": "warm",
+        "kicker": "YOU MAY ALSO LIKE",
         "heading": "Du vil måske også syntes om",
         "heading_size": "h2",
         "products_to_show": 4,
@@ -879,6 +938,7 @@
     }
   },
   "order": [
+    "woc_trust_bar_km4wNG",
     "main",
     "overview",
     "ideal_for",
