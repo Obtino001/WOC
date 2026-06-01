@@ -1,0 +1,62 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bg-card section-{{ section.id }}-padding border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
+    <div class="text-center mb-4">
+      <h2 class="font-display text-3xl font-bold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+    </div>
+    <p class="text-center font-body text-base text-muted-foreground italic mb-12">{{ section.settings.subtitle }}</p>
+    
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+      {% for block in section.blocks %}
+        <div class="group" {{ block.shopify_attributes }}>
+          <div class="overflow-hidden rounded-2xl border border-border bg-background shadow-soft mb-4">
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 600 | image_tag: class: 'aspect-[3/4] w-full object-cover group-hover:scale-105 transition-transform duration-500', loading: 'lazy' }}
+            {% else %}
+              {{ 'collection-1' | placeholder_svg_tag: 'aspect-[3/4] w-full object-cover bg-gray-200' }}
+            {% endif %}
+          </div>
+          <p class="font-body text-sm font-semibold text-foreground text-center">{{ block.settings.title }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FP Results Grid",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Results you can expect" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "in just a few weeks" }
+  ],
+  "blocks": [
+    {
+      "type": "result",
+      "name": "Result Block",
+      "limit": 4,
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image (Portrait)" },
+        { "type": "text", "id": "title", "label": "Title" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "FP Results Grid" }
+  ]
+}
+{% endschema %}
