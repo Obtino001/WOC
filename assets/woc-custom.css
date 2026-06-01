@@ -463,3 +463,6 @@ cart-drawer.active .drawer__inner {
   top: -4px !important;
   right: -4px !important;
 }
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
