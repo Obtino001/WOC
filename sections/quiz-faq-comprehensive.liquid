@@ -1,0 +1,130 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for block in section.blocks %}
+      {
+        "@type": "Question",
+        "name": {{ block.settings.question | json }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ block.settings.answer | strip_html | json }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<section class="relative overflow-hidden section-{{ section.id }}-padding" id="{{ section.settings.section_id }}">
+  <div class="absolute inset-0 bg-gradient-to-b from-[hsl(var(--background))] via-[hsl(var(--card))] to-[hsl(var(--background))]"></div>
+  <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 30% 20%, hsl(var(--gold)), transparent 50%);"></div>
+  
+  <div class="container relative mx-auto px-4 lg:px-8 z-10">
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-5xl font-light text-foreground leading-[1.05] mb-5">
+        {{ section.settings.heading }}
+      </h2>
+      <p class="font-body text-base text-muted-foreground max-w-2xl mx-auto">
+        {{ section.settings.description }}
+      </p>
+    </div>
+
+    <div class="max-w-xl mx-auto mb-12">
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" placeholder="{{ section.settings.search_placeholder }}" class="w-full pl-11 pr-4 py-3.5 bg-card border border-border rounded-lg font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/40 transition-colors">
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-14">
+      <button class="flex items-center gap-2 px-5 py-2.5 rounded-full font-body text-xs font-medium tracking-wide transition-all duration-300 bg-gold/10 text-gold border border-gold/30">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
+        Choosing a chair
+      </button>
+      <button class="flex items-center gap-2 px-5 py-2.5 rounded-full font-body text-xs font-medium tracking-wide transition-all duration-300 bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold/20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path></svg>
+        Technology & Features
+      </button>
+      <button class="flex items-center gap-2 px-5 py-2.5 rounded-full font-body text-xs font-medium tracking-wide transition-all duration-300 bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold/20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+        Delivery & Setup
+      </button>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-3">
+      {% for block in section.blocks %}
+        <div class="border rounded-lg transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/10 group" {{ block.shopify_attributes }}>
+          <details class="group/details marker:hidden">
+            <summary class="flex items-start justify-between w-full text-left px-6 py-5 gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <h3 class="font-display text-base font-semibold leading-snug transition-colors text-foreground">{{ block.settings.question }}</h3>
+              <span class="mt-0.5 shrink-0 transition-transform duration-200 group-open/details:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 text-muted-foreground"><path d="m6 9 6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 pt-0 font-body text-sm text-muted-foreground leading-relaxed animate-accordion-down">
+              {{ block.settings.answer }}
+            </div>
+          </details>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="mt-16 text-center">
+      <div class="inline-flex items-center gap-3 bg-card border border-border rounded-xl px-8 py-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle h-5 w-5 text-gold"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+        <div class="text-left">
+          <p class="font-display text-sm font-semibold text-foreground">{{ section.settings.contact_title }}</p>
+          <p class="font-body text-xs text-muted-foreground">{{ section.settings.contact_text }}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Quiz FAQ",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 112 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 144 },
+    { "type": "text", "id": "section_id", "label": "Section Anchor ID", "default": "faq" },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Frequently Asked Questions" },
+    { "type": "html", "id": "heading", "label": "Heading", "default": "FAQ <span class=\"italic text-gold\">to know</span>" },
+    { "type": "textarea", "id": "description", "label": "Description" },
+    { "type": "text", "id": "search_placeholder", "label": "Search Placeholder", "default": "Search questions — e.g. 'warranty', 'delivery', 'zero gravity'..." },
+    { "type": "text", "id": "contact_title", "label": "Contact Box Title", "default": "Still have questions?" },
+    { "type": "text", "id": "contact_text", "label": "Contact Box Text", "default": "Call us on +45 XX XX XX XX or book a free showroom demo — our experts are ready to help." }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Quiz FAQ" }
+  ]
+}
+{% endschema %}
