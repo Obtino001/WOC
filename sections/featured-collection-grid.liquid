@@ -29,7 +29,10 @@
     {% endif %}
 
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
-      {% assign target_collection = section.settings.collection %}
+    {% assign target_collection = section.settings.collection %}
+{% if target_collection.products == blank %}
+  {% assign target_collection = collections[section.settings.collection] %}
+{% endif %}
       {% for product in target_collection.products limit: section.settings.limit %}
         
         <a class="block h-full" href="{{ product.url }}">
