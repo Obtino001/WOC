@@ -149,6 +149,7 @@
         "award_3": {
           "type": "award",
           "settings": {
+            "image": "shopify://shop_images/award-european-business-CgJz-1Tm_1.png",
             "name": "Scandinavian Business Awards",
             "details": "2024 · Excellence in Wellness"
           }
@@ -156,6 +157,7 @@
         "award_4": {
           "type": "award",
           "settings": {
+            "image": "shopify://shop_images/award-healthcare-Dg7bscCa_1.png",
             "name": "Healthcare & Pharmaceutical Awards",
             "details": "2024 · Leading Innovator"
           }
@@ -163,24 +165,35 @@
         "partner_1": {
           "type": "partner",
           "settings": {
+            "logo": "shopify://shop_images/partner-disney-CjO3HXR9_1.png",
             "name": "Disney"
           }
         },
         "partner_2": {
           "type": "partner",
           "settings": {
+            "logo": "shopify://shop_images/partner-monster-DsVxChaQ_1.webp",
             "name": "Samsung"
           }
         },
         "partner_3": {
           "type": "partner",
           "settings": {
+            "logo": "shopify://shop_images/partner-bo-BMAipxnT_1.jpg",
             "name": "Monster"
           }
         },
         "partner_4": {
           "type": "partner",
           "settings": {
+            "logo": "shopify://shop_images/partner-italdesign-CSqUooPh_1.jpg",
+            "name": "Bang & Olufsen"
+          }
+        },
+        "partner_UYDfUi": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-disney-CjO3HXR9_1.png",
             "name": "Bang & Olufsen"
           }
         }
@@ -193,7 +206,8 @@
         "partner_1",
         "partner_2",
         "partner_3",
-        "partner_4"
+        "partner_4",
+        "partner_UYDfUi"
       ],
       "settings": {
         "awards_subtitle": "Anerkendt Excellence",
@@ -207,6 +221,7 @@
         "cat_1": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/category-massage-chairs-BjHE5OGd_1.jpg",
             "title": "Massagestole",
             "subtitle": "EKSKLUSIV VELVÆRE",
             "link": "/collections/massage-chairs"
@@ -215,6 +230,7 @@
         "cat_2": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/category-smart-beds-CPye7zsK_1.jpg",
             "title": "Smart-Senge",
             "subtitle": "SMART SOVESYSTEM",
             "link": "/collections/smart-beds"
@@ -223,6 +239,7 @@
         "cat_3": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/category-sports-recovery-DG6PePS4_1.jpg",
             "title": "Sportsrestitution",
             "subtitle": "SPORT & RECOVERY",
             "link": "/collections/home-wellness"
@@ -231,6 +248,7 @@
         "cat_4": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/category-massage-devices-CZxd1d3T_1.jpg",
             "title": "Massagedevice",
             "subtitle": "HÅNDHOLDT TERAPI",
             "link": "/collections/massage-devices"
@@ -239,6 +257,7 @@
         "cat_5": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/category-beauty-tech-l6P8aZTl_1.jpg",
             "title": "Beauty-Teknologi",
             "subtitle": "KLINISK HUDPLEJE",
             "link": "/collections/beauty-technology"
@@ -365,6 +384,7 @@
         "ben_10"
       ],
       "settings": {
+        "doctor_image": "shopify://shop_images/dr-scandinavian-Ct5TQhr8_1.png",
         "label": "SUNDHEDSFAGLIG ANBEFALING",
         "heading": "Wellness understøttet af",
         "heading_accent": "Sundhedsfaglig Ekspertise",
@@ -684,6 +704,7 @@
       "settings": {
         "padding_top": 96,
         "padding_bottom": 96,
+        "bg_image": "shopify://shop_images/showroom-cta-hero-SWNcv-vT_1.jpg",
         "kicker": "Experience It Personally",
         "heading": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>",
         "description": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation.",
