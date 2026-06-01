@@ -12,6 +12,7 @@
     "hero": {
       "type": "smart-beds-hero",
       "settings": {
+        "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
         "kicker": "Bespoke Sleeping Systems",
         "heading": "No Two Bodies\nAre the Same",
         "subheading": "Why should your bed be mass-produced?",
@@ -38,6 +39,7 @@
         "cat_1": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/universal-beds-hero-DgL-15oK_1.png",
             "title": "SOVESYSTEM®",
             "subtitle": "The Original Bespoke Sleeping System",
             "link": "#sovesystem",
@@ -188,6 +190,50 @@
     },
     "ai_mattress": {
       "type": "smart-beds-showcase",
+      "blocks": {
+        "feature_a9n7JU": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_JpX78a": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_8G9zEL": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_U7Mz9T": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_BBQWVx": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_a9n7JU",
+        "feature_JpX78a",
+        "feature_8G9zEL",
+        "feature_U7Mz9T",
+        "feature_BBQWVx"
+      ],
       "settings": {
         "section_id": "ai-mattress",
         "bg_color": "light",
@@ -228,12 +274,249 @@
     },
     "ai_topper": {
       "type": "smart-beds-showcase",
+      "blocks": {
+        "feature_3jWV6m": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_tptMnj": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_PURnQe": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_UxJNUK": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_9W6n9J": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_XTVKLg": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_3jWV6m",
+        "feature_tptMnj",
+        "feature_PURnQe",
+        "feature_UxJNUK",
+        "feature_9W6n9J",
+        "feature_XTVKLg"
+      ],
       "settings": {
         "section_id": "ai-topper",
         "bg_color": "warm",
         "layout": "left",
         "show_divider_top": true,
         "product": "",
+        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
+        "image_badge": "NEW 2026",
+        "show_play_button": false,
+        "show_process_box": false,
+        "kicker_color": "gold",
+        "kicker": "Upgrade Your Sleep",
+        "title": "SYNTHERA™ AI TOPPER",
+        "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+        "origin_emoji": "",
+        "origin_text": "",
+        "description": "<p>Place it on top of your existing mattress — no renovation required. The SYNTHERA™ AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat.</p>",
+        "price_prefix": "90 × 200 cm",
+        "price": "£550",
+        "compare_price": "£660",
+        "price_suffix": "",
+        "badge_text": "Save 1,000 kr.",
+        "btn1_text": "Add to basket",
+        "btn1_icon": "",
+        "btn1_link": "",
+        "btn2_text": "View product",
+        "btn2_link": "",
+        "video_label": "Watch Video",
+        "process_heading": "The Process",
+        "process_badge": "4 steps",
+        "process_step_1": "Book free body analysis",
+        "process_step_2": "Consultation and needs analysis",
+        "process_step_3": "Body measurement and scanning",
+        "process_step_4": "Personal recommendation",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "smart_beds_showcase_KWPbNk": {
+      "type": "smart-beds-showcase",
+      "blocks": {
+        "feature_AMT3ET": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_TDxwRT": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_btdD3B": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_qw4Mkz": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_JAbcUx": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_3iDVdV": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_AMT3ET",
+        "feature_TDxwRT",
+        "feature_btdD3B",
+        "feature_qw4Mkz",
+        "feature_JAbcUx",
+        "feature_3iDVdV"
+      ],
+      "settings": {
+        "section_id": "ai-topper",
+        "bg_color": "warm",
+        "layout": "right",
+        "show_divider_top": true,
+        "product": "",
+        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
+        "image_badge": "NEW 2026",
+        "show_play_button": false,
+        "show_process_box": false,
+        "kicker_color": "gold",
+        "kicker": "Upgrade Your Sleep",
+        "title": "SYNTHERA™ AI TOPPER",
+        "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+        "origin_emoji": "",
+        "origin_text": "",
+        "description": "<p>Place it on top of your existing mattress — no renovation required. The SYNTHERA™ AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat.</p>",
+        "price_prefix": "90 × 200 cm",
+        "price": "£550",
+        "compare_price": "£660",
+        "price_suffix": "",
+        "badge_text": "Save 1,000 kr.",
+        "btn1_text": "Add to basket",
+        "btn1_icon": "",
+        "btn1_link": "",
+        "btn2_text": "View product",
+        "btn2_link": "",
+        "video_label": "Watch Video",
+        "process_heading": "The Process",
+        "process_badge": "4 steps",
+        "process_step_1": "Book free body analysis",
+        "process_step_2": "Consultation and needs analysis",
+        "process_step_3": "Body measurement and scanning",
+        "process_step_4": "Personal recommendation",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "smart_beds_showcase_PxEB3g": {
+      "type": "smart-beds-showcase",
+      "blocks": {
+        "feature_NK3qrk": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_FGJ9dJ": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_N4adqb": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_chthmT": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_Jhi9fq": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_6ydzdW": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_NK3qrk",
+        "feature_FGJ9dJ",
+        "feature_N4adqb",
+        "feature_chthmT",
+        "feature_Jhi9fq",
+        "feature_6ydzdW"
+      ],
+      "settings": {
+        "section_id": "ai-topper",
+        "bg_color": "warm",
+        "layout": "left",
+        "show_divider_top": true,
+        "product": "",
+        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
         "image_badge": "NEW 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -441,6 +724,8 @@
     "sovesystem",
     "ai_mattress",
     "ai_topper",
+    "smart_beds_showcase_KWPbNk",
+    "smart_beds_showcase_PxEB3g",
     "comparison",
     "faq",
     "testimonials",
