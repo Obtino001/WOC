@@ -17,7 +17,7 @@
 
 .drawer__inner {
   height: 100%;
-  width: 25rem;
+  width: 35rem;
   max-width: calc(100vw - 1.875rem);
   padding: 0 0.9375rem;
   border: 0.0625rem solid rgba(var(--color-foreground), 0.2);
