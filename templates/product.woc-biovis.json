@@ -154,351 +154,126 @@
       }
     },
     "overview": {
-      "type": "product-long-text",
+      "type": "product-overview",
       "settings": {
-        "color_scheme": "",
         "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "LATEST TECHNOLOGY 2026",
-        "heading": "You Have <span class=\"font-bold italic\">Never</span> Seen A Massage Chair Like This",
-        "text": "<p>PHYSIO+® by World of Comfort redefines the massage chair category with dual system rollers featuring six independent mechanisms that work in harmony. Powered by AI BioSensory Intelligence™, PHYSIO+® scans your body's health indicators — heart rate, blood oxygen, microcirculation, and fatigue index — to deliver a fully personalized massage. The innovative walking technology uses a scissor-action mechanism to mimic natural walking motion, stretching the lower back, glutes, hamstrings, and knees. With a self-adaptive flexible SL-track, 2-stage zero gravity, deep tissue arm rollers, heated foot rollers, touchscreen remote, Bluetooth surround sound, wireless phone charging, and intelligent voice control — PHYSIO+® is not just a massage chair; it is your personal wellness clinic at home.</p>"
+        "padding_bottom": 80,
+        "kicker": "Product Overview",
+        "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs."
       }
     },
-    "tabs": {
-      "type": "feature-tabs-slider",
+    "ideal_for": {
+      "type": "icon-feature-grid",
       "blocks": {
-        "t1": {
-          "type": "tab",
+        "b1": {
+          "type": "card",
           "settings": {
-            "title": "DUAL SYSTEM ROLLERS",
-            "description": "Two distinct mechanisms with six independent rollers harmonize together to redefine the very concept of a full-body massage, offering a truly transformative experience."
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
+            "title": "Kronisk Smertelindring",
+            "description": "3D opvarmede ruller og AI-scanning lindrer vedvarende ryg-, nakke- og skuldersmerter med præcis dybdevævsmassage."
           }
         },
-        "t2": {
-          "type": "tab",
+        "b2": {
+          "type": "card",
           "settings": {
-            "title": "SEAMLESS TOUCH SCREEN REMOTE",
-            "description": "Make every massage a masterpiece with limitless customization."
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "title": "Forbedret Mobilitet",
+            "description": "Målrettede programmer fokuserer på ledfleksibilitet og muskelafspænding for dem med stivhed eller begrænset bevægelighed."
           }
         },
-        "t3": {
-          "type": "tab",
+        "b3": {
+          "type": "card",
           "settings": {
-            "title": "DEEP TISSUE ARM ROLLERS",
-            "description": "Mechanical arm rollers glide effortlessly from elbows to palms."
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "title": "Kredsløbsstøtte",
+            "description": "Integreret luftkompression og varmeterapi fremmer blodcirkulationen, til gavn for personer med kredsløbsproblemer."
           }
         },
-        "t4": {
-          "type": "tab",
+        "b4": {
+          "type": "card",
           "settings": {
-            "title": "POWERED BY AI TECHNOLOGY",
-            "description": "BioSensory Intelligence maps your unique body profile."
-          }
-        },
-        "t5": {
-          "type": "tab",
-          "settings": {
-            "title": "INTELLIGENT VOICE CONTROL",
-            "description": "Speak naturally to command your relaxation session."
-          }
-        },
-        "t6": {
-          "type": "tab",
-          "settings": {
-            "title": "DYNAMIC FOOT REFLEXOLOGY",
-            "description": "Heated rollers and airbags melt tension in tired feet."
-          }
-        },
-        "t7": {
-          "type": "tab",
-          "settings": {
-            "title": "FLEXIBLE SL-TRACK",
-            "description": "Follows the exact curvature of your spine seamlessly."
-          }
-        },
-        "t8": {
-          "type": "tab",
-          "settings": {
-            "title": "50-CELL AIRCELL TECHNOLOGY",
-            "description": "Full-body compression therapy from shoulders to calves."
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
+            "title": "Stress- & Træthedslindring",
+            "description": "Zero Gravity positionering og surround sound reducerer stressniveauer og bekæmper træthed for bedre søvnkvalitet."
           }
         }
       },
       "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5",
-        "t6",
-        "t7",
-        "t8"
+        "b1",
+        "b2",
+        "b3",
+        "b4"
       ],
       "settings": {
-        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
-        "kicker": "LATEST TECHNOLOGY 2026"
+        "bg_color": "warm",
+        "card_style": "bordered",
+        "columns": 4,
+        "kicker": "Ideal Til",
+        "heading": "Hvem er dette til?"
       }
     },
-    "split_1": {
-      "type": "feature-row-split",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "image_position": "left",
-        "show_header": false,
-        "main_kicker": "",
-        "main_heading": "",
-        "image_label": "",
-        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
-        "heading": "ROVO XD Dual Mechanism Rollers",
-        "description": "Two distinct mechanisms with six independent rollers harmonize together to redefine the very concept of a full-body massage. The upper 4XD mechanism delivers dynamic, multi-dimensional strokes across your back, while the lower 3XD system provides deep, targeted therapy to your glutes and upper hamstrings — offering a truly transformative experience."
-      }
-    },
-    "split_2": {
-      "type": "feature-row-split",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "image_position": "right",
-        "show_header": false,
-        "main_kicker": "",
-        "main_heading": "",
-        "image_label": "",
-        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"></path><path d=\"M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z\"></path><path d=\"M16 17h4\"></path><path d=\"M4 13h4\"></path></svg>",
-        "heading": "Walking Technology",
-        "description": "Unlike traditional massage chairs that overlook the lower body, PHYSIO+® delivers equal attention to your legs and feet. Its innovative scissor-action mechanism mimics a natural walking motion, gently stretching the lower back, glutes, hamstrings, and knees for a full-body wellness experience that no other chair can match."
-      }
-    },
-    "split_3": {
-      "type": "feature-row-split",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "image_position": "left",
-        "show_header": false,
-        "main_kicker": "",
-        "main_heading": "",
-        "image_label": "",
-        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-        "heading": "AI BioSensory Intelligence™",
-        "description": "Simply scan your finger to initiate cutting-edge AI algorithms that thoroughly analyze your body's health indicators — heart rate, blood oxygen, microcirculation, heart rate variability, and fatigue index — all distilled into a personalized health score. BioSensory Intelligence™ then crafts a bespoke massage calibrating intensity, style, and target areas to perfectly align with your body's specific needs."
-      }
-    },
-    "split_4": {
-      "type": "feature-row-split",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "image_position": "right",
-        "show_header": false,
-        "main_kicker": "",
-        "main_heading": "",
-        "image_label": "",
-        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"20\" height=\"15\" x=\"2\" y=\"7\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>",
-        "heading": "Seamless Touchscreen Remote",
-        "description": "Make every massage a masterpiece with limitless customization. The intuitive touchscreen display is rich with functionality, letting you select from customizable wellness programs or create your own massage experience from a blank canvas. Quick shortcut panels on both armrests provide instant access to heating, volume, zero gravity positions, and recline adjustments."
-      }
-    },
-    "tech_bars": {
-      "type": "tech-progress-bars",
-      "blocks": {
-        "p1": {
-          "type": "progress",
-          "settings": {
-            "title": "AirCell Technology",
-            "description": "Unleash a wave of comfort with sensitive AirCell Technology. A wider PSI range provides tailored pressure, guaranteeing an exquisite massage experience optimized for your needs.",
-            "brand_score": 92,
-            "industry_score": 48
-          }
-        },
-        "p2": {
-          "type": "progress",
-          "settings": {
-            "title": "Torque Control",
-            "description": "Our active torque control is meticulously calibrated to balance strength and delicacy — from a powerful deep tissue massage to gentle, soothing strokes.",
-            "brand_score": 88,
-            "industry_score": 40
-          }
-        },
-        "p3": {
-          "type": "progress",
-          "settings": {
-            "title": "AI Advancement",
-            "description": "Engineered to fit your unique needs, AI ensures your massage experience is as individual as you are. Developed using biometric data to ensure your massage is as beneficial as it is comfortable.",
-            "brand_score": 95,
-            "industry_score": 30
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "ADVANCED TECHNOLOGY",
-        "heading": "Beyond Comfort,\n<span class=\"italic text-gold\">Beyond Comparison</span>",
-        "brand_name": "PHYSIO+®"
-      }
-    },
-    "split_design": {
-      "type": "feature-row-split",
-      "blocks": {
-        "c1": {
-          "type": "color_swatch",
-          "settings": {
-            "color": "#f5f0e8",
-            "color_name": "Ivory"
-          }
-        },
-        "c2": {
-          "type": "color_swatch",
-          "settings": {
-            "color": "#1a1a1a",
-            "color_name": "Onyx"
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "image_position": "left",
-        "show_header": false,
-        "main_kicker": "",
-        "main_heading": "",
-        "image_label": "",
-        "icon_svg": "",
-        "heading": "Fine Craft in <span class=\"italic text-gold\">Every Curve</span>",
-        "description": "Choose from a dark Onyx or elegant Ivory finish, featuring vegan upholstery accented with blue luminescence and seamless controls on both sides. A striking balance of luxury and technology — PHYSIO+® isn't just a chair; it's a statement. It's not about fitting into your decor; it's about defining it."
-      }
-    },
-    "specs": {
-      "type": "product-specs-table",
+    "ai_engine": {
+      "type": "product-ai-engine",
       "blocks": {
         "s1": {
-          "type": "spec",
+          "type": "step",
           "settings": {
-            "label": "Massage Mechanism",
-            "value": "ROVO XD Dual Mechanism"
+            "number": "1",
+            "title": "Connect & Power On",
+            "description": "Pick up the sensor, press the power button, and wait until the light turns blue"
           }
         },
         "s2": {
-          "type": "spec",
+          "type": "step",
           "settings": {
-            "label": "Track System",
-            "value": "Self-Adaptive Flexible SL-Track"
+            "number": "2",
+            "title": "Start Measurement",
+            "description": "Follow the on-screen instructions and place your finger on the red sensor"
           }
         },
         "s3": {
-          "type": "spec",
+          "type": "step",
           "settings": {
-            "label": "Air Cells",
-            "value": "50"
+            "number": "3",
+            "title": "View Results",
+            "description": "Check your health data and start an AI-customised massage based on the results"
           }
         },
-        "s4": {
-          "type": "spec",
+        "m1": {
+          "type": "metric",
           "settings": {
-            "label": "Massage Programs",
-            "value": "12 Auto + 6 Manual"
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "title": "Fatigue level & stress index"
           }
         },
-        "s5": {
-          "type": "spec",
+        "m2": {
+          "type": "metric",
           "settings": {
-            "label": "Massage Styles",
-            "value": "Kneading, Shiatsu, Tapping, Rolling, Vibration, Acupressure"
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Heart rate & oxygen saturation in real-time"
           }
         },
-        "s6": {
-          "type": "spec",
+        "m3": {
+          "type": "metric",
           "settings": {
-            "label": "Zero Gravity",
-            "value": "2-Stage"
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z\"></path><path d=\"M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97\"></path></svg>",
+            "title": "Microcirculation & blood flow"
           }
         },
-        "s7": {
-          "type": "spec",
+        "m4": {
+          "type": "metric",
           "settings": {
-            "label": "Heat Therapy",
-            "value": "Lumbar & Calf + Heated Foot Rollers"
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "title": "Heart rate variability (HRV)"
           }
         },
-        "s8": {
-          "type": "spec",
+        "m5": {
+          "type": "metric",
           "settings": {
-            "label": "Remote Control",
-            "value": "Touchscreen + Quick Shortcut Panels"
-          }
-        },
-        "s9": {
-          "type": "spec",
-          "settings": {
-            "label": "Connectivity",
-            "value": "Bluetooth, Voice Control, Wireless Charging, USB"
-          }
-        },
-        "s10": {
-          "type": "spec",
-          "settings": {
-            "label": "Dimensions (Upright)",
-            "value": "84 cm × 166 cm × 125 cm"
-          }
-        },
-        "s11": {
-          "type": "spec",
-          "settings": {
-            "label": "Dimensions (Reclined)",
-            "value": "84 cm × 200 cm × 82 cm"
-          }
-        },
-        "s12": {
-          "type": "spec",
-          "settings": {
-            "label": "Weight",
-            "value": "157 kg"
-          }
-        },
-        "s13": {
-          "type": "spec",
-          "settings": {
-            "label": "Max User Weight",
-            "value": "150 kg"
-          }
-        },
-        "s14": {
-          "type": "spec",
-          "settings": {
-            "label": "Max User Height",
-            "value": "210 cm"
-          }
-        },
-        "s15": {
-          "type": "spec",
-          "settings": {
-            "label": "Power Supply",
-            "value": "220-240V, 50/60Hz"
-          }
-        },
-        "s16": {
-          "type": "spec",
-          "settings": {
-            "label": "Warranty",
-            "value": "5-Year Full Warranty"
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
+            "title": "AI-generated personal massage recommendation"
           }
         }
       },
@@ -506,323 +281,570 @@
         "s1",
         "s2",
         "s3",
-        "s4",
-        "s5",
-        "s6",
-        "s7",
-        "s8",
-        "s9",
-        "s10",
-        "s11",
-        "s12",
-        "s13",
-        "s14",
-        "s15",
-        "s16"
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5"
       ],
       "settings": {
-        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
-        "kicker": "TECHNICAL DATA",
+        "kicker_1": "Proprietary Technology",
+        "heading_1": "WOC AI Wellness Engine™",
+        "description_1": "Our proprietary AI processor analyses your body in real-time — from muscle tension and blood circulation to stress levels and sleep quality. With over 200 sensor data points, BioVis Pro® adapts every single massage session to your body’s exact needs.",
+        "bullets": "<p>Real-time body analysis with 200+ sensor data points</p><p>Adaptive massage intensity based on muscle tension</p><p>AI-driven health monitoring (pulse, blood pressure, stress)</p><p>Self-learning algorithm — improves with every session</p>",
+        "kicker_2": "AI-Driven Health",
+        "heading_2": "AI Health Detection",
+        "description_2": "The World of Comfort BioVis Pro® features an advanced health monitoring system that measures key indicators such as fatigue level, heart rate, oxygen saturation, microcirculation, and heart rate variability."
+      }
+    },
+    "split_screen": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"20\" height=\"15\" x=\"2\" y=\"7\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>",
+        "heading": "12\" HD Touchscreen with YouTube",
+        "description": "The large touchscreen provides effortless customisation, quick access to 18 auto-programmes, and the ability to stream YouTube videos during your massage. Intuitive operation makes it easy to find the perfect massage."
+      }
+    },
+    "split_bodyscan": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+        "heading": "Automatic AI Body Scan",
+        "description": "The advanced SenseCore System scans your body in real-time, detecting your unique body shape, height, and muscle tension. The massage rollers automatically adjust to your precise body structure for optimal treatment."
+      }
+    },
+    "split_8xd": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
+        "heading": "8XD Dual Core Massage System",
+        "description": "The 8XD Dual Core system in the WOC BioVis Pro® has two independent massage motors working in tandem to deliver precise, deep-tissue treatment across eight extended dimensions. The dual-core architecture doubles the coverage area and mimics human massage techniques with adjustable intensity and speed."
+      }
+    },
+    "split_motor": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+        "heading": "Dynamic Brushless 8XD Dual Core Motor",
+        "description": "Next-generation precision with the dynamic brushless 8XD Dual Core roller system. Built on an advanced eight-dimensional movement path with two independent motors, this technology introduces horizontal flat-axis expansion, increasing the massage width to over 23 cm for a broader, more immersive experience. The upgraded brushless motor design delivers whisper-quiet performance, smoother transitions between techniques, and enhanced reliability."
+      }
+    },
+    "split_sl_track": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z\"></path><path d=\"M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z\"></path><path d=\"M12 2v2\"></path><path d=\"M12 22v-2\"></path></svg>",
+        "heading": "SL Flex Track System",
+        "description": "The WOC BioVis Pro® revolutionises the classic SL-track with its innovative SL Flex Track system, introducing enhanced flexibility for superior adaptation and comfort. The advanced design maintains a fixed angle relative to the backrest for seamless support. The flexible SL-track further intensifies the massage with an intensive stretch, covering from the neck and shoulders to the hamstrings."
+      }
+    },
+    "split_zero_g": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+        "heading": "Zero Gravity with 2 Modes",
+        "description": "Inspired by NASA technology, the Zero Gravity function places the body in a weightless position with two modes — Leisure and Cinema. Pressure on the spine is significantly reduced, blood circulation is improved, and the massage is enhanced in the relaxed position."
+      }
+    },
+    "split_heat": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+        "heading": "Three-part Heat Therapy",
+        "description": "Advanced heat therapy system delivers targeted warmth to the lower back, waist, and calves. Carbon fibre heating elements combined with heated massage rollers soothe muscle tension and promote deep relaxation."
+      }
+    },
+    "split_air": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z\"></path></svg>",
+        "heading": "57-Cell Full Body Air Massage",
+        "description": "57 strategically placed air chambers deliver full-body compression therapy that improves blood circulation and accelerates muscle recovery in arms, legs, shoulders, and hips."
+      }
+    },
+    "split_space": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3\"></path><path d=\"M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z\"></path></svg>",
+        "heading": "Zero Space Technology",
+        "description": "The WOC BioVis Pro® features innovative space-saving technology that requires only 2.5 cm from the wall for full recline. This smart design optimises functionality and space efficiency, making it perfect for any home."
+      }
+    },
+    "split_footrest": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z\"></path></svg>",
+        "heading": "Automatic Extendable Footrest",
+        "description": "Designed for exceptional versatility, the WOC BioVis Pro® adapts to all heights and body types. The automatic footrest extends up to 18 cm, providing personalised comfort and optimal support."
+      }
+    },
+    "split_calf_foot": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"></path></svg>",
+        "heading": "Calf & Foot Massage with Scraping Rollers",
+        "description": "The WOC BioVis Pro® features dedicated calf massage rollers on the outside and back of the calf, as well as dual foot rollers that stimulate reflex zones with acupressure and scraping movements."
+      }
+    },
+    "split_voice": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z\"></path></svg>",
+        "heading": "Voice Control",
+        "description": "The WOC BioVis Pro® features intelligent voice control, providing hands-free control over the massage experience. Use voice commands to adjust massage settings in a natural and effortless way."
+      }
+    },
+    "split_aroma": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12.8 19.6A2 2 0 1 0 14 16H2\"></path></svg>",
+        "heading": "Aromatherapy & Negative Ion Therapy",
+        "description": "The integrated ioniser purifies the air by capturing dust, pollen, and allergens, while aromatherapy releases soothing scents that enhance relaxation during your massage."
+      }
+    },
+    "split_pillow": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "right",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0\"></path></svg>",
+        "heading": "Removable Pillow",
+        "description": "The WOC BioVis Pro® features a removable headrest, allowing for a more intense and immersive massage on the neck and upper shoulders."
+      }
+    },
+    "split_chromo": {
+      "type": "feature-row-split",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "image_position": "left",
+        "show_header": false,
+        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"></path><path d=\"M9 18h6\"></path><path d=\"M10 22h4\"></path></svg>",
+        "heading": "Chromotherapy LED Lighting",
+        "description": "Atmospheric LED lighting in 8 colours enriches the ambiance and creates a calm environment for ultimate relaxation. Choose between white, yellow, blue, red, green, cyan, purple, or rainbow."
+      }
+    },
+    "led_colors": {
+      "type": "product-led-colors",
+      "blocks": {
+        "c1": {
+          "type": "color",
+          "settings": {
+            "title": "white"
+          }
+        },
+        "c2": {
+          "type": "color",
+          "settings": {
+            "title": "yellow"
+          }
+        },
+        "c3": {
+          "type": "color",
+          "settings": {
+            "title": "blue"
+          }
+        },
+        "c4": {
+          "type": "color",
+          "settings": {
+            "title": "red"
+          }
+        },
+        "c5": {
+          "type": "color",
+          "settings": {
+            "title": "green"
+          }
+        },
+        "c6": {
+          "type": "color",
+          "settings": {
+            "title": "cyan"
+          }
+        },
+        "c7": {
+          "type": "color",
+          "settings": {
+            "title": "purple"
+          }
+        },
+        "c8": {
+          "type": "color",
+          "settings": {
+            "title": "rainbow"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
+      "settings": {
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "programmes": {
+      "type": "product-programmes",
+      "blocks": {
+        "b1": {
+          "type": "program",
+          "settings": {
+            "category": "Basic Themes",
+            "title": "Demo Full Body"
+          }
+        },
+        "b2": {
+          "type": "program",
+          "settings": {
+            "category": "Basic Themes",
+            "title": "Shiatsu"
+          }
+        },
+        "b3": {
+          "type": "program",
+          "settings": {
+            "category": "Basic Themes",
+            "title": "Women's Health"
+          }
+        },
+        "b4": {
+          "type": "program",
+          "settings": {
+            "category": "Healthcare",
+            "title": "Demo Lower Body"
+          }
+        },
+        "b5": {
+          "type": "program",
+          "settings": {
+            "category": "Healthcare",
+            "title": "Joint Care"
+          }
+        },
+        "b6": {
+          "type": "program",
+          "settings": {
+            "category": "Healthcare",
+            "title": "Stretch"
+          }
+        },
+        "b7": {
+          "type": "program",
+          "settings": {
+            "category": "Targeted Areas",
+            "title": "Neck & Shoulder"
+          }
+        },
+        "b8": {
+          "type": "program",
+          "settings": {
+            "category": "Targeted Areas",
+            "title": "Waist & Leg"
+          }
+        },
+        "b9": {
+          "type": "program",
+          "settings": {
+            "category": "Targeted Areas",
+            "title": "Lower Back"
+          }
+        },
+        "b10": {
+          "type": "program",
+          "settings": {
+            "category": "VIP Massage",
+            "title": "Blood Circulation"
+          }
+        },
+        "b11": {
+          "type": "program",
+          "settings": {
+            "category": "VIP Massage",
+            "title": "Deep Tissue"
+          }
+        },
+        "b12": {
+          "type": "program",
+          "settings": {
+            "category": "VIP Massage",
+            "title": "Thai Stretch"
+          }
+        },
+        "b13": {
+          "type": "program",
+          "settings": {
+            "category": "Personal Specials",
+            "title": "Morning Care"
+          }
+        },
+        "b14": {
+          "type": "program",
+          "settings": {
+            "category": "Personal Specials",
+            "title": "Midday Care"
+          }
+        },
+        "b15": {
+          "type": "program",
+          "settings": {
+            "category": "Personal Specials",
+            "title": "Night Care"
+          }
+        },
+        "b16": {
+          "type": "program",
+          "settings": {
+            "category": "Relaxation",
+            "title": "Relaxation"
+          }
+        },
+        "b17": {
+          "type": "program",
+          "settings": {
+            "category": "Relaxation",
+            "title": "Men's Health"
+          }
+        },
+        "b18": {
+          "type": "program",
+          "settings": {
+            "category": "Relaxation",
+            "title": "Recovery"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Massage Programmes",
+        "heading": "18 Automatic Programmes"
+      }
+    },
+    "dimensions": {
+      "type": "product-dimensions",
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "value": "145 kg",
+            "label": "Weight"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "value": "155–210 cm",
+            "label": "User Height"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "value": "150 kg",
+            "label": "Max User Weight"
+          }
+        },
+        "s4": {
+          "type": "stat",
+          "settings": {
+            "value": "220V / 300W",
+            "label": "Power"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Dimensions",
+        "heading": "Measurements & Dimensions",
+        "u_width": "80 cm",
+        "u_depth": "155 cm",
+        "u_height": "122 cm",
+        "r_width": "80 cm",
+        "r_depth": "194 cm",
+        "r_height": "79 cm"
+      }
+    },
+    "specs_detailed": {
+      "type": "product-specs-detailed-list",
+      "blocks": {
+        "r1": {
+          "type": "spec",
+          "settings": {
+            "label": "Product Name",
+            "value": "WOC BioVis Pro®"
+          }
+        },
+        "r2": {
+          "type": "spec",
+          "settings": {
+            "label": "Model",
+            "value": "WOC BioVis Pro® 8XD Dual Core"
+          }
+        },
+        "r3": {
+          "type": "spec",
+          "settings": {
+            "label": "Weight",
+            "value": "~145 kg"
+          }
+        },
+        "r4": {
+          "type": "spec",
+          "settings": {
+            "label": "Power Supply",
+            "value": "AC 220-240V~, 50/60 Hz"
+          }
+        },
+        "r5": {
+          "type": "spec",
+          "settings": {
+            "label": "Power Consumption",
+            "value": "~300W"
+          }
+        },
+        "r6": {
+          "type": "spec",
+          "settings": {
+            "label": "Automatic Standby",
+            "value": "15 min"
+          }
+        },
+        "r7": {
+          "type": "spec",
+          "settings": {
+            "label": "Dimensions (upright)",
+            "value": "80 × 155 × 122 cm"
+          }
+        },
+        "r8": {
+          "type": "spec",
+          "settings": {
+            "label": "Dimensions (reclined)",
+            "value": "80 × 194 × 79 cm"
+          }
+        },
+        "r9": {
+          "type": "spec",
+          "settings": {
+            "label": "User Height",
+            "value": "155 – 210 cm"
+          }
+        },
+        "r10": {
+          "type": "spec",
+          "settings": {
+            "label": "Max. User Weight",
+            "value": "150 kg"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "r10"
+      ],
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "kicker": "Technical Details",
         "heading": "Specifications"
-      }
-    },
-    "pricing": {
-      "type": "flexible-pricing-plans",
-      "blocks": {
-        "p1": {
-          "type": "plan",
-          "settings": {
-            "title": "Pay Once",
-            "price": "£13,200",
-            "price_suffix": "",
-            "subtitle": "Full payment — no extra cost"
-          }
-        },
-        "p2": {
-          "type": "plan",
-          "settings": {
-            "title": "24 Months",
-            "price": "£550",
-            "price_suffix": "/md.",
-            "subtitle": "0% down payment"
-          }
-        },
-        "p3": {
-          "type": "plan",
-          "settings": {
-            "title": "60 Months",
-            "price": "£176",
-            "price_suffix": "/md.",
-            "subtitle": "20% down payment"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "FLEXIBLE PAYMENT",
-        "heading": "Invest in Your <span class=\"italic text-gold\">Wellbeing</span>",
-        "description": "Make wellness accessible with our flexible financing options. Start your wellness journey today."
-      }
-    },
-    "vip": {
-      "type": "vip-delivery-info",
-      "blocks": {
-        "g1": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
-            "title": "5-Year Full Warranty",
-            "description": "Complete coverage of all parts, motors and electronics."
-          }
-        },
-        "g2": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
-            "title": "Premium Delivery",
-            "description": "Professionally installed by specialist technicians."
-          }
-        },
-        "g3": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
-            "title": "Client Care",
-            "description": "Exceptional chairs given exceptional care."
-          }
-        },
-        "a1": {
-          "type": "accordion",
-          "settings": {
-            "title": "EASY TO MOVE",
-            "content": "<p>Content</p>"
-          }
-        },
-        "a2": {
-          "type": "accordion",
-          "settings": {
-            "title": "PROTECT & CARE",
-            "content": "<p>Content</p>"
-          }
-        },
-        "a3": {
-          "type": "accordion",
-          "settings": {
-            "title": "HOW DOES YOUR CHAIR ARRIVE TO YOU",
-            "content": "<p>Content</p>"
-          }
-        },
-        "a4": {
-          "type": "accordion",
-          "settings": {
-            "title": "CERTIFICATIONS",
-            "content": "<p>Content</p>"
-          }
-        },
-        "a5": {
-          "type": "accordion",
-          "settings": {
-            "title": "WORLD CLASS WARRANTY",
-            "content": "<p>Content</p>"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "a1",
-        "a2",
-        "a3",
-        "a4",
-        "a5"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "VIP GUARANTEED",
-        "show_measurements": true,
-        "measure_assembled": "84 cm",
-        "measure_disassembled": "76 cm",
-        "measuring_guide": "<p>Calculate the doorway width by subtracting 5 cm from the smallest inner width of the door frame (2.5 cm from each side).</p><p>Please use a standard measuring tape to measure the doorway.</p><p>If the door cannot be fully opened, open it as much as possible and measure the width from the edge of the door hinge.</p><p>If there is a rounded curve on the wall, calculate the inner width based on the most protruding point of the wall.</p>"
-      }
-    },
-    "faq": {
-      "type": "faq-interactive",
-      "blocks": {
-        "q1": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What makes PHYSIO+® different from other massage chairs on the market?",
-            "answer": "<p>PHYSIO+® features the proprietary ROVO XD Dual Mechanism with six independent rollers — a technology exclusive to World of Comfort. Combined with AI BioSensory Intelligence™ that scans your heart rate, blood oxygen, microcirculation, and fatigue index, it delivers a fully personalized therapeutic massage unlike anything available from competitors. The innovative walking technology, deep tissue arm rollers, and self-adaptive flexible SL-track further set it apart as the most advanced massage chair in Scandinavia.</p>"
-          }
-        },
-        "q2": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does the AI BioSensory Intelligence™ health detection work?",
-            "answer": "<p>Simply place your finger on the built-in sensor, and PHYSIO+®'s AI algorithms analyze five key health indicators: heart rate, blood oxygen levels, microcirculation, heart rate variability, and fatigue index. These metrics are distilled into a personalized health score. The AI then automatically calibrates massage intensity, style, and target areas to perfectly match your body's current needs — ensuring every massage session is optimally therapeutic.</p>"
-          }
-        },
-        "q3": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is the ROVO XD Dual Mechanism, and why is it superior?",
-            "answer": "<p>The ROVO XD Dual Mechanism combines two distinct massage systems working in perfect harmony. The upper XD mechanism moves in multiple dimensions — up/down, left/right, in/out, plus variable speed and rhythm — for a lifelike massage across your entire back. The lower mechanism simultaneously delivers deep, targeted therapy to your glutes and upper hamstrings. Together, they provide six independent rollers covering more surface area with greater precision than any single-mechanism chair.</p>"
-          }
-        },
-        "q4": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is the walking technology in PHYSIO+®?",
-            "answer": "<p>PHYSIO+®'s walking technology uses an innovative scissor-action mechanism in the leg area that mimics natural walking motion. It gently stretches the lower back, glutes, hamstrings, and knees — areas typically neglected by conventional massage chairs. With 8 dedicated walking programs, it provides a comprehensive lower-body therapy experience.</p>"
-          }
-        },
-        "q5": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What are the dimensions and weight limits of PHYSIO+®?",
-            "answer": "<p>PHYSIO+® measures 84 cm × 166 cm × 125 cm when upright and 84 cm × 200 cm × 82 cm when fully reclined. The chair weighs 157 kg. It accommodates users up to 150 kg body weight and up to 210 cm in height. The space-saving technology allows the chair to be placed just 5 cm from the wall while still achieving full recline.</p>"
-          }
-        },
-        "q6": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What warranty and service does PHYSIO+® come with?",
-            "answer": "<p>PHYSIO+® includes a comprehensive 5-year manufacturer warranty covering all parts and labor. We offer free white-glove delivery throughout Scandinavia and the EU, including professional installation and demonstration. Optional premium service agreements (5-year and 10-year) are available for extended coverage. Our expert technicians handle everything — from delivery to setup to ongoing maintenance.</p>"
-          }
-        },
-        "q7": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What financing options are available for PHYSIO+®?",
-            "answer": "<p>We offer three flexible payment options: full payment with no additional cost, 0% down payment spread over 24 months, or 20% down payment with the remainder over 60 months. All financing is handled through our trusted payment partner with competitive rates. This makes the world's most advanced massage chair accessible to everyone who values their health and wellbeing.</p>"
-          }
-        },
-        "q8": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can I try PHYSIO+® before purchasing?",
-            "answer": "<p>Absolutely. We encourage all prospective buyers to visit one of our showrooms across Scandinavia to experience PHYSIO+® firsthand. Our wellness consultants will guide you through a personalized demonstration, including the AI health scan and all massage programs. You can book a private consultation through our website or by calling our showroom directly.</p>"
-          }
-        },
-        "q9": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does the 2-stage zero gravity recline benefit my health?",
-            "answer": "<p>The 2-stage zero gravity recline positions your body in a NASA-inspired posture where your legs are elevated above your heart. This distributes your body weight evenly, reducing spinal pressure by up to 80%. It improves blood circulation, reduces swelling in the legs, and allows the massage rollers to work more effectively against gravity — resulting in a deeper, more therapeutic massage experience.</p>"
-          }
-        },
-        "q10": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What massage programs and styles does PHYSIO+® offer?",
-            "answer": "<p>PHYSIO+® offers 12 automatic massage programs across three categories: Train, Target, and Recover. Additionally, 6 manual massage styles are available: Kneading, Sync, Vibration, Tapping, Shiatsu, and Acupressure — all fully customizable in intensity and focus area.</p>"
-          }
-        },
-        "q11": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is PHYSIO+® suitable for people with back pain or chronic conditions?",
-            "answer": "<p>PHYSIO+® is specifically designed with therapeutic benefits in mind. The self-adaptive flexible SL-track conforms to your spine's unique curvature, while the 2-stage zero gravity recline reduces spinal pressure by up to 80%. Many users with chronic back pain, sciatica, and muscle tension report significant relief. However, we always recommend consulting your physician before use if you have specific medical conditions.</p>"
-          }
-        },
-        "q12": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How does PHYSIO+® compare to a professional physiotherapy or spa massage?",
-            "answer": "<p>PHYSIO+® bridges the gap between home comfort and professional-grade therapy. Its ROVO XD Dual Mechanism delivers six-roller coverage that rivals the precision of trained hands, while the AI health detection personalizes every session. The investment pays for itself within months compared to regular physiotherapy or spa visits.</p>"
-          }
-        },
-        "q13": {
-          "type": "faq_item",
-          "settings": {
-            "question": "How much electricity does PHYSIO+® use, and how loud is it during operation?",
-            "answer": "<p>PHYSIO+® is engineered for energy efficiency, consuming approximately 300W during operation — comparable to a standard television. A typical 30-minute massage session costs just a few cents in electricity. The chair operates at whisper-quiet noise levels thanks to precision-engineered motors and sound-dampening materials.</p>"
-          }
-        },
-        "q14": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is the expected lifespan of PHYSIO+®, and how do I maintain it?",
-            "answer": "<p>Built with premium-grade components and motors rated for over 10,000 hours of operation, PHYSIO+® is designed to last 15–20 years with proper care. Maintenance is minimal: wipe the vegan leather surfaces with a warm, damp cloth, avoid direct sunlight exposure, and keep the chair in a dry environment.</p>"
-          }
-        },
-        "q15": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can multiple family members use PHYSIO+® with personalized settings?",
-            "answer": "<p>Yes. PHYSIO+®'s AI BioSensory Intelligence™ performs a fresh health scan before each session, automatically tailoring the massage to whichever family member is using the chair. The precision body scan detects each user's unique body shape and adjusts roller positioning accordingly.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5",
-        "q6",
-        "q7",
-        "q8",
-        "q9",
-        "q10",
-        "q11",
-        "q12",
-        "q13",
-        "q14",
-        "q15"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "QUESTIONS & ANSWERS",
-        "heading": "Frequently Asked <span class=\"italic text-gold\">Questions</span>",
-        "description": "Everything you need to know about PHYSIO+® — the world's most advanced massage chair by World of Comfort."
-      }
-    },
-    "cta": {
-      "type": "simple-cta-banner",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "heading": "Ready to Experience<br><span class=\"block italic text-gold\">PHYSIO+®?</span>",
-        "description": "Visit a showroom for a personal demonstration or order online with free delivery.",
-        "btn1_text": "Buy Now — £13,200",
-        "btn2_text": "Book demonstration",
-        "btn2_link": "/pages/showrooms"
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "bg_color": "warm",
-        "kicker": "YOU MAY ALSO LIKE",
-        "heading": "Du vil måske også syntes om",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     }
   },
@@ -830,18 +852,26 @@
     "woc_trust_bar_km4wNG",
     "main",
     "overview",
-    "tabs",
-    "split_1",
-    "split_2",
-    "split_3",
-    "split_4",
-    "tech_bars",
-    "split_design",
-    "specs",
-    "pricing",
-    "vip",
-    "faq",
-    "cta",
-    "related-products"
+    "ideal_for",
+    "ai_engine",
+    "split_screen",
+    "split_bodyscan",
+    "split_8xd",
+    "split_motor",
+    "split_sl_track",
+    "split_zero_g",
+    "split_heat",
+    "split_air",
+    "split_space",
+    "split_footrest",
+    "split_calf_foot",
+    "split_voice",
+    "split_aroma",
+    "split_pillow",
+    "split_chromo",
+    "led_colors",
+    "programmes",
+    "dimensions",
+    "specs_detailed"
   ]
 }
