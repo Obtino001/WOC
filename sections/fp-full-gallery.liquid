@@ -1,0 +1,34 @@
+<section class="overflow-hidden">
+  <div class="grid grid-cols-2 md:grid-cols-{{ section.settings.columns }} gap-0">
+    {% for block in section.blocks %}
+      <div class="overflow-hidden" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | image_url: width: 800 | image_tag: class: 'aspect-[4/3] w-full object-cover hover:scale-105 transition-transform duration-700', loading: 'lazy' }}
+        {% else %}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'aspect-[4/3] w-full object-cover bg-gray-200 hover:scale-105 transition-transform duration-700' }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FP Full Width Gallery",
+  "settings": [
+    { "type": "range", "id": "columns", "min": 2, "max": 6, "step": 1, "label": "Desktop Columns", "default": 4 }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "FP Full Width Gallery" }
+  ]
+}
+{% endschema %}
