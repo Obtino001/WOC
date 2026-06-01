@@ -209,7 +209,7 @@
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
-        "bg_color": "warm",
+        "bg_color": "light",
         "card_style": "bordered",
         "columns": 4,
         "kicker": "Ideal For",
