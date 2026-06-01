@@ -114,6 +114,7 @@
     "hero": {
       "type": "collection-hero",
       "settings": {
+        "background_image": "shopify://shop_images/massage-devices-hero-v3-DLEBPRbY.png",
         "rating_text": "4,9/5 baseret på +1.100 anmeldelser",
         "heading": "Massage Devices",
         "subheading": "+30.000 glade kunder",
@@ -224,7 +225,7 @@
       "settings": {
         "section_id": "products",
         "heading": "ALLE PRODUKTER",
-        "collection": "",
+        "collection": "massage-devices",
         "limit": 12,
         "show_filters": true,
         "show_discount_banner": true,
