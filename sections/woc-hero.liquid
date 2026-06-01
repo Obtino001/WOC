@@ -1,7 +1,7 @@
 <section class="relative h-screen flex flex-col overflow-hidden bg-charcoal">
 <div class="absolute inset-0 z-1">
   {%- if section.settings.video_url != blank -%}
-    <video
+<video
       autoplay
       muted
       loop
@@ -11,7 +11,9 @@
       style="width: 100%; height: 100%; object-fit: cover;"
       {% if section.settings.fallback_image != blank %}poster="{{ section.settings.fallback_image | image_url: width: 1920 }}"{% endif %}
     >
-      {% for source in section.settings.video_url.sources %}
+      {%- assign high_quality_sources = section.settings.video_url.sources | where: 'format', 'mp4' | sort: 'height' | reverse -%}
+      
+      {% for source in high_quality_sources %}
         <source src="{{ source.url }}" type="{{ source.mime_type }}">
       {% endfor %}
     </video>
