@@ -18,6 +18,11 @@
 {% endcomment %}
 {%- liquid
   assign product_form_id = 'product-form-' | append: section.id
+  assign is_color = false
+  assign downcased_option = option.name | downcase
+  if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'farve'
+    assign is_color = true
+  endif
 -%}
 
 {%- for value in option.values -%}
@@ -95,6 +100,24 @@
       {{ input_dataset }}
     >
     <label for="{{ input_id }}">
+      {%- if is_color -%}
+        {%- assign color_hex = '#ffffff' -%}
+        {%- assign color_name_downcase = value | downcase -%}
+        {%- if color_name_downcase == 'latte' -%}
+          {%- assign color_hex = '#dcc5a1' -%}
+        {%- elsif color_name_downcase == 'onyx' -%}
+          {%- assign color_hex = '#1c1c1c' -%}
+        {%- elsif color_name_downcase == 'black' -%}
+          {%- assign color_hex = '#000000' -%}
+        {%- elsif color_name_downcase == 'white' -%}
+          {%- assign color_hex = '#ffffff' -%}
+        {%- elsif color_name_downcase == 'charcoal' -%}
+          {%- assign color_hex = '#0a0a0a' -%}
+        {%- elsif color_name_downcase == 'gray' or color_name_downcase == 'grey' -%}
+          {%- assign color_hex = '#808080' -%}
+        {%- endif -%}
+        <span class="color-swatch-dot" style="background-color: {{ color_hex }};"></span>
+      {%- endif -%}
       {{ value -}}
       {{ label_unavailable }}
     </label>

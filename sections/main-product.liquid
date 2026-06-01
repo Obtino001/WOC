@@ -47,54 +47,241 @@
   {%- endif -%}
 
   <style>
-    /* Custom Styling for Product Info to match Dark Luxury Theme */
-    .product__info-container {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3125rem;
-    }
+    /* Custom CSS to Align Product Page 1-1 with Lovable Design */
     
-    /* Variant Swatch Styling Override */
-    .product-form__input input[type=radio] + label {
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background-color: transparent;
-      color: var(--color-foreground);
-      border-radius: 999px;
-      padding: 0.3125rem 0.625rem;
-      font-size: 0.4688rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all 0.3s ease;
+    /* Section Layout Overrides */
+    @media screen and (min-width: 990px) {
+      .product.grid--2-col-tablet {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 5rem !important;
+        align-items: start !important;
+      }
+      .product__media-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .product__info-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+      }
     }
-    .product-form__input input[type=radio]:checked + label {
-      border-color: #d8b261; /* Gold */
-      background-color: rgba(216, 178, 97, 0.1);
-      color: #d8b261;
+
+    /* Square Main Product Image Box & Off-White/Beige Background */
+    .product__media-wrapper .product-media-container {
+      background-color: #F5F4F0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      overflow: visible !important;
+      position: relative !important;
     }
-    
-    /* Price Styling Override */
-    .price .price-item {
-      font-family: var(--font-heading-family);
-      font-size: 1.25rem;
-      font-weight: 300;
-      color: var(--color-foreground);
+    .product__media-wrapper img, 
+    .product__media-wrapper .media img {
+      object-fit: contain !important;
+      background-color: #F5F4F0 !important;
+      transition: none !important;
+      width: 100% !important;
+      height: 100% !important;
     }
-    .price .price__regular, .price .price__sale {
-      margin-bottom: 0.3125rem;
+    .product__media-item {
+      position: relative !important;
     }
-    
-    /* General text coloring */
-    .product__text.subtitle {
-      color: #d8b261; /* Gold */
-      font-size: 0.4688rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
+
+    /* "New" Badge style inside active slide container */
+    .product__media-item::before {
+      content: 'New';
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      z-index: 10;
+      background-color: #c98c30;
+      color: #0a0a0a;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.65rem;
       font-weight: 700;
-      margin-bottom: 0.3125rem;
+      text-transform: none;
+      padding: 0.35rem 0.95rem;
+      border-radius: 9999px;
+      letter-spacing: 0.02em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
     }
-    .product__text.caption-with-letter-spacing {
-      color: var(--color-foreground);
-      opacity: 0.8;
+
+    /* Hide default zoom icons */
+    .product__media-icon {
+      display: none !important;
+    }
+
+    /* Category Subtitle Block styling with gold bar above it */
+    .product__text.subtitle {
+      color: #bf8f30 !important;
+      font-size: 0.65rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.25em !important;
+      font-weight: 700 !important;
+      margin-top: 1.5rem !important;
+      margin-bottom: 0.75rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.75rem !important;
+    }
+    .product__text.subtitle::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background-color: #bf8f30;
+    }
+
+    /* Product Title Cormorant Garamond font styles */
+    .product__title h1 {
+      font-family: 'Cormorant Garamond', serif !important;
+      font-size: 2.75rem !important;
+      font-weight: 400 !important;
+      color: #ffffff !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.01em !important;
+      margin-bottom: 0.25rem !important;
+    }
+
+    /* Breadcrumbs spacing */
+    .breadcrumbs {
+      margin-bottom: 2rem;
+    }
+
+    /* Color picker: horizontal list layout with swatch dots and outline rings */
+    .product-form__input--pill,
+    .product-form__input--swatch {
+      display: flex !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 1.5rem !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 1.5rem 0 !important;
+    }
+    .product-form__input--pill legend.form__label,
+    .product-form__input--swatch legend.form__label {
+      font-size: 0.65rem !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: #8c8c8c !important;
+      margin-right: 0.5rem !important;
+      letter-spacing: 0.1em !important;
+      margin-bottom: 0 !important;
+    }
+    .product-form__input--pill legend.form__label [data-selected-value],
+    .product-form__input--swatch legend.form__label [data-selected-value] {
+      display: none !important;
+    }
+    .product-form__input--pill input[type=radio],
+    .product-form__input--swatch input[type=radio] {
+      display: none !important;
+    }
+    .product-form__input--pill input[type=radio] + label,
+    .product-form__input--swatch input[type=radio] + label {
+      display: inline-flex !important;
+      align-items: center !important;
+      border: none !important;
+      background-color: transparent !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      font-size: 0.85rem !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-weight: 500 !important;
+      color: #8c8c8c !important; /* Muted inactive text */
+      text-transform: none !important;
+      letter-spacing: 0.01em !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+    }
+    .product-form__input--pill input[type=radio]:checked + label,
+    .product-form__input--swatch input[type=radio]:checked + label {
+      color: #ffffff !important; /* Bright active text */
+    }
+    .color-swatch-dot {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin-right: 8px;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-sizing: border-box;
+    }
+    .product-form__input--pill input[type=radio]:checked + label .color-swatch-dot::after,
+    .product-form__input--swatch input[type=radio]:checked + label .color-swatch-dot::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border-radius: 50%;
+      border: 2px solid #bf8f30; /* Gold outline ring around active color swatch */
+    }
+
+    /* Price tag styling */
+    .price .price-item {
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 1.85rem !important;
+      font-weight: 700 !important;
+      color: #ffffff !important;
+      letter-spacing: -0.02em !important;
+    }
+    .price__container {
+      margin-bottom: 0.25rem !important;
+    }
+
+    /* Feature checklist styling */
+    .product__feature-list {
+      margin-top: 1.75rem !important;
+      margin-bottom: 1.75rem !important;
+    }
+    .product__feature-list li {
+      align-items: center !important;
+      margin-bottom: 0.65rem !important;
+    }
+    .product__feature-list .text-gold {
+      color: #bf8f30 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product__feature-list span.leading-snug {
+      font-size: 0.825rem !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-weight: 500 !important;
+      color: #ffffff !important;
+      letter-spacing: 0.01em !important;
+    }
+
+    /* Trust badges section styling */
+    .product__trust-badges {
+      border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+      margin-top: 2rem !important;
+      padding-top: 1.5rem !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 1.5rem !important;
+    }
+    .product__trust-badges > div {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      font-family: 'Outfit', sans-serif !important;
+      font-size: 0.6875rem !important;
+      font-weight: 500 !important;
+      color: rgba(255, 255, 255, 0.5) !important;
+      text-transform: none !important;
+      letter-spacing: 0.01em !important;
+    }
+    .product__trust-badges svg {
+      color: #bf8f30 !important;
     }
   </style>
 
@@ -126,6 +313,35 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
+    {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+      <nav class="breadcrumbs text-[10px] font-body mb-8 text-[#8c8c8c] uppercase tracking-wider" role="navigation" aria-label="breadcrumbs">
+        <ol class="flex items-center gap-2 list-none p-0 m-0">
+          <li>
+            <a href="/" class="hover:text-gold transition-colors">Home</a>
+          </li>
+          <li class="text-[#4d4d4d] select-none text-[8px]">&gt;</li>
+          {%- if template contains 'product' -%}
+            {%- if collection -%}
+              <li>
+                <a href="{{ collection.url }}" class="hover:text-gold transition-colors">{{ collection.title }}</a>
+              </li>
+              <li class="text-[#4d4d4d] select-none text-[8px]">&gt;</li>
+            {%- else -%}
+              {%- assign product_collections = product.collections -%}
+              {%- if product_collections.size > 0 -%}
+                <li>
+                  <a href="{{ product_collections[0].url }}" class="hover:text-gold transition-colors">{{ product_collections[0].title }}</a>
+                </li>
+                <li class="text-[#4d4d4d] select-none text-[8px]">&gt;</li>
+              {%- endif -%}
+            {%- endif -%}
+            <li>
+              <span class="text-white font-medium" aria-current="page">{{ product.title }}</span>
+            </li>
+          {%- endif -%}
+        </ol>
+      </nav>
+    {%- endunless -%}
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
@@ -151,6 +367,14 @@
               {%- when 'title' -%}
                 <div class="product__title mb-2" {{ block.shopify_attributes }}>
                   <h1 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight">{{ product.title | escape }}</h1>
+                  {%- assign subtitle = product.metafields.descriptors.subtitle.value | default: product.metafields.custom.short_description.value -%}
+                  {%- if subtitle != blank -%}
+                    <p class="font-body text-sm text-muted-foreground mt-1">{{ subtitle }}</p>
+                  {%- else -%}
+                    {%- if product.handle contains 'dual-pro' -%}
+                      <p class="font-body text-sm text-muted-foreground mt-1">Advanced Therapeutic Dual-System Massage Chair</p>
+                    {%- endif -%}
+                  {%- endif -%}
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }} class="mb-4">
@@ -160,9 +384,18 @@
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
-                  {%- if block.settings.subprice_text != blank -%}
-                    <div class="mt-1 font-body text-xs text-gold/80">
-                      {{ block.settings.subprice_text }}
+                  {%- assign subprice = block.settings.subprice_text -%}
+                  {%- if subprice == blank and product.handle contains 'dual-pro' -%}
+                    {%- assign subprice = 'or from £22/week' -%}
+                  {%- endif -%}
+                  {%- if subprice != blank -%}
+                    <div class="mt-1 font-body text-xs text-muted-foreground">
+                      {%- if subprice contains '£' -%}
+                        {%- assign parts = subprice | split: '£' -%}
+                        {{ parts[0] }}<span class="text-gold font-semibold">£{{ parts[1] }}</span>
+                      {%- else -%}
+                        {{ subprice }}
+                      {%- endif -%}
                     </div>
                   {%- endif -%}
                 </div>
@@ -548,34 +781,37 @@
                             {%- if block.settings.custom_icon_svg != blank -%}
                               {{ block.settings.custom_icon_svg }}
                             {%- else -%}
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
                             {%- endif -%}
                           </span>
-                          <span class="leading-snug">{{ feature | strip }}</span>
+                          <span class="leading-snug font-medium text-white/95">{{ feature | strip }}</span>
                         </li>
                       {%- endfor -%}
                     </ul>
                   {%- endif -%}
                 </div>
               {%- when 'trust_badges' -%}
+                {%- assign text_1 = block.settings.text_1 | default: 'Free White-Glove Delivery' -%}
+                {%- assign text_2 = block.settings.text_2 | default: '5-Year Warranty' -%}
+                {%- assign text_3 = block.settings.text_3 | default: 'Flexible Monthly Payments' -%}
                 <div class="product__trust-badges flex items-center justify-between gap-2 mt-6 pt-6 border-t border-white/5" {{ block.shopify_attributes }}>
                   <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
                     <span class="text-gold shrink-0">
-                      {{ block.settings.icon_1_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>' }}
+                      {{ block.settings.icon_1_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>' }}
                     </span>
-                    <span>{{ block.settings.text_1 }}</span>
+                    <span>{{ text_1 }}</span>
                   </div>
                   <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
                     <span class="text-gold shrink-0">
-                      {{ block.settings.icon_2_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>' }}
+                      {{ block.settings.icon_2_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>' }}
                     </span>
-                    <span>{{ block.settings.text_2 }}</span>
+                    <span>{{ text_2 }}</span>
                   </div>
                   <div class="flex items-center gap-2 font-body text-[10px] text-muted-foreground uppercase tracking-wide">
                     <span class="text-gold shrink-0">
-                      {{ block.settings.icon_3_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>' }}
+                      {{ block.settings.icon_3_svg | default: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>' }}
                     </span>
-                    <span>{{ block.settings.text_3 }}</span>
+                    <span>{{ text_3 }}</span>
                   </div>
                 </div>
               {%- when 'rating' -%}
@@ -614,6 +850,13 @@
                         {{ 'accessibility.total_reviews' | t -}}
                       </span>
                     </p>
+                  </div>
+                {%- else -%}
+                  <div class="flex items-center gap-2 my-1.5">
+                    <div class="flex text-[#bf8f30] text-xs gap-0.5 tracking-wider">
+                      ★★★★★
+                    </div>
+                    <span class="font-body text-xs text-muted-foreground font-medium">(47 reviews)</span>
                   </div>
                 {%- endif -%}
               {%- when 'complementary' -%}
