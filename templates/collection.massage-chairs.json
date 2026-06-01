@@ -141,8 +141,6 @@
     "bestsellers": {
       "type": "massage-chairs-grid",
       "settings": {
-        "padding_top": 80,
-        "padding_bottom": 80,
         "bg_color": "default",
         "show_glow": true,
         "kicker": "MEST POPULÆRE",
@@ -151,14 +149,14 @@
         "collection": "massage-chairs",
         "limit": 3,
         "desktop_columns": 3,
-        "show_contact_card": false
+        "show_contact_card": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "core_models": {
       "type": "massage-chairs-grid",
       "settings": {
-        "padding_top": 80,
-        "padding_bottom": 80,
         "bg_color": "warm",
         "show_glow": false,
         "kicker": "EGEN PRODUKTION",
@@ -167,7 +165,9 @@
         "collection": "massage-chairs",
         "limit": 3,
         "desktop_columns": 3,
-        "show_contact_card": false
+        "show_contact_card": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "collection": {
@@ -176,7 +176,19 @@
         "pre_title": "UDFORSK KOLLEKTIONEN",
         "title": "Alle Massagestole",
         "description": "Find den massagestol der passer bedst til dine behov.",
-        "products_per_page": 12
+        "products_per_page": 12,
+        "save_label": "Spar",
+        "delivery_label": "Gratis levering",
+        "warranty_label": "5 års garanti",
+        "see_more_label": "Se mere",
+        "try_label": "Prøv stol",
+        "no_products_label": "No products found in this collection.",
+        "contact_card_title": "Er du i tvivl om valget?",
+        "contact_card_desc": "Tag vores 60-sekunders massagestols-quiz, og få skræddersyede anbefalinger baseret på din højde, dine smerter og dit budget.",
+        "contact_card_btn1": "Tag testen nu",
+        "contact_card_btn2": "Ring til os",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "financing": {
@@ -228,23 +240,23 @@
         "card_3"
       ],
       "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
         "kicker": "Fleksibel betaling",
         "heading": "Køb, lej, eller<br><span class=\"italic text-gold\">finansier din stol</span>",
-        "description": "Vi tilbyder flere forskellige måder at få din drømmestol hjem på. Vælg den løsning, der passer bedst til din økonomi."
+        "description": "Vi tilbyder flere forskellige måder at få din drømmestol hjem på. Vælg den løsning, der passer bedst til din økonomi.",
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     },
     "endorsement": {
       "type": "expert-recommendation",
       "settings": {
-        "padding_top": 80,
-        "padding_bottom": 80,
         "kicker": "LÆGEFAGLIGT ANBEFALET",
         "heading": "Din ryg fortjener <span class=\"italic text-gold\">ekspertise</span>",
         "quote": "Som kiropraktor gennem 30 år kan jeg bekræfte, at World of Comfort's massagestole leverer en yderst effektiv, dybdegående og terapeutisk korrekt behandling. Den kunstige intelligens sikrer, at trykket tilpasses individuelt til rygsøjlen – præcis som ved en professionel behandling.",
         "author": "Dr. Carsten Rosendahl",
-        "title": "SPECIALLÆGE & KIROPRAKTOR"
+        "title": "SPECIALLÆGE & KIROPRAKTOR",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "benefits": {
@@ -324,10 +336,10 @@
         "ben_10"
       ],
       "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
         "kicker": "10 sundhedsmæssige fordele",
-        "heading": "Videnskabeligt <span class=\"italic text-gold\">bevist effekt</span>"
+        "heading": "Videnskabeligt <span class=\"italic text-gold\">bevist effekt</span>",
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     },
     "xd": {
@@ -402,6 +414,62 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "feature_row_WUhgBV": {
+          "type": "feature_row",
+          "settings": {
+            "image": "shopify://shop_images/xd-ai-scan.jpg",
+            "kicker": "Præcision ned til millimeteren",
+            "heading": "AI Kropsscanning",
+            "description": "Den avancerede AI-kropsscanner kortlægger din unikke anatomi — rygsøjlens kurvatur, skulderbredde, trykpunkter og muskelspændinger. Hver massage er 100% skræddersyet til netop din krop. Systemet husker din profil og bliver bedre for hver session.",
+            "tag_1": "128-punkt scanning",
+            "tag_2": "Personlig profil",
+            "tag_3": "Adaptiv læring",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "feature_row_JxddAT": {
+          "type": "feature_row",
+          "settings": {
+            "image": "shopify://shop_images/xd-recline-system.jpg",
+            "kicker": "Vægtløs afslapning",
+            "heading": "Zero Gravity Recline",
+            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
+            "tag_1": "Op til 80% trykaflastning",
+            "tag_2": "NASA-inspireret",
+            "tag_3": "Forbedret cirkulation",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "feature_row_WRxEhA": {
+          "type": "feature_row",
+          "settings": {
+            "image": "shopify://shop_images/xd-ai-scan.jpg",
+            "kicker": "Præcision ned til millimeteren",
+            "heading": "AI Kropsscanning",
+            "description": "Den avancerede AI-kropsscanner kortlægger din unikke anatomi — rygsøjlens kurvatur, skulderbredde, trykpunkter og muskelspændinger. Hver massage er 100% skræddersyet til netop din krop. Systemet husker din profil og bliver bedre for hver session.",
+            "tag_1": "128-punkt scanning",
+            "tag_2": "Personlig profil",
+            "tag_3": "Adaptiv læring",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "feature_row_mYJa89": {
+          "type": "feature_row",
+          "settings": {
+            "image": "shopify://shop_images/xd-recline-system.jpg",
+            "kicker": "Vægtløs afslapning",
+            "heading": "Zero Gravity Recline",
+            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
+            "tag_1": "Op til 80% trykaflastning",
+            "tag_2": "NASA-inspireret",
+            "tag_3": "Forbedret cirkulation",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -411,253 +479,23 @@
         "stat_4",
         "feat_1",
         "feat_2",
-        "feat_3"
+        "feat_3",
+        "feature_row_WUhgBV",
+        "feature_row_JxddAT",
+        "feature_row_WRxEhA",
+        "feature_row_mYJa89"
       ],
       "settings": {
-        "padding_top":80,
-        "padding_bottom": 80,
         "badge": "Proprietary XD Technology",
         "heading": "Glem alt om<br><span class=\"relative inline-block mt-2\"><span class=\"italic text-gold\">3D, 4D og 5D</span></span>",
         "description": "Mens konkurrenterne kæmper for at tilføje en ny dimension, har vi genopfundet hele massageoplevelsen. Vores patenterede XD-massagesystem er designet til fuld bevægelsesfrihed på tværs af alle akser.",
+        "center_gif": "shopify://shop_images/XDF_240x240_94666db6-648e-427d-a198-e76b9eb143a1.webp",
         "bars_kicker": "BEVÆGELSESOMRÅDE",
         "bars_heading": "XD vs. Konkurrenterne",
         "comparison_note": "XD = eXtended Dimension — vores patenterede massagesystem med fuld bevægelsesfrihed på tværs af alle akser, dybder og hastigheder samtidigt.",
-        "footer_quote": "Teknologi der ikke bare masserer — men forstår dig"
-      }
-    },
-    "quiz_cta": {
-      "type": "quiz-cta",
-      "settings": {
-        "padding_top":80,
-        "padding_bottom": 80,
-        "kicker": "FIND DEN RETTE STOL",
-        "heading": "Tag testen og find din<br><span class=\"italic text-gold\">perfekte massagestol</span>",
-        "description": "Tag vores 2-minutters quiz og få personlig vejledning til at vælge den rigtige model til din krop og livsstil.",
-        "button_text": "Start testen",
-        "button_link": "/pages/quiz"
-      }
-    },
-    "faqs": {
-      "type": "pdp-faqs",
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvor meget plads kræver en massagestol?",
-            "answer": "De fleste af vores modeller har 'Zero Space' teknologi og kræver kun 5-10 cm fra væggen bagtil."
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvor meget strøm bruger den?",
-            "answer": "Ved normalt brug svarer strømforbruget cirka til en almindelig bærbar computer (100-200W)."
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2"
-      ],
-      "settings": {
-        "subtitle": "Her finder du svar på de mest almindelige spørgsmål om vores massagestole.",
-        "title": "Ofte stillede spørgsmål",
-        "accordion_icon_svg": ""
-      }
-    },
-    "testimonials": {
-      "type": "testimonials-grid-marquee",
-      "blocks": {
-        "t1": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_P4aNNY": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_4tdkCV": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_UFDbCU": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_dGxkxF": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_ETxEde": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_jULDUp": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_k6gNgy": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_TUTMzT": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_tUjMgj": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_Cr9imt": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_7F9t8n": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "text_card_NKHAXU": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Den bedste investering jeg har gjort for min ryg. Massagen er dybdegående og utrolig præcis.",
-            "author": "Morten Jensen",
-            "product": "Pharaoh Neo"
-          }
-        },
-        "t2": {
-          "type": "text_card",
-          "settings": {
-            "quote": "Fantastisk service hele vejen igennem. Levering og montering gik hurtigt, og stolen er helt fantastisk.",
-            "author": "Signe Poulsen",
-            "product": "DaVinci"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "text_card_P4aNNY",
-        "text_card_4tdkCV",
-        "text_card_UFDbCU",
-        "text_card_dGxkxF",
-        "text_card_ETxEde",
-        "text_card_jULDUp",
-        "text_card_k6gNgy",
-        "text_card_TUTMzT",
-        "text_card_tUjMgj",
-        "text_card_Cr9imt",
-        "text_card_7F9t8n",
-        "text_card_NKHAXU",
-        "t2"
-      ],
-      "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "kicker": "Udtalelser",
-        "heading": "Hvad vores kunder siger",
-        "description": "Læs om de personlige erfaringer vores kunder har haft med vores massagestole."
-      }
-    },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {
-        "label": "EKSKLUSIV WELLNESS",
-        "title": "Hvorfor vælge World of Comfort?",
-        "description": "Vi går ikke på kompromis med kvaliteten. Vores produkter er designet til at forbedre din livskvalitet."
-      }
-    },
-    "showroom": {
-      "type": "showroom-hero",
-      "blocks": {
-        "loc_1": {
-          "type": "location",
-          "settings": {
-            "emoji": "🇩🇰",
-            "city": "København",
-            "country": "Danmark",
-            "link": "/pages/showrooms"
-          }
-        },
-        "loc_2": {
-          "type": "location",
-          "settings": {
-            "emoji": "🇩🇰",
-            "city": "Aarhus",
-            "country": "Danmark",
-            "link": "/pages/showrooms"
-          }
-        }
-      },
-      "block_order": [
-        "loc_1",
-        "loc_2"
-      ],
-      "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "kicker": "Besøg os",
-        "heading": "Prøv vores produkter i<br><span class=\"italic text-gold\">vores showrooms</span>",
-        "description": "Intet slår følelsen af at prøve vores wellness-produkter i virkeligheden. Besøg et af vores showrooms for en gratis demonstration.",
-        "button_text": "Book a Visit",
-        "button_link": ""
-      }
-    },
-    "bottom_cta": {
-      "type": "trust-bottom-cta",
-      "settings": {
+        "footer_quote": "Teknologi der ikke bare masserer — men forstår dig",
         "padding_top": 80,
-        "padding_bottom": 80,
-        "heading": "Oplev World of Comfort i dag",
-        "description": "Book en demonstration i et af vores showrooms, tag vores online quiz, eller ring til os for en uforpligtende snak om dit velvære.",
-        "button_text": "Find dit showroom",
-        "button_link": "/pages/showrooms"
+        "padding_bottom": 80
       }
     }
   },
@@ -671,12 +509,6 @@
     "financing",
     "endorsement",
     "benefits",
-    "xd",
-    "quiz_cta",
-    "faqs",
-    "testimonials",
-    "why_us",
-    "showroom",
-    "bottom_cta"
+    "xd"
   ]
 }
