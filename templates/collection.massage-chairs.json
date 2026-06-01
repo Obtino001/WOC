@@ -539,189 +539,215 @@
         "btn_subtext": "✓ Takes 60 seconds · ✓ No obligations · ✓ 100% free"
       }
     },
-    "faq": {
+    "faq_training": {
       "type": "quiz-faq-comprehensive",
       "blocks": {
         "f1": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "What is the difference between 2D, 3D and 4D massage technology?",
-            "answer": "<p>2D rollers move up and down along the spine with fixed pressure. 3D adds adjustable depth — the rollers press into the muscles for deeper tissue work. 4D adds a speed dimension that varies the rhythm and tempo to mimic the unpredictable, intuitive hands of a professional masseur. Our premium chairs feature 4D with AI that learns your body over time.</p>"
+            "answer": "<p>2D rollers move up and down along the spine with fixed pressure...</p>"
           }
         },
         "f2": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "How do I choose the right massage chair?",
-            "answer": "<p>Consider three factors: your primary goal (pain relief, relaxation, or recovery), your body type (height and weight range), and your available space. Our Comfort Zen is ideal for relaxation and smaller rooms. Royal Pro 4D suits those wanting a deep therapeutic massage. Sovereign Elite is our most advanced with AI-adaptive technology for personalised wellness. Visit our showroom or take our 2-minute quiz for a tailored recommendation.</p>"
+            "answer": "<p>Consider three factors...</p>"
           }
         },
         "f3": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "What sets World of Comfort apart from brands like Komoder, IWAO, or Casada?",
-            "answer": "<p>Three things set us apart: Firstly, our exclusive XD Precision Engine™ technology delivers clinically calibrated massage strokes that competitors simply cannot match. Secondly, we are the only Scandinavian company offering a 5-year comprehensive warranty with certified technicians. Thirdly, every chair is tested and selected by our team of physiotherapists and chiropractors — we don't just sell chairs, we prescribe wellness solutions.</p>"
+            "answer": "<p>Three things set us apart...</p>"
           }
         },
         "f4": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "Is a massage chair actually worth the investment?",
-            "answer": "<p>Think about this: A single professional massage costs 500–900 kr. and lasts 60 minutes. Our chairs provide unlimited massages for 10+ years. With just one session a day, a 40,000 kr. chair costs less than 11 kr. per massage — compared to over 270,000 kr. in professional massage fees over the same period.</p>"
+            "answer": "<p>Think about this...</p>"
           }
         },
         "f5": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "Can I try a massage chair before buying?",
-            "answer": "<p>Absolutely. We have showrooms in Copenhagen, Fredericia, Malmö, and Turkey where you can experience all models. We offer private, no-obligation demo sessions of 30–45 minutes where our wellness consultants guide you. Book online or just drop in during opening hours. We also offer home trials for qualified customers.</p>"
+            "answer": "<p>Absolutely. We have showrooms in Copenhagen...</p>"
           }
         },
         "f6": {
           "type": "question",
           "settings": {
+            "category": "Choosing a chair",
             "question": "What height and weight ranges do your chairs support?",
-            "answer": "<p>Our chairs suit a wide range of body types. Comfort Zen fits users of 155–185 cm and up to 120 kg. Royal Pro 4D supports 150–190 cm and up to 130 kg. Sovereign Elite, our largest model, accommodates 150–195 cm and up to 150 kg.</p>"
+            "answer": "<p>Our chairs suit a wide range of body types...</p>"
           }
         },
         "f7": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "What is XD Precision Engine™ technology?",
-            "answer": "<p>XD Precision Engine™ is our proprietary massage system that combines advanced 4D rollers with AI-driven body scanning. The system maps 128 points along your spine and automatically adjusts pressure, speed, and position to deliver a personalised massage that adapts to your unique body shape.</p>"
+            "answer": "<p>XD Precision Engine™ is our proprietary massage system...</p>"
           }
         },
         "f8": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "What is the Zero Gravity position, and why is it important?",
-            "answer": "<p>The Zero Gravity position, inspired by NASA, elevates your legs above heart level at an angle that distributes your body weight evenly. This reduces the load on the spine by up to 80%, improves blood circulation, and significantly enhances the massage experience.</p>"
+            "answer": "<p>The Zero Gravity position, inspired by NASA...</p>"
           }
         },
         "f9": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "Do the chairs have a heating function?",
-            "answer": "<p>Yes, all our chairs have infrared heat integrated into the backrest and seat. The heat penetrates deep into the muscles, increases blood flow, and enhances the therapeutic effect of the massage.</p>"
+            "answer": "<p>Yes, all our chairs have infrared heat integrated...</p>"
           }
         },
         "f10": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "What is the difference between an SL-track and an L-track?",
-            "answer": "<p>The SL-track covers from the neck to the lower back in an S-shaped curve. The L-track extends this to also cover the buttocks and hamstrings. Our premium models use the extended L-track for full-body massage from neck to thigh.</p>"
+            "answer": "<p>The SL-track covers from the neck to the lower back...</p>"
           }
         },
         "f11": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "Can the chair be connected to Bluetooth?",
-            "answer": "<p>Yes, our chairs have built-in Bluetooth speakers so you can stream your favourite music or meditation directly through the chair for a fully immersive experience.</p>"
+            "answer": "<p>Yes, our chairs have built-in Bluetooth speakers...</p>"
           }
         },
         "f12": {
           "type": "question",
           "settings": {
+            "category": "Technology & Features",
             "question": "How noisy are the massage chairs?",
-            "answer": "<p>Our chairs typically operate at 40–50 dB, which corresponds to a quiet conversation. The premium models feature noise-reducing motors that keep the level below 45 dB even at maximum intensity.</p>"
+            "answer": "<p>Our chairs typically operate at 40–50 dB...</p>"
           }
         },
         "f13": {
           "type": "question",
           "settings": {
+            "category": "Delivery & Setup",
             "question": "How does delivery work?",
-            "answer": "<p>We deliver with white-glove service directly to your desired room. Our delivery team carries the chair in, assembles it, tests all functions, and removes all packaging. Delivery is included in the price for all models.</p>"
+            "answer": "<p>We deliver with white-glove service directly to your desired room...</p>"
           }
         },
         "f14": {
           "type": "question",
           "settings": {
+            "category": "Delivery & Setup",
             "question": "How long is the delivery time?",
-            "answer": "<p>Chairs in stock are delivered within 5–10 working days in Denmark. Orders from the showroom are typically delivered within 2–4 weeks. We always contact you to arrange a delivery window that suits you.</p>"
+            "answer": "<p>Chairs in stock are delivered within 5–10 working days...</p>"
           }
         },
         "f15": {
           "type": "question",
           "settings": {
+            "category": "Delivery & Setup",
             "question": "Can the chair go up stairs?",
-            "answer": "<p>Yes, our delivery team handles stairs up to the 3rd floor as standard. For higher floors or special access conditions, we will contact you in advance to plan the best solution.</p>"
+            "answer": "<p>Yes, our delivery team handles stairs up to the 3rd floor as standard...</p>"
           }
         },
         "f16": {
           "type": "question",
           "settings": {
+            "category": "Delivery & Setup",
             "question": "How much space does a massage chair require?",
-            "answer": "<p>Our chairs typically require 70–90 cm from the wall thanks to our Space-Saving technology. Comfort Zen requires the least space with only 70 cm from the wall. We recommend measuring your room and contacting us for specific advice.</p>"
+            "answer": "<p>Our chairs typically require 70–90 cm from the wall...</p>"
           }
         },
         "f17": {
           "type": "question",
           "settings": {
+            "category": "Warranty & Service",
             "question": "What does the warranty cover?",
-            "answer": "<p>Our 5-year warranty covers all mechanical and electronic components, motors, rollers, pumps, and control systems. We offer in-home service — our certified technicians come to you. The upholstery has a 2-year warranty against manufacturing defects.</p>"
+            "answer": "<p>Our 5-year warranty covers all mechanical and electronic components...</p>"
           }
         },
         "f18": {
           "type": "question",
           "settings": {
+            "category": "Warranty & Service",
             "question": "What happens if my chair needs repair?",
-            "answer": "<p>Call our Danish support line, and we will send a certified technician to your home within 5 working days. Most repairs are carried out on-site. If the chair needs to go to the workshop, we will lend you a replacement chair while yours is being repaired.</p>"
+            "answer": "<p>Call our Danish support line...</p>"
           }
         },
         "f19": {
           "type": "question",
           "settings": {
+            "category": "Warranty & Service",
             "question": "Do you offer service agreements after the warranty period?",
-            "answer": "<p>Yes, we offer extended service agreements that extend your coverage by 1–3 years. These include annual maintenance, priority support, and discounts on spare parts.</p>"
+            "answer": "<p>Yes, we offer extended service agreements...</p>"
           }
         },
         "f20": {
           "type": "question",
           "settings": {
+            "category": "Warranty & Service",
             "question": "Can I get spare parts for my chair?",
-            "answer": "<p>We carry a complete stock of spare parts for all our models for a minimum of 10 years after production ceases. Parts can be ordered directly from us and installed by our technicians or by yourself with our video guides.</p>"
+            "answer": "<p>We carry a complete stock of spare parts...</p>"
           }
         },
         "f21": {
           "type": "question",
           "settings": {
+            "category": "Price & Financing",
             "question": "Do you offer financing or instalment plans?",
-            "answer": "<p>Yes, we collaborate with leading financing partners and offer interest-free periods up to 12 months as well as flexible instalment plans up to 60 months. Apply directly in our showroom or online — response within minutes.</p>"
+            "answer": "<p>Yes, we collaborate with leading financing partners...</p>"
           }
         },
         "f22": {
           "type": "question",
           "settings": {
+            "category": "Price & Financing",
             "question": "Is there a price guarantee?",
-            "answer": "<p>Yes, we offer a 30-day price guarantee. If you find the same chair cheaper at an authorised dealer in Scandinavia, we will match the price and give you an additional 5% discount.</p>"
+            "answer": "<p>Yes, we offer a 30-day price guarantee...</p>"
           }
         },
         "f23": {
           "type": "question",
           "settings": {
+            "category": "Price & Financing",
             "question": "Can companies lease massage chairs?",
-            "answer": "<p>Absolutely. We offer business leasing with tax benefits. The leasing payment can be deducted as an operating expense. Contact our business department for a tailored offer.</p>"
+            "answer": "<p>Absolutely. We offer business leasing with tax benefits...</p>"
           }
         },
         "f24": {
           "type": "question",
           "settings": {
+            "category": "Care & Maintenance",
             "question": "How do I maintain my massage chair?",
-            "answer": "<p>Wipe the chair with a damp cloth weekly. Use leather conditioner on leather upholstery every 3 months. Keep the chair away from direct sunlight and heat sources. Run the chair's auto-calibration every month for optimal performance.</p>"
+            "answer": "<p>Wipe the chair with a damp cloth weekly...</p>"
           }
         },
         "f25": {
           "type": "question",
           "settings": {
+            "category": "Care & Maintenance",
             "question": "What is the lifespan of a massage chair?",
-            "answer": "<p>With proper maintenance, our chairs last 15–20 years. The motors are tested for over 10,000 operating hours. We recommend professional servicing every 2 years to ensure optimal longevity.</p>"
+            "answer": "<p>With proper maintenance, our chairs last 15–20 years...</p>"
           }
         },
         "f26": {
           "type": "question",
           "settings": {
+            "category": "Care & Maintenance",
             "question": "Can the chair be used by multiple family members?",
-            "answer": "<p>Yes, our chairs with AI memory can save up to 6 individual user profiles. The chair scans and automatically adapts to each user's body shape, weight, and preferences with every use.</p>"
+            "answer": "<p>Yes, our chairs with AI memory can save up to 6 individual user profiles...</p>"
           }
         }
       },
@@ -754,14 +780,11 @@
         "f26"
       ],
       "settings": {
-        "padding_top": 112,
-        "padding_bottom": 144,
+        "padding_top": 80,
+        "padding_bottom": 96,
         "kicker": "Frequently Asked Questions",
-        "heading": "FAQ <span class=\"italic text-gold\">to know</span>",
-        "description": "We have answered the most common questions from over 5,000 customers in Scandinavia. Can't find what you're looking for? Our wellness experts are just a call away.",
-        "search_placeholder": "Search questions — e.g. 'warranty', 'delivery', 'zero gravity'...",
-        "contact_title": "Still have questions?",
-        "contact_text": "Call us on +45 XX XX XX XX or book a free showroom demo — our experts are ready to help."
+        "heading": "FAQ <span class=\"italic text-gold font-serif\">to know</span>",
+        "search_placeholder": "Search questions — e.g. 'warranty', 'delivery', 'zero gravity'..."
       }
     },
     "reviews_marquee": {
@@ -914,7 +937,7 @@
     "benefits",
     "xd",
     "hero-quiz",
-    "faq",
+    "faq_training",
     "reviews_marquee",
     "features_grid",
     "cta"
