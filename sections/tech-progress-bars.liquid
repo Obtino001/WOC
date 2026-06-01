@@ -1,0 +1,84 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.05]">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+    </div>
+
+    <div class="space-y-16">
+      {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+          <h3 class="font-display text-xl font-semibold text-foreground mb-3">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-muted-foreground leading-relaxed mb-6 max-w-2xl">{{ block.settings.description }}</p>
+
+          <div class="mb-4">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-body text-xs font-semibold text-gold uppercase tracking-wider">{{ section.settings.brand_name }}</span>
+              <span class="font-display text-sm font-bold text-gold">{{ block.settings.brand_score }}%</span>
+            </div>
+            <div class="h-3 bg-muted/20 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-gold to-gold/70 rounded-full" style="width: {{ block.settings.brand_score }}%;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-body text-xs text-muted-foreground/60 uppercase tracking-wider">INDUSTRY AVERAGE</span>
+              <span class="font-display text-sm text-muted-foreground/60">{{ block.settings.industry_score }}%</span>
+            </div>
+            <div class="h-3 bg-muted/20 rounded-full overflow-hidden">
+              <div class="h-full bg-muted-foreground/20 rounded-full" style="width: {{ block.settings.industry_score }}%;"></div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Tech Progress Bars",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "TECHNOLOGICAL SUPERIORITY" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "The PHYSIO+® Advantage" },
+    { "type": "text", "id": "brand_name", "label": "Brand Name Label", "default": "PHYSIO+\u00ae" }
+  ],
+  "blocks": [
+    {
+      "type": "progress",
+      "name": "Progress Comparison",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Feature Title" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "range", "id": "brand_score", "min": 0, "max": 100, "step": 1, "label": "Your Brand Score (%)", "default": 90 },
+        { "type": "range", "id": "industry_score", "min": 0, "max": 100, "step": 1, "label": "Industry Average Score (%)", "default": 45 }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Tech Progress Bars" }
+  ]
+}
+{% endschema %}

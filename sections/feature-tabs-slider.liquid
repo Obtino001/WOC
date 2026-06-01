@@ -1,0 +1,146 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient overflow-hidden section-{{ section.id }}-padding" id="feature-tabs-{{ section.id }}">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <p class="font-body text-sm text-muted-foreground" id="fts-counter-{{ section.id }}">1/{{ section.blocks.size }}</p>
+    </div>
+
+    <div class="flex gap-1 overflow-x-auto pb-4 mb-8 scrollbar-hide" id="fts-tabs-{{ section.id }}">
+      {% for block in section.blocks %}
+        <button
+          class="fts-tab-{{ section.id }} flex-shrink-0 px-4 py-3 font-body text-[11px] font-semibold uppercase tracking-wider transition-all border-b-2 whitespace-nowrap {% if forloop.first %}text-gold border-gold{% else %}text-muted-foreground/50 border-transparent hover:text-muted-foreground hover:border-border{% endif %}"
+          data-index="{{ forloop.index0 }}"
+          {{ block.shopify_attributes }}
+        >
+          {{ block.settings.title }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <div id="fts-content-{{ section.id }}" class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[400px]">
+      {% for block in section.blocks %}
+        <div
+          class="fts-slide-{{ section.id }} relative overflow-hidden rounded-sm aspect-[3/2] {% unless forloop.first %}hidden{% endunless %}"
+          data-index="{{ forloop.index0 }}"
+          {{ block.shopify_attributes }}
+        >
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', widths: '600,900,1200', sizes: '(min-width: 1024px) 50vw, 100vw' }}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full h-full object-cover bg-charcoal' }}
+          {% endif %}
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        </div>
+
+        <div class="fts-info-{{ section.id }} {% unless forloop.first %}hidden{% endunless %}" data-index="{{ forloop.index0 }}">
+          <span class="font-display text-6xl lg:text-8xl font-bold text-gold/10 block mb-4">
+            {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}
+          </span>
+          <h3 class="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4 leading-tight">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm md:text-base text-muted-foreground leading-relaxed max-w-lg">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="flex justify-center gap-6 mt-12" id="fts-dots-{{ section.id }}">
+      {% for block in section.blocks %}
+        <button
+          class="fts-dot-{{ section.id }} font-display text-sm transition-all {% if forloop.first %}text-gold font-bold scale-125{% else %}text-muted-foreground/30 hover:text-muted-foreground/60{% endif %}"
+          data-index="{{ forloop.index0 }}"
+        >
+          {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var sid = '{{ section.id }}';
+  var total = {{ section.blocks.size }};
+  var current = 0;
+
+  function activate(index) {
+    current = index;
+
+    document.querySelectorAll('.fts-tab-' + sid).forEach(function(el, i) {
+      if (i === index) {
+        el.classList.add('text-gold', 'border-gold');
+        el.classList.remove('text-muted-foreground/50', 'border-transparent');
+      } else {
+        el.classList.remove('text-gold', 'border-gold');
+        el.classList.add('text-muted-foreground/50', 'border-transparent');
+      }
+    });
+
+    document.querySelectorAll('.fts-slide-' + sid).forEach(function(el) {
+      el.classList.toggle('hidden', parseInt(el.dataset.index) !== index);
+    });
+
+    document.querySelectorAll('.fts-info-' + sid).forEach(function(el) {
+      el.classList.toggle('hidden', parseInt(el.dataset.index) !== index);
+    });
+
+    document.querySelectorAll('.fts-dot-' + sid).forEach(function(el, i) {
+      if (i === index) {
+        el.classList.add('text-gold', 'font-bold', 'scale-125');
+        el.classList.remove('text-muted-foreground/30');
+      } else {
+        el.classList.remove('text-gold', 'font-bold', 'scale-125');
+        el.classList.add('text-muted-foreground/30');
+      }
+    });
+
+    var counter = document.getElementById('fts-counter-' + sid);
+    if (counter) counter.textContent = (index + 1) + '/' + total;
+  }
+
+  document.querySelectorAll('.fts-tab-' + sid).forEach(function(btn) {
+    btn.addEventListener('click', function() { activate(parseInt(this.dataset.index)); });
+  });
+
+  document.querySelectorAll('.fts-dot-' + sid).forEach(function(btn) {
+    btn.addEventListener('click', function() { activate(parseInt(this.dataset.index)); });
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Feature Tabs Slider",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "LATEST TECHNOLOGY 2026" }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab Slide",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Feature Tabs Slider" }
+  ]
+}
+{% endschema %}

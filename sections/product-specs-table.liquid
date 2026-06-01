@@ -1,0 +1,64 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div class="text-center mb-14">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground leading-[1.05]">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="bg-card border border-border overflow-hidden rounded-md">
+      <div class="flex justify-between items-center px-6 py-4 bg-card border-b border-border">
+        <span class="font-body text-sm text-muted-foreground">Model Name</span>
+        <span class="font-body text-sm font-medium text-foreground text-right">{{ product.title }}</span>
+      </div>
+
+      {% for block in section.blocks %}
+        {% assign is_even = forloop.index0 | modulo: 2 %}
+        <div class="flex justify-between items-center px-6 py-4 {% if is_even == 0 %}bg-muted/30{% else %}bg-card{% endif %}" {{ block.shopify_attributes }}>
+          <span class="font-body text-sm text-muted-foreground">{{ block.settings.label }}</span>
+          <span class="font-body text-sm font-medium text-foreground text-right">{{ block.settings.value }}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Specs Table",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "TECHNICAL DATA" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" }
+  ],
+  "blocks": [
+    {
+      "type": "spec",
+      "name": "Specification Row",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label (e.g. Weight)" },
+        { "type": "text", "id": "value", "label": "Value (e.g. 157 kg)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Product Specs Table" }
+  ]
+}
+{% endschema %}
