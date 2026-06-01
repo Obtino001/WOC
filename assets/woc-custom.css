@@ -175,8 +175,6 @@
   --woc-muted-foreground: 0 0% 40%;
   --woc-border: 40 15% 88%;
   --woc-linen: 40 25% 95%;
-  background-color: hsl(var(--woc-background)) !important;
-  color: hsl(var(--woc-foreground)) !important;
 }
 
 .section-flowlight {
