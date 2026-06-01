@@ -465,3 +465,204 @@ cart-drawer.active .drawer__inner {
   top: -4px !important;
   right: -4px !important;
 }
+
+/* WOC Cart Drawer 1-1 Custom Styling */
+.cart-drawer {
+  background-color: #0a0a0a !important;
+}
+.cart-drawer .drawer__inner {
+  background-color: #0a0a0a !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.cart-drawer .drawer__header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 1.5rem !important;
+}
+.cart-drawer .drawer__heading {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+.cart-drawer .drawer__close {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.cart-drawer .drawer__close:hover {
+  color: #ffffff !important;
+}
+
+/* Line Item styling */
+.cart-drawer .cart-item {
+  display: grid !important;
+  grid-template-columns: 80px 1fr auto !important;
+  gap: 1.25rem !important;
+  padding: 1.5rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: transparent !important;
+}
+.cart-drawer .cart-item td {
+  padding: 0 !important;
+}
+.cart-drawer .cart-item__media {
+  grid-column: 1 !important;
+}
+.cart-drawer .cart-item__details {
+  grid-column: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+}
+.cart-drawer .cart-item__name {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.cart-drawer .cart-item__price-wrapper {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+}
+.cart-drawer .cart-item__old-price {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 0.8rem !important;
+  text-decoration: line-through !important;
+  margin-right: 0.5rem !important;
+}
+
+/* Quantity input and Remove button row */
+.cart-drawer .cart-item__quantity {
+  grid-column: 2 !important;
+  margin-top: 0.5rem !important;
+}
+.cart-drawer .cart-item__quantity-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+}
+.cart-drawer .quantity.cart-quantity {
+  width: 90px !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.cart-drawer .quantity__button {
+  width: 28px !important;
+  height: 100% !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.cart-drawer .quantity__button:hover {
+  color: #ffffff !important;
+}
+.cart-drawer .quantity__input {
+  width: 34px !important;
+  height: 100% !important;
+  color: #ffffff !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+.cart-drawer .cart-remove-button button {
+  color: rgba(255, 255, 255, 0.4) !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  background: transparent !important;
+}
+.cart-drawer .cart-remove-button button:hover {
+  color: #ffffff !important;
+}
+.cart-drawer .cart-remove-button svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Final line total (shown on the right side of the row) */
+.cart-drawer .cart-item__totals {
+  grid-column: 3 !important;
+  align-self: center !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+}
+
+/* Hide Table Header & helper columns */
+.cart-drawer table.cart-items thead {
+  display: none !important;
+}
+
+/* Promo Banner */
+.woc-cart-promo {
+  margin: 1.5rem !important;
+  border-radius: 0 !important;
+}
+
+/* Drawer Footer */
+.cart-drawer .drawer__footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: #0a0a0a !important;
+  padding: 1.5rem !important;
+}
+.cart-drawer .totals {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 1rem !important;
+}
+.cart-drawer .totals__total {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+.cart-drawer .totals__total-value {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+/* Subtotal row (small, styled above the main Total row) */
+.woc-subtotal-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 0.5rem !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Checkout Button */
+.cart-drawer .cart__checkout-button {
+  background-color: #bf8f30 !important;
+  color: #0a0a0a !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  border-radius: 0 !important;
+  padding: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  width: 100% !important;
+}
+.cart-drawer .cart__checkout-button:hover {
+  background-color: #a37622 !important;
+}
