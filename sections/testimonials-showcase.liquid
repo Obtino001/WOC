@@ -38,25 +38,29 @@
             <div class="relative rounded-xl overflow-hidden border border-border/50 hover:border-gold/30 transition-all duration-700 shadow-soft hover:shadow-gold h-full flex flex-col">
               
               <div class="relative aspect-[3/4] overflow-hidden">
-                {% if block.settings.image != blank %}
-                  {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110', loading: 'lazy' }}
+                {% if block.settings.video != blank %}
+                  {{ block.settings.video | video_tag: controls: true, image_size: '600x', class: 'w-full h-full object-cover' }}
                 {% else %}
-                  {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 bg-muted' }}
-                {% endif %}
-                
-                <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-700"></div>
-                <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%20256%20256%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20baseFrequency%3D%220.9%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23noise)%22%2F%3E%3C%2Fsvg%3E')]"></div>
-                
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="relative">
-                    <div class="w-16 h-16 rounded-full bg-gold/10 backdrop-blur-md border border-gold/40 flex items-center justify-center group-hover:bg-gold/20 transition-all duration-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 text-gold fill-gold/60 ml-0.5"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                  {% if block.settings.image != blank %}
+                    {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110', loading: 'lazy' }}
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 bg-muted' }}
+                  {% endif %}
+                  
+                  <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-700"></div>
+                  <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%20256%20256%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20baseFrequency%3D%220.9%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23noise)%22%2F%3E%3C%2Fsvg%3E')]"></div>
+                  
+                  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="relative">
+                      <div class="w-16 h-16 rounded-full bg-gold/10 backdrop-blur-md border border-gold/40 flex items-center justify-center group-hover:bg-gold/20 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 text-gold fill-gold/60 ml-0.5"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                      </div>
+                      <div class="absolute inset-0 rounded-full border border-gold/20 animate-ping opacity-0 group-hover:opacity-30" style="animation-duration: 2s;"></div>
                     </div>
-                    <div class="absolute inset-0 rounded-full border border-gold/20 animate-ping opacity-0 group-hover:opacity-30" style="animation-duration: 2s;"></div>
                   </div>
-                </div>
+                {% endif %}
 
-                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-5 h-5 text-gold/40"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
                 </div>
               </div>
@@ -182,9 +186,14 @@
       "limit": 4,
       "settings": [
         {
+          "type": "video",
+          "id": "video",
+          "label": "Video Upload"
+        },
+        {
           "type": "image_picker",
           "id": "image",
-          "label": "Cover Image"
+          "label": "Cover Image (Fallback)"
         },
         {
           "type": "text",
