@@ -570,6 +570,7 @@
         "video_testimonial_Lb9q8m": {
           "type": "video_testimonial",
           "settings": {
+            "video": "shopify://files/videos/hero.mp4",
             "quote": "",
             "author": "",
             "location_product": ""
