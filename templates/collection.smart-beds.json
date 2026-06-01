@@ -652,7 +652,23 @@
             "product_info": "Copenhagen · SYNTHERA™ AI Mattress"
           }
         },
+        "testimonial_Kh6bUr": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The bed adapted to my sleep position from the first night. I haven't slept this well in years.",
+            "author": "Erik Madsen",
+            "product_info": "Copenhagen · SYNTHERA™ AI Mattress"
+          }
+        },
         "t2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The body scan function is incredible. The bed knows exactly what my back needs. Fantastic technology.",
+            "author": "Karen Friis",
+            "product_info": "Aarhus · Body Scan Bed"
+          }
+        },
+        "testimonial_Rh9Yyq": {
           "type": "testimonial",
           "settings": {
             "quote": "The body scan function is incredible. The bed knows exactly what my back needs. Fantastic technology.",
@@ -663,7 +679,9 @@
       },
       "block_order": [
         "t1",
-        "t2"
+        "testimonial_Kh6bUr",
+        "t2",
+        "testimonial_Rh9Yyq"
       ],
       "settings": {
         "kicker": "Customer Experiences",
