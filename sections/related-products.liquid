@@ -31,13 +31,24 @@
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
+      {%- liquid
+        assign columns_desktop = section.settings.columns_desktop
+        assign columns_mobile = section.settings.columns_mobile
+        
+        assign grid_cols_tablet = 'md:grid-cols-2'
+        if columns_desktop > 2
+          assign grid_cols_tablet = 'md:grid-cols-3'
+        elsif columns_desktop == 1
+          assign grid_cols_tablet = 'md:grid-cols-1'
+        endif
+      -%}
       <ul
-        class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
+        class="grid gap-x-6 gap-y-10 grid-cols-{{ columns_mobile }} {{ grid_cols_tablet }} lg:grid-cols-{{ columns_desktop }}"
         role="list"
       >
         {% assign skip_card_product_styles = false %}
         {% for recommendation in recommendations.products %}
-          <li class="grid__item">
+          <li class="grid__item !w-full !max-w-none">
             {% render 'card-product',
               card_product: recommendation,
               media_aspect_ratio: section.settings.image_ratio,
