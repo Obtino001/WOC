@@ -1,3 +1,4 @@
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <section class="py-20 bg-white" id="{{ section.settings.section_id }}">
   <div class="container mx-auto px-4">
     
@@ -18,39 +19,49 @@
       <div class="flex gap-px bg-neutral-100 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
         {% assign target_collection = section.settings.collection %}
         {% for product in target_collection.products limit: 8 %}
-          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0">
-            <a class="bg-white group cursor-pointer flex-shrink-0 w-full block h-full" href="{{ product.url }}">
-              <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
-                {% if product.featured_image != blank %}
-                  {{ product.featured_image | image_url: width: 500 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8', loading: 'lazy' }}
-                {% else %}
-                  {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-contain p-8' }}
-                {% endif %}
-                
-                {% if product.tags contains 'Bestseller' %}
-                  <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm">BESTSELLER</span>
-                {% elsif product.tags contains 'Award' %}
-                  <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm">AWARD WINNER</span>
-                {% elsif product.tags contains 'New' %}
-                  <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm">NY</span>
-                {% endif %}
+          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-white group h-full flex flex-col">
+            <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
+              <a href="{{ product.url }}" class="absolute inset-0 z-0"></a>
+              {% if product.featured_image != blank %}
+                {{ product.featured_image | image_url: width: 500 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-contain p-8 relative z-0' }}
+              {% endif %}
+              
+              {% if product.tags contains 'Bestseller' %}
+                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm z-10">BESTSELLER</span>
+              {% elsif product.tags contains 'Award' %}
+                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm z-10">AWARD WINNER</span>
+              {% elsif product.tags contains 'New' %}
+                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-white/90 text-neutral-700 px-2.5 py-1 backdrop-blur-sm z-10">NY</span>
+              {% endif %}
 
-                <div class="absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-neutral-900 hover:bg-neutral-800 text-white text-[10px] uppercase tracking-[0.15em] h-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                    Add to Basket
-                  </button>
-                </div>
+              <div class="absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10">
+                {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
+                <product-form>
+                  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                    <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-neutral-900 hover:bg-neutral-800 text-white text-[10px] uppercase tracking-[0.15em] h-10 disabled:opacity-50 disabled:cursor-not-allowed"
+                      {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                      {%- if product.selected_or_first_available_variant.available -%}
+                        Add to Basket
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t | default: 'Udsolgt' }}
+                      {%- endif -%}
+                    </button>
+                  {%- endform -%}
+                </product-form>
               </div>
-              <div class="px-4 py-5 text-center border-t border-neutral-100 min-h-[128px] flex flex-col justify-start">
-                <h3 class="font-display text-[13px] font-light text-neutral-800 uppercase tracking-[0.12em]">{{ product.title }}</h3>
-                <p class="font-display text-[11px] text-neutral-400 uppercase tracking-[0.12em] mt-0.5">{{ product.type }}</p>
-                <div class="flex items-center justify-center gap-2 mt-2.5">
-                  {% if product.compare_at_price > product.price %}
-                    <span class="font-body text-[12px] text-neutral-400 line-through">{{ product.compare_at_price | money }}</span>
-                  {% endif %}
-                  <span class="font-body text-[12px] text-neutral-800">{{ product.price | money }}</span>
-                </div>
+            </div>
+            <a class="px-4 py-5 text-center border-t border-neutral-100 min-h-[128px] flex flex-col justify-start flex-1" href="{{ product.url }}">
+              <h3 class="font-display text-[13px] font-light text-neutral-800 uppercase tracking-[0.12em]">{{ product.title }}</h3>
+              <p class="font-display text-[11px] text-neutral-400 uppercase tracking-[0.12em] mt-0.5">{{ product.type }}</p>
+              <div class="flex items-center justify-center gap-2 mt-2.5">
+                {% if product.compare_at_price > product.price %}
+                  <span class="font-body text-[12px] text-neutral-400 line-through">{{ product.compare_at_price | money }}</span>
+                {% endif %}
+                <span class="font-body text-[12px] text-neutral-800">{{ product.price | money }}</span>
               </div>
             </a>
           </div>

@@ -1,0 +1,115 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  
+  <div class="container mx-auto px-4 lg:px-8 max-w-6xl pb-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        {% if section.settings.image != blank %}
+          {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full rounded-2xl', loading: 'lazy' }}
+        {% else %}
+          {{ 'product-2' | placeholder_svg_tag: 'w-full rounded-2xl bg-gray-800' }}
+        {% endif %}
+      </div>
+      <div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-cyan-400 mb-4">{{ section.settings.kicker_1 }}</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">{{ section.settings.heading_1 }}</h2>
+        <p class="font-body text-base leading-relaxed text-muted-foreground mb-6">{{ section.settings.description_1 }}</p>
+        <ul class="space-y-3">
+          {{ section.settings.bullets | replace: '<li>', '<li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0"></div><span class="font-body text-sm text-muted-foreground">' | replace: '</li>', '</span></li>' }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 lg:px-8 max-w-6xl pt-10">
+    <div class="text-center mb-14">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-cyan-400 mb-4">{{ section.settings.kicker_2 }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">{{ section.settings.heading_2 }}</h2>
+      <p class="font-body text-base text-muted-foreground max-w-2xl mx-auto">{{ section.settings.description_2 }}</p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-14">
+      {% for block in section.blocks %}
+        {% if block.type == 'step' %}
+          <div class="text-center" {{ block.shopify_attributes }}>
+            <div class="w-12 h-12 rounded-full bg-cyan-400/10 border border-cyan-400/30 flex items-center justify-center mx-auto mb-4">
+              <span class="font-display text-lg font-bold text-cyan-400">{{ block.settings.number }}</span>
+            </div>
+            <h4 class="font-display text-sm font-bold text-foreground uppercase tracking-wider mb-2">{{ block.settings.title }}</h4>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.description }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+      {% for block in section.blocks %}
+        {% if block.type == 'metric' %}
+          <div class="flex flex-col items-center gap-3 p-5 rounded-xl bg-card border border-border hover:border-cyan-400/40 transition-colors" {{ block.shopify_attributes }}>
+            <div class="[&>svg]:w-6 [&>svg]:h-6 [&>svg]:text-cyan-400">
+              {{ block.settings.icon_svg }}
+            </div>
+            <span class="font-body text-xs text-muted-foreground text-center leading-tight">{{ block.settings.title }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+</section>
+
+{% schema %}
+{
+  "name": "AI Wellness Engine",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "header", "content": "Part 1: Engine Details" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "kicker_1", "label": "Kicker", "default": "Proprietary Technology" },
+    { "type": "text", "id": "heading_1", "label": "Heading", "default": "WOC AI Wellness Engine™" },
+    { "type": "textarea", "id": "description_1", "label": "Description" },
+    { "type": "richtext", "id": "bullets", "label": "Bullets (List)" },
+    { "type": "header", "content": "Part 2: Health Detection" },
+    { "type": "text", "id": "kicker_2", "label": "Kicker", "default": "AI-Driven Health" },
+    { "type": "text", "id": "heading_2", "label": "Heading", "default": "AI Health Detection" },
+    { "type": "textarea", "id": "description_2", "label": "Description" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 3,
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number (e.g. 1)" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" }
+      ]
+    },
+    {
+      "type": "metric",
+      "name": "Metric Indicator",
+      "settings": [
+        { "type": "html", "id": "icon_svg", "label": "Icon SVG" },
+        { "type": "text", "id": "title", "label": "Title" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "AI Wellness Engine" }
+  ]
+}
+{% endschema %}

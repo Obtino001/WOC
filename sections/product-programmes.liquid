@@ -1,0 +1,88 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
+    
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">{{ section.settings.heading }}</h2>
+    </div>
+    
+    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-8">
+      
+      {% assign categories = "Basic Themes,Healthcare,Targeted Areas,VIP Massage,Personal Specials,Relaxation" | split: "," %}
+      
+      {% for category in categories %}
+        <div class="col-span-3 md:col-span-6">
+          <h4 class="font-display text-sm font-bold text-gold uppercase tracking-wider mb-4 text-center">{{ category }}</h4>
+          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto md:max-w-none md:grid-cols-3 lg:gap-6">
+            {% for block in section.blocks %}
+              {% if block.settings.category == category %}
+                <div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-card border border-border/10 hover:border-gold/20 transition-colors" {{ block.shopify_attributes }}>
+                  {% if block.settings.icon != blank %}
+                    {{ block.settings.icon | image_url: width: 96 | image_tag: class: 'w-12 h-12', loading: 'lazy' }}
+                  {% else %}
+                    <div class="w-12 h-12 rounded-full bg-gray-200"></div>
+                  {% endif %}
+                  <span class="font-body text-[10px] text-foreground/70 text-center leading-tight uppercase">{{ block.settings.title }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Massage Programmes",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Massage Programmes" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "18 Automatic Programmes" }
+  ],
+  "blocks": [
+    {
+      "type": "program",
+      "name": "Programme",
+      "settings": [
+        {
+          "type": "select",
+          "id": "category",
+          "label": "Category",
+          "options": [
+            { "value": "Basic Themes", "label": "Basic Themes" },
+            { "value": "Healthcare", "label": "Healthcare" },
+            { "value": "Targeted Areas", "label": "Targeted Areas" },
+            { "value": "VIP Massage", "label": "VIP Massage" },
+            { "value": "Personal Specials", "label": "Personal Specials" },
+            { "value": "Relaxation", "label": "Relaxation" }
+          ],
+          "default": "Basic Themes"
+        },
+        { "type": "image_picker", "id": "icon", "label": "Icon Image" },
+        { "type": "text", "id": "title", "label": "Programme Name" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Massage Programmes" }
+  ]
+}
+{% endschema %}

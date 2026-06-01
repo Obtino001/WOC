@@ -1,0 +1,53 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div class="flex flex-wrap justify-center gap-6">
+      {% for block in section.blocks %}
+        <div class="flex flex-col items-center gap-2" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 96 | image_tag: class: 'w-12 h-12', loading: 'lazy', alt: block.settings.title }}
+          {% else %}
+            <div class="w-12 h-12 rounded-full bg-gray-700"></div>
+          {% endif %}
+          <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ block.settings.title }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "LED Colors Grid",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "info": "t:sections.all.colors.has_cards_info", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "color",
+      "name": "Color Item",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Color Icon Image" },
+        { "type": "text", "id": "title", "label": "Color Name" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "LED Colors Grid" }
+  ]
+}
+{% endschema %}

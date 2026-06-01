@@ -12,6 +12,10 @@
   }
 {%- endstyle -%}
 
+{%- if section.settings.product != blank -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
 <section id="{{ section.settings.section_id }}" class="{% if section.settings.bg_color == 'warm' %}section-light-warm{% else %}section-light{% endif %} section-{{ section.id }}-padding">
   {% if section.settings.show_divider_top %}
     <div class="w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent absolute top-0 left-0 right-0"></div>
@@ -73,14 +77,36 @@
             </div>
 
             <div class="flex flex-col sm:flex-row gap-3">
-              {% if section.settings.btn1_text != blank %}
-                <a href="{{ section.settings.btn1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10">
-                  {% if section.settings.btn1_icon != blank %}
-                     <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
-                  {% endif %}
-                  {{ section.settings.btn1_text }}
-                </a>
-              {% endif %}
+              {%- if section.settings.product != blank -%}
+                {%- assign product = section.settings.product -%}
+                {%- assign current_variant = product.selected_or_first_available_variant -%}
+                {%- assign product_form_id = 'product-form-' | append: section.id -%}
+                <product-form class="w-full sm:w-auto">
+                  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+                    <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                      {% if current_variant.available == false %}disabled{% endif %}>
+                      {% if section.settings.btn1_icon != blank %}
+                         <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
+                      {% endif %}
+                      {%- if current_variant.available -%}
+                        {{ section.settings.btn1_text | default: 'Add to basket' }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t | default: 'Udsolgt' }}
+                      {%- endif -%}
+                    </button>
+                  {%- endform -%}
+                </product-form>
+              {%- else -%}
+                {% if section.settings.btn1_text != blank %}
+                  <a href="{{ section.settings.btn1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10">
+                    {% if section.settings.btn1_icon != blank %}
+                       <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
+                    {% endif %}
+                    {{ section.settings.btn1_text }}
+                  </a>
+                {% endif %}
+              {%- endif -%}
               {% if section.settings.btn2_text != blank %}
                 <a href="{{ section.settings.btn2_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-10 transition-all duration-500">
                   {{ section.settings.btn2_text }}
@@ -206,6 +232,11 @@
       "id": "show_divider_top",
       "label": "Show Top Divider Line",
       "default": false
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select Product (Enables Add to Cart)"
     },
     {
       "type": "image_picker",
