@@ -1,0 +1,54 @@
+<section id="{{ section.settings.section_id }}" class="color-{{ section.settings.color_scheme }} gradient py-10">
+  {% if section.settings.kicker != blank %}
+    <div class="container mx-auto px-4">
+      <div class="flex items-center gap-2 mb-10">
+        <span class="w-2.5 h-2.5 rounded-full bg-foreground"></span>
+        <span class="font-body text-[13px] uppercase tracking-[0.15em] text-foreground font-light">{{ section.settings.kicker }}</span>
+      </div>
+    </div>
+  {% endif %}
+  
+  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-border/20">
+    {% for block in section.blocks %}
+      <a class="relative group overflow-hidden aspect-[3/4] bg-background block" href="{{ block.settings.product_url }}" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          {{ block.settings.image | image_url: width: 800 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[2s] group-hover:scale-105', loading: 'lazy' }}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'absolute inset-0 w-full h-full object-cover' }}
+        {% endif %}
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-6">
+          <h3 class="font-display text-lg md:text-xl font-light text-white text-center italic">
+            {{ block.settings.title }}
+          </h3>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SED Product Grid",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "text", "id": "section_id", "label": "Section ID (for anchor links)" },
+    { "type": "text", "id": "kicker", "label": "Header Kicker (Optional)" },
+    { "type": "range", "id": "columns", "min": 2, "max": 4, "step": 1, "label": "Desktop Columns", "default": 3 }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Overlay Card",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Overlay Title" },
+        { "type": "url", "id": "product_url", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "SED Product Grid" }
+  ]
+}
+{% endschema %}

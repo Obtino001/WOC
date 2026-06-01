@@ -1,0 +1,37 @@
+<section class="color-{{ section.settings.color_scheme }} gradient py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="font-display text-xl md:text-2xl font-light text-foreground italic mb-3">{{ section.settings.heading }}</h3>
+    <p class="font-body text-sm text-muted-foreground mb-12 max-w-lg mx-auto">{{ section.settings.description }}</p>
+    
+    <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-40">
+      {% for block in section.blocks %}
+        <span class="font-display text-sm md:text-base font-light uppercase tracking-[0.15em] text-foreground" {{ block.shopify_attributes }}>
+          {{ block.settings.name }}
+        </span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SED Trusted By",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "In the World's Finest Hands" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Our award-winning devices and skincare are a signature of luxury in spas and clinics worldwide" }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand Name",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Name (e.g. GRAND HOTEL SPA)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "SED Trusted By" }
+  ]
+}
+{% endschema %}

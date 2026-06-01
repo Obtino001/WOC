@@ -1,0 +1,120 @@
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<section class="color-{{ section.settings.color_scheme }} gradient py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-center gap-8 mb-4">
+      <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-foreground border-foreground">{{ section.settings.tab_1 }}</button>
+      <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-muted-foreground border-transparent hover:text-foreground/80">{{ section.settings.tab_2 }}</button>
+    </div>
+    <p class="text-center font-body text-sm text-muted-foreground mb-10">{{ section.settings.subtitle }}</p>
+    
+    <div class="relative">
+      <button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-background/80 backdrop-blur-sm border border-border rounded-full flex items-center justify-center hover:bg-background transition-colors -ml-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-foreground/70"><path d="m15 18-6-6 6-6"></path></svg>
+      </button>
+      
+      <div class="flex gap-px bg-border/20 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
+        {% for block in section.blocks %}
+          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-background group h-full flex flex-col relative" {{ block.shopify_attributes }}>
+            {%- assign product = block.settings.product -%}
+            {%- assign target_url = product.url | default: block.settings.product_url -%}
+            
+            <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
+              <a href="{{ target_url }}" class="absolute inset-0 z-0"></a>
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
+              {% elsif product != blank and product.featured_image != blank %}
+                {{ product.featured_image | image_url: width: 600 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-cover relative z-0' }}
+              {% endif %}
+              
+              {% if block.settings.tag != blank %}
+                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-background/90 text-foreground px-2.5 py-1 backdrop-blur-sm z-10">{{ block.settings.tag }}</span>
+              {% endif %}
+              
+              <div class="absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10">
+                {%- if product != blank -%}
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
+                  {%- assign current_variant = product.selected_or_first_available_variant -%}
+                  <product-form>
+                    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+                      <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-foreground hover:bg-foreground/90 text-background text-[10px] uppercase tracking-[0.15em] rounded-none h-10 disabled:opacity-50 disabled:cursor-not-allowed"
+                        {% if current_variant.available == false %}disabled{% endif %}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        {%- if current_variant.available -%}
+                          Add to Basket
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t | default: 'Udsolgt' }}
+                        {%- endif -%}
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+                {%- else -%}
+                  <a href="{{ target_url }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-foreground hover:bg-foreground/90 text-background text-[10px] uppercase tracking-[0.15em] rounded-none h-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg> Add to Basket
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+            <a class="px-4 py-5 text-center border-t border-border/10 min-h-[128px] flex flex-col justify-start flex-1" href="{{ target_url }}">
+              <h3 class="font-display text-[13px] font-light text-foreground uppercase tracking-[0.12em]">
+                {{ block.settings.title | default: product.title }}
+              </h3>
+              {% if block.settings.subtitle != blank %}
+                <p class="font-display text-[11px] text-muted-foreground uppercase tracking-[0.12em] mt-0.5">{{ block.settings.subtitle }}</p>
+              {% endif %}
+              <div class="flex items-center justify-center gap-2 mt-2.5">
+                {% if block.settings.compare_price != blank %}
+                  <span class="font-body text-[12px] text-muted-foreground line-through">{{ block.settings.compare_price }}</span>
+                {% elsif product != blank and product.compare_at_price > product.price %}
+                  <span class="font-body text-[12px] text-muted-foreground line-through">{{ product.compare_at_price | money }}</span>
+                {% endif %}
+                
+                <span class="font-body text-[12px] text-foreground">
+                  {% if block.settings.price != blank %}{{ block.settings.price }}{% elsif product != blank %}{{ product.price | money }}{% endif %}
+                </span>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-background/80 backdrop-blur-sm border border-border rounded-full flex items-center justify-center hover:bg-background transition-colors -mr-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-foreground/70"><path d="m9 18 6-6-6-6"></path></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SED Product Carousel",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "text", "id": "tab_1", "label": "Tab 1 Title", "default": "Best Sellers" },
+    { "type": "text", "id": "tab_2", "label": "Tab 2 Title", "default": "Trending Now" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Our most awarded products, chosen by experts worldwide." }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Slide",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Select Product (Enables Add to Cart)" },
+        { "type": "image_picker", "id": "image", "label": "Image Override (Optional)" },
+        { "type": "text", "id": "tag", "label": "Badge Tag (e.g. BESTSELLER)" },
+        { "type": "text", "id": "title", "label": "Product Title Override (Optional)" },
+        { "type": "text", "id": "subtitle", "label": "Product Subtitle" },
+        { "type": "text", "id": "compare_price", "label": "Compare Price Override (Optional)" },
+        { "type": "text", "id": "price", "label": "Price Override (Optional)" },
+        { "type": "url", "id": "product_url", "label": "Link Override (Optional)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "SED Product Carousel" }
+  ]
+}
+{% endschema %}
