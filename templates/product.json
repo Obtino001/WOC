@@ -156,6 +156,7 @@
     "overview": {
       "type": "product-overview",
       "settings": {
+        "color_scheme": "scheme-2",
         "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "Product Overview",
@@ -205,6 +206,7 @@
         "b4"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "bg_color": "warm",
@@ -248,6 +250,7 @@
         "h3"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
         "bg_color": "dark",
@@ -294,6 +297,7 @@
         "i6"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
         "kicker": "Technology in detail",
@@ -323,6 +327,7 @@
         "s2"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
         "kicker": "Specifications",
@@ -373,6 +378,7 @@
         "t4"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "bg_color": "dark",
@@ -431,6 +437,7 @@
         "b6"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "Clinically Proven",
@@ -475,6 +482,7 @@
         "p3"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "Flexible Payment",
@@ -569,6 +577,7 @@
         "q10"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "Questions & Answers",
@@ -579,6 +588,7 @@
     "cta": {
       "type": "simple-cta-banner",
       "settings": {
+        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
         "heading": "Ready to Experience<br><span class=\"block italic text-gold\">Therapeutic Dual-Pro®?</span>",
@@ -651,6 +661,7 @@
         "tech_4"
       ],
       "settings": {
+        "color_scheme": "",
         "label": "AVANCERET TEKNOLOGI",
         "title": "Udviklet til perfektion"
       }
@@ -710,6 +721,7 @@
         "health_6"
       ],
       "settings": {
+        "color_scheme": "",
         "label": "KLINISK DOKUMENTERET",
         "title": "Reelle Sundhedsfordele",
         "description": "Støttet af klinisk forskning og godkendt af fysioterapeuter samt sundhedsfaglige eksperter i Skandinavien."
@@ -718,6 +730,7 @@
     "video": {
       "type": "woc-pdp-video",
       "settings": {
+        "color_scheme": "",
         "label": "SE PRODUKTET I AKTION",
         "title": "Oplev produktet",
         "video_url": "",
@@ -775,6 +788,7 @@
         "spec_2"
       ],
       "settings": {
+        "color_scheme": "",
         "included_title": "Hvad følger med i kassen?",
         "gifts_title": "INKLUDEREDE GRATIS GAVER:",
         "specs_title": "Tekniske Specifikationer"
@@ -814,6 +828,7 @@
         "row_3"
       ],
       "settings": {
+        "color_scheme": "",
         "subtitle": "SAMMENLIGN DETALJER",
         "title": "Hvorfor vælge os?",
         "th_feature": "Funktioner",
@@ -860,6 +875,7 @@
         "opt_3"
       ],
       "settings": {
+        "color_scheme": "",
         "label": "FLEXIBEL BETALING",
         "title": "Invester i dit velvære",
         "description": "Gør velvære tilgængeligt med vores fleksible finansieringsmuligheder. Start din wellnessrejse i dag."
@@ -896,6 +912,7 @@
         "faq_3"
       ],
       "settings": {
+        "color_scheme": "",
         "subtitle": "OFTE STILLEDE SPØRGSMÅL",
         "title": "Spørgsmål & Svar",
         "accordion_icon_svg": "",
@@ -906,6 +923,7 @@
     "bottom_cta": {
       "type": "woc-pdp-bottom-cta",
       "settings": {
+        "color_scheme": "",
         "title": "Klar til at opleve [product]?",
         "description": "Besøg et showroom for en personlig demonstration eller bestil online med gratis levering.",
         "buy_now_text": "Køb nu",
