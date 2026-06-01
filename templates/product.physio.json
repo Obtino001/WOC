@@ -143,8 +143,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
@@ -156,6 +156,7 @@
     "overview": {
       "type": "product-long-text",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "LATEST TECHNOLOGY 2026",
@@ -234,6 +235,7 @@
         "t8"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "LATEST TECHNOLOGY 2026"
@@ -242,11 +244,15 @@
     "split_1": {
       "type": "feature-row-split",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "image_position": "left",
         "show_header": false,
-        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
+        "main_kicker": "",
+        "main_heading": "",
+        "image_label": "",
+        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
         "heading": "ROVO XD Dual Mechanism Rollers",
         "description": "Two distinct mechanisms with six independent rollers harmonize together to redefine the very concept of a full-body massage. The upper 4XD mechanism delivers dynamic, multi-dimensional strokes across your back, while the lower 3XD system provides deep, targeted therapy to your glutes and upper hamstrings — offering a truly transformative experience."
       }
@@ -254,11 +260,15 @@
     "split_2": {
       "type": "feature-row-split",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "image_position": "right",
         "show_header": false,
-        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"></path><path d=\"M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z\"></path><path d=\"M16 17h4\"></path><path d=\"M4 13h4\"></path></svg>",
+        "main_kicker": "",
+        "main_heading": "",
+        "image_label": "",
+        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"></path><path d=\"M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z\"></path><path d=\"M16 17h4\"></path><path d=\"M4 13h4\"></path></svg>",
         "heading": "Walking Technology",
         "description": "Unlike traditional massage chairs that overlook the lower body, PHYSIO+® delivers equal attention to your legs and feet. Its innovative scissor-action mechanism mimics a natural walking motion, gently stretching the lower back, glutes, hamstrings, and knees for a full-body wellness experience that no other chair can match."
       }
@@ -266,11 +276,15 @@
     "split_3": {
       "type": "feature-row-split",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "image_position": "left",
         "show_header": false,
-        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+        "main_kicker": "",
+        "main_heading": "",
+        "image_label": "",
+        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
         "heading": "AI BioSensory Intelligence™",
         "description": "Simply scan your finger to initiate cutting-edge AI algorithms that thoroughly analyze your body's health indicators — heart rate, blood oxygen, microcirculation, heart rate variability, and fatigue index — all distilled into a personalized health score. BioSensory Intelligence™ then crafts a bespoke massage calibrating intensity, style, and target areas to perfectly align with your body's specific needs."
       }
@@ -278,11 +292,15 @@
     "split_4": {
       "type": "feature-row-split",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "image_position": "right",
         "show_header": false,
-        "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"20\" height=\"15\" x=\"2\" y=\"7\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>",
+        "main_kicker": "",
+        "main_heading": "",
+        "image_label": "",
+        "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"20\" height=\"15\" x=\"2\" y=\"7\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline></svg>",
         "heading": "Seamless Touchscreen Remote",
         "description": "Make every massage a masterpiece with limitless customization. The intuitive touchscreen display is rich with functionality, letting you select from customizable wellness programs or create your own massage experience from a blank canvas. Quick shortcut panels on both armrests provide instant access to heating, volume, zero gravity positions, and recline adjustments."
       }
@@ -324,6 +342,7 @@
         "p3"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "ADVANCED TECHNOLOGY",
@@ -354,10 +373,15 @@
         "c2"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "image_position": "left",
         "show_header": false,
+        "main_kicker": "",
+        "main_heading": "",
+        "image_label": "",
+        "icon_svg": "",
         "heading": "Fine Craft in <span class=\"italic text-gold\">Every Curve</span>",
         "description": "Choose from a dark Onyx or elegant Ivory finish, featuring vegan upholstery accented with blue luminescence and seamless controls on both sides. A striking balance of luxury and technology — PHYSIO+® isn't just a chair; it's a statement. It's not about fitting into your decor; it's about defining it."
       }
@@ -497,6 +521,7 @@
         "s16"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "TECHNICAL DATA",
@@ -540,6 +565,7 @@
         "p3"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "FLEXIBLE PAYMENT",
@@ -553,7 +579,7 @@
         "g1": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "title": "5-Year Full Warranty",
             "description": "Complete coverage of all parts, motors and electronics."
           }
@@ -561,7 +587,7 @@
         "g2": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
             "title": "Premium Delivery",
             "description": "Professionally installed by specialist technicians."
           }
@@ -569,7 +595,7 @@
         "g3": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
             "title": "Client Care",
             "description": "Exceptional chairs given exceptional care."
           }
@@ -621,6 +647,7 @@
         "a5"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "VIP GUARANTEED",
@@ -757,6 +784,7 @@
         "q15"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "QUESTIONS & ANSWERS",
@@ -767,6 +795,7 @@
     "cta": {
       "type": "simple-cta-banner",
       "settings": {
+        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
         "heading": "Ready to Experience<br><span class=\"block italic text-gold\">PHYSIO+®?</span>",
