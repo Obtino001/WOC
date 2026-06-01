@@ -133,6 +133,7 @@
         "award_1": {
           "type": "award",
           "settings": {
+            "image": "shopify://shop_images/award-gazelle.png",
             "name": "Børsen Gazelle",
             "details": "2025 · Vækstvirksomhed"
           }
@@ -140,6 +141,7 @@
         "award_2": {
           "type": "award",
           "settings": {
+            "image": "shopify://shop_images/award-gazelle-2025.png",
             "name": "Global Wellness Innovation Award",
             "details": "2025 · Best Wellness Tech"
           }
