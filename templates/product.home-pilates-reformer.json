@@ -153,6 +153,633 @@
         "padding_bottom": 12
       }
     },
+    "simple_features": {
+      "type": "fp-simple-feature-grid",
+      "blocks": {
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242\"></path><path d=\"M16 14v6\"></path><path d=\"M8 14v6\"></path><path d=\"M12 16v6\"></path></svg>",
+            "stat_value": "15 min",
+            "stat_label": "is enough",
+            "title": "Even on lazy days",
+            "text": "No commute, no changing rooms, no waiting. Unfold your board, train for 15 minutes and feel the difference. Even on lazy days, a short session beats nothing — and it's easier than you think when the equipment is right there."
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z\"></path><path d=\"M2 9v1c0 1.1.9 2 2 2h1\"></path><path d=\"M16 11h.01\"></path></svg>",
+            "stat_value": "10×",
+            "stat_label": "cheaper",
+            "title": "A fraction of the cost",
+            "text": "A gym costs £30-50/month. Your Pilates Reformer pays for itself in under 10 months — and lasts for years. No contracts, no monthly fees, no surprises."
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"22 7 13.5 15.5 8.5 10.5 2 17\"></polyline><polyline points=\"16 7 22 7 22 13\"></polyline></svg>",
+            "stat_value": "87%",
+            "stat_label": "train more often",
+            "title": "Lasting results",
+            "text": "Consistency beats intensity. Short, regular sessions build strength, improve posture and reduce stress over time. Because the board is always within reach, you train more often — and the results follow."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "STOP PUTTING OFF YOUR TRAINING",
+        "heading": "Why home training wins",
+        "description": "We all know those days when motivation is low. Dark mornings, rainy weather, or just a long day. With your Pilates Reformer at home, you remove every excuse — and train on your terms."
+      }
+    },
+    "gallery": {
+      "type": "fp-full-gallery",
+      "blocks": {
+        "i1": {
+          "type": "image",
+          "settings": {}
+        },
+        "i2": {
+          "type": "image",
+          "settings": {}
+        },
+        "i3": {
+          "type": "image",
+          "settings": {}
+        },
+        "i4": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "columns": 4
+      }
+    },
+    "split_overview": {
+      "type": "fp-split-overview",
+      "blocks": {
+        "b1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Planks"
+          }
+        },
+        "b2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Squats"
+          }
+        },
+        "b3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Bicycle legs"
+          }
+        },
+        "b4": {
+          "type": "bullet",
+          "settings": {
+            "text": "U-shape – neck and heel"
+          }
+        },
+        "b5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Flat head – full body massage"
+          }
+        },
+        "b6": {
+          "type": "bullet",
+          "settings": {
+            "text": "Fork – spine and tendons"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "heading": "The complete Pilates Reformer experience",
+        "description": "Replicate all movements from a Pilates reformer at a fraction of the price. Versatile training and muscle-building exercises for the whole body."
+      }
+    },
+    "exercise_guide": {
+      "type": "fp-exercise-grid",
+      "blocks": {
+        "e1": {
+          "type": "exercise",
+          "settings": {
+            "category": "Core",
+            "title": "Full Plank",
+            "description": "Start in plank position with hands on the board. Keep your body in a straight line from head to toe."
+          }
+        },
+        "e2": {
+          "type": "exercise",
+          "settings": {
+            "category": "Core",
+            "title": "Resistance Bicycle",
+            "description": "Lie on your back with bands secured to feet. Alternate between straight and bent legs in a cycling motion."
+          }
+        },
+        "e3": {
+          "type": "exercise",
+          "settings": {
+            "category": "Core",
+            "title": "V-Flexion",
+            "description": "Support on both hands for stability. Bend knees as start, exhale and extend into a V-shape."
+          }
+        },
+        "e4": {
+          "type": "exercise",
+          "settings": {
+            "category": "Flexibility",
+            "title": "Hip Flexion",
+            "description": "With band attached. Keep hips stable and angle your legs toward the floor from 0 to 90 degrees."
+          }
+        },
+        "e5": {
+          "type": "exercise",
+          "settings": {
+            "category": "Strength",
+            "title": "Hip Extension",
+            "description": "Secure band to foot. Support on all fours and extend your leg upward with stable hips."
+          }
+        },
+        "e6": {
+          "type": "exercise",
+          "settings": {
+            "category": "Strength",
+            "title": "Side Abduction",
+            "description": "Lie on your side with band. Lift your leg in controlled motion for outer hip and glute training."
+          }
+        }
+      },
+      "block_order": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6"
+      ],
+      "settings": {
+        "kicker": "OVER 100 EXERCISES POSSIBLE",
+        "heading": "Exercise Guide",
+        "description": "Explore a selection of the many exercises you can do with your Home Pilates Reformer."
+      }
+    },
+    "how_it_works": {
+      "type": "fp-step-by-step",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Unfold & anchor",
+            "description": "No tools, no drilling — set up in seconds."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Clip on resistance",
+            "description": "Adjust tension for upper body, lower body and core."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "And train!",
+            "description": "Switch between movements effortlessly."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "heading": "How it works",
+        "columns": 3
+      }
+    },
+    "emoji_stats": {
+      "type": "fp-emoji-stats",
+      "blocks": {
+        "e1": {
+          "type": "stat",
+          "settings": {
+            "emoji": "💪",
+            "text": "More body tension"
+          }
+        },
+        "e2": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🧍",
+            "text": "Better posture"
+          }
+        },
+        "e3": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🤸",
+            "text": "Improved mobility"
+          }
+        },
+        "e4": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🏋️",
+            "text": "Stronger muscles"
+          }
+        },
+        "e5": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🧘",
+            "text": "Reduced stress"
+          }
+        }
+      },
+      "block_order": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "settings": {
+        "heading": "5 documented effects",
+        "description": "Noticeable difference in just a few weeks"
+      }
+    },
+    "results_grid": {
+      "type": "fp-results-grid",
+      "blocks": {
+        "r1": {
+          "type": "result",
+          "settings": {
+            "title": "More body tension & better posture"
+          }
+        },
+        "r2": {
+          "type": "result",
+          "settings": {
+            "title": "Increased flexibility & mobility"
+          }
+        },
+        "r3": {
+          "type": "result",
+          "settings": {
+            "title": "Strengthened muscles & core"
+          }
+        },
+        "r4": {
+          "type": "result",
+          "settings": {
+            "title": "Reduced stress & more energy"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "heading": "Results you can expect",
+        "subtitle": "in just a few weeks"
+      }
+    },
+    "whats_included": {
+      "type": "fp-big-image-feature",
+      "settings": {
+        "kicker": "SEE WHAT YOU GET",
+        "heading": "Everything in one package"
+      }
+    },
+    "triple_compare": {
+      "type": "fp-triple-comparison",
+      "blocks": {
+        "g1": {
+          "type": "good",
+          "settings": {
+            "text": "Premium resistance system"
+          }
+        },
+        "g2": {
+          "type": "good",
+          "settings": {
+            "text": "Space-saving & foldable"
+          }
+        },
+        "g3": {
+          "type": "good",
+          "settings": {
+            "text": "Professional quality"
+          }
+        },
+        "g4": {
+          "type": "good",
+          "settings": {
+            "text": "Classes & community included"
+          }
+        },
+        "g5": {
+          "type": "good",
+          "settings": {
+            "text": "For home users, beginners & professionals"
+          }
+        },
+        "g6": {
+          "type": "good",
+          "settings": {
+            "text": "Price: £494"
+          }
+        },
+        "b1": {
+          "type": "bad_1",
+          "settings": {
+            "text": "Bulky, heavy, fixed placement"
+          }
+        },
+        "b2": {
+          "type": "bad_1",
+          "settings": {
+            "text": "Requires expertise"
+          }
+        },
+        "b3": {
+          "type": "bad_1",
+          "settings": {
+            "text": "Expensive maintenance"
+          }
+        },
+        "b4": {
+          "type": "bad_1",
+          "settings": {
+            "text": "Usually no instruction included"
+          }
+        },
+        "b5": {
+          "type": "bad_1",
+          "settings": {
+            "text": "For studios, professionals & large homes"
+          }
+        },
+        "b6": {
+          "type": "bad_1",
+          "settings": {
+            "text": "Price: £1,650 – £4,400"
+          }
+        },
+        "c1": {
+          "type": "bad_2",
+          "settings": {
+            "text": "Weak resistance, poor stability"
+          }
+        },
+        "c2": {
+          "type": "bad_2",
+          "settings": {
+            "text": "Feels cheap and gimmicky"
+          }
+        },
+        "c3": {
+          "type": "bad_2",
+          "settings": {
+            "text": "No real progress or support"
+          }
+        },
+        "c4": {
+          "type": "bad_2",
+          "settings": {
+            "text": "No instructions or guidance"
+          }
+        },
+        "c5": {
+          "type": "bad_2",
+          "settings": {
+            "text": "For short-term, casual use"
+          }
+        },
+        "c6": {
+          "type": "bad_2",
+          "settings": {
+            "text": "Price: £88 – £165"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "heading": "Why WOC beats studio machines",
+        "subtitle": "(and cheap imitations)",
+        "col1_title": "Home Pilates Reformer",
+        "col2_title": "Studio Reformer",
+        "col3_title": "Cheap imitations"
+      }
+    },
+    "faq": {
+      "type": "fp-simple-faq",
+      "blocks": {
+        "f1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the Home Pilates Reformer?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is a Pilates Reformer effective for home training?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I do yoga on a Pilates Reformer?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it suitable for complete beginners?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What muscles can I train with a Pilates Reformer?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's the difference between a home reformer and a studio reformer?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it easy to store in a small flat?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is a Pilates Reformer better than a gym membership?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use it every day?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it silent — can I use it in a flat?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f11": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How much does it weigh and what are the dimensions?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f12": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the material durable enough for daily use?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f13": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does it have a training app with programmes?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f14": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's included in the delivery?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f15": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f16": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is a Pilates Reformer good for recovery and back problems?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f17": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can both men and women use it?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 96,
+        "heading": "Frequently asked questions about home training"
+      }
+    },
+    "cta_final": {
+      "type": "hw-cta-box",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading": "Ready to transform your training?",
+        "description": "Order today and get free delivery, 30-day returns and lifetime warranty on the frame.",
+        "btn_text": "Order now — £494",
+        "btn_link": "/products/pilates-reformer"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -177,6 +804,17 @@
   "order": [
     "woc_trust_bar_km4wNG",
     "main",
+    "simple_features",
+    "gallery",
+    "how_it_works",
+    "split_overview",
+    "exercise_guide",
+    "emoji_stats",
+    "results_grid",
+    "whats_included",
+    "triple_compare",
+    "faq",
+    "cta_final",
     "related-products"
   ]
 }
