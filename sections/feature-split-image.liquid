@@ -1,0 +1,80 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="section-light-warm section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+      
+      <div>
+        <div class="luxury-line mb-8"></div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+        <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6 leading-[1.1]">
+          {{ section.settings.heading | newline_to_br }}
+        </h2>
+        <p class="font-body text-sm text-muted-foreground mb-10 leading-relaxed max-w-md">
+          {{ section.settings.description }}
+        </p>
+        
+        <div class="space-y-4">
+          {% for block in section.blocks %}
+            <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
+              <div class="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-3.5 h-3.5 text-gold"><path d="M20 6 9 17l-5-5"></path></svg>
+              </div>
+              <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="aspect-square bg-card rounded-sm overflow-hidden border border-border">
+          {% if section.settings.image != blank %}
+             {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-contain p-10', loading: 'lazy' }}
+          {% else %}
+             {{ 'product-2' | placeholder_svg_tag: 'w-full h-full object-contain p-10 bg-gray-100' }}
+          {% endif %}
+        </div>
+        <div class="absolute -top-3 -right-3 w-16 h-16 border-t-2 border-r-2 border-gold/30"></div>
+        <div class="absolute -bottom-3 -left-3 w-16 h-16 border-b-2 border-l-2 border-gold/30"></div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature Split w/ Image",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Clinically Proven" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Health Benefits <span class=\"italic text-gold\">Benefits</span>" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Backed by research and endorsed by healthcare professionals across Scandinavia." },
+    { "type": "image_picker", "id": "image", "label": "Image" }
+  ],
+  "blocks": [
+    {
+      "type": "bullet",
+      "name": "Checkmark Bullet",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Feature Split w/ Image" }
+  ]
+}
+{% endschema %}

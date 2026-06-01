@@ -1,0 +1,55 @@
+<footer class="bg-background border-t border-border">
+  <div class="container mx-auto px-4 lg:px-8 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      
+      <div class="lg:col-span-4">
+        <h3 class="font-display text-2xl font-light tracking-[0.15em] text-foreground mb-6">{{ section.settings.logo_text }}</h3>
+        <p class="font-body text-sm font-light text-muted-foreground leading-relaxed max-w-sm">{{ section.settings.description }}</p>
+      </div>
+
+      {% for block in section.blocks %}
+        {% if block.type == 'menu' %}
+          <div class="lg:col-span-2" {{ block.shopify_attributes }}>
+            <h4 class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ block.settings.title }}</h4>
+            <div class="space-y-3">
+              {% assign menu = linklists[block.settings.menu] %}
+              {% for link in menu.links %}
+                <a class="block font-body text-xs font-light text-muted-foreground hover:text-gold transition-colors duration-500" href="{{ link.url }}">{{ link.title }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+  
+  <div class="border-t border-border">
+    <div class="container mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-body text-[10px] font-light text-muted-foreground tracking-wider">© {{ 'now' | date: "%Y" }} {{ shop.name }}. All rights reserved.</p>
+      <p class="font-body text-[10px] font-light text-muted-foreground tracking-wider">{{ section.settings.bottom_text }}</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "text", "id": "logo_text", "label": "Logo Text", "default": "WORLD OF COMFORT" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Scandinavia's leading destination for luxury wellness technology. Experience the pinnacle of comfort and recovery." },
+    { "type": "text", "id": "bottom_text", "label": "Bottom Right Text", "default": "Denmark · Sweden · Norway · Turkey" }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu Column",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading" },
+        { "type": "link_list", "id": "menu", "label": "Select Menu" }
+      ]
+    }
+  ]
+}
+{% endschema %}

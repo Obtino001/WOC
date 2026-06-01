@@ -1,0 +1,57 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding section-light">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <div class="text-center mb-10">
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground">{{ section.settings.heading }}</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      {% for block in section.blocks %}
+        <div class="rounded-2xl overflow-hidden shadow-elevated" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+             {{ block.settings.image | image_url: width: 800 | image_tag: class: 'w-full aspect-[4/3] object-cover', loading: 'lazy' }}
+          {% else %}
+             {{ 'collection-1' | placeholder_svg_tag: 'w-full aspect-[4/3] object-cover bg-gray-200' }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image Grid Gallery",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 64 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Technology in detail" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Beneath the surface" }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Image Grid Gallery" }
+  ]
+}
+{% endschema %}

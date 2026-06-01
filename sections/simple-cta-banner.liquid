@@ -1,0 +1,58 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="gradient-dark section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6 leading-[1.05]">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+      <p class="font-body text-sm text-muted-foreground mb-10 max-w-md mx-auto leading-relaxed">
+        {{ section.settings.description }}
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        {% if section.settings.btn1_text != blank %}
+          <button class="inline-flex items-center justify-center whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide lucide-shopping-bag w-4 h-4"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            {{ section.settings.btn1_text }}
+          </button>
+        {% endif %}
+        {% if section.settings.btn2_text != blank %}
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap border-2 border-gold/60 text-gold font-semibold hover:border-gold hover:bg-gold/10 transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10" href="{{ section.settings.btn2_link }}">
+            {{ section.settings.btn2_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Simple CTA Banner",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Ready to Experience<br><span class=\"block italic text-gold\">Therapeutic Dual-Pro®?</span>" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Visit a showroom for a personal demonstration or order online with free delivery." },
+    { "type": "text", "id": "btn1_text", "label": "Button 1 Text", "default": "Buy Now — £6,600" },
+    { "type": "text", "id": "btn2_text", "label": "Button 2 Text", "default": "Book a Demo" },
+    { "type": "url", "id": "btn2_link", "label": "Button 2 Link" }
+  ],
+  "presets": [
+    { "name": "Simple CTA Banner" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,83 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="{% if section.settings.bg_color == 'warm' %}section-light-warm{% elsif section.settings.bg_color == 'dark' %}gradient-dark{% else %}section-light{% endif %} section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
+    <div class="text-center mb-14">
+      <div class="luxury-line mx-auto mb-6"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light {% if section.settings.bg_color == 'dark' %}text-white{% else %}text-foreground{% endif %} leading-[1.05]">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+    </div>
+    
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-{{ section.settings.columns }}">
+      {% for block in section.blocks %}
+        {% if section.settings.card_style == 'bordered' %}
+          <div class="group relative bg-card border border-border rounded-2xl p-7 hover:border-gold/30 hover:shadow-elevated transition-all duration-500" {{ block.shopify_attributes }}>
+            <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors [&>svg]:w-7 [&>svg]:h-7 [&>svg]:text-gold">
+              {{ block.settings.icon_svg }}
+            </div>
+            <h3 class="font-display text-lg font-semibold text-foreground mb-2">{{ block.settings.title }}</h3>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.description }}</p>
+          </div>
+        {% elsif section.settings.card_style == 'dark_box' %}
+          <div class="p-8 rounded-2xl bg-[hsl(0,0%,6%)] border border-border/10" {{ block.shopify_attributes }}>
+             <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 [&>svg]:w-7 [&>svg]:h-7 [&>svg]:text-gold">
+              {{ block.settings.icon_svg }}
+            </div>
+            <h4 class="font-display text-xl font-bold text-secondary mb-3">{{ block.settings.title }}</h4>
+            <p class="font-body text-sm text-secondary/60 leading-relaxed">{{ block.settings.description }}</p>
+          </div>
+        {% else %}
+           <div class="bg-card border border-border p-8 group hover:border-gold/20 transition-all duration-500" {{ block.shopify_attributes }}>
+            <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors [&>svg]:w-5 [&>svg]:h-5 [&>svg]:text-gold">
+              {{ block.settings.icon_svg }}
+            </div>
+            <h3 class="font-display text-lg font-semibold text-foreground mb-3">{{ block.settings.title }}</h3>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.description }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Icon Feature Grid",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 112 },
+    { "type": "select", "id": "bg_color", "label": "Background Style", "options": [ { "value": "light", "label": "Light" }, { "value": "warm", "label": "Light Warm" }, { "value": "dark", "label": "Dark Gradient" } ], "default": "warm" },
+    { "type": "select", "id": "card_style", "label": "Card Style", "options": [ { "value": "bordered", "label": "Bordered Rounded" }, { "value": "dark_box", "label": "Dark Box (For Dark BG)" }, { "value": "flat", "label": "Flat Border Box" } ], "default": "bordered" },
+    { "type": "range", "id": "columns", "min": 2, "max": 4, "step": 1, "label": "Desktop Columns", "default": 4 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Ideal For" },
+    { "type": "html", "id": "heading", "label": "Heading", "default": "Who is this for?" }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Feature Card",
+      "settings": [
+        { "type": "html", "id": "icon_svg", "label": "Icon SVG" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "description", "label": "Description" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Icon Feature Grid" }
+  ]
+}
+{% endschema %}

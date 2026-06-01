@@ -1,0 +1,67 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding section-light-warm">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <div class="text-center mb-10">
+      <div class="luxury-line mx-auto mb-6"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground">{{ section.settings.heading }}</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-4">
+        {% for block in section.blocks limit: section.settings.half_limit %}
+          <div class="flex justify-between border-b border-border/50 pb-2" {{ block.shopify_attributes }}>
+            <span class="font-body text-sm font-semibold text-foreground">{{ block.settings.label }}</span>
+            <span class="font-body text-sm text-muted-foreground text-right">{{ block.settings.value }}</span>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="space-y-4">
+        {% for block in section.blocks offset: section.settings.half_limit %}
+          <div class="flex justify-between border-b border-border/50 pb-2" {{ block.shopify_attributes }}>
+            <span class="font-body text-sm font-semibold text-foreground">{{ block.settings.label }}</span>
+            <span class="font-body text-sm text-muted-foreground text-right">{{ block.settings.value }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Specifications",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 64 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Specifications" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Everything you need to know" },
+    { "type": "number", "id": "half_limit", "label": "Number of items in left column", "default": 4 }
+  ],
+  "blocks": [
+    {
+      "type": "spec",
+      "name": "Specification",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label (e.g. Dimensions)" },
+        { "type": "text", "id": "value", "label": "Value (e.g. 150x80x120 cm)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Product Specifications" }
+  ]
+}
+{% endschema %}

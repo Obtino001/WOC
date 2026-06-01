@@ -1,0 +1,71 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="gradient-dark section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div class="text-center">
+      <div class="luxury-line mx-auto mb-8"></div>
+      <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6 leading-[1.05]">
+        {{ section.settings.heading | newline_to_br }}
+      </h2>
+      <p class="font-body text-sm text-muted-foreground mb-12 max-w-lg mx-auto leading-relaxed">
+        {{ section.settings.description }}
+      </p>
+    </div>
+    
+    <div class="grid sm:grid-cols-3 gap-6">
+      {% for block in section.blocks %}
+        <div class="bg-card border border-border p-8 text-center hover:border-gold/30 transition-colors group" {{ block.shopify_attributes }}>
+          <p class="font-body text-xs uppercase tracking-luxury text-gold mb-4">{{ block.settings.title }}</p>
+          <p class="font-display text-3xl font-bold text-foreground mb-2">
+            {{ block.settings.price }}
+            {% if block.settings.price_suffix != blank %}
+              <span class="font-body text-sm font-normal text-muted-foreground">{{ block.settings.price_suffix }}</span>
+            {% endif %}
+          </p>
+          <p class="font-body text-xs text-muted-foreground">{{ block.settings.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flexible Pricing Plans",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 80 },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Flexible Payment" },
+    { "type": "textarea", "id": "heading", "label": "Heading", "default": "Invest in Your <span class=\"italic text-gold\">Wellbeing</span>" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Make wellness accessible with our flexible financing options. Start your wellness journey today." }
+  ],
+  "blocks": [
+    {
+      "type": "plan",
+      "name": "Pricing Plan",
+      "limit": 3,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title (e.g. 24 Months)" },
+        { "type": "text", "id": "price", "label": "Price (e.g. £275)" },
+        { "type": "text", "id": "price_suffix", "label": "Price Suffix (e.g. /md.)" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle (e.g. 0% down payment)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Flexible Pricing Plans" }
+  ]
+}
+{% endschema %}
