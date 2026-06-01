@@ -143,8 +143,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
@@ -159,7 +159,7 @@
         "b1": {
           "type": "benefit",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "title": "Restless legs",
             "description": "Finally a peaceful night."
           }
@@ -167,7 +167,7 @@
         "b2": {
           "type": "benefit",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
             "title": "Fluid retention",
             "description": "No more heavy feeling."
           }
@@ -175,7 +175,7 @@
         "b3": {
           "type": "benefit",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
             "title": "Swollen feet",
             "description": "No swelling after a long day."
           }
@@ -183,7 +183,7 @@
         "b4": {
           "type": "benefit",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
             "title": "Back tension",
             "description": "Move freely again."
           }
@@ -196,6 +196,7 @@
         "b4"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 32,
         "heading": "+7,500 customers have already found peace in their legs."
@@ -207,7 +208,7 @@
         "m1": {
           "type": "mini_feature",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>",
             "title": "Full-body training",
             "description": "Activates up to 97% of muscles simultaneously — from legs and core to arms."
           }
@@ -215,7 +216,7 @@
         "m2": {
           "type": "mini_feature",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z\"></path></svg>",
             "title": "Fat burning",
             "description": "Burn up to 350 kcal in 15 min without stressing joints and knees."
           }
@@ -223,7 +224,7 @@
         "m3": {
           "type": "mini_feature",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
             "title": "Lymphatic drainage",
             "description": "Stimulates the lymphatic system and reduces fluid retention."
           }
@@ -295,6 +296,7 @@
         "r5"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "kicker": "FITNESS BENEFITS",
@@ -394,11 +396,13 @@
         "l8"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
         "kicker": "LYMPHATIC TRAINING & SWELLING",
         "heading": "Eliminate swelling in legs and feet",
-        "description": "Swollen legs and feet are most often caused by the lymphatic system not keeping up. Fluid collects in the tissue — especially after long days of sedentary work, flights or hormonal changes. The FitnessPlate XD is the most effective lymphatic training device for home use."
+        "description": "Swollen legs and feet are most often caused by the lymphatic system not keeping up. Fluid collects in the tissue — especially after long days of sedentary work, flights or hormonal changes. The FitnessPlate XD is the most effective lymphatic training device for home use.",
+        "list_heading": "Who benefits from a lymphatic training device?"
       }
     },
     "comparison": {
@@ -569,11 +573,18 @@
         "t9"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
+        "product": "",
         "kicker": "THE IMPORTANT DIFFERENCE",
         "heading": "Cheap vibration plates don't deliver results",
-        "description": "There's a reason many people give up on vibration training after a few weeks. They bought a cheap 2D plate from a discount store — and it simply doesn't work well enough. The truth is, the technology behind the vibration determines everything."
+        "description": "There's a reason many people give up on vibration training after a few weeks. They bought a cheap 2D plate from a discount store — and it simply doesn't work well enough. The truth is, the technology behind the vibration determines everything.",
+        "bad_title": "Cheap 2D plates (£50-£200)",
+        "good_title": "FitnessPlate XD (£825)",
+        "summary_heading": "The bottom line: technology determines the result",
+        "summary_text": "",
+        "btn_text": "Invest in your health — £825"
       }
     },
     "reviews": {
@@ -624,7 +635,9 @@
       ],
       "settings": {
         "padding_top": 80,
-        "padding_bottom": 96
+        "padding_bottom": 96,
+        "rating_text": "4.8 out of 5.0 — 1.276 reviews",
+        "heading": "What our customers say"
       }
     },
     "faq": {
@@ -739,14 +752,20 @@
       ],
       "settings": {
         "padding_top": 64,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "heading": "Frequently asked questions"
       }
     },
     "cta": {
       "type": "fp-cta-box",
       "settings": {
+        "color_scheme": "",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "product": "",
+        "heading": "Ready to feel the difference?",
+        "description": "Order your FitnessPlate XD today with free delivery and 30-day satisfaction guarantee.",
+        "btn_text": "Buy now — £825"
       }
     },
     "related-products": {
