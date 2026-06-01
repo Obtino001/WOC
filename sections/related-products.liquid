@@ -20,7 +20,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.bg_color == 'warm' %}related-products-section{% endif %}">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
@@ -28,9 +28,16 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
-        {{ section.settings.heading }}
-      </h2>
+      <div class="text-center mb-12">
+        <div class="luxury-line"></div>
+        {% if section.settings.kicker != blank %}
+          <p class="section-kicker">{{ section.settings.kicker }}</p>
+        {% endif %}
+        <h2 class="section-title">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+
       {%- liquid
         assign columns_desktop = section.settings.columns_desktop
         assign columns_mobile = section.settings.columns_mobile
@@ -46,20 +53,52 @@
         class="grid gap-x-6 gap-y-10 grid-cols-{{ columns_mobile }} {{ grid_cols_tablet }} lg:grid-cols-{{ columns_desktop }}"
         role="list"
       >
-        {% assign skip_card_product_styles = false %}
         {% for recommendation in recommendations.products %}
           <li class="grid__item !w-full !max-w-none">
-            {% render 'card-product',
-              card_product: recommendation,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              skip_styles: skip_card_product_styles
-            %}
+            {%- assign product_badge = nil -%}
+            {%- for tag in recommendation.tags -%}
+              {%- if tag == 'Flagship' or tag == 'Designer' or tag == 'Most Advanced' or tag == 'New' or tag == 'Bestseller' -%}
+                {%- assign product_badge = tag -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            
+            <a href="{{ recommendation.url }}" class="related-product-card">
+              {%- if product_badge -%}
+                <span class="related-product-badge">{{ product_badge }}</span>
+              {%- endif -%}
+              
+              <div class="related-product-image-box">
+                {%- if recommendation.featured_media != blank -%}
+                  <img
+                    srcset="
+                      {%- if recommendation.featured_media.width >= 165 -%}{{ recommendation.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if recommendation.featured_media.width >= 360 -%}{{ recommendation.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if recommendation.featured_media.width >= 533 -%}{{ recommendation.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+                      {{ recommendation.featured_media | image_url: width: 720 }} 720w
+                    "
+                    src="{{ recommendation.featured_media | image_url: width: 533 }}"
+                    sizes="(min-width: 1200px) calc((1200px - 100px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 100px) / 3), calc((100vw - 30px) / 2)"
+                    alt="{{ recommendation.featured_media.alt | escape }}"
+                    class="related-product-image"
+                    loading="lazy"
+                    width="{{ recommendation.featured_media.width }}"
+                    height="{{ recommendation.featured_media.height }}"
+                  >
+                {%- else -%}
+                  {{ 'product-1' | placeholder_svg_tag: 'related-product-image bg-gray-100' }}
+                {%- endif -%}
+              </div>
+              
+              <div class="related-product-info">
+                <h3 class="related-product-title">{{ recommendation.title | escape }}</h3>
+                <p class="related-product-subtitle">
+                  {{ recommendation.metafields.custom.short_description | default: recommendation.description | strip_html | truncatewords: 8 }}
+                </p>
+                <span class="related-product-price">{{ recommendation.price | money }}</span>
+              </div>
+            </a>
           </li>
-          {%- assign skip_card_product_styles = true -%}
         {% endfor %}
       </ul>
     {% endif %}
@@ -75,6 +114,28 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "bg_color",
+      "label": "Background Color Style",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default Theme Background"
+        },
+        {
+          "value": "warm",
+          "label": "Warm Light Cream Background"
+        }
+      ],
+      "default": "warm"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker/Subheading",
+      "default": "YOU MAY ALSO LIKE"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.related-products.settings.paragraph__1.content"
