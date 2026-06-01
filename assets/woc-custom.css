@@ -68,9 +68,9 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.woc-theme-wrapper h1, 
-.woc-theme-wrapper h2, 
-.woc-theme-wrapper h3, 
+.woc-theme-wrapper h1,
+.woc-theme-wrapper h2,
+.woc-theme-wrapper h3,
 .woc-theme-wrapper h4,
 .woc-display-font {
   font-family: 'Cormorant Garamond', serif !important;
@@ -80,9 +80,11 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #4d4d4d;
   border-radius: 3px;
@@ -92,30 +94,39 @@
 .text-gold {
   color: #bf8f30 !important;
 }
+
 .text-cream {
   color: #f5f2eb !important;
 }
+
 .bg-gold {
   background-color: #bf8f30 !important;
 }
+
 .bg-linen {
   background-color: #121212 !important;
 }
+
 .bg-charcoal {
   background-color: #0a0a0a !important;
 }
+
 .text-charcoal {
   color: #0a0a0a !important;
 }
+
 .bg-forest {
   background-color: #265935 !important;
 }
+
 .text-forest {
   color: #265935 !important;
 }
+
 .bg-copper {
   background-color: #d2542a !important;
 }
+
 .text-copper {
   color: #d2542a !important;
 }
@@ -123,18 +134,23 @@
 .shadow-soft {
   box-shadow: var(--woc-shadow-soft);
 }
+
 .shadow-elevated {
   box-shadow: var(--woc-shadow-elevated);
 }
+
 .shadow-gold {
   box-shadow: var(--woc-shadow-gold);
 }
+
 .gradient-gold {
   background: var(--woc-gradient-gold);
 }
+
 .gradient-dark {
   background: var(--woc-gradient-dark);
 }
+
 .gradient-linen {
   background: var(--woc-gradient-linen);
 }
@@ -196,8 +212,13 @@
 
 /* Continuous Marquee Scrolling */
 @keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-33.333%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
 }
 
 .animate-marquee {
@@ -211,8 +232,13 @@
 }
 
 @keyframes slow-zoom {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
 }
 
 .animate-slow-zoom {
@@ -223,6 +249,7 @@
 .woc-quiz-option-card {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .woc-quiz-option-card:hover {
   border-color: #bf8f30;
   box-shadow: var(--woc-shadow-gold);
@@ -233,6 +260,7 @@
   box-shadow: 0 4px 20px rgba(191, 143, 48, 0.3);
   transition: all 0.3s ease;
 }
+
 .woc-floating-btn:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 24px rgba(191, 143, 48, 0.4);
@@ -268,6 +296,7 @@
   opacity: 0;
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
+
 .woc-mobile-sub-menu.is-open {
   max-height: 500px;
   opacity: 1;
@@ -279,6 +308,7 @@
     opacity: 0;
     transform: translate3d(30px, 0, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -289,6 +319,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -346,3 +377,7 @@ cart-drawer.active .drawer__inner {
   transform: translate3d(0, 0, 0) !important;
 }
 
+/* Fix Dawn grid layouts broken by Tailwind's global .grid reset */
+.grid:not([class*="grid-cols-"]):not([class*="grid-rows-"]):not([class*="grid-flow-"]) {
+  display: flex !important;
+}
