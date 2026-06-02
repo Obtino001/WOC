@@ -17,7 +17,7 @@
           "settings": {
             "icon": "award",
             "custom_icon_svg": "",
-            "text": "Nordens Førende Velværevirksomhed"
+            "text": "Kuzeyin Lider Sağlık Şirketi"
           }
         },
         "usp_2": {
@@ -25,7 +25,7 @@
           "settings": {
             "icon": "cpu",
             "custom_icon_svg": "",
-            "text": "Unik AI Teknologi"
+            "text": "Benzersiz Yapay Zeka Teknolojisi"
           }
         },
         "usp_3": {
@@ -33,7 +33,7 @@
           "settings": {
             "icon": "heart",
             "custom_icon_svg": "",
-            "text": "Sundhedsfagligt Anbefalet"
+            "text": "Sağlık Uzmanları Tarafından Önerilir"
           }
         },
         "usp_4": {
@@ -41,7 +41,7 @@
           "settings": {
             "icon": "truck",
             "custom_icon_svg": "",
-            "text": "White-Glove Levering"
+            "text": "Kusursuz Teslimat"
           }
         }
       },
@@ -54,21 +54,21 @@
       "settings": {
         "overlay_color": "#000000",
         "overlay_opacity": 40,
-        "hero_label": "FLAGSHIP COLLECTION",
-        "title_line1": "Skandinaviens Førende",
-        "title_line2": "Wellness-Teknologi",
-        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "hero_label": "AMİRAL GEMİSİ KOLEKSİYONU",
+        "title_line1": "İskandinavya'nın Lider",
+        "title_line2": "Sağlık Teknolojisi",
+        "subtitle": "Özel yapay zeka destekli ağrı kesici, lüks masaj koltukları, akıllı yataklar ve iyileşme teknolojisi. 20 showroomumuzdan birinde deneyin.",
         "show_reviews": true,
-        "btn1_text": "Se Massagestole",
+        "btn1_text": "Masaj Koltuklarını İncele",
         "btn1_url": "/collections/massage-chairs",
-        "btn2_text": "Find Showroom",
+        "btn2_text": "Showroom Bul",
         "btn2_url": "/pages/showrooms",
-        "btn3_text": "BOOK A DEMO",
+        "btn3_text": "DEMO REZERVE ET",
         "btn3_url": "",
         "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Chiropractor · Nordic Spine & Wellness",
-        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
-        "expert_badge_text": "Professionally recommended"
+        "expert_title": "Kayropraktik Uzmanı · Nordic Spine & Wellness",
+        "expert_quote": "Terapötik bir masaj koltuğunun günlük kullanımı, kronik sırt ağrısını 8 haftada %60'a kadar azaltabilir.",
+        "expert_badge_text": "Profesyoneller tarafından önerilir"
       }
     },
     "woc_trust": {
@@ -80,7 +80,7 @@
             "icon": "shield",
             "custom_icon_svg": "",
             "value": "5",
-            "label": "Års Garanti"
+            "label": "Yıl Garanti"
           }
         },
         "stat_2": {
@@ -89,7 +89,7 @@
             "icon": "store",
             "custom_icon_svg": "",
             "value": "20+",
-            "label": "Europæiske Showrooms"
+            "label": "Avrupa Showroomları"
           }
         },
         "stat_3": {
@@ -98,7 +98,7 @@
             "icon": "users",
             "custom_icon_svg": "",
             "value": "50.000+",
-            "label": "Glade Kunder"
+            "label": "Mutlu Müşteri"
           }
         },
         "stat_4": {
@@ -107,7 +107,7 @@
             "icon": "support",
             "custom_icon_svg": "",
             "value": "24/7",
-            "label": "Personlig Support"
+            "label": "Kişisel Destek"
           }
         }
       },
@@ -134,7 +134,7 @@
           "settings": {
             "image": "shopify://shop_images/award-gazelle.png",
             "name": "Børsen Gazelle",
-            "details": "2025 · Vækstvirksomhed"
+            "details": "2025 · Büyüyen Şirket"
           }
         },
         "award_2": {
@@ -142,7 +142,7 @@
           "settings": {
             "image": "shopify://shop_images/award-gazelle-2025.png",
             "name": "Global Wellness Innovation Award",
-            "details": "2025 · Best Wellness Tech"
+            "details": "2025 · En İyi Sağlık Teknolojisi"
           }
         },
         "award_3": {
@@ -150,7 +150,7 @@
           "settings": {
             "image": "shopify://shop_images/award-european-business-CgJz-1Tm_1.png",
             "name": "Scandinavian Business Awards",
-            "details": "2024 · Excellence in Wellness"
+            "details": "2024 · Sağlıkta Mükemmellik"
           }
         },
         "award_4": {
@@ -158,7 +158,7 @@
           "settings": {
             "image": "shopify://shop_images/award-healthcare-Dg7bscCa_1.png",
             "name": "Healthcare & Pharmaceutical Awards",
-            "details": "2024 · Leading Innovator"
+            "details": "2024 · Lider Yenilikçi"
           }
         },
         "partner_1": {
@@ -209,9 +209,9 @@
         "partner_UYDfUi"
       ],
       "settings": {
-        "awards_subtitle": "Anerkendt Excellence",
-        "awards_title": "Prisvindende Velværeteknologi & Komfort",
-        "partners_title": "Betroede Partnere & Certificeringer"
+        "awards_subtitle": "Tanınmış Mükemmellik",
+        "awards_title": "Ödüllü Sağlık Teknolojisi ve Konfor",
+        "partners_title": "Güvenilir Ortaklar ve Sertifikalar"
       }
     },
     "woc_categories": {
@@ -221,8 +221,8 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/category-massage-chairs-BjHE5OGd_1.jpg",
-            "title": "Massagestole",
-            "subtitle": "EKSKLUSIV VELVÆRE",
+            "title": "Masaj Koltukları",
+            "subtitle": "ÖZEL SAĞLIK",
             "link": "/collections/massage-chairs"
           }
         },
@@ -230,8 +230,8 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/category-smart-beds-CPye7zsK_1.jpg",
-            "title": "Smart-Senge",
-            "subtitle": "SMART SOVESYSTEM",
+            "title": "Akıllı Yataklar",
+            "subtitle": "AKILLI UYKU SİSTEMİ",
             "link": "/collections/smart-beds"
           }
         },
@@ -239,8 +239,8 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/category-sports-recovery-DG6PePS4_1.jpg",
-            "title": "Sportsrestitution",
-            "subtitle": "SPORT & RECOVERY",
+            "title": "Spor İyileşmesi",
+            "subtitle": "SPOR & İYİLEŞME",
             "link": "/collections/home-wellness"
           }
         },
@@ -248,8 +248,8 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/category-massage-devices-CZxd1d3T_1.jpg",
-            "title": "Massagedevice",
-            "subtitle": "HÅNDHOLDT TERAPI",
+            "title": "Masaj Cihazı",
+            "subtitle": "EL TERAPİSİ",
             "link": "/collections/massage-devices"
           }
         },
@@ -257,8 +257,8 @@
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/category-beauty-tech-l6P8aZTl_1.jpg",
-            "title": "Beauty-Teknologi",
-            "subtitle": "KLINISK HUDPLEJE",
+            "title": "Güzellik Teknolojisi",
+            "subtitle": "KLİNİK CİLT BAKIMI",
             "link": "/collections/beauty-technology"
           }
         }
@@ -271,9 +271,9 @@
         "cat_5"
       ],
       "settings": {
-        "label": "KOLLEKTIONER",
-        "heading": "Eksklusive Wellness Serier",
-        "description": "Hvert produkt i vores sortiment er udviklet efter de strengeste kvalitetskrav med vores egne teknologiske specifikationer."
+        "label": "KOLEKSİYONLAR",
+        "heading": "Özel Wellness Serileri",
+        "description": "Ürün yelpazemizdeki her ürün, kendi teknolojik özelliklerimizle en katı kalite gereksinimlerine göre geliştirilmiştir."
       }
     },
     "woc_doctor": {
@@ -282,7 +282,7 @@
         "ben_1": {
           "type": "benefit",
           "settings": {
-            "text": "Dybdegående muskelrestitution",
+            "text": "Derinlemesine kas iyileşmesi",
             "accent": "gold",
             "icon": "pulse",
             "custom_icon_svg": ""
@@ -291,7 +291,7 @@
         "ben_2": {
           "type": "benefit",
           "settings": {
-            "text": "Forbedret blodcirkulation",
+            "text": "İyileştirilmiş kan dolaşımı",
             "accent": "forest",
             "icon": "alignment",
             "custom_icon_svg": ""
@@ -300,7 +300,7 @@
         "ben_3": {
           "type": "benefit",
           "settings": {
-            "text": "Lindring af gigt- & ledsmerter",
+            "text": "Artrit ve eklem ağrılarının giderilmesi",
             "accent": "gold",
             "icon": "bone",
             "custom_icon_svg": ""
@@ -309,7 +309,7 @@
         "ben_4": {
           "type": "benefit",
           "settings": {
-            "text": "Effektiv afgiftning (Sved)",
+            "text": "Etkili detoks (Terleme)",
             "accent": "forest",
             "icon": "droplet",
             "custom_icon_svg": ""
@@ -318,7 +318,7 @@
         "ben_5": {
           "type": "benefit",
           "settings": {
-            "text": "Øget smidighed & fleksibilitet",
+            "text": "Artan çeviklik ve esneklik",
             "accent": "gold",
             "icon": "stretch",
             "custom_icon_svg": ""
@@ -327,7 +327,7 @@
         "ben_6": {
           "type": "benefit",
           "settings": {
-            "text": "Dybere søvn & bedre ro",
+            "text": "Daha derin uyku ve daha iyi dinlenme",
             "accent": "forest",
             "icon": "moon",
             "custom_icon_svg": ""
@@ -336,7 +336,7 @@
         "ben_7": {
           "type": "benefit",
           "settings": {
-            "text": "Stress- og spændingsreduktion",
+            "text": "Stres ve gerginlik azaltma",
             "accent": "gold",
             "icon": "brain",
             "custom_icon_svg": ""
@@ -345,7 +345,7 @@
         "ben_8": {
           "type": "benefit",
           "settings": {
-            "text": "Styrket immunforsvar",
+            "text": "Güçlendirilmiş bağışıklık sistemi",
             "accent": "forest",
             "icon": "shield",
             "custom_icon_svg": ""
@@ -354,7 +354,7 @@
         "ben_9": {
           "type": "benefit",
           "settings": {
-            "text": "Forbedret kropsholdning",
+            "text": "Gelişmiş duruş",
             "accent": "gold",
             "icon": "alignment",
             "custom_icon_svg": ""
@@ -363,7 +363,7 @@
         "ben_10": {
           "type": "benefit",
           "settings": {
-            "text": "Cellefornyelse & smuk hud",
+            "text": "Hücre yenilenmesi ve güzel cilt",
             "accent": "forest",
             "icon": "circle",
             "custom_icon_svg": ""
@@ -384,13 +384,13 @@
       ],
       "settings": {
         "doctor_image": "shopify://shop_images/dr-scandinavian-Ct5TQhr8_1.png",
-        "label": "SUNDHEDSFAGLIG ANBEFALING",
-        "heading": "Wellness understøttet af",
-        "heading_accent": "Sundhedsfaglig Ekspertise",
-        "quote": "Regelmæssig brug af dybdegående massage og infrarød varmeterapi kan bidrage markant til øget blodcirkulation, muskelrestitution og lindring af kroniske spændinger. Teknologien understøtter kroppens naturlige helingsprocesser og fremmer dyb mental afslapning.",
+        "label": "SAĞLIK UZMANI TAVSİYESİ",
+        "heading": "Wellness'ı destekleyen",
+        "heading_accent": "Sağlık Uzmanlığı",
+        "quote": "Derinlemesine masaj ve kızılötesi ısı terapisinin düzenli kullanımı, kan dolaşımının artmasına, kasların iyileşmesine ve kronik gerginliğin giderilmesine önemli ölçüde katkıda bulunabilir. Teknoloji, vücudun doğal iyileşme süreçlerini destekler ve derin zihinsel rahatlamayı destekler.",
         "doctor_name": "Dr. Carsten Rosendahl",
-        "doctor_title": "Læge & Ekspert i Wellness-Teknologi",
-        "benefits_label": "10 DOKUMENTEREDE FORDELE VED VORES VELVÆRETEKNOLOGI"
+        "doctor_title": "Doktor ve Wellness Teknolojisi Uzmanı",
+        "benefits_label": "SAĞLIK TEKNOLOJİMİZİN KANITLANMIŞ 10 FAYDASI"
       }
     },
     "quiz": {
@@ -398,10 +398,10 @@
       "settings": {
         "padding_top": 80,
         "padding_bottom": 80,
-        "kicker": "Personal Guidance",
-        "heading": "Find Your Perfect\n<span class=\"block italic text-gold\">Massage Chair</span>",
-        "description": "Take our 2-minute quiz and find the chair that matches your body, lifestyle, and wellness goals.",
-        "button_text": "Start the Quiz",
+        "kicker": "Kişisel Rehberlik",
+        "heading": "Mükemmel Masaj Koltuğunuzu\n<span class=\"block italic text-gold\">Bulun</span>",
+        "description": "2 dakikalık testimizi çözün ve vücudunuza, yaşam tarzınıza ve sağlıklı yaşam hedeflerinize uygun koltuğu bulun.",
+        "button_text": "Teste Başla",
         "button_link": "/pages/quiz"
       }
     },
@@ -411,129 +411,129 @@
         "t1": {
           "type": "text_card",
           "settings": {
-            "quote": "My chronic back pain is almost gone after switching to the smart bed. It truly adapts to my body.",
+            "quote": "Akıllı yatağa geçtikten sonra kronik sırt ağrım neredeyse geçti. Vücuduma gerçekten uyum sağlıyor.",
             "author": "Nikolaj Eriksen",
-            "product": "Herning · Smart Bed"
+            "product": "Herning · Akıllı Yatak"
           }
         },
         "t2": {
           "type": "text_card",
           "settings": {
-            "quote": "I've spent thousands on serums over the years. The LED mask does more than all of them combined.",
+            "quote": "Yıllar boyunca serumlara binlerce lira harcadım. LED maske hepsinden daha fazlasını yapıyor.",
             "author": "Maja Kristiansen",
-            "product": "Slagelse · Beauty Technology"
+            "product": "Slagelse · Güzellik Teknolojisi"
           }
         },
         "t3": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_rYfwnK": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_Fw3MTk": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_Kz6PtR": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_MpbH4e": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_hUtbCJ": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_HgxMCp": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_pQt4fE": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_qhA7RA": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "text_card_WBYCb7": {
           "type": "text_card",
           "settings": {
-            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "quote": "Ayak masaj aleti uzun bir günün ardından tam bir mutluluk. Eşim ve ben ilk kimin kullanacağı konusunda kavga ediyoruz.",
             "author": "Jens Rasmussen",
-            "product": "Horsens · Massager"
+            "product": "Horsens · Masaj Aleti"
           }
         },
         "t4": {
           "type": "text_card",
           "settings": {
-            "quote": "I play handball professionally. These recovery tools keep me on the court.",
+            "quote": "Profesyonel olarak hentbol oynuyorum. Bu iyileşme araçları beni sahada tutuyor.",
             "author": "Tobias Berg",
-            "product": "Ishøj · Sports Recovery"
+            "product": "Ishøj · Spor İyileşmesi"
           }
         },
         "t5": {
           "type": "text_card",
           "settings": {
-            "quote": "We upgraded from memory foam. The difference is staggering. My husband's back pain is completely gone.",
+            "quote": "Hafızalı köpükten geçiş yaptık. Aradaki fark şaşırtıcı. Kocamın sırt ağrısı tamamen geçti.",
             "author": "Fie Nissen",
-            "product": "Vanløse · Smart Bed"
+            "product": "Vanløse · Akıllı Yatak"
           }
         },
         "t6": {
           "type": "text_card",
           "settings": {
-            "quote": "My dermatologist was genuinely surprised by my skin improvement.",
+            "quote": "Dermatoloğum cildimdeki iyileşmeye gerçekten şaşırdı.",
             "author": "Susanne Brandt",
-            "product": "Middelfart · Beauty Technology"
+            "product": "Middelfart · Güzellik Teknolojisi"
           }
         },
         "t7": {
           "type": "text_card",
           "settings": {
-            "quote": "As a marathon runner, these tools are indispensable. My recovery time has improved dramatically.",
+            "quote": "Bir maraton koşucusu olarak bu araçlar vazgeçilmezdir. İyileşme sürem önemli ölçüde iyileşti.",
             "author": "Helene Krogh",
-            "product": "Kerteminde · Sports Recovery"
+            "product": "Kerteminde · Spor İyileşmesi"
           }
         }
       },
@@ -556,9 +556,9 @@
         "t7"
       ],
       "settings": {
-        "kicker": "Real Stories",
-        "heading": "Hear From Our Customers",
-        "description": "Real people share their experience with World of Comfort products",
+        "kicker": "Gerçek Hikayeler",
+        "heading": "Müşterilerimizin Yorumları",
+        "description": "Gerçek insanlar World of Comfort ürünleriyle ilgili deneyimlerini paylaşıyor",
         "padding_top": 96,
         "padding_bottom": 96
       }
@@ -570,36 +570,36 @@
           "type": "video_testimonial",
           "settings": {
             "video_url": "",
-            "quote": "A fantastic experience from start to finish",
+            "quote": "Baştan sona harika bir deneyim",
             "author": "Martin & Louise",
-            "location_product": "Cosmos Massage Chair"
+            "location_product": "Cosmos Masaj Koltuğu"
           }
         },
         "video_testimonial_368dgx": {
           "type": "video_testimonial",
           "settings": {
             "video_url": "",
-            "quote": "My Apollo is the best purchase I have ever made",
+            "quote": "Apollo'm şimdiye kadar yaptığım en iyi alışveriş",
             "author": "Henrik P.",
-            "location_product": "Apollo Massage Chair"
+            "location_product": "Apollo Masaj Koltuğu"
           }
         },
         "video_testimonial_43nJbe": {
           "type": "video_testimonial",
           "settings": {
             "video_url": "",
-            "quote": "Our employees love it",
+            "quote": "Çalışanlarımız buna bayılıyor",
             "author": "Jesper M.",
-            "location_product": "Business Solution"
+            "location_product": "Kurumsal Çözüm"
           }
         },
         "video_testimonial_bKJgFb": {
           "type": "video_testimonial",
           "settings": {
             "video_url": "",
-            "quote": "The quality is absolutely top-notch",
+            "quote": "Kalite kesinlikle birinci sınıf",
             "author": "Camilla & Anders",
-            "location_product": "Cosmos Massage Chair"
+            "location_product": "Cosmos Masaj Koltuğu"
           }
         }
       },
@@ -609,13 +609,13 @@
         "video_testimonial_43nJbe",
         "video_testimonial_bKJgFb"
       ],
-      "name": "Testimonials Showcase",
+      "name": "Müşteri Yorumları Vitrini",
       "settings": {
         "padding_top": 96,
         "padding_bottom": 80,
-        "kicker": "Real Stories",
-        "heading": "Hear From Our Customers",
-        "description": "Real people share their experience with World of Comfort products"
+        "kicker": "Gerçek Hikayeler",
+        "heading": "Müşterilerimizin Yorumları",
+        "description": "Gerçek insanlar World of Comfort ürünleriyle ilgili deneyimlerini paylaşıyor"
       }
     },
     "hero": {
@@ -625,8 +625,8 @@
           "type": "location",
           "settings": {
             "emoji": "🇩🇰",
-            "city": "Copenhagen",
-            "country": "Denmark",
+            "city": "Kopenhag",
+            "country": "Danimarka",
             "link": ""
           }
         },
@@ -635,7 +635,7 @@
           "settings": {
             "emoji": "🇸🇪",
             "city": "Malmö",
-            "country": "Sweden",
+            "country": "İsveç",
             "link": ""
           }
         },
@@ -644,7 +644,7 @@
           "settings": {
             "emoji": "🇳🇴",
             "city": "Oslo",
-            "country": "Norway",
+            "country": "Norveç",
             "link": ""
           }
         },
@@ -653,7 +653,7 @@
           "settings": {
             "emoji": "🇩🇪",
             "city": "Frankfurt",
-            "country": "Germany",
+            "country": "Almanya",
             "link": ""
           }
         },
@@ -662,7 +662,7 @@
           "settings": {
             "emoji": "🇫🇷",
             "city": "Paris",
-            "country": "France",
+            "country": "Fransa",
             "link": ""
           }
         },
@@ -671,7 +671,7 @@
           "settings": {
             "emoji": "🇳🇱",
             "city": "Amsterdam",
-            "country": "Netherlands",
+            "country": "Hollanda",
             "link": ""
           }
         },
@@ -679,8 +679,8 @@
           "type": "location",
           "settings": {
             "emoji": "🇹🇷",
-            "city": "Istanbul",
-            "country": "Turkey",
+            "city": "İstanbul",
+            "country": "Türkiye",
             "link": ""
           }
         },
@@ -689,7 +689,7 @@
           "settings": {
             "emoji": "🇩🇰",
             "city": "Fredericia",
-            "country": "Denmark",
+            "country": "Danimarka",
             "link": ""
           }
         }
@@ -708,10 +708,10 @@
         "padding_top": 96,
         "padding_bottom": 96,
         "bg_image": "shopify://shop_images/showroom-cta-hero-SWNcv-vT_1.jpg",
-        "kicker": "Experience It Personally",
-        "heading": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>",
-        "description": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation.",
-        "button_text": "Book a Visit",
+        "kicker": "Bizzat Deneyimleyin",
+        "heading": "Showroomlarımızı\n<span class=\"block italic text-gold\">Ziyaret Edin</span>",
+        "description": "Sağlık teknolojimizi ilk elden deneyimlemenin yerini hiçbir şey tutamaz. Ücretsiz danışmanlık için showroomlarımızdan birini ziyaret edin.",
+        "button_text": "Ziyaret Rezerve Et",
         "button_link": "/pages/showrooms"
       }
     }
