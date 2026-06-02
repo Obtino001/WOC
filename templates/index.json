@@ -570,35 +570,41 @@
         "video_testimonial_Lb9q8m": {
           "type": "video_testimonial",
           "settings": {
-            "video": "shopify://files/videos/hero.mp4",
-            "quote": "",
-            "author": "",
-            "location_product": ""
+            "video_url": "https://www.youtube.com/watch?v=qZSpfSh3zlU",
+            "video": "",
+            "quote": "A fantastic experience from start to finish",
+            "author": "Martin & Louise",
+            "location_product": "Cosmos Massage Chair"
           }
         },
         "video_testimonial_368dgx": {
           "type": "video_testimonial",
           "settings": {
-            "video": "shopify://files/videos/hero.mp4",
-            "quote": "",
-            "author": "",
-            "location_product": ""
+            "video_url": "https://www.youtube.com/watch?v=pK11B-YLHEU",
+            "video": "",
+            "quote": "My Apollo is the best purchase I have ever made",
+            "author": "Henrik P.",
+            "location_product": "Apollo Massage Chair"
           }
         },
         "video_testimonial_43nJbe": {
           "type": "video_testimonial",
           "settings": {
-            "quote": "",
-            "author": "",
-            "location_product": ""
+            "video_url": "https://www.youtube.com/watch?v=aWvU03UjYxI",
+            "video": "",
+            "quote": "Our employees love it",
+            "author": "Jesper M.",
+            "location_product": "Business Solution"
           }
         },
         "video_testimonial_bKJgFb": {
           "type": "video_testimonial",
           "settings": {
-            "quote": "",
-            "author": "",
-            "location_product": ""
+            "video_url": "https://www.youtube.com/watch?v=VRJxrP_7wjk",
+            "video": "",
+            "quote": "The quality is absolutely top-notch",
+            "author": "Camilla & Anders",
+            "location_product": "Cosmos Massage Chair"
           }
         }
       },
