@@ -12,6 +12,8 @@
     "hero": {
       "type": "sed-hero",
       "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_1_02f183f7-8c2d-4c31-a350-ea71ddf9c339.jpg",
         "heading_1": "REJUVENATE",
         "heading_2": "YOUR SKIN"
       }
@@ -19,6 +21,9 @@
     "brand_intro": {
       "type": "sed-brand-intro",
       "settings": {
+        "color_scheme": "",
+        "padding_top": 112,
+        "padding_bottom": 144,
         "text": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home"
       }
     },
@@ -28,6 +33,7 @@
         "c1": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_1_02f183f7-8c2d-4c31-a350-ea71ddf9c339.jpg",
             "subtitle": "INNOVATIVE FORMULAS",
             "title": "HIGH-PERFORMANCE SKINCARE",
             "link_text": "SHOP SKINCARE",
@@ -37,6 +43,7 @@
         "c2": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_1_02f183f7-8c2d-4c31-a350-ea71ddf9c339.jpg",
             "subtitle": "CUTTING-EDGE TECHNOLOGY",
             "title": "ADVANCED BEAUTY DEVICES",
             "link_text": "SHOP DEVICES",
@@ -48,7 +55,9 @@
         "c1",
         "c2"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": ""
+      }
     },
     "carousel": {
       "type": "sed-product-carousel",
@@ -56,6 +65,7 @@
         "p1": {
           "type": "product",
           "settings": {
+            "product": "boss-lady-facelift",
             "tag": "BESTSELLER",
             "title": "BOSS LADY",
             "subtitle": "FACELIFT",
@@ -67,6 +77,7 @@
         "p2": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "AWARD WINNER",
             "title": "NEFERTITI",
             "subtitle": "NECKLIFT",
@@ -78,6 +89,7 @@
         "p3": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "BESTSELLER",
             "title": "COMFORT CLEANER",
             "subtitle": "",
@@ -89,6 +101,7 @@
         "p4": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "",
             "title": "LIGHT UP",
             "subtitle": "EYE LIFT",
@@ -100,6 +113,7 @@
         "p5": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "LUXURY",
             "title": "COLLAGEN 24K GOLD",
             "subtitle": "EYEPADS",
@@ -111,6 +125,7 @@
         "p6": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "NY",
             "title": "POWER SERUM SET",
             "subtitle": "",
@@ -129,6 +144,7 @@
         "p6"
       ],
       "settings": {
+        "color_scheme": "",
         "tab_1": "Best Sellers",
         "tab_2": "Trending Now",
         "subtitle": "Our most awarded products, chosen by experts worldwide."
@@ -137,6 +153,7 @@
     "science_split": {
       "type": "sed-image-text-split",
       "settings": {
+        "color_scheme": "",
         "image_position": "left",
         "kicker": "THE SCIENCE BEHIND",
         "heading": "The Science of LED Light",
@@ -148,6 +165,7 @@
     "story_split": {
       "type": "sed-image-text-split",
       "settings": {
+        "color_scheme": "",
         "image_position": "right",
         "kicker": "BORN IN SCANDINAVIA",
         "heading": "Where Beauty\nBecomes Timeless",
@@ -195,6 +213,7 @@
         "d4"
       ],
       "settings": {
+        "color_scheme": "",
         "section_id": "devices-section",
         "kicker": "CUTTING-EDGE TECHNOLOGY",
         "columns": 3
@@ -231,6 +250,7 @@
         "s3"
       ],
       "settings": {
+        "color_scheme": "",
         "section_id": "skincare-section",
         "kicker": "HIGH PERFORMANCE SKINCARE",
         "columns": 3
@@ -239,6 +259,7 @@
     "newsletter": {
       "type": "sed-newsletter",
       "settings": {
+        "color_scheme": "",
         "heading": "Luxury in your inbox.",
         "description": "Be the first to know about new collections, innovations, exclusive events and more.",
         "placeholder": "E-mail",
@@ -301,6 +322,7 @@
         "b7"
       ],
       "settings": {
+        "color_scheme": "",
         "heading": "In the World's Finest Hands",
         "description": "Our award-winning devices and skincare are a signature of luxury in spas and clinics worldwide"
       }
@@ -327,6 +349,7 @@
         "a3"
       ],
       "settings": {
+        "color_scheme": "",
         "kicker": "AWARD-WINNING PRODUCTS"
       }
     },
@@ -390,7 +413,9 @@
         "t5",
         "t6"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": ""
+      }
     },
     "guarantees": {
       "type": "sed-guarantees-bar",
@@ -398,28 +423,28 @@
         "g1": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
             "text": "30 Day Returns"
           }
         },
         "g2": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "text": "Lifetime Service"
           }
         },
         "g3": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
             "text": "CE Certified"
           }
         },
         "g4": {
           "type": "guarantee",
           "settings": {
-            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "text": "Loved by +45,000"
           }
         }
@@ -430,11 +455,14 @@
         "g3",
         "g4"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": ""
+      }
     },
     "experience": {
       "type": "sed-experience-cta",
       "settings": {
+        "color_scheme": "",
         "heading": "Experience in person",
         "description": "Visit one of our showrooms and experience Séduisante products in real life. Our experts will guide you to the perfect solution.",
         "btn_text": "FIND YOUR SHOWROOM",
