@@ -14,23 +14,64 @@
       </button>
       
       <div class="flex gap-px bg-border/20 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
-        {% for block in section.blocks %}
-          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-background group h-full flex flex-col relative" {{ block.shopify_attributes }}>
-            {%- assign product = block.settings.product -%}
-            {%- assign target_url = product.url | default: block.settings.product_url -%}
-            
+        {%- assign products_to_display = section.blocks -%}
+        {%- assign is_collection = false -%}
+        
+        {%- if section.settings.collection != blank -%}
+          {%- assign products_to_display = section.settings.collection.products -%}
+          {%- assign is_collection = true -%}
+        {%- endif -%}
+
+        {%- for item in products_to_display limit: section.settings.products_to_show -%}
+          {%- if is_collection -%}
+            {%- assign product = item -%}
+            {%- assign target_url = product.url -%}
+            {%- assign image_to_show = product.featured_image -%}
+            {%- assign tag_to_show = "" -%}
+            {%- if product.compare_at_price > product.price -%}
+              {%- assign tag_to_show = "Sale" -%}
+            {%- else -%}
+              {%- for tag in product.tags -%}
+                {%- if tag == 'BESTSELLER' or tag == 'Bestseller' or tag == 'bestseller' -%}
+                  {%- assign tag_to_show = "Bestseller" -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- assign title_to_show = product.title -%}
+            {%- assign subtitle_to_show = product.metafields.custom.subtitle | default: product.type -%}
+            {%- assign compare_price_to_show = product.compare_at_price | money -%}
+            {%- assign price_to_show = product.price | money -%}
+            {%- assign item_shopify_attributes = "" -%}
+          {%- else -%}
+            {%- assign product = item.settings.product -%}
+            {%- assign target_url = product.url | default: item.settings.product_url -%}
+            {%- assign image_to_show = item.settings.image | default: product.featured_image -%}
+            {%- assign tag_to_show = item.settings.tag -%}
+            {%- assign title_to_show = item.settings.title | default: product.title -%}
+            {%- assign subtitle_to_show = item.settings.subtitle -%}
+            {%- assign compare_price_to_show = item.settings.compare_price -%}
+            {%- if compare_price_to_show == blank and product != blank and product.compare_at_price > product.price -%}
+              {%- assign compare_price_to_show = product.compare_at_price | money -%}
+            {%- endif -%}
+            {%- assign price_to_show = item.settings.price -%}
+            {%- if price_to_show == blank and product != blank -%}
+              {%- assign price_to_show = product.price | money -%}
+            {%- endif -%}
+            {%- assign item_shopify_attributes = item.shopify_attributes -%}
+          {%- endif -%}
+
+          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-background group h-full flex flex-col relative" {{ item_shopify_attributes }}>
             <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
               <a href="{{ target_url }}" class="absolute inset-0 z-0"></a>
-              {% if block.settings.image != blank %}
-                {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
-              {% elsif product != blank and product.featured_image != blank %}
-                {{ product.featured_image | image_url: width: 600 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
+              {% if image_to_show != blank %}
+                {{ image_to_show | image_url: width: 600 | image_tag: class: 'w-full h-full transition-transform duration-[2s] group-hover:scale-105 object-contain p-8 relative z-0', loading: 'lazy' }}
               {% else %}
                 {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-cover relative z-0' }}
               {% endif %}
               
-              {% if block.settings.tag != blank %}
-                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-background/90 text-foreground px-2.5 py-1 backdrop-blur-sm z-10">{{ block.settings.tag }}</span>
+              {% if tag_to_show != blank %}
+                <span class="absolute top-4 left-4 font-body text-[8px] font-medium uppercase tracking-[0.15em] bg-background/90 text-foreground px-2.5 py-1 backdrop-blur-sm z-10">{{ tag_to_show }}</span>
               {% endif %}
               
               <div class="absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10">
@@ -66,25 +107,25 @@
             </div>
             <a class="px-4 py-5 text-center border-t border-border/10 min-h-[128px] flex flex-col justify-start flex-1" href="{{ target_url }}">
               <h3 class="font-display text-[13px] font-light text-foreground uppercase tracking-[0.12em]">
-                {{ block.settings.title | default: product.title }}
+                {{ title_to_show }}
               </h3>
-              {% if block.settings.subtitle != blank %}
-                <p class="font-display text-[11px] text-muted-foreground uppercase tracking-[0.12em] mt-0.5">{{ block.settings.subtitle }}</p>
+              {% if subtitle_to_show != blank %}
+                <p class="font-display text-[11px] text-muted-foreground uppercase tracking-[0.12em] mt-0.5">{{ subtitle_to_show }}</p>
               {% endif %}
               <div class="flex items-center justify-center gap-2 mt-2.5">
-                {% if block.settings.compare_price != blank %}
-                  <span class="font-body text-[12px] text-muted-foreground line-through">{{ block.settings.compare_price }}</span>
-                {% elsif product != blank and product.compare_at_price > product.price %}
-                  <span class="font-body text-[12px] text-muted-foreground line-through">{{ product.compare_at_price | money }}</span>
+                {% if product.compare_at_price > product.price or compare_price_to_show != blank %}
+                  <span class="font-body text-[12px] text-muted-foreground line-through">
+                    {% if is_collection %}{{ product.compare_at_price | money }}{% else %}{{ compare_price_to_show }}{% endif %}
+                  </span>
                 {% endif %}
                 
                 <span class="font-body text-[12px] text-foreground">
-                  {% if block.settings.price != blank %}{{ block.settings.price }}{% elsif product != blank %}{{ product.price | money }}{% endif %}
+                  {{ price_to_show }}
                 </span>
               </div>
             </a>
           </div>
-        {% endfor %}
+        {%- endfor -%}
       </div>
 
       <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-background/80 backdrop-blur-sm border border-border rounded-full flex items-center justify-center hover:bg-background transition-colors -mr-3">
@@ -99,6 +140,8 @@
   "name": "SED Product Carousel",
   "settings": [
     { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { "type": "collection", "id": "collection", "label": "Select Collection (Optional - Overrides manual blocks below)" },
+    { "type": "range", "id": "products_to_show", "min": 2, "max": 12, "step": 1, "default": 8, "label": "Products to Show" },
     { "type": "text", "id": "tab_1", "label": "Tab 1 Title", "default": "Best Sellers" },
     { "type": "text", "id": "tab_2", "label": "Tab 2 Title", "default": "Trending Now" },
     { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Our most awarded products, chosen by experts worldwide." }
