@@ -143,8 +143,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
@@ -159,6 +159,7 @@
         "a1": {
           "type": "award",
           "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "title": "Beauty Award 2024",
             "subtitle": "Gold Winner"
           }
@@ -166,6 +167,7 @@
         "a2": {
           "type": "award",
           "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "title": "Innovation Award",
             "subtitle": "Finalist"
           }
@@ -173,6 +175,7 @@
         "a3": {
           "type": "award",
           "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "title": "Best Device 2023",
             "subtitle": "Bronze"
           }
@@ -180,6 +183,7 @@
         "a4": {
           "type": "award",
           "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
             "title": "Editor's Choice",
             "subtitle": "Top Pick"
           }
@@ -192,6 +196,7 @@
         "a4"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 24,
         "padding_bottom": 24,
         "speed": 30
@@ -200,6 +205,9 @@
     "brand_intro": {
       "type": "sed-brand-intro",
       "settings": {
+        "color_scheme": "",
+        "padding_top": 112,
+        "padding_bottom": 144,
         "text": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home"
       }
     },
@@ -229,7 +237,9 @@
         "c1",
         "c2"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": ""
+      }
     },
     "carousel": {
       "type": "sed-product-carousel",
@@ -237,6 +247,7 @@
         "p1": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "BESTSELLER",
             "title": "BOSS LADY",
             "subtitle": "FACELIFT",
@@ -248,6 +259,7 @@
         "p2": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "AWARD WINNER",
             "title": "NEFERTITI",
             "subtitle": "NECKLIFT",
@@ -259,6 +271,7 @@
         "p3": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "BESTSELLER",
             "title": "COMFORT CLEANER",
             "subtitle": "",
@@ -270,6 +283,7 @@
         "p4": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "",
             "title": "LIGHT UP",
             "subtitle": "EYE LIFT",
@@ -281,6 +295,7 @@
         "p5": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "LUXURY",
             "title": "COLLAGEN 24K GOLD",
             "subtitle": "EYEPADS",
@@ -292,6 +307,7 @@
         "p6": {
           "type": "product",
           "settings": {
+            "product": "",
             "tag": "NY",
             "title": "POWER SERUM SET",
             "subtitle": "",
@@ -310,6 +326,9 @@
         "p6"
       ],
       "settings": {
+        "color_scheme": "",
+        "collection": "",
+        "products_to_show": 8,
         "tab_1": "Best Sellers",
         "tab_2": "Trending Now",
         "subtitle": "Our most awarded products, chosen by experts worldwide."
@@ -318,6 +337,9 @@
     "routine_split": {
       "type": "sed-routine-split",
       "settings": {
+        "color_scheme": "",
+        "padding_top": 64,
+        "padding_bottom": 96,
         "kicker": "YOUR NEW ROUTINE",
         "heading": "BOSS LADY: ALL-IN-ONE SKINCARE",
         "text": "<p>Boss Lady is a skincare device that helps lift, tighten, eliminate fine lines and wrinkles, relax muscles and boost blood circulation. Together with your serum range, it helps your skin contract and become more youthful.</p><p>The design is shaped to be used everywhere. It's fantastic under the eyes like the Light Up device and fantastic for neck and jawline like the Nefertiti device. That's why we believe this one has it all.</p>",
@@ -372,6 +394,7 @@
         "t4"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 96,
         "heading": "The Science Behind Boss Lady"
@@ -380,6 +403,7 @@
     "before_after": {
       "type": "sed-before-after",
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 96,
         "heading": "Before & After",
@@ -434,6 +458,7 @@
         "r5"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 96,
         "rating_text": "4,7 out of 5",
@@ -627,6 +652,7 @@
         "d4"
       ],
       "settings": {
+        "color_scheme": "",
         "section_id": "related-products",
         "kicker": "",
         "columns": 4
@@ -635,6 +661,7 @@
     "cta_final": {
       "type": "sed-experience-cta",
       "settings": {
+        "color_scheme": "",
         "heading": "Ready For Your Transformation?",
         "description": "Experience the difference with Boss Lady — your daily facelift in just 10 minutes.",
         "btn_text": "BUY NOW — £385",
