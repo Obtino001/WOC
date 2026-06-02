@@ -8,6 +8,723 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "woc_hero": {
+      "type": "woc-hero",
+      "blocks": {
+        "usp_1": {
+          "type": "usp",
+          "settings": {
+            "icon": "award",
+            "custom_icon_svg": "",
+            "text": "Nordens Førende Velværevirksomhed"
+          }
+        },
+        "usp_2": {
+          "type": "usp",
+          "settings": {
+            "icon": "cpu",
+            "custom_icon_svg": "",
+            "text": "Unik AI Teknologi"
+          }
+        },
+        "usp_3": {
+          "type": "usp",
+          "settings": {
+            "icon": "heart",
+            "custom_icon_svg": "",
+            "text": "Sundhedsfagligt Anbefalet"
+          }
+        },
+        "usp_4": {
+          "type": "usp",
+          "settings": {
+            "icon": "truck",
+            "custom_icon_svg": "",
+            "text": "White-Glove Levering"
+          }
+        }
+      },
+      "block_order": [
+        "usp_1",
+        "usp_2",
+        "usp_3",
+        "usp_4"
+      ],
+      "settings": {
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "hero_label": "FLAGSHIP COLLECTION",
+        "title_line1": "Skandinaviens Førende",
+        "title_line2": "Wellness-Teknologi",
+        "subtitle": "Proprietær AI-styret smertelindring, luksuriøse massagestole, smart-senge og restitutionsteknologi. Prøv det i et af vores 20 showrooms.",
+        "show_reviews": true,
+        "btn1_text": "Se Massagestole",
+        "btn1_url": "/collections/massage-chairs",
+        "btn2_text": "Find Showroom",
+        "btn2_url": "/pages/showrooms",
+        "btn3_text": "BOOK A DEMO",
+        "btn3_url": "",
+        "expert_name": "Dr. Carsten Rosendahl",
+        "expert_title": "Chiropractor · Nordic Spine & Wellness",
+        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
+        "expert_badge_text": "Professionally recommended"
+      }
+    },
+    "woc_trust": {
+      "type": "woc-trust",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "icon": "shield",
+            "custom_icon_svg": "",
+            "value": "5",
+            "label": "Års Garanti"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "icon": "store",
+            "custom_icon_svg": "",
+            "value": "20+",
+            "label": "Europæiske Showrooms"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "icon": "users",
+            "custom_icon_svg": "",
+            "value": "50.000+",
+            "label": "Glade Kunder"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "icon": "support",
+            "custom_icon_svg": "",
+            "value": "24/7",
+            "label": "Personlig Support"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
+      "settings": {
+        "google_score": "4.9",
+        "google_count": "847",
+        "google_url": "https://google.com",
+        "trustpilot_score": "4.6",
+        "trustpilot_count": "1.243",
+        "trustpilot_url": "https://trustpilot.com"
+      }
+    },
+    "woc_awards": {
+      "type": "woc-awards",
+      "blocks": {
+        "award_1": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/award-gazelle.png",
+            "name": "Børsen Gazelle",
+            "details": "2025 · Vækstvirksomhed"
+          }
+        },
+        "award_2": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/award-gazelle-2025.png",
+            "name": "Global Wellness Innovation Award",
+            "details": "2025 · Best Wellness Tech"
+          }
+        },
+        "award_3": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/award-european-business-CgJz-1Tm_1.png",
+            "name": "Scandinavian Business Awards",
+            "details": "2024 · Excellence in Wellness"
+          }
+        },
+        "award_4": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/award-healthcare-Dg7bscCa_1.png",
+            "name": "Healthcare & Pharmaceutical Awards",
+            "details": "2024 · Leading Innovator"
+          }
+        },
+        "partner_1": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-disney-CjO3HXR9_1.png",
+            "name": "Disney"
+          }
+        },
+        "partner_2": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-monster-DsVxChaQ_1.webp",
+            "name": "Samsung"
+          }
+        },
+        "partner_3": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-bo-BMAipxnT_1.jpg",
+            "name": "Monster"
+          }
+        },
+        "partner_4": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-italdesign-CSqUooPh_1.jpg",
+            "name": "Bang & Olufsen"
+          }
+        },
+        "partner_UYDfUi": {
+          "type": "partner",
+          "settings": {
+            "logo": "shopify://shop_images/partner-disney-CjO3HXR9_1.png",
+            "name": "Bang & Olufsen"
+          }
+        }
+      },
+      "block_order": [
+        "award_1",
+        "award_2",
+        "award_3",
+        "award_4",
+        "partner_1",
+        "partner_2",
+        "partner_3",
+        "partner_4",
+        "partner_UYDfUi"
+      ],
+      "settings": {
+        "awards_subtitle": "Anerkendt Excellence",
+        "awards_title": "Prisvindende Velværeteknologi & Komfort",
+        "partners_title": "Betroede Partnere & Certificeringer"
+      }
+    },
+    "woc_categories": {
+      "type": "woc-categories",
+      "blocks": {
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/category-massage-chairs-BjHE5OGd_1.jpg",
+            "title": "Massagestole",
+            "subtitle": "EKSKLUSIV VELVÆRE",
+            "link": "/collections/massage-chairs"
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/category-smart-beds-CPye7zsK_1.jpg",
+            "title": "Smart-Senge",
+            "subtitle": "SMART SOVESYSTEM",
+            "link": "/collections/smart-beds"
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/category-sports-recovery-DG6PePS4_1.jpg",
+            "title": "Sportsrestitution",
+            "subtitle": "SPORT & RECOVERY",
+            "link": "/collections/home-wellness"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/category-massage-devices-CZxd1d3T_1.jpg",
+            "title": "Massagedevice",
+            "subtitle": "HÅNDHOLDT TERAPI",
+            "link": "/collections/massage-devices"
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/category-beauty-tech-l6P8aZTl_1.jpg",
+            "title": "Beauty-Teknologi",
+            "subtitle": "KLINISK HUDPLEJE",
+            "link": "/collections/beauty-technology"
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5"
+      ],
+      "settings": {
+        "label": "KOLLEKTIONER",
+        "heading": "Eksklusive Wellness Serier",
+        "description": "Hvert produkt i vores sortiment er udviklet efter de strengeste kvalitetskrav med vores egne teknologiske specifikationer."
+      }
+    },
+    "woc_doctor": {
+      "type": "woc-doctor",
+      "blocks": {
+        "ben_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dybdegående muskelrestitution",
+            "accent": "gold",
+            "icon": "pulse",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret blodcirkulation",
+            "accent": "forest",
+            "icon": "alignment",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Lindring af gigt- & ledsmerter",
+            "accent": "gold",
+            "icon": "bone",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Effektiv afgiftning (Sved)",
+            "accent": "forest",
+            "icon": "droplet",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_5": {
+          "type": "benefit",
+          "settings": {
+            "text": "Øget smidighed & fleksibilitet",
+            "accent": "gold",
+            "icon": "stretch",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_6": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dybere søvn & bedre ro",
+            "accent": "forest",
+            "icon": "moon",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_7": {
+          "type": "benefit",
+          "settings": {
+            "text": "Stress- og spændingsreduktion",
+            "accent": "gold",
+            "icon": "brain",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_8": {
+          "type": "benefit",
+          "settings": {
+            "text": "Styrket immunforsvar",
+            "accent": "forest",
+            "icon": "shield",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_9": {
+          "type": "benefit",
+          "settings": {
+            "text": "Forbedret kropsholdning",
+            "accent": "gold",
+            "icon": "alignment",
+            "custom_icon_svg": ""
+          }
+        },
+        "ben_10": {
+          "type": "benefit",
+          "settings": {
+            "text": "Cellefornyelse & smuk hud",
+            "accent": "forest",
+            "icon": "circle",
+            "custom_icon_svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "ben_1",
+        "ben_2",
+        "ben_3",
+        "ben_4",
+        "ben_5",
+        "ben_6",
+        "ben_7",
+        "ben_8",
+        "ben_9",
+        "ben_10"
+      ],
+      "settings": {
+        "doctor_image": "shopify://shop_images/dr-scandinavian-Ct5TQhr8_1.png",
+        "label": "SUNDHEDSFAGLIG ANBEFALING",
+        "heading": "Wellness understøttet af",
+        "heading_accent": "Sundhedsfaglig Ekspertise",
+        "quote": "Regelmæssig brug af dybdegående massage og infrarød varmeterapi kan bidrage markant til øget blodcirkulation, muskelrestitution og lindring af kroniske spændinger. Teknologien understøtter kroppens naturlige helingsprocesser og fremmer dyb mental afslapning.",
+        "doctor_name": "Dr. Carsten Rosendahl",
+        "doctor_title": "Læge & Ekspert i Wellness-Teknologi",
+        "benefits_label": "10 DOKUMENTEREDE FORDELE VED VORES VELVÆRETEKNOLOGI"
+      }
+    },
+    "quiz": {
+      "type": "quiz-cta",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Personal Guidance",
+        "heading": "Find Your Perfect\n<span class=\"block italic text-gold\">Massage Chair</span>",
+        "description": "Take our 2-minute quiz and find the chair that matches your body, lifestyle, and wellness goals.",
+        "button_text": "Start the Quiz",
+        "button_link": "/pages/quiz"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials-grid-marquee",
+      "blocks": {
+        "t1": {
+          "type": "text_card",
+          "settings": {
+            "quote": "My chronic back pain is almost gone after switching to the smart bed. It truly adapts to my body.",
+            "author": "Nikolaj Eriksen",
+            "product": "Herning · Smart Bed"
+          }
+        },
+        "t2": {
+          "type": "text_card",
+          "settings": {
+            "quote": "I've spent thousands on serums over the years. The LED mask does more than all of them combined.",
+            "author": "Maja Kristiansen",
+            "product": "Slagelse · Beauty Technology"
+          }
+        },
+        "t3": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_rYfwnK": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_Fw3MTk": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_Kz6PtR": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_MpbH4e": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_hUtbCJ": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_HgxMCp": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_pQt4fE": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_qhA7RA": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "text_card_WBYCb7": {
+          "type": "text_card",
+          "settings": {
+            "quote": "The foot massager is pure bliss after a long day. My wife and I fight over who gets to use it first.",
+            "author": "Jens Rasmussen",
+            "product": "Horsens · Massager"
+          }
+        },
+        "t4": {
+          "type": "text_card",
+          "settings": {
+            "quote": "I play handball professionally. These recovery tools keep me on the court.",
+            "author": "Tobias Berg",
+            "product": "Ishøj · Sports Recovery"
+          }
+        },
+        "t5": {
+          "type": "text_card",
+          "settings": {
+            "quote": "We upgraded from memory foam. The difference is staggering. My husband's back pain is completely gone.",
+            "author": "Fie Nissen",
+            "product": "Vanløse · Smart Bed"
+          }
+        },
+        "t6": {
+          "type": "text_card",
+          "settings": {
+            "quote": "My dermatologist was genuinely surprised by my skin improvement.",
+            "author": "Susanne Brandt",
+            "product": "Middelfart · Beauty Technology"
+          }
+        },
+        "t7": {
+          "type": "text_card",
+          "settings": {
+            "quote": "As a marathon runner, these tools are indispensable. My recovery time has improved dramatically.",
+            "author": "Helene Krogh",
+            "product": "Kerteminde · Sports Recovery"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "text_card_rYfwnK",
+        "text_card_Fw3MTk",
+        "text_card_Kz6PtR",
+        "text_card_MpbH4e",
+        "text_card_hUtbCJ",
+        "text_card_HgxMCp",
+        "text_card_pQt4fE",
+        "text_card_qhA7RA",
+        "text_card_WBYCb7",
+        "t4",
+        "t5",
+        "t6",
+        "t7"
+      ],
+      "settings": {
+        "kicker": "Real Stories",
+        "heading": "Hear From Our Customers",
+        "description": "Real people share their experience with World of Comfort products",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "testimonials_showcase_CENJJc": {
+      "type": "testimonials-showcase",
+      "blocks": {
+        "video_testimonial_Lb9q8m": {
+          "type": "video_testimonial",
+          "settings": {
+            "video_url": "",
+            "quote": "A fantastic experience from start to finish",
+            "author": "Martin & Louise",
+            "location_product": "Cosmos Massage Chair"
+          }
+        },
+        "video_testimonial_368dgx": {
+          "type": "video_testimonial",
+          "settings": {
+            "video_url": "",
+            "quote": "My Apollo is the best purchase I have ever made",
+            "author": "Henrik P.",
+            "location_product": "Apollo Massage Chair"
+          }
+        },
+        "video_testimonial_43nJbe": {
+          "type": "video_testimonial",
+          "settings": {
+            "video_url": "",
+            "quote": "Our employees love it",
+            "author": "Jesper M.",
+            "location_product": "Business Solution"
+          }
+        },
+        "video_testimonial_bKJgFb": {
+          "type": "video_testimonial",
+          "settings": {
+            "video_url": "",
+            "quote": "The quality is absolutely top-notch",
+            "author": "Camilla & Anders",
+            "location_product": "Cosmos Massage Chair"
+          }
+        }
+      },
+      "block_order": [
+        "video_testimonial_Lb9q8m",
+        "video_testimonial_368dgx",
+        "video_testimonial_43nJbe",
+        "video_testimonial_bKJgFb"
+      ],
+      "name": "Testimonials Showcase",
+      "settings": {
+        "padding_top": 96,
+        "padding_bottom": 80,
+        "kicker": "Real Stories",
+        "heading": "Hear From Our Customers",
+        "description": "Real people share their experience with World of Comfort products"
+      }
+    },
+    "hero": {
+      "type": "showroom-hero",
+      "blocks": {
+        "s1": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇰",
+            "city": "Copenhagen",
+            "country": "Denmark",
+            "link": ""
+          }
+        },
+        "s2": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇸🇪",
+            "city": "Malmö",
+            "country": "Sweden",
+            "link": ""
+          }
+        },
+        "s3": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇳🇴",
+            "city": "Oslo",
+            "country": "Norway",
+            "link": ""
+          }
+        },
+        "s4": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇪",
+            "city": "Frankfurt",
+            "country": "Germany",
+            "link": ""
+          }
+        },
+        "s5": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇫🇷",
+            "city": "Paris",
+            "country": "France",
+            "link": ""
+          }
+        },
+        "s6": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇳🇱",
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "link": ""
+          }
+        },
+        "s7": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇹🇷",
+            "city": "Istanbul",
+            "country": "Turkey",
+            "link": ""
+          }
+        },
+        "s8": {
+          "type": "location",
+          "settings": {
+            "emoji": "🇩🇰",
+            "city": "Fredericia",
+            "country": "Denmark",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "settings": {
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "bg_image": "shopify://shop_images/showroom-cta-hero-SWNcv-vT_1.jpg",
+        "kicker": "Experience It Personally",
+        "heading": "Visit Our\n<span class=\"block italic text-gold\">Showrooms</span>",
+        "description": "Nothing beats experiencing our wellness technology firsthand. Visit one of our showrooms for a free consultation.",
+        "button_text": "Book a Visit",
+        "button_link": "/pages/showrooms"
+      }
+    }
+  },
+  "order": [
+    "woc_hero",
+    "woc_trust",
+    "woc_awards",
+    "woc_categories",
+    "woc_doctor",
+    "quiz",
+    "testimonials",
+    "testimonials_showcase_CENJJc",
+    "hero"
+  ]
 }
