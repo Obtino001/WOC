@@ -1607,7 +1607,60 @@
         "bank_account_connect_another": "Liitä toinen pankkitili",
         "bank_account_missing": "Pankkitili on liitettävä",
         "bank_account_disclaimer": "ACH-maksujen käsittely voi kestää jopa 4 työpäivää.",
-        "bank_account_generic_error": "Pankkitilin lisääminen epäonnistui. Yritä myöhemmin uudelleen."
+        "bank_account_generic_error": "Pankkitilin lisääminen epäonnistui. Yritä myöhemmin uudelleen.",
+        "card_number_label": "Korttinumero",
+        "card_number_placeholder": "Korttinumero",
+        "card_pay_with": "Maksa tällä:",
+        "card_security_notice": "Kaikki toiminnot ovat turvallisia ja salattuja.",
+        "card_expiry_label": "Parasta ennen (KK/VV)",
+        "card_expiry_placeholder": "Parasta ennen (KK/VV)",
+        "card_expiry_date_explanation": "Kartin viimeinen käyttöpäivämuoto: kuukausi, kuukausi, vuosi, vuosi",
+        "card_verification_value_explanation": "3-numeroinen turvakoodi löytyy yleensä korttisi takapuolelta. American Express -korteissa on 4-numeroinen koodi kortin etupuolella.",
+        "card_verification_value_explanation_amex": "Korttisi etupuolella oleva nelinumeroinen turvakoodi",
+        "card_verification_value_explanation_other": "Korttisi takapuolella oleva 3-numeroinen turvakoodi",
+        "card_start_label": "Muokkauspäivämäärä (KK/VV)",
+        "card_start_placeholder": "Muokkauspäivämäärä (KK/VV)",
+        "card_issue_number_label": "Muokkausnumero",
+        "card_issue_number_placeholder": "Muokkausnumero",
+        "card_change_label": "Vaihda",
+        "billing_address_description": "Valitse osoite, joka vastaa korttiasi tai maksutapaasi.",
+        "billing_address_description_no_shipping_address": "Syötä korttisi tai maksutapasi kanssa vastaava osoite.",
+        "card_fields_container_prefix": "Alueen säiliö tälle:",
+        "card_fields_unavailable_html": {
+          "one": "Luotto- ja pankkikorttimaksut eivät ole tällä hetkellä käytettävissä.<br><a href=\"%{current_url}\">Päivitä tämä sivu</a> tai yritä myöhemmin uudelleen.",
+          "other": "Luotto- ja pankkikorttimaksut eivät ole tällä hetkellä käytettävissä.<br><a href=\"%{current_url}\">Päivitä tämä sivu</a> tai kokeile toista maksutapaa."
+        },
+        "card_fields_processing_error": "Maksun käsittelyssä ilmeni ongelma. Yritä päivittää tämä sivu tai tarkista internet-yhteytesi.",
+        "card_information_notice": "Kaikki toiminnot ovat turvallisia ja salattuja. Luottokorttitietoja ei koskaan tallenneta.",
+        "card_expiration_month_label": "Parasta ennen (kuukausi)",
+        "card_expiration_year_label": "Viimeinen käyttöpäivä (vuosi)",
+        "billing_address_not_supported_for_payment_method_error": "Tätä maksutapaa ei voi käyttää laskutusosoitteessasi ja valuutassasi. Kokeile toista maksutapaa.",
+        "card_security_vault_notice": "Tarvitsemme tietosi tulevia maksuja varten. Kaikki toiminnot ovat turvallisia ja salattuja.",
+        "card_expired": "Aikasi on päättynyt",
+        "billing_address_associated_with_mandate": "Maksutavalla liitettyä osoitetta käytä",
+        "billing_address_associated_with_mandate_info": "Jos haluat muuttaa laskutusosoitettasi, poista luottokorttitietosi ja syötä ne uudelleen.",
+        "card_vaulted_company_location": "Kartta tallennettu tähän sijaintiin",
+        "billing_must_match_shipping_notice": "Maksutapasi kohdalla laskutusosoitteen ja toimitusosoitteen on oltava samat.",
+        "brand_not_available": "Tässä kaupassa {{brand}} ei hyväksytä. Käytä maksamiseen eri korttia.",
+        "billing_address_invalid_phone": "Jatkaaksesi päivitä {{label}} {{last_digits}} -numerolla päättyvän kortin laskutusosoite.",
+        "billing_address_invalid_phone_no_card": "Jatkaaksesi päivitä laskutusosoitteesi puhelinnumero.",
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Anna voimassa oleva muokkauspäivämäärä",
+              "issue_number": "Anna kelvollinen muokkausnumero"
+            },
+            "invalid": {
+              "verification_value": "Syötä kelvollinen CVV- tai turvakoodi"
+            }
+          }
+        },
+        "business_customer_vaulting_payment_label": "Tallenna tämä maksutapa maksusivulle ja anna %{company}-yritykselle lupa veloittaa tästä maksutavasta tulevissa tämän sijainnin ostoissa. Kaikki tähän sijaintiin liitetyt henkilöt voivat käyttää tätä maksutapaa.",
+        "cashapppay_label": "Cash App -maksu",
+        "card_nickname_label": "Nimimerkki (valinnainen)",
+        "billing_address_rollup_accessibility_label": "Laskutusosoitteen vaihtoehdot",
+        "business_customer_with_bank_account_vaulting_payment_label": "Tallenna tämä maksutapa maksun yhteydessä, ja anna %{company}-yritykselle lupa veloittaa tililtäsi tulevien, tähän sijaintiin hyväksymiesi ostosten maksut, kunnes peruutat luvan. Kaikki tähän sijaintiin liitetyt henkilöt voivat käyttää tätä maksutapaa.",
+        "bank_account_vaulted_company_location": "Tälle sijainnille on tallennettu pankkitili"
       }
     }
   }
