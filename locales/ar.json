@@ -1234,8 +1234,84 @@
           "shipping_credential_pt": "الرقم الضريبي / ضريبة القيمة المضافة",
           "shipping_credential_es": "رقم الهوية الوطنية / رقم التعريف الضريبي",
           "shipping_credential_tw": "الرقم الوطني/ضريبة القيمة المضافة",
-          "shipping_credential_tr": "رقم الهوية/ضريبة القيمة المضافة لجمهورية تركيا"
+          "shipping_credential_tr": "رقم الهوية/ضريبة القيمة المضافة لجمهورية تركيا",
+          "title": "معلومات إضافية",
+          "tax_credential_it": "الرمز الضريبي (اختياري)",
+          "tax_email_it": "PEC (اختياري)",
+          "tax_credential_type_co": "نوع البطاقة",
+          "tax_credential_ec": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "tax_credential_gt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "tax_credential_id": "رقم التعريف الضريبي الوطني (NPWP)",
+          "tax_credential_my": "رقم التعريف الضريبي / السجل التجاري",
+          "tax_credential_mx": "RFC",
+          "tax_credential_type_mx": "النظام الضريبي",
+          "tax_credential_use_mx": "استخدام CFDI",
+          "tax_credential_py": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "tax_credential_pe": "رقم الهوية الوطنية / رقم التسجيل الضريبي / شهادة الإقامة",
+          "tax_credential_pt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "tax_credential_es": "رقم الهوية الوطنية / رقم التعريف الضريبي",
+          "tax_credential_tr": "رقم الهوية/ضريبة القيمة المضافة لجمهورية تركيا"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "أرسل لي بريدًا إلكترونيًا حول الأخبار والعروض",
+        "unsubscribe": {
+          "title": "لقد ألغيت اشتراكك",
+          "description": "لن تتلقى منا بعد الآن تذكيرًا بسلة التسوق."
+        },
+        "accept_sms_checkbox_label": "أرسل لي رسائل نصية قصيرة عن الأخبار والعروض",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "سياسة الخصوصية",
+            "terms_of_service": "شروط الخدمة",
+            "description_html": "من خلال التسجيل عبر الرسائل القصيرة، فإنك توافق على تلقي رسائل تسويقية تلقائية متكررة على رقم الهاتف المقدم، بما في ذلك تذكيرات السلة. الموافقة ليست شرطًا للشراء. لإلغاء الاشتراك، أرسل ردًا بكلمة \"STOP\" (إيقاف). للمساعدة، أرسل ردًا بكلمة \"HELP\" (مساعدة). تختلف وتيرة الرسائل. قد تُطبق رسوم الرسائل والبيانات. يرجى مراجعة %{privacy_policy_link} و %{terms_of_service_link}.",
+            "description_transactional_html": "قد تتلقى رسائل نصية قصيرة تتعلق بتأكيد الطلب وتحديثات الشحن. للانسحاب من الاشتراك، أجب بكتابة STOP. للحصول على المساعدة، أجب بكتابة HELP. قد يختلف تكرار الرسائل. قد تُطبق رسوم الرسائل والبيانات. %{privacy_policy_modal_link} و %{terms_of_service_modal_link} راجع مستنداتنا."
+          },
+          "mobile_phone_number": "رقم الهاتف المحمول",
+          "get_offers_by_text": "احصل على العروض عبر الرسائل النصية القصيرة"
+        },
+        "post_accept_marketing_checkbox_label": "لقد اشتركت لتلقي الأخبار والعروض عبر البريد الإلكتروني",
+        "pending_accept_marketing_checkbox_label": "تحقق من بريدك الإلكتروني لتأكيد اشتراكك في الأخبار والعروض",
+        "accept_shop_pay_marketing_checkbox_label": "للتسجيل لتلقي الأخبار والعروض من هذا المتجر",
+        "disclaimer": {
+          "privacy_policy": "سياسة الخصوصية",
+          "terms_of_service": "شروط الخدمة"
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "راجع:",
+          "link_label": "شروط وأحكام {{partnerDisplayName}}"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "راجع معلومات الاتصال الخاصة بك قبل إتمام الدفع"
+      },
+      "merchant_instruction_errors": {
+        "duplicate_variant_id": "تعليمات المنتج %{position} %{name} تحتوي على معرف تكرار التباين %{variant_id}.",
+        "discount_not_supported": "تطبيق خصم المنتج تعليمات البائع لا تدعم هذا النوع من الخصم."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "هذا المنتج غير مناسب للشحن إلى موقع %{location_name}.",
+          "some_products_other": "هذه المنتجات غير مناسبة للشحن إلى موقع %{location_name}.",
+          "all_products_one": "المنتج في سلتك غير مناسب للشحن إلى موقع %{location_name}.",
+          "all_products_other": "المنتجات في سلتك غير مناسبة للشحن إلى موقع %{location_name}."
+        },
+        "missing_country_fallback": "بلدك",
+        "indeterminate_location_fallback": "موقعك",
+        "cart_updated": "تم تحديث سلتك.",
+        "change_address_only": "لتتمكن من المتابعة، قم بتغيير عنوان التوصيل.",
+        "change_address_or_remove": "غيّر عنوان التوصيل أو %{remove_action}.",
+        "empty_cart_action": "افرغ السلة وارجع إلى المتجر",
+        "remove_items_action": {
+          "one": "قم بإزالة المنتج غير المناسب",
+          "other": "قم بإزالة المنتجات غير المناسبة"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "العنوان غير مدعوم في العضوية الحالية.",
+        "items_split_across_locations_unsupported": "لا يمكن استخدام توصيل Prime لطلبك. تم تحديث خيارات الشحن الخاصة بك."
       }
     }
   },
@@ -1254,6 +1330,20 @@
       "send_on_label": "أرسل في هذا التاريخ (اختياري)",
       "expanded": "تم توسيع نموذج مستلم بطاقة الهدية",
       "collapsed": "تم تضييق نموذج مستلم بطاقة الهدية"
+    }
+  },
+  "sections": {
+    "cart": {
+      "caption": "عناصر السلة",
+      "cart_error": "حدث خطأ أثناء تحديث سلة التسوق الخاصة بك. يرجى المحاولة مرة أخرى.",
+      "cart_quantity_error_html": "يمكنك إضافة {{ quantity }} فقط من هذا المنتج إلى سلة التسوق الخاصة بك."
+    },
+    "announcements": {
+      "previous_announcement": "الإعلان السابق",
+      "next_announcement": "الإعلان التالي",
+      "carousel": "دَوَّار الصور",
+      "announcement": "إعلان",
+      "announcement_bar": "شريط الإشعارات"
     }
   }
 }

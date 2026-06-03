@@ -1335,7 +1335,11 @@
       },
       "merchant_instruction_errors": {
         "duplicate_variant_id": "%{position} %{name} la directive contient un identifiant de variante %{variant_id} dupliqué.",
-        "discount_not_supported": "Appliquer la réduction de la boutique, cette instruction du vendeur ne prend pas en charge ce type de réduction."
+        "discount_not_supported": "Appliquer la réduction de la boutique, cette instruction du vendeur ne prend pas en charge ce type de réduction.",
+        "empty_stable_id": "%{position} %{name} la directive mal contient un identifiant fixe vide.",
+        "invalid_stable_id_target": "La directive de ligne de produit %{position} %{name} fait référence à l'identifiant stable %{stable_id}, mais cet identifiant stable n'apparaît pas dans les lignes de produit.",
+        "invalid_variant_id_target": "La directive de produit %{name} fait référence à l'identifiant de variante %{variant_id}, mais cette variante n'apparaît pas dans les lignes de produit.",
+        "invalid_price_override_target": "L'élément de ligne %{stable_id} est invalide pour l'instruction de remplacement de prix car il fait partie d'un composant de paquet."
       },
       "merchandise_unavailable_in_buyer_location": {
         "banner_title": {
@@ -1356,6 +1360,69 @@
       "memberships": {
         "delivery_promise_unfulfillable": "L'adresse n'est pas prise en charge dans l'abonnement actuel.",
         "items_split_across_locations_unsupported": "La livraison Prime n'est pas disponible pour votre commande. Vos options de livraison ont été mises à jour."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Conditions générales du vendeur agréé",
+        "privacy_policy": "Politique de confidentialité du vendeur enregistré"
+      },
+      "no_address_location": {
+        "title": "Adresse et position",
+        "header": "Vous n'avez pas d'adresse de livraison pour cet emplacement",
+        "message": "Bu konum için adres ekleyerek ödemeyi tamamlamak istiyorsanız bizimle iletişime geçin.",
+        "alt_header": "Pas d'adresse de livraison"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Retourner au panier",
+        "return_to_cart_to_update_quantities": "Pour mettre à jour les quantités, %{return_to_cart_link_text}",
+        "subscription_changed": "Un de vos abonnements a changé.",
+        "company_location_changed": "Votre panier a été mis à jour. Veuillez vérifier votre commande avant de la confirmer.",
+        "violations_title": "{{violation}} manquant ou invalide",
+        "individual_violations_title": {
+          "DeliveryViolations": "Adresse de livraison",
+          "OtherViolations": "Informations de commande",
+          "UnhandledViolations": "Informations de commande"
+        },
+        "all_violations_content": "Pour mettre à jour ces informations et finaliser votre commande, vous pouvez nous appeler ou nous envoyer un {{emailLink}} :",
+        "all_violations_email_link": "courriel",
+        "editable_shipping_address_violations_message_title": "Commande tamamlamak için bu bilgileri ekleyin:",
+        "editable_shipping_address_violations_message_footer": "Pour changer définitivement l'adresse de cet emplacement, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "Contactez-nous",
+        "company_location_changed_product_removed": "Certains produits ne sont pas disponibles à cet emplacement, votre panier a été mis à jour. Veuillez vérifier votre commande avant de la confirmer.",
+        "shipping_address_incomplete_title": "Adresse de livraison manquante",
+        "calculating_shipping": "Le fret est toujours en cours de calcul. Veuillez réessayer dans un instant. Aucun frais ne vous a été facturé.",
+        "calculating_taxes": "Le calcul des taxes est en cours. Veuillez réessayer dans un instant. Aucun frais ne vous a été facturé.",
+        "generic_processing_error": {
+          "title": "Une erreur s'est produite lors du traitement de votre commande",
+          "body": "Aucun frais ne vous a été facturé. Veuillez réessayer ou utiliser un autre mode de paiement."
+        },
+        "contact_information": {
+          "title": "Les informations de contact sont invalides",
+          "email_link": "Contactez-nous"
+        },
+        "payment_method_not_available_with_payment_terms": "La méthode de paiement que vous avez choisie n'est plus disponible car ce délai de paiement de la commande est {{paymentTerms}}.",
+        "payment_method_not_available_with_fulfillment_terms": "La méthode de paiement que vous avez choisie n'est plus disponible car le délai de paiement de cette commande expirera lors de l'expédition.",
+        "payment_method_not_available_with_fixed_terms": "Le mode de paiement que vous avez choisi n'est plus disponible car le délai de paiement de cette commande expirera plus tard.",
+        "payment_method_not_available_with_review_requirement": "Le paiement ne peut plus être effectué avec la méthode choisie car il sera réalisé après la confirmation de votre commande.",
+        "validation_errors_banner": {
+          "section_label": {
+            "payment": "Œdème"
+          },
+          "heading": {
+            "one": "{{count}} erreur(s) détectée(s) :",
+            "other": "{{count}} erreur(s) détectée(s) :"
+          },
+          "errors_in_section": {
+            "one": "{{count}} erreur(s) dans la section {{section}}",
+            "other": "{{count}} erreur(s) dans la section {{section}}"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Réduisez la taille de la note à 5000 caractères ou moins."
+      },
+      "offsite_payment_failed": {
+        "payment_link_expired_title": "Le délai de connexion au paiement est expiré",
+        "payment_link_expired_text": "Essayez de scanner à nouveau le code QR."
       }
     }
   }

@@ -1202,7 +1202,126 @@
         "location_far_away_other_items": {
           "one": "Ihre Produkte befinden sich an %{count} Standorten",
           "other": "Ihre Produkte befinden sich an %{count} Standorten"
+        },
+        "toggle_location": "Position ändern",
+        "your_location": "Ihr Standort",
+        "search_button": "Geschäfte finden",
+        "no_stores_found": "Geschäft nicht gefunden",
+        "paginator": {
+          "accessibility_label": "Abholung im Geschäft Paginierung",
+          "label": {
+            "one": "%{count} Geschäfte von %{first} - %{last}",
+            "other": "%{count} Geschäfte von %{first} - %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Weitere %{count} Standorte anzeigen",
+          "other": "Weitere %{count} Standorte anzeigen"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "Der zuvor ausgewählte Standort ist nicht mehr verfügbar",
+          "description": "Wählen Sie einen neuen Standort oder %{ship_to_address_link}",
+          "ship_to_address_link": "an die Adresse senden"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "Senden Sie Ihre Produkte",
+          "search_elsewhere": "anderswo suchen"
+        },
+        "toggle_multiple_locations": "%{count}+ weitere Standorte",
+        "toggle_more_locations": {
+          "one": "%{count} weitere Standorte"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Ihr Standort für Ihr Produkt ist nicht vorhanden",
+          "other": "Es gibt keinen Standort für Ihre Produkte"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "In %{country} gibt es keinen Standort für Ihr Produkt.",
+          "other": "In %{country} gibt es keinen Standort für Ihr Produkt."
+        },
+        "location_nearby_short_other_items": {
+          "one": "Die %{count} nächstgelegenen Standorte, an denen sich Ihre Produkte befinden",
+          "other": "Die %{count} nächstgelegenen Standorte, an denen sich Ihre Produkte befinden"
         }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_kr": "Persönlicher Zollcode",
+          "tax_credential_co": "Personalausweis/Mehrwertsteuer (MwSt.)",
+          "shipping_credential_co": "Personalausweis/Mehrwertsteuer (MwSt.)",
+          "shipping_credential_type_co": "Ausweisart",
+          "shipping_credential_gt": "USt-IdNr./MwSt",
+          "shipping_credential_my": "TIN/Handelsregisternummer",
+          "shipping_credential_pt": "Steuernummer/USt-IdNr.",
+          "shipping_credential_tw": "Nationale Identifikationsnummer/USt-IdNr.",
+          "shipping_credential_tr": "Türkische Republik Identifikationsnummer/USt-IdNr.",
+          "tax_credential_it": "Steueridentifikationsnummer (optional)",
+          "tax_credential_type_co": "Ausweisart",
+          "tax_credential_gt": "USt-IdNr./MwSt",
+          "tax_credential_my": "TIN/Handelsregisternummer",
+          "tax_credential_type_mx": "Steuersystem",
+          "tax_credential_use_mx": "Verwendung von CFDI",
+          "tax_credential_pt": "Steuernummer/USt-IdNr.",
+          "tax_credential_tr": "Türkische Republik Identifikationsnummer/USt-IdNr."
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Senden Sie mir E-Mails über Neuigkeiten und Angebote",
+        "unsubscribe": {
+          "title": "Sie haben Ihr Abonnement gekündigt",
+          "description": "Von uns erhalten Sie keine Warenkorberinnerungen mehr."
+        },
+        "accept_sms_checkbox_label": "Senden Sie mir SMS über Neuigkeiten und Angebote",
+        "sms": {
+          "disclaimer": {
+            "terms_of_service": "Nutzungsbedingungen",
+            "description_html": "Indem Sie sich per SMS anmelden, stimmen Sie zu, wiederholt automatische Marketingnachrichten an die angegebene Telefonnummer zu erhalten, einschließlich Warenkorberinnerungen. Die Zustimmung ist keine Voraussetzung für einen Kauf. Um das Abonnement zu kündigen, senden Sie \"STOP\". Für Hilfe senden Sie \"HELP\". Die Nachrichtenfrequenz kann variieren. Nachrichten- und Datengebühren können anfallen. Siehe %{privacy_policy_link} und %{terms_of_service_link}.",
+            "description_transactional_html": "Sie können SMS mit Bestellbestätigungen und Versandaktualisierungen erhalten. Antworten Sie mit STOP, um sich abzumelden. Antworten Sie mit HELP, um Hilfe zu erhalten. Die Häufigkeit der Nachrichten kann variieren. Nachrichten- und Datengebühren können anfallen. Bitte lesen Sie unsere %{privacy_policy_modal_link} und %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Handynummer",
+          "get_offers_by_text": "Angebote per SMS erhalten"
+        },
+        "post_accept_marketing_checkbox_label": "Sie haben sich angemeldet, um Nachrichten und Angebote per E-Mail zu erhalten.",
+        "pending_accept_marketing_checkbox_label": "Überprüfen Sie Ihre E-Mails, um Ihr Abonnement für Neuigkeiten und Angebote zu bestätigen",
+        "accept_shop_pay_marketing_checkbox_label": "Um Nachrichten und Angebote von diesem Geschäft zu erhalten, melde ich mich an",
+        "disclaimer": {
+          "terms_of_service": "Nutzungsbedingungen"
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Überprüfen:",
+          "link_label": "{{partnerDisplayName}} Geschäftsbedingungen"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "Überprüfen Sie Ihre Kontaktinformationen, bevor Sie die Zahlung abschließen"
+      },
+      "merchant_instruction_errors": {
+        "duplicate_variant_id": "%{position} %{name} Anweisung enthält die wiederholte %{variant_id} Varianten-ID.",
+        "discount_not_supported": "Rabatt anwenden Verkäuferanweisung unterstützt diesen Rabatttyp nicht."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Dieses Produkt kann nicht an den Standort %{location_name} geliefert werden.",
+          "some_products_other": "Diese Produkte können nicht an den Standort %{location_name} versendet werden.",
+          "all_products_one": "Der Artikel in Ihrem Warenkorb kann nicht an den Standort %{location_name} versendet werden.",
+          "all_products_other": "Die Artikel in Ihrem Warenkorb können nicht an den Standort %{location_name} versendet werden."
+        },
+        "missing_country_fallback": "Ihr Land",
+        "indeterminate_location_fallback": "Ihr Standort",
+        "cart_updated": "Ihr Warenkorb wurde aktualisiert.",
+        "change_address_only": "Um fortzufahren, ändern Sie die Lieferadresse.",
+        "change_address_or_remove": "Lieferadresse ändern oder %{remove_action}.",
+        "empty_cart_action": "Leeren Sie den Warenkorb und kehren Sie zum Geschäft zurück",
+        "remove_items_action": {
+          "one": "Entfernen Sie das ungeeignete Produkt",
+          "other": "ungeeignete Produkte entfernen"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Adresse wird in der aktuellen Mitgliedschaft nicht unterstützt.",
+        "items_split_across_locations_unsupported": "Prime-Lieferung ist für Ihre Bestellung nicht verfügbar. Ihre Versandoptionen wurden aktualisiert."
       }
     }
   }
