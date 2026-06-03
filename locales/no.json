@@ -1950,7 +1950,65 @@
         "discount_codes_removed_or_modified_summary": {
           "one": "%{count} rabattkode er fjernet eller endret",
           "other": "%{count} rabattkode er fjernet eller endret"
-        }
+        },
+        "gift_card_code_label": "Gavekortkode",
+        "gift_card_balance_label": "Saldo:",
+        "name_on_card_label": "Karttaki annonse",
+        "name_on_card_placeholder": "Karttaki annonse",
+        "ends_with_label": "som slutter med %{last_digits}",
+        "free_order_notice_html": "Bestillingen din er <strong>gratis</strong>. Ingen betaling kreves.",
+        "express_checkout_free_order": "Du vil ikke bli belastet for gratis bestilling",
+        "missing_credit_card_error": "Skriv inn kortinformasjonen din for å fullføre betalingen",
+        "generic_incorrect_card_info": "Betalingsdetaljene dine kunne ikke bekreftes. Vennligst sjekk kortinformasjonen din og prøv igjen.",
+        "ideal_label": "iDEAL | Wero",
+        "klarna_pay_now_label": "Betal nå med Klarna",
+        "klarna_pay_later_label": "Betal senere med Klarna",
+        "giropay_label": "Giropay",
+        "eps_label": "eps-overføring",
+        "klarna_slice_it_label": "Få finansiering med Klarna",
+        "expiry_long": "(Siste bruk: %{month}/%{year})",
+        "expiry_short": "(SKT: %{month}/%{year})",
+        "ftd_vault_credit_card_label": "For raskere betaling, lagre dette kredittkortet på kontoen min",
+        "google": {
+          "connect": "Klikk for å koble til med Google Pay-kontoen din",
+          "error_authorizing": "Det oppstod en feil under autorisering av betaling"
+        },
+        "klarna_label": "Klarna",
+        "mor_disclaimer_html": "Ved å klikke på feltet nedenfor og fullføre bestillingen, godtar du å kjøpe produktene dine fra Global-e som registrert selger for denne transaksjonen i henhold til Global-es <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Vilkår og betingelser</a> og <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Personvernregler</a>. Global-e er en internasjonal frakttjenesteleverandør for %{shop_name}.",
+        "multibanco_label": "Multibanco",
+        "location_billing_address_label": "Fakturaadresse for plassering",
+        "fact_billing_address_label": "Fakturaadresse",
+        "location_shipping_address_label": "Leveringsadresse for pakke",
+        "expired_cards_info": {
+          "one": "Det finnes %{count} kort med utløpt gyldighet; du kan se og redigere dette kortet fra kontoen din.",
+          "other": "Det finnes %{count} kort med utløpt gyldighet; du kan se og redigere disse kortene på kontoen din."
+        },
+        "local_payment_method_receiver_notice": "Etter at du har lagt inn bestillingen, vil betalingsdetaljene bli sendt til deg. Betal innen {{dueDays}} dager via minibank eller på nett.",
+        "gift_card_wrapper": {
+          "heading": "Gavekort",
+          "apply_gift_card_label": "Bruk gavekort",
+          "payment_tag": "Gavekort",
+          "apply_another_gift_card_label": "Bruk et annet gavekort",
+          "gift_card_label": "Gavekort (%{identifier})",
+          "add_label": "Legg til gavekort",
+          "manage_label": "Administrer gavekortene dine"
+        },
+        "markets_pro_disclaimer_label": "Ved å legge inn bestillingen godtar du å kjøpe fra Global-e som en registrert selger i henhold til Global-e's %{markets_pro_terms} og %{privacy_policy}, og å dele informasjonen din med %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Vilkår og betingelser",
+        "markets_pro_disclaimer_privacy_policy": "Personvernerklæring",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Registrert selgers vilkår og betingelser",
+        "markets_pro_disclaimer_privacy_policy_title": "Registrert Selgers Personvernregler",
+        "expired_payment_method": "Den valgte betalingsmetodens gyldighet har utløpt",
+        "gift_card_store_credit": {
+          "add_label": "Legg til gavekort eller butikkreditt",
+          "manage_label": "Administrer gavekort eller butikkreditt"
+        },
+        "gift_cards_unavailable": "Gavekortet ditt ble fjernet fordi det ikke lenger kan brukes på denne bestillingen",
+        "network_card_payment_options": "Velg kartnettverk",
+        "gift_card_checkbox_label": "Bruk gavekort",
+        "grabpay_label": "GrabBetal",
+        "kcp_creditcard_label": "KCP Kredittkort",
+        "multiple_primary_payment_not_allowed": "Ugyldige betalingsmetoder"
       }
     }
   },
