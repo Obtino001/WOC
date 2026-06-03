@@ -2339,13 +2339,71 @@
         "shipping_method": "Tilauksesi toimitusvaihtoehdot ovat muuttuneet. Tarkista valintasi.",
         "shipping_method_not_available": "Ostoskori päivitetty. Ostoskoriin lisäämiäsi tuotteita ei voida toimittaa osoitteeseesi. Poista nämä tuotteet ostoskorista viimeistelläksesi tilauksesi.",
         "shipping_method_not_available_generic": {
-          "one": "Tilauksesi ei voi toimitettavaksi valittuun osoitteeseen. Tarkista osoite varmistaaksesi, että se on oikein, ja yritä uudelleen tai valitse eri osoite."
+          "one": "Tilauksesi ei voi toimitettavaksi valittuun osoitteeseen. Tarkista osoite varmistaaksesi, että se on oikein, ja yritä uudelleen tai valitse eri osoite.",
+          "other": "Osa ostoskorissasi olevista tuotteista ei voida lähettää antamaasi osoitteeseen. Tarkista osoite varmistaaksesi, että se on oikein, ja yritä uudelleen tai valitse toinen osoite."
         },
         "payment_method_not_supported": "Et voi käyttää tätä maksutapaa %{country} varten. Käytä toista maksutapaa lähettääksesi tähän maahan.",
         "empty_state": "Syötä toimitusosoitteesi nähdäksesi sopivat toimitustavat.",
         "shipping_method_not_available_due_to_unsatisfied_conditions": "Ostoskoriin lisätyt tuotteet eivät täytä hinnan tai painon vaatimuksia toimitusta varten. Päivitä ostoskori ja yritä uudelleen.",
         "invalid_selected_address": "Valittu toimitusosoite ei ole voimassa",
-        "invalid_selected_address_with_update_link": "Valittu toimitusosoite ei ole voimassa. %{update_address_link} tai valitse eri osoite"
+        "invalid_selected_address_with_update_link": "Valittu toimitusosoite ei ole voimassa. %{update_address_link} tai valitse eri osoite",
+        "shipping_method_not_available_updated": {
+          "one": "Lisättyäsi tuotetta ei voida toimittaa sijaintiisi. Poista tämä tuote maksamista varten tai ota yhteyttä myymälään.",
+          "other": "Yksi tai useampi lisäämäsi tuote ei ole toimitettavissa sijaintiisi. Poista nämä tuotteet maksamista varten tai ota yhteyttä myymälään."
+        },
+        "title": "Kargo ei ole käytettävissä",
+        "unavailable_selected_address": "Valitulle osoitteelle ei voida tarjota toimituspalvelua",
+        "unavailable_selected_address_for_region": "{{region}}-alueelle ei toimiteta. Jatka valitsemalla eri osoite.",
+        "unavailable_addresses_only_countries": "Tilauksesi voidaan lähettää vain {{countriesList}}-alueille. Jatka lisäämällä uusi osoite.",
+        "unavailable_address_country": "Valitsemasi maassa ei ole toimitusta saatavilla. Jatkaaksesi valitse eri osoite."
+      },
+      "shop_policies": {
+        "terms_of_service": "Palveluehdot",
+        "legal_notice": "Lakisääteinen ilmoitus",
+        "shipping_policy": "Kargo",
+        "purchase_options_policy": "Ostopolitiikka",
+        "contact_information": "Yhteystiedot",
+        "policy_label": "Politiikka",
+        "policies_label": "Politiikat",
+        "select_policy_label": "Valitse politiikka"
+      },
+      "split_delivery": {
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "%{count} tuotetta ei voida toimittaa",
+              "other": "%{count} tuotetta ei voida toimittaa"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count} tuotetta ei voida lähettää",
+              "other": "%{count} tuotetta ei voida lähettää"
+            }
+          },
+          "ship_separately": {
+            "one": "Lähetä tämä erikseen"
+          },
+          "pick_them_up_in_store": {
+            "one": "Nouda tämä kaupasta",
+            "other": "Nouda ne nämä kaupasta"
+          }
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "Haluatko vaihtaa maata?",
+            "content": "Nouto- ja toimituspaikkasi on oltava samassa maassa. Kun vaihdat maata, kaikki tuotteet nollataan toimitusta varten.",
+            "change_country": "Vaihda maa",
+            "country_changed_heading": "Maa on muuttunut"
+          }
+        }
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Shop Payn lataamisessa ilmeni ongelma",
+          "try_again_later": "Tarkista yhteytesi tai sulje tämä ikkuna ja yritä uudelleen muutaman minuutin kuluttua.",
+          "checkout_has_expired": "Maksusessiosi on vanhentunut. Sulje tämä ikkuna ja yritä maksaa uudelleen {{shopName}} kautta."
+        },
+        "return_to_store": "Palaa {{shopName}}-kauppaan",
+        "title": "Shop Pay -maksu"
       }
     }
   }
