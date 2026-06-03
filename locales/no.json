@@ -116,5 +116,129 @@
       "carousel": "Syklus",
       "slide": "Lysbilde"
     }
+  },
+  "accessibility": {
+    "skip_to_text": "Hopp til innholdet",
+    "close": "Lukk",
+    "vendor": "Selger:",
+    "error": "Hat",
+    "refresh_page": "Et valg vil føre til at hele siden oppdateres.",
+    "link_messages": {
+      "new_window": "Åpnes i et nytt vindu.",
+      "external": "Åpner et eksternt nettsted."
+    },
+    "loading": "Laster...",
+    "skip_to_product_info": "Hopp over produktinformasjonen",
+    "total_reviews": "total vurdering",
+    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} stjerner",
+    "collapsible_content_title": "Innhold som kan utvides eller skjules",
+    "complementary_products": "Komplementære produkter"
+  },
+  "blogs": {
+    "article": {
+      "blog": "Blogg",
+      "read_more_title": "Les mer: {{ title }}",
+      "comments": {
+        "one": "{{ count }} kommentarer",
+        "other": "{{ count }} kommentarer"
+      },
+      "moderated": "Vennligst husk at kommentarer må godkjennes før de kan publiseres.",
+      "comment_form_title": "Skriv en kommentar",
+      "name": "Annonse",
+      "email": "E-post",
+      "message": "Kommentar",
+      "post": "Del kommentaren",
+      "back_to_blog": "Bloga døn",
+      "share": "Del denne artikkelen",
+      "success": "Kommentaren din ble delt! Takk skal du ha.",
+      "success_moderated": "Kommentaren din ble delt med suksess. Siden bloggen vår blir gjennomgått, vil vi publisere kommentaren din om kort tid."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Konto",
+      "details": "Kontoinformasjon",
+      "view_addresses": "Vis adresse",
+      "return": "Gå tilbake til kontoinformasjonen"
+    },
+    "account_fallback": "Konto",
+    "activate_account": {
+      "title": "Aktiver kontoen",
+      "subtext": "Opprett passordet ditt for å aktivere kontoen din.",
+      "password": "Ord",
+      "password_confirm": "Bekreft passordet",
+      "submit": "Aktiver kontoen",
+      "cancel": "Daveti reddet"
+    },
+    "addresses": {
+      "default": "Standard",
+      "add_new": "Legg til ny adresse",
+      "company": "Selskap",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "By",
+      "country": "Land/region",
+      "add": "Legg til adresse",
+      "cancel": "Avbryt",
+      "edit": "Rediger",
+      "delete": "Sil",
+      "delete_confirm": "Er du sikker på at du vil slette denne adressen?",
+      "title": "Adresser",
+      "edit_address": "Rediger adresse",
+      "first_name": "Annonse",
+      "last_name": "Etternavn",
+      "province": "Fylke",
+      "zip": "Postnummer",
+      "phone": "Telefon",
+      "set_default": "Angi som standardadresse",
+      "update": "Oppdater adressen"
+    },
+    "log_in": "Logg inn",
+    "log_out": "Logg ut",
+    "login_page": {
+      "cancel": "Avbryt",
+      "create_account": "Opprett konto",
+      "email": "E-post",
+      "forgot_password": "Har du glemt passordet ditt?",
+      "guest_continue": "Fortsett",
+      "guest_title": "Fortsett som gjest",
+      "password": "Ord",
+      "title": "Logg inn",
+      "sign_in": "Logg inn",
+      "submit": "Send",
+      "alternate_provider_separator": "eller"
+    },
+    "orders": {
+      "order_number": "Bestill",
+      "date": "Dato",
+      "fulfillment_status": "Forsendelsesstatus",
+      "none": "Du har ennå ikke lagt inn en bestilling."
+    },
+    "order": {
+      "title": "{{ name }} bestilling",
+      "date_html": "Utgivelsesdato: {{ date }}",
+      "cancelled_html": "Bestillingsavbestillingsdato: {{ date }}",
+      "cancelled_reason": "Nedenfor: {{ reason }}",
+      "billing_address": "Fakturaadresse",
+      "payment_status": "Betalingsstatus",
+      "shipping_address": "Fraktadresse",
+      "fulfillment_status": "Leveringsstatus",
+      "discount": "Rabatt",
+      "shipping": "Frakt",
+      "tax": "Skatt",
+      "product": "Produkt",
+      "sku": "SKU",
+      "price": "Pris",
+      "quantity": "Antall",
+      "total": "Totalt",
+      "fulfilled_at_html": "Sendt: {{ date }}",
+      "track_shipment": "Spor forsendelsen",
+      "tracking_url": "Sporingslenke",
+      "tracking_company": "Fraktselskap",
+      "tracking_number": "Sporingsnummer",
+      "subtotal": "Total poengsum",
+      "total_duties": "Tollavgifter",
+      "total_refunded": "Refusjon er gjort"
+    }
   }
 }

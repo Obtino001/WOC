@@ -3105,12 +3105,78 @@
         "manual": "Hervorgehoben",
         "best_selling": "Bestseller",
         "date_ascending": "Geschichte, von alt zu neu",
-        "date_descending": "Geschichte, von neu nach alt"
+        "date_descending": "Geschichte, von neu nach alt",
+        "price_ascending": "Preis, von niedrig bis hoch",
+        "price_descending": "Preis, von hoch bis niedrig"
       }
     },
     "checkpoint": {
       "message": "Um fortzufahren, lösen Sie das Captcha.",
       "error": "Captcha-Überprüfung fehlgeschlagen"
+    },
+    "errors": {
+      "credit_card_session_expired": "Die Autorisierung der Kreditkarte ist abgelaufen, bitte geben Sie Ihre Zahlungsinformationen erneut ein. Ihre Karte wurde nicht belastet.",
+      "invalid_email": "Es muss eine gültige E-Mail-Adresse sein",
+      "discount_limit_reached": "Für diesen Rabatt wurde das Nutzungslimit erreicht",
+      "discount_not_found": "Mit dem eingegebenen Code konnte kein gültiger Rabatt gefunden werden",
+      "customer_already_used_once_per_customer_discount_notice": "Für diesen Rabatt wurde das Nutzungslimit erreicht",
+      "gift_card_already_applied": "Der Code wurde bereits auf Ihre Zahlung angewendet",
+      "gift_card_code_invalid": "Code ungültig",
+      "gift_card_currency_mismatch": "Diese Geschenkkarte kann für diesen Kauf nicht verwendet werden. Wenden Sie sich zur Neuausstellung an %{shop_name}.",
+      "gift_card_depleted": "Auf dieser Geschenkkarte ist kein Guthaben mehr vorhanden",
+      "gift_card_disabled": "Geschenkkarte wurde deaktiviert",
+      "gift_card_expired": "Die Gültigkeit der Geschenkkarte ist abgelaufen",
+      "invalid": "ungültig",
+      "bad_domain": "enthält einen ungültigen Domainnamen",
+      "contains_html_tags": "HTML-Tags dürfen nicht enthalten sein",
+      "contains_spaces": "beginnt oder endet mit Leerzeichen.",
+      "full_name_required": "Vor- und Nachnamen eingeben",
+      "invalid_for_card_type": "ungültig",
+      "expired": "Die Frist ist abgelaufen",
+      "invalid_expiry_year": "kein gültiges Ablaufjahr"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Vielen Dank, dass Sie sich für unseren Newsletter angemeldet haben.",
+        "disclaimer": "Sie können Ihr Abonnement jederzeit kündigen.",
+        "unsubscribe": "Abonnement kündigen"
+      },
+      "unsubscribed": {
+        "confirmation": "Sie haben sich von unserer Mailingliste abgemeldet.",
+        "disclaimer": "Sie erhalten keine Marketing-Updates mehr von uns. Sie können sich jederzeit wieder anmelden.",
+        "preview": "Sie sehen eine Vorschau dessen, was Kunden nach der Abmeldung vom Abonnement sehen werden."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Sie haben die E-Mail-Öffnungsnachverfolgung aktiviert.</b>",
+          "visibility": "E-Mail-Öffnungsraten werden anonym gemeldet. Wir zeigen nur an, ob Sie eine E-Mail geöffnet haben, als Teil einer zusammengefassten E-Mail-Öffnungsrate.",
+          "opt_out_html": "Wenn Sie diese Informationen nicht teilen möchten, können Sie die E-Mail-Öffnungsnachverfolgung <a style='text-decoration:underline;' href='%{link}'>deaktivieren</a>.",
+          "preview_bar": "Sie sehen eine Vorschau dessen, was Kunden sehen, wenn sie die E-Mail-Öffnungsnachverfolgung aktivieren."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Sie haben die E-Mail-Öffnungsnachverfolgung deaktiviert.</b>",
+          "visibility": "Wir können nicht sehen, ob Sie unsere E-Mails geöffnet haben.",
+          "opt_in_html": "Aktivieren Sie die E-Mail-Öffnungsnachverfolgung <a style='text-decoration:underline;' href='%{link}'>hier</a>.",
+          "preview_bar": "Sie sehen eine Vorschau dessen, was Kunden sehen, wenn sie die E-Mail-Öffnungsnachverfolgung deaktivieren."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Wir verfolgen keine E-Mail-Öffnungen mehr.</b>",
+          "privacy_policy": "Diese E-Mail wurde gesendet, nachdem wir unsere Datenschutzrichtlinie aktualisiert haben. Wir verfolgen Öffnungen nicht mehr."
+        },
+        "track": {
+          "status_html": "<b>E-Mail-Öffnungs-Tracking wurde gemeldet.</b>",
+          "visibility": "Wir zeigen nur an, ob Sie die E-Mail geöffnet haben, als Teil der Gesamt-Öffnungsrate der E-Mails."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-Mail-Öffnungs-Tracking wurde gemeldet.</b>",
+          "visibility": "Wir haben unsere Richtlinie aktualisiert und verfolgen jetzt das Öffnen von E-Mails. Die Öffnungsraten werden anonym berichtet. Wir zeigen nur an, ob Sie eine E-Mail geöffnet haben, als Teil der Gesamtöffnungsrate.",
+          "opt_out_html": "Wenn Sie diese Informationen nicht teilen möchten, können Sie sich <a style='text-decoration:underline;' href='%{link}'>vom Abonnement abmelden</a>."
+        }
+      },
+      "sms_unsubscribe_confirm": {
+        "message": "Sind Sie sicher, dass Sie Ihr SMS-Marketing-Abonnement kündigen möchten?",
+        "button": "Abonnement kündigen"
+      }
     }
   }
 }
