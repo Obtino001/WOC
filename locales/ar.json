@@ -2401,7 +2401,73 @@
         "add_shipping_address": "أضف عنوان الشحن",
         "choose_new_address": "اختر عنوانًا جديدًا",
         "add_new_delivery_address": "أضف عنوان توصيل جديد",
-        "delivery_to": "مستلم التسليم:"
+        "delivery_to": "مستلم التسليم:",
+        "no_rates_for_cart_or_destination_notice": "لا توجد طريقة شحن متاحة لسلة التسوق أو العنوان الخاص بك",
+        "no_pickup_location_notice": "واحد على الأقل من منتجاتك غير مناسب للاستلام",
+        "no_rates_for_country_notice": "لم يتم العثور على رسوم الشحن لهذا العنوان.",
+        "no_rates_contact_notice": "للمزيد من المعلومات، تواصل معنا",
+        "free_rate_label": "مجاني",
+        "estimated_delivery_date": {
+          "one": "%{count} يوم عمل",
+          "other": "%{count} يوم عمل"
+        },
+        "estimated_delivery_date_range": "من %{minimum} إلى %{maximum} يوم عمل",
+        "shipping_line_phone_label": "رقم الهاتف المحمول (مطلوب)",
+        "shipping_line_phone": "يمكن لكوريينيز استخدام هذا الرقم للتواصل معك.",
+        "other_method": {
+          "zero": "لا توجد طريقة أخرى",
+          "one": "هناك %{count} طريقة أخرى بهذا السعر:",
+          "other": "هناك %{count} طريقة أخرى تبدأ من هذا السعر:"
+        },
+        "shipping_line_delivery_phone": "قد يتم التواصل معك بخصوص التحديثات المتعلقة بتسليم طلبك.",
+        "optional_shipping_line_delivery_instructions_label": "تعليمات التسليم (اختياري)",
+        "shipping_line_delivery_phone_label": "رقم الهاتف المحمول",
+        "shipping_line_delivery_instructions": "أدخل المعلومات الضرورية مثل رقم الباب أو تعليمات التسليم.",
+        "local_delivery": "التوصيل المحلي",
+        "one_time_purchase_shipping": "شحن لمرة واحدة",
+        "estimated_delivery_time": "الوقت المتوقع للتسليم: %{time}",
+        "estimated_delivery_time_range": "الوقت المتوقع للتسليم: %{min_time}–%{max_time}",
+        "estimated_time": "التاريخ المتوقع: %{time}",
+        "estimated_time_range": "المدة المقدرة %{min_time}–%{max_time}",
+        "duties_and_taxes_title": "الضرائب والرسوم الجمركية",
+        "shipping_information_required_notice": "معلومات الشحن مطلوبة. {{link}}.",
+        "shipping_information_redirect_link": "أدخل معلوماتك هنا",
+        "loading_progressive_rates": "يتم البحث عن رسوم أخرى…",
+        "no_other_methods_available": "لا توجد طريقة أخرى",
+        "duties_and_taxes_options": {
+          "ddu_title": "الدفع عند الاستلام",
+          "ddu_caption": "قد تُطبق رسوم إضافية",
+          "ddp_title": "ادفع الآن",
+          "ddp_caption": "لا توجد رسوم إضافية عند التسليم"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} و %{current}"
+        },
+        "shipping_address_title": "عنوان الشحن",
+        "edit": "تعديل",
+        "invalid_shipping_method_summary": "لعرض طرق الشحن المتاحة، يرجى إدخال عنوان شحن صالح.",
+        "method_summary": {
+          "incomplete_address_entered": "لرؤية طرق الشحن المتاحة، يرجى إدخال عنوان الشحن بالكامل",
+          "incomplete_address_selected": "لعرض طرق الشحن المتاحة، يرجى اختيار عنوان شحن كامل"
+        },
+        "local_pickup": {
+          "search_address": "ابحث عن العنوان",
+          "rollup_title": "موقع استلام الطلب",
+          "rollup_accessibility_label": "خيارات موقع الاستلام"
+        },
+        "missing_shipping_address": "عنوان الشحن مفقود",
+        "shipping_method_first_shipment_group_title": {
+          "one": "الشحنة الأولى",
+          "other": "الشحنة الأولى"
+        },
+        "pre_order_ships_now": "سيتم الإرسال الآن",
+        "pre_order_ships_later": "سيتم الإرسال لاحقًا",
+        "pre_order_ships_date": "سيتم الشحن في %{date}",
+        "prime_not_available": {
+          "default": "لا يمكن استخدام توصيل Prime لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+        },
+        "shipping_address_rollup_accessibility_label": "خيارات عنوان الشحن",
+        "invalid_shipping_method_summary_selected": "اختر عنوان شحن مختلف لعرض طرق الشحن التي يمكنك استخدامها"
       },
       "session_errors": {
         "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. قم بتحديث هذه الصفحة للعودة إلى المتجر.",
