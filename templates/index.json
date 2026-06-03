@@ -52,6 +52,7 @@
         "usp_4"
       ],
       "settings": {
+        "video_url": "shopify://files/videos/hero.mp4",
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "hero_label": "AMİRAL GEMİSİ KOLEKSİYONU",
@@ -396,13 +397,13 @@
     "quiz": {
       "type": "quiz-cta",
       "settings": {
-        "padding_top": 80,
-        "padding_bottom": 80,
         "kicker": "Kişisel Rehberlik",
         "heading": "Mükemmel Masaj Koltuğunuzu\n<span class=\"block italic text-gold\">Bulun</span>",
         "description": "2 dakikalık testimizi çözün ve vücudunuza, yaşam tarzınıza ve sağlıklı yaşam hedeflerinize uygun koltuğu bulun.",
         "button_text": "Teste Başla",
-        "button_link": "/pages/quiz"
+        "button_link": "/pages/quiz",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "testimonials": {
@@ -705,14 +706,14 @@
         "s8"
       ],
       "settings": {
-        "padding_top": 96,
-        "padding_bottom": 96,
         "bg_image": "shopify://shop_images/showroom-cta-hero-SWNcv-vT_1.jpg",
         "kicker": "Bizzat Deneyimleyin",
         "heading": "Showroomlarımızı\n<span class=\"block italic text-gold\">Ziyaret Edin</span>",
         "description": "Sağlık teknolojimizi ilk elden deneyimlemenin yerini hiçbir şey tutamaz. Ücretsiz danışmanlık için showroomlarımızdan birini ziyaret edin.",
         "button_text": "Ziyaret Rezerve Et",
-        "button_link": "/pages/showrooms"
+        "button_link": "/pages/showrooms",
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     }
   },

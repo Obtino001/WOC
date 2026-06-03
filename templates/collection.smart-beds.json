@@ -7,30 +7,11 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * ------------------------------------------------------------
- * ÖNEMLİ: Bu dosyanın içeriği otomatik olarak oluşturulmuştur.
- *
- * Bu dosya Shopify yönetici tema düzenleyicisi
- * veya ilgili sistemler tarafından güncellenebilir. Yapılan herhangi bir
- * değişikliğin üzerine yazılabileceğinden lütfen dikkatli olun.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
       "type": "smart-beds-hero",
-      "settings": {
-        "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
-        "kicker": "Kişiye Özel Uyku Sistemleri",
-        "heading": "Hiçbir İki Vücut\nAynı Değildir",
-        "subheading": "Yatağınız neden seri üretim olsun?",
-        "description": "Her World of Comfort uyku sistemi sıfırdan üretilir; vücudunuza, uyku alışkanlıklarınıza ve yaşamınıza özel olarak tasarlanır. Avrupa'da el işçiliğiyle üretilmiştir. Asla raftan hazır alınmaz.",
-        "button_1_text": "Koleksiyonu Keşfedin",
-        "button_1_link": "#collection",
-        "button_2_text": "Nasıl Çalışır?",
-        "button_2_link": "#process"
-      }
+      "settings": {}
     },
     "philosophy": {
       "type": "smart-beds-philosophy",
