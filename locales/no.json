@@ -3441,7 +3441,21 @@
           },
           "missing": {
             "address1": "Skriv inn adresse",
-            "address2": "Skriv inn leilighet, bolig osv."
+            "address2": "Skriv inn leilighet, bolig osv.",
+            "first_name": "Skriv inn annonse",
+            "last_name": "Skriv inn etternavn",
+            "city": "Skriv inn by",
+            "province": "Velg provins/delstat",
+            "country": "Velg land/region",
+            "zip": "Skriv inn postnummeret",
+            "phone": "Skriv inn telefonnummeret",
+            "billing_first_name": "Skriv inn et navn på fakturaadressen",
+            "billing_address1": "Skriv inn fakturaadresse",
+            "billing_address2": "Skriv inn leilighet, etasje osv. i fakturaadressen",
+            "billing_city": "Skriv inn byen i fakturaadressen",
+            "billing_province": "Velg fylke/kommune for fakturaadresse",
+            "billing_zip": "Skriv inn postnummer for fakturaadressen",
+            "contact_info": "Skriv inn kontaktinformasjonen"
           },
           "formatting": {
             "name_contains_emojis": "Slett emojien i navnet ditt",
@@ -3450,8 +3464,45 @@
             "last_name_too_long": "Etternavnet inneholder for mange bokstaver",
             "address_too_long": "Adressefeltet er for langt"
           },
-          "discount_code": "Denne rabattkoden kan ikke brukes. Vennligst sjekk koden din og prøv igjen."
-        }
+          "discount_code": "Denne rabattkoden kan ikke brukes. Vennligst sjekk koden din og prøv igjen.",
+          "unavailable": {
+            "title": "{{walletName}} er ikke tilgjengelig",
+            "description": "{{walletName}} var utilgjengelig. Vennligst bruk en annen betalingsmetode eller prøv igjen senere.",
+            "instructions": "Det oppstod et problem med {{walletName}} Al. Gå tilbake til butikken for å prøve igjen, eller bruk en annen betalingsmetode.",
+            "unavailable_for_country": "{{walletName}} er ikke tilgjengelig i {{countryName}}. Velg en annen betalingsmetode for å fullføre kjøpet ditt."
+          },
+          "terminal": "Det oppstod et problem med {{walletName}}. Vennligst bruk en annen betalingsmetode.",
+          "unsupported": {
+            "address": "Selgeren kan ikke levere til den valgte rammens adresse.",
+            "postal_code": "Denne plasseringen støttes ikke",
+            "wallet_is_unavailable": "{{walletName}} kan ikke brukes med denne adressen. Velg en annen adresse for å fullføre kjøpet, eller lukk {{walletName}}-lommeboken."
+          },
+          "outdated": {
+            "shipping_method": "Fraktalternativene for bestillingen din har endret seg. Vennligst gå gjennom valget ditt.",
+            "payment_terms": "Betalingsbetingelsene er endret. Vennligst gjennomgå bestillingen din."
+          },
+          "select_different_shipping_address_to_resolve_errors": "Fraktadressen din er ugyldig. Velg en annen adresse eller bruk en ny adresse.",
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} er for øyeblikket ikke tilgjengelig for bestillingen din. Velg en annen betalingsmetode for å fortsette kjøpet."
+          },
+          "processing_error_checkout_as_guest": "Det oppstod et problem under behandlingen av betalingen din. Prøv igjen eller {{checkout_as_guest_link}}.",
+          "subscription_review_required": "Bestillingen din inneholder et abonnement. Du må lese gjennom følgende vilkår før du fullfører bestillingen din."
+        },
+        "return_to_store": "Gå tilbake til butikken",
+        "redirect_hint": "Du blir bedt om å logge inn med {{walletName}}-kontoen din.",
+        "logged_in": "Koblet til {{email}}",
+        "shipping_line_label": "Frakt",
+        "payment_in_progress_title": "Betalingsprosessen pågår fortsatt",
+        "payment_in_progress_body": "Bestillingen din behandles. Ordren din vil bli fullført om kort tid.",
+        "redirection_notice": "Du vil bli omdirigert til {{walletName}}-adressen for å fullføre kjøpet ditt",
+        "return_to_checkout": "Gå tilbake til betaling",
+        "scrim": {
+          "continue_purchase_in_window": "Fortsett kjøpsprosessen i {{walletName}}-vinduet",
+          "and_return_to_checkout": "og gå tilbake til betalingsside",
+          "cancel": "Avbryt"
+        },
+        "place_order": "Bestill",
+        "recovery_notice": "Det oppstod et problem med bestillingsinformasjonen din. Oppdater informasjonen din for å fullføre betalingen."
       },
       "vaulted": {
         "change_button": "Endre"
@@ -3478,6 +3529,21 @@
         "square_foot": "ft²",
         "item": "produkt"
       }
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Fremhevet",
+        "best_selling": "Bestselgeren",
+        "az": "Alfabetisk, A-Å",
+        "date_ascending": "Historie, fra gammel til ny",
+        "date_descending": "Historie, fra nytt til gammelt",
+        "most_relevant": "Relatert til En"
+      }
+    },
+    "checkpoint": {
+      "message": "Løs Captchaen for å fortsette",
+      "error": "Captcha-verifiseringen mislyktes",
+      "submit_button_text": "Send"
     }
   },
   "recipient": {
