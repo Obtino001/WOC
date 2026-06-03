@@ -360,7 +360,69 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filtre valgt)",
       "show_more": "Vis mer",
       "show_less": "Vis mindre",
-      "filter_and_operator_subtitle": "Match alle"
+      "filter_and_operator_subtitle": "Match alle",
+      "to": "Den høyeste"
+    },
+    "product": {
+      "add_to_cart": "Legg i handlekurven",
+      "description": "Beskrivelse",
+      "on_sale": "Rabatt",
+      "quantity": {
+        "label": "Antall",
+        "input_label": "antall for {{ product }}",
+        "increase": "Øk antallet for {{ product }}",
+        "decrease": "Reduser antallet for {{ product }}",
+        "minimum_of": "Minimum: {{ quantity }}",
+        "maximum_of": "Maksimum: {{ quantity }}",
+        "multiples_of": "Økningsverdi: {{ quantity }}",
+        "in_cart_html": "I handlekurven: <span class=\"quantity-cart\">{{ quantity }}</span>",
+        "note": "Se antallreglene",
+        "min_of": "Minimum {{ quantity }}",
+        "max_of": "Maksimum {{ quantity }}",
+        "in_cart_aria_label": "Antall (i handlekurven: {{ quantity }})"
+      },
+      "price": {
+        "from_price_html": "Startpris: {{ price }}",
+        "regular_price": "Normal pris",
+        "sale_price": "Rabattert pris",
+        "unit_price": "Enhetspris"
+      },
+      "share": "Del dette produktet",
+      "pickup_availability": {
+        "view_store_info": "Vis butikkinformasjon",
+        "check_other_stores": "Sjekk lagerstatus i andre butikker",
+        "pick_up_available": "Henting tilgjengelig",
+        "pick_up_available_at_html": "Henting tilgjengelig på <span class=\"color-foreground\">{{ location_name }}</span> stedet",
+        "pick_up_unavailable_at_html": "Henting på <span class=\"color-foreground\">{{ location_name }}</span> er for øyeblikket ikke tilgjengelig",
+        "unavailable": "Kunne ikke laste inn lagerstatus for levering",
+        "refresh": "Oppdater"
+      },
+      "media": {
+        "open_media": "Spill media i {{ index }} modus",
+        "play_model": "Spill av 3B-visningsprogrammet",
+        "play_video": "Spill av videoen",
+        "gallery_viewer": "Galleri-visning",
+        "load_image": "Last opp bilde {{ index }} i gallerivisningen",
+        "load_model": "Last 3B-modell {{ index }} i gallerivisningen",
+        "load_video": "Spill av video {{ index }} i gallerivisningen",
+        "image_available": "Bilde {{ index }} er nå tilgjengelig i galleriviseren"
+      },
+      "nested_label": "{{ parent_title }} for {{ title }}",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beregnes på betalingsiden.",
+      "choose_options": "Velg alternativer",
+      "choose_product_options": "Velg alternativer for {{ product_name }}",
+      "inventory_in_stock": "Stokta",
+      "inventory_in_stock_show_count": "På lager {{ quantity }} enheter tilgjengelig",
+      "inventory_low_stock": "Lagerbeholdningen er lav",
+      "inventory_low_stock_show_count": "Lagerbeholdning lav: {{ quantity }} igjen",
+      "inventory_out_of_stock": "Ikke på lager",
+      "inventory_out_of_stock_continue_selling": "Stokta",
+      "product_variants": "Produktvarianter",
+      "duties_included": "Inkludert tollavgifter.",
+      "duties_and_taxes_included": "Skatter og tollavgifter inkludert."
+    },
+    "modal": {
+      "label": "Mediegalleri"
     }
   },
   "localization": {
