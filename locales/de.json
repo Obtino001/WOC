@@ -68,7 +68,7 @@
   },
   "newsletter": {
     "label": "E-Mail",
-    "success": "Danke für deine Anmeldung",
+    "success": "Vielen Dank für Ihr Abonnement",
     "button_label": "Abonnieren"
   },
   "accessibility": {
@@ -110,8 +110,8 @@
     }
   },
   "onboarding": {
-    "product_title": "Beispiel für Produkttitel",
-    "collection_title": "Name deiner Kollektion"
+    "product_title": "Beispiel Produktüberschrift",
+    "collection_title": "Der Name Ihrer Kollektion"
   },
   "products": {
     "product": {
@@ -197,32 +197,32 @@
       "apply": "Anwenden",
       "clear": "Löschen",
       "clear_all": "Alle entfernen",
-      "from": "Von",
+      "from": "Am niedrigsten",
       "filter_and_sort": "Filtern und sortieren",
       "filter_by_label": "Filter:",
-      "filter_button": "Filter",
+      "filter_button": "Filtern",
       "filters_selected": {
         "one": "{{ count }} ausgewählt",
         "other": "{{ count }} ausgewählt"
       },
-      "max_price": "Der höchste Preis ist {{ price }}",
+      "max_price": "Höchster Preis: {{ price }}",
       "product_count": {
-        "one": "{{ product_count }} von {{ count }} Produkt",
-        "other": "{{ product_count }} von {{ count }} Produkten"
+        "one": "{{ count }}/{{ product_count }} Produkte",
+        "other": "{{ count }}/{{ product_count }} Produkte"
       },
       "product_count_simple": {
-        "one": "{{ count }} Produkt",
-        "other": "{{ count }} Produkte"
+        "one": "{{ count }} Artikel",
+        "other": "{{ count }} Artikel"
       },
       "reset": "Zurücksetzen",
       "sort_button": "Sortieren",
-      "sort_by_label": "Sortieren nach:",
+      "sort_by_label": "Sortierkriterium:",
       "to": "Bis",
       "clear_filter": "Filter entfernen",
       "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
       "show_more": "Mehr anzeigen",
       "show_less": "Weniger anzeigen",
-      "filter_and_operator_subtitle": "Allen entsprechen"
+      "filter_and_operator_subtitle": "Alle abgleichen"
     }
   },
   "templates": {
@@ -386,12 +386,12 @@
   },
   "localization": {
     "country_label": "Land/Region",
-    "language_label": "Sprache",
-    "update_language": "Sprache aktualisieren",
-    "update_country": "Land/Region aktualisieren",
-    "search": "Suchen",
+    "language_label": "Verdünnung",
+    "update_language": "Aktualisiere Dili",
+    "update_country": "Land/Regionsinformationen aktualisieren",
+    "search": "Ara",
     "popular_countries_regions": "Beliebte Länder/Regionen",
-    "country_results_count": "{{ count }} Länder/Regionen gefunden"
+    "country_results_count": "{{ count }} Land/Region gefunden"
   },
   "customer": {
     "account": {
@@ -506,17 +506,17 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Hier ist dein {{ value }}-Gutschein für {{ shop }}!",
-      "subtext": "Dein Gutschein",
-      "gift_card_code": "Gutscheincode",
-      "shop_link": "Onlineshop besuchen",
+      "title": "Hier ist Ihr Geschenkkarten-Guthaben in Höhe von {{ value }} für {{ shop }}!",
+      "subtext": "Ihr Geschenkgutschein",
+      "gift_card_code": "Geschenkkartencode",
+      "shop_link": "Besuchen Sie den Online-Shop",
       "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
-      "qr_image_alt": "QR-Code – Scannen, um Gutschein einzulösen",
-      "copy_code": "Geschenkgutscheincode kopieren",
-      "expired": "Abgelaufen",
+      "qr_image_alt": "QR-Code: Scannen Sie ihn, um Ihre Geschenkkarte zu verwenden",
+      "copy_code": "Geschenkkartencode kopieren",
+      "expired": "Die Frist ist abgelaufen",
       "copy_code_success": "Code erfolgreich kopiert",
-      "how_to_use_gift_card": "Verwende diesen Geschenkgutscheincode online oder verwende den QR-Code im Shop",
-      "expiration_date": "Gültig bis {{ expires_on }}"
+      "how_to_use_gift_card": "Verwenden Sie den Geschenkkartencode online oder im Geschäft über den QR-Code.",
+      "expiration_date": "Ablaufdatum: {{ expires_on }}"
     }
   },
   "recipient": {
