@@ -1239,8 +1239,71 @@
           "shipping_credential_py": "CI/RUC/ALV",
           "shipping_credential_pt": "NIF/ALV",
           "shipping_credential_tw": "Kansallinen tunnistenumero/ALV",
-          "shipping_credential_tr": "Turkin tasavallan henkilötunnus/ALV"
+          "shipping_credential_tr": "Turkin tasavallan henkilötunnus/ALV",
+          "tax_credential_it": "Veronumero (valinnainen)",
+          "tax_credential_type_co": "Henkilötodistustyyppi",
+          "tax_credential_ec": "CI/RUC/ALV",
+          "tax_credential_gt": "ALV/TVA",
+          "tax_credential_my": "TIN/Sicil-numero",
+          "tax_credential_type_mx": "Verotusjärjestelmä",
+          "tax_credential_use_mx": "CFDI:n käyttö",
+          "tax_credential_py": "CI/RUC/ALV",
+          "tax_credential_pt": "NIF/ALV",
+          "tax_credential_tr": "Turkin tasavallan henkilötunnus/ALV"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Lähetä minulle sähköpostia uutisista ja tarjouksista",
+        "unsubscribe": {
+          "description": "Meiltä et enää saa ostoskorin muistutinta."
+        },
+        "accept_sms_checkbox_label": "Lähetä minulle tekstiviesti uutisista ja tarjouksista",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Tietosuojakäytäntö",
+            "terms_of_service": "Palveluehdot",
+            "description_html": "Rekisteröitymällä tekstiviestitse hyväksyt, että annettuun puhelinnumeroon lähetetään toistuvia automaattisia markkinointiviestejä, mukaan lukien ostoskorin muistutukset. Vahvistus ei ole ostoehto. Peruuta tilaus lähettämällä vastaus \"STOP\". Apua varten lähetä vastaus \"HELP\". Viestien lähetystiheys vaihtelee. Viesti- ja datamaksut voivat koskea. Katso %{privacy_policy_link} ja %{terms_of_service_link} -asiakirjamme.",
+            "description_transactional_html": "Voit saada tekstiviestejä tilausvahvistuksista ja toimituspäivityksistä. Vastaa kirjoittamalla STOP peruuttaaksesi tilauksen. Vastaa kirjoittamalla HELP saadaksesi apua. Viestien lähetystiheys vaihtelee. Viesti- ja datamaksut voivat koskea. Tarkista %{privacy_policy_modal_link} ja %{terms_of_service_modal_link} -asiakirjamme."
+          },
+          "get_offers_by_text": "Vastaanota tarjoukset tekstiviestillä"
+        },
+        "post_accept_marketing_checkbox_label": "Tilasit uutiskirjeen ja tarjoukset sähköpostitse",
+        "pending_accept_marketing_checkbox_label": "Tarkista sähköpostisi vahvistaaksesi tilauksesi uutiset ja tarjoukset",
+        "disclaimer": {
+          "terms_of_service": "Palveluehdot"
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Tarkista:",
+          "link_label": "{{partnerDisplayName}} ehdot ja säännöt"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "Tarkista yhteystietosi ennen maksun suorittamista loppuun"
+      },
+      "merchant_instruction_errors": {
+        "duplicate_variant_id": "%{position} %{name} -ohje sisältää toistuvan %{variant_id} variaation tunnisteen.",
+        "discount_not_supported": "Mal alennus käytä myyjän ohje tätä alennustyyppiä ei tueta."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Tätä tuotetta ei voi lähettää %{location_name} -sijaintiin.",
+          "some_products_other": "Nämä tuotteet eivät ole toimitettavissa %{location_name} -sijaintiin.",
+          "all_products_one": "Ostoskorissasi oleva tuote ei ole toimitettavissa %{location_name} -sijaintiin.",
+          "all_products_other": "Ostoskoriisi lisätyt tuotteet eivät ole toimitettavissa %{location_name} -alueelle."
+        },
+        "cart_updated": "Ostoskori päivitetty.",
+        "change_address_only": "Jatkaaksesi vaihda toimitusosoitetta.",
+        "change_address_or_remove": "Vaihda toimitusosoitetta tai %{remove_action}.",
+        "remove_items_action": {
+          "one": "poista sopimaton tuote",
+          "other": "poista sopimattomat tuotteet"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Osoitetta ei tueta nykyisessä tilauksessa.",
+        "items_split_across_locations_unsupported": "Tilauksellesi ei ole saatavilla Prime-toimitusta. Lähetysvaihtoehtosi on päivitetty."
       }
     }
   }
