@@ -2531,8 +2531,51 @@
               "ie": "Irlannin ALV-numerot koostuvat IE-kirjaimista ja niitä seuraavista 8–9 merkistä",
               "it": "Italian ALV-numerot koostuvat IT-kirjaimista ja niitä seuraavista 11 merkistä",
               "es": "Espanjan ALV-numerot koostuvat ES-kirjaimista ja niitä seuraavista 9 merkistä",
-              "gb": "Yhdistyneen kuningaskunnan ALV-numerot koostuvat GB- tai XI-kirjaimista, joita seuraa 5–12 merkkiä"
-            }
+              "gb": "Yhdistyneen kuningaskunnan ALV-numerot koostuvat GB- tai XI-kirjaimista, joita seuraa 5–12 merkkiä",
+              "lv": "Latvian ALV-numerot koostuvat LV-kirjaimista ja niitä seuraavista 11 merkistä",
+              "lt": "Liettuan ALV-numerot koostuvat kirjaimista LT ja niitä seuraavista 9–12 merkistä",
+              "lu": "Luxemburgin ALV-numerot koostuvat LU-kirjaimista ja niitä seuraavista 8 merkistä",
+              "mt": "Maltan ALV-numerot koostuvat MT-kirjaimista ja niitä seuraavista 8 merkistä",
+              "nl": "Alankomaiden ALV-numerot koostuvat NL-kirjaimista ja niitä seuraavista 12 merkistä",
+              "pl": "Puolan ALV-numerot koostuvat PL-kirjaimista ja niitä seuraavista 10 merkistä",
+              "pt": "Portugalin ALV-numerot koostuvat PT-kirjaimista ja niitä seuraavista 9 merkistä",
+              "ro": "Romanian ALV-numerot koostuvat RO-kirjaimista ja niitä seuraavista 10 merkistä",
+              "sk": "Slovakian ALV-numerot koostuvat SK-kirjaimista ja niitä seuraavista 10 merkistä",
+              "si": "Slovenian ALV-numerot koostuvat SI-kirjaimista ja niitä seuraavista 8 merkistä",
+              "se": "Ruotsin ALV-numerot koostuvat kirjaimista SE ja niitä seuraavista 12 merkistä"
+            },
+            "invalid_number": {
+              "at": "Syötä voimassa oleva Itävallan ALV-numero",
+              "be": "Anna voimassa oleva Belgian ALV-numero",
+              "bg": "Syötä voimassa oleva Bulgarian ALV-numero",
+              "hr": "Syötä voimassa oleva Kroatian ALV-numero",
+              "cy": "Syötä voimassa oleva Kyproksen ALV-numero",
+              "cz": "Syötä voimassa oleva Tšekin arvonlisäveronumero",
+              "dk": "Anna voimassa oleva Tanskan ALV-numero",
+              "ee": "Anna voimassa oleva Viron ALV-numero",
+              "fi": "Syötä voimassa oleva suomalainen ALV-tunnus",
+              "fr": "Syötä voimassa oleva Ranskan ALV-numero",
+              "de": "Syötä voimassa oleva Saksan ALV-numero",
+              "gr": "Syötä voimassa oleva Kreikan ALV-numero",
+              "hu": "Anna voimassa oleva Unkarin ALV-numero",
+              "ie": "Syötä voimassa oleva Irlannin ALV-numero",
+              "it": "Syötä voimassa oleva Italian ALV-numero",
+              "lv": "Syötä voimassa oleva Latvian ALV-numero",
+              "lt": "Syötä voimassa oleva Liettuan ALV-numero",
+              "lu": "Syötä voimassa oleva Luxemburgin ALV-numero",
+              "mt": "Anna voimassa oleva Maltan ALV-numero",
+              "nl": "Anna voimassa oleva Alankomaiden ALV-numero",
+              "pl": "Syötä voimassa oleva Puolan ALV-numero",
+              "pt": "Anna voimassa oleva Portugalin ALV-numero",
+              "ro": "Syötä voimassa oleva Romanian ALV-numero",
+              "sk": "Anna voimassa oleva Slovakian ALV-numero",
+              "si": "Syötä voimassa oleva Slovenian ALV-numero",
+              "es": "Syötä voimassa oleva Espanjan ALV-numero",
+              "se": "Syötä voimassa oleva Ruotsin ALV-numero",
+              "gb": "Anna voimassa oleva Yhdistyneen kuningaskunnan ALV-numero"
+            },
+            "service_unavailable": "Varmistuspalvelu ei ole käytettävissä",
+            "service_error": "Varmistuspalvelu ei ole käytettävissä"
           },
           "accessibility": {
             "status": {
@@ -2542,6 +2585,16 @@
               "domestic": "ALV-vapautusta ei sovellettu"
             }
           }
+        }
+      },
+      "thank_you": {
+        "attempted_delivery": "Toimitusyritys on tehty",
+        "attempted_delivery_title": "Toimitusyritys on tehty tilauksellesi",
+        "attempted_delivery_description_html": "Tilauksesi toimitusyritys tehtiin, mutta yritys epäonnistui. Järjestääksesi uuden toimitusyrityksen, ota yhteyttä %{contact_us}.",
+        "attempted_delivery_local_title": "Toimitus jäi saapumatta",
+        "attempted_delivery_local_description_html": "Emme voinut toimittaa tilaustasi. Ota yhteyttä %{contact_us} sopiaksesi uudesta toimituksesta.",
+        "announcement": {
+          "collapse": "Ahdista"
         }
       }
     }

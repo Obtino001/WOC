@@ -2567,7 +2567,13 @@
           "header": {
             "one": "Aucun service de livraison disponible pour %{count} produit(s)",
             "other": "Aucun service de livraison disponible pour %{count} produit(s)"
-          }
+          },
+          "title": "Aucun service de livraison disponible",
+          "message": {
+            "one": "Votre produit sera retiré de votre panier car il n'existe pas de méthode de livraison disponible pour votre adresse.",
+            "other": "Votre panier sera vidé de ces articles car il n'existe aucune méthode de livraison disponible pour votre adresse."
+          },
+          "status_column_header": "Pas de service de livraison"
         },
         "price_update": {
           "title": "Mise à jour des prix",
@@ -2600,6 +2606,84 @@
           "description": "Les prix et les quantités disponibles pour ces produits ont changé et votre panier a été mis à jour."
         },
         "out_of_stock_in_context_label": "Ce produit n'est pas disponible dans votre pays/région."
+      },
+      "subscriptions": {
+        "recurring_totals": "Elle %{interval} %{total_price}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Premier paiement %{total_price}",
+            "other": "Chacun des %{count} premiers paiements est de %{total_price}"
+          },
+          "following_cycles": ", puis tous les %{interval} %{total_price}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "other": "%{count} jours"
+          },
+          "week": {
+            "other": "%{count} semaine"
+          },
+          "month": {
+            "one": "hé",
+            "other": "%{count} ans"
+          },
+          "year": {
+            "one": "année",
+            "other": "%{count} an"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Premier paiement %{total_price_with_discount}, puis %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", puis lorsque %{total_price} est atteint, %{count} paiement(s)",
+            "other": ", puis chaque fois que %{total_price} est atteint, %{count} paiement(s)"
+          }
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "Un problème est survenu avec votre crédit en magasin. Veuillez réessayer ou recharger la page."
+      },
+      "taxes": {
+        "tax_details": "Détails supplémentaires sur la taxe",
+        "vat_number": {
+          "field": {
+            "tooltip": "Vérifie le numéro de TVA lorsque cela est approprié et applique automatiquement la facturation inversée aux commandes."
+          },
+          "add": "Ajoutez un numéro de TVA",
+          "badge": "Numéro de TVA : %{number}",
+          "domestic_order": "L'exonération de taxe en contre-remboursement s'applique uniquement aux commandes transfrontalières dans l'UE. La TVA standard s'applique aux commandes locales.",
+          "status": {
+            "invalid_format": {
+              "at": "Les numéros de TVA autrichiens se composent des lettres AT suivies de 9 caractères.",
+              "be": "Les numéros de TVA belges se composent des lettres BE suivies de 10 caractères.",
+              "bg": "Les numéros de TVA bulgares se composent des lettres BG suivies de 9 à 10 caractères.",
+              "hr": "Les numéros de TVA croates se composent des lettres HR suivies de 11 caractères.",
+              "cy": "Les numéros de TVA de Chypre se composent des lettres CY suivies de 9 caractères.",
+              "cz": "Les numéros de TVA tchèques se composent des lettres CZ suivies de 8 à 10 caractères.",
+              "dk": "Les numéros de TVA danois se composent des lettres DK suivies de 8 caractères.",
+              "ee": "Les numéros de TVA estoniens se composent des lettres EE suivies de 9 caractères.",
+              "fi": "Les numéros de TVA finlandais se composent des lettres FI suivies de 8 caractères.",
+              "fr": "Les numéros de TVA français se composent des lettres FR suivies de 11 caractères.",
+              "de": "Les numéros de TVA allemands se composent des lettres DE suivies de 9 caractères.",
+              "gr": "Les numéros de TVA grecs se composent des lettres EL suivies de 9 caractères.",
+              "hu": "Les numéros de TVA hongrois se composent des lettres HU suivies de 8 caractères.",
+              "ie": "Les numéros de TVA irlandais se composent des lettres IE suivies de 8 à 9 caractères.",
+              "it": "Les numéros de TVA italiens se composent des lettres IT suivies de 11 caractères.",
+              "es": "Les numéros de TVA espagnols se composent des lettres ES suivies de 9 caractères.",
+              "gb": "Les numéros de TVA du Royaume-Uni se composent des lettres GB ou XI suivies de 5 à 12 caractères."
+            }
+          },
+          "accessibility": {
+            "status": {
+              "validating": "Le numéro de TVA est en cours de vérification",
+              "applied": "Exonération de TVA appliquée",
+              "domestic": "L'exonération de TVA n'a pas été appliquée",
+              "invalid_number": "Exonération de TVA échouée",
+              "service_unavailable": "L'exonération de TVA ne peut pas être vérifiée",
+              "service_error": "L'exonération de TVA ne peut pas être vérifiée"
+            }
+          }
+        }
       }
     }
   }
