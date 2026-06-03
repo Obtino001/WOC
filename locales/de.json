@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -63,21 +72,21 @@
     "button_label": "Abonnieren"
   },
   "accessibility": {
-    "skip_to_text": "Direkt zum Inhalt",
+    "skip_to_text": "Zum Inhalt springen",
     "close": "Schließen",
     "unit_price_separator": "pro",
-    "vendor": "Anbieter:",
-    "error": "Fehler",
-    "refresh_page": "Wenn du dich für eine Auswahl entscheidest, wird die Seite komplett aktualisiert.",
+    "vendor": "Verkäufer:",
+    "error": "Hut",
+    "refresh_page": "Eine Auswahl zu treffen führt dazu, dass die gesamte Seite neu geladen wird.",
     "link_messages": {
-      "new_window": "Wird in einem neuen Fenster geöffnet.",
-      "external": "Öffnet externe Webseite."
+      "new_window": "In einem neuen Fenster öffnen.",
+      "external": "Öffnet eine externe Website."
     },
-    "loading": "Wird geladen ...",
-    "skip_to_product_info": "Zu Produktinformationen springen",
-    "total_reviews": "Bewertungen insgesamt",
-    "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen",
-    "collapsible_content_title": "Einklappbarer Inhalt",
+    "loading": "Wird geladen...",
+    "skip_to_product_info": "Zur Produktinformation springen",
+    "total_reviews": "Gesamtbewertung",
+    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} Sterne",
+    "collapsible_content_title": "Zusammenziehbarer Inhalt",
     "complementary_products": "Ergänzende Produkte"
   },
   "blogs": {
@@ -85,19 +94,19 @@
       "blog": "Blog",
       "read_more_title": "Weiterlesen: {{ title }}",
       "comments": {
-        "one": "{{ count }} Kommentar",
-        "other": "{{ count }} Kommentare"
+        "one": "{{ count }} Bewertungen",
+        "other": "{{ count }} Bewertungen"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
-      "comment_form_title": "Hinterlasse einen Kommentar",
-      "name": "Name",
+      "moderated": "Bitte beachten Sie, dass Kommentare genehmigt werden müssen, bevor sie veröffentlicht werden können.",
+      "comment_form_title": "Kommentar schreiben",
+      "name": "Anzeige",
       "email": "E-Mail",
       "message": "Kommentar",
-      "post": "Kommentar posten",
-      "back_to_blog": "Zurück zum Blog",
+      "post": "Kommentar teilen",
+      "back_to_blog": "Zum Blog gehen",
       "share": "Diesen Artikel teilen",
-      "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
-      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen."
+      "success": "Ihre Bewertung wurde erfolgreich geteilt! Vielen Dank.",
+      "success_moderated": "Ihr Kommentar wurde erfolgreich geteilt. Da unser Blog überprüft wird, werden wir Ihren Kommentar in Kürze veröffentlichen."
     }
   },
   "onboarding": {
@@ -387,15 +396,15 @@
   "customer": {
     "account": {
       "title": "Konto",
-      "details": "Kontodetails",
-      "view_addresses": "Adressen anzeigen",
-      "return": "Zurück zu Kontodetails"
+      "details": "Kontoinformationen",
+      "view_addresses": "Adresse anzeigen",
+      "return": "Zurück zu den Kontoinformationen"
     },
     "account_fallback": "Konto",
     "activate_account": {
       "title": "Konto aktivieren",
-      "subtext": "Erstelle ein Passwort, um dein Konto zu aktiveren.",
-      "password": "Passwort",
+      "subtext": "Erstellen Sie Ihr Passwort, um Ihr Konto zu aktivieren.",
+      "password": "Wort",
       "password_confirm": "Passwort bestätigen",
       "submit": "Konto aktivieren",
       "cancel": "Einladung ablehnen"
@@ -407,10 +416,10 @@
       "edit_address": "Adresse bearbeiten",
       "first_name": "Vorname",
       "last_name": "Nachname",
-      "company": "Unternehmen",
+      "company": "Firma",
       "address1": "Adresse 1",
       "address2": "Adresse 2",
-      "city": "Ort",
+      "city": "Stadt",
       "country": "Land/Region",
       "province": "Bundesland/Provinz",
       "zip": "PLZ",
@@ -420,8 +429,8 @@
       "update": "Adresse aktualisieren",
       "cancel": "Abbrechen",
       "edit": "Bearbeiten",
-      "delete": "Löschen",
-      "delete_confirm": "Bist du sicher, dass du diese Adresse löschen möchtest?"
+      "delete": "Sil",
+      "delete_confirm": "Sind Sie sicher, dass Sie diese Adresse löschen möchten?"
     },
     "log_in": "Einloggen",
     "log_out": "Abmelden",

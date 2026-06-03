@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "accessibility": {
+    "skip_to_text": "تخطي المحتوى",
+    "close": "أغلق",
+    "vendor": "البائع:",
+    "error": "حتى",
+    "refresh_page": "اختيارك سيؤدي إلى إعادة تحميل الصفحة بالكامل.",
+    "link_messages": {
+      "new_window": "يفتح في نافذة جديدة.",
+      "external": "يفتح موقع الويب الخارجي."
+    },
+    "loading": "جارٍ التحميل...",
+    "skip_to_product_info": "تخطي إلى معلومات المنتج",
+    "total_reviews": "التقييم الإجمالي",
+    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} نجوم",
+    "collapsible_content_title": "محتوى قابل للتقليص",
+    "complementary_products": "منتجات تكميلية"
+  },
+  "blogs": {
+    "article": {
+      "blog": "مدونة",
+      "read_more_title": "اقرأ المزيد: {{ title }}",
+      "comments": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليق"
+      },
+      "moderated": "يرجى تذكر أنه يجب الموافقة على التعليقات قبل نشرها.",
+      "comment_form_title": "اترك تعليقًا",
+      "name": "إعلان",
+      "email": "البريد الإلكتروني",
+      "message": "تعليق",
+      "post": "مشاركة التعليق",
+      "back_to_blog": "بلوقا دون",
+      "share": "شارك هذه المقالة",
+      "success": "تم مشاركة تعليقك بنجاح! شكراً لك.",
+      "success_moderated": "تم نشر تعليقك بنجاح. سيتم عرض تعليقك بعد فترة قصيرة من مراجعة مدونتنا."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "حساب",
+      "details": "معلومات الحساب",
+      "view_addresses": "عرض العنوان",
+      "return": "العودة إلى معلومات الحساب"
+    },
+    "account_fallback": "حساب",
+    "activate_account": {
+      "title": "قم بتفعيل الحساب",
+      "subtext": "قم بإنشاء كلمة المرور الخاصة بك لتفعيل حسابك.",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "تفعيل الحساب",
+      "cancel": "رفض الدعوة"
+    },
+    "addresses": {
+      "default": "افتراضي",
+      "add_new": "إضافة عنوان جديد",
+      "company": "شركة",
+      "address1": "العنوان 1",
+      "address2": "العنوان 2",
+      "city": "مدينة",
+      "country": "البلد/المنطقة",
+      "add": "أضف عنوانًا",
+      "cancel": "إلغاء",
+      "edit": "حرر",
+      "delete": "سيل",
+      "delete_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان؟"
+    }
+  }
+}
