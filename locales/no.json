@@ -2736,13 +2736,93 @@
         "shipping_method": "Fraktalternativene for bestillingen din har endret seg. Vennligst gå gjennom valget ditt.",
         "shipping_method_not_available": "Handlekurven din er oppdatert. Produktene du har lagt til i handlekurven kan ikke sendes til adressen din. Fjern disse produktene fra handlekurven for å fullføre bestillingen.",
         "shipping_method_not_available_generic": {
-          "one": "Bestillingen din kan ikke sendes til den valgte adressen. Vennligst sjekk adressen for å være sikker på at den er korrekt, og prøv igjen, eller velg en annen adresse."
+          "one": "Bestillingen din kan ikke sendes til den valgte adressen. Vennligst sjekk adressen for å være sikker på at den er korrekt, og prøv igjen, eller velg en annen adresse.",
+          "other": "Noen av produktene i handlekurven din kan ikke sendes til den angitte adressen. Vennligst sjekk at adressen er korrekt og prøv igjen, eller velg en annen adresse."
         },
         "payment_method_not_supported": "Du kan ikke bruke denne betalingsmetoden for %{country}. Bruk en annen betalingsmetode for å sende til dette landet.",
         "empty_state": "Kjør inn leveringsadressen din for å se tilgjengelige fraktmetoder.",
         "shipping_method_not_available_due_to_unsatisfied_conditions": "Varene i handlekurven oppfyller ikke pris- eller vektkravene for frakt. Oppdater handlekurven din og prøv igjen.",
         "invalid_selected_address": "Den valgte leveringsadressen er ugyldig",
-        "invalid_selected_address_with_update_link": "Den valgte leveringsadressen er ikke gyldig. %{update_address_link} eller velg en annen adresse"
+        "invalid_selected_address_with_update_link": "Den valgte leveringsadressen er ikke gyldig. %{update_address_link} eller velg en annen adresse",
+        "shipping_method_not_available_updated": {
+          "one": "Produktet du la til kan ikke sendes til din plassering. Fjern dette produktet for å betale, eller kontakt butikken.",
+          "other": "Én eller flere av produktene du la til kan ikke sendes til din plassering. Fjern disse produktene for å betale, eller kontakt butikken."
+        },
+        "title": "Frakt er ikke tilgjengelig",
+        "unavailable_selected_address": "Fraktjeneste er ikke tilgjengelig for den valgte adressen",
+        "unavailable_selected_address_for_region": "Det tilbys ikke frakttjeneste til {{region}}-området. Velg en annen adresse for å fortsette.",
+        "unavailable_addresses_only_countries": "Bestillingen din kan kun sendes til {{countriesList}}. Legg til en ny adresse for å fortsette.",
+        "unavailable_address_country": "Frakt er ikke tilgjengelig i det valgte landet. Velg en annen adresse for å fortsette."
+      },
+      "shop_policies": {
+        "refund_policy": "Returpolicy for par",
+        "privacy_policy": "Personvernregler",
+        "terms_of_service": "Vilkår for tjenesten",
+        "legal_notice": "Juridisk melding",
+        "shipping_policy": "Frakt",
+        "terms_of_sale": "Salgsbetingelser",
+        "subscription_policy": "Avbestillinger",
+        "purchase_options_policy": "Kjøpsalternativer politikk",
+        "contact_information": "Kontakt",
+        "purchase_options_cancellation_policy": "Avbestillinger",
+        "cookie_preferences": "Informasjonskapsler",
+        "policy_label": "Politikk",
+        "policies_label": "Retningslinjer",
+        "select_policy_label": "Velg politikk",
+        "terms_and_policies": "Vilkår og retningslinjer"
+      },
+      "split_delivery": {
+        "delivery_method": "Delt leveringsmetode",
+        "delivery_method_menu": "Meny for delt leveringsmetode",
+        "inventory_issue_banner": {
+          "remove_items_or_ship": "%{ship_separately_link} eller %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} eller %{remove_items_link}",
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "%{count} produkter kan ikke leveres",
+              "other": "%{count} produkter kan ikke leveres"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count} produkter kan ikke sendes",
+              "other": "%{count} produkter kan ikke sendes"
+            }
+          },
+          "remove_item": {
+            "one": "fjern produktet",
+            "other": "fjern produktene"
+          },
+          "ship_separately": {
+            "one": "Send dette separat",
+            "other": "Send disse separat"
+          },
+          "pick_them_up_in_store": {
+            "one": "Hent dette i butikken",
+            "other": "Hent dem i butikken"
+          },
+          "remove_item_only": {
+            "one": "Fjern produktet",
+            "other": "Fjern produktene"
+          }
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "Skal landet endres?",
+            "content": "Leverings- og fraktstedene dine må være i samme land. Når du endrer landet, tilbakestilles alle produkter for frakt.",
+            "change_country": "Bytt land",
+            "country_changed_heading": "Land endret"
+          },
+          "banner": "Leveringsmetoden din er oppdatert"
+        }
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Det oppstod et problem under innlasting av Shop Pay",
+          "try_again_later": "Sjekk tilkoblingen din, eller lukk dette vinduet og prøv igjen om noen minutter.",
+          "checkout_has_expired": "Betalingsøkten din har utløpt. Lukk dette vinduet og prøv å betale igjen via {{shopName}}."
+        },
+        "return_to_store": "Gå tilbake til {{shopName}}-butikken",
+        "return_to_store_simple": "Gå tilbake til butikken",
+        "title": "Shop Pay-betaling"
       }
     }
   },
