@@ -3276,7 +3276,67 @@
         "thank_you_confirmed_order_with_missing_pick_up": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
         "thank_you_confirmed_order_with_draft_payment": "Hvis vi trenger mer informasjon eller bestillingen din blir bekreftet, vil vi gi deg beskjed.",
         "thank_you_confirmed_order_with_draft_pick_up": "Hvis vi trenger mer informasjon eller bestillingen din blir bekreftet, vil vi gi deg beskjed.",
-        "payment_method_not_charged": "Ikke belastet"
+        "payment_method_not_charged": "Ikke belastet",
+        "thank_you_title": "Bestillingen din er bekreftet",
+        "thank_you_confirmed_order_with_phone_pick_up": "Vi sender deg en SMS når bestillingen din er klar for henting.",
+        "thank_you_title_payment": "Betalingen din er bekreftet",
+        "thank_you_title_review": "Bestillingen din er sendt til gjennomgang",
+        "thank_you_ready_for_picked_up": "Bestillingen din ble hentet fra denne adressen: %{address}.",
+        "thank_you_title_payments_app_pending_default": "Betalingen din behandles",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Bestillingen din er mottatt",
+        "thank_you_title_payments_app_failed_pending_payment": "Betalingen din kunne ikke behandles",
+        "thank_you_payments_app_failed_pending_payment": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Innen kort tid vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Innen kort tid vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Innen kort tid vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Bestillingen din er fullført, og du vil motta en bekreftelses-e-post med ordrenummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Etter at du har fullført bestillingen, vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Etter at du har fullført bestillingen, vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Etter at du har fullført bestillingen, vil du motta en bekreftelsesmelding som inneholder bestillingsnummeret ditt.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "Betalingen din behandles. Du vil motta en e-post når bestillingen din er bekreftet.",
+        "thank_you_confirmed_orders_with_email": "Siparişnumrene dine vil snart motta separate bekreftelses-e-poster",
+        "thank_you_confirmed_orders_with_phone": "Du vil snart motta separate bekreftelsessms-er med bestillingsnumrene dine.",
+        "thank_you_confirmed_orders_with_email_and_phone": "Siparişnumrene dine vil snart motta separate bekreftelses-e-poster",
+        "thank_you_unconfirmed_items_description": {
+          "one": "Det er ennå ikke belastet noe beløp for dette produktet fra deg."
+        },
+        "thank_you_from_shop": "fra %{shop_name}-butikken",
+        "thank_you_item_label": {
+          "one": "%{count} produkter",
+          "other": "%{count} produkter"
+        },
+        "thank_you_from_other_store": "En annen butikk",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Du vil motta en bekreftelses-e-post om kort tid",
+          "multi_store": "Du vil motta separate bekreftelses-e-poster fra hver butikk innen kort tid"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Du vil motta en bekreftelses-SMS om kort tid",
+          "multi_store": "Du vil motta separate bekreftelses-SMS-er fra hver butikk innen kort tid"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Du vil motta en bekreftelses-e-post om kort tid",
+          "multi_store": "Du vil motta separate bekreftelses-e-poster fra hver butikk innen kort tid"
+        }
       }
     }
   },
