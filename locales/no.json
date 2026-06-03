@@ -1709,7 +1709,33 @@
           "rst": "RST",
           "qst": "QST",
           "vpt": "VPT"
-        }
+        },
+        "title": "Bestillingsoversikt",
+        "total_label": "Totalt",
+        "total_outstanding_label": "Beløp som skal betales",
+        "vat_label_html": "%{amount} inkludert skatt",
+        "total_updated_label": "Oppdatert totalpris:",
+        "total_already_paid_label": "Betalt",
+        "unit_price": {
+          "per_item": {
+            "single": "Hver enkelt %{price}",
+            "one": "%{count} produkter %{price}",
+            "other": "%{count} produkter %{price}"
+          }
+        },
+        "total_updated_label_with_price": "Oppdatert totalpris: %{totalPrice}",
+        "updated_shipping_method": "Fraktmetode oppdatert: %{shipping_method}",
+        "total_savings": "Total besparelse",
+        "view_all_items": {
+          "one": "Vis %{count} produkter",
+          "other": "Vis alle %{count} produkter"
+        },
+        "total_due_today_label": "Totalt beløp som skal betales i dag",
+        "total_due_later_label": "Totalt beløp som skal betales senere",
+        "total_due_label": "Totalt å betale",
+        "total_price_label": "Totalpris",
+        "unconfirmed_label": "Ikke godkjent",
+        "total_paid_label": "Totalt betalt"
       },
       "order_payment_collection": {
         "custom_line_item_description": "Beløpet som skal betales for %{order_name}-bestillingen",
@@ -1753,6 +1779,44 @@
             "signature_mismatch": "Det er en uoverensstemmelse i produktets signatur på linje %{stable_id}."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Du blir bedt om å logge inn med Amazon-kontoen din.",
+        "amazon_payments_logout": "Logg ut fra Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Valgt betalingsmetode er ikke tilgjengelig. Velg en annen metode eller kontakt banken din eller kortutstederen.",
+        "amazon_payments_abandoned_mfa_challenge": "Betalingen din kunne ikke fullføres. Prøv en annen betalingsmetode eller kontakt banken din eller kortutstederen.",
+        "amazon_payments_could_not_enqueue_authorize": "Det oppstod et problem under behandlingen av betalingen din. Prøv igjen eller bruk en annen betalingsmetode.",
+        "amount_left_to_pay_label": "Innbetaling som kommer",
+        "apply_gift_card_button_label": "Bruk",
+        "bancontact_label": "Bancontact",
+        "apple_pay_payment_error": "Betalingen din kunne ikke fullføres. Prøv igjen eller bruk en annen betalingsmetode.",
+        "apple": {
+          "connect": "Klikk for å koble til Apple Pay-kontoen din",
+          "not_available": "Apple Pay kan ikke brukes i denne nettleseren. For å koble til Apple Pay-kontoen din, må du bruke Safari-nettleseren på en Apple-enhet."
+        },
+        "account_connected": "Konto tilkoblet.",
+        "alternative_payment_currency_total_notice": "Merk: Du vil bli belastet %{amount_due}.",
+        "add_credit_card_modal": {
+          "title": "Legg til kart",
+          "cancel": "Avbryt",
+          "save": "Lagre"
+        },
+        "afterpay_label": "Etterbetaling",
+        "alternative_payment_currency_total_manual_payment_notice": "Merk: Konvertert total %{amount_due}.",
+        "bank_account_type": {
+          "checking": "Uten konto",
+          "savings": "Terminbeløpt"
+        },
+        "bank_account_choose": "Velg en konto for å fullføre kjøpet ditt sikkert",
+        "bank_account_connect_another": "Koble til en annen bankkonto",
+        "bank_account_connect": "Koble til bankkontoen",
+        "bank_account_missing": "Bankkonto må kobles til",
+        "bank_account_disclaimer": "ACH-betalinger kan ta opptil 4 virkedager å behandle.",
+        "bank_account_generic_error": "Bankkontoen kunne ikke legges til. Prøv igjen senere.",
+        "add_payment_method": "Legg til betalingsmetode",
+        "add_new_payment_method": "Legg til en ny betalingsmetode",
+        "alipay_label": "Alipay"
       }
     }
   },
