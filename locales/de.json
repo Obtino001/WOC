@@ -227,9 +227,9 @@
   },
   "templates": {
     "search": {
-      "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\". Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage.",
+      "no_results": "Für \"{{ terms }}\" wurden keine Ergebnisse gefunden. Überprüfen Sie, ob kein Rechtschreibfehler vorliegt, oder verwenden Sie ein anderes Wort oder einen anderen Ausdruck.",
       "results_with_count": {
-        "one": "{{ count }} Ergebnis",
+        "one": "{{ count }} Ergebnisse",
         "other": "{{ count }} Ergebnisse"
       },
       "title": "Suchergebnisse",
@@ -237,22 +237,22 @@
       "products": "Produkte",
       "search_for": "Nach \"{{ terms }}\" suchen",
       "results_with_count_and_term": {
-        "one": "{{ count }} Ergebnis für \"{{ terms }}\" gefunden",
-        "other": "{{ count }} Ergebnisse für \"{{ terms }}\" gefunden"
+        "one": "Für \"{{ terms }}\" wurden {{ count }} Ergebnisse gefunden",
+        "other": "Für \"{{ terms }}\" wurden {{ count }} Ergebnisse gefunden"
       },
       "results_pages_with_count": {
         "one": "{{ count }} Seite",
-        "other": "{{ count }} Seiten"
+        "other": "{{ count }} Seite"
       },
       "results_suggestions_with_count": {
-        "one": "{{ count }} Vorschlag",
+        "one": "{{ count }} Vorschläge",
         "other": "{{ count }} Vorschläge"
       },
       "results_products_with_count": {
-        "one": "{{ count }} Produkt",
-        "other": "{{ count }} Produkte"
+        "one": "{{ count }} Artikel",
+        "other": "{{ count }} Artikel"
       },
-      "suggestions": "Vorschläge",
+      "suggestions": "Empfehlungen",
       "pages": "Seiten"
     },
     "cart": {
@@ -260,13 +260,13 @@
     },
     "contact": {
       "form": {
-        "name": "Name",
+        "name": "Anzeige",
         "email": "E-Mail",
         "phone": "Telefonnummer",
         "comment": "Kommentar",
         "send": "Senden",
-        "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
-        "error_heading": "Bitte passe Folgendes an:",
+        "post_success": "Vielen Dank, dass Sie uns kontaktiert haben. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+        "error_heading": "Bitte bearbeiten Sie Folgendes:",
         "title": "Kontaktformular"
       }
     },
@@ -3365,7 +3365,38 @@
         "one": "Arama: Für \"%{terms}\" wurden %{count} Ergebnisse gefunden",
         "other": "Arama: Für \"%{terms}\" wurden %{count} Ergebnisse gefunden"
       },
-      "blog_or_article_with_error": "Hata - %{title}"
+      "blog_or_article_with_error": "Hata - %{title}",
+      "shopping_cart": "Ihr Einkaufswagen"
+    },
+    "sentence": {
+      "two_words_connector": "ve",
+      "last_word_connector": "ve"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "In der Regel ist es innerhalb einer Stunde fertig.",
+        "two_hours": "In der Regel ist es innerhalb von 2 Stunden fertig.",
+        "four_hours": "In der Regel ist es innerhalb von 4 Stunden fertig.",
+        "twenty_four_hours": "In der Regel ist es innerhalb von 24 Stunden fertig.",
+        "two_to_four_days": "In der Regel ist es innerhalb von 2-4 Tagen fertig.",
+        "five_or_more_days": "In der Regel ist es innerhalb von 5 Tagen fertig.",
+        "zero_to_two_hours": "In der Regel ist es innerhalb von 2 Stunden fertig.",
+        "two_to_four_hours": "In der Regel ist es innerhalb von 4 Stunden fertig.",
+        "immediately": "Jetzt abholbereit",
+        "next_day": "Am nächsten Tag zur Abholung bereit"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Alaka",
+        "price_ascending": "Preis, von niedrig bis hoch",
+        "price_descending": "Preis, von hoch bis niedrig"
+      },
+      "error": "Beim Laden Ihrer Suchergebnisse ist ein Problem aufgetreten. Bitte aktualisieren Sie die Seite oder versuchen Sie es später erneut."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Dieses Produkt ist ein wiederkehrender oder aufgeschobener Kauf. Indem Sie fortfahren, akzeptieren Sie die Bedingungen von %{cancellationPolicyLink} und ermächtigen uns, basierend auf den auf dieser Seite angegebenen Preisen, Häufigkeiten und Daten, Ihre Zahlungsmethode zu belasten, bis Ihre Bestellung versandt wird oder Sie die Stornierung erlauben bzw. selbst vornehmen.",
+      "buyer_consent_cart": "In Ihrem Warenkorb befindet sich ein oder mehrere Produkte, die eine wiederholte oder aufgeschobene Bestellung darstellen. Mit dem Fortfahren akzeptieren Sie die Bedingungen von %{cancellationPolicyLink} und ermächtigen uns, Ihre Zahlungsmethode basierend auf den auf dieser Seite angegebenen Preisen, Häufigkeiten und Daten zu belasten, bis Ihre Bestellung versandt wird oder Sie die Erlaubnis zur Stornierung erteilen."
     }
   }
 }
