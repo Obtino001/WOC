@@ -1012,7 +1012,26 @@
             "gift_card_with_attributes_not_supported": "Tilpassede gavekort støttes ikke i denne betalingen.",
             "duplicated_stable_id": "Denne varelinjen har samme faste ID som en annen linje.",
             "bundle_requires_components": "Det er ingen komponenter i denne malpakken.",
-            "combined_listing_parent_not_purchasable": "Hovedprodukter i den sammenslåtte listen kan ikke kjøpes direkte."
+            "combined_listing_parent_not_purchasable": "Hovedprodukter i den sammenslåtte listen kan ikke kjøpes direkte.",
+            "only_value_constraint": "Kun hele verdier er tillatt i feltet for feil.",
+            "merchandise_not_found": "Produktet ble ikke funnet.",
+            "merchandise_variant_not_found": "Produktvariasjon ikke funnet.",
+            "merchandise_not_applicable": "Produktvariasjonen kan ikke kjøpes.",
+            "gift_card_with_components_not_supported": "Gavekort som inneholder komponenter støttes ikke i denne betalingen.",
+            "selling_plan_mismatch": "Abonnement oppdatert.",
+            "selling_plan_not_supported": "Abonnementer støttes ikke.",
+            "selling_plan_not_supported_b2b": "Abonnementer støttes ikke for B2B-betalinger.",
+            "price_mismatch": "Den tidligere anbefalte prisen for denne varen var ugyldig og er oppdatert.",
+            "inventory_not_found": "Det ble ikke funnet lagerbeholdning for dette produktet.",
+            "product_not_published": "Produktet er ikke publisert.",
+            "minimum_quantity_not_met": "Noen produkters antall oppfyller ikke det nødvendige minimumskravet.",
+            "maximum_quantity_exceeded": "Noen produkters antall overskrider den tillatte maksimumsverdien.",
+            "quantity_increment_not_met": "Noen produkters antall oppfyller ikke bestillingsgrensene.",
+            "quantity_rules_not_met": "Noen produkters antall oppfyller ikke bestillingsgrensene.",
+            "title_too_long": "Maloverskriften er for lang.",
+            "title_empty": "Maloverskrift er tom.",
+            "mixed_currencies": "Ødemet inneholder linjeelementer i forskjellige valutaer.",
+            "product_not_published_in_buyer_location": "Produktet er ikke tilgjengelig på kjøperens nåværende sted."
           },
           "delivery": {
             "only_one_delivery_line_allowed": "Det skal kun være én leveringslinje i handlekurven.",
@@ -1058,6 +1077,43 @@
           },
           "checkout_source": {
             "revoked": "Denne betalingen er ikke lenger tilgjengelig."
+          },
+          "only_empty_terms_accepted": "Denne politikken godtar kun tomme vilkår.",
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "Manuell betaling er ikke tillatt i B2B-butikker.",
+            "positive_amount_expected": "Beløpet som skal betales må være høyere enn 0.",
+            "total_amount_mismatch": "Den totale betalingen samsvarer ikke med summen av betalingsbeløpene.",
+            "subscription_terms_not_accepted": "Abonnementsbetingelsene ble ikke akseptert.",
+            "missing_session_id": "Manglende kredittkortøktinformasjon.",
+            "gateway_not_supported": "Betalingsportalen støtter ikke lagring av betalingsmetoden.",
+            "credit_card_last_name_required": "'Soyadı' kan ikke være tom.",
+            "credit_card_update_failed": "Oppdatering av kredittkortet mislyktes.",
+            "invalid_address_type": "Den angitte adressetypen er ugyldig for denne betalingsmetoden.",
+            "missing_retail_attributions": "Manuelle kredittkortbetalinger krever tilknytning til detaljhandel.",
+            "unexpected_retail_attributions": "Uventede tilknytninger til detaljhandel ble oppdaget for betaling med kredittkort.",
+            "invalid_card_source": "Denne økten har ikke tillatelse til å bruke denne kortkilden.",
+            "wallet_content_missing": "Lommebokinnholdet mangler.",
+            "payment_instrument_not_found": "Betalingsmetode ikke funnet",
+            "unauthorized_capture_method": "Det er ikke tillatt å konfigurere lagringsmetoden for betaling.",
+            "saved_payment_methods_not_allowed": "Registrerte betalingsmetoder er ikke tillatt.",
+            "saved_payment_methods_not_enabled": "Registrerte betalingsmetoder er ikke aktivert for denne butikken.",
+            "store_credit_not_enabled": "Butikkreditt er ikke aktivert for denne butikken.",
+            "store_credit_account_not_found": "Butikkredittkonto ble ikke funnet.",
+            "store_credit_account_mismatch": "Butikkredittkontoen samsvarer ikke med kjøper-ID-en.",
+            "store_credit_mismatched_currency": "Butikkredittens valuta samsvarer ikke med betalingsvalutaen.",
+            "store_credit_insufficient_funds": "Det er ikke nok saldo på butikkredittkontoen.",
+            "store_credit_buying_gift_card": "Du kan ikke bruke butikkreditt til å kjøpe gavekort.",
+            "gift_cards_not_allowed_for_b2b": "Gavekort er ikke tillatt i B2B-butikker.",
+            "method_required": "Minst én betalingsmetode må tilbys.",
+            "paypal_express_address_invalid": "PayPal returnerte en ugyldig adresse.",
+            "saved_payment_methods_cvv_verification_disabled": "Valgt betalingsmetode krever CVV-verifisering som ikke er aktivert for denne butikken. Velg en annen betalingsmetode."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Tilbudet til kjøperen din må inneholde ubestridelige vilkår.",
+            "invalid_signature": "{{target_terms}} for signaturen er ugyldig."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Tollavgifter kan ikke nektes ved denne betalingen."
           }
         },
         "dropzone": {
