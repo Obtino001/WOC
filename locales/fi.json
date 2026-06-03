@@ -3018,7 +3018,57 @@
       "full_name_required": "Anna etu- ja sukunimi",
       "invalid_for_card_type": "ei kelpaa",
       "expired": "aika on päättynyt",
-      "invalid_expiry_year": "ei kelpaava viimeinen käyttövuosi"
+      "invalid_expiry_year": "ei kelpaava viimeinen käyttövuosi",
+      "taken": "jo ostettu",
+      "too_short": "erittäin lyhyt (vähimmäispituus %{count} merkkiä)",
+      "too_long": "liian pitkä (enintään %{count} merkkiä)",
+      "password_mismatch": "täytyy vastata annettua salasanaa",
+      "invalid_for_country": "Ei ole voimassa %{country} varten",
+      "invalid_for_country_and_province": "Ei voimassa %{province}ssa ja %{country}ssa",
+      "invalid_province_in_country": "%{country} ei ole voimassa oleva maakunta",
+      "invalid_state_in_country": "%{country} ei ole kelvollinen osavaltio",
+      "invalid_region_in_country": "%{country} ei ole kelvollinen alue",
+      "less_than_or_equal_to": "Sen tulee olla %{count} arvoa pienempi tai yhtä suuri",
+      "not_supported": "ei tueta",
+      "invalid_type": "Valitettavasti emme hyväksy tätä korttityyppiä",
+      "invalid_format": "muoto ei ole kelvollinen",
+      "invalid_start_date_or_issue_number_for_debit": "voimassa oleva aloituspäivämäärä tai muokkausnumero vaaditaan",
+      "verify_email": "Lähetimme sähköpostin osoitteeseen %{customer_email}, vahvista sähköpostiosoitteesi napsauttamalla annettua linkkiä.",
+      "shop_404": {
+        "title": "Luo verkkokauppasivusto ja myy verkossa! Shopifyn tarjoama verkkokauppaohjelmisto",
+        "heros": {
+          "store_unavailable": "Valitettavasti tätä kauppaa ei ole tällä hetkellä saatavilla.",
+          "store_not_exist": "Tätä kauppaa ei ole saatavilla."
+        },
+        "links": {
+          "start_free_trial": "Aloita ilmainen kokeilu"
+        },
+        "owner_ctas": {
+          "fix_domain": "Uuden verkkotunnuksesi asettamisen viimeistelemiseksi siirry kohtaan %{domain_settings_link}. Napsauta \"Liitä verkkotunnus\" ja kirjoita: %{domain}.<br>Jos sinulla on ongelmia kauppaasi kirjautumisessa, kokeile %{forgot_your_store_link} -sivua.",
+          "fix_domain_link_text": "verkkotunnuksen asetuksiin",
+          "forgot_your_store_link_text": "Unohditko kauppasi?",
+          "add_storefront": "%{admin_link} Verkkokauppasi lisäämällä voit asettaa verkkosivustosi. Jos sinulla on ongelmia kauppaasi kirjautumisessa, kokeile %{forgot_your_store_link} -sivua.",
+          "admin_link_text": "Yöneticinizde"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Tee kasvotusten myyntiä",
+            "caption": "Omista ominaisuudet, joita tarvitset juuri perustamasi tai laajentamasi vähittäismyymälän pyörittämiseen.",
+            "link_text": "Aloita ilmainen kokeilu"
+          },
+          "open_a_store": {
+            "caption": "Aloita 3 päivän ilmainen kokeilu, jatka käyttöä seuraavat 3 kuukautta 1 USD kuukaudessa."
+          },
+          "editions": {
+            "caption": "Yli 100 tuotepäivityksen avulla voit olla kaupassa paljon tuottavampi, luovempi ja vahvempi kuin koskaan unelmoitkaan.",
+            "link_text": "Tutustu uusimpiin painoksiin"
+          },
+          "store_owner": {
+            "caption": "Onko sinulla ongelmia kirjautuessasi kauppaasi? Kokeile %{forgot_your_store_link} -toimintoa. Jos haluat aktivoida kauppasi uudelleen, ota yhteyttä %{shopify_support_link} -tukeen.",
+            "shopify_support_link_text": "Shopify-tukitiimi"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
@@ -3061,6 +3111,23 @@
       "sms_unsubscribe_confirm": {
         "message": "Oletko varma, että haluat lopettaa SMS-markkinointitilauksesi?",
         "button": "Peru tilaus"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Shopifyn tukema",
+      "learn_more": "Valitse palveluntarjoaja"
+    },
+    "notices": {
+      "address": {
+        "created": "Osoite luotiin onnistuneesti",
+        "deleted": "Osoite poistettiin onnistuneesti"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Loppu varastosta"
+        }
       }
     }
   }
