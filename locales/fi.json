@@ -1521,7 +1521,26 @@
         },
         "tax_line": {
           "gst": "ALV"
-        }
+        },
+        "title": "Tilausyhteenveto",
+        "vat_label_html": "%{amount} vero mukaan lukien",
+        "unit_price": {
+          "per_item": {
+            "single": "Jokainen %{price}",
+            "one": "%{count} tuotetta %{price}",
+            "other": "%{count} tuotetta %{price}"
+          }
+        },
+        "updated_shipping_method": "Toimitustapa päivitetty: %{shipping_method}",
+        "total_savings": "Kokonais säästö",
+        "view_all_items": {
+          "one": "Näytä %{count} tuotetta"
+        },
+        "total_due_today_label": "Tänään maksettava kokonaissumma",
+        "total_due_later_label": "Maksettava kokonaissumma myöhemmin",
+        "total_due_label": "Maksettava yhteissumma",
+        "unconfirmed_label": "Hylätty",
+        "total_paid_label": "Maksettu yhteissumma"
       },
       "order_payment_collection": {
         "custom_line_item_description": "%{order_name} tilauksen maksettava summa",
@@ -1561,6 +1580,34 @@
             "signature_mismatch": "%{stable_id}-rivillä on tuotteen allekirjoituksen yhteensopimattomuus."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_login_hint": "Sinua pyydetään kirjautumaan sisään Amazon-tililläsi.",
+        "amazon_payments_logout": "Kirjaudu ulos Amazon Paystä",
+        "amazon_payments_failed_mfa_challenge": "Valittu maksutapa ei ole käytettävissä. Valitse toinen tapa tai ota yhteyttä pankkiisi tai kortin myöntäjään.",
+        "amazon_payments_abandoned_mfa_challenge": "Maksusi ei onnistunut. Kokeile toista maksutapaa tai ota yhteyttä pankkiisi tai kortin myöntäjään.",
+        "amazon_payments_could_not_enqueue_authorize": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+        "amount_left_to_pay_label": "Saapuva maksu:",
+        "apple_pay_payment_error": "Maksusi ei onnistunut. Yritä uudelleen tai käytä toista maksutapaa.",
+        "apple": {
+          "connect": "Napsauta yhdistääksesi Apple Pay -tilisi",
+          "not_available": "Apple Pay ei ole käytettävissä tässä selaimessa. Apple Pay -tilin yhdistämiseksi sinun on käytettävä Safari-selainta Apple-laitteella."
+        },
+        "alternative_payment_currency_total_notice": "Huomautus: Sinulta peritään %{amount_due}.",
+        "add_credit_card_modal": {
+          "title": "Lisää kartta"
+        },
+        "afterpay_label": "Jälkiveloitus",
+        "alternative_payment_currency_total_manual_payment_notice": "Huomautus: Muunnettu yhteissumma %{amount_due}.",
+        "bank_account_type": {
+          "checking": "Tilitön",
+          "savings": "Määräaikainen"
+        },
+        "bank_account_choose": "Valitse tili, jolla suoritat ostotapahtuman turvallisesti loppuun",
+        "bank_account_connect_another": "Liitä toinen pankkitili",
+        "bank_account_missing": "Pankkitili on liitettävä",
+        "bank_account_disclaimer": "ACH-maksujen käsittely voi kestää jopa 4 työpäivää.",
+        "bank_account_generic_error": "Pankkitilin lisääminen epäonnistui. Yritä myöhemmin uudelleen."
       }
     }
   }
