@@ -1884,7 +1884,62 @@
           "accessibility_label": "Sélectionnez une option de paiement"
         },
         "payment_method_rollup_accessibility_label": "Options de méthode de paiement",
-        "new_bank_account_disclaimer": "En complétant votre commande, vous autorisez la boutique %{shop_name} à effectuer un prélèvement ACH sur le compte indiqué, pour le montant et à la date spécifiés."
+        "new_bank_account_disclaimer": "En complétant votre commande, vous autorisez la boutique %{shop_name} à effectuer un prélèvement ACH sur le compte indiqué, pour le montant et à la date spécifiés.",
+        "same_billing_address_label": "Identique à l'adresse de livraison",
+        "sofort_label": "Virement bancaire instantané",
+        "purchase_options_card_update_agreement_label_html": "En mettant à jour votre méthode de paiement, vous autorisez les paiements des achats récurrents ou différés effectués conformément à la <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">politique d'annulation</a> de ce magasin.",
+        "receiver_payment_experience_hint": "Après avoir passé votre commande, les détails de paiement vous seront envoyés. Effectuez votre paiement via Multibanco ou en ligne dans un délai de %{due_days} jours.",
+        "pending_payment": {
+          "due_notice": "La date limite de paiement pour le montant de %{amount_due} est le %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Effectuez votre paiement via Multibanco ou en ligne en utilisant les informations ci-dessous. Pour poser une question ou mettre à jour les informations de paiement, %{contact_us}.",
+            "entity": "Personne/Institution",
+            "find_nearest_atm": "Trouver le distributeur automatique le plus proche",
+            "buyer_action_info": "La date limite de paiement de votre montant de %{amount_due} est arrivée."
+          }
+        },
+        "purchase_options_agreement_label": "Un ou plusieurs articles dans votre panier sont des achats différés, basés sur un abonnement ou récurrents. En continuant le paiement, vous acceptez que votre méthode de paiement soit automatiquement débitée au prix et à la fréquence indiqués sur cette page, jusqu'à expiration ou annulation de votre part. Toutes les annulations sont soumises aux conditions %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "Je comprends qu’un ou plusieurs articles dans mon panier sont des achats différés, basés sur un abonnement ou récurrents. En continuant, j’accepte la <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">politique d’annulation</a> et, si cela est autorisé, j’autorise le prélèvement des montants indiqués sur cette page, aux fréquences et dates spécifiées, sur mon moyen de paiement jusqu’à l’expédition de ma commande ou jusqu’à ce que je l’annule.",
+        "store_credit": {
+          "label": "Crédit magasin",
+          "add_label": "Ajouter un crédit magasin",
+          "buying_gift_card": "Vous ne pouvez pas utiliser le crédit magasin pour acheter une carte cadeau."
+        },
+        "same_billing_address_checkbox_label": "Utiliser l'adresse de livraison comme adresse de facturation",
+        "shipping_rate_updated": "Les méthodes de livraison disponibles ont été mises à jour. Veuillez confirmer votre choix avant de procéder au paiement.",
+        "preview_not_available": {
+          "title": "Aperçu indisponible",
+          "content": "Ne vous inquiétez pas, ce paiement rapide est disponible pour vos clients.",
+          "button": "D'accord"
+        },
+        "simulated_checkout": "Les aperçus seront bientôt disponibles",
+        "purchase_options_and_vaulting_agreement_label": "Un ou plusieurs des articles dans votre panier sont des achats différés ou des achats par abonnement. En poursuivant votre paiement, vous acceptez que votre méthode de paiement soit automatiquement débitée aux prix et fréquences indiqués sur cette page, jusqu'à expiration ou jusqu'à ce que vous annuliez. Toutes les annulations sont soumises à %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "politique d'annulation",
+        "saved_credit_card": "Vous avez enregistré votre carte de crédit",
+        "saved_credit_card_info": "Les quatre derniers chiffres",
+        "saved_credit_cards_modal": {
+          "view_all_label": "Afficher toutes les cartes enregistrées",
+          "done": "C'est fini"
+        },
+        "purchase_order_number": {
+          "title": "Numéro de commande d'achat",
+          "label": "Numéro de commande d'achat (facultatif)"
+        },
+        "shop_pay_installments_label": "Paiements échelonnés Shop Pay",
+        "saved_credit_card_actions": {
+          "delete": "Sil"
+        },
+        "purchase_options_agreement_label_wallets": "En continuant votre paiement, vous acceptez les frais futurs listés sur cette page ainsi que la politique d'annulation.",
+        "saved_credit_card_cvv_verification": "Pour la vérification, saisissez le code de sécurité de votre carte.",
+        "proposed_gateway_unavailable": "La passerelle de paiement recommandée n'est pas disponible",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Ne peut pas être utilisé pour la commande Wero. Veuillez choisir un autre mode de paiement.",
+        "paypal_wallet_label": "Portefeuille PayPal",
+        "simulated_express_checkout": "Votre portefeuille n'est pas disponible dans l'aperçu réglementaire en raison de votre région ou de votre navigateur.",
+        "separate_payments_label": "Vos produits proviennent de plusieurs magasins. Les frais seront facturés %{separate_payments_link}.",
+        "purchase_options_subscription_agreement_label": "Vous avez un abonnement à renouvellement automatique dans votre panier. En cliquant sur le bouton \"%{button_label}\", vous acceptez %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "Vous acceptez clairement et définitivement que le(s) montant(s) récurrent(s) affiché(s) dans votre panier (plus les frais de port et les taxes) vous soient automatiquement prélevé(s) jusqu'à ce que votre abonnement(s) prenne fin ou que vous l'annuliez.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Veuillez consulter le texte %{cancellation_policy_label}.",
+        "purchase_options_subscription_cancel_text": "Vous pouvez annuler à tout moment en accédant à votre compte ou en contactant le magasin."
       }
     }
   }
