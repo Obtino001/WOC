@@ -1899,7 +1899,73 @@
         "gift_card_checkbox_label": "تطبيق بطاقة الهدايا",
         "grabpay_label": "غرب باي",
         "kcp_creditcard_label": "بطاقة ائتمان KCP",
-        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة"
+        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة",
+        "pay_with_payment_method": "ادفع باستخدام %{payment_method}",
+        "order_covered_by_gift_cards_notice": {
+          "one": "بطاقة هديتك تغطي طلبك.",
+          "other": "بطاقات الهدايا تغطي طلبك."
+        },
+        "offsite_gateway_redirect_hint": "سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء الخاصة بك.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "إجمالي %{gateway_label} هو %{total_shop_price}",
+        "no_js_credit_card_fields_redirect_hint": "سيتم إعادة توجيهك لإضافة معلومات الدفع الخاصة بك.",
+        "no_method_error": "هذا المتجر لا يقبل الدفع في الوقت الحالي.",
+        "not_configured_error": "هذا المتجر لا يقبل الدفع في الوقت الحالي.",
+        "paypal_label": "باي بال",
+        "no_real_orders_dev_store": "لا يمكن لهذا المتجر قبول الطلبات الحقيقية والمدفوعات الحقيقية.",
+        "no_taxes_banner_content": "لن يتم فرض ضريبة على هذا الطلب. لا يمكنك إضافة ضريبة بعد تحصيل الدفع.",
+        "paypal": {
+          "connect": "انقر لربط حساب PayPal الخاص بك"
+        },
+        "paypal_modal": {
+          "order_contains_fixed_selling_plans": "قد لا تشمل القيمة الإجمالية الضرائب، الشحن، الرسوم المؤجلة وبعض الخصومات. تابع عملية الدفع للمبلغ المستحق اليوم."
+        },
+        "payment_method_saved": "تم حفظ طريقة الدفع",
+        "order_covered_by_store_credit_notice": "رصيد المتجر يغطي طلبك.",
+        "order_covered_by_redeemables_notice": "يتم تجهيز طلبك.",
+        "no_working_method_error": "هذا المتجر لا يقبل الدفع في الوقت الحالي. قم بتحديث الصفحة وحاول مرة أخرى لاحقًا.",
+        "order_edit_banner_title": "مطلوب دفع مبلغ {{amount_owed}}",
+        "order_edit_banner_subtitle": "تم تحديث طلبك رقم {{order_number}}. يرجى مراجعة هذه التغييرات ثم قم بالدفع لتأكيد طلبك.",
+        "order_edit_banner_single_item_added": "تمت الإضافة",
+        "order_edit_banner_multiple_items_added": "{{amount}} تمت الإضافة",
+        "order_edit_banner_single_item_removed": "تمت الإزالة",
+        "order_edit_banner_multiple_items_removed": "تمت إزالة {{amount}}",
+        "order_edit_banner_single_item_returned": "تم الإرجاع",
+        "order_edit_banner_multiple_items_returned": "{{amount}} تم إرجاعه",
+        "order_edit_banner_items_added": {
+          "one": "تمت الإضافة",
+          "other": "تمت الإضافة %{count} عنصرًا"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "تمت الإزالة",
+          "with_quantities": "تمت إزالة {{delta}} من أصل {{quantity}} عنصرًا في الصف"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} تم إرجاعها",
+          "with_quantities": "تم إرجاع {{delta}}/{{quantity}} قطعة"
+        },
+        "payment_method": "طريقة الدفع",
+        "order_edit_banner_updated_order_label": "تم تحديث الطلب",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "تمت إزالته من الإرجاع",
+          "with_quantities": "تمت إزالة {{delta}} قطعة من المرتجعات"
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "تمت إزالته من الإرجاع",
+        "order_edit_banner_multiple_items_return_line_item_removed": "تمت إزالة {{amount}} وحدة",
+        "pay_in_installments_split_pay_short": "4 دفعات بمبلغ %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "طريقة الدفع هذه غير متاحة لعنوان الشحن المحدد. يرجى اختيار طريقة دفع أخرى.",
+        "paypal_disconnect": "قطع الاتصال",
+        "payment_method_update_failed": "تعذر تحديث طريقة الدفع.",
+        "payment_flexibility_terms_id_mismatch": "عدم تطابق الهوية في شروط مرونة الدفع",
+        "offsite_gateway_review_page_redirect_hint": "بعد مراجعة طلبك، سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء.",
+        "offsite_gateway_redirect_hint_no_button_label": "سيتم توجيهك إلى %{gateway_label} لإكمال عملية الشراء الخاصة بك.",
+        "network_card_persistence_description": "سيتم حفظ الشبكة المختارة مع طريقة الدفع الخاصة بك للمعاملات المستقبلية.",
+        "payment_method_incompatible_with_payment_terms": "طريقة الدفع غير متوافقة مع شروط الدفع.",
+        "payment_option": {
+          "accessibility_label": "اختر خيار دفع واحد"
+        },
+        "payment_method_rollup_accessibility_label": "خيارات طريقة الدفع",
+        "payments": "المدفوعات",
+        "new_bank_account_disclaimer": "من خلال إكمال طلبك، تمنح متجر %{shop_name} الإذن بتحصيل المبلغ المحدد وفي الوقت المحدد عبر ACH من الحساب أدناه."
       }
     }
   },
