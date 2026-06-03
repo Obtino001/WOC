@@ -2462,7 +2462,11 @@
             "change_country": "Land wechseln"
           },
           "banner": "Ihre Liefermethode wurde aktualisiert"
-        }
+        },
+        "pickup_all_items": "Alle Produkte erhalten",
+        "items_for_pickup": "Zu liefernde Produkte",
+        "items_for_shipping": "Zu lagernde Produkte",
+        "items_moved_to_shipping_toast": "Nicht abgeholte Produkte wurden an den Versand übergeben"
       },
       "shop_pay_external": {
         "errors": {
@@ -2472,6 +2476,64 @@
         "return_to_store": "Zurück zum {{shopName}} Shop",
         "return_to_store_simple": "Zurück zum Geschäft",
         "title": "Shop Pay-Zahlung"
+      },
+      "stock": {
+        "page_title": "Inventarprobleme",
+        "title": "Nicht auf Lager",
+        "items_unavailable_notice": "Einige Produkte sind nicht mehr verfügbar.",
+        "quantity_column_header": "Stück",
+        "status_column_header": "Hartweizen",
+        "removed_from_cart_notice": "Vom Rabatt abgezogen",
+        "reduced_with_quantity_label": "Nur noch %{quantity_available} Stück verfügbar",
+        "continue_shopping_button_label": "Weiter",
+        "go_back_to_cart_button_label": "Zurück zum Zeitplan",
+        "empty_cart_label": "Ihr Warenkorb ist leer",
+        "quantity_update": {
+          "page_title": "Stückzahl aktualisieren",
+          "title": "Stückzahl aktualisieren",
+          "description": "Für diese Produkte haben sich die verfügbaren Mengen geändert und Ihr Warenkorb wurde aktualisiert."
+        },
+        "unpurchasable_product": {
+          "title": "Nicht kaufbares Produkt",
+          "header": "Einige Produkte wurden aus Ihrem Warenkorb entfernt",
+          "message": "Diese Produkte können bei B2B-Bestellungen nicht verwendet werden."
+        },
+        "unpurchasable_product_generic": {
+          "title": "Nicht kaufbares Produkt",
+          "header": "Einige Produkte wurden aus Ihrem Warenkorb entfernt",
+          "message": "Diese Produkte sind nicht verfügbar."
+        },
+        "unshippable_product": {
+          "header": {
+            "one": "Für %{count} Produkte ist kein Lieferservice verfügbar",
+            "other": "Für %{count} Produkte ist kein Lieferservice verfügbar"
+          }
+        },
+        "price_update": {
+          "description": "Die Preise dieser Produkte haben sich geändert und wurden in Ihrem Warenkorb aktualisiert.",
+          "updated_price": "Aktualisierter Preis"
+        },
+        "return_to_store_label": "Zurück zum Geschäft",
+        "continue_cta_label": "Mit der Zahlungsabwicklung fortfahren",
+        "out_of_stock": {
+          "description": "Diese Produkte sind nicht mehr verfügbar und werden aus Ihrem Warenkorb entfernt.",
+          "items_unavailable": "Einige Produkte sind nicht mehr verfügbar und werden aus Ihrem Warenkorb entfernt."
+        },
+        "unfulfillable_product": {
+          "title": "Liefermethode nicht verfügbar",
+          "message": {
+            "one": "Für dieses Produkt ist %{delivery_method} nicht mehr verfügbar.",
+            "other": "Für diese Produkte ist %{delivery_method} nicht mehr verfügbar."
+          },
+          "default_message": {
+            "one": "Die ausgewählte Versandmethode ist für dieses Produkt nicht mehr verfügbar.",
+            "other": "Die ausgewählte Versandmethode ist für diese Produkte nicht mehr verfügbar."
+          }
+        },
+        "price_and_quantity_update": {
+          "description": "Für diese Produkte haben sich die Preise und verfügbaren Mengen geändert und Ihr Warenkorb wurde aktualisiert."
+        },
+        "out_of_stock_in_context_label": "Dieses Produkt ist in Ihrem Land/Ihrer Region nicht verfügbar."
       }
     }
   }
