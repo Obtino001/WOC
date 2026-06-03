@@ -61,90 +61,10 @@
     },
     "carousel": {
       "type": "sed-product-carousel",
-      "blocks": {
-        "p1": {
-          "type": "product",
-          "settings": {
-            "product": "boss-lady-facelift",
-            "tag": "BESTSELLER",
-            "title": "BOSS LADY",
-            "subtitle": "FACELIFT",
-            "compare_price": "£550",
-            "price": "£385",
-            "product_url": "/products/boss-lady"
-          }
-        },
-        "p2": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "tag": "AWARD WINNER",
-            "title": "NEFERTITI",
-            "subtitle": "NECKLIFT",
-            "compare_price": "£550",
-            "price": "£385",
-            "product_url": "/products/nefertiti"
-          }
-        },
-        "p3": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "tag": "BESTSELLER",
-            "title": "COMFORT CLEANER",
-            "subtitle": "",
-            "compare_price": "£330",
-            "price": "£165",
-            "product_url": "/products/comfort-cleaner"
-          }
-        },
-        "p4": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "tag": "",
-            "title": "LIGHT UP",
-            "subtitle": "EYE LIFT",
-            "compare_price": "£660",
-            "price": "£330",
-            "product_url": "/products/light-up"
-          }
-        },
-        "p5": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "tag": "LUXURY",
-            "title": "COLLAGEN 24K GOLD",
-            "subtitle": "EYEPADS",
-            "compare_price": "£99",
-            "price": "£66",
-            "product_url": "/products/eyepads"
-          }
-        },
-        "p6": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "tag": "NY",
-            "title": "POWER SERUM SET",
-            "subtitle": "",
-            "compare_price": "£176",
-            "price": "£98",
-            "product_url": "/products/serum-set"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4",
-        "p5",
-        "p6"
-      ],
       "settings": {
         "color_scheme": "",
+        "collection": "guzellik-teknolojisi",
+        "products_to_show": 8,
         "tab_1": "Best Sellers",
         "tab_2": "Trending Now",
         "subtitle": "Our most awarded products, chosen by experts worldwide."
