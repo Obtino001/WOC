@@ -1872,7 +1872,9 @@
           "label": "Geschäftsguthaben",
           "apply_label": "Geschäftsguthaben anwenden",
           "add_label": "Geschäftsguthaben hinzufügen",
-          "buying_gift_card": "Sie können den Ladenguthaben nicht zum Kauf von Geschenkkarten verwenden."
+          "buying_gift_card": "Sie können den Ladenguthaben nicht zum Kauf von Geschenkkarten verwenden.",
+          "manage_label": "Geschäftskredit verwalten",
+          "no_fixed_selling_plans": "Sie können den Ladengutschein nicht zusammen mit den Optionen für den aufgeschobenen Kauf verwenden."
         },
         "same_billing_address_checkbox_label": "Als Rechnungsadresse die Lieferadresse verwenden",
         "shipping_rate_updated": "Verfügbare Versandmethoden wurden aktualisiert. Bitte bestätigen Sie Ihre Auswahl, bevor Sie die Zahlung vornehmen.",
@@ -1903,7 +1905,54 @@
         "purchase_options_subscription_agreement_label": "In Ihrem Warenkorb befindet sich ein automatisch verlängerbares Abonnement. Klicken Sie auf die Schaltfläche \"%{button_label}\", um %{consent_text} %{cancellation_instructions}",
         "purchase_options_subscription_consent_text": "Sie stimmen ausdrücklich und eindeutig zu, dass der in Ihrem Warenkorb angezeigte wiederkehrende Betrag (zzgl. Versand und Steuern) automatisch von Ihnen eingezogen wird, bis das Abonnement/die Abonnements endet oder Sie es/sie kündigen.",
         "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Bitte lesen Sie den Text %{cancellation_policy_label}.",
-        "purchase_options_subscription_cancel_text": "Sie können jederzeit kündigen, indem Sie zu Ihrem Konto gehen oder den Laden kontaktieren."
+        "purchase_options_subscription_cancel_text": "Sie können jederzeit kündigen, indem Sie zu Ihrem Konto gehen oder den Laden kontaktieren.",
+        "title": "Ödem",
+        "supported_card_brands_more_label": "und mehr…",
+        "technical_error": "Aufgrund eines technischen Problems können derzeit keine Zahlungen verarbeitet werden. Bitte versuchen Sie es in ein paar Minuten erneut.",
+        "subscription_agreement_label_html": "Ich verstehe, dass ich ein Abonnement abschließe. Es wird zum angegebenen Preis und in der angegebenen Häufigkeit erneuert, bis es endet oder <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">gekündigt</a> wird.",
+        "waiting_on_payment_methods": "Verfügbare Zahlungsmethoden werden geladen...",
+        "subscription_card_update_agreement_label": "Die Änderung der Zahlungsmethode aktualisiert Ihr Abonnement und zukünftige wiederkehrende Zahlungen.",
+        "subscription_agreement_label": "Eines oder mehrere der Produkte in Ihrem Warenkorb sind ein aufgeschobener Kauf oder ein Abonnementkauf. Indem Sie mit der Zahlung fortfahren, stimmen Sie zu, dass Ihre Zahlungsmethode automatisch zum auf dieser Seite aufgeführten Preis und in der angegebenen Häufigkeit belastet wird, bis das Ablaufdatum erreicht ist oder Sie kündigen. Alle Stornierungen unterliegen %{cancelled}.",
+        "subscription_agreement_cancelled": "Stornierungsbedingungen",
+        "vaulting_agreement_label": "Für schnellere Zahlungen meine Daten bei %{company} speichern.",
+        "waiting_on_taxes_message": "Wenn Ihre Steuern nicht innerhalb weniger Sekunden berechnet werden, aktualisieren Sie die Seite.",
+        "subscription_heading": "Abonnementvertrag",
+        "use_location_billing_address_label": "Verwenden Sie die Rechnungsadresse des Standorts",
+        "use_location_shipping_address_label": "Verwende die Lieferadresse des Standorts",
+        "usdc_cashback_title": "%%{incentive_percentage} Cashback",
+        "usdc_cashback_additional_info": "Base'de USDC ile ödeme yapın ve 30 gün içinde dijital cüzdanınıza %{incentive_percentage} zurückerhalten.",
+        "usdc_cashback_terms": "Bedingungen und Limits gelten",
+        "vault_for_payment_later": {
+          "pay_button_label": "Bestellen",
+          "notice": "Derzeit wird Ihnen keine Gebühr berechnet. Indem Sie mit der Zahlung fortfahren, stimmen Sie zu, dass bei Bearbeitung Ihrer Bestellung der Betrag von Ihrer Zahlungsmethode abgebucht wird."
+        }
+      },
+      "payment_errors": {
+        "credit_card_processing": "Zahlung kann aus technischen Gründen nicht verarbeitet werden. Bitte versuchen Sie es in ein paar Minuten erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "checkout_amount_changed": "Da sich der zu zahlende Betrag auf der Zahlungsseite geändert hat, konnte Ihre Zahlung nicht verarbeitet werden. Bitte überprüfen Sie Ihre Bestellung und versuchen Sie es erneut.",
+        "cannot_verify": "Ihre Zahlungsdetails konnten nicht bestätigt werden. Bitte überprüfen Sie Ihre Kartendaten und versuchen Sie es erneut.",
+        "card_declined": "Ihre Karte wurde abgelehnt. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "call_issuer": "Ihre Karte wurde abgelehnt. Bitte verwenden Sie eine andere Zahlungsmethode oder wenden Sie sich für weitere Informationen an Ihre Bank.",
+        "amount_too_small": "Der Mindestzahlungsbetrag muss höher als 0,50 USD sein. Bitte geben Sie einen höheren Betrag ein und versuchen Sie es erneut.",
+        "captcha_required": "Geben Sie Ihre Zahlungsinformationen ein und lösen Sie die Captcha-Prüfung, um Ihren Kauf abzuschließen.",
+        "captcha_required_without_payment_information": "Um Ihren Kauf abzuschließen, lösen Sie bitte die Captcha-Prüfung.",
+        "cancelled_payment": "Ihre Zahlung wurde storniert. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
+      },
+      "payment_challenge_modal": {
+        "instructions": "Schließen Sie Ihren Kauf mit Ihrem {{paymentMethod}}-Code ab",
+        "timer_message": "Verbleibende Zeit für Ihre Zahlung: {{timeLeft}}",
+        "qr_code": {
+          "instructions": "Schließen Sie Ihren Kauf mit Ihrem {{paymentMethod}}-Code ab"
+        },
+        "external": {
+          "instructions": "Um diesen Kauf abzuschließen, bestätigen Sie die Zahlung in Ihrer App."
+        },
+        "close": "Testen Sie es abstellen",
+        "open_app_text": "Öffnen Sie die {{paymentMethod}}-App"
+      },
+      "payment_collection": {
+        "cancelled": "Diese Zahlung ist nicht mehr erforderlich. Für weitere Details besuchen Sie bitte die Bestellseite.",
+        "paid": "Diese Zahlung wurde bereits gesendet. Für Details besuchen Sie bitte die Bestellseite."
       }
     }
   }

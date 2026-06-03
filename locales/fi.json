@@ -1828,7 +1828,9 @@
         "store_credit": {
           "label": "Myymälälaina",
           "apply_label": "Käytä kauppaluottoa",
-          "add_label": "Lisää kauppaluottoa"
+          "add_label": "Lisää kauppaluottoa",
+          "manage_label": "Hallitse kauppaluottoa",
+          "no_fixed_selling_plans": "Et voi käyttää kauppaluottoa yhdessä maksetun oston lykkäysvaihtoehtojen kanssa."
         },
         "shipping_rate_updated": "Saatavilla olevat toimitustavat on päivitetty. Vahvista valintasi ennen maksamista.",
         "preview_not_available": {
@@ -1861,7 +1863,100 @@
         "purchase_options_subscription_agreement_label": "Ostoskoriisi on lisätty automaattisesti uusiutuva tilaus. Napsauttamalla \"%{button_label}\" hyväksyt %{consent_text} %{cancellation_instructions}",
         "purchase_options_subscription_consent_text": "Hyväksyt selkeästi ja ehdottomasti, että tilauksesi päättyessä tai kun peruutat, ostoskorissasi näkyvät toistuvat summat (plus toimitus- ja verokulut) veloitetaan sinulta automaattisesti.",
         "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Ole hyvä ja tutustu %{cancellation_policy_label} -tekstiin.",
-        "purchase_options_subscription_cancel_text": "Voit peruuttaa milloin tahansa menemällä tilillesi tai ottamalla yhteyttä myymälään."
+        "purchase_options_subscription_cancel_text": "Voit peruuttaa milloin tahansa menemällä tilillesi tai ottamalla yhteyttä myymälään.",
+        "title": "Ödeema",
+        "supported_card_brands_more_label": "ja paljon muuta…",
+        "technical_error": "Teknisen ongelman vuoksi maksuja ei tällä hetkellä voi käsitellä. Yritä uudelleen muutaman minuutin kuluttua.",
+        "subscription_agreement_label_html": "Ymmärrän hyväksyneeni tilauksen. Se uusitaan ilmoitettuun hintaan ja tiheyteen, kunnes se päättyy tai <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">peruutetaan</a>.",
+        "waiting_on_payment_methods": "Saatavilla olevat maksutavat haetaan...",
+        "taxes_not_included": "Verot eivät sisälly hintaan",
+        "subscription_agreement_label": "Ostoskorissasi oleva tuote tai useampi tuote on viivästetty ostos tai tilausosto. Jatkamalla maksua hyväksyt, että maksutapaasi veloitetaan automaattisesti tällä sivulla luetelluilla hinnoilla ja tiheydellä, kunnes tilaus päättyy tai peruutat sen. Kaikki peruutukset ovat %{cancelled}-ehtoisia.",
+        "subscription_agreement_cancelled": "peruutuskäytäntöön",
+        "vaulting_agreement_label": "Nopeampaa maksua varten tallenna tietoni %{company}-yritykselle.",
+        "use_different_credit_card_label": "Käytä eri korttia",
+        "waiting_on_taxes_message": "Jos verojasi ei lasketa muutaman sekunnin kuluessa, päivitä sivu.",
+        "waiting_on_taxes_notice": "Verot lasketaan",
+        "subscription_heading": "Tilauksen sopimus",
+        "use_location_billing_address_label": "Käytä sijaintisi laskutusosoitetta",
+        "usdc_cashback_title": "%%{incentive_percentage} nakit palautus",
+        "usdc_cashback_additional_info": "Maksa Base'lla USDC:llä ja saat %%{incentive_percentage} takaisin digitaaliselle lompakollesi 30 päivän kuluessa.",
+        "usdc_cashback_terms": "Ehdot ja rajoitukset ovat voimassa",
+        "vault_for_payment_later": {
+          "notice": "Tältä erää sinulta ei veloiteta. Jatkamalla maksua hyväksyt, että tilauksesi käsittelyn yhteydessä veloitus tehdään valitsemaltasi maksutavalta."
+        }
+      },
+      "payment_errors": {
+        "credit_card_processing": "Maksusi ei voida käsitellä teknisistä syistä. Yritä hetken kuluttua uudelleen tai käytä toista maksutapaa.",
+        "checkout_amount_changed": "Maksusivulla maksettava summa muuttui, joten maksusi ei onnistunut. Tarkista tilauksesi ja yritä uudelleen.",
+        "cannot_verify": "Maksutietojasi ei voitu vahvistaa. Tarkista korttitietosi ja yritä uudelleen.",
+        "call_issuer": "Korttisi hylättiin. Käytä toista maksutapaa tai ota yhteyttä pankkiisi saadaksesi lisätietoja.",
+        "amount_too_small": "Minimimaksun määrä on oltava yli 0,50 USD. Yritä uudelleen syöttämällä suurempi summa.",
+        "captcha_required": "Täydennä ostotapahtumasi syöttämällä maksutiedot ja ratkaisemalla captcha-tarkistus.",
+        "captcha_required_without_payment_information": "Vahvista osto suorittamalla captcha-tarkistus.",
+        "cancelled_payment": "Maksusi on peruutettu. Yritä uudelleen tai käytä toista maksutapaa.",
+        "generic_error": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+        "order_total_changed": "Tilauksesi kokonaissumma on muuttunut. Tarkista tiedot ja yritä uudelleen.",
+        "payment_processing": "Maksusi ei voida käsitellä teknisistä syistä. Yritä uudelleen tai käytä toista maksutapaa.",
+        "paypal_zero_amount": "Et voi käyttää PayPalia tilauksiin, joiden arvo on %{amount}. Varmista, että tilauksesi on oikein, ja maksa ilman PayPalia.",
+        "paypal_invalid_token": "PayPal ei ollut käytettävissä. Yritä uudelleen tai käytä toista maksuvaihtoehtoa.",
+        "pay_later_failed": "Maksusi \"Maksa myöhemmin\" -vaihtoehdolla käsittelyssä tapahtui virhe. Valitse toinen maksutapa ja yritä uudelleen.",
+        "three_d_secure_failed": "Maksuasi ei voitu vahvistaa. Yritä uudelleen tai käytä toista maksutapaa.",
+        "subscription_agreement_blank": "Tilauksen ostamista varten maksutietojesi tallentaminen on pakollista. Jatkaaksesi vahvista hyväksyntäsi tai poista tuotteet tilauksestasi.",
+        "three_d_secure_failed_duplicate": "Luottokortin 3D Secure -tunnistautuminen epäonnistui, koska sama tapahtuma on jo käynnissä.",
+        "insufficient_funds": "Maksusi hylättiin riittämättömän saldon vuoksi. Yritä uudelleen tai käytä toista maksutapaa.",
+        "deferred_payment_not_allowed": "Erätettyjä maksuja ei sallita. Tarkista tilauksesi ja yritä uudelleen.",
+        "deferred_payment_required": "Tämä tilaus vaatii viivästetyn maksun. Tarkista tilauksesi ja yritä uudelleen.",
+        "deferred_amount_changed": "Maksun käsittely epäonnistui, koska eräpäivä on muuttunut. Tarkista tilauksesi ja yritä uudelleen.",
+        "deferred_date_changed": "Maksun käsittely epäonnistui, koska eräpäivä on muuttunut. Tarkista tilauksesi ja yritä uudelleen.",
+        "multiple_deferred_payment_not_allowed": "Vain yksi eräpäivän siirto sallitaan pyyntöä kohden. Tarkista pyyntösi ja yritä uudelleen.",
+        "shipping_must_match_billing": "Toimitusosoitteen on oltava sama kuin laskutusosoite. Käytä eri maksutapaa.",
+        "decision_rule_block": "Tilaustasi käsiteltäessä ilmeni ongelma. Ota yhteyttä kaupan omistajaan.",
+        "invalid_number": "Syötä kelvollinen korttinumero",
+        "invalid_expiry_date": "Anna voimassa oleva viimeinen käyttöpäivä",
+        "invalid_cvc": "Syötä voimassa oleva turvakoodi",
+        "expired_card": "Korttisi voimassaoloaika on päättynyt. Käytä toista maksutapaa.",
+        "processing_error": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+        "test_mode_live_card": "Tämä kauppa ei voi hyväksyä oikeita tilauksia eikä oikeita maksuja.",
+        "missing_shipping_address": "Koska toimitusosoitteesi puuttuu, maksusi ei voitu käsitellä. Lisää toimitusosoite ja yritä uudelleen.",
+        "invalid_shipping_address": "Emme voineet käsitellä maksua, koska emme löytäneet toimitusosoitettasi. Tarkista toimitusosoitteesi ja yritä uudelleen.",
+        "successful_offsite_with_gift_card_error": "Lahjakorttimaksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+        "development_store_order_limit_reached": "Olet saavuttanut tämän maksunkäsittelijän kehityskaupan tilausrajan. Jos haluat tehdä toisen tilauksen, sinun on käytettävä testitarkoituksiin tarkoitettua maksuyhdyskäytävää. Lisätietoja saat osoitteesta %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "Testitilauksen tekemiseksi sinun on käytettävä testimaksuyhdyskäytävää. Lisätietoja saat osoitteesta %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "Testaa tilauksia kehityskaupoissa",
+        "method_not_available": "Pyydetty maksutapa ei ole käytettävissä. Valitse toinen maksutapa ja yritä uudelleen.",
+        "selected_payment_method": "Valitun maksutavan kanssa ilmeni ongelma, eikä maksua voitu veloittaa. Yritä uudelleen tai käytä toista maksutapaa.",
+        "payment_method_billing_address": "Valitun maksutavan laskutusosoitteessa ilmeni ongelma. Tarkista osoite ja yritä uudelleen tai käytä toista maksutapaa.",
+        "processing_error_checkout_as_guest": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen käyttämällä toista maksutapaa tai {{checkout_as_guest_link}}.",
+        "payment_above_threshold": "Maksun määrä ylittää tämän alueen voimassa olevan rahallisen rajan. Vähennä kokonaissummaa ja yritä uudelleen.",
+        "risky": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+        "expired_buyer_action": "Maksutapa on vanhentunut. Yritä uudelleen.",
+        "name_mismatch": "Tarkista korttitietosi. Korttisi nimi ja laskutusosoite eivät täsmää.",
+        "payment_method_not_applicable": "Tämä maksutapa ei ole voimassa. Käytä toista maksutapaa.",
+        "shop_pay_wallet_not_available": "Shop Paytä ei voi käyttää tässä maksusivussa.",
+        "paypal_over_capture": "Tilauksesi kokonaissumma on päivitetty. Maksa tilauksesi {{walletName}}-lompakolla viimeistelläksesi sen.",
+        "test_mode_enabled_only_test_cards": "Testitila on aktiivinen, vain testiluottokortteja voi lisätä.",
+        "shipping_company_required_error": "{{shopName}} -verkkokauppa vaatii yrityksen nimen toimitusosoitteeseen.",
+        "payment_credential_delegation_error": "Maksun käsittelyssä ilmeni ongelma. Valitse uusi maksutapa.",
+        "installments_payment_method_incompatible": "Valittu maksutapa ei ole käytettävissä osamaksuissa. Valitse toinen maksutapa.",
+        "missing_cvc": "Syötä turvakoodi"
+      },
+      "payment_challenge_modal": {
+        "instructions": "Viimeistele ostoksesi käyttämällä {{paymentMethod}}-maksutapaasi",
+        "timer_message": "Maksuaikaa jäljellä: {{timeLeft}}",
+        "copy_text": "Kopioi {{paymentMethod}}-tilinumero",
+        "header": "Maksa {{paymentMethod}}-menetelmällä",
+        "qr_code": {
+          "instructions": "Viimeistele ostoksesi käyttämällä {{paymentMethod}}-maksutapaasi"
+        },
+        "external": {
+          "instructions": "Vahvista maksu sovelluksessasi tämän oston suorittamiseksi loppuun"
+        },
+        "close": "Sulje testi",
+        "open_app_text": "Avaa {{paymentMethod}} -sovellus"
+      },
+      "payment_collection": {
+        "cancelled": "Tätä maksua ei enää tarvita. Lisätietoja saat tilaussivulta.",
+        "paid": "Tämä maksu on jo suoritettu. Lisätietoja saat tilaussivulta."
       }
     }
   }
