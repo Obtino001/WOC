@@ -2296,7 +2296,46 @@
             "other": "Für weitere %{count} Lieferungen beträgt die Versandkosten pro Lieferung %{shipping_price}"
           },
           "prepaid_free_shipping_with_cycles": {
-            "one": "Kostenloser Versand für den ersten %{cycle}, danach %{recurring_order_shipping_price}"
+            "one": "Kostenloser Versand für den ersten %{cycle}, danach %{recurring_order_shipping_price}",
+            "other": "Kostenloser Versand für den ersten %{cycle}, danach %{recurring_order_shipping_price}"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "other": "alle %{count} Tage einmal"
+            },
+            "week": {
+              "other": "alle %{count} Wochen einmal"
+            },
+            "month": {
+              "other": "alle %{count} Monate einmal"
+            },
+            "year": {
+              "other": "alle %{count} Jahre einmal"
+            }
+          },
+          "prepaid_shipping_price_label": "Pro Lieferung %{shipping_price} x %{delivery_interval_count}",
+          "prepaid_initial_order_discounted": "Die erste Versandkostenpauschale beträgt %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Die erste Versandkostenpauschale beträgt %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Die erste Versandkostenpauschale beträgt %{discounted_shipping_price} %{prepaid_delivery_frequency}, danach %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Die erste Versandkostenpauschale beträgt %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), danach %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Weil",
+          "recurring_order_shipping_price": "danach %{recurring_order_shipping_price}",
+          "subscription_free_with_frequency_label": "Kostenloser Versand (%{delivery_frequency})",
+          "prepaid_order_one_cycle": {
+            "one": "Für weitere %{count} Lieferungen %{shipping_price}",
+            "other": "Andere %{shipping_price} Lieferung für %{count} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} Lieferungen für %{shipping_price}",
+            "other": "%{count} Lieferungen für %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "Für weitere %{count} Lieferungen %{shipping_price}, danach %{recurring_order_shipping_price}",
+            "other": "Für weitere %{count} Lieferungen %{shipping_price} (%{per_delivery_cost}), danach %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} Lieferungen für %{shipping_price}, danach %{recurring_order_shipping_price}",
+            "other": "%{count} Lieferungen für %{shipping_price} (%{per_delivery_cost}), danach %{recurring_order_shipping_price}"
           }
         },
         "shipping_used_as_billing_notice": "Diese Adresse wird auch als Ihre gültige Rechnungsadresse für die betreffende Bestellung verwendet.",
@@ -2318,7 +2357,27 @@
         "split_shipping_option_custom": "Speziell",
         "split_shipping_shipment_notice": "Ihre Bestellung wird in %{quantity_shipments} Lieferungen erfolgen",
         "split_shipping_first_shipment_notice": "Ihre erste Bestellung wird in %{quantity_shipments} Lieferungen erfolgen",
-        "shipping_method_rollup_accessibility_label": "Versandarten Optionen"
+        "shipping_method_rollup_accessibility_label": "Versandarten Optionen",
+        "title": "Fracht",
+        "waiting_on_rate_notice": "Verfügbare Versandkosten werden abgerufen…",
+        "waiting_on_pickup_location_notice": "Geeignete Abholorte werden ermittelt...",
+        "subscription_shipping": "Abonnementversand",
+        "subscription_local_delivery": "Im Abonnement inbegriffene lokale Lieferung",
+        "subscription_pickup": "Lieferung im Rahmen des Abonnements",
+        "two_day_delivery": "Lieferung in 2 Tagen (%{time})",
+        "third_party_address_timeout": "Adressen können nicht geladen werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Adresse.",
+        "third_party_address_error": "Beim Laden der Adressauswahl ist ein Fehler aufgetreten. Bitte geben Sie Ihre Adresse unten manuell ein.",
+        "third_party_payment_timeout": "Zahlungsmethoden konnten nicht geladen werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "third_party_payment_error": "Beim Laden der Zahlungsoption ist ein Fehler aufgetreten. Bitte verwenden Sie eine andere Zahlungsmethode.",
+        "unbranded_description_same_day": "Am selben Werktag versandt",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Wird am nächsten Werktag versendet",
+          "other": "Wird innerhalb von %{count} Werktagen versendet"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Wird innerhalb von %{count} Wochen versendet",
+          "other": "Wird innerhalb von %{count} Wochen versendet"
+        }
       },
       "session_errors": {
         "session_not_unique": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite, um zum Geschäft zurückzukehren.",
@@ -2332,6 +2391,18 @@
           "one": "Diese Bestellung wird an die von {{merchant}} angegebene Adresse geliefert.",
           "other": "Diese Bestellung wird an die von {{merchant}} angegebene Adresse geliefert. Wählen Sie eine Versandadresse aus."
         }
+      },
+      "shipping_errors": {
+        "shipping_method": "Für Ihre Bestellung haben sich die Versandoptionen geändert. Bitte überprüfen Sie Ihre Auswahl.",
+        "shipping_method_not_available": "Ihr Warenkorb wurde aktualisiert. Die von Ihnen hinzugefügten Produkte können nicht an Ihre Adresse geliefert werden. Entfernen Sie diese Produkte aus dem Warenkorb, um Ihre Bestellung abzuschließen.",
+        "shipping_method_not_available_generic": {
+          "one": "Ihre Bestellung kann nicht an die ausgewählte Adresse geliefert werden. Bitte überprüfen Sie die Adresse auf Richtigkeit und versuchen Sie es erneut oder wählen Sie eine andere Adresse aus."
+        },
+        "payment_method_not_supported": "Diese Zahlungsmethode kann für %{country} nicht verwendet werden. Bitte verwenden Sie eine andere Zahlungsmethode, um in dieses Land zu versenden.",
+        "empty_state": "Versenden Sie Ihre Lieferadresse, um die verfügbaren Versandmethoden anzuzeigen.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Die Artikel im Warenkorb erfüllen nicht die Preis- oder Gewichtsvorgaben für den Versand. Bitte aktualisieren Sie Ihren Warenkorb und versuchen Sie es erneut.",
+        "invalid_selected_address": "Die ausgewählte Versandadresse ist ungültig",
+        "invalid_selected_address_with_update_link": "Die ausgewählte Versandadresse ist ungültig. %{update_address_link} oder wählen Sie eine andere Adresse aus"
       }
     }
   }
