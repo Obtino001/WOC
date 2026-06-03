@@ -2110,12 +2110,72 @@
         "redirecting_to_bank": "Zur {{bank}}-Seite wird weitergeleitet",
         "modal_notice": "Wir setzen uns mit {{paymentMethod}} in Verbindung",
         "remote_shops_payments_processing": "Zahlungen bearbeiten",
-        "remote_checkout_count": "%{total} von %{current}"
+        "remote_checkout_count": "%{total} von %{current}",
+        "your_order_has_been_received_title": "Vielen Dank für Ihre Bestellung",
+        "you_will_receive_confirmation": "Wir erhalten derzeit viele Bestellungen. Sie erhalten in Kürze eine Bestätigung per E-Mail oder SMS. Wenn Sie diese Bestätigung innerhalb der nächsten Stunde nicht erhalten, informieren Sie uns bitte."
       },
       "post_purchase": {
         "escape_confirmation": "Sie haben für Ihre Bestellung bezahlt.",
         "components": {
           "processing": "Wird verarbeitet…"
+        }
+      },
+      "review": {
+        "blocks": {
+          "billing_address_title": "Abrechnung",
+          "pick_up_in_store_shipping_method_html": "Abholung im Geschäft · %{location_name}",
+          "change_delivery_method_link_label": "Liefermethode ändern",
+          "no_purchase_order_number": "(Keine Bestellnummer vorhanden)",
+          "due_after_order_reviewed_html": "Die Zahlung erfolgt nach Überprüfung der Bestellung.",
+          "review_title_free_order": "Überprüfen und schließen Sie Ihre Bestellung ab",
+          "company_location": "Firmenstandort",
+          "change_company_location_link_label": "Firmenstandort ändern",
+          "pickup_items_at": {
+            "one": "%{count} Artikel werden hier abgeholt",
+            "other": "%{count} Artikel werden hier abgeholt"
+          },
+          "ship_items_to": {
+            "one": "%{count} Artikel werden hierhin geschickt",
+            "other": "%{count} Artikel werden hierhin geschickt"
+          }
+        },
+        "block_title": "Überprüfen Sie Ihre Angaben",
+        "account_more_actions": "Für dieses Konto weitere Vorgänge"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Diese Geschenkkarte wurde bereits auf Ihre Bestellung angewendet",
+          "insufficient_funds": "Auf dieser Geschenkkarte ist kein Guthaben mehr vorhanden",
+          "expired": "Diese Geschenkkarte ist abgelaufen",
+          "not_available": "Diese Geschenkkarte ist nicht mehr gültig.",
+          "invalid": "Geben Sie eine gültige Geschenkkarte ein",
+          "currency_mismatch": "Geschenkkarten werden nur in %{shop_currency} akzeptiert",
+          "generic": "Geschenkkarte konnte der Zahlung nicht hinzugefügt werden",
+          "throttle_limit_exceeded": "Sie haben die maximale Anzahl an Versuchen überschritten. Bitte versuchen Sie es später erneut.",
+          "no_longer_available": "Diese Geschenkkarte kann bei dieser Zahlung nicht mehr verwendet werden"
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Dieser Artikel kann nicht in Ihren Warenkorb gelegt werden, da er zu einem Geschäft gehört, das eine andere Währung verwendet.",
+          "max_remote_shops_exceeded": "In Ihrem Warenkorb befinden sich bereits die maximale Anzahl an Produkten aus anderen Geschäften, daher kann dieses Produkt nicht hinzugefügt werden.",
+          "currency_mismatch_removal": "Ein Produkt wurde aus Ihrem Warenkorb entfernt, da es zu einem Geschäft gehört, das eine andere Währung verwendet.",
+          "only_remote_merchandise_lines": "Die Zahlung umfasst nur Produkte, die aus der Ferne verkauft werden. Um die Zahlung abzuschließen, ist eine Weiterleitung zum entfernten Geschäft erforderlich."
+        }
+      },
+      "remote_merchandise_only": {
+        "title": "Schließen Sie Ihren Kauf ab",
+        "remote_only_notice": "Diese Produkte werden von anderen Geschäften verkauft und versendet. Um Ihren Kauf abzuschließen, bezahlen Sie bitte bei jedem Geschäft separat.",
+        "return_to_store_label": "Zurück zum Geschäft",
+        "checkout_on_shop_label": "Bezahlen Sie im %{shop_name}-Shop",
+        "single_shop_transition": "Sie werden zum %{advertiser}-Shop weitergeleitet, um Ihren Kauf abzuschließen."
+      },
+      "remote_policies": {
+        "unavailable_policy": "Für diesen Shop wurde keine %{policy_name} bereitgestellt. Für weitere Informationen wenden Sie sich bitte direkt an %{shop_name}."
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Die Zahlung erfordert eine Interaktion mit einer Erweiterung, um abgeschlossen zu werden."
         }
       }
     }

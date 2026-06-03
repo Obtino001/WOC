@@ -2087,10 +2087,19 @@
           "ship_items_to": {
             "one": "%{count} tuotetta lähetetään sinne",
             "other": "%{count} tuotetta lähetetään sinne"
-          }
+          },
+          "shipping_address_title": "Toimitusosoite:",
+          "shipping_method_title": "Kuljetustapa"
         },
         "block_title": "Tarkista tietosi",
-        "account_more_actions": "Tämän tilin muut toiminnot"
+        "account_more_actions": "Tämän tilin muut toiminnot",
+        "title": "Tutki",
+        "review_title": "Viimeistele tilauksesi",
+        "checkout_as_guest": "Maksa vieraana",
+        "checkout_a_different_way": "Maksa eri tavalla",
+        "item_header": {
+          "section": "Osio"
+        }
       },
       "redeemable_errors": {
         "gift_card": {
@@ -2126,6 +2135,39 @@
       "required_extensions": {
         "errors": {
           "interaction_required": "Maksutapahtuman viimeistelemiseksi tarvitaan laajennuksen vuorovaikutus."
+        }
+      },
+      "shipping": {
+        "cheapest_rate_label": "Halvin",
+        "arrives_time": "Saapuminen: %{time}",
+        "arrives_time_range": "Saapuminen: %{min_time}–%{max_time}",
+        "delivery_today": "Saman päivän toimitus (%{time})",
+        "delivery_tomorrow": "Seuraavan päivän toimitus (%{time})",
+        "delivery": "Toimitus (%{time})",
+        "add_address": "Käytä eri osoitetta",
+        "delete": "Sil",
+        "address_more": "Tälle osoitteelle lisää toimintoja",
+        "address_confirm": "Oletko varma, että haluat poistaa tämän osoitteen tililtäsi?",
+        "address_form": {
+          "generic_error": "Osoitteesi tallentamisessa tapahtui virhe. Yritä uudelleen.",
+          "one_time_address_subtitle": "Tätä tilausta varten käytä kertaluonteista osoitetta"
+        },
+        "different_shipping_method_summary": "Näytä käytettävissä olevat toimitustavat syöttämällä eri toimitusosoite",
+        "default_description": "Lähetetään 1 työpäivän kuluessa",
+        "back": "Geri",
+        "delivery_to": "Toimituksen vastaanottaja:"
+      },
+      "session_errors": {
+        "session_not_unique": "Tilaustasi käsiteltäessä ilmeni ongelma. Päivitä tämä sivu palataksesi kauppaan.",
+        "session_already_finished": "Tämä tilaus on jo lähetetty. Voit palata kauppaan luodaksesi uuden tilauksen."
+      },
+      "review_address_modal": {
+        "title": "Tarkastele osoitetta",
+        "use_saved_address": "Käytä eri osoitetta",
+        "subtitle_no_match": "Tämä osoite ei vastaa mitään rekisteröidyistä osoitteistasi.",
+        "subtitle": {
+          "one": "Tämä tilaus lähetetään osoitteeseen, jonka on toimittanut {{merchant}}.",
+          "other": "Tämä tilaus lähetetään osoitteeseen, jonka {{merchant}} on toimittanut. Valitse toimitusosoite."
         }
       }
     }
