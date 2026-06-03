@@ -2510,7 +2510,73 @@
         "add_shipping_address": "Legg til leveringsadresse",
         "choose_new_address": "Velg en ny adresse",
         "add_new_delivery_address": "Legg til en ny leveringsadresse",
-        "delivery_to": "Leveringsmottaker:"
+        "delivery_to": "Leveringsmottaker:",
+        "no_rates_for_cart_or_destination_notice": "Det finnes ingen tilgjengelig fraktmetode for handlekurven eller adressen din",
+        "no_pickup_location_notice": "Minst ett av produktene dine er ikke egnet for levering.",
+        "no_rates_for_country_notice": "Denne adressen har ingen tilgjengelige fraktkostnader.",
+        "no_rates_contact_notice": "Kontakt oss for mer informasjon",
+        "free_rate_label": "Gratis",
+        "estimated_delivery_date": {
+          "one": "%{count} virkedager",
+          "other": "%{count} virkedager"
+        },
+        "estimated_delivery_date_range": "%{minimum} til %{maximum} virkedager",
+        "shipping_line_phone_label": "Mobiltelefonnummer (påkrevd)",
+        "shipping_line_phone": "Budet kan bruke dette nummeret for å kontakte deg.",
+        "other_method": {
+          "zero": "Det finnes ingen annen metode",
+          "one": "Det finnes %{count} flere metoder til denne prisen:",
+          "other": "Det finnes %{count} metoder som starter fra denne prisen:"
+        },
+        "shipping_line_delivery_phone": "Du kan bli kontaktet angående oppdateringer om leveransen din.",
+        "optional_shipping_line_delivery_instructions_label": "Leveringsinstruksjoner (valgfritt)",
+        "shipping_line_delivery_phone_label": "Mobiltelefonnummer",
+        "shipping_line_delivery_instructions": "Skriv inn nødvendig informasjon som dørnummer eller leveringsinstruksjoner.",
+        "local_delivery": "Lokal levering",
+        "one_time_purchase_shipping": "Engangsforsendelse",
+        "estimated_delivery_time": "Estimert leveringstid: %{time}",
+        "estimated_delivery_time_range": "Estimert leveringstid: %{min_time}–%{max_time}",
+        "estimated_time": "Estimert dato: %{time}",
+        "estimated_time_range": "Estimert %{min_time}–%{max_time}",
+        "duties_and_taxes_title": "Skatter og tollavgifter",
+        "shipping_information_required_notice": "Fraktinformasjon er påkrevd. {{link}}.",
+        "shipping_information_redirect_link": "Skriv inn informasjonen din her",
+        "loading_progressive_rates": "Andre avgifter søkes…",
+        "no_other_methods_available": "Det finnes ingen annen metode",
+        "duties_and_taxes_options": {
+          "ddu_title": "Betal ved levering",
+          "ddu_caption": "Ek avgifter kan påløpe",
+          "ddp_title": "Betal nå",
+          "ddp_caption": "Ingen ekstra kostnad for levering"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} av %{current}"
+        },
+        "shipping_address_title": "Fraktadresse",
+        "edit": "Rediger",
+        "invalid_shipping_method_summary": "Ge en gyldig leveringsadresse for å se tilgjengelige fraktmetoder.",
+        "method_summary": {
+          "incomplete_address_entered": "Kjør inn fullstendig leveringsadresse for å se tilgjengelige fraktmetoder",
+          "incomplete_address_selected": "Tam bir leveringsadresse velges for å vise tilgjengelige fraktmetoder"
+        },
+        "local_pickup": {
+          "search_address": "Søk adresse",
+          "rollup_title": "Hentested",
+          "rollup_accessibility_label": "Alternativer for hentested"
+        },
+        "missing_shipping_address": "Fraktadresse mangler",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Første frakt",
+          "other": "Første frakt"
+        },
+        "pre_order_ships_now": "Sendes nå",
+        "pre_order_ships_later": "Sendes senere",
+        "pre_order_ships_date": "Vil bli sendt %{date}",
+        "prime_not_available": {
+          "default": "Prime-levering er ikke tilgjengelig for bestillingen din. Fraktalternativene dine er oppdatert."
+        },
+        "shipping_address_rollup_accessibility_label": "Fraktadressevalg",
+        "invalid_shipping_method_summary_selected": "Fjern en annen leveringsadresse for å se hvilke fraktmetoder du kan bruke"
       },
       "session_errors": {
         "session_not_unique": "Det oppstod et problem under behandlingen av bestillingen din. Oppdater denne siden for å gå tilbake til butikken.",
