@@ -2008,7 +2008,73 @@
         "gift_card_checkbox_label": "Bruk gavekort",
         "grabpay_label": "GrabBetal",
         "kcp_creditcard_label": "KCP Kredittkort",
-        "multiple_primary_payment_not_allowed": "Ugyldige betalingsmetoder"
+        "multiple_primary_payment_not_allowed": "Ugyldige betalingsmetoder",
+        "pay_with_payment_method": "Betal med %{payment_method}",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Gavekortet ditt dekker bestillingen din.",
+          "other": "Gavekortene dine dekker bestillingen din."
+        },
+        "offsite_gateway_redirect_hint": "Du vil bli omdirigert til %{gateway_label} for å fullføre kjøpet.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
+        "no_js_credit_card_fields_redirect_hint": "Du vil bli omdirigert for å legge til betalingsinformasjonen din.",
+        "no_method_error": "Denne butikken kan for øyeblikket ikke godta betaling.",
+        "not_configured_error": "Denne butikken kan for øyeblikket ikke godta betaling.",
+        "paypal_label": "PayPal",
+        "no_real_orders_dev_store": "Denne butikken kan ikke godta ekte bestillinger og ekte betalinger.",
+        "no_taxes_banner_content": "Denne bestillingen vil ikke bli belastet skatt. Du kan ikke legge til skatt etter at betalingen er mottatt.",
+        "paypal": {
+          "connect": "Klikk for å koble til PayPal-kontoen din"
+        },
+        "paypal_modal": {
+          "order_contains_fixed_selling_plans": "Den totale summen kan ekskludere skatter, frakt, utsatte avgifter og noen rabatter. Fortsett til betaling for beløpet som skal betales i dag."
+        },
+        "payment_method_saved": "Betalingsmetode lagret",
+        "order_covered_by_store_credit_notice": "Butikkreditten din dekker bestillingen.",
+        "order_covered_by_redeemables_notice": "Bestillingen din behandles.",
+        "no_working_method_error": "Denne butikken kan for øyeblikket ikke godta betaling. Oppdater siden og prøv igjen senere.",
+        "order_edit_banner_title": "Det kreves en betaling på {{amount_owed}}",
+        "order_edit_banner_subtitle": "Bestillingen din med nummeret {{order_number}} er oppdatert. Gå gjennom disse endringene, og betal deretter for å bekrefte bestillingen din.",
+        "order_edit_banner_single_item_added": "Lagt til",
+        "order_edit_banner_multiple_items_added": "{{amount}} lagt til",
+        "order_edit_banner_single_item_removed": "Fjernet",
+        "order_edit_banner_multiple_items_removed": "{{amount}} fjernet",
+        "order_edit_banner_single_item_returned": "Returnert",
+        "order_edit_banner_multiple_items_returned": "{{amount}} ble refundert",
+        "order_edit_banner_items_added": {
+          "one": "Lagt til",
+          "other": "%{count} lagt til"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Fjernet",
+          "with_quantities": "{{delta}} av {{quantity}} elementer ble fjernet"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} returnert",
+          "with_quantities": "{{delta}}/{{quantity}} enheter er returnert"
+        },
+        "payment_method": "Betalingsmetode",
+        "order_edit_banner_updated_order_label": "Bestillingen er oppdatert",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Fjernet fra retur",
+          "with_quantities": "{{delta}} enheter ble fjernet fra returlisten"
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "Fjernet fra retur",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} iadeden ble fjernet",
+        "pay_in_installments_split_pay_short": "4 betalinger på totalt %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "Denne betalingsmetoden kan ikke brukes for den valgte leveringsadressen. Velg en annen betalingsmetode.",
+        "paypal_disconnect": "Koble fra",
+        "payment_method_update_failed": "Betalingsmetoden kunne ikke oppdateres.",
+        "payment_flexibility_terms_id_mismatch": "Identitetsinkonsistens under betingelser for betalingsfleksibilitet",
+        "offsite_gateway_review_page_redirect_hint": "Etter at du har gjennomgått bestillingen din, vil du bli omdirigert til %{gateway_label} for å fullføre kjøpet.",
+        "offsite_gateway_redirect_hint_no_button_label": "Du vil bli omdirigert til %{gateway_label} for å fullføre kjøpet.",
+        "network_card_persistence_description": "Det valgte nettverket vil bli lagret sammen med betalingsmetoden din for fremtidige transaksjoner.",
+        "payment_method_incompatible_with_payment_terms": "Betalingsmetoden er ikke i samsvar med betalingsbetingelsene.",
+        "payment_option": {
+          "accessibility_label": "Velg en betalingsmetode"
+        },
+        "payment_method_rollup_accessibility_label": "Betalingsmetodevalg",
+        "payments": "Betalinger",
+        "new_bank_account_disclaimer": "Ved å fullføre bestillingen gir du %{shop_name} tillatelse til å trekke det angitte beløpet via ACH fra kontoen nedenfor på angitt tidspunkt."
       }
     }
   },
