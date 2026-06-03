@@ -2026,7 +2026,8 @@
           "connect": "Klikk for å koble til PayPal-kontoen din"
         },
         "paypal_modal": {
-          "order_contains_fixed_selling_plans": "Den totale summen kan ekskludere skatter, frakt, utsatte avgifter og noen rabatter. Fortsett til betaling for beløpet som skal betales i dag."
+          "order_contains_fixed_selling_plans": "Den totale summen kan ekskludere skatter, frakt, utsatte avgifter og noen rabatter. Fortsett til betaling for beløpet som skal betales i dag.",
+          "order_contains_subscriptions": "Abonnement"
         },
         "payment_method_saved": "Betalingsmetode lagret",
         "order_covered_by_store_credit_notice": "Butikkreditten din dekker bestillingen.",
@@ -2074,7 +2075,70 @@
         },
         "payment_method_rollup_accessibility_label": "Betalingsmetodevalg",
         "payments": "Betalinger",
-        "new_bank_account_disclaimer": "Ved å fullføre bestillingen gir du %{shop_name} tillatelse til å trekke det angitte beløpet via ACH fra kontoen nedenfor på angitt tidspunkt."
+        "new_bank_account_disclaimer": "Ved å fullføre bestillingen gir du %{shop_name} tillatelse til å trekke det angitte beløpet via ACH fra kontoen nedenfor på angitt tidspunkt.",
+        "saved_by_payment_method": "Lagret av %{payment_method}",
+        "same_billing_address_label": "Samme som leveringsadresse",
+        "sofort_label": "Umiddelbar bankoverføring",
+        "purchase_options_card_update_agreement_label_html": "Ved å oppdatere betalingsmetoden din, godkjenner du betalinger for gjentatte eller utsatte kjøp gjort i henhold til <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">avbestillingspolitikken</a> til denne butikken.",
+        "receiver_payment_experience_hint": "Etter at du har lagt inn bestillingen, vil betalingsdetaljene bli sendt til deg. Betal innen %{due_days} dager via Multibanco eller online.",
+        "pending_payment": {
+          "due_notice": "Forfallsdatoen for betalingen på %{amount_due} er %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Betalingen din kan gjøres via Multibanco eller online ved å bruke informasjonen nedenfor. For å stille spørsmål eller oppdatere betalingsinformasjonen, %{contact_us}.",
+            "entity": "Person/Institusjon",
+            "reference": "Referanse",
+            "amount": "Betaler",
+            "find_nearest_atm": "Finn nærmeste minibank",
+            "buyer_action_info": "Forfallsdatoen for betalingen på %{amount_due} har kommet."
+          }
+        },
+        "purchase_options_agreement_label": "En eller flere varer i handlekurven din er utsatt for utsettelse, abonnement eller gjentakende kjøp. Ved å fortsette betalingen godtar du at betalingsmetoden din automatisk belastes til den utløper eller du avbryter, til den prisen og frekvensen som er angitt på denne siden. Alle avbestillinger er underlagt %{cancellation_policy_label}-vilkårene.",
+        "purchase_options_agreement_label_html": "Jeg forstår at ett eller flere produkter i handlekurven min er et utsatt, abonnementbasert eller gjentakende kjøp. Ved å fortsette godtar jeg\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">avbestillingspolitikken</a>\nog gir tillatelse til at jeg, så lenge det er tillatt, kan bli belastet for prisene, hyppigheten og datoene som er angitt på denne siden fra betalingsmetoden min inntil bestillingen min sendes eller jeg avbestiller.",
+        "store_credit": {
+          "label": "Butikkreditt",
+          "apply_label": "Bruk butikkreditt",
+          "add_label": "Legg til butikkreditt",
+          "buying_gift_card": "Du kan ikke bruke butikkreditt til å kjøpe gavekort."
+        },
+        "same_billing_address_checkbox_label": "Bruk leveringsadressen som fakturaadresse",
+        "shipping_rate_updated": "Tilgjengelige fraktmetoder er oppdatert. Vennligst bekreft valget ditt før du betaler.",
+        "preview_not_available": {
+          "title": "Forhåndsvisning er ikke tilgjengelig",
+          "content": "Ikke bekymre deg, denne raske betalingen kan brukes av kundene dine.",
+          "button": "Ferdig"
+        },
+        "simulated_checkout": "Forhåndsvisninger vil snart bli tilgjengelige",
+        "purchase_options_and_vaulting_agreement_label": "En eller flere av produktene i handlekurven din er utsatt kjøp eller abonnementskjøp. Ved å fortsette betalingen godtar du at betalingsmetoden din automatisk belastes med den oppførte prisen og frekvensen på denne siden, inntil utløpsdatoen eller til du avbestiller. Alle avbestillinger er underlagt %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "avbestillingspolicy",
+        "saved_credit_card": "Du har lagret kredittkortet ditt",
+        "saved_credit_card_info": "De siste fire sifrene",
+        "saved_credit_cards_modal": {
+          "view_all_label": "Vis alle lagrede kort",
+          "done": "Bitti",
+          "cancel": "Avbryt"
+        },
+        "purchase_order_number": {
+          "title": "Bestillingsnummer",
+          "label": "Bestillingsnummer (valgfritt)"
+        },
+        "shop_pay_installments_label": "Shop Pay avdrag",
+        "saved_credit_card_actions": {
+          "edit": "Rediger",
+          "delete": "Sil"
+        },
+        "purchase_options_agreement_label_wallets": "Ved å fortsette, godtar du de fremtidige avgiftene og avbestillingsreglene som er oppført på denne siden.",
+        "saved_credit_card_cvv_verification": "Skriv inn sikkerhetskoden på kortet ditt for verifisering.",
+        "proposed_gateway_unavailable": "Den anbefalte betalingsgatewayen er ikke tilgjengelig",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Kan ikke brukes for Wero-bestillinger. Velg en annen betalingsmetode.",
+        "paypal_wallet_label": "PayPal-lommebok",
+        "przelewy24_label": "Przelewy24",
+        "simulated_express_checkout": "Lommebøker er ikke tilgjengelige i regulatorisk forhåndsvisning på grunn av regionen din eller nettleseren din",
+        "separate_payments_label": "Produktene dine kommer fra flere butikker. Avgiftene vil bli belastet %{separate_payments_link}.",
+        "separate_payments_text": "separate betalinger",
+        "purchase_options_subscription_agreement_label": "Handlekurven din inneholder et abonnement som fornyes automatisk. Ved å klikke på \"%{button_label}\" godtar du %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "Du godtar klart og definitivt at det gjentakende beløpet (pluss frakt og avgifter) som vises i handlekurven din, automatisk vil bli belastet deg inntil abonnementet/abonnementene avsluttes eller du sier opp.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Vennligst les %{cancellation_policy_label}-teksten.",
+        "purchase_options_subscription_cancel_text": "Du kan kansellere når som helst ved å gå til kontoen din eller kontakte butikken."
       }
     }
   },
