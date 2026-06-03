@@ -1422,7 +1422,73 @@
       },
       "offsite_payment_failed": {
         "payment_link_expired_title": "Le délai de connexion au paiement est expiré",
-        "payment_link_expired_text": "Essayez de scanner à nouveau le code QR."
+        "payment_link_expired_text": "Essayez de scanner à nouveau le code QR.",
+        "payment_not_processed_title": "Le paiement a échoué",
+        "payment_not_processed_text": "Essayez de scanner à nouveau le code QR. S'il ne fonctionne toujours pas, informez notre personnel à ce sujet et essayez un autre mode de paiement.",
+        "title": "Le paiement externe a échoué"
+      },
+      "order_summary": {
+        "add_discount_or_gift_card": "Ajouter un code de réduction ou une carte cadeau",
+        "apply_discount_button_label": "Appliquer",
+        "applied_discount_message": "%{amount} de réduction sur le prix total de la commande",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> code de réduction, non valable pour les produits dans votre panier",
+        "customer_does_not_meet_discount_requirements_notice": "Vous ne pouvez pas utiliser le code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong> pour le moment",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> code de réduction déjà utilisé",
+        "collapse_order_summary_short": "Cacher",
+        "calculating_shipping": "Calcul en cours...",
+        "confirmation_number_label": "Confirmation numéro %{confirmation_number}",
+        "amount_off_shipping": "Livraison avec %{amount} de réduction",
+        "custom_discount": "Offre spéciale",
+        "collapse_component_information": {
+          "one": "Masquer %{count} produit(s)",
+          "other": "Masquer %{count} produit(s)"
+        },
+        "component_quantity_title": "%{quantity} articles %{product_title}",
+        "alternative_payment_currency_total": "%{amount_due} a été facturé",
+        "calculating": "Calcul en cours...",
+        "deferred_balance_info": {
+          "title": "Le paiement du solde de {{amount_due}} sera effectué le {{due_at}}.",
+          "due_on_fulfillment_title": "Le paiement du solde de {{amount_due}} sera effectué lors de l'expédition de la commande."
+        },
+        "compare_at_sale": "Remise (%{sale_amount})",
+        "automatic_discount_tooltip": "Les réductions appliquées automatiquement ne peuvent pas être annulées"
+      },
+      "order_payment_collection": {
+        "changes_summary": {
+          "added": {
+            "other": "%{count} article ajouté"
+          },
+          "subtracted": "%{count} article(s) supprimé(s)",
+          "returned": "%{count} article(s) retourné(s)",
+          "return_line_item_removed": "%{count} article(s) retiré(s du retour)"
+        },
+        "checkout_review_and_pay": "Votre commande %{order_name} a été mise à jour. Veuillez vérifier ces modifications, puis effectuer le paiement pour confirmer votre commande.",
+        "order_review_and_pay": "Votre commande a été mise à jour. Veuillez vérifier votre commande et effectuer le paiement pour la confirmer."
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Achetez le produit %{product_name}",
+          "one": "Achetez le produit %{product_name} et %{count} autres produits",
+          "other": "Achetez le produit %{product_name} et %{count} autres produits"
+        }
+      },
+      "order_errors": {
+        "creation_failure": "Une erreur s'est produite lors de la création de votre commande. Veuillez réessayer ou nous contacter pour plus d'informations.",
+        "network_failure": "Votre commande n'a pas pu être envoyée en raison d'une erreur réseau. Veuillez vérifier votre connexion et réessayer.",
+        "inventory_reservation_failure": "Certains produits ne sont plus disponibles."
+      },
+      "online_store_chat": {
+        "title": "Vous avez des questions ? Discutez avec nous"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Le prix de la carte cadeau doit être supérieur à 0.",
+            "subtotal_limit_reached": "Valeur maximale d'élément de ligne atteinte.",
+            "gift_card_price_must_not_exceed_limit": "Le prix de la carte cadeau ne doit pas dépasser %{gift_card_limit}.",
+            "signature_mismatch": "Il y a une incompatibilité de signature de produit à la ligne %{stable_id}."
+          }
+        }
       }
     }
   }

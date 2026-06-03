@@ -1420,6 +1420,27 @@
       "carousel": "دَوَّار الصور",
       "announcement": "إعلان",
       "announcement_bar": "شريط الإشعارات"
+    },
+    "video": {
+      "load_video": "تحميل الفيديو: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "تحميل الشريحة",
+      "previous_slideshow": "الشريحة السابقة",
+      "next_slideshow": "الشريحة التالية",
+      "pause_slideshow": "إيقاف عرض الشرائح مؤقتًا",
+      "play_slideshow": "تشغيل عرض الشرائح",
+      "carousel": "دونغو",
+      "slide": "شريحة عرض"
+    },
+    "quick_order_list": {
+      "view_cart": "عرض السلة",
+      "variant": "تفاوت",
+      "variant_total": "مجموع التباينات",
+      "total_items": "إجمالي عدد المنتجات",
+      "remove_all_items_confirmation": "هل تريد إزالة جميع {{ quantity }} المنتجات من السلة؟",
+      "remove_all_single_item_confirmation": "هل تريد إزالة المنتج 1 من السلة؟",
+      "step_error": "يمكنك إضافة هذا العنصر فقط بزيادات بقيمة {{ step }}"
     }
   }
 }

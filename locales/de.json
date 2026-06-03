@@ -1299,7 +1299,11 @@
       },
       "merchant_instruction_errors": {
         "duplicate_variant_id": "%{position} %{name} Anweisung enthält die wiederholte %{variant_id} Varianten-ID.",
-        "discount_not_supported": "Rabatt anwenden Verkäuferanweisung unterstützt diesen Rabatttyp nicht."
+        "discount_not_supported": "Rabatt anwenden Verkäuferanweisung unterstützt diesen Rabatttyp nicht.",
+        "empty_stable_id": "%{position} %{name} mal Anweisung enthält eine leere feste ID.",
+        "invalid_stable_id_target": "%{position} %{name} Artikelanweisung verweist auf die feste ID %{stable_id}, diese feste ID ist jedoch nicht in den Artikelzeilen enthalten.",
+        "invalid_variant_id_target": "%{name} Artikelanweisung verweist auf die Varianten-ID %{variant_id}, aber diese Variante ist in den Artikelzeilen nicht enthalten.",
+        "invalid_price_override_target": "Da das Element %{stable_id} ein Paketbestandteil ist, ist die Preisüberschreibung für die Materialanweisung ungültig."
       },
       "merchandise_unavailable_in_buyer_location": {
         "banner_title": {
@@ -1322,6 +1326,68 @@
       "memberships": {
         "delivery_promise_unfulfillable": "Adresse wird in der aktuellen Mitgliedschaft nicht unterstützt.",
         "items_split_across_locations_unsupported": "Prime-Lieferung ist für Ihre Bestellung nicht verfügbar. Ihre Versandoptionen wurden aktualisiert."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Registrierte Verkäufer Geschäftsbedingungen",
+        "privacy_policy": "Datenschutzerklärung für registrierte Verkäufer"
+      },
+      "no_address_location": {
+        "title": "Adressiz Standort",
+        "header": "Für diesen Standort haben Sie keine Versandadresse.",
+        "message": "Bu konum için adres ekleyerek ödemeyi tamamlamak istiyorsanız bizimle iletişime geçin.",
+        "email_us_button_label": "Senden Sie uns eine E-Mail",
+        "alt_header": "Keine Lieferadresse vorhanden"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Zurück zum Warenkorb",
+        "return_to_cart_to_update_quantities": "Um die Mengen zu aktualisieren, %{return_to_cart_link_text}",
+        "subscription_changed": "Eines Ihrer Abonnements wurde geändert.",
+        "company_location_changed": "Ihr Warenkorb wurde aktualisiert. Überprüfen Sie Ihre Bestellung, bevor Sie bestätigen.",
+        "violations_title": "{{violation}} fehlt oder ungültig",
+        "all_violations_content": "Um diese Informationen zu aktualisieren und Ihre Bestellung abzuschließen, können Sie uns anrufen oder uns eine E-Mail an {{emailLink}} senden:",
+        "all_violations_email_link": "E-Mail",
+        "editable_shipping_address_violations_message_title": "Um Ihre Bestellung abzuschließen, fügen Sie diese Informationen hinzu:",
+        "editable_shipping_address_violations_message_footer": "Um die Adresse dieses Standorts dauerhaft zu ändern, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "Kontaktieren Sie uns",
+        "company_location_changed_product_removed": "Einige Produkte sind an diesem Standort nicht verfügbar, daher wurde Ihr Warenkorb aktualisiert. Bitte überprüfen Sie Ihre Bestellung, bevor Sie bestätigen.",
+        "shipping_address_incomplete_title": "Lieferadresse fehlt",
+        "calculating_shipping": "Die Versandkosten werden noch berechnet. Bitte versuchen Sie es in Kürze erneut. Ihnen wurde nichts berechnet.",
+        "calculating_taxes": "Die Steuerberechnung läuft noch. Bitte versuchen Sie es in Kürze erneut. Es wurden Ihnen keine Gebühren berechnet.",
+        "generic_processing_error": {
+          "title": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten",
+          "body": "Es wurde keine Gebühr von Ihnen erhoben. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
+        },
+        "contact_information": {
+          "title": "Kontaktinformationen ungültig",
+          "header": "Um Ihre Daten zu aktualisieren, {{emailLink}}.",
+          "email_link": "Kontaktieren Sie uns"
+        },
+        "payment_method_not_available_with_payment_terms": "Da diese Bestellung eine Zahlungsfrist von {{paymentTerms}} hat, ist die von Ihnen gewählte Zahlungsmethode nicht mehr verfügbar.",
+        "payment_method_not_available_with_fulfillment_terms": "Da die Zahlungsfrist für diese Bestellung während des Versands abläuft, kann die von Ihnen gewählte Zahlungsmethode nicht mehr verwendet werden.",
+        "payment_method_not_available_with_fixed_terms": "Da die Zahlungsfrist für diese Bestellung später abläuft, ist die von Ihnen gewählte Zahlungsmethode nicht mehr verfügbar.",
+        "payment_method_not_available_with_review_requirement": "Die von Ihnen gewählte Zahlungsmethode ist nicht mehr verfügbar, da die Zahlung erst nach Bestätigung Ihrer Bestellung erfolgt.",
+        "validation_errors_banner": {
+          "section_label": {
+            "delivery": "Lieferung",
+            "payment": "Ödem",
+            "billing": "Abrechnung"
+          },
+          "heading": {
+            "one": "{{count}} Fehler vorhanden:",
+            "other": "{{count}} Fehler vorhanden:"
+          },
+          "errors_in_section": {
+            "one": "{{section}} Abschnitt enthält {{count}} Fehler",
+            "other": "{{section}} Abschnitt enthält {{count}} Fehler"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Reduzieren Sie die Notizgröße auf 5000 oder weniger Zeichen."
+      },
+      "offsite_payment_failed": {
+        "payment_link_expired_title": "Die Ablaufzeit des Zahlungslinks ist abgelaufen",
+        "payment_link_expired_text": "Versuchen Sie, den QR-Code erneut zu scannen."
       }
     }
   }
