@@ -10,19 +10,19 @@
 {
   "general": {
     "password_page": {
-      "login_form_heading": "Shop mit Passwort betreten:",
-      "login_password_button": "Mit Passwort betreten",
-      "login_form_password_label": "Passwort",
-      "login_form_password_placeholder": "Dein Passwort",
+      "login_form_heading": "Mit Passwort im Geschäft anmelden:",
+      "login_password_button": "Mit Passwort anmelden",
+      "login_form_password_label": "Wort",
+      "login_form_password_placeholder": "Ihr Passwort",
       "login_form_error": "Falsches Passwort!",
-      "login_form_submit": "Eingeben",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"link underlined-link\">Hier einloggen</a>",
-      "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
+      "login_form_submit": "Mädchen",
+      "admin_link_html": "Sind Sie Ladenbesitzer? <a href=\"/admin\" class=\"link underlined-link\">Hier anmelden</a>",
+      "powered_by_shopify_html": "Dieser Shop wird von {{ shopify }} unterstützt"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Auf Facebook teilen",
-        "share_on_twitter": "Auf X teilen",
+        "share_on_twitter": "X'te teilen",
         "share_on_pinterest": "Auf Pinterest pinnen"
       },
       "links": {
@@ -37,7 +37,7 @@
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Weiter shoppen",
+    "continue_shopping": "Mit dem Einkaufen fortfahren",
     "pagination": {
       "label": "Seitennummerierung",
       "page": "Seite {{ number }}",
@@ -45,25 +45,25 @@
       "previous": "Vorherige Seite"
     },
     "search": {
-      "search": "Suchen",
-      "reset": "Suchbegriff zurücksetzen"
+      "search": "Ara",
+      "reset": "Suchbegriff löschen"
     },
     "cart": {
-      "view": "Warenkorb ansehen ({{ count }})",
-      "item_added": "Artikel wurde in den Warenkorb gelegt",
-      "view_empty_cart": "Warenkorb ansehen"
+      "view": "Warenkorb anzeigen ({{ count }})",
+      "item_added": "Produkt wurde Ihrem Warenkorb hinzugefügt",
+      "view_empty_cart": "Warenkorb anzeigen"
     },
     "share": {
       "copy_to_clipboard": "Link kopieren",
-      "share_url": "Link",
+      "share_url": "Verbindung",
       "success_message": "Link in die Zwischenablage kopiert",
       "close": "Teilen schließen"
     },
     "slider": {
       "of": "von",
-      "next_slide": "Nach rechts schieben",
-      "previous_slide": "Nach links schieben",
-      "name": "Slider"
+      "next_slide": "Nach rechts wischen",
+      "previous_slide": "Sola schieben",
+      "name": "Schieberegler"
     }
   },
   "newsletter": {
@@ -448,32 +448,32 @@
       "alternate_provider_separator": "oder"
     },
     "orders": {
-      "title": "Bestellhistorie",
+      "title": "Bestellverlauf",
       "order_number": "Bestellung",
       "order_number_link": "Bestellnummer {{ number }}",
       "date": "Datum",
       "payment_status": "Zahlungsstatus",
       "fulfillment_status": "Versandstatus",
-      "total": "Gesamtsumme",
+      "total": "Insgesamt",
       "none": "Sie haben noch keine Bestellung aufgegeben."
     },
     "recover_password": {
-      "title": "Setze dein Passwort zurück",
-      "subtext": "Wir werden dir eine E-Mail zum Zurücksetzen deines Passworts schicken",
-      "success": "Wir haben dir eine E-Mail mit einem Link zum Aktualisieren deines Passworts geschickt."
+      "title": "Setzen Sie Ihr Passwort zurück",
+      "subtext": "Wir senden Ihnen eine E-Mail, um Ihr Passwort zurückzusetzen.",
+      "success": "Größe Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren Ihres Passworts gesendet."
     },
     "register": {
       "title": "Konto erstellen",
-      "first_name": "Vorname",
+      "first_name": "Anzeige",
       "last_name": "Nachname",
       "email": "E-Mail",
-      "password": "Passwort",
+      "password": "Wort",
       "submit": "Erstellen"
     },
     "reset_password": {
-      "title": "Passwort für Konto zurücksetzen",
-      "subtext": "Neues Passwort eingeben",
-      "password": "Passwort",
+      "title": "Setzen Sie Ihr Kontopasswort zurück",
+      "subtext": "Geben Sie ein neues Passwort ein",
+      "password": "Wort",
       "password_confirm": "Passwort bestätigen",
       "submit": "Passwort zurücksetzen"
     },

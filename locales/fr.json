@@ -10,20 +10,20 @@
 {
   "general": {
     "password_page": {
-      "login_form_heading": "Accéder à la boutique à l'aide d'un mot de passe :",
-      "login_password_button": "Saisir avec un mot de passe",
+      "login_form_heading": "Utilisez le mot de passe pour accéder au magasin :",
+      "login_password_button": "Connectez-vous en utilisant un mot de passe",
       "login_form_password_label": "Mot de passe",
       "login_form_password_placeholder": "Votre mot de passe",
-      "login_form_error": "Mot de passe incorrect !",
-      "login_form_submit": "Saisir",
-      "admin_link_html": "La boutique vous appartient-elle ? <a href=\"/admin\" class=\"link underlined-link\">Se connecter ici</a>",
-      "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}"
+      "login_form_error": "Mot de passe incorrect !",
+      "login_form_submit": "Fille",
+      "admin_link_html": "Êtes-vous propriétaire d'un magasin ? <a href=\"/admin\" class=\"link underlined-link\">Connectez-vous ici</a>",
+      "powered_by_shopify_html": "Cette boutique est propulsée par {{ shopify }}"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Partager sur Facebook",
-        "share_on_twitter": "Partager sur X",
-        "share_on_pinterest": "Épingler sur Pinterest"
+        "share_on_twitter": "Partager X'te",
+        "share_on_pinterest": "Ajouter une épingle sur Pinterest"
       },
       "links": {
         "twitter": "X (Twitter)",
@@ -37,7 +37,7 @@
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Continuer les achats",
+    "continue_shopping": "Continuer vos achats",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
@@ -45,25 +45,25 @@
       "previous": "Page précédente"
     },
     "search": {
-      "search": "Recherche",
-      "reset": "Effacer le terme de recherche"
+      "search": "Ara",
+      "reset": "Effacer le terme Arama"
     },
     "cart": {
       "view": "Voir le panier ({{ count }})",
-      "item_added": "Article ajouté au panier",
+      "item_added": "Le produit a été ajouté à votre panier",
       "view_empty_cart": "Voir le panier"
     },
     "share": {
       "copy_to_clipboard": "Copier le lien",
-      "share_url": "Lien",
-      "success_message": "Lien copié dans le presse-papiers",
+      "share_url": "Connexion",
+      "success_message": "Le lien a été copié dans le presse-papiers",
       "close": "Fermer le partage"
     },
     "slider": {
       "of": "de",
-      "next_slide": "Faire glisser vers la droite",
-      "previous_slide": "Faire glisser vers la gauche",
-      "name": "Carrousel"
+      "next_slide": "Faites glisser vers la droite",
+      "previous_slide": "Faites glisser le soleil",
+      "name": "Curseur"
     }
   },
   "newsletter": {
@@ -464,29 +464,29 @@
       "order_number": "Commande",
       "order_number_link": "Numéro de commande {{ number }}",
       "date": "Date",
-      "payment_status": "Statut des paiements",
+      "payment_status": "État du paiement",
       "fulfillment_status": "Statut de livraison",
       "total": "Total",
       "none": "Vous n'avez pas encore passé de commande."
     },
     "recover_password": {
-      "title": "Réinitialiser son mot de passe",
-      "subtext": "Nous vous ferons parvenir un e-mail pour réinitialiser votre mot de passe",
-      "success": "Nous vous avons envoyé un e-mail contenant un lien pour mettre à jour votre mot de passe."
+      "title": "Réinitialisez votre mot de passe",
+      "subtext": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe",
+      "success": "Size parolanızı güncelleme bağlantısının bulunduğu bir e-posta gönderdik."
     },
     "register": {
-      "title": "Créer un compte",
-      "first_name": "Prénom",
+      "title": "Créez un compte",
+      "first_name": "Annonce",
       "last_name": "Nom de famille",
       "email": "E-mail",
       "password": "Mot de passe",
       "submit": "Créer"
     },
     "reset_password": {
-      "title": "Réinitialiser le mot de passe du compte",
-      "subtext": "Saisissez un nouveau mot de passe",
+      "title": "Réinitialisez le mot de passe du compte",
+      "subtext": "Entrez un nouveau mot de passe",
       "password": "Mot de passe",
-      "password_confirm": "Confirmer le mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
       "submit": "Réinitialiser le mot de passe"
     },
     "order": {

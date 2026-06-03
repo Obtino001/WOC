@@ -10,20 +10,20 @@
 {
   "general": {
     "password_page": {
-      "login_form_heading": "Siirry kauppaan käyttämällä salasanaa:",
-      "login_password_button": "Siirry sisään käyttämällä salasanaa",
+      "login_form_heading": "Kirjaudu kauppaan salasanalla:",
+      "login_password_button": "Kirjaudu sisään salasanalla",
       "login_form_password_label": "Salasana",
       "login_form_password_placeholder": "Salasanasi",
       "login_form_error": "Väärä salasana!",
-      "login_form_submit": "Lähetä",
+      "login_form_submit": "Tyttö",
       "admin_link_html": "Oletko kaupan omistaja? <a href=\"/admin\" class=\"link underlined-link\">Kirjaudu sisään tästä</a>",
-      "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}"
+      "powered_by_shopify_html": "Tätä kauppaa tukee {{ shopify }}"
     },
     "social": {
       "alt_text": {
         "share_on_facebook": "Jaa Facebookissa",
         "share_on_twitter": "Jaa X:ssä",
-        "share_on_pinterest": "Pinnaa Pinterestissä"
+        "share_on_pinterest": "Lisää pin Pinterestissä"
       },
       "links": {
         "twitter": "X (Twitter)",
@@ -39,36 +39,36 @@
     },
     "continue_shopping": "Jatka ostoksia",
     "pagination": {
-      "label": "Sivunumerointi",
+      "label": "Sivutus",
       "page": "Sivu {{ number }}",
       "next": "Seuraava sivu",
       "previous": "Edellinen sivu"
     },
     "search": {
-      "search": "Hae",
+      "search": "Ara",
       "reset": "Tyhjennä hakutermi"
     },
     "cart": {
-      "view": "Näytä ostoskori ({{ count }})",
+      "view": "Näytä kori ({{ count }})",
       "item_added": "Tuote lisätty ostoskoriisi",
-      "view_empty_cart": "Katso ostoskori"
+      "view_empty_cart": "Näytä kori"
     },
     "share": {
       "copy_to_clipboard": "Kopioi linkki",
-      "share_url": "Linkki",
-      "success_message": "Linkki kopioitu leikepöydälle",
+      "share_url": "Yhteys",
+      "success_message": "Yhteys on kopioitu paneeliin",
       "close": "Sulje jako"
     },
     "slider": {
       "of": "/",
-      "next_slide": "Liu'uta oikealle",
-      "previous_slide": "Liu'uta vasemmalle",
+      "next_slide": "Pyyhkäise oikealle",
+      "previous_slide": "Sola liu'uta",
       "name": "Liukusäädin"
     }
   },
   "newsletter": {
     "label": "Sähköposti",
-    "success": "Kiitos tilauksesta",
+    "success": "Kiitos tilauksestasi",
     "button_label": "Tilaa"
   },
   "accessibility": {
@@ -110,7 +110,7 @@
     }
   },
   "onboarding": {
-    "product_title": "Tuotteen esimerkkinimi",
+    "product_title": "Esimerkkituotteen otsikko",
     "collection_title": "Kokoelmasi nimi"
   },
   "products": {
@@ -195,34 +195,34 @@
     },
     "facets": {
       "apply": "Käytä",
-      "clear": "Tyhjennä",
+      "clear": "Puhdista",
       "clear_all": "Poista kaikki",
-      "from": "Alkaen",
-      "filter_and_sort": "Suodatus ja lajittelu",
+      "from": "Alin",
+      "filter_and_sort": "Suodata ja lajittele",
       "filter_by_label": "Suodatin:",
       "filter_button": "Suodata",
       "filters_selected": {
         "one": "{{ count }} valittu",
         "other": "{{ count }} valittu"
       },
-      "max_price": "Korkein hinta on {{ price }}",
+      "max_price": "Korkein hinta: {{ price }}",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }} tuotetta",
-        "other": "{{ product_count }}/{{ count }} tuotetta"
+        "one": "{{ count }}/{{ product_count }} tuotetta",
+        "other": "{{ count }}/{{ product_count }} tuotetta"
       },
       "product_count_simple": {
-        "one": "{{ count }} tuote",
+        "one": "{{ count }} tuotetta",
         "other": "{{ count }} tuotetta"
       },
       "reset": "Nollaa",
-      "sort_button": "Lajittele",
-      "sort_by_label": "Lajittelu:",
+      "sort_button": "Järjestä",
+      "sort_by_label": "Lajitteluperuste:",
       "to": "Asti",
       "clear_filter": "Poista suodatin",
       "filter_selected_accessibility": "{{ type }} ({{ count }} suodatinta valittu)",
-      "show_more": "Näytä enemmän",
+      "show_more": "Näytä lisää",
       "show_less": "Näytä vähemmän",
-      "filter_and_operator_subtitle": "Sovella kaikkia"
+      "filter_and_operator_subtitle": "Vastaa kaikkiin"
     }
   },
   "templates": {
@@ -386,10 +386,10 @@
   },
   "localization": {
     "country_label": "Maa/alue",
-    "language_label": "Kieli",
+    "language_label": "Dil",
     "update_language": "Päivitä kieli",
-    "update_country": "Päivitä maa/alue",
-    "search": "Hae",
+    "update_country": "Päivitä maa/alue-tiedot",
+    "search": "Ara",
     "popular_countries_regions": "Suositut maat/alueet",
     "country_results_count": "{{ count }} maata/aluetta löytyi"
   },
@@ -452,19 +452,19 @@
       "order_number": "Tilaus",
       "order_number_link": "Tilausnumero {{ number }}",
       "date": "Historia",
-      "payment_status": "Maksun tila",
+      "payment_status": "Maksutila",
       "fulfillment_status": "Toimitustila",
       "total": "Yhteensä",
       "none": "Et ole vielä tehnyt tilausta."
     },
     "recover_password": {
       "title": "Nollaa salasanasi",
-      "subtext": "Lähetämme sinulle sähköpostiviestin salasanan nollaamiseksi",
-      "success": "Olemme lähettäneet sinulle sähköpostiviestin, jossa on salasanan päivityslinkki."
+      "subtext": "Lähetämme sinulle sähköpostin, jotta voit nollata salasanasi",
+      "success": "Lähetimme sinulle sähköpostin, jossa on linkki salasanasi päivittämiseen."
     },
     "register": {
       "title": "Luo tili",
-      "first_name": "Etunimi",
+      "first_name": "Mainos",
       "last_name": "Sukunimi",
       "email": "Sähköposti",
       "password": "Salasana",
@@ -506,17 +506,17 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Tässä on lahjakorttisi saldo ({{ value }}) kauppaan {{ shop }}!",
+      "title": "Tässä on {{ shop }} -kauppaan {{ value }} arvoinen lahjakorttisi saldo!",
       "subtext": "Lahjakorttisi",
-      "gift_card_code": "Lahjakortin koodi",
+      "gift_card_code": "Lahjakorttikoodi",
       "shop_link": "Vieraile verkkokaupassa",
       "add_to_apple_wallet": "Lisää Apple Walletiin",
-      "qr_image_alt": "QR-koodi – lunasta lahjakortti skannaamalla",
-      "copy_code": "Kopioi lahjakortin koodi",
-      "expired": "Vanhentunut",
-      "copy_code_success": "Koodin kopioiminen onnistui",
-      "how_to_use_gift_card": "Käytä lahjakortin koodia verkossa tai QR-koodia kaupassa",
-      "expiration_date": "Voimassa {{ expires_on }} asti"
+      "qr_image_alt": "QR-koodi: Skannaa käyttääksesi lahjakortin",
+      "copy_code": "Kopioi lahjakorttikoodi",
+      "expired": "Aikasi on päättynyt",
+      "copy_code_success": "Koodi kopioitiin onnistuneesti",
+      "how_to_use_gift_card": "Käytä lahjakorttikoodia verkossa tai QR-koodia myymälässä",
+      "expiration_date": "Sona erääntymispäivä: {{ expires_on }}"
     }
   },
   "recipient": {
