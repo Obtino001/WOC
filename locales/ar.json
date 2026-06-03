@@ -2197,7 +2197,8 @@
         "no_pickup_points_near_location": "لا توجد نقطة استلام بالقرب من موقعك",
         "no_pickup_points_found": "لا توجد نقطة استلام",
         "number_of_pickup_points_near_location": {
-          "one": "يوجد %{count} نقطة استلام بالقرب من موقعك"
+          "one": "يوجد %{count} نقطة استلام بالقرب من موقعك",
+          "other": "يوجد %{count} نقطة استلام بالقرب من موقعك"
         },
         "change": "تغيير الموقع",
         "geolocation": {
@@ -2209,7 +2210,152 @@
           }
         },
         "no_business_hours": "لا توجد معلومات عن ساعات العمل",
-        "address_label": "العنوان"
+        "address_label": "العنوان",
+        "title": "نقطة الاستلام",
+        "or": "أو",
+        "search_button": "عرب",
+        "selector_tabs": "محدد نقطة الاستلام",
+        "selector_tab_map": "خريطة",
+        "selector_tab_list": "قائمة",
+        "paginator": {
+          "next_accessibility_label": "الصفحة التالية",
+          "previous_accessibility_label": "الصفحة السابقة",
+          "header": {
+            "one": "يتم عرض %{count} نقطة من %{first} إلى %{last}",
+            "other": "يتم عرض %{count} نقطة من %{first} إلى %{last}"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} نقطة من %{pickup_point_index}",
+            "other": "%{count} نقطة من %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{count} نقطة من %{first} - %{last}",
+            "other": "%{count} نقطة من %{first} - %{last}"
+          }
+        },
+        "waiting_on_pickup_point_location_notice": "جارٍ البحث عن نقاط الاستلام...",
+        "open_twenty_four_hours": "مفتوح على مدار الساعة طوال أيام الأسبوع",
+        "pickup_unavailable_banner_title": {
+          "one": "لا توجد نقطة استلام متاحة لمنتجك",
+          "other": "لا توجد نقطة استلام متاحة لمنتجاتك"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "يتم إعادة التوجيه...",
+        "redirecting_title": "يتم إعادة التوجيه...",
+        "redirecting_notice": "نقوم بإعادة توجيهك، يرجى الانتظار.",
+        "complete_your_purchase_title": "أكمل عملية الشراء الخاصة بك",
+        "continue_to_payment_gateway_notice": "تابع عملية الدفع لإضافة معلومات الدفع الخاصة بك.",
+        "continue_to_payment_gateway_button_label": "المتابعة بالدفع",
+        "complete_your_purchase_title_error": "صحح معلومات الدفع الخاصة بك",
+        "continue_to_payment_gateway_notice_error": "تعذر التحقق من معلومات الدفع الخاصة بك.",
+        "continue_to_payment_gateway_button_label_error": "تحديث معلومات الدفع",
+        "page_title": "معالجة الطلب",
+        "title": "معالجة الطلب",
+        "wait": {
+          "short": "يتم معالجة طلبك.",
+          "medium": {
+            "one": "يتم معالجة طلبك. الوقت المتوقع للانتظار %{count} دقيقة.",
+            "other": "يتم معالجة طلبك. الوقت المتوقع للانتظار %{count} دقيقة."
+          },
+          "long": "بعد معالجة طلبك، ستتلقى رسالة بريد إلكتروني. هناك العديد من الطلبات في الوقت الحالي.",
+          "no_auto_refresh_html": "إذا لم يتم إعادة توجيهك تلقائيًا، %{link}.",
+          "refresh_this_page": "قم بتحديث هذه الصفحة"
+        },
+        "you_will_not_be_charged": "لن يتم تحصيل أي رسوم منك بعد",
+        "action_required": "المعالجة مطلوبة",
+        "redirecting_to_bank": "يتم التوجيه إلى صفحة {{bank}}",
+        "modal_notice": "نحن نتواصل عبر {{paymentMethod}}",
+        "remote_shops_payments_processing": "معالجة المدفوعات",
+        "remote_checkout_count": "%{total} من %{current}",
+        "your_order_has_been_received_title": "شكراً لطلبك",
+        "you_will_receive_confirmation": "نحن نتلقى العديد من الطلبات في الوقت الحالي. ستتلقى تأكيدًا عبر البريد الإلكتروني أو الرسائل النصية القصيرة في وقت قريب. إذا لم تستلم هذا التأكيد خلال الساعة القادمة، يرجى إعلامنا بذلك."
+      },
+      "post_purchase": {
+        "page_title": "بعد الشراء",
+        "title": "بعد الشراء",
+        "escape_confirmation": "لقد قمت بالدفع لطلبك.",
+        "escape_action": "عرض تأكيد الطلب ›",
+        "components": {
+          "close": "أغلق",
+          "expand": "عرض المزيد",
+          "processing": "جارٍ المعالجة…",
+          "submit": "أرسل"
+        }
+      },
+      "review": {
+        "blocks": {
+          "contact_method_title": "الاتصال",
+          "billing_address_title": "الفوترة",
+          "payment_method_title": "طريقة الدفع",
+          "change_link_label": "تغيير",
+          "change_contact_method_link_label": "تغيير معلومات الاتصال",
+          "change_billing_address_link_label": "تغيير عنوان الفاتورة",
+          "change_shipping_address_link_label": "تغيير عنوان الشحن",
+          "change_shipping_method_link_label": "تغيير طريقة الشحن",
+          "change_payment_method_link_label": "تغيير طريقة الدفع",
+          "pick_up_in_store_shipping_method_html": "الاستلام من المتجر · %{location_name}",
+          "purchase_order_number_title": "رقم أمر الشراء",
+          "change_purchase_order_number_label": "تغيير رقم أمر الشراء",
+          "change_delivery_method_link_label": "تغيير طريقة التسليم",
+          "no_address": "(لا عنوان)",
+          "no_purchase_order_number": "(لا يوجد رقم أمر شراء)",
+          "due_after_order_reviewed_html": "يتم الدفع بعد مراجعة الطلب",
+          "review_title_free_order": "راجع طلبك وأكمله",
+          "payment_method_saved_company_location": "احفظ البطاقة لهذا الموقع",
+          "company_location": "موقع الشركة",
+          "change_company_location_link_label": "غيّر موقع الشركة",
+          "pickup_items_at": {
+            "one": "سيتم استلام %{count} منتج من هنا",
+            "other": "سيتم استلام %{count} منتج من هنا"
+          },
+          "ship_items_to": {
+            "one": "سيتم إرسال %{count} منتج إلى هنا",
+            "other": "سيتم إرسال %{count} منتج إلى هنا"
+          }
+        },
+        "block_title": "راجع معلوماتك",
+        "account_more_actions": "الإجراءات الأخرى لهذا الحساب"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "تم تطبيق بطاقة الهدية هذه بالفعل على طلبك",
+          "insufficient_funds": "لا يوجد رصيد متبقٍ في بطاقة الهدية هذه",
+          "expired": "انتهت صلاحية بطاقة الهدية هذه",
+          "not_available": "بطاقة الهدية هذه لم تعد صالحة للاستخدام",
+          "invalid": "أدخل بطاقة هدايا صالحة",
+          "currency_mismatch": "يتم قبول بطاقات الهدايا فقط بعملة %{shop_currency}",
+          "generic": "تعذر إضافة بطاقة الهدية إلى الدفع",
+          "throttle_limit_exceeded": "لقد تجاوزت الحد الأقصى لعدد المحاولات. حاول مرة أخرى لاحقًا.",
+          "no_longer_available": "لا يمكن استخدام بطاقة الهدية هذه في هذا الدفع بعد الآن"
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "لا يمكن إضافة هذا المنتج إلى سلة التسوق لأنه تابع لمتجر يستخدم عملة مختلفة.",
+          "max_remote_shops_exceeded": "لا يمكن إضافة هذا المنتج لأن سلتك تحتوي بالفعل على الحد الأقصى من المنتجات من متاجر أخرى.",
+          "currency_mismatch_removal": "تم إزالة منتج من سلة التسوق الخاصة بك لأنه تابع لمتجر يستخدم عملة مختلفة.",
+          "only_remote_merchandise_lines": "يشمل الدفع فقط المنتجات التي تُباع عن بُعد. يلزم التوجيه إلى المتجر البعيد لإكمال الدفع."
+        }
+      },
+      "remote_merchandise_only": {
+        "title": "أكمل عملية الشراء الخاصة بك",
+        "remote_only_notice": "هذه المنتجات تُباع وتُشحن من متاجر أخرى. لإكمال عملية الشراء، يرجى دفع ثمن كل متجر على حدة.",
+        "return_to_store_label": "العودة إلى المتجر",
+        "checkout_on_shop_label": "قم بالدفع في متجر %{shop_name}",
+        "single_shop_transition": "يتم توجيهك إلى متجر %{advertiser} لإكمال عملية الشراء الخاصة بك.",
+        "detail_item_label": {
+          "one": "{{count}} منتج",
+          "other": "{{count}} منتج"
+        }
+      },
+      "remote_policies": {
+        "unavailable_policy": "لم يتم توفير %{policy_name} لهذا المتجر. لمزيد من المعلومات، يرجى التواصل مباشرة مع %{shop_name}."
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "لإتمام عملية الدفع، يلزم تفاعل مع الامتداد."
+        }
       }
     }
   },
