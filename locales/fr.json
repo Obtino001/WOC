@@ -2315,7 +2315,73 @@
           "default": "La livraison Prime n'est pas disponible pour votre commande. Vos options de livraison ont été mises à jour."
         },
         "shipping_address_rollup_accessibility_label": "Options d'adresse de livraison",
-        "invalid_shipping_method_summary_selected": "Faites le choix d'une autre adresse de livraison pour voir les méthodes d'expédition disponibles."
+        "invalid_shipping_method_summary_selected": "Faites le choix d'une autre adresse de livraison pour voir les méthodes d'expédition disponibles.",
+        "shipping_method_title": "Méthode d'expédition",
+        "shipping_rate_discounted_amount": "Montant précédent : %{original_amount}. Montant actuel : %{amount}",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "Pour %{count} livraisons",
+            "other": "Pour %{count} livraisons"
+          },
+          "multiple_subscriptions_shipping_price_label": "Par livraison %{shipping_price}",
+          "initial_order_discounted": "Les frais de port du premier envoi sont de %{discounted_shipping_cost}, puis %{frequency_description}",
+          "first_order_shipping_price_included": "Première commande incluse, puis %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (par livraison %{per_delivery_price}), puis %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "La première commande est gratuite",
+            "other": "Les %{count} premières commandes sont gratuites"
+          },
+          "free_for_first_n_order": {
+            "other": "Pour les %{count} premières commandes"
+          },
+          "free_shipping_cycles": {
+            "one": "Livraison gratuite pour les %{count} autres commandes",
+            "other": "Livraison gratuite pour les %{count} autres commandes"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Livraison gratuite pour %{count} commandes",
+            "other": "Livraison gratuite pour %{count} commandes"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Livraison gratuite pour %{count} autres livraisons, puis %{recurring_order_shipping_price}",
+            "other": "Livraison gratuite pour %{count} autres livraisons, puis %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Livraison gratuite pour %{count} livraisons, puis %{recurring_order_shipping_price}",
+            "other": "Livraison gratuite pour %{count} livraisons, puis %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Pour les %{count} autres livraisons, %{shipping_price}",
+            "other": "Pour les %{count} autres livraisons, %{shipping_price} par livraison"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "other": "Pour les %{count} autres livraisons, %{shipping_price} par livraison"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}"
+          }
+        },
+        "shipping_used_as_billing_notice": "Cette adresse sera également utilisée comme votre adresse de facturation valide pour la commande en question.",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Livraison répétée",
+          "other": "Expéditions répétées"
+        },
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} article",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} articles de plus",
+        "split_shipping_merchandise_shipment_number": "Kargo %{number}/%{total}",
+        "split_shipping_multiple_shipment_label": "Plusieurs colis",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} cargaison",
+        "split_shipping_multiple_shipment_notice": "Votre commande sera livrée en plusieurs colis",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Votre commande sera livrée en %{quantity} colis.",
+        "split_shipping_more_shipping_options": "Autres options de livraison",
+        "split_shipping_shipment_number": "Kargo %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Quantité : %{quantity}",
+        "split_shipping_option_free": "Livraison gratuite",
+        "split_shipping_option_lowest_price": "Le prix le plus bas",
+        "split_shipping_option_custom": "Spécial",
+        "split_shipping_shipment_notice": "Votre commande arrivera en %{quantity_shipments} livraisons",
+        "split_shipping_first_shipment_notice": "Votre première commande arrivera en %{quantity_shipments} livraisons",
+        "shipping_method_rollup_accessibility_label": "Options de méthode d'expédition"
       },
       "session_errors": {
         "session_not_unique": "Une erreur s'est produite lors du traitement de votre commande. Actualisez cette page pour retourner à la boutique.",

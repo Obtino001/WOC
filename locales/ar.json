@@ -2467,7 +2467,81 @@
           "default": "لا يمكن استخدام توصيل Prime لطلبك. تم تحديث خيارات الشحن الخاصة بك."
         },
         "shipping_address_rollup_accessibility_label": "خيارات عنوان الشحن",
-        "invalid_shipping_method_summary_selected": "اختر عنوان شحن مختلف لعرض طرق الشحن التي يمكنك استخدامها"
+        "invalid_shipping_method_summary_selected": "اختر عنوان شحن مختلف لعرض طرق الشحن التي يمكنك استخدامها",
+        "shipping_method_title": "طريقة الشحن",
+        "shipping_rate_discounted_amount": "المبلغ السابق: %{original_amount}. المبلغ الحالي: %{amount}",
+        "shipping_method_one_time_purchase_group_title": "شراء لمرة واحدة",
+        "shipping_method_subscription_group_title": "اشتراك",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "لـ %{count} توصيلات",
+            "other": "لـ %{count} توصيلات"
+          },
+          "multiple_subscriptions_shipping_price_label": "لكل تسليم %{shipping_price}",
+          "initial_order_discounted": "تكلفة الشحن الأولى %{discounted_shipping_cost}، ثم %{frequency_description}",
+          "first_order_shipping_price_included": "بما في ذلك الطلب الأول، ثم %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (لكل تسليم %{per_delivery_price})، ثم %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "الطلب الأول مجاني",
+            "other": "أول %{count} طلب مجاني"
+          },
+          "free_for_first_n_order": {
+            "one": "للطلب الأول",
+            "other": "لأول %{count} طلبات"
+          },
+          "free_shipping_cycles": {
+            "one": "شحن مجاني لـ %{count} توصيلات أخرى",
+            "other": "شحن مجاني لـ %{count} توصيلات أخرى"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "شحن مجاني لتوصيل %{count}",
+            "other": "شحن مجاني لتوصيل %{count}"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "شحن مجاني لـ %{count} توصيلات أخرى، ثم %{recurring_order_shipping_price}",
+            "other": "شحن مجاني لـ %{count} توصيلات أخرى، ثم %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "شحن مجاني لـ %{count} توصيلات، ثم %{recurring_order_shipping_price}",
+            "other": "شحن مجاني لـ %{count} توصيلات، ثم %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "لـ %{count} توصيلات أخرى مقابل %{shipping_price}",
+            "other": "لكل تسليم من %{count} تسليمات أخرى، %{shipping_price} لكل تسليم"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} للتوصيل مقابل %{shipping_price}",
+            "other": "لكل تسليم من %{count} تسليمات أخرى، %{shipping_price} لكل تسليم"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "شحن مجاني لأول %{cycle}، ثم %{recurring_order_shipping_price}"
+          }
+        },
+        "shipping_used_as_billing_notice": "سيتم استخدام هذا العنوان أيضًا كعنوان الفاتورة الخاص بك لهذا الطلب.",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "الشحن المتكرر",
+          "other": "الشحنات المتكررة"
+        },
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} عنصر",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} قطعة أخرى",
+        "split_shipping_merchandise_shipment_number": "الشحن %{number}/%{total}",
+        "split_shipping_shipped_by_shop": "الشحن بواسطة %{shop_name}",
+        "split_shipping_multiple_shipment_label": "شحن متعدد",
+        "split_shipping_shipping_label": "طريقة",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} شحن",
+        "split_shipping_multiple_shipment_notice": "سيتم تسليم طلبك عبر شحنات متعددة",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "سيتم تسليم طلبك بواسطة %{quantity} شحنة",
+        "split_shipping_more_shipping_options": "خيارات الشحن الأخرى",
+        "split_shipping_shipment_number": "الشحن %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "الكمية: %{quantity}",
+        "split_shipping_option_free": "شحن مجاني",
+        "split_shipping_option_lowest_price": "أقل سعر",
+        "split_shipping_option_fastest": "الأسرع",
+        "split_shipping_option_recommended": "مقترح",
+        "split_shipping_option_custom": "خاص",
+        "split_shipping_shipment_notice": "سيتم توصيل طلبك على %{quantity_shipments} دفعات",
+        "split_shipping_first_shipment_notice": "سيتم توصيل طلبك الأول على %{quantity_shipments} دفعات",
+        "shipping_method_rollup_accessibility_label": "خيارات طريقة الشحن"
       },
       "session_errors": {
         "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. قم بتحديث هذه الصفحة للعودة إلى المتجر.",
