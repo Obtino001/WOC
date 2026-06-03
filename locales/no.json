@@ -3087,7 +3087,8 @@
         "first_payment_complete": "Første betaling fullført",
         "choose_payment_method_later": "Velg betalingsmetode senere",
         "gift_card_confirmation_by_email_typ": {
-          "one": "Innen noen minutter vil du motta en e-post som inneholder gavekortet ditt."
+          "one": "Innen noen minutter vil du motta en e-post som inneholder gavekortet ditt.",
+          "other": "Innen noen minutter vil du motta en e-post med gavekortene dine."
         },
         "failed_pending_payment_page_title": "Det oppstod et problem med betalingen din",
         "company_location_section_title": "Selskap og beliggenhet",
@@ -3096,7 +3097,74 @@
         "confirmed_orders_title": "Bestillingene dine er bekreftet",
         "checkout_on_another_store": "Betal i en annen butikk",
         "checkout_again": "Prøv å betale igjen",
-        "cashback_notice": "Du vil motta refusjonen din etter 30 dager"
+        "cashback_notice": "Du vil motta refusjonen din etter 30 dager",
+        "order_status_confirmed_order_with_email": "Du vil motta en e-post når bestillingen din er klar.",
+        "order_status_confirmed_order_with_phone": "Du kan motta en tekstmelding når bestillingen din er klar.",
+        "order_status_confirmed_order_with_email_and_phone": "Du vil motta en e-post når bestillingen din er klar.",
+        "in_transit": "På vei",
+        "in_transit_title": "Bestillingen din blir klargjort",
+        "in_transit_description": "Du vil motta oppdateringer om bestillingens status.",
+        "in_transit_description_days": "Du kan forvente å motta bestillingen din innen %{number} dager.",
+        "in_transit_description_today": "Det forventes at du mottar bestillingen din i dag.",
+        "in_transit_description_tomorrow": "Bestillingen din forventes å bli levert i løpet av de neste dagene.",
+        "no_tracking_number": "Denne bestillingen har ikke noe sporingsnummer.",
+        "non_shippable_title": "Bestillingen din er fullført",
+        "login_title": "Alle bestillingsdetaljer vises ved innlogging",
+        "login_description": "Bestillingsnummeret ditt finner du på kvitteringen du mottok på e-post.",
+        "login_description_phone": "Du kan finne bestillingsnummeret ditt på kvitteringen du mottok via SMS.",
+        "login_not_customer_html": "Er du ikke %{name}? %{link}",
+        "login_reorder_link_text": {
+          "one": "Du kan også kjøpe dette produktet",
+          "other": "Du kan også kjøpe disse produktene"
+        },
+        "order_number_label": "Bestillingsnummer",
+        "login": "Logg inn",
+        "marker": {
+          "current": "Gjeldende fraktposisjon",
+          "shipping": "Fraktadresse"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Vi sender deg en e-post når bestillingen din er klar for henting.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Vi sender e-post og SMS når bestillingen din er klar for henting.",
+        "order_status_confirmed_order_local": "Vi forbereder bestillingen din for levering.",
+        "gift_card_sent_confirmation": "Gavekort sendt",
+        "let_us_know": "Gi oss beskjed",
+        "gift_card_confirmation_by_text": "Hvis du ikke har mottatt meldingen, send SMS-en på nytt eller kontakt oss.",
+        "gift_card_title": "Gavekort",
+        "order_status_confirmed_order_with_email_payment": "Du betalte for bestillingen din den %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Du betalte for bestillingen din den %{date}.",
+        "missing_shipping_address_banner": {
+          "title": "Bestillingen har ingen leveringsadresse",
+          "text_html": "For å legge til adressen din, %{contact_us}",
+          "contact_us": "kontakt oss"
+        },
+        "in_store_purchase": "Kjøp i butikk",
+        "manage_order_label": "Administrer bestillingen din",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Innen noen minutter vil du motta en tekstmelding som inneholder gavekortet ditt.",
+          "other": "Innen noen minutter vil du motta en tekstmelding som inneholder gavekortene dine."
+        },
+        "gift_card_email_title": {
+          "one": "Gavekortet er sendt på e-post",
+          "other": "Gavekortene ble sendt på e-post"
+        },
+        "gift_card_text_title": {
+          "one": "Gavekortet ble sendt via tekstmelding",
+          "other": "Gavekort ble sendt via tekstmelding"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "Gavekortet er sendt på nytt",
+          "other": "Gavekortene er sendt på nytt"
+        },
+        "gift_card_resend_failure": {
+          "one": "Det oppstod et problem med å sende gavekortet ditt på nytt. Prøv igjen eller kontakt oss.",
+          "other": "Det oppstod et problem under gjenutsendelse av gavekortene dine. Prøv igjen eller kontakt oss."
+        },
+        "order_status_confirmed_order_local_pick_up": "Vi forbereder bestillingen din.",
+        "order_status_confirmed_order_local_payment": "Vi forbereder bestillingen din.",
+        "items_fulfilled_by_store": {
+          "one": "Produktene du kjøper vil bli sendt av %{remote_shop_name}.",
+          "other": "Produktene du har kjøpt vil bli sendt fra andre butikker."
+        }
       }
     }
   },
