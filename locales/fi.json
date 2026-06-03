@@ -3120,7 +3120,59 @@
     "notices": {
       "address": {
         "created": "Osoite luotiin onnistuneesti",
-        "deleted": "Osoite poistettiin onnistuneesti"
+        "deleted": "Osoite poistettiin onnistuneesti",
+        "updated": "Osoite päivitettiin onnistuneesti.",
+        "error_updating": "Virhe tapahtui osoitetta päivitettäessä",
+        "error_creating": "Osoitetta luodessa tapahtui virhe.",
+        "error_deleting": "Virhe tapahtui, kun osoite poistettiin."
+      },
+      "customer": {
+        "no_account_found": "Tällä sähköpostiosoitteella ei löytynyt tiliä.",
+        "invalid_credentials": "Virheellinen sähköpostiosoite tai salasana.",
+        "denylisted_reset_password": "Tilillesi ei voitu päästä käsiksi, koska nykyinen salasana ei ole turvallinen. Saat sähköpostin salasanasi päivittämistä varten.",
+        "signup_disabled": "Asiakkaan tilin luonti on poistettu käytöstä",
+        "subscribe_error": "Tilauksen virhe",
+        "unsubscribe_error": "Virhe peruutettaessa tilausta"
+      },
+      "cart": {
+        "only_n_items_available": "Voit lisätä koriin vain %{count} %{name}.",
+        "too_many_items_in_cart": "Et voi lisätä ostoskoriin enempää %{name}-tuotteita.",
+        "empty_update": "tyhjää ostoskoria ei voi päivittää",
+        "missing_parameters": "voimassa olevaa tunnistetta tai riviparametria ei ole",
+        "generic_error": "Ostoskorivirhe",
+        "too_many_line_items_error": "Ostoskoriisi voi lisätä enintään %{max} tuotetta.",
+        "link_expired": "Yhteyden voimassaoloaika on päättynyt",
+        "link_no_longer_exists": "Yhteys ei ole enää saatavilla.",
+        "stock_problems_html": "Yksi tai useampi tuote ei ole enää saatavilla. Tarjoamme <a href='%{link}'>päivitetyn ostoskorin</a>.",
+        "changed": "Ostoskori muuttui",
+        "items_changed": "Yksi tai useampi tuote on muuttunut.",
+        "product_sold_out": "\"%{name}\" -tuote on jo loppunut.",
+        "variant_not_found": "Vaihtoehtoja ei löydy",
+        "variant_requires_selling_plan": "Vaihtelua voi ostaa vain yhdellä myyntisuunnitelmalla.",
+        "shipping_address_not_required": "Tälle ostoskoriille ei tarvita toimitusta",
+        "shipping_address_invalid": "Kuljetuskulujen laskennassa ilmeni ongelma. Siirry maksusivulle valitaksesi kuljetusmaksun ennen tilauksesi vahvistamista.",
+        "selling_plan_not_applicable": "Variaatiolle ei voi soveltaa myyntisuunnitelmaa",
+        "selling_plan_not_available_for_company_locations": "B2B-tilauksissa voi käyttää vain kertaluonteista ostoa",
+        "digital_product_not_available_for_company_locations": "Tätä tuotetta ei voi lisätä B2B-tilaukseen",
+        "product_not_available": "Tuote ei ole saatavilla",
+        "more_than_maximum": "Tämän kohteen enimmäisarvo on %{max}.",
+        "not_respect_step": "Voit lisätä tämän tuotteen vain %{step} arvojen kerrannaisina.",
+        "bundle_requires_components": "'%{name}' nimistä pakettituotetta ei voi lisätä ostoskoriin.",
+        "gift_card_with_components_not_supported": "\"%{name}\" nimistä pakettituotetta ei voi lisätä ostoskoriin.",
+        "view_lines_limit_reached": "Rivien määrä saa olla enintään %{limit} tai vähemmän",
+        "merchandise_line_transformers": {
+          "run_error": "Ostoskoriisi tuli virhe."
+        },
+        "gift_card_price_must_be_greater_than_zero": "'%{name}' nimistä pakettituotetta ei voi lisätä ostoskoriin.",
+        "cart_too_large": "Korit ovat hyvin suuria.",
+        "gift_card_recipient_validation_error": "Määrätty lahjakortin vastaanottaja on virheellinen",
+        "invalid_input": "%{parameter} parametrisi on virheellinen.",
+        "buyer_cannot_purchase_for_company_locations": "Tässä sijainnissa et voi tehdä ostoksia",
+        "only_one_added_to_cart": "Varastotilanteen vuoksi ostoskoriisi lisättiin vain 1 tuote.",
+        "only_n_added_to_cart": "Varastotilanteen vuoksi ostoskoriisi lisättiin vain %{quantity} tuotetta.",
+        "maximum_available_quantity_reached": "Ostoskoriisi on jo lisätty tämän tuotteen enimmäismäärä.",
+        "merchandise_not_applicable": "Tuotetta ei voi ostaa määritellyssä kokoonpanossaan.",
+        "not_found": "Korit eivät löytyneet"
       }
     },
     "filters": {
