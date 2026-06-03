@@ -600,7 +600,20 @@
         "email_rollup_accessibility_label": "Sähköpostivaihtoehdot",
         "phone_rollup_accessibility_label": "Puhelinvaihtoehdot",
         "phone_country_code_label": "Puhelinnumeron suuntanumero",
-        "optional_subdistrict_label": "Semt (valinnainen)"
+        "optional_subdistrict_label": "Semt (valinnainen)",
+        "title": "Tieto",
+        "state_label": "Eyalet",
+        "state_placeholder": "Eyalet",
+        "state_and_territory_label": "Lääni/alue",
+        "state_and_territory_placeholder": "Lääni/alue",
+        "zip_code_label": "Postaa kotiin",
+        "zip_code_placeholder": "Postaa kotiin",
+        "region_none": "Yhtään ei valittu",
+        "ship_to_company": "Lähettäjä: {{companyName}}",
+        "shipping_used_as_billing_notice": "Tätä osoitetta käytetään myös kyseisen tilauksen voimassa olevana laskutusosoitteena.",
+        "storefront_link": "myyjän verkkosivusto",
+        "suburb_label": "Maitotuote",
+        "subdistrict_label": "Semt"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Nopea maksu",
@@ -654,6 +667,53 @@
       },
       "address_management": {
         "saved_with_store": "Tässä kaupassa rekisteröity"
+      },
+      "delivery_options": {
+        "none_method_definition": "Ei rahtia",
+        "company_location_no_address_banner": "Osoitetta vailla olevat toimituspaikat lähetetään tarkastettaviksi."
+      },
+      "customer_account": {
+        "not_user_label": "Etkö ole %{first_name}?",
+        "save_my_information_label": "Seuraavaa toimenpidettä varten tallenna nämä tiedot",
+        "incomplete_address": "Valitussa osoitteessa on puutteita. %{update_address_link} tai valitse eri osoite.",
+        "invalid_address": "Valittu osoite on virheellinen. %{update_address_link} tai valitse eri osoite.",
+        "invalid_shipping_method_summary": "Näytä käytettävissä olevat toimitustavat valitsemalla voimassa oleva toimitusosoite.",
+        "saved_address_option_description": {
+          "one": "Sinulla on {{count}} tallennettua osoitetta."
+        }
+      },
+      "customer_payment_methods": {
+        "delete_customer_mandate": {
+          "generic_error": "Pyyntöäsi käsitettäessä tapahtui virhe.",
+          "success_message": "Maksutapasi on poistettu onnistuneesti"
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Loppuunmyyty tuote",
+          "other": "Loppuunmyydyt tuotteet"
+        },
+        "products_not_available": {
+          "one": "Tuote poistetaan ostoskoristasi, koska se ei ole saatavilla maassasi/alueellasi.",
+          "other": "Koska nämä tuotteet eivät ole saatavilla maassasi/alueellasi, ne poistetaan ostoskoristasi."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Tämä tuote ei ole saatavilla maassasi/alueellasi.",
+          "other": "Nämä tuotteet eivät ole saatavilla maassasi/alueellasi."
+        }
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Ei toimituspalvelua saatavilla %{count} tuotteelle",
+            "other": "Ei toimituspalvelua saatavilla %{count} tuotteelle"
+          },
+          "message": {
+            "one": "Ostoskoriisi poistetaan tämä tuote, koska osoitteeseesi ei ole saatavilla toimitustapaa.",
+            "other": "Ostoskoristasi poistetaan nämä tuotteet, koska osoitteeseesi ei ole saatavilla toimitustapaa."
+          },
+          "label": "Toimituspalvelua ei ole"
+        }
       }
     }
   }
