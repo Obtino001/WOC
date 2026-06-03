@@ -3463,7 +3463,66 @@
       "invalid_for_card_type": "غير صالح",
       "expired": "انتهت المدة",
       "invalid_expiry_year": "سنة انتهاء صلاحية غير صالحة",
-      "blocked_address": "هذا الموقع غير مدعوم"
+      "blocked_address": "هذا الموقع غير مدعوم",
+      "taken": "تم شراؤه بالفعل",
+      "too_short": "قصير جدًا (الحد الأدنى للقيمة %{count} أحرف)",
+      "too_long": "طويل جدًا (الحد الأقصى %{count} حرفًا)",
+      "password_mismatch": "يجب أن تتطابق مع كلمة المرور المقدمة",
+      "invalid_for_country": "غير صالح لـ %{country}",
+      "invalid_for_country_and_province": "غير صالح لـ %{province} و %{country}",
+      "invalid_province_in_country": "ليست محافظة صالحة لـ %{country}",
+      "invalid_state_in_country": "ليست ولاية صالحة لـ %{country}",
+      "invalid_region_in_country": "ليست منطقة صالحة لـ %{country}",
+      "less_than_or_equal_to": "يجب أن يكون أقل من أو يساوي %{count}",
+      "not_supported": "غير مدعوم",
+      "invalid_type": "عذرًا، نحن لا نقبل هذا النوع من البطاقات",
+      "invalid_format": "النمط غير صالح",
+      "invalid_start_date_or_issue_number_for_debit": "تاريخ بدء صالح أو رقم تعديل مطلوب",
+      "reset_password_html": "عنوان البريد الإلكتروني هذا مرتبط بالفعل بحساب. إذا كان هذا الحساب يخصك، يمكنك <a href=\"/account/login#recover\">إعادة تعيين كلمة المرور الخاصة بك</a>",
+      "verify_email": "لقد أرسلنا بريدًا إلكترونيًا إلى %{customer_email}، يرجى النقر على الرابط المرفق لتأكيد عنوان بريدك الإلكتروني.",
+      "product_not_available": "المنتج غير منشور لهذا العميل.",
+      "shop_404": {
+        "title": "أنشئ موقع تجارة إلكترونية وقم بالبيع عبر الإنترنت! برنامج التجارة الإلكترونية المقدم من Shopify",
+        "heros": {
+          "store_unavailable": "عذرًا، هذا المتجر غير متاح حاليًا.",
+          "store_not_exist": "هذا المتجر غير متوفر.",
+          "no_storefront": "لا يوجد لهذا المتجر موقع ويب على الإنترنت حتى الآن."
+        },
+        "links": {
+          "explore_other_stores": "اكتشف المتاجر الأخرى",
+          "start_free_trial": "ابدأ تجربة مجانية"
+        },
+        "owner_ctas": {
+          "header": "هل أنت صاحب المتجر؟",
+          "fix_domain": "لإكمال إعداد عنوان الويب الجديد الخاص بك، انتقل إلى %{domain_settings_link}. انقر على \"ربط النطاق\" وأدخل %{domain}.<br>إذا واجهت مشكلة في الدخول إلى متجرك، جرب صفحة %{forgot_your_store_link}.",
+          "fix_domain_link_text": "إعدادات اسم النطاق الخاص بك",
+          "forgot_your_store_link_text": "هل نسيت متجرك؟",
+          "add_storefront": "يمكنك إعداد موقعك الإلكتروني عن طريق إضافة %{admin_link} متجرك عبر الإنترنت. إذا واجهت مشكلة في تسجيل الدخول إلى متجرك، جرب صفحة %{forgot_your_store_link}.",
+          "admin_link_text": "في مديرك"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "قم بالبيع وجهًا لوجه",
+            "caption": "امتلك الميزات التي تحتاجها لتشغيل متجر التجزئة الذي أنشأته حديثًا أو الذي توسعته.",
+            "link_text": "ابدأ التجربة المجانية"
+          },
+          "open_a_store": {
+            "header": "افتح متجر Shopify جديدًا",
+            "caption": "ابدأ تجربة مجانية لمدة 3 أيام، واستمر في الاستخدام مقابل 1 دولار أمريكي شهريًا خلال الأشهر الثلاثة التالية.",
+            "link_text": "سجل الآن"
+          },
+          "editions": {
+            "header": "اطلع على إصدارات Shopify",
+            "caption": "مع أكثر من 100 تحديث للمنتجات، يمكنك أن تكون أكثر إنتاجية وإبداعًا وقوة في التجارة مما كنت تحلم به.",
+            "link_text": "اكتشف أحدث الإصدارات"
+          },
+          "store_owner": {
+            "header": "هل أنت صاحب المتجر؟",
+            "caption": "هل تواجه مشكلة في تسجيل الدخول إلى متجرك؟ جرب ميزة %{forgot_your_store_link}. إذا كنت ترغب في إعادة تفعيل متجرك، فاتصل بـ %{shopify_support_link}.",
+            "shopify_support_link_text": "فريق دعم Shopify"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
@@ -3506,6 +3565,31 @@
       "sms_unsubscribe_confirm": {
         "message": "هل أنت متأكد من رغبتك في إلغاء اشتراكك في التسويق عبر الرسائل النصية؟",
         "button": "إلغاء الاشتراك"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "مدعوم من قبل Shopify",
+      "learn_more": "اختر المزود"
+    },
+    "feed": {
+      "more": "المزيد"
+    },
+    "notices": {
+      "address": {
+        "created": "تم إنشاء العنوان بنجاح",
+        "deleted": "تم حذف العنوان بنجاح"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "متوفر في المخزون",
+          "out_of_stock": "غير متوفر في المخزون"
+        }
+      },
+      "boolean": {
+        "true_label": "نعم",
+        "false_label": "لا"
       }
     }
   },
