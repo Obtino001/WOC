@@ -2622,14 +2622,70 @@
         "breadcrumbs_in_review": "Tarkastellaan",
         "first_payment_complete": "Ensimmäinen maksu suoritettu",
         "gift_card_confirmation_by_email_typ": {
-          "one": "Muutaman minuutin kuluessa saat sähköpostin, joka sisältää lahjakorttisi."
+          "one": "Muutaman minuutin kuluessa saat sähköpostin, joka sisältää lahjakorttisi.",
+          "other": "Muutaman minuutin kuluessa saat sähköpostin, joka sisältää lahjakorttisi."
         },
         "failed_pending_payment_page_title": "Maksussasi ilmeni ongelma",
         "company_location_section_title": "Yritys ja sijainti",
         "confirmed_items_count": "%{total_count} tuotteesta %{confirmed_count} on vahvistettu",
         "checkout_on_remote_shop_link_text": "Maksa %{remoteShopName}-kaupassa",
         "checkout_again": "Yritä maksaa uudelleen",
-        "cashback_notice": "Saat nakit iadenizi 30 päivän kuluttua."
+        "cashback_notice": "Saat nakit iadenizi 30 päivän kuluttua.",
+        "order_status_confirmed_order_with_email": "Saat sähköpostin, kun tilauksesi on valmis.",
+        "order_status_confirmed_order_with_phone": "Voit saada tekstiviestin, kun tilauksesi on valmis.",
+        "order_status_confirmed_order_with_email_and_phone": "Saat tilauksesi on valmis, saat sähköpostin.",
+        "in_transit_title": "Tilauksesi valmistellaan",
+        "in_transit_description": "Saat tilauksesi tilasta päivityksiä.",
+        "in_transit_description_days": "Tilauksesi odotetaan saapuvan seuraavan %{number} päivän kuluessa.",
+        "in_transit_description_today": "Tilauksesi odotetaan saapuvan tänään.",
+        "in_transit_description_tomorrow": "Tilauksesi odotetaan saapuvan seuraavien päivien aikana.",
+        "login_title": "Näytä kaikki tilauksen tiedot kirjautumalla sisään",
+        "login_description": "Voit löytää tilausnumerosi sähköpostitse saamastasi kuittista.",
+        "login_description_phone": "Saat tekstiviestillä saamastasi kuittista tilausnumerosi.",
+        "login_not_customer_html": "Etkö ole %{name}? %{link}",
+        "login_reorder_link_text": {
+          "one": "Voit ostaa myös tämän tuotteen",
+          "other": "Voit ostaa myös nämä tuotteet"
+        },
+        "marker": {
+          "current": "Nykyinen lähetyksen sijainti"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Lähetämme sinulle sähköpostin, kun tilauksesi on valmis noudettavaksi.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Lähetämme sähköpostin ja tekstiviestin, kun tilauksesi on valmis noudettavaksi.",
+        "order_status_confirmed_order_local": "Valmistelemme tilaustasi toimitusta varten.",
+        "gift_card_sent_confirmation": "Lahjakortit on lähetetty",
+        "let_us_know": "Ilmoita meille",
+        "gift_card_confirmation_by_text": "Jos viestiä ei ole tullut, lähetä tekstiviesti uudelleen tai ota meihin yhteyttä.",
+        "order_status_confirmed_order_with_email_payment": "Maksoit tilauksesi %{date} päivänä.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Maksoit tilauksesi %{date} päivänä.",
+        "missing_shipping_address_banner": {
+          "title": "Tilauksella ei ole toimitusosoitetta",
+          "text_html": "Lisätäksesi osoitteesi, %{contact_us}",
+          "contact_us": "ota meihin yhteyttä"
+        },
+        "in_store_purchase": "Myymäläostokset",
+        "manage_order_label": "Hallitse tilaustasi",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Muutaman minuutin kuluessa saat tekstiviestin, joka sisältää lahjakorttisi.",
+          "other": "Muutaman minuutin kuluessa saat tekstiviestin, joka sisältää lahjakorttisi."
+        },
+        "gift_card_email_title": {
+          "other": "Lahjakortit on lähetetty sähköpostitse"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "Lahjakortti lähetetty uudelleen",
+          "other": "Lahjakortit on lähetetty uudelleen"
+        },
+        "gift_card_resend_failure": {
+          "one": "Lahjakorttisi uudelleenlähetyksessä ilmeni ongelma. Yritä uudelleen tai ota meihin yhteyttä.",
+          "other": "Lahjakorttienne uudelleenlähetyksessä ilmeni ongelma. Yritä uudelleen tai ota meihin yhteyttä."
+        },
+        "order_status_confirmed_order_local_pick_up": "Valmistamme tilaustasi.",
+        "order_status_confirmed_order_local_payment": "Valmistamme tilaustasi.",
+        "items_fulfilled_by_store": {
+          "one": "Ostamasi tuotteet lähetetään %{remote_shop_name} toimesta.",
+          "other": "Ostamasi tuotteet lähetetään muista myymälöistä."
+        }
       }
     }
   }
