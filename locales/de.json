@@ -3242,7 +3242,60 @@
     "notices": {
       "address": {
         "created": "Adresse wurde erfolgreich erstellt",
-        "deleted": "Adresse wurde erfolgreich gelöscht"
+        "deleted": "Adresse wurde erfolgreich gelöscht",
+        "updated": "Adresse wurde erfolgreich aktualisiert.",
+        "error_updating": "Beim Aktualisieren der Adresse ist ein Fehler aufgetreten",
+        "error_creating": "Beim Erstellen der Adresse ist ein Fehler aufgetreten.",
+        "error_deleting": "Beim Löschen der Adresse ist ein Fehler aufgetreten."
+      },
+      "customer": {
+        "no_account_found": "Mit dieser E-Mail konnte kein Konto gefunden werden.",
+        "invalid_credentials": "Falsche E-Mail oder falsches Passwort.",
+        "denylisted_reset_password": "Da das aktuelle Passwort nicht sicher ist, konnte nicht auf Ihr Konto zugegriffen werden. Sie erhalten eine E-Mail, um Ihr Passwort zu aktualisieren.",
+        "signup_disabled": "Die Erstellung von Kundenkonten wurde deaktiviert",
+        "unsubscribe_error": "Fehler beim Abbestellen des Abonnements"
+      },
+      "cart": {
+        "only_n_items_available": "Sie können nur %{count} %{name} zum Warenkorb hinzufügen.",
+        "too_many_items_in_cart": "Sie können nicht mehr %{name} zum Warenkorb hinzufügen.",
+        "all_items_in_cart": "Alle %{count} %{name} in Ihrem Warenkorb.",
+        "empty_update": "Der leere Warenkorb kann nicht aktualisiert werden",
+        "missing_parameters": "gültige ID- oder Zeilenparameter fehlen",
+        "generic_error": "Warenkorbfehler",
+        "too_many_line_items_error": "In Ihrem Warenkorb können maximal %{max} Artikel enthalten sein.",
+        "link_expired": "Die Verbindung ist abgelaufen",
+        "link_no_longer_exists": "Die Verbindung ist nicht mehr verfügbar.",
+        "stock_problems_html": "Ein oder mehrere Produkte sind nicht mehr verfügbar. Wir haben einen <a href='%{link}'>aktualisierten Warenkorb</a> bereitgestellt.",
+        "changed": "Warenkorb wurde geändert",
+        "items_changed": "Ein oder mehrere Produkte haben sich geändert.",
+        "product_sold_out": "Das Produkt \"%{name}\" ist bereits ausverkauft.",
+        "variant_not_found": "Keine Varianten verfügbar",
+        "variant_requires_selling_plan": "Variationen können nur mit einem Verkaufsplan gekauft werden.",
+        "shipping_address_not_required": "Für diesen Warenkorb ist kein Versand erforderlich",
+        "shipping_address_invalid": "Bei der Berechnung Ihrer Versandkosten ist ein Problem aufgetreten. Bitte gehen Sie zur Zahlungsseite, um die Versandkosten auszuwählen, bevor Sie Ihre Bestellung abschließen.",
+        "selling_plan_not_applicable": "Der Verkaufsplan für die Variation kann nicht angewendet werden",
+        "selling_plan_not_available_for_company_locations": "Für B2B-Bestellungen ist nur Einmalkauf möglich",
+        "digital_product_not_available_for_company_locations": "Dieses Produkt kann nicht zur B2B-Bestellung hinzugefügt werden",
+        "product_not_available": "Produkt nicht verfügbar",
+        "less_than_minimum": "Für diesen Artikel gilt ein Mindestwert von %{min}.",
+        "more_than_maximum": "Für diesen Artikel beträgt der Höchstwert %{max}.",
+        "not_respect_step": "Diesen Artikel können Sie nur in Vielfachen von %{step} hinzufügen.",
+        "bundle_requires_components": "Das Paketprodukt '%{name}' kann nicht zum Warenkorb hinzugefügt werden.",
+        "gift_card_with_components_not_supported": "Das Paketprodukt \"%{name}\" kann nicht zum Warenkorb hinzugefügt werden.",
+        "view_lines_limit_reached": "Die Anzahl der Zeilen muss %{limit} oder weniger betragen",
+        "merchandise_line_transformers": {
+          "run_error": "In Ihrem Warenkorb ist ein Fehler aufgetreten."
+        },
+        "gift_card_price_must_be_greater_than_zero": "Das Paketprodukt '%{name}' kann nicht zum Warenkorb hinzugefügt werden.",
+        "cart_too_large": "Der Korb ist sehr groß.",
+        "gift_card_recipient_validation_error": "Der angegebene Empfänger der Geschenkkarte ist ungültig",
+        "invalid_input": "%{parameter} Parameter ist ungültig.",
+        "buyer_cannot_purchase_for_company_locations": "An diesem Standort können Sie keinen Kauf tätigen",
+        "only_one_added_to_cart": "Aufgrund des Lagerbestands wurde nur 1 Artikel in Ihren Warenkorb gelegt.",
+        "only_n_added_to_cart": "Aufgrund des Lagerbestands wurden nur %{quantity} Artikel zu Ihrem Warenkorb hinzugefügt.",
+        "maximum_available_quantity_reached": "In Ihrem Warenkorb befindet sich bereits die maximale Menge dieses Produkts.",
+        "cart_attributes_error": "Der Warenkorb enthält ungültige Daten.",
+        "merchandise_not_applicable": "Das Produkt kann nicht in der konfigurierten Form gekauft werden."
       }
     },
     "filters": {
