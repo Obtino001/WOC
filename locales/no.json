@@ -2576,7 +2576,81 @@
           "default": "Prime-levering er ikke tilgjengelig for bestillingen din. Fraktalternativene dine er oppdatert."
         },
         "shipping_address_rollup_accessibility_label": "Fraktadressevalg",
-        "invalid_shipping_method_summary_selected": "Fjern en annen leveringsadresse for å se hvilke fraktmetoder du kan bruke"
+        "invalid_shipping_method_summary_selected": "Fjern en annen leveringsadresse for å se hvilke fraktmetoder du kan bruke",
+        "shipping_method_title": "Fraktmetode",
+        "shipping_rate_discounted_amount": "Forrige beløp: %{original_amount}. Nåværende beløp: %{amount}",
+        "shipping_method_one_time_purchase_group_title": "Engangskjøp",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "For %{count} leveranser",
+            "other": "For %{count} leveranser"
+          },
+          "multiple_subscriptions_shipping_price_label": "Per levering %{shipping_price}",
+          "initial_order_discounted": "Første fraktkostnad %{discounted_shipping_cost}, deretter %{frequency_description}",
+          "first_order_shipping_price_included": "Første bestilling inkludert, deretter %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (per levering %{per_delivery_price}), deretter %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Første bestilling er gratis",
+            "other": "De første %{count} bestillingene er gratis"
+          },
+          "free_for_first_n_order": {
+            "one": "For første bestilling",
+            "other": "For de første %{count} bestillingene"
+          },
+          "free_shipping_cycles": {
+            "one": "Gratis frakt for de andre %{count} leveransene",
+            "other": "Gratis frakt for de andre %{count} leveransene"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Gratis frakt for %{count} leveranser",
+            "other": "Gratis frakt for %{count} leveranser"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Gratis frakt for %{count} flere leveranser, deretter %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for %{count} flere leveranser, deretter %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Gratis frakt for %{count} leveranser, deretter %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for %{count} leveranser, deretter %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "For de %{count} andre leveransene koster det %{shipping_price}",
+            "other": "For de andre %{count} leveransene, %{shipping_price} per levering"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} leveranser for %{shipping_price}",
+            "other": "For de andre %{count} leveransene, %{shipping_price} per levering"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Gratis frakt for første %{cycle}, deretter %{recurring_order_shipping_price}"
+          }
+        },
+        "shipping_used_as_billing_notice": "Denne adressen vil også bli brukt som din gyldige fakturaadresse for den aktuelle bestillingen.",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Gjentatt frakt",
+          "other": "Gjentatte forsendelser"
+        },
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} elementer",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} flere enheter",
+        "split_shipping_merchandise_shipment_number": "Frakt %{number}/%{total}",
+        "split_shipping_shipped_by_shop": "Sendt av %{shop_name}",
+        "split_shipping_multiple_shipment_label": "Flere forsendelser",
+        "split_shipping_shipping_label": "Metode",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} frakt",
+        "split_shipping_multiple_shipment_notice": "Bestillingen din vil bli levert med flere forsendelser",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Bestillingen din vil bli levert med %{quantity} forsendelser",
+        "split_shipping_more_shipping_options": "Andre fraktalternativer",
+        "split_shipping_shipment_number": "Frakt %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Antall: %{quantity}",
+        "split_shipping_option_free": "Gratis frakt",
+        "split_shipping_option_lowest_price": "Laveste pris",
+        "split_shipping_option_fastest": "Den raskeste",
+        "split_shipping_option_recommended": "Anbefalt",
+        "split_shipping_option_custom": "Spesiell",
+        "split_shipping_shipment_notice": "Bestillingen din vil komme i %{quantity_shipments} leveranser",
+        "split_shipping_first_shipment_notice": "Din første bestilling vil komme i %{quantity_shipments} forsendelser",
+        "shipping_method_rollup_accessibility_label": "Fraktmetodevalg"
       },
       "session_errors": {
         "session_not_unique": "Det oppstod et problem under behandlingen av bestillingen din. Oppdater denne siden for å gå tilbake til butikken.",
