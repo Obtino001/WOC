@@ -345,7 +345,7 @@
       "next_slideshow": "Seuraava dia",
       "pause_slideshow": "Keskeytä diaesitys",
       "play_slideshow": "Toista diaesitys",
-      "carousel": "Karuselli",
+      "carousel": "Silmukka",
       "slide": "Dia"
     },
     "page": {
@@ -360,11 +360,11 @@
     },
     "quick_order_list": {
       "product_total": "Tuotteen välisumma",
-      "view_cart": "Katso ostoskori",
+      "view_cart": "Näytä kori",
       "each": "{{ money }}/kpl",
       "product": "Tuote",
-      "variant": "Versio",
-      "variant_total": "Versioiden summa",
+      "variant": "Vaihtelu",
+      "variant_total": "Variaatioiden summa",
       "items_added": {
         "one": "{{ quantity }} tuotetta lisätty",
         "other": "{{ quantity }} tuotetta lisätty"
@@ -374,14 +374,14 @@
         "other": "{{ quantity }} tuotetta poistettu"
       },
       "product_variants": "Tuotevariaatiot",
-      "total_items": "Tuotteita yhteensä",
-      "remove_all_items_confirmation": "Poistetaanko kaikki {{ quantity }} tuotetta ostoskorista?",
+      "total_items": "Tuotteiden kokonaismäärä",
+      "remove_all_items_confirmation": "Poistetaanko kaikki {{ quantity }} tuotetta korista?",
       "remove_all": "Poista kaikki",
       "cancel": "Peruuta",
       "remove_all_single_item_confirmation": "Poistetaanko 1 tuote ostoskorista?",
       "min_error": "Tämän tuotteen vähimmäisarvo: {{ min }}",
       "max_error": "Tämän tuotteen enimmäisarvo: {{ max }}",
-      "step_error": "Voit lisätä tätä tuotetta vain {{ step }}:n lisäyksinä"
+      "step_error": "Voit lisätä tämän tuotteen vain {{ step }} suuruisina erinä."
     }
   },
   "localization": {
