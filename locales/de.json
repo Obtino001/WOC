@@ -3008,6 +3008,48 @@
         "title": "Zu viele Zahlungsversuche",
         "body": "Bitte warten Sie einige Minuten und versuchen Sie es dann erneut in Ihrem Warenkorb.",
         "body_no_cart": "Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+      },
+      "wallets": {
+        "errors": {
+          "generic": "Bei {{walletName}} ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+          "detour": {
+            "stock_problems": "Einige Produkte sind nicht mehr verfügbar. Bitte schließen Sie {{walletName}} und versuchen Sie es erneut.",
+            "price_change": "Einige Produktpreise haben sich geändert. Bitte schließen Sie die {{walletName}}-App und versuchen Sie es erneut, um Ihre Bestellung zu überprüfen.",
+            "queue": "Sie wurden zur Warteschlange für die Auszahlung hinzugefügt. Um fortzufahren, schließen Sie die {{walletName}}-App.",
+            "currency_change": "{{walletName}} kann nicht mit einer anderen Adresse verwendet werden. Verwenden Sie die ursprüngliche Adresse oder probieren Sie eine andere Zahlungsmethode aus."
+          },
+          "invalid": {
+            "shipping_address": "Geben Sie eine gültige Versandadresse ein",
+            "billing_address": "Geben Sie eine gültige Rechnungsadresse ein",
+            "shipping_option": "Wählen Sie eine gültige Versandoption aus",
+            "email": "Geben Sie eine gültige E-Mail-Adresse ein",
+            "zone": "Geben Sie einen gültigen Bundesstaat/ein gültiges Bundesland ein",
+            "postal_code": "Geben Sie eine gültige Postleitzahl ein",
+            "reduction_code": "Geben Sie einen gültigen Rabattcode oder eine Geschenkkarte ein",
+            "phone": "Geben Sie eine gültige Telefonnummer ein",
+            "emirate": "Geben Sie ein gültiges Emirat ein",
+            "billing_zone": "Geben Sie eine gültige Stadt/einen gültigen Bezirk für die Rechnungsadresse ein",
+            "billing_phone": "Geben Sie eine gültige Telefonnummer für die Rechnungsadresse ein",
+            "billing_zip": "Geben Sie eine gültige Postleitzahl für die Rechnungsadresse ein"
+          },
+          "missing": {
+            "address1": "Adresse eingeben",
+            "address2": "Geben Sie eine Wohnung, ein Apartment usw. ein"
+          },
+          "formatting": {
+            "name_contains_emojis": "Löschen Sie das Emoji in Ihrem Namen",
+            "postal_code_contains_emoji": "Entfernen Sie das Emoji in Ihrem Postleitzahlfeld",
+            "first_name_too_long": "Anzeige enthält zu viele Buchstaben",
+            "last_name_too_long": "Der Nachname enthält zu viele Buchstaben",
+            "address_too_long": "Die Adresszeile ist zu lang"
+          },
+          "discount_code": "Dieser Rabattcode kann nicht angewendet werden. Bitte überprüfen Sie Ihren Code und versuchen Sie es erneut."
+        }
+      },
+      "units": {
+        "liter": "L",
+        "gallon": "Gal",
+        "item": "Produkt"
       }
     }
   }
