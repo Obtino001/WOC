@@ -2917,7 +2917,20 @@
           },
           "missing": {
             "address1": "Syötä osoite",
-            "address2": "Syötä asunto, huoneisto tms."
+            "address2": "Syötä asunto, huoneisto tms.",
+            "first_name": "Kirjaudu sisään",
+            "last_name": "Syötä sukunimi",
+            "city": "Syötä kaupunki",
+            "province": "Valitse osavaltio/maakunta",
+            "zip": "Syötä postinumero",
+            "phone": "Syötä puhelinnumero",
+            "billing_first_name": "Syötä henkilön nimi laskutusosoitteeseen",
+            "billing_address1": "Syötä laskutusosoite",
+            "billing_address2": "Syötä laskutusosoitteeseen talo, asunto tms.",
+            "billing_city": "Syötä kaupunki laskutusosoitteeseen",
+            "billing_province": "Valitse osavaltio/kaupunki laskutusosoitetta varten",
+            "billing_zip": "Syötä laskutusosoitteen postinumero",
+            "contact_info": "Syötä yhteystiedot"
           },
           "formatting": {
             "name_contains_emojis": "Poista nimesi emoji",
@@ -2925,8 +2938,38 @@
             "first_name_too_long": "Mainos sisältää liikaa kirjaimia",
             "last_name_too_long": "Sukunimi sisältää liikaa kirjaimia"
           },
-          "discount_code": "Tätä alennuskoodia ei voi käyttää. Tarkista koodisi ja yritä uudelleen."
-        }
+          "discount_code": "Tätä alennuskoodia ei voi käyttää. Tarkista koodisi ja yritä uudelleen.",
+          "unavailable": {
+            "instructions": "{{walletName}} Al -palvelussa ilmeni ongelma. Palaa kauppaan yrittääksesi uudelleen tai käytä toista maksutapaa.",
+            "unavailable_for_country": "{{walletName}} ei ole saatavilla sijainnissa {{countryName}}. Valitse toinen maksutapa oston viimeistelemiseksi."
+          },
+          "terminal": "{{walletName}}-lompakossa ilmeni ongelma. Käytä toista maksutapaa.",
+          "unsupported": {
+            "address": "Myyjä ei voi toimittaa valitsemaasi osoitteeseen.",
+            "wallet_is_unavailable": "{{walletName}} ei voi käyttää tällä osoitteella. Viimeistele ostoksesi valitsemalla eri osoite tai sulkemalla {{walletName}}-lompakko."
+          },
+          "outdated": {
+            "shipping_method": "Tilauksesi toimitusvaihtoehdot ovat muuttuneet. Tarkista valintasi.",
+            "payment_terms": "Maksuehdot on muutettu. Tarkista tilauksesi."
+          },
+          "select_different_shipping_address_to_resolve_errors": "Toimitusosoitteesi on virheellinen. Valitse toinen osoite tai käytä uutta osoitetta.",
+          "unavailable_terminal": {
+            "instructions": "Tällä hetkellä {{walletName}} ei ole käytettävissä tilauksesi tekemiseen. Valitse toinen maksutapa jatkaaksesi ostotapahtumaa."
+          },
+          "processing_error_checkout_as_guest": "Maksun käsittelyssä ilmeni ongelma. Yritä uudelleen tai {{checkout_as_guest_link}}.",
+          "subscription_review_required": "Tilauksesi sisältää tilauksen. Ennen kuin viimeistelet tilauksesi, sinun tulee tutustua alla oleviin ehtoihin."
+        },
+        "redirect_hint": "Sinua pyydetään kirjautumaan sisään {{walletName}}-tililläsi.",
+        "logged_in": "Yhdistetty {{email}}-osoitteeseen",
+        "shipping_line_label": "Kargo",
+        "payment_in_progress_body": "Maksusi käsitellään. Tilauksesi valmistuu pian.",
+        "redirection_notice": "Ostotapahtuman viimeistelyä varten sinut ohjataan osoitteeseen {{walletName}}",
+        "return_to_checkout": "Maksuun takaisin",
+        "scrim": {
+          "continue_purchase_in_window": "Jatka ostotapahtumaa {{walletName}}-ikkunassa",
+          "and_return_to_checkout": "Palaa maksusivulle"
+        },
+        "recovery_notice": "Tilaustiedoissasi ilmeni ongelma. Päivitä tietosi maksun suorittamiseksi."
       },
       "vaulted": {
         "change_button": "Vaihda"
@@ -2940,6 +2983,20 @@
         "inch": "sisään",
         "foot": "jalka"
       }
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Esillä oleva",
+        "best_selling": "Eniten myyty",
+        "az": "Aakkosjärjestyksessä, A–Ö",
+        "date_ascending": "Historia, vanhasta uuteen",
+        "date_descending": "Historia, uudelleen takaperin",
+        "most_relevant": "Ei liity tähän"
+      }
+    },
+    "checkpoint": {
+      "message": "Jatka ratkaisemalla Captcha",
+      "error": "Captcha-tarkistus epäonnistui"
     }
   }
 }

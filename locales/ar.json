@@ -3332,7 +3332,21 @@
           },
           "missing": {
             "address1": "أدخل العنوان",
-            "address2": "أدخل شقة، وحدة سكنية، إلخ."
+            "address2": "أدخل شقة، وحدة سكنية، إلخ.",
+            "first_name": "أدخل الإعلان",
+            "last_name": "أدخل اسم العائلة",
+            "city": "أدخل المدينة",
+            "province": "اختر الولاية/المحافظة",
+            "country": "اختر الدولة/المنطقة",
+            "zip": "أدخل الرمز البريدي",
+            "phone": "أدخل رقم الهاتف",
+            "billing_first_name": "أدخل اسم شخص في عنوان الفاتورة",
+            "billing_address1": "أدخل عنوان الفاتورة",
+            "billing_address2": "أدخل المبنى، الشقة، إلخ في عنوان الفاتورة",
+            "billing_city": "أدخل المدينة في عنوان الفاتورة",
+            "billing_province": "اختر المحافظة/المنطقة لعنوان الفاتورة",
+            "billing_zip": "أدخل الرمز البريدي لعنوان الفاتورة",
+            "contact_info": "أدخل معلومات الاتصال"
           },
           "formatting": {
             "name_contains_emojis": "احذف الإيموجي في اسمك",
@@ -3341,8 +3355,45 @@
             "last_name_too_long": "اللقب يحتوي على حروف كثيرة جدًا",
             "address_too_long": "سطر العنوان طويل جدًا"
           },
-          "discount_code": "لا يمكن تطبيق رمز الخصم هذا. يرجى مراجعة رمزك والمحاولة مرة أخرى."
-        }
+          "discount_code": "لا يمكن تطبيق رمز الخصم هذا. يرجى مراجعة رمزك والمحاولة مرة أخرى.",
+          "unavailable": {
+            "title": "{{walletName}} غير متاح للاستخدام",
+            "description": "{{walletName}} لم يكن متاحًا. يرجى استخدام طريقة دفع مختلفة أو المحاولة مرة أخرى لاحقًا.",
+            "instructions": "حدثت مشكلة تتعلق بـ {{walletName}}. للعودة والمحاولة مرة أخرى، عد إلى المتجر أو استخدم طريقة دفع مختلفة.",
+            "unavailable_for_country": "{{walletName}} غير متوفر في موقع {{countryName}}. يرجى اختيار طريقة دفع مختلفة لإكمال عملية الشراء."
+          },
+          "terminal": "حدثت مشكلة تتعلق بـ {{walletName}}. يرجى استخدام طريقة دفع مختلفة.",
+          "unsupported": {
+            "address": "البائع غير قادر على التوصيل إلى العنوان الذي اخترته.",
+            "postal_code": "هذا الموقع غير مدعوم",
+            "wallet_is_unavailable": "لا يمكن استخدام {{walletName}} مع هذا العنوان. لإكمال عملية الشراء، اختر عنوانًا مختلفًا أو أغلق محفظة {{walletName}}."
+          },
+          "outdated": {
+            "shipping_method": "تغيرت خيارات الشحن لطلبك. يرجى مراجعة اختيارك.",
+            "payment_terms": "تم تغيير مواعيد الدفع. يرجى مراجعة طلبك"
+          },
+          "select_different_shipping_address_to_resolve_errors": "عنوان الشحن الخاص بك غير صالح. يرجى اختيار عنوان مختلف أو استخدام عنوان جديد.",
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} غير متوفر حالياً لطلبك. يرجى اختيار طريقة دفع أخرى لمتابعة عملية الشراء."
+          },
+          "processing_error_checkout_as_guest": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو {{checkout_as_guest_link}}.",
+          "subscription_review_required": "طلبك يحتوي على اشتراك. يجب عليك مراجعة الشروط التالية قبل إكمال طلبك."
+        },
+        "return_to_store": "العودة إلى المتجر",
+        "redirect_hint": "سيُطلب منك تسجيل الدخول باستخدام حساب {{walletName}} الخاص بك.",
+        "logged_in": "تم الاتصال بـ {{email}}",
+        "shipping_line_label": "الشحن",
+        "payment_in_progress_title": "جاري معالجة الدفع",
+        "payment_in_progress_body": "يتم معالجة دفعتك. سيتم إكمال طلبك في وقت قصير.",
+        "redirection_notice": "سيتم توجيهك إلى {{walletName}} لإكمال عملية الشراء الخاصة بك",
+        "return_to_checkout": "العودة إلى الدفع",
+        "scrim": {
+          "continue_purchase_in_window": "تابع عملية الشراء في نافذة {{walletName}}",
+          "and_return_to_checkout": "والعودة إلى صفحة الدفع",
+          "cancel": "إلغاء"
+        },
+        "place_order": "قدّم طلبك",
+        "recovery_notice": "حدثت مشكلة في معلومات طلبك. يرجى تحديث معلوماتك لإكمال الدفع."
       },
       "vaulted": {
         "change_button": "تغيير"
@@ -3369,6 +3420,21 @@
         "square_foot": "قدم مربع",
         "item": "منتج"
       }
+    },
+    "collections": {
+      "sorting": {
+        "manual": "مميز",
+        "best_selling": "الأكثر مبيعًا",
+        "az": "ترتيب أبجديًا، من الألف إلى الياء",
+        "date_ascending": "التاريخ، من القديم إلى الجديد",
+        "date_descending": "التاريخ، من الجديد إلى القديم",
+        "most_relevant": "الأكثر صلة"
+      }
+    },
+    "checkpoint": {
+      "message": "لحل Captcha للمتابعة",
+      "error": "فشل التحقق من كابتشا",
+      "submit_button_text": "أرسل"
     }
   },
   "recipient": {
