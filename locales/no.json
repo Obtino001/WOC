@@ -3572,7 +3572,66 @@
       "invalid_for_card_type": "ikke gyldig",
       "expired": "tiden er utløpt",
       "invalid_expiry_year": "ikke et gyldig utløpsår",
-      "blocked_address": "Denne plasseringen støttes ikke"
+      "blocked_address": "Denne plasseringen støttes ikke",
+      "taken": "allerede tatt",
+      "too_short": "veldig kort (minimum verdi %{count} tegn)",
+      "too_long": "for langt (maksimal verdi er %{count} tegn)",
+      "password_mismatch": "må samsvare med det angitte passordet",
+      "invalid_for_country": "Gjelder ikke for %{country}",
+      "invalid_for_country_and_province": "Gjelder ikke for %{province} i %{country}",
+      "invalid_province_in_country": "%{country} er ikke en gyldig provins",
+      "invalid_state_in_country": "%{country} er ikke en gyldig delstat",
+      "invalid_region_in_country": "%{country} er ikke et gyldig område",
+      "less_than_or_equal_to": "Må være mindre enn eller lik %{count}",
+      "not_supported": "støttes ikke",
+      "invalid_type": "Beklager, vi godtar ikke denne korttypen",
+      "invalid_format": "formatet er ugyldig",
+      "invalid_start_date_or_issue_number_for_debit": "en gyldig startdato eller redigeringsnummer er nødvendig",
+      "reset_password_html": "Denne e-postadressen er allerede knyttet til en konto. Hvis denne kontoen er din, kan du <a href=\"/account/login#recover\">tilbakestille passordet ditt</a>",
+      "verify_email": "Vi har sendt en e-post til %{customer_email}. Vennligst klikk på lenken i e-posten for å bekrefte e-postadressen din.",
+      "product_not_available": "produktet er ikke publisert for denne kunden.",
+      "shop_404": {
+        "title": "Lag en netthandelsnettsted og selg på nett! E-handelsprogramvare levert av Shopify",
+        "heros": {
+          "store_unavailable": "Beklager, denne butikken er for øyeblikket utilgjengelig.",
+          "store_not_exist": "Denne butikken er ikke tilgjengelig.",
+          "no_storefront": "Denne butikken har ennå ikke en nettbutikk."
+        },
+        "links": {
+          "explore_other_stores": "Utforsk andre butikker",
+          "start_free_trial": "Start gratis prøveperiode"
+        },
+        "owner_ctas": {
+          "header": "Er du butikkens eier?",
+          "fix_domain": "Yeni webadressen din, %{domain_settings_link} giderek ayarlama işlemini tamamlayın. «Koble til domenet» seçeneğine tıklayın ve şunu girin: %{domain}.<br>Butanızı açarken sorun yaşarsanız %{forgot_your_store_link} sayfasını deneyin.",
+          "fix_domain_link_text": "domenenavninnstillingene dine",
+          "forgot_your_store_link_text": "Har du glemt butikken din?",
+          "add_storefront": "%{admin_link} Nettbutikken din kan settes opp ved å legge den til på nettstedet ditt. Hvis du har problemer med å logge inn i butikken din, prøv siden %{forgot_your_store_link}.",
+          "admin_link_text": "I administratoren din"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Selg ansikt til ansikt",
+            "caption": "Ha funksjonene du trenger for å drive din nyåpnede eller voksende detaljhandelbutikk.",
+            "link_text": "Start gratis prøveperiode"
+          },
+          "open_a_store": {
+            "header": "Åpne en ny Shopify-butikk",
+            "caption": "Start en gratis prøveperiode på 3 dager, og fortsett å bruke den i de neste 3 månedene for 1 USD per måned.",
+            "link_text": "Registrer deg nå"
+          },
+          "editions": {
+            "header": "Se gjennom Shopify Editions",
+            "caption": "Med over 100 produktoppdateringer kan du være mye mer produktiv, kreativ og kraftfull i handelen enn du noen gang har drømt om.",
+            "link_text": "Oppdag En son Edition'ları"
+          },
+          "store_owner": {
+            "header": "Er du butikkens eier?",
+            "caption": "Har du problemer med å logge inn i butikken din? Prøv %{forgot_your_store_link}-funksjonen. Hvis du vil aktivere butikken din på nytt, kontakt %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify kundestøtte team"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
@@ -3615,6 +3674,31 @@
       "sms_unsubscribe_confirm": {
         "message": "Er du sikker på at du vil avslutte SMS-markedsføringsabonnementet ditt?",
         "button": "Avslutt abonnementet"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Støttet av Shopify",
+      "learn_more": "Velg leverandør"
+    },
+    "feed": {
+      "more": "Mer"
+    },
+    "notices": {
+      "address": {
+        "created": "Adressen ble opprettet med suksess",
+        "deleted": "Adressen ble slettet vellykket"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Stokta",
+          "out_of_stock": "Ikke på lager"
+        }
+      },
+      "boolean": {
+        "true_label": "Ja",
+        "false_label": "Nei"
       }
     }
   },
