@@ -2926,7 +2926,8 @@
         "thank_you_confirmed_orders_with_phone": "Bestätigungs-SMS mit Ihren Bestellnummern erhalten Sie in Kürze separat.",
         "thank_you_confirmed_orders_with_email_and_phone": "Sipariş numaralarınızla birlikte ayrı onay-E-Mails erhalten Sie in Kürze.",
         "thank_you_unconfirmed_items_description": {
-          "one": "Für dieses Produkt wurde Ihnen noch nichts berechnet."
+          "one": "Für dieses Produkt wurde Ihnen noch nichts berechnet.",
+          "other": "Für diese Produkte wurden Ihnen noch keine Gebühren berechnet"
         },
         "thank_you_from_shop": "aus dem %{shop_name}-Geschäft",
         "thank_you_from_other_store": "Von einem anderen Geschäft",
@@ -2941,7 +2942,72 @@
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Sie erhalten in Kürze eine Bestätigungs-E-Mail.",
           "multi_store": "In Kürze erhalten Sie von jedem Geschäft einzeln Bestätigungs-E-Mails."
+        },
+        "title": "Vielen Dank für Ihren Kauf!",
+        "tracking_number": "Sendungsnummer:",
+        "updated_time": "vor %{time_ago} aktualisiert",
+        "unfulfilled_items_title": "Wird für den Versand vorbereitet",
+        "unfulfilled_items_description": "Wir bereiten diese Produkte gerade für den Versand vor.",
+        "view_business_customer_account": "Konto anzeigen",
+        "vat_invoices": {
+          "title": "KDV-Rechnungen"
+        },
+        "verify_shop_account_title": "Bestätigen Sie Ihr Shop-Konto",
+        "verify_shop_account_message": "Ihre Daten wurden mit Shop gespeichert. Durch die Verifizierung Ihres Kontos können Sie diese Informationen automatisch in Millionen von Geschäften verwenden.",
+        "verify_shop_account_cta": "Bestätigen Sie Ihr Konto",
+        "verify_shop_account_confirmation": "Zahlungsdetails gespeichert",
+        "track_your_order_link_text": "Verfolgen Sie Ihre Bestellung",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 Produkt wurde nicht genehmigt",
+          "other": "Einige Produkte wurden nicht genehmigt"
         }
+      },
+      "tips": {
+        "description": "Zeigen Sie Ihre Unterstützung für das Team im %{shop_name}-Shop",
+        "presets_description": "Bestimmen Sie einen Trinkgeldprozentsatz",
+        "custom_label": "Trinkgeld",
+        "message": "Vielen Dank.",
+        "no_tip_label": "Yok",
+        "not_available_with_spi": "Shop Pay kann nicht mit Ratenzahlung verwendet werden"
+      },
+      "throttle": {
+        "line_to_check_out": "Sie sind in der Warteschlange für die Auszahlung",
+        "cart_summary_heading": "Ihr Warenkorb",
+        "merchandise": {
+          "available": "Vorhanden"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Einige Artikel in Ihrem Warenkorb sind ausverkauft und können auf der Zahlungsseite nicht gekauft werden.",
+          "sold_out": {
+            "heading": "Die Produkte in Ihrem Warenkorb sind ausverkauft",
+            "storefront_body": "Um mit dem Einkaufen fortzufahren, kehren Sie zum Geschäft zurück",
+            "no_storefront_body": "Leider ist das Produkt, das Sie kaufen möchten, nicht mehr verfügbar.",
+            "link": "Zurück zum Geschäft"
+          }
+        },
+        "title": "Schwanz",
+        "time_to_checkout_title": "Zeit zum Bezahlen - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Geschätzte Wartezeit wird berechnet",
+          "one": "Geschätzte Wartezeit: {{count}} Minuten",
+          "other": "Geschätzte Wartezeit: {{count}} Minuten"
+        },
+        "last_checked": "(Son kontrol: {{time}})",
+        "footer": {
+          "heading": "Bitte aktualisieren Sie die Seite nicht. Die Seite wird automatisch aktualisiert.",
+          "body": "Bevor Sie die Zahlung abschließen, werden die Artikel in Ihrem Warenkorb nicht reserviert."
+        },
+        "too_many_attempts": {
+          "description": "Versuchen Sie es in ein paar Minuten noch einmal"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Mehr Informationen über %{context}"
+      },
+      "too_many_requests": {
+        "title": "Zu viele Zahlungsversuche",
+        "body": "Bitte warten Sie einige Minuten und versuchen Sie es dann erneut in Ihrem Warenkorb.",
+        "body_no_cart": "Bitte warten Sie einige Minuten und versuchen Sie es erneut."
       }
     }
   }
