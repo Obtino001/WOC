@@ -1876,7 +1876,81 @@
         "blik_label": "BLIK",
         "billing_address_rollup_accessibility_label": "Fakturaadressevalg",
         "business_customer_with_bank_account_vaulting_payment_label": "Lagre denne betalingsmetoden ved betaling, og gi %{company} tillatelse til å belaste kontoen din for fremtidige kjøp godkjent for denne lokasjonen inntil du avbryter det. Alle personer tilknyttet denne lokasjonen kan bruke denne betalingsmetoden.",
-        "bank_account_vaulted_company_location": "Bankkonto er lagret for denne plasseringen"
+        "bank_account_vaulted_company_location": "Bankkonto er lagret for denne plasseringen",
+        "discount_button_action_label": "Bruk rabattkode",
+        "detected_card_brand": "Oppdaget kortmerke: {brand}",
+        "different_billing_address_label": "Bruk en annen fakturaadresse",
+        "credit_card_start_month": "Startmåned",
+        "credit_card_start_year": "Startår",
+        "change_currency_section_description": "Velg valutaalternativet",
+        "different_credit_card_label": "Bruk et annet kredittkort",
+        "delete_customer_mandate_modal_cancel": "Avbryt",
+        "credit_card_vaulting_sign_in_banner_title": "Lagre kredittkortet ditt",
+        "credit_card_vaulting_sign_in_banner_info": "Hvis du vil lagre kredittkortet ditt for fremtidige kjøp, logg inn eller opprett en konto.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Logg inn",
+        "delete_customer_mandate_modal_title": "Skal dette betalingskortet fjernes?",
+        "delete_customer_mandate_modal_body": "Hvis du fjerner dette kortet, må du legge det til igjen før du kan bruke det til betalinger.",
+        "delete_customer_mandate_modal_confirm": "Fjern kortet",
+        "clear": "Tøm",
+        "custom_onsite_payment_method_modal": {
+          "title": "Spesial bekreftelse for betaling på stedet"
+        },
+        "delete_credit_card_modal": {
+          "title": "Slett kortet",
+          "confirmation": "Er du sikker på at du vil slette {{brandName}}-kortet som slutter på {{lastDigits}}?",
+          "cancel": "Avbryt",
+          "delete": "Sil"
+        },
+        "edit_credit_card_modal": {
+          "title": "Rediger kortet",
+          "done": "Bitti",
+          "cancel": "Avbryt",
+          "description": "Du kan bare endre fakturaadressen til kortet ditt.",
+          "fields": {
+            "default": "Angi som standard",
+            "card_number": "Kartnummer",
+            "expiry": "Sona erme dato",
+            "security_code": "Sikkerhetskode",
+            "name": "Karttaki annonse",
+            "billing": "Fakturaadresse:"
+          }
+        },
+        "crypto_modal": {
+          "header": "Betal %{total_price} USDC i %{shop_name}-butikken",
+          "error": {
+            "refresh": "Oppdater",
+            "close": "stengt",
+            "sandbox_error": "Det oppstod et problem",
+            "web_component_error": "Det oppstod et problem mens denne siden lastet inn"
+          }
+        },
+        "crypto_payment_method": {
+          "description": "Koble din digitale lommebok trygt. Saldoen og adressen din deles ikke.",
+          "tooltip": "Din digitale lommebokbalanse og adresse vil ikke bli delt, og kun det forespurte beløpet kan kreves inn.",
+          "cashback_descriptor": {
+            "one": "Du vil motta kontantrefusjonen din etter %{count} dager",
+            "other": "Du vil motta kontantrefusjonen din etter %{count} dager"
+          }
+        },
+        "discount_show_more_warnings": {
+          "one": "Vis %{count} til til",
+          "other": "Vis %{count} til til"
+        },
+        "discount_codes_removed_summary": {
+          "one": "%{count} rabattkode fjernet",
+          "other": "%{count} rabattkode fjernet"
+        },
+        "default": "Standard",
+        "continue_to_guest_checkout": "Fortsett som gjest og betal",
+        "choose_new_payment_method": "Velg en ny betalingsmetode",
+        "discount_codes_modified_summary": {
+          "one": "%{count} rabattkode er endret",
+          "other": "%{count} rabattkode er endret"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} rabattkode er fjernet eller endret",
+          "other": "%{count} rabattkode er fjernet eller endret"
+        }
       }
     }
   },
