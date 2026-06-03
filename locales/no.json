@@ -3214,7 +3214,69 @@
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Når du har fullført bestillingen, vil du motta en bekreftelsesmelding. Følg bestillingen din ved å bruke Shop-appen.",
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Når du har fullført bestillingen, vil du motta en bekreftelsesmelding. Følg bestillingen din ved å bruke Shop-appen.",
         "order_status_payments_app_failed_pending_payment_payment": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt.",
-        "order_status_payments_app_failed_pending_payment_pick_up": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt."
+        "order_status_payments_app_failed_pending_payment_pick_up": "Det ble ikke belastet noe beløp for bestillingen din. Gå tilbake til handlekurven for å gjennomgå bestillingen din og betal på nytt.",
+        "return_to_store_link_label": "Fortsett å handle",
+        "print_link_label": "Skriv ut kvitteringen",
+        "payment_information_title": "Betalingsinformasjon",
+        "shipping_information_title": "Fraktinformasjon",
+        "page_title": "Takk %{display_name}",
+        "page_title_no_name": "Takk!",
+        "shipping_address_title": "Fraktadresse",
+        "shipping_address_map_title": "Google-kart som viser den nøyaktige plasseringen av denne leveringsadressen: %{address}",
+        "payment_method_title": "Betalingsmetode",
+        "shipping_method_title": "Fraktmetode",
+        "re-order": "Bestill de samme produktene på nytt",
+        "thank_you_confirmed_order_with_email": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_confirmed_order_with_phone": "Innen kort tid vil du motta en bekreftelses-SMS som inneholder bestillingsnummeret ditt.",
+        "thank_you_confirmed_order_with_email_and_phone": "Du vil motta en bekreftelses-e-post med bestillingsnummeret ditt innen kort tid.",
+        "thank_you_confirmed_order_with_missing": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "out_for_delivery_title": "Bestillingen din er sendt til levering",
+        "pick_up_in_store_marker": {
+          "current": "Gjeldende fraktposisjon",
+          "shipping": "Hentested"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "Vi sender deg en e-post når bestillingen din er klar for henting.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vi sender deg en e-post når bestillingen din er klar for henting.",
+        "ready_for_pickup_title": "Bestillingen din er klar for henting",
+        "ready_for_pickup_description": "Bestillingen din er klar for henting. Ha ordrebekreftelsen klar når du henter bestillingen din.",
+        "picked_up_title": "Bestillingen din er mottatt",
+        "picked_up_description_html": "Bestillingen din ble hentet fra %{location_name} den %{date}.",
+        "shop_phone_description": "Siparişinizi takip etmenize yardımcı olması için Shop-appen sin bağlantı içeren en SMS alacaksınız.",
+        "ready_for_delivery_title": "Bestillingen din er klar for levering",
+        "ready_for_delivery_description": "Vi har gjort klar bestillingen din.",
+        "out_for_delivery_local_title": "Bestillingen din er sendt til levering",
+        "out_for_delivery_local_description_html": "Bestillingen din vil nå deg veldig snart.",
+        "qr_code": {
+          "title": "Følg med fra telefonen din",
+          "send_link_to_phone": "Eller send en lenke til telefonen din"
+        },
+        "resend_gift_cards": "Send gavekortene på nytt",
+        "thank_you_confirmed_order_with_email_payment": "Du betalte for bestillingen din den %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Du betalte for bestillingen din den %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Du betalte for bestillingen din den %{date}.",
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Skann med telefonen din"
+          },
+          "sms": {
+            "title": "Alternativt kan du sende en lenke til telefonen din"
+          }
+        },
+        "thank_you_confirmed_order_with_draft": "Hvis vi trenger mer informasjon eller bestillingen din blir bekreftet, vil vi gi deg beskjed.",
+        "purchase_order_number_title": "Innkjøpsordrenummer #%{purchase_order_number}",
+        "ready_for_delivery": "Klar for levering",
+        "subscriptions_management": {
+          "title": "Abonnement",
+          "description": "Gå til kontoen din for å se og administrere abonnementene dine.",
+          "button_label": "Administrer abonnementet ditt"
+        },
+        "resend_gift_cards_by_email": "Send e-posten på nytt",
+        "resend_gift_cards_by_text": "Send tekstmeldingen på nytt",
+        "thank_you_confirmed_order_with_missing_payment": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_confirmed_order_with_missing_pick_up": "For å få bestillingsbekreftelse, kontakt oss via e-post eller telefon.",
+        "thank_you_confirmed_order_with_draft_payment": "Hvis vi trenger mer informasjon eller bestillingen din blir bekreftet, vil vi gi deg beskjed.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Hvis vi trenger mer informasjon eller bestillingen din blir bekreftet, vil vi gi deg beskjed.",
+        "payment_method_not_charged": "Ikke belastet"
       }
     }
   },
