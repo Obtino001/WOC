@@ -3827,7 +3827,43 @@
         "one": "Arama: \"%{terms}\" ga %{count} resultater funnet",
         "other": "Arama: \"%{terms}\" ga %{count} resultater funnet"
       },
-      "blog_or_article_with_error": "Hata - %{title}"
+      "blog_or_article_with_error": "Hata - %{title}",
+      "shopping_cart": "Handlekurven din"
+    },
+    "sentence": {
+      "two_words_connector": "vei",
+      "last_word_connector": "vei"
+    },
+    "pagination": {
+      "previous": "Forrige",
+      "next": "Neste"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Vanligvis klar innen 1 time",
+        "two_hours": "Vanligvis klar innen 2 timer",
+        "four_hours": "Vanligvis klar innen 4 timer",
+        "twenty_four_hours": "Vanligvis klar innen 24 timer",
+        "two_to_four_days": "Vanligvis er det klart innen 2-4 dager",
+        "five_or_more_days": "Vanligvis klar innen 5 dager",
+        "zero_to_two_hours": "Vanligvis klar innen 2 timer",
+        "two_to_four_hours": "Vanligvis klar innen 4 timer",
+        "immediately": "Klar for levering nå",
+        "next_day": "Vil være klar for henting neste dag"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Alaka",
+        "price_ascending": "Pris, lav til høy",
+        "price_descending": "Pris, fra høy til lav"
+      },
+      "error": "Det oppstod et problem mens søkeresultatene dine ble lastet. Vennligst oppdater siden eller prøv igjen senere."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Dette produktet er et gjentakende eller utsatt kjøp. Ved å fortsette godtar du vilkårene i %{cancellationPolicyLink} og gir tillatelse til at betalingsmetoden min belastes basert på prisene, hyppigheten og datoene på denne siden, inntil bestillingen min er sendt eller jeg avbestiller, dersom det er tillatt.",
+      "buyer_consent_cart": "En eller flere varer i handlekurven din er et gjentakende eller utsatt kjøp. Ved å fortsette godtar du %{cancellationPolicyLink}-vilkårene og gir meg fullmakt til å belaste betalingsmetoden min basert på prisene, hyppigheten og datoene på denne siden, inntil bestillingen min er sendt eller jeg avbestiller, dersom det er tillatt.",
+      "cancellation_policy": "avbestillingsregler"
     }
   },
   "recipient": {
@@ -3845,6 +3881,55 @@
       "send_on_label": "Send på denne datoen (valgfritt)",
       "expanded": "Gavekortmottakerens skjema er utvidet",
       "collapsed": "Gavekortmottakerens skjema er redusert"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Ingen resultater funnet for \"{{ terms }}\". Kontroller at det ikke er noen skrivefeil, eller prøv et annet ord eller uttrykk.",
+      "results_with_count": {
+        "one": "{{ count }} resultater",
+        "other": "{{ count }} resultater"
+      },
+      "title": "Søkeresultater",
+      "page": "Side",
+      "products": "Produkter",
+      "search_for": "Søk etter \"{{ terms }}\"",
+      "results_with_count_and_term": {
+        "one": "Det ble funnet {{ count }} resultater for \"{{ terms }}\"",
+        "other": "Det ble funnet {{ count }} resultater for \"{{ terms }}\""
+      },
+      "results_pages_with_count": {
+        "one": "{{ count }} sider",
+        "other": "{{ count }} sider"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} produkter",
+        "other": "{{ count }} produkter"
+      },
+      "suggestions": "Anbefalinger",
+      "pages": "Sider",
+      "results_suggestions_with_count": {
+        "one": "{{ count }} forslag",
+        "other": "{{ count }} forslag"
+      }
+    },
+    "cart": {
+      "cart": "Handlekurv"
+    },
+    "contact": {
+      "form": {
+        "name": "Annonse",
+        "email": "E-post",
+        "phone": "Telefonnummer",
+        "comment": "Kommentar",
+        "send": "Send",
+        "post_success": "Takk for at du kontaktet oss. Vi vil svare deg så snart som mulig.",
+        "error_heading": "Vennligst rediger følgende:",
+        "title": "Kontaktformular"
+      }
+    },
+    "404": {
+      "title": "Siden ble ikke funnet"
     }
   }
 }
