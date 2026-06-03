@@ -1707,7 +1707,141 @@
         "bank_account_generic_error": "تعذر إضافة حساب البنك. يرجى المحاولة مرة أخرى لاحقًا.",
         "add_payment_method": "إضافة طريقة دفع",
         "add_new_payment_method": "أضف طريقة دفع جديدة",
-        "alipay_label": "علي باي"
+        "alipay_label": "علي باي",
+        "card_number_label": "رقم البطاقة",
+        "card_number_placeholder": "رقم البطاقة",
+        "card_pay_with": "ادفع بهذا:",
+        "card_security_notice": "جميع العمليات آمنة ومشفرة.",
+        "card_expiry_label": "تاريخ انتهاء الصلاحية (شهر/سنة)",
+        "card_expiry_placeholder": "تاريخ انتهاء الصلاحية (شهر/سنة)",
+        "card_verification_value_label": "رمز الأمان",
+        "card_verification_value_placeholder": "رمز الأمان",
+        "card_expiry_date_explanation": "تنسيق تاريخ انتهاء صلاحية البطاقة: شهر، شهر، سنة، سنة",
+        "card_verification_value_explanation": "عادةً ما يكون رمز الأمان المكون من 3 أرقام موجودًا على الوجه الخلفي لبطاقتك. تحتوي بطاقات American Express على رمز مكون من 4 أرقام على الوجه الأمامي.",
+        "card_verification_value_explanation_amex": "رمز الأمان المكون من 4 أرقام على وجه بطاقتك الأمامي",
+        "card_verification_value_explanation_other": "رمز الأمان المكون من 3 أرقام الموجود على ظهر بطاقتك",
+        "card_start_label": "تاريخ التعديل (شهر/سنة)",
+        "card_start_placeholder": "تاريخ التعديل (شهر/سنة)",
+        "card_issue_number_label": "رقم التعديل",
+        "card_issue_number_placeholder": "رقم التعديل",
+        "card_change_label": "تغيير",
+        "billing_address_title": "عنوان الفاتورة",
+        "billing_address_description": "اختر العنوان الذي يتطابق مع بطاقتك أو طريقة الدفع الخاصة بك.",
+        "billing_address_description_no_shipping_address": "أدخل العنوان الذي يتطابق مع بطاقتك أو طريقة الدفع الخاصة بك.",
+        "card_fields_container_prefix": "حاوية المجال لـ",
+        "card_fields_unavailable_html": {
+          "one": "مدفوعات بطاقات الائتمان والخصم غير متاحة حالياً.<br><a href=\"%{current_url}\">قم بتحديث هذه الصفحة</a> أو حاول مرة أخرى لاحقاً.",
+          "other": "مدفوعات بطاقات الائتمان والخصم غير متاحة حالياً.<br><a href=\"%{current_url}\">قم بتحديث هذه الصفحة</a> أو جرب طريقة دفع مختلفة."
+        },
+        "card_fields_processing_error": "حدثت مشكلة أثناء معالجة الدفع. حاول تحديث هذه الصفحة أو تحقق من اتصال الإنترنت الخاص بك.",
+        "bank_picker_label": "بنك",
+        "card_information_notice": "جميع المعاملات آمنة ومشفرة. لا يتم حفظ معلومات بطاقة الائتمان أبدًا.",
+        "card_expiration_month_label": "تاريخ انتهاء الصلاحية (شهر)",
+        "card_expiration_year_label": "تاريخ انتهاء الصلاحية (سنة)",
+        "billing_address_not_supported_for_payment_method_error": "طريقة الدفع هذه غير متاحة لعنوان الفاتورة وعملتك. يرجى تجربة طريقة دفع مختلفة.",
+        "card_security_vault_notice": "نحتاج إلى معلوماتك للمدفوعات المستقبلية. جميع المعاملات آمنة ومشفرة.",
+        "card_update_label": "تحديث البطاقة",
+        "card_expired": "انتهت صلاحيته",
+        "card_verification_confirm": "أدخل رمز الأمان الخاص ببطاقتك للتحقق.",
+        "billing_address_associated_with_mandate": "استخدم العنوان المرتبط بطريقة الدفع",
+        "billing_address_associated_with_mandate_info": "إذا كنت ترغب في تغيير عنوان الفاتورة، يرجى إزالة معلومات بطاقة الائتمان وإدخالها مرة أخرى.",
+        "card_vaulted_company_location": "تم حفظ البطاقة لهذا الموقع",
+        "billing_must_match_shipping_notice": "يجب أن يكون عنوان الفاتورة صالحًا ومطابقًا لعنوان الشحن لطريقة الدفع الخاصة بك.",
+        "brand_not_available": "هذا المتجر لا يقبل {{brand}}. يرجى استخدام بطاقة مختلفة للدفع.",
+        "billing_address_invalid_phone": "للمتابعة، قم بتحديث عنوان الفاتورة للبطاقة التي تنتهي بـ {{last_digits}} {{label}}.",
+        "billing_address_invalid_phone_no_card": "لتتمكن من المتابعة، قم بتحديث رقم الهاتف في عنوان الفاتورة الخاص بك.",
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "أدخل تاريخ تعديل صالح",
+              "issue_number": "أدخل رقم تعديل صالح"
+            },
+            "invalid": {
+              "verification_value": "يرجى إدخال رمز CVV أو رمز الأمان صالح"
+            }
+          }
+        },
+        "business_customer_vaulting_payment_label": "احفظ طريقة الدفع هذه في صفحة الدفع ومنح شركة %{company} الإذن بخصم رسوم باستخدام طريقة الدفع هذه في عمليات الشراء المستقبلية في هذا الموقع. يمكن لجميع الأشخاص المعينين لهذا الموقع استخدام طريقة الدفع هذه.",
+        "cashapppay_label": "دفع كاش آب",
+        "card_nickname_label": "اسم مستعار (اختياري)",
+        "blik_label": "بليك",
+        "billing_address_rollup_accessibility_label": "خيارات عنوان الفاتورة",
+        "business_customer_with_bank_account_vaulting_payment_label": "أثناء الدفع، احفظ طريقة الدفع هذه ومنح شركة %{company} الإذن بسحب مدفوعات المشتريات المستقبلية التي توافق عليها لهذا الموقع من حسابك حتى تقوم بإلغاء ذلك. يمكن لجميع الأشخاص المعينين لهذا الموقع استخدام طريقة الدفع هذه.",
+        "bank_account_vaulted_company_location": "تم تسجيل حساب بنكي لهذا الموقع",
+        "discount_button_action_label": "تطبيق رمز الخصم",
+        "detected_card_brand": "علامة البطاقة المكتشفة: {brand}",
+        "different_billing_address_label": "استخدم عنوان فاتورة مختلف",
+        "credit_card_start_month": "شهر البداية",
+        "credit_card_start_year": "سنة البداية",
+        "change_currency_section_description": "اختر خيار العملة",
+        "different_credit_card_label": "استخدم بطاقة ائتمان مختلفة",
+        "delete_customer_mandate_modal_cancel": "إلغاء",
+        "credit_card_vaulting_sign_in_banner_title": "احفظ بطاقة الائتمان الخاصة بك",
+        "credit_card_vaulting_sign_in_banner_info": "إذا كنت ترغب في حفظ بطاقة الائتمان الخاصة بك للمشتريات المستقبلية، يرجى تسجيل الدخول أو إنشاء حساب.",
+        "credit_card_vaulting_sign_in_banner_button_label": "تسجيل الدخول",
+        "delete_customer_mandate_modal_title": "هل تريد إزالة بطاقة الدفع هذه؟",
+        "delete_customer_mandate_modal_body": "إذا قمت بإزالة هذه البطاقة، فستحتاج إلى إضافتها مرة أخرى قبل استخدامها في عمليات الدفع.",
+        "delete_customer_mandate_modal_confirm": "إزالة البطاقة",
+        "clear": "مسح",
+        "custom_onsite_payment_method_modal": {
+          "title": "تأكيد الدفع عند الاستلام الخاص"
+        },
+        "delete_credit_card_modal": {
+          "title": "حذف البطاقة",
+          "confirmation": "هل أنت متأكد من رغبتك في حذف بطاقة {{brandName}} التي تنتهي بـ {{lastDigits}}؟",
+          "cancel": "إلغاء",
+          "delete": "سيل"
+        },
+        "edit_credit_card_modal": {
+          "title": "تعديل البطاقة",
+          "done": "انتهى",
+          "cancel": "إلغاء",
+          "description": "يمكنك فقط تغيير عنوان الفاتورة الخاص ببطاقتك.",
+          "fields": {
+            "default": "تعيين كافتراضي",
+            "card_number": "رقم البطاقة",
+            "expiry": "تاريخ إغلاق السونا",
+            "security_code": "رمز الأمان",
+            "name": "الاسم على البطاقة",
+            "billing": "عنوان الفاتورة:"
+          }
+        },
+        "crypto_modal": {
+          "header": "ادفع %{total_price} USDC في متجر %{shop_name}",
+          "error": {
+            "refresh": "تحديث",
+            "close": "أغلق",
+            "sandbox_error": "حدثت مشكلة",
+            "web_component_error": "حدثت مشكلة أثناء تحميل هذه الصفحة"
+          }
+        },
+        "crypto_payment_method": {
+          "description": "قم بربط محفظتك الرقمية بأمان. لن يتم مشاركة رصيدك وعنوانك.",
+          "tooltip": "لن يتم مشاركة رصيد محفظتك الرقمية وعنوانك، ولن يتم تحصيل سوى المبلغ المطلوب فقط.",
+          "cashback_descriptor": {
+            "one": "سوف تستلم استرداد نقودك بعد %{count} يومًا",
+            "other": "سوف تستلم استرداد نقودك بعد %{count} يومًا"
+          }
+        },
+        "discount_show_more_warnings": {
+          "one": "عرض %{count} المزيد",
+          "other": "عرض %{count} المزيد"
+        },
+        "discount_codes_removed_summary": {
+          "one": "تم إزالة %{count} رمز خصم",
+          "other": "تم إزالة %{count} رمز خصم"
+        },
+        "default": "افتراضي",
+        "continue_to_guest_checkout": "تابع كضيف وأكمل الدفع",
+        "choose_new_payment_method": "اختر طريقة دفع جديدة",
+        "discount_codes_modified_summary": {
+          "one": "تم تغيير رمز الخصم %{count}",
+          "other": "تم تغيير رمز الخصم %{count}"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "تم إزالة أو تغيير رمز الخصم %{count}",
+          "other": "تم إزالة أو تغيير رمز الخصم %{count}"
+        }
       }
     }
   },

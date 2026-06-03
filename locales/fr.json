@@ -1733,7 +1733,61 @@
         "cashapppay_label": "Paiement Cash App",
         "billing_address_rollup_accessibility_label": "Options d'adresse de facturation",
         "business_customer_with_bank_account_vaulting_payment_label": "Lors du paiement, enregistrez ce mode de paiement et autorisez %{company} à prélever les paiements des futurs achats approuvés pour cet emplacement sur votre compte jusqu'à ce que vous annuliez cette autorisation. Toutes les personnes affectées à cet emplacement peuvent utiliser ce mode de paiement.",
-        "bank_account_vaulted_company_location": "Un compte bancaire a été enregistré pour cet emplacement"
+        "bank_account_vaulted_company_location": "Un compte bancaire a été enregistré pour cet emplacement",
+        "discount_button_action_label": "Appliquer le code promo",
+        "detected_card_brand": "Marque de carte détectée : {brand}",
+        "credit_card_start_month": "Mois de départ",
+        "credit_card_start_year": "Année de début",
+        "change_currency_section_description": "Sélectionnez l'option de devise",
+        "different_credit_card_label": "Utilisez une autre carte de crédit",
+        "credit_card_vaulting_sign_in_banner_info": "Si vous souhaitez enregistrer votre carte de crédit pour des achats futurs, connectez-vous ou créez un compte.",
+        "delete_customer_mandate_modal_title": "Voulez-vous supprimer cette carte de paiement ?",
+        "delete_customer_mandate_modal_body": "Si vous supprimez cette carte, vous devrez la rajouter avant de pouvoir l'utiliser pour les paiements.",
+        "delete_customer_mandate_modal_confirm": "Retirer la carte",
+        "custom_onsite_payment_method_modal": {
+          "title": "Confirmation de paiement à la livraison spéciale"
+        },
+        "delete_credit_card_modal": {
+          "confirmation": "Êtes-vous sûr de vouloir supprimer la carte {{brandName}} se terminant par {{lastDigits}} ?",
+          "delete": "Sil"
+        },
+        "edit_credit_card_modal": {
+          "done": "C'est fini",
+          "description": "Vous pouvez uniquement modifier l'adresse de facturation de votre carte.",
+          "fields": {
+            "expiry": "Date de fermeture de Sona",
+            "billing": "Adresse de facturation :"
+          }
+        },
+        "crypto_modal": {
+          "header": "Payez %{total_price} USDC dans la boutique %{shop_name}",
+          "error": {
+            "refresh": "Renouveler",
+            "sandbox_error": "Un problème est survenu"
+          }
+        },
+        "crypto_payment_method": {
+          "description": "Connectez votre portefeuille numérique en toute sécurité. Votre solde et votre adresse ne seront pas partagés.",
+          "tooltip": "Le solde et l'adresse de votre portefeuille numérique ne seront pas partagés et seul le montant demandé pourra être prélevé.",
+          "cashback_descriptor": {
+            "one": "Vous recevrez votre remboursement en espèces dans %{count} jours",
+            "other": "Vous recevrez votre remboursement en espèces dans %{count} jours"
+          }
+        },
+        "discount_codes_removed_summary": {
+          "one": "%{count} code de réduction supprimé",
+          "other": "%{count} code de réduction supprimé"
+        },
+        "continue_to_guest_checkout": "Payer en continuant en tant qu'invité",
+        "choose_new_payment_method": "Choisissez un nouveau mode de paiement",
+        "discount_codes_modified_summary": {
+          "one": "%{count} code de réduction modifié",
+          "other": "%{count} code de réduction modifié"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} code de réduction supprimé ou modifié",
+          "other": "%{count} code de réduction supprimé ou modifié"
+        }
       }
     }
   }

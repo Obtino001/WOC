@@ -1694,7 +1694,65 @@
         "cashapppay_label": "Cash App Bezahlen",
         "billing_address_rollup_accessibility_label": "Rechnungsadresse Optionen",
         "business_customer_with_bank_account_vaulting_payment_label": "Speichern Sie diese Zahlungsmethode während der Zahlung und erteilen Sie %{company} die Erlaubnis, zukünftige genehmigte Käufe für diesen Standort von Ihrem Konto einzuziehen, bis Sie die Erlaubnis widerrufen. Alle Personen, die diesem Standort zugewiesen sind, können diese Zahlungsmethode verwenden.",
-        "bank_account_vaulted_company_location": "Für diesen Standort wurde ein Bankkonto hinterlegt"
+        "bank_account_vaulted_company_location": "Für diesen Standort wurde ein Bankkonto hinterlegt",
+        "discount_button_action_label": "Rabattcode anwenden",
+        "credit_card_start_month": "Startmonat",
+        "credit_card_start_year": "Anfangsjahr",
+        "change_currency_section_description": "Wählen Sie die Währungsoption aus",
+        "different_credit_card_label": "Verwenden Sie eine andere Kreditkarte",
+        "delete_customer_mandate_modal_cancel": "Abbrechen",
+        "credit_card_vaulting_sign_in_banner_title": "Speichern Sie Ihre Kreditkarte",
+        "credit_card_vaulting_sign_in_banner_info": "Melden Sie sich an oder erstellen Sie ein Konto, wenn Sie Ihre Kreditkarte für zukünftige Einkäufe speichern möchten.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Anmelden",
+        "delete_customer_mandate_modal_title": "Soll diese Zahlungskarte entfernt werden?",
+        "delete_customer_mandate_modal_body": "Wenn Sie diese Karte entfernen, müssen Sie sie vor der nächsten Zahlung erneut hinzufügen.",
+        "custom_onsite_payment_method_modal": {
+          "title": "Bestätigung der speziellen Zahlung bei Lieferung"
+        },
+        "delete_credit_card_modal": {
+          "confirmation": "Sind Sie sicher, dass Sie die {{brandName}}-Karte mit den letzten Ziffern {{lastDigits}} löschen möchten?",
+          "cancel": "Abbrechen",
+          "delete": "Sil"
+        },
+        "edit_credit_card_modal": {
+          "done": "Bitte",
+          "cancel": "Abbrechen",
+          "description": "Sie können nur die Rechnungsadresse Ihrer Karte ändern.",
+          "fields": {
+            "card_number": "Kartnummer",
+            "expiry": "Geschichte der Sona-Erme",
+            "name": "Name auf der Karte",
+            "billing": "Rechnungsadresse:"
+          }
+        },
+        "crypto_modal": {
+          "header": "Zahlen Sie %{total_price} USDC im %{shop_name}-Shop",
+          "error": {
+            "sandbox_error": "Ein Problem ist aufgetreten"
+          }
+        },
+        "crypto_payment_method": {
+          "description": "Verbinden Sie Ihre digitale Geldbörse sicher. Ihr Kontostand und Ihre Adresse werden nicht geteilt.",
+          "tooltip": "Ihr digitales Wallet-Guthaben und Ihre Adresse werden nicht geteilt und es kann nur der angeforderte Betrag abgebucht werden.",
+          "cashback_descriptor": {
+            "one": "Sie erhalten Ihre Rückerstattung in %{count} Tagen.",
+            "other": "Sie erhalten Ihre Rückerstattung in %{count} Tagen."
+          }
+        },
+        "discount_codes_removed_summary": {
+          "one": "%{count} Rabattcode entfernt",
+          "other": "%{count} Rabattcode entfernt"
+        },
+        "continue_to_guest_checkout": "Als Gast fortfahren und bezahlen",
+        "choose_new_payment_method": "Wählen Sie eine neue Zahlungsmethode aus",
+        "discount_codes_modified_summary": {
+          "one": "%{count} Rabattcode geändert",
+          "other": "%{count} Rabattcode geändert"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} Rabattcode wurde entfernt oder geändert",
+          "other": "%{count} Rabattcode wurde entfernt oder geändert"
+        }
       }
     }
   }

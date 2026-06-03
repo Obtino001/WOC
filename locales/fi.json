@@ -1711,7 +1711,51 @@
         "discount_codes_removed_or_modified_summary": {
           "one": "%{count} alennuskoodi poistettu tai muutettu",
           "other": "%{count} alennuskoodi poistettu tai muutettu"
-        }
+        },
+        "gift_card_code_label": "Lahjakorttikoodi",
+        "name_on_card_label": "Karttaki ad",
+        "name_on_card_placeholder": "Karttaki ad",
+        "ends_with_label": "%{last_digits} päättyen",
+        "free_order_notice_html": "Tilauksesi on <strong>ilmainen</strong>. Maksua ei vaadita.",
+        "express_checkout_free_order": "Ilmainen tilaus ei aiheuta sinulle kustannuksia",
+        "missing_credit_card_error": "Syötä korttitietosi maksun suorittamiseksi loppuun",
+        "generic_incorrect_card_info": "Maksutietojasi ei voitu vahvistaa. Tarkista korttitietosi ja yritä uudelleen.",
+        "klarna_pay_now_label": "Maksa nyt Klarnailla",
+        "klarna_pay_later_label": "Maksa myöhemmin Klarna-palvelulla",
+        "eps_label": "EPS-siirto",
+        "klarna_slice_it_label": "Hanki rahoitus Klarnan kautta",
+        "expiry_long": "(Parasta ennen: %{month}/%{year})",
+        "expiry_short": "(SKT: %{month}/%{year})",
+        "ftd_vault_credit_card_label": "Tallenna tämä luottokortti tililleni nopeampaa maksua varten",
+        "google": {
+          "connect": "Napsauta yhdistääksesi Google Pay -tiliisi",
+          "error_authorizing": "Virhe tapahtui, kun valtuutus tehtiin"
+        },
+        "mor_disclaimer_html": "Napsauttamalla alla olevaa kenttää ja viimeistelemällä tilauksesi hyväksyt ostavasi tuotteesi Global-e:ltä tämän toimenpiteen rekisteröitynä myyjänä Global-e:n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Ehdot ja Säännöt</a> sekä <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Tietosuojakäytännön</a> mukaisesti. Global-e on %{shop_name}:lle kansainvälinen lähetyspalveluntarjoaja.",
+        "location_billing_address_label": "Toimitus- ja laskutusosoite",
+        "location_shipping_address_label": "Toimitusosoite",
+        "expired_cards_info": {
+          "one": "Käytöstä poistuneita %{count} korttia on; voit tarkastella ja muokata näitä kortteja tililtäsi.",
+          "other": "Käyttöaika umpeutunut %{count} korttia; voit tarkastella ja muokata näitä kortteja tililtäsi."
+        },
+        "local_payment_method_receiver_notice": "Tilauksesi jälkeen maksutiedot lähetetään sinulle. Suorita maksusi {{dueDays}} päivän kuluessa pankkiautomaatilla tai verkossa.",
+        "gift_card_wrapper": {
+          "apply_another_gift_card_label": "Toinen lahjakortti käyttöön",
+          "gift_card_label": "Lahjakortti (%{identifier})",
+          "manage_label": "Hallitse lahjakortteja"
+        },
+        "markets_pro_disclaimer_label": "Antamalla tilauksesi hyväksyt ostavasi Global-e:ltä rekisteröitynä myyjänä Global-e:n %{markets_pro_terms} ja %{privacy_policy} ehtojen mukaisesti sekä suostut jakamaan tietosi %{shop_name} kanssa.",
+        "markets_pro_disclaimer_terms_and_conditions": "Ehdot ja säännöt",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Rekisteröidyn myyjän ehdot ja säännöt",
+        "markets_pro_disclaimer_privacy_policy_title": "Rekisteröidyn Myyjän Tietosuojakäytäntö",
+        "expired_payment_method": "Valitun maksutavan voimassaoloaika on päättynyt",
+        "gift_card_store_credit": {
+          "add_label": "Lisää lahjakortti tai kauppaluotto",
+          "manage_label": "Hallitse lahjakortteja tai kauppaluottoa"
+        },
+        "gift_cards_unavailable": "Lahjakorttisi on poistettu, koska sitä ei voi enää käyttää tähän tilaukseen.",
+        "network_card_payment_options": "Valitse verkon taajuusalue",
+        "kcp_creditcard_label": "KCP luottokortti"
       }
     }
   }
