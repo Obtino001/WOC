@@ -1114,13 +1114,81 @@
           },
           "optional_duties": {
             "optional_duties_not_permitted": "Tollavgifter kan ikke nektes ved denne betalingen."
+          },
+          "session_identifier_not_unique_error": "Det oppstod et problem med bestillingen din, prøv å betale igjen.",
+          "session_is_already_finished": "Denne betalingsøkten er allerede fullført.",
+          "tax": {
+            "new_tax_must_be_accepted": "Avgiftene knyttet til bestillingen din har endret seg. Vennligst gå gjennom informasjonen og prøv igjen.",
+            "unresolvable_tax_terms": "De foreslåtte betingelsene kan ikke løses i henhold til den nåværende forhandlingskonteksten.",
+            "delivery_price_is_abstract": "Den relevante leveringsprisen er abstrakt.",
+            "tax_inclusivity_mismatch": "Forhandle på nytt med Somut totalTaxAndDutyAmount eller totalAmountIncludedInTarget verdi.",
+            "tax_exemption_not_supported": "Skattefritak støttes ikke i den nåværende forhandlingsøkten.",
+            "delivery_tax_exemption_not_supported": "Skattefritak for leveringslinjer støttes for øyeblikket ikke.",
+            "proposed_allocations_required": "Feltet 'Foreslåtte tildelinger' mangler.",
+            "merchandise_terms_must_be_defined": "Vilkårene knyttet til malen må defineres.",
+            "delivery_terms_must_be_defined": "Leveringsbetingelser må defineres.",
+            "merchandise_discount_terms_must_be_defined": "Vilkårene for rabatten knyttet til varen må defineres.",
+            "delivery_discount_terms_must_be_defined": "Vilkår for leveringstilbud må defineres.",
+            "allocated_required": "«Tildelt» feltet mangler.",
+            "value_required": "Feltet «Verdi» mangler.",
+            "line_splits_not_supported": "Feltet 'Mal satırları' må deles opp slik at hvert tilbud fra selgeren har én enkelt linjekomponent."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Butikken godtar ikke tips.",
+            "only_one_tip_line_allowed": "Flere tipslinjer støttes ikke.",
+            "tips_not_allowed_for_b2b": "Tips er ikke tillatt i B2B-butikker.",
+            "currency_change_reset": "Tipsen ble nullstilt på grunn av valutakursendring.",
+            "tips_not_allowed_for_deferred_purchase_options": "Tips støttes ennå ikke for utsatte kjøpsalternativer."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Denne foreløpige bestillingen er ikke tilgjengelig i den gjeldende butikken.",
+            "staff_member_not_exist": "Denne varen er ikke tilgjengelig i den gjeldende butikken.",
+            "location_not_exist": "Denne plasseringen er ikke tilgjengelig i den gjeldende butikken.",
+            "point_of_sale_device_not_exist": "Denne salgssted-enheten er ikke tilgjengelig i den gjeldende butikken.",
+            "unresolvable_target_merchandise_lines": "Foreslåtte salgsrelasjoner kan ikke løses i henhold til den gjeldende forhandlingskonteksten."
           }
         },
         "dropzone": {
           "add_file": "Legg til fil",
           "invalid_file_type": "Filtypen støttes ikke",
           "dragged_over": "Dra og slipp filen som skal lastes opp"
-        }
+        },
+        "page_title": "Betalingssiden",
+        "pay_now_button_label": "Betal nå",
+        "print_policies_link_label": "Skriv ut",
+        "expand_notice_label": "Vis mer",
+        "forwarding_indicator": {
+          "new_window": "Åpnes i et nytt vindu.",
+          "external": "Åpner et eksternt nettsted.",
+          "external_and_new_window": "Åpner det eksterne nettstedet i et nytt vindu."
+        },
+        "full_price": "Full pris:",
+        "full_title": "{{pageTitle}} - {{shopName}} - Betalingssiden",
+        "loading_title": "Betalingssiden - {{shopName}}",
+        "google_map_title": "Google Maps",
+        "processing": "Behandles…",
+        "remove_item": "Fjern %{label}-etiketten",
+        "remove_tag": "Fjern etiketten",
+        "list_formatter": {
+          "and": {
+            "lastWordConnector": "{{previousWords}} og {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} og {{secondWord}}"
+          },
+          "or": {
+            "lastWordConnector": "{{previousWords}} eller {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} eller {{secondWord}}"
+          }
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Mengde som inneholder {{number}} pekere",
+            "other": "Mengde som inneholder {{number}} pekere"
+          }
+        },
+        "qr_code": "QR-kode",
+        "loading": "Laster…",
+        "remove_chip": "Fjern produktet",
+        "finalize_order_accessibility_label": "Fullfør bestillingen"
       }
     }
   },
