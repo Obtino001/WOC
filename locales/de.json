@@ -1851,7 +1851,59 @@
           "accessibility_label": "Wählen Sie eine Zahlungsmethode aus"
         },
         "payment_method_rollup_accessibility_label": "Zahlungsmethodenoptionen",
-        "new_bank_account_disclaimer": "Indem Sie Ihre Bestellung abschließen, erteilen Sie dem Geschäft %{shop_name} die Erlaubnis, den angegebenen Betrag zum angegebenen Zeitpunkt per ACH von folgendem Konto einzuziehen."
+        "new_bank_account_disclaimer": "Indem Sie Ihre Bestellung abschließen, erteilen Sie dem Geschäft %{shop_name} die Erlaubnis, den angegebenen Betrag zum angegebenen Zeitpunkt per ACH von folgendem Konto einzuziehen.",
+        "saved_by_payment_method": "Gespeichert von %{payment_method}",
+        "same_billing_address_label": "Mit derselben Lieferadresse",
+        "sofort_label": "Sofort Banküberweisung",
+        "purchase_options_card_update_agreement_label_html": "Indem Sie Ihre Zahlungsmethode aktualisieren, autorisieren Sie die Zahlungen für wiederkehrende oder aufgeschobene Käufe gemäß der <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">Stornierungsrichtlinie</a> dieses Geschäfts.",
+        "receiver_payment_experience_hint": "Nachdem Sie Ihre Bestellung aufgegeben haben, werden Ihnen die Zahlungsdetails zugesandt. Zahlen Sie innerhalb von %{due_days} Tagen per Multibanco oder online.",
+        "pending_payment": {
+          "due_notice": "%{amount_due} fälliger Betrag, Zahlungsfrist ist %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Zahlen Sie Ihre Rechnung mit den untenstehenden Informationen über Multibanco oder online. Für Fragen oder zur Aktualisierung der Zahlungsinformationen %{contact_us}.",
+            "entity": "Person/Institution",
+            "find_nearest_atm": "Nächsten Geldautomaten finden",
+            "buyer_action_info": "Die Zahlungsfrist für den Betrag von %{amount_due} ist abgelaufen."
+          }
+        },
+        "purchase_options_agreement_label": "Ein oder mehrere Artikel in Ihrem Warenkorb sind ein aufgeschobener, abonnementsbasierter oder wiederkehrender Kauf. Indem Sie mit der Zahlung fortfahren, stimmen Sie zu, dass Ihr Zahlungsmittel automatisch zum auf dieser Seite angegebenen Preis und in der angegebenen Häufigkeit belastet wird, bis das Abonnement abläuft oder Sie es kündigen. Alle Stornierungen unterliegen den Bedingungen von %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "Ich verstehe, dass ein oder mehrere Artikel in meinem Warenkorb ein aufgeschobener, abonnementsbasierter oder wiederkehrender Kauf sind. Indem ich fortfahre, akzeptiere ich die <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">Stornierungsbedingungen</a> und erlaube, sofern gestattet, dass mein Zahlungsmittel gemäß den auf dieser Seite angegebenen Preisen, Häufigkeiten und Terminen belastet wird, bis meine Bestellung versandt wird oder ich storniere.",
+        "store_credit": {
+          "label": "Geschäftsguthaben",
+          "apply_label": "Geschäftsguthaben anwenden",
+          "add_label": "Geschäftsguthaben hinzufügen",
+          "buying_gift_card": "Sie können den Ladenguthaben nicht zum Kauf von Geschenkkarten verwenden."
+        },
+        "same_billing_address_checkbox_label": "Als Rechnungsadresse die Lieferadresse verwenden",
+        "shipping_rate_updated": "Verfügbare Versandmethoden wurden aktualisiert. Bitte bestätigen Sie Ihre Auswahl, bevor Sie die Zahlung vornehmen.",
+        "preview_not_available": {
+          "content": "Keine Sorge, diese Schnellzahlung steht Ihren Kunden zur Verfügung.",
+          "button": "In Ordnung"
+        },
+        "simulated_checkout": "Vorschauen werden bald verfügbar sein",
+        "purchase_options_and_vaulting_agreement_label": "Eines oder mehrere der Produkte in Ihrem Warenkorb sind ein aufgeschobener Kauf oder ein Abonnementkauf. Indem Sie mit der Zahlung fortfahren, stimmen Sie zu, dass Ihnen der auf dieser Seite angegebene Preis und die Häufigkeit automatisch von Ihrer Zahlungsmethode bis zum Ablaufdatum oder bis Sie kündigen, berechnet werden. Alle Stornierungen unterliegen %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "Stornierungsbedingungen",
+        "saved_credit_card": "Sie haben Ihre Kreditkarte gespeichert",
+        "saved_credit_cards_modal": {
+          "done": "Bitte",
+          "cancel": "Abbrechen"
+        },
+        "shop_pay_installments_label": "Shop Pay Ratenzahlung",
+        "saved_credit_card_actions": {
+          "delete": "Sil"
+        },
+        "purchase_options_agreement_label_wallets": "Indem Sie mit der Zahlung fortfahren, akzeptieren Sie die auf dieser Seite aufgeführten zukünftigen Gebühren und die Stornierungsbedingungen.",
+        "saved_credit_card_cvv_verification": "Geben Sie den Sicherheitscode Ihrer Karte zur Verifizierung ein.",
+        "proposed_gateway_unavailable": "Der empfohlene Zahlungs-Gateway ist nicht verfügbar",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Wero kann für Bestellungen nicht verwendet werden. Bitte wählen Sie eine andere Zahlungsmethode.",
+        "paypal_wallet_label": "PayPal Brieftasche",
+        "simulated_express_checkout": "Regionen oder Ihr Browser erlauben keine Verwendung von Wallets in der regulatorischen Vorschau",
+        "separate_payments_label": "Ihre Produkte stammen aus mehreren Geschäften. Die Gebühren werden in Form von %{separate_payments_link} erhoben.",
+        "separate_payments_text": "separate Zahlungen",
+        "purchase_options_subscription_agreement_label": "In Ihrem Warenkorb befindet sich ein automatisch verlängerbares Abonnement. Klicken Sie auf die Schaltfläche \"%{button_label}\", um %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "Sie stimmen ausdrücklich und eindeutig zu, dass der in Ihrem Warenkorb angezeigte wiederkehrende Betrag (zzgl. Versand und Steuern) automatisch von Ihnen eingezogen wird, bis das Abonnement/die Abonnements endet oder Sie es/sie kündigen.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Bitte lesen Sie den Text %{cancellation_policy_label}.",
+        "purchase_options_subscription_cancel_text": "Sie können jederzeit kündigen, indem Sie zu Ihrem Konto gehen oder den Laden kontaktieren."
       }
     }
   }
