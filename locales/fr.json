@@ -1834,7 +1834,57 @@
         "gift_card_checkbox_label": "Appliquer la carte cadeau",
         "grabpay_label": "Payer avec GrabPay",
         "kcp_creditcard_label": "Carte de Crédit KCP",
-        "multiple_primary_payment_not_allowed": "Méthodes de paiement invalides"
+        "multiple_primary_payment_not_allowed": "Méthodes de paiement invalides",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Votre carte cadeau couvre votre commande.",
+          "other": "Vos cartes-cadeaux couvrent votre commande."
+        },
+        "offsite_gateway_redirect_hint_multi_currency_html": "Total %{gateway_label} %{total_shop_price}",
+        "no_js_credit_card_fields_redirect_hint": "Vous allez être redirigé pour ajouter vos informations de paiement.",
+        "no_method_error": "Cette boutique ne peut pas accepter les paiements pour le moment.",
+        "not_configured_error": "Cette boutique ne peut pas accepter les paiements pour le moment.",
+        "no_real_orders_dev_store": "Cette boutique ne peut pas accepter de commandes réelles ni de paiements réels.",
+        "no_taxes_banner_content": "Cette commande ne sera pas soumise à la taxe. Vous ne pouvez pas ajouter de taxe après avoir encaissé le paiement.",
+        "paypal_modal": {
+          "order_contains_fixed_selling_plans": "Le montant total peut ne pas inclure les taxes, les frais de port, les frais différés et certaines remises. Continuez le paiement pour le montant à régler aujourd'hui."
+        },
+        "payment_method_saved": "Méthode de paiement enregistrée",
+        "order_covered_by_store_credit_notice": "Votre crédit magasin couvre la commande.",
+        "order_covered_by_redeemables_notice": "Votre commande est en cours de traitement.",
+        "no_working_method_error": "Cette boutique ne peut pas accepter les paiements pour le moment. Veuillez actualiser la page et réessayer plus tard.",
+        "order_edit_banner_subtitle": "Votre commande nommée {{order_number}} a été mise à jour. Veuillez examiner ces modifications, puis effectuer le paiement pour confirmer votre commande.",
+        "order_edit_banner_multiple_items_added": "{{amount}} ajouté",
+        "order_edit_banner_multiple_items_removed": "{{amount}} supprimé",
+        "order_edit_banner_single_item_returned": "Remboursé",
+        "order_edit_banner_multiple_items_returned": "{{amount}} remboursé",
+        "order_edit_banner_items_added": {
+          "other": "%{count} article ajouté"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Supprimé",
+          "with_quantities": "{{delta}} élément(s) supprimé(s) sur {{quantity}} ligne(s)"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} a été remboursé",
+          "with_quantities": "{{delta}}/{{quantity}} articles ont été retournés"
+        },
+        "payment_method": "Méthode de paiement",
+        "order_edit_banner_items_return_line_item_removed": {
+          "with_quantities": "{{delta}} article(s) retiré(s du retour)"
+        },
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} iadeden supprimé",
+        "pay_in_installments_split_pay_short": "%{amount} en 4 paiements",
+        "payment_method_not_available_for_shipping_address_error": "Cette méthode de paiement n'est pas disponible pour l'adresse de livraison sélectionnée. Veuillez choisir une autre méthode de paiement.",
+        "payment_method_update_failed": "La méthode de paiement n'a pas pu être mise à jour.",
+        "payment_flexibility_terms_id_mismatch": "Incompatibilité d'identité dans des conditions de flexibilité de l'œdème",
+        "offsite_gateway_review_page_redirect_hint": "Votre commande sera examinée, puis vous serez redirigé vers %{gateway_label} pour finaliser votre achat.",
+        "network_card_persistence_description": "Le réseau sélectionné sera enregistré avec votre méthode de paiement pour les transactions futures.",
+        "payment_method_incompatible_with_payment_terms": "Le mode de paiement n'est pas compatible avec les conditions de paiement.",
+        "payment_option": {
+          "accessibility_label": "Sélectionnez une option de paiement"
+        },
+        "payment_method_rollup_accessibility_label": "Options de méthode de paiement",
+        "new_bank_account_disclaimer": "En complétant votre commande, vous autorisez la boutique %{shop_name} à effectuer un prélèvement ACH sur le compte indiqué, pour le montant et à la date spécifiés."
       }
     }
   }
