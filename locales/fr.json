@@ -931,13 +931,60 @@
         "autocomplete_powered_by_google": "Pris en charge par {{brandName}}",
         "dates": {
           "months": {
-            "april": "Nissan"
+            "april": "Nissan",
+            "january": "Cuisinière",
+            "march": "Martyre",
+            "october": "Ekim"
+          },
+          "weekdays": {
+            "sunday": "Marché"
+          },
+          "weekdays_abbreviation": {
+            "tuesday": "Sa",
+            "wednesday": "Ça",
+            "thursday": "Pe",
+            "friday": "Cu",
+            "saturday": "Ct",
+            "sunday": "Pz"
           }
         },
         "datepicker": {
           "range_start": "Début décembre",
           "in_range": "En décembre",
           "range_end": "Fin décembre"
+        },
+        "errors": {
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "La personne de contact de l'entreprise n'a pas accès à l'entreprise.",
+            "contact_info_does_not_match_customer_account": "Les informations de contact doivent correspondre au compte avec lequel vous vous êtes connecté.",
+            "phone_number_does_not_match_expected_pattern": "Le numéro de téléphone indiqué ne correspond pas au modèle attendu.",
+            "email_required": "Un e-mail est requis lors de l'achat d'un produit avec un abonnement.",
+            "email_domain_is_invalid": "Le nom de domaine spécifié ne peut pas être résolu.",
+            "missing_contact_method": "Aucune méthode de contact valide.",
+            "checkout_completion_target_is_missing": "Pas d'objectif de finalisation de paiement.",
+            "invalid_customer_profile": "Un profil client invalide a été fourni.",
+            "customer_profile_access_restricted": "Le paiement n'a pas l'autorisation d'accéder au profil client.",
+            "checkout_completion_target_is_invalid_proc": "Objectif de finalisation de paiement invalide.",
+            "company_location_required": "Le client doit choisir un emplacement d'entreprise pour continuer.",
+            "lost_access_to_company": "Le client a perdu l'accès à toutes les entreprises.",
+            "company_purchase_permission_required": "Le client n'a pas l'autorisation de passer des commandes pour l'entreprise.",
+            "personal_order_not_allowed": "Les commandes personnalisées ne sont pas autorisées pour ce magasin.",
+            "buyer_identity_presentment_currency_does_not_match": "Une erreur s'est produite lors du traitement de votre commande. Veuillez réessayer dans quelques minutes."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Ce paiement ne permet pas l'association à la vente au détail.",
+            "retail_attribution_required": "Ce paiement nécessite une association de vente au détail."
+          },
+          "captcha": {
+            "metadata_missing": "Ce paiement nécessite la complétion d'un Captcha.",
+            "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues.",
+            "job_enqueue_failed": "La vérification Captcha n'a pas pu être mise en file d'attente.",
+            "job_already_queued": "La vérification Captcha a déjà été mise en file d'attente pour ce jeton Captcha.",
+            "token_expired": "La durée du jeton captcha actuel a expiré. Veuillez compléter un nouveau Captcha pour continuer le processus de paiement."
+          }
+        },
+        "dropzone": {
+          "dragged_over": "Faites glisser et déposez le fichier à télécharger"
         }
       }
     }
