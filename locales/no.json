@@ -556,7 +556,22 @@
         "email_rollup_accessibility_label": "E-postaalternativer",
         "phone_rollup_accessibility_label": "Telefonvalg",
         "phone_country_code_label": "Telefonnummer landskode",
-        "optional_subdistrict_label": "Område (valgfritt)"
+        "optional_subdistrict_label": "Område (valgfritt)",
+        "title": "Informasjon",
+        "stored_addresses_label": "Lagrede adresser",
+        "state_label": "Eyalet",
+        "state_placeholder": "Eyalet",
+        "region_placeholder": "Område",
+        "state_and_territory_label": "Provins/region",
+        "state_and_territory_placeholder": "Provins/region",
+        "zip_code_label": "Postnummer",
+        "zip_code_placeholder": "Postnummer",
+        "region_none": "Ingen valgt",
+        "ship_to_company": "Fraktmottaker: {{companyName}}",
+        "shipping_used_as_billing_notice": "Denne adressen vil også bli brukt som din gyldige fakturaadresse for den aktuelle bestillingen.",
+        "storefront_link": "selgerens nettsted",
+        "suburb_label": "Nabolag",
+        "subdistrict_label": "Nabolag"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Rask betaling",
@@ -627,6 +642,67 @@
       },
       "address_management": {
         "saved_with_store": "Registrert i denne butikken"
+      },
+      "delivery_options": {
+        "free_total_label": "Gratis",
+        "none_method_definition": "Ingen frakt",
+        "company_location_no_address_banner": "Bestillinger sendt til adresser uten sted vil bli sendt til gjennomgang.",
+        "digital_product": "Digitalt produkt"
+      },
+      "customer_account": {
+        "not_user_label": "Er du ikke %{first_name}?",
+        "have_an_account_label": "Har du en konto?",
+        "sign_in_link_label": "Logg inn",
+        "sign_out_link_label": "Logg ut",
+        "save_my_information_label": "Neste trinn için denne informasjonen lagres",
+        "incomplete_address": "Det mangler informasjon i den valgte adressen. %{update_address_link} eller velg en annen adresse.",
+        "invalid_address": "Den valgte adressen er ugyldig. %{update_address_link} eller velg en annen adresse.",
+        "rollup_label": "Konto",
+        "invalid_shipping_method_summary": "Ge en gyldig leveringsadresse for å se tilgjengelige fraktmetoder.",
+        "saved_address_option_link": "Bruk registrert adresse",
+        "saved_address_modal_title": "Bruk min registrerte adresse",
+        "saved_address_option_description": {
+          "one": "Du har {{count}} registrerte adresser.",
+          "other": "Du har {{count}} registrerte adresser."
+        },
+        "rollup_accessibility_label": "Kontoalternativer"
+      },
+      "customer_payment_methods": {
+        "page_title": "Betalingsmetoder",
+        "title": "Betalingsmetoder",
+        "update_card_button_label": "Oppdater kortet",
+        "delete_customer_mandate": {
+          "generic_error": "Det oppstod et problem under behandlingen av forespørselen din.",
+          "success_message": "Betalingsmetoden din ble slettet vellykket"
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Produktet er ikke tilgjengelig",
+          "other": "Produkter som ikke er tilgjengelige"
+        },
+        "products_not_available": {
+          "one": "Dette produktet vil bli fjernet fra handlekurven din fordi det ikke er tilgjengelig i ditt land/område.",
+          "other": "Disse produktene vil bli fjernet fra handlekurven din fordi de ikke er tilgjengelige i ditt land/din region."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Dette produktet er ikke tilgjengelig i ditt land/din region.",
+          "other": "Disse produktene er ikke tilgjengelige i ditt land/din region."
+        },
+        "unavailable_label": "Ikke tilgjengelig"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Ingen tilgjengelig leveringstjeneste for %{count} produkter",
+            "other": "Ingen tilgjengelig leveringstjeneste for %{count} produkter"
+          },
+          "message": {
+            "one": "Adresiniz için kullanılabilir bir leveringsmetode finnes ikke, så dette produktet vil bli fjernet fra handlekurven din.",
+            "other": "Adresiniz için kullanılabilir bir leveringsmetode finnes ikke, så disse produktene vil bli fjernet fra handlekurven din."
+          },
+          "label": "Ingen leveringstjeneste"
+        }
       }
     }
   },
