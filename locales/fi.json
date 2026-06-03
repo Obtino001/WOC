@@ -2778,7 +2778,62 @@
         "thank_you_confirmed_order_with_missing_payment": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
         "thank_you_confirmed_order_with_missing_pick_up": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
         "thank_you_confirmed_order_with_draft_payment": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle.",
-        "thank_you_confirmed_order_with_draft_pick_up": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle."
+        "thank_you_confirmed_order_with_draft_pick_up": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Lähetämme sinulle tekstiviestin, kun tilauksesi on valmis noudettavaksi.",
+        "thank_you_ready_for_picked_up": "Tilauksesi on vastaanotettu tästä sijainnista: %{address}.",
+        "thank_you_title_payments_app_pending_default": "Maksusi käsitellään",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Tilauksesi on vastaanotettu",
+        "thank_you_title_payments_app_failed_pending_payment": "Maksusi käsittely epäonnistui",
+        "thank_you_payments_app_failed_pending_payment": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Saatte tilausvahvistus, jossa on tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Lyhyen ajan sisällä saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Lyhyen ajan sisällä saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Saatte tilausvahvistus, jossa on tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Lyhyen ajan sisällä saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Lyhyen ajan sisällä saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Lyhyen ajan kuluessa saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Lyhyen ajan kuluessa saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Lyhyen ajan kuluessa saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Kun olet suorittanut tilauksesi, saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Kun olet suorittanut tilauksesi, saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Kun olet suorittanut tilauksesi, saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Kun olet suorittanut tilauksesi, saat vahvistusviestin, joka sisältää tilausnumerosi.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "Maksusi käsitellään. Saat sähköpostin, kun tilauksesi on vahvistettu.",
+        "thank_you_confirmed_orders_with_email": "Saat pian erilliset vahvistussähköpostit tilausnumeroidesi kanssa",
+        "thank_you_confirmed_orders_with_phone": "Saat pian erilliset vahvistustekstiviestit tilausnumeroidesi kanssa",
+        "thank_you_confirmed_orders_with_email_and_phone": "Saat pian erilliset vahvistussähköpostit tilausnumeroidesi kanssa",
+        "thank_you_unconfirmed_items_description": {
+          "one": "Tästä tuotteesta ei ole vielä veloitettu sinulta."
+        },
+        "thank_you_from_shop": "%{shop_name} kaupasta",
+        "thank_you_item_label": {
+          "one": "%{count} tuotetta"
+        },
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Saat pian vahvistussähköposti.",
+          "multi_store": "Saat lyhyen ajan sisällä erilliset vahvistussähköpostit jokaisesta kaupasta."
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Saat vahvistus-SMS:n lyhyen ajan sisällä",
+          "multi_store": "Saat lyhyessä ajassa erilliset vahvistus-SMS:t jokaisesta kaupasta"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Saat pian vahvistussähköposti.",
+          "multi_store": "Saat lyhyen ajan sisällä erilliset vahvistussähköpostit jokaisesta kaupasta."
+        }
       }
     }
   }
