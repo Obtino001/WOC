@@ -2972,8 +2972,51 @@
               "ie": "Irlands MVA-numre består av bokstavene IE etterfulgt av 8-9 tegn",
               "it": "Italienske MVA-numre består av bokstavene IT etterfulgt av 11 tegn",
               "es": "Spanske MVA-numre består av bokstavene ES etterfulgt av 9 tegn",
-              "gb": "Storbritannias MVA-numre består av bokstavene GB eller XI etterfulgt av 5-12 tegn"
-            }
+              "gb": "Storbritannias MVA-numre består av bokstavene GB eller XI etterfulgt av 5-12 tegn",
+              "lv": "Latviske MVA-numre består av bokstavene LV etterfulgt av 11 tegn",
+              "lt": "Litauens MVA-numre består av bokstavene LT etterfulgt av 9-12 tegn.",
+              "lu": "Luksemburgs MVA-numre består av bokstavene LU etterfulgt av 8 tegn",
+              "mt": "Maltesiske MVA-numre består av bokstavene MT etterfulgt av 8 tegn",
+              "nl": "Nederlandsk MVA-nummer består av bokstavene NL etterfulgt av 12 tegn",
+              "pl": "Polske MVA-numre består av bokstavene PL etterfulgt av 10 tegn",
+              "pt": "Portugisiske MVA-numre består av bokstavene PT etterfulgt av 9 tegn",
+              "ro": "Rumenske MVA-numre består av bokstavene RO etterfulgt av 10 tegn",
+              "sk": "Slovakias MVA-numre består av bokstavene SK etterfulgt av 10 tegn",
+              "si": "Slovenske MVA-numre består av bokstavene SI etterfulgt av 8 tegn",
+              "se": "Svenske MVA-numre består av bokstavene SE etterfulgt av 12 tegn"
+            },
+            "invalid_number": {
+              "at": "Skriv inn et gyldig østerriksk MVA-nummer",
+              "be": "Skriv inn et gyldig belgisk MVA-nummer",
+              "bg": "Skriv inn et gyldig bulgarsk MVA-nummer",
+              "hr": "Skriv inn et gyldig kroatisk MVA-nummer",
+              "cy": "Skriv inn et gyldig Kypros MVA-nummer",
+              "cz": "Skriv inn et gyldig tsjekkisk MVA-nummer",
+              "dk": "Skriv inn et gyldig dansk MVA-nummer",
+              "ee": "Skriv inn et gyldig estisk MVA-nummer",
+              "fi": "Skriv inn et gyldig finsk MVA-nummer",
+              "fr": "Skriv inn et gyldig fransk MVA-nummer",
+              "de": "Skriv inn et gyldig tysk MVA-nummer",
+              "gr": "Skriv inn et gyldig gresk MVA-nummer",
+              "hu": "Skriv inn et gyldig ungarsk MVA-nummer",
+              "ie": "Skriv inn et gyldig irsk MVA-nummer",
+              "it": "Skriv inn et gyldig italiensk MVA-nummer",
+              "lv": "Skriv inn et gyldig latvisk MVA-nummer",
+              "lt": "Skriv inn et gyldig litauisk MVA-nummer",
+              "lu": "Skriv inn et gyldig luxembourgsk MVA-nummer",
+              "mt": "Skriv inn et gyldig maltesisk MVA-nummer",
+              "nl": "Skriv inn et gyldig nederlandsk MVA-nummer",
+              "pl": "Skriv inn et gyldig polsk MVA-nummer",
+              "pt": "Skriv inn et gyldig portugisisk MVA-nummer",
+              "ro": "Skriv inn et gyldig rumensk MVA-nummer",
+              "sk": "Skriv inn et gyldig slovensk MVA-nummer",
+              "si": "Skriv inn et gyldig slovensk MVA-nummer",
+              "es": "Skriv inn et gyldig spansk MVA-nummer",
+              "se": "Skriv inn et gyldig svensk MVA-nummer",
+              "gb": "Skriv inn et gyldig britisk MVA-nummer"
+            },
+            "service_unavailable": "Bekreftelsestjenesten er utilgjengelig",
+            "service_error": "Bekreftelsestjenesten er utilgjengelig"
           },
           "accessibility": {
             "status": {
@@ -2985,7 +3028,20 @@
               "service_unavailable": "MVA-fritak kan ikke bekreftes",
               "service_error": "MVA-fritak kan ikke bekreftes"
             }
-          }
+          },
+          "vaulted": "MVA-nummer: %{number}"
+        }
+      },
+      "thank_you": {
+        "attempted_delivery": "Leveringsforsøk ble gjort",
+        "attempted_delivery_title": "Det er gjort et leveringsforsøk for bestillingen din",
+        "attempted_delivery_description_html": "Bestillingen din ble forsøkt levert, men leveringsforsøket mislyktes. For å planlegge et nytt leveringsforsøk, vennligst %{contact_us}.",
+        "attempted_delivery_local_title": "Leveringen ble ikke mottatt",
+        "attempted_delivery_local_description_html": "Vi kunne ikke levere bestillingen din. For å planlegge en ny levering, %{contact_us}.",
+        "announcement": {
+          "close": "Lukk",
+          "expand": "Utvid",
+          "collapse": "Smalere"
         }
       }
     }
