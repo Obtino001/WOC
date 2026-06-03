@@ -960,7 +960,23 @@
             "gift_card_with_attributes_not_supported": "Tässä maksutavassa ei tueta räätälöityjä lahjakortteja.",
             "duplicated_stable_id": "Tällä tavaralla on sama pysyvä tunniste kuin toisella rivillä.",
             "bundle_requires_components": "Tässä pakkausessa ei ole komponentteja.",
-            "combined_listing_parent_not_purchasable": "Yhdistettyjä listan päätuotteita ei voi ostaa suoraan."
+            "combined_listing_parent_not_purchasable": "Yhdistettyjä listan päätuotteita ei voi ostaa suoraan.",
+            "only_value_constraint": "Sisäänkirjautumisessa sallitaan vain kokonaisluvut.",
+            "merchandise_variant_not_found": "Tuotevarianttia ei löytynyt.",
+            "merchandise_not_applicable": "Tuotevarianttia ei voi ostaa.",
+            "gift_card_with_components_not_supported": "Tässä maksussa lahjakortteja, jotka sisältävät komponentteja, ei tueta.",
+            "selling_plan_not_supported_b2b": "B2B-maksut eivät tue tilauksia.",
+            "price_mismatch": "Tämän tuotteen aiemmin suositeltu hinta ei ollut voimassa ja se on päivitetty.",
+            "inventory_not_found": "Tätä tuotetta ei ole varastossa.",
+            "product_not_published": "Tuotetta ei julkaistu.",
+            "minimum_quantity_not_met": "Joidenkin tuotteiden määrät eivät täytä vaadittua vähimmäismäärää.",
+            "maximum_quantity_exceeded": "Joidenkin tuotteiden määrät ylittävät sallitun enimmäismäärän.",
+            "quantity_increment_not_met": "Joidenkin tuotteiden määrät eivät täytä tilausrajoja.",
+            "quantity_rules_not_met": "Joidenkin tuotteiden määrät eivät täytä tilausrajoja.",
+            "title_too_long": "Tuotteen otsikko on liian pitkä.",
+            "title_empty": "Tuotteen otsikko on tyhjä.",
+            "mixed_currencies": "Maksu sisältää eri valuutoissa olevia rivikohteita.",
+            "product_not_published_in_buyer_location": "Tuotetta ei ole saatavilla nykyisessä ostajan sijainnissa."
           },
           "delivery": {
             "only_one_delivery_line_allowed": "Ostoskoriin saa kuulua vain yksi toimitusrivi.",
@@ -1005,6 +1021,38 @@
           },
           "checkout_source": {
             "revoked": "Tämä maksu ei ole enää käytettävissä."
+          },
+          "only_empty_terms_accepted": "Tämä politiikka hyväksyy vain tyhjät ehdot.",
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B-myymälöissä manuaalinen maksaminen ei ole sallittua.",
+            "total_amount_mismatch": "Maksettava kokonaissumma ei vastaa maksujen summaa.",
+            "subscription_terms_not_accepted": "Tilauksen ehdot eivät hyväksytty.",
+            "missing_session_id": "Puuttuvat luottokorttisession tiedot.",
+            "gateway_not_supported": "Maksusilta ei tue maksutavan tallentamista.",
+            "credit_card_last_name_required": "'Sukunimi' ei voi olla tyhjä.",
+            "invalid_address_type": "Annettu osoitetyyppi ei kelpaa tähän maksutapaan.",
+            "missing_retail_attributions": "Manuaalisesti syötettyjen luottokorttimaksujen yhteydessä vaaditaan vähittäismyyntiin liittyviä tietoja.",
+            "unexpected_retail_attributions": "Luottokorttimaksuihin liittyen odottamattomia vähittäismyyntiyhdistelmiä havaittiin.",
+            "invalid_card_source": "Tällä istunnolla ei ole lupaa käyttää tätä korttilähdettä.",
+            "payment_instrument_not_found": "Maksutapaa ei löytynyt",
+            "unauthorized_capture_method": "Maksutavan tallentamisen määritykset eivät ole sallittuja.",
+            "saved_payment_methods_not_allowed": "Tallennettuja maksutapoja ei sallita.",
+            "store_credit_not_enabled": "Kaupan luottoa ei ole otettu käyttöön tässä kaupassa.",
+            "store_credit_account_not_found": "Kauppaluottoa ei löytynyt.",
+            "store_credit_account_mismatch": "Kaupan luottotili ei vastaa ostajan tunnistetta.",
+            "store_credit_mismatched_currency": "Kaupan luottovaluutta ei vastaa maksun valuuttaa.",
+            "store_credit_insufficient_funds": "Kauppaluotolla ei ole tarpeeksi saldoa.",
+            "store_credit_buying_gift_card": "Et voi käyttää kauppaluottoa lahjakortin ostamiseen.",
+            "gift_cards_not_allowed_for_b2b": "B2B-myymälöissä lahjakortit eivät ole sallittuja.",
+            "method_required": "Vähintään yksi maksutapa on tarjottava.",
+            "saved_payment_methods_cvv_verification_disabled": "Valittu maksutapa vaatii CVV-tarkistuksen, joka ei ole käytössä tässä kaupassa. Valitse toinen maksutapa."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Tarjouksesi vastaanottajan tulee sisältää neuvottelemattomia ehtoja.",
+            "invalid_signature": "{{target_terms}} varten allekirjoitus on virheellinen."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Tässä maksussa tullimaksujen hylkääminen ei ole sallittua."
           }
         },
         "dropzone": {

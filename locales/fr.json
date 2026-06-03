@@ -997,7 +997,24 @@
             "gift_card_with_attributes_not_supported": "Cette méthode de paiement ne prend pas en charge les cartes-cadeaux personnalisées.",
             "duplicated_stable_id": "Cette ligne d'article a le même identifiant unique qu'une autre ligne.",
             "bundle_requires_components": "Ce paquet ne contient aucun composant.",
-            "combined_listing_parent_not_purchasable": "La liste combinée ne permet pas d'acheter directement les produits principaux."
+            "combined_listing_parent_not_purchasable": "La liste combinée ne permet pas d'acheter directement les produits principaux.",
+            "only_value_constraint": "Seules les valeurs entières sont autorisées à l'entrée.",
+            "merchandise_variant_not_found": "Aucune variation de produit trouvée.",
+            "merchandise_not_applicable": "La variation du produit ne peut pas être achetée.",
+            "gift_card_with_components_not_supported": "Cette méthode de paiement ne prend pas en charge les cartes-cadeaux contenant des composants.",
+            "selling_plan_mismatch": "Abonnement mis à jour.",
+            "selling_plan_not_supported_b2b": "Les abonnements ne sont pas pris en charge pour les paiements B2B.",
+            "price_mismatch": "Le prix conseillé précédent pour ce produit était invalide et a été mis à jour.",
+            "inventory_not_found": "Aucun stock disponible pour cet article.",
+            "product_not_published": "Le produit n'a pas été publié.",
+            "minimum_quantity_not_met": "Certaines quantités de produits ne répondent pas à la valeur minimale requise.",
+            "maximum_quantity_exceeded": "Certaines quantités de produits dépassent la valeur maximale autorisée.",
+            "quantity_increment_not_met": "Certaines quantités de produits ne respectent pas les limites de commande.",
+            "quantity_rules_not_met": "Certaines quantités de produits ne respectent pas les limites de commande.",
+            "title_too_long": "Le titre du mal est trop long.",
+            "title_empty": "Le titre est vide.",
+            "mixed_currencies": "L'édition contient des éléments de ligne en différentes devises.",
+            "product_not_published_in_buyer_location": "Le produit n'est pas disponible à l'emplacement actuel de l'acheteur."
           },
           "delivery": {
             "only_one_delivery_line_allowed": "Il ne doit y avoir qu'une seule ligne de livraison dans le panier.",
@@ -1042,6 +1059,41 @@
           },
           "checkout_source": {
             "revoked": "Ce paiement n'est plus disponible."
+          },
+          "only_empty_terms_accepted": "Cette politique n'accepte que les conditions vides.",
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "Les paiements manuels ne sont pas autorisés dans les magasins B2B.",
+            "total_amount_mismatch": "Le montant total à payer ne correspond pas à la somme des montants des paiements.",
+            "subscription_terms_not_accepted": "Les conditions d'abonnement n'ont pas été acceptées.",
+            "missing_session_id": "Informations de session de carte de crédit manquantes.",
+            "gateway_not_supported": "La passerelle de paiement ne prend pas en charge la sauvegarde de la méthode de paiement.",
+            "credit_card_last_name_required": "Le « Soyadı » ne peut pas être vide.",
+            "invalid_address_type": "Le type d'adresse fourni n'est pas valide pour ce mode de paiement.",
+            "missing_retail_attributions": "Les associations de vente au détail sont nécessaires pour les paiements par carte de crédit saisis manuellement.",
+            "unexpected_retail_attributions": "Un lien inattendu avec la vente au détail a été établi pour le paiement par carte de crédit.",
+            "invalid_card_source": "Cette session n'a pas l'autorisation d'utiliser cette source de carte.",
+            "wallet_content_missing": "Le contenu du portefeuille est incomplet.",
+            "payment_instrument_not_found": "Méthode de paiement introuvable",
+            "unauthorized_capture_method": "La configuration de la méthode d'enregistrement du paiement n'est pas autorisée.",
+            "saved_payment_methods_not_allowed": "Les méthodes de paiement enregistrées ne sont pas autorisées.",
+            "saved_payment_methods_not_enabled": "Les méthodes de paiement enregistrées ne sont pas activées pour ce magasin.",
+            "store_credit_not_enabled": "Le crédit en magasin n'est pas activé pour ce magasin.",
+            "store_credit_account_not_found": "Compte de crédit magasin introuvable.",
+            "store_credit_account_mismatch": "Le compte de crédit du magasin ne correspond pas à l'identifiant de l'acheteur.",
+            "store_credit_mismatched_currency": "La devise du crédit en magasin ne correspond pas à la devise de paiement.",
+            "store_credit_insufficient_funds": "Le solde du compte de crédit magasin est insuffisant.",
+            "store_credit_buying_gift_card": "Vous ne pouvez pas utiliser le crédit en magasin pour acheter une carte cadeau.",
+            "gift_cards_not_allowed_for_b2b": "Les cartes-cadeaux ne sont pas autorisées dans les magasins B2B.",
+            "method_required": "Au moins un mode de paiement doit être proposé.",
+            "paypal_express_address_invalid": "PayPal a renvoyé une adresse invalide.",
+            "saved_payment_methods_cvv_verification_disabled": "La méthode de paiement sélectionnée nécessite une vérification CVV qui n'est pas activée pour ce magasin. Veuillez choisir une autre méthode de paiement."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "L'offre de votre acheteur doit contenir des conditions non négociables.",
+            "invalid_signature": "La signature est invalide pour {{target_terms}}."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Ce paiement ne permet pas le refus des droits de douane."
           }
         },
         "dropzone": {

@@ -886,7 +886,69 @@
             "metadata_mismatch": "مزود الكابتشا ونوعه المقدم لا يتطابقان مع القيم المتوقعة.",
             "job_enqueue_failed": "تعذر وضع مهمة التحقق من الكابتشا في قائمة الانتظار.",
             "job_already_queued": "تم التحقق من الكابتشا، تم وضع هذا الرمز الخاص بالكابتشا بالفعل في قائمة الانتظار.",
-            "token_expired": "انتهت صلاحية رمز الكابتشا الحالي. لإكمال عملية الدفع، يرجى إتمام كابتشا جديدة."
+            "token_expired": "انتهت صلاحية رمز الكابتشا الحالي. لإكمال عملية الدفع، يرجى إتمام كابتشا جديدة.",
+            "token_missing": "لإكمال هذه الدفعة، يجب تقديم رمز التحقق Captcha.",
+            "token_invalid": "رمز التحقق Captcha المقدم غير صالح. لإكمال عملية الدفع، يرجى إكمال Captcha جديد.",
+            "token_not_valid_for_session": "لا يمكن استخدام رمز التحقق المقدم في هذه الدفعة."
+          },
+          "line_item_limit_reached": "تم الوصول إلى الحد الأقصى لعدد عناصر الصف.",
+          "merchandise": {
+            "bundle_products_not_supported_for_b2b": "لا يمكن إضافة المنتجات المعبأة في هذا الموقع إلى طلبات B2B.",
+            "gift_card_quantity_mismatch": "عند تحديد رموز بطاقة الهدايا، يجب أن يتطابق عدد عناصر الصف مع عدد رموز بطاقة الهدايا.",
+            "gift_card_not_supported": "بطاقات الهدايا غير مدعومة في هذا الدفع.",
+            "gift_card_not_unique": "في هذا الدفع، يظهر بطاقة هدية برمز {{code}} أكثر من مرة واحدة. يتم تنسيق الرموز قبل المقارنة.",
+            "gift_card_used": "{{code}} رمز بطاقة الهدية مرتبط بالفعل ببطاقة هدية. يتم تنسيق الرموز قبل المقارنة.",
+            "gift_card_invalid": "{{code}} رمز بطاقة الهدية غير صالح.",
+            "gift_card_code_changed": "تم تغيير رمز بطاقة الهدية {{proposed_code}} إلى {{formatted_code}} للامتثال لقواعد التنسيق.",
+            "gift_card_with_attributes_not_supported": "لا تدعم هذه الدفعة بطاقات الهدايا ذات الميزات المخصصة.",
+            "duplicated_stable_id": "سطر البضاعة هذا له نفس المعرف الثابت كسطر آخر.",
+            "bundle_requires_components": "لا توجد مكونات في هذه الحزمة.",
+            "combined_listing_parent_not_purchasable": "لا يمكن شراء المنتجات الرئيسية في القائمة المدمجة مباشرة."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "يجب أن يكون هناك سطر تسليم واحد فقط في السلة.",
+            "wrong_number_of_delivery_lines": "يجب تحديد خط التسليم لكل فئة من فئات المنتجات.",
+            "external_delivery_promise_error": "خطأ في استلام التزام التسليم الخارجي.",
+            "options_instructions_invalid": "التعليمات المحددة لا تتطابق مع النموذج المتوقع.",
+            "destination_address_required": "مطلوب عنوان وجهة للمتابعة.",
+            "pickup_points_unavailable": "نقاط الاستلام غير متوفرة حالياً.",
+            "local_pickup_delivery_line_detail_changed": "للمتابعة، يجب تغيير استراتيجية الاستلام من المتجر المتاح.",
+            "local_pickup_no_delivery_strategy_available": "لا توجد استراتيجية استلام من المتجر المتاح.",
+            "origin_location_id_required": "عند طلب طريقة تسليم PERAKENDE، يلزم وجود معرف موقع المنشأ.",
+            "invalid_origin_location_id": "لم يتم العثور على موقع يطابق معرف موقع المنشأ.",
+            "origin_location_id_not_allowed": "طرق التسليم المطلوبة لا تدعم هوية موقع المنشأ.",
+            "auto_fulfill_not_allowed": "ليس لهذا الجلسة صلاحية تجاوز سلوك الإرسال.",
+            "auto_fulfill_required": "عند طلب طريقة التسليم PERAKENDE، يجب أن يكون هناك إرسال تلقائي.",
+            "prefetch_shipping_rates_used": "يجب ألا تُعاد رسوم الشحن المدفوعة مسبقًا أبدًا.",
+            "fulfillment_constraints_not_satisfied": "لم يتم استيفاء قيد أو أكثر من قيود الشحن.",
+            "must_fulfill_from_constraint_not_satisfied": "لا يمكن تلبية قيود الشحن لأن المنتجات لا يمكن إرسالها من المواقع المطلوبة.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "لا يمكن تلبية قيود الشحن لأن المنتجات لا يمكن إرسالها من نفس الموقع.",
+            "delivery_strategy_conditions_not_satisfied": "توجد استراتيجيات توصيل لهذا الموقع ولكن الشروط غير مستوفاة.",
+            "out_of_stock_at_origin_location": "لا يوجد مخزون في موقع المنشأ.",
+            "invalid_signature": "توقيع الخصم غير صالح.",
+            "selected_pickup_option_no_longer_available": "خيار الاستلام المحدد مسبقًا لم يعد متاحًا.",
+            "mixed_destination_countries": "لا يمكن استخدام التوصيل لأن خطوط التوصيل تغطي أكثر من دولة واحدة."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "لا يُسمح بالخصومات في متاجر B2B.",
+            "custom_discount_not_honoured": "لم يتم تطبيق الخصم الخاص المقدم.",
+            "unsupported_expectation": "سطر الخصم المقدم كان يحتوي على توقع لم تستطع السياسة تفسيره.",
+            "additional_requested_discount_code_discarded": "{{code}} صالح ولكنه غير قابل للتطبيق. يرجى التحقق من شروط الخصم.",
+            "allocations_mismatch": "رمز الخصم الخاص بك قد تغير. تحقق من سلة التسوق وحاول مرة أخرى.",
+            "discount_title_too_long": "لا يمكن أن يكون عنوان الخصم أطول من 255 حرفًا.",
+            "additional_requested_discount_discarded": "خصمك صالح لكنه لا يمكن تطبيقه. يرجى التحقق من شروط الخصم.",
+            "mixed_destination_countries": "لا يمكن استخدام الخصومات لأن خطوط التسليم تغطي أكثر من دولة واحدة."
+          },
+          "inventory": {
+            "missing_quantity_value": "حقل الكمية مفقود في أسطر جرد المستلم.",
+            "changing_behavior_not_allowed": "لا يملك هذا العميل إذن تغيير سلوك المخزون.",
+            "only_one_inventory_behavior_allowed": "يسمح بسلوك مخزون واحد فقط لكل عملية دفع في الوقت الحالي."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "يجب أن يكون المبلغ المستلم بعملة المتجر."
+          },
+          "checkout_source": {
+            "revoked": "هذا الدفع لم يعد متاحًا."
           }
         },
         "dropzone": {
