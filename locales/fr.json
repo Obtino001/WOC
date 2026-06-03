@@ -1787,7 +1787,54 @@
         "discount_codes_removed_or_modified_summary": {
           "one": "%{count} code de réduction supprimé ou modifié",
           "other": "%{count} code de réduction supprimé ou modifié"
-        }
+        },
+        "gift_card_code_label": "Code de carte cadeau",
+        "gift_card_balance_label": "Solde :",
+        "free_order_notice_html": "Votre commande est <strong>gratuite</strong>. Aucun paiement requis.",
+        "missing_credit_card_error": "Pour finaliser le paiement, saisissez les informations de votre carte",
+        "generic_incorrect_card_info": "Les détails de votre paiement n'ont pas pu être vérifiés. Veuillez vérifier les informations de votre carte et réessayer.",
+        "klarna_pay_later_label": "Payez plus tard avec Klarna",
+        "eps_label": "virement EPS",
+        "klarna_slice_it_label": "Obtenez un financement avec Klarna",
+        "expiry_long": "(Date d'expiration : %{month}/%{year})",
+        "expiry_short": "(SKT : %{month}/%{year})",
+        "ftd_vault_credit_card_label": "Pour un paiement plus rapide, enregistrez cette carte de crédit sur mon compte",
+        "google": {
+          "connect": "Cliquez pour vous connecter avec votre compte Google Pay",
+          "error_authorizing": "Une erreur s'est produite lors de l'autorisation du paiement"
+        },
+        "mor_disclaimer_html": "En cliquant dans le champ ci-dessous et en finalisant votre commande, vous acceptez d'acheter vos produits auprès de Global-e en tant que vendeur agréé pour cette transaction, conformément aux <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Conditions Générales</a> de Global-e et à la <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Politique de Confidentialité</a>. Global-e est un prestataire de services d'expédition internationale pour %{shop_name}.",
+        "location_billing_address_label": "Adresse de facturation de l'emplacement",
+        "location_shipping_address_label": "Adresse de livraison",
+        "expired_cards_info": {
+          "one": "Il y a %{count} carte(s) expirée(s) ; vous pouvez consulter et modifier cette carte depuis votre compte.",
+          "other": "Il y a %{count} cartes expirées ; vous pouvez les consulter et les modifier depuis votre compte."
+        },
+        "local_payment_method_receiver_notice": "Après avoir passé votre commande, les détails de paiement vous seront envoyés. Effectuez votre paiement dans les {{dueDays}} jours via un distributeur automatique ou en ligne.",
+        "gift_card_wrapper": {
+          "heading": "Carte cadeau",
+          "apply_gift_card_label": "Appliquer la carte cadeau",
+          "payment_tag": "Carte cadeau",
+          "apply_another_gift_card_label": "Appliquer une autre carte cadeau",
+          "gift_card_label": "Carte cadeau (%{identifier})",
+          "add_label": "Ajouter une carte cadeau",
+          "manage_label": "Gérez vos cartes-cadeaux"
+        },
+        "markets_pro_disclaimer_label": "En passant votre commande, vous acceptez d'acheter auprès de Global-e en tant que vendeur agréé conformément aux %{markets_pro_terms} et %{privacy_policy} de Global-e, et d'autoriser le partage de vos informations avec %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Conditions générales",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Conditions générales du vendeur agréé",
+        "markets_pro_disclaimer_privacy_policy_title": "Politique de confidentialité du vendeur enregistré",
+        "expired_payment_method": "La durée de validité du mode de paiement sélectionné a expiré",
+        "gift_card_store_credit": {
+          "add_label": "Ajouter une carte cadeau ou un crédit en magasin",
+          "manage_label": "Gérez les cartes-cadeaux ou le crédit en magasin"
+        },
+        "gift_cards_unavailable": "Votre carte cadeau a été retirée car elle ne peut plus être appliquée à cette commande.",
+        "network_card_payment_options": "Sélectionnez le réseau de cartes",
+        "gift_card_checkbox_label": "Appliquer la carte cadeau",
+        "grabpay_label": "Payer avec GrabPay",
+        "kcp_creditcard_label": "Carte de Crédit KCP",
+        "multiple_primary_payment_not_allowed": "Méthodes de paiement invalides"
       }
     }
   }
