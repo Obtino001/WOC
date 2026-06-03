@@ -1272,6 +1272,78 @@
         "location_far_away_other_items": {
           "one": "Dine produkter er på %{count} steder",
           "other": "Dine produkter er på %{count} steder"
+        },
+        "toggle_location": "Endre plassering",
+        "or": "ELLER",
+        "your_location": "Din posisjon",
+        "search_button": "Finn butikkene",
+        "no_stores_found": "Butikk ikke funnet",
+        "paginator": {
+          "accessibility_label": "Sideinndeling for henting i butikk",
+          "previous": "Forrige side",
+          "next": "Neste side",
+          "label": {
+            "one": "%{count} butikker fra %{first} - %{last}",
+            "other": "%{count} butikker fra %{first} - %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Vis de %{count} andre stedene",
+          "other": "Vis de %{count} andre stedene"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "Den forhåndsvalgte plasseringen er ikke lenger tilgjengelig",
+          "description": "Velg en ny plassering eller %{ship_to_address_link}",
+          "ship_to_address_link": "send til adresse"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "Send produktene dine",
+          "search_elsewhere": "se etter et annet sted",
+          "ship_items_or_search_elsewhere": "%{ship_items} eller %{search_elsewhere}"
+        },
+        "toggle_multiple_locations": "%{count}+ flere steder",
+        "toggle_more_locations": {
+          "one": "%{count} flere steder",
+          "other": "%{count} flere steder"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Det finnes ingen plassering for produktet ditt",
+          "other": "Det finnes ingen plassering for produktene dine"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Det finnes ingen plassering for produktet ditt i %{country}",
+          "other": "Det finnes ingen plassering for produktet ditt i %{country}"
+        },
+        "title": "Sted",
+        "location_nearby_short_other_items": {
+          "one": "%{count} nærliggende steder der produktene dine finnes",
+          "other": "%{count} nærliggende steder der produktene dine finnes"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "tax_credential_br": "CPF/CNPJ",
+          "shipping_credential_br": "CPF/CNPJ",
+          "shipping_credential_kr": "Personlig tollkode",
+          "shipping_credential_cn": "Personnummer",
+          "tax_credential_cl": "RUT",
+          "shipping_credential_cl": "RUT",
+          "tax_credential_co": "ID/IVA",
+          "shipping_credential_co": "ID/IVA",
+          "shipping_credential_type_co": "Type ID-kort",
+          "tax_credential_cr": "Identifikasjonsnummer/RUT",
+          "shipping_credential_cr": "Identifikasjonsnummer/RUT",
+          "shipping_credential_ec": "CI/RUC/MVA",
+          "shipping_credential_gt": "NIT/IVA",
+          "shipping_credential_id": "NPWP",
+          "shipping_credential_my": "TIN/Skatte-ID-nummer",
+          "shipping_credential_mx": "RFC",
+          "shipping_credential_py": "CI/RUC/MVA",
+          "shipping_credential_pe": "DNI/RUC/CE",
+          "shipping_credential_pt": "NIF/IVA",
+          "shipping_credential_es": "DNI/NIF",
+          "shipping_credential_tw": "Nasjonalt identitetsnummer/MVA",
+          "shipping_credential_tr": "Tyrkisk republikk identitetsnummer/MVA"
         }
       }
     }
