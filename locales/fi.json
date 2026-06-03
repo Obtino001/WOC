@@ -2155,7 +2155,57 @@
         "different_shipping_method_summary": "Näytä käytettävissä olevat toimitustavat syöttämällä eri toimitusosoite",
         "default_description": "Lähetetään 1 työpäivän kuluessa",
         "back": "Geri",
-        "delivery_to": "Toimituksen vastaanottaja:"
+        "delivery_to": "Toimituksen vastaanottaja:",
+        "no_rates_for_cart_or_destination_notice": "Ostoskoriisi tai osoitteeseesi ei ole saatavilla toimitustapaa",
+        "no_pickup_location_notice": "Vähintään yksi tuotteistasi ei ole sopiva toimitettavaksi",
+        "no_rates_for_country_notice": "Tälle osoitteelle ei löytynyt toimituskuluja.",
+        "no_rates_contact_notice": "Lisätietoja saat ottamalla meihin yhteyttä",
+        "estimated_delivery_date": {
+          "one": "%{count} työpäivää",
+          "other": "%{count} työpäivää"
+        },
+        "estimated_delivery_date_range": "%{minimum} ja %{maximum} työpäivää",
+        "shipping_line_phone": "Kuriiri voi käyttää tätä numeroa ottaakseen sinuun yhteyttä.",
+        "other_method": {
+          "zero": "Ei ole muuta keinoa",
+          "one": "Tässä hinnassa on vielä %{count} muuta tapaa:",
+          "other": "On vielä %{count} menetelmää, jotka alkavat tästä hinnasta:"
+        },
+        "shipping_line_delivery_phone": "Toimituksesi päivityksistä saatetaan ottaa sinuun yhteyttä.",
+        "shipping_line_delivery_instructions": "Anna tarvittavat tiedot, kuten oven numero tai toimitusohjeet.",
+        "one_time_purchase_shipping": "Kertakuljetus",
+        "estimated_delivery_time": "Arvioitu toimitusaika: %{time}",
+        "estimated_delivery_time_range": "Arvioitu toimitusaika: %{min_time}–%{max_time}",
+        "estimated_time": "Arvioitu päivämäärä: %{time}",
+        "estimated_time_range": "Arvioitu %{min_time}–%{max_time}",
+        "duties_and_taxes_title": "Verot ja tullimaksut",
+        "shipping_information_required_notice": "Toimitustiedot ovat pakollisia. {{link}}.",
+        "shipping_information_redirect_link": "Syötä tietosi tähän",
+        "loading_progressive_rates": "Muita maksuja haetaan…",
+        "no_other_methods_available": "Ei ole muuta keinoa",
+        "duties_and_taxes_options": {
+          "ddu_title": "Maksa ovelta",
+          "ddp_caption": "Ei lisämaksua toimituksen yhteydessä"
+        },
+        "invalid_shipping_method_summary": "Näytä käytettävissä olevat toimitustavat syöttämällä voimassa oleva toimitusosoite.",
+        "method_summary": {
+          "incomplete_address_entered": "Näytä käytettävissä olevat toimitustavat syöttämällä toimitusosoite kokonaisuudessaan",
+          "incomplete_address_selected": "Näytä käytettävissä olevat toimitustavat valitsemalla täydellinen toimitusosoite"
+        },
+        "local_pickup": {
+          "search_address": "Osoite ara",
+          "rollup_title": "Noutopaikka",
+          "rollup_accessibility_label": "Noutopaikan valintavaihtoehdot"
+        },
+        "shipping_method_first_shipment_group_title": {
+          "other": "Ensimmäinen lähetys"
+        },
+        "pre_order_ships_date": "%{date} päivänä lähetetään",
+        "prime_not_available": {
+          "default": "Tilauksellesi ei ole saatavilla Prime-toimitusta. Lähetysvaihtoehtosi on päivitetty."
+        },
+        "shipping_address_rollup_accessibility_label": "Toimitusosoitteen vaihtoehdot",
+        "invalid_shipping_method_summary_selected": "Näytä käytettävissä olevat toimitustavat valitsemalla eri toimitusosoite"
       },
       "session_errors": {
         "session_not_unique": "Tilaustasi käsiteltäessä ilmeni ongelma. Päivitä tämä sivu palataksesi kauppaan.",

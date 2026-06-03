@@ -2137,10 +2137,15 @@
           "ship_items_to": {
             "one": "%{count} Artikel werden hierhin geschickt",
             "other": "%{count} Artikel werden hierhin geschickt"
-          }
+          },
+          "shipping_address_title": "Lieferadresse:"
         },
         "block_title": "Überprüfen Sie Ihre Angaben",
-        "account_more_actions": "Für dieses Konto weitere Vorgänge"
+        "account_more_actions": "Für dieses Konto weitere Vorgänge",
+        "title": "Ansehen",
+        "review_title": "Bestellen Sie jetzt",
+        "checkout_as_guest": "Als Gast bezahlen",
+        "checkout_a_different_way": "Mit einer anderen Methode bezahlen"
       },
       "redeemable_errors": {
         "gift_card": {
@@ -2176,6 +2181,42 @@
       "required_extensions": {
         "errors": {
           "interaction_required": "Die Zahlung erfordert eine Interaktion mit einer Erweiterung, um abgeschlossen zu werden."
+        }
+      },
+      "shipping": {
+        "cheapest_rate_label": "Am günstigsten",
+        "arrives_time": "Ankunft: %{time}",
+        "arrives_time_range": "Ankunft: %{min_time}–%{max_time}",
+        "delivery_today": "Lieferung am selben Tag (%{time})",
+        "delivery_tomorrow": "Lieferung am nächsten Tag (%{time})",
+        "delivery": "Lieferung (%{time})",
+        "add_delivery_instructions": "Lieferanweisungen hinzufügen",
+        "delete": "Sil",
+        "address_more": "Für diese Adresse weitere Aktionen",
+        "address_confirm": "Sind Sie sicher, dass Sie diese Adresse aus Ihrem Konto löschen möchten?",
+        "address_form": {
+          "cancel": "Abbrechen",
+          "generic_error": "Beim Speichern Ihrer Adresse ist ein Problem aufgetreten. Bitte versuchen Sie es erneut.",
+          "one_time_address_subtitle": "Verwenden Sie für diese Bestellung eine einmalige Adresse"
+        },
+        "different_shipping_method_summary": "Um die verfügbaren Versandmethoden anzuzeigen, geben Sie eine andere Lieferadresse ein",
+        "default_description": "Innerhalb von 1 Werktag versandt",
+        "back": "Geri",
+        "choose_new_address": "Wählen Sie eine neue Adresse aus",
+        "add_new_delivery_address": "Neue Lieferadresse hinzufügen",
+        "delivery_to": "Empfänger der Lieferung:"
+      },
+      "session_errors": {
+        "session_not_unique": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite, um zum Geschäft zurückzukehren.",
+        "session_already_finished": "Diese Bestellung wurde bereits versandt. Sie können zum Geschäft zurückkehren, um eine neue Bestellung aufzugeben."
+      },
+      "review_address_modal": {
+        "title": "Adresse prüfen",
+        "subtitle_no_match": "Diese Adresse stimmt mit keiner Ihrer gespeicherten Adressen überein.",
+        "subtitle_must_use": "Ihre Bestellung wird an diese Adresse geliefert.",
+        "subtitle": {
+          "one": "Diese Bestellung wird an die von {{merchant}} angegebene Adresse geliefert.",
+          "other": "Diese Bestellung wird an die von {{merchant}} angegebene Adresse geliefert. Wählen Sie eine Versandadresse aus."
         }
       }
     }
