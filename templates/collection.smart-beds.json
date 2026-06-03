@@ -7,28 +7,37 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+/*
+ * ------------------------------------------------------------
+ * ÖNEMLİ: Bu dosyanın içeriği otomatik olarak oluşturulmuştur.
+ *
+ * Bu dosya Shopify yönetici tema düzenleyicisi
+ * veya ilgili sistemler tarafından güncellenebilir. Yapılan herhangi bir
+ * değişikliğin üzerine yazılabileceğinden lütfen dikkatli olun.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "smart-beds-hero",
       "settings": {
         "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
-        "kicker": "Bespoke Sleeping Systems",
-        "heading": "No Two Bodies\nAre the Same",
-        "subheading": "Why should your bed be mass-produced?",
-        "description": "Every World of Comfort sleeping system is built from scratch — tailored to your body, your sleeping habits, and your life. Handcrafted in Europe. Never off the shelf.",
-        "button_1_text": "Discover the Collection",
+        "kicker": "Kişiye Özel Uyku Sistemleri",
+        "heading": "Hiçbir İki Vücut\nAynı Değildir",
+        "subheading": "Yatağınız neden seri üretim olsun?",
+        "description": "Her World of Comfort uyku sistemi sıfırdan üretilir; vücudunuza, uyku alışkanlıklarınıza ve yaşamınıza özel olarak tasarlanır. Avrupa'da el işçiliğiyle üretilmiştir. Asla raftan hazır alınmaz.",
+        "button_1_text": "Koleksiyonu Keşfedin",
         "button_1_link": "#collection",
-        "button_2_text": "How it Works",
+        "button_2_text": "Nasıl Çalışır?",
         "button_2_link": "#process"
       }
     },
     "philosophy": {
       "type": "smart-beds-philosophy",
       "settings": {
-        "kicker": "Our Philosophy",
-        "heading": "A bed should be as unique\n<span class=\"italic text-forest\">as the person sleeping in it.</span>",
-        "content": "<p>Mass-produced mattresses are designed for the average body. But there is no such thing as an average body. Your spinal curvature, weight distribution, shoulder width, and sleeping position are entirely your own.</p><p>That is why we build every sleeping system following a personal body analysis — we measure, scan, and consult before a single component is selected. The result is a bed that fits you, not the other way around.</p>",
+        "kicker": "Felsefemiz",
+        "heading": "Bir yatak,\n<span class=\"italic text-forest\">içinde uyuyan kişi kadar eşsiz olmalıdır.</span>",
+        "content": "<p>Seri üretim yataklar ortalama bir vücut için tasarlanır. Ancak ortalama vücut diye bir şey yoktur. Omurga eğriliğiniz, ağırlık dağılımınız, omuz genişliğiniz ve uyku pozisyonunuz tamamen size özgüdür.</p><p>Bu yüzden her uyku sistemini kişisel bir vücut analizinin ardından üretiyoruz; tek bir bileşen bile seçilmeden önce ölçüyor, tarıyor ve danışmanlık veriyoruz. Sonuç olarak size uyan bir yatak ortaya çıkıyor, tam tersi değil.</p>",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -41,60 +50,60 @@
           "settings": {
             "image": "shopify://shop_images/universal-beds-hero-DgL-15oK_1.png",
             "title": "SOVESYSTEM®",
-            "subtitle": "The Original Bespoke Sleeping System",
+            "subtitle": "Orijinal Kişiye Özel Uyku Sistemi",
             "link": "#sovesystem",
-            "badge_text": "Booking only",
+            "badge_text": "Sadece randevu ile",
             "badge_color": "forest",
             "flag_emoji": "🇩🇪",
-            "flag_text": "Handmade in Germany"
+            "flag_text": "Almanya'da El İşçiliği"
           }
         },
         "cat_2": {
           "type": "category",
           "settings": {
-            "title": "SYNTHERA™ AI MATTRESS",
-            "subtitle": "AI-Driven Firmness. 5-Zone Air Massage. Cooling Comfort.",
+            "title": "SYNTHERA™ AI YATAK",
+            "subtitle": "Yapay Zeka Destekli Sertlik. 5 Bölgeli Hava Masajı. Serinletici Konfor.",
             "link": "#ai-mattress",
-            "badge_text": "Shop online",
+            "badge_text": "Online satın al",
             "badge_color": "gold",
             "flag_emoji": "🤖",
-            "flag_text": "AI-Sleep Technology"
+            "flag_text": "Yapay Zeka Uyku Teknolojisi"
           }
         },
         "cat_3": {
           "type": "category",
           "settings": {
-            "title": "SYNTHERA™ AI TOPPER",
-            "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+            "title": "SYNTHERA™ AI YATAK PEDİ",
+            "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
             "link": "#ai-topper",
-            "badge_text": "Shop online",
+            "badge_text": "Online satın al",
             "badge_color": "gold",
             "flag_emoji": "🤖",
-            "flag_text": "AI-Sleep Technology"
+            "flag_text": "Yapay Zeka Uyku Teknolojisi"
           }
         },
         "cat_4": {
           "type": "category",
           "settings": {
-            "title": "Universal Beds",
-            "subtitle": "Quality beds for every lifestyle",
+            "title": "Evrensel Yataklar",
+            "subtitle": "Her yaşam tarzı için kaliteli yataklar",
             "link": "#universal-beds",
-            "badge_text": "Shop online",
+            "badge_text": "Online satın al",
             "badge_color": "gold",
             "flag_emoji": "🇩🇰",
-            "flag_text": "Made in Denmark"
+            "flag_text": "Danimarka'da Üretilmiştir"
           }
         },
         "cat_5": {
           "type": "category",
           "settings": {
-            "title": "Duvets & Pillows",
-            "subtitle": "Premium bedding accessories from our own brand",
+            "title": "Yorganlar ve Yastıklar",
+            "subtitle": "Kendi markamızdan premium yatak aksesuarları",
             "link": "#duvets-pillows",
-            "badge_text": "Shop online",
+            "badge_text": "Online satın al",
             "badge_color": "gold",
             "flag_emoji": "🇩🇰",
-            "flag_text": "Made in Denmark"
+            "flag_text": "Danimarka'da Üretilmiştir"
           }
         }
       },
@@ -106,9 +115,9 @@
         "cat_5"
       ],
       "settings": {
-        "kicker": "The Collection",
-        "heading": "Five Categories. One Philosophy.",
-        "description": "From bespoke sleeping systems to premium duvets and pillows — everything you need for the perfect night's sleep.",
+        "kicker": "Koleksiyon",
+        "heading": "Beş Kategori. Tek Felsefe.",
+        "description": "Kişiye özel uyku sistemlerinden premium yorgan ve yastıklara kadar — mükemmel bir gece uykusu için ihtiyacınız olan her şey.",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -134,14 +143,14 @@
           "type": "feature",
           "settings": {
             "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"></path><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"></path><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"></path><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"></path></svg>",
-            "text": "Personal Body Scanning"
+            "text": "Kişisel Vücut Taraması"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
             "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4\"></path><path d=\"M14 13.12c0 2.38 0 6.38-1 8.88\"></path><path d=\"M17.29 21.02c.12-.6.43-2.3.5-3.02\"></path><path d=\"M2 12a10 10 0 0 1 18-6\"></path><path d=\"M2 16h.01\"></path><path d=\"M21.8 16c.2-2 .131-5.354 0-6\"></path><path d=\"M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2\"></path><path d=\"M8.65 22c.21-.66.45-1.32.57-2\"></path><path d=\"M9 6.8a6 6 0 0 1 9 5.2v2\"></path></svg>",
-            "text": "1:1 Custom Made"
+            "text": "Birebir Özel Üretim"
           }
         }
       },
@@ -161,29 +170,29 @@
         "show_play_button": true,
         "show_process_box": true,
         "kicker_color": "gold",
-        "kicker": "Our Signature",
+        "kicker": "İmzamız",
         "title": "SOVESYSTEM®",
-        "subtitle": "The Original Bespoke Sleeping System",
+        "subtitle": "Orijinal Kişiye Özel Uyku Sistemi",
         "origin_emoji": "🇩🇪",
-        "origin_text": "Handmade in Germany",
-        "description": "<p>Developed by a leading German sleep professor, SOVESYSTEM® is our signature product — a fully custom-built sleeping system created following a personal body analysis and consultation.</p>",
-        "price_prefix": "From",
+        "origin_text": "Almanya'da El İşçiliği",
+        "description": "<p>Önde gelen bir Alman uyku profesörü tarafından geliştirilen SOVESYSTEM® bizim imza ürünümüzdür; kişisel bir vücut analizi ve danışmanlığın ardından oluşturulan, tamamen size özel üretilmiş bir uyku sistemidir.</p>",
+        "price_prefix": "Başlangıç fiyatı",
         "price": "£1,650",
         "compare_price": "",
-        "price_suffix": "or from £6 / week",
+        "price_suffix": "veya haftada £6'dan başlayan fiyatlarla",
         "badge_text": "",
-        "btn1_text": "Book Free Body Analysis",
+        "btn1_text": "Ücretsiz Vücut Analizi İçin Randevu Alın",
         "btn1_icon": "",
         "btn1_link": "/pages/contact",
         "btn2_text": "",
         "btn2_link": "",
-        "video_label": "Watch Video",
-        "process_heading": "The Process",
-        "process_badge": "4 steps",
-        "process_step_1": "Book free body analysis",
-        "process_step_2": "Consultation and needs analysis",
-        "process_step_3": "Body measurement and scanning",
-        "process_step_4": "Personal recommendation",
+        "video_label": "Videoyu İzle",
+        "process_heading": "Süreç",
+        "process_badge": "4 adım",
+        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
+        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
+        "process_step_3": "Vücut ölçümü ve taraması",
+        "process_step_4": "Kişisel öneri",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -241,33 +250,33 @@
         "show_divider_top": true,
         "product": "synthera-ai-madras",
         "image": "shopify://shop_images/synthera-ai-mattress-Csqof_UQ_130be841-a6cf-48ef-b202-3f10216bfbe4.jpg",
-        "image_badge": "NEW 2026",
+        "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
-        "kicker": "World Premiere",
-        "title": "SYNTHERA™ AI MATTRESS",
-        "subtitle": "AI-Driven Firmness. 5-Zone Air Massage. Cooling Comfort.",
+        "kicker": "Dünya Prömiyeri",
+        "title": "SYNTHERA™ AI YATAK",
+        "subtitle": "Yapay Zeka Destekli Sertlik. 5 Bölgeli Hava Masajı. Serinletici Konfor.",
         "origin_emoji": "",
         "origin_text": "",
-        "description": "<p>The world's first mattress that adapts to you in real-time. The SYNTHERA™ AI Mattress combines advanced AI pressure sensing with 5-zone air compression massage and a cooling Ice Silk surface.</p>",
+        "description": "<p>Size gerçek zamanlı olarak uyum sağlayan dünyanın ilk yatağı. SYNTHERA™ AI Yatak, gelişmiş yapay zeka basınç algılama teknolojisini 5 bölgeli hava sıkıştırmalı masaj ve serinletici Ice Silk yüzeyi ile birleştiriyor.</p>",
         "price_prefix": "90 × 200 × 27 cm",
         "price": "£1,980",
         "compare_price": "",
         "price_suffix": "",
         "badge_text": "",
-        "btn1_text": "Add to basket",
+        "btn1_text": "Sepete Ekle",
         "btn1_icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"8\" cy=\"21\" r=\"1\"></circle><circle cx=\"19\" cy=\"21\" r=\"1\"></circle><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"></path></svg>",
         "btn1_link": "",
-        "btn2_text": "View product",
+        "btn2_text": "Ürünü İncele",
         "btn2_link": "",
-        "video_label": "Watch Video",
-        "process_heading": "The Process",
-        "process_badge": "4 steps",
-        "process_step_1": "Book free body analysis",
-        "process_step_2": "Consultation and needs analysis",
-        "process_step_3": "Body measurement and scanning",
-        "process_step_4": "Personal recommendation",
+        "video_label": "Videoyu İzle",
+        "process_heading": "Süreç",
+        "process_badge": "4 adım",
+        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
+        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
+        "process_step_3": "Vücut ölçümü ve taraması",
+        "process_step_4": "Kişisel öneri",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -333,33 +342,33 @@
         "show_divider_top": true,
         "product": "",
         "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
-        "image_badge": "NEW 2026",
+        "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
-        "kicker": "Upgrade Your Sleep",
-        "title": "SYNTHERA™ AI TOPPER",
-        "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+        "kicker": "Uykunuzu Üst Seviyeye Taşıyın",
+        "title": "SYNTHERA™ AI YATAK PEDİ",
+        "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
         "origin_emoji": "",
         "origin_text": "",
-        "description": "<p>Place it on top of your existing mattress — no renovation required. The SYNTHERA™ AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat.</p>",
+        "description": "<p>Mevcut yatağınızın üzerine yerleştirin; herhangi bir yeniliğe gerek yok. SYNTHERA™ AI Yatak Pedi, çok bölgeli hava sıkıştırması ve 3 kademeli rahatlatıcı ısı ile 7 ön ayarlı tüm vücut masaj programı sunar.</p>",
         "price_prefix": "90 × 200 cm",
         "price": "£550",
         "compare_price": "£660",
         "price_suffix": "",
-        "badge_text": "Save 1,000 kr.",
-        "btn1_text": "Add to basket",
+        "badge_text": "1.000 kr. Tasarruf Edin",
+        "btn1_text": "Sepete Ekle",
         "btn1_icon": "",
         "btn1_link": "",
-        "btn2_text": "View product",
+        "btn2_text": "Ürünü İncele",
         "btn2_link": "",
-        "video_label": "Watch Video",
-        "process_heading": "The Process",
-        "process_badge": "4 steps",
-        "process_step_1": "Book free body analysis",
-        "process_step_2": "Consultation and needs analysis",
-        "process_step_3": "Body measurement and scanning",
-        "process_step_4": "Personal recommendation",
+        "video_label": "Videoyu İzle",
+        "process_heading": "Süreç",
+        "process_badge": "4 adım",
+        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
+        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
+        "process_step_3": "Vücut ölçümü ve taraması",
+        "process_step_4": "Kişisel öneri",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -425,33 +434,33 @@
         "show_divider_top": true,
         "product": "",
         "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
-        "image_badge": "NEW 2026",
+        "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
-        "kicker": "Upgrade Your Sleep",
-        "title": "SYNTHERA™ AI TOPPER",
-        "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+        "kicker": "Uykunuzu Üst Seviyeye Taşıyın",
+        "title": "SYNTHERA™ AI YATAK PEDİ",
+        "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
         "origin_emoji": "",
         "origin_text": "",
-        "description": "<p>Place it on top of your existing mattress — no renovation required. The SYNTHERA™ AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat.</p>",
+        "description": "<p>Mevcut yatağınızın üzerine yerleştirin; herhangi bir yeniliğe gerek yok. SYNTHERA™ AI Yatak Pedi, çok bölgeli hava sıkıştırması ve 3 kademeli rahatlatıcı ısı ile 7 ön ayarlı tüm vücut masaj programı sunar.</p>",
         "price_prefix": "90 × 200 cm",
         "price": "£550",
         "compare_price": "£660",
         "price_suffix": "",
-        "badge_text": "Save 1,000 kr.",
-        "btn1_text": "Add to basket",
+        "badge_text": "1.000 kr. Tasarruf Edin",
+        "btn1_text": "Sepete Ekle",
         "btn1_icon": "",
         "btn1_link": "",
-        "btn2_text": "View product",
+        "btn2_text": "Ürünü İncele",
         "btn2_link": "",
-        "video_label": "Watch Video",
-        "process_heading": "The Process",
-        "process_badge": "4 steps",
-        "process_step_1": "Book free body analysis",
-        "process_step_2": "Consultation and needs analysis",
-        "process_step_3": "Body measurement and scanning",
-        "process_step_4": "Personal recommendation",
+        "video_label": "Videoyu İzle",
+        "process_heading": "Süreç",
+        "process_badge": "4 adım",
+        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
+        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
+        "process_step_3": "Vücut ölçümü ve taraması",
+        "process_step_4": "Kişisel öneri",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -517,33 +526,33 @@
         "show_divider_top": true,
         "product": "",
         "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
-        "image_badge": "NEW 2026",
+        "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
-        "kicker": "Upgrade Your Sleep",
-        "title": "SYNTHERA™ AI TOPPER",
-        "subtitle": "Transform any mattress into an intelligent massage and heat surface.",
+        "kicker": "Uykunuzu Üst Seviyeye Taşıyın",
+        "title": "SYNTHERA™ AI YATAK PEDİ",
+        "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
         "origin_emoji": "",
         "origin_text": "",
-        "description": "<p>Place it on top of your existing mattress — no renovation required. The SYNTHERA™ AI Topper delivers 7 preset full-body massage programmes with multi-zone air compression and 3-level soothing heat.</p>",
+        "description": "<p>Mevcut yatağınızın üzerine yerleştirin; herhangi bir yeniliğe gerek yok. SYNTHERA™ AI Yatak Pedi, çok bölgeli hava sıkıştırması ve 3 kademeli rahatlatıcı ısı ile 7 ön ayarlı tüm vücut masaj programı sunar.</p>",
         "price_prefix": "90 × 200 cm",
         "price": "£550",
         "compare_price": "£660",
         "price_suffix": "",
-        "badge_text": "Save 1,000 kr.",
-        "btn1_text": "Add to basket",
+        "badge_text": "1.000 kr. Tasarruf Edin",
+        "btn1_text": "Sepete Ekle",
         "btn1_icon": "",
         "btn1_link": "",
-        "btn2_text": "View product",
+        "btn2_text": "Ürünü İncele",
         "btn2_link": "",
-        "video_label": "Watch Video",
-        "process_heading": "The Process",
-        "process_badge": "4 steps",
-        "process_step_1": "Book free body analysis",
-        "process_step_2": "Consultation and needs analysis",
-        "process_step_3": "Body measurement and scanning",
-        "process_step_4": "Personal recommendation",
+        "video_label": "Videoyu İzle",
+        "process_heading": "Süreç",
+        "process_badge": "4 adım",
+        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
+        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
+        "process_step_3": "Vücut ölçümü ve taraması",
+        "process_step_4": "Kişisel öneri",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -554,37 +563,37 @@
         "neg1": {
           "type": "col1_item",
           "settings": {
-            "text": "Designed for the 'average' body"
+            "text": "'Ortalama' vücut için tasarlanmıştır"
           }
         },
         "neg2": {
           "type": "col1_item",
           "settings": {
-            "text": "Same firmness for everyone"
+            "text": "Herkes için aynı sertlik"
           }
         },
         "neg3": {
           "type": "col1_item",
           "settings": {
-            "text": "Factory assembly line"
+            "text": "Fabrika montaj hattı"
           }
         },
         "pos1": {
           "type": "col2_item",
           "settings": {
-            "text": "Built following body scan & measurements"
+            "text": "Vücut taraması ve ölçümlerine göre üretilir"
           }
         },
         "pos2": {
           "type": "col2_item",
           "settings": {
-            "text": "Firmness tailored zone by zone"
+            "text": "Bölge bölge uyarlanmış sertlik"
           }
         },
         "pos3": {
           "type": "col2_item",
           "settings": {
-            "text": "Handcrafted by European specialists"
+            "text": "Avrupalı uzmanlar tarafından elde üretilir"
           }
         }
       },
@@ -597,9 +606,9 @@
         "pos3"
       ],
       "settings": {
-        "kicker": "Why Bespoke?",
-        "heading": "Mass-produced vs. Made for You",
-        "col1_title": "Standard Mattress",
+        "kicker": "Neden Kişiye Özel?",
+        "heading": "Seri Üretim vs. Sizin İçin Üretilmiş",
+        "col1_title": "Standart Yatak",
         "col2_title": "World of Comfort",
         "padding_top": 40,
         "padding_bottom": 52
@@ -611,15 +620,15 @@
         "q1": {
           "type": "faq",
           "settings": {
-            "question": "Why is the right bed so important for my health?",
-            "answer": "<p>You spend about a third of your life in bed. A bed that doesn't fit your body can cause back pain, neck pain, poor sleep quality, and even affect your mood, energy levels, and immune system.</p>"
+            "question": "Doğru yatak sağlığım için neden bu kadar önemli?",
+            "answer": "<p>Hayatınızın yaklaşık üçte birini yatakta geçirirsiniz. Vücudunuza uymayan bir yatak sırt ağrısı, boyun ağrısı, düşük uyku kalitesine neden olabilir ve hatta ruh halinizi, enerji seviyenizi ve bağışıklık sisteminizi bile etkileyebilir.</p>"
           }
         },
         "q2": {
           "type": "faq",
           "settings": {
-            "question": "What is an AI mattress, and how does it work?",
-            "answer": "<p>An AI mattress uses sensors and intelligent software to analyse your body and automatically adjust support. Our AI mattresses scan your body's pressure distribution and adapt the firmness in several independent zones.</p>"
+            "question": "Yapay zeka (AI) yatak nedir ve nasıl çalışır?",
+            "answer": "<p>Bir AI yatak, vücudunuzu analiz etmek ve desteği otomatik olarak ayarlamak için sensörler ve akıllı yazılımlar kullanır. Yapay zeka yataklarımız, vücudunuzun basınç dağılımını tarar ve sertliği bağımsız birkaç bölgede uyarlar.</p>"
           }
         }
       },
@@ -628,15 +637,15 @@
         "q2"
       ],
       "settings": {
-        "kicker": "Frequently Asked Questions",
-        "heading": "Everything You Want <span class=\"italic text-gold\">to Know About Sleeping Systems</span>",
+        "kicker": "Sıkça Sorulan Sorular",
+        "heading": "Uyku Sistemleri Hakkında <span class=\"italic text-gold\">Bilmek İstediğiniz Her Şey</span>",
         "description": "",
         "contact_link": "",
-        "cat_1_text": "Sleep & Health",
-        "cat_2_text": "Materials & Quality",
-        "cat_3_text": "Technology",
-        "contact_heading": "Still have questions?",
-        "contact_subheading": "Our sleep experts are ready to help you.",
+        "cat_1_text": "Uyku ve Sağlık",
+        "cat_2_text": "Malzemeler ve Kalite",
+        "cat_3_text": "Teknoloji",
+        "contact_heading": "Hala sorularınız mı var?",
+        "contact_subheading": "Uyku uzmanlarımız size yardımcı olmaya hazır.",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -647,33 +656,33 @@
         "t1": {
           "type": "testimonial",
           "settings": {
-            "quote": "The bed adapted to my sleep position from the first night. I haven't slept this well in years.",
+            "quote": "Yatak ilk geceden itibaren uyku pozisyonuma uyum sağladı. Yıllardır bu kadar iyi uyumamıştım.",
             "author": "Erik Madsen",
-            "product_info": "Copenhagen · SYNTHERA™ AI Mattress"
+            "product_info": "Kopenhag · SYNTHERA™ AI Yatak"
           }
         },
         "testimonial_Kh6bUr": {
           "type": "testimonial",
           "settings": {
-            "quote": "The bed adapted to my sleep position from the first night. I haven't slept this well in years.",
+            "quote": "Yatak ilk geceden itibaren uyku pozisyonuma uyum sağladı. Yıllardır bu kadar iyi uyumamıştım.",
             "author": "Erik Madsen",
-            "product_info": "Copenhagen · SYNTHERA™ AI Mattress"
+            "product_info": "Kopenhag · SYNTHERA™ AI Yatak"
           }
         },
         "t2": {
           "type": "testimonial",
           "settings": {
-            "quote": "The body scan function is incredible. The bed knows exactly what my back needs. Fantastic technology.",
+            "quote": "Vücut tarama fonksiyonu inanılmaz. Yatak sırtımın tam olarak neye ihtiyacı olduğunu biliyor. Harika bir teknoloji.",
             "author": "Karen Friis",
-            "product_info": "Aarhus · Body Scan Bed"
+            "product_info": "Aarhus · Vücut Taramalı Yatak"
           }
         },
         "testimonial_Rh9Yyq": {
           "type": "testimonial",
           "settings": {
-            "quote": "The body scan function is incredible. The bed knows exactly what my back needs. Fantastic technology.",
+            "quote": "Vücut tarama fonksiyonu inanılmaz. Yatak sırtımın tam olarak neye ihtiyacı olduğunu biliyor. Harika bir teknoloji.",
             "author": "Karen Friis",
-            "product_info": "Aarhus · Body Scan Bed"
+            "product_info": "Aarhus · Vücut Taramalı Yatak"
           }
         }
       },
@@ -684,8 +693,8 @@
         "testimonial_Rh9Yyq"
       ],
       "settings": {
-        "kicker": "Customer Experiences",
-        "heading": "What our customers are saying",
+        "kicker": "Müşteri Deneyimleri",
+        "heading": "Müşterilerimiz neler söylüyor",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -697,16 +706,16 @@
           "type": "feature",
           "settings": {
             "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" class=\"w-5 h-5\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>",
-            "title": "German-Engineered Precision",
-            "text": "SOVESYSTEM® is handmade in Germany by master craftsmen using your exact body measurements."
+            "title": "Alman Mühendisliği Hassasiyeti",
+            "text": "SOVESYSTEM®, ustalar tarafından Almanya'da birebir vücut ölçüleriniz kullanılarak el işçiliğiyle üretilir."
           }
         },
         "feat_2": {
           "type": "feature",
           "settings": {
             "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" class=\"w-5 h-5\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
-            "title": "AI-Driven Sleep Technology",
-            "text": "SYNTHERA™ AI Mattress and Topper use real-time pressure detection and AI firmness adjustment."
+            "title": "Yapay Zeka Destekli Uyku Teknolojisi",
+            "text": "SYNTHERA™ AI Yatak ve Yatak Pedi, gerçek zamanlı basınç algılama ve yapay zeka sertlik ayarlaması kullanır."
           }
         }
       },
@@ -715,16 +724,24 @@
         "feat_2"
       ],
       "settings": {
-        "kicker": "Why World of Comfort Sleep",
-        "heading": "What Makes Our Sleep Systems Unique",
-        "description": "We don't just sell beds — we engineer personalized sleep solutions backed by German craftsmanship, AI technology, and decades of sleep science.",
+        "kicker": "Neden World of Comfort Uykusu",
+        "heading": "Uyku Sistemlerimizi Eşsiz Kılan Nedir",
+        "description": "Biz sadece yatak satmıyoruz; Alman işçiliği, yapay zeka teknolojisi ve onlarca yıllık uyku bilimiyle desteklenen kişiselleştirilmiş uyku çözümleri tasarlıyoruz.",
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
     "bottom_cta": {
       "type": "smart-beds-bottom-cta",
-      "settings": {}
+      "settings": {
+        "kicker": "Kişiye Özel Deneyim",
+        "heading": "Vücudunuz\n<span class=\"italic text-gold\">Ortalamadan Daha İyisini Hak Ediyor</span>",
+        "description": "",
+        "btn1_text": "Ücretsiz danışmanlık randevusu alın",
+        "btn1_link": "",
+        "btn2_text": "Mağazamızı Ziyaret Edin",
+        "btn2_link": ""
+      }
     }
   },
   "order": [
