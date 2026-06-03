@@ -495,7 +495,89 @@
     },
     "challenge": {
       "message": "Vennligst bekreft at du ikke er en robot for å fortsette.",
-      "error": "Svaret ditt er ikke riktig, vennligst prøv igjen."
+      "error": "Svaret ditt er ikke riktig, vennligst prøv igjen.",
+      "submit_button_text": "Send"
+    },
+    "checkout": {
+      "contact": {
+        "address_title": "Adresse",
+        "address1_label": "Adresse",
+        "address2_label": "Leilighet, bolig osv.",
+        "city_label": "By",
+        "change_company_location_link_label": "Endre bedriftsplassering",
+        "change_location_link_label": "Endre plassering",
+        "available_addresses_label": "Eksisterende adresser"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Rask betaling",
+        "or": "ELLER",
+        "show_more_options": "Vis flere alternativer",
+        "hide_more_options": "Skjul flere alternativer",
+        "or_pay_another_way": "Alternativt betal på en annen måte",
+        "or_check_out_another_way": "Alternativt, foreta en annen betaling",
+        "or_pay_with_credit_card": "Alternativt betal med kredittkort"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Det vil bli belastet %{amount} på kredittkortet ditt",
+        "payment_total_label": "Total betaling",
+        "change_currency_link": "Endre til %{currency_name}",
+        "card_provider_fx_charges_warning": "Kartleverandøren din kan belaste deg for %{currency_code}-transaksjoner.",
+        "currency_not_supported_by_shop": "Valgt valuta er ikke lenger tilgjengelig. Alle priser er nå i %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Handlekurven din er oppdatert basert på leveringslandet ditt.",
+        "cart_and_currency_updated_based_on_country": "Handlekurven din og valutaen din er oppdatert i henhold til leveringslandet.",
+        "currency_updated_for_country": "Valuta oppdatert for %{country}"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Landet/din region er oppdatert. Skriv inn leveringsadressen for å fortsette til betalingen."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Det oppstod et problem under behandlingen av forespørselen din. Kontakt butikkeieren."
+      },
+      "captcha": {
+        "title": "Fullfør CAPTCHA for å fortsette behandlingen",
+        "errors": {
+          "not_solved": "Fullfør CAPTCHA for å fortsette behandlingen"
+        }
+      },
+      "billing": {
+        "billing_address_title": "Fakturaadresse:",
+        "same_as_shipping": "Samme som leveringsadresse",
+        "add_address": "Bruk en annen adresse",
+        "edit": "Rediger",
+        "delete": "Sil",
+        "address_more": "Denne adressen for flere handlinger",
+        "address_edit": "Rediger adresse",
+        "address_delete": "Slett adressen",
+        "address_confirm": "Er du sikker på at du vil slette denne adressen fra kontoen din?",
+        "address_form": {
+          "add_address": "Legg til adresse",
+          "save": "Lagre",
+          "cancel": "Avbryt"
+        },
+        "billing_address_rollup_accessibility_label": "Faktureringsalternativer"
+      },
+      "company_location": {
+        "location_title": "Bedriftslokasjon",
+        "location_rollup_accessibility_label": "Bedriftslokasjonsalternativer"
+      },
+      "clipboard": {
+        "copied": "Kopiert",
+        "failed_to_copy": "Kunne ikke kopieres"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Det oppstod et problem mens bestillingen din ble behandlet. Vennligst prøv igjen om noen minutter."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Du har ikke lenger tillatelse til å legge inn B2B-bestillinger. For å legge inn en personlig bestilling, vennligst %{logout_url}.",
+        "log_out_link_text": "Logg ut",
+        "lost_permissions_subtitle": "Du har ikke lenger tillatelse til å legge inn B2B-bestillinger. Logg ut for å legge inn individuelle bestillinger.",
+        "lost_permissions_title": "Ingen posisjonstillatelse"
+      },
+      "address_management": {
+        "saved_with_store": "Registrert i denne butikken"
+      }
     }
   },
   "recipient": {
