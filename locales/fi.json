@@ -2991,12 +2991,77 @@
         "az": "Aakkosjärjestyksessä, A–Ö",
         "date_ascending": "Historia, vanhasta uuteen",
         "date_descending": "Historia, uudelleen takaperin",
-        "most_relevant": "Ei liity tähän"
+        "most_relevant": "Ei liity tähän",
+        "za": "Aakkosjärjestyksessä, Z-A",
+        "price_ascending": "Hinta, nouseva järjestys",
+        "price_descending": "Hinta, korkeimmasta matalimpaan"
       }
     },
     "checkpoint": {
       "message": "Jatka ratkaisemalla Captcha",
       "error": "Captcha-tarkistus epäonnistui"
+    },
+    "errors": {
+      "credit_card_session_expired": "Luottokortin valtuutus on vanhentunut, ole hyvä ja syötä maksutietosi uudelleen. Kortiltasi ei ole veloitettu.",
+      "invalid_email": "kelvollinen sähköpostiosoite vaaditaan",
+      "discount_limit_reached": "Tämän alennuksen käyttöraja on saavutettu",
+      "discount_not_found": "Syötetyllä koodilla ei löydy voimassa olevaa alennusta",
+      "customer_already_used_once_per_customer_discount_notice": "Tämän alennuksen käyttöraja on saavutettu",
+      "gift_card_already_applied": "Kod on jo sovellettu maksullesi",
+      "gift_card_code_invalid": "Koodi on virheellinen",
+      "gift_card_currency_mismatch": "Tätä lahjakorttia ei voi käyttää tähän ostokseen. Ota yhteyttä %{shop_name} uudelleenjärjestelyä varten.",
+      "gift_card_depleted": "Tällä lahjakortilla ei ole saldoa jäljellä",
+      "gift_card_expired": "Lahjakortin voimassaoloaika on päättynyt",
+      "invalid": "epäkelpo",
+      "contains_html_tags": "HTML-tageja ei saa sisältää",
+      "contains_spaces": "alkaa tai päättyy välilyönteihin.",
+      "full_name_required": "Anna etu- ja sukunimi",
+      "invalid_for_card_type": "ei kelpaa",
+      "expired": "aika on päättynyt",
+      "invalid_expiry_year": "ei kelpaava viimeinen käyttövuosi"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Kiitos, että tilasit postituslistamme.",
+        "disclaimer": "Voit peruuttaa tilauksesi milloin tahansa.",
+        "unsubscribe": "Peru tilaus"
+      },
+      "unsubscribed": {
+        "confirmation": "Olet perunut tilauksesi postituslistaltamme.",
+        "disclaimer": "Et enää saa meiltä markkinointipäivityksiä. Voit tilata ne uudelleen milloin tahansa.",
+        "preview": "Näet esikatselun siitä, mitä asiakkaat näkevät peruutettuaan tilauksensa."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Sähköpostin avausten seuranta on otettu käyttöön.</b>",
+          "visibility": "Sähköpostin avaamisprosentit raportoidaan nimettömästi. Näytämme vain, oletko avannut sähköpostin osana kerättyä sähköpostin avaamisprosenttia.",
+          "opt_out_html": "Jos et halua jakaa näitä tietoja, voit <a style='text-decoration:underline;' href='%{link}'>poistaa sähköpostin avausseurannan käytöstä</a>.",
+          "preview_bar": "Näet esikatselun siitä, mitä asiakkaat näkevät, kun he ottavat käyttöön sähköpostin avausten seurannan."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Olet poistanut sähköpostin avausseurannan käytöstä.</b>",
+          "visibility": "Emme näe, avaatko sähköpostimme vai et.",
+          "opt_in_html": "Ota sähköpostin avauksen seuranta käyttöön <a style='text-decoration:underline;' href='%{link}'>täältä</a>.",
+          "preview_bar": "Näet esikatselun siitä, mitä asiakkaat näkevät, kun he poistavat sähköpostin avausten seurannan käytöstä."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Emme enää seuraa sähköpostin avaamisia.</b>",
+          "privacy_policy": "Päivitimme tietosuojakäytäntömme tämän sähköpostin lähettämisen jälkeen. Emme enää seuraa avauksia."
+        },
+        "track": {
+          "status_html": "<b>Sähköpostin avausten seuranta raportoitu.</b>",
+          "visibility": "Näytämme, avasitko sähköpostin vain osana kokonaisavausprosenttia."
+        },
+        "updated_policy": {
+          "status_html": "<b>Sähköpostin avausten seuranta raportoitu.</b>",
+          "visibility": "Päivitimme politiikkaamme ja seuraamme nyt sähköpostin avaamisia. Sähköpostin avaamisprosentit raportoidaan nimettömästi. Näytämme vain, oletko avannut sähköpostin osana kokonaisavaamisprosenttia.",
+          "opt_out_html": "Jos et halua jakaa näitä tietoja, voit <a style='text-decoration:underline;' href='%{link}'>peruuttaa tilauksesi</a>."
+        }
+      },
+      "sms_unsubscribe_confirm": {
+        "message": "Oletko varma, että haluat lopettaa SMS-markkinointitilauksesi?",
+        "button": "Peru tilaus"
+      }
     }
   }
 }
