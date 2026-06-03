@@ -1343,8 +1343,84 @@
           "shipping_credential_pt": "NIF/IVA",
           "shipping_credential_es": "DNI/NIF",
           "shipping_credential_tw": "Nasjonalt identitetsnummer/MVA",
-          "shipping_credential_tr": "Tyrkisk republikk identitetsnummer/MVA"
+          "shipping_credential_tr": "Tyrkisk republikk identitetsnummer/MVA",
+          "title": "Tilleggsinformasjon",
+          "tax_credential_it": "Skatteidentifikasjonsnummer (valgfritt)",
+          "tax_email_it": "PEC (valgfritt)",
+          "tax_credential_type_co": "Type ID-kort",
+          "tax_credential_ec": "CI/RUC/MVA",
+          "tax_credential_gt": "NIT/IVA",
+          "tax_credential_id": "NPWP",
+          "tax_credential_my": "TIN/Skatte-ID-nummer",
+          "tax_credential_mx": "RFC",
+          "tax_credential_type_mx": "Skatteregime",
+          "tax_credential_use_mx": "Bruk av CFDI",
+          "tax_credential_py": "CI/RUC/MVA",
+          "tax_credential_pe": "DNI/RUC/CE",
+          "tax_credential_pt": "NIF/IVA",
+          "tax_credential_es": "DNI/NIF",
+          "tax_credential_tr": "Tyrkisk republikk identitetsnummer/MVA"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Send meg e-post om nyheter og tilbud",
+        "unsubscribe": {
+          "title": "Du har sagt opp abonnementet ditt",
+          "description": "Du vil ikke lenger motta handlekurv-påminnelser fra oss."
+        },
+        "accept_sms_checkbox_label": "Send meg tekstmeldinger om nyheter og tilbud",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Personvernerklæring",
+            "terms_of_service": "Tjenestevilkår",
+            "description_html": "Ved å registrere deg via tekstmelding godtar du å motta gjentatte automatiske markedsføringsmeldinger til det oppgitte telefonnummeret, inkludert påminnelser om handlekurven. Bekreftelse er ikke et kjøpskrav. For å avslutte abonnementet, send \"STOPP\". For hjelp, send \"HJELP\". Meldingsfrekvensen kan variere. Meldings- og datakostnader kan påløpe. Se våre %{privacy_policy_link} og %{terms_of_service_link} dokumenter.",
+            "description_transactional_html": "Du kan motta tekstmeldinger om bestillingsbekreftelse og fraktoppdateringer. Svar med STOPP for å avslutte abonnementet. Svar med HJELP for å få hjelp. Meldingsfrekvensen kan variere. Meldings- og datakostnader kan påløpe. Gå gjennom %{privacy_policy_modal_link} og %{terms_of_service_modal_link} dokumentene våre."
+          },
+          "mobile_phone_number": "Mobiltelefonnummer",
+          "get_offers_by_text": "Motta tilbud via SMS"
+        },
+        "post_accept_marketing_checkbox_label": "Du har abonnert for å motta nyheter og tilbud på e-post",
+        "pending_accept_marketing_checkbox_label": "Sjekk e-posten din for å bekrefte abonnementet ditt på nyheter og tilbud",
+        "accept_shop_pay_marketing_checkbox_label": "Registrer deg for å motta nyheter og tilbud fra denne butikken",
+        "disclaimer": {
+          "privacy_policy": "Personvernerklæring",
+          "terms_of_service": "Tjenestevilkår"
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Gjennomgå:",
+          "link_label": "{{partnerDisplayName}} Vilkår og betingelser"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "Gå gjennom kontaktinformasjonen din før du fullfører betalingen"
+      },
+      "merchant_instruction_errors": {
+        "duplicate_variant_id": "%{position} %{name} malinstruksjon inneholder en duplisert %{variant_id} variasjons-ID.",
+        "discount_not_supported": "Vare rabatt gjelder ikke, selgerinstruks støtter ikke denne rabatt typen."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Dette produktet kan ikke sendes til %{location_name}.",
+          "some_products_other": "Disse produktene kan ikke sendes til %{location_name}.",
+          "all_products_one": "Produktet i handlekurven din kan ikke sendes til %{location_name}.",
+          "all_products_other": "Varene i handlekurven din kan ikke sendes til %{location_name}."
+        },
+        "missing_country_fallback": "landet ditt",
+        "indeterminate_location_fallback": "din posisjon",
+        "cart_updated": "Handlekurven din er oppdatert.",
+        "change_address_only": "Endre leveringsadressen for å fortsette.",
+        "change_address_or_remove": "Endre leveringsadressen eller %{remove_action}.",
+        "empty_cart_action": "tøm handlekurven og gå tilbake til butikken",
+        "remove_items_action": {
+          "one": "fjern uegnet produkt",
+          "other": "fjern uegnede produkter"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Adresse støttes ikke i gjeldende medlemskap.",
+        "items_split_across_locations_unsupported": "Prime-levering er ikke tilgjengelig for bestillingen din. Fraktalternativene dine er oppdatert."
       }
     }
   },
