@@ -1752,7 +1752,54 @@
         "discount_codes_removed_or_modified_summary": {
           "one": "%{count} Rabattcode wurde entfernt oder geändert",
           "other": "%{count} Rabattcode wurde entfernt oder geändert"
-        }
+        },
+        "gift_card_code_label": "Geschenkkartencode",
+        "gift_card_balance_label": "Kontostand:",
+        "name_on_card_label": "Name auf der Karte",
+        "name_on_card_placeholder": "Name auf der Karte",
+        "ends_with_label": "Mit %{last_digits} endend",
+        "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos</strong>. Keine Zahlung erforderlich.",
+        "express_checkout_free_order": "Für eine kostenlose Bestellung werden Ihnen keine Gebühren berechnet",
+        "missing_credit_card_error": "Geben Sie Ihre Kartendaten ein, um die Zahlung abzuschließen",
+        "generic_incorrect_card_info": "Ihre Zahlungsdetails konnten nicht bestätigt werden. Bitte überprüfen Sie Ihre Kartendaten und versuchen Sie es erneut.",
+        "klarna_pay_now_label": "Jetzt mit Klarna bezahlen",
+        "klarna_pay_later_label": "Bezahlen Sie später mit Klarna",
+        "eps_label": "EPS-Überweisung",
+        "klarna_slice_it_label": "Finanzierung mit Klarna sichern",
+        "expiry_long": "(Verfallsdatum: %{month}/%{year})",
+        "expiry_short": "(SKT: %{month}/%{year})",
+        "ftd_vault_credit_card_label": "Für schnellere Zahlungen diese Kreditkarte auf meinem Konto speichern",
+        "google": {
+          "connect": "Klicken Sie hier, um sich mit Ihrem Google Pay-Konto zu verbinden",
+          "error_authorizing": "Bei der Zahlungsautorisierung ist ein Fehler aufgetreten"
+        },
+        "mor_disclaimer_html": "Indem Sie auf das untenstehende Feld klicken und Ihre Bestellung abschließen, stimmen Sie zu, Ihre Produkte gemäß den <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Allgemeinen Geschäftsbedingungen</a> von Global-e und der <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Datenschutzrichtlinie</a> als registrierter Verkäufer von Global-e zu kaufen. Global-e ist ein internationaler Versanddienstleister für %{shop_name}.",
+        "expired_cards_info": {
+          "one": "Es gibt %{count} abgelaufene Karten; Sie können diese Karte in Ihrem Konto anzeigen und bearbeiten.",
+          "other": "Es gibt %{count} abgelaufene Karten; Sie können diese Karten in Ihrem Konto anzeigen und bearbeiten."
+        },
+        "local_payment_method_receiver_notice": "Nachdem Sie Ihre Bestellung aufgegeben haben, werden Ihnen die Zahlungsdetails zugesandt. Zahlen Sie innerhalb von {{dueDays}} Tagen per Geldautomat oder online.",
+        "gift_card_wrapper": {
+          "heading": "Geschenkkarte",
+          "apply_gift_card_label": "Geschenkkarte anwenden",
+          "payment_tag": "Geschenkkarte",
+          "apply_another_gift_card_label": "Eine andere Geschenkkarte anwenden",
+          "gift_card_label": "Geschenkkarte (%{identifier})",
+          "add_label": "Geschenkkarte hinzufügen",
+          "manage_label": "Verwalten Sie Geschenkkarten"
+        },
+        "markets_pro_disclaimer_label": "Indem Sie Ihre Bestellung aufgeben, stimmen Sie zu, als registrierter Verkäufer gemäß den Bestimmungen von Global-e %{markets_pro_terms} und %{privacy_policy} von Global-e zu kaufen und Ihre Daten mit %{shop_name} zu teilen.",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Registrierte Verkäufer Geschäftsbedingungen",
+        "markets_pro_disclaimer_privacy_policy_title": "Datenschutzerklärung für registrierte Verkäufer",
+        "expired_payment_method": "Die gewählte Zahlungsmethode ist abgelaufen",
+        "gift_card_store_credit": {
+          "add_label": "Geschenkkarte oder Store-Guthaben hinzufügen",
+          "manage_label": "Geschenkkarten oder Store-Guthaben verwalten"
+        },
+        "gift_cards_unavailable": "Ihre Geschenkkarte wurde entfernt, da sie für diese Bestellung nicht mehr angewendet werden kann.",
+        "network_card_payment_options": "Wählen Sie ein Netzwerk aus",
+        "gift_card_checkbox_label": "Geschenkkarte anwenden",
+        "kcp_creditcard_label": "KCP Kreditkarte"
       }
     }
   }

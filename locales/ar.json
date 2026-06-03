@@ -1841,7 +1841,65 @@
         "discount_codes_removed_or_modified_summary": {
           "one": "تم إزالة أو تغيير رمز الخصم %{count}",
           "other": "تم إزالة أو تغيير رمز الخصم %{count}"
-        }
+        },
+        "gift_card_code_label": "رمز بطاقة الهدية",
+        "gift_card_balance_label": "الرصيد:",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "ends_with_label": "ينتهي بـ %{last_digits}",
+        "free_order_notice_html": "طلبك <strong>مجاني</strong>. لا حاجة للدفع.",
+        "express_checkout_free_order": "لن يتم تحصيل أي رسوم منك للطلب المجاني",
+        "missing_credit_card_error": "أدخل معلومات بطاقتك لإكمال الدفع",
+        "generic_incorrect_card_info": "تعذر التحقق من تفاصيل الدفع الخاصة بك. يرجى التحقق من معلومات البطاقة والمحاولة مرة أخرى.",
+        "ideal_label": "iDEAL | Wero",
+        "klarna_pay_now_label": "ادفع الآن مع Klarna",
+        "klarna_pay_later_label": "ادفع لاحقًا مع Klarna",
+        "giropay_label": "جيروباي",
+        "eps_label": "تحويل EPS",
+        "klarna_slice_it_label": "الحصول على تمويل عبر Klarna",
+        "expiry_long": "(تاريخ انتهاء الصلاحية: %{month}/%{year})",
+        "expiry_short": "(SKT: %{month}/%{year})",
+        "ftd_vault_credit_card_label": "لحفظ هذه البطاقة الائتمانية في حسابي للدفع بشكل أسرع",
+        "google": {
+          "connect": "انقر للاتصال بحساب Google Pay الخاص بك",
+          "error_authorizing": "حدث خطأ أثناء تفويض الدفع"
+        },
+        "klarna_label": "كلارنا",
+        "mor_disclaimer_html": "بالنقر على الحقل أدناه وإكمال طلبك، فإنك توافق على شراء منتجاتك من Global-e كبائع معتمد لهذه العملية وفقًا لـ <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">الشروط والأحكام</a> و <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">سياسة الخصوصية</a> الخاصة بـ Global-e. تُعد Global-e مزود خدمة شحن دولي لـ %{shop_name}.",
+        "multibanco_label": "متعدد البنوك",
+        "location_billing_address_label": "عنوان الفاتورة",
+        "fact_billing_address_label": "عنوان الفاتورة",
+        "location_shipping_address_label": "عنوان شحن الموقع",
+        "expired_cards_info": {
+          "one": "هناك %{count} بطاقة منتهية الصلاحية؛ يمكنك عرض هذه البطاقة وتعديلها من حسابك.",
+          "other": "هناك %{count} بطاقة منتهية الصلاحية؛ يمكنك عرض هذه البطاقات وتعديلها من حسابك."
+        },
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك، سيتم إرسال تفاصيل الدفع إليك. يرجى إجراء الدفع خلال {{dueDays}} يومًا عبر الصراف الآلي أو عبر الإنترنت.",
+        "gift_card_wrapper": {
+          "heading": "بطاقة هدية",
+          "apply_gift_card_label": "تطبيق بطاقة الهدايا",
+          "payment_tag": "بطاقة هدية",
+          "apply_another_gift_card_label": "تطبيق بطاقة هدايا أخرى",
+          "gift_card_label": "بطاقة هدية (%{identifier})",
+          "add_label": "أضف بطاقة هدية",
+          "manage_label": "إدارة بطاقات الهدايا"
+        },
+        "markets_pro_disclaimer_label": "من خلال تقديم طلبك، فإنك توافق على الشراء من Global-e كبائع مسجل وفقًا لشروط %{markets_pro_terms} و %{privacy_policy} الخاصة بـ Global-e، ومشاركة معلوماتك مع %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "الشروط والأحكام",
+        "markets_pro_disclaimer_privacy_policy": "سياسة الخصوصية",
+        "markets_pro_disclaimer_terms_and_conditions_title": "شروط وأحكام البائع المسجل",
+        "markets_pro_disclaimer_privacy_policy_title": "سياسة خصوصية البائع المسجل",
+        "expired_payment_method": "انتهت صلاحية طريقة الدفع المختارة",
+        "gift_card_store_credit": {
+          "add_label": "أضف بطاقة هدية أو رصيد متجر",
+          "manage_label": "إدارة بطاقات الهدايا أو رصيد المتجر"
+        },
+        "gift_cards_unavailable": "تمت إزالة بطاقة الهدايا الخاصة بك لأنها لم تعد صالحة لهذا الطلب",
+        "network_card_payment_options": "اختر شبكة البطاقة",
+        "gift_card_checkbox_label": "تطبيق بطاقة الهدايا",
+        "grabpay_label": "غرب باي",
+        "kcp_creditcard_label": "بطاقة ائتمان KCP",
+        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة"
       }
     }
   },
