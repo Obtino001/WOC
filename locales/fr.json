@@ -289,17 +289,17 @@
       "announcement": "Annonce",
       "menu": "Menu",
       "cart_count": {
-        "one": "{{ count }} article",
-        "other": "{{ count }} articles",
+        "one": "{{ count }} produit(s)",
+        "other": "{{ count }} produit(s)",
         "many": "{{ count }} articles"
       }
     },
     "cart": {
       "title": "Votre panier",
       "caption": "Articles du panier",
-      "remove_title": "Supprimer {{ title }}",
-      "note": "Instructions spéciales concernant la commande",
-      "checkout": "Procéder au paiement",
+      "remove_title": "Supprimer la chaîne {{ title }}",
+      "note": "Instructions spéciales pour la commande",
+      "checkout": "Œdème",
       "empty": "Votre panier est vide",
       "cart_error": "Une erreur s'est produite lors de la mise à jour de votre panier. Veuillez réessayer.",
       "cart_quantity_error_html": "Vous ne pouvez ajouter que {{ quantity }} exemplaire(s) de ce produit à votre panier.",
@@ -308,43 +308,43 @@
         "price": "Prix",
         "total": "Total",
         "quantity": "Quantité",
-        "image": "Image de produit"
+        "image": "Image du produit"
       },
-      "update": "Mise à jour",
+      "update": "Mettre à jour",
       "login": {
-        "title": "Vous possédez un compte ?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Connectez-vous</a> pour payer plus vite."
+        "title": "Vous avez un compte ?",
+        "paragraph_html": "Pour effectuer un paiement plus rapide, <a href=\"{{ link }}\" class=\"link underlined-link\">connectez-vous</a>."
       },
       "estimated_total": "Total estimé",
       "new_estimated_total": "Nouveau total estimé",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Frais de douane et taxes inclus. Réductions et <a href=\"{{ link }}\">frais d’expédition</a> calculés à l’étape du paiement.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Frais de douane et taxes inclus. Réductions et frais d’expédition calculés à l’étape du paiement.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Taxes incluses. Réductions et <a href=\"{{ link }}\">frais d’expédition</a> calculés à l’étape du paiement.",
-      "taxes_included_shipping_at_checkout_without_policy": "Taxes incluses. Réductions et frais d’expédition calculés à l’étape du paiement.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Frais de douane inclus. Taxes, réductions et <a href=\"{{ link }}\">frais d’expédition</a> calculés à l’étape du paiement.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Frais de douane inclus. Taxes, réductions et frais d’expédition calculés à l’étape du paiement.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes, réductions et <a href=\"{{ link }}\">frais d’expédition</a> calculés à l’étape du paiement.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Taxes, réductions et frais d’expédition calculés à l’étape du paiement."
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Taxes et droits de douane inclus. Les remises et les <a href=\"{{ link }}\">frais de port</a> sont calculés lors du paiement.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Taxes et droits de douane inclus. Les remises et les frais de port sont calculés lors du paiement.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Taxes incluses. Les remises et les <a href=\"{{ link }}\">frais de livraison</a> sont calculés lors du paiement.",
+      "taxes_included_shipping_at_checkout_without_policy": "Taxes incluses. Les remises et les frais de port sont calculés lors du paiement.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes douanières incluses. Les taxes, remises et <a href=\"{{ link }}\">frais de port</a> sont calculés lors du paiement.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Taxes douanières incluses. Les taxes, remises et frais de port sont calculés à la page de paiement.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Les taxes, les remises et les <a href=\"{{ link }}\">frais de livraison</a> sont calculés à la page de paiement.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Les taxes, les remises et les frais de port sont calculés à la page de paiement."
     },
     "footer": {
-      "payment": "Moyens de paiement"
+      "payment": "Méthodes de paiement"
     },
     "featured_blog": {
-      "view_all": "Tout afficher",
+      "view_all": "Afficher tout",
       "onboarding_title": "Article de blog",
-      "onboarding_content": "Donnez à vos clients un résumé de votre article de blog"
+      "onboarding_content": "Montrez à vos clients un résumé de votre article de blog"
     },
     "featured_collection": {
-      "view_all": "Tout afficher",
+      "view_all": "Afficher tout",
       "view_all_label": "Afficher tous les produits de la collection {{ collection_name }}"
     },
     "collection_list": {
-      "view_all": "Tout afficher"
+      "view_all": "Afficher tout"
     },
     "collection_template": {
       "title": "Collection",
-      "empty": "Aucun produit trouvé",
-      "use_fewer_filters_html": "Utiliser moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout supprimer</a>"
+      "empty": "Produit introuvable",
+      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout supprimer</a>"
     },
     "video": {
       "load_video": "Charger la vidéo : {{ description }}"
@@ -369,30 +369,30 @@
       "announcement_bar": "Barre d'annonce"
     },
     "quick_order_list": {
-      "product_total": "Sous-total des produits",
+      "product_total": "Sous-total du produit",
       "view_cart": "Voir le panier",
       "each": "{{ money }}/pièce",
       "product": "Produit",
       "variant": "Variante",
       "variant_total": "Total des variantes",
       "items_added": {
-        "one": "{{ quantity }} article ajouté",
-        "other": "{{ quantity }} articles ajoutés",
+        "one": "{{ quantity }} produit ajouté",
+        "other": "{{ quantity }} produit ajouté",
         "many": "{{ quantity }} articles ajoutés"
       },
       "items_removed": {
-        "one": "{{ quantity }} article retiré",
-        "other": "{{ quantity }} articles retirés",
+        "one": "{{ quantity }} produit(s) supprimé(s)",
+        "other": "{{ quantity }} produit(s) supprimé(s)",
         "many": "{{ quantity }} articles retirés"
       },
-      "product_variants": "Variantes de produits",
+      "product_variants": "Variations de produit",
       "total_items": "Total des articles",
       "remove_all_items_confirmation": "Retirer les {{ quantity }} articles de votre panier ?",
-      "remove_all": "Tout retirer",
+      "remove_all": "Tout supprimer",
       "cancel": "Annuler",
       "remove_all_single_item_confirmation": "Supprimer 1 article de votre panier ?",
-      "min_error": "Cet article a un minimum de {{ min }}",
-      "max_error": "Cet article a un maximum de {{ max }}",
+      "min_error": "Valeur minimale pour ce produit : {{ min }}",
+      "max_error": "Valeur maximale pour ce produit : {{ max }}",
       "step_error": "Vous pouvez ajouter cet article uniquement par incréments de {{ step }}"
     }
   },
@@ -1451,7 +1451,58 @@
           "due_on_fulfillment_title": "Le paiement du solde de {{amount_due}} sera effectué lors de l'expédition de la commande."
         },
         "compare_at_sale": "Remise (%{sale_amount})",
-        "automatic_discount_tooltip": "Les réductions appliquées automatiquement ne peuvent pas être annulées"
+        "automatic_discount_tooltip": "Les réductions appliquées automatiquement ne peuvent pas être annulées",
+        "discount_title": "Réduction",
+        "discount_label": "Code de réduction",
+        "discount_placeholder": "Code de réduction",
+        "discount_has_been_applied": "Remise appliquée",
+        "discount_has_been_removed": "Réduction supprimée",
+        "discount_already_applied": "Cette commande a bénéficié d'une remise. Vous ne pouvez pas ajouter une autre remise.",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Entrez vos informations de livraison pour utiliser le code de réduction",
+        "discount_and_gift_card_savings_notice": "Après %{discount_amount} de réduction et %{gift_card_amount} de carte cadeau",
+        "discount_savings_notice": "après une remise de %{discount_amount}",
+        "estimated_taxes_finalization_tooltip_content": "La taxe sur la vente et le total seront confirmés par e-mail ou SMS après que votre commande aura été passée.",
+        "deferred_payment_info": {
+          "title": "La date limite de paiement pour le montant de %{amount_due} est %{due_at}",
+          "description_html": "Pour toute question concernant votre commande, %{contact_us}.",
+          "paid_today": "Paiement total d'aujourd'hui",
+          "due_on_fulfillment_title": "Le paiement de %{amount_due} sera effectué lorsque la commande sera envoyée.",
+          "due_on_receipt_title": "Le paiement de %{amount_due} doit être effectué lors de l'émission du reçu.",
+          "paid_today_next": "Payé aujourd'hui"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> ne fonctionne pas actuellement. Contactez-nous pour obtenir de l'aide.",
+        "due_on_fulfillment": "Paiement à la livraison",
+        "duties_label": "Droits de douane",
+        "duties_and_taxes_label": "Taxes et droits de douane",
+        "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays. Par conséquent, des droits de douane et d'autres taxes peuvent être exigibles à la livraison.",
+        "deferred_total_due_date_label": "Montant total à payer le {{date}}",
+        "expand_component_information": {
+          "one": "Afficher %{count} produits"
+        },
+        "discount_discovery": {
+          "add_code": "Ajouter une remise",
+          "merchandise_quantity_label": {
+            "one": "%{count} produit",
+            "other": "%{count} produit"
+          },
+          "back_to_finalize_order": "Revenir pour finaliser la commande"
+        },
+        "discount_title_stacking": {
+          "other": "Promotions"
+        },
+        "discount_order_stacking": {
+          "one": "Remise sur commande",
+          "other": "Réductions sur les commandes"
+        },
+        "discount_not_found": "Aucune remise valide ne correspond au code saisi",
+        "enter_shipping_address": "Entrez l'adresse de livraison",
+        "duties_included_label": "Les droits de douane à l'importation et autres taxes sont inclus. Aucun frais supplémentaire à la livraison.",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> code de réduction nécessite un client éligible",
+        "deposit_label": "Dépôt",
+        "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> votre code de réduction a changé. Vérifiez votre panier et réessayez.",
+        "deferred_total_due_date_label_next": "Date de paiement finale : %{date}",
+        "discount_applies_to_subscription_items_only": "Cette réduction est valable uniquement pour les produits en abonnement.",
+        "estimated_taxes_finalization_tooltip_content_short": "La taxe est finalisée après le paiement"
       },
       "order_payment_collection": {
         "changes_summary": {

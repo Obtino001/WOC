@@ -280,60 +280,60 @@
       "announcement": "Ilmoitus",
       "menu": "Valikko",
       "cart_count": {
-        "one": "{{ count }} tuote",
+        "one": "{{ count }} tuotetta",
         "other": "{{ count }} tuotetta"
       }
     },
     "cart": {
-      "title": "Ostoskorisi",
+      "title": "Ostoskori",
       "caption": "Ostoskori tuotteet",
-      "remove_title": "Poista {{ title }}",
-      "note": "Tilauksen erityisohjeet",
-      "checkout": "Kassa",
-      "empty": "Ostoskorisi on tyhjä",
+      "remove_title": "Poista {{ title }} -kanava",
+      "note": "Tilauskohtaiset ohjeet",
+      "checkout": "Ödeema",
+      "empty": "Ostoskori on tyhjä",
       "cart_error": "Ostoskoria päivittäessä tapahtui virhe. Yritä uudelleen.",
       "cart_quantity_error_html": "Voit lisätä koriisi tästä tuotteesta vain {{ quantity }} kappaletta.",
       "headings": {
         "product": "Tuote",
         "price": "Hinta",
         "total": "Yhteensä",
-        "quantity": "Määrä",
+        "quantity": "Kappaletta",
         "image": "Tuotekuva"
       },
       "update": "Päivitä",
       "login": {
         "title": "Onko sinulla tili?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Kirjaudu sisään</a>, jotta voit maksaa kassalla nopeammin."
+        "paragraph_html": "Nopeuttaaksesi maksua <a href=\"{{ link }}\" class=\"link underlined-link\">kirjaudu sisään</a>."
       },
-      "estimated_total": "Arvioitu kokonaishinta",
-      "new_estimated_total": "Uusi arvioitu kokonaishinta",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Sisältää tullit ja verot. Alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan kassalla.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Sisältää tullit ja verot. Alennukset ja toimituskulut lasketaan kassalla.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Sisältää verot. Alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan kassalla.",
-      "taxes_included_shipping_at_checkout_without_policy": "Sisältää verot. Alennukset ja toimituskulut lasketaan kassalla.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Sisältää tullit. Verot, alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan kassalla.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Sisältää tullit. Verot, alennukset ja toimituskulut lasketaan kassalla.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Verot, alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan kassalla.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Verot, alennukset ja toimituskulut lasketaan kassalla."
+      "estimated_total": "Arvioitu yhteissumma",
+      "new_estimated_total": "Uusi arvioitu yhteissumma",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Verot ja tullimaksut sisältyvät hintaan. Alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan maksun yhteydessä.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Verot ja tullimaksut sisältyvät hintaan. Alennukset ja toimituskulut lasketaan maksun yhteydessä.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Verot sisältyvät hintaan. Alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan maksun yhteydessä.",
+      "taxes_included_shipping_at_checkout_without_policy": "Verot sisältyvät hintaan. Alennukset ja toimituskulut lasketaan maksun yhteydessä.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Tullimaksut sisältyvät hintaan. Verot, alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan maksusivulla.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Tullimaksut sisältyvät hintaan. Verot, alennukset ja toimituskulut lasketaan maksusivulla.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Verot, alennukset ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan maksusivulla.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Verot, alennukset ja toimituskulut lasketaan maksusivulla."
     },
     "footer": {
       "payment": "Maksutavat"
     },
     "featured_blog": {
       "view_all": "Näytä kaikki",
-      "onboarding_title": "Blogipostaus",
-      "onboarding_content": "Anna asiakkaillesi yhteenveto blogipostauksestasi"
+      "onboarding_title": "Blogikirjoitus",
+      "onboarding_content": "Näytä asiakkaillesi blogikirjoituksesi yhteenveto"
     },
     "featured_collection": {
       "view_all": "Näytä kaikki",
-      "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}"
+      "view_all_label": "Näytä kaikki tuotteet kokoelmasta {{ collection_name }}"
     },
     "collection_list": {
       "view_all": "Näytä kaikki"
     },
     "collection_template": {
       "title": "Kokoelma",
-      "empty": "Tuotteita ei löytynyt",
+      "empty": "Tuotetta ei löytynyt",
       "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">poista kaikki</a>"
     },
     "video": {
@@ -366,21 +366,21 @@
       "variant": "Versio",
       "variant_total": "Versioiden summa",
       "items_added": {
-        "one": "{{ quantity }} tuote lisätty",
+        "one": "{{ quantity }} tuotetta lisätty",
         "other": "{{ quantity }} tuotetta lisätty"
       },
       "items_removed": {
-        "one": "{{ quantity }} tuote poistettu",
+        "one": "{{ quantity }} tuotetta poistettu",
         "other": "{{ quantity }} tuotetta poistettu"
       },
-      "product_variants": "Tuoteversiot",
+      "product_variants": "Tuotevariaatiot",
       "total_items": "Tuotteita yhteensä",
       "remove_all_items_confirmation": "Poistetaanko kaikki {{ quantity }} tuotetta ostoskorista?",
       "remove_all": "Poista kaikki",
       "cancel": "Peruuta",
       "remove_all_single_item_confirmation": "Poistetaanko 1 tuote ostoskorista?",
-      "min_error": "Tämän tuotteen vähimmäisarvo on {{ min }}",
-      "max_error": "Tämän tuotteen enimmäisarvo on {{ max }}",
+      "min_error": "Tämän tuotteen vähimmäisarvo: {{ min }}",
+      "max_error": "Tämän tuotteen enimmäisarvo: {{ max }}",
       "step_error": "Voit lisätä tätä tuotetta vain {{ step }}:n lisäyksinä"
     }
   },

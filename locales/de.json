@@ -285,56 +285,56 @@
       }
     },
     "cart": {
-      "title": "Dein Warenkorb",
+      "title": "Ihr Warenkorb",
       "caption": "Warenkorbartikel",
-      "remove_title": "{{ title }} entfernen",
-      "note": "Spezielle Bestellanweisungen",
-      "checkout": "Auschecken",
-      "empty": "Dein Warenkorb ist leer",
+      "remove_title": "{{ title }} Kanal entfernen",
+      "note": "Bestellanweisungen",
+      "checkout": "Ödem",
+      "empty": "Ihr Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
       "cart_quantity_error_html": "Sie können diesem Korb nur {{ quantity }} Stück dieses Produkts hinzufügen.",
       "headings": {
         "product": "Produkt",
         "price": "Preis",
-        "total": "Gesamtsumme",
-        "quantity": "Anzahl",
+        "total": "Insgesamt",
+        "quantity": "Stück",
         "image": "Produktbild"
       },
       "update": "Aktualisieren",
       "login": {
-        "title": "Hast du ein Konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein</a>, damit es beim Checkout schneller geht."
+        "title": "Haben Sie ein Konto?",
+        "paragraph_html": "Um schneller zu bezahlen, <a href=\"{{ link }}\" class=\"link underlined-link\">melden Sie sich an</a>."
       },
-      "estimated_total": "Geschätzte Gesamtkosten",
-      "new_estimated_total": "Neuer geschätzter Gesamtbetrag",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren und Steuern. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Inkl. Zollgebühren und Steuern. Rabatte und Versand werden beim Checkout berechnet.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Inkl. Steuern. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "taxes_included_shipping_at_checkout_without_policy": "Inkl. Steuern. Rabatte und Versand werden beim Checkout berechnet.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren. Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Inkl. Zollgebühren. Steuern, Rabatte und Versand werden beim Checkout berechnet.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
+      "estimated_total": "Geschätzte Gesamtsumme",
+      "new_estimated_total": "Neue geschätzte Gesamtsumme",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Steuern und Zollgebühren inklusive. Rabatte und <a href=\"{{ link }}\">Versandkosten</a> werden beim Bezahlen berechnet.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Steuern und Zollgebühren inklusive. Rabatte und Versandkosten werden beim Bezahlen berechnet.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Steuern inklusive. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Bezahlen berechnet.",
+      "taxes_included_shipping_at_checkout_without_policy": "Steuern inklusive. Rabatte und Versandkosten werden beim Bezahlen berechnet.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Zollgebühren inklusive. Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden an der Zahlungsseite berechnet.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Zollgebühren inklusive. Steuern, Rabatte und Versandkosten werden auf der Zahlungsseite berechnet.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden auf der Zahlungsseite berechnet.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versandkosten werden auf der Zahlungsseite berechnet."
     },
     "footer": {
       "payment": "Zahlungsmethoden"
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
-      "onboarding_title": "Blog-Beitrag",
-      "onboarding_content": "Verschaffe deinen Kunden eine Übersicht über deinen Blog-Beitrag"
+      "onboarding_title": "Blogbeitrag",
+      "onboarding_content": "Zeigen Sie Ihren Kunden eine Zusammenfassung Ihres Blogbeitrags an"
     },
     "featured_collection": {
       "view_all": "Alle anzeigen",
-      "view_all_label": "Alle Produkte in der Kollektion {{ collection_name }} anzeigen"
+      "view_all_label": "Alle Produkte in der {{ collection_name }} Kollektion anzeigen"
     },
     "collection_list": {
       "view_all": "Alle anzeigen"
     },
     "collection_template": {
-      "title": "Kategorie",
-      "empty": "Keine Produkte gefunden",
-      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">entferne alle</a>"
+      "title": "Kollektion",
+      "empty": "Produkt nicht gefunden",
+      "use_fewer_filters_html": "Weniger Filter verwenden oder <a class=\"{{ class }}\" href=\"{{ link }}\">alle entfernen</a>"
     },
     "video": {
       "load_video": "Video laden: {{ description }}"
@@ -359,7 +359,7 @@
       "announcement_bar": "Benachrichtigungsleiste"
     },
     "quick_order_list": {
-      "product_total": "Produktzwischensumme",
+      "product_total": "Zwischensumme des Produkts",
       "view_cart": "Warenkorb ansehen",
       "each": "{{ money }}/Stück",
       "product": "Produkt",
@@ -370,8 +370,8 @@
         "other": "{{ quantity }} Artikel hinzugefügt"
       },
       "items_removed": {
-        "one": "{{ quantity }} Artikel entfernt",
-        "other": "{{ quantity }} Artikel entfernt"
+        "one": "{{ quantity }} Artikel wurden entfernt",
+        "other": "{{ quantity }} Artikel wurden entfernt"
       },
       "product_variants": "Produktvarianten",
       "total_items": "Artikel gesamt",
@@ -379,8 +379,8 @@
       "remove_all": "Alle entfernen",
       "cancel": "Abbrechen",
       "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
-      "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
-      "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
+      "min_error": "Mindestwert für dieses Produkt: {{ min }}",
+      "max_error": "Maximalwert für dieses Produkt: {{ max }}",
       "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
     }
   },
