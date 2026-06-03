@@ -1642,7 +1642,59 @@
         "bank_account_missing": "Ein Bankkonto muss verbunden werden",
         "bank_account_disclaimer": "ACH-Zahlungen können bis zu 4 Werktage zur Bearbeitung benötigen.",
         "bank_account_generic_error": "Das Bankkonto konnte nicht hinzugefügt werden. Bitte versuchen Sie es später erneut.",
-        "add_new_payment_method": "Eine neue Zahlungsmethode hinzufügen"
+        "add_new_payment_method": "Eine neue Zahlungsmethode hinzufügen",
+        "card_number_label": "Kartnummer",
+        "card_number_placeholder": "Kartnummer",
+        "card_pay_with": "Bezahlen mit:",
+        "card_security_notice": "Alle Vorgänge sind sicher und verschlüsselt.",
+        "card_expiry_label": "Verfallsdatum (MM/JJ)",
+        "card_expiry_placeholder": "Verfallsdatum (MM/JJ)",
+        "card_expiry_date_explanation": "Kartablaufdatum Format: Monat, Monat, Jahr, Jahr",
+        "card_verification_value_explanation": "Der 3-stellige Sicherheitscode befindet sich normalerweise auf der Rückseite Ihrer Karte. American-Express-Karten haben auf der Vorderseite einen 4-stelligen Code.",
+        "card_verification_value_explanation_amex": "Die 4-stellige Sicherheitsnummer auf der Vorderseite Ihrer Karte",
+        "card_verification_value_explanation_other": "Der 3-stellige Sicherheitscode auf der Rückseite Ihrer Karte",
+        "card_start_label": "Bearbeitungsdatum (MM/JJ)",
+        "card_start_placeholder": "Bearbeitungsdatum (MM/JJ)",
+        "card_issue_number_label": "Bearbeitungsnummer",
+        "card_issue_number_placeholder": "Bearbeitungsnummer",
+        "billing_address_description": "Wählen Sie die Adresse aus, die mit Ihrer Karte oder Zahlungsmethode übereinstimmt.",
+        "billing_address_description_no_shipping_address": "Geben Sie die Adresse ein, die mit Ihrer Karte oder Zahlungsmethode übereinstimmt.",
+        "card_fields_container_prefix": "Feld-Container für:",
+        "card_fields_unavailable_html": {
+          "one": "Kredit- und Bankkartenzahlungen sind derzeit nicht verfügbar.<br><a href=\"%{current_url}\">Diese Seite neu laden</a> oder später erneut versuchen.",
+          "other": "Kredit- und Bankkartenzahlungen sind derzeit nicht verfügbar.<br><a href=\"%{current_url}\">Diese Seite neu laden</a> oder eine andere Zahlungsmethode ausprobieren."
+        },
+        "card_fields_processing_error": "Beim Verarbeiten der Zahlung ist ein Problem aufgetreten. Versuchen Sie, diese Seite zu aktualisieren oder überprüfen Sie Ihre Internetverbindung.",
+        "card_information_notice": "Alle Transaktionen sind sicher und verschlüsselt. Kreditkartendaten werden niemals gespeichert.",
+        "card_expiration_month_label": "Verfallsdatum (Monat)",
+        "card_expiration_year_label": "Verfallsdatum (Jahr)",
+        "billing_address_not_supported_for_payment_method_error": "Diese Zahlungsmethode ist für Ihre Rechnungsadresse und Währung nicht verfügbar. Bitte versuchen Sie eine andere Zahlungsmethode.",
+        "card_security_vault_notice": "Für zukünftige Zahlungen benötigen wir Ihre Informationen. Alle Transaktionen sind sicher und verschlüsselt.",
+        "card_expired": "Die Frist ist abgelaufen",
+        "card_verification_confirm": "Geben Sie den Sicherheitscode Ihrer Karte zur Verifizierung ein.",
+        "billing_address_associated_with_mandate": "Mit der Zahlungsmethode verknüpfte Adresse verwenden",
+        "billing_address_associated_with_mandate_info": "Wenn Sie Ihre Rechnungsadresse ändern möchten, entfernen Sie bitte Ihre Kreditkartendaten und geben Sie sie erneut ein.",
+        "card_vaulted_company_location": "Die Karte wurde für diesen Standort gespeichert",
+        "billing_must_match_shipping_notice": "Für Ihre Zahlungsmethode müssen die Rechnungsadresse und die Lieferadresse identisch sein.",
+        "brand_not_available": "In diesem Geschäft wird {{brand}} nicht akzeptiert. Bitte verwenden Sie eine andere Karte zur Zahlung.",
+        "billing_address_invalid_phone": "Um fortzufahren, aktualisieren Sie die Rechnungsadresse der Karte, die mit {{last_digits}} endet, für {{label}}.",
+        "billing_address_invalid_phone_no_card": "Um fortzufahren, aktualisieren Sie bitte die Telefonnummer in Ihrer Rechnungsadresse.",
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Geben Sie ein gültiges Änderungsdatum ein",
+              "issue_number": "Geben Sie eine gültige Bearbeitungsnummer ein"
+            },
+            "invalid": {
+              "verification_value": "Geben Sie einen gültigen CVV- oder Sicherheitscode ein"
+            }
+          }
+        },
+        "business_customer_vaulting_payment_label": "Speichern Sie diese Zahlungsmethode auf der Zahlungsseite und erteilen Sie %{company} die Erlaubnis, diese Zahlungsmethode für zukünftige Einkäufe an diesem Standort zu belasten. Alle Personen, die diesem Standort zugewiesen sind, können diese Zahlungsmethode verwenden.",
+        "cashapppay_label": "Cash App Bezahlen",
+        "billing_address_rollup_accessibility_label": "Rechnungsadresse Optionen",
+        "business_customer_with_bank_account_vaulting_payment_label": "Speichern Sie diese Zahlungsmethode während der Zahlung und erteilen Sie %{company} die Erlaubnis, zukünftige genehmigte Käufe für diesen Standort von Ihrem Konto einzuziehen, bis Sie die Erlaubnis widerrufen. Alle Personen, die diesem Standort zugewiesen sind, können diese Zahlungsmethode verwenden.",
+        "bank_account_vaulted_company_location": "Für diesen Standort wurde ein Bankkonto hinterlegt"
       }
     }
   }
