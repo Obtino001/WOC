@@ -2421,10 +2421,22 @@
           "ship_items_to": {
             "one": "%{count} produkter vil bli sendt hit",
             "other": "%{count} produkter vil bli sendt hit"
-          }
+          },
+          "shipping_address_title": "Fraktadresse:",
+          "shipping_method_title": "Fraktmetode"
         },
         "block_title": "Gå gjennom informasjonen din",
-        "account_more_actions": "Andre handlinger for denne kontoen"
+        "account_more_actions": "Andre handlinger for denne kontoen",
+        "title": "Se nærmere på",
+        "review_title": "Fullfør bestillingen din",
+        "checkout_as_guest": "Betal som gjest",
+        "checkout_a_different_way": "Betal med en annen metode",
+        "item_header": {
+          "change_value": "Endre verdien",
+          "section": "Seksjon",
+          "value": "Verdi"
+        },
+        "review_and_confirm_title": "Gjennomgå og godkjenn"
       },
       "redeemable_errors": {
         "gift_card": {
@@ -2464,6 +2476,56 @@
       "required_extensions": {
         "errors": {
           "interaction_required": "For å fullføre betalingsprosessen kreves en utvidelsesinteraksjon."
+        }
+      },
+      "shipping": {
+        "cheapest_rate_label": "Den billigste",
+        "arrives_time": "Ankomst: %{time}",
+        "arrives_time_range": "Levering: %{min_time}–%{max_time}",
+        "delivery_today": "Samme dag levering (%{time})",
+        "delivery_tomorrow": "Neste dag levering (%{time})",
+        "delivery": "Levering (%{time})",
+        "address_update": "Oppdater adressen",
+        "add_address": "Bruk en annen adresse",
+        "add_delivery_instructions": "Legg til leveringsinstruksjoner",
+        "delete": "Sil",
+        "address_more": "Denne adressen for flere handlinger",
+        "address_edit": "Rediger adresse",
+        "address_delete": "Slett adressen",
+        "address_confirm": "Er du sikker på at du vil slette denne adressen fra kontoen din?",
+        "address_form": {
+          "add_address": "Legg til adresse",
+          "save": "Lagre",
+          "cancel": "Avbryt",
+          "generic_error": "Det oppstod et problem under lagring av adressen din. Vennligst prøv igjen.",
+          "one_time_address_subtitle": "Bruk en engangsadresse for denne bestillingen",
+          "edit": "Rediger adresse",
+          "update": "Lagre endringene"
+        },
+        "different_shipping_method_summary": "Fyll inn en annen leveringsadresse for å se hvilke fraktmetoder du kan bruke",
+        "delivery_title": "Levering",
+        "address_default": "Angi som standard",
+        "default_description": "Sendes innen 1 virkedag",
+        "back": "Tilbake",
+        "add_shipping_address": "Legg til leveringsadresse",
+        "choose_new_address": "Velg en ny adresse",
+        "add_new_delivery_address": "Legg til en ny leveringsadresse",
+        "delivery_to": "Leveringsmottaker:"
+      },
+      "session_errors": {
+        "session_not_unique": "Det oppstod et problem under behandlingen av bestillingen din. Oppdater denne siden for å gå tilbake til butikken.",
+        "session_already_finished": "Denne bestillingen er allerede sendt. Du kan gå tilbake til butikken for å opprette en ny bestilling."
+      },
+      "review_address_modal": {
+        "title": "Se adressen",
+        "continue": "Fortsett med denne adressen",
+        "use_saved_address": "Bruk en annen adresse",
+        "return_to_cart": "Gå tilbake til handlekurven",
+        "subtitle_no_match": "Denne adressen samsvarer ikke med noen av dine registrerte adresser.",
+        "subtitle_must_use": "Bestillingen din vil bli sendt til denne adressen.",
+        "subtitle": {
+          "one": "Denne bestillingen vil bli sendt til adressen oppgitt av {{merchant}}.",
+          "other": "Denne bestillingen vil bli sendt til adressen oppgitt av {{merchant}}. Velg en leveringsadresse."
         }
       }
     }
