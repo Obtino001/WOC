@@ -12,7 +12,34 @@
     "cart": {
       "caption": "Handlekurvprodukter",
       "cart_error": "Det oppstod en feil under oppdatering av handlekurven. Vennligst prøv igjen.",
-      "cart_quantity_error_html": "Du kan bare legge til {{ quantity }} av dette produktet i handlekurven din."
+      "cart_quantity_error_html": "Du kan bare legge til {{ quantity }} av dette produktet i handlekurven din.",
+      "title": "Handlekurven din",
+      "remove_title": "Fjern {{ title }}-kanalen",
+      "note": "Spesielle instruksjoner for bestillingen",
+      "checkout": "Betaling",
+      "empty": "Handlekurven din er tom",
+      "headings": {
+        "product": "Produkt",
+        "price": "Pris",
+        "total": "Totalt",
+        "quantity": "Antall",
+        "image": "Produktbilde"
+      },
+      "update": "Oppdater",
+      "login": {
+        "title": "Har du en konto?",
+        "paragraph_html": "For å betale raskere, <a href=\"{{ link }}\" class=\"link underlined-link\">logg inn</a>."
+      },
+      "estimated_total": "Omtrentlig total",
+      "new_estimated_total": "Ny estimert total",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Skatter og tollavgifter inkludert. Rabatter og <a href=\"{{ link }}\">frakt</a> beregnes ved betaling.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Skatter og tollavgifter inkludert. Rabatter og frakt beregnes ved betaling.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Skatter inkludert. Rabatter og <a href=\"{{ link }}\">frakt</a> beregnes ved betaling.",
+      "taxes_included_shipping_at_checkout_without_policy": "Skatter inkludert. Rabatter og frakt beregnes ved betaling.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Tollavgifter inkludert. Skatter, rabatter og <a href=\"{{ link }}\">frakt</a> beregnes på betalingsiden.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Tollavgifter inkludert. Skatter, rabatter og frakt beregnes på betalingsiden.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Skatter, rabatter og <a href=\"{{ link }}\">frakt</a> beregnes på betalingsiden.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Skatter, rabatter og frakt beregnes på betalingsiden."
     },
     "announcements": {
       "previous_announcement": "Forrige kunngjøring",
@@ -20,6 +47,55 @@
       "carousel": "Karusell",
       "announcement": "Melding",
       "announcement_bar": "Varslingslinje"
+    },
+    "header": {
+      "announcement": "Melding",
+      "menu": "Meny",
+      "cart_count": {
+        "one": "{{ count }} produkter",
+        "other": "{{ count }} produkter"
+      }
+    },
+    "footer": {
+      "payment": "Betalingsmetoder"
+    },
+    "featured_blog": {
+      "view_all": "Vis alle",
+      "onboarding_title": "Blogginnlegg",
+      "onboarding_content": "Vis et sammendrag av blogginnlegget ditt til kundene dine"
+    },
+    "featured_collection": {
+      "view_all": "Vis alle",
+      "view_all_label": "Vis alle produkter i {{ collection_name }}-kolleksjonen"
+    },
+    "collection_list": {
+      "view_all": "Vis alle"
+    },
+    "collection_template": {
+      "title": "Kolleksjon",
+      "empty": "Produktet ble ikke funnet",
+      "use_fewer_filters_html": "Bruk færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">fjern alle</a>"
+    },
+    "page": {
+      "title": "Sidetittel"
+    },
+    "quick_order_list": {
+      "product_total": "Delsum for produkter",
+      "each": "{{ money }}/stykk",
+      "product": "Produkt",
+      "items_added": {
+        "one": "{{ quantity }} produkter lagt til",
+        "other": "{{ quantity }} produkter lagt til"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} produkter ble fjernet",
+        "other": "{{ quantity }} produkter ble fjernet"
+      },
+      "product_variants": "Produktvarianter",
+      "remove_all": "Fjern alle",
+      "cancel": "Avbryt",
+      "min_error": "Minimum verdi for dette produktet: {{ min }}",
+      "max_error": "Maksimal verdi for dette produktet: {{ max }}"
     }
   }
 }
