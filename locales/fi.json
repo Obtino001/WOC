@@ -1660,7 +1660,58 @@
         "card_nickname_label": "Nimimerkki (valinnainen)",
         "billing_address_rollup_accessibility_label": "Laskutusosoitteen vaihtoehdot",
         "business_customer_with_bank_account_vaulting_payment_label": "Tallenna tämä maksutapa maksun yhteydessä, ja anna %{company}-yritykselle lupa veloittaa tililtäsi tulevien, tähän sijaintiin hyväksymiesi ostosten maksut, kunnes peruutat luvan. Kaikki tähän sijaintiin liitetyt henkilöt voivat käyttää tätä maksutapaa.",
-        "bank_account_vaulted_company_location": "Tälle sijainnille on tallennettu pankkitili"
+        "bank_account_vaulted_company_location": "Tälle sijainnille on tallennettu pankkitili",
+        "discount_button_action_label": "Käytä alennuskoodi",
+        "detected_card_brand": "Havaitun korttimerkki: {brand}",
+        "different_credit_card_label": "Käytä eri luottokorttia",
+        "credit_card_vaulting_sign_in_banner_info": "Jos haluat tallentaa luottokorttisi tulevia ostoksia varten, kirjaudu sisään tai luo tili.",
+        "delete_customer_mandate_modal_body": "Jos poistat tämän kortin, sinun on lisättävä se uudelleen ennen maksujen tekemistä.",
+        "clear": "Puhdista",
+        "custom_onsite_payment_method_modal": {
+          "title": "Erityinen paikan päällä maksu vahvistus"
+        },
+        "delete_credit_card_modal": {
+          "confirmation": "Oletko varma, että haluat poistaa {{brandName}}-kortin, joka päättyy numeroihin {{lastDigits}}?",
+          "delete": "Sil"
+        },
+        "edit_credit_card_modal": {
+          "done": "Bitti",
+          "description": "Voit muuttaa vain korttisi laskutusosoitetta.",
+          "fields": {
+            "card_number": "Korttinumero",
+            "expiry": "Sona erme tarihi",
+            "name": "Karttaki ad",
+            "billing": "Laskutusosoite:"
+          }
+        },
+        "crypto_modal": {
+          "header": "Maksa %{total_price} USDC %{shop_name}-kauppaan",
+          "error": {
+            "close": "kapat",
+            "sandbox_error": "Tapahtui virhe",
+            "web_component_error": "Tämän sivun lataamisessa tapahtui virhe"
+          }
+        },
+        "crypto_payment_method": {
+          "tooltip": "Digitaalisen lompakkosi saldoa ja osoitetta ei jaeta, ja ainoastaan pyydetty summa voidaan veloittaa.",
+          "cashback_descriptor": {
+            "one": "Saat nakit tilauksesi %{count} päivän kuluttua",
+            "other": "Saat nakit tilauksesi %{count} päivän kuluttua"
+          }
+        },
+        "discount_codes_removed_summary": {
+          "one": "%{count} alennuskoodi poistettu",
+          "other": "%{count} alennuskoodi poistettu"
+        },
+        "continue_to_guest_checkout": "Jatka maksua vieraana",
+        "discount_codes_modified_summary": {
+          "one": "%{count} alennuskoodi vaihdettu",
+          "other": "%{count} alennuskoodi vaihdettu"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} alennuskoodi poistettu tai muutettu",
+          "other": "%{count} alennuskoodi poistettu tai muutettu"
+        }
       }
     }
   }
