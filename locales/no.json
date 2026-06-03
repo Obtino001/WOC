@@ -2812,7 +2812,11 @@
             "country_changed_heading": "Land endret"
           },
           "banner": "Leveringsmetoden din er oppdatert"
-        }
+        },
+        "pickup_all_items": "Motta alle produktene",
+        "items_for_pickup": "Produkter som skal mottas",
+        "items_for_shipping": "Produkter som skal sendes",
+        "items_moved_to_shipping_toast": "Produkter som ikke kunne mottas, er overført til frakt."
       },
       "shop_pay_external": {
         "errors": {
@@ -2823,6 +2827,78 @@
         "return_to_store": "Gå tilbake til {{shopName}}-butikken",
         "return_to_store_simple": "Gå tilbake til butikken",
         "title": "Shop Pay-betaling"
+      },
+      "stock": {
+        "page_title": "Lagerproblemer",
+        "title": "Ikke på lager",
+        "items_unavailable_notice": "Noen produkter er ikke lenger tilgjengelige.",
+        "product_column_header": "Produkter",
+        "quantity_column_header": "Antall",
+        "price_column_header": "Pris",
+        "status_column_header": "Durum",
+        "removed_from_cart_notice": "Sepetten fjernet",
+        "sold_out_label": "Utsolgt",
+        "reduced_label": "Rabattert",
+        "reduced_with_quantity_label": "Kun %{quantity_available} igjen",
+        "remove_from_cart_button_label": "Ta ut kurven",
+        "continue_shopping_button_label": "Fortsett",
+        "go_back_to_cart_button_label": "Gå tilbake til kassen",
+        "remove": "Løft",
+        "empty_cart_label": "Handlekurven din er tom",
+        "quantity_update": {
+          "page_title": "Antall oppdatering",
+          "title": "Antall oppdatering",
+          "description": "Antall tilgjengelige enheter for disse produktene har endret seg og er oppdatert i handlekurven din."
+        },
+        "unpurchasable_product": {
+          "title": "Produkt som ikke kan kjøpes",
+          "header": "Noen produkter har blitt fjernet fra handlekurven din",
+          "message": "Disse produktene kan ikke brukes i B2B-bestillinger.",
+          "status_column_header": "Kan ikke brukes"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Produkt som ikke kan kjøpes",
+          "header": "Noen produkter har blitt fjernet fra handlekurven din",
+          "message": "Disse produktene er ikke tilgjengelige.",
+          "status_column_header": "Ikke tilgjengelig"
+        },
+        "unshippable_product": {
+          "header": {
+            "one": "Ingen tilgjengelig leveringstjeneste for %{count} produkter",
+            "other": "Ingen tilgjengelig leveringstjeneste for %{count} produkter"
+          }
+        },
+        "price_update": {
+          "title": "Prisoppdatering",
+          "description": "Prisene på disse produktene har endret seg og er oppdatert i handlekurven din.",
+          "updated_price": "Oppdatert pris"
+        },
+        "return_to_store_label": "Gå tilbake til butikken",
+        "item_label": {
+          "one": "{{count}} produkter",
+          "other": "{{count}} produkter"
+        },
+        "continue_cta_label": "Fortsett til betalingsprosessen",
+        "out_of_stock": {
+          "description": "Disse produktene er ikke lenger tilgjengelige og vil bli fjernet fra handlekurven din.",
+          "items_unavailable": "Noen produkter er ikke lenger tilgjengelige og vil bli fjernet fra handlekurven din."
+        },
+        "unfulfillable_product": {
+          "title": "Leveringsmetode er ikke tilgjengelig",
+          "message": {
+            "one": "Denne varen kan ikke lenger leveres med %{delivery_method}.",
+            "other": "Disse produktene kan ikke lenger leveres med %{delivery_method}."
+          },
+          "default_message": {
+            "one": "Den valgte leveringsmetoden er ikke lenger tilgjengelig for dette produktet.",
+            "other": "Den valgte leveringsmetoden kan ikke lenger brukes for disse produktene."
+          }
+        },
+        "price_and_quantity_update": {
+          "title": "Pris- og antalloppdatering",
+          "description": "Prisene og tilgjengelige mengder for disse produktene har endret seg og er oppdatert i handlekurven din."
+        },
+        "out_of_stock_in_context_label": "Dette produktet er ikke tilgjengelig i ditt land/din region."
       }
     }
   },
