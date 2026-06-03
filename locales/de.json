@@ -337,15 +337,15 @@
       "use_fewer_filters_html": "Weniger Filter verwenden oder <a class=\"{{ class }}\" href=\"{{ link }}\">alle entfernen</a>"
     },
     "video": {
-      "load_video": "Video laden: {{ description }}"
+      "load_video": "Video hochladen: {{ description }}"
     },
     "slideshow": {
-      "load_slide": "Folie laden",
+      "load_slide": "Folie hochladen",
       "previous_slideshow": "Vorherige Folie",
       "next_slideshow": "Nächste Folie",
-      "pause_slideshow": "Slideshow pausieren",
-      "play_slideshow": "Slideshow abspielen",
-      "carousel": "Karussell",
+      "pause_slideshow": "Diashow anhalten",
+      "play_slideshow": "Diashow abspielen",
+      "carousel": "Schleife",
       "slide": "Folie"
     },
     "page": {
@@ -360,11 +360,11 @@
     },
     "quick_order_list": {
       "product_total": "Zwischensumme des Produkts",
-      "view_cart": "Warenkorb ansehen",
+      "view_cart": "Warenkorb anzeigen",
       "each": "{{ money }}/Stück",
       "product": "Produkt",
-      "variant": "Variante",
-      "variant_total": "Varianten insgesamt",
+      "variant": "Variation",
+      "variant_total": "Gesamtsumme der Variation",
       "items_added": {
         "one": "{{ quantity }} Artikel hinzugefügt",
         "other": "{{ quantity }} Artikel hinzugefügt"
@@ -374,14 +374,14 @@
         "other": "{{ quantity }} Artikel wurden entfernt"
       },
       "product_variants": "Produktvarianten",
-      "total_items": "Artikel gesamt",
-      "remove_all_items_confirmation": "Alle {{ quantity }} Artikel aus deinem Warenkorb entfernen?",
+      "total_items": "Gesamtanzahl der Produkte",
+      "remove_all_items_confirmation": "Sollen alle {{ quantity }} Artikel aus dem Warenkorb entfernt werden?",
       "remove_all": "Alle entfernen",
       "cancel": "Abbrechen",
-      "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
+      "remove_all_single_item_confirmation": "Soll der Artikel aus dem Warenkorb entfernt werden?",
       "min_error": "Mindestwert für dieses Produkt: {{ min }}",
       "max_error": "Maximalwert für dieses Produkt: {{ max }}",
-      "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
+      "step_error": "Diesen Artikel können Sie nur in Schritten von {{ step }} hinzufügen."
     }
   },
   "localization": {
@@ -1416,7 +1416,48 @@
           "due_on_fulfillment_title": "Die Zahlung des Guthabens in Höhe von {{amount_due}} erfolgt bei Versand der Bestellung."
         },
         "compare_at_sale": "Rabatt (%{sale_amount})",
-        "automatic_discount_tooltip": "Automatisch angewandte Rabatte können nicht entfernt werden"
+        "automatic_discount_tooltip": "Automatisch angewandte Rabatte können nicht entfernt werden",
+        "discount_has_been_applied": "Rabatt angewendet",
+        "discount_has_been_removed": "Rabatt entfernt",
+        "discount_already_applied": "Für diese Bestellung wurde ein Rabatt angewendet. Sie können keinen weiteren Rabatt hinzufügen.",
+        "discount_requires_customer_notice": "Geben Sie Ihre Versandinformationen ein, um den Rabattcode <strong style=\"text-transform:uppercase\">%{code}</strong> zu verwenden",
+        "discount_and_gift_card_savings_notice": "Nach %{discount_amount} Rabatt und %{gift_card_amount} Geschenkkarte",
+        "estimated_taxes_finalization_tooltip_content": "Die letzte Steuer und die Gesamtsumme werden nach Aufgabe Ihrer Bestellung per E-Mail oder SMS bestätigt.",
+        "deferred_payment_info": {
+          "title": "Die Fälligkeit der Zahlung in Höhe von %{amount_due} ist am %{due_at}",
+          "description_html": "Bei Fragen zu Ihrer Bestellung %{contact_us}.",
+          "paid_today": "Heutige Gesamtzahlung",
+          "due_on_fulfillment_title": "Die Zahlung in Höhe von %{amount_due} wird bei Versand der Bestellung fällig.",
+          "due_on_receipt_title": "%{amount_due} Betrag muss bei Ausstellung der Quittung bezahlt werden"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> funktioniert derzeit nicht. Kontaktieren Sie uns, um Hilfe zu erhalten.",
+        "due_on_fulfillment": "Zahlung bei Lieferung",
+        "duties_and_taxes_label": "Steuern und Zollgebühren",
+        "error_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Daher können bei der Lieferung Zollgebühren und andere Steuern anfallen.",
+        "deferred_total_due_date_label": "Gesamtbetrag, der am {{date}} zu zahlen ist",
+        "expand_component_information": {
+          "one": "%{count} Produkte anzeigen"
+        },
+        "discount_discovery": {
+          "back_to_finalize_order": "Zurück zur Bestellabschlussseite"
+        },
+        "discount_order_stacking": {
+          "one": "Bestellrabatt",
+          "other": "Bestellrabatte"
+        },
+        "discount_not_found": "Mit dem eingegebenen Code konnte kein gültiger Rabatt gefunden werden",
+        "enter_shipping_address": "Geben Sie die Lieferadresse ein",
+        "discount_code_applied_with_code": "%{code} Rabattcode angewendet",
+        "duties_included_label": "Alle anfallenden Zollgebühren und sonstigen Steuern sind enthalten. Bei der Lieferung fallen keine zusätzlichen Gebühren an.",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Rabattcode erfordert einen berechtigten Kunden",
+        "deposit_label": "Kaution",
+        "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> Ihr Rabattcode wurde geändert. Überprüfen Sie Ihren Warenkorb und versuchen Sie es erneut.",
+        "deferred_total_due_date_label_next": "Fälligkeitsdatum: %{date}",
+        "discount_code_removed": "%{code} Rabattcode wurde entfernt",
+        "discount_code_replaced": "%{old_code} Rabattcode wurde entfernt und %{code} wurde angewendet",
+        "discount_code_replaced_multiple": "Mehrere Rabattcodes wurden entfernt und %{code} wurde angewendet",
+        "discount_applies_to_subscription_items_only": "Dieser Rabatt gilt nur für Abonnementprodukte.",
+        "estimated_taxes_finalization_tooltip_content_short": "Die Steuer wird nach der Zahlung endgültig festgelegt."
       },
       "order_payment_collection": {
         "changes_summary": {

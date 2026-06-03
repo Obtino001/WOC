@@ -1389,7 +1389,54 @@
           "due_on_fulfillment_title": "{{amount_due}} summan eräpäivä maksetaan, kun tilaus lähetetään"
         },
         "compare_at_sale": "Alennus (%{sale_amount})",
-        "automatic_discount_tooltip": "Automaattisesti sovellettavia alennuksia ei voi poistaa"
+        "automatic_discount_tooltip": "Automaattisesti sovellettavia alennuksia ei voi poistaa",
+        "discount_has_been_applied": "Alennus on käytössä",
+        "discount_has_been_removed": "Alennus poistettu",
+        "discount_already_applied": "Tähän tilaukseen on sovellettu alennus. Et voi lisätä toista alennusta.",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodin käyttämiseksi syötä toimitustietosi",
+        "discount_and_gift_card_savings_notice": "%{discount_amount} alennuksen ja %{gift_card_amount} lahjakortin jälkeen",
+        "discount_savings_notice": "%{discount_amount} alennuksen jälkeen",
+        "estimated_taxes_finalization_tooltip_content": "Viimeinen vero ja kokonaissumma vahvistetaan sähköpostitse tai tekstiviestillä tilauksesi jälkeen.",
+        "deferred_payment_info": {
+          "title": "%{amount_due} summan eräpäivä on %{due_at}",
+          "description_html": "Tilaustasi koskevissa kysymyksissä %{contact_us}.",
+          "paid_today": "Tämän päivän kokonaismaksu",
+          "due_on_fulfillment_title": "%{amount_due} määrän maksu suoritetaan, kun tilaus lähetetään",
+          "due_on_receipt_title": "%{amount_due} summan maksaminen tulee suorittaa kuittia vastaan",
+          "paid_today_next": "Tänään maksettu"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> ei tällä hetkellä toimi. Ota yhteyttä saadaksesi apua.",
+        "due_on_fulfillment": "Maksu toimituksen yhteydessä",
+        "duties_label": "Tullimaksut",
+        "duties_and_taxes_label": "Verot ja tullimaksut",
+        "error_duties_tooltip": "Tämä tilaus lähetetään toisesta maasta. Siksi toimituksen yhteydessä saatetaan joutua maksamaan tullimaksuja ja muita veroja.",
+        "deferred_total_due_date_label": "Maksun kokonaismäärä eräpäivänä {{date}}",
+        "expand_component_information": {
+          "one": "Näytä %{count} tuotetta"
+        },
+        "discount_discovery": {
+          "merchandise_quantity_label": {
+            "one": "%{count} tuotetta"
+          },
+          "back_to_finalize_order": "Palaa tilaamaan loppuun"
+        },
+        "discount_order_stacking": {
+          "other": "Tilaus-alennukset"
+        },
+        "discount_not_found": "Syötetyllä koodilla ei löydy voimassa olevaa alennusta",
+        "enter_shipping_address": "Syötä toimitusosoite",
+        "discount_code_applied": "Alennuskoodi on käytetty",
+        "discount_code_applied_with_code": "%{code} alennuskoodi on käytetty",
+        "duties_included_label": "Sisältää kerätyt tullimaksut ja muut verot. Toimituksesta ei veloiteta lisämaksuja.",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodin käyttöön tarvitaan kelvollinen asiakas",
+        "deposit_label": "Talletus",
+        "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodisi on muuttunut. Tarkista ostoskorisi ja yritä uudelleen.",
+        "deferred_total_due_date_label_next": "Viimeinen maksupäivä: %{date}",
+        "discount_code_removed": "%{code} alennuskoodi poistettu",
+        "discount_code_replaced": "%{old_code} alennuskoodi poistettiin ja %{code} otettiin käyttöön",
+        "discount_code_replaced_multiple": "Useita alennuskoodeja poistettiin ja %{code} otettiin käyttöön",
+        "discount_applies_to_subscription_items_only": "Tämä alennus koskee vain tilauspalvelutuotteita.",
+        "estimated_taxes_finalization_tooltip_content_short": "Verotus vahvistetaan maksun jälkeen"
       },
       "order_payment_collection": {
         "custom_line_item_description": "%{order_name} tilauksen maksettava summa",
