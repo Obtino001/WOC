@@ -2708,7 +2708,8 @@
         "breadcrumbs_in_review": "Wird überprüft",
         "first_payment_complete": "Die erste Zahlung wurde abgeschlossen",
         "gift_card_confirmation_by_email_typ": {
-          "one": "In wenigen Minuten erhalten Sie eine E-Mail mit Ihrer Geschenkkarte."
+          "one": "In wenigen Minuten erhalten Sie eine E-Mail mit Ihrer Geschenkkarte.",
+          "other": "In wenigen Minuten erhalten Sie eine E-Mail mit Ihren Geschenkkarten."
         },
         "failed_pending_payment_page_title": "Bei Ihrer Zahlung ist ein Problem aufgetreten",
         "company_location_section_title": "Firma und Standort",
@@ -2717,7 +2718,70 @@
         "confirmed_orders_title": "Ihre Bestellungen wurden bestätigt",
         "checkout_on_another_store": "In einem anderen Geschäft bezahlen",
         "checkout_again": "Versuche die Zahlung erneut durchzuführen",
-        "cashback_notice": "Sie erhalten Ihre Geldrückerstattung nach 30 Tagen."
+        "cashback_notice": "Sie erhalten Ihre Geldrückerstattung nach 30 Tagen.",
+        "order_status_confirmed_order_with_email": "Sie erhalten eine E-Mail, sobald Ihre Bestellung fertig ist.",
+        "order_status_confirmed_order_with_phone": "Bestellen Sie, wenn Ihre Bestellung fertig ist, erhalten Sie eine SMS.",
+        "order_status_confirmed_order_with_email_and_phone": "Sie erhalten eine E-Mail, sobald Ihre Bestellung fertig ist.",
+        "in_transit_title": "Ihre Bestellung wird vorbereitet",
+        "in_transit_description": "Sie erhalten Updates zum Status Ihrer Bestellung.",
+        "in_transit_description_days": "Ihre Bestellung wird voraussichtlich innerhalb der nächsten %{number} Tage eintreffen.",
+        "in_transit_description_today": "Ihre Bestellung wird voraussichtlich heute eintreffen.",
+        "in_transit_description_tomorrow": "Ihre Bestellung wird voraussichtlich in den nächsten Tagen bei Ihnen eintreffen.",
+        "no_tracking_number": "Für diese Bestellung gibt es keine Sendungsverfolgungsnummer.",
+        "non_shippable_title": "Ihre Bestellung wurde abgeschlossen",
+        "login_title": "Alle Bestelldetails anzeigen, indem Sie sich anmelden",
+        "login_description": "Bestellnummer finden Sie auf der Quittung, die Sie per E-Mail erhalten haben.",
+        "login_description_phone": "Die Bestellnummer finden Sie auf dem Beleg, den Sie per SMS erhalten haben.",
+        "login_not_customer_html": "Sind Sie nicht %{name}? %{link}",
+        "login_reorder_link_text": {
+          "one": "Diesen Artikel können Sie ebenfalls kaufen",
+          "other": "Diese Produkte können Sie ebenfalls kaufen"
+        },
+        "marker": {
+          "current": "Aktueller Versandstandort"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Wir senden Ihnen eine E-Mail, sobald Ihre Bestellung zur Abholung bereitsteht.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Wir senden Ihnen eine E-Mail und SMS, sobald Ihre Bestellung zur Abholung bereitsteht.",
+        "order_status_confirmed_order_local": "Wir bereiten Ihre Bestellung für die Lieferung vor.",
+        "gift_card_sent_confirmation": "Geschenkkarten wurden versendet",
+        "let_us_know": "Benachrichtigen Sie uns",
+        "gift_card_confirmation_by_text": "Wenn keine Nachricht eingegangen ist, senden Sie die SMS bitte erneut oder kontaktieren Sie uns.",
+        "gift_card_title": "Geschenkkarten",
+        "order_status_confirmed_order_with_email_payment": "Sie haben Ihre Bestellung am %{date} bezahlt.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Sie haben Ihre Bestellung am %{date} bezahlt.",
+        "missing_shipping_address_banner": {
+          "title": "Die Versandadresse für die Bestellung fehlt",
+          "text_html": "Um Ihre Adresse hinzuzufügen, %{contact_us}",
+          "contact_us": "Kontaktieren Sie uns"
+        },
+        "in_store_purchase": "Im Geschäft kaufen",
+        "manage_order_label": "Verwalten Sie Ihre Bestellung",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "In wenigen Minuten erhalten Sie eine SMS mit Ihrer Geschenkkarte.",
+          "other": "In wenigen Minuten erhalten Sie eine SMS mit Ihren Geschenkkarten."
+        },
+        "gift_card_email_title": {
+          "one": "Geschenkkarte wurde per E-Mail versendet",
+          "other": "Geschenkkarten wurden per E-Mail versendet"
+        },
+        "gift_card_text_title": {
+          "one": "Die Geschenkkarte wurde per SMS versendet",
+          "other": "Geschenkkarten wurden per SMS versendet"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "Geschenkkarte wurde erneut gesendet",
+          "other": "Geschenkkarten wurden erneut gesendet"
+        },
+        "gift_card_resend_failure": {
+          "one": "Beim erneuten Senden Ihrer Geschenkkarte ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns.",
+          "other": "Beim erneuten Senden Ihrer Geschenkkarten ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns."
+        },
+        "order_status_confirmed_order_local_pick_up": "Wir bereiten Ihre Bestellung vor.",
+        "order_status_confirmed_order_local_payment": "Wir bereiten Ihre Bestellung vor.",
+        "items_fulfilled_by_store": {
+          "one": "Die von Ihnen gekauften Produkte werden von %{remote_shop_name} versendet.",
+          "other": "Die von Ihnen gekauften Produkte werden von anderen Geschäften versendet."
+        }
       }
     }
   }

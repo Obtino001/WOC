@@ -2978,7 +2978,8 @@
         "first_payment_complete": "تم إتمام الدفعة الأولى",
         "choose_payment_method_later": "اختر طريقة الدفع لاحقًا",
         "gift_card_confirmation_by_email_typ": {
-          "one": "خلال بضع دقائق، ستتلقى بريدًا إلكترونيًا يحتوي على بطاقة الهدية الخاصة بك."
+          "one": "خلال بضع دقائق، ستتلقى بريدًا إلكترونيًا يحتوي على بطاقة الهدية الخاصة بك.",
+          "other": "خلال بضع دقائق، ستتلقى بريدًا إلكترونيًا يحتوي على بطاقات الهدايا الخاصة بك."
         },
         "failed_pending_payment_page_title": "حدثت مشكلة في دفعتك",
         "company_location_section_title": "الشركة والموقع",
@@ -2987,7 +2988,74 @@
         "confirmed_orders_title": "تم تأكيد طلباتك",
         "checkout_on_another_store": "ادفع في متجر آخر",
         "checkout_again": "حاول الدفع مرة أخرى",
-        "cashback_notice": "ستستلم استرداد النقود بعد 30 يومًا"
+        "cashback_notice": "ستستلم استرداد النقود بعد 30 يومًا",
+        "order_status_confirmed_order_with_email": "سوف تتلقى بريدًا إلكترونيًا عندما يكون طلبك جاهزًا.",
+        "order_status_confirmed_order_with_phone": "يمكنك تلقي رسالة نصية قصيرة عندما يكون طلبك جاهزًا.",
+        "order_status_confirmed_order_with_email_and_phone": "ستتلقى بريدًا إلكترونيًا عندما يكون طلبك جاهزًا.",
+        "in_transit": "على الطريق",
+        "in_transit_title": "يتم تجهيز طلبك",
+        "in_transit_description": "ستتلقى تحديثات حول حالة طلبك.",
+        "in_transit_description_days": "من المتوقع أن تستلم طلبك خلال %{number} يومًا القادمة.",
+        "in_transit_description_today": "من المتوقع أن تستلم طلبك اليوم.",
+        "in_transit_description_tomorrow": "من المتوقع أن تستلم طلبك في الأيام القادمة.",
+        "no_tracking_number": "لا يوجد رقم تتبع لهذا الطلب.",
+        "non_shippable_title": "تم إتمام طلبك",
+        "login_title": "لتتمكن من عرض جميع تفاصيل الطلب، يرجى تسجيل الدخول",
+        "login_description": "يمكنك العثور على رقم الطلب الخاص بك في الإيصال الذي استلمته عبر البريد الإلكتروني.",
+        "login_description_phone": "يمكنك العثور على رقم طلبك في الإيصال الذي استلمته عبر الرسائل القصيرة.",
+        "login_not_customer_html": "هل لست %{name}؟ %{link}",
+        "login_reorder_link_text": {
+          "one": "يمكنك أيضًا شراء هذا المنتج",
+          "other": "يمكنك أيضًا شراء هذه المنتجات"
+        },
+        "order_number_label": "رقم الطلب",
+        "login": "تسجيل الدخول",
+        "marker": {
+          "current": "موقع الشحن الحالي",
+          "shipping": "عنوان الشحن"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "سنرسل لك بريدًا إلكترونيًا عندما يكون طلبك جاهزًا للاستلام.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "سنرسل لك بريدًا إلكترونيًا ورسالة نصية عندما يكون طلبك جاهزًا للاستلام.",
+        "order_status_confirmed_order_local": "نحن نجهز طلبك للتسليم.",
+        "gift_card_sent_confirmation": "تم إرسال بطاقات الهدايا",
+        "let_us_know": "أخبرنا",
+        "gift_card_confirmation_by_text": "إذا لم يصلك الرسالة، أعد إرسال الرسالة القصيرة أو تواصل معنا.",
+        "gift_card_title": "بطاقات الهدايا",
+        "order_status_confirmed_order_with_email_payment": "لقد قمت بالدفع لطلبك في %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "لقد قمت بالدفع لطلبك في %{date}.",
+        "missing_shipping_address_banner": {
+          "title": "لا يوجد عنوان شحن للطلب",
+          "text_html": "لإضافة عنوانك %{contact_us}",
+          "contact_us": "اتصل بنا"
+        },
+        "in_store_purchase": "الشراء داخل المتجر",
+        "manage_order_label": "قم بإدارة طلبك",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "خلال بضع دقائق، ستتلقى رسالة نصية قصيرة تحتوي على بطاقة الهدية الخاصة بك.",
+          "other": "خلال بضع دقائق، ستتلقى رسالة نصية قصيرة تحتوي على بطاقات الهدايا الخاصة بك."
+        },
+        "gift_card_email_title": {
+          "one": "تم إرسال بطاقة الهدية عبر البريد الإلكتروني",
+          "other": "تم إرسال بطاقات الهدايا عبر البريد الإلكتروني"
+        },
+        "gift_card_text_title": {
+          "one": "تم إرسال بطاقة الهدية عبر رسالة نصية قصيرة",
+          "other": "تم إرسال بطاقات الهدايا عبر الرسائل القصيرة"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "تم إعادة إرسال بطاقة الهدية",
+          "other": "تم إعادة إرسال بطاقات الهدايا"
+        },
+        "gift_card_resend_failure": {
+          "one": "حدثت مشكلة أثناء إعادة إرسال بطاقة الهدية الخاصة بك. حاول مرة أخرى أو اتصل بنا.",
+          "other": "حدثت مشكلة أثناء إعادة إرسال بطاقات الهدايا الخاصة بك. حاول مرة أخرى أو اتصل بنا."
+        },
+        "order_status_confirmed_order_local_pick_up": "نحن نجهز طلبك.",
+        "order_status_confirmed_order_local_payment": "نحن نجهز طلبك.",
+        "items_fulfilled_by_store": {
+          "one": "سيتم شحن المنتجات التي اشتريتها بواسطة %{remote_shop_name}.",
+          "other": "سيتم شحن المنتجات التي اشتريتها من متاجر أخرى."
+        }
       }
     }
   },

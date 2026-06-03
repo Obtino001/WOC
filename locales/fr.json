@@ -2736,7 +2736,48 @@
         "attempted_delivery_local_description_html": "Nous n'avons pas pu livrer votre commande. Pour planifier une nouvelle livraison, %{contact_us}.",
         "announcement": {
           "expand": "Élargir"
-        }
+        },
+        "confirmation_email_sent_text": "Un e-mail de confirmation a été envoyé à %{email}",
+        "customer_information_title": "Informations de commande",
+        "contact_information_title": "Coordonnées de contact",
+        "company_tracking_number": "Numéro de suivi %{company} :",
+        "estimated_arrival": "Date de livraison estimée :",
+        "confirmed": "Vérifié",
+        "confirmed_title": "Votre commande a été confirmée",
+        "confirmed_description": "Nous avons reçu votre commande et la préparons. Revenez sur cette page pour les mises à jour concernant l'état de votre livraison.",
+        "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez indiquée. Si vous n'avez pas reçu votre colis ou si vous rencontrez un autre problème, %{contact_us}.",
+        "contact_us": "Contactez-nous",
+        "contact_us_lowercase": "Contactez-nous",
+        "contact_us_html": "Besoin d'aide ? %{contact_us}",
+        "failed_title": "Votre commande n'a pas pu être livrée",
+        "failed_contact_merchant": "Pour planifier la livraison, contactez %{company}.",
+        "failed_contact_merchant_no_company": "Pour planifier la livraison, contactez-nous.",
+        "customer_information_hidden_fields_message": "Connectez-vous pour afficher toutes les informations client.",
+        "cancelled_description": "Votre commande a été annulée le %{date}. Si vous avez des questions, contactez-nous.",
+        "customer_validation_error": "Veuillez saisir une adresse e-mail valide ou un numéro de commande.",
+        "customer_validation_error_phone": "Veuillez saisir un numéro de téléphone ou de commande valide.",
+        "fulfillment": {
+          "fulfilled_table_title": "Les produits dans ce colis",
+          "unfulfilled_table_title": "Produits préparés pour le transport"
+        },
+        "delivery_information_label": "Informations de livraison :",
+        "delivered_local_description_html": "Votre commande ne vous est-elle pas encore parvenue ? %{let_us_know}.",
+        "gift_card_confirmation_by_email": "Si vous n'avez pas reçu l'e-mail, renvoyez-le ou contactez-nous.",
+        "estimated_delivery": "Estimation de livraison actuelle :",
+        "breadcrumbs_submitted": "Envoyé",
+        "breadcrumbs_in_review": "En cours d'examen",
+        "breadcrumbs_confirmed": "Vérifié",
+        "first_payment_complete": "Le premier paiement est terminé",
+        "choose_payment_method_later": "Choisissez le mode de paiement plus tard",
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Dans quelques minutes, vous recevrez un e-mail contenant votre carte cadeau."
+        },
+        "confirmed_items_count": "%{total_count} articles dont %{confirmed_count} produits confirmés",
+        "checkout_on_remote_shop_link_text": "Payez dans la boutique %{remoteShopName}",
+        "confirmed_orders_title": "Vos commandes ont été confirmées",
+        "checkout_on_another_store": "Payez dans un autre magasin",
+        "checkout_again": "Réessayer de payer",
+        "cashback_notice": "Vous recevrez votre remboursement en espèces après 30 jours."
       }
     }
   }
