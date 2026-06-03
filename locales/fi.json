@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -63,21 +72,21 @@
     "button_label": "Tilaa"
   },
   "accessibility": {
-    "skip_to_text": "Ohita ja siirry sisältöön",
+    "skip_to_text": "Siirry sisältöön",
     "close": "Sulje",
     "unit_price_separator": "kohti",
     "vendor": "Myyjä:",
-    "error": "Virhe",
-    "refresh_page": "Vaihtoehdon valinta päivittää koko sivun.",
+    "error": "Hata",
+    "refresh_page": "Valinnan tekeminen aiheuttaa koko sivun uudelleenlatauksen.",
     "link_messages": {
-      "new_window": "Avaa uuden ikkunan.",
-      "external": "Avaa ulkoisen verkkosivuston."
+      "new_window": "Avaa uudessa ikkunassa.",
+      "external": "Avaa ulkoinen verkkosivusto."
     },
     "loading": "Ladataan...",
     "skip_to_product_info": "Siirry tuotetietoihin",
-    "total_reviews": "arvosteluja yhteensä",
+    "total_reviews": "kokonaisarviointi",
     "star_reviews_info": "{{ rating_value }}/{{ rating_max }} tähteä",
-    "collapsible_content_title": "Pienenettävä sisältö",
+    "collapsible_content_title": "Laajennettava sisältö",
     "complementary_products": "Täydentävät tuotteet"
   },
   "blogs": {
@@ -85,19 +94,19 @@
       "blog": "Blogi",
       "read_more_title": "Lue lisää: {{ title }}",
       "comments": {
-        "one": "{{ count }} kommentti",
+        "one": "{{ count }} kommenttia",
         "other": "{{ count }} kommenttia"
       },
-      "moderated": "Huomaa, että kommenttien täytyy olla hyväksytty ennen niiden julkaisemista.",
-      "comment_form_title": "Kirjoita kommentti",
-      "name": "Nimi",
+      "moderated": "Muistathan, että kommenttien julkaiseminen edellyttää hyväksyntää.",
+      "comment_form_title": "Jätä kommentti",
+      "name": "Mainos",
       "email": "Sähköposti",
       "message": "Kommentti",
-      "post": "Julkaise kommentti",
-      "back_to_blog": "Takaisin blogiin",
+      "post": "Jaa kommentti",
+      "back_to_blog": "Blogi pyörii",
       "share": "Jaa tämä artikkeli",
-      "success": "Kommenttisi julkaiseminen onnistui! Kiitos!",
-      "success_moderated": "Kommenttisi julkaiseminen onnistui. Julkaisemme sen jonkin ajan kuluttua, kun blogimme on tarkastettu."
+      "success": "Arvostelusi on julkaistu onnistuneesti! Kiitos.",
+      "success_moderated": "Kommenttisi on julkaistu onnistuneesti. Koska blogiamme valvotaan, kommenttisi julkaistaan pian."
     }
   },
   "onboarding": {
@@ -387,41 +396,41 @@
   "customer": {
     "account": {
       "title": "Tili",
-      "details": "Tilin tiedot",
-      "view_addresses": "Näytä osoitteet",
-      "return": "Palaa tilin tietoihin"
+      "details": "Tilitiedot",
+      "view_addresses": "Näytä osoite",
+      "return": "Palaa tilitietoihin"
     },
     "account_fallback": "Tili",
     "activate_account": {
-      "title": "Aktivoi tili",
-      "subtext": "Aktivoi tili luomalla salasana.",
+      "title": "Tilin aktivointi",
+      "subtext": "Luo salasana tilisi aktivoimiseksi.",
       "password": "Salasana",
       "password_confirm": "Vahvista salasana",
-      "submit": "Aktivoi tili",
-      "cancel": "Hylkää kutsu"
+      "submit": "Tilin aktivointi",
+      "cancel": "Kieltäydy kutsusta"
     },
     "addresses": {
       "title": "Osoitteet",
       "default": "Oletus",
       "add_new": "Lisää uusi osoite",
       "edit_address": "Muokkaa osoitetta",
-      "first_name": "Etunimi",
+      "first_name": "Mainos",
       "last_name": "Sukunimi",
       "company": "Yritys",
       "address1": "Osoite 1",
       "address2": "Osoite 2",
-      "city": "Paikkakunta",
+      "city": "Kaupunki",
       "country": "Maa/alue",
-      "province": "Provinssi",
-      "zip": "Postinumero",
+      "province": "Il",
+      "zip": "Postaa kotiin",
       "phone": "Puhelin",
       "set_default": "Aseta oletusosoitteeksi",
       "add": "Lisää osoite",
       "update": "Päivitä osoite",
       "cancel": "Peruuta",
       "edit": "Muokkaa",
-      "delete": "Poista",
-      "delete_confirm": "Haluatko varmasti poistaa tämän osoitteen?"
+      "delete": "Sil",
+      "delete_confirm": "Oletko varma, että haluat poistaa tämän osoitteen?"
     },
     "log_in": "Kirjaudu sisään",
     "log_out": "Kirjaudu ulos",
@@ -433,7 +442,7 @@
       "guest_continue": "Jatka",
       "guest_title": "Jatka vieraana",
       "password": "Salasana",
-      "title": "Kirjautuminen",
+      "title": "Kirjaudu sisään",
       "sign_in": "Kirjaudu sisään",
       "submit": "Lähetä",
       "alternate_provider_separator": "tai"
@@ -442,11 +451,11 @@
       "title": "Tilaushistoria",
       "order_number": "Tilaus",
       "order_number_link": "Tilausnumero {{ number }}",
-      "date": "Päivämäärä",
+      "date": "Historia",
       "payment_status": "Maksun tila",
-      "fulfillment_status": "Tilauksen täyttämisen tila",
+      "fulfillment_status": "Toimitustila",
       "total": "Yhteensä",
-      "none": "Et ole vielä tehnyt tilauksia."
+      "none": "Et ole vielä tehnyt tilausta."
     },
     "recover_password": {
       "title": "Nollaa salasanasi",
@@ -469,30 +478,30 @@
       "submit": "Nollaa salasana"
     },
     "order": {
-      "title": "Tilaus {{ name }}",
-      "date_html": "Tehty {{ date }}",
-      "cancelled_html": "Tilaus peruutettu {{ date }}",
+      "title": "{{ name }} tilaus",
+      "date_html": "Verilmäpäivä: {{ date }}",
+      "cancelled_html": "Tilauksen peruutuspäivä: {{ date }}",
       "cancelled_reason": "Syy: {{ reason }}",
       "billing_address": "Laskutusosoite",
       "payment_status": "Maksun tila",
       "shipping_address": "Toimitusosoite",
-      "fulfillment_status": "Tilauksen täyttämisen tila",
+      "fulfillment_status": "Toimitustila",
       "discount": "Alennus",
-      "shipping": "Toimitus",
-      "tax": "Vero",
+      "shipping": "Kargo",
+      "tax": "Verkko",
       "product": "Tuote",
-      "sku": "SKU-koodi",
+      "sku": "Tuotekoodi",
       "price": "Hinta",
-      "quantity": "Määrä",
+      "quantity": "Kappaletta",
       "total": "Yhteensä",
-      "fulfilled_at_html": "Jaeltu {{ date }}",
+      "fulfilled_at_html": "Lähetetty: {{ date }}",
       "track_shipment": "Seuraa lähetystä",
-      "tracking_url": "Seurantalinkki",
-      "tracking_company": "Kuljetuspalvelu",
+      "tracking_url": "Seurantayhteys",
+      "tracking_company": "Kuljetusyritys",
       "tracking_number": "Seurantanumero",
-      "subtotal": "Välisumma",
-      "total_duties": "Tullit",
-      "total_refunded": "Maksu palautettu"
+      "subtotal": "Kokonaismäärä",
+      "total_duties": "Tullimaksut",
+      "total_refunded": "Palautus on suoritettu"
     }
   },
   "gift_cards": {
