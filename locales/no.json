@@ -3686,7 +3686,63 @@
     "notices": {
       "address": {
         "created": "Adressen ble opprettet med suksess",
-        "deleted": "Adressen ble slettet vellykket"
+        "deleted": "Adressen ble slettet vellykket",
+        "updated": "Adresse oppdatert med suksess.",
+        "error_updating": "Det oppstod en feil under oppdatering av adressen",
+        "error_creating": "Det oppstod en feil under opprettelsen av adressen.",
+        "error_deleting": "Det oppstod en feil under sletting av adressen."
+      },
+      "customer": {
+        "password_reset_error": "Feil ved tilbakestilling av passordet",
+        "no_account_found": "Det ble ikke funnet noen konto med denne e-postadressen.",
+        "invalid_credentials": "Feil e-post eller passord.",
+        "denylisted_reset_password": "Kontoen din kunne ikke nås fordi det nåværende passordet ikke er sikkert. Du vil motta en e-post for å oppdatere passordet ditt.",
+        "signup_disabled": "Opprettelse av kundekonto er deaktivert",
+        "subscribe_error": "Abonnementsfeil",
+        "unsubscribe_error": "Feil ved avmelding av abonnementet"
+      },
+      "cart": {
+        "only_n_items_available": "Du kan bare legge til %{count} %{name} i handlekurven.",
+        "too_many_items_in_cart": "Du kan ikke legge til flere %{name} i handlekurven.",
+        "all_items_in_cart": "Alle %{count} %{name} i handlekurven din.",
+        "empty_update": "kan ikke oppdatere tom handlekurv",
+        "missing_parameters": "gyldig ID eller linjeparameter mangler",
+        "generic_error": "Kurvfeil",
+        "too_many_line_items_error": "Det kan være opptil %{max} produkter i handlekurven din.",
+        "link_expired": "Lenkens varighet er utløpt",
+        "link_no_longer_exists": "Tilkoblingen er ikke lenger tilgjengelig.",
+        "stock_problems_html": "En eller flere produkter er ikke lenger tilgjengelige. Vi har laget en <a href='%{link}'>oppdatert handlekurv</a>.",
+        "changed": "Handlekurven er endret",
+        "items_changed": "Én eller flere produkter har endret seg.",
+        "product_sold_out": "\"%{name}\" produktet er allerede utsolgt.",
+        "variant_not_found": "Ingen variasjoner funnet",
+        "variant_requires_selling_plan": "Variasjonen kan kun kjøpes med én salgsplan.",
+        "shipping_address_not_required": "Denne kurven krever ikke frakt",
+        "shipping_address_invalid": "Det oppstod et problem med å beregne fraktkostnadene dine. Gå til betalingsiden for å velge fraktkostnad før du fullfører bestillingen din.",
+        "selling_plan_not_applicable": "Salgsplanen for variasjonen kan ikke brukes",
+        "selling_plan_not_available_for_company_locations": "For B2B-bestillinger kan kun engangskjøp brukes",
+        "digital_product_not_available_for_company_locations": "Dette produktet kan ikke legges til i B2B-bestillingen",
+        "product_not_available": "Produktet er ikke tilgjengelig",
+        "less_than_minimum": "Minimumsverdien for dette elementet er %{min}.",
+        "more_than_maximum": "Maksimal verdi for dette elementet er %{max}.",
+        "not_respect_step": "Du kan bare legge til dette elementet i multipler av %{step}.",
+        "bundle_requires_components": "Pakkede produktet '%{name}' kan ikke legges i handlekurven.",
+        "gift_card_with_components_not_supported": "Pakkede produktet \"%{name}\" kan ikke legges i handlekurven.",
+        "view_lines_limit_reached": "Antall rader må være %{limit} eller færre",
+        "merchandise_line_transformers": {
+          "run_error": "Det oppstod en feil i handlekurven din."
+        },
+        "gift_card_price_must_be_greater_than_zero": "Pakkede produktet '%{name}' kan ikke legges i handlekurven.",
+        "cart_too_large": "Kurven er veldig stor.",
+        "gift_card_recipient_validation_error": "Den angitte gavekortmottakeren er ugyldig",
+        "invalid_input": "%{parameter} parameteren er ugyldig.",
+        "buyer_cannot_purchase_for_company_locations": "Du kan ikke foreta kjøp på denne plasseringen",
+        "only_one_added_to_cart": "På grunn av lagerstatus ble bare 1 vare lagt til i handlekurven din.",
+        "only_n_added_to_cart": "På grunn av lagerstatus ble bare %{quantity} produkter lagt til i handlekurven din.",
+        "maximum_available_quantity_reached": "Det er allerede maks antall av dette produktet i handlekurven din.",
+        "cart_attributes_error": "Handlekurven inneholder ugyldige data.",
+        "merchandise_not_applicable": "Produktet kan ikke kjøpes i den konfigurerte versjonen.",
+        "not_found": "Handlekurv ikke funnet"
       }
     },
     "filters": {
