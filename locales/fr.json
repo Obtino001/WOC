@@ -611,7 +611,20 @@
         "email_rollup_accessibility_label": "Options de courrier électronique",
         "phone_rollup_accessibility_label": "Options téléphoniques",
         "phone_country_code_label": "Indicatif téléphonique du pays",
-        "optional_subdistrict_label": "Quartier (optionnel)"
+        "optional_subdistrict_label": "Quartier (optionnel)",
+        "title": "Information",
+        "state_label": "Éyalet",
+        "state_placeholder": "Éyalet",
+        "state_and_territory_label": "État/région",
+        "state_and_territory_placeholder": "État/région",
+        "zip_code_label": "Code postal",
+        "zip_code_placeholder": "Code postal",
+        "region_none": "Aucun sélectionné",
+        "ship_to_company": "Destinataire du colis : {{companyName}}",
+        "shipping_used_as_billing_notice": "Cette adresse sera également utilisée comme votre adresse de facturation valide pour la commande en question.",
+        "storefront_link": "site web du vendeur",
+        "suburb_label": "Quartier",
+        "subdistrict_label": "Quartier"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Paiement rapide",
@@ -668,6 +681,59 @@
       },
       "address_management": {
         "saved_with_store": "Enregistré dans ce magasin"
+      },
+      "delivery_options": {
+        "none_method_definition": "Pas de cargaison",
+        "company_location_no_address_banner": "Les commandes expédiées à des adresses inexistantes seront envoyées pour examen."
+      },
+      "customer_account": {
+        "not_user_label": "Vous n'êtes pas %{first_name} ?",
+        "have_an_account_label": "Vous avez un compte ?",
+        "save_my_information_label": "Ces informations seront enregistrées pour la prochaine opération",
+        "incomplete_address": "L'adresse sélectionnée est incomplète. %{update_address_link} ou choisissez une autre adresse.",
+        "invalid_address": "L'adresse sélectionnée est invalide. %{update_address_link} ou choisissez une autre adresse.",
+        "invalid_shipping_method_summary": "Geçerli bir teslimat adresi seçin ve kullanılabilir kargo yöntemlerini görüntüleyin.",
+        "saved_address_option_link": "Utiliser l'adresse enregistrée",
+        "saved_address_option_description": {
+          "one": "Vous avez {{count}} adresses enregistrées.",
+          "other": "Vous avez {{count}} adresses enregistrées."
+        },
+        "rollup_accessibility_label": "Options de compte"
+      },
+      "customer_payment_methods": {
+        "page_title": "Méthodes de paiement",
+        "title": "Méthodes de paiement",
+        "delete_customer_mandate": {
+          "generic_error": "Une erreur s'est produite lors du traitement de votre demande.",
+          "success_message": "Votre méthode de paiement a été supprimée avec succès"
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Produit indisponible",
+          "other": "Produits indisponibles"
+        },
+        "products_not_available": {
+          "one": "Ce produit sera retiré de votre panier car il n'est pas disponible dans votre pays/région.",
+          "other": "Ces produits seront retirés de votre panier car ils ne sont pas disponibles dans votre pays/région."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Ce produit n'est pas disponible dans votre pays/région."
+        },
+        "unavailable_label": "Indisponible"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Aucun service de livraison disponible pour %{count} produit(s)",
+            "other": "Aucun service de livraison disponible pour %{count} produit(s)"
+          },
+          "message": {
+            "one": "Votre produit sera retiré de votre panier car il n'existe pas de méthode de livraison disponible pour votre adresse.",
+            "other": "Votre panier sera vidé de ces articles car il n'existe aucune méthode de livraison disponible pour votre adresse."
+          },
+          "label": "Pas de service de livraison"
+        }
       }
     }
   }

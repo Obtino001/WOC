@@ -595,7 +595,17 @@
         "optional_company_attention_label": "Firma/Zur Beachtung (optional)",
         "phone_rollup_accessibility_label": "Telefonoptionen",
         "phone_country_code_label": "Telefonnummer Ländervorwahl",
-        "optional_subdistrict_label": "Halb (optional)"
+        "optional_subdistrict_label": "Halb (optional)",
+        "state_label": "Eyalet",
+        "state_placeholder": "Eyalet",
+        "state_and_territory_label": "Provinz/Region",
+        "state_and_territory_placeholder": "Provinz/Region",
+        "region_none": "Nichts ausgewählt",
+        "ship_to_company": "Empfänger der Sendung: {{companyName}}",
+        "shipping_used_as_billing_notice": "Diese Adresse wird auch als Ihre gültige Rechnungsadresse für die betreffende Bestellung verwendet.",
+        "storefront_link": "Webseite des Verkäufers",
+        "suburb_label": "Viertel",
+        "subdistrict_label": "Stadtteil"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Schnelle Zahlung",
@@ -654,6 +664,54 @@
       },
       "address_management": {
         "saved_with_store": "In diesem Geschäft registriert"
+      },
+      "delivery_options": {
+        "none_method_definition": "Keine Fracht vorhanden",
+        "company_location_no_address_banner": "An Adressen ohne Standort versandte Bestellungen werden zur Überprüfung weitergeleitet."
+      },
+      "customer_account": {
+        "not_user_label": "Sind Sie nicht %{first_name}?",
+        "have_an_account_label": "Haben Sie ein Konto?",
+        "save_my_information_label": "Für den nächsten Vorgang diese Informationen speichern",
+        "incomplete_address": "In der ausgewählten Adresse fehlen Angaben. %{update_address_link} oder wählen Sie eine andere Adresse.",
+        "invalid_address": "Die ausgewählte Adresse ist ungültig. %{update_address_link} oder wählen Sie eine andere Adresse aus.",
+        "invalid_shipping_method_summary": "Verwenden Sie eine gültige Versandadresse, um verfügbare Versandmethoden anzuzeigen.",
+        "saved_address_option_link": "Registrierte Adresse verwenden",
+        "saved_address_modal_title": "Meine registrierte Adresse verwenden",
+        "saved_address_option_description": {
+          "one": "Sie haben {{count}} registrierte Adresse(n).",
+          "other": "Sie haben {{count}} registrierte Adresse(n)."
+        },
+        "rollup_accessibility_label": "Kontoeinstellungen"
+      },
+      "customer_payment_methods": {
+        "delete_customer_mandate": {
+          "generic_error": "Bei der Verarbeitung Ihrer Anfrage ist ein Problem aufgetreten.",
+          "success_message": "Ihre Zahlungsmethode wurde erfolgreich gelöscht"
+        }
+      },
+      "contextual_availability": {
+        "products_not_available": {
+          "one": "Da dieses Produkt in Ihrem Land/Ihrer Region nicht verfügbar ist, wird es aus Ihrem Warenkorb entfernt.",
+          "other": "Da diese Produkte in Ihrem Land/Ihrer Region nicht verfügbar sind, werden sie aus Ihrem Warenkorb entfernt."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Dieses Produkt ist in Ihrem Land/Ihrer Region nicht verfügbar.",
+          "other": "Diese Produkte sind in Ihrem Land/Ihrer Region nicht verfügbar."
+        }
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Für %{count} Produkte ist kein Lieferservice verfügbar",
+            "other": "Für %{count} Produkte ist kein Lieferservice verfügbar"
+          },
+          "message": {
+            "one": "Für Ihre Adresse steht keine verfügbare Liefermethode zur Verfügung, daher wird dieses Produkt aus Ihrem Warenkorb entfernt.",
+            "other": "Adresiniz için kullanılabilir bir teslimat yöntemi olmadığından bu ürünler sepetinizden kaldırılacak."
+          },
+          "label": "Keine Lieferdienstleistung"
+        }
       }
     }
   }

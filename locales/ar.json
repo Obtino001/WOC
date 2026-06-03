@@ -447,7 +447,22 @@
         "email_rollup_accessibility_label": "خيارات البريد الإلكتروني",
         "phone_rollup_accessibility_label": "خيارات الهاتف",
         "phone_country_code_label": "رمز الدولة لرقم الهاتف",
-        "optional_subdistrict_label": "الحي (اختياري)"
+        "optional_subdistrict_label": "الحي (اختياري)",
+        "title": "معلومات",
+        "stored_addresses_label": "العناوين المحفوظة",
+        "state_label": "إيالة",
+        "state_placeholder": "إيالة",
+        "region_placeholder": "منطقة",
+        "state_and_territory_label": "ولاية/منطقة",
+        "state_and_territory_placeholder": "ولاية/منطقة",
+        "zip_code_label": "الرمز البريدي",
+        "zip_code_placeholder": "الرمز البريدي",
+        "region_none": "لم يتم اختيار أي شيء",
+        "ship_to_company": "مستلم الشحنة: {{companyName}}",
+        "shipping_used_as_billing_notice": "سيتم استخدام هذا العنوان أيضًا كعنوان الفاتورة الخاص بك لهذا الطلب.",
+        "storefront_link": "موقع البائع الإلكتروني",
+        "suburb_label": "حي",
+        "subdistrict_label": "حي"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "الدفع السريع",
@@ -518,6 +533,67 @@
       },
       "address_management": {
         "saved_with_store": "مسجل في هذا المتجر"
+      },
+      "delivery_options": {
+        "free_total_label": "مجاني",
+        "none_method_definition": "لا توجد شحنات",
+        "company_location_no_address_banner": "سيتم إرسال الطلبات المشحونة إلى مواقع بدون عنوان للمراجعة.",
+        "digital_product": "منتج رقمي"
+      },
+      "customer_account": {
+        "not_user_label": "هل لست %{first_name}؟",
+        "have_an_account_label": "هل لديك حساب؟",
+        "sign_in_link_label": "تسجيل الدخول",
+        "sign_out_link_label": "تسجيل الخروج",
+        "save_my_information_label": "احفظ هذه المعلومات للعملية التالية",
+        "incomplete_address": "هناك نقص في العنوان المختار. %{update_address_link} أو اختر عنوانًا مختلفًا.",
+        "invalid_address": "العنوان المختار غير صالح. %{update_address_link} أو اختر عنوانًا مختلفًا.",
+        "rollup_label": "حساب",
+        "invalid_shipping_method_summary": "لعرض طرق الشحن المتاحة، يرجى اختيار عنوان شحن صالح.",
+        "saved_address_option_link": "استخدم العنوان المسجل",
+        "saved_address_modal_title": "استخدم العنوان المسجل لديّ",
+        "saved_address_option_description": {
+          "one": "لديك {{count}} عنوانًا مسجلاً.",
+          "other": "لديك {{count}} عنوانًا مسجلاً."
+        },
+        "rollup_accessibility_label": "خيارات الحساب"
+      },
+      "customer_payment_methods": {
+        "page_title": "طرق الدفع",
+        "title": "طرق الدفع",
+        "update_card_button_label": "تحديث البطاقة",
+        "delete_customer_mandate": {
+          "generic_error": "حدثت مشكلة أثناء معالجة طلبك.",
+          "success_message": "تم حذف طريقة الدفع الخاصة بك بنجاح"
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "منتج غير متوفر",
+          "other": "المنتجات غير المتوفرة"
+        },
+        "products_not_available": {
+          "one": "سيتم إزالة هذا المنتج من سلة التسوق الخاصة بك لأنه غير متوفر في بلدك/منطقتك.",
+          "other": "نظرًا لعدم توفر هذه المنتجات في بلدك/منطقتك، فسيتم إزالتها من سلة التسوق الخاصة بك."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "هذا المنتج غير متوفر في بلدك/منطقتك.",
+          "other": "هذه المنتجات غير متوفرة في بلدك/منطقتك."
+        },
+        "unavailable_label": "غير متوفر"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "لا توجد خدمة توصيل متاحة لـ %{count} منتجًا",
+            "other": "لا توجد خدمة توصيل متاحة لـ %{count} منتجًا"
+          },
+          "message": {
+            "one": "نظرًا لعدم توفر طريقة توصيل مناسبة لعنوانك، سيتم إزالة هذا المنتج من سلة التسوق الخاصة بك.",
+            "other": "نظرًا لعدم توفر طريقة توصيل مناسبة لعنوانك، سيتم إزالة هذه المنتجات من سلة التسوق الخاصة بك."
+          },
+          "label": "لا توجد خدمة توصيل"
+        }
       }
     }
   },

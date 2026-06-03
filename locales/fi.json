@@ -670,7 +670,25 @@
       },
       "delivery_options": {
         "none_method_definition": "Ei rahtia",
-        "company_location_no_address_banner": "Osoitetta vailla olevat toimituspaikat lähetetään tarkastettaviksi."
+        "company_location_no_address_banner": "Osoitetta vailla olevat toimituspaikat lähetetään tarkastettaviksi.",
+        "pick_up": "Noudettavissa",
+        "pick_up_in_two_hours": "Yleensä valmiina 2 tunnin kuluessa",
+        "pick_up_in_four_hours": "Yleensä valmiina 4 tunnin kuluessa",
+        "pick_up_immediately": "Valmiina noudettavaksi nyt",
+        "pick_up_next_day": "Valmiina noudettavaksi seuraavana päivänä",
+        "pick_up_in_one_hour": "Yleensä valmiina tunnin sisällä",
+        "pick_up_in_twenty_four_hours": "Yleensä valmiina 24 tunnin kuluessa",
+        "pick_up_in_two_to_four_days": "Yleensä valmiina 2-4 päivän kuluessa",
+        "pick_up_in_five_or_more_days": "Yleensä valmiina 5+ päivän sisällä",
+        "pick_up_in_zero_to_two_hours": "Valmiina noudettavaksi kahden tunnin sisällä",
+        "pick_up_in_two_to_four_hours": "Valmiina noudettavaksi neljän tunnin sisällä",
+        "pick_up_locations": "Noutopaikat",
+        "pickup_point_method_definition": "Toimitus noutopisteeseen",
+        "retail_method_definition": "Vähittäismyyntitoimitus",
+        "subscription_pickup_information": "Tämä on tilauksesi tulevien tilausten toimituspaikka.",
+        "ship_to_address": "Toimitus osoitteeseen",
+        "pick_up_from_store": "Nouto myymälästä",
+        "pickup_point_map_title": "Noutopisteen kartta"
       },
       "customer_account": {
         "not_user_label": "Etkö ole %{first_name}?",
@@ -713,6 +731,48 @@
             "other": "Ostoskoristasi poistetaan nämä tuotteet, koska osoitteeseesi ei ole saatavilla toimitustapaa."
           },
           "label": "Toimituspalvelua ei ole"
+        }
+      },
+      "field_errors": {
+        "address_address1_blank": "Syötä osoite",
+        "address_address2_blank": "Syötä asunto, huoneisto tms.",
+        "address_address1_too_long": "Ensimmäinen osoiterivi on liian pitkä (enintään 255 merkkiä).",
+        "address_address1_contains_html_tags": "Osoite 1 ei voi sisältää HTML-tageja.",
+        "address_address2_contains_html_tags": "Osoite 2 ei voi sisältää HTML-tageja.",
+        "address_address1_contains_emojis": "Osoite 1 ei voi sisältää emojeja",
+        "address_address2_contains_emojis": "Osoite 2 ei voi sisältää emojeita",
+        "address_address1_contains_mathematical_symbols": "Ensimmäinen osoiterivi ei voi sisältää matemaattisia symboleja"
+      },
+      "failed_payment": {
+        "payment_not_processed_title": "Maksusi käsittely epäonnistui",
+        "payment_not_processed_text": "Sinulta ei veloitettu. Palaa ostoskoriisi viimeistelläksesi ostoksesi."
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Ostoskori-sivullamme ilmeni ongelma",
+          "message": "Päivitä sivu tai yritä uudelleen muutaman minuutin kuluttua",
+          "request_id": "Pyyntönumero: {{requestId}}"
+        },
+        "embed_errors": {
+          "storefront_password_required": "Tämä kauppa on salasanalla suojattu",
+          "customer_account_required": "Asiakastili on välttämätön maksutapahtuman suorittamiseksi loppuun.",
+          "cart_completed": "Tämä maksutapahtuma on jo suoritettu loppuun",
+          "invalid_cart": "Kori ei ole enää voimassa",
+          "not_authorized": "Maksun tunnistautuminen epäonnistui. Vahvista sovelluksen tunnistetietosi.",
+          "killswitch_enabled": "Maksutoiminto ei ole tilapäisesti käytettävissä",
+          "policy_violation": "Maksutapahtumaa ei voida suorittaa politiikan kokoonpanorajoitusten vuoksi",
+          "unrecoverable_failure": "Maksusivu ei latautunut. Yritä uudelleen."
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Alennuskoodisi ei ole enää voimassa, joten tilaustasi ei voitu käsitellä. Tarkista tilauksesi ja yritä uudelleen."
+      },
+      "embed": {
+        "shipping": {
+          "shipping_options": "Näytä kaikki toimitusvaihtoehdot"
+        },
+        "payment": {
+          "payment_options": "Näytä kaikki maksuvaihtoehdot"
         }
       }
     }
