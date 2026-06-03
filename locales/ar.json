@@ -310,7 +310,23 @@
       "inventory_out_of_stock_continue_selling": "متوفر في المخزون",
       "product_variants": "تشكيلات المنتج",
       "duties_included": "شاملة الضرائب الجمركية.",
-      "duties_and_taxes_included": "شاملة الضرائب والرسوم الجمركية."
+      "duties_and_taxes_included": "شاملة الضرائب والرسوم الجمركية.",
+      "sold_out": "نفد المخزون",
+      "unavailable": "خارج الخدمة",
+      "vendor": "البائع",
+      "video_exit_message": "{{ title }} يفتح فيديو ملء الشاشة في نفس النافذة.",
+      "xr_button": "عرضه في مجالك الخاص",
+      "xr_button_label": "اعرضه في منطقتك؛ يتم تحميل المنتج في نافذة الواقع المعزز",
+      "view_full_details": "عرض كل التفاصيل",
+      "value_unavailable": "{{ option_value }} - غير متاح للاستخدام",
+      "variant_sold_out_or_unavailable": "النسخة غير متوفرة أو غير قابلة للاستخدام",
+      "sku": "رمز المنتج (SKU)",
+      "volume_pricing": {
+        "title": "التسعير بناءً على الشراء بالجملة",
+        "note": "يمكن استخدام التسعير القائم على الشراء بالجملة",
+        "price_at_each_html": "{{ price }}/قطعة"
+      },
+      "taxes_included": "شامل الضرائب."
     },
     "modal": {
       "label": "معرض الوسائط"
@@ -338,6 +354,56 @@
       "copy_code_success": "تم نسخ الرمز بنجاح",
       "how_to_use_gift_card": "استخدم رمز بطاقة الهدية عبر الإنترنت أو رمز الاستجابة السريعة في المتجر",
       "expiration_date": "تاريخ انتهاء الصلاحية: {{ expires_on }}"
+    }
+  },
+  "shopify": {
+    "attributes": {
+      "email": "البريد الإلكتروني",
+      "password": "كلمة",
+      "password_confirmation": "تأكيد كلمة المرور",
+      "first_name": "إعلان",
+      "last_name": "اللقب",
+      "body": "الجسم",
+      "signature": "العنوان"
+    },
+    "addresses": {
+      "zip_code": "الرمز البريدي",
+      "postal_code": "الرمز البريدي",
+      "postcode": "الرمز البريدي",
+      "pincode": "رمز PIN",
+      "region": "منطقة",
+      "prefecture": "المحافظة",
+      "province": "إل",
+      "state": "إيالة",
+      "state_and_territory": "ولاية/منطقة",
+      "county": "المنطقة",
+      "emirate": "إميريليك",
+      "governorate": "المحافظة",
+      "confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان؟"
+    },
+    "cart": {
+      "discounts_with_count": "تم تطبيق %{count} خصم"
+    },
+    "challenge": {
+      "message": "يرجى التأكيد على أنك لست روبوتًا للمتابعة.",
+      "error": "إجابتك غير صحيحة، يرجى المحاولة مرة أخرى."
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "أريد إرسال هذا كهدية",
+      "email_label": "البريد الإلكتروني للمشتري",
+      "email": "البريد الإلكتروني",
+      "name_label": "اسم المشتري (اختياري)",
+      "name": "إعلان",
+      "message_label": "رسالة (اختياري)",
+      "message": "رسالة",
+      "max_characters": "الحد الأقصى {{ max_chars }} حرفًا",
+      "email_label_optional_for_no_js_behavior": "البريد الإلكتروني للمشتري (اختياري)",
+      "send_on": "YYYY-سنة-يوم",
+      "send_on_label": "أرسل في هذا التاريخ (اختياري)",
+      "expanded": "تم توسيع نموذج مستلم بطاقة الهدية",
+      "collapsed": "تم تضييق نموذج مستلم بطاقة الهدية"
     }
   }
 }
