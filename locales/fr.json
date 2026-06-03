@@ -2770,14 +2770,74 @@
         "first_payment_complete": "Le premier paiement est terminé",
         "choose_payment_method_later": "Choisissez le mode de paiement plus tard",
         "gift_card_confirmation_by_email_typ": {
-          "one": "Dans quelques minutes, vous recevrez un e-mail contenant votre carte cadeau."
+          "one": "Dans quelques minutes, vous recevrez un e-mail contenant votre carte cadeau.",
+          "other": "Vous recevrez un e-mail contenant vos cartes-cadeaux dans quelques minutes."
         },
         "confirmed_items_count": "%{total_count} articles dont %{confirmed_count} produits confirmés",
         "checkout_on_remote_shop_link_text": "Payez dans la boutique %{remoteShopName}",
         "confirmed_orders_title": "Vos commandes ont été confirmées",
         "checkout_on_another_store": "Payez dans un autre magasin",
         "checkout_again": "Réessayer de payer",
-        "cashback_notice": "Vous recevrez votre remboursement en espèces après 30 jours."
+        "cashback_notice": "Vous recevrez votre remboursement en espèces après 30 jours.",
+        "order_status_confirmed_order_with_phone": "Votre commande sera prête, vous recevrez un SMS.",
+        "order_status_confirmed_order_with_email_and_phone": "Votre commande sera prête, vous recevrez un e-mail.",
+        "in_transit": "En route",
+        "in_transit_title": "Votre commande est en cours de préparation",
+        "in_transit_description": "Vous recevrez des mises à jour concernant le statut de votre commande.",
+        "in_transit_description_days": "Votre commande devrait être reçue dans les %{number} prochains jours.",
+        "in_transit_description_today": "Votre commande est attendue aujourd'hui.",
+        "in_transit_description_tomorrow": "Votre commande devrait arriver dans les prochains jours.",
+        "no_tracking_number": "Cette commande n'a pas de numéro de suivi.",
+        "login_title": "Toutes les informations de commande sont disponibles après connexion",
+        "login_description": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par e-mail.",
+        "login_description_phone": "Vous pouvez trouver votre numéro de commande sur le reçu que vous avez reçu par SMS.",
+        "login_not_customer_html": "Vous n'êtes pas %{name} ? %{link}",
+        "login_reorder_link_text": {
+          "one": "Vous pouvez également acheter ce produit",
+          "other": "Vous pouvez également acheter ces produits"
+        },
+        "marker": {
+          "current": "Position actuelle du colis"
+        },
+        "order_status_confirmed_order_with_email_pick_up": "Nous vous enverrons un e-mail lorsque votre commande sera prête à être récupérée.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Nous vous enverrons un e-mail et un SMS lorsque votre commande sera prête à être récupérée.",
+        "order_status_confirmed_order_local": "Nous préparons votre commande pour la livraison.",
+        "let_us_know": "Faites-le nous savoir",
+        "gift_card_confirmation_by_text": "Si vous n'avez pas reçu le message, renvoyez le SMS ou contactez-nous.",
+        "gift_card_title": "Cartes cadeaux",
+        "order_status_confirmed_order_with_email_payment": "Vous avez effectué le paiement de votre commande le %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Vous avez effectué le paiement de votre commande le %{date}.",
+        "missing_shipping_address_banner": {
+          "title": "La commande n'a pas d'adresse de livraison",
+          "text_html": "Pour ajouter votre adresse, %{contact_us}",
+          "contact_us": "Contactez-nous"
+        },
+        "manage_order_label": "Gérez votre commande",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Dans quelques minutes, vous recevrez un message contenant votre carte cadeau.",
+          "other": "Dans quelques minutes, vous recevrez un message contenant vos cartes-cadeaux."
+        },
+        "gift_card_email_title": {
+          "one": "La carte cadeau a été envoyée par e-mail",
+          "other": "Les cartes cadeaux ont été envoyées par e-mail"
+        },
+        "gift_card_text_title": {
+          "one": "La carte cadeau a été envoyée par SMS"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "La carte cadeau a été renvoyée",
+          "other": "Les cartes-cadeaux ont été renvoyées"
+        },
+        "gift_card_resend_failure": {
+          "one": "Un problème est survenu lors de la réexpédition de votre carte cadeau. Veuillez réessayer ou nous contacter.",
+          "other": "Un problème est survenu lors de la réexpédition de vos cartes-cadeaux. Veuillez réessayer ou nous contacter."
+        },
+        "order_status_confirmed_order_local_pick_up": "Nous préparons votre commande.",
+        "order_status_confirmed_order_local_payment": "Nous préparons votre commande.",
+        "items_fulfilled_by_store": {
+          "one": "Les produits que vous avez achetés seront expédiés par %{remote_shop_name}.",
+          "other": "Les produits que vous avez achetés seront expédiés depuis d'autres magasins."
+        }
       }
     }
   }
