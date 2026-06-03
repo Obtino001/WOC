@@ -1452,7 +1452,10 @@
           "due_later_checkout_to_draft": "Maksettava kokonaissumma myöhemmin",
           "due_on_fulfillment": "Toimituksessa maksettava kokonaissumma",
           "due_on_receipt": "Kuitti leimataan, kun maksettava summa on kokonaisuudessaan maksettu",
-          "due_on_fulfillment_next": "Maksetaan toimituksen yhteydessä"
+          "due_on_fulfillment_next": "Maksetaan toimituksen yhteydessä",
+          "due_today": "Tänään maksettava kokonaissumma",
+          "total_paid": "Maksettu kokonaissumma",
+          "due_today_next": "Viimeinen maksupäivä on tänään"
         },
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> ei voitu käyttää nykyisillä alennuksillasi.",
         "maximum_discount_code_limit_reached": "Olet saavuttanut maksimialennuskoodien määrän. Poista käytössä oleva koodi, jotta voit käyttää koodia <strong style=\"text-transform:uppercase\">%{code}</strong>.",
@@ -1475,7 +1478,50 @@
         "order_discounts_apply_to_local_shop": "Tilauksen alennukset koskevat vain %{shop_name}-kaupasta ostettuja tuotteita",
         "gift_cards_apply_to_local_shop": "Lahjakortit ovat voimassa vain %{shop_name} -kaupasta ostettuihin tuotteisiin.",
         "from_multiple_stores_heading": "Useammasta kaupasta",
-        "pay_merchant_label": "%{merchant_name} maksu"
+        "pay_merchant_label": "%{merchant_name} maksu",
+        "remove_gift_card_label": "Tyhjennä lahjakorttisi",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodi ei ole käytettävissä toimitusosoitteessasi",
+        "subtotal_label": "Kokonaismäärä",
+        "shipping_label": "Kargo",
+        "shipping_default_value": "Seuraavassa vaiheessa lasketaan",
+        "shipping_policy_link": "Rahtikulut",
+        "quantity_label": "Kappaletta",
+        "product_change_label": "Vaihda",
+        "scroll_order_summary": "Selaa lisää tuotteita varten",
+        "pickup_label": "Nouto myymälästä",
+        "sale_price": "Alennettu hinta",
+        "recurring_subtotal_label": "Kertynyt kokonaismäärä",
+        "recurring_total_label": "Toistettu yhteensä",
+        "recurring_total_tooltip": "Rahti, verot, tullimaksut tai kaikki sovellettavat alennukset eivät sisälly.",
+        "percent_off_shipping": "%%{percent} alennettu toimituskulu",
+        "subscriptions": "Tilauksen tekeminen",
+        "recurring_payments": "Toistuvat maksut",
+        "recurring_total_multiple_label": "Tässä tilauksessa on toistuvia maksuja useammasta tuotteesta.",
+        "price_per_item": {
+          "accessibility_label": "Tuotetta kohden %{price}"
+        },
+        "return_restocking_fee_label": "Varaston täydennysmaksu",
+        "return_shipping_fee_label": "Palautuslähetys",
+        "shipping_discount_title": "Rahtialennus",
+        "subtotal_label_with_quantity": {
+          "one": "Kokonaissumma · %{count} tuotetta",
+          "other": "Kokonaissumma · %{count} tuotetta"
+        },
+        "product_image_quantity_label": "Kappaletta",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address_instead_html": "Käytä %{link}-vaihtoehtoa"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Tuotteellesi ei ole saatavilla myymälää",
+          "other": "Ei ole kauppaa, jossa tuotteesi olisivat saatavilla"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "%{country} maassa ei ole myymälää, jossa tuotteesi olisi saatavilla",
+          "other": "%{country}-maassa ei ole kauppaa, jossa tuotteesi olisivat saatavilla"
+        },
+        "tax_line": {
+          "gst": "ALV"
+        }
       },
       "order_payment_collection": {
         "custom_line_item_description": "%{order_name} tilauksen maksettava summa",
