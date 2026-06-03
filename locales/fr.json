@@ -3162,13 +3162,150 @@
         "az": "Alphabétiquement, de A à Z",
         "date_ascending": "Histoire, du passé au présent",
         "date_descending": "Histoire, du nouveau à l'ancien",
-        "most_relevant": "Concernant En"
+        "most_relevant": "Concernant En",
+        "za": "Par ordre alphabétique, de Z à A",
+        "price_ascending": "Prix, du plus bas au plus élevé",
+        "price_descending": "Prix, du plus élevé au plus bas"
       }
     },
     "checkpoint": {
       "message": "Pour continuer, résolvez le Captcha",
       "error": "La vérification Captcha a échoué",
       "submit_button_text": "Envoyer"
+    },
+    "errors": {
+      "blank": "ne peut pas être vide",
+      "credit_card_session_expired": "L'autorisation de la carte de crédit a expiré, veuillez saisir à nouveau vos informations de paiement. Aucun frais n'a été prélevé sur votre carte.",
+      "empty": "ne peut pas être vide",
+      "invalid_email": "une adresse e-mail valide est requise",
+      "discount_disabled": "Cette réduction a été désactivée",
+      "discount_expired": "Cette réduction n'est plus valable",
+      "discount_limit_reached": "La limite d'utilisation pour cette remise a été atteinte",
+      "discount_not_found": "Aucune remise valide ne correspond au code saisi",
+      "customer_already_used_once_per_customer_discount_notice": "La limite d'utilisation pour cette remise a été atteinte",
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre paiement",
+      "gift_card_code_invalid": "Code invalide",
+      "gift_card_currency_mismatch": "Cette carte cadeau ne peut pas être utilisée pour cet achat. Veuillez contacter %{shop_name} pour la réémettre.",
+      "gift_card_depleted": "Il ne reste plus de solde sur cette carte cadeau",
+      "invalid": "invalide",
+      "bad_domain": "contient un nom de domaine invalide",
+      "contains_html_tags": "Ne peut pas contenir de balises HTML",
+      "full_name_required": "Entrez le nom et le prénom",
+      "invalid_for_card_type": "non valide",
+      "expired": "le délai est expiré",
+      "invalid_expiry_year": "ce n'est pas une année d'expiration valide",
+      "blocked_address": "Cette position n'est pas prise en charge",
+      "taken": "déjà pris",
+      "too_short": "très court (la valeur minimale est de %{count} caractères)",
+      "too_long": "très long (la valeur maximale est de %{count} caractères)",
+      "invalid_for_country": "Ne s'applique pas pour %{country}",
+      "invalid_for_country_and_province": "Non valable pour %{province} et %{country}",
+      "invalid_province_in_country": "%{country} için geçerli bir il değildir",
+      "invalid_state_in_country": "%{country} n'est pas un état valide",
+      "invalid_region_in_country": "%{country} n'est pas une région valide",
+      "less_than_or_equal_to": "Doit être inférieur ou égal à %{count}",
+      "invalid_type": "Désolé, nous n'acceptons pas ce type de carte",
+      "invalid_format": "le format n'est pas valide",
+      "invalid_start_date_or_issue_number_for_debit": "une date de début valide ou un numéro de modification est requis",
+      "reset_password_html": "Cette adresse e-mail est déjà associée à un compte. Si ce compte vous appartient, <a href=\"/account/login#recover\">vous pouvez réinitialiser votre mot de passe</a>",
+      "verify_email": "Nous avons envoyé un e-mail à %{customer_email}, veuillez cliquer sur le lien fourni pour vérifier votre adresse e-mail.",
+      "product_not_available": "le produit n'a pas été publié pour ce client.",
+      "shop_404": {
+        "title": "Créez un site web de commerce électronique et vendez en ligne ! Logiciel de commerce électronique proposé par Shopify",
+        "heros": {
+          "store_unavailable": "Désolé, ce magasin n'est pas disponible pour le moment.",
+          "store_not_exist": "Cette boutique n'est pas disponible.",
+          "no_storefront": "Cette boutique n'a pas encore de site web en ligne."
+        },
+        "links": {
+          "explore_other_stores": "Découvrez d'autres magasins",
+          "start_free_trial": "Commencer l'essai gratuit"
+        },
+        "owner_ctas": {
+          "header": "Êtes-vous le propriétaire du magasin ?",
+          "fix_domain": "Pour finaliser la configuration de votre nouvelle adresse web, rendez-vous sur %{domain_settings_link}. Cliquez sur « Lier un domaine » et saisissez : %{domain}.<br>Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}.",
+          "fix_domain_link_text": "paramètres de nom de domaine",
+          "forgot_your_store_link_text": "Avez-vous oublié votre magasin ?",
+          "add_storefront": "Vous pouvez configurer votre site web en ajoutant votre boutique en ligne %{admin_link}. Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}.",
+          "admin_link_text": "Dans votre gestionnaire"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Faites des ventes en face à face",
+            "caption": "Yeni kurduğunuz veya ölçeğini büyüttüğünüz perakende satış mağazasını işletmek için ihtiyaç duyduğunuz özelliklere sahip olun.",
+            "link_text": "Commencer l'essai gratuit"
+          },
+          "open_a_store": {
+            "caption": "Commencez un essai gratuit de 3 jours, puis continuez à utiliser pour 1 USD par mois pendant les 3 mois suivants.",
+            "link_text": "Inscrivez-vous maintenant"
+          },
+          "editions": {
+            "caption": "Avec plus de 100 mises à jour de produits, vous pouvez être bien plus productif, créatif et puissant dans le commerce que ce que vous aviez imaginé.",
+            "link_text": "Découvrez les éditions En son"
+          },
+          "store_owner": {
+            "header": "Êtes-vous le propriétaire du magasin ?",
+            "caption": "Vous avez des difficultés à accéder à votre boutique ? Essayez la fonction %{forgot_your_store_link}. Si vous souhaitez réactiver votre boutique, contactez %{shopify_support_link}.",
+            "shopify_support_link_text": "Équipe d'assistance Shopify"
+          }
+        }
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Merci de vous être abonné à notre liste de diffusion."
+      },
+      "unsubscribed": {
+        "confirmation": "Vous vous êtes désabonné de notre liste de diffusion.",
+        "disclaimer": "Vous ne recevrez plus de mises à jour marketing de notre part. Vous pouvez vous réabonner à tout moment.",
+        "preview": "Vous visualisez un aperçu de ce que les clients verront après s'être désabonnés."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Vous avez activé le suivi d'ouverture des e-mails.</b>",
+          "visibility": "Les taux d'ouverture des e-mails sont rapportés de manière anonyme. Nous affichons uniquement si vous avez ouvert un e-mail dans le cadre d'un taux d'ouverture global collecté.",
+          "opt_out_html": "Si vous ne souhaitez pas partager ces informations, vous pouvez <a style='text-decoration:underline;' href='%{link}'>désactiver le suivi d'ouverture des e-mails</a>.",
+          "preview_bar": "Vous visualisez un aperçu de ce que les clients verront lorsqu'ils activeront le suivi d'ouverture des e-mails."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Vous avez désactivé le suivi d'ouverture des e-mails.</b>",
+          "visibility": "Nous ne pouvons pas voir si vous avez ouvert nos e-mails.",
+          "opt_in_html": "Activez le suivi d'ouverture des e-mails <a style='text-decoration:underline;' href='%{link}'>ici</a>.",
+          "preview_bar": "Vous visualisez un aperçu de ce que les clients verront lorsqu'ils désactiveront le suivi d'ouverture des e-mails."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Nous ne suivons plus les ouvertures d'e-mails.</b>",
+          "privacy_policy": "Nous avons mis à jour notre politique de confidentialité après l'envoi de cet e-mail. Nous ne suivons plus les ouvertures."
+        },
+        "track": {
+          "status_html": "<b>Le suivi d'ouverture des e-mails a été rapporté.</b>",
+          "visibility": "Nous affichons uniquement si vous avez ouvert l'e-mail en tant que partie du taux total d'ouverture des e-mails."
+        },
+        "updated_policy": {
+          "status_html": "<b>Le suivi d'ouverture des e-mails a été rapporté.</b>",
+          "visibility": "Nous avons mis à jour notre politique et suivons désormais l'ouverture des e-mails. Les taux d'ouverture des e-mails sont rapportés de manière anonyme. Nous affichons uniquement si vous avez ouvert un e-mail dans le cadre du taux d'ouverture total des e-mails.",
+          "opt_out_html": "Si vous ne souhaitez pas partager ces informations, vous pouvez <a style='text-decoration:underline;' href='%{link}'>vous désabonner</a>."
+        }
+      },
+      "sms_unsubscribe_confirm": {
+        "message": "Êtes-vous sûr de vouloir résilier votre abonnement au marketing par SMS ?"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Propulsé par Shopify",
+      "learn_more": "Choisir un fournisseur"
+    },
+    "notices": {
+      "address": {
+        "created": "Adresse créée avec succès"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Rupture de stock"
+        }
+      }
     }
   }
 }

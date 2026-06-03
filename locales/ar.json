@@ -3718,7 +3718,43 @@
         "one": "Arama: تم العثور على %{count} نتيجة لـ %{terms}",
         "other": "Arama: تم العثور على %{count} نتيجة لـ %{terms}"
       },
-      "blog_or_article_with_error": "حتى - %{title}"
+      "blog_or_article_with_error": "حتى - %{title}",
+      "shopping_cart": "عربة التسوق الخاصة بك"
+    },
+    "sentence": {
+      "two_words_connector": "فِي",
+      "last_word_connector": "فِي"
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "عادةً ما يكون جاهزًا خلال ساعة واحدة",
+        "two_hours": "عادةً ما يكون جاهزًا خلال ساعتين",
+        "four_hours": "عادةً ما يكون جاهزًا خلال 4 ساعات",
+        "twenty_four_hours": "عادةً ما يكون جاهزًا خلال 24 ساعة",
+        "two_to_four_days": "عادةً ما يكون جاهزًا خلال 2-4 أيام",
+        "five_or_more_days": "عادةً ما يكون جاهزًا خلال أكثر من 5 أيام",
+        "zero_to_two_hours": "عادةً ما يكون جاهزًا خلال ساعتين",
+        "two_to_four_hours": "عادةً ما يكون جاهزًا خلال 4 ساعات",
+        "immediately": "جاهز للتسليم الآن",
+        "next_day": "سيكون جاهزًا للاستلام في اليوم التالي"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "ألاكا",
+        "price_ascending": "السعر، من الأقل إلى الأعلى",
+        "price_descending": "السعر، من الأعلى إلى الأدنى"
+      },
+      "error": "حدثت مشكلة أثناء تحميل نتائج البحث الخاصة بك. يرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "هذا المنتج هو عملية شراء متكررة أو مؤجلة. بالمضي قدمًا، فإنك توافق على شروط %{cancellationPolicyLink} وتفوضنا بخصم المبلغ من طريقة الدفع الخاصة بك بناءً على الأسعار والتكرار والتواريخ المعروضة في هذه الصفحة حتى يتم شحن طلبي أو حتى أقوم بالإلغاء إذا سُمح بذلك.",
+      "buyer_consent_cart": "منتج واحد أو أكثر في سلة التسوق الخاصة بك هو عملية شراء مكررة أو مؤجلة. بالمضي قدمًا، أنت توافق على شروط %{cancellationPolicyLink} وتفوضنا بخصم المبلغ من طريقة الدفع الخاصة بك بناءً على الأسعار والتكرار والتواريخ المعروضة في هذه الصفحة حتى يتم شحن طلبيتي أو حتى أقرر الإلغاء إذا سُمح بذلك.",
+      "cancellation_policy": "سياسة الإلغاء"
     }
   },
   "recipient": {
@@ -3771,6 +3807,55 @@
       "remove_all_items_confirmation": "هل تريد إزالة جميع {{ quantity }} المنتجات من السلة؟",
       "remove_all_single_item_confirmation": "هل تريد إزالة المنتج 1 من السلة؟",
       "step_error": "يمكنك إضافة هذا العنصر فقط بزيادات بقيمة {{ step }}"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "لم يتم العثور على نتائج لـ \"{{ terms }}\". تحقق من عدم وجود أخطاء إملائية أو استخدم كلمة أو تعبيرًا مختلفًا.",
+      "results_with_count": {
+        "one": "{{ count }} نتيجة",
+        "other": "{{ count }} نتيجة"
+      },
+      "title": "نتائج الأرامية",
+      "page": "صفحة",
+      "products": "المنتجات",
+      "search_for": "البحث عن \"{{ terms }}\"",
+      "results_with_count_and_term": {
+        "one": "تم العثور على {{ count }} نتيجة لـ \"{{ terms }}\"",
+        "other": "تم العثور على {{ count }} نتيجة لـ \"{{ terms }}\""
+      },
+      "results_pages_with_count": {
+        "one": "{{ count }} صفحة",
+        "other": "{{ count }} صفحة"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتج"
+      },
+      "suggestions": "اقتراحات",
+      "pages": "صفحات",
+      "results_suggestions_with_count": {
+        "one": "{{ count }} اقتراحات",
+        "other": "{{ count }} اقتراحات"
+      }
+    },
+    "cart": {
+      "cart": "السلة"
+    },
+    "contact": {
+      "form": {
+        "name": "إعلان",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "comment": "تعليق",
+        "send": "أرسل",
+        "post_success": "شكرًا لتواصلك معنا. سنرد عليك في أقرب وقت ممكن.",
+        "error_heading": "يرجى تعديل ما يلي:",
+        "title": "نموذج الاتصال"
+      }
+    },
+    "404": {
+      "title": "الصفحة غير موجودة"
     }
   }
 }
