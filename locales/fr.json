@@ -571,7 +571,72 @@
       "discounts_with_count": "%{count} remise appliquée"
     },
     "challenge": {
-      "message": "Veuillez confirmer que vous n'êtes pas un robot pour continuer."
+      "message": "Veuillez confirmer que vous n'êtes pas un robot pour continuer.",
+      "submit_button_text": "Envoyer"
+    },
+    "checkout": {
+      "contact": {
+        "address2_label": "Appartement, appartement, etc.",
+        "change_company_location_link_label": "Modifier l'emplacement de l'entreprise",
+        "change_location_link_label": "Changer la position",
+        "available_addresses_label": "Adresses existantes"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Paiement rapide",
+        "show_more_options": "Afficher plus d'options",
+        "hide_more_options": "Masquer les autres options",
+        "or_pay_another_way": "Sinon, payez d'une autre manière",
+        "or_check_out_another_way": "Sinon, effectuez un autre paiement",
+        "or_pay_with_credit_card": "Sinon, payez par carte de crédit"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Un montant de %{amount} sera prélevé sur votre carte de crédit",
+        "payment_total_label": "Montant total de l'œdème",
+        "change_currency_link": "Changer en %{currency_name}",
+        "card_provider_fx_charges_warning": "Votre fournisseur de carte peut vous facturer des frais pour les transactions en %{currency_code}.",
+        "currency_not_supported_by_shop": "La devise que vous avez choisie n'est plus disponible. Tous les prix sont désormais en %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Votre panier a été mis à jour en fonction du pays de destination de la livraison.",
+        "cart_and_currency_updated_based_on_country": "Votre panier et votre devise ont été mis à jour en fonction du pays de destination de la livraison.",
+        "currency_updated_for_country": "La devise a été mise à jour pour %{country}"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Votre pays/région a été mis à jour. Pour continuer le paiement, veuillez saisir votre adresse de livraison."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Une erreur s'est produite lors du traitement de votre demande. Veuillez contacter le propriétaire du magasin."
+      },
+      "captcha": {
+        "title": "Pour continuer, veuillez compléter le CAPTCHA",
+        "errors": {
+          "not_solved": "Pour continuer, veuillez compléter le CAPTCHA"
+        }
+      },
+      "billing": {
+        "billing_address_title": "Adresse de facturation :",
+        "same_as_shipping": "Identique à l'adresse de livraison",
+        "delete": "Sil",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse",
+        "address_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse de votre compte ?"
+      },
+      "company_location": {
+        "location_title": "Emplacement de l'entreprise",
+        "location_rollup_accessibility_label": "Options d'emplacement de l'entreprise"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Une erreur s'est produite lors du traitement de votre commande. Veuillez réessayer dans quelques minutes."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Vous n'êtes plus autorisé à passer des commandes B2B. Pour passer une commande personnelle, %{logout_url}.",
+        "lost_permissions_subtitle": "Vous n'êtes plus autorisé à passer des commandes B2B. Veuillez vous déconnecter pour passer une commande individuelle.",
+        "lost_permissions_title": "Autorisation de localisation refusée"
+      },
+      "address_management": {
+        "saved_with_store": "Enregistré dans ce magasin"
+      }
     }
   }
 }
