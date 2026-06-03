@@ -3577,7 +3577,63 @@
     "notices": {
       "address": {
         "created": "تم إنشاء العنوان بنجاح",
-        "deleted": "تم حذف العنوان بنجاح"
+        "deleted": "تم حذف العنوان بنجاح",
+        "updated": "تم تحديث العنوان بنجاح.",
+        "error_updating": "حدث خطأ أثناء تحديث العنوان",
+        "error_creating": "حدث خطأ أثناء إنشاء العنوان.",
+        "error_deleting": "حدث خطأ أثناء حذف العنوان."
+      },
+      "customer": {
+        "password_reset_error": "خطأ في إعادة تعيين كلمة المرور",
+        "no_account_found": "لم يتم العثور على حساب بهذا البريد الإلكتروني.",
+        "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+        "denylisted_reset_password": "لم يتمكن من الوصول إلى حسابك لأن كلمة المرور الحالية غير آمنة. ستتلقى بريدًا إلكترونيًا لتحديث كلمة المرور الخاصة بك.",
+        "signup_disabled": "تم تعطيل عملية إنشاء حساب العميل",
+        "subscribe_error": "خطأ في الاشتراك",
+        "unsubscribe_error": "خطأ في إلغاء الاشتراك"
+      },
+      "cart": {
+        "only_n_items_available": "يمكنك إضافة %{count} فقط من %{name} إلى السلة.",
+        "too_many_items_in_cart": "لا يمكنك إضافة المزيد من %{name} إلى السلة.",
+        "all_items_in_cart": "جميع %{count} %{name} في سلتك.",
+        "empty_update": "لا يمكن تحديث السلة الفارغة",
+        "missing_parameters": "لا يوجد معرف صالح أو معلمة صف",
+        "generic_error": "خطأ في السلة",
+        "too_many_line_items_error": "يمكن أن يحتوي سلة التسوق الخاصة بك على %{max} منتجات كحد أقصى.",
+        "link_expired": "انتهت صلاحية الرابط",
+        "link_no_longer_exists": "الرابط لم يعد متاحًا.",
+        "stock_problems_html": "واحد أو أكثر من المنتجات لم يعد متوفرًا. <a href='%{link}'>قدمنا سلة محدثة</a>.",
+        "changed": "تم تغيير السلة",
+        "items_changed": "تم تغيير منتج واحد أو أكثر.",
+        "product_sold_out": "منتج \"%{name}\" نفد بالفعل.",
+        "variant_not_found": "لا توجد تنويعات متاحة",
+        "variant_requires_selling_plan": "يمكن شراء التباين بخطة بيع واحدة فقط.",
+        "shipping_address_not_required": "لا حاجة للشحن لهذه السلة",
+        "shipping_address_invalid": "حدثت مشكلة أثناء حساب رسوم الشحن الخاصة بك. للمتابعة، يرجى الذهاب إلى صفحة الدفع لاختيار رسوم الشحن قبل إتمام طلبك.",
+        "selling_plan_not_applicable": "لا يمكن تنفيذ خطة المبيعات المتغيرة",
+        "selling_plan_not_available_for_company_locations": "يمكن استخدام الشراء لمرة واحدة فقط لطلبات B2B",
+        "digital_product_not_available_for_company_locations": "لا يمكن إضافة هذا المنتج إلى طلبات B2B",
+        "product_not_available": "المنتج غير متوفر",
+        "less_than_minimum": "القيمة الدنيا لهذا العنصر %{min}.",
+        "more_than_maximum": "القيمة القصوى لهذا العنصر %{max}.",
+        "not_respect_step": "يمكنك إضافة هذا العنصر فقط كأضعاف لقيمة %{step}.",
+        "bundle_requires_components": "لا يمكن إضافة المنتج الحزمي '%{name}' إلى السلة.",
+        "gift_card_with_components_not_supported": "لا يمكن إضافة المنتج الحزمي \"%{name}\" إلى السلة.",
+        "view_lines_limit_reached": "يجب أن يكون عدد الصفوف %{limit} أو أقل",
+        "merchandise_line_transformers": {
+          "run_error": "حدث خطأ في سلة التسوق الخاصة بك."
+        },
+        "gift_card_price_must_be_greater_than_zero": "لا يمكن إضافة المنتج الحزمي '%{name}' إلى السلة.",
+        "cart_too_large": "السلة كبيرة جدًا.",
+        "gift_card_recipient_validation_error": "المستلم المحدد لبطاقة الهدية غير صالح",
+        "invalid_input": "معامل %{parameter} غير صالح.",
+        "buyer_cannot_purchase_for_company_locations": "لا يمكنك إجراء عملية شراء في هذا الموقع",
+        "only_one_added_to_cart": "تمت إضافة منتج واحد فقط إلى سلة التسوق بسبب حالة المخزون.",
+        "only_n_added_to_cart": "تمت إضافة %{quantity} منتجًا فقط إلى سلة التسوق بسبب حالة المخزون.",
+        "maximum_available_quantity_reached": "يوجد بالفعل الحد الأقصى من هذا المنتج في سلة التسوق الخاصة بك.",
+        "cart_attributes_error": "سلة التسوق تحتوي على بيانات غير صالحة.",
+        "merchandise_not_applicable": "لا يمكن شراء المنتج كما هو مُكوَّن.",
+        "not_found": "لم يتم العثور على سلة التسوق"
       }
     },
     "filters": {

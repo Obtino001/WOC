@@ -227,31 +227,31 @@
   },
   "templates": {
     "search": {
-      "no_results": "Ei tuloksia haulla \"{{ terms }}\". Tarkista oikeinkirjoitus tai kokeile toista sanaa tai ilmaisua.",
+      "no_results": "\"{{ terms }}\" varten ei löytynyt tuloksia. Varmista, ettei kirjoitusvirheitä ole, tai käytä eri sanaa tai ilmaisua.",
       "results_with_count": {
-        "one": "{{ count }} tulos",
+        "one": "{{ count }} tulosta",
         "other": "{{ count }} tulosta"
       },
       "title": "Hakutulokset",
       "page": "Sivu",
       "products": "Tuotteet",
-      "search_for": "Hae kohdetta \"{{ terms }}\"",
+      "search_for": "Hae \"{{ terms }}\" varten",
       "results_with_count_and_term": {
-        "one": "{{ count }} tulos hakuehdolla \"{{ terms }}\"",
-        "other": "{{ count }} tulosta hakuehdolla \"{{ terms }}\""
+        "one": "\"{{ terms }}\" varten löytyi {{ count }} tulosta",
+        "other": "\"{{ terms }}\" varten löytyi {{ count }} tulosta"
       },
       "results_pages_with_count": {
-        "one": "{{ count }} sivu",
+        "one": "{{ count }} sivua",
         "other": "{{ count }} sivua"
       },
       "results_products_with_count": {
-        "one": "{{ count }} tuote",
+        "one": "{{ count }} tuotetta",
         "other": "{{ count }} tuotetta"
       },
-      "suggestions": "Ehdotukset",
+      "suggestions": "Suositukset",
       "pages": "Sivut",
       "results_suggestions_with_count": {
-        "one": "{{ count }} ehdotus",
+        "one": "{{ count }} ehdotusta",
         "other": "{{ count }} ehdotusta"
       }
     },
@@ -260,13 +260,13 @@
     },
     "contact": {
       "form": {
-        "name": "Nimi",
+        "name": "Mainos",
         "email": "Sähköposti",
         "phone": "Puhelinnumero",
         "comment": "Kommentti",
         "send": "Lähetä",
-        "post_success": "Kiitos, että otit yhteyttä. Palaamme asiaan mahdollisimman pian.",
-        "error_heading": "Mukauta seuraavat:",
+        "post_success": "Kiitos, että otit meihin yhteyttä. Vastaamme sinulle mahdollisimman pian.",
+        "error_heading": "Muokkaa seuraavia:",
         "title": "Yhteydenottolomake"
       }
     },
@@ -3173,6 +3173,53 @@
         "maximum_available_quantity_reached": "Ostoskoriisi on jo lisätty tämän tuotteen enimmäismäärä.",
         "merchandise_not_applicable": "Tuotetta ei voi ostaa määritellyssä kokoonpanossaan.",
         "not_found": "Korit eivät löytyneet"
+      },
+      "order": {
+        "not_available": "Tämä tilaus ei ole saatavilla",
+        "financial_status": {
+          "pending": "Odottaa",
+          "unpaid": "Maksamaton",
+          "partially_refunded": "Osittainen hyvitys on suoritettu",
+          "refunded": "Palautus on suoritettu",
+          "expired": "Sona erdi"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Lähetetty",
+          "complete": "Valmis",
+          "partial": "Osittain",
+          "unfulfilled": "Ei lähetetty",
+          "restocked": "Varasto on päivitetty"
+        },
+        "transaction_status": {
+          "success": "Onnistunut",
+          "pending": "Odottaa",
+          "failure": "Hata",
+          "error": "Hata"
+        },
+        "cancel_reason": {
+          "fraud": "Hileellinen tilaus",
+          "customer": "Asiakas muutti/peruutti tilauksen",
+          "other": "Muut"
+        },
+        "cash_on_delivery": "Maksu toimitettaessa"
+      },
+      "storefront": {
+        "invalid_password": "Salasana on väärä, yritä uudelleen."
+      },
+      "tags": {
+        "add_articles": "Rajaa haku %{tag}-tunnisteella varustettuihin artikkeleihin",
+        "add_products": "Rajaa valinta tuotteisiin, jotka vastaavat %{tag}-tunnistetta",
+        "remove_articles": "Laajenna hakua artikkeleihin, joita ei ole merkitty %{tag}:lla",
+        "remove_products": "Poista %{tag}-etiketti"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} kappaletta lisätty",
+          "increment_item": "%{delta} kappaletta lisätty",
+          "decrement_item": "%{delta}/%{total} kappaletta poistettiin",
+          "decrement_fulfilled_line_item": "%{delta}/%{total} kappaletta palautettu",
+          "decrement_return_line_item": "%{delta} tuotteen palautus poistettiin käytöstä"
+        }
       }
     },
     "filters": {
@@ -3181,6 +3228,49 @@
           "out_of_stock": "Loppu varastosta"
         }
       }
+    },
+    "page_titles": {
+      "reset_account": "Nollaa tili",
+      "order": "%{name} tilaus",
+      "search": "Ara",
+      "challenge": "Testi",
+      "checkpoint": "Ohjauspiste",
+      "search_results": {
+        "one": "Hakusanalla \"%{terms}\" löytyi %{count} tulosta",
+        "other": "Hakusanalla \"%{terms}\" löytyi %{count} tulosta"
+      },
+      "blog_or_article_with_error": "Hata - %{title}",
+      "shopping_cart": "Ostoskori"
+    },
+    "sentence": {
+      "two_words_connector": "ve",
+      "last_word_connector": "ve"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Yleensä valmista noin tunnissa",
+        "two_hours": "Yleensä valmiina kahden tunnin sisällä",
+        "four_hours": "Yleensä valmiina neljän tunnin kuluessa",
+        "twenty_four_hours": "Yleensä valmiina 24 tunnin kuluessa",
+        "two_to_four_days": "Yleensä valmiina 2-4 päivän kuluessa",
+        "five_or_more_days": "Yleensä valmiina +5 päivän kuluessa",
+        "zero_to_two_hours": "Yleensä valmiina kahden tunnin sisällä",
+        "two_to_four_hours": "Yleensä valmiina neljän tunnin kuluessa",
+        "immediately": "Valmiina noudettavaksi nyt",
+        "next_day": "Valmiina noudettavaksi seuraavana päivänä"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Alaka",
+        "price_ascending": "Hinta, nouseva järjestys",
+        "price_descending": "Hinta, korkeimmasta matalimpaan"
+      },
+      "error": "Hakutulostesi lataamisessa tapahtui virhe. Päivitä sivu tai yritä myöhemmin uudelleen."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Tämä tuote on toistuva tai viivästetty ostos. Jatkamalla hyväksyt %{cancellationPolicyLink} ehdot ja valtuutat minut veloittamaan maksutapani tämän sivun hintojen, tiheyden ja päivämäärien mukaisesti, kunnes tilaukseni lähetetään tai kunnes peruutan sen, jos se on sallittua.",
+      "buyer_consent_cart": "Ostoskorissasi on yksi tai useampi tuote, jotka ovat toistuva tai viivästetty ostos. Jatkamalla hyväksyt %{cancellationPolicyLink} ehdot ja valtuutat minut veloittamaan maksutapani tämän sivun hintojen, tiheyden ja päivämäärien perusteella, kunnes tilaukseni lähetetään tai kunnes peruutan sen, jos se on sallittua."
     }
   }
 }
