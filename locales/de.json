@@ -3296,6 +3296,57 @@
         "maximum_available_quantity_reached": "In Ihrem Warenkorb befindet sich bereits die maximale Menge dieses Produkts.",
         "cart_attributes_error": "Der Warenkorb enthält ungültige Daten.",
         "merchandise_not_applicable": "Das Produkt kann nicht in der konfigurierten Form gekauft werden."
+      },
+      "order": {
+        "financial_status": {
+          "authorized": "Autorisierte",
+          "pending": "Bekleidung",
+          "paid": "Ödendi",
+          "unpaid": "Nicht bezahlt",
+          "voided": "Ungültig gemacht",
+          "partially_refunded": "Teilweise Rückerstattung wurde vorgenommen",
+          "refunded": "Rückerstattung wurde durchgeführt",
+          "expired": "Sona erdi"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Gesendet",
+          "complete": "Abgeschlossen",
+          "unfulfilled": "Nicht gesendet",
+          "restocked": "Der Lagerbestand wurde erneuert"
+        },
+        "transaction_status": {
+          "success": "Erfolgreich",
+          "pending": "Bekleidung",
+          "failure": "Hut",
+          "error": "Hut"
+        },
+        "cancel_reason": {
+          "declined": "Zahlung abgelehnt",
+          "inventory": "Produkte sind nicht verfügbar",
+          "fraud": "Gefälschte Bestellung",
+          "customer": "Der Kunde hat die Bestellung geändert/storniert",
+          "other": "Andere",
+          "staff": "Personalfehler"
+        },
+        "cash_on_delivery": "Zahlung bei Lieferung"
+      },
+      "storefront": {
+        "invalid_password": "Falsches Passwort, bitte versuchen Sie es erneut."
+      },
+      "tags": {
+        "add_articles": "Suche auf Artikel mit dem %{tag}-Etikett eingrenzen",
+        "add_products": "Wählen Sie aus, um die Produkte einzuschränken, die mit dem %{tag}-Etikett übereinstimmen",
+        "remove_articles": "Erweitern Sie die Suche auf Artikel, die nicht mit %{tag} gekennzeichnet sind",
+        "remove_products": "%{tag} Etikett entfernen"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} Stück hinzugefügt",
+          "increment_item": "%{delta} Stück hinzugefügt",
+          "decrement_item": "%{delta}/%{total} Artikel entfernt",
+          "decrement_fulfilled_line_item": "%{delta}/%{total} Artikel wurden zurückgegeben",
+          "decrement_return_line_item": "%{delta} wurde von der Rückgabe entfernt"
+        }
       }
     },
     "filters": {
@@ -3304,6 +3355,17 @@
           "out_of_stock": "Nicht auf Lager"
         }
       }
+    },
+    "page_titles": {
+      "order": "%{name} Bestellung",
+      "search": "Ara",
+      "challenge": "Testen",
+      "checkpoint": "Kontrollpunkt",
+      "search_results": {
+        "one": "Arama: Für \"%{terms}\" wurden %{count} Ergebnisse gefunden",
+        "other": "Arama: Für \"%{terms}\" wurden %{count} Ergebnisse gefunden"
+      },
+      "blog_or_article_with_error": "Hata - %{title}"
     }
   }
 }
