@@ -1799,7 +1799,59 @@
         "gift_cards_unavailable": "Ihre Geschenkkarte wurde entfernt, da sie für diese Bestellung nicht mehr angewendet werden kann.",
         "network_card_payment_options": "Wählen Sie ein Netzwerk aus",
         "gift_card_checkbox_label": "Geschenkkarte anwenden",
-        "kcp_creditcard_label": "KCP Kreditkarte"
+        "kcp_creditcard_label": "KCP Kreditkarte",
+        "pay_with_payment_method": "Mit %{payment_method} bezahlen",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Ihre Geschenkkarte deckt Ihre Bestellung ab.",
+          "other": "Ihre Geschenkkarten decken Ihre Bestellung ab."
+        },
+        "offsite_gateway_redirect_hint": "Um Ihren Kauf abzuschließen, werden Sie zu %{gateway_label} weitergeleitet.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "Gesamtsumme %{gateway_label} %{total_shop_price}",
+        "no_js_credit_card_fields_redirect_hint": "Sie werden weitergeleitet, um Ihre Zahlungsinformationen hinzuzufügen.",
+        "no_method_error": "Dieser Laden kann derzeit keine Zahlungen akzeptieren.",
+        "not_configured_error": "Dieser Laden kann derzeit keine Zahlungen akzeptieren.",
+        "no_real_orders_dev_store": "Dieser Shop kann keine echten Bestellungen und Zahlungen akzeptieren.",
+        "no_taxes_banner_content": "Für diese Bestellung wird keine Steuer erhoben. Nach der Zahlung können Sie keine Steuer mehr hinzufügen.",
+        "paypal": {
+          "connect": "Klicken Sie hier, um Ihr PayPal-Konto zu verbinden"
+        },
+        "paypal_modal": {
+          "order_contains_fixed_selling_plans": "Der Gesamtbetrag kann Steuern, Versandkosten, aufgeschobene Gebühren und einige Rabatte nicht enthalten. Fahren Sie mit der Zahlung für den heute fälligen Betrag fort."
+        },
+        "order_covered_by_store_credit_notice": "Ihr Ladenguthaben deckt die Bestellung ab.",
+        "order_covered_by_redeemables_notice": "Ihre Bestellung wird bearbeitet.",
+        "no_working_method_error": "Dieser Shop kann derzeit keine Zahlungen akzeptieren. Bitte aktualisieren Sie die Seite und versuchen Sie es später erneut.",
+        "order_edit_banner_title": "Eine Zahlung in Höhe von {{amount_owed}} ist erforderlich",
+        "order_edit_banner_subtitle": "Ihre Bestellung mit der Nummer {{order_number}} wurde aktualisiert. Überprüfen Sie diese Änderungen und bezahlen Sie anschließend, um Ihre Bestellung zu bestätigen.",
+        "order_edit_banner_multiple_items_returned": "{{amount}} zurückerstattet",
+        "order_edit_banner_items_added": {
+          "other": "%{count} Stück hinzugefügt"
+        },
+        "order_edit_banner_items_removed": {
+          "with_quantities": "{{delta}} von {{quantity}} Zeilenelementen wurden entfernt"
+        },
+        "order_edit_banner_items_returned": {
+          "with_quantities": "{{delta}}/{{quantity}} Stück wurden zurückgegeben"
+        },
+        "order_edit_banner_updated_order_label": "Bestellung aktualisiert",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Von der Rückgabe entfernt",
+          "with_quantities": "{{delta}} Artikel wurden von der Rückgabe entfernt"
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "Von der Rückgabe entfernt",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} Einträge wurden entfernt",
+        "pay_in_installments_split_pay_short": "4 Zahlungen in Höhe von %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "Diese Zahlungsmethode kann für die ausgewählte Lieferadresse nicht verwendet werden. Bitte wählen Sie eine andere Zahlungsmethode.",
+        "payment_method_update_failed": "Zahlungsmethode konnte nicht aktualisiert werden.",
+        "payment_flexibility_terms_id_mismatch": "Identitätsinkongruenz unter Bedingungen der Ödemflexibilität",
+        "offsite_gateway_review_page_redirect_hint": "Bestätigen Sie Ihre Bestellung, danach werden Sie zur %{gateway_label}-Seite weitergeleitet, um den Kauf abzuschließen.",
+        "offsite_gateway_redirect_hint_no_button_label": "Um Ihren Kauf abzuschließen, werden Sie zu %{gateway_label} weitergeleitet.",
+        "network_card_persistence_description": "Das ausgewählte Netzwerk wird zusammen mit Ihrer Zahlungsmethode für zukünftige Transaktionen gespeichert.",
+        "payment_option": {
+          "accessibility_label": "Wählen Sie eine Zahlungsmethode aus"
+        },
+        "payment_method_rollup_accessibility_label": "Zahlungsmethodenoptionen",
+        "new_bank_account_disclaimer": "Indem Sie Ihre Bestellung abschließen, erteilen Sie dem Geschäft %{shop_name} die Erlaubnis, den angegebenen Betrag zum angegebenen Zeitpunkt per ACH von folgendem Konto einzuziehen."
       }
     }
   }

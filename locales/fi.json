@@ -1755,7 +1755,113 @@
         },
         "gift_cards_unavailable": "Lahjakorttisi on poistettu, koska sitä ei voi enää käyttää tähän tilaukseen.",
         "network_card_payment_options": "Valitse verkon taajuusalue",
-        "kcp_creditcard_label": "KCP luottokortti"
+        "kcp_creditcard_label": "KCP luottokortti",
+        "pay_with_payment_method": "Maksa %{payment_method} avulla",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Lahjakorttisi kattaa tilauksesi.",
+          "other": "Lahjakorttisi kattavat tilauksesi."
+        },
+        "offsite_gateway_redirect_hint": "Sinut ohjataan %{gateway_label}-osoitteeseen oston viimeistelyä varten.",
+        "no_js_credit_card_fields_redirect_hint": "Sinut ohjataan uudelleen lisäämään maksutietosi.",
+        "no_method_error": "Tämä kauppa ei tällä hetkellä hyväksy maksuja.",
+        "not_configured_error": "Tämä kauppa ei tällä hetkellä hyväksy maksuja.",
+        "no_real_orders_dev_store": "Tämä kauppa ei voi hyväksyä oikeita tilauksia eikä oikeita maksuja.",
+        "no_taxes_banner_content": "Tähän tilaukseen ei lisätä veroa. Veron lisääminen maksun jälkeen ei ole mahdollista.",
+        "paypal": {
+          "connect": "Napsauta yhdistääksesi PayPal-tilisi"
+        },
+        "paypal_modal": {
+          "order_contains_fixed_selling_plans": "Kokonaissummaan eivät välttämättä sisälly verot, toimituskulut, lykkätyt maksut ja jotkin alennukset. Jatka maksua tänään maksettavan summan osalta.",
+          "order_contains_subscriptions": "Tilauksen tekeminen"
+        },
+        "order_covered_by_store_credit_notice": "Kauppaluottosi kattaa tilauksen.",
+        "order_covered_by_redeemables_notice": "Tilaustasi käsitellään.",
+        "no_working_method_error": "Tämä kauppa ei tällä hetkellä hyväksy maksuja. Päivitä sivu ja yritä uudelleen myöhemmin.",
+        "order_edit_banner_title": "{{amount_owed}} määrän maksu vaaditaan",
+        "order_edit_banner_subtitle": "Tilaus {{order_number}} on päivitetty. Tarkista nämä muutokset ja maksa sitten vahvistaaksesi tilauksesi.",
+        "order_edit_banner_multiple_items_returned": "{{amount}} palautettiin",
+        "order_edit_banner_items_added": {
+          "other": "%{count} kappaletta lisätty"
+        },
+        "order_edit_banner_items_removed": {
+          "with_quantities": "{{delta}} kohdetta poistettu {{quantity}} rivikohteesta"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} palautettiin",
+          "with_quantities": "{{delta}}/{{quantity}} kappaletta palautettu"
+        },
+        "order_edit_banner_updated_order_label": "Tilaus päivitetty",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Poistettu palautuksista",
+          "with_quantities": "{{delta}} kappaletta poistettiin palautuksista"
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "Poistettu palautuksista",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} mainosta poistettiin",
+        "pay_in_installments_split_pay_short": "4 maksua yhteensä %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "Tätä maksutapaa ei voi käyttää valitulle toimitusosoitteelle. Valitse toinen maksutapa.",
+        "payment_method_update_failed": "Maksutapaa ei voitu päivittää.",
+        "payment_flexibility_terms_id_mismatch": "Identiteetin epäyhtenäisyys maksujoustoehdoissa",
+        "offsite_gateway_review_page_redirect_hint": "Tarkista tilauksesi, jonka jälkeen sinut ohjataan %{gateway_label}-sivustolle viimeistelemään ostoksesi.",
+        "offsite_gateway_redirect_hint_no_button_label": "Sinut ohjataan %{gateway_label}-osoitteeseen oston viimeistelyä varten.",
+        "network_card_persistence_description": "Valittu verkko tallennetaan maksutapasi kanssa tulevia tapahtumia varten.",
+        "payment_method_incompatible_with_payment_terms": "Maksutapa ei ole yhteensopiva maksuehtojen kanssa.",
+        "payment_option": {
+          "accessibility_label": "Valitse maksutapa"
+        },
+        "new_bank_account_disclaimer": "Vahvistamalla tilauksesi annat %{shop_name}-nimiselle kaupalle luvan veloittaa alla mainitulta tililtä ilmoitetun summan ja ajankohdan mukaisesti ACH-maksuna.",
+        "saved_by_payment_method": "Tallennettu %{payment_method} toimesta",
+        "sofort_label": "Välitön pankkisiirto",
+        "purchase_options_card_update_agreement_label_html": "Päivittämällä maksutapasi valtuutat tämän kaupan <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">peruutuskäytännön</a> mukaisesti tehdyt toistuvat tai siirretyt ostot.",
+        "receiver_payment_experience_hint": "Kun olet tehnyt tilauksesi, maksutiedot lähetetään sinulle. Suorita maksusi Multibanco-palvelun kautta tai verkossa %{due_days} päivän kuluessa.",
+        "pending_payment": {
+          "due_notice": "%{amount_due} summan maksuaika päättyy %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Suorita maksusi Multibanco-palvelun kautta tai verkossa alla olevia tietoja käyttäen. Jos haluat kysyä jotain tai päivittää maksutietoja, ota yhteyttä %{contact_us}.",
+            "entity": "Henkilö/Organisaatio",
+            "amount": "Tutar",
+            "find_nearest_atm": "Löydä lähin pankkiautomaatti",
+            "buyer_action_info": "%{amount_due} summan eräpäivä on tullut."
+          }
+        },
+        "purchase_options_agreement_label": "Ostoskorissasi on yksi tai useampi tuote, joka on viivästetty, tilauspohjainen tai toistuva ostos. Jatkamalla maksua hyväksyt, että maksutapaltasi veloitetaan automaattisesti tällä sivulla ilmoitetulla hinnalla ja tiheydellä, kunnes tilaus päättyy tai peruutat sen. Kaikki peruutukset noudattavat %{cancellation_policy_label}-ehtoja.",
+        "purchase_options_agreement_label_html": "Ymmärrän, että ostoskorissani on yksi tai useampi tuote, joka on tilauspohjainen, toistuva tai viivästetty ostos. Jatkamalla hyväksyn <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">peruutusehdot</a> ja annan luvan veloittaa maksutavalta tällä sivulla ilmoitetuilla hinnoilla, tiheydellä ja päivämäärillä, kunnes tilaukseni lähetetään tai peruutan sen.",
+        "store_credit": {
+          "label": "Myymälälaina",
+          "apply_label": "Käytä kauppaluottoa",
+          "add_label": "Lisää kauppaluottoa"
+        },
+        "shipping_rate_updated": "Saatavilla olevat toimitustavat on päivitetty. Vahvista valintasi ennen maksamista.",
+        "preview_not_available": {
+          "content": "Älä huoli, tämä nopea maksu on asiakkaidesi käytettävissä.",
+          "button": "Valmis"
+        },
+        "simulated_checkout": "Esikatselut tulevat pian saataville",
+        "purchase_options_and_vaulting_agreement_label": "Ostoskorissasi oleva tuote tai useampi tuote on viivästetty ostos tai tilausostos. Jatkamalla maksua hyväksyt, että maksutapaasi veloitetaan automaattisesti tällä sivulla luetelluilla hinnoilla ja tiheydellä, kunnes tilaus päättyy tai peruutat sen. Kaikki peruutukset noudattavat %{cancellation_policy_label}-käytäntöä.",
+        "purchase_options_cancellation_policy_label": "peruutuskäytäntöön",
+        "saved_credit_card": "Olet tallentanut luottokorttisi",
+        "saved_credit_card_info": "Viimeiset neljä numeroa",
+        "saved_credit_cards_modal": {
+          "view_all_label": "Näytä kaikki tallennetut kortit",
+          "done": "Bitti"
+        },
+        "purchase_order_number": {
+          "title": "Osto tilausnumero",
+          "label": "Ostoerän numero (valinnainen)"
+        },
+        "shop_pay_installments_label": "Shop Pay -osuuksina maksaminen",
+        "saved_credit_card_actions": {
+          "delete": "Sil"
+        },
+        "purchase_options_agreement_label_wallets": "Jatkamalla ödeä hyväksyt tällä sivulla luetellut tulevat maksut ja peruutusehdot.",
+        "proposed_gateway_unavailable": "Suositeltua maksuvälityspalvelua ei ole saatavilla",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Weroa ei voi käyttää tilaukseen. Valitse toinen maksutapa.",
+        "simulated_express_checkout": "Alueesi tai selaimesi vuoksi lompakot eivät ole käytettävissä sääntelyesikatselussa",
+        "separate_payments_label": "Tuotteesi tulevat useista eri myymälöistä. Maksut peritään muodossa %{separate_payments_link}.",
+        "separate_payments_text": "erilliset maksut",
+        "purchase_options_subscription_agreement_label": "Ostoskoriisi on lisätty automaattisesti uusiutuva tilaus. Napsauttamalla \"%{button_label}\" hyväksyt %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "Hyväksyt selkeästi ja ehdottomasti, että tilauksesi päättyessä tai kun peruutat, ostoskorissasi näkyvät toistuvat summat (plus toimitus- ja verokulut) veloitetaan sinulta automaattisesti.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Ole hyvä ja tutustu %{cancellation_policy_label} -tekstiin.",
+        "purchase_options_subscription_cancel_text": "Voit peruuttaa milloin tahansa menemällä tilillesi tai ottamalla yhteyttä myymälään."
       }
     }
   }
