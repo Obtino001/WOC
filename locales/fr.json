@@ -1684,7 +1684,56 @@
         "bank_account_disclaimer": "Le traitement des paiements ACH peut prendre jusqu'à 4 jours ouvrables.",
         "bank_account_generic_error": "Le compte bancaire n'a pas pu être ajouté. Veuillez réessayer plus tard.",
         "add_payment_method": "Ajouter un mode de paiement",
-        "add_new_payment_method": "Ajouter un nouveau mode de paiement"
+        "add_new_payment_method": "Ajouter un nouveau mode de paiement",
+        "card_pay_with": "Payer avec :",
+        "card_security_notice": "Toutes les transactions sont sécurisées et cryptées.",
+        "card_expiry_label": "Date de péremption (MM/AA)",
+        "card_expiry_placeholder": "Date de péremption (MM/AA)",
+        "card_expiry_date_explanation": "Format de date d'expiration de la carte : mois, mois, année, année",
+        "card_verification_value_explanation": "Le code de sécurité à 3 chiffres se trouve généralement au dos de votre carte. Les cartes American Express ont un code à 4 chiffres sur le devant.",
+        "card_verification_value_explanation_amex": "Votre code de sécurité à 4 chiffres au recto de votre carte",
+        "card_verification_value_explanation_other": "Votre code de sécurité à 3 chiffres au dos de votre carte",
+        "card_start_label": "Date de modification (MM/AA)",
+        "card_start_placeholder": "Date de modification (MM/AA)",
+        "card_issue_number_label": "Numéro d'édition",
+        "card_issue_number_placeholder": "Numéro d'édition",
+        "billing_address_description": "Sélectionnez l'adresse correspondant à votre carte ou à votre mode de paiement.",
+        "billing_address_description_no_shipping_address": "Saisissez l'adresse correspondant à votre carte ou à votre méthode de paiement.",
+        "card_fields_container_prefix": "Conteneur de champ pour ceci :",
+        "card_fields_unavailable_html": {
+          "other": "Les paiements par carte de crédit et de banque ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Rafraîchissez cette page</a> ou essayez un autre mode de paiement."
+        },
+        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet.",
+        "card_information_notice": "Toutes les transactions sont sécurisées et cryptées. Les informations de carte de crédit ne sont jamais stockées.",
+        "card_expiration_month_label": "Date de péremption (mois)",
+        "card_expiration_year_label": "Date de péremption (année)",
+        "billing_address_not_supported_for_payment_method_error": "Cette méthode de paiement n'est pas disponible pour votre adresse de facturation et votre devise. Veuillez essayer un autre mode de paiement.",
+        "card_security_vault_notice": "Nous avons besoin de vos informations pour les paiements futurs. Toutes les transactions sont sécurisées et cryptées.",
+        "card_expired": "Le délai est expiré",
+        "card_verification_confirm": "Pour la vérification, saisissez le code de sécurité de votre carte.",
+        "billing_address_associated_with_mandate": "Paiement yöntemiyle ilişkilendirilmiş adresi kullan",
+        "billing_address_associated_with_mandate_info": "Si vous souhaitez modifier votre adresse de facturation, supprimez vos informations de carte de crédit et saisissez-les à nouveau.",
+        "card_vaulted_company_location": "La carte a été enregistrée pour cet emplacement",
+        "billing_must_match_shipping_notice": "Votre adresse de facturation doit être la même que votre adresse de livraison pour votre mode de paiement.",
+        "brand_not_available": "Cette boutique n'accepte pas {{brand}}. Veuillez utiliser une autre carte pour payer.",
+        "billing_address_invalid_phone": "Pour continuer, mettez à jour l'adresse de facturation de la carte se terminant par {{last_digits}} {{label}}.",
+        "billing_address_invalid_phone_no_card": "Continuer en mettant à jour le numéro de téléphone de votre adresse de facturation.",
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Veuillez entrer une date de modification valide",
+              "issue_number": "Veuillez saisir un numéro de modification valide"
+            },
+            "invalid": {
+              "verification_value": "Veuillez saisir un CVV ou un code de sécurité valide"
+            }
+          }
+        },
+        "business_customer_vaulting_payment_label": "Enregistrez cette méthode de paiement sur la page de paiement et autorisez %{company} à prélever des frais sur cette méthode de paiement pour les achats futurs effectués à cet emplacement. Toutes les personnes assignées à cet emplacement peuvent utiliser cette méthode de paiement.",
+        "cashapppay_label": "Paiement Cash App",
+        "billing_address_rollup_accessibility_label": "Options d'adresse de facturation",
+        "business_customer_with_bank_account_vaulting_payment_label": "Lors du paiement, enregistrez ce mode de paiement et autorisez %{company} à prélever les paiements des futurs achats approuvés pour cet emplacement sur votre compte jusqu'à ce que vous annuliez cette autorisation. Toutes les personnes affectées à cet emplacement peuvent utiliser ce mode de paiement.",
+        "bank_account_vaulted_company_location": "Un compte bancaire a été enregistré pour cet emplacement"
       }
     }
   }
