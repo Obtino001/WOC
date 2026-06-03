@@ -1387,7 +1387,201 @@
       },
       "offsite_payment_failed": {
         "payment_link_expired_title": "انتهت صلاحية رابط الدفع",
-        "payment_link_expired_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى."
+        "payment_link_expired_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى.",
+        "payment_not_processed_title": "فشل الدفع",
+        "payment_not_processed_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى. إذا لم يعمل بعد، يرجى إبلاغ موظفينا بذلك وتجربة طريقة دفع مختلفة.",
+        "title": "فشل الدفع الخارجي"
+      },
+      "order_summary": {
+        "add_discount_or_gift_card": "أضف رمز الخصم أو بطاقة الهدايا",
+        "apply_discount_button_label": "تطبيق",
+        "applied_discount_message": "خصم %{amount} على إجمالي سعر الطلب",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير صالح للمنتجات في سلة التسوق الخاصة بك",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يمكنك استخدام رمز الخصم هذا الآن",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم مستخدم بالفعل",
+        "cost_table_title": "ملخص التكلفة",
+        "collapse_order_summary_short": "إخفاء",
+        "calculating_shipping": "جارٍ الحساب...",
+        "applied_free_shipping_discount_label": "تم التطبيق",
+        "confirmation_number_label": "تأكيد رقم %{confirmation_number}",
+        "amount_off_shipping": "شحن بخصم %{amount}",
+        "custom_discount": "خصم خاص",
+        "collapse_component_information": {
+          "one": "إخفاء %{count} منتجًا",
+          "other": "إخفاء %{count} منتجًا"
+        },
+        "component_quantity_title": "%{quantity} قطعة %{product_title}",
+        "alternative_payment_currency_total": "تم تحصيل %{amount_due}",
+        "calculating": "جارٍ الحساب...",
+        "deferred_balance_info": {
+          "title": "سيتم دفع رصيد بقيمة {{amount_due}} في تاريخ {{due_at}}",
+          "due_on_fulfillment_title": "سيتم دفع رصيد {{amount_due}} عند شحن الطلب"
+        },
+        "cost_table_item_column_header": "عنصر",
+        "cost_table_value_column_header": "قيمة",
+        "compare_at_sale": "تخفيض (%{sale_amount})",
+        "automatic_discount_tooltip": "لا يمكن إزالة الخصومات التي تم تطبيقها تلقائيًا",
+        "discount_title": "تخفيض",
+        "discount_label": "رمز الخصم",
+        "discount_placeholder": "رمز الخصم",
+        "discount_has_been_applied": "تم تطبيق الخصم",
+        "discount_has_been_removed": "تم إزالة الخصم",
+        "discount_already_applied": "تم تطبيق خصم على هذا الطلب. لا يمكنك إضافة خصم آخر.",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> أدخل معلومات الشحن لاستخدام رمز الخصم",
+        "discount_and_gift_card_savings_notice": "بعد خصم %{discount_amount} وبطاقة هدية بقيمة %{gift_card_amount}",
+        "discount_savings_notice": "بعد خصم %{discount_amount}",
+        "description_label": "الوصف",
+        "estimated_taxes_label": "الضرائب المقدرة",
+        "estimated_tax_label": "الضريبة المقدرة",
+        "estimated_taxes_finalization_tooltip_content": "سيتم تأكيد آخر ضريبة والإجمالي عبر البريد الإلكتروني أو الرسائل النصية بعد تقديم طلبك.",
+        "deferred_payment_info": {
+          "title": "آخر موعد لدفع المبلغ %{amount_due} هو %{due_at}",
+          "description_html": "لأي استفسارات بخصوص طلبك، %{contact_us}.",
+          "paid_today": "إجمالي الدفع اليوم",
+          "due_on_fulfillment_title": "سيتم الدفع عند إرسال الطلب بمبلغ %{amount_due}",
+          "due_on_receipt_title": "يجب إجراء الدفع بمبلغ %{amount_due} عند إصدار الإيصال",
+          "paid_today_next": "تم الدفع اليوم"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يعمل حالياً. اتصل بنا للحصول على المساعدة.",
+        "due_on_fulfillment": "الدفع عند التسليم",
+        "duties_label": "الرسوم الجمركية",
+        "duties_and_taxes_label": "الضرائب والرسوم الجمركية",
+        "error_duties_tooltip": "يتم شحن هذا الطلب من دولة أخرى. لذلك، قد يتعين دفع رسوم الجمارك والضرائب الأخرى عند التسليم.",
+        "deferred_total_due_date_label": "المبلغ الإجمالي المستحق الدفع في {{date}}",
+        "expand_component_information": {
+          "one": "عرض %{count} منتجًا",
+          "other": "عرض %{count} منتجًا"
+        },
+        "discount_discovery": {
+          "add_code": "أضف خصمًا",
+          "merchandise_quantity_label": {
+            "one": "%{count} منتج",
+            "other": "%{count} منتج"
+          },
+          "back_to_finalize_order": "العودة لإكمال الطلب"
+        },
+        "discount_title_stacking": {
+          "one": "تخفيض",
+          "other": "الخصومات"
+        },
+        "discount_order_stacking": {
+          "one": "خصم الطلب",
+          "other": "خصومات الطلبات"
+        },
+        "discount_not_found": "لا يمكن العثور على خصم صالح يطابق الرمز المدخل",
+        "enter_shipping_address": "أدخل عنوان الشحن",
+        "discount_code_applied": "تم تطبيق رمز الخصم",
+        "discount_code_applied_with_code": "تم تطبيق رمز الخصم %{code}",
+        "duties_included_label": "تشمل الرسوم الجمركية والضرائب الأخرى. لا توجد رسوم إضافية عند التسليم.",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> يتطلب رمز الخصم عميلًا مؤهلاً",
+        "discount_code_aria_text": "رمز الخصم",
+        "deposit_label": "الوديعة",
+        "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم الخاص بك قد تغير. تحقق من سلة التسوق الخاصة بك وحاول مرة أخرى.",
+        "deferred_total_due_date_label_next": "تاريخ آخر موعد للدفع: %{date}",
+        "estimated_taxes_label_short": "تقريبي",
+        "discount_code_removed": "تم إزالة رمز الخصم %{code}",
+        "discount_code_replaced": "تم إزالة رمز الخصم %{old_code} وتم تطبيق %{code}",
+        "discount_code_replaced_multiple": "تم إزالة عدة رموز خصم وتم تطبيق %{code}",
+        "discount_applies_to_subscription_items_only": "هذا الخصم صالح فقط لمنتجات الاشتراك",
+        "estimated_taxes_finalization_tooltip_content_short": "يتم تأكيد الضريبة بعد الدفع",
+        "order_name_label": "طلب %{name}",
+        "gift_card_title": "بطاقة هدية",
+        "gift_card_label": "بطاقة هدية",
+        "gift_card_placeholder": "بطاقة هدية",
+        "gift_card_and_discount_title": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_label": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_placeholder": "رمز الخصم أو بطاقة الهدايا",
+        "free_shipping_discount_label": "شحن مجاني",
+        "gift_card_has_been_applied": "تم تطبيق بطاقة الهدايا",
+        "gift_card_has_been_removed": "تم إلغاء بطاقة الهدية",
+        "partial_total_label": "الإجمالي",
+        "free_total_label": "مجاني",
+        "free_shipping_total_label": "مجاني",
+        "paid_label": "تم الدفع",
+        "payment_due_label": "الدفع الوارد من الخارج",
+        "gift_card_savings_notice": "بعد بطاقة هدية %{gift_card_amount}",
+        "expand_order_summary_short": "عرض",
+        "order_total_updated_label": "الإجمالي المحدث",
+        "no_pickup_location": "لا توجد مواقع استلام متاحة.",
+        "information_estimated_taxes_label": "الضرائب (تقديرية)",
+        "gift_card_ending": "بطاقة هدية تنتهي بـ %{last_characters}",
+        "multiple_shipping_lines_label": "إجمالي الشحن",
+        "original_price": "السعر الأصلي",
+        "gift_card_subscriptions_notice": "بطاقات الهدايا صالحة فقط للدفعة الأولى الخاصة بك",
+        "payment_terms_totals": {
+          "due_later": "المبلغ الإجمالي المستحق الدفع في %{due_at}",
+          "due_later_checkout_to_draft": "المبلغ الإجمالي المستحق الدفع لاحقًا",
+          "due_on_fulfillment": "المبلغ الإجمالي المستحق عند التسليم",
+          "due_on_receipt": "المبلغ الإجمالي الذي سيتم دفعه عند إصدار الإيصال",
+          "due_on_fulfillment_next": "سيتم الدفع عند الشحن"
+        },
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong>، لا يمكن استخدامه مع الخصومات الحالية الخاصة بك.",
+        "maximum_discount_code_limit_reached": "لقد وصلت إلى الحد الأقصى لعدد أكواد الخصم. لإستخدام كود <strong style=\"text-transform:uppercase\">%{code}</strong>، يرجى إزالة أحد الأكواد الحالية.",
+        "order_total_label": "إجمالي الطلب",
+        "may_be_charged_on_delivery": "قد يتم فرض رسوم عند التسليم",
+        "full_price": "السعر الكامل: %{price}",
+        "group_title_label": "ضمن %{group_title}",
+        "gift_card_applied": "تم تطبيق بطاقة الهدايا",
+        "more_items_modal": {
+          "clear_search": "مسح البحث",
+          "empty_results": "لم يتم العثور على نتائج لـ \"%{searchText}\". تحقق من عدم وجود أخطاء إملائية أو استخدم كلمة أو تعبيرًا مختلفًا.",
+          "number_items_shown": "%{shownNumber}/%{totalNumber} منتج",
+          "search_item": "عرب"
+        },
+        "number_items": {
+          "one": "%{count} منتج",
+          "other": "%{count} منتج"
+        },
+        "for_add_on": "لـ: %{group_title}",
+        "from_shop_heading": "من متجر %{shop_name}",
+        "from_other_stores_heading": "من متاجر أخرى",
+        "order_discounts_apply_to_local_shop": "تخفيضات الطلبات صالحة فقط للمنتجات المشتراة من متجر %{shop_name}",
+        "gift_cards_apply_to_local_shop": "بطاقات الهدايا صالحة فقط للمنتجات المشتراة من متجر %{shop_name}",
+        "from_multiple_stores_heading": "من عدة متاجر",
+        "pay_merchant_label": "دفع %{merchant_name}"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "المبلغ الواجب دفعه لطلب %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "تمت الإضافة",
+            "other": "تمت الإضافة %{count} عنصرًا"
+          },
+          "removed": "تمت الإزالة",
+          "subtracted": "تمت إزالة %{count} قطعة",
+          "returned": "تم إرجاع %{count} قطعة",
+          "return_line_item_removed": "تمت إزالة %{count} عنصرًا من الإرجاع"
+        },
+        "additional_payment_requested": "مطلوب دفع مبلغ %{total_outstanding}",
+        "checkout_review_and_pay": "تم تحديث طلبك %{order_name}. يرجى مراجعة هذه التغييرات ثم قم بالدفع لتأكيد طلبك.",
+        "order_updated_on": "تم تحديث طلبك في %{last_edited_at}.",
+        "order_review_and_pay": "تم تحديث طلبك. راجع طلبك وقم بالدفع للتأكيد.",
+        "pay_now": "ادفع الآن"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "اشترِ منتج %{product_name}",
+          "one": "اشترِ منتج %{product_name} و %{count} منتجًا آخر",
+          "other": "اشترِ منتج %{product_name} و %{count} منتجًا آخر"
+        }
+      },
+      "order_errors": {
+        "creation_failure": "حدثت مشكلة أثناء إنشاء طلبك. حاول مرة أخرى أو اتصل بنا لمزيد من المعلومات.",
+        "network_failure": "لم يتم إرسال طلبك بسبب خطأ في الشبكة. يرجى التحقق من اتصالك وحاول مرة أخرى.",
+        "inventory_reservation_failure": "بعض المنتجات لم تعد متوفرة."
+      },
+      "online_store_chat": {
+        "title": "هل لديك أسئلة؟ تحدث معنا"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "يجب أن يكون سعر بطاقة الهدية أكبر من 0.",
+            "subtotal_limit_reached": "تم الوصول إلى الحد الأقصى لقيمة عنصر الصف.",
+            "gift_card_price_must_not_exceed_limit": "يجب ألا تتجاوز قيمة بطاقة الهدية %{gift_card_limit}.",
+            "signature_mismatch": "هناك تعارض في توقيع المنتج في السطر %{stable_id}."
+          }
+        }
       }
     }
   },
