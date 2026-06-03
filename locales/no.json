@@ -2866,7 +2866,13 @@
           "header": {
             "one": "Ingen tilgjengelig leveringstjeneste for %{count} produkter",
             "other": "Ingen tilgjengelig leveringstjeneste for %{count} produkter"
-          }
+          },
+          "title": "Ingen tilgjengelig leveringsservice",
+          "message": {
+            "one": "Adresiniz için kullanılabilir bir leveringsmetode finnes ikke, så dette produktet vil bli fjernet fra handlekurven din.",
+            "other": "Adresiniz için kullanılabilir bir leveringsmetode finnes ikke, så disse produktene vil bli fjernet fra handlekurven din."
+          },
+          "status_column_header": "Ingen leveringstjeneste"
         },
         "price_update": {
           "title": "Prisoppdatering",
@@ -2899,6 +2905,88 @@
           "description": "Prisene og tilgjengelige mengder for disse produktene har endret seg og er oppdatert i handlekurven din."
         },
         "out_of_stock_in_context_label": "Dette produktet er ikke tilgjengelig i ditt land/din region."
+      },
+      "subscriptions": {
+        "recurring_totals": "Her %{interval} %{total_price}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Første betaling %{total_price}",
+            "other": "Hver av de første %{count} betalingene er %{total_price}"
+          },
+          "following_cycles": ", deretter hver %{interval} %{total_price}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "one": "dag",
+            "other": "%{count} dager"
+          },
+          "week": {
+            "one": "uke",
+            "other": "%{count} uker"
+          },
+          "month": {
+            "one": "hei",
+            "other": "%{count} dager"
+          },
+          "year": {
+            "one": "år",
+            "other": "%{count} år"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Første betaling %{total_price_with_discount}, deretter %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", deretter når %{total_price} er %{count} betalinger",
+            "other": ", deretter hver gang det er %{total_price}, betal %{count}"
+          }
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "Det oppstod et problem med butikkreditten din. Prøv igjen eller last siden på nytt."
+      },
+      "taxes": {
+        "tax_details": "Tilleggsavgiftsdetaljer",
+        "vat_number": {
+          "field": {
+            "label": "MVA-nummer (valgfritt)",
+            "tooltip": "Validerer MVA-nummeret når det er aktuelt og anvender automatisk omvendt avgiftsplikt på bestillinger."
+          },
+          "add": "Legg til et MVA-nummer",
+          "badge": "MVA-nummer: %{number}",
+          "domestic_order": "Momsfritak for etterbetaling gjelder kun for grenseoverskridende bestillinger innen EU. Standard merverdiavgift gjelder for lokale bestillinger.",
+          "status": {
+            "invalid_format": {
+              "at": "Østerrikske MVA-numre består av bokstavene AT etterfulgt av 9 tegn",
+              "be": "Belgiske MVA-numre består av bokstavene BE etterfulgt av 10 tegn",
+              "bg": "Bulgarias MVA-numre består av bokstavene BG etterfulgt av 9-10 tegn",
+              "hr": "Kroatiske MVA-numre består av bokstavene HR etterfulgt av 11 tegn",
+              "cy": "Kypros MVA-numre består av bokstavene CY etterfulgt av 9 tegn",
+              "cz": "Tsjekkias MVA-numre består av bokstavene CZ etterfulgt av 8-10 tegn",
+              "dk": "Danske MVA-numre består av bokstavene DK etterfulgt av 8 tegn",
+              "ee": "Estlands MVA-numre består av bokstavene EE etterfulgt av 9 tegn",
+              "fi": "Finlands MVA-numre består av bokstavene FI etterfulgt av 8 tegn",
+              "fr": "Franske MVA-numre består av bokstavene FR etterfulgt av 11 tegn",
+              "de": "Tyske MVA-numre består av bokstavene DE etterfulgt av 9 tegn",
+              "gr": "Greske MVA-numre består av bokstavene EL etterfulgt av 9 tegn",
+              "hu": "Ungarske MVA-numre består av bokstavene HU etterfulgt av 8 tegn",
+              "ie": "Irlands MVA-numre består av bokstavene IE etterfulgt av 8-9 tegn",
+              "it": "Italienske MVA-numre består av bokstavene IT etterfulgt av 11 tegn",
+              "es": "Spanske MVA-numre består av bokstavene ES etterfulgt av 9 tegn",
+              "gb": "Storbritannias MVA-numre består av bokstavene GB eller XI etterfulgt av 5-12 tegn"
+            }
+          },
+          "accessibility": {
+            "status": {
+              "validating": "MVA-nummeret blir bekreftet",
+              "valid": "MVA-nummer gyldig",
+              "applied": "MVA-fritak er anvendt",
+              "domestic": "MVA-fritak ble ikke anvendt",
+              "invalid_number": "MVA-fritak mislyktes",
+              "service_unavailable": "MVA-fritak kan ikke bekreftes",
+              "service_error": "MVA-fritak kan ikke bekreftes"
+            }
+          }
+        }
       }
     }
   },
