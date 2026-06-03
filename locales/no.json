@@ -995,7 +995,69 @@
             "metadata_mismatch": "Den angitte captcha-leverandøren og typen samsvarer ikke med de forventede verdiene.",
             "job_enqueue_failed": "Captcha-verifiseringen kunne ikke settes i kø.",
             "job_already_queued": "Captcha-verifisering er allerede satt i kø for denne Captcha-tokenen.",
-            "token_expired": "Den nåværende captcha-tokenen har utløpt. Fullfør en ny Captcha for å fortsette betalingsprosessen."
+            "token_expired": "Den nåværende captcha-tokenen har utløpt. Fullfør en ny Captcha for å fortsette betalingsprosessen.",
+            "token_missing": "For å fullføre denne betalingen må en Captcha-token oppgis.",
+            "token_invalid": "Den oppgitte Captcha-koden er ugyldig. Fullfør en ny Captcha for å fortsette betalingsprosessen.",
+            "token_not_valid_for_session": "Den oppgitte Captcha kan ikke brukes for denne betalingen."
+          },
+          "line_item_limit_reached": "Maksimalt antall elementer per rad er nådd.",
+          "merchandise": {
+            "bundle_products_not_supported_for_b2b": "Pakker med produkter kan ikke legges til B2B-bestillinger på denne plasseringen.",
+            "gift_card_quantity_mismatch": "Når du angir gavekortkoder, må antallet linjeelementer samsvare med antallet gavekortkoder.",
+            "gift_card_not_supported": "Gavekort støttes ikke for denne betalingen.",
+            "gift_card_not_unique": "I denne betalingen vises gavekortet med koden {{code}} mer enn én gang. Kodene formateres før sammenligning.",
+            "gift_card_used": "{{code}} gavekortkode er allerede tilordnet et gavekort. Koder formateres før sammenligning.",
+            "gift_card_invalid": "{{code}} gavekortkode er ugyldig.",
+            "gift_card_code_changed": "{{proposed_code}} gavekortkode ble endret til {{formatted_code}} for å overholde formateringsreglene.",
+            "gift_card_with_attributes_not_supported": "Tilpassede gavekort støttes ikke i denne betalingen.",
+            "duplicated_stable_id": "Denne varelinjen har samme faste ID som en annen linje.",
+            "bundle_requires_components": "Det er ingen komponenter i denne malpakken.",
+            "combined_listing_parent_not_purchasable": "Hovedprodukter i den sammenslåtte listen kan ikke kjøpes direkte."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Det skal kun være én leveringslinje i handlekurven.",
+            "wrong_number_of_delivery_lines": "Leveringslinje må angis for denne malgruppen.",
+            "external_delivery_promise_error": "Feil ved mottak av ekstern leveringsforpliktelse.",
+            "options_instructions_invalid": "Angitte instruksjoner samsvarer ikke med den forventede modellen.",
+            "destination_address_required": "Devam etmek için bir varış adresi gereklidir.",
+            "pickup_points_unavailable": "Hentepunktene er for øyeblikket utilgjengelige.",
+            "local_pickup_delivery_line_detail_changed": "For å fortsette må hentestrategien for tilgjengelig butikk endres.",
+            "local_pickup_no_delivery_strategy_available": "Ingen tilgjengelig butikkhentingsstrategi.",
+            "origin_location_id_required": "Når PERAKENDE leveringsmetode etterspørres, kreves en opprinnelsessted-ID.",
+            "invalid_origin_location_id": "Det ble ikke funnet en plassering som samsvarer med opprinnelsesplass-ID-en.",
+            "origin_location_id_not_allowed": "De forespurte leveringsmetodene støtter ikke opprinnelsesstedets identitet.",
+            "auto_fulfill_not_allowed": "Denne økten har ikke tillatelse til å overstyre innsendingens oppførsel.",
+            "auto_fulfill_required": "Automatisk sending kreves når PERAKENDE leveringsmetode etterspørres.",
+            "prefetch_shipping_rates_used": "På forhånd betalte fraktkostnader skal aldri refunderes.",
+            "fulfillment_constraints_not_satisfied": "En eller flere leveringsbegrensninger ble ikke oppfylt.",
+            "must_fulfill_from_constraint_not_satisfied": "Forsendelsesbegrensningene oppfylles ikke fordi produktene ikke kan sendes fra nødvendige steder.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Produktene kan ikke sendes fra samme sted, så fraktbegrensningene oppfylles ikke.",
+            "delivery_strategy_conditions_not_satisfied": "Det finnes leveringsstrategier for denne lokasjonen, men betingelsene er ikke oppfylt.",
+            "out_of_stock_at_origin_location": "Ingen lagerbeholdning på opprinnelsesstedet.",
+            "invalid_signature": "Ugyldig rabattsignatur.",
+            "selected_pickup_option_no_longer_available": "Det forhåndsvalgte hentalternativet er ikke lenger tilgjengelig.",
+            "mixed_destination_countries": "Levering kan ikke brukes fordi leveringslinjene dekker flere land."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "Rabatter er ikke tillatt i B2B-butikker.",
+            "custom_discount_not_honoured": "Den angitte spesialrabatten ble ikke oppfylt.",
+            "unsupported_expectation": "Den oppgitte rabattlinjen inneholdt en forventning som retningslinjen ikke kunne tolke.",
+            "additional_requested_discount_code_discarded": "{{code}} er gyldig, men kan ikke brukes. Vennligst sjekk rabattvilkårene.",
+            "allocations_mismatch": "Din rabattkode har endret seg. Sjekk handlekurven din og prøv igjen.",
+            "discount_title_too_long": "Rabattoverskriften kan ikke være lengre enn 255 tegn.",
+            "additional_requested_discount_discarded": "Rabatten din er gyldig, men kan ikke brukes. Vennligst sjekk rabattvilkårene.",
+            "mixed_destination_countries": "Rabatter kan ikke brukes fordi leveringslinjene dekker flere land."
+          },
+          "inventory": {
+            "missing_quantity_value": "Antallfeltet mangler i mottakerens lagerlinjer.",
+            "changing_behavior_not_allowed": "Denne klienten har ikke tillatelse til å endre lageroppførselen.",
+            "only_one_inventory_behavior_allowed": "For øyeblikket tillates bare én lagerhandling per betaling."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Det mottatte beløpet må være i butikkens valuta."
+          },
+          "checkout_source": {
+            "revoked": "Denne betalingen er ikke lenger tilgjengelig."
           }
         },
         "dropzone": {
