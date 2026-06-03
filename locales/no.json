@@ -1529,7 +1529,69 @@
         "cost_table_item_column_header": "Vare",
         "cost_table_value_column_header": "Verdi",
         "compare_at_sale": "Rabatt (%{sale_amount})",
-        "automatic_discount_tooltip": "Automatisk anvendte rabatter kan ikke fjernes"
+        "automatic_discount_tooltip": "Automatisk anvendte rabatter kan ikke fjernes",
+        "discount_title": "Rabatt",
+        "discount_label": "Rabattkode",
+        "discount_placeholder": "Rabattkode",
+        "discount_has_been_applied": "Rabatt er brukt",
+        "discount_has_been_removed": "Rabatten er fjernet",
+        "discount_already_applied": "Denne bestillingen har fått en rabatt. Du kan ikke legge til en annen rabatt.",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Skriv inn fraktinformasjonen din for å bruke rabattkoden",
+        "discount_and_gift_card_savings_notice": "Etter %{discount_amount} rabatt og %{gift_card_amount} gavekort",
+        "discount_savings_notice": "etter %{discount_amount} rabatt",
+        "description_label": "Beskrivelse",
+        "estimated_taxes_label": "Anslåtte skatter",
+        "estimated_tax_label": "Anslått skatt",
+        "estimated_taxes_finalization_tooltip_content": "Siste skatt og totalbeløp vil bli bekreftet via e-post eller SMS etter at bestillingen er lagt inn.",
+        "deferred_payment_info": {
+          "title": "Forfallsdato for betalingen på %{amount_due} er %{due_at}",
+          "description_html": "For spørsmål om bestillingen din, %{contact_us}.",
+          "paid_today": "Dagens totale betaling",
+          "due_on_fulfillment_title": "Betaling på %{amount_due} vil bli gjort når bestillingen sendes",
+          "due_on_receipt_title": "Betalingen på %{amount_due} må gjøres når kvitteringen utstedes.",
+          "paid_today_next": "Betalt i dag"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> fungerer ikke for øyeblikket. Kontakt oss for hjelp.",
+        "due_on_fulfillment": "Betaling ved levering",
+        "duties_label": "Tollavgifter",
+        "duties_and_taxes_label": "Skatter og tollavgifter",
+        "error_duties_tooltip": "Denne bestillingen sendes fra et annet land. Derfor kan det være nødvendig å betale toll og andre avgifter ved levering.",
+        "deferred_total_due_date_label": "Totalt beløp som skal betales den {{date}}",
+        "expand_component_information": {
+          "one": "Viser %{count} produkter"
+        },
+        "discount_discovery": {
+          "add_code": "Legg til rabatt",
+          "merchandise_quantity_label": {
+            "one": "%{count} produkter",
+            "other": "%{count} produkter"
+          },
+          "back_to_finalize_order": "Gå tilbake for å fullføre bestillingen"
+        },
+        "discount_title_stacking": {
+          "one": "Rabatt",
+          "other": "Rabatter"
+        },
+        "discount_order_stacking": {
+          "one": "Bestillingsrabatt",
+          "other": "Bestillingsrabatter"
+        },
+        "discount_not_found": "Det finnes ingen gyldig rabatt som samsvarer med den angitte koden",
+        "enter_shipping_address": "Skriv inn leveringsadressen",
+        "discount_code_applied": "Rabattkoden er brukt",
+        "discount_code_applied_with_code": "%{code} rabattkode er brukt",
+        "duties_included_label": "Inkluderer innførselsavgifter og andre skatter. Ingen ekstra gebyrer ved levering.",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkode krever en kvalifisert kunde",
+        "discount_code_aria_text": "Rabattkode",
+        "deposit_label": "Depositum",
+        "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkoden din har blitt endret. Sjekk handlekurven din og prøv igjen.",
+        "deferred_total_due_date_label_next": "Siste betalingsdato: %{date}",
+        "estimated_taxes_label_short": "Estimert",
+        "discount_code_removed": "%{code} rabattkode fjernet",
+        "discount_code_replaced": "%{old_code} rabattkode er fjernet og %{code} er brukt",
+        "discount_code_replaced_multiple": "Flere rabattkoder ble fjernet og %{code} ble brukt",
+        "discount_applies_to_subscription_items_only": "Denne rabatten gjelder kun for abonnementprodukter",
+        "estimated_taxes_finalization_tooltip_content_short": "Skatten fastsettes etter betalingen"
       },
       "order_payment_collection": {
         "custom_line_item_description": "Beløpet som skal betales for %{order_name}-bestillingen",
