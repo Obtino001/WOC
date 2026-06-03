@@ -2525,7 +2525,11 @@
             "country_changed_heading": "Le pays a changé"
           },
           "banner": "Votre méthode de livraison a été mise à jour"
-        }
+        },
+        "pickup_all_items": "Recevez tous les produits",
+        "items_for_pickup": "Produits à recevoir",
+        "items_for_shipping": "Articles à mettre en quarantaine",
+        "items_moved_to_shipping_toast": "Les produits non livrables ont été transférés au service de livraison."
       },
       "shop_pay_external": {
         "errors": {
@@ -2536,6 +2540,66 @@
         "return_to_store": "Retourner à la boutique {{shopName}}",
         "return_to_store_simple": "Retourner au magasin",
         "title": "Paiement Shop Pay"
+      },
+      "stock": {
+        "page_title": "Problèmes d'inventaire",
+        "title": "Rupture de stock",
+        "items_unavailable_notice": "Certains produits ne sont plus disponibles.",
+        "status_column_header": "Durum",
+        "reduced_label": "En promotion",
+        "reduced_with_quantity_label": "Il ne reste que %{quantity_available} exemplaires",
+        "go_back_to_cart_button_label": "Retour à la caisse",
+        "remove": "Soulever",
+        "quantity_update": {
+          "description": "Les quantités disponibles pour ces produits ont changé et ont été mises à jour dans votre panier."
+        },
+        "unpurchasable_product": {
+          "title": "Produit non disponible à l'achat",
+          "header": "Certains produits ont été retirés de votre panier",
+          "message": "Ces produits ne peuvent pas être utilisés pour les commandes B2B."
+        },
+        "unpurchasable_product_generic": {
+          "title": "Produit non disponible à l'achat",
+          "header": "Certains produits ont été retirés de votre panier",
+          "message": "Ces produits ne sont pas disponibles."
+        },
+        "unshippable_product": {
+          "header": {
+            "one": "Aucun service de livraison disponible pour %{count} produit(s)",
+            "other": "Aucun service de livraison disponible pour %{count} produit(s)"
+          }
+        },
+        "price_update": {
+          "title": "Mise à jour des prix",
+          "description": "Les prix de ces produits ont changé et ont été mis à jour dans votre panier.",
+          "updated_price": "Prix mis à jour"
+        },
+        "return_to_store_label": "Retourner au magasin",
+        "item_label": {
+          "one": "{{count}} produit",
+          "other": "{{count}} produit"
+        },
+        "continue_cta_label": "Continuer le processus de paiement",
+        "out_of_stock": {
+          "description": "Ces produits ne sont plus disponibles et seront retirés de votre panier.",
+          "items_unavailable": "Certains produits ne sont plus disponibles et seront retirés de votre panier."
+        },
+        "unfulfillable_product": {
+          "title": "La méthode de livraison n'est pas disponible",
+          "message": {
+            "one": "Cette option %{delivery_method} n'est plus disponible pour ce produit.",
+            "other": "Ces produits ne sont plus disponibles avec %{delivery_method}."
+          },
+          "default_message": {
+            "one": "La méthode de livraison sélectionnée n'est plus disponible pour ce produit.",
+            "other": "La méthode de livraison sélectionnée n'est plus disponible pour ces produits."
+          }
+        },
+        "price_and_quantity_update": {
+          "title": "Mise à jour du prix et de la quantité",
+          "description": "Les prix et les quantités disponibles pour ces produits ont changé et votre panier a été mis à jour."
+        },
+        "out_of_stock_in_context_label": "Ce produit n'est pas disponible dans votre pays/région."
       }
     }
   }

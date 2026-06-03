@@ -2437,7 +2437,13 @@
           "header": {
             "one": "Ei toimituspalvelua saatavilla %{count} tuotteelle",
             "other": "Ei toimituspalvelua saatavilla %{count} tuotteelle"
-          }
+          },
+          "title": "Ei saatavilla olevaa toimituspalvelua",
+          "message": {
+            "one": "Ostoskoriisi poistetaan tämä tuote, koska osoitteeseesi ei ole saatavilla toimitustapaa.",
+            "other": "Ostoskoristasi poistetaan nämä tuotteet, koska osoitteeseesi ei ole saatavilla toimitustapaa."
+          },
+          "status_column_header": "Toimituspalvelua ei ole"
         },
         "price_update": {
           "title": "Hinnan päivitys",
@@ -2465,6 +2471,77 @@
         "price_and_quantity_update": {
           "title": "Hinta- ja määräpäivitys",
           "description": "Näiden tuotteiden hinnat ja saatavilla olevat määrät ovat muuttuneet, ja ostoskorisi on päivitetty."
+        }
+      },
+      "subscriptions": {
+        "recurring_totals": "Joka %{interval} %{total_price}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "other": "Ensimmäinen %{count} maksu, jokainen %{total_price}"
+          },
+          "following_cycles": ", sitten joka %{interval} %{total_price}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "other": "%{count} päivää"
+          },
+          "week": {
+            "other": "%{count} viikkoa"
+          },
+          "month": {
+            "one": "hei",
+            "other": "%{count} kuukautta"
+          },
+          "year": {
+            "other": "%{count} vuotta"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", kun %{total_price} on saavutettu, %{count} maksua",
+            "other": ", ja sitten jokaista %{total_price} kohden %{count} maksua"
+          }
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "Myymälälainassasi ilmeni ongelma. Yritä uudelleen tai lataa sivu uudelleen."
+      },
+      "taxes": {
+        "tax_details": "Ek verotiedot",
+        "vat_number": {
+          "field": {
+            "tooltip": "Vahvistaa arvonlisäveronumeron, kun se on sopiva, ja soveltaa automaattisesti käänteistä verovelvollisuutta tilauksiin."
+          },
+          "domestic_order": "Veron maksu vastaanottajalle -vapaus koskee vain EU:n rajat ylittäviä tilauksia. Paikallisissa tilauksissa sovelletaan normaalia arvonlisäveroa.",
+          "status": {
+            "invalid_format": {
+              "at": "Itävallan ALV-numerot koostuvat AT-kirjaimista ja niitä seuraavista 9 merkistä",
+              "be": "Belgian ALV-numerot koostuvat BE-kirjaimista ja niitä seuraavista 10 merkistä",
+              "bg": "Bulgarian ALV-numerot koostuvat BG-kirjaimista ja niitä seuraavista 9-10 merkistä",
+              "hr": "Kroatian ALV-numerot koostuvat HR-kirjaimista ja niitä seuraavista 11 merkistä",
+              "cy": "Kyproksen ALV-numerot koostuvat kirjaimista CY ja niitä seuraavista 9 merkistä.",
+              "cz": "Tšekin alv-numerot koostuvat CZ-kirjaimista ja niitä seuraavista 8–10 merkistä",
+              "dk": "Tanskan ALV-numerot koostuvat DK-kirjaimista ja niitä seuraavista 8 merkistä",
+              "ee": "Viron ALV-numerot koostuvat EE-kirjaimista ja niitä seuraavista 9 merkistä",
+              "fi": "Suomen ALV-numerot koostuvat FI-kirjaimista ja niitä seuraavista 8 merkistä",
+              "fr": "Ranskan ALV-numerot koostuvat FR-kirjaimista ja niitä seuraavista 11 merkistä",
+              "de": "Saksan ALV-numerot koostuvat DE-kirjaimista ja niitä seuraavista 9 merkistä",
+              "gr": "Kreikan ALV-numerot koostuvat EL-kirjaimista ja niitä seuraavista 9 merkistä",
+              "hu": "Unkarin ALV-numerot koostuvat HU-kirjaimista ja niitä seuraavista 8 merkistä",
+              "ie": "Irlannin ALV-numerot koostuvat IE-kirjaimista ja niitä seuraavista 8–9 merkistä",
+              "it": "Italian ALV-numerot koostuvat IT-kirjaimista ja niitä seuraavista 11 merkistä",
+              "es": "Espanjan ALV-numerot koostuvat ES-kirjaimista ja niitä seuraavista 9 merkistä",
+              "gb": "Yhdistyneen kuningaskunnan ALV-numerot koostuvat GB- tai XI-kirjaimista, joita seuraa 5–12 merkkiä"
+            }
+          },
+          "accessibility": {
+            "status": {
+              "validating": "ALV-numero vahvistetaan",
+              "valid": "ALV-numero on voimassa",
+              "applied": "ALV-vapaus on sovellettu",
+              "domestic": "ALV-vapautusta ei sovellettu"
+            }
+          }
         }
       }
     }
