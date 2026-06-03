@@ -3404,13 +3404,79 @@
         }
       },
       "tooltip": {
-        "accessibility_label_context": "Mer informasjon om %{context}"
+        "accessibility_label_context": "Mer informasjon om %{context}",
+        "additional_payment_methods": "Ekstra betalingsmetoder"
       },
       "too_many_requests": {
         "title": "For mange betalingsforsøk",
         "body": "Vennligst vent noen minutter og prøv igjen fra handlekurven din.",
         "return_to_cart": "Gå tilbake til handlekurven",
         "body_no_cart": "Vennligst vent noen minutter og prøv igjen."
+      },
+      "wallets": {
+        "connect_shipping_methods": "{{method1}} og {{method2}}",
+        "call_to_action": "Betal med {{walletName}}",
+        "errors": {
+          "generic": "Det oppstod et problem med {{walletName}}. Prøv igjen eller bruk en annen betalingsmetode.",
+          "detour": {
+            "stock_problems": "Noen produkter er ikke lenger tilgjengelige. Lukk {{walletName}} og prøv igjen.",
+            "price_change": "Noen produktpriser har endret seg. Lukk {{walletName}}-appen og prøv igjen for å gå gjennom bestillingen din.",
+            "queue": "Du er lagt til i køen for utbetaling. Lukk {{walletName}}-appen for å fortsette.",
+            "currency_change": "Du kan ikke bruke en annen adresse med {{walletName}}. Bruk den opprinnelige adressen eller prøv en annen betalingsmetode."
+          },
+          "invalid": {
+            "shipping_address": "Skriv inn en gyldig leveringsadresse",
+            "billing_address": "Skriv inn en gyldig fakturaadresse",
+            "shipping_option": "Velg et gyldig fraktalternativ",
+            "email": "Skriv inn en gyldig e-postadresse",
+            "zone": "Skriv inn en gyldig stat/fylke",
+            "postal_code": "Skriv inn en gyldig postkode",
+            "reduction_code": "Skriv inn en gyldig rabattkode eller gavekort",
+            "billing_must_match_shipping": "Må samsvare med leveringsadressen",
+            "phone": "Skriv inn et gyldig telefonnummer",
+            "emirate": "Skriv inn en gyldig emirate",
+            "billing_zone": "Skriv inn en gyldig fylke/kommune for fakturaadressen",
+            "billing_phone": "Skriv inn et gyldig telefonnummer for fakturaadressen",
+            "billing_zip": "Skriv inn en gyldig postkode for fakturaadressen"
+          },
+          "missing": {
+            "address1": "Skriv inn adresse",
+            "address2": "Skriv inn leilighet, bolig osv."
+          },
+          "formatting": {
+            "name_contains_emojis": "Slett emojien i navnet ditt",
+            "postal_code_contains_emoji": "Slett emojien i postnummeret ditt",
+            "first_name_too_long": "Annonsen inneholder for mange bokstaver",
+            "last_name_too_long": "Etternavnet inneholder for mange bokstaver",
+            "address_too_long": "Adressefeltet er for langt"
+          },
+          "discount_code": "Denne rabattkoden kan ikke brukes. Vennligst sjekk koden din og prøv igjen."
+        }
+      },
+      "vaulted": {
+        "change_button": "Endre"
+      },
+      "units": {
+        "milligram": "mg",
+        "kilogram": "kg",
+        "milliliter": "ml",
+        "centiliter": "cl",
+        "liter": "L",
+        "cubic_meter": "m³",
+        "millimeter": "mm",
+        "centimeter": "cm",
+        "square_meter": "m²",
+        "ounce": "oz",
+        "pound": "lb",
+        "fluid_ounce": "fl oz",
+        "pint": "pt",
+        "quart": "qt",
+        "gallon": "gal",
+        "inch": "inn",
+        "foot": "fot",
+        "yard": "yd",
+        "square_foot": "ft²",
+        "item": "produkt"
       }
     }
   },
