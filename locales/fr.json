@@ -2148,7 +2148,8 @@
         },
         "redirecting_to_bank": "Redirection vers la page {{bank}}",
         "modal_notice": "Nous vous contactons via {{paymentMethod}}",
-        "remote_shops_payments_processing": "Traitement des paiements"
+        "remote_shops_payments_processing": "Traitement des paiements",
+        "you_will_receive_confirmation": "Nous recevons actuellement un grand nombre de commandes. Vous recevrez une confirmation par e-mail ou SMS sous peu. Si vous ne recevez pas cette confirmation dans l'heure qui suit, veuillez nous en informer."
       },
       "post_purchase": {
         "page_title": "Après achat",
@@ -2157,6 +2158,73 @@
         "components": {
           "processing": "Traitement en cours…",
           "submit": "Envoyer"
+        }
+      },
+      "review": {
+        "blocks": {
+          "payment_method_title": "Méthode de paiement",
+          "change_contact_method_link_label": "Modifier les coordonnées de contact",
+          "change_billing_address_link_label": "Modifier l'adresse de facturation",
+          "change_shipping_address_link_label": "Modifier l'adresse de livraison",
+          "change_shipping_method_link_label": "Changer la méthode de livraison",
+          "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}",
+          "purchase_order_number_title": "Numéro de commande d'achat",
+          "change_purchase_order_number_label": "Modifier le numéro de commande d'achat",
+          "change_delivery_method_link_label": "Modifier la méthode de livraison",
+          "no_purchase_order_number": "(Aucun numéro de commande d'achat)",
+          "due_after_order_reviewed_html": "Le paiement est effectué après l'examen de la commande",
+          "review_title_free_order": "Vérifiez et finalisez votre commande",
+          "company_location": "Emplacement de l'entreprise",
+          "change_company_location_link_label": "Modifier l'emplacement de l'entreprise",
+          "pickup_items_at": {
+            "one": "%{count} produit(s) seront à retirer ici",
+            "other": "%{count} produit(s) seront à retirer ici"
+          },
+          "ship_items_to": {
+            "one": "%{count} produit(s) sera/seront envoyé(s) ici",
+            "other": "%{count} produit(s) sera/seront envoyé(s) ici"
+          }
+        },
+        "block_title": "Vérifiez vos informations",
+        "account_more_actions": "Autres opérations pour ce compte"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Cette carte cadeau a déjà été appliquée à votre commande",
+          "insufficient_funds": "Cette carte cadeau n'a plus de solde.",
+          "expired": "Cette carte cadeau a expiré",
+          "not_available": "Cette carte cadeau n'est plus utilisable",
+          "invalid": "Veuillez saisir une carte cadeau valide",
+          "generic": "La carte cadeau n'a pas pu être ajoutée au paiement",
+          "throttle_limit_exceeded": "Vous avez dépassé le nombre maximum d'essais. Veuillez réessayer plus tard.",
+          "no_longer_available": "Cette carte cadeau ne peut plus être utilisée pour ce paiement."
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Ce produit ne peut pas être ajouté à votre panier car il appartient à une boutique utilisant une devise différente.",
+          "max_remote_shops_exceeded": "Ce produit ne peut pas être ajouté car votre panier contient déjà le nombre maximum d'articles provenant d'autres magasins.",
+          "currency_mismatch_removal": "Un produit a été retiré de votre panier car il appartient à une boutique utilisant une devise différente.",
+          "only_remote_merchandise_lines": "Le paiement ne concerne que les produits vendus à distance. Il est nécessaire d'être redirigé vers le magasin à distance pour finaliser le paiement."
+        }
+      },
+      "remote_merchandise_only": {
+        "title": "Terminez votre achat",
+        "remote_only_notice": "Ces produits sont vendus et expédiés par d'autres magasins. Pour finaliser votre achat, veuillez effectuer le paiement auprès de chaque magasin.",
+        "return_to_store_label": "Retourner au magasin",
+        "checkout_on_shop_label": "Payez dans la boutique %{shop_name}",
+        "single_shop_transition": "Vous êtes redirigé vers la boutique %{advertiser} pour finaliser votre achat.",
+        "detail_item_label": {
+          "one": "{{count}} produit",
+          "other": "{{count}} produit"
+        }
+      },
+      "remote_policies": {
+        "unavailable_policy": "Aucune %{policy_name} n'a été fournie pour cette boutique. Pour plus d'informations, veuillez contacter directement %{shop_name}."
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Pour finaliser la transaction de paiement, une interaction avec une extension est nécessaire."
         }
       }
     }
