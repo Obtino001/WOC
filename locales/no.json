@@ -832,7 +832,18 @@
         "invalid_delivery_address_reference_handle": "Leveringsadresse-referanseidentifikatoren kunne ikke kobles til en eksisterende leveringsadresse.",
         "must_use_available_delivery_address": "Leveringsadressen må velges fra eksisterende leveringsadresser.",
         "must_use_available_shipping_rate": "Fraktkostnaden må velges fra de tilgjengelige fraktkostnadene.",
-        "credit_card_name_billing_invalid": "Skriv inn navnet ditt som det står på fakturaadressen først"
+        "credit_card_name_billing_invalid": "Skriv inn navnet ditt som det står på fakturaadressen først",
+        "shipping_line_phone_blank": "Bu leveringsmetoden krever at du oppgir et telefonnummer.",
+        "shipping_line_phone_invalid": "Skriv inn et gyldig telefonnummer",
+        "tips_invalid_tip_amount": "Skriv inn et tips lavere enn %{amount}",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Gavekort støttes ikke med utsatte kjøpsalternativer.",
+        "vaulting_agreement_blank": "Betalingsmetoden din må lagres fordi betalingen for denne bestillingens saldo må gjøres senere.",
+        "sms_marketing_phone_invalid": "Skriv inn et gyldig telefonnummer",
+        "split_cart_international_shipping_not_supported": "I internasjonal frakt må alle produkter bruke samme leveringsmetode. Oppdater leveringsmetoden eller opprett flere bestillinger.",
+        "shipping_method_invalid_phone_number": "Korriger telefonnummeret på leveringsadressen din for å se tilgjengelige fraktmetoder.",
+        "split_by_delivery_method_not_allowed": "Deling etter leveringsmetode er ikke tillatt for denne økten eller butikken.",
+        "split_by_delivery_method_unsupported_method_type": "Oppdelingen etter leveringsmetode ble forsøkt med en ikke-støttet type leveringsmetode.",
+        "split_by_delivery_method_requires_merchandise_from_single_location": "Leveringsmetoden for deling krever at hver enkelt varelinje sendes fra ett sted."
       },
       "failed_payment": {
         "page_title": "Betalingen kunne ikke behandles",
@@ -879,6 +890,55 @@
         "payment": {
           "payment_options": "Vis alle betalingsalternativer"
         }
+      },
+      "general": {
+        "breadcrumb": "Innholdskart",
+        "continue_button_label": "Fortsett",
+        "complete_purchase_button_label": "Fullfør bestillingen",
+        "authenticate_purchase_button_label": "Bekreft identiteten for betaling",
+        "all_rights_reserved": "Alle rettigheter forbeholdt %{shop_name}",
+        "cart": "Handlekurv",
+        "close_modal_label": "Lukk",
+        "close_notice_label": "Lukk",
+        "continue_to_shipping_method": "Fortsett med frakt",
+        "continue_to_payment_method": "Fortsett med betaling",
+        "continue_to_review": "Se bestillingen",
+        "back_to_cart": "Gå tilbake til handlekurven",
+        "back_to_contact_information": "Gå tilbake til informasjonen",
+        "back_to_shipping_method": "Returner til frakt",
+        "back_to_payment_method": "Gå tilbake til betaling",
+        "choose_shipping_method": "Velg fraktmetode",
+        "choose_payment_method": "Velg betalingsmetode",
+        "choose_billing_address": "Velg fakturaadresse",
+        "contact_us_html": "Kontakt oss for mer informasjon",
+        "autocomplete_title": "Anbefalinger",
+        "autocomplete_single_item": "1 produkt tilgjengelig",
+        "autocomplete_multi_item": "Det finnes {{number}} produkter",
+        "autocomplete_close": "Lukk forslagene",
+        "checkout_context": {
+          "step_one": "%{shop_name} - Betaling"
+        },
+        "continue_to_payment_plans_button_label": "Fortsett til betalingsplanene",
+        "back_button_label": "Gå tilbake",
+        "choose_delivery_strategy": "Velg leveringsmetode",
+        "autocomplete_zero_item": "Ingen produkter",
+        "autocomplete_powered_by_google": "Støttet av {{brandName}}",
+        "dates": {
+          "months": {
+            "february": "Februar",
+            "april": "Nissan",
+            "august": "August",
+            "december": "Desember"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Vis forrige måned, {{month}} {{year}}",
+          "show_next_month": "Vis neste måned, {{month}} {{year}}",
+          "range_start": "Begynnelsen av desember",
+          "in_range": "I desember",
+          "range_end": "Slutten av desember"
+        },
+        "confirm_order_button_label": "Bekreft bestillingen"
       }
     }
   },
