@@ -177,7 +177,12 @@
         "facebook": "فيسبوك",
         "pinterest": "بينتيريست",
         "instagram": "إنستغرام",
-        "snapchat": "سناب شات"
+        "snapchat": "سناب شات",
+        "twitter": "إكس (تويتر)",
+        "tumblr": "تمبلر",
+        "youtube": "يوتيوب",
+        "vimeo": "فيميو",
+        "tiktok": "تيك توك"
       }
     },
     "continue_shopping": "تابع التسوق",
@@ -206,6 +211,71 @@
       "next_slide": "اسحب إلى اليمين",
       "previous_slide": "اسحب للخلف",
       "name": "منزلق"
+    }
+  },
+  "newsletter": {
+    "label": "البريد الإلكتروني",
+    "success": "شكراً لاشتراكك",
+    "button_label": "اشترك"
+  },
+  "onboarding": {
+    "product_title": "عنوان المنتج النموذجي",
+    "collection_title": "اسم مجموعتك"
+  },
+  "products": {
+    "facets": {
+      "apply": "تطبيق",
+      "clear": "مسح",
+      "clear_all": "إزالة الكل",
+      "from": "الأدنى",
+      "filter_and_sort": "تصفية وترتيب",
+      "filter_by_label": "مرشح:",
+      "filter_button": "تصفية",
+      "filters_selected": {
+        "one": "{{ count }} تم الاختيار",
+        "other": "{{ count }} تم الاختيار"
+      },
+      "max_price": "أعلى سعر: {{ price }}",
+      "product_count": {
+        "one": "{{ count }}/{{ product_count }} منتج",
+        "other": "{{ count }}/{{ product_count }} منتج"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتج"
+      },
+      "reset": "إعادة تعيين",
+      "sort_button": "رتب",
+      "sort_by_label": "معيار الترتيب:",
+      "clear_filter": "إزالة الفلتر",
+      "filter_selected_accessibility": "{{ type }} (تم اختيار {{ count }} فلتر)",
+      "show_more": "عرض المزيد",
+      "show_less": "عرض أقل",
+      "filter_and_operator_subtitle": "مطابقة الكل"
+    }
+  },
+  "localization": {
+    "country_label": "البلد/المنطقة",
+    "language_label": "ديل",
+    "update_language": "تحديث اليوم",
+    "update_country": "تحديث معلومات البلد/المنطقة",
+    "search": "عرب",
+    "popular_countries_regions": "الدول/المناطق الشعبية",
+    "country_results_count": "تم العثور على {{ count }} دولة/منطقة"
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "ها هو رصيد بطاقة الهدايا بقيمة {{ value }} لـ {{ shop }}!",
+      "subtext": "بطاقة هديتك",
+      "gift_card_code": "رمز بطاقة الهدية",
+      "shop_link": "قم بزيارة المتجر الإلكتروني",
+      "add_to_apple_wallet": "أضف إلى Apple Wallet",
+      "qr_image_alt": "رمز الاستجابة السريعة: امسح لاستخدام بطاقة الهدية",
+      "copy_code": "انسخ رمز بطاقة الهدية",
+      "expired": "انتهت صلاحيته",
+      "copy_code_success": "تم نسخ الرمز بنجاح",
+      "how_to_use_gift_card": "استخدم رمز بطاقة الهدية عبر الإنترنت أو رمز الاستجابة السريعة في المتجر",
+      "expiration_date": "تاريخ انتهاء الصلاحية: {{ expires_on }}"
     }
   }
 }
