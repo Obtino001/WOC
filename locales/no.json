@@ -1188,7 +1188,91 @@
         "qr_code": "QR-kode",
         "loading": "Laster…",
         "remove_chip": "Fjern produktet",
-        "finalize_order_accessibility_label": "Fullfør bestillingen"
+        "finalize_order_accessibility_label": "Fullfør bestillingen",
+        "skip_to_content": "Hopp til innholdet",
+        "tooltip_accessibility_label": "Mer informasjon",
+        "title": "Betalingssiden - {{shopName}}",
+        "submit_order_button_label": "Send bestilling",
+        "submit_for_review_button_label": "Send for vurdering",
+        "submit_for_review_notice_label": "Betaling blir ikke belastet før bestillingen din er gjennomgått",
+        "submit": "Send",
+        "stepper": {
+          "increase": "Økning: {{type}}",
+          "decrease": "Nedgang: {{type}}",
+          "minimum_reached": "Minimum {{value}} verdi er nådd",
+          "maximum_reached": "Maksimum {{value}}-verdi er nådd"
+        },
+        "sheet": {
+          "expand": "Utvid"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Produktet er på lager på %{count} steder nær deg",
+          "other": "Produktet er på lager på %{count} steder nær deg"
+        },
+        "cancel": "Avbryt",
+        "could_not_resolve_address": "Adressen din kunne ikke bli funnet. Prøv igjen eller bruk en annen adresse.",
+        "location_address_search_label": "Adresse",
+        "all_stores_far_away": {
+          "title": "Avstanden til nærmeste sted er over %{distance}",
+          "description": "Velg et sted eller %{ship_to_address_link}",
+          "ship_to_address_link": "adresse levering",
+          "change_location_link": "Endre posisjonen din",
+          "title_with_specific_location": "Den nærmeste lokasjonen der produktet ditt er, er %{distance} lenger unna enn %{location}",
+          "title_with_item": {
+            "one": "Den nærmeste lokasjonen der produktet ditt er, er %{distance} lenger unna enn %{location}",
+            "other": "Den nærmeste plasseringen med produktene dine er %{distance} lenger unna enn %{location} plasseringen"
+          }
+        },
+        "location_address_search_placeholder": "%{postal_code_label} eller adresse",
+        "location_closest": "Nærmeste sted der produktet ditt er tilgjengelig",
+        "location_information_far_away": {
+          "one": "Du har %{count} plasseringer med produktet ditt",
+          "other": "Du har %{count} plasseringer med produktet ditt"
+        },
+        "location_nearby": {
+          "one": "Det er %{count} steder i nærheten hvor produktet ditt finnes",
+          "other": "Det er %{count} steder i nærheten hvor produktet ditt finnes"
+        },
+        "location_nearby_short": {
+          "one": "Nær %{count} steder hvor produktet ditt er tilgjengelig",
+          "other": "Nær %{count} steder hvor produktet ditt er tilgjengelig"
+        },
+        "location_far_away": {
+          "one": "Dine %{count} lokasjoner med produktet",
+          "other": "Dine %{count} lokasjoner med produktet"
+        },
+        "location_closest_one_item": "Nærmeste sted der produktet ditt finnes",
+        "location_closest_other_items": "Nærmeste sted der produktene dine er tilgjengelige",
+        "location_information_far_away_one_item": {
+          "one": "Produktet ditt finnes på %{count} steder",
+          "other": "Produktet ditt finnes på %{count} steder"
+        },
+        "location_information_far_away_other_items": {
+          "one": "Du har %{count} steder der produktene dine er tilgjengelige",
+          "other": "Du har %{count} steder der produktene dine er tilgjengelige"
+        },
+        "location_nearby_one_item": {
+          "one": "Det finnes %{count} nærliggende steder der produktet ditt er tilgjengelig",
+          "other": "Det finnes %{count} nærliggende steder der produktet ditt er tilgjengelig"
+        },
+        "location_nearby_other_items": {
+          "one": "Det finnes %{count} nærliggende steder der produktene dine er tilgjengelige",
+          "other": "Det finnes %{count} nærliggende steder der produktene dine er tilgjengelige"
+        },
+        "location_nearby_short_one_item": {
+          "one": "%{count} nærliggende steder der produktet ditt finnes",
+          "other": "%{count} nærliggende steder der produktet ditt finnes"
+        },
+        "location_far_away_one_item": {
+          "one": "Produktet ditt er tilgjengelig på %{count} steder",
+          "other": "Produktet ditt er tilgjengelig på %{count} steder"
+        },
+        "location_far_away_other_items": {
+          "one": "Dine produkter er på %{count} steder",
+          "other": "Dine produkter er på %{count} steder"
+        }
       }
     }
   },
