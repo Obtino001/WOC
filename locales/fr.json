@@ -2260,7 +2260,62 @@
         "default_description": "Expédié sous 1 jour ouvrable",
         "back": "Âgé",
         "choose_new_address": "Choisissez une nouvelle adresse",
-        "delivery_to": "Destinataire de la livraison :"
+        "delivery_to": "Destinataire de la livraison :",
+        "no_rates_for_cart_or_destination_notice": "Votre panier ou votre adresse ne disposent d'aucune méthode de livraison disponible.",
+        "no_pickup_location_notice": "Au moins un de vos produits n'est pas éligible à la livraison.",
+        "no_rates_for_country_notice": "Pour cette adresse, les frais de livraison n'ont pas pu être déterminés.",
+        "no_rates_contact_notice": "Pour plus d'informations, contactez-nous",
+        "estimated_delivery_date": {
+          "one": "%{count} jours ouvrables"
+        },
+        "shipping_line_phone_label": "Numéro de téléphone portable (obligatoire)",
+        "shipping_line_phone": "Votre coursier peut utiliser ce numéro pour vous contacter.",
+        "other_method": {
+          "zero": "Il n'y a pas d'autre méthode",
+          "one": "Il y a %{count} autres méthodes à ce prix :",
+          "other": "Il existe %{count} autres méthodes à partir de ce prix :"
+        },
+        "shipping_line_delivery_phone": "Votre livraison peut faire l'objet de mises à jour et vous être communiquée.",
+        "optional_shipping_line_delivery_instructions_label": "Instructions de livraison (facultatif)",
+        "shipping_line_delivery_phone_label": "Numéro de téléphone portable",
+        "shipping_line_delivery_instructions": "Saisissez les informations nécessaires telles que le numéro de porte ou les instructions de livraison.",
+        "one_time_purchase_shipping": "Livraison unique",
+        "estimated_delivery_time": "Délai de livraison estimé : %{time}",
+        "estimated_delivery_time_range": "Délai de livraison estimé : %{min_time}–%{max_time}",
+        "estimated_time": "Date estimée : %{time}",
+        "estimated_time_range": "Délai estimé %{min_time}–%{max_time}",
+        "duties_and_taxes_title": "Taxes et droits de douane",
+        "shipping_information_required_notice": "Les informations de livraison sont obligatoires. {{link}}.",
+        "shipping_information_redirect_link": "Entrez vos informations ici",
+        "loading_progressive_rates": "Recherche d'autres frais…",
+        "no_other_methods_available": "Il n'y a pas d'autre méthode",
+        "duties_and_taxes_options": {
+          "ddu_caption": "Des frais supplémentaires peuvent s'appliquer",
+          "ddp_caption": "Pas de frais supplémentaires à la livraison"
+        },
+        "shipping_address_title": "Adresse de livraison",
+        "invalid_shipping_method_summary": "Geçerli bir teslimat adresi girin ve kullanılabilir kargo yöntemlerini görüntüleyin.",
+        "method_summary": {
+          "incomplete_address_entered": "Kargo adresini eksiksiz girerek kullanılabilir kargo yöntemlerini görüntüleyin.",
+          "incomplete_address_selected": "Kullanılabilir kargo yöntemlerini görüntülemek için eksiksiz bir kargo adresi seçin"
+        },
+        "local_pickup": {
+          "search_address": "Rechercher une adresse",
+          "rollup_title": "Lieu de réception",
+          "rollup_accessibility_label": "Options de lieu de livraison"
+        },
+        "missing_shipping_address": "Adresse de livraison manquante",
+        "shipping_method_first_shipment_group_title": {
+          "other": "Premier envoi"
+        },
+        "pre_order_ships_now": "Envoyer maintenant",
+        "pre_order_ships_later": "Envoyé plus tard",
+        "pre_order_ships_date": "sera envoyé le %{date}",
+        "prime_not_available": {
+          "default": "La livraison Prime n'est pas disponible pour votre commande. Vos options de livraison ont été mises à jour."
+        },
+        "shipping_address_rollup_accessibility_label": "Options d'adresse de livraison",
+        "invalid_shipping_method_summary_selected": "Faites le choix d'une autre adresse de livraison pour voir les méthodes d'expédition disponibles."
       },
       "session_errors": {
         "session_not_unique": "Une erreur s'est produite lors du traitement de votre commande. Actualisez cette page pour retourner à la boutique.",

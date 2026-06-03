@@ -2246,7 +2246,41 @@
             "other": "Muiden %{count} toimitusten toimituskulu per toimitus on %{shipping_price}"
           },
           "prepaid_free_shipping_with_cycles": {
-            "one": "Ensimmäiselle %{cycle} ilmaiset toimituskulut, sen jälkeen %{recurring_order_shipping_price}"
+            "one": "Ensimmäiselle %{cycle} ilmaiset toimituskulut, sen jälkeen %{recurring_order_shipping_price}",
+            "other": "Ensimmäiselle %{cycle} ilmaiset toimituskulut, sen jälkeen %{recurring_order_shipping_price}"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "other": "joka %{count} päivä kerran"
+            },
+            "week": {
+              "other": "joka %{count} viikko"
+            },
+            "month": {
+              "other": "joka %{count} kuukausi"
+            },
+            "year": {
+              "other": "joka %{count}. vuosi"
+            }
+          },
+          "prepaid_shipping_price_label": "Toimituskohtaisesti %{shipping_price} x %{delivery_interval_count}",
+          "shipping_price_included": "Koska",
+          "subscription_free_with_frequency_label": "Ilmainen toimitus (%{delivery_frequency})",
+          "prepaid_order_one_cycle": {
+            "one": "Muiden %{count} toimitusten hinta on %{shipping_price}",
+            "other": "Toinen %{shipping_price} toimitusta varten %{count} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} toimitusta varten %{shipping_price}",
+            "other": "%{count} toimitusta varten %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "Muiden %{count} toimitusten hinta on %{shipping_price}, sen jälkeen %{recurring_order_shipping_price}",
+            "other": "Muiden %{count} toimitusten hinta %{shipping_price} (%{per_delivery_cost}), sen jälkeen %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} toimitusta varten %{shipping_price}, sen jälkeen %{recurring_order_shipping_price}",
+            "other": "%{count} toimitusta varten %{shipping_price} (%{per_delivery_cost}), sen jälkeen %{recurring_order_shipping_price}"
           }
         },
         "shipping_used_as_billing_notice": "Tätä osoitetta käytetään myös kyseisen tilauksen voimassa olevana laskutusosoitteena.",
@@ -2266,7 +2300,27 @@
         "split_shipping_option_lowest_price": "Alin hinta",
         "split_shipping_option_custom": "Erityinen",
         "split_shipping_shipment_notice": "Tilauksesi saapuu %{quantity_shipments} erässä",
-        "split_shipping_first_shipment_notice": "Ensimmäinen tilauksesi saapuu %{quantity_shipments} erässä"
+        "split_shipping_first_shipment_notice": "Ensimmäinen tilauksesi saapuu %{quantity_shipments} erässä",
+        "title": "Kargo",
+        "waiting_on_rate_notice": "Saatavilla olevat rahtimaksut haetaan…",
+        "waiting_on_pickup_location_notice": "Sopivia noutopaikkoja haetaan...",
+        "subscription_shipping": "Tilauksen lähetys",
+        "subscription_local_delivery": "Tilauksen yhteydessä paikallinen toimitus",
+        "subscription_pickup": "Toimitus sisältyy tilaukseen",
+        "two_day_delivery": "Toimitus 2 päivässä (%{time})",
+        "unbranded_default_description": "Valmis lähetettäväksi",
+        "third_party_address_timeout": "Osoitteita ei voi ladata. Yritä uudelleen tai käytä toista osoitetta.",
+        "third_party_address_error": "Osoitteen valinnassa tapahtui virhe. Syötä osoitteesi manuaalisesti alle.",
+        "third_party_payment_timeout": "Maksutapoja ei voitu ladata. Yritä uudelleen tai käytä toista maksutapaa.",
+        "third_party_payment_error": "Maksutavan valinnan latauksessa tapahtui virhe. Käytä toista maksutapaa.",
+        "unbranded_description_same_day": "Lähetetään samana työpäivänä",
+        "unbranded_description_with_fulfillment_days": {
+          "other": "Toimitetaan %{count} työpäivän kuluessa"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Lähetetään %{count} viikon kuluessa",
+          "other": "Lähetetään %{count} viikon kuluessa"
+        }
       },
       "session_errors": {
         "session_not_unique": "Tilaustasi käsiteltäessä ilmeni ongelma. Päivitä tämä sivu palataksesi kauppaan.",
@@ -2280,6 +2334,18 @@
           "one": "Tämä tilaus lähetetään osoitteeseen, jonka on toimittanut {{merchant}}.",
           "other": "Tämä tilaus lähetetään osoitteeseen, jonka {{merchant}} on toimittanut. Valitse toimitusosoite."
         }
+      },
+      "shipping_errors": {
+        "shipping_method": "Tilauksesi toimitusvaihtoehdot ovat muuttuneet. Tarkista valintasi.",
+        "shipping_method_not_available": "Ostoskori päivitetty. Ostoskoriin lisäämiäsi tuotteita ei voida toimittaa osoitteeseesi. Poista nämä tuotteet ostoskorista viimeistelläksesi tilauksesi.",
+        "shipping_method_not_available_generic": {
+          "one": "Tilauksesi ei voi toimitettavaksi valittuun osoitteeseen. Tarkista osoite varmistaaksesi, että se on oikein, ja yritä uudelleen tai valitse eri osoite."
+        },
+        "payment_method_not_supported": "Et voi käyttää tätä maksutapaa %{country} varten. Käytä toista maksutapaa lähettääksesi tähän maahan.",
+        "empty_state": "Syötä toimitusosoitteesi nähdäksesi sopivat toimitustavat.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Ostoskoriin lisätyt tuotteet eivät täytä hinnan tai painon vaatimuksia toimitusta varten. Päivitä ostoskori ja yritä uudelleen.",
+        "invalid_selected_address": "Valittu toimitusosoite ei ole voimassa",
+        "invalid_selected_address_with_update_link": "Valittu toimitusosoite ei ole voimassa. %{update_address_link} tai valitse eri osoite"
       }
     }
   }

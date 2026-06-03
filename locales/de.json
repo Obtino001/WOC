@@ -2259,7 +2259,66 @@
           "default": "Prime-Lieferung ist für Ihre Bestellung nicht verfügbar. Ihre Versandoptionen wurden aktualisiert."
         },
         "shipping_address_rollup_accessibility_label": "Lieferadresse Optionen",
-        "invalid_shipping_method_summary_selected": "Um die verfügbaren Versandmethoden anzuzeigen, wählen Sie eine andere Lieferadresse aus"
+        "invalid_shipping_method_summary_selected": "Um die verfügbaren Versandmethoden anzuzeigen, wählen Sie eine andere Lieferadresse aus",
+        "shipping_method_title": "Versandart",
+        "shipping_rate_discounted_amount": "Vorheriger Betrag: %{original_amount}. Aktueller Betrag: %{amount}",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "Für %{count} Lieferung",
+            "other": "Für %{count} Lieferung"
+          },
+          "multiple_subscriptions_shipping_price_label": "Lieferung pro Bestellung %{shipping_price}",
+          "initial_order_discounted": "Die erste Versandkostenpauschale beträgt %{discounted_shipping_cost}, danach %{frequency_description}",
+          "first_order_shipping_price_included": "Erste Bestellung inklusive, danach %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (pro Lieferung %{per_delivery_price}), danach %{recurring_order_shipping_price}",
+          "free_shipping_cycles": {
+            "one": "Für weitere %{count} Lieferungen kostenloser Versand",
+            "other": "Für weitere %{count} Lieferungen kostenloser Versand"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Kostenloser Versand für %{count} Lieferungen",
+            "other": "Kostenloser Versand für %{count} Lieferungen"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Kostenloser Versand für weitere %{count} Lieferungen, danach %{recurring_order_shipping_price}",
+            "other": "Kostenloser Versand für weitere %{count} Lieferungen, danach %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Kostenloser Versand für %{count} Lieferungen, danach %{recurring_order_shipping_price}",
+            "other": "Kostenloser Versand für %{count} Lieferungen, danach %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Für weitere %{count} Lieferungen %{shipping_price}",
+            "other": "Für weitere %{count} Lieferungen beträgt die Versandkosten pro Lieferung %{shipping_price}"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} Lieferungen für %{shipping_price}",
+            "other": "Für weitere %{count} Lieferungen beträgt die Versandkosten pro Lieferung %{shipping_price}"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Kostenloser Versand für den ersten %{cycle}, danach %{recurring_order_shipping_price}"
+          }
+        },
+        "shipping_used_as_billing_notice": "Diese Adresse wird auch als Ihre gültige Rechnungsadresse für die betreffende Bestellung verwendet.",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Wiederholte Lieferung",
+          "other": "Wiederholte Sendungen"
+        },
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} weitere Stück",
+        "split_shipping_merchandise_shipment_number": "Fracht %{number}/%{total}",
+        "split_shipping_multiple_shipment_label": "Mehrere Sendungen",
+        "split_shipping_shipping_label": "Methode",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} Fracht",
+        "split_shipping_multiple_shipment_notice": "Ihre Bestellung wird in mehreren Sendungen geliefert.",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Ihre Bestellung wird mit %{quantity} Sendungen geliefert",
+        "split_shipping_more_shipping_options": "Andere Versandoptionen",
+        "split_shipping_shipment_number": "Fracht %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Anzahl: %{quantity}",
+        "split_shipping_option_free": "Kostenloser Versand",
+        "split_shipping_option_custom": "Speziell",
+        "split_shipping_shipment_notice": "Ihre Bestellung wird in %{quantity_shipments} Lieferungen erfolgen",
+        "split_shipping_first_shipment_notice": "Ihre erste Bestellung wird in %{quantity_shipments} Lieferungen erfolgen",
+        "shipping_method_rollup_accessibility_label": "Versandarten Optionen"
       },
       "session_errors": {
         "session_not_unique": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite, um zum Geschäft zurückzukehren.",
