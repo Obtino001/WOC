@@ -1290,8 +1290,72 @@
           "shipping_credential_py": "CI/RUC/TVA",
           "shipping_credential_pt": "NIF/TVA",
           "shipping_credential_tw": "Numéro d'identification nationale/TVA",
-          "shipping_credential_tr": "Numéro d'identification de la République de Turquie/TVA"
+          "shipping_credential_tr": "Numéro d'identification de la République de Turquie/TVA",
+          "tax_credential_it": "Code fiscal (facultatif)",
+          "tax_email_it": "PEC (optionnel)",
+          "tax_credential_type_co": "Type de Cédula",
+          "tax_credential_ec": "CI/RUC/TVA",
+          "tax_credential_gt": "NIF/TVA",
+          "tax_credential_my": "Numéro TIN/Sicil",
+          "tax_credential_type_mx": "Régime fiscal",
+          "tax_credential_use_mx": "Utilisation de CFDI",
+          "tax_credential_py": "CI/RUC/TVA",
+          "tax_credential_pt": "NIF/TVA",
+          "tax_credential_tr": "Numéro d'identification de la République de Turquie/TVA"
         }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "N'envoyez-moi pas d'e-mails concernant les actualités et les offres",
+        "unsubscribe": {
+          "title": "Vous avez annulé votre abonnement",
+          "description": "Vous ne recevrez plus de rappel de panier de notre part."
+        },
+        "accept_sms_checkbox_label": "Envoyez-moi un SMS concernant les actualités et les offres",
+        "sms": {
+          "disclaimer": {
+            "terms_of_service": "Conditions de service",
+            "description_html": "En vous inscrivant par SMS, vous acceptez de recevoir des messages marketing automatiques répétés au numéro de téléphone fourni, y compris des rappels de panier. L'accord n'est pas une condition d'achat. Pour vous désabonner, envoyez \"STOP\". Pour obtenir de l'aide, envoyez \"HELP\". La fréquence des messages peut varier. Des frais de message et de données peuvent s'appliquer. Consultez nos documents %{privacy_policy_link} et %{terms_of_service_link}.",
+            "description_transactional_html": "Vous pouvez recevoir des SMS concernant la confirmation de commande et les mises à jour de livraison. Répondez STOP pour vous désabonner. Répondez HELP pour obtenir de l'aide. La fréquence des messages peut varier. Des frais de message et de données peuvent s'appliquer. Veuillez consulter nos documents %{privacy_policy_modal_link} et %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Numéro de téléphone portable",
+          "get_offers_by_text": "Recevez les offres par SMS"
+        },
+        "post_accept_marketing_checkbox_label": "Vous vous êtes abonné pour recevoir des nouvelles et des offres par e-mail",
+        "pending_accept_marketing_checkbox_label": "Pour confirmer votre abonnement aux actualités et offres, veuillez vérifier votre e-mail.",
+        "accept_shop_pay_marketing_checkbox_label": "S'inscrire pour recevoir des nouvelles et des offres de ce magasin"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Examinez :",
+          "link_label": "Conditions générales de {{partnerDisplayName}}"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "Avant de finaliser le paiement, veuillez vérifier vos coordonnées."
+      },
+      "merchant_instruction_errors": {
+        "duplicate_variant_id": "%{position} %{name} la directive contient un identifiant de variante %{variant_id} dupliqué.",
+        "discount_not_supported": "Appliquer la réduction de la boutique, cette instruction du vendeur ne prend pas en charge ce type de réduction."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Ce produit ne peut pas être expédié à l'emplacement %{location_name}.",
+          "some_products_other": "Ces produits ne peuvent pas être expédiés à l'emplacement %{location_name}.",
+          "all_products_one": "Le produit dans votre panier ne peut pas être expédié à l'emplacement %{location_name}.",
+          "all_products_other": "Les articles dans votre panier ne peuvent pas être expédiés à l'emplacement %{location_name}."
+        },
+        "indeterminate_location_fallback": "votre position",
+        "change_address_only": "Pour continuer, modifiez l'adresse de livraison.",
+        "change_address_or_remove": "Modifiez l'adresse de livraison ou %{remove_action}.",
+        "empty_cart_action": "vider le panier et retourner au magasin",
+        "remove_items_action": {
+          "one": "Retirez le produit inapproprié",
+          "other": "retirez les produits non conformes"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "L'adresse n'est pas prise en charge dans l'abonnement actuel.",
+        "items_split_across_locations_unsupported": "La livraison Prime n'est pas disponible pour votre commande. Vos options de livraison ont été mises à jour."
       }
     }
   }

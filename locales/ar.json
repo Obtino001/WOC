@@ -1163,6 +1163,78 @@
         "location_far_away_other_items": {
           "one": "المواقع %{count} التي تتواجد فيها منتجاتك",
           "other": "المواقع %{count} التي تتواجد فيها منتجاتك"
+        },
+        "toggle_location": "تغيير الموقع",
+        "or": "أو",
+        "your_location": "موقعك",
+        "search_button": "ابحث عن المتاجر",
+        "no_stores_found": "المتجر غير موجود",
+        "paginator": {
+          "accessibility_label": "تجزئة صفحة استلام الطلب من المتجر",
+          "previous": "الصفحة السابقة",
+          "next": "الصفحة التالية",
+          "label": {
+            "one": "من %{count} متجر من %{first} - %{last}",
+            "other": "من %{count} متجر من %{first} - %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "عرض %{count} موقعًا آخر",
+          "other": "عرض %{count} موقعًا آخر"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "الموقع المحدد مسبقًا لم يعد متاحًا",
+          "description": "اختر موقعًا جديدًا أو %{ship_to_address_link}",
+          "ship_to_address_link": "أرسل إلى العنوان"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "أرسل منتجاتك",
+          "search_elsewhere": "ابحث في مكان آخر",
+          "ship_items_or_search_elsewhere": "%{ship_items} أو %{search_elsewhere}"
+        },
+        "toggle_multiple_locations": "أكثر من %{count} موقعًا",
+        "toggle_more_locations": {
+          "one": "%{count} موقع إضافي",
+          "other": "%{count} موقع إضافي"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "لا يوجد موقع لمنتجك",
+          "other": "لا يوجد موقع لمنتجاتك"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "لا يوجد موقع يحتوي على منتجك داخل %{country}",
+          "other": "لا يوجد موقع يحتوي على منتجك داخل %{country}"
+        },
+        "title": "الموقع",
+        "location_nearby_short_other_items": {
+          "one": "المواقع القريبة التي تحتوي على %{count} من منتجاتك",
+          "other": "المواقع القريبة التي تحتوي على %{count} من منتجاتك"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "tax_credential_br": "رقم التعريف الضريبي/رقم التسجيل التجاري",
+          "shipping_credential_br": "رقم التعريف الضريبي/رقم التسجيل التجاري",
+          "shipping_credential_kr": "الرمز الجمركي الشخصي",
+          "shipping_credential_cn": "رقم هوية المواطن",
+          "tax_credential_cl": "روت",
+          "shipping_credential_cl": "روت",
+          "tax_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة",
+          "shipping_credential_co": "بطاقة الهوية/ضريبة القيمة المضافة",
+          "shipping_credential_type_co": "نوع البطاقة",
+          "tax_credential_cr": "رقم الهوية / RUT",
+          "shipping_credential_cr": "رقم الهوية / RUT",
+          "shipping_credential_ec": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "shipping_credential_gt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "shipping_credential_id": "رقم التعريف الضريبي الوطني (NPWP)",
+          "shipping_credential_my": "رقم التعريف الضريبي / السجل التجاري",
+          "shipping_credential_mx": "RFC",
+          "shipping_credential_py": "CI/رقم التسجيل الضريبي/ضريبة القيمة المضافة",
+          "shipping_credential_pe": "رقم الهوية الوطنية / رقم التسجيل الضريبي / شهادة الإقامة",
+          "shipping_credential_pt": "الرقم الضريبي / ضريبة القيمة المضافة",
+          "shipping_credential_es": "رقم الهوية الوطنية / رقم التعريف الضريبي",
+          "shipping_credential_tw": "الرقم الوطني/ضريبة القيمة المضافة",
+          "shipping_credential_tr": "رقم الهوية/ضريبة القيمة المضافة لجمهورية تركيا"
         }
       }
     }
