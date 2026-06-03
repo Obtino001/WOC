@@ -419,7 +419,23 @@
       "inventory_out_of_stock_continue_selling": "Stokta",
       "product_variants": "Produktvarianter",
       "duties_included": "Inkludert tollavgifter.",
-      "duties_and_taxes_included": "Skatter og tollavgifter inkludert."
+      "duties_and_taxes_included": "Skatter og tollavgifter inkludert.",
+      "sold_out": "Utsolgt",
+      "unavailable": "Ute av bruk",
+      "vendor": "Selger",
+      "video_exit_message": "{{ title }} åpner fullskjermvideo i samme vindu.",
+      "xr_button": "Se i ditt eget område",
+      "xr_button_label": "Se i ditt område; produktet lastes i et vindu for utvidet virkelighet",
+      "view_full_details": "Vis alle detaljer",
+      "value_unavailable": "{{ option_value }} - Kan ikke brukes",
+      "variant_sold_out_or_unavailable": "Varianten er utsolgt eller utilgjengelig",
+      "sku": "SKU",
+      "volume_pricing": {
+        "title": "Prisfastsettelse basert på bulkinnkjøp",
+        "note": "Volumbasert prising kan være tilgjengelig",
+        "price_at_each_html": "{{ price }}/stykk"
+      },
+      "taxes_included": "Skatter inkludert."
     },
     "modal": {
       "label": "Mediegalleri"
@@ -447,6 +463,56 @@
       "copy_code_success": "Kode kopiert vellykket",
       "how_to_use_gift_card": "Bruk gavekortkoden online eller i butikken med QR-kode",
       "expiration_date": "Sona erme dato: {{ expires_on }}"
+    }
+  },
+  "shopify": {
+    "attributes": {
+      "email": "e-post",
+      "password": "ordet",
+      "password_confirmation": "Passordbekreftelse",
+      "first_name": "annonse",
+      "last_name": "etternavn",
+      "body": "kropp",
+      "signature": "Adresse"
+    },
+    "addresses": {
+      "zip_code": "Postnummer",
+      "postal_code": "Postnummer",
+      "postcode": "Postnummer",
+      "pincode": "PIN-kode",
+      "region": "Område",
+      "prefecture": "Kaymakamlık",
+      "province": "Fylke",
+      "state": "Eyalet",
+      "state_and_territory": "Provins/region",
+      "county": "Distrikt",
+      "emirate": "Emirat",
+      "governorate": "Fylkesmannsembetet",
+      "confirm": "Er du sikker på at du vil slette denne adressen?"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} rabatt er brukt"
+    },
+    "challenge": {
+      "message": "Vennligst bekreft at du ikke er en robot for å fortsette.",
+      "error": "Svaret ditt er ikke riktig, vennligst prøv igjen."
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Jeg vil sende dette som en gave",
+      "email_label": "Kjøpers e-postadresse",
+      "email": "E-post",
+      "name_label": "Mottakers navn (valgfritt)",
+      "name": "Annonse",
+      "message_label": "Melding (valgfritt)",
+      "message": "Melding",
+      "max_characters": "Maksimum {{ max_chars }} tegn",
+      "email_label_optional_for_no_js_behavior": "Kjøperens e-post (valgfritt)",
+      "send_on": "YYYY-AA-DD",
+      "send_on_label": "Send på denne datoen (valgfritt)",
+      "expanded": "Gavekortmottakerens skjema er utvidet",
+      "collapsed": "Gavekortmottakerens skjema er redusert"
     }
   }
 }
