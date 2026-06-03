@@ -894,13 +894,61 @@
         "autocomplete_powered_by_google": "Tuotettu {{brandName}}:n toimesta",
         "dates": {
           "months": {
-            "april": "Nissan"
+            "april": "Nissan",
+            "march": "Martti",
+            "october": "Ekim"
+          },
+          "weekdays": {
+            "sunday": "Markkinat"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Ma-to",
+            "tuesday": "Sa",
+            "wednesday": "Se",
+            "thursday": "Pe",
+            "friday": "Kupari",
+            "saturday": "Ct",
+            "sunday": "Pz"
           }
         },
         "datepicker": {
           "range_start": "Joulukuun alku",
           "in_range": "Joulukuun aikana",
           "range_end": "Joulukuun loppu"
+        },
+        "error_page_title": "Hata",
+        "errors": {
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Yrityksen yhteyshenkilöllä ei ole pääsyä yritykseen.",
+            "customer_account_required": "Jatkaaksesi sinun täytyy kirjautua sisään.",
+            "contact_info_does_not_match_customer_account": "Yhteystietojen on vastattava kirjautumasi tilin tietoja.",
+            "phone_number_does_not_match_expected_pattern": "Määritetty puhelinnumero ei vastaa odotettua mallia.",
+            "email_required": "Tilauksen tekemiseen tarvitaan sähköpostiosoite.",
+            "email_domain_is_invalid": "Määriteltyä verkkotunnusta ei voi ratkaista.",
+            "missing_contact_method": "Kelvollista yhteystapaa ei ole.",
+            "checkout_completion_target_is_missing": "Ei maksutavoitetta.",
+            "customer_profile_access_restricted": "Ei oikeutta päästä käsiksi Ödemenin asiakasprofiiliin.",
+            "checkout_completion_target_is_invalid_proc": "Virheellinen maksun suorittamistavoite.",
+            "company_location_required": "Asiakkaan on valittava yrityksen sijainti jatkaakseen.",
+            "lost_access_to_company": "Asiakas menetti pääsynsä kaikkiin yrityksiin.",
+            "company_purchase_permission_required": "Asiakkaalla ei ole lupaa tehdä yritystilausta.",
+            "personal_order_not_allowed": "Tälle kaupalle ei sallita henkilökohtaisia tilauksia."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Tässä maksussa vähittäismyyntiyhdistämistä ei sallita.",
+            "retail_attribution_required": "Tälle maksulle vaaditaan vähittäismyyntisuhde."
+          },
+          "captcha": {
+            "metadata_missing": "Tämän maksun suorittamiseksi Captcha on täytettävä.",
+            "metadata_mismatch": "Toimitettu captcha-palveluntarjoaja ja tyyppi eivät vastaa odotettuja arvoja.",
+            "job_enqueue_failed": "Captcha-varmennusta ei voitu laittaa jonoon.",
+            "job_already_queued": "Captcha-tarkistus on jo jonotettu tälle Captcha-tunnisteelle.",
+            "token_expired": "Nykyisen captcha-tunnisteen voimassaoloaika on päättynyt. Jatkaaksesi maksutapahtumaa, suorita uusi Captcha."
+          }
+        },
+        "dropzone": {
+          "invalid_file_type": "Tiedostotyyppi ei ole tuettu",
+          "dragged_over": "Vedä ja pudota ladattava tiedosto"
         }
       }
     }
