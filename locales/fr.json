@@ -1232,6 +1232,65 @@
         "location_far_away_other_items": {
           "one": "Les %{count} emplacements où se trouvent vos produits",
           "other": "Les %{count} emplacements où se trouvent vos produits"
+        },
+        "toggle_location": "Changer la position",
+        "your_location": "Votre position",
+        "search_button": "Trouver les magasins",
+        "no_stores_found": "Magasin introuvable",
+        "paginator": {
+          "accessibility_label": "Pagination de la collecte en magasin",
+          "label": {
+            "one": "%{count} magasins de %{first} à %{last}",
+            "other": "%{count} magasins de %{first} à %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Afficher les %{count} autres emplacements",
+          "other": "Afficher les %{count} autres emplacements"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "L'emplacement sélectionné précédemment n'est plus disponible",
+          "description": "Sélectionnez un nouvel emplacement ou %{ship_to_address_link}",
+          "ship_to_address_link": "envoyez à l'adresse"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "Envoyez vos produits",
+          "search_elsewhere": "cherchez ailleurs"
+        },
+        "toggle_multiple_locations": "%{count}+ emplacements de plus",
+        "toggle_more_locations": {
+          "one": "%{count} emplacement(s) de plus",
+          "other": "%{count} emplacement(s) de plus"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Aucun emplacement pour votre produit",
+          "other": "Aucun emplacement pour vos produits"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Il n'y a pas d'emplacement pour votre produit dans %{country}",
+          "other": "Il n'y a pas d'emplacement pour votre produit dans %{country}"
+        },
+        "location_nearby_short_other_items": {
+          "one": "%{count} emplacements proches où se trouvent vos produits",
+          "other": "%{count} emplacements proches où se trouvent vos produits"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_kr": "Code Douanier Personnel",
+          "shipping_credential_cn": "Numéro d'identité nationale",
+          "tax_credential_co": "Carte d'identité/TVA",
+          "shipping_credential_co": "Carte d'identité/TVA",
+          "shipping_credential_type_co": "Type de Cédula",
+          "tax_credential_cr": "Numéro d'identification/RUT",
+          "shipping_credential_cr": "Numéro d'identification/RUT",
+          "shipping_credential_ec": "CI/RUC/TVA",
+          "shipping_credential_gt": "NIF/TVA",
+          "shipping_credential_my": "Numéro TIN/Sicil",
+          "shipping_credential_py": "CI/RUC/TVA",
+          "shipping_credential_pt": "NIF/TVA",
+          "shipping_credential_tw": "Numéro d'identification nationale/TVA",
+          "shipping_credential_tr": "Numéro d'identification de la République de Turquie/TVA"
         }
       }
     }

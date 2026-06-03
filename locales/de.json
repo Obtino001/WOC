@@ -1124,7 +1124,85 @@
           }
         },
         "loading": "Wird geladen…",
-        "remove_chip": "Produkt entfernen"
+        "remove_chip": "Produkt entfernen",
+        "skip_to_content": "Zum Inhalt springen",
+        "title": "Zahlungsseite - {{shopName}}",
+        "submit_order_button_label": "Bestellung absenden",
+        "submit_for_review_button_label": "Zur Überprüfung einsenden",
+        "submit_for_review_notice_label": "Ihre Zahlung wird erst erhoben, wenn Ihre Bestellung überprüft wurde",
+        "submit": "Senden",
+        "stepper": {
+          "increase": "Anstieg: {{type}}",
+          "decrease": "Abnahme: {{type}}",
+          "minimum_reached": "Mindestwert von {{value}} erreicht",
+          "maximum_reached": "Maximaler Wert von {{value}} erreicht"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Das Produkt ist in %{count} nahegelegenen Standorten auf Lager.",
+          "other": "Das Produkt ist in %{count} nahegelegenen Standorten auf Lager."
+        },
+        "cancel": "Abbrechen",
+        "could_not_resolve_address": "Ihre Adresse konnte nicht gefunden werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Adresse.",
+        "all_stores_far_away": {
+          "title": "Die Entfernung zum nächstgelegenen Standort beträgt über %{distance}",
+          "description": "Wählen Sie einen Standort oder %{ship_to_address_link}",
+          "ship_to_address_link": "Adresse senden",
+          "change_location_link": "Ändern Sie Ihren Standort",
+          "title_with_specific_location": "Der nächstgelegene Standort Ihres Produkts ist %{distance} weiter entfernt als der Standort %{location}",
+          "title_with_item": {
+            "one": "Der nächstgelegene Standort Ihres Produkts ist %{distance} weiter entfernt als der Standort %{location}",
+            "other": "Der nächstgelegene Standort mit Ihren Produkten ist %{distance} weiter entfernt als der Standort %{location}"
+          }
+        },
+        "location_closest": "Der nächstgelegene Standort, an dem sich Ihr Produkt befindet",
+        "location_information_far_away": {
+          "one": "Ihr Produkt ist an %{count} Standorten verfügbar",
+          "other": "Ihr Produkt ist an %{count} Standorten verfügbar"
+        },
+        "location_nearby": {
+          "one": "In der Nähe Ihres Produkts gibt es %{count} Standorte",
+          "other": "In der Nähe Ihres Produkts gibt es %{count} Standorte"
+        },
+        "location_nearby_short": {
+          "one": "Ihr Produkt ist bald an %{count} Standorten verfügbar",
+          "other": "Ihr Produkt ist bald an %{count} Standorten verfügbar"
+        },
+        "location_far_away": {
+          "one": "Ihr Produkt ist an %{count} Standorten verfügbar",
+          "other": "Ihr Produkt ist an %{count} Standorten verfügbar"
+        },
+        "location_closest_one_item": "Der nächstgelegene Standort Ihres Produkts",
+        "location_closest_other_items": "Der nächstgelegene Standort, an dem sich Ihre Produkte befinden",
+        "location_information_far_away_one_item": {
+          "one": "Ihr Produkt ist an %{count} Standorten verfügbar",
+          "other": "Ihr Produkt ist an %{count} Standorten verfügbar"
+        },
+        "location_information_far_away_other_items": {
+          "one": "Sie haben %{count} Standorte mit Ihren Produkten",
+          "other": "Sie haben %{count} Standorte mit Ihren Produkten"
+        },
+        "location_nearby_one_item": {
+          "one": "Ihr Produkt ist an %{count} nahegelegenen Standorten verfügbar",
+          "other": "Ihr Produkt ist an %{count} nahegelegenen Standorten verfügbar"
+        },
+        "location_nearby_other_items": {
+          "one": "Es gibt %{count} nahegelegene Standorte, an denen sich Ihre Produkte befinden",
+          "other": "Es gibt %{count} nahegelegene Standorte, an denen sich Ihre Produkte befinden"
+        },
+        "location_nearby_short_one_item": {
+          "one": "Ihr Produkt ist an %{count} nahegelegenen Standorten verfügbar",
+          "other": "Ihr Produkt ist an %{count} nahegelegenen Standorten verfügbar"
+        },
+        "location_far_away_one_item": {
+          "one": "Ihr Produkt befindet sich an %{count} Standorten",
+          "other": "Ihr Produkt befindet sich an %{count} Standorten"
+        },
+        "location_far_away_other_items": {
+          "one": "Ihre Produkte befinden sich an %{count} Standorten",
+          "other": "Ihre Produkte befinden sich an %{count} Standorten"
+        }
       }
     }
   }
