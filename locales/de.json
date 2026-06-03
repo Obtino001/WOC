@@ -954,7 +954,69 @@
             "metadata_mismatch": "Der angegebene Captcha-Anbieter und -Typ stimmen nicht mit den erwarteten Werten überein.",
             "job_enqueue_failed": "Die Captcha-Überprüfung konnte nicht in die Warteschlange gestellt werden.",
             "job_already_queued": "Captcha-Überprüfung, dieses Captcha-Token wurde bereits in die Warteschlange gestellt.",
-            "token_expired": "Der aktuelle Captcha-Token ist abgelaufen. Bitte schließen Sie einen neuen Captcha ab, um mit der Zahlung fortzufahren."
+            "token_expired": "Der aktuelle Captcha-Token ist abgelaufen. Bitte schließen Sie einen neuen Captcha ab, um mit der Zahlung fortzufahren.",
+            "token_missing": "Diese Zahlung erfordert ein Captcha-Token zur Bestätigung.",
+            "token_invalid": "Der bereitgestellte Captcha-Token ist ungültig. Bitte vervollständigen Sie ein neues Captcha, um mit der Zahlung fortzufahren.",
+            "token_not_valid_for_session": "Der bereitgestellte Captcha kann für diese Zahlung nicht verwendet werden."
+          },
+          "line_item_limit_reached": "Die maximale Anzahl der Zeilenelemente wurde erreicht.",
+          "merchandise": {
+            "bundle_products_not_supported_for_b2b": "Paketierte Produkte können an diesem Standort nicht zu B2B-Bestellungen hinzugefügt werden.",
+            "gift_card_quantity_mismatch": "Beim Angeben der Geschenkkartencodes muss die Anzahl der Zeilenelemente mit der Anzahl der Geschenkkartencodes übereinstimmen.",
+            "gift_card_not_supported": "Geschenkkarten werden bei dieser Zahlung nicht unterstützt.",
+            "gift_card_not_unique": "In dieser Zahlung erscheint die Geschenkkarte mit dem Code {{code}} mehr als einmal. Die Codes werden vor dem Vergleich formatiert.",
+            "gift_card_used": "{{code}} Geschenkkartencode wurde bereits einer Geschenkkarte zugewiesen. Codes werden vor dem Vergleich formatiert.",
+            "gift_card_invalid": "Der {{code}} Geschenkkartencode ist ungültig.",
+            "gift_card_code_changed": "Der Geschenkkartencode {{proposed_code}} wurde zur Einhaltung der Formatierungsregeln in {{formatted_code}} geändert.",
+            "gift_card_with_attributes_not_supported": "Für diese Zahlung werden Geschenkkarten mit benutzerdefinierten Funktionen nicht unterstützt.",
+            "duplicated_stable_id": "Diese Warenzeile hat dieselbe stabile ID wie eine andere Zeile.",
+            "bundle_requires_components": "In diesem Paket sind keine Komponenten enthalten.",
+            "combined_listing_parent_not_purchasable": "Die zusammengeführte Liste der Hauptprodukte kann nicht direkt gekauft werden."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Im Warenkorb darf nur eine Versandzeile vorhanden sein.",
+            "wrong_number_of_delivery_lines": "Für jede Farbgruppe muss eine Lieferzeile angegeben werden.",
+            "external_delivery_promise_error": "Fehler beim Erfassen der externen Lieferverpflichtung.",
+            "options_instructions_invalid": "Die angegebenen Anweisungen stimmen nicht mit dem erwarteten Modell überein.",
+            "destination_address_required": "Fortfahren erfordert eine Lieferadresse.",
+            "pickup_points_unavailable": "Abholstellen sind derzeit nicht verfügbar.",
+            "local_pickup_delivery_line_detail_changed": "Um fortzufahren, muss die Abholstrategie im aktuellen Geschäft geändert werden.",
+            "local_pickup_no_delivery_strategy_available": "Verfügbare Abholstrategie im Geschäft nicht vorhanden.",
+            "origin_location_id_required": "Für die Anforderung der Liefermethode PERAKENDE ist eine Herkunftsort-ID erforderlich.",
+            "invalid_origin_location_id": "Mit der Herkunftspositions-ID konnte kein Standort gefunden werden.",
+            "origin_location_id_not_allowed": "Die angeforderten Liefermethoden unterstützen die Herkunftsort-ID nicht.",
+            "auto_fulfill_not_allowed": "Diese Sitzung ist nicht berechtigt, das Versandverhalten zu überschreiben.",
+            "auto_fulfill_required": "PERAKENDE-Liefermethode wurde angefordert, automatische Versand ist erforderlich.",
+            "prefetch_shipping_rates_used": "Vorab bezahlte Versandkosten dürfen niemals erstattet werden.",
+            "fulfillment_constraints_not_satisfied": "Eine oder mehrere Versandbeschränkungen wurden nicht erfüllt.",
+            "must_fulfill_from_constraint_not_satisfied": "Da die Produkte nicht von den erforderlichen Standorten versendet werden können, werden die Versandbeschränkungen nicht erfüllt.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Da die Produkte nicht vom gleichen Standort versendet werden können, werden die Versandbeschränkungen nicht erfüllt.",
+            "delivery_strategy_conditions_not_satisfied": "Für diesen Standort sind Lieferstrategien vorhanden, aber die Bedingungen werden nicht erfüllt.",
+            "out_of_stock_at_origin_location": "Am Ursprungsort nicht auf Lager.",
+            "invalid_signature": "Ungültige Rabatt-Signatur.",
+            "selected_pickup_option_no_longer_available": "Die zuvor ausgewählte Abholoption ist nicht mehr verfügbar.",
+            "mixed_destination_countries": "Die Lieferung ist nicht möglich, da die Lieferpositionen mehrere Länder umfassen."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B-Geschäften sind Rabatte nicht erlaubt.",
+            "custom_discount_not_honoured": "Der gewährte Sonderrabatt wurde nicht angewendet.",
+            "unsupported_expectation": "Die angegebene Rabattzeile enthielt eine Erwartung, die von der Richtlinie nicht interpretiert werden konnte.",
+            "additional_requested_discount_code_discarded": "{{code}} ist gültig, kann aber nicht angewendet werden. Bitte überprüfen Sie die Rabattbedingungen.",
+            "allocations_mismatch": "Ihr Rabattcode wurde geändert. Überprüfen Sie Ihren Warenkorb und versuchen Sie es erneut.",
+            "discount_title_too_long": "Der Rabatt-Titel darf nicht länger als 255 Zeichen sein.",
+            "additional_requested_discount_discarded": "Ihr Rabatt ist gültig, kann jedoch nicht angewendet werden. Bitte überprüfen Sie die Rabattbedingungen.",
+            "mixed_destination_countries": "Da die Lieferpositionen mehrere Länder umfassen, können keine Rabatte angewendet werden."
+          },
+          "inventory": {
+            "missing_quantity_value": "Im Inventar des Empfängers fehlt das Mengenfeld.",
+            "changing_behavior_not_allowed": "Dieser Client hat keine Berechtigung, das Inventarverhalten zu ändern.",
+            "only_one_inventory_behavior_allowed": "Derzeit ist pro Zahlung nur ein Inventarverhalten erlaubt."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Der erhaltene Betrag muss in der Währung des Geschäfts sein."
+          },
+          "checkout_source": {
+            "revoked": "Diese Zahlung ist nicht mehr verfügbar."
           }
         },
         "dropzone": {
