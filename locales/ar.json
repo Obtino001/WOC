@@ -386,7 +386,89 @@
     },
     "challenge": {
       "message": "يرجى التأكيد على أنك لست روبوتًا للمتابعة.",
-      "error": "إجابتك غير صحيحة، يرجى المحاولة مرة أخرى."
+      "error": "إجابتك غير صحيحة، يرجى المحاولة مرة أخرى.",
+      "submit_button_text": "أرسل"
+    },
+    "checkout": {
+      "contact": {
+        "address_title": "العنوان",
+        "address1_label": "العنوان",
+        "address2_label": "شقة، شقة سكنية إلخ.",
+        "city_label": "مدينة",
+        "change_company_location_link_label": "غيّر موقع الشركة",
+        "change_location_link_label": "تغيير الموقع",
+        "available_addresses_label": "العناوين الحالية"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "الدفع السريع",
+        "or": "أو",
+        "show_more_options": "عرض المزيد من الخيارات",
+        "hide_more_options": "إخفاء الخيارات الأخرى",
+        "or_pay_another_way": "ادفع بطريقة مختلفة كبديل",
+        "or_check_out_another_way": "كبديل، قم بالدفع بطريقة مختلفة",
+        "or_pay_with_credit_card": "كبديل، ادفع باستخدام بطاقة الائتمان"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "سيتم خصم مبلغ %{amount} من بطاقة الائتمان الخاصة بك",
+        "payment_total_label": "إجمالي الدفع",
+        "change_currency_link": "تغيير العملة إلى %{currency_name}",
+        "card_provider_fx_charges_warning": "مزود بطاقتك قد يفرض عليك رسومًا على معاملات %{currency_code}.",
+        "currency_not_supported_by_shop": "العملة التي اخترتها لم تعد متوفرة. جميع الأسعار الآن بـ %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "تم تحديث سلة التسوق الخاصة بك بناءً على بلد وصول الشحنة.",
+        "cart_and_currency_updated_based_on_country": "تم تحديث سلة التسوق وعملة الدفع وفقًا لبلد وصول الشحنة.",
+        "currency_updated_for_country": "تم تحديث العملة لـ %{country}"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "تم تحديث بلدك/منطقتك. أدخل عنوان الشحن للمتابعة في عملية الدفع."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "حدثت مشكلة أثناء معالجة طلبك. يرجى التواصل مع صاحب المتجر."
+      },
+      "captcha": {
+        "title": "للمتابعة، يرجى إكمال CAPTCHA",
+        "errors": {
+          "not_solved": "للمتابعة، يرجى إكمال CAPTCHA"
+        }
+      },
+      "billing": {
+        "billing_address_title": "عنوان الفاتورة:",
+        "same_as_shipping": "نفس عنوان الشحن",
+        "add_address": "استخدم عنوانًا مختلفًا",
+        "edit": "تعديل",
+        "delete": "سيل",
+        "address_more": "المزيد من الإجراءات لهذا العنوان",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان من حسابك؟",
+        "address_form": {
+          "add_address": "أضف عنوانًا",
+          "save": "حفظ",
+          "cancel": "إلغاء"
+        },
+        "billing_address_rollup_accessibility_label": "خيارات الفوترة"
+      },
+      "company_location": {
+        "location_title": "موقع الشركة",
+        "location_rollup_accessibility_label": "خيارات موقع الشركة"
+      },
+      "clipboard": {
+        "copied": "تم النسخ",
+        "failed_to_copy": "لم يتم النسخ"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "حدثت مشكلة أثناء معالجة طلبك. يرجى المحاولة مرة أخرى بعد بضع دقائق."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "لم يعد لديك إذن لتقديم طلب B2B. لتقديم طلب شخصي، يرجى %{logout_url}.",
+        "log_out_link_text": "تسجيل الخروج",
+        "lost_permissions_subtitle": "لم يعد لديك إذن لتقديم طلبات B2B. قم بتسجيل الخروج لتقديم طلب فردي.",
+        "lost_permissions_title": "لا يوجد إذن للموقع"
+      },
+      "address_management": {
+        "saved_with_store": "مسجل في هذا المتجر"
+      }
     }
   },
   "recipient": {

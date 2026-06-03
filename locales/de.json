@@ -560,6 +560,72 @@
     "challenge": {
       "message": "Bitte bestätigen Sie, dass Sie kein Roboter sind, um fortzufahren.",
       "error": "Ihre Antwort ist nicht korrekt, bitte versuchen Sie es erneut."
+    },
+    "checkout": {
+      "contact": {
+        "address2_label": "Apartment, Wohnung usw.",
+        "change_company_location_link_label": "Firmenstandort ändern",
+        "change_location_link_label": "Position ändern",
+        "available_addresses_label": "Vorhandene Adressen"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Schnelle Zahlung",
+        "show_more_options": "Mehr Optionen anzeigen",
+        "hide_more_options": "Andere Optionen ausblenden",
+        "or_pay_another_way": "Alternativ auf eine andere Weise bezahlen",
+        "or_check_out_another_way": "Alternativ können Sie eine andere Zahlungsmethode wählen",
+        "or_pay_with_credit_card": "Alternativ können Sie mit Kreditkarte bezahlen"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Von Ihrer Kreditkarte wird ein Betrag von %{amount} abgebucht.",
+        "payment_total_label": "Gesamtsumme der Ödeme",
+        "change_currency_link": "In %{currency_name} umrechnen",
+        "card_provider_fx_charges_warning": "Ihr Kartenanbieter kann Ihnen Gebühren für Transaktionen in %{currency_code} berechnen.",
+        "currency_not_supported_by_shop": "Die von Ihnen gewählte Währung ist nicht mehr verfügbar. Alle Preise sind jetzt in %{currency_code} angegeben."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Ihr Warenkorb wurde je nach Zielland für den Versand aktualisiert.",
+        "cart_and_currency_updated_based_on_country": "Ihr Warenkorb und Ihre Währung wurden entsprechend dem Zielland der Lieferung aktualisiert.",
+        "currency_updated_for_country": "Währung für %{country} wurde aktualisiert"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Ihr Land/Ihre Region wurde aktualisiert. Bitte geben Sie Ihre Lieferadresse ein, um mit der Zahlung fortzufahren."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Bei der Bearbeitung Ihrer Anfrage ist ein Problem aufgetreten. Bitte kontaktieren Sie den Ladenbesitzer."
+      },
+      "captcha": {
+        "title": "Um fortzufahren, vervollständigen Sie bitte das CAPTCHA",
+        "errors": {
+          "not_solved": "Um fortzufahren, vervollständigen Sie bitte das CAPTCHA"
+        }
+      },
+      "billing": {
+        "billing_address_title": "Rechnungsadresse:",
+        "same_as_shipping": "Mit derselben Lieferadresse",
+        "delete": "Sil",
+        "address_more": "Für diese Adresse weitere Aktionen",
+        "address_confirm": "Sind Sie sicher, dass Sie diese Adresse aus Ihrem Konto löschen möchten?",
+        "address_form": {
+          "cancel": "Abbrechen"
+        },
+        "billing_address_rollup_accessibility_label": "Abrechnungsoptionen"
+      },
+      "company_location": {
+        "location_title": "Firmenstandort",
+        "location_rollup_accessibility_label": "Unternehmensstandortoptionen"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten. Bitte versuchen Sie es in ein paar Minuten erneut."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Sie haben keine Berechtigung mehr, B2B-Bestellungen aufzugeben. Um eine persönliche Bestellung aufzugeben, verwenden Sie %{logout_url}.",
+        "lost_permissions_subtitle": "Sie haben keine Berechtigung mehr, B2B-Bestellungen aufzugeben. Bitte melden Sie sich ab, um eine Einzelbestellung aufzugeben.",
+        "lost_permissions_title": "Kein Standortzugriff erlaubt"
+      },
+      "address_management": {
+        "saved_with_store": "In diesem Geschäft registriert"
+      }
     }
   }
 }
