@@ -2312,10 +2312,22 @@
           "ship_items_to": {
             "one": "سيتم إرسال %{count} منتج إلى هنا",
             "other": "سيتم إرسال %{count} منتج إلى هنا"
-          }
+          },
+          "shipping_address_title": "عنوان الشحن:",
+          "shipping_method_title": "طريقة الشحن"
         },
         "block_title": "راجع معلوماتك",
-        "account_more_actions": "الإجراءات الأخرى لهذا الحساب"
+        "account_more_actions": "الإجراءات الأخرى لهذا الحساب",
+        "title": "عرض",
+        "review_title": "أكمل طلبك",
+        "checkout_as_guest": "الدفع كزائر",
+        "checkout_a_different_way": "ادفع بطريقة مختلفة",
+        "item_header": {
+          "change_value": "غيّر القيمة",
+          "section": "قسم",
+          "value": "قيمة"
+        },
+        "review_and_confirm_title": "راجع ووافق"
       },
       "redeemable_errors": {
         "gift_card": {
@@ -2355,6 +2367,56 @@
       "required_extensions": {
         "errors": {
           "interaction_required": "لإتمام عملية الدفع، يلزم تفاعل مع الامتداد."
+        }
+      },
+      "shipping": {
+        "cheapest_rate_label": "الأرخص",
+        "arrives_time": "الوصول: %{time}",
+        "arrives_time_range": "الوصول: %{min_time}–%{max_time}",
+        "delivery_today": "توصيل في نفس اليوم (%{time})",
+        "delivery_tomorrow": "التوصيل في اليوم التالي (%{time})",
+        "delivery": "التسليم (%{time})",
+        "address_update": "تحديث العنوان",
+        "add_address": "استخدم عنوانًا مختلفًا",
+        "add_delivery_instructions": "أضف تعليمات التسليم",
+        "delete": "سيل",
+        "address_more": "المزيد من الإجراءات لهذا العنوان",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان من حسابك؟",
+        "address_form": {
+          "add_address": "أضف عنوانًا",
+          "save": "حفظ",
+          "cancel": "إلغاء",
+          "generic_error": "حدثت مشكلة أثناء حفظ عنوانك. يرجى المحاولة مرة أخرى.",
+          "one_time_address_subtitle": "استخدم عنوانًا لمرة واحدة لهذا الطلب",
+          "edit": "تعديل العنوان",
+          "update": "حفظ التغييرات"
+        },
+        "different_shipping_method_summary": "أدخل عنوان شحن مختلف لعرض طرق الشحن المتاحة للاستخدام",
+        "delivery_title": "التوصيل",
+        "address_default": "تعيين كافتراضي",
+        "default_description": "يتم الشحن خلال يوم عمل واحد",
+        "back": "عودة",
+        "add_shipping_address": "أضف عنوان الشحن",
+        "choose_new_address": "اختر عنوانًا جديدًا",
+        "add_new_delivery_address": "أضف عنوان توصيل جديد",
+        "delivery_to": "مستلم التسليم:"
+      },
+      "session_errors": {
+        "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. قم بتحديث هذه الصفحة للعودة إلى المتجر.",
+        "session_already_finished": "تم شحن هذا الطلب بالفعل. يمكنك العودة إلى المتجر لإنشاء طلب جديد."
+      },
+      "review_address_modal": {
+        "title": "راجع العنوان",
+        "continue": "تابع بهذا العنوان",
+        "use_saved_address": "استخدم عنوانًا مختلفًا",
+        "return_to_cart": "العودة إلى السلة",
+        "subtitle_no_match": "هذا العنوان لا يتطابق مع أي من العناوين المسجلة لديك.",
+        "subtitle_must_use": "سيتم إرسال طلبك إلى هذا العنوان.",
+        "subtitle": {
+          "one": "سيتم إرسال هذا الطلب إلى العنوان الذي قدمه {{merchant}}.",
+          "other": "سيتم إرسال هذا الطلب إلى العنوان الذي قدمه {{merchant}}. يرجى اختيار عنوان شحن."
         }
       }
     }
