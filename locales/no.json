@@ -212,7 +212,11 @@
       "order_number": "Bestill",
       "date": "Dato",
       "fulfillment_status": "Forsendelsesstatus",
-      "none": "Du har ennå ikke lagt inn en bestilling."
+      "none": "Du har ennå ikke lagt inn en bestilling.",
+      "title": "Bestillingshistorikk",
+      "order_number_link": "Bestillingsnummer {{ number }}",
+      "payment_status": "Ødemstatus",
+      "total": "Totalt"
     },
     "order": {
       "title": "{{ name }} bestilling",
@@ -239,6 +243,78 @@
       "subtotal": "Total poengsum",
       "total_duties": "Tollavgifter",
       "total_refunded": "Refusjon er gjort"
+    },
+    "recover_password": {
+      "title": "Tilbakestill passordet ditt",
+      "subtext": "Size et e-post for å tilbakestille passordet ditt.",
+      "success": "Vi har sendt en e-post med en lenke for å oppdatere passordet ditt."
+    },
+    "register": {
+      "title": "Opprett konto",
+      "first_name": "Annonse",
+      "last_name": "Etternavn",
+      "email": "E-post",
+      "password": "Ord",
+      "submit": "Opprett"
+    },
+    "reset_password": {
+      "title": "Tilbakestill kontopassordet",
+      "subtext": "Skriv inn et nytt passord",
+      "password": "Ord",
+      "password_confirm": "Bekreft passordet",
+      "submit": "Tilbakestill passordet"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "Bruk passordet for å gå inn i butikken:",
+      "login_password_button": "Logg inn med passord",
+      "login_form_password_label": "Ord",
+      "login_form_password_placeholder": "Passordet ditt",
+      "login_form_error": "Feil passord!",
+      "login_form_submit": "Gir",
+      "admin_link_html": "Er du butikkansvarlig? <a href=\"/admin\" class=\"link underlined-link\">Logg inn her</a>",
+      "powered_by_shopify_html": "Denne butikken drives av {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Del på Facebook",
+        "share_on_twitter": "X'te deling",
+        "share_on_pinterest": "Legg til pin på Pinterest"
+      },
+      "links": {
+        "facebook": "Facebook",
+        "pinterest": "Pinterest",
+        "instagram": "Instagram",
+        "snapchat": "Snapchat"
+      }
+    },
+    "continue_shopping": "Fortsett å handle",
+    "pagination": {
+      "label": "Sideinndeling",
+      "page": "Side {{ number }}",
+      "next": "Neste side",
+      "previous": "Forrige side"
+    },
+    "search": {
+      "search": "Ara",
+      "reset": "Tøm søketermen Arama"
+    },
+    "cart": {
+      "view": "Vis handlekurv ({{ count }})",
+      "item_added": "Produktet er lagt til i handlekurven din",
+      "view_empty_cart": "Vis handlekurv"
+    },
+    "share": {
+      "copy_to_clipboard": "Kopier lenken",
+      "share_url": "Tilkobling",
+      "success_message": "Lenken er kopiert til utklippstavlen",
+      "close": "Lukk deling"
+    },
+    "slider": {
+      "next_slide": "Sveip til høyre",
+      "previous_slide": "Skyv solen",
+      "name": "Skyveknapp"
     }
   }
 }

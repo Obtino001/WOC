@@ -3297,7 +3297,59 @@
     },
     "notices": {
       "address": {
-        "created": "Adresse créée avec succès"
+        "created": "Adresse créée avec succès",
+        "error_updating": "Une erreur s'est produite lors de la mise à jour de l'adresse",
+        "error_creating": "Une erreur s'est produite lors de la création de l'adresse.",
+        "error_deleting": "Une erreur s'est produite lors de la suppression de l'adresse."
+      },
+      "customer": {
+        "password_reset_error": "Erreur de réinitialisation du mot de passe",
+        "no_account_found": "Aucun compte n'a été trouvé avec cet e-mail.",
+        "invalid_credentials": "Adresse e-mail ou mot de passe incorrect.",
+        "denylisted_reset_password": "L'accès à votre compte a été refusé car le mot de passe actuel n'est pas sécurisé. Vous recevrez un e-mail pour mettre à jour votre mot de passe.",
+        "signup_disabled": "La création de compte client a été désactivée",
+        "subscribe_error": "Erreur d'abonnement"
+      },
+      "cart": {
+        "only_n_items_available": "Vous ne pouvez ajouter que %{count} %{name} au panier.",
+        "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier.",
+        "empty_update": "le panier vide ne peut pas être mis à jour",
+        "missing_parameters": "paramètre d'identification ou de ligne valide manquant",
+        "generic_error": "Erreur de panier",
+        "too_many_line_items_error": "Votre panier peut contenir au maximum %{max} produits.",
+        "link_expired": "La durée de la connexion a expiré",
+        "link_no_longer_exists": "La connexion n'est plus disponible.",
+        "stock_problems_html": "Un ou plusieurs produits ne sont plus disponibles. Nous avons proposé un <a href='%{link}'>panier mis à jour</a>.",
+        "changed": "Le panier a changé",
+        "items_changed": "Un ou plusieurs produits ont changé.",
+        "product_sold_out": "Le produit \"%{name}\" est déjà en rupture de stock.",
+        "variant_not_found": "Aucune variation disponible",
+        "variant_requires_selling_plan": "La variation ne peut être achetée qu'avec un seul plan de vente.",
+        "shipping_address_not_required": "Cette commande ne nécessite pas de frais de port",
+        "shipping_address_invalid": "Un problème est survenu lors du calcul de vos frais de livraison. Veuillez vous rendre sur la page de paiement pour sélectionner les frais de livraison avant de finaliser votre commande.",
+        "selling_plan_not_applicable": "Le plan de vente ne peut pas être appliqué à la variation",
+        "selling_plan_not_available_for_company_locations": "Les commandes B2B ne peuvent être effectuées qu'avec un achat unique.",
+        "digital_product_not_available_for_company_locations": "Ce produit ne peut pas être ajouté à une commande B2B",
+        "product_not_available": "Produit non disponible",
+        "less_than_minimum": "Valeur minimale %{min} pour cet article.",
+        "more_than_maximum": "Valeur maximale %{max} pour cet article.",
+        "not_respect_step": "Vous ne pouvez ajouter cet article qu'en multiples de %{step}.",
+        "bundle_requires_components": "Le produit pack nommé '%{name}' ne peut pas être ajouté au panier.",
+        "gift_card_with_components_not_supported": "Le produit en paquet nommé \"%{name}\" ne peut pas être ajouté au panier.",
+        "view_lines_limit_reached": "Le nombre de lignes doit être %{limit} ou moins",
+        "merchandise_line_transformers": {
+          "run_error": "Une erreur s'est produite dans votre panier."
+        },
+        "gift_card_price_must_be_greater_than_zero": "Le produit pack nommé '%{name}' ne peut pas être ajouté au panier.",
+        "cart_too_large": "Le panier est très grand.",
+        "gift_card_recipient_validation_error": "Le destinataire de la carte cadeau spécifiée est invalide",
+        "invalid_input": "Le paramètre %{parameter} est invalide.",
+        "buyer_cannot_purchase_for_company_locations": "Vous ne pouvez pas effectuer d'achat à cet emplacement",
+        "only_one_added_to_cart": "En raison de la disponibilité en stock, un seul produit a été ajouté à votre panier.",
+        "only_n_added_to_cart": "En raison de la disponibilité en stock, seulement %{quantity} produit(s) ont été ajoutés à votre panier.",
+        "maximum_available_quantity_reached": "Votre panier contient déjà la quantité maximale de ce produit.",
+        "cart_attributes_error": "Le panier contient des données invalides.",
+        "merchandise_not_applicable": "Le produit ne peut pas être acheté dans la configuration choisie."
       }
     },
     "filters": {
