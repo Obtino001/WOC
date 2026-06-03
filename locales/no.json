@@ -928,7 +928,33 @@
             "february": "Februar",
             "april": "Nissan",
             "august": "August",
-            "december": "Desember"
+            "december": "Desember",
+            "january": "Januar",
+            "march": "Mart",
+            "may": "Mai",
+            "june": "Juni",
+            "july": "Juli",
+            "september": "September",
+            "october": "Oktober",
+            "november": "November"
+          },
+          "weekdays": {
+            "monday": "Mandag",
+            "tuesday": "Tirsdag",
+            "wednesday": "Onsdag",
+            "thursday": "Torsdag",
+            "friday": "Bare",
+            "saturday": "Lørdag",
+            "sunday": "Markedet"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Pzt",
+            "tuesday": "Så",
+            "wednesday": "Det",
+            "thursday": "Pe",
+            "friday": "Kobber",
+            "saturday": "Ct",
+            "sunday": "Pz"
           }
         },
         "datepicker": {
@@ -938,7 +964,45 @@
           "in_range": "I desember",
           "range_end": "Slutten av desember"
         },
-        "confirm_order_button_label": "Bekreft bestillingen"
+        "confirm_order_button_label": "Bekreft bestillingen",
+        "error_page_title": "Hat",
+        "edit_link_label": "Rediger",
+        "errors": {
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Kontaktpersonen i selskapet har ikke tilgang til selskapet.",
+            "customer_account_required": "Du må logge inn for å fortsette.",
+            "contact_info_does_not_match_customer_account": "Kontaktinformasjonen må samsvare med kontoen du har logget inn med.",
+            "phone_number_does_not_match_expected_pattern": "Det angitte telefonnummeret samsvarer ikke med den forventede modellen.",
+            "email_required": "Når varer kjøpes med abonnement, kreves en e-postadresse.",
+            "email_domain_is_invalid": "Den angitte domenenavnet kan ikke løses.",
+            "missing_contact_method": "Ingen gyldig kontaktmetode.",
+            "checkout_completion_target_is_missing": "Ingen mål for fullføring av ødem.",
+            "invalid_customer_profile": "Ugyldig kundeprofil oppgitt.",
+            "customer_profile_access_restricted": "Ingen tilgang til kundens profil for ødem.",
+            "checkout_completion_target_is_invalid_proc": "Ugyldig mål for fullføring av betaling.",
+            "company_location_required": "Kunden må velge en bedriftslokasjon for å fortsette.",
+            "lost_access_to_company": "Kunden mistet tilgangen til alle selskapene.",
+            "company_purchase_permission_required": "Kunden har ikke tillatelse til å legge inn bedriftsbestillinger.",
+            "personal_order_not_allowed": "Personlige bestillinger er ikke tillatt for denne butikken.",
+            "buyer_identity_presentment_currency_does_not_match": "Det oppstod et problem under behandlingen av bestillingen din. Vennligst prøv igjen om noen minutter."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Detaljhandelstilknytning er ikke tillatt i denne betalingen.",
+            "retail_attribution_required": "Denne betalingen krever tilknytning til detaljhandel."
+          },
+          "captcha": {
+            "metadata_missing": "Denne betalingen krever at en Captcha fullføres.",
+            "metadata_mismatch": "Den angitte captcha-leverandøren og typen samsvarer ikke med de forventede verdiene.",
+            "job_enqueue_failed": "Captcha-verifiseringen kunne ikke settes i kø.",
+            "job_already_queued": "Captcha-verifisering er allerede satt i kø for denne Captcha-tokenen.",
+            "token_expired": "Den nåværende captcha-tokenen har utløpt. Fullfør en ny Captcha for å fortsette betalingsprosessen."
+          }
+        },
+        "dropzone": {
+          "add_file": "Legg til fil",
+          "invalid_file_type": "Filtypen støttes ikke",
+          "dragged_over": "Dra og slipp filen som skal lastes opp"
+        }
       }
     }
   },
