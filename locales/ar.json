@@ -1289,7 +1289,11 @@
       },
       "merchant_instruction_errors": {
         "duplicate_variant_id": "تعليمات المنتج %{position} %{name} تحتوي على معرف تكرار التباين %{variant_id}.",
-        "discount_not_supported": "تطبيق خصم المنتج تعليمات البائع لا تدعم هذا النوع من الخصم."
+        "discount_not_supported": "تطبيق خصم المنتج تعليمات البائع لا تدعم هذا النوع من الخصم.",
+        "empty_stable_id": "تعليمات مال %{position} %{name} تحتوي على معرف ثابت فارغ.",
+        "invalid_stable_id_target": "تعليمات البضاعة %{position} %{name} تشير إلى الهوية الثابتة %{stable_id}، ومع ذلك هذه الهوية الثابتة غير موجودة في أسطر البضاعة.",
+        "invalid_variant_id_target": "تعليمات البضاعة %{name} تشير إلى معرف التغيير %{variant_id}، ولكن هذا التغيير غير موجود في خطوط البضاعة.",
+        "invalid_price_override_target": "عنصر السطر %{stable_id} غير صالح لتعليمات تجاوز السعر لأنه جزء من مكون الحزمة."
       },
       "merchandise_unavailable_in_buyer_location": {
         "banner_title": {
@@ -1312,6 +1316,78 @@
       "memberships": {
         "delivery_promise_unfulfillable": "العنوان غير مدعوم في العضوية الحالية.",
         "items_split_across_locations_unsupported": "لا يمكن استخدام توصيل Prime لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+      },
+      "notifications": {
+        "title": "الإشعارات"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "شروط وأحكام البائع المسجل",
+        "privacy_policy": "سياسة خصوصية البائع المسجل"
+      },
+      "no_address_location": {
+        "title": "موقع بدون عنوان",
+        "header": "لا يوجد عنوان شحن لهذا الموقع",
+        "message": "إذا كنت ترغب في إكمال الدفع بإضافة عنوان لهذا الموقع، يرجى التواصل معنا.",
+        "email_us_button_label": "أرسل لنا بريدًا إلكترونيًا",
+        "alt_header": "لا يوجد عنوان شحن"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "العودة إلى السلة",
+        "return_to_cart_to_update_quantities": "لتحديث الكميات %{return_to_cart_link_text}",
+        "subscription_changed": "تم تغيير إحدى اشتراكاتك.",
+        "company_location_changed": "تم تحديث سلتك. يرجى مراجعة طلبك قبل التأكيد.",
+        "violations_title": "{{violation}} ناقص أو غير صالح",
+        "individual_violations_title": {
+          "DeliveryViolations": "عنوان الشحن",
+          "PaymentViolations": "عنوان الفاتورة",
+          "OtherViolations": "معلومات الطلب",
+          "UnhandledViolations": "معلومات الطلب"
+        },
+        "all_violations_content": "يمكنك الاتصال بنا أو إرسال {{emailLink}} لتحديث هذه المعلومات وإكمال طلبك:",
+        "all_violations_email_link": "البريد الإلكتروني",
+        "editable_shipping_address_violations_message_title": "لإكمال طلبك، أضف هذه المعلومات:",
+        "editable_shipping_address_violations_message_footer": "لتغيير عنوان هذا الموقع بشكل دائم، يرجى استخدام {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "اتصل بنا",
+        "company_location_changed_product_removed": "نظرًا لعدم توفر بعض المنتجات في هذا الموقع، تم تحديث سلة التسوق الخاصة بك. يرجى مراجعة طلبك قبل التأكيد.",
+        "shipping_address_incomplete_title": "عنوان الشحن مفقود",
+        "calculating_shipping": "يتم حساب الشحن حاليًا. يرجى المحاولة مرة أخرى بعد قليل. لم يتم تحصيل أي رسوم منك.",
+        "calculating_taxes": "عملية حساب الضرائب جارية. حاول مرة أخرى بعد قليل. لم يتم تحصيل أي رسوم منك.",
+        "generic_processing_error": {
+          "title": "حدثت مشكلة أثناء معالجة طلبك",
+          "body": "لم يتم تحصيل أي رسوم منك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة."
+        },
+        "contact_information": {
+          "title": "معلومات الاتصال غير صالحة",
+          "header": "لتحديث معلوماتك، {{emailLink}}.",
+          "email_link": "اتصل بنا"
+        },
+        "payment_method_not_available_with_payment_terms": "نظرًا لأن مدة سداد هذا الطلب هي {{paymentTerms}}، فإن طريقة الدفع التي اخترتها لم تعد متاحة.",
+        "payment_method_not_available_with_fulfillment_terms": "طريقة الدفع التي اخترتها لم تعد متاحة لأن فترة الدفع لهذا الطلب ستنتهي أثناء الشحن",
+        "payment_method_not_available_with_fixed_terms": "طريقة الدفع التي اخترتها لم تعد متاحة لأن فترة سداد هذا الطلب ستنتهي لاحقًا",
+        "payment_method_not_available_with_review_requirement": "طريقة الدفع التي اخترتها لم تعد متاحة لأن الدفع سيتم بعد تأكيد طلبك.",
+        "validation_errors_banner": {
+          "section_label": {
+            "delivery": "التوصيل",
+            "contact": "الاتصال",
+            "payment": "الدفع",
+            "billing": "الفوترة"
+          },
+          "heading": {
+            "one": "{{count}} خطأ موجود:",
+            "other": "{{count}} خطأ موجود:"
+          },
+          "errors_in_section": {
+            "one": "في قسم {{section}} يوجد {{count}} خطأ",
+            "other": "في قسم {{section}} يوجد {{count}} خطأ"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "قم بتقليل حجم النص إلى 5000 حرف أو أقل."
+      },
+      "offsite_payment_failed": {
+        "payment_link_expired_title": "انتهت صلاحية رابط الدفع",
+        "payment_link_expired_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى."
       }
     }
   },
