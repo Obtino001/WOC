@@ -2976,7 +2976,8 @@
         "thank_you_confirmed_orders_with_phone": "Vous recevrez bientôt des SMS de confirmation séparés avec vos numéros de commande.",
         "thank_you_confirmed_orders_with_email_and_phone": "Vous recevrez bientôt des e-mails de confirmation séparés avec vos numéros de commande.",
         "thank_you_unconfirmed_items_description": {
-          "one": "Ce produit ne vous a pas encore été facturé."
+          "one": "Ce produit ne vous a pas encore été facturé.",
+          "other": "Ces produits ne vous ont pas encore été facturés."
         },
         "thank_you_from_shop": "de la boutique %{shop_name}",
         "thank_you_item_label": {
@@ -2995,7 +2996,69 @@
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Vous recevrez un e-mail de confirmation sous peu",
           "multi_store": "Vous recevrez bientôt des e-mails de confirmation séparés de chaque magasin."
+        },
+        "title": "Merci pour votre achat !",
+        "updated_time": "mis à jour il y a %{time_ago}",
+        "unfulfilled_items_title": "En cours de préparation pour l'expédition",
+        "unfulfilled_items_description": "Nous préparons actuellement ces produits pour l'expédition.",
+        "track_shipment": "Suivre le colis",
+        "vat_invoices": {
+          "title": "Factures TVA"
+        },
+        "verify_shop_account_title": "Vérifiez votre compte Shop",
+        "verify_shop_account_message": "Vos informations ont été enregistrées avec Shop. En vérifiant votre compte, vous pouvez utiliser ces informations automatiquement dans des millions de magasins.",
+        "verify_shop_account_cta": "Vérifiez votre compte",
+        "verify_shop_account_confirmation": "Détails du paiement enregistrés",
+        "track_your_order_link_text": "Suivez votre commande",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 produit non approuvé",
+          "other": "Certains produits n'ont pas été approuvés"
         }
+      },
+      "tips": {
+        "description": "Montrez votre soutien à l'équipe dans la boutique %{shop_name}",
+        "presets_description": "Définissez un pourcentage de pourboire",
+        "custom_label": "Pourboire spécial",
+        "update_tip": "Mettez à jour le pourboire",
+        "message": "Merci.",
+        "no_tip_label": "Yok",
+        "not_available_with_spi": "Ne peut pas être utilisé avec Shop Pay Taksitli Alışveriş"
+      },
+      "throttle": {
+        "line_to_check_out": "Vous êtes en file d'attente pour le paiement",
+        "inventory": {
+          "partial_inventory_banner": "Certains produits dans votre panier sont en rupture de stock et ne peuvent pas être achetés à la page de paiement.",
+          "sold_out": {
+            "heading": "Les produits dans votre panier sont épuisés",
+            "storefront_body": "Pour continuer vos achats, retournez au magasin",
+            "no_storefront_body": "Malheureusement, le produit que vous souhaitez acheter n'est plus disponible.",
+            "link": "Retourner au magasin"
+          }
+        },
+        "title": "Queue",
+        "time_to_checkout_title": "Il est temps de payer - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Le temps d'attente estimé est en cours de calcul",
+          "less_than_one": "Temps d'attente estimé : moins d'une minute",
+          "one": "Temps d'attente estimé : {{count}} minutes",
+          "other": "Temps d'attente estimé : {{count}} minutes"
+        },
+        "last_checked": "(Contrôle du son : {{time}})",
+        "footer": {
+          "heading": "Ne rafraîchissez pas la page. La page se mettra à jour automatiquement.",
+          "body": "Les produits dans votre panier ne sont pas réservés tant que vous n'avez pas finalisé le paiement."
+        },
+        "too_many_attempts": {
+          "message": "Trop de tentatives"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "En savoir plus sur %{context}"
+      },
+      "too_many_requests": {
+        "title": "Trop de tentatives de paiement",
+        "body": "Veuillez patienter quelques minutes et réessayez depuis votre panier.",
+        "return_to_cart": "Retour au panier"
       }
     }
   }
