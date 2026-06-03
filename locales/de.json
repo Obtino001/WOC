@@ -2603,8 +2603,51 @@
               "ie": "Irische USt-Nummern bestehen aus den Buchstaben IE, gefolgt von 8-9 Zeichen",
               "it": "Italienische Mehrwertsteuernummern bestehen aus den Buchstaben IT gefolgt von 11 Zeichen",
               "es": "Spanische Mehrwertsteuernummern bestehen aus den Buchstaben ES, gefolgt von 9 Zeichen.",
-              "gb": "Die britischen Mehrwertsteuernummern bestehen aus den Buchstaben GB oder XI, gefolgt von 5-12 Zeichen."
-            }
+              "gb": "Die britischen Mehrwertsteuernummern bestehen aus den Buchstaben GB oder XI, gefolgt von 5-12 Zeichen.",
+              "lv": "Lettische USt-Nummern bestehen aus den Buchstaben LV, gefolgt von 11 Zeichen.",
+              "lt": "Litauens USt-IdNr. besteht aus den Buchstaben LT, gefolgt von 9 bis 12 Zeichen",
+              "lu": "Luxemburgische USt-Nummern bestehen aus den Buchstaben LU gefolgt von 8 Zeichen",
+              "mt": "Maltesische USt-Nummern bestehen aus den Buchstaben MT, gefolgt von 8 Zeichen",
+              "nl": "Niederländische USt-Nummern bestehen aus den Buchstaben NL, gefolgt von 12 Zeichen.",
+              "pl": "Polnische Mehrwertsteuernummern bestehen aus den Buchstaben PL, gefolgt von 10 Zeichen.",
+              "pt": "Portugiesische Mehrwertsteuernummern bestehen aus den Buchstaben PT, gefolgt von 9 Zeichen.",
+              "ro": "Rumänische USt-IdNr. bestehen aus den Buchstaben RO, gefolgt von 10 Zeichen",
+              "sk": "Die Mehrwertsteuernummern in der Slowakei bestehen aus den Buchstaben SK, gefolgt von 10 Zeichen.",
+              "si": "Slowenische USt-Nummern bestehen aus den Buchstaben SI, gefolgt von 8 Zeichen",
+              "se": "Schwedische USt-IdNr. bestehen aus den Buchstaben SE, gefolgt von 12 Zeichen"
+            },
+            "invalid_number": {
+              "at": "Geben Sie eine gültige österreichische USt-IdNr. ein",
+              "be": "Geben Sie eine gültige belgische USt-IdNr. ein",
+              "bg": "Geben Sie eine gültige bulgarische USt-IdNr. ein",
+              "hr": "Geben Sie eine gültige kroatische USt-IdNr. ein",
+              "cy": "Geben Sie eine gültige zypriotische USt-IdNr. ein",
+              "cz": "Geben Sie eine gültige tschechische USt-IdNr. ein",
+              "dk": "Geben Sie eine gültige dänische USt-IdNr. ein",
+              "ee": "Geben Sie eine gültige estnische USt-IdNr. ein",
+              "fi": "Geben Sie eine gültige finnische USt-IdNr. ein",
+              "fr": "Geben Sie eine gültige französische Umsatzsteuer-Identifikationsnummer ein",
+              "de": "Geben Sie eine gültige deutsche Umsatzsteuer-Identifikationsnummer ein",
+              "gr": "Geben Sie eine gültige griechische USt-IdNr. ein",
+              "hu": "Geben Sie eine gültige ungarische USt-IdNr. ein",
+              "ie": "Geben Sie eine gültige irische USt-IdNr. ein",
+              "it": "Geben Sie eine gültige italienische USt-IdNr. ein",
+              "lv": "Geben Sie eine gültige lettische USt-IdNr. ein",
+              "lt": "Geben Sie eine gültige litauische USt-IdNr. ein",
+              "lu": "Geben Sie eine gültige luxemburgische USt-IdNr. ein",
+              "mt": "Geben Sie eine gültige maltesische USt-IdNr. ein",
+              "nl": "Geben Sie eine gültige niederländische USt-IdNr. ein",
+              "pl": "Geben Sie eine gültige polnische USt-IdNr. ein",
+              "pt": "Geben Sie eine gültige portugiesische USt-IdNr. ein",
+              "ro": "Geben Sie eine gültige rumänische USt-IdNr. ein",
+              "sk": "Geben Sie eine gültige slowakische USt-IdNr. ein",
+              "si": "Geben Sie eine gültige slowenische USt-IdNr. ein",
+              "es": "Geben Sie eine gültige spanische USt-IdNr. ein",
+              "se": "Geben Sie eine gültige schwedische USt-IdNr. ein",
+              "gb": "Geben Sie eine gültige britische Mehrwertsteuernummer ein"
+            },
+            "service_unavailable": "Die Verifizierungsdienstleistung ist nicht verfügbar",
+            "service_error": "Die Verifizierungsdienstleistung ist nicht verfügbar"
           },
           "accessibility": {
             "status": {
@@ -2616,8 +2659,65 @@
               "service_unavailable": "KDV-Befreiung kann nicht bestätigt werden",
               "service_error": "KDV-Befreiung kann nicht bestätigt werden"
             }
-          }
+          },
+          "vaulted": "Umsatzsteuer-Identifikationsnummer: %{number}"
         }
+      },
+      "thank_you": {
+        "attempted_delivery": "Lieferversuch unternommen",
+        "attempted_delivery_title": "Für Ihre Bestellung wurde ein Zustellversuch unternommen",
+        "attempted_delivery_description_html": "Ihre Bestellung wurde zur Lieferung versucht, aber der Versuch war erfolglos. Um einen weiteren Lieferversuch zu planen, %{contact_us}.",
+        "attempted_delivery_local_title": "Lieferung verpasst",
+        "attempted_delivery_local_description_html": "Wir konnten Ihre Bestellung nicht zustellen. Um eine neue Lieferung zu planen, %{contact_us}.",
+        "announcement": {
+          "collapse": "Verengen"
+        },
+        "confirmation_email_sent_text": "Eine Bestätigungs-E-Mail wurde an %{email} gesendet",
+        "cancelled_page_title": "Bestellung wurde storniert",
+        "customer_information_title": "Bestellinformationen",
+        "contact_information_title": "Kontaktinformationen",
+        "company_tracking_number": "%{company} Sendungsverfolgungsnummer:",
+        "estimated_arrival": "Voraussichtliches Lieferdatum:",
+        "confirmed_title": "Ihre Bestellung wurde bestätigt",
+        "confirmed_description": "Wir haben Ihre Bestellung erhalten und bereiten sie vor. Für Updates zum Versandstatus kehren Sie bitte auf diese Seite zurück.",
+        "delivered": "Geliefert",
+        "delivered_title": "Ihre Bestellung wurde geliefert",
+        "delivered_description_html": "Ihre Bestellung wurde an die von Ihnen angegebene Adresse geliefert. Wenn Ihr Paket nicht bei Ihnen angekommen ist oder Sie ein anderes Problem haben, %{contact_us}.",
+        "contact_us": "Kontaktieren Sie uns",
+        "contact_us_lowercase": "Kontaktieren Sie uns",
+        "contact_us_html": "Brauchen Sie Hilfe? %{contact_us}",
+        "failure": "Nicht geliefert",
+        "failed_title": "Ihre Bestellung konnte nicht zugestellt werden",
+        "failed_contact_merchant": "Die Lieferung planen Sie, indem Sie %{company} kontaktieren.",
+        "failed_contact_merchant_no_company": "Lieferung planen Sie, indem Sie uns kontaktieren.",
+        "customer_information_hidden_fields_message": "Alle Kundeninformationen anzeigen, indem Sie sich anmelden.",
+        "cancelled_title": "Ihre Bestellung wurde storniert",
+        "cancelled_description": "Ihre Bestellung wurde am %{date} storniert. Wenn Sie Fragen haben, kontaktieren Sie uns bitte.",
+        "customer_validation_error": "Geben Sie eine gültige E-Mail-Adresse oder Bestellnummer ein.",
+        "customer_validation_error_phone": "Geben Sie eine gültige Telefonnummer oder Bestellnummer ein.",
+        "fulfillment": {
+          "fulfilled_table_title": "Die Produkte in diesem Paket",
+          "unfulfilled_table_title": "Für den Versand vorbereitete Produkte",
+          "quantity_label": "Stück"
+        },
+        "delivery_information_label": "Lieferinformationen:",
+        "delivered_local_title": "Ihre Bestellung wurde geliefert",
+        "delivered_local_description_html": "Ist Ihre Bestellung noch nicht bei Ihnen angekommen? %{let_us_know}.",
+        "gift_card_confirmation_by_email": "Wenn keine E-Mail angekommen ist, senden Sie die E-Mail erneut oder kontaktieren Sie uns.",
+        "estimated_delivery": "Voraussichtliches Lieferdatum:",
+        "breadcrumbs_in_review": "Wird überprüft",
+        "first_payment_complete": "Die erste Zahlung wurde abgeschlossen",
+        "gift_card_confirmation_by_email_typ": {
+          "one": "In wenigen Minuten erhalten Sie eine E-Mail mit Ihrer Geschenkkarte."
+        },
+        "failed_pending_payment_page_title": "Bei Ihrer Zahlung ist ein Problem aufgetreten",
+        "company_location_section_title": "Firma und Standort",
+        "confirmed_items_count": "%{total_count} Artikel, %{confirmed_count} Produkte bestätigt",
+        "checkout_on_remote_shop_link_text": "Bezahlen Sie im %{remoteShopName} Shop",
+        "confirmed_orders_title": "Ihre Bestellungen wurden bestätigt",
+        "checkout_on_another_store": "In einem anderen Geschäft bezahlen",
+        "checkout_again": "Versuche die Zahlung erneut durchzuführen",
+        "cashback_notice": "Sie erhalten Ihre Geldrückerstattung nach 30 Tagen."
       }
     }
   }

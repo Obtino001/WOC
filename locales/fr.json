@@ -2670,8 +2670,51 @@
               "ie": "Les numéros de TVA irlandais se composent des lettres IE suivies de 8 à 9 caractères.",
               "it": "Les numéros de TVA italiens se composent des lettres IT suivies de 11 caractères.",
               "es": "Les numéros de TVA espagnols se composent des lettres ES suivies de 9 caractères.",
-              "gb": "Les numéros de TVA du Royaume-Uni se composent des lettres GB ou XI suivies de 5 à 12 caractères."
-            }
+              "gb": "Les numéros de TVA du Royaume-Uni se composent des lettres GB ou XI suivies de 5 à 12 caractères.",
+              "lv": "Les numéros de TVA lettons se composent des lettres LV suivies de 11 caractères.",
+              "lt": "Les numéros de TVA lituaniens se composent des lettres LT suivies de 9 à 12 caractères.",
+              "lu": "Les numéros de TVA du Luxembourg se composent des lettres LU suivies de 8 caractères.",
+              "mt": "Les numéros de TVA de Malte se composent des lettres MT suivies de 8 caractères.",
+              "nl": "Les numéros de TVA néerlandais se composent des lettres NL suivies de 12 caractères.",
+              "pl": "Les numéros de TVA polonais se composent des lettres PL suivies de 10 caractères.",
+              "pt": "Les numéros de TVA portugais se composent des lettres PT suivies de 9 caractères.",
+              "ro": "Les numéros de TVA roumains se composent des lettres RO suivies de 10 caractères.",
+              "sk": "Les numéros de TVA en Slovaquie se composent des lettres SK suivies de 10 caractères.",
+              "si": "Les numéros de TVA slovènes se composent des lettres SI suivies de 8 caractères.",
+              "se": "Les numéros de TVA suédois se composent des lettres SE suivies de 12 caractères."
+            },
+            "invalid_number": {
+              "at": "Veuillez saisir un numéro de TVA autrichien valide",
+              "be": "Veuillez saisir un numéro de TVA belge valide",
+              "bg": "Veuillez saisir un numéro de TVA bulgare valide",
+              "hr": "Veuillez saisir un numéro de TVA croate valide",
+              "cy": "Veuillez saisir un numéro de TVA chypriote valide",
+              "cz": "Veuillez saisir un numéro de TVA tchèque valide",
+              "dk": "Veuillez saisir un numéro de TVA danois valide",
+              "ee": "Veuillez saisir un numéro de TVA estonien valide",
+              "fi": "Veuillez saisir un numéro de TVA finlandais valide",
+              "fr": "Veuillez saisir un numéro de TVA français valide",
+              "de": "Veuillez saisir un numéro de TVA allemand valide",
+              "gr": "Veuillez saisir un numéro de TVA grec valide",
+              "hu": "Veuillez saisir un numéro de TVA hongrois valide",
+              "ie": "Veuillez saisir un numéro de TVA irlandais valide",
+              "it": "Veuillez saisir un numéro de TVA italien valide",
+              "lv": "Veuillez saisir un numéro de TVA letton valide",
+              "lt": "Veuillez saisir un numéro de TVA lituanien valide",
+              "lu": "Veuillez saisir un numéro de TVA luxembourgeois valide",
+              "mt": "Veuillez saisir un numéro de TVA maltais valide",
+              "nl": "Veuillez saisir un numéro de TVA néerlandais valide",
+              "pl": "Veuillez saisir un numéro de TVA polonais valide",
+              "pt": "Veuillez saisir un numéro de TVA portugais valide",
+              "ro": "Veuillez saisir un numéro de TVA roumain valide",
+              "sk": "Veuillez saisir un numéro de TVA slovaque valide",
+              "si": "Veuillez saisir un numéro de TVA slovène valide",
+              "es": "Veuillez saisir un numéro de TVA espagnol valide",
+              "se": "Veuillez saisir un numéro de TVA suédois valide",
+              "gb": "Veuillez saisir un numéro de TVA britannique valide"
+            },
+            "service_unavailable": "Le service de vérification est indisponible",
+            "service_error": "Le service de vérification est indisponible"
           },
           "accessibility": {
             "status": {
@@ -2682,7 +2725,17 @@
               "service_unavailable": "L'exonération de TVA ne peut pas être vérifiée",
               "service_error": "L'exonération de TVA ne peut pas être vérifiée"
             }
-          }
+          },
+          "vaulted": "Numéro de TVA : %{number}"
+        }
+      },
+      "thank_you": {
+        "attempted_delivery": "Une tentative de livraison a été effectuée",
+        "attempted_delivery_title": "Une tentative de livraison a été effectuée pour votre commande",
+        "attempted_delivery_description_html": "Votre commande a fait l'objet d'une tentative de livraison, mais celle-ci a échoué. Pour planifier une nouvelle tentative de livraison, %{contact_us}.",
+        "attempted_delivery_local_description_html": "Nous n'avons pas pu livrer votre commande. Pour planifier une nouvelle livraison, %{contact_us}.",
+        "announcement": {
+          "expand": "Élargir"
         }
       }
     }
