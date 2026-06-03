@@ -3634,6 +3634,60 @@
         "cart_attributes_error": "سلة التسوق تحتوي على بيانات غير صالحة.",
         "merchandise_not_applicable": "لا يمكن شراء المنتج كما هو مُكوَّن.",
         "not_found": "لم يتم العثور على سلة التسوق"
+      },
+      "order": {
+        "not_available": "هذا الطلب غير متوفر حالياً",
+        "financial_status": {
+          "authorized": "مخول",
+          "pending": "قيد الانتظار",
+          "paid": "تم الدفع",
+          "unpaid": "لم يتم الدفع",
+          "voided": "تم إلغاؤه",
+          "partially_paid": "تم الدفع جزئيًا",
+          "partially_refunded": "تم استرداد جزء من المبلغ",
+          "refunded": "تم استرداد المبلغ",
+          "expired": "صوت سونا"
+        },
+        "fulfillment_status": {
+          "fulfilled": "تم الإرسال",
+          "complete": "اكتمل",
+          "partial": "جزئياً",
+          "unfulfilled": "لم يتم الإرسال",
+          "restocked": "تم تجديد المخزون"
+        },
+        "transaction_status": {
+          "success": "ناجح",
+          "pending": "قيد الانتظار",
+          "failure": "حتى",
+          "error": "حتى"
+        },
+        "cancel_reason": {
+          "declined": "تم رفض الدفع",
+          "inventory": "المنتجات غير متوفرة",
+          "fraud": "طلب مزيف",
+          "customer": "قام العميل بتغيير/إلغاء الطلب",
+          "other": "آخر",
+          "staff": "خطأ شخصي"
+        },
+        "cash_on_delivery": "الدفع عند الاستلام"
+      },
+      "storefront": {
+        "invalid_password": "كلمة المرور خاطئة، يرجى المحاولة مرة أخرى."
+      },
+      "tags": {
+        "add_articles": "تضييق البحث ليشمل المقالات التي تحتوي على الوسم %{tag}",
+        "add_products": "ضيق الاختيار على المنتجات التي تطابق علامة %{tag}",
+        "remove_articles": "قم بتوسيع البحث ليشمل المقالات غير الموسومة بـ %{tag}",
+        "remove_products": "قم بإزالة %{tag} العلامة"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "تمت الإضافة %{delta} قطعة",
+          "increment_item": "تمت الإضافة %{delta} قطعة",
+          "decrement_item": "تمت إزالة %{delta} من %{total} عنصرًا",
+          "decrement_fulfilled_line_item": "تم إرجاع %{delta} من %{total} قطعة",
+          "decrement_return_line_item": "تم إزالة %{delta} من الإرجاع"
+        }
       }
     },
     "filters": {
@@ -3647,6 +3701,24 @@
         "true_label": "نعم",
         "false_label": "لا"
       }
+    },
+    "page_titles": {
+      "products": "المنتجات",
+      "account": "حساب",
+      "create_account": "أنشئ حسابًا",
+      "reset_account": "إعادة تعيين الحساب",
+      "addresses": "العناوين",
+      "order": "طلب %{name}",
+      "search": "عرب",
+      "collections": "المجموعات",
+      "not_found": "٤٠٤ غير موجود",
+      "challenge": "اختبار",
+      "checkpoint": "نقطة التحكم",
+      "search_results": {
+        "one": "Arama: تم العثور على %{count} نتيجة لـ %{terms}",
+        "other": "Arama: تم العثور على %{count} نتيجة لـ %{terms}"
+      },
+      "blog_or_article_with_error": "حتى - %{title}"
     }
   },
   "recipient": {

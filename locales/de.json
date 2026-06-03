@@ -3034,7 +3034,21 @@
           },
           "missing": {
             "address1": "Adresse eingeben",
-            "address2": "Geben Sie eine Wohnung, ein Apartment usw. ein"
+            "address2": "Geben Sie eine Wohnung, ein Apartment usw. ein",
+            "first_name": "Geben Sie die Anzeige ein",
+            "last_name": "Nachnamen eingeben",
+            "city": "Stadt eingeben",
+            "province": "Wählen Sie eine Provinz/ein Bundesland aus",
+            "country": "Land/Region auswählen",
+            "zip": "Postleitzahl eingeben",
+            "phone": "Telefonnummer eingeben",
+            "billing_first_name": "Geben Sie einen Personennamen für die Rechnungsadresse ein",
+            "billing_address1": "Rechnungsadresse eingeben",
+            "billing_address2": "Geben Sie Apartment, Wohnung usw. in die Rechnungsadresse ein",
+            "billing_city": "Geben Sie die Stadt für die Rechnungsadresse ein",
+            "billing_province": "Rechtsform für die Rechnungsadresse auswählen",
+            "billing_zip": "Geben Sie die Postleitzahl der Rechnungsadresse ein",
+            "contact_info": "Geben Sie die Kontaktinformationen ein"
           },
           "formatting": {
             "name_contains_emojis": "Löschen Sie das Emoji in Ihrem Namen",
@@ -3043,14 +3057,60 @@
             "last_name_too_long": "Der Nachname enthält zu viele Buchstaben",
             "address_too_long": "Die Adresszeile ist zu lang"
           },
-          "discount_code": "Dieser Rabattcode kann nicht angewendet werden. Bitte überprüfen Sie Ihren Code und versuchen Sie es erneut."
-        }
+          "discount_code": "Dieser Rabattcode kann nicht angewendet werden. Bitte überprüfen Sie Ihren Code und versuchen Sie es erneut.",
+          "unavailable": {
+            "title": "{{walletName}} ist nicht verfügbar",
+            "description": "{{walletName}} war nicht verfügbar. Bitte verwenden Sie eine andere Zahlungsmethode oder versuchen Sie es später erneut.",
+            "instructions": "Bei {{walletName}} ist ein Problem aufgetreten. Gehen Sie zurück zum Shop, um es erneut zu versuchen, oder verwenden Sie eine andere Zahlungsmethode.",
+            "unavailable_for_country": "{{walletName}} ist in {{countryName}} nicht verfügbar. Wählen Sie eine andere Zahlungsmethode, um Ihren Kauf abzuschließen."
+          },
+          "terminal": "Bei {{walletName}} ist ein Problem aufgetreten. Bitte verwenden Sie eine andere Zahlungsmethode.",
+          "unsupported": {
+            "address": "Der Verkäufer kann an die von Ihnen gewählte Rahmenadresse nicht liefern.",
+            "wallet_is_unavailable": "{{walletName}} kann mit dieser Adresse nicht verwendet werden. Wählen Sie eine andere Adresse, um Ihren Kauf abzuschließen, oder schließen Sie die {{walletName}}-Brieftasche."
+          },
+          "outdated": {
+            "shipping_method": "Für Ihre Bestellung haben sich die Versandoptionen geändert. Bitte überprüfen Sie Ihre Auswahl.",
+            "payment_terms": "Zahlungsfristen wurden geändert. Überprüfen Sie Ihre Bestellung."
+          },
+          "select_different_shipping_address_to_resolve_errors": "Ihre Lieferadresse ist ungültig. Wählen Sie eine andere Adresse oder verwenden Sie eine neue Adresse.",
+          "unavailable_terminal": {
+            "instructions": "Für Ihre Bestellung steht {{walletName}} derzeit nicht zur Verfügung. Bitte wählen Sie eine andere Zahlungsmethode, um mit dem Kauf fortzufahren."
+          },
+          "processing_error_checkout_as_guest": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder {{checkout_as_guest_link}}.",
+          "subscription_review_required": "Ihre Bestellung enthält ein Abonnement. Bitte lesen Sie die folgenden Bedingungen, bevor Sie Ihre Bestellung abschließen."
+        },
+        "return_to_store": "Zurück zum Geschäft",
+        "redirect_hint": "Sie werden aufgefordert, sich mit Ihrem {{walletName}}-Konto anzumelden.",
+        "shipping_line_label": "Fracht",
+        "payment_in_progress_title": "Die Zahlungsabwicklung läuft weiter",
+        "payment_in_progress_body": "Ihre Zahlung wird bearbeitet. Ihre Bestellung wird in Kürze abgeschlossen.",
+        "redirection_notice": "Sie werden zur {{walletName}}-Adresse weitergeleitet, um Ihren Kauf abzuschließen.",
+        "return_to_checkout": "Zur Zahlung gehen",
+        "scrim": {
+          "continue_purchase_in_window": "Fahren Sie mit Ihrem Kaufvorgang im {{walletName}}-Fenster fort",
+          "and_return_to_checkout": "Zur Zahlungsseite zurückkehren"
+        },
+        "place_order": "Bestellen",
+        "recovery_notice": "Bei Ihren Bestelldaten ist ein Problem aufgetreten. Bitte aktualisieren Sie Ihre Informationen, um die Zahlung abzuschließen."
       },
       "units": {
         "liter": "L",
         "gallon": "Gal",
         "item": "Produkt"
       }
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Hervorgehoben",
+        "best_selling": "Bestseller",
+        "date_ascending": "Geschichte, von alt zu neu",
+        "date_descending": "Geschichte, von neu nach alt"
+      }
+    },
+    "checkpoint": {
+      "message": "Um fortzufahren, lösen Sie das Captcha.",
+      "error": "Captcha-Überprüfung fehlgeschlagen"
     }
   }
 }
