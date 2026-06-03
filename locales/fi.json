@@ -2733,7 +2733,52 @@
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Kun olet suorittanut tilauksesi, saat vahvistusviestin. Seuraa tilaustasi Shop-sovelluksella.",
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Kun olet suorittanut tilauksesi, saat vahvistusviestin. Seuraa tilaustasi Shop-sovelluksella.",
         "order_status_payments_app_failed_pending_payment_payment": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen.",
-        "order_status_payments_app_failed_pending_payment_pick_up": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen."
+        "order_status_payments_app_failed_pending_payment_pick_up": "Tililtäsi ei veloitettu maksua tilauksestasi. Palaa ostoskoriisi tarkistaaksesi tilauksesi ja suorita maksu uudelleen.",
+        "shipping_information_title": "Rahtitiedot",
+        "page_title": "Kiitos %{display_name}",
+        "shipping_address_map_title": "Google-kartta, joka näyttää tämän toimitusosoitteen tarkan sijainnin: %{address}",
+        "shipping_method_title": "Kuljetustapa",
+        "re-order": "Tilaa samat tuotteet uudelleen",
+        "thank_you_confirmed_order_with_email": "Lyhyen ajan sisällä saat vahvistussähköpostin, joka sisältää tilausnumerosi.",
+        "thank_you_confirmed_order_with_phone": "Lyhyen ajan kuluessa saat vahvistus-SMS:n, joka sisältää tilausnumerosi.",
+        "thank_you_confirmed_order_with_email_and_phone": "Saatte tilausvahvistus, jossa on tilausnumerosi.",
+        "thank_you_confirmed_order_with_missing": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "out_for_delivery_title": "Tilauksesi on lähetetty toimitettavaksi",
+        "pick_up_in_store_marker": {
+          "current": "Nykyinen lähetyksen sijainti",
+          "shipping": "Noutopaikka"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "Lähetämme sinulle sähköpostin, kun tilauksesi on valmis noudettavaksi.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Lähetämme sinulle sähköpostin, kun tilauksesi on valmis noudettavaksi.",
+        "ready_for_pickup_description": "Tilauksesi on valmis noudettavaksi. Ole hyvä ja pidä tilausvahvistuksesi valmiina noudon yhteydessä.",
+        "picked_up_title": "Tilauksesi on vastaanotettu",
+        "picked_up_description_html": "Tilauksesi vastaanotettiin %{date} päivänä %{location_name} sijainnista.",
+        "shop_phone_description": "Saat tilauksesi seurantaa varten saat tekstiviestin, joka sisältää Shop-sovelluksen linkin.",
+        "ready_for_delivery_title": "Tilauksesi on valmis toimitettavaksi",
+        "out_for_delivery_local_title": "Tilauksesi on lähetetty toimitettavaksi",
+        "out_for_delivery_local_description_html": "Tilauksesi saapuu sinulle pian.",
+        "qr_code": {
+          "title": "Seuraa puhelimestasi"
+        },
+        "thank_you_confirmed_order_with_email_payment": "Maksoit tilauksesi %{date} päivänä.",
+        "thank_you_confirmed_order_with_phone_payment": "Maksoit tilauksesi %{date} päivänä.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Maksoit tilauksesi %{date} päivänä.",
+        "shop_qr_with_sms_upsell": {
+          "sms": {
+            "title": "Vaihtoehtoisesti voit lähettää linkin puhelimeesi"
+          }
+        },
+        "thank_you_confirmed_order_with_draft": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle.",
+        "purchase_order_number_title": "Ostotilauksen numero #%{purchase_order_number}",
+        "subscriptions_management": {
+          "title": "Tilauksen tekeminen",
+          "description": "Siirry tilillesi nähdäksesi ja hallinnoidaksesi tilauksiasi.",
+          "button_label": "Hallitse tilaustasi"
+        },
+        "thank_you_confirmed_order_with_missing_payment": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Vahvistaaksesi tilauksen ota meihin yhteyttä sähköpostitse tai puhelimitse.",
+        "thank_you_confirmed_order_with_draft_payment": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Jos tarvitsemme lisätietoja tai tilauksesi vahvistetaan, ilmoitamme sinulle."
       }
     }
   }
