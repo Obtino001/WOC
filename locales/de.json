@@ -1550,7 +1550,30 @@
         },
         "tax_line": {
           "gst": "MwSt."
-        }
+        },
+        "total_label": "Insgesamt",
+        "vat_label_html": "%{amount} inklusive Steuern",
+        "total_updated_label": "Aktualisierter Gesamtpreis:",
+        "total_already_paid_label": "Zahlen",
+        "unit_price": {
+          "per_item": {
+            "single": "Jeder für %{price}",
+            "one": "%{count} Artikel %{price}",
+            "other": "%{count} Artikel %{price}"
+          }
+        },
+        "total_updated_label_with_price": "Aktualisierter Gesamtpreis: %{totalPrice}",
+        "updated_shipping_method": "Versandart aktualisiert: %{shipping_method}",
+        "total_savings": "Gesamteinsparung",
+        "view_all_items": {
+          "one": "%{count} Produkte anzeigen",
+          "other": "Alle %{count} Produkte anzeigen"
+        },
+        "total_due_today_label": "Heute zu zahlender Gesamtbetrag",
+        "total_due_later_label": "Gesamtbetrag, der später zu zahlen ist",
+        "total_due_label": "Zu zahlender Gesamtbetrag",
+        "unconfirmed_label": "Nicht genehmigt",
+        "total_paid_label": "Gesamtauszahlung"
       },
       "order_payment_collection": {
         "changes_summary": {
@@ -1590,6 +1613,36 @@
             "signature_mismatch": "In der Zeile %{stable_id} gibt es eine Unstimmigkeit bei der Produktsignatur."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_login_hint": "Sie werden aufgefordert, sich mit Ihrem Amazon-Konto anzumelden.",
+        "amazon_payments_logout": "Bei Amazon Pay abmelden",
+        "amazon_payments_failed_mfa_challenge": "Die gewählte Zahlungsmethode konnte nicht verwendet werden. Wählen Sie eine andere Methode oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
+        "amazon_payments_abandoned_mfa_challenge": "Ihre Zahlung konnte nicht abgeschlossen werden. Versuchen Sie eine andere Zahlungsmethode oder wenden Sie sich an Ihre Bank oder den Kartenaussteller.",
+        "amazon_payments_could_not_enqueue_authorize": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "amount_left_to_pay_label": "Ausstehende Zahlung:",
+        "apple_pay_payment_error": "Ihre Zahlung konnte nicht abgeschlossen werden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode.",
+        "apple": {
+          "connect": "Klicken Sie hier, um Ihr Apple Pay-Konto zu verbinden",
+          "not_available": "Apple Pay ist in diesem Browser nicht verfügbar. Um Ihr Apple Pay-Konto zu verknüpfen, müssen Sie den Safari-Browser auf einem Apple-Gerät verwenden."
+        },
+        "alternative_payment_currency_total_notice": "Hinweis: Von Ihnen werden %{amount_due} eingezogen.",
+        "add_credit_card_modal": {
+          "cancel": "Abbrechen"
+        },
+        "afterpay_label": "Kauf auf Rechnung",
+        "alternative_payment_currency_total_manual_payment_notice": "Hinweis: Umgerechneter Gesamtbetrag %{amount_due}.",
+        "bank_account_type": {
+          "checking": "Ohne Fälligkeit",
+          "savings": "Fälligkeitsdatum"
+        },
+        "bank_account_choose": "Wählen Sie ein Konto, um Ihren Kauf sicher abzuschließen",
+        "bank_account_connect_another": "Ein weiteres Bankkonto verknüpfen",
+        "bank_account_connect": "Bankkonto verknüpfen",
+        "bank_account_missing": "Ein Bankkonto muss verbunden werden",
+        "bank_account_disclaimer": "ACH-Zahlungen können bis zu 4 Werktage zur Bearbeitung benötigen.",
+        "bank_account_generic_error": "Das Bankkonto konnte nicht hinzugefügt werden. Bitte versuchen Sie es später erneut.",
+        "add_new_payment_method": "Eine neue Zahlungsmethode hinzufügen"
       }
     }
   }

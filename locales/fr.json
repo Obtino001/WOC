@@ -1597,7 +1597,26 @@
           "pst": "PST",
           "rst": "RST",
           "vpt": "VPT"
-        }
+        },
+        "vat_label_html": "%{amount} taxes comprises",
+        "total_updated_label": "Prix total mis à jour :",
+        "unit_price": {
+          "per_item": {
+            "single": "Chacun à %{price}",
+            "one": "%{count} produit(s) %{price}",
+            "other": "%{count} produit(s) %{price}"
+          }
+        },
+        "total_updated_label_with_price": "Prix total mis à jour : %{totalPrice}",
+        "updated_shipping_method": "Méthode de livraison mise à jour : %{shipping_method}",
+        "view_all_items": {
+          "one": "Afficher %{count} produits",
+          "other": "Afficher la totalité des %{count} produits"
+        },
+        "total_due_today_label": "Montant total à payer aujourd'hui",
+        "total_due_later_label": "Montant total à payer ensuite",
+        "total_due_label": "Montant total à payer",
+        "unconfirmed_label": "Non approuvé"
       },
       "order_payment_collection": {
         "changes_summary": {
@@ -1635,6 +1654,37 @@
             "signature_mismatch": "Il y a une incompatibilité de signature de produit à la ligne %{stable_id}."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_label": "Paiement Amazon",
+        "amazon_payments_login_hint": "Vous serez invité à vous connecter avec votre compte Amazon.",
+        "amazon_payments_logout": "Se déconnecter d'Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "La méthode de paiement sélectionnée n'a pas pu être utilisée. Veuillez choisir une autre méthode ou contacter votre banque ou l'émetteur de votre carte.",
+        "amazon_payments_abandoned_mfa_challenge": "Votre paiement n'a pas pu être effectué. Essayez un autre mode de paiement ou contactez votre banque ou l'émetteur de votre carte.",
+        "amazon_payments_could_not_enqueue_authorize": "Un problème est survenu lors du traitement de votre paiement. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "amount_left_to_pay_label": "Paiement reçu :",
+        "apple_pay_payment_error": "Votre paiement n'a pas pu être effectué. Veuillez réessayer ou utiliser un autre mode de paiement.",
+        "apple": {
+          "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour connecter votre compte Apple Pay, vous devez utiliser le navigateur Safari sur un appareil Apple."
+        },
+        "alternative_payment_currency_total_notice": "Note : Un montant de %{amount_due} vous sera facturé.",
+        "add_credit_card_modal": {
+          "title": "Ajouter au panier"
+        },
+        "afterpay_label": "Après-paiement",
+        "alternative_payment_currency_total_manual_payment_notice": "Note : Total converti %{amount_due}.",
+        "bank_account_type": {
+          "checking": "Sans compte courant",
+          "savings": "À terme"
+        },
+        "bank_account_choose": "Pour finaliser votre achat en toute sécurité, veuillez choisir un compte",
+        "bank_account_connect_another": "Lier un autre compte bancaire",
+        "bank_account_connect": "Liez un compte bancaire",
+        "bank_account_missing": "Le compte bancaire doit être lié",
+        "bank_account_disclaimer": "Le traitement des paiements ACH peut prendre jusqu'à 4 jours ouvrables.",
+        "bank_account_generic_error": "Le compte bancaire n'a pas pu être ajouté. Veuillez réessayer plus tard.",
+        "add_payment_method": "Ajouter un mode de paiement",
+        "add_new_payment_method": "Ajouter un nouveau mode de paiement"
       }
     }
   }
