@@ -1365,7 +1365,70 @@
         "length_exceeds_maximum": "Vähennä tiedostosi kokoa siten, että se sisältää enintään 5000 merkkiä."
       },
       "offsite_payment_failed": {
-        "payment_link_expired_title": "Ödemeyhteyden voimassaoloaika on päättynyt"
+        "payment_link_expired_title": "Ödemeyhteyden voimassaoloaika on päättynyt",
+        "payment_not_processed_text": "Yritä skannata QR-koodi uudelleen. Jos se ei vieläkään toimi, ilmoita asiakaspalvelullemme asiasta ja kokeile toista maksutapaa.",
+        "title": "Ulkoinen maksu epäonnistui"
+      },
+      "order_summary": {
+        "applied_discount_message": "Kokonaisostohinnasta %{amount} alennus",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodi ei ole voimassa ostoskorissasi oleviin tuotteisiin",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodia ei voi käyttää tällä hetkellä",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> alennuskoodi on jo käytetty",
+        "cost_table_title": "Kustannusyhteenveto",
+        "calculating_shipping": "Lasketaan...",
+        "confirmation_number_label": "%{confirmation_number} numeroisen vahvistuksen",
+        "amount_off_shipping": "%{amount} alennettu toimituskulu",
+        "custom_discount": "Erikoisalennus",
+        "collapse_component_information": {
+          "one": "Piilota %{count} tuotetta"
+        },
+        "component_quantity_title": "%{quantity} kappaletta %{product_title}",
+        "alternative_payment_currency_total": "%{amount_due} veloitettiin",
+        "deferred_balance_info": {
+          "title": "{{amount_due}} summan eräpäivä on {{due_at}}",
+          "due_on_fulfillment_title": "{{amount_due}} summan eräpäivä maksetaan, kun tilaus lähetetään"
+        },
+        "compare_at_sale": "Alennus (%{sale_amount})",
+        "automatic_discount_tooltip": "Automaattisesti sovellettavia alennuksia ei voi poistaa"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "%{order_name} tilauksen maksettava summa",
+        "changes_summary": {
+          "added": {
+            "other": "%{count} kappaletta lisätty"
+          },
+          "subtracted": "%{count} kappaletta poistettiin",
+          "returned": "%{count} kappaletta palautettu",
+          "return_line_item_removed": "%{count} tuotetta poistettiin palautuksista"
+        },
+        "additional_payment_requested": "%{total_outstanding} määrän maksua tarvitaan",
+        "checkout_review_and_pay": "Tilaus %{order_name} on päivitetty. Tarkista nämä muutokset ja maksa sitten vahvistaaksesi tilauksesi.",
+        "order_updated_on": "Tilauksesi päivitettiin %{last_edited_at} päivänä.",
+        "order_review_and_pay": "Tilauksesi on päivitetty. Tarkista tilauksesi ja maksa vahvistaaksesi sen."
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Osta %{product_name} -tuote",
+          "one": "Osta %{product_name}-tuote ja %{count} muuta tuotetta",
+          "other": "Osta %{product_name}-tuote ja %{count} muuta tuotetta"
+        }
+      },
+      "order_errors": {
+        "creation_failure": "Tilaustasi luodessa ilmeni ongelma. Yritä uudelleen tai ota yhteyttä saadaksesi lisätietoja.",
+        "network_failure": "Tilauksesi ei onnistunut lähettämään verkkovirheen vuoksi. Tarkista yhteytesi ja yritä uudelleen.",
+        "inventory_reservation_failure": "Jotkut tuotteet eivät ole enää saatavilla."
+      },
+      "online_store_chat": {
+        "title": "Onko sinulla kysyttävää? Keskustele kanssamme"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "subtotal_limit_reached": "Suurin rivielementin arvo on saavutettu.",
+            "gift_card_price_must_not_exceed_limit": "Lahjakortin hinta ei saa ylittää %{gift_card_limit} summaa.",
+            "signature_mismatch": "%{stable_id}-rivillä on tuotteen allekirjoituksen yhteensopimattomuus."
+          }
+        }
       }
     }
   }
