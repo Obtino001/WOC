@@ -2376,7 +2376,9 @@
         "redirecting_to_bank": "Du blir omdirigert til {{bank}}-siden",
         "modal_notice": "Vi kontakter deg via {{paymentMethod}}",
         "remote_shops_payments_processing": "Behandling av betalinger",
-        "remote_checkout_count": "%{current} av %{total}"
+        "remote_checkout_count": "%{current} av %{total}",
+        "your_order_has_been_received_title": "Takk for bestillingen din",
+        "you_will_receive_confirmation": "Vi mottar for øyeblikket mange bestillinger. Du vil motta en bekreftelse via e-post eller SMS innen kort tid. Hvis du ikke mottar denne bekreftelsen innen en time, vennligst gi oss beskjed."
       },
       "post_purchase": {
         "page_title": "Etter kjøpet",
@@ -2388,6 +2390,80 @@
           "expand": "Vis mer",
           "processing": "Behandles…",
           "submit": "Send"
+        }
+      },
+      "review": {
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Fakturering",
+          "payment_method_title": "Betalingsmetode",
+          "change_link_label": "Endre",
+          "change_contact_method_link_label": "Endre kontaktinformasjonen",
+          "change_billing_address_link_label": "Endre fakturaadresse",
+          "change_shipping_address_link_label": "Endre leveringsadresse",
+          "change_shipping_method_link_label": "Endre fraktmetode",
+          "change_payment_method_link_label": "Endre betalingsmetode",
+          "pick_up_in_store_shipping_method_html": "Hent i butikk · %{location_name}",
+          "purchase_order_number_title": "Bestillingsnummer",
+          "change_purchase_order_number_label": "Endre bestillingsnummeret",
+          "change_delivery_method_link_label": "Velg leveringsmetode",
+          "no_address": "(Ingen adresse)",
+          "no_purchase_order_number": "(Ingen kjøpsordrenummer)",
+          "due_after_order_reviewed_html": "Betaling tas etter at bestillingen er gjennomgått",
+          "review_title_free_order": "Gå gjennom og fullfør bestillingen din",
+          "payment_method_saved_company_location": "Lagre kortet for denne plasseringen",
+          "company_location": "Bedriftslokasjon",
+          "change_company_location_link_label": "Endre bedriftsplassering",
+          "pickup_items_at": {
+            "one": "%{count} produkter skal hentes herfra",
+            "other": "%{count} produkter skal hentes herfra"
+          },
+          "ship_items_to": {
+            "one": "%{count} produkter vil bli sendt hit",
+            "other": "%{count} produkter vil bli sendt hit"
+          }
+        },
+        "block_title": "Gå gjennom informasjonen din",
+        "account_more_actions": "Andre handlinger for denne kontoen"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Dette gavekortet er allerede brukt på bestillingen din",
+          "insufficient_funds": "Det er ikke noe saldo igjen på dette gavekortet",
+          "expired": "Dette gavekortet er utløpt",
+          "not_available": "Dette gavekortet kan ikke lenger brukes",
+          "invalid": "Skriv inn et gyldig gavekort",
+          "currency_mismatch": "Kun gavekort i %{shop_currency} aksepteres",
+          "generic": "Gavekortet kunne ikke legges til betalingen",
+          "throttle_limit_exceeded": "Du har overskredet maks antall forsøk. Vennligst prøv igjen senere.",
+          "no_longer_available": "Dette gavekortet kan ikke lenger brukes til denne betalingen"
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Dette produktet kan ikke legges til i handlekurven fordi det tilhører en butikk som bruker en annen valuta.",
+          "max_remote_shops_exceeded": "Denne varen kan ikke legges til fordi du allerede har maksimalt antall produkter fra andre butikker i handlekurven din.",
+          "currency_mismatch_removal": "Et produkt ble fjernet fra handlekurven din fordi det tilhører en butikk som bruker en annen valuta.",
+          "only_remote_merchandise_lines": "Betalingen inkluderer kun produkter som selges på avstand. For å fullføre betalingen må du omdirigeres til den eksterne butikken."
+        }
+      },
+      "remote_merchandise_only": {
+        "title": "Fullfør kjøpet ditt",
+        "remote_only_notice": "Disse produktene selges og sendes av andre butikker. Fullfør betalingen for hver butikk for å fullføre kjøpet ditt.",
+        "return_to_store_label": "Gå tilbake til butikken",
+        "checkout_on_shop_label": "Betal i %{shop_name}-butikken",
+        "single_shop_transition": "Du blir videresendt til %{advertiser}-butikken for å fullføre kjøpet ditt.",
+        "detail_item_label": {
+          "one": "{{count}} produkter",
+          "other": "{{count}} produkter"
+        }
+      },
+      "remote_policies": {
+        "unavailable_policy": "%{policy_name} er ikke oppgitt for denne butikken. For mer informasjon, kontakt direkte %{shop_name}."
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "For å fullføre betalingsprosessen kreves en utvidelsesinteraksjon."
         }
       }
     }
