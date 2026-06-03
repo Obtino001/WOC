@@ -827,7 +827,18 @@
         "invalid_delivery_address_reference_handle": "Toimitusosoitteen viitetunnistetta ei voitu yhdistää olemassa olevaan toimitusosoitteeseen.",
         "must_use_available_delivery_address": "Toimitusosoite on valittava olemassa olevien toimitusosoitteiden joukosta.",
         "must_use_available_shipping_rate": "Toimituskulu tulee valita olemassa olevista toimituskuluista.",
-        "credit_card_name_billing_invalid": "Syötä ensin laskutusosoitteessa oleva nimesi"
+        "credit_card_name_billing_invalid": "Syötä ensin laskutusosoitteessa oleva nimesi",
+        "shipping_line_phone_blank": "Tämän toimitustavan käyttämiseksi anna puhelinnumero",
+        "shipping_line_phone_invalid": "Anna voimassa oleva puhelinnumero",
+        "tips_invalid_tip_amount": "Anna alle %{amount} arvoinen tippi",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Lahjakortteja ei tueta viivästettyjen ostovaihtoehtojen kanssa.",
+        "vaulting_agreement_blank": "Tämän tilauksen saldon maksaminen on tehtävä myöhemmin, joten maksutapasi tallentaminen on tarpeen.",
+        "sms_marketing_phone_invalid": "Anna voimassa oleva puhelinnumero",
+        "split_cart_international_shipping_not_supported": "Kansainvälisessä lähetyksessä kaikkien tuotteiden on käytettävä samaa toimitustapaa. Päivitä toimitustapa tai tee useampi tilaus.",
+        "shipping_method_invalid_phone_number": "Päivitä toimitusosoitteesi puhelinnumero nähdäksesi käytettävissä olevat toimitustavat.",
+        "split_by_delivery_method_not_allowed": "Tälle istunnolle tai myymälälle ei sallita jakoa toimitustavan mukaan.",
+        "split_by_delivery_method_unsupported_method_type": "Toimitustavan mukaan jakaminen yritettiin tuella olemattomalla toimitustapatyypillä.",
+        "split_by_delivery_method_requires_merchandise_from_single_location": "Toimitustavan mukaan erottelu edellyttää, että jokainen tavara lähetetään yhdestä sijainnista."
       },
       "failed_payment": {
         "payment_not_processed_title": "Maksusi käsittely epäonnistui",
@@ -859,6 +870,37 @@
         },
         "payment": {
           "payment_options": "Näytä kaikki maksuvaihtoehdot"
+        }
+      },
+      "general": {
+        "breadcrumb": "Sisältökartta",
+        "complete_purchase_button_label": "Vahvista tilaus",
+        "authenticate_purchase_button_label": "Vahvista henkilöllisyys maksua varten",
+        "continue_to_shipping_method": "Jatka Kargon kanssa",
+        "continue_to_payment_method": "Jatka käteisellä",
+        "back_to_shipping_method": "Palauta lähetys takaisin kuljetukseen",
+        "back_to_payment_method": "Palaa maksamiseen",
+        "contact_us_html": "Lisätietoja saat ottamalla meihin yhteyttä",
+        "autocomplete_title": "Suositukset",
+        "autocomplete_single_item": "1 tuote saatavilla",
+        "autocomplete_multi_item": "{{number}} tuotetta saatavilla",
+        "autocomplete_close": "Poista suositukset käytöstä",
+        "checkout_context": {
+          "step_one": "%{shop_name} - Maksu"
+        },
+        "continue_to_payment_plans_button_label": "Jatka maksusuunnitelmiin",
+        "back_button_label": "Palaa takaisin",
+        "autocomplete_zero_item": "Tuotteita ei ole",
+        "autocomplete_powered_by_google": "Tuotettu {{brandName}}:n toimesta",
+        "dates": {
+          "months": {
+            "april": "Nissan"
+          }
+        },
+        "datepicker": {
+          "range_start": "Joulukuun alku",
+          "in_range": "Joulukuun aikana",
+          "range_end": "Joulukuun loppu"
         }
       }
     }
