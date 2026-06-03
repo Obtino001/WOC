@@ -3317,7 +3317,8 @@
         "thank_you_confirmed_orders_with_phone": "Du vil snart motta separate bekreftelsessms-er med bestillingsnumrene dine.",
         "thank_you_confirmed_orders_with_email_and_phone": "Siparişnumrene dine vil snart motta separate bekreftelses-e-poster",
         "thank_you_unconfirmed_items_description": {
-          "one": "Det er ennå ikke belastet noe beløp for dette produktet fra deg."
+          "one": "Det er ennå ikke belastet noe beløp for dette produktet fra deg.",
+          "other": "Det er ennå ikke belastet deg for disse produktene"
         },
         "thank_you_from_shop": "fra %{shop_name}-butikken",
         "thank_you_item_label": {
@@ -3336,7 +3337,80 @@
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Du vil motta en bekreftelses-e-post om kort tid",
           "multi_store": "Du vil motta separate bekreftelses-e-poster fra hver butikk innen kort tid"
+        },
+        "title": "Takk for kjøpet ditt!",
+        "tracking_number": "Sporingsnummer:",
+        "updated_time": "Oppdatert %{time_ago} siden",
+        "unfulfilled_items_title": "Forberedes for frakt",
+        "unfulfilled_items_description": "Vi forbereder for øyeblikket disse produktene for frakt.",
+        "track_shipment": "Spor forsendelsen",
+        "view_business_customer_account": "Se kontoen",
+        "vat_invoices": {
+          "title": "MVA-fakturaer"
+        },
+        "verify_shop_account_title": "Bekreft kontoen din",
+        "verify_shop_account_message": "Informasjonen din er lagret med Shop. Ved å bekrefte kontoen din kan du automatisk bruke denne informasjonen i millioner av butikker.",
+        "verify_shop_account_cta": "Bekreft kontoen din",
+        "verify_shop_account_confirmation": "Øyedetaljer er lagret",
+        "track_your_order_link_text": "Spor bestillingen din",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 produkt ble ikke godkjent",
+          "other": "Noen produkter ble ikke godkjent"
         }
+      },
+      "tips": {
+        "title": "Legg til tips",
+        "description": "Vis din støtte for laget i %{shop_name}-butikken",
+        "presets_description": "Angi en tipsprosent",
+        "custom_label": "Spesiell tips",
+        "add_tip": "Legg til tips",
+        "update_tip": "Oppdater tipsen",
+        "message": "Takk skal du ha.",
+        "no_tip_label": "Yok",
+        "not_available_with_spi": "Kan ikke brukes med Shop Pay avbetalingshandel"
+      },
+      "throttle": {
+        "line_to_check_out": "Du er i køen for utbetaling",
+        "cart_summary_heading": "Handlekurven din",
+        "merchandise": {
+          "sold_out": "Utsolgt",
+          "available": "Tilgjengelig"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Noen av produktene i handlekurven din er utsolgt og kan ikke kjøpes på betalingsiden.",
+          "sold_out": {
+            "heading": "Varene i handlekurven din er utsolgt",
+            "storefront_body": "Gå tilbake til butikken for å fortsette å handle",
+            "no_storefront_body": "Dessverre er ikke produktet du ønsket å kjøpe lenger tilgjengelig.",
+            "link": "Gå tilbake til butikken"
+          }
+        },
+        "title": "Hale",
+        "time_to_checkout_title": "Tid for betaling - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Anslått ventetid beregnes",
+          "less_than_one": "Anslått ventetid: Under ett minutt",
+          "one": "Anslått ventetid: {{count}} minutter",
+          "other": "Anslått ventetid: {{count}} minutter"
+        },
+        "last_checked": "(Son contrôle : {{time}})",
+        "footer": {
+          "heading": "Ikke oppdater siden. Siden oppdateres automatisk.",
+          "body": "Varene i handlekurven din reserveres ikke før du fullfører betalingen."
+        },
+        "too_many_attempts": {
+          "message": "For mange forsøk",
+          "description": "Prøv igjen om noen minutter"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Mer informasjon om %{context}"
+      },
+      "too_many_requests": {
+        "title": "For mange betalingsforsøk",
+        "body": "Vennligst vent noen minutter og prøv igjen fra handlekurven din.",
+        "return_to_cart": "Gå tilbake til handlekurven",
+        "body_no_cart": "Vennligst vent noen minutter og prøv igjen."
       }
     }
   },
