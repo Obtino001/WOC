@@ -2394,7 +2394,9 @@
             "change_country": "Vaihda maa",
             "country_changed_heading": "Maa on muuttunut"
           }
-        }
+        },
+        "items_for_shipping": "Tuotteet, jotka lähetetään myöhemmin",
+        "items_moved_to_shipping_toast": "Noutamattomat tuotteet on siirretty lähetykseen"
       },
       "shop_pay_external": {
         "errors": {
@@ -2404,6 +2406,66 @@
         },
         "return_to_store": "Palaa {{shopName}}-kauppaan",
         "title": "Shop Pay -maksu"
+      },
+      "stock": {
+        "page_title": "Varastoon liittyvät ongelmat",
+        "title": "Loppu varastosta",
+        "items_unavailable_notice": "Jotkut tuotteet eivät ole enää saatavilla.",
+        "quantity_column_header": "Kappaletta",
+        "status_column_header": "Durum",
+        "removed_from_cart_notice": "Poistettu korista",
+        "reduced_with_quantity_label": "Jäljellä on vain %{quantity_available} kappaletta",
+        "remove_from_cart_button_label": "Poista koriasta",
+        "go_back_to_cart_button_label": "Palaa ostoskoriin",
+        "empty_cart_label": "Ostoskori on tyhjä",
+        "quantity_update": {
+          "page_title": "Päivitys kappalemäärään",
+          "title": "Päivitys kappalemäärään",
+          "description": "Näiden tuotteiden saatavuus on muuttunut ja se on päivitetty ostoskoriisi."
+        },
+        "unpurchasable_product": {
+          "title": "Tuotetta ei voi ostaa",
+          "header": "Jotkut tuotteet on poistettu ostoskoristasi",
+          "message": "Näitä tuotteita ei voi käyttää B2B-tilauksissa.",
+          "status_column_header": "Ei käytettävissä"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Tuotetta ei voi ostaa",
+          "header": "Jotkut tuotteet on poistettu ostoskoristasi"
+        },
+        "unshippable_product": {
+          "header": {
+            "one": "Ei toimituspalvelua saatavilla %{count} tuotteelle",
+            "other": "Ei toimituspalvelua saatavilla %{count} tuotteelle"
+          }
+        },
+        "price_update": {
+          "title": "Hinnan päivitys",
+          "description": "Näiden tuotteiden hinnat ovat muuttuneet ja ne on päivitetty ostoskoriisi."
+        },
+        "item_label": {
+          "one": "{{count}} tuotetta"
+        },
+        "continue_cta_label": "Jatka maksutapahtumaa",
+        "out_of_stock": {
+          "description": "Nämä tuotteet eivät ole enää saatavilla ja ne poistetaan ostoskoristasi.",
+          "items_unavailable": "Jotkut tuotteet eivät ole enää saatavilla ja ne poistetaan ostoskoristasi."
+        },
+        "unfulfillable_product": {
+          "title": "Toimitustapaa ei voi käyttää",
+          "message": {
+            "one": "Tätä tuotetta ei voi enää toimittaa %{delivery_method}-menetelmällä.",
+            "other": "Tätä tuotetta ei voi enää toimittaa %{delivery_method}-menetelmällä."
+          },
+          "default_message": {
+            "one": "Valittu toimitustapa ei ole enää käytettävissä tälle tuotteelle.",
+            "other": "Valittu toimitustapa ei ole enää käytettävissä näille tuotteille."
+          }
+        },
+        "price_and_quantity_update": {
+          "title": "Hinta- ja määräpäivitys",
+          "description": "Näiden tuotteiden hinnat ja saatavilla olevat määrät ovat muuttuneet, ja ostoskorisi on päivitetty."
+        }
       }
     }
   }

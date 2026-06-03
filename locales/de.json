@@ -2396,13 +2396,82 @@
         "shipping_method": "Für Ihre Bestellung haben sich die Versandoptionen geändert. Bitte überprüfen Sie Ihre Auswahl.",
         "shipping_method_not_available": "Ihr Warenkorb wurde aktualisiert. Die von Ihnen hinzugefügten Produkte können nicht an Ihre Adresse geliefert werden. Entfernen Sie diese Produkte aus dem Warenkorb, um Ihre Bestellung abzuschließen.",
         "shipping_method_not_available_generic": {
-          "one": "Ihre Bestellung kann nicht an die ausgewählte Adresse geliefert werden. Bitte überprüfen Sie die Adresse auf Richtigkeit und versuchen Sie es erneut oder wählen Sie eine andere Adresse aus."
+          "one": "Ihre Bestellung kann nicht an die ausgewählte Adresse geliefert werden. Bitte überprüfen Sie die Adresse auf Richtigkeit und versuchen Sie es erneut oder wählen Sie eine andere Adresse aus.",
+          "other": "Einige Produkte in Ihrem Warenkorb können nicht an die eingegebene Adresse geliefert werden. Bitte überprüfen Sie die Adresse auf Richtigkeit und versuchen Sie es erneut oder wählen Sie eine andere Adresse aus."
         },
         "payment_method_not_supported": "Diese Zahlungsmethode kann für %{country} nicht verwendet werden. Bitte verwenden Sie eine andere Zahlungsmethode, um in dieses Land zu versenden.",
         "empty_state": "Versenden Sie Ihre Lieferadresse, um die verfügbaren Versandmethoden anzuzeigen.",
         "shipping_method_not_available_due_to_unsatisfied_conditions": "Die Artikel im Warenkorb erfüllen nicht die Preis- oder Gewichtsvorgaben für den Versand. Bitte aktualisieren Sie Ihren Warenkorb und versuchen Sie es erneut.",
         "invalid_selected_address": "Die ausgewählte Versandadresse ist ungültig",
-        "invalid_selected_address_with_update_link": "Die ausgewählte Versandadresse ist ungültig. %{update_address_link} oder wählen Sie eine andere Adresse aus"
+        "invalid_selected_address_with_update_link": "Die ausgewählte Versandadresse ist ungültig. %{update_address_link} oder wählen Sie eine andere Adresse aus",
+        "shipping_method_not_available_updated": {
+          "one": "Das von Ihnen hinzugefügte Produkt kann nicht an Ihren Standort geliefert werden. Entfernen Sie dieses Produkt, um die Zahlung abzuschließen, oder kontaktieren Sie den Laden.",
+          "other": "Der oder die von Ihnen hinzugefügten Artikel können nicht an Ihren Standort geliefert werden. Entfernen Sie diese Artikel, um die Zahlung abzuschließen, oder kontaktieren Sie den Shop."
+        },
+        "title": "Fracht nicht verfügbar",
+        "unavailable_selected_address": "Für die ausgewählte Adresse kann kein Versandservice angeboten werden",
+        "unavailable_selected_address_for_region": "Für die Region {{region}} wird kein Versandservice angeboten. Bitte wählen Sie eine andere Adresse, um fortzufahren.",
+        "unavailable_addresses_only_countries": "Ihre Bestellung kann nur an Standorte in {{countriesList}} versendet werden. Bitte fügen Sie eine neue Adresse hinzu, um fortzufahren.",
+        "unavailable_address_country": "In dem von Ihnen gewählten Land ist kein Versand verfügbar. Bitte wählen Sie eine andere Adresse, um fortzufahren."
+      },
+      "shop_policies": {
+        "refund_policy": "Rückgaberecht",
+        "terms_of_service": "Nutzungsbedingungen",
+        "legal_notice": "Rechtlicher Hinweis",
+        "shipping_policy": "Fracht",
+        "purchase_options_policy": "Richtlinie zu Kaufoptionen",
+        "cookie_preferences": "Cookies",
+        "policy_label": "Politik",
+        "select_policy_label": "Wählen Sie eine Politik aus",
+        "terms_and_policies": "Bedingungen und Richtlinien"
+      },
+      "split_delivery": {
+        "delivery_method": "Geteilte Liefermethode",
+        "delivery_method_menu": "Menü für geteilte Liefermethode",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "%{count} Produkte können nicht geliefert werden",
+              "other": "%{count} Produkte können nicht geliefert werden"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count} Artikel können nicht versendet werden"
+            }
+          },
+          "remove_item": {
+            "one": "Produkt entfernen",
+            "other": "Produkte entfernen"
+          },
+          "ship_separately": {
+            "one": "Das separat senden",
+            "other": "Diese separat versenden"
+          },
+          "pick_them_up_in_store": {
+            "one": "Im Laden abholen",
+            "other": "Diese im Geschäft abholen"
+          },
+          "remove_item_only": {
+            "one": "Produkt entfernen",
+            "other": "Produkte entfernen"
+          }
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "Soll das Land geändert werden?",
+            "content": "Abhol- und Versandorte müssen sich im selben Land befinden. Wenn Sie das Land ändern, werden alle Produkte für den Versand zurückgesetzt.",
+            "change_country": "Land wechseln"
+          },
+          "banner": "Ihre Liefermethode wurde aktualisiert"
+        }
+      },
+      "shop_pay_external": {
+        "errors": {
+          "try_again_later": "Überprüfen Sie Ihre Verbindung oder schließen Sie dieses Fenster und versuchen Sie es in ein paar Minuten erneut.",
+          "checkout_has_expired": "Ihre Zahlungssitzung ist abgelaufen. Schließen Sie dieses Fenster und versuchen Sie erneut, die Zahlung über {{shopName}} vorzunehmen."
+        },
+        "return_to_store": "Zurück zum {{shopName}} Shop",
+        "return_to_store_simple": "Zurück zum Geschäft",
+        "title": "Shop Pay-Zahlung"
       }
     }
   }
