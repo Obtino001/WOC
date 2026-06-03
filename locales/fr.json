@@ -1477,7 +1477,8 @@
         "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays. Par conséquent, des droits de douane et d'autres taxes peuvent être exigibles à la livraison.",
         "deferred_total_due_date_label": "Montant total à payer le {{date}}",
         "expand_component_information": {
-          "one": "Afficher %{count} produits"
+          "one": "Afficher %{count} produits",
+          "other": "Afficher %{count} produits"
         },
         "discount_discovery": {
           "add_code": "Ajouter une remise",
@@ -1502,7 +1503,53 @@
         "discount_code_allocations_mismatch": "<strong style=\"text-transform:uppercase\">%{code}</strong> votre code de réduction a changé. Vérifiez votre panier et réessayez.",
         "deferred_total_due_date_label_next": "Date de paiement finale : %{date}",
         "discount_applies_to_subscription_items_only": "Cette réduction est valable uniquement pour les produits en abonnement.",
-        "estimated_taxes_finalization_tooltip_content_short": "La taxe est finalisée après le paiement"
+        "estimated_taxes_finalization_tooltip_content_short": "La taxe est finalisée après le paiement",
+        "gift_card_title": "Carte cadeau",
+        "gift_card_label": "Carte cadeau",
+        "gift_card_placeholder": "Carte cadeau",
+        "gift_card_and_discount_title": "Code de réduction ou carte cadeau",
+        "gift_card_and_discount_label": "Code de réduction ou carte cadeau",
+        "gift_card_and_discount_placeholder": "Code de réduction ou carte cadeau",
+        "free_shipping_discount_label": "Livraison gratuite",
+        "gift_card_has_been_applied": "Carte cadeau appliquée",
+        "gift_card_has_been_removed": "La carte cadeau a été supprimée",
+        "payment_due_label": "Paiement reçu de l'étranger",
+        "gift_card_savings_notice": "après la carte cadeau de %{gift_card_amount}",
+        "no_pickup_location": "Aucun point de retrait disponible.",
+        "information_estimated_taxes_label": "Taxes (estimées)",
+        "gift_card_ending": "Carte cadeau se terminant par %{last_characters}",
+        "multiple_shipping_lines_label": "Total du fret",
+        "original_price": "Prix d'origine",
+        "gift_card_subscriptions_notice": "Les cartes cadeaux ne sont valables que pour votre premier paiement.",
+        "payment_terms_totals": {
+          "due_later": "Montant total à payer le %{due_at}",
+          "due_later_checkout_to_draft": "Montant total à payer ensuite",
+          "due_on_fulfillment": "Montant total à payer à la livraison",
+          "due_on_receipt": "Le montant total à payer lors de l'émission du reçu",
+          "due_on_fulfillment_next": "À payer à la livraison"
+        },
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong>, ne peut pas être utilisé avec vos remises actuelles.",
+        "maximum_discount_code_limit_reached": "Vous avez atteint le nombre maximum de codes de réduction. Supprimez un code existant pour utiliser le code <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "may_be_charged_on_delivery": "Des frais peuvent être facturés à la livraison",
+        "full_price": "Prix total : %{price}",
+        "group_title_label": "dans le cadre de \"%{group_title}\"",
+        "gift_card_applied": "Carte cadeau appliquée",
+        "more_items_modal": {
+          "empty_results": "Aucun résultat trouvé pour \"%{searchText}\". Veuillez vérifier qu'il n'y a pas de faute de frappe ou essayer un mot ou une expression différente.",
+          "number_items_shown": "%{shownNumber}/%{totalNumber} produits",
+          "search_item": "Ara"
+        },
+        "number_items": {
+          "one": "%{count} produit",
+          "other": "%{count} produit"
+        },
+        "for_add_on": "Pour : %{group_title}",
+        "from_shop_heading": "de la boutique %{shop_name}",
+        "from_other_stores_heading": "D'autres magasins",
+        "order_discounts_apply_to_local_shop": "Les remises sur les commandes s'appliquent uniquement aux produits achetés dans la boutique %{shop_name}",
+        "gift_cards_apply_to_local_shop": "Les cartes cadeaux sont valables uniquement pour les produits achetés dans la boutique %{shop_name}",
+        "from_multiple_stores_heading": "De plusieurs magasins",
+        "pay_merchant_label": "paiement %{merchant_name}"
       },
       "order_payment_collection": {
         "changes_summary": {
