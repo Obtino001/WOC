@@ -2001,7 +2001,8 @@
         "no_pickup_points_near_location": "Lähettyvilläsi ei ole noutopistettä",
         "no_pickup_points_found": "Noutopistettä ei ole",
         "number_of_pickup_points_near_location": {
-          "one": "Sijaintisi lähellä on %{count} noutopistettä"
+          "one": "Sijaintisi lähellä on %{count} noutopistettä",
+          "other": "Sijaintisi lähellä on %{count} noutopistettä"
         },
         "geolocation": {
           "errors": {
@@ -2009,7 +2010,56 @@
             "permission_denied": "Sijaintiasi ei voida hakea. Yritä uudelleen."
           }
         },
-        "no_business_hours": "Työaikatietoa ei ole"
+        "no_business_hours": "Työaikatietoa ei ole",
+        "search_button": "Ara",
+        "selector_tabs": "Noutopisteen valitsin",
+        "paginator": {
+          "header": {
+            "one": "Näytetään %{count} pisteestä %{first} - %{last} välillä",
+            "other": "Näytetään %{count} pisteestä %{first} - %{last} välillä"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} pisteestä %{pickup_point_index}",
+            "other": "%{count} pisteestä %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{count} pisteestä %{first} - %{last}",
+            "other": "%{count} pisteestä %{first} - %{last}"
+          }
+        },
+        "waiting_on_pickup_point_location_notice": "Noutopisteitä etsitään...",
+        "open_twenty_four_hours": "Avoinna 24/7",
+        "pickup_unavailable_banner_title": {
+          "one": "Tuotteellesi ei ole saatavilla noutopistettä",
+          "other": "Tuotteillesi ei ole saatavilla noutopistettä"
+        }
+      },
+      "processing": {
+        "redirecting_notice": "Ohjaamme sinut uudelleen, ole hyvä ja odota.",
+        "complete_your_purchase_title": "Viimeistele ostoksesi",
+        "continue_to_payment_gateway_notice": "Jatka maksutapahtumaa lisätäksesi maksutietosi.",
+        "continue_to_payment_gateway_button_label": "Jatka käteisellä",
+        "page_title": "Tilauksen käsittelyssä",
+        "title": "Tilauksen käsittelyssä",
+        "wait": {
+          "medium": {
+            "one": "Tilaustasi käsitellään. Arvioitu odotusaika %{count} minuuttia.",
+            "other": "Tilaustasi käsitellään. Arvioitu odotusaika %{count} minuuttia."
+          },
+          "long": "Tilauksesi käsittelyn jälkeen saat sähköpostin. Tällä hetkellä on paljon tilauksia.",
+          "no_auto_refresh_html": "Jos sinua ei ohjata automaattisesti, %{link}."
+        },
+        "you_will_not_be_charged": "Sinulta ei vielä veloiteta mitään",
+        "action_required": "Toimenpide vaaditaan",
+        "redirecting_to_bank": "Ohjataan {{bank}}-sivulle",
+        "modal_notice": "Ota yhteyttä {{paymentMethod}} kautta",
+        "remote_shops_payments_processing": "Maksujen käsittely",
+        "remote_checkout_count": "%{total} kautta %{current}"
+      },
+      "post_purchase": {
+        "components": {
+          "processing": "Käsitellään…"
+        }
       }
     }
   }
