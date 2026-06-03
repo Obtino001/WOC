@@ -857,7 +857,18 @@
         "invalid_delivery_address_reference_handle": "L'identifiant de référence de l'adresse de livraison n'a pas pu être associé à une adresse de livraison existante.",
         "must_use_available_delivery_address": "L'adresse de livraison doit être choisie parmi les adresses de livraison existantes.",
         "must_use_available_shipping_rate": "Les frais de livraison doivent être choisis parmi les frais de livraison disponibles.",
-        "credit_card_name_billing_invalid": "Commencez par saisir votre nom dans l'adresse de facturation"
+        "credit_card_name_billing_invalid": "Commencez par saisir votre nom dans l'adresse de facturation",
+        "shipping_line_phone_blank": "Cette méthode de livraison nécessite la saisie d'un numéro de téléphone.",
+        "shipping_line_phone_invalid": "Veuillez saisir un numéro de téléphone valide",
+        "tips_invalid_tip_amount": "Entrez un pourboire inférieur à %{amount}",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Les cartes-cadeaux ne sont pas prises en charge avec les options d'achat différé.",
+        "vaulting_agreement_blank": "Cette commande nécessite que le paiement du solde soit effectué ultérieurement, il est donc nécessaire d'enregistrer votre méthode de paiement.",
+        "sms_marketing_phone_invalid": "Veuillez saisir un numéro de téléphone valide",
+        "split_cart_international_shipping_not_supported": "Dans le transport international, tous les produits doivent utiliser la même méthode de livraison. Mettez à jour la méthode de livraison ou créez plusieurs commandes.",
+        "shipping_method_invalid_phone_number": "Teslimat adresinizdeki telefon numarasını güncelleyerek kullanılabilecek kargo yöntemlerini görüntüleyin.",
+        "split_by_delivery_method_not_allowed": "La segmentation par méthode de livraison n'est pas autorisée pour cette session ou ce magasin.",
+        "split_by_delivery_method_unsupported_method_type": "La division selon la méthode de livraison a été tentée avec un type de méthode de livraison non pris en charge.",
+        "split_by_delivery_method_requires_merchandise_from_single_location": "La méthode de livraison par lot nécessite que chaque article soit expédié depuis un seul emplacement."
       },
       "failed_payment": {
         "page_title": "Le paiement n'a pas pu être traité",
@@ -897,6 +908,36 @@
         },
         "payment": {
           "payment_options": "Afficher toutes les options de paiement"
+        }
+      },
+      "general": {
+        "breadcrumb": "Carte du contenu",
+        "complete_purchase_button_label": "Terminer la commande",
+        "authenticate_purchase_button_label": "Vérifiez votre identité pour le paiement",
+        "continue_to_shipping_method": "Continuer avec Kargo",
+        "continue_to_payment_method": "Poursuivre avec le paiement à la livraison",
+        "back_to_contact_information": "Retour aux informations",
+        "back_to_shipping_method": "Retour à l'expédition",
+        "choose_shipping_method": "Choisissez la méthode de livraison",
+        "choose_payment_method": "Choisissez le mode de paiement",
+        "choose_billing_address": "Sélectionnez l'adresse de facturation",
+        "contact_us_html": "Pour plus d'informations, contactez-nous",
+        "autocomplete_single_item": "1 produit disponible",
+        "autocomplete_multi_item": "Il y a {{number}} produits",
+        "autocomplete_close": "Désactiver les suggestions",
+        "continue_to_payment_plans_button_label": "Continuer avec les plans de paiement",
+        "choose_delivery_strategy": "Choisissez la méthode de livraison",
+        "autocomplete_zero_item": "Aucun produit",
+        "autocomplete_powered_by_google": "Pris en charge par {{brandName}}",
+        "dates": {
+          "months": {
+            "april": "Nissan"
+          }
+        },
+        "datepicker": {
+          "range_start": "Début décembre",
+          "in_range": "En décembre",
+          "range_end": "Fin décembre"
         }
       }
     }
