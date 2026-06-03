@@ -1053,12 +1053,64 @@
           },
           "optional_duties": {
             "optional_duties_not_permitted": "Tässä maksussa tullimaksujen hylkääminen ei ole sallittua."
+          },
+          "session_identifier_not_unique_error": "Tilaustasi koski ongelma, yritä maksaa uudelleen.",
+          "session_is_already_finished": "Tämä maksutapahtuma on jo päätetty.",
+          "tax": {
+            "new_tax_must_be_accepted": "Tilauksesi verot ovat muuttuneet. Tarkista tiedot ja yritä uudelleen.",
+            "unresolvable_tax_terms": "Suositeltuja ehtoja ei voida ratkaista nykyisen neuvottelukontekstin perusteella.",
+            "delivery_price_is_abstract": "Soveltuva toimitushinta on abstrakti.",
+            "tax_inclusivity_mismatch": "Neuvottele uudelleen Somut totalTaxAndDutyAmount- tai totalAmountIncludedInTarget-arvon kanssa.",
+            "tax_exemption_not_supported": "Nykyisessä neuvottelusessiossa verovapautuksia ei tueta.",
+            "delivery_tax_exemption_not_supported": "Toimituslinjojen verovapautuksia ei tällä hetkellä tueta.",
+            "proposed_allocations_required": "'Ehdotetut varaukset' -kenttä puuttuu.",
+            "merchandise_terms_must_be_defined": "Tuotteeseen liittyvät ehdot on määriteltävä.",
+            "delivery_terms_must_be_defined": "Toimitusehdot on määriteltävä.",
+            "merchandise_discount_terms_must_be_defined": "Tuotteeseen liittyvät alennusehdot on määriteltävä.",
+            "delivery_discount_terms_must_be_defined": "Toimitusalennuksen ehdot on määriteltävä.",
+            "allocated_required": "'Tahsis edildi' -kenttä puuttuu.",
+            "value_required": "'Arvo' kenttä puuttuu.",
+            "line_splits_not_supported": "'Tuoterivit' -kenttä on jaettava siten, että jokaisella myyjän tarjouksen rivillä on yksi rivikomponentti."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Kauppa ei hyväksy tippiä.",
+            "only_one_tip_line_allowed": "Useampi tippi-riviä ei tueta.",
+            "tips_not_allowed_for_b2b": "B2B-myymälöissä tippiä ei sallita.",
+            "currency_change_reset": "Valuuttamuutoksen vuoksi tippi nollattiin.",
+            "tips_not_allowed_for_deferred_purchase_options": "Eräajastetut ostovaihtoehdot eivät vielä tue tippiä."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Tämä luonnostilaus ei ole saatavilla nykyisessä myymälässä.",
+            "staff_member_not_exist": "Tätä henkilöä ei ole saatavilla nykyisessä myymälässä.",
+            "location_not_exist": "Tämä sijainti ei ole saatavilla nykyisessä myymälässä.",
+            "point_of_sale_device_not_exist": "Tämä myyntipisteen laite ei ole saatavilla nykyisessä myymälässä.",
+            "unresolvable_target_merchandise_lines": "Ehdotettuja myyntiyhdistelmiä ei voida ratkaista nykyisen neuvottelukontekstin perusteella."
           }
         },
         "dropzone": {
           "invalid_file_type": "Tiedostotyyppi ei ole tuettu",
           "dragged_over": "Vedä ja pudota ladattava tiedosto"
-        }
+        },
+        "page_title": "Maksusivu",
+        "forwarding_indicator": {
+          "new_window": "Avaa uudessa ikkunassa.",
+          "external": "Avaa ulkoinen verkkosivusto.",
+          "external_and_new_window": "Avaa ulkoinen verkkosivusto uudessa ikkunassa."
+        },
+        "full_price": "Koko hinta:",
+        "full_title": "{{pageTitle}} - {{shopName}} - Maksusivu",
+        "loading_title": "Maksusivu - {{shopName}}",
+        "google_map_title": "Google Maps",
+        "processing": "Käsitellään…",
+        "remove_item": "Poista %{label} -etiketti",
+        "remove_tag": "Poista etiketti",
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} osoitinta sisältävä joukko",
+            "other": "{{number}} osoitinta sisältävä joukko"
+          }
+        },
+        "finalize_order_accessibility_label": "Vahvista tilaus"
       }
     }
   }

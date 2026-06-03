@@ -903,7 +903,26 @@
             "gift_card_with_attributes_not_supported": "لا تدعم هذه الدفعة بطاقات الهدايا ذات الميزات المخصصة.",
             "duplicated_stable_id": "سطر البضاعة هذا له نفس المعرف الثابت كسطر آخر.",
             "bundle_requires_components": "لا توجد مكونات في هذه الحزمة.",
-            "combined_listing_parent_not_purchasable": "لا يمكن شراء المنتجات الرئيسية في القائمة المدمجة مباشرة."
+            "combined_listing_parent_not_purchasable": "لا يمكن شراء المنتجات الرئيسية في القائمة المدمجة مباشرة.",
+            "only_value_constraint": "يسمح فقط بالقيم الكاملة عند إدخال البيانات.",
+            "merchandise_not_found": "لم يتم العثور على المنتج.",
+            "merchandise_variant_not_found": "لم يتم العثور على تنويعات المنتج.",
+            "merchandise_not_applicable": "لا يمكن شراء تنويع المنتج.",
+            "gift_card_with_components_not_supported": "بطاقات الهدايا التي تحتوي على مكونات غير مدعومة في هذا الدفع.",
+            "selling_plan_mismatch": "تم تحديث الاشتراك.",
+            "selling_plan_not_supported": "الاشتراكات غير مدعومة.",
+            "selling_plan_not_supported_b2b": "لا يتم دعم الاشتراكات لمدفوعات الشركات بين الشركات (B2B).",
+            "price_mismatch": "كان السعر المقترح مسبقًا لهذا المنتج غير صالح وتم تحديثه.",
+            "inventory_not_found": "لا يوجد مخزون لهذا المنتج.",
+            "product_not_published": "لم يتم نشر المنتج.",
+            "minimum_quantity_not_met": "بعض المنتجات لا تفي بالحد الأدنى المطلوب من الكمية.",
+            "maximum_quantity_exceeded": "بعض كميات المنتجات تتجاوز الحد الأقصى المسموح به.",
+            "quantity_increment_not_met": "بعض كميات المنتجات لا تلبي حدود الطلب.",
+            "quantity_rules_not_met": "بعض كميات المنتجات لا تلبي حدود الطلب.",
+            "title_too_long": "عنوان المنتج طويل جدًا.",
+            "title_empty": "عنوان البند فارغ.",
+            "mixed_currencies": "تتضمن عملية الدفع عناصر صف بعملات مختلفة.",
+            "product_not_published_in_buyer_location": "المنتج غير متوفر في موقع المشتري الحالي."
           },
           "delivery": {
             "only_one_delivery_line_allowed": "يجب أن يكون هناك سطر تسليم واحد فقط في السلة.",
@@ -949,6 +968,43 @@
           },
           "checkout_source": {
             "revoked": "هذا الدفع لم يعد متاحًا."
+          },
+          "only_empty_terms_accepted": "تقبل هذه السياسة فقط الشروط الفارغة.",
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "لا يُسمح بالدفع اليدوي في متاجر B2B.",
+            "positive_amount_expected": "يجب أن يكون المبلغ المستحق أكبر من 0.",
+            "total_amount_mismatch": "المبلغ الإجمالي المستحق لا يتطابق مع مجموع مبالغ الدفع.",
+            "subscription_terms_not_accepted": "لم يتم قبول شروط الاشتراك.",
+            "missing_session_id": "معلومات جلسة بطاقة الائتمان ناقصة.",
+            "gateway_not_supported": "بوابة الدفع لا تدعم حفظ طريقة الدفع.",
+            "credit_card_last_name_required": "لا يمكن أن يكون \"Soyadı\" فارغًا.",
+            "credit_card_update_failed": "فشل تحديث بطاقة الائتمان.",
+            "invalid_address_type": "نوع العنوان المقدم غير صالح لطريقة الدفع هذه.",
+            "missing_retail_attributions": "تتطلب مدفوعات بطاقات الائتمان المدخلة يدويًا ربط مبيعات التجزئة.",
+            "unexpected_retail_attributions": "تم توفير ارتباطات بيع بالتجزئة غير متوقعة للدفع ببطاقة الائتمان.",
+            "invalid_card_source": "لا يوجد إذن لاستخدام مصدر البطاقة هذا في هذه الجلسة.",
+            "wallet_content_missing": "محتوى المحفظة ناقص.",
+            "payment_instrument_not_found": "لم يتم العثور على طريقة دفع",
+            "unauthorized_capture_method": "لا يُسمح بتكوين طريقة حفظ الدفع.",
+            "saved_payment_methods_not_allowed": "لا يُسمح بطرق الدفع المسجلة.",
+            "saved_payment_methods_not_enabled": "طرق الدفع المسجلة لم يتم تفعيلها لهذا المتجر.",
+            "store_credit_not_enabled": "رصيد المتجر غير مفعل لهذا المتجر.",
+            "store_credit_account_not_found": "لم يتم العثور على حساب رصيد المتجر.",
+            "store_credit_account_mismatch": "حساب رصيد المتجر لا يتطابق مع هوية المشتري.",
+            "store_credit_mismatched_currency": "عملة رصيد المتجر لا تتطابق مع عملة الدفع.",
+            "store_credit_insufficient_funds": "لا يوجد رصيد كافٍ في حساب رصيد المتجر.",
+            "store_credit_buying_gift_card": "لا يمكنك استخدام رصيد المتجر لشراء بطاقة هدية.",
+            "gift_cards_not_allowed_for_b2b": "لا يُسمح باستخدام بطاقات الهدايا في متاجر B2B.",
+            "method_required": "يجب تقديم طريقة دفع واحدة على الأقل.",
+            "paypal_express_address_invalid": "أعاد PayPal عنوانًا غير صالح.",
+            "saved_payment_methods_cvv_verification_disabled": "طريقة الدفع المختارة تتطلب التحقق من CVV الذي لم يتم تفعيله لهذا المتجر. يرجى اختيار طريقة دفع مختلفة."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "يجب أن يتضمن عرض المشتري شروطًا غير قابلة للتفاوض.",
+            "invalid_signature": "التوقيع غير صالح لـ {{target_terms}}."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "لا يُسمح برفض الرسوم الجمركية في هذا الدفع."
           }
         },
         "dropzone": {

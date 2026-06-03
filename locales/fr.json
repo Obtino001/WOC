@@ -1094,11 +1094,66 @@
           },
           "optional_duties": {
             "optional_duties_not_permitted": "Ce paiement ne permet pas le refus des droits de douane."
+          },
+          "session_identifier_not_unique_error": "Un problème est survenu avec votre commande, veuillez réessayer de payer.",
+          "session_is_already_finished": "Cette session de paiement a déjà été finalisée.",
+          "tax": {
+            "new_tax_must_be_accepted": "Les taxes associées à votre commande ont changé. Veuillez vérifier les informations et réessayer.",
+            "unresolvable_tax_terms": "Les conditions proposées ne peuvent pas être résolues dans le contexte actuel de la négociation.",
+            "delivery_price_is_abstract": "Le prix de livraison concerné est abstrait.",
+            "tax_inclusivity_mismatch": "Renégociez avec la valeur Somut totalTaxAndDutyAmount ou totalAmountIncludedInTarget.",
+            "tax_exemption_not_supported": "Les exonérations fiscales ne sont pas prises en charge dans la session de négociation en cours.",
+            "delivery_tax_exemption_not_supported": "Les exonérations fiscales pour les lignes de livraison ne sont pas encore prises en charge.",
+            "proposed_allocations_required": "Le champ « Attributions proposées » est manquant.",
+            "merchandise_terms_must_be_defined": "Les conditions liées à la marchandise doivent être définies.",
+            "delivery_terms_must_be_defined": "Les conditions de livraison doivent être définies.",
+            "merchandise_discount_terms_must_be_defined": "Les conditions de réduction liées au produit doivent être définies.",
+            "delivery_discount_terms_must_be_defined": "Les conditions relatives à la réduction de livraison doivent être définies.",
+            "allocated_required": "Le champ « Tahsis edildi » est manquant.",
+            "value_required": "Le champ « Değer » est manquant.",
+            "line_splits_not_supported": "Le champ « Lignes de marchandises » doit être divisé dans l'offre du vendeur de manière à ce que chacune possède un seul composant de ligne."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Le magasin n'accepte pas les pourboires.",
+            "only_one_tip_line_allowed": "Plusieurs lignes de pourboire ne sont pas prises en charge.",
+            "tips_not_allowed_for_b2b": "Les pourboires ne sont pas autorisés dans les magasins B2B.",
+            "currency_change_reset": "Le pourboire a été réinitialisé en raison du changement de devise.",
+            "tips_not_allowed_for_deferred_purchase_options": "Les pourboires ne sont pas encore pris en charge pour les options d'achat différé."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Cette commande provisoire n'est pas disponible dans le magasin actuel.",
+            "staff_member_not_exist": "Ce personnel n'est pas disponible dans le magasin actuel.",
+            "location_not_exist": "Cet emplacement n'est pas disponible dans le magasin actuel.",
+            "point_of_sale_device_not_exist": "Ce terminal de point de vente n'est pas disponible dans le magasin actuel.",
+            "unresolvable_target_merchandise_lines": "Les associations de vente proposées ne peuvent pas être résolues selon le contexte de négociation actuel."
           }
         },
         "dropzone": {
           "dragged_over": "Faites glisser et déposez le fichier à télécharger"
-        }
+        },
+        "page_title": "Page de paiement",
+        "expand_notice_label": "Afficher plus",
+        "forwarding_indicator": {
+          "new_window": "S'ouvre dans une nouvelle fenêtre.",
+          "external": "Ouvre un site web externe.",
+          "external_and_new_window": "Ouvre le site web externe dans une nouvelle fenêtre."
+        },
+        "full_price": "Prix total :",
+        "full_title": "{{pageTitle}} - {{shopName}} - Page de paiement",
+        "loading_title": "Page de paiement - {{shopName}}",
+        "google_map_title": "Google Maps",
+        "processing": "Traitement en cours…",
+        "remove_item": "Supprimer l'étiquette %{label}",
+        "remove_tag": "Retirer l'étiquette",
+        "map": {
+          "cluster_title": {
+            "one": "Ensemble contenant {{number}} pointeurs",
+            "other": "Ensemble contenant {{number}} pointeurs"
+          }
+        },
+        "loading": "Chargement…",
+        "remove_chip": "Supprimer le produit",
+        "finalize_order_accessibility_label": "Terminer la commande"
       }
     }
   }
