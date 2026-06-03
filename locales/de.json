@@ -140,11 +140,11 @@
       },
       "share": "Dieses Produkt teilen",
       "sold_out": "Ausverkauft",
-      "unavailable": "Nicht verfügbar",
-      "vendor": "Anbieter",
-      "video_exit_message": "{{ title }} öffnet das Video auf derselben Seite im Vollbildmodus.",
-      "xr_button": "In deinem Bereich ansehen",
-      "xr_button_label": "\"Ansicht in deinem Raum\" lädt den Artikel in ein Augmented-Reality-Fenster",
+      "unavailable": "Außer Betrieb",
+      "vendor": "Verkäufer",
+      "video_exit_message": "{{ title }} öffnet ein Vollbildvideo im selben Fenster.",
+      "xr_button": "In Ihrem eigenen Bereich anzeigen",
+      "xr_button_label": "In Ihrem Bereich anzeigen; das Produkt wird im Fenster der erweiterten Realität geladen",
       "pickup_availability": {
         "view_store_info": "Geschäftsinformationen anzeigen",
         "check_other_stores": "Überprüfen Sie den Lagerbestand in anderen Geschäften",
@@ -165,28 +165,28 @@
         "image_available": "Bild {{ index }} ist jetzt im Galerie-Viewer verfügbar"
       },
       "nested_label": "{{ parent_title }} für {{ title }}",
-      "view_full_details": "Vollständige Details anzeigen",
+      "view_full_details": "Alle Details anzeigen",
       "shipping_policy_html": "<a href=\"{{ link }}\">Versandkosten</a> werden an der Zahlungsseite berechnet.",
       "choose_options": "Optionen festlegen",
       "choose_product_options": "Optionen für {{ product_name }} festlegen",
-      "value_unavailable": "{{ option_value }} – nicht verfügbar",
-      "variant_sold_out_or_unavailable": "Variante ausverkauft oder nicht verfügbar",
+      "value_unavailable": "{{ option_value }} - Nicht verfügbar",
+      "variant_sold_out_or_unavailable": "Variation ist ausverkauft oder nicht verfügbar",
       "inventory_in_stock": "Auf Lager",
       "inventory_in_stock_show_count": "Es sind {{ quantity }} Stück auf Lager verfügbar",
       "inventory_low_stock": "Der Lagerbestand ist niedrig",
       "inventory_low_stock_show_count": "Wenig Lagerbestand: Nur noch {{ quantity }} Stück verfügbar",
       "inventory_out_of_stock": "Nicht auf Lager",
       "inventory_out_of_stock_continue_selling": "Auf Lager",
-      "sku": "SKU",
+      "sku": "Artikelnummer",
       "volume_pricing": {
-        "title": "Volumenabhängige Preisgestaltung",
-        "note": "Volumenabhängige Preisgestaltung verfügbar",
+        "title": "Mengenbasierte Preisgestaltung",
+        "note": "Mengenbasierte Preisgestaltung verfügbar",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "bei {{ price }}/Stück"
+        "price_at_each_html": "{{ price }}/Stück"
       },
       "product_variants": "Produktvarianten",
-      "taxes_included": "Inkl. Steuern.",
+      "taxes_included": "Steuern inklusive.",
       "duties_included": "Zollgebühren inklusive.",
       "duties_and_taxes_included": "Steuern und Zollgebühren inklusive."
     },
@@ -521,19 +521,45 @@
   },
   "recipient": {
     "form": {
-      "checkbox": "Ich möchte dies als Geschenk senden",
-      "email_label": "Empfänger E-Mail",
+      "checkbox": "Ich möchte dies als Geschenk verschicken.",
+      "email_label": "Empfänger-E-Mail-Adresse",
       "email": "E-Mail",
       "name_label": "Name des Empfängers (optional)",
-      "name": "Name",
+      "name": "Anzeige",
       "message_label": "Nachricht (optional)",
       "message": "Nachricht",
-      "max_characters": "Maximal {{ max_chars }} Zeichen",
-      "email_label_optional_for_no_js_behavior": "E-Mail-Adresse des Empfängers (optional)",
+      "max_characters": "Maximum {{ max_chars }} Zeichen",
+      "email_label_optional_for_no_js_behavior": "Empfänger-E-Mail (optional)",
       "send_on": "JJJJ-MM-TT",
-      "send_on_label": "Senden am (optional)",
-      "expanded": "Formular für den Empfänger des Gutscheins erweitert",
-      "collapsed": "Formular für den Empfänger des Gutscheins minimiert"
+      "send_on_label": "An diesem Datum senden (optional)",
+      "expanded": "Das Formular für den Empfänger der Geschenkkarte wurde erweitert",
+      "collapsed": "Das Formular für den Empfänger der Geschenkkarte wurde verkürzt"
+    }
+  },
+  "shopify": {
+    "attributes": {
+      "password": "Wort",
+      "password_confirmation": "Passwortbestätigung",
+      "first_name": "Anzeige",
+      "body": "Körper"
+    },
+    "addresses": {
+      "pincode": "PIN-Code",
+      "prefecture": "Landratsamt",
+      "province": "Stadt",
+      "state": "Eyalet",
+      "state_and_territory": "Provinz/Region",
+      "county": "Bezirk",
+      "emirate": "Emirat",
+      "governorate": "Gouvernement",
+      "confirm": "Sind Sie sicher, dass Sie diese Adresse löschen möchten?"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} Rabatt angewendet"
+    },
+    "challenge": {
+      "message": "Bitte bestätigen Sie, dass Sie kein Roboter sind, um fortzufahren.",
+      "error": "Ihre Antwort ist nicht korrekt, bitte versuchen Sie es erneut."
     }
   }
 }

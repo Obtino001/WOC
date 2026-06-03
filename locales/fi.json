@@ -560,6 +560,65 @@
     "challenge": {
       "message": "Vahvista, ettet ole robotti jatkaaksesi.",
       "error": "Vastauksesi ei ole oikea, yritä uudelleen."
+    },
+    "checkout": {
+      "contact": {
+        "address2_label": "Asunto, huoneisto jne.",
+        "available_addresses_label": "Olemassa olevat osoitteet"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Nopea maksu",
+        "hide_more_options": "Piilota muut vaihtoehdot",
+        "or_pay_another_way": "Vaihtoehtoisesti maksa eri tavalla",
+        "or_check_out_another_way": "Vaihtoehtoisesti tee eri maksu",
+        "or_pay_with_credit_card": "Vaihtoehtoisesti maksa luottokortilla"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Kortiltasi veloitetaan %{amount} määrä.",
+        "payment_total_label": "Turvamaksun yhteissumma",
+        "change_currency_link": "muuta %{currency_name}:ksi",
+        "card_provider_fx_charges_warning": "Kartin tarjoaja saattaa veloittaa sinulta maksut %{currency_code}-tapahtumista.",
+        "currency_not_supported_by_shop": "Valitsemasi valuutta ei ole enää saatavilla. Kaikki hinnat ovat nyt %{currency_code}-valuutassa."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Ostoskoriisi on päivitetty riippuen toimitusmaan mukaan.",
+        "cart_and_currency_updated_based_on_country": "Ostoskori ja valuutta on päivitetty toimitusmaasi mukaan.",
+        "currency_updated_for_country": "%{country} valuutta on päivitetty"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Maatasi/alueesi on päivitetty. Jatkaaksesi maksutapahtumaa, syötä toimitusosoitteesi."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Pyyntöäsi käsiteltäessä ilmeni ongelma. Ota yhteyttä kaupan omistajaan."
+      },
+      "captcha": {
+        "title": "Jatka käsittelyä täyttämällä CAPTCHA",
+        "errors": {
+          "not_solved": "Jatka käsittelyä täyttämällä CAPTCHA"
+        }
+      },
+      "billing": {
+        "billing_address_title": "Laskutusosoite:",
+        "add_address": "Käytä eri osoitetta",
+        "delete": "Sil",
+        "address_more": "Tälle osoitteelle lisää toimintoja",
+        "address_confirm": "Oletko varma, että haluat poistaa tämän osoitteen tililtäsi?",
+        "billing_address_rollup_accessibility_label": "Laskutusvaihtoehdot"
+      },
+      "company_location": {
+        "location_title": "Yrityksen sijainti"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Tilauksesi käsittelyssä ilmeni ongelma. Yritä uudelleen muutaman minuutin kuluttua."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Sinulla ei enää ole oikeutta tehdä B2B-tilauksia. Henkilökohtaista tilausta varten %{logout_url}.",
+        "lost_permissions_subtitle": "Sinulla ei enää ole oikeutta tehdä B2B-tilauksia. Kirjaudu ulos tehdäksesi yksityistilauksen.",
+        "lost_permissions_title": "Sijaintilupa puuttuu"
+      },
+      "address_management": {
+        "saved_with_store": "Tässä kaupassa rekisteröity"
+      }
     }
   }
 }
