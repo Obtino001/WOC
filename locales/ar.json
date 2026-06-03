@@ -3295,13 +3295,79 @@
         }
       },
       "tooltip": {
-        "accessibility_label_context": "مزيد من المعلومات حول %{context}"
+        "accessibility_label_context": "مزيد من المعلومات حول %{context}",
+        "additional_payment_methods": "طرق الدفع الإضافية"
       },
       "too_many_requests": {
         "title": "عدد كبير جدًا من محاولات الدفع",
         "body": "يرجى الانتظار لبضع دقائق ثم حاول مرة أخرى من سلة التسوق الخاصة بك.",
         "return_to_cart": "العودة إلى السلة",
         "body_no_cart": "يرجى الانتظار لبضع دقائق ثم المحاولة مرة أخرى."
+      },
+      "wallets": {
+        "connect_shipping_methods": "{{method1}} و {{method2}}",
+        "call_to_action": "الدفع باستخدام {{walletName}}",
+        "errors": {
+          "generic": "حدثت مشكلة تتعلق بـ {{walletName}}. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+          "detour": {
+            "stock_problems": "بعض المنتجات لم تعد متوفرة. أغلق {{walletName}} وحاول مرة أخرى.",
+            "price_change": "تغيرت أسعار بعض المنتجات. لإعادة مراجعة طلبك، أغلق تطبيق {{walletName}} وحاول مرة أخرى.",
+            "queue": "تمت إضافتك إلى قائمة الانتظار للدفع. لإكمال العملية، يرجى إغلاق تطبيق {{walletName}}.",
+            "currency_change": "لا يمكنك استخدام عنوان مختلف مع {{walletName}}. استخدم العنوان الأصلي أو جرب طريقة دفع مختلفة."
+          },
+          "invalid": {
+            "shipping_address": "أدخل عنوان شحن صالحًا",
+            "billing_address": "أدخل عنوان فاتورة صالحًا",
+            "shipping_option": "حدد خيار شحن صالحًا",
+            "email": "أدخل بريدًا إلكترونيًا صالحًا",
+            "zone": "أدخل ولاية/محافظة صالحة",
+            "postal_code": "أدخل رمز بريدي صالحًا",
+            "reduction_code": "أدخل رمز خصم صالح أو بطاقة هدية",
+            "billing_must_match_shipping": "يجب أن يتطابق مع عنوان الشحن",
+            "phone": "أدخل رقم هاتف صالح",
+            "emirate": "أدخل إمارة صالحة",
+            "billing_zone": "أدخل محافظة/منطقة صالحة لعنوان الفاتورة",
+            "billing_phone": "أدخل رقم هاتف صالحًا لعنوان الفاتورة",
+            "billing_zip": "أدخل رمز بريدي صالح لعنوان الفاتورة"
+          },
+          "missing": {
+            "address1": "أدخل العنوان",
+            "address2": "أدخل شقة، وحدة سكنية، إلخ."
+          },
+          "formatting": {
+            "name_contains_emojis": "احذف الإيموجي في اسمك",
+            "postal_code_contains_emoji": "احذف الإيموجي في رمزك البريدي",
+            "first_name_too_long": "الإعلان يحتوي على الكثير من الحروف",
+            "last_name_too_long": "اللقب يحتوي على حروف كثيرة جدًا",
+            "address_too_long": "سطر العنوان طويل جدًا"
+          },
+          "discount_code": "لا يمكن تطبيق رمز الخصم هذا. يرجى مراجعة رمزك والمحاولة مرة أخرى."
+        }
+      },
+      "vaulted": {
+        "change_button": "تغيير"
+      },
+      "units": {
+        "milligram": "مغ",
+        "kilogram": "كغ",
+        "milliliter": "ملل",
+        "centiliter": "كل",
+        "liter": "L",
+        "cubic_meter": "م³",
+        "millimeter": "مم",
+        "centimeter": "سم",
+        "square_meter": "م²",
+        "ounce": "أونصة",
+        "pound": "رطل",
+        "fluid_ounce": "أونصة سائلة",
+        "pint": "نقطة",
+        "quart": "كيو تي",
+        "gallon": "غال",
+        "inch": "في",
+        "foot": "قدم",
+        "yard": "يد",
+        "square_foot": "قدم مربع",
+        "item": "منتج"
       }
     }
   },
