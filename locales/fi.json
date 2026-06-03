@@ -2205,7 +2205,68 @@
           "default": "Tilauksellesi ei ole saatavilla Prime-toimitusta. Lähetysvaihtoehtosi on päivitetty."
         },
         "shipping_address_rollup_accessibility_label": "Toimitusosoitteen vaihtoehdot",
-        "invalid_shipping_method_summary_selected": "Näytä käytettävissä olevat toimitustavat valitsemalla eri toimitusosoite"
+        "invalid_shipping_method_summary_selected": "Näytä käytettävissä olevat toimitustavat valitsemalla eri toimitusosoite",
+        "shipping_method_title": "Kuljetustapa",
+        "shipping_rate_discounted_amount": "Edellinen summa: %{original_amount}. Nykyinen summa: %{amount}",
+        "shipping_method_one_time_purchase_group_title": "Kertaluonteinen osto",
+        "shipping_method_subscription_group_title": "Tilauksen tekeminen",
+        "subscription_delivery_description": {
+          "multiple_subscriptions_shipping_price_label": "Toimituskohtainen hinta %{shipping_price}",
+          "initial_order_discounted": "Ensimmäinen toimituskulu %{discounted_shipping_cost}, sen jälkeen %{frequency_description}",
+          "first_order_shipping_price_included": "Ensimmäinen tilaus mukaan lukien, sen jälkeen %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (toimitusta kohden %{per_delivery_price}), sen jälkeen %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Ensimmäinen tilaus on ilmainen"
+          },
+          "free_for_first_n_order": {
+            "one": "Ensimmäistä tilausta varten"
+          },
+          "free_shipping_cycles": {
+            "one": "Muiden %{count} toimitusten osalta ilmainen toimitus",
+            "other": "Muiden %{count} toimitusten osalta ilmainen toimitus"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Ilmainen toimitus %{count} toimitukselle",
+            "other": "Ilmainen toimitus %{count} toimitukselle"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Muiden %{count} toimitusten osalta ilmainen toimitus, sen jälkeen %{recurring_order_shipping_price}",
+            "other": "Muiden %{count} toimitusten osalta ilmainen toimitus, sen jälkeen %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "%{count} toimitusta varten ilmainen toimitus, sen jälkeen %{recurring_order_shipping_price}",
+            "other": "%{count} toimitusta varten ilmainen toimitus, sen jälkeen %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Muiden %{count} toimitusten hinta on %{shipping_price}",
+            "other": "Muiden %{count} toimitusten toimituskulu per toimitus on %{shipping_price}"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} toimitusta varten %{shipping_price}",
+            "other": "Muiden %{count} toimitusten toimituskulu per toimitus on %{shipping_price}"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Ensimmäiselle %{cycle} ilmaiset toimituskulut, sen jälkeen %{recurring_order_shipping_price}"
+          }
+        },
+        "shipping_used_as_billing_notice": "Tätä osoitetta käytetään myös kyseisen tilauksen voimassa olevana laskutusosoitteena.",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Toistuva rahti"
+        },
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} kohdetta",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} kappaletta lisää",
+        "split_shipping_shipped_by_shop": "Toimitus %{shop_name} toimesta",
+        "split_shipping_shipping_label": "Menetelmä",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} rahtia",
+        "split_shipping_multiple_shipment_notice": "Tilauksesi toimitetaan useammassa erässä",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Tilauksesi toimitetaan %{quantity} erässä",
+        "split_shipping_more_shipping_options": "Muut toimitusvaihtoehdot",
+        "split_shipping_shipment_number": "Kargo %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Kappalemäärä: %{quantity}",
+        "split_shipping_option_lowest_price": "Alin hinta",
+        "split_shipping_option_custom": "Erityinen",
+        "split_shipping_shipment_notice": "Tilauksesi saapuu %{quantity_shipments} erässä",
+        "split_shipping_first_shipment_notice": "Ensimmäinen tilauksesi saapuu %{quantity_shipments} erässä"
       },
       "session_errors": {
         "session_not_unique": "Tilaustasi käsiteltäessä ilmeni ongelma. Päivitä tämä sivu palataksesi kauppaan.",

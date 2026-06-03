@@ -2183,10 +2183,20 @@
           "ship_items_to": {
             "one": "%{count} produit(s) sera/seront envoyé(s) ici",
             "other": "%{count} produit(s) sera/seront envoyé(s) ici"
-          }
+          },
+          "shipping_address_title": "Adresse de livraison :",
+          "shipping_method_title": "Méthode d'expédition"
         },
         "block_title": "Vérifiez vos informations",
-        "account_more_actions": "Autres opérations pour ce compte"
+        "account_more_actions": "Autres opérations pour ce compte",
+        "title": "Examiner",
+        "review_title": "Finalisez votre commande",
+        "checkout_as_guest": "Payer en tant qu'invité",
+        "checkout_a_different_way": "Payer avec une méthode différente",
+        "item_header": {
+          "change_value": "Changez la valeur"
+        },
+        "review_and_confirm_title": "Vérifiez et confirmez"
       },
       "redeemable_errors": {
         "gift_card": {
@@ -2225,6 +2235,45 @@
       "required_extensions": {
         "errors": {
           "interaction_required": "Pour finaliser la transaction de paiement, une interaction avec une extension est nécessaire."
+        }
+      },
+      "shipping": {
+        "arrives_time": "Arrivée : %{time}",
+        "arrives_time_range": "Livraison : %{min_time}–%{max_time}",
+        "delivery_today": "Livraison le jour même (%{time})",
+        "delivery_tomorrow": "Livraison le lendemain (%{time})",
+        "delivery": "Livraison (%{time})",
+        "address_update": "Mettre à jour l'adresse",
+        "add_delivery_instructions": "Ajouter des instructions de livraison",
+        "delete": "Sil",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse",
+        "address_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse de votre compte ?",
+        "address_form": {
+          "generic_error": "Un problème est survenu lors de l'enregistrement de votre adresse. Veuillez réessayer.",
+          "one_time_address_subtitle": "Cette commande utilise une adresse unique",
+          "edit": "Modifier l'adresse"
+        },
+        "different_shipping_method_summary": "Faites entrer une adresse de livraison différente pour afficher les méthodes d'expédition disponibles.",
+        "address_default": "Définir par défaut",
+        "default_description": "Expédié sous 1 jour ouvrable",
+        "back": "Âgé",
+        "choose_new_address": "Choisissez une nouvelle adresse",
+        "delivery_to": "Destinataire de la livraison :"
+      },
+      "session_errors": {
+        "session_not_unique": "Une erreur s'est produite lors du traitement de votre commande. Actualisez cette page pour retourner à la boutique.",
+        "session_already_finished": "Cette commande a déjà été envoyée. Vous pouvez retourner au magasin pour créer une nouvelle commande."
+      },
+      "review_address_modal": {
+        "title": "Vérifier l'adresse",
+        "use_saved_address": "Utiliser une adresse différente",
+        "subtitle_no_match": "Cette adresse ne correspond à aucune de vos adresses enregistrées.",
+        "subtitle_must_use": "Votre commande sera envoyée à cette adresse.",
+        "subtitle": {
+          "one": "Cette commande sera envoyée à l'adresse fournie par {{merchant}}.",
+          "other": "Cette commande sera envoyée à l'adresse fournie par {{merchant}}. Veuillez choisir une adresse de livraison."
         }
       }
     }

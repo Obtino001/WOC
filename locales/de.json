@@ -2204,7 +2204,62 @@
         "back": "Geri",
         "choose_new_address": "Wählen Sie eine neue Adresse aus",
         "add_new_delivery_address": "Neue Lieferadresse hinzufügen",
-        "delivery_to": "Empfänger der Lieferung:"
+        "delivery_to": "Empfänger der Lieferung:",
+        "no_rates_for_cart_or_destination_notice": "Für Ihren Warenkorb oder Ihre Adresse steht keine verfügbare Versandmethode zur Verfügung",
+        "no_pickup_location_notice": "Mindestens eines Ihrer Produkte ist nicht zur Abholung geeignet.",
+        "no_rates_for_country_notice": "Für diese Adresse konnte keine Versandkostenangabe gefunden werden.",
+        "no_rates_contact_notice": "Für weitere Informationen kontaktieren Sie uns bitte.",
+        "estimated_delivery_date": {
+          "other": "%{count} Werktag"
+        },
+        "shipping_line_phone_label": "Handynummer (erforderlich)",
+        "shipping_line_phone": "Ihr Kurier kann diese Nummer verwenden, um Sie zu kontaktieren.",
+        "other_method": {
+          "zero": "Es gibt keinen anderen Weg",
+          "one": "Bei diesem Preis gibt es %{count} weitere Methoden:",
+          "other": "Es gibt %{count} weitere Methoden, die bei diesem Preis beginnen:"
+        },
+        "shipping_line_delivery_phone": "Lieferungsaktualisierungen können mit Ihnen kommuniziert werden.",
+        "optional_shipping_line_delivery_instructions_label": "Lieferanweisungen (optional)",
+        "shipping_line_delivery_phone_label": "Handynummer",
+        "shipping_line_delivery_instructions": "Geben Sie die erforderlichen Informationen wie Türnummer oder Lieferanweisungen ein.",
+        "local_delivery": "Lokale Lieferung",
+        "one_time_purchase_shipping": "Einmalige Lieferung",
+        "estimated_delivery_time": "Geschätzte Lieferzeit: %{time}",
+        "estimated_delivery_time_range": "Geschätzte Lieferzeit: %{min_time}–%{max_time}",
+        "estimated_time": "Voraussichtliches Datum: %{time}",
+        "estimated_time_range": "Geschätzte %{min_time}–%{max_time}",
+        "duties_and_taxes_title": "Steuern und Zollgebühren",
+        "shipping_information_redirect_link": "Geben Sie hier Ihre Daten ein",
+        "loading_progressive_rates": "Weitere Gebühren werden gesucht…",
+        "no_other_methods_available": "Es gibt keinen anderen Weg",
+        "duties_and_taxes_options": {
+          "ddu_title": "Bei Lieferung bezahlen",
+          "ddu_caption": "Zusätzliche Gebühren können anfallen",
+          "ddp_title": "Jetzt bezahlen",
+          "ddp_caption": "Bei der Lieferung fallen keine zusätzlichen Gebühren an"
+        },
+        "shipping_address_title": "Lieferadresse",
+        "invalid_shipping_method_summary": "Verwenden Sie eine gültige Versandadresse, um verfügbare Versandmethoden anzuzeigen.",
+        "method_summary": {
+          "incomplete_address_entered": "Verwenden Sie die vollständige Versandadresse, um verfügbare Versandmethoden anzuzeigen",
+          "incomplete_address_selected": "Verwenden Sie eine vollständige Versandadresse, um verfügbare Versandmethoden anzuzeigen"
+        },
+        "local_pickup": {
+          "search_address": "Adresse suchen",
+          "rollup_accessibility_label": "Abholortoptionen"
+        },
+        "shipping_method_first_shipment_group_title": {
+          "other": "Erste Lieferung"
+        },
+        "pre_order_ships_now": "Jetzt senden",
+        "pre_order_ships_later": "Wird später gesendet",
+        "pre_order_ships_date": "Am %{date} versendet",
+        "prime_not_available": {
+          "default": "Prime-Lieferung ist für Ihre Bestellung nicht verfügbar. Ihre Versandoptionen wurden aktualisiert."
+        },
+        "shipping_address_rollup_accessibility_label": "Lieferadresse Optionen",
+        "invalid_shipping_method_summary_selected": "Um die verfügbaren Versandmethoden anzuzeigen, wählen Sie eine andere Lieferadresse aus"
       },
       "session_errors": {
         "session_not_unique": "Bei der Bearbeitung Ihrer Bestellung ist ein Problem aufgetreten. Bitte aktualisieren Sie diese Seite, um zum Geschäft zurückzukehren.",
