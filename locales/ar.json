@@ -103,7 +103,11 @@
       "order_number": "طلب",
       "date": "تاريخ",
       "fulfillment_status": "حالة الشحن",
-      "none": "لم تقم بتقديم طلب بعد."
+      "none": "لم تقم بتقديم طلب بعد.",
+      "title": "تاريخ الطلبات",
+      "order_number_link": "رقم الطلب {{ number }}",
+      "payment_status": "حالة الدفع",
+      "total": "الإجمالي"
     },
     "order": {
       "title": "طلب {{ name }}",
@@ -130,6 +134,78 @@
       "subtotal": "المجموع الكلي البديل",
       "total_duties": "الرسوم الجمركية",
       "total_refunded": "تم استرداد المبلغ"
+    },
+    "recover_password": {
+      "title": "إعادة تعيين كلمة المرور الخاصة بك",
+      "subtext": "سنرسل لك بريدًا إلكترونيًا لإعادة تعيين كلمة المرور الخاصة بك",
+      "success": "لقد أرسلنا بريدًا إلكترونيًا يحتوي على رابط لتحديث كلمة مرورك."
+    },
+    "register": {
+      "title": "أنشئ حسابًا",
+      "first_name": "إعلان",
+      "last_name": "اللقب",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "إنشاء"
+    },
+    "reset_password": {
+      "title": "إعادة تعيين كلمة مرور الحساب",
+      "subtext": "أدخل كلمة مرور جديدة",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "إعادة تعيين كلمة المرور"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "استخدم كلمة المرور للدخول إلى المتجر:",
+      "login_password_button": "تسجيل الدخول باستخدام كلمة المرور",
+      "login_form_password_label": "كلمة المرور",
+      "login_form_password_placeholder": "كلمة المرور الخاصة بك",
+      "login_form_error": "كلمة مرور خاطئة!",
+      "login_form_submit": "جير",
+      "admin_link_html": "هل أنت صاحب متجر؟ <a href=\"/admin\" class=\"link underlined-link\">سجّل الدخول من هنا</a>",
+      "powered_by_shopify_html": "هذا المتجر مدعوم من قبل {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "شارك على فيسبوك",
+        "share_on_twitter": "شارك X'te",
+        "share_on_pinterest": "أضف دبوسًا على Pinterest"
+      },
+      "links": {
+        "facebook": "فيسبوك",
+        "pinterest": "بينتيريست",
+        "instagram": "إنستغرام",
+        "snapchat": "سناب شات"
+      }
+    },
+    "continue_shopping": "تابع التسوق",
+    "pagination": {
+      "label": "التقسيم إلى صفحات",
+      "page": "الصفحة {{ number }}",
+      "next": "الصفحة التالية",
+      "previous": "الصفحة السابقة"
+    },
+    "search": {
+      "search": "عرب",
+      "reset": "مسح مصطلح Arama"
+    },
+    "cart": {
+      "view": "عرض السلة ({{ count }})",
+      "item_added": "تمت إضافة المنتج إلى سلة التسوق الخاصة بك",
+      "view_empty_cart": "عرض السلة"
+    },
+    "share": {
+      "copy_to_clipboard": "نسخ الرابط",
+      "share_url": "رابط",
+      "success_message": "تم نسخ الرابط إلى الحافظة",
+      "close": "إغلاق المشاركة"
+    },
+    "slider": {
+      "next_slide": "اسحب إلى اليمين",
+      "previous_slide": "اسحب للخلف",
+      "name": "منزلق"
     }
   }
 }
