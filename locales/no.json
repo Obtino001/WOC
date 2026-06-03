@@ -1,0 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart": {
+      "caption": "Handlekurvprodukter",
+      "cart_error": "Det oppstod en feil under oppdatering av handlekurven. Vennligst prøv igjen.",
+      "cart_quantity_error_html": "Du kan bare legge til {{ quantity }} av dette produktet i handlekurven din."
+    },
+    "announcements": {
+      "previous_announcement": "Forrige kunngjøring",
+      "next_announcement": "Neste kunngjøring",
+      "carousel": "Karusell",
+      "announcement": "Melding",
+      "announcement_bar": "Varslingslinje"
+    }
+  }
+}
