@@ -2030,7 +2030,10 @@
           "no_longer_supported": "La devise du magasin n'est plus prise en charge."
         },
         "installments_payment_method_incompatible": "La méthode de paiement sélectionnée ne peut pas être utilisée pour les paiements échelonnés. Veuillez choisir une autre méthode de paiement.",
-        "missing_cvc": "Entrez un code de sécurité"
+        "missing_cvc": "Entrez un code de sécurité",
+        "three_d_secure_throttled": "Trop de tentatives ont été effectuées ; veuillez patienter avant de réessayer.",
+        "transient_error": "Un problème est survenu lors du traitement de votre paiement. Essayez de rafraîchir cette page ou vérifiez votre connexion Internet.",
+        "three_d_secure_failed_payment_method": "Votre carte n'a pas pu être vérifiée. Veuillez réessayer ou ajouter une autre carte."
       },
       "payment_challenge_modal": {
         "instructions": "Achat terminé en utilisant votre code {{paymentMethod}}",
@@ -2047,6 +2050,114 @@
       "payment_collection": {
         "cancelled": "Ce paiement n'est plus nécessaire. Pour plus de détails, veuillez visiter la page de commande.",
         "paid": "Ce paiement a déjà été effectué. Pour plus de détails, veuillez visiter la page de commande."
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Solde disponible %{amount}",
+        "credit_card_expires_on_notice": "Date d'expiration : %{month}/%{year}",
+        "express_payment_gateway_label": "Rapide"
+      },
+      "payment_gateway": {
+        "bank_deposit_label": "Dépôt bancaire",
+        "money_order_label": "Virement bancaire",
+        "debit_card_label": "Carte bancaire",
+        "deferred_payment_label": "Choisissez le mode de paiement plus tard",
+        "generic_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre date limite de paiement est le {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Pour ajouter ou utiliser des méthodes de paiement enregistrées, {{logIn}} sur un compte ayant accès à cet emplacement.",
+            "link": "connectez-vous"
+          }
+        },
+        "direct_payment_terms": "Vous êtes soumis aux conditions de {{translatedName}}. Votre carte sera débitée le {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Votre paiement sera effectué une fois votre commande expédiée.",
+        "order_due_on_fulfillment_payment": "Votre carte sera débitée une fois votre commande expédiée.",
+        "draft_order_payment_due_later_no_terms": "Votre paiement sera effectué une fois votre commande confirmée.",
+        "draft_order_payment_due_later_terms": "Une fois votre commande confirmée, vous serez soumis aux conditions de {{translatedName}}.",
+        "draft_order_payment_due_on_fulfillment": "Votre paiement sera effectué une fois que votre commande aura été confirmée et expédiée.",
+        "fixed_payment_label": "La date limite de paiement est le {{dueDate}}.",
+        "fixed_direct_payment_terms": "Un prélèvement sera effectué sur votre carte le {{dueDate}}.",
+        "order_deposit_due_now": "{{depositAmount}} doit être payé aujourd'hui. Le solde a une échéance {{translatedName}} et doit être payé le {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} sera payé aujourd'hui. Le solde sera payé lorsque votre commande sera expédiée.",
+        "order_due_on_receipt_choose_later": "Vous devez effectuer le paiement lorsque le reçu est émis.",
+        "draft_order_deposit_due_later": "{{depositAmount}}, sera payé lorsque votre commande sera confirmée. Le solde aura une échéance {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}}, sera payé lorsque votre commande sera confirmée. Le solde sera payé lorsque votre commande sera expédiée.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} sera payé aujourd'hui. Le solde sera payé plus tard.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} sera payé aujourd'hui. Le solde sera payé le {{dueDate}}.",
+        "credit_or_debit_card_label": "Carte de crédit/carte bancaire"
+      },
+      "pickup_point": {
+        "business_hours": "Heures d'ouverture",
+        "could_not_resolve_address": "Votre adresse est introuvable. Veuillez réessayer ou utiliser une autre adresse.",
+        "no_pickup_points_near_you": "Aucun point de retrait n'a été trouvé à proximité de l'adresse sélectionnée",
+        "no_pickup_points_near_location": "Il n'y a pas de point de retrait près de votre emplacement.",
+        "no_pickup_points_found": "Aucun point de retrait disponible",
+        "number_of_pickup_points_near_location": {
+          "one": "Il y a %{count} points de retrait près de votre emplacement",
+          "other": "Il y a %{count} points de retrait près de votre emplacement"
+        },
+        "change": "Changer la position",
+        "geolocation": {
+          "shared_location_button": "Utiliser ma position",
+          "errors": {
+            "unsuported_by_browser": "Les informations de géolocalisation ne peuvent pas être obtenues par votre navigateur. Veuillez réessayer ou utiliser un autre navigateur.",
+            "permission_not_allowed": "Autorisez le partage de votre position.",
+            "permission_denied": "Votre position ne peut pas être obtenue. Veuillez réessayer."
+          }
+        },
+        "no_business_hours": "Aucune information sur les heures de travail",
+        "title": "Point de retrait",
+        "search_button": "Ara",
+        "selector_tabs": "Sélecteur de point de retrait",
+        "paginator": {
+          "header": {
+            "one": "Affichage de %{first} à %{last} sur %{count} points",
+            "other": "Affichage de %{first} à %{last} sur %{count} points"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} points de %{pickup_point_index}",
+            "other": "%{count} points de %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{count} points de %{first} à %{last}",
+            "other": "%{count} points de %{first} à %{last}"
+          }
+        },
+        "waiting_on_pickup_point_location_notice": "Recherche des points de retrait en cours...",
+        "open_twenty_four_hours": "Ouvert 24h/24, 7j/7",
+        "pickup_unavailable_banner_title": {
+          "one": "Aucun point de retrait disponible pour votre produit",
+          "other": "Il n'y a pas de point de retrait disponible pour vos produits"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Redirection en cours...",
+        "redirecting_title": "Redirection en cours...",
+        "redirecting_notice": "Nous vous redirigeons, veuillez patienter.",
+        "continue_to_payment_gateway_notice": "Pour ajouter vos informations de paiement, continuez avec le processus de paiement.",
+        "continue_to_payment_gateway_button_label": "Poursuivre avec le paiement à la livraison",
+        "complete_your_purchase_title_error": "Corrigez vos informations de paiement",
+        "continue_to_payment_gateway_notice_error": "Vos informations de paiement n'ont pas pu être vérifiées.",
+        "wait": {
+          "medium": {
+            "one": "Votre commande est en cours de traitement. Temps d'attente estimé %{count} minutes.",
+            "other": "Votre commande est en cours de traitement. Temps d'attente estimé %{count} minutes."
+          },
+          "long": "Une fois votre commande traitée, vous recevrez un e-mail. Il y a actuellement un grand nombre de commandes.",
+          "no_auto_refresh_html": "Si vous n'êtes pas redirigé automatiquement, %{link}.",
+          "refresh_this_page": "rafraîchir cette page"
+        },
+        "redirecting_to_bank": "Redirection vers la page {{bank}}",
+        "modal_notice": "Nous vous contactons via {{paymentMethod}}",
+        "remote_shops_payments_processing": "Traitement des paiements"
+      },
+      "post_purchase": {
+        "page_title": "Après achat",
+        "title": "Après achat",
+        "escape_confirmation": "Vous avez effectué le paiement de votre commande.",
+        "components": {
+          "processing": "Traitement en cours…",
+          "submit": "Envoyer"
+        }
       }
     }
   }

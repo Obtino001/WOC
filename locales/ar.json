@@ -2073,7 +2073,62 @@
         "amount_too_small": "يجب أن يكون الحد الأدنى لمبلغ الدفع أكبر من 0.50 دولار أمريكي. يرجى المحاولة مرة أخرى بإدخال مبلغ أعلى.",
         "captcha_required": "لإكمال عملية الشراء، أدخل معلومات الدفع وحل اختبار الكابتشا.",
         "captcha_required_without_payment_information": "لإكمال عملية الشراء، يرجى حل اختبار الكابتشا.",
-        "cancelled_payment": "تم إلغاء دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة."
+        "cancelled_payment": "تم إلغاء دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "generic_error": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "rejected_transaction": "تم رفض دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "order_total_changed": "إجمالي طلبك قد تغير. يرجى مراجعة المعلومات والمحاولة مرة أخرى.",
+        "payment_processing": "لا يمكن معالجة دفعتك لأسباب فنية. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "paypal_zero_amount": "لا يمكنك استخدام PayPal للطلبات التي تبلغ قيمتها %{amount}. يرجى التأكد من صحة طلبك والدفع بدون استخدام PayPal.",
+        "paypal_invalid_token": "لم يكن من الممكن استخدام PayPal. حاول مرة أخرى أو استخدم خيار دفع مختلف.",
+        "pay_later_failed": "حدث خطأ أثناء معالجة دفعتك باستخدام \"الدفع لاحقًا\". يرجى اختيار طريقة دفع أخرى والمحاولة مرة أخرى.",
+        "three_d_secure_failed": "تعذر التحقق من دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "subscription_agreement_blank": "لتمكينك من شراء الاشتراك، يجب حفظ تفاصيل الدفع الخاصة بك. يرجى تأكيد موافقتك للمتابعة أو إزالة المنتجات من طلبك.",
+        "three_d_secure_failed_duplicate": "فشل التحقق من هوية 3D Secure لبطاقة الائتمان لأن العملية نفسها جارية بالفعل.",
+        "insufficient_funds": "تم رفض دفعتك بسبب رصيد غير كافٍ. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "payment_processing_no_retry": "لا يمكن معالجة دفعتك لأسباب فنية. حاول استخدام طريقة دفع مختلفة.",
+        "deferred_payment_not_allowed": "لا يُسمح بالدفع المؤجل. يرجى التحقق من طلبك والمحاولة مرة أخرى.",
+        "deferred_payment_required": "يتطلب هذا الطلب دفعة مؤجلة. يرجى مراجعة طلبك والمحاولة مرة أخرى.",
+        "deferred_amount_changed": "تعذر معالجة دفعتك لأن مبلغ الدفع المؤجل قد تغير. يرجى مراجعة طلبك والمحاولة مرة أخرى.",
+        "deferred_date_changed": "تعذر معالجة دفعتك بسبب تغيير تاريخ الدفع المؤجل. يرجى مراجعة طلبك والمحاولة مرة أخرى.",
+        "multiple_deferred_payment_not_allowed": "يسمح بدفع مؤجل واحد فقط لكل طلب. يرجى التحقق من طلبك والمحاولة مرة أخرى.",
+        "shipping_must_match_billing": "يجب أن يكون عنوان الشحن هو نفسه عنوان الفاتورة. استخدم طريقة دفع مختلفة.",
+        "decision_rule_block": "حدثت مشكلة أثناء معالجة دفعتك. يرجى التواصل مع صاحب المتجر.",
+        "pick_up_card": "تم رفض بطاقتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "invalid_number": "أدخل رقم بطاقة صالحًا",
+        "invalid_expiry_date": "يرجى إدخال تاريخ انتهاء صلاحية صالح",
+        "invalid_cvc": "أدخل رمز أمان صالحًا",
+        "expired_card": "انتهت صلاحية بطاقتك. استخدم طريقة دفع مختلفة.",
+        "processing_error": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "test_mode_live_card": "لا يمكن لهذا المتجر قبول الطلبات الحقيقية والمدفوعات الحقيقية.",
+        "missing_shipping_address": "لم يتم معالجة دفعتك لأن عنوان الشحن الخاص بك ناقص. يرجى إضافة عنوان الشحن والمحاولة مرة أخرى.",
+        "invalid_shipping_address": "لم نتمكن من معالجة دفعتك لأننا لم نعثر على عنوان الشحن الخاص بك. يرجى التحقق من عنوان الشحن الخاص بك والمحاولة مرة أخرى.",
+        "successful_offsite_with_gift_card_error": "حدثت مشكلة أثناء معالجة دفعتك باستخدام بطاقة الهدايا. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "development_store_order_limit_reached": "لقد وصلت إلى حد طلبات متجر التطوير المحدد لمعالج الدفع هذا. إذا كنت ترغب في إنشاء طلب آخر، يجب عليك استخدام بوابة دفع اختبارية. تعرّف على المزيد حول %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "إذا كنت ترغب في إنشاء طلب اختبار، يجب عليك استخدام بوابة دفع تجريبية. تعرّف على المزيد حول %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "اختبار الطلبات في متاجر التطوير",
+        "method_not_available": "طريقة الدفع المطلوبة غير متوفرة. يرجى اختيار طريقة دفع أخرى والمحاولة مرة أخرى.",
+        "selected_payment_method": "حدثت مشكلة في طريقة الدفع المختارة ولم يتم تحصيل الرسوم منك. يرجى المحاولة مرة أخرى أو استخدام طريقة دفع مختلفة.",
+        "payment_method_billing_address": "حدثت مشكلة في عنوان الفاتورة لطريقة الدفع التي اخترتها. يرجى التحقق من العنوان والمحاولة مرة أخرى أو استخدام طريقة دفع مختلفة.",
+        "processing_error_checkout_as_guest": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى باستخدام طريقة دفع مختلفة أو {{checkout_as_guest_link}}.",
+        "payment_above_threshold": "مبلغ الدفع يتجاوز الحد المالي المسموح به لهذه المنطقة. يرجى تقليل المبلغ الإجمالي والمحاولة مرة أخرى.",
+        "risky": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "expired_buyer_action": "انتهت صلاحية طريقة الدفع. يرجى المحاولة مرة أخرى.",
+        "name_mismatch": "تحقق من معلومات بطاقتك. الاسم والعنوان الموجودان على بطاقتك لا يتطابقان مع عنوان الفاتورة.",
+        "payment_method_not_applicable": "طريقة الدفع هذه غير صالحة. يرجى استخدام طريقة دفع مختلفة.",
+        "shop_pay_wallet_not_available": "Shop Pay غير متاح في صفحة الدفع هذه.",
+        "market_manager_blocks_wallet_payments": "طريقة الدفع غير مدعومة في بلدك.",
+        "paypal_over_capture": "تم تحديث إجمالي طلبك. أكمل طلبك بالدفع عبر {{walletName}}.",
+        "test_mode_enabled_only_test_cards": "وضع الاختبار مفعل، يمكن إضافة بطاقات ائتمان اختبار فقط.",
+        "shipping_company_required_error": "متجر {{shopName}} يتطلب اسم الشركة لعنوان الشحن.",
+        "payment_credential_delegation_error": "حدثت مشكلة أثناء معالجة دفعتك. يرجى اختيار طريقة دفع جديدة.",
+        "currency": {
+          "no_longer_supported": "عملة المتجر لم تعد مدعومة."
+        },
+        "installments_payment_method_incompatible": "طريقة الدفع المختارة لا يمكن استخدامها في الدفعات بالتقسيط. يرجى اختيار طريقة دفع مختلفة.",
+        "missing_cvc": "أدخل رمز الأمان",
+        "three_d_secure_throttled": "تمت محاولات كثيرة جدًا؛ يرجى الانتظار قبل المحاولة مرة أخرى",
+        "transient_error": "حدثت مشكلة أثناء معالجة دفعتك. حاول تحديث هذه الصفحة أو تحقق من اتصال الإنترنت الخاص بك.",
+        "three_d_secure_failed_payment_method": "تعذر التحقق من بطاقتك. حاول مرة أخرى أو أضف بطاقة مختلفة."
       },
       "payment_challenge_modal": {
         "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك",
@@ -2092,6 +2147,69 @@
       "payment_collection": {
         "cancelled": "لم يعد هذا الدفع ضروريًا. لعرض التفاصيل، قم بزيارة صفحة الطلب.",
         "paid": "تم إرسال هذا الدفع بالفعل. لعرض التفاصيل، قم بزيارة صفحة الطلب."
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "الرصيد الحالي %{amount}",
+        "credit_card_expires_on_notice": "تاريخ انتهاء الصلاحية: %{month}/%{year}",
+        "express_payment_gateway_label": "سريع",
+        "manual_payment_gateway_label": "مانويل",
+        "billing_address_title": "عنوان الفاتورة",
+        "free_label": "مجاني"
+      },
+      "payment_gateway": {
+        "credit_card_label": "بطاقة ائتمان",
+        "bank_deposit_label": "وديعة بنكية",
+        "cash_on_delivery_label": "الدفع عند الاستلام",
+        "money_order_label": "تحويل مصرفي داخلي",
+        "debit_card_label": "بطاقة البنك",
+        "deferred_payment_label": "اختر طريقة الدفع لاحقًا",
+        "generic_payment_terms": "أنت خاضع لشروط {{translatedName}}. تاريخ الاستحقاق النهائي هو {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "لإضافة طرق دفع مسجلة أو استخدامها، قم {{logIn}} بحساب لديه حق الوصول إلى هذا الموقع.",
+            "link": "تسجيل الدخول"
+          }
+        },
+        "direct_payment_terms": "أنت خاضع لشروط {{translatedName}}. سيتم خصم المبلغ من بطاقتك في {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "سيتم دفع المبلغ بعد شحن طلبك.",
+        "order_due_on_fulfillment_payment": "سيتم خصم المبلغ من بطاقتك بعد شحن طلبك.",
+        "draft_order_payment_due_later_no_terms": "سيتم إجراء الدفع بعد تأكيد طلبك.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "سيتم خصم المبلغ من بطاقتك بعد تأكيد طلبك.",
+        "draft_order_payment_due_later_terms": "بعد تأكيد طلبك، ستخضع لشروط {{translatedName}}.",
+        "draft_order_payment_due_on_fulfillment": "سيتم دفع المبلغ بعد تأكيد طلبك وشحنه.",
+        "fixed_payment_label": "آخر موعد للدفع هو {{dueDate}}.",
+        "fixed_direct_payment_terms": "سيتم تحصيل المبلغ من بطاقتك في {{dueDate}}.",
+        "order_deposit_due_now": "{{depositAmount}} سيتم دفعه اليوم. الرصيد له استحقاق {{translatedName}} وسيتم دفعه في {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} سيتم دفعه اليوم. سيتم دفع الرصيد عند شحن طلبك.",
+        "order_due_on_receipt_choose_later": "يجب عليك إجراء الدفع عند إصدار الإيصال.",
+        "draft_order_deposit_due_later": "{{depositAmount}} سيتم دفعه عند تأكيد طلبك. سيكون الاستحقاق للرصيد {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} سيتم دفعه عند تأكيد طلبك. سيتم دفع الرصيد عند شحن طلبك.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} سيتم دفعه اليوم. سيتم دفع الرصيد لاحقًا.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} سيتم دفعه اليوم. سيتم دفع الرصيد في {{dueDate}}.",
+        "bank_account_label": "حساب بنكي",
+        "credit_or_debit_card_label": "بطاقة ائتمان/بنك"
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "مغلق",
+        "business_hours": "ساعات العمل المفتوحة",
+        "could_not_resolve_address": "لم يتم العثور على عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا.",
+        "no_pickup_points_near_you": "لم يتم العثور على نقطة استلام بالقرب من العنوان المختار",
+        "no_pickup_points_near_location": "لا توجد نقطة استلام بالقرب من موقعك",
+        "no_pickup_points_found": "لا توجد نقطة استلام",
+        "number_of_pickup_points_near_location": {
+          "one": "يوجد %{count} نقطة استلام بالقرب من موقعك"
+        },
+        "change": "تغيير الموقع",
+        "geolocation": {
+          "shared_location_button": "استخدام موقعي",
+          "errors": {
+            "unsuported_by_browser": "لا يمكن للمتصفح الحصول على معلومات تحديد الموقع الجغرافي. حاول مرة أخرى أو استخدم متصفحًا مختلفًا.",
+            "permission_not_allowed": "اسمح بمشاركة موقعك.",
+            "permission_denied": "لا يمكن الحصول على موقعك. حاول مرة أخرى."
+          }
+        },
+        "no_business_hours": "لا توجد معلومات عن ساعات العمل",
+        "address_label": "العنوان"
       }
     }
   },
