@@ -1436,7 +1436,46 @@
         "discount_code_replaced": "%{old_code} alennuskoodi poistettiin ja %{code} otettiin käyttöön",
         "discount_code_replaced_multiple": "Useita alennuskoodeja poistettiin ja %{code} otettiin käyttöön",
         "discount_applies_to_subscription_items_only": "Tämä alennus koskee vain tilauspalvelutuotteita.",
-        "estimated_taxes_finalization_tooltip_content_short": "Verotus vahvistetaan maksun jälkeen"
+        "estimated_taxes_finalization_tooltip_content_short": "Verotus vahvistetaan maksun jälkeen",
+        "order_name_label": "%{name} tilaus",
+        "gift_card_has_been_removed": "Lahjakortti poistettiin käytöstä",
+        "payment_due_label": "Saapuva maksu",
+        "gift_card_savings_notice": "%{gift_card_amount} lahjakortin jälkeen",
+        "order_total_updated_label": "Päivitetty yhteensä",
+        "no_pickup_location": "Ei saatavilla noutopaikkaa.",
+        "information_estimated_taxes_label": "Verot (arvioitu)",
+        "gift_card_ending": "%{last_characters} päättyvä lahjakortti",
+        "multiple_shipping_lines_label": "Rahtiyhteenveto",
+        "gift_card_subscriptions_notice": "Lahjakortit ovat voimassa vain ensimmäisessä maksussasi.",
+        "payment_terms_totals": {
+          "due_later": "%{due_at} päivänä maksettava kokonaissumma",
+          "due_later_checkout_to_draft": "Maksettava kokonaissumma myöhemmin",
+          "due_on_fulfillment": "Toimituksessa maksettava kokonaissumma",
+          "due_on_receipt": "Kuitti leimataan, kun maksettava summa on kokonaisuudessaan maksettu",
+          "due_on_fulfillment_next": "Maksetaan toimituksen yhteydessä"
+        },
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> ei voitu käyttää nykyisillä alennuksillasi.",
+        "maximum_discount_code_limit_reached": "Olet saavuttanut maksimialennuskoodien määrän. Poista käytössä oleva koodi, jotta voit käyttää koodia <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "order_total_label": "Tilaussumma",
+        "may_be_charged_on_delivery": "Toimituksesta voidaan periä maksu",
+        "full_price": "Koko hinta: %{price}",
+        "group_title_label": "\"%{group_title}\" sisällä",
+        "gift_card_applied": "Lahjakortti on käytetty",
+        "more_items_modal": {
+          "empty_results": "\"%{searchText}\" ei tuottanut tuloksia. Varmista, ettei kirjoitusvirheitä ole, tai käytä eri sanaa tai ilmaisua.",
+          "number_items_shown": "%{shownNumber}/%{totalNumber} tuotetta",
+          "search_item": "Ara"
+        },
+        "number_items": {
+          "one": "%{count} tuotetta"
+        },
+        "for_add_on": "Tälle: %{group_title}",
+        "from_shop_heading": "%{shop_name} kaupasta",
+        "from_other_stores_heading": "Muut myymälät",
+        "order_discounts_apply_to_local_shop": "Tilauksen alennukset koskevat vain %{shop_name}-kaupasta ostettuja tuotteita",
+        "gift_cards_apply_to_local_shop": "Lahjakortit ovat voimassa vain %{shop_name} -kaupasta ostettuihin tuotteisiin.",
+        "from_multiple_stores_heading": "Useammasta kaupasta",
+        "pay_merchant_label": "%{merchant_name} maksu"
       },
       "order_payment_collection": {
         "custom_line_item_description": "%{order_name} tilauksen maksettava summa",
