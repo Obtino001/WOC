@@ -3743,6 +3743,60 @@
         "cart_attributes_error": "Handlekurven inneholder ugyldige data.",
         "merchandise_not_applicable": "Produktet kan ikke kjøpes i den konfigurerte versjonen.",
         "not_found": "Handlekurv ikke funnet"
+      },
+      "order": {
+        "not_available": "Denne bestillingen er ikke tilgjengelig",
+        "financial_status": {
+          "authorized": "Autorisert",
+          "pending": "Bekledde",
+          "paid": "Betalt",
+          "unpaid": "Ubetalt",
+          "voided": "Ugyldiggjort",
+          "partially_paid": "Delvis betalt",
+          "partially_refunded": "Delvis refusjon er utført",
+          "refunded": "Refusjon er gjort",
+          "expired": "Sona erdi"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Sendt",
+          "complete": "Fullført",
+          "partial": "Delvis",
+          "unfulfilled": "Ikke sendt",
+          "restocked": "Lageret er fornyet"
+        },
+        "transaction_status": {
+          "success": "Vellykket",
+          "pending": "Bekledde",
+          "failure": "Hat",
+          "error": "Hat"
+        },
+        "cancel_reason": {
+          "declined": "Betalingen ble avvist",
+          "inventory": "Produkter er ikke tilgjengelige",
+          "fraud": "Svindelbestilling",
+          "customer": "Kunden endret/avbestilte bestillingen",
+          "other": "Annen",
+          "staff": "Personellfeil"
+        },
+        "cash_on_delivery": "Betaling ved levering"
+      },
+      "storefront": {
+        "invalid_password": "Feil passord, vennligst prøv igjen."
+      },
+      "tags": {
+        "add_articles": "Begrens søket til artikler som inneholder %{tag}-etiketten",
+        "add_products": "Begrens valget til produkter som samsvarer med %{tag}-etiketten",
+        "remove_articles": "Utvid søket til artikler som ikke er merket med %{tag}",
+        "remove_products": "Fjern %{tag}-etiketten"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} elementer lagt til",
+          "increment_item": "%{delta} elementer lagt til",
+          "decrement_item": "%{delta}/%{total} elementer fjernet",
+          "decrement_fulfilled_line_item": "%{delta}/%{total} enheter er returnert",
+          "decrement_return_line_item": "%{delta} produktet er fjernet fra returlisten"
+        }
       }
     },
     "filters": {
@@ -3756,6 +3810,24 @@
         "true_label": "Ja",
         "false_label": "Nei"
       }
+    },
+    "page_titles": {
+      "products": "Produkter",
+      "account": "Konto",
+      "create_account": "Opprett konto",
+      "reset_account": "Tilbakestill kontoen",
+      "addresses": "Adresser",
+      "order": "%{name} bestilling",
+      "search": "Ara",
+      "collections": "Kolleksjoner",
+      "not_found": "404 Ikke funnet",
+      "challenge": "Testing",
+      "checkpoint": "Kontrollpunkt",
+      "search_results": {
+        "one": "Arama: \"%{terms}\" ga %{count} resultater funnet",
+        "other": "Arama: \"%{terms}\" ga %{count} resultater funnet"
+      },
+      "blog_or_article_with_error": "Hata - %{title}"
     }
   },
   "recipient": {
