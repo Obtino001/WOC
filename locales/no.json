@@ -2234,7 +2234,10 @@
           "no_longer_supported": "Butikkens valuta støttes ikke lenger."
         },
         "installments_payment_method_incompatible": "Valgt betalingsmetode kan ikke brukes for delbetaling. Velg en annen betalingsmetode.",
-        "missing_cvc": "Skriv inn en sikkerhetskode"
+        "missing_cvc": "Skriv inn en sikkerhetskode",
+        "three_d_secure_throttled": "For mange forsøk er gjort; vennligst vent før du prøver igjen",
+        "transient_error": "Det oppstod et problem under behandlingen av betalingen din. Prøv å oppdatere denne siden eller sjekk internettforbindelsen din.",
+        "three_d_secure_failed_payment_method": "Kortet ditt kunne ikke bekreftes. Prøv igjen eller legg til et annet kort."
       },
       "payment_challenge_modal": {
         "instructions": "Fullfør kjøpet ditt ved å bruke {{paymentMethod}}-koden din",
@@ -2253,6 +2256,69 @@
       "payment_collection": {
         "cancelled": "Denne betalingen er ikke lenger nødvendig. Besøk bestillingssiden for detaljer.",
         "paid": "Denne betalingen er allerede sendt. Besøk bestillingssiden for detaljer."
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Tilgjengelig saldo %{amount}",
+        "credit_card_expires_on_notice": "Sona bruk dato: %{month}/%{year}",
+        "express_payment_gateway_label": "Rask",
+        "manual_payment_gateway_label": "Manuell",
+        "billing_address_title": "Fakturaadresse",
+        "free_label": "Gratis"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kredittkort",
+        "bank_deposit_label": "Bankinnskudd",
+        "cash_on_delivery_label": "Betaling ved levering",
+        "money_order_label": "Bankoverføring",
+        "debit_card_label": "Bankkort",
+        "deferred_payment_label": "Velg betalingsmetode senere",
+        "generic_payment_terms": "Du er underlagt vilkårene for {{translatedName}}. Din siste betalingsdato er {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Koble til en konto med tilgang til denne plasseringen for å legge til eller bruke lagrede betalingsmetoder {{logIn}}.",
+            "link": "logg inn"
+          }
+        },
+        "direct_payment_terms": "Du er underlagt vilkårene for {{translatedName}}. Kortet ditt vil bli belastet den {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Betalingen din vil bli gjennomført etter at bestillingen din er sendt.",
+        "order_due_on_fulfillment_payment": "Kortet ditt vil bli belastet etter at bestillingen din er sendt.",
+        "draft_order_payment_due_later_no_terms": "Betalingen din vil bli utført etter at bestillingen din er bekreftet.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Kortet ditt vil bli belastet etter at bestillingen din er bekreftet.",
+        "draft_order_payment_due_later_terms": "Når bestillingen din er bekreftet, vil du være underlagt {{translatedName}} sine vilkår.",
+        "draft_order_payment_due_on_fulfillment": "Betalingen vil bli utført etter at bestillingen din er bekreftet og sendt.",
+        "fixed_payment_label": "Forfallsdato for betalingen din er {{dueDate}}.",
+        "fixed_direct_payment_terms": "Beløpet vil bli trukket fra kortet ditt den {{dueDate}}.",
+        "order_deposit_due_now": "{{depositAmount}} skal betales i dag. Restbeløpet har forfallsdato {{translatedName}} og skal betales den {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} skal betales i dag. Restbeløpet skal betales når bestillingen din er sendt.",
+        "order_due_on_receipt_choose_later": "Betalingen må gjøres når kvitteringen er utstedt.",
+        "draft_order_deposit_due_later": "{{depositAmount}} betales når bestillingen din er bekreftet. Restbeløpet forfaller til betaling på {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} betales når bestillingen din er bekreftet. Restbeløpet betales når bestillingen din er sendt.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} skal betales i dag. Restbeløpet skal betales senere.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} skal betales i dag. Restbeløpet skal betales innen {{dueDate}}.",
+        "bank_account_label": "Bankkonto",
+        "credit_or_debit_card_label": "Kreditt-/bankkort"
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Stengt",
+        "business_hours": "Åpningstider",
+        "could_not_resolve_address": "Adressen din ble ikke funnet. Prøv igjen eller bruk en annen adresse.",
+        "no_pickup_points_near_you": "Det ble ikke funnet noen hentepunkter i nærheten av den valgte adressen",
+        "no_pickup_points_near_location": "Det finnes ingen hentepunkt i nærheten av din posisjon",
+        "no_pickup_points_found": "Ingen hentepunkt tilgjengelig",
+        "number_of_pickup_points_near_location": {
+          "one": "Det finnes %{count} hentesteder i nærheten av din posisjon"
+        },
+        "change": "Endre plassering",
+        "geolocation": {
+          "shared_location_button": "Bruk min posisjon",
+          "errors": {
+            "unsuported_by_browser": "Geolokasjonsinformasjon kan ikke hentes av nettleseren din. Prøv igjen eller bruk en annen nettleser.",
+            "permission_not_allowed": "Tillat deling av posisjonen din.",
+            "permission_denied": "Posisjonen din kan ikke hentes. Prøv igjen."
+          }
+        },
+        "no_business_hours": "Ingen informasjon om arbeidstid",
+        "address_label": "Adresse"
       }
     }
   },
