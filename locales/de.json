@@ -2830,7 +2830,62 @@
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Nachdem Sie Ihre Bestellung abgeschlossen haben, erhalten Sie eine Bestätigungsnachricht. Verfolgen Sie Ihre Bestellung mit der Shop-App.",
         "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Nachdem Sie Ihre Bestellung abgeschlossen haben, erhalten Sie eine Bestätigungsnachricht. Verfolgen Sie Ihre Bestellung mit der Shop-App.",
         "order_status_payments_app_failed_pending_payment_payment": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen.",
-        "order_status_payments_app_failed_pending_payment_pick_up": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen."
+        "order_status_payments_app_failed_pending_payment_pick_up": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen.",
+        "return_to_store_link_label": "Mit dem Einkaufen fortfahren",
+        "print_link_label": "Beleg drucken",
+        "payment_information_title": "Zahlungsinformationen",
+        "page_title": "Vielen Dank %{display_name}",
+        "page_title_no_name": "Danke!",
+        "shipping_address_map_title": "Google-Karte, die den genauen Standort dieser Lieferadresse zeigt: %{address}",
+        "re-order": "Die gleichen Produkte erneut bestellen",
+        "thank_you_confirmed_order_with_email": "In Kürze erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_confirmed_order_with_phone": "In Kürze erhalten Sie eine Bestätigungs-SMS mit Ihrer Bestellnummer.",
+        "thank_you_confirmed_order_with_email_and_phone": "Sie erhalten in Kürze eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_confirmed_order_with_missing": "Bestätigen Sie Ihre Bestellung, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "out_for_delivery_title": "Ihre Bestellung wurde versandt",
+        "pick_up_in_store_marker": {
+          "current": "Aktueller Versandstandort"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "Wir senden Ihnen eine E-Mail, sobald Ihre Bestellung zur Abholung bereitsteht.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Wir senden Ihnen eine E-Mail, sobald Ihre Bestellung zur Abholung bereitsteht.",
+        "ready_for_pickup_title": "Ihre Bestellung ist zur Abholung bereit",
+        "ready_for_pickup_description": "Ihre Bestellung ist zur Abholung bereit. Bitte halten Sie Ihre Bestellbestätigung bei der Abholung bereit.",
+        "picked_up_title": "Ihre Bestellung wurde erhalten",
+        "picked_up_description_html": "Ihre Bestellung wurde am %{date} am Standort %{location_name} abgeholt.",
+        "shop_phone_description": "Siparişinizi takip etmenize yardımcı olması için Shop-App-Link içeren bir SMS alacaksınız.",
+        "ready_for_delivery_title": "Ihre Bestellung ist zur Lieferung bereit",
+        "ready_for_delivery_description": "Wir haben Ihre Bestellung vorbereitet.",
+        "out_for_delivery_local_title": "Ihre Bestellung wurde versandt",
+        "out_for_delivery_local_description_html": "Ihre Bestellung wird in Kürze bei Ihnen eintreffen.",
+        "qr_code": {
+          "title": "Verfolgen Sie es von Ihrem Telefon aus",
+          "send_link_to_phone": "Oder senden Sie den Link an Ihr Telefon"
+        },
+        "resend_gift_cards": "Geschenkkarten erneut senden",
+        "thank_you_confirmed_order_with_email_payment": "Sie haben Ihre Bestellung am %{date} bezahlt.",
+        "thank_you_confirmed_order_with_phone_payment": "Sie haben Ihre Bestellung am %{date} bezahlt.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Sie haben Ihre Bestellung am %{date} bezahlt.",
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Scannen Sie mit Ihrem Telefon"
+          },
+          "sms": {
+            "title": "Alternativ können Sie einen Link an Ihr Telefon senden."
+          }
+        },
+        "thank_you_confirmed_order_with_draft": "Falls wir weitere Informationen benötigen oder Ihre Bestellung bestätigt wird, werden wir Sie informieren.",
+        "purchase_order_number_title": "Bestellnummer #%{purchase_order_number}",
+        "ready_for_delivery": "Zur Lieferung bereit",
+        "subscriptions_management": {
+          "description": "Um Ihre Abonnements anzusehen und zu verwalten, gehen Sie zu Ihrem Konto.",
+          "button_label": "Verwalten Sie Ihr Abonnement"
+        },
+        "resend_gift_cards_by_text": "Kurznachricht erneut senden",
+        "thank_you_confirmed_order_with_missing_payment": "Bestätigen Sie Ihre Bestellung, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Bestätigen Sie Ihre Bestellung, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_confirmed_order_with_draft_payment": "Falls wir weitere Informationen benötigen oder Ihre Bestellung bestätigt wird, werden wir Sie informieren.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Falls wir weitere Informationen benötigen oder Ihre Bestellung bestätigt wird, werden wir Sie informieren.",
+        "payment_method_not_charged": "Nicht berechnet"
       }
     }
   }

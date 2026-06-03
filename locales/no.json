@@ -95,7 +95,26 @@
       "remove_all": "Fjern alle",
       "cancel": "Avbryt",
       "min_error": "Minimum verdi for dette produktet: {{ min }}",
-      "max_error": "Maksimal verdi for dette produktet: {{ max }}"
+      "max_error": "Maksimal verdi for dette produktet: {{ max }}",
+      "view_cart": "Vis handlekurv",
+      "variant": "Variasjon",
+      "variant_total": "Variasjonssum",
+      "total_items": "Totalt antall produkter",
+      "remove_all_items_confirmation": "Skal alle {{ quantity }} produktene fjernes fra handlekurven?",
+      "remove_all_single_item_confirmation": "Skal 1 vare fjernes fra handlekurven?",
+      "step_error": "Du kan bare legge til dette elementet i økninger på {{ step }}"
+    },
+    "video": {
+      "load_video": "Last opp video: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "Last opp lysbildet",
+      "previous_slideshow": "Forrige lysbilde",
+      "next_slideshow": "Neste lysbilde",
+      "pause_slideshow": "Pause lysbildeserien",
+      "play_slideshow": "Spill av lysbildefremvisningen",
+      "carousel": "Syklus",
+      "slide": "Lysbilde"
     }
   }
 }
