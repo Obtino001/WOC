@@ -2507,7 +2507,13 @@
           "header": {
             "one": "Für %{count} Produkte ist kein Lieferservice verfügbar",
             "other": "Für %{count} Produkte ist kein Lieferservice verfügbar"
-          }
+          },
+          "title": "Verfügbare Lieferdienste nicht vorhanden",
+          "message": {
+            "one": "Für Ihre Adresse steht keine verfügbare Liefermethode zur Verfügung, daher wird dieses Produkt aus Ihrem Warenkorb entfernt.",
+            "other": "Adresiniz için kullanılabilir bir teslimat yöntemi olmadığından bu ürünler sepetinizden kaldırılacak."
+          },
+          "status_column_header": "Keine Lieferdienstleistung"
         },
         "price_update": {
           "description": "Die Preise dieser Produkte haben sich geändert und wurden in Ihrem Warenkorb aktualisiert.",
@@ -2534,6 +2540,84 @@
           "description": "Für diese Produkte haben sich die Preise und verfügbaren Mengen geändert und Ihr Warenkorb wurde aktualisiert."
         },
         "out_of_stock_in_context_label": "Dieses Produkt ist in Ihrem Land/Ihrer Region nicht verfügbar."
+      },
+      "subscriptions": {
+        "recurring_totals": "Jeden %{interval} %{total_price}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "other": "Jede der ersten %{count} Zahlungen beträgt %{total_price}"
+          },
+          "following_cycles": ", dann alle %{interval} %{total_price}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "one": "gün"
+          },
+          "week": {
+            "other": "%{count} Woche"
+          },
+          "month": {
+            "one": "ei",
+            "other": "%{count} Tag"
+          },
+          "year": {
+            "other": "%{count} Jahr"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Erste Zahlung %{total_price_with_discount}, danach %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", dann %{count} Zahlungen, wenn %{total_price} erreicht ist",
+            "other": ", dann bei jedem %{total_price} %{count} Zahlung"
+          }
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "Bei Ihrem Ladenguthaben ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder laden Sie die Seite neu."
+      },
+      "taxes": {
+        "tax_details": "Mehrwertsteuerdetails",
+        "vat_number": {
+          "field": {
+            "label": "Umsatzsteuer-Identifikationsnummer (optional)",
+            "tooltip": "Validiert die Mehrwertsteuernummer, wenn zutreffend, und wendet automatisch eine Reverse-Charge auf Bestellungen an."
+          },
+          "add": "Fügen Sie eine USt-IdNr. hinzu",
+          "badge": "Umsatzsteuer-Identifikationsnummer: %{number}",
+          "domestic_order": "Die Steuerbefreiung für Nachnahme gilt nur für grenzüberschreitende Bestellungen innerhalb der EU. Bei lokalen Bestellungen wird die Standard-Mehrwertsteuer angewendet.",
+          "status": {
+            "invalid_format": {
+              "at": "Österreichische USt-IdNr. bestehen aus den Buchstaben AT gefolgt von 9 Zeichen",
+              "be": "Belgische Mehrwertsteuernummern bestehen aus den Buchstaben BE, gefolgt von 10 Zeichen",
+              "bg": "Bulgarische USt-IdNr. bestehen aus den Buchstaben BG, gefolgt von 9 bis 10 Zeichen.",
+              "hr": "Kroatische Mehrwertsteuernummern bestehen aus den Buchstaben HR, gefolgt von 11 Zeichen",
+              "cy": "Zyprische Mehrwertsteuernummern bestehen aus den Buchstaben CY, gefolgt von 9 Zeichen.",
+              "cz": "Tschechische USt-IdNr. bestehen aus den Buchstaben CZ, gefolgt von 8-10 Zeichen",
+              "dk": "Dänische Mehrwertsteuernummern bestehen aus den Buchstaben DK, gefolgt von 8 Zeichen.",
+              "ee": "Estnische USt-IdNr. bestehen aus den Buchstaben EE, gefolgt von 9 Zeichen",
+              "fi": "Finnische Mehrwertsteuernummern bestehen aus den Buchstaben FI, gefolgt von 8 Zeichen",
+              "fr": "Französische Mehrwertsteuernummern bestehen aus den Buchstaben FR, gefolgt von 11 Zeichen.",
+              "de": "Die deutsche Mehrwertsteuernummer besteht aus den Buchstaben DE, gefolgt von 9 Zeichen.",
+              "gr": "Griechische Mehrwertsteuernummern bestehen aus den Buchstaben EL, gefolgt von 9 Zeichen",
+              "hu": "Ungarische USt-IdNr. besteht aus den Buchstaben HU gefolgt von 8 Zeichen",
+              "ie": "Irische USt-Nummern bestehen aus den Buchstaben IE, gefolgt von 8-9 Zeichen",
+              "it": "Italienische Mehrwertsteuernummern bestehen aus den Buchstaben IT gefolgt von 11 Zeichen",
+              "es": "Spanische Mehrwertsteuernummern bestehen aus den Buchstaben ES, gefolgt von 9 Zeichen.",
+              "gb": "Die britischen Mehrwertsteuernummern bestehen aus den Buchstaben GB oder XI, gefolgt von 5-12 Zeichen."
+            }
+          },
+          "accessibility": {
+            "status": {
+              "validating": "Die USt-IdNr. wird überprüft",
+              "valid": "Die USt-IdNr. ist gültig",
+              "applied": "KDV-Befreiung wurde angewendet",
+              "domestic": "KDV-Befreiung wurde nicht angewendet",
+              "invalid_number": "Die Mehrwertsteuerbefreiung ist fehlgeschlagen",
+              "service_unavailable": "KDV-Befreiung kann nicht bestätigt werden",
+              "service_error": "KDV-Befreiung kann nicht bestätigt werden"
+            }
+          }
+        }
       }
     }
   }
