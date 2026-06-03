@@ -3133,7 +3133,64 @@
       "full_name_required": "Vor- und Nachnamen eingeben",
       "invalid_for_card_type": "ungültig",
       "expired": "Die Frist ist abgelaufen",
-      "invalid_expiry_year": "kein gültiges Ablaufjahr"
+      "invalid_expiry_year": "kein gültiges Ablaufjahr",
+      "taken": "bereits gekauft",
+      "too_short": "sehr kurz (Mindestlänge %{count} Zeichen)",
+      "too_long": "zu lang (maximal %{count} Zeichen)",
+      "invalid_for_country": "Gilt nicht für %{country}",
+      "invalid_for_country_and_province": "Gilt nicht für %{province} und %{country}",
+      "invalid_province_in_country": "%{country} ist keine gültige Provinz",
+      "invalid_state_in_country": "%{country} ist kein gültiger Bundesstaat.",
+      "invalid_region_in_country": "%{country} ist keine gültige Region",
+      "less_than_or_equal_to": "Muss kleiner oder gleich %{count} sein",
+      "invalid_type": "Es tut uns leid, wir akzeptieren diese Kartenart nicht.",
+      "invalid_format": "Format ist ungültig",
+      "invalid_start_date_or_issue_number_for_debit": "Ein gültiges Startdatum oder eine gültige Bearbeitungsnummer ist erforderlich",
+      "reset_password_html": "Diese E-Mail-Adresse ist bereits mit einem Konto verknüpft. Wenn dieses Konto Ihnen gehört, können Sie <a href=\"/account/login#recover\">Ihr Passwort zurücksetzen</a>",
+      "verify_email": "Wir haben eine E-Mail an %{customer_email} gesendet, bitte klicken Sie auf den angegebenen Link, um Ihre E-Mail-Adresse zu bestätigen.",
+      "product_not_available": "Das Produkt wurde für diesen Kunden nicht veröffentlicht.",
+      "shop_404": {
+        "title": "Erstellen Sie eine E-Commerce-Website und verkaufen Sie online! E-Commerce-Software von Shopify angeboten",
+        "heros": {
+          "store_unavailable": "Entschuldigung, dieser Laden ist derzeit nicht verfügbar.",
+          "store_not_exist": "Dieser Laden ist nicht verfügbar.",
+          "no_storefront": "Dieser Laden hat noch keine Online-Website."
+        },
+        "links": {
+          "explore_other_stores": "Andere Geschäfte entdecken",
+          "start_free_trial": "Kostenlose Testversion starten"
+        },
+        "owner_ctas": {
+          "header": "Sind Sie der Ladenbesitzer?",
+          "fix_domain": "Um die Einrichtung Ihrer neuen Webadresse abzuschließen, gehen Sie zu %{domain_settings_link}. Klicken Sie auf „Domain verbinden“ und geben Sie %{domain} ein.<br>Wenn Sie Probleme beim Zugriff auf Ihren Shop haben, versuchen Sie die Seite %{forgot_your_store_link}.",
+          "fix_domain_link_text": "Domainname-Einstellungen",
+          "forgot_your_store_link_text": "Haben Sie Ihr Geschäft vergessen?",
+          "add_storefront": "%{admin_link} Richten Sie Ihre Website ein, indem Sie Ihren Online-Shop hinzufügen. Wenn Sie Probleme beim Zugriff auf Ihren Shop haben, versuchen Sie es auf der %{forgot_your_store_link}-Seite.",
+          "admin_link_text": "In Ihrem Administrator"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Führen Sie persönliche Verkaufsgespräche durch",
+            "caption": "Neu gegründete oder vergrößerte Einzelhandelsgeschäfte mit den Funktionen ausstatten, die Sie für den Betrieb benötigen.",
+            "link_text": "Kostenlose Testversion starten"
+          },
+          "open_a_store": {
+            "header": "Eröffnen Sie einen neuen Shopify-Shop",
+            "caption": "Starten Sie eine 3-tägige kostenlose Testphase und nutzen Sie den Dienst anschließend 3 Monate lang für nur 1 USD pro Monat weiter.",
+            "link_text": "Jetzt anmelden"
+          },
+          "editions": {
+            "header": "Schauen Sie sich die Shopify Editions an",
+            "caption": "Mit über 100 Produktaktualisierungen können Sie im Handel viel produktiver, kreativer und stärker sein, als Sie es sich je vorgestellt haben.",
+            "link_text": "Entdecken Sie die neuesten Editionen"
+          },
+          "store_owner": {
+            "header": "Sind Sie der Ladenbesitzer?",
+            "caption": "Haben Sie Probleme beim Einloggen in Ihren Shop? Probieren Sie die Funktion %{forgot_your_store_link} aus. Wenn Sie Ihren Shop reaktivieren möchten, wenden Sie sich an %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify-Supportteam"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
@@ -3176,6 +3233,23 @@
       "sms_unsubscribe_confirm": {
         "message": "Sind Sie sicher, dass Sie Ihr SMS-Marketing-Abonnement kündigen möchten?",
         "button": "Abonnement kündigen"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Unterstützt von Shopify",
+      "learn_more": "Anbieter auswählen"
+    },
+    "notices": {
+      "address": {
+        "created": "Adresse wurde erfolgreich erstellt",
+        "deleted": "Adresse wurde erfolgreich gelöscht"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Nicht auf Lager"
+        }
       }
     }
   }
