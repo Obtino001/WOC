@@ -538,7 +538,27 @@
         "free_total_label": "مجاني",
         "none_method_definition": "لا توجد شحنات",
         "company_location_no_address_banner": "سيتم إرسال الطلبات المشحونة إلى مواقع بدون عنوان للمراجعة.",
-        "digital_product": "منتج رقمي"
+        "digital_product": "منتج رقمي",
+        "ship": "أرسل",
+        "pick_up": "جاهز للاستلام",
+        "pick_up_in_two_hours": "عادةً ما يكون جاهزًا خلال ساعتين",
+        "pick_up_in_four_hours": "عادةً ما يكون جاهزًا خلال 4 ساعات",
+        "pick_up_immediately": "جاهز للتسليم الآن",
+        "pick_up_next_day": "جاهز للاستلام في اليوم التالي",
+        "pick_up_in_one_hour": "عادةً ما يكون جاهزًا خلال ساعة واحدة",
+        "pick_up_in_twenty_four_hours": "عادةً ما يكون جاهزًا خلال 24 ساعة",
+        "pick_up_in_two_to_four_days": "عادةً ما يكون جاهزًا خلال 2-4 أيام",
+        "pick_up_in_five_or_more_days": "عادةً ما يكون جاهزًا خلال 5 أيام أو أكثر",
+        "pick_up_in_zero_to_two_hours": "جاهز للاستلام خلال ساعتين",
+        "pick_up_in_two_to_four_hours": "جاهز للاستلام خلال أربع ساعات",
+        "shipping_address": "عنوان الشحن",
+        "pick_up_locations": "مواقع استلام الطلبات",
+        "pickup_point_method_definition": "الشحن إلى نقطة الاستلام",
+        "retail_method_definition": "شحنة البيع بالتجزئة",
+        "subscription_pickup_information": "هذا سيكون موقع الاستلام لجميع طلبات اشتراكك المستقبلية.",
+        "ship_to_address": "إرسال إلى العنوان",
+        "pick_up_from_store": "استلام من المتجر",
+        "pickup_point_map_title": "خريطة نقاط استلام الطلبات"
       },
       "customer_account": {
         "not_user_label": "هل لست %{first_name}؟",
@@ -593,6 +613,62 @@
             "other": "نظرًا لعدم توفر طريقة توصيل مناسبة لعنوانك، سيتم إزالة هذه المنتجات من سلة التسوق الخاصة بك."
           },
           "label": "لا توجد خدمة توصيل"
+        }
+      },
+      "field_errors": {
+        "address_address1_blank": "أدخل العنوان",
+        "address_address2_blank": "أدخل شقة، وحدة سكنية، إلخ.",
+        "address_address1_too_long": "سطر العنوان الأول طويل جدًا (يجب ألا يتجاوز 255 حرفًا)",
+        "address_address1_contains_html_tags": "العنوان 1، لا يمكن أن يحتوي على علامات HTML.",
+        "address_address2_contains_html_tags": "العنوان 2، لا يمكن أن يحتوي على علامات HTML.",
+        "address_address1_contains_emojis": "لا يمكن أن يحتوي العنوان 1 على رموز تعبيرية",
+        "address_address2_contains_emojis": "لا يمكن أن يحتوي العنوان 2 على رموز تعبيرية",
+        "address_address1_contains_mathematical_symbols": "لا يمكن لسطر العنوان الأول أن يحتوي على رموز رياضية"
+      },
+      "failed_payment": {
+        "page_title": "تعذر معالجة الدفع",
+        "title": "تعذر معالجة الدفع",
+        "payment_not_processed_title": "تعذر معالجة دفعتك",
+        "payment_not_processed_text": "لم يتم تحصيل أي رسوم منك. للانتهاء من عملية الشراء، عد إلى سلة التسوق الخاصة بك.",
+        "return_to_cart_button_label": "العودة إلى السلة"
+      },
+      "error_page": {
+        "terminal": {
+          "title": "حدثت مشكلة في صفحة الدفع الخاصة بنا",
+          "message": "قم بتحديث الصفحة أو حاول مرة أخرى خلال بضع دقائق",
+          "action": {
+            "cta": "تحديث الصفحة"
+          },
+          "request_id": "رقم الطلب: {{requestId}}"
+        },
+        "embed_errors": {
+          "storefront_password_required": "هذا المتجر محمي بكلمة مرور",
+          "customer_account_required": "حساب العميل ضروري لإتمام عملية الدفع",
+          "cart_completed": "تم إتمام هذه العملية الدفع بالفعل",
+          "invalid_cart": "السلة لم تعد صالحة",
+          "not_authorized": "فشل التحقق من هوية الدفع. يرجى التحقق من بيانات هويتك في التطبيق",
+          "killswitch_enabled": "عملية الدفع غير متاحة مؤقتًا",
+          "policy_violation": "لا يمكن إتمام عملية الدفع بسبب قيود تكوين السياسة",
+          "unrecoverable_failure": "تعذر تحميل صفحة الدفع. حاول مرة أخرى"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "لم يتمكن طلبك من المعالجة لأن رمز الخصم الخاص بك لم يعد صالحًا. يرجى مراجعة طلبك والمحاولة مرة أخرى."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "اذهب إلى المتجر الإلكتروني"
+        }
+      },
+      "embed": {
+        "header": {
+          "review_order": "راجع طلبك"
+        },
+        "shipping": {
+          "shipping_options": "عرض جميع خيارات الشحن"
+        },
+        "payment": {
+          "payment_options": "عرض جميع خيارات الدفع"
         }
       }
     }

@@ -667,7 +667,25 @@
       },
       "delivery_options": {
         "none_method_definition": "Keine Fracht vorhanden",
-        "company_location_no_address_banner": "An Adressen ohne Standort versandte Bestellungen werden zur Überprüfung weitergeleitet."
+        "company_location_no_address_banner": "An Adressen ohne Standort versandte Bestellungen werden zur Überprüfung weitergeleitet.",
+        "ship": "Senden",
+        "pick_up": "Zur Abholung bereit",
+        "pick_up_in_two_hours": "In der Regel innerhalb von 2 Stunden fertig",
+        "pick_up_in_four_hours": "In der Regel innerhalb von 4 Stunden fertig",
+        "pick_up_immediately": "Jetzt abholbereit",
+        "pick_up_next_day": "Am nächsten Tag zur Abholung bereit",
+        "pick_up_in_one_hour": "In der Regel innerhalb von 1 Stunde fertig",
+        "pick_up_in_twenty_four_hours": "In der Regel innerhalb von 24 Stunden fertig",
+        "pick_up_in_two_to_four_days": "In der Regel innerhalb von 2-4 Tagen fertig",
+        "pick_up_in_five_or_more_days": "In der Regel innerhalb von 5+ Tagen verfügbar",
+        "pick_up_in_zero_to_two_hours": "Innerhalb von zwei Stunden abholbereit",
+        "pick_up_in_two_to_four_hours": "Innerhalb von vier Stunden abholbereit",
+        "pick_up_locations": "Abholorte",
+        "pickup_point_method_definition": "Lieferung an Abholstelle",
+        "subscription_pickup_information": "Bu ist der Abholort für alle zukünftigen Bestellungen Ihres Abonnements.",
+        "ship_to_address": "An Adresse senden",
+        "pick_up_from_store": "Im Geschäft abholen",
+        "pickup_point_map_title": "Abholstellenkarte"
       },
       "customer_account": {
         "not_user_label": "Sind Sie nicht %{first_name}?",
@@ -711,6 +729,48 @@
             "other": "Adresiniz için kullanılabilir bir teslimat yöntemi olmadığından bu ürünler sepetinizden kaldırılacak."
           },
           "label": "Keine Lieferdienstleistung"
+        }
+      },
+      "field_errors": {
+        "address_address1_blank": "Adresse eingeben",
+        "address_address2_blank": "Geben Sie eine Wohnung, ein Apartment usw. ein",
+        "address_address1_too_long": "Die erste Adresszeile ist zu lang (maximal 255 Zeichen erlaubt)"
+      },
+      "failed_payment": {
+        "payment_not_processed_title": "Ihre Zahlung konnte nicht verarbeitet werden",
+        "payment_not_processed_text": "Ihnen wurde nichts berechnet. Kehren Sie zu Ihrem Warenkorb zurück, um Ihren Kauf abzuschließen."
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Es gab ein Problem mit unserer Zahlungsseite.",
+          "message": "Aktualisieren Sie die Seite oder versuchen Sie es in ein paar Minuten erneut",
+          "request_id": "Anforderungsnummer: {{requestId}}"
+        },
+        "embed_errors": {
+          "storefront_password_required": "Dieser Shop ist passwortgeschützt",
+          "customer_account_required": "Ein Kundenkonto ist erforderlich, um den Zahlungsvorgang abzuschließen.",
+          "cart_completed": "Diese Zahlung wurde bereits abgeschlossen",
+          "invalid_cart": "Der Warenkorb ist nicht mehr gültig",
+          "not_authorized": "Zahlungs-Authentifizierung fehlgeschlagen. Bitte überprüfen Sie Ihre Anmeldedaten in der App.",
+          "killswitch_enabled": "Die Zahlungsabwicklung ist vorübergehend nicht verfügbar",
+          "policy_violation": "Aufgrund von Einschränkungen in der Richtlinienkonfiguration kann die Zahlung nicht abgeschlossen werden.",
+          "unrecoverable_failure": "Zahlungsseite konnte nicht geladen werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Ihr Rabattcode ist nicht mehr gültig, daher konnte Ihre Bestellung nicht bearbeitet werden. Bitte überprüfen Sie Ihre Bestellung und versuchen Sie es erneut."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Zum Online-Shop gehen"
+        }
+      },
+      "embed": {
+        "header": {
+          "review_order": "Überprüfen Sie Ihre Bestellung"
+        },
+        "payment": {
+          "payment_options": "Alle Zahlungsmöglichkeiten anzeigen"
         }
       }
     }
