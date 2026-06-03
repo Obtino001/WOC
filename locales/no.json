@@ -1398,7 +1398,11 @@
       },
       "merchant_instruction_errors": {
         "duplicate_variant_id": "%{position} %{name} malinstruksjon inneholder en duplisert %{variant_id} variasjons-ID.",
-        "discount_not_supported": "Vare rabatt gjelder ikke, selgerinstruks støtter ikke denne rabatt typen."
+        "discount_not_supported": "Vare rabatt gjelder ikke, selgerinstruks støtter ikke denne rabatt typen.",
+        "empty_stable_id": "%{position} %{name} mal instruksjon inneholder en tom fast ID.",
+        "invalid_stable_id_target": "%{position} %{name} vareinstruksjon refererer til %{stable_id} fast ID, men denne faste ID-en finnes ikke i varelinjene.",
+        "invalid_variant_id_target": "%{name} vareinstruksjonen refererer til variasjons-ID %{variant_id}, men denne variasjonen finnes ikke i varelinjene.",
+        "invalid_price_override_target": "%{stable_id} radelementet er ugyldig for prisoverskridelsesinstruksjon fordi det er en pakke komponent."
       },
       "merchandise_unavailable_in_buyer_location": {
         "banner_title": {
@@ -1421,6 +1425,78 @@
       "memberships": {
         "delivery_promise_unfulfillable": "Adresse støttes ikke i gjeldende medlemskap.",
         "items_split_across_locations_unsupported": "Prime-levering er ikke tilgjengelig for bestillingen din. Fraktalternativene dine er oppdatert."
+      },
+      "notifications": {
+        "title": "Varsler"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Registrert selgers vilkår og betingelser",
+        "privacy_policy": "Registrert Selgers Personvernregler"
+      },
+      "no_address_location": {
+        "title": "Adressiz posisjon",
+        "header": "Du har ingen leveringsadresse for denne plasseringen",
+        "message": "Bu konum için adres ekleyerek ödemeyi tamamlamak istiyorsanız bizimle iletişime geçin.",
+        "email_us_button_label": "Send oss en e-post",
+        "alt_header": "Ingen leveringsadresse"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "gå tilbake til kurven",
+        "return_to_cart_to_update_quantities": "For å oppdatere antall, %{return_to_cart_link_text}",
+        "subscription_changed": "En av abonnementene dine har endret seg.",
+        "company_location_changed": "Handlekurven din er oppdatert. Gå gjennom bestillingen din før du bekrefter.",
+        "violations_title": "{{violation}} mangler eller er ugyldig",
+        "individual_violations_title": {
+          "DeliveryViolations": "Fraktadresse",
+          "PaymentViolations": "Fakturaadresse",
+          "OtherViolations": "Bestillingsinformasjon",
+          "UnhandledViolations": "Bestillingsinformasjon"
+        },
+        "all_violations_content": "For å oppdatere denne informasjonen og fullføre bestillingen kan du ringe oss eller sende oss en {{emailLink}}:",
+        "all_violations_email_link": "e-post",
+        "editable_shipping_address_violations_message_title": "Bestillingen din fullføres ved å legge til denne informasjonen:",
+        "editable_shipping_address_violations_message_footer": "For å endre adressen til dette stedet permanent, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "kontakt oss",
+        "company_location_changed_product_removed": "Noen produkter er ikke tilgjengelige på denne lokasjonen, så handlekurven din er oppdatert. Vennligst gjennomgå bestillingen din før du bekrefter.",
+        "shipping_address_incomplete_title": "Fraktadresse mangler",
+        "calculating_shipping": "Frakten beregnes fortsatt. Vennligst prøv igjen om kort tid. Du har ikke blitt belastet.",
+        "calculating_taxes": "Skatteberegningen pågår. Vennligst prøv igjen om kort tid. Du har ikke blitt belastet.",
+        "generic_processing_error": {
+          "title": "Det oppstod et problem mens bestillingen din ble behandlet",
+          "body": "Det ble ikke belastet noe fra deg. Prøv igjen eller bruk en annen betalingsmetode."
+        },
+        "contact_information": {
+          "title": "Kontaktinformasjonen er ugyldig",
+          "header": "Oppdater informasjonen din via {{emailLink}}.",
+          "email_link": "kontakt oss"
+        },
+        "payment_method_not_available_with_payment_terms": "Betalingsmetoden du valgte kan ikke lenger brukes fordi denne bestillingen har en betalingsfrist på {{paymentTerms}}.",
+        "payment_method_not_available_with_fulfillment_terms": "Valgt betalingsmetode kan ikke lenger brukes fordi betalingsfristen for denne bestillingen utløper under forsendelsen.",
+        "payment_method_not_available_with_fixed_terms": "Valgt betalingsmetode kan ikke lenger brukes fordi betalingsfristen for denne bestillingen vil utløpe senere.",
+        "payment_method_not_available_with_review_requirement": "Betalingen kan ikke lenger brukes fordi den valgte betalingsmetoden vil bli brukt etter at bestillingen din er bekreftet.",
+        "validation_errors_banner": {
+          "section_label": {
+            "delivery": "Levering",
+            "contact": "Kontakt",
+            "payment": "Betaling",
+            "billing": "Fakturering"
+          },
+          "heading": {
+            "one": "{{count}} feil funnet:",
+            "other": "{{count}} feil funnet:"
+          },
+          "errors_in_section": {
+            "one": "{{section}} seksjon med {{count}} feil",
+            "other": "{{section}} seksjon med {{count}} feil"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Reduser størrelsen på notatet til 5000 tegn eller mindre."
+      },
+      "offsite_payment_failed": {
+        "payment_link_expired_title": "Betalingslenkens gyldighet er utløpt",
+        "payment_link_expired_text": "Prøv å skanne QR-koden på nytt."
       }
     }
   },
