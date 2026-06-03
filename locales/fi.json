@@ -140,11 +140,11 @@
       },
       "share": "Jaa tämä tuote",
       "sold_out": "Loppuunmyyty",
-      "unavailable": "Ei käytettävissä",
+      "unavailable": "Poistettu käytöstä",
       "vendor": "Myyjä",
       "video_exit_message": "{{ title }} avaa koko näytön videon samassa ikkunassa.",
-      "xr_button": "Näytä omassa tilassasi",
-      "xr_button_label": "Näytä omassa tilassasi, lataa kohteen lisätyn todellisuuden ikkunaan",
+      "xr_button": "Näytä omalla alallasi",
+      "xr_button_label": "Näytä alallasi; tuote ladataan lisätyn todellisuuden ikkunassa",
       "pickup_availability": {
         "view_store_info": "Näytä myymälän tiedot",
         "check_other_stores": "Tarkista varastotilanne muissa myymälöissä",
@@ -169,24 +169,24 @@
       "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a> lasketaan maksusivulla.",
       "choose_options": "Valitse vaihtoehdot",
       "choose_product_options": "Valitse vaihtoehdot tuotteelle {{ product_name }}",
-      "value_unavailable": "{{ option_value }} – Ei ole käytettävissä",
-      "variant_sold_out_or_unavailable": "Versio on loppuunmyyty tai ei saatavilla",
+      "value_unavailable": "{{ option_value }} - Ei käytettävissä",
+      "variant_sold_out_or_unavailable": "Vaihtoehto on loppunut tai sitä ei voi käyttää",
       "inventory_in_stock": "Varastossa",
       "inventory_in_stock_show_count": "Varastossa on {{ quantity }} kappaletta saatavilla",
       "inventory_low_stock": "Varastotaso alhainen",
       "inventory_low_stock_show_count": "Varastotaso alhainen: jäljellä {{ quantity }} kappaletta",
       "inventory_out_of_stock": "Loppu varastosta",
-      "sku": "SKU-koodi",
+      "sku": "Tuotekoodi",
       "inventory_out_of_stock_continue_selling": "Varastossa",
       "volume_pricing": {
-        "title": "Volyymihinnoittelu",
-        "note": "Volyymihinnoittelu saatavilla",
+        "title": "Määräalennushinnoittelu",
+        "note": "Ryhmälaskutusvaihtoehto saatavilla",
         "minimum": "Yli {{ quantity }}",
         "price_range": "{{ minimum }} - {{ maximum }}",
         "price_at_each_html": "{{ price }}/kpl"
       },
       "product_variants": "Tuotevariaatiot",
-      "taxes_included": "Sisältää verot.",
+      "taxes_included": "Verot sisältyvät hintaan.",
       "duties_included": "Tullimaksut sisältyvät hintaan.",
       "duties_and_taxes_included": "Verot ja tullimaksut sisältyvät hintaan."
     },
@@ -522,18 +522,44 @@
   "recipient": {
     "form": {
       "checkbox": "Haluan lähettää tämän lahjaksi",
-      "email_label": "Vastaanottajan sähköpostiosoite",
+      "email_label": "Vastaanottajan sähköposti",
       "email": "Sähköposti",
-      "name_label": "Vastaanottajan sähköpostiosoite (valinnainen)",
-      "name": "Nimi",
+      "name_label": "Vastaanottajan nimi (valinnainen)",
+      "name": "Mainos",
       "message_label": "Viesti (valinnainen)",
       "message": "Viesti",
-      "max_characters": "enintään {{ max_chars }} merkkiä",
-      "email_label_optional_for_no_js_behavior": "Vastaanottajan sähköpostiosoite (valinnainen)",
+      "max_characters": "Enintään {{ max_chars }} merkkiä",
+      "email_label_optional_for_no_js_behavior": "Vastaanottajan sähköposti (valinnainen)",
       "send_on": "VVVV-KK-PP",
-      "send_on_label": "Lähetä (valinnainen)",
-      "expanded": "Lahjakortin saajalomake laajennettuna",
-      "collapsed": "Lahjakortin saajalomake pienennettynä"
+      "send_on_label": "Lähetä tällä päivämäärällä (valinnainen)",
+      "expanded": "Lahjakortin vastaanottajan lomake on laajennettu",
+      "collapsed": "Lahjakortin vastaanottajan lomake on supistettu"
+    }
+  },
+  "shopify": {
+    "attributes": {
+      "first_name": "mainos",
+      "body": "rungon"
+    },
+    "addresses": {
+      "zip_code": "Postaa kotiin",
+      "postal_code": "Postaa kotiin",
+      "postcode": "Postaa kotiin",
+      "prefecture": "Piirikunnan hallinto",
+      "province": "Il",
+      "state": "Eyalet",
+      "state_and_territory": "Lääni/alue",
+      "county": "Piiri",
+      "emirate": "Emirlik",
+      "governorate": "Valilik",
+      "confirm": "Oletko varma, että haluat poistaa tämän osoitteen?"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} alennus on myönnetty"
+    },
+    "challenge": {
+      "message": "Vahvista, ettet ole robotti jatkaaksesi.",
+      "error": "Vastauksesi ei ole oikea, yritä uudelleen."
     }
   }
 }
