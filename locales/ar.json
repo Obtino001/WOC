@@ -3167,7 +3167,141 @@
         "thank_you_confirmed_order_with_missing_pick_up": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
         "thank_you_confirmed_order_with_draft_payment": "إذا احتجنا إلى مزيد من المعلومات أو تم تأكيد طلبك، سنقوم بإبلاغك.",
         "thank_you_confirmed_order_with_draft_pick_up": "إذا احتجنا إلى مزيد من المعلومات أو تم تأكيد طلبك، سنقوم بإبلاغك.",
-        "payment_method_not_charged": "لم يتم تحصيل رسوم"
+        "payment_method_not_charged": "لم يتم تحصيل رسوم",
+        "thank_you_title": "تم تأكيد طلبك",
+        "thank_you_confirmed_order_with_phone_pick_up": "سنرسل لك رسالة نصية عندما يكون طلبك جاهزًا للاستلام.",
+        "thank_you_title_payment": "تم تأكيد دفعتك",
+        "thank_you_title_review": "تم إرسال طلبك للمراجعة",
+        "thank_you_ready_for_picked_up": "تم استلام طلبك من الموقع التالي: %{address}.",
+        "thank_you_title_payments_app_pending_default": "جارٍ معالجة دفعتك",
+        "thank_you_title_payments_app_pending_buyer_action_required": "تم استلام طلبك",
+        "thank_you_title_payments_app_failed_pending_payment": "تعذر معالجة دفعتك",
+        "thank_you_payments_app_failed_pending_payment": "لم يتم تحصيل أي رسوم منك مقابل طلبك. للعودة إلى سلة التسوق ومراجعة طلبك، يرجى العودة وإعادة الدفع.",
+        "thank_you_payments_app_failed_pending_payment_payment": "لم يتم تحصيل أي رسوم منك مقابل طلبك. للعودة إلى سلة التسوق ومراجعة طلبك، يرجى العودة وإعادة الدفع.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "لم يتم تحصيل أي رسوم منك مقابل طلبك. للعودة إلى سلة التسوق ومراجعة طلبك، يرجى العودة وإعادة الدفع.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "سوف تتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك في وقت قريب.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "خلال فترة قصيرة، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "خلال فترة قصيرة، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "سوف تتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك في وقت قريب.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "خلال فترة قصيرة، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "خلال فترة قصيرة، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "خلال وقت قصير، ستتلقى رسالة تأكيد تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "خلال وقت قصير، ستتلقى رسالة تأكيد تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "خلال وقت قصير، ستتلقى رسالة تأكيد تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "للحصول على تأكيد الطلب، يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "بعد إتمام الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تحتوي على رقم الطلب الخاص بك.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "يتم معالجة دفعتك. ستتلقى بريدًا إلكترونيًا عندما يتم تأكيد طلبك.",
+        "thank_you_confirmed_orders_with_email": "ستتلقى قريبًا رسائل تأكيد منفصلة مع أرقام طلباتك",
+        "thank_you_confirmed_orders_with_phone": "سوف تتلقى قريبًا رسائل تأكيد منفصلة مع أرقام طلباتك",
+        "thank_you_confirmed_orders_with_email_and_phone": "ستتلقى قريبًا رسائل تأكيد منفصلة مع أرقام طلباتك",
+        "thank_you_unconfirmed_items_description": {
+          "one": "لم يتم تحصيل أي رسوم منك مقابل هذا المنتج بعد",
+          "other": "لم يتم تحصيل أي رسوم منك مقابل هذه المنتجات بعد"
+        },
+        "thank_you_from_shop": "من متجر %{shop_name}",
+        "thank_you_item_label": {
+          "one": "%{count} منتج",
+          "other": "%{count} منتج"
+        },
+        "thank_you_from_other_store": "من متجر آخر",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "سوف تتلقى رسالة تأكيد عبر البريد الإلكتروني في وقت قصير",
+          "multi_store": "سوف تتلقى رسائل تأكيد منفصلة من كل متجر في وقت قصير"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "سوف تتلقى رسالة تأكيد قصيرة قريبًا",
+          "multi_store": "سوف تتلقى رسائل تأكيد قصيرة من كل متجر على حدة في وقت قريب"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "سوف تتلقى رسالة تأكيد عبر البريد الإلكتروني في وقت قصير",
+          "multi_store": "سوف تتلقى رسائل تأكيد منفصلة من كل متجر في وقت قصير"
+        },
+        "title": "شكرًا لك على شرائك!",
+        "tracking_number": "رقم التتبع:",
+        "updated_time": "تم التحديث منذ %{time_ago}",
+        "unfulfilled_items_title": "يتم التحضير للشحن",
+        "unfulfilled_items_description": "نحن الآن نقوم بتحضير هذه المنتجات للشحن.",
+        "track_shipment": "تتبع الشحنة",
+        "view_business_customer_account": "عرض الحساب",
+        "vat_invoices": {
+          "title": "فواتير ضريبة القيمة المضافة"
+        },
+        "verify_shop_account_title": "تحقق من حساب Shop الخاص بك",
+        "verify_shop_account_message": "تم حفظ معلوماتك مع Shop. يمكنك استخدام هذه المعلومات تلقائيًا في ملايين المتاجر من خلال التحقق من حسابك.",
+        "verify_shop_account_cta": "قم بتأكيد حسابك",
+        "verify_shop_account_confirmation": "تم حفظ تفاصيل الدفع",
+        "track_your_order_link_text": "تتبع طلبك",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "تم رفض منتج واحد",
+          "other": "بعض المنتجات لم تتم الموافقة عليها"
+        }
+      },
+      "tips": {
+        "title": "أضف بقشيشًا",
+        "description": "أظهر دعمك للفريق في متجر %{shop_name}",
+        "presets_description": "حدد نسبة البقشيش",
+        "custom_label": "بقشيش خاص",
+        "add_tip": "أضف بقشيشًا",
+        "update_tip": "قم بتحديث الإكرامية",
+        "message": "شكراً لك.",
+        "no_tip_label": "يوك",
+        "not_available_with_spi": "لا يمكن استخدامه مع التسوق بالتقسيط عبر Shop Pay"
+      },
+      "throttle": {
+        "line_to_check_out": "أنت في مرحلة الدفع",
+        "cart_summary_heading": "سلتك",
+        "merchandise": {
+          "sold_out": "نفد المخزون",
+          "available": "متاح"
+        },
+        "inventory": {
+          "partial_inventory_banner": "بعض المنتجات في سلتك نفدت ولا يمكن شراؤها في صفحة الدفع.",
+          "sold_out": {
+            "heading": "المنتجات في سلتك نفدت",
+            "storefront_body": "للعودة إلى المتجر لمتابعة التسوق",
+            "no_storefront_body": "للأسف، المنتج الذي ترغب في شرائه لم يعد متوفرًا.",
+            "link": "العودة إلى المتجر"
+          }
+        },
+        "title": "الذيل",
+        "time_to_checkout_title": "حان وقت الدفع - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "يتم حساب وقت الانتظار المقدر",
+          "less_than_one": "الوقت المتوقع للانتظار: أقل من دقيقة واحدة",
+          "one": "الوقت المتوقع للانتظار: {{count}} دقيقة",
+          "other": "الوقت المتوقع للانتظار: {{count}} دقيقة"
+        },
+        "last_checked": "(المراقبة الذاتية: {{time}})",
+        "footer": {
+          "heading": "لا تقم بتحديث الصفحة. سيتم تحديث الصفحة تلقائيًا.",
+          "body": "لا يتم حجز المنتجات في سلة التسوق الخاصة بك حتى تكمل الدفع."
+        },
+        "too_many_attempts": {
+          "message": "عدد كبير جدًا من المحاولات",
+          "description": "حاول مرة أخرى بعد بضع دقائق"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "مزيد من المعلومات حول %{context}"
+      },
+      "too_many_requests": {
+        "title": "عدد كبير جدًا من محاولات الدفع",
+        "body": "يرجى الانتظار لبضع دقائق ثم حاول مرة أخرى من سلة التسوق الخاصة بك.",
+        "return_to_cart": "العودة إلى السلة",
+        "body_no_cart": "يرجى الانتظار لبضع دقائق ثم المحاولة مرة أخرى."
       }
     }
   },

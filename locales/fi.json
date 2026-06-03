@@ -2884,11 +2884,61 @@
         }
       },
       "tooltip": {
-        "accessibility_label_context": "Lisätietoja %{context}"
+        "accessibility_label_context": "Lisätietoja %{context}",
+        "additional_payment_methods": "Maksutavat"
       },
       "too_many_requests": {
         "body": "Ole hyvä ja odota muutama minuutti ja yritä uudelleen ostoskoristasi.",
         "body_no_cart": "Ole hyvä ja odota muutama minuutti ja yritä uudelleen."
+      },
+      "wallets": {
+        "call_to_action": "Maksa {{walletName}}-lompakolla",
+        "errors": {
+          "generic": "{{walletName}}-lompakossa ilmeni ongelma. Yritä uudelleen tai käytä toista maksutapaa.",
+          "detour": {
+            "stock_problems": "Jotkin tuotteet eivät ole enää saatavilla. Sulje {{walletName}} ja yritä uudelleen.",
+            "price_change": "Joitakin tuotehintoja on muuttunut. Sulje {{walletName}}-sovellus ja yritä uudelleen tarkistaaksesi tilauksesi.",
+            "queue": "Olet lisätty maksujonoon. Jatkaaksesi sulje {{walletName}}-sovellus.",
+            "currency_change": "Et voi käyttää eri osoitetta {{walletName}} kanssa. Käytä alkuperäistä osoitetta tai kokeile eri maksutapaa."
+          },
+          "invalid": {
+            "shipping_address": "Anna voimassa oleva toimitusosoite",
+            "billing_address": "Anna voimassa oleva laskutusosoite",
+            "shipping_option": "Valitse voimassa oleva toimitusvaihtoehto",
+            "zone": "Anna kelvollinen osavaltio/maakunta",
+            "postal_code": "Syötä voimassa oleva postinumero",
+            "reduction_code": "Syötä voimassa oleva alennuskoodi tai lahjakortti",
+            "billing_must_match_shipping": "Toimitusosoitteen on vastattava rahtiosoitetta",
+            "phone": "Anna voimassa oleva puhelinnumero",
+            "emirate": "Syötä voimassa oleva emirinaatti",
+            "billing_zone": "Syötä laskutusosoitteeseen kelvollinen maakunta/kaupunki",
+            "billing_phone": "Syötä laskutusosoitteeseen voimassa oleva puhelinnumero",
+            "billing_zip": "Syötä laskutusosoitteeseen voimassa oleva postinumero"
+          },
+          "missing": {
+            "address1": "Syötä osoite",
+            "address2": "Syötä asunto, huoneisto tms."
+          },
+          "formatting": {
+            "name_contains_emojis": "Poista nimesi emoji",
+            "postal_code_contains_emoji": "Poista emojisi postilaatikostasi",
+            "first_name_too_long": "Mainos sisältää liikaa kirjaimia",
+            "last_name_too_long": "Sukunimi sisältää liikaa kirjaimia"
+          },
+          "discount_code": "Tätä alennuskoodia ei voi käyttää. Tarkista koodisi ja yritä uudelleen."
+        }
+      },
+      "vaulted": {
+        "change_button": "Vaihda"
+      },
+      "units": {
+        "liter": "L",
+        "ounce": "unssi",
+        "pound": "pauna",
+        "fluid_ounce": "nestetippaa (fl oz)",
+        "gallon": "kaula",
+        "inch": "sisään",
+        "foot": "jalka"
       }
     }
   }

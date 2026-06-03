@@ -2885,7 +2885,63 @@
         "thank_you_confirmed_order_with_missing_pick_up": "Bestätigen Sie Ihre Bestellung, indem Sie uns per E-Mail oder Telefon kontaktieren.",
         "thank_you_confirmed_order_with_draft_payment": "Falls wir weitere Informationen benötigen oder Ihre Bestellung bestätigt wird, werden wir Sie informieren.",
         "thank_you_confirmed_order_with_draft_pick_up": "Falls wir weitere Informationen benötigen oder Ihre Bestellung bestätigt wird, werden wir Sie informieren.",
-        "payment_method_not_charged": "Nicht berechnet"
+        "payment_method_not_charged": "Nicht berechnet",
+        "thank_you_title": "Ihre Bestellung wurde bestätigt",
+        "thank_you_confirmed_order_with_phone_pick_up": "Wir senden Ihnen eine SMS, sobald Ihre Bestellung zur Abholung bereitsteht.",
+        "thank_you_title_payment": "Ihre Zahlung wurde bestätigt",
+        "thank_you_title_review": "Ihre Bestellung wurde zur Überprüfung eingereicht",
+        "thank_you_ready_for_picked_up": "Ihre Bestellung wurde von folgendem Standort abgeholt: %{address}.",
+        "thank_you_title_payments_app_pending_default": "Ihre Zahlung wird bearbeitet",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Ihre Bestellung wurde erhalten",
+        "thank_you_title_payments_app_failed_pending_payment": "Ihre Zahlung konnte nicht verarbeitet werden",
+        "thank_you_payments_app_failed_pending_payment": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Für Ihre Bestellung wurde keine Zahlung von Ihnen eingezogen. Gehen Sie zurück zu Ihrem Warenkorb, um Ihre Bestellung zu überprüfen und erneut zu bezahlen.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Sie erhalten in Kürze eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "In Kürze erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "In Kürze erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Sie erhalten in Kürze eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "In Kürze erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "In Kürze erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "In Kürze erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "In Kürze erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "In Kürze erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Bestellbestätigung erhalten Sie, indem Sie uns per E-Mail oder Telefon kontaktieren.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Nachdem Sie Ihre Zahlung abgeschlossen haben, erhalten Sie eine Bestätigungs-E-Mail mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Nachdem Sie Ihre Bestellung abgeschlossen haben, erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Nachdem Sie Ihre Bestellung abgeschlossen haben, erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Nachdem Sie Ihre Bestellung abgeschlossen haben, erhalten Sie eine Bestätigungsnachricht mit Ihrer Bestellnummer.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "Ihre Zahlung wird bearbeitet. Sie erhalten eine E-Mail, sobald Ihre Bestellung bestätigt wurde.",
+        "thank_you_confirmed_orders_with_email": "Sipariş numaralarınızla birlikte ayrı onay-E-Mails erhalten Sie in Kürze.",
+        "thank_you_confirmed_orders_with_phone": "Bestätigungs-SMS mit Ihren Bestellnummern erhalten Sie in Kürze separat.",
+        "thank_you_confirmed_orders_with_email_and_phone": "Sipariş numaralarınızla birlikte ayrı onay-E-Mails erhalten Sie in Kürze.",
+        "thank_you_unconfirmed_items_description": {
+          "one": "Für dieses Produkt wurde Ihnen noch nichts berechnet."
+        },
+        "thank_you_from_shop": "aus dem %{shop_name}-Geschäft",
+        "thank_you_from_other_store": "Von einem anderen Geschäft",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Sie erhalten in Kürze eine Bestätigungs-E-Mail.",
+          "multi_store": "In Kürze erhalten Sie von jedem Geschäft einzeln Bestätigungs-E-Mails."
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Sie erhalten in Kürze eine Bestätigungs-SMS.",
+          "multi_store": "In Kürze erhalten Sie von jedem Geschäft einzeln eine Bestätigungs-SMS."
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Sie erhalten in Kürze eine Bestätigungs-E-Mail.",
+          "multi_store": "In Kürze erhalten Sie von jedem Geschäft einzeln Bestätigungs-E-Mails."
+        }
       }
     }
   }
