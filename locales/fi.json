@@ -2595,7 +2595,41 @@
         "attempted_delivery_local_description_html": "Emme voinut toimittaa tilaustasi. Ota yhteyttä %{contact_us} sopiaksesi uudesta toimituksesta.",
         "announcement": {
           "collapse": "Ahdista"
-        }
+        },
+        "cancelled_page_title": "Tilaus peruutettu",
+        "customer_information_title": "Tilaustiedot",
+        "company_tracking_number": "%{company} seurantanumero:",
+        "estimated_arrival": "Arvioitu toimituspäivä:",
+        "confirmed_description": "Olemme vastaanottaneet tilauksesi ja valmistelemme sitä. Palaa tälle sivulle saadaksesi päivityksiä lähetyksesi tilasta.",
+        "delivered_description_html": "Tilauksesi on toimitettu antamaasi osoitteeseen. Jos pakettisi ei ole saapunut tai sinulla on muita ongelmia, %{contact_us}.",
+        "contact_us": "Ota meihin yhteyttä",
+        "failed_title": "Tilauksesi toimitus epäonnistui",
+        "failed_contact_merchant": "Toimituksen suunnittelemiseksi ota yhteyttä %{company}iin.",
+        "failed_contact_merchant_no_company": "Ota meihin yhteyttä toimituksen suunnittelemiseksi.",
+        "customer_information_hidden_fields_message": "Näytä kaikki asiakastiedot kirjautumalla sisään.",
+        "cancelled_description": "Tilauksesi peruttiin %{date}. Jos sinulla on kysyttävää, ota meihin yhteyttä.",
+        "customer_validation_error": "Anna kelvollinen sähköpostiosoite tai tilausnumero.",
+        "customer_validation_error_phone": "Anna kelvollinen puhelinnumero tai tilausnumero.",
+        "fulfillment": {
+          "unfulfilled_table_title": "Lähetystä varten valmistellut tuotteet",
+          "quantity_label": "Kappaletta"
+        },
+        "delivery_information_label": "Toimitustiedot:",
+        "delivered_local_description_html": "Tilauksesi ei ole vielä saapunut? %{let_us_know}.",
+        "gift_card_confirmation_by_email": "Jos sähköpostia ei ole tullut, lähetä se uudelleen tai ota meihin yhteyttä.",
+        "estimated_delivery": "Arvioitu toimitusaika:",
+        "company_location_title": "Sijainti",
+        "breadcrumbs_in_review": "Tarkastellaan",
+        "first_payment_complete": "Ensimmäinen maksu suoritettu",
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Muutaman minuutin kuluessa saat sähköpostin, joka sisältää lahjakorttisi."
+        },
+        "failed_pending_payment_page_title": "Maksussasi ilmeni ongelma",
+        "company_location_section_title": "Yritys ja sijainti",
+        "confirmed_items_count": "%{total_count} tuotteesta %{confirmed_count} on vahvistettu",
+        "checkout_on_remote_shop_link_text": "Maksa %{remoteShopName}-kaupassa",
+        "checkout_again": "Yritä maksaa uudelleen",
+        "cashback_notice": "Saat nakit iadenizi 30 päivän kuluttua."
       }
     }
   }
