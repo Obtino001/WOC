@@ -2358,7 +2358,45 @@
             "other": "Pour les %{count} autres livraisons, %{shipping_price} par livraison"
           },
           "prepaid_free_shipping_with_cycles": {
-            "one": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}"
+            "one": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}",
+            "other": "Livraison gratuite pour le premier %{cycle}, puis %{recurring_order_shipping_price}"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "other": "tous les %{count} jours"
+            },
+            "week": {
+              "other": "toutes les %{count} semaines"
+            },
+            "month": {
+              "other": "tous les %{count} mois"
+            },
+            "year": {
+              "other": "tous les %{count} ans"
+            }
+          },
+          "prepaid_shipping_price_label": "%{delivery_interval_count} x %{shipping_price} par livraison",
+          "prepaid_initial_order_discounted": "Les frais de premier envoi sont de %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Les frais de premier envoi sont de %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Les frais de premier envoi sont de %{discounted_shipping_price} %{prepaid_delivery_frequency}, puis %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Les frais de premier envoi sont de %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), puis %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Parce que",
+          "recurring_order_shipping_price": "puis %{recurring_order_shipping_price}",
+          "subscription_free_with_frequency_label": "Livraison gratuite (%{delivery_frequency})",
+          "prepaid_order_one_cycle": {
+            "one": "Pour les %{count} autres livraisons, %{shipping_price}",
+            "other": "Autre livraison pour %{count} (%{per_delivery_cost}) à %{shipping_price}"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} livraison pour %{shipping_price}"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "Pour les %{count} autres livraisons, %{shipping_price}, puis %{recurring_order_shipping_price}",
+            "other": "Pour les %{count} autres livraisons, %{shipping_price} (%{per_delivery_cost}), puis %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} livraisons pour %{shipping_price}, puis %{recurring_order_shipping_price}",
+            "other": "%{count} livraisons pour %{shipping_price} (%{per_delivery_cost}), puis %{recurring_order_shipping_price}"
           }
         },
         "shipping_used_as_billing_notice": "Cette adresse sera également utilisée comme votre adresse de facturation valide pour la commande en question.",
@@ -2381,7 +2419,28 @@
         "split_shipping_option_custom": "Spécial",
         "split_shipping_shipment_notice": "Votre commande arrivera en %{quantity_shipments} livraisons",
         "split_shipping_first_shipment_notice": "Votre première commande arrivera en %{quantity_shipments} livraisons",
-        "shipping_method_rollup_accessibility_label": "Options de méthode d'expédition"
+        "shipping_method_rollup_accessibility_label": "Options de méthode d'expédition",
+        "title": "Fret",
+        "waiting_on_rate_notice": "Les frais de livraison disponibles sont en cours de calcul…",
+        "waiting_on_pickup_location_notice": "Récupération des emplacements de livraison appropriés...",
+        "subscription_shipping": "Envoi d'abonnement",
+        "subscription_local_delivery": "Livraison locale incluse dans l'abonnement",
+        "subscription_pickup": "Livraison incluse dans l'abonnement",
+        "two_day_delivery": "Livraison en 2 jours (%{time})",
+        "unbranded_default_description": "Prêt à être expédié",
+        "third_party_address_timeout": "Les adresses ne peuvent pas être chargées. Réessayez ou utilisez une autre adresse.",
+        "third_party_address_error": "Une erreur s'est produite lors du chargement de la sélection d'adresse. Veuillez saisir votre adresse manuellement ci-dessous.",
+        "third_party_payment_timeout": "Les méthodes de paiement n'ont pas pu être chargées. Veuillez réessayer ou utiliser une autre méthode de paiement.",
+        "third_party_payment_error": "Une erreur s'est produite lors du chargement de l'option de paiement. Veuillez utiliser un autre mode de paiement.",
+        "unbranded_description_same_day": "Expédié le même jour ouvrable",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Expédié le jour ouvrable suivant",
+          "other": "Expédié sous %{count} jours ouvrables"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Expédié sous %{count} semaines",
+          "other": "Expédié sous %{count} semaines"
+        }
       },
       "session_errors": {
         "session_not_unique": "Une erreur s'est produite lors du traitement de votre commande. Actualisez cette page pour retourner à la boutique.",
@@ -2396,6 +2455,18 @@
           "one": "Cette commande sera envoyée à l'adresse fournie par {{merchant}}.",
           "other": "Cette commande sera envoyée à l'adresse fournie par {{merchant}}. Veuillez choisir une adresse de livraison."
         }
+      },
+      "shipping_errors": {
+        "shipping_method": "Les options de livraison pour votre commande ont changé. Veuillez revoir votre choix.",
+        "shipping_method_not_available": "Votre panier a été mis à jour. Les produits que vous avez ajoutés au panier ne peuvent pas être livrés à votre adresse. Veuillez retirer ces produits du panier pour finaliser votre commande.",
+        "shipping_method_not_available_generic": {
+          "one": "Votre commande ne peut pas être envoyée à l'adresse sélectionnée. Veuillez vérifier l'adresse pour vous assurer qu'elle est correcte, puis réessayez ou choisissez une autre adresse."
+        },
+        "payment_method_not_supported": "Vous ne pouvez pas utiliser ce mode de paiement pour %{country}. Veuillez utiliser un autre mode de paiement pour envoyer vers ce pays.",
+        "empty_state": "Pour afficher les méthodes d'expédition disponibles, saisissez votre adresse de livraison.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Les articles dans le panier ne répondent pas aux exigences de prix ou de poids pour l'expédition. Veuillez mettre à jour votre panier et réessayer.",
+        "invalid_selected_address": "L'adresse de livraison sélectionnée n'est pas valide",
+        "invalid_selected_address_with_update_link": "L'adresse de livraison sélectionnée n'est pas valide. %{update_address_link} ou choisissez une autre adresse"
       }
     }
   }
