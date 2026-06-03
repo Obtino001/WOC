@@ -1436,7 +1436,8 @@
         "error_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Daher können bei der Lieferung Zollgebühren und andere Steuern anfallen.",
         "deferred_total_due_date_label": "Gesamtbetrag, der am {{date}} zu zahlen ist",
         "expand_component_information": {
-          "one": "%{count} Produkte anzeigen"
+          "one": "%{count} Produkte anzeigen",
+          "other": "%{count} Produkte anzeigen"
         },
         "discount_discovery": {
           "back_to_finalize_order": "Zurück zur Bestellabschlussseite"
@@ -1457,7 +1458,50 @@
         "discount_code_replaced": "%{old_code} Rabattcode wurde entfernt und %{code} wurde angewendet",
         "discount_code_replaced_multiple": "Mehrere Rabattcodes wurden entfernt und %{code} wurde angewendet",
         "discount_applies_to_subscription_items_only": "Dieser Rabatt gilt nur für Abonnementprodukte.",
-        "estimated_taxes_finalization_tooltip_content_short": "Die Steuer wird nach der Zahlung endgültig festgelegt."
+        "estimated_taxes_finalization_tooltip_content_short": "Die Steuer wird nach der Zahlung endgültig festgelegt.",
+        "order_name_label": "%{name} Bestellung",
+        "gift_card_and_discount_title": "Rabattcode oder Geschenkkarte",
+        "gift_card_and_discount_label": "Rabattcode oder Geschenkkarte",
+        "gift_card_and_discount_placeholder": "Rabattcode oder Geschenkkarte",
+        "free_shipping_discount_label": "Kostenloser Versand",
+        "gift_card_has_been_applied": "Geschenkkarte angewendet",
+        "gift_card_has_been_removed": "Geschenkkarte entfernt",
+        "partial_total_label": "Insgesamt",
+        "paid_label": "Ödendi",
+        "payment_due_label": "Eingehende Zahlung",
+        "gift_card_savings_notice": "nach %{gift_card_amount} Geschenkkarte",
+        "order_total_updated_label": "Aktualisierte Gesamtzahl",
+        "no_pickup_location": "Verfügbarer Abholort nicht vorhanden.",
+        "gift_card_ending": "Mit %{last_characters} endende Geschenkkarte",
+        "multiple_shipping_lines_label": "Gesamtsumme der Fracht",
+        "original_price": "Originalpreis",
+        "gift_card_subscriptions_notice": "Geschenkkarten sind nur bei Ihrer ersten Zahlung gültig.",
+        "payment_terms_totals": {
+          "due_later": "%{due_at} Datum fälliger Gesamtbetrag",
+          "due_later_checkout_to_draft": "Gesamtbetrag, der später zu zahlen ist",
+          "due_on_fulfillment": "Gesamtbetrag, der bei Lieferung zu zahlen ist",
+          "due_on_receipt": "Bei Ausstellung der Quittung zu zahlender Gesamtbetrag",
+          "due_on_fulfillment_next": "Bei Versand zu zahlen"
+        },
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> konnte mit Ihren aktuellen Rabatten nicht verwendet werden.",
+        "maximum_discount_code_limit_reached": "Sie haben die maximale Anzahl an Rabattcodes erreicht. Entfernen Sie einen der vorhandenen Codes, um den Code <strong style=\"text-transform:uppercase\">%{code}</strong> zu verwenden.",
+        "order_total_label": "Bestellgesamtbetrag",
+        "may_be_charged_on_delivery": "Bei der Lieferung kann eine Gebühr erhoben werden",
+        "full_price": "Vollständiger Preis: %{price}",
+        "group_title_label": "im Rahmen von \"%{group_title}\"",
+        "gift_card_applied": "Geschenkkarte angewendet",
+        "more_items_modal": {
+          "clear_search": "Suche löschen",
+          "empty_results": "Für \"%{searchText}\" wurden keine Ergebnisse gefunden. Bitte überprüfen Sie, ob keine Rechtschreibfehler vorliegen, oder verwenden Sie ein anderes Wort oder einen anderen Ausdruck.",
+          "number_items_shown": "%{shownNumber}/%{totalNumber} Artikel",
+          "search_item": "Ara"
+        },
+        "from_shop_heading": "aus dem %{shop_name}-Geschäft",
+        "from_other_stores_heading": "Andere Geschäfte",
+        "order_discounts_apply_to_local_shop": "Bestellrabatte gelten nur für Produkte, die im %{shop_name}-Shop gekauft wurden.",
+        "gift_cards_apply_to_local_shop": "Geschenkkarten sind nur für Produkte gültig, die im %{shop_name} Geschäft gekauft wurden.",
+        "from_multiple_stores_heading": "Mehrere Geschäfte",
+        "pay_merchant_label": "%{merchant_name} Zahlung"
       },
       "order_payment_collection": {
         "changes_summary": {
