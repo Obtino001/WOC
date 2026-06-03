@@ -1622,7 +1622,10 @@
           "due_later_checkout_to_draft": "Totalt beløp som skal betales senere",
           "due_on_fulfillment": "Totalt beløp som skal betales ved levering",
           "due_on_receipt": "Totalt beløp som skal betales ved utstedelse av kvittering",
-          "due_on_fulfillment_next": "Betales ved levering"
+          "due_on_fulfillment_next": "Betales ved levering",
+          "due_today": "Totalt beløp som skal betales i dag",
+          "total_paid": "Totalt betalt beløp",
+          "due_today_next": "Forfallsdatoen er i dag"
         },
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> kunne ikke brukes med dine nåværende rabatter.",
         "maximum_discount_code_limit_reached": "Du har nådd maks antall rabattkoder. Fjern en av de eksisterende kodene for å bruke koden <strong style=\"text-transform:uppercase\">%{code}</strong>.",
@@ -1647,7 +1650,66 @@
         "order_discounts_apply_to_local_shop": "Bestillingsrabatter gjelder kun for produkter kjøpt i %{shop_name}-butikken",
         "gift_cards_apply_to_local_shop": "Gavekort gjelder kun for produkter kjøpt i %{shop_name}-butikken",
         "from_multiple_stores_heading": "Fra flere butikker",
-        "pay_merchant_label": "%{merchant_name} betaling"
+        "pay_merchant_label": "%{merchant_name} betaling",
+        "shopping_cart_label": "Handlekurv",
+        "remove_gift_card_label": "Tøm gavekortet ditt",
+        "remove_discount_label": "Fjern rabatten",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkode kan ikke brukes for leveringsadressen din",
+        "subtotal_label": "Total poengsum",
+        "shipping_label": "Frakt",
+        "tip_label": "Tips",
+        "shipping_default_value": "Neste trinn beregnes",
+        "shipping_pending_message": "Ikke tilgjengelig ennå",
+        "shipping_policy_link": "Fraktkostnader",
+        "taxes_label": "Skatter",
+        "price_label": "Pris",
+        "quantity_label": "Antall",
+        "product_change_label": "Endre",
+        "product_image_label": "Produktbilde",
+        "scroll_order_summary": "Sveip for flere produkter",
+        "pickup_label": "Hent i butikk",
+        "sale_price": "Rabattert pris",
+        "recurring_subtotal_label": "Gjentatt total sum",
+        "recurring_total_label": "Totalt gjentatt",
+        "recurring_total_tooltip": "Frakt, avgifter, toll eller alle gjeldende rabatter er ikke inkludert.",
+        "percent_off_shipping": "%%{percent} rabatt på frakt",
+        "subscriptions": "Abonnement",
+        "recurring_payments": "Gjentatte betalinger",
+        "recurring_total_multiple_label": "Denne bestillingen inneholder gjentatte avgifter for flere produkter.",
+        "price_per_item": {
+          "accessibility_label": "Per produkt %{price}",
+          "label": "%{price}/stykk"
+        },
+        "return_restocking_fee_label": "Lagerfornyelsesgebyr",
+        "return_shipping_fee_label": "Returfrakt",
+        "shipping_discount_title": "Fraktavslag",
+        "subtotal_label_with_quantity": {
+          "one": "Totalt antall · %{count} produkter",
+          "other": "Totalt antall · %{count} produkter"
+        },
+        "product_image_quantity_label": "Antall",
+        "price_before_discount_aria_text": "Originalpris",
+        "price_after_discount_aria_text": "Rabattert pris",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Send adresse",
+          "ship_to_address_instead_html": "Bruk %{link}-alternativet"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Det finnes ingen butikk der produktet ditt er tilgjengelig",
+          "other": "Det finnes ingen butikk der produktene dine er tilgjengelige"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Det finnes ingen butikk i %{country} hvor produktet ditt er tilgjengelig",
+          "other": "Det finnes ingen butikker i %{country} hvor produktene dine er tilgjengelige"
+        },
+        "tax_line": {
+          "hst": "HST",
+          "gst": "MVA",
+          "pst": "PST",
+          "rst": "RST",
+          "qst": "QST",
+          "vpt": "VPT"
+        }
       },
       "order_payment_collection": {
         "custom_line_item_description": "Beløpet som skal betales for %{order_name}-bestillingen",
