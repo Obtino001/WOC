@@ -1987,7 +1987,10 @@
           "no_longer_supported": "Der Währungsstandard des Geschäfts wird nicht mehr unterstützt."
         },
         "installments_payment_method_incompatible": "Die gewählte Zahlungsmethode kann bei Ratenzahlungen nicht verwendet werden. Bitte wählen Sie eine andere Zahlungsmethode.",
-        "missing_cvc": "Geben Sie einen Sicherheitscode ein"
+        "missing_cvc": "Geben Sie einen Sicherheitscode ein",
+        "three_d_secure_throttled": "Zu viele Versuche unternommen; bitte warten Sie, bevor Sie es erneut versuchen.",
+        "transient_error": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Versuchen Sie, diese Seite zu aktualisieren oder überprüfen Sie Ihre Internetverbindung.",
+        "three_d_secure_failed_payment_method": "Ihre Karte konnte nicht verifiziert werden. Bitte versuchen Sie es erneut oder fügen Sie eine andere Karte hinzu."
       },
       "payment_challenge_modal": {
         "instructions": "Schließen Sie Ihren Kauf mit Ihrem {{paymentMethod}}-Code ab",
@@ -2004,6 +2007,116 @@
       "payment_collection": {
         "cancelled": "Diese Zahlung ist nicht mehr erforderlich. Für weitere Details besuchen Sie bitte die Bestellseite.",
         "paid": "Diese Zahlung wurde bereits gesendet. Für Details besuchen Sie bitte die Bestellseite."
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Verfügbares Guthaben %{amount}",
+        "credit_card_expires_on_notice": "Verfallsdatum: %{month}/%{year}",
+        "express_payment_gateway_label": "Schnell",
+        "manual_payment_gateway_label": "Manuel"
+      },
+      "payment_gateway": {
+        "bank_deposit_label": "Bankeinlage",
+        "cash_on_delivery_label": "Zahlung bei Lieferung",
+        "money_order_label": "Per Banküberweisung",
+        "debit_card_label": "Bankkarte",
+        "generic_payment_terms": "Sie unterliegen den Bedingungen von {{translatedName}}. Ihr Fälligkeitsdatum ist der {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Um gespeicherte Zahlungsmethoden hinzuzufügen oder zu verwenden, melden Sie sich in einem Konto mit Zugriff auf diesen Bereich an {{logIn}}.",
+            "link": "einloggen"
+          }
+        },
+        "direct_payment_terms": "Sie unterliegen den Bedingungen von {{translatedName}}. Ihre Karte wird am {{dueDate}} belastet.",
+        "order_due_on_fulfillment_choose_later": "Ihre Zahlung wird nach Versand Ihrer Bestellung durchgeführt.",
+        "order_due_on_fulfillment_payment": "Ihre Karte wird belastet, sobald Ihre Bestellung versandt wurde.",
+        "draft_order_payment_due_later_no_terms": "Ihre Zahlung wird nach Bestätigung Ihrer Bestellung durchgeführt.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Ihre Karte wird belastet, sobald Ihre Bestellung bestätigt wurde.",
+        "draft_order_payment_due_later_terms": "Nach Bestätigung Ihrer Bestellung unterliegen Sie den Bedingungen von {{translatedName}}.",
+        "draft_order_payment_due_on_fulfillment": "Ihre Zahlung wird nach Bestätigung und Versand Ihrer Bestellung vorgenommen.",
+        "fixed_payment_label": "Zahlungsfrist für Ihre Zahlung ist der {{dueDate}}.",
+        "fixed_direct_payment_terms": "Von Ihrer Karte wird am {{dueDate}} eine Abbuchung vorgenommen.",
+        "order_deposit_due_now": "{{depositAmount}} wird heute fällig. Der Restbetrag hat die Fälligkeit {{translatedName}} und ist am {{dueDate}} zu zahlen.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} wird heute bezahlt. Der Restbetrag wird bezahlt, wenn Ihre Bestellung versandt wird.",
+        "order_due_on_receipt_choose_later": "Die Zahlung muss erfolgen, wenn die Quittung ausgestellt wird.",
+        "draft_order_deposit_due_later": "{{depositAmount}} wird bei Bestätigung Ihrer Bestellung fällig. Für den Restbetrag gilt die Laufzeit {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} wird bei Bestätigung Ihrer Bestellung fällig. Der Restbetrag wird bei Versand Ihrer Bestellung bezahlt.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} wird heute bezahlt. Der Restbetrag wird später bezahlt.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} wird heute bezahlt. Der Restbetrag wird am {{dueDate}} fällig.",
+        "credit_or_debit_card_label": "Kredit-/Bankkarte"
+      },
+      "pickup_point": {
+        "could_not_resolve_address": "Ihre Adresse wurde nicht gefunden. Bitte versuchen Sie es erneut oder verwenden Sie eine andere Adresse.",
+        "no_pickup_points_near_you": "In der Nähe der ausgewählten Adresse konnte kein Abholpunkt gefunden werden.",
+        "no_pickup_points_near_location": "In der Nähe Ihres Standorts gibt es keinen Abholpunkt.",
+        "no_pickup_points_found": "Abholstelle nicht vorhanden",
+        "number_of_pickup_points_near_location": {
+          "one": "In der Nähe Ihres Standorts gibt es %{count} Abholstellen.",
+          "other": "In der Nähe Ihres Standorts gibt es %{count} Abholstellen."
+        },
+        "change": "Position ändern",
+        "geolocation": {
+          "errors": {
+            "unsuported_by_browser": "Die Geolokalisierungsinformationen können von Ihrem Browser nicht abgerufen werden. Bitte versuchen Sie es erneut oder verwenden Sie einen anderen Browser.",
+            "permission_not_allowed": "Erlauben Sie die Freigabe Ihres Standorts.",
+            "permission_denied": "Ihr Standort kann nicht ermittelt werden. Bitte versuchen Sie es erneut."
+          }
+        },
+        "no_business_hours": "Keine Arbeitszeitinformationen vorhanden",
+        "title": "Abholstelle",
+        "search_button": "Ara",
+        "selector_tabs": "Abholort-Auswahl",
+        "paginator": {
+          "header": {
+            "one": "%{count} Punkte werden von %{first} bis %{last} angezeigt",
+            "other": "%{count} Punkte werden von %{first} bis %{last} angezeigt"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} Punkten von %{pickup_point_index}",
+            "other": "%{count} Punkten von %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{count} Punkten von %{first} - %{last}",
+            "other": "%{count} Punkten von %{first} - %{last}"
+          }
+        },
+        "waiting_on_pickup_point_location_notice": "Abholstellen werden gesucht...",
+        "open_twenty_four_hours": "7/24 geöffnet",
+        "pickup_unavailable_banner_title": {
+          "one": "Für Ihr Produkt gibt es keinen verfügbaren Abholort.",
+          "other": "Für Ihre Produkte gibt es keinen verfügbaren Abholpunkt."
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Weiterleitung...",
+        "redirecting_title": "Weiterleitung...",
+        "redirecting_notice": "Wir leiten Sie weiter, bitte warten Sie.",
+        "complete_your_purchase_title": "Schließen Sie Ihren Kauf ab",
+        "continue_to_payment_gateway_notice": "Fahren Sie mit dem Zahlungsvorgang fort, um Ihre Zahlungsinformationen hinzuzufügen.",
+        "continue_to_payment_gateway_button_label": "Mit Ratenzahlung fortfahren",
+        "complete_your_purchase_title_error": "Korrigieren Sie Ihre Zahlungsinformationen",
+        "continue_to_payment_gateway_notice_error": "Ihre Zahlungsinformationen konnten nicht verifiziert werden.",
+        "wait": {
+          "short": "Ihre Bestellung wird bearbeitet.",
+          "medium": {
+            "one": "Ihre Bestellung wird bearbeitet. Die voraussichtliche Wartezeit beträgt %{count} Minuten.",
+            "other": "Ihre Bestellung wird bearbeitet. Die voraussichtliche Wartezeit beträgt %{count} Minuten."
+          },
+          "long": "Bestätigung Ihrer Bestellung erhalten Sie per E-Mail. Derzeit gibt es viele Bestellungen.",
+          "no_auto_refresh_html": "Wenn Sie nicht automatisch weitergeleitet werden, %{link}.",
+          "refresh_this_page": "Diese Seite neu laden"
+        },
+        "you_will_not_be_charged": "Ihnen wird noch keine Gebühr berechnet",
+        "action_required": "Vorgang erforderlich",
+        "redirecting_to_bank": "Zur {{bank}}-Seite wird weitergeleitet",
+        "modal_notice": "Wir setzen uns mit {{paymentMethod}} in Verbindung",
+        "remote_shops_payments_processing": "Zahlungen bearbeiten",
+        "remote_checkout_count": "%{total} von %{current}"
+      },
+      "post_purchase": {
+        "escape_confirmation": "Sie haben für Ihre Bestellung bezahlt.",
+        "components": {
+          "processing": "Wird verarbeitet…"
+        }
       }
     }
   }

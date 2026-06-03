@@ -2054,11 +2054,78 @@
         "redirecting_to_bank": "Ohjataan {{bank}}-sivulle",
         "modal_notice": "Ota yhteyttä {{paymentMethod}} kautta",
         "remote_shops_payments_processing": "Maksujen käsittely",
-        "remote_checkout_count": "%{total} kautta %{current}"
+        "remote_checkout_count": "%{total} kautta %{current}",
+        "you_will_receive_confirmation": "Tällä hetkellä vastaanotamme paljon tilauksia. Saat vahvistuksen sähköpostitse tai tekstiviestillä pian. Jos et saa vahvistusta tunnin kuluessa, ilmoitathan siitä meille."
       },
       "post_purchase": {
         "components": {
           "processing": "Käsitellään…"
+        }
+      },
+      "review": {
+        "blocks": {
+          "contact_method_title": "Yhteystiedot",
+          "change_link_label": "Vaihda",
+          "change_contact_method_link_label": "Vaihda yhteystiedot",
+          "change_billing_address_link_label": "Vaihda laskutusosoitetta",
+          "change_shipping_address_link_label": "Toimitusosoitetta vaihda",
+          "change_shipping_method_link_label": "Vaihda toimitustapaa",
+          "change_payment_method_link_label": "Vaihda maksutapaa",
+          "pick_up_in_store_shipping_method_html": "Nouto myymälästä · %{location_name}",
+          "purchase_order_number_title": "Osto tilausnumero",
+          "change_purchase_order_number_label": "Ostoilmoituksen numeroa vaihdetaan",
+          "change_delivery_method_link_label": "Toimitustavan vaihto",
+          "no_address": "(Osoitetta ei ole)",
+          "no_purchase_order_number": "(Ostotilausnumeroa ei ole)",
+          "due_after_order_reviewed_html": "Maksu suoritetaan tilauksen tarkastamisen jälkeen",
+          "review_title_free_order": "Tarkista tilauksesi ja viimeistele se",
+          "payment_method_saved_company_location": "Tallenna kortti tähän sijaintiin",
+          "pickup_items_at": {
+            "one": "%{count} tuotetta noudetaan täältä",
+            "other": "%{count} tuotetta noudetaan täältä"
+          },
+          "ship_items_to": {
+            "one": "%{count} tuotetta lähetetään sinne",
+            "other": "%{count} tuotetta lähetetään sinne"
+          }
+        },
+        "block_title": "Tarkista tietosi",
+        "account_more_actions": "Tämän tilin muut toiminnot"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Tämä lahjakortti on jo käytetty tilauksessasi",
+          "insufficient_funds": "Tällä lahjakortilla ei ole saldoa jäljellä",
+          "expired": "Tämän lahjakortin voimassaoloaika on päättynyt",
+          "invalid": "Syötä voimassa oleva lahjakortti",
+          "currency_mismatch": "Vain %{shop_currency} -valuutassa olevat lahjakortit hyväksytään",
+          "generic": "Lahjakorttia ei voitu lisätä maksutapaan",
+          "throttle_limit_exceeded": "Olet ylittänyt maksimiyrityskertojen määrän. Yritä myöhemmin uudelleen.",
+          "no_longer_available": "Tätä lahjakorttia ei voi enää käyttää tässä maksussa"
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Tätä tuotetta ei voi lisätä ostoskoriisi, koska se kuuluu kauppaan, joka käyttää eri valuuttaa.",
+          "max_remote_shops_exceeded": "Ostoskassissasi on jo enimmäismäärä tuotteita muista kaupoista, joten tätä tuotetta ei voi lisätä.",
+          "currency_mismatch_removal": "Tuote poistettiin ostoskoristasi, koska se kuuluu kauppaan, joka käyttää eri valuuttaa.",
+          "only_remote_merchandise_lines": "Maksu koskee vain etämyynnissä olevia tuotteita. Maksun suorittamiseksi tarvitaan ohjaus etämyymälään."
+        }
+      },
+      "remote_merchandise_only": {
+        "remote_only_notice": "Nämä tuotteet myydään ja lähetetään eri myymälöistä. Viimeistele ostoksesi maksamalla jokaiselle myymälälle erikseen.",
+        "checkout_on_shop_label": "Maksa %{shop_name}-kaupassa",
+        "single_shop_transition": "Olet siirtymässä %{advertiser} -kauppaan viimeistelläksesi ostoksesi.",
+        "detail_item_label": {
+          "one": "{{count}} tuotetta"
+        }
+      },
+      "remote_policies": {
+        "unavailable_policy": "Tälle kaupalle ei ole annettu %{policy_name}-käytäntöä. Lisätietoja saat ottamalla suoraan yhteyttä %{shop_name}-kauppaan."
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Maksutapahtuman viimeistelemiseksi tarvitaan laajennuksen vuorovaikutus."
         }
       }
     }
