@@ -1496,7 +1496,83 @@
       },
       "offsite_payment_failed": {
         "payment_link_expired_title": "Betalingslenkens gyldighet er utløpt",
-        "payment_link_expired_text": "Prøv å skanne QR-koden på nytt."
+        "payment_link_expired_text": "Prøv å skanne QR-koden på nytt.",
+        "payment_not_processed_title": "Betalingen mislyktes",
+        "payment_not_processed_text": "Prøv å skanne QR-koden på nytt. Hvis det fortsatt ikke fungerer, informer personalet vårt om dette og prøv en annen betalingsmetode.",
+        "title": "Ekstern betaling mislyktes"
+      },
+      "order_summary": {
+        "add_discount_or_gift_card": "Legg til rabattkode eller gavekort",
+        "apply_discount_button_label": "Bruk",
+        "applied_discount_message": "%{amount} rabatt på total bestillingspris",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkode gjelder ikke for produktene i handlekurven din",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkoden kan ikke brukes akkurat nå",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> rabattkode er allerede brukt",
+        "cost_table_title": "Kostnadsoversikt",
+        "collapse_order_summary_short": "Skjul",
+        "calculating_shipping": "Beregnes...",
+        "applied_free_shipping_discount_label": "Anvendt",
+        "confirmation_number_label": "Bekreftelse med nummer %{confirmation_number}",
+        "amount_off_shipping": "%{amount} rabatt på frakt",
+        "custom_discount": "Spesialtilbud",
+        "collapse_component_information": {
+          "one": "Skjul %{count} produkter",
+          "other": "Skjul %{count} produkter"
+        },
+        "component_quantity_title": "%{quantity} stk %{product_title}",
+        "alternative_payment_currency_total": "%{amount_due} er innkrevd",
+        "calculating": "Beregnes...",
+        "deferred_balance_info": {
+          "title": "Saldoen på {{amount_due}} forfaller til betaling den {{due_at}}.",
+          "due_on_fulfillment_title": "{{amount_due}} saldoen skal betales når bestillingen sendes"
+        },
+        "cost_table_item_column_header": "Vare",
+        "cost_table_value_column_header": "Verdi",
+        "compare_at_sale": "Rabatt (%{sale_amount})",
+        "automatic_discount_tooltip": "Automatisk anvendte rabatter kan ikke fjernes"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Beløpet som skal betales for %{order_name}-bestillingen",
+        "changes_summary": {
+          "added": {
+            "one": "Lagt til",
+            "other": "%{count} lagt til"
+          },
+          "removed": "Fjernet",
+          "subtracted": "%{count} elementer ble fjernet",
+          "returned": "%{count} enheter ble returnert",
+          "return_line_item_removed": "%{count} enheter ble fjernet fra returlisten"
+        },
+        "additional_payment_requested": "Betaling på %{total_outstanding} kreves",
+        "checkout_review_and_pay": "Bestillingen %{order_name} er oppdatert. Gå gjennom disse endringene, og betal deretter for å bekrefte bestillingen din.",
+        "order_updated_on": "Bestillingen din ble oppdatert %{last_edited_at}.",
+        "order_review_and_pay": "Bestillingen din er oppdatert. Gå gjennom bestillingen din og betal for å bekrefte.",
+        "pay_now": "Betal nå"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Kjøp %{product_name}-produktet",
+          "one": "Kjøp %{product_name}-produktet og %{count} andre produkter",
+          "other": "Kjøp %{product_name}-produktet og %{count} andre produkter"
+        }
+      },
+      "order_errors": {
+        "creation_failure": "Det oppstod et problem under opprettelsen av bestillingen din. Prøv igjen eller kontakt oss for mer informasjon.",
+        "network_failure": "Bestillingen din kunne ikke sendes på grunn av en nettverksfeil. Sjekk tilkoblingen din og prøv igjen.",
+        "inventory_reservation_failure": "Noen produkter er ikke lenger tilgjengelige."
+      },
+      "online_store_chat": {
+        "title": "Har du spørsmål? Chat med oss"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Gavekortprisen må være større enn 0.",
+            "subtotal_limit_reached": "Maksimal antall elementer per rad er nådd.",
+            "gift_card_price_must_not_exceed_limit": "Gavekortprisen må ikke overstige %{gift_card_limit}.",
+            "signature_mismatch": "Det er en uoverensstemmelse i produktets signatur på linje %{stable_id}."
+          }
+        }
       }
     }
   },
