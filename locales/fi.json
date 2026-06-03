@@ -1284,7 +1284,11 @@
       },
       "merchant_instruction_errors": {
         "duplicate_variant_id": "%{position} %{name} -ohje sisältää toistuvan %{variant_id} variaation tunnisteen.",
-        "discount_not_supported": "Mal alennus käytä myyjän ohje tätä alennustyyppiä ei tueta."
+        "discount_not_supported": "Mal alennus käytä myyjän ohje tätä alennustyyppiä ei tueta.",
+        "empty_stable_id": "%{position} %{name} -ohje sisältää tyhjän kiinteän tunnisteen.",
+        "invalid_stable_id_target": "%{position} %{name} tuotteen ohje viittaa %{stable_id} pysyvään tunnisteeseen, mutta tätä pysyvää tunnistetta ei löydy tuotteen riveiltä.",
+        "invalid_variant_id_target": "%{name} tuotteen ohje viittaa %{variant_id} variaatioon, mutta tätä variaatiota ei löydy tuotteen riveiltä.",
+        "invalid_price_override_target": "%{stable_id} rivielementti on pakettikomponentti, joten hintaohitus ei ole sallittu materiaaliohjeessa."
       },
       "merchandise_unavailable_in_buyer_location": {
         "banner_title": {
@@ -1304,6 +1308,64 @@
       "memberships": {
         "delivery_promise_unfulfillable": "Osoitetta ei tueta nykyisessä tilauksessa.",
         "items_split_across_locations_unsupported": "Tilauksellesi ei ole saatavilla Prime-toimitusta. Lähetysvaihtoehtosi on päivitetty."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Rekisteröidyn myyjän ehdot ja säännöt",
+        "privacy_policy": "Rekisteröidyn Myyjän Tietosuojakäytäntö"
+      },
+      "no_address_location": {
+        "title": "Osoitteen sijainti",
+        "header": "Tälle sijainnille ei ole toimitusosoitetta",
+        "message": "Jos haluat lisätä osoitteen tälle sijainnille ja suorittaa maksun, ota meihin yhteyttä.",
+        "alt_header": "Ei toimitusosoitetta"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "palaa ostoskoriin",
+        "return_to_cart_to_update_quantities": "Päivitä määrät %{return_to_cart_link_text} varten",
+        "subscription_changed": "Yksi tilauksistasi on muuttunut.",
+        "company_location_changed": "Ostoskori päivitetty. Tarkista tilauksesi ennen vahvistamista.",
+        "individual_violations_title": {
+          "OtherViolations": "Tilaustiedot",
+          "UnhandledViolations": "Tilaustiedot"
+        },
+        "all_violations_content": "Voit päivittää nämä tiedot ja viimeistellä tilauksesi soittamalla meille tai lähettämällä meille {{emailLink}}:n.",
+        "all_violations_email_link": "sähköposti",
+        "editable_shipping_address_violations_message_title": "Lisää nämä tiedot tilauksesi viimeistelemiseksi:",
+        "editable_shipping_address_violations_message_footer": "Tämän sijainnin osoitteen pysyvää muuttamista varten {{emailLink}}.",
+        "company_location_changed_product_removed": "Koska jotkin tuotteet eivät ole saatavilla tässä sijainnissa, ostoskorisi on päivitetty. Tarkista tilauksesi ennen vahvistamista.",
+        "shipping_address_incomplete_title": "Toimitusosoite puuttuu",
+        "calculating_shipping": "Rahti lasketaan vielä. Yritä hetken kuluttua uudelleen. Sinulta ei ole veloitettu.",
+        "calculating_taxes": "Verojen laskenta on käynnissä. Yritä hetken kuluttua uudelleen. Sinulta ei ole veloitettu.",
+        "generic_processing_error": {
+          "title": "Tilaustasi käsiteltäessä ilmeni ongelma",
+          "body": "Sinulta ei veloitettu. Yritä uudelleen tai käytä toista maksutapaa."
+        },
+        "contact_information": {
+          "header": "Päivitä tietosi osoitteessa {{emailLink}}."
+        },
+        "payment_method_not_available_with_payment_terms": "Tämän tilauksen maksuaika on {{paymentTerms}}, joten valitsemasi maksutapa ei ole enää käytettävissä.",
+        "payment_method_not_available_with_fulfillment_terms": "Valitsemasi maksutapa ei ole enää käytettävissä, koska tämän tilauksen maksuaika päättyy lähetyksen aikana.",
+        "payment_method_not_available_with_fixed_terms": "Valitsemasi maksutapa ei ole enää käytettävissä, koska tämän tilauksen maksuaika päättyy myöhemmin.",
+        "payment_method_not_available_with_review_requirement": "Maksutapaa, jonka valitsit, ei enää voi käyttää, koska maksu suoritetaan tilauksesi vahvistamisen jälkeen.",
+        "validation_errors_banner": {
+          "section_label": {
+            "payment": "Ödeema"
+          },
+          "heading": {
+            "one": "{{count}} taloa saatavilla:",
+            "other": "{{count}} taloa saatavilla:"
+          },
+          "errors_in_section": {
+            "one": "{{section}} osiossa {{count}} virhettä",
+            "other": "{{section}} osiossa {{count}} virhettä"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Vähennä tiedostosi kokoa siten, että se sisältää enintään 5000 merkkiä."
+      },
+      "offsite_payment_failed": {
+        "payment_link_expired_title": "Ödemeyhteyden voimassaoloaika on päättynyt"
       }
     }
   }
