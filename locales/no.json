@@ -2306,7 +2306,8 @@
         "no_pickup_points_near_location": "Det finnes ingen hentepunkt i nærheten av din posisjon",
         "no_pickup_points_found": "Ingen hentepunkt tilgjengelig",
         "number_of_pickup_points_near_location": {
-          "one": "Det finnes %{count} hentesteder i nærheten av din posisjon"
+          "one": "Det finnes %{count} hentesteder i nærheten av din posisjon",
+          "other": "Det finnes %{count} hentesteder i nærheten av din posisjon"
         },
         "change": "Endre plassering",
         "geolocation": {
@@ -2318,7 +2319,76 @@
           }
         },
         "no_business_hours": "Ingen informasjon om arbeidstid",
-        "address_label": "Adresse"
+        "address_label": "Adresse",
+        "title": "Hentested",
+        "or": "eller",
+        "search_button": "Ara",
+        "selector_tabs": "Velg hentested",
+        "selector_tab_map": "Kart",
+        "selector_tab_list": "Liste",
+        "paginator": {
+          "next_accessibility_label": "Neste side",
+          "previous_accessibility_label": "Forrige side",
+          "header": {
+            "one": "Viser %{first} - %{last} av %{count} punkter",
+            "other": "Viser %{first} - %{last} av %{count} punkter"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} punkter fra %{pickup_point_index}",
+            "other": "%{count} punkter fra %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{count} punkter fra %{first} - %{last}",
+            "other": "%{count} punkter fra %{first} - %{last}"
+          }
+        },
+        "waiting_on_pickup_point_location_notice": "Søker etter hentesteder...",
+        "open_twenty_four_hours": "åpen 7 dager i uken, 24 timer i døgnet",
+        "pickup_unavailable_banner_title": {
+          "one": "Det finnes ingen tilgjengelig hentepunkt for produktet ditt",
+          "other": "Det finnes ingen tilgjengelig hentepunkt for produktene dine"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Omdirigerer...",
+        "redirecting_title": "Omdirigerer...",
+        "redirecting_notice": "Vi omdirigerer deg, vennligst vent.",
+        "complete_your_purchase_title": "Fullfør kjøpet ditt",
+        "continue_to_payment_gateway_notice": "Fortsett til betaling for å legge til betalingsinformasjonen din.",
+        "continue_to_payment_gateway_button_label": "Fortsett med betaling",
+        "complete_your_purchase_title_error": "Korriger betalingsinformasjonen din",
+        "continue_to_payment_gateway_notice_error": "Betalingsinformasjonen din kunne ikke bekreftes.",
+        "continue_to_payment_gateway_button_label_error": "Oppdater betalingsinformasjonen",
+        "page_title": "Behandling av bestillingen",
+        "title": "Behandling av bestillingen",
+        "wait": {
+          "short": "Bestillingen din behandles.",
+          "medium": {
+            "one": "Bestillingen din behandles. Anslått ventetid %{count} minutter.",
+            "other": "Bestillingen din behandles. Anslått ventetid %{count} minutter."
+          },
+          "long": "Du vil motta en e-post når bestillingen din er behandlet. Det er for øyeblikket mange bestillinger.",
+          "no_auto_refresh_html": "Hvis du ikke blir omdirigert automatisk, %{link}.",
+          "refresh_this_page": "oppdater denne siden"
+        },
+        "you_will_not_be_charged": "Du vil ikke bli belastet ennå",
+        "action_required": "Handling nødvendig",
+        "redirecting_to_bank": "Du blir omdirigert til {{bank}}-siden",
+        "modal_notice": "Vi kontakter deg via {{paymentMethod}}",
+        "remote_shops_payments_processing": "Behandling av betalinger",
+        "remote_checkout_count": "%{current} av %{total}"
+      },
+      "post_purchase": {
+        "page_title": "Etter kjøpet",
+        "title": "Etter kjøpet",
+        "escape_confirmation": "Du har betalt for bestillingen din.",
+        "escape_action": "Se bestillingsbekreftelse ›",
+        "components": {
+          "close": "Lukk",
+          "expand": "Vis mer",
+          "processing": "Behandles…",
+          "submit": "Send"
+        }
       }
     }
   },
