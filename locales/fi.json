@@ -1938,7 +1938,10 @@
         "shipping_company_required_error": "{{shopName}} -verkkokauppa vaatii yrityksen nimen toimitusosoitteeseen.",
         "payment_credential_delegation_error": "Maksun käsittelyssä ilmeni ongelma. Valitse uusi maksutapa.",
         "installments_payment_method_incompatible": "Valittu maksutapa ei ole käytettävissä osamaksuissa. Valitse toinen maksutapa.",
-        "missing_cvc": "Syötä turvakoodi"
+        "missing_cvc": "Syötä turvakoodi",
+        "three_d_secure_throttled": "Liian monta yritystä tehty; odota ennen kuin yrität uudelleen",
+        "transient_error": "Maksun käsittelyssä ilmeni ongelma. Yritä päivittää tämä sivu tai tarkista internet-yhteytesi.",
+        "three_d_secure_failed_payment_method": "Korttiasi ei voitu vahvistaa. Yritä uudelleen tai lisää toinen kortti."
       },
       "payment_challenge_modal": {
         "instructions": "Viimeistele ostoksesi käyttämällä {{paymentMethod}}-maksutapaasi",
@@ -1957,6 +1960,56 @@
       "payment_collection": {
         "cancelled": "Tätä maksua ei enää tarvita. Lisätietoja saat tilaussivulta.",
         "paid": "Tämä maksu on jo suoritettu. Lisätietoja saat tilaussivulta."
+      },
+      "payment_summary": {
+        "credit_card_expires_on_notice": "Sona käyttöpäivä: %{month}/%{year}",
+        "express_payment_gateway_label": "Nopea",
+        "manual_payment_gateway_label": "Manuel"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Luottokortti",
+        "cash_on_delivery_label": "Maksu toimitettaessa",
+        "money_order_label": "Pankkisiirto",
+        "debit_card_label": "Pankkikortti",
+        "generic_payment_terms": "Olet sitoutunut {{translatedName}} ehtoihin. Viimeinen maksupäiväsi on {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Tallennettujen maksutapojen lisäämiseksi tai käyttämiseksi kirjaudu sisään tilille, jolla on pääsy tähän sijaintiin {{logIn}}.",
+            "link": "kirjaudu sisään"
+          }
+        },
+        "direct_payment_terms": "Olet sitoutunut {{translatedName}} ehtoihin. Kortiltasi veloitetaan {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Maksusi suoritetaan, kun tilauksesi on lähetetty.",
+        "order_due_on_fulfillment_payment": "Tilauksesi lähetettyä veloitetaan kortiltasi.",
+        "draft_order_payment_due_later_no_terms": "Maksusi suoritetaan, kun tilauksesi on vahvistettu.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Tilauksesi vahvistamisen jälkeen kortiltasi veloitetaan.",
+        "draft_order_payment_due_later_terms": "Tilauksesi vahvistamisen jälkeen sovelletaan {{translatedName}} ehtoja.",
+        "draft_order_payment_due_on_fulfillment": "Maksusi suoritetaan, kun tilauksesi on vahvistettu ja lähetetty.",
+        "fixed_payment_label": "Laskunne eräpäivä on {{dueDate}}.",
+        "fixed_direct_payment_terms": "Kortiltasi veloitetaan {{dueDate}}.",
+        "order_deposit_due_now": "{{depositAmount}} maksetaan tänään. Jäännös on {{translatedName}} eräpäivällä ja se maksetaan {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} maksetaan tänään. Jäljellä oleva summa maksetaan, kun tilauksesi lähetetään.",
+        "order_due_on_receipt_choose_later": "Maksu on suoritettava, kun kuitti on annettu.",
+        "draft_order_deposit_due_later": "{{depositAmount}}, maksetaan, kun tilauksesi on vahvistettu. Saldo erääntyy {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}}, maksetaan, kun tilauksesi vahvistetaan. Jäännös maksetaan, kun tilauksesi lähetetään.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} maksetaan tänään. Jäljellä oleva summa maksetaan myöhemmin.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} maksetaan tänään. Jäljellä oleva summa maksetaan {{dueDate}}."
+      },
+      "pickup_point": {
+        "could_not_resolve_address": "Osoitettasi ei löytynyt. Yritä uudelleen tai käytä eri osoitetta.",
+        "no_pickup_points_near_you": "Valitun osoitteen läheltä ei löytynyt noutopistettä",
+        "no_pickup_points_near_location": "Lähettyvilläsi ei ole noutopistettä",
+        "no_pickup_points_found": "Noutopistettä ei ole",
+        "number_of_pickup_points_near_location": {
+          "one": "Sijaintisi lähellä on %{count} noutopistettä"
+        },
+        "geolocation": {
+          "errors": {
+            "unsuported_by_browser": "Selaimesi ei pysty hakemaan sijaintitietoja. Yritä uudelleen tai käytä toista selainta.",
+            "permission_denied": "Sijaintiasi ei voida hakea. Yritä uudelleen."
+          }
+        },
+        "no_business_hours": "Työaikatietoa ei ole"
       }
     }
   }

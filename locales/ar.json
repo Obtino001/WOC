@@ -1989,7 +1989,9 @@
           "label": "رصيد المتجر",
           "apply_label": "تطبيق رصيد المتجر",
           "add_label": "إضافة رصيد المتجر",
-          "buying_gift_card": "لا يمكنك استخدام رصيد المتجر لشراء بطاقة هدايا"
+          "buying_gift_card": "لا يمكنك استخدام رصيد المتجر لشراء بطاقة هدايا",
+          "manage_label": "إدارة رصيد المتجر",
+          "no_fixed_selling_plans": "لا يمكنك استخدام رصيد المتجر مع خيارات الشراء المؤجل معًا"
         },
         "same_billing_address_checkbox_label": "استخدم عنوان الشحن كعنوان الفاتورة",
         "shipping_rate_updated": "تم تحديث طرق الشحن المتاحة. يرجى تأكيد اختيارك قبل الدفع.",
@@ -2029,7 +2031,67 @@
         "purchase_options_subscription_agreement_label": "لديك اشتراك يتجدد تلقائيًا في سلة التسوق الخاصة بك. بالنقر على زر \"%{button_label}\" %{consent_text} %{cancellation_instructions}",
         "purchase_options_subscription_consent_text": "أنت تقر بوضوح وبشكل قاطع أنه سيتم تحصيل المبلغ(المبالغ) المتكرر(ة) المعروض(ة) في سلة التسوق الخاصة بك تلقائيًا منك حتى تنتهي الاشتراك(ات) أو تقوم بالإلغاء (بالإضافة إلى الشحن والضرائب).",
         "purchase_options_subscription_cancellation_instructions": "%{cancel_text} يرجى مراجعة نص %{cancellation_policy_label}.",
-        "purchase_options_subscription_cancel_text": "يمكنك الإلغاء في أي وقت من خلال الذهاب إلى حسابك أو التواصل مع المتجر."
+        "purchase_options_subscription_cancel_text": "يمكنك الإلغاء في أي وقت من خلال الذهاب إلى حسابك أو التواصل مع المتجر.",
+        "title": "الدفع",
+        "supported_card_brands_more_label": "والمزيد...",
+        "technical_error": "نظرًا لمشكلة فنية، لا يمكن معالجة المدفوعات حاليًا. يرجى المحاولة مرة أخرى بعد بضع دقائق.",
+        "subscription_agreement_label_html": "أفهم أنني أقبل الاشتراك. يتم التجديد بالسعر والتكرار المدرجين حتى انتهاء الاشتراك أو <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">إلغائه</a>.",
+        "waiting_on_payment_methods": "جارٍ جلب طرق الدفع المتاحة...",
+        "subscription_card_update_agreement_label": "تغيير طريقة الدفع يقوم بتحديث اشتراكك والمدفوعات المتكررة المستقبلية.",
+        "taxes_not_included": "الضرائب غير مشمولة",
+        "subscription_agreement_label": "واحد أو أكثر من المنتجات في سلتك هي عملية شراء مؤجلة أو اشتراك. من خلال المتابعة في الدفع، فإنك توافق على أن يتم تحصيل الرسوم تلقائيًا من طريقة الدفع الخاصة بك وفقًا للسعر والتكرار المدرجين في هذه الصفحة حتى تاريخ الانتهاء أو حتى تقوم بالإلغاء. جميع الإلغاءات تخضع لـ %{cancelled}.",
+        "subscription_agreement_cancelled": "سياسة الإلغاء",
+        "update_payment_method": "تحديث طريقة الدفع",
+        "vaulting_agreement_label": "للدفع بشكل أسرع، احفظ معلوماتي لدى شركة %{company}.",
+        "use_different_credit_card_label": "استخدم بطاقة مختلفة",
+        "waiting_on_taxes_message": "إذا لم يتم حساب ضرائبك خلال الثواني القليلة القادمة، قم بتحديث الصفحة.",
+        "waiting_on_taxes_notice": "يتم حساب الضرائب",
+        "subscription_heading": "اتفاقية الاشتراك",
+        "use_order_billing_address_label": "استخدم عنوان الفاتورة للطلب",
+        "use_location_billing_address_label": "استخدم عنوان الفاتورة لموقعك",
+        "use_location_shipping_address_label": "استخدم عنوان الشحن لموقعك",
+        "twint_label": "توينت",
+        "vipps_label": "فيبس",
+        "swish_label": "سويش",
+        "usdc_label": "دولار أمريكي مستقر (USDC)",
+        "usdc_cashback_title": "%%{incentive_percentage} استرداد نقدي",
+        "usdc_cashback_additional_info": "ادفع باستخدام USDC على Base'de واحصل على استرداد %%{incentive_percentage} في محفظتك الرقمية خلال 30 يومًا.",
+        "usdc_cashback_terms": "تطبق الشروط والحدود",
+        "vault_for_payment_later": {
+          "pay_button_label": "قدّم طلبك",
+          "notice": "لن يتم تحصيل أي رسوم منك الآن. من خلال المتابعة في الدفع، فإنك توافق على أنه سيتم تحصيل المبلغ من طريقة الدفع الخاصة بك عند معالجة طلبك."
+        },
+        "wechat_pay_label": "وي تشات باي"
+      },
+      "payment_errors": {
+        "credit_card_processing": "لا يمكن معالجة دفعتك لأسباب فنية. حاول مرة أخرى بعد بضع دقائق أو استخدم طريقة دفع مختلفة.",
+        "checkout_amount_changed": "تعذر معالجة دفعتك لأن المبلغ المستحق في صفحة الدفع قد تغير. يرجى مراجعة طلبك والمحاولة مرة أخرى.",
+        "cannot_verify": "تعذر التحقق من تفاصيل الدفع الخاصة بك. يرجى التحقق من معلومات البطاقة والمحاولة مرة أخرى.",
+        "card_declined": "تم رفض بطاقتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "call_issuer": "تم رفض بطاقتك. استخدم طريقة دفع مختلفة أو اتصل بمصرفك لمزيد من المعلومات.",
+        "available_methods_updated": "تم تحديث طرق الدفع المتاحة.",
+        "amount_too_small": "يجب أن يكون الحد الأدنى لمبلغ الدفع أكبر من 0.50 دولار أمريكي. يرجى المحاولة مرة أخرى بإدخال مبلغ أعلى.",
+        "captcha_required": "لإكمال عملية الشراء، أدخل معلومات الدفع وحل اختبار الكابتشا.",
+        "captcha_required_without_payment_information": "لإكمال عملية الشراء، يرجى حل اختبار الكابتشا.",
+        "cancelled_payment": "تم إلغاء دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة."
+      },
+      "payment_challenge_modal": {
+        "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك",
+        "timer_message": "الوقت المتبقي لإتمام الدفع: {{timeLeft}}",
+        "copy_text": "انسخ رمز {{paymentMethod}}",
+        "header": "ادفع باستخدام {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك"
+        },
+        "external": {
+          "instructions": "لإتمام عملية الشراء هذه، يرجى تأكيد الدفع في تطبيقك"
+        },
+        "close": "أغلق الاختبار",
+        "open_app_text": "افتح تطبيق {{paymentMethod}}"
+      },
+      "payment_collection": {
+        "cancelled": "لم يعد هذا الدفع ضروريًا. لعرض التفاصيل، قم بزيارة صفحة الطلب.",
+        "paid": "تم إرسال هذا الدفع بالفعل. لعرض التفاصيل، قم بزيارة صفحة الطلب."
       }
     }
   },
