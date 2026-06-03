@@ -2816,7 +2816,8 @@
         "thank_you_confirmed_orders_with_phone": "Saat pian erilliset vahvistustekstiviestit tilausnumeroidesi kanssa",
         "thank_you_confirmed_orders_with_email_and_phone": "Saat pian erilliset vahvistussähköpostit tilausnumeroidesi kanssa",
         "thank_you_unconfirmed_items_description": {
-          "one": "Tästä tuotteesta ei ole vielä veloitettu sinulta."
+          "one": "Tästä tuotteesta ei ole vielä veloitettu sinulta.",
+          "other": "Näistä tuotteista ei ole vielä veloitettu sinulta."
         },
         "thank_you_from_shop": "%{shop_name} kaupasta",
         "thank_you_item_label": {
@@ -2833,7 +2834,61 @@
         "thank_you_confirmed_with_email_and_phone_description": {
           "single_store": "Saat pian vahvistussähköposti.",
           "multi_store": "Saat lyhyen ajan sisällä erilliset vahvistussähköpostit jokaisesta kaupasta."
+        },
+        "updated_time": "päivitetty %{time_ago} sitten",
+        "unfulfilled_items_title": "Lähetetään kuljetukseen",
+        "unfulfilled_items_description": "Valmistelemme parhaillaan näitä tuotteita lähetykseen.",
+        "verify_shop_account_title": "Vahvista tilisi",
+        "verify_shop_account_message": "Tietosi on tallennettu Shopiin. Vahvistamalla tilisi voit käyttää näitä tietoja automaattisesti miljoonissa kaupoissa.",
+        "verify_shop_account_confirmation": "Maksutiedot tallennettu",
+        "track_your_order_link_text": "Seuraa tilaustasi",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 tuotetta ei hyväksytty",
+          "other": "Jotkut tuotteet eivät ole hyväksyttyjä"
         }
+      },
+      "tips": {
+        "description": "Näytä tukesi joukkueelle %{shop_name} -kaupassa",
+        "presets_description": "Anna tippi prosentteina",
+        "custom_label": "Erityinen tippi",
+        "message": "Kiitos.",
+        "no_tip_label": "Yok",
+        "not_available_with_spi": "Shop Pay - Ei voi käyttää osamaksulla tehtyihin ostoksiin"
+      },
+      "throttle": {
+        "line_to_check_out": "Olet maksutapahtumassa",
+        "cart_summary_heading": "Ostoskori",
+        "merchandise": {
+          "available": "Nykyinen"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Osa ostoskorisi tuotteista on loppunut ja niitä ei voi ostaa maksusivulla.",
+          "sold_out": {
+            "heading": "Ostoskorissasi olevat tuotteet ovat loppuneet",
+            "storefront_body": "Jatka ostoksia palaamalla kauppaan",
+            "no_storefront_body": "Valitettavasti haluamaasi tuotetta ei ole enää saatavilla."
+          }
+        },
+        "title": "Häntä",
+        "time_to_checkout_title": "On aika maksaa - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Arvioitu odotusaika lasketaan",
+          "less_than_one": "Arvioitu odotusaika: Alle minuutti",
+          "one": "Arvioitu odotusaika: {{count}} minuuttia",
+          "other": "Arvioitu odotusaika: {{count}} minuuttia"
+        },
+        "last_checked": "(Oma tarkistus: {{time}})",
+        "footer": {
+          "heading": "Älä päivitä sivua. Sivusto päivittyy automaattisesti.",
+          "body": "Ennen kuin suoritat maksun, ostoskorissasi olevia tuotteita ei varata."
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Lisätietoja %{context}"
+      },
+      "too_many_requests": {
+        "body": "Ole hyvä ja odota muutama minuutti ja yritä uudelleen ostoskoristasi.",
+        "body_no_cart": "Ole hyvä ja odota muutama minuutti ja yritä uudelleen."
       }
     }
   }
