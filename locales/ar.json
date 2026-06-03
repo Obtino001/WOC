@@ -1079,7 +1079,91 @@
         "qr_code": "رمز الاستجابة السريعة",
         "loading": "جارٍ التحميل…",
         "remove_chip": "إزالة المنتج",
-        "finalize_order_accessibility_label": "أكمل الطلب"
+        "finalize_order_accessibility_label": "أكمل الطلب",
+        "skip_to_content": "تخطي المحتوى",
+        "tooltip_accessibility_label": "مزيد من المعلومات",
+        "title": "صفحة الدفع - {{shopName}}",
+        "submit_order_button_label": "إرسال الطلب",
+        "submit_for_review_button_label": "أرسل للمراجعة",
+        "submit_for_review_notice_label": "لن يتم تحصيل الدفع حتى يتم مراجعة طلبك",
+        "submit": "أرسل",
+        "stepper": {
+          "increase": "زيادة: {{type}}",
+          "decrease": "انخفاض: {{type}}",
+          "minimum_reached": "تم الوصول إلى الحد الأدنى {{value}}",
+          "maximum_reached": "تم الوصول إلى القيمة القصوى {{value}}"
+        },
+        "sheet": {
+          "expand": "توسيع"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "المنتج متوفر في مخزون %{count} موقعًا قريبًا منك",
+          "other": "المنتج متوفر في مخزون %{count} موقعًا قريبًا منك"
+        },
+        "cancel": "إلغاء",
+        "could_not_resolve_address": "تعذر العثور على موقع عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا",
+        "location_address_search_label": "العنوان",
+        "all_stores_far_away": {
+          "title": "المسافة إلى أقرب موقع هي %{distance}",
+          "description": "اختر موقعًا أو %{ship_to_address_link}",
+          "ship_to_address_link": "إرسال إلى العنوان",
+          "change_location_link": "غيّر موقعك",
+          "title_with_specific_location": "أقرب موقع يحتوي على منتجك يبعد %{distance} عن موقع %{location}",
+          "title_with_item": {
+            "one": "أقرب موقع يحتوي على منتجك يبعد %{distance} عن موقع %{location}",
+            "other": "أقرب موقع يحتوي على منتجاتك يبعد %{distance} عن موقع %{location}"
+          }
+        },
+        "location_address_search_placeholder": "%{postal_code_label} أو العنوان",
+        "location_closest": "أقرب موقع يحتوي على منتجك",
+        "location_information_far_away": {
+          "one": "لديك %{count} موقع يحتوي على منتجك",
+          "other": "لديك %{count} موقع يحتوي على منتجك"
+        },
+        "location_nearby": {
+          "one": "يوجد %{count} موقعًا قريبًا حيث يتوفر منتجك",
+          "other": "يوجد %{count} موقعًا قريبًا حيث يتوفر منتجك"
+        },
+        "location_nearby_short": {
+          "one": "الموقع القريب من منتجك %{count}",
+          "other": "الموقع القريب من منتجك %{count}"
+        },
+        "location_far_away": {
+          "one": "الموقع %{count} الذي يوجد به منتجك",
+          "other": "الموقع %{count} الذي يوجد به منتجك"
+        },
+        "location_closest_one_item": "أقرب موقع يتوفر فيه منتجك",
+        "location_closest_other_items": "أقرب موقع يحتوي على منتجاتك",
+        "location_information_far_away_one_item": {
+          "one": "يوجد %{count} موقع حيث يتواجد منتجك",
+          "other": "يوجد %{count} موقع حيث يتواجد منتجك"
+        },
+        "location_information_far_away_other_items": {
+          "one": "لديك %{count} موقع حيث توجد منتجاتك",
+          "other": "لديك %{count} موقع حيث توجد منتجاتك"
+        },
+        "location_nearby_one_item": {
+          "one": "يوجد %{count} موقعًا قريبًا يحتوي على منتجك",
+          "other": "يوجد %{count} موقعًا قريبًا يحتوي على منتجك"
+        },
+        "location_nearby_other_items": {
+          "one": "هناك %{count} موقعًا قريبًا حيث توجد منتجاتك",
+          "other": "هناك %{count} موقعًا قريبًا حيث توجد منتجاتك"
+        },
+        "location_nearby_short_one_item": {
+          "one": "%{count} موقعًا قريبًا حيث يوجد منتجك",
+          "other": "%{count} موقعًا قريبًا حيث يوجد منتجك"
+        },
+        "location_far_away_one_item": {
+          "one": "الموقع %{count} الذي يتواجد فيه منتجك",
+          "other": "الموقع %{count} الذي يتواجد فيه منتجك"
+        },
+        "location_far_away_other_items": {
+          "one": "المواقع %{count} التي تتواجد فيها منتجاتك",
+          "other": "المواقع %{count} التي تتواجد فيها منتجاتك"
+        }
       }
     }
   },

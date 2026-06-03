@@ -1185,6 +1185,61 @@
         "location_far_away_other_items": {
           "one": "Tuotteidesi sijainti %{count} paikassa",
           "other": "Tuotteidesi sijainti %{count} paikassa"
+        },
+        "search_button": "Löydä myymälät",
+        "no_stores_found": "Kauppaa ei löytynyt",
+        "paginator": {
+          "accessibility_label": "Noutosivutus myymälästä noudettaessa",
+          "label": {
+            "one": "%{count} kaupasta %{first} - %{last}",
+            "other": "%{count} kaupasta %{first} - %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Näytä %{count} muuta sijaintia",
+          "other": "Näytä %{count} muuta sijaintia"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "Ennalta valittu sijainti ei ole enää käytettävissä",
+          "description": "Valitse uusi sijainti tai %{ship_to_address_link}",
+          "ship_to_address_link": "lähetä osoitteeseen"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "Lähetä tuotteesi"
+        },
+        "toggle_multiple_locations": "%{count}+ sijaintia lisää",
+        "toggle_more_locations": {
+          "one": "%{count} sijaintia lisää",
+          "other": "%{count} sijaintia lisää"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Tuotteellesi ei ole sijaintia",
+          "other": "Tuotteillesi ei ole sijaintia"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "%{country} sisällä ei ole sijaintia tuotteellesi",
+          "other": "%{country} sisällä ei ole sijaintia tuotteellesi"
+        },
+        "location_nearby_short_other_items": {
+          "one": "Tuotteidesi sijainti %{count} lähellä olevaa paikkaa",
+          "other": "Tuotteidesi sijainti %{count} lähellä olevaa paikkaa"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_cn": "Kansalaisuustunnus",
+          "tax_credential_co": "Henkilötunnus/ALV",
+          "shipping_credential_co": "Henkilötunnus/ALV",
+          "shipping_credential_type_co": "Henkilötodistustyyppi",
+          "tax_credential_cr": "Henkilötunnus/RUT",
+          "shipping_credential_cr": "Henkilötunnus/RUT",
+          "shipping_credential_ec": "CI/RUC/ALV",
+          "shipping_credential_gt": "ALV/TVA",
+          "shipping_credential_my": "TIN/Sicil-numero",
+          "shipping_credential_py": "CI/RUC/ALV",
+          "shipping_credential_pt": "NIF/ALV",
+          "shipping_credential_tw": "Kansallinen tunnistenumero/ALV",
+          "shipping_credential_tr": "Turkin tasavallan henkilötunnus/ALV"
         }
       }
     }
