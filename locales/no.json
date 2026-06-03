@@ -2623,7 +2623,50 @@
             "other": "For de andre %{count} leveransene, %{shipping_price} per levering"
           },
           "prepaid_free_shipping_with_cycles": {
-            "one": "Gratis frakt for første %{cycle}, deretter %{recurring_order_shipping_price}"
+            "one": "Gratis frakt for første %{cycle}, deretter %{recurring_order_shipping_price}",
+            "other": "Gratis frakt for første %{cycle}, deretter %{recurring_order_shipping_price}"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "hver dag",
+              "other": "hver %{count} dag"
+            },
+            "week": {
+              "one": "hver uke",
+              "other": "her %{count} uke"
+            },
+            "month": {
+              "one": "hver måned",
+              "other": "hver %{count} måned"
+            },
+            "year": {
+              "one": "hvert år",
+              "other": "her %{count} år"
+            }
+          },
+          "prepaid_shipping_price_label": "%{shipping_price} per levering x %{delivery_interval_count}",
+          "prepaid_initial_order_discounted": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}, deretter %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), deretter %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Fordi",
+          "recurring_order_shipping_price": "deretter %{recurring_order_shipping_price}",
+          "subscription_free_with_frequency_label": "Gratis frakt (%{delivery_frequency})",
+          "prepaid_order_one_cycle": {
+            "one": "For de %{count} andre leveransene koster det %{shipping_price}",
+            "other": "Andre %{shipping_price} leveranser for %{count} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} leveranser for %{shipping_price}",
+            "other": "%{shipping_price} for %{count} leveranser (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "For de resterende %{count} leveransene %{shipping_price}, deretter %{recurring_order_shipping_price}",
+            "other": "For de resterende %{count} leveransene %{shipping_price} (%{per_delivery_cost}), deretter %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} leveranser for %{shipping_price}, deretter %{recurring_order_shipping_price}",
+            "other": "%{count} leveranser for %{shipping_price} (%{per_delivery_cost}), deretter %{recurring_order_shipping_price}"
           }
         },
         "shipping_used_as_billing_notice": "Denne adressen vil også bli brukt som din gyldige fakturaadresse for den aktuelle bestillingen.",
@@ -2650,7 +2693,28 @@
         "split_shipping_option_custom": "Spesiell",
         "split_shipping_shipment_notice": "Bestillingen din vil komme i %{quantity_shipments} leveranser",
         "split_shipping_first_shipment_notice": "Din første bestilling vil komme i %{quantity_shipments} forsendelser",
-        "shipping_method_rollup_accessibility_label": "Fraktmetodevalg"
+        "shipping_method_rollup_accessibility_label": "Fraktmetodevalg",
+        "title": "Frakt",
+        "waiting_on_rate_notice": "Tilgjengelige fraktkostnader hentes…",
+        "waiting_on_pickup_location_notice": "Passende hentesteder for levering blir hentet inn...",
+        "subscription_shipping": "Abonnementslevering",
+        "subscription_local_delivery": "Lokal levering inkludert i abonnementet",
+        "subscription_pickup": "Levering inkludert i abonnementet",
+        "two_day_delivery": "Levering på 2 dager (%{time})",
+        "unbranded_default_description": "Klar til å sendes",
+        "third_party_address_timeout": "Adresser kan ikke lastes. Prøv igjen eller bruk en annen adresse.",
+        "third_party_address_error": "Det oppstod en feil under lasting av adressevalg. Vennligst skriv inn adressen din manuelt nedenfor.",
+        "third_party_payment_timeout": "Betalingsmetoder kunne ikke lastes inn. Prøv igjen eller bruk en annen betalingsmetode.",
+        "third_party_payment_error": "Det oppstod en feil under lasting av betalingsvalget. Vennligst bruk en annen betalingsmetode.",
+        "unbranded_description_same_day": "Sendes samme virkedag",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Sendes neste virkedag",
+          "other": "Sendes innen %{count} virkedager"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Sendes innen %{count} uker",
+          "other": "Sendes innen %{count} uker"
+        }
       },
       "session_errors": {
         "session_not_unique": "Det oppstod et problem under behandlingen av bestillingen din. Oppdater denne siden for å gå tilbake til butikken.",
@@ -2667,6 +2731,18 @@
           "one": "Denne bestillingen vil bli sendt til adressen oppgitt av {{merchant}}.",
           "other": "Denne bestillingen vil bli sendt til adressen oppgitt av {{merchant}}. Velg en leveringsadresse."
         }
+      },
+      "shipping_errors": {
+        "shipping_method": "Fraktalternativene for bestillingen din har endret seg. Vennligst gå gjennom valget ditt.",
+        "shipping_method_not_available": "Handlekurven din er oppdatert. Produktene du har lagt til i handlekurven kan ikke sendes til adressen din. Fjern disse produktene fra handlekurven for å fullføre bestillingen.",
+        "shipping_method_not_available_generic": {
+          "one": "Bestillingen din kan ikke sendes til den valgte adressen. Vennligst sjekk adressen for å være sikker på at den er korrekt, og prøv igjen, eller velg en annen adresse."
+        },
+        "payment_method_not_supported": "Du kan ikke bruke denne betalingsmetoden for %{country}. Bruk en annen betalingsmetode for å sende til dette landet.",
+        "empty_state": "Kjør inn leveringsadressen din for å se tilgjengelige fraktmetoder.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Varene i handlekurven oppfyller ikke pris- eller vektkravene for frakt. Oppdater handlekurven din og prøv igjen.",
+        "invalid_selected_address": "Den valgte leveringsadressen er ugyldig",
+        "invalid_selected_address_with_update_link": "Den valgte leveringsadressen er ikke gyldig. %{update_address_link} eller velg en annen adresse"
       }
     }
   },
