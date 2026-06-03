@@ -684,7 +684,26 @@
       },
       "delivery_options": {
         "none_method_definition": "Pas de cargaison",
-        "company_location_no_address_banner": "Les commandes expédiées à des adresses inexistantes seront envoyées pour examen."
+        "company_location_no_address_banner": "Les commandes expédiées à des adresses inexistantes seront envoyées pour examen.",
+        "ship": "Envoyer",
+        "pick_up": "Prêt à être récupéré",
+        "pick_up_in_two_hours": "Généralement prêt en 2 heures",
+        "pick_up_in_four_hours": "Généralement prêt en 4 heures",
+        "pick_up_immediately": "Prêt à être livré maintenant",
+        "pick_up_next_day": "Prêt à être livré le lendemain",
+        "pick_up_in_one_hour": "Généralement prêt en 1 heure",
+        "pick_up_in_twenty_four_hours": "Généralement prêt en 24 heures",
+        "pick_up_in_two_to_four_days": "Généralement prêt sous 2 à 4 jours",
+        "pick_up_in_five_or_more_days": "Généralement prêt sous 5 jours ou plus",
+        "pick_up_in_zero_to_two_hours": "Prêt à être retiré dans les deux heures",
+        "pick_up_in_two_to_four_hours": "Prêt à être livré dans quatre heures",
+        "shipping_address": "Adresse de livraison",
+        "pick_up_locations": "Points de retrait",
+        "pickup_point_method_definition": "Livraison au point de retrait",
+        "retail_method_definition": "Colis de vente au détail",
+        "subscription_pickup_information": "Cela sera le lieu de réception pour toutes les commandes futures de votre abonnement.",
+        "ship_to_address": "Envoyer à l'adresse",
+        "pick_up_from_store": "Retrait en magasin"
       },
       "customer_account": {
         "not_user_label": "Vous n'êtes pas %{first_name} ?",
@@ -733,6 +752,56 @@
             "other": "Votre panier sera vidé de ces articles car il n'existe aucune méthode de livraison disponible pour votre adresse."
           },
           "label": "Pas de service de livraison"
+        }
+      },
+      "field_errors": {
+        "address_address1_blank": "Entrez l'adresse",
+        "address_address2_blank": "Entrez un appartement, un appartement, etc.",
+        "address_address1_too_long": "La première ligne d'adresse est trop longue (maximum 255 caractères)",
+        "address_address1_contains_html_tags": "L'adresse 1 ne peut pas contenir d'étiquettes HTML.",
+        "address_address2_contains_html_tags": "Adresse 2, ne peut pas contenir d’étiquettes HTML.",
+        "address_address1_contains_emojis": "L'adresse 1 ne peut pas contenir d'emoji",
+        "address_address2_contains_emojis": "L'adresse 2 ne peut pas contenir d'emoji",
+        "address_address1_contains_mathematical_symbols": "La première ligne d'adresse ne peut pas contenir de symboles mathématiques"
+      },
+      "failed_payment": {
+        "page_title": "Le paiement n'a pas pu être traité",
+        "title": "Le paiement n'a pas pu être traité",
+        "payment_not_processed_title": "Votre paiement n'a pas pu être traité",
+        "payment_not_processed_text": "Aucun frais ne vous a été facturé. Retournez à votre panier pour finaliser votre achat."
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Un problème est survenu avec notre page de paiement.",
+          "message": "Actualisez la page ou réessayez dans quelques minutes",
+          "request_id": "Numéro de demande : {{requestId}}"
+        },
+        "embed_errors": {
+          "customer_account_required": "Un compte client est nécessaire pour finaliser le paiement",
+          "cart_completed": "Cette transaction de paiement a déjà été effectuée",
+          "invalid_cart": "Le panier n'est plus valide",
+          "not_authorized": "L'authentification du paiement a échoué. Veuillez vérifier vos informations d'identification dans l'application.",
+          "policy_violation": "En raison des restrictions de configuration de la politique, la transaction de paiement ne peut pas être complétée.",
+          "unrecoverable_failure": "La page de paiement n'a pas pu être chargée. Veuillez réessayer."
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Votre code de réduction n'est plus valide, votre commande n'a pas pu être traitée. Veuillez vérifier votre commande et réessayer."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Aller à la boutique en ligne"
+        }
+      },
+      "embed": {
+        "header": {
+          "review_order": "Examinez votre commande"
+        },
+        "shipping": {
+          "shipping_options": "Afficher toutes les options de livraison"
+        },
+        "payment": {
+          "payment_options": "Afficher toutes les options de paiement"
         }
       }
     }
