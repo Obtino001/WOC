@@ -231,34 +231,34 @@
   },
   "templates": {
     "search": {
-      "no_results": "Aucun résultat trouvé pour « {{ terms }} ». Vérifiez l'orthographe ou utilisez un autre mot ou une autre expression.",
+      "no_results": "Aucun résultat trouvé pour \"{{ terms }}\". Veuillez vérifier qu'il n'y a pas de faute de frappe ou essayer un mot ou une expression différente.",
       "results_with_count": {
-        "one": "{{ count }} résultat",
-        "other": "{{ count }} résultats",
+        "one": "{{ count }} résultats",
+        "other": "{{ count }} résultats",
         "many": "{{ count }} résultats"
       },
       "title": "Résultats de la recherche",
       "page": "Page",
       "products": "Produits",
-      "search_for": "Rechercher « {{ terms }} »",
+      "search_for": "Rechercher \"{{ terms }}\"",
       "results_with_count_and_term": {
-        "one": "{{ count }} résultat trouvé pour « {{ terms }} »",
-        "other": "{{ count }} résultats trouvés pour « {{ terms }} »",
+        "one": "{{ terms }} a donné {{ count }} résultats",
+        "other": "{{ terms }} a donné {{ count }} résultats",
         "many": "{{ count }} résultats trouvés pour « {{ terms }} »"
       },
       "results_pages_with_count": {
-        "one": "Page {{ count }}",
-        "other": "Pages {{ count }}",
+        "one": "{{ count }} pages",
+        "other": "{{ count }} pages",
         "many": "Pages {{ count }}"
       },
       "results_suggestions_with_count": {
-        "one": "{{ count }} suggestion",
+        "one": "{{ count }} suggestions",
         "other": "{{ count }} suggestions",
         "many": "{{ count }} suggestions"
       },
       "results_products_with_count": {
-        "one": "Produit {{ count }}",
-        "other": "Produits {{ count }}",
+        "one": "{{ count }} produit(s)",
+        "other": "{{ count }} produit(s)",
         "many": "Produits {{ count }}"
       },
       "suggestions": "Suggestions",
@@ -269,13 +269,13 @@
     },
     "contact": {
       "form": {
-        "name": "Nom",
+        "name": "Annonce",
         "email": "E-mail",
         "phone": "Numéro de téléphone",
         "comment": "Commentaire",
         "send": "Envoyer",
-        "post_success": "Merci de nous avoir contactés. Nous vous répondrons dès que possible.",
-        "error_heading": "Veuillez ajuster les éléments suivants :",
+        "post_success": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.",
+        "error_heading": "Veuillez modifier ce qui suit :",
         "title": "Formulaire de contact"
       }
     },
@@ -3350,6 +3350,53 @@
         "maximum_available_quantity_reached": "Votre panier contient déjà la quantité maximale de ce produit.",
         "cart_attributes_error": "Le panier contient des données invalides.",
         "merchandise_not_applicable": "Le produit ne peut pas être acheté dans la configuration choisie."
+      },
+      "order": {
+        "financial_status": {
+          "authorized": "Autorisé",
+          "pending": "En attente",
+          "paid": "Payé",
+          "unpaid": "Non payé",
+          "voided": "Invalidé",
+          "partially_paid": "Partiellement payé",
+          "partially_refunded": "Un remboursement partiel a été effectué",
+          "refunded": "Remboursement effectué",
+          "expired": "Sona erdi"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Envoyé",
+          "complete": "Terminé",
+          "partial": "Partiellement",
+          "unfulfilled": "Non envoyé",
+          "restocked": "Le stock a été renouvelé"
+        },
+        "transaction_status": {
+          "success": "Réussi",
+          "pending": "En attente",
+          "failure": "Erreur"
+        },
+        "cancel_reason": {
+          "inventory": "Produits non disponibles",
+          "staff": "Erreur de personnel"
+        }
+      },
+      "storefront": {
+        "invalid_password": "Mot de passe incorrect, veuillez réessayer."
+      },
+      "tags": {
+        "add_articles": "Restreignez la recherche aux articles contenant le tag %{tag}",
+        "add_products": "Affinez la sélection aux produits correspondant à l’étiquette %{tag}",
+        "remove_articles": "Étendez la recherche aux articles non étiquetés avec %{tag}",
+        "remove_products": "Supprimez l'étiquette %{tag}"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} articles ajoutés",
+          "increment_item": "%{delta} articles ajoutés",
+          "decrement_item": "%{delta}/%{total} articles supprimés",
+          "decrement_fulfilled_line_item": "%{delta}/%{total} articles ont été retournés",
+          "decrement_return_line_item": "%{delta} produit retiré du retour"
+        }
       }
     },
     "filters": {
@@ -3358,6 +3405,50 @@
           "out_of_stock": "Rupture de stock"
         }
       }
+    },
+    "page_titles": {
+      "create_account": "Créez un compte",
+      "reset_account": "Réinitialisez le compte",
+      "search": "Ara",
+      "not_found": "404 Introuvable",
+      "challenge": "Test",
+      "search_results": {
+        "one": "Arama : %{count} résultat(s) trouvé(s) pour \"%{terms}\"",
+        "other": "Arama : %{count} résultat(s) trouvé(s) pour \"%{terms}\""
+      },
+      "blog_or_article_with_error": "Erreur - %{title}",
+      "shopping_cart": "Votre panier d'achat"
+    },
+    "sentence": {
+      "two_words_connector": "ve",
+      "last_word_connector": "ve"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Généralement prêt en 1 heure",
+        "two_hours": "Généralement prêt en 2 heures",
+        "four_hours": "Généralement prêt en 4 heures",
+        "twenty_four_hours": "Généralement prêt en 24 heures",
+        "two_to_four_days": "Généralement prêt sous 2 à 4 jours",
+        "five_or_more_days": "Généralement prêt sous 5 jours",
+        "zero_to_two_hours": "Généralement prêt en 2 heures",
+        "two_to_four_hours": "Généralement prêt en 4 heures",
+        "immediately": "Prêt à être livré maintenant",
+        "next_day": "Prêt à être livré le lendemain"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Alaka",
+        "price_ascending": "Prix, du plus bas au plus élevé",
+        "price_descending": "Prix, du plus élevé au plus bas"
+      },
+      "error": "Une erreur s'est produite lors du chargement de vos résultats de recherche. Veuillez actualiser la page ou réessayer plus tard."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Ce produit est un achat récurrent ou différé. En continuant, vous acceptez les conditions de %{cancellationPolicyLink} et m'autorisez à prélever le montant sur mon moyen de paiement en fonction des prix, fréquences et dates indiqués sur cette page, jusqu'à ce que ma commande soit expédiée ou que je l'annule, si cela est permis.",
+      "buyer_consent_cart": "Votre panier contient un ou plusieurs articles, un achat récurrent ou différé. En continuant, vous acceptez les conditions de %{cancellationPolicyLink} et m'autorisez à prélever le paiement sur mon moyen de paiement en fonction des prix, fréquences et dates indiqués sur cette page, jusqu'à ce que ma commande soit expédiée ou que j'annule, si cela est autorisé.",
+      "cancellation_policy": "politique d'annulation"
     }
   }
 }

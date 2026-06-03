@@ -647,7 +647,27 @@
         "free_total_label": "Gratis",
         "none_method_definition": "Ingen frakt",
         "company_location_no_address_banner": "Bestillinger sendt til adresser uten sted vil bli sendt til gjennomgang.",
-        "digital_product": "Digitalt produkt"
+        "digital_product": "Digitalt produkt",
+        "ship": "Send",
+        "pick_up": "Klar til henting",
+        "pick_up_in_two_hours": "Vanligvis klart innen 2 timer",
+        "pick_up_in_four_hours": "Vanligvis klart innen 4 timer",
+        "pick_up_immediately": "Klar for levering nå",
+        "pick_up_next_day": "Klar for henting neste dag",
+        "pick_up_in_one_hour": "Vanligvis klart innen 1 time",
+        "pick_up_in_twenty_four_hours": "Vanligvis klart innen 24 timer",
+        "pick_up_in_two_to_four_days": "Vanligvis klart innen 2-4 dager",
+        "pick_up_in_five_or_more_days": "Vanligvis klart innen 5+ dager",
+        "pick_up_in_zero_to_two_hours": "Klar for henting innen to timer",
+        "pick_up_in_two_to_four_hours": "Klar for henting innen fire timer",
+        "shipping_address": "Fraktadresse",
+        "pick_up_locations": "Hentesteder",
+        "pickup_point_method_definition": "Levering til hentestedet",
+        "retail_method_definition": "Detaljhandel frakt",
+        "subscription_pickup_information": "Bu vil være leveringsstedet for alle dine fremtidige abonnementbestillinger.",
+        "ship_to_address": "Adresselevering",
+        "pick_up_from_store": "Hent i butikk",
+        "pickup_point_map_title": "Kart over hentepunkter"
       },
       "customer_account": {
         "not_user_label": "Er du ikke %{first_name}?",
@@ -702,6 +722,62 @@
             "other": "Adresiniz için kullanılabilir bir leveringsmetode finnes ikke, så disse produktene vil bli fjernet fra handlekurven din."
           },
           "label": "Ingen leveringstjeneste"
+        }
+      },
+      "field_errors": {
+        "address_address1_blank": "Skriv inn adresse",
+        "address_address2_blank": "Skriv inn leilighet, bolig osv.",
+        "address_address1_too_long": "Den første adressefeltet er for langt (maksimalt 255 tegn)",
+        "address_address1_contains_html_tags": "Adresse 1 kan ikke inneholde HTML-koder.",
+        "address_address2_contains_html_tags": "Adresse 2 kan ikke inneholde HTML-koder.",
+        "address_address1_contains_emojis": "Adresse 1 kan ikke inneholde emoji",
+        "address_address2_contains_emojis": "Adresse 2 kan ikke inneholde emoji",
+        "address_address1_contains_mathematical_symbols": "Den første adressefeltet kan ikke inneholde matematiske symboler"
+      },
+      "failed_payment": {
+        "page_title": "Betalingen kunne ikke behandles",
+        "title": "Betalingen kunne ikke behandles",
+        "payment_not_processed_title": "Betalingen din kunne ikke behandles",
+        "payment_not_processed_text": "Det ble ikke belastet noe fra deg. Gå tilbake til handlekurven for å fullføre kjøpet ditt.",
+        "return_to_cart_button_label": "Gå tilbake til handlekurven"
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Det oppstod et problem med vår betalingsside",
+          "message": "Oppdater siden eller prøv igjen om noen minutter",
+          "action": {
+            "cta": "Oppdater siden"
+          },
+          "request_id": "Saksnummer: {{requestId}}"
+        },
+        "embed_errors": {
+          "storefront_password_required": "Denne butikken er passordbeskyttet",
+          "customer_account_required": "Kunde konto er nødvendig for å fullføre betalingsprosessen",
+          "cart_completed": "Denne betalingsprosessen er allerede fullført",
+          "invalid_cart": "Handlekurven er ikke lenger gyldig",
+          "not_authorized": "Betalingsautentisering mislyktes. Vennligst bekreft identiteten din i appen.",
+          "killswitch_enabled": "Betalingsprosessen er midlertidig utilgjengelig",
+          "policy_violation": "Betalingsprosessen kan ikke fullføres på grunn av begrensninger i policykonfigurasjonen",
+          "unrecoverable_failure": "Betalingssiden kunne ikke lastes. Vennligst prøv igjen."
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Bestillingen din kunne ikke behandles fordi rabattkoden din ikke lenger er gyldig. Vennligst sjekk bestillingen din og prøv igjen."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Gå til nettbutikken"
+        }
+      },
+      "embed": {
+        "header": {
+          "review_order": "Gå gjennom bestillingen din"
+        },
+        "shipping": {
+          "shipping_options": "Vis alle fraktalternativer"
+        },
+        "payment": {
+          "payment_options": "Vis alle betalingsalternativer"
         }
       }
     }
