@@ -819,7 +819,33 @@
             "february": "فبراير",
             "april": "نيسان",
             "august": "أغسطس",
-            "december": "ديسمبر"
+            "december": "ديسمبر",
+            "january": "يناير",
+            "march": "مارت",
+            "may": "مايو",
+            "june": "يونيو",
+            "july": "تموز",
+            "september": "سبتمبر",
+            "october": "إيكيم",
+            "november": "نوفمبر"
+          },
+          "weekdays": {
+            "monday": "الاثنين",
+            "tuesday": "الثلاثاء",
+            "wednesday": "الأربعاء",
+            "thursday": "الخميس",
+            "friday": "جمعة",
+            "saturday": "السبت",
+            "sunday": "سوق"
+          },
+          "weekdays_abbreviation": {
+            "monday": "الإثنين",
+            "tuesday": "سا",
+            "wednesday": "هذا",
+            "thursday": "بي",
+            "friday": "كو",
+            "saturday": "Ct",
+            "sunday": "بيز"
           }
         },
         "datepicker": {
@@ -829,7 +855,45 @@
           "in_range": "خلال ديسمبر",
           "range_end": "نهاية ديسمبر"
         },
-        "confirm_order_button_label": "تأكيد الطلب"
+        "confirm_order_button_label": "تأكيد الطلب",
+        "error_page_title": "حتى",
+        "edit_link_label": "تعديل",
+        "errors": {
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "شخص الاتصال بالشركة ليس لديه وصول إلى الشركة.",
+            "customer_account_required": "يجب عليك تسجيل الدخول للمتابعة.",
+            "contact_info_does_not_match_customer_account": "يجب أن تتطابق معلومات الاتصال مع الحساب الذي قمت بتسجيل الدخول به.",
+            "phone_number_does_not_match_expected_pattern": "رقم الهاتف المحدد لا يتطابق مع الطراز المتوقع.",
+            "email_required": "عند شراء منتج باستخدام الاشتراك، يلزم وجود بريد إلكتروني.",
+            "email_domain_is_invalid": "لا يمكن حل اسم النطاق المحدد هذا.",
+            "missing_contact_method": "لا توجد وسيلة اتصال صالحة.",
+            "checkout_completion_target_is_missing": "لا يوجد هدف لإتمام الدفع.",
+            "invalid_customer_profile": "تم تقديم ملف تعريف عميل غير صالح.",
+            "customer_profile_access_restricted": "لا يوجد إذن للوصول إلى ملف تعريف العميل للدفع.",
+            "checkout_completion_target_is_invalid_proc": "هدف إتمام الدفع غير صالح.",
+            "company_location_required": "يجب على العميل اختيار موقع شركة للمتابعة.",
+            "lost_access_to_company": "فقد العميل الوصول إلى جميع الشركات.",
+            "company_purchase_permission_required": "العميل ليس لديه إذن لتقديم طلبات الشركة.",
+            "personal_order_not_allowed": "لا يُسمح بالطلبات الشخصية لهذا المتجر.",
+            "buyer_identity_presentment_currency_does_not_match": "حدثت مشكلة أثناء معالجة طلبك. يرجى المحاولة مرة أخرى بعد بضع دقائق."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "لا يُسمح بربط مبيعات التجزئة في هذا الدفع.",
+            "retail_attribution_required": "لهذا الدفع، يلزم وجود ارتباط بيع بالتجزئة."
+          },
+          "captcha": {
+            "metadata_missing": "لإتمام هذه العملية، يجب إكمال اختبار التحقق Captcha.",
+            "metadata_mismatch": "مزود الكابتشا ونوعه المقدم لا يتطابقان مع القيم المتوقعة.",
+            "job_enqueue_failed": "تعذر وضع مهمة التحقق من الكابتشا في قائمة الانتظار.",
+            "job_already_queued": "تم التحقق من الكابتشا، تم وضع هذا الرمز الخاص بالكابتشا بالفعل في قائمة الانتظار.",
+            "token_expired": "انتهت صلاحية رمز الكابتشا الحالي. لإكمال عملية الدفع، يرجى إتمام كابتشا جديدة."
+          }
+        },
+        "dropzone": {
+          "add_file": "أضف ملفًا",
+          "invalid_file_type": "نوع الملف غير مدعوم",
+          "dragged_over": "اسحب وأفلت الملف الذي تريد تحميله"
+        }
       }
     }
   },

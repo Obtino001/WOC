@@ -943,7 +943,68 @@
             "metadata_mismatch": "Toimitettu captcha-palveluntarjoaja ja tyyppi eivät vastaa odotettuja arvoja.",
             "job_enqueue_failed": "Captcha-varmennusta ei voitu laittaa jonoon.",
             "job_already_queued": "Captcha-tarkistus on jo jonotettu tälle Captcha-tunnisteelle.",
-            "token_expired": "Nykyisen captcha-tunnisteen voimassaoloaika on päättynyt. Jatkaaksesi maksutapahtumaa, suorita uusi Captcha."
+            "token_expired": "Nykyisen captcha-tunnisteen voimassaoloaika on päättynyt. Jatkaaksesi maksutapahtumaa, suorita uusi Captcha.",
+            "token_missing": "Tämän maksun suorittamiseksi on annettava Captcha-tunniste.",
+            "token_invalid": "Toimitettu Captcha-tunniste on virheellinen. Jatkaaksesi maksutapahtumaa, suorita uusi Captcha.",
+            "token_not_valid_for_session": "Tätä Captchaa ei voi käyttää tässä maksussa."
+          },
+          "line_item_limit_reached": "Suurin rivielementtien määrä on saavutettu.",
+          "merchandise": {
+            "bundle_products_not_supported_for_b2b": "Paketoidut tuotteet eivät voi lisätä tätä sijaintia B2B-tilauksiin.",
+            "gift_card_quantity_mismatch": "Kun ilmoitat lahjakorttikoodit, rivikohteiden määrän on vastattava lahjakorttikoodien lukumäärää.",
+            "gift_card_not_supported": "Tässä maksussa lahjakortit eivät ole käytettävissä.",
+            "gift_card_not_unique": "Tässä maksussa {{code}}-koodilla varustettu lahjakortti näkyy useammin kuin kerran. Koodit muotoillaan ennen vertailua.",
+            "gift_card_used": "{{code}} lahjakorttikoodi on jo liitetty lahjakorttiin. Koodit muotoillaan ennen vertailua.",
+            "gift_card_invalid": "{{code}} lahjakorttikoodi on virheellinen.",
+            "gift_card_code_changed": "{{proposed_code}} lahjakorttikoodi on muutettu muotoilun sääntöjen mukaisesti muotoon {{formatted_code}}.",
+            "gift_card_with_attributes_not_supported": "Tässä maksutavassa ei tueta räätälöityjä lahjakortteja.",
+            "duplicated_stable_id": "Tällä tavaralla on sama pysyvä tunniste kuin toisella rivillä.",
+            "bundle_requires_components": "Tässä pakkausessa ei ole komponentteja.",
+            "combined_listing_parent_not_purchasable": "Yhdistettyjä listan päätuotteita ei voi ostaa suoraan."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Ostoskoriin saa kuulua vain yksi toimitusrivi.",
+            "wrong_number_of_delivery_lines": "Jokaiselle materiaaliryhmälle on ilmoitettava toimitusrivi.",
+            "external_delivery_promise_error": "Virhe ulkoisen toimituslupauksen vastaanottamisessa.",
+            "options_instructions_invalid": "Määritetyt ohjeet eivät vastaa odotettua mallia.",
+            "destination_address_required": "Jatkaaksesi tarvitset toimitusosoitteen.",
+            "local_pickup_delivery_line_detail_changed": "Jatkaaksesi sinun täytyy muuttaa noutostrategiaa nykyisestä myymälästä.",
+            "local_pickup_no_delivery_strategy_available": "Noutostrategiaa saatavilla olevasta myymälästä ei ole.",
+            "origin_location_id_required": "PERAKENDE toimitustapaa pyydettäessä tarvitaan alkuperäpaikan tunnus.",
+            "invalid_origin_location_id": "Sijaintia, joka vastaa lähdesijainnin tunnistetta, ei löytynyt.",
+            "origin_location_id_not_allowed": "Pyydetyt toimitustavat eivät tue alkuperäpaikan tunnistetta.",
+            "auto_fulfill_not_allowed": "Tällä istunnolla ei ole oikeutta ohittaa lähetyskäyttäytymistä.",
+            "auto_fulfill_required": "Kun PERAKENDE toimitustapa valitaan, automaattinen lähetys on pakollinen.",
+            "prefetch_shipping_rates_used": "Ennakkoperityt rahtimaksut eivät koskaan saa palautua.",
+            "fulfillment_constraints_not_satisfied": "Yksi tai useampi lähetysrajoitus ei täyttynyt.",
+            "must_fulfill_from_constraint_not_satisfied": "Tuotteita ei voitu lähettää tarvittavista paikoista, joten toimitusrajoituksia ei voida täyttää.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Tuotteita ei voitu lähettää samasta sijainnista, joten toimitusrajoituksia ei voida täyttää.",
+            "delivery_strategy_conditions_not_satisfied": "Tälle sijainnille on olemassa toimitusstrategioita, mutta ehdot eivät täyty.",
+            "out_of_stock_at_origin_location": "Varastoa ei ole alkuperäisessä sijainnissa.",
+            "invalid_signature": "Virheellinen alennusallekirjoitus.",
+            "selected_pickup_option_no_longer_available": "Ennalta valittu noutovaihtoehto ei ole enää käytettävissä.",
+            "mixed_destination_countries": "Toimitus ei ole käytettävissä, koska toimitusrivit kattavat useita maita."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B-myymälöissä alennuksia ei sallita.",
+            "custom_discount_not_honoured": "Tarjottua erityisalennusta ei ole toteutettu.",
+            "unsupported_expectation": "Tarjottu alennusrivi sisälsi odotuksen, jota politiikka ei pystynyt tulkitsemaan.",
+            "additional_requested_discount_code_discarded": "{{code}} on voimassa, mutta sitä ei voi käyttää. Tarkista alennusehdot.",
+            "allocations_mismatch": "Alennuskoodisi on muuttunut. Tarkista ostoskorisi ja yritä uudelleen.",
+            "discount_title_too_long": "Alennuksen otsikko ei voi olla yli 255 merkkiä pitkä.",
+            "additional_requested_discount_discarded": "Alennuksesi on voimassa, mutta sitä ei voida käyttää. Tarkista alennusehdot.",
+            "mixed_destination_countries": "Koska toimitusrivit kattavat useita maita, alennuksia ei voi käyttää."
+          },
+          "inventory": {
+            "missing_quantity_value": "Vastaanottajan varastorivillä puuttuu määrä-kenttä.",
+            "changing_behavior_not_allowed": "Tällä asiakkaalla ei ole lupaa muuttaa varaston toimintaa.",
+            "only_one_inventory_behavior_allowed": "Tällä hetkellä sallitaan vain yksi varastokäyttäytyminen maksua kohden."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Saadun summan tulee olla kaupan valuutassa."
+          },
+          "checkout_source": {
+            "revoked": "Tämä maksu ei ole enää käytettävissä."
           }
         },
         "dropzone": {
