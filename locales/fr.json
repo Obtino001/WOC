@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -63,42 +72,42 @@
     "button_label": "S'inscrire"
   },
   "accessibility": {
-    "skip_to_text": "Ignorer et passer au contenu",
+    "skip_to_text": "Passer au contenu",
     "close": "Fermer",
     "unit_price_separator": "par",
-    "vendor": "Fournisseur :",
+    "vendor": "Vendeur :",
     "error": "Erreur",
-    "refresh_page": "Le choix d'une sélection entraîne l'actualisation de la page entière.",
+    "refresh_page": "Une sélection entraînera le rechargement complet de la page.",
     "link_messages": {
       "new_window": "S'ouvre dans une nouvelle fenêtre.",
       "external": "Ouvre un site web externe."
     },
-    "loading": "Chargement en cours...",
-    "skip_to_product_info": "Passer aux informations produits",
-    "total_reviews": "total des critiques",
-    "star_reviews_info": "{{ rating_value }} sur {{ rating_max }} étoiles",
+    "loading": "Chargement...",
+    "skip_to_product_info": "Passer aux informations sur le produit",
+    "total_reviews": "évaluation totale",
+    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} étoiles",
     "collapsible_content_title": "Contenu réductible",
     "complementary_products": "Produits complémentaires"
   },
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Lire la suite : {{ title }}",
+      "read_more_title": "Lire la suite : {{ title }}",
       "comments": {
-        "one": "{{ count }} commentaire",
-        "other": "{{ count }} commentaires",
+        "one": "{{ count }} commentaires",
+        "other": "{{ count }} commentaires",
         "many": "{{ count }} commentaires"
       },
       "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés.",
-      "comment_form_title": "Laisser un commentaire",
-      "name": "Nom",
+      "comment_form_title": "Laissez un commentaire",
+      "name": "Annonce",
       "email": "E-mail",
       "message": "Commentaire",
-      "post": "Publier le commentaire",
-      "back_to_blog": "Retour au blog",
+      "post": "Partager le commentaire",
+      "back_to_blog": "Blogue en ligne",
       "share": "Partager cet article",
-      "success": "Votre commentaire a bien été publié ! Merci !",
-      "success_moderated": "Votre commentaire a bien été publié. Nous le publierons sous peu, conformément au processus de modération de notre blog."
+      "success": "Votre commentaire a été partagé avec succès ! Merci.",
+      "success_moderated": "Votre commentaire a été publié avec succès. Comme notre blog est modéré, nous publierons votre commentaire sous peu."
     }
   },
   "onboarding": {
@@ -399,54 +408,54 @@
   "customer": {
     "account": {
       "title": "Compte",
-      "details": "Détails du compte",
-      "view_addresses": "Voir les adresses",
-      "return": "Retour aux détails du compte"
+      "details": "Informations du compte",
+      "view_addresses": "Afficher l'adresse",
+      "return": "Retour aux informations du compte"
     },
     "account_fallback": "Compte",
     "activate_account": {
-      "title": "Activer le compte",
-      "subtext": "Créez votre mot de passe pour activer le compte.",
+      "title": "Activez le compte",
+      "subtext": "Créez votre mot de passe pour activer votre compte.",
       "password": "Mot de passe",
-      "password_confirm": "Confirmer le mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
       "submit": "Activer le compte",
-      "cancel": "Décliner l'invitation"
+      "cancel": "Refuser l'invitation"
     },
     "addresses": {
       "title": "Adresses",
       "default": "Par défaut",
       "add_new": "Ajouter une nouvelle adresse",
       "edit_address": "Modifier l'adresse",
-      "first_name": "Prénom",
+      "first_name": "Annonce",
       "last_name": "Nom de famille",
       "company": "Entreprise",
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Ville",
       "country": "Pays/région",
-      "province": "Province",
+      "province": "Île",
       "zip": "Code postal",
       "phone": "Téléphone",
       "set_default": "Définir comme adresse par défaut",
-      "add": "Ajouter l'adresse",
+      "add": "Ajouter une adresse",
       "update": "Mettre à jour l'adresse",
       "cancel": "Annuler",
       "edit": "Modifier",
-      "delete": "Supprimer",
-      "delete_confirm": "Êtes-vous certain(e) de vouloir supprimer cette adresse ?"
+      "delete": "Sil",
+      "delete_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse ?"
     },
-    "log_in": "Connexion",
+    "log_in": "Se connecter",
     "log_out": "Déconnexion",
     "login_page": {
       "cancel": "Annuler",
       "create_account": "Créer un compte",
       "email": "E-mail",
-      "forgot_password": "Mot de passe oublié ?",
+      "forgot_password": "Vous avez oublié votre mot de passe ?",
       "guest_continue": "Continuer",
-      "guest_title": "Continuer en tant qu'invité(e)",
+      "guest_title": "Continuer en tant qu'invité",
       "password": "Mot de passe",
-      "title": "Connexion",
-      "sign_in": "Connexion",
+      "title": "Se connecter",
+      "sign_in": "Connectez-vous",
       "submit": "Envoyer",
       "alternate_provider_separator": "ou"
     },
@@ -456,9 +465,9 @@
       "order_number_link": "Numéro de commande {{ number }}",
       "date": "Date",
       "payment_status": "Statut des paiements",
-      "fulfillment_status": "Statut du traitement de la commande",
+      "fulfillment_status": "Statut de livraison",
       "total": "Total",
-      "none": "Vous n'avez encore passé aucune commande."
+      "none": "Vous n'avez pas encore passé de commande."
     },
     "recover_password": {
       "title": "Réinitialiser son mot de passe",
@@ -482,29 +491,29 @@
     },
     "order": {
       "title": "Commande {{ name }}",
-      "date_html": "Passée le {{ date }}",
-      "cancelled_html": "Commande annulée le {{ date }}",
-      "cancelled_reason": "Motif : {{ reason }}",
+      "date_html": "Date de publication : {{ date }}",
+      "cancelled_html": "Date d'annulation de la commande : {{ date }}",
+      "cancelled_reason": "Raison : {{ reason }}",
       "billing_address": "Adresse de facturation",
-      "payment_status": "Statut de paiement",
-      "shipping_address": "Adresse d'expédition",
-      "fulfillment_status": "Statut du traitement de la commande",
+      "payment_status": "Statut de l'œdème",
+      "shipping_address": "Adresse de livraison",
+      "fulfillment_status": "Statut d'expédition",
       "discount": "Réduction",
-      "shipping": "Expédition",
-      "tax": "Taxes",
+      "shipping": "Fret",
+      "tax": "Impôt",
       "product": "Produit",
-      "sku": "SKU",
+      "sku": "UGS",
       "price": "Prix",
       "quantity": "Quantité",
       "total": "Total",
-      "fulfilled_at_html": "Traitée le {{ date }}",
-      "track_shipment": "Suivre l'envoi",
+      "fulfilled_at_html": "Envoyé : {{ date }}",
+      "track_shipment": "Suivre le colis",
       "tracking_url": "Lien de suivi",
-      "tracking_company": "Transporteur",
+      "tracking_company": "Entreprise de transport",
       "tracking_number": "Numéro de suivi",
-      "subtotal": "Sous-total",
-      "total_duties": "Frais de douane",
-      "total_refunded": "Remboursé"
+      "subtotal": "Total général",
+      "total_duties": "Droits de douane",
+      "total_refunded": "Remboursement effectué"
     }
   },
   "gift_cards": {
