@@ -2098,7 +2098,9 @@
           "label": "Butikkreditt",
           "apply_label": "Bruk butikkreditt",
           "add_label": "Legg til butikkreditt",
-          "buying_gift_card": "Du kan ikke bruke butikkreditt til å kjøpe gavekort."
+          "buying_gift_card": "Du kan ikke bruke butikkreditt til å kjøpe gavekort.",
+          "manage_label": "Administrer butikkreditt",
+          "no_fixed_selling_plans": "Du kan ikke bruke butikkreditt sammen med utsatte kjøpsalternativer."
         },
         "same_billing_address_checkbox_label": "Bruk leveringsadressen som fakturaadresse",
         "shipping_rate_updated": "Tilgjengelige fraktmetoder er oppdatert. Vennligst bekreft valget ditt før du betaler.",
@@ -2138,7 +2140,67 @@
         "purchase_options_subscription_agreement_label": "Handlekurven din inneholder et abonnement som fornyes automatisk. Ved å klikke på \"%{button_label}\" godtar du %{consent_text} %{cancellation_instructions}",
         "purchase_options_subscription_consent_text": "Du godtar klart og definitivt at det gjentakende beløpet (pluss frakt og avgifter) som vises i handlekurven din, automatisk vil bli belastet deg inntil abonnementet/abonnementene avsluttes eller du sier opp.",
         "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Vennligst les %{cancellation_policy_label}-teksten.",
-        "purchase_options_subscription_cancel_text": "Du kan kansellere når som helst ved å gå til kontoen din eller kontakte butikken."
+        "purchase_options_subscription_cancel_text": "Du kan kansellere når som helst ved å gå til kontoen din eller kontakte butikken.",
+        "title": "Betaling",
+        "supported_card_brands_more_label": "og mer…",
+        "technical_error": "På grunn av et teknisk problem kan betalinger ikke behandles akkurat nå. Vennligst prøv igjen om noen minutter.",
+        "subscription_agreement_label_html": "Jeg forstår at jeg godtar et abonnement. Det fornyes til den opphører eller <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">blir kansellert</a> til den oppførte prisen og frekvensen.",
+        "waiting_on_payment_methods": "Tilgjengelige betalingsmetoder lastes inn...",
+        "subscription_card_update_agreement_label": "Å endre betalingsmetoden oppdaterer abonnementet ditt og fremtidige gjentakende betalinger.",
+        "taxes_not_included": "Skatter er ikke inkludert",
+        "subscription_agreement_label": "Handlekurven din inneholder ett eller flere produkter som er utsatt kjøp eller abonnementskjøp. Ved å fortsette betalingen godtar du at betalingsmetoden din automatisk belastes med den oppførte prisen og frekvensen på denne siden, inntil utløpsdatoen eller til du avbestiller. Alle avbestillinger er underlagt %{cancelled}.",
+        "subscription_agreement_cancelled": "avbestillingspolicy",
+        "update_payment_method": "Oppdater betalingsmetoden",
+        "vaulting_agreement_label": "For raskere betaling, lagre informasjonen min hos %{company}.",
+        "use_different_credit_card_label": "Bruk et annet kort",
+        "waiting_on_taxes_message": "Hvis skattene dine ikke beregnes innen noen sekunder, oppdater siden.",
+        "waiting_on_taxes_notice": "Skatter beregnes",
+        "subscription_heading": "Abonnementsavtale",
+        "use_order_billing_address_label": "Bruk fakturaadressen til bestillingen",
+        "use_location_billing_address_label": "Bruk fakturaadressen til plasseringen",
+        "use_location_shipping_address_label": "Bruk Konumuns leveringsadresse",
+        "twint_label": "TWINT",
+        "vipps_label": "Vipps",
+        "swish_label": "Swish",
+        "usdc_label": "USDC",
+        "usdc_cashback_title": "%%{incentive_percentage} kontant tilbakebetaling",
+        "usdc_cashback_additional_info": "Betal med USDC på Base og få %%{incentive_percentage} tilbake på din digitale lommebok innen 30 dager.",
+        "usdc_cashback_terms": "Vilkår og begrensninger gjelder",
+        "vault_for_payment_later": {
+          "pay_button_label": "Bestill",
+          "notice": "Du vil ikke bli belastet nå. Ved å fortsette betalingen godtar du at betalingsmetoden din blir belastet når bestillingen din behandles."
+        },
+        "wechat_pay_label": "WeChat Pay"
+      },
+      "payment_errors": {
+        "credit_card_processing": "Betalingen din kan ikke behandles på grunn av tekniske problemer. Vennligst prøv igjen om noen minutter eller bruk en annen betalingsmetode.",
+        "checkout_amount_changed": "Betalingsbeløpet på betalingssiden har endret seg, så betalingen din kunne ikke behandles. Vennligst sjekk bestillingen din og prøv igjen.",
+        "cannot_verify": "Betalingsdetaljene dine kunne ikke bekreftes. Vennligst sjekk kortinformasjonen din og prøv igjen.",
+        "card_declined": "Kortet ditt ble avvist. Prøv igjen eller bruk en annen betalingsmetode.",
+        "call_issuer": "Kortet ditt ble avvist. Bruk en annen betalingsmetode eller kontakt banken din for mer informasjon.",
+        "available_methods_updated": "Tilgjengelige betalingsmetoder er oppdatert.",
+        "amount_too_small": "Minimum utbetalingsbeløp må være høyere enn 0,50 USD. Vennligst prøv igjen med et høyere beløp.",
+        "captcha_required": "For å fullføre kjøpet, vennligst oppgi betalingsinformasjon og løs captcha-testen.",
+        "captcha_required_without_payment_information": "For å fullføre kjøpet, vennligst løs captcha-testen.",
+        "cancelled_payment": "Betalingen din ble avbrutt. Prøv igjen eller bruk en annen betalingsmetode."
+      },
+      "payment_challenge_modal": {
+        "instructions": "Fullfør kjøpet ditt ved å bruke {{paymentMethod}}-koden din",
+        "timer_message": "Tid igjen for å fullføre betalingen: {{timeLeft}}",
+        "copy_text": "Kopier {{paymentMethod}}-koden",
+        "header": "Betal med {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "Fullfør kjøpet ditt ved å bruke {{paymentMethod}}-koden din"
+        },
+        "external": {
+          "instructions": "For å fullføre dette kjøpet, bekreft betalingen i appen din"
+        },
+        "close": "Lukk prøven",
+        "open_app_text": "Åpne {{paymentMethod}}-appen"
+      },
+      "payment_collection": {
+        "cancelled": "Denne betalingen er ikke lenger nødvendig. Besøk bestillingssiden for detaljer.",
+        "paid": "Denne betalingen er allerede sendt. Besøk bestillingssiden for detaljer."
       }
     }
   },
