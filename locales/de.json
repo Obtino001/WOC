@@ -1067,11 +1067,64 @@
           },
           "optional_duties": {
             "optional_duties_not_permitted": "Bei dieser Zahlung ist die Ablehnung von Zollgebühren nicht erlaubt."
+          },
+          "session_identifier_not_unique_error": "Bei Ihrer Bestellung ist ein Problem aufgetreten, bitte versuchen Sie die Zahlung erneut.",
+          "session_is_already_finished": "Diese Zahlungssitzung wurde bereits abgeschlossen.",
+          "tax": {
+            "new_tax_must_be_accepted": "Die mit Ihrer Bestellung verbundenen Steuern haben sich geändert. Bitte überprüfen Sie die Informationen und versuchen Sie es erneut.",
+            "unresolvable_tax_terms": "Die vorgeschlagenen Bedingungen können im aktuellen Verhandlungskontext nicht gelöst werden.",
+            "delivery_price_is_abstract": "Der entsprechende Lieferpreis ist abstrakt.",
+            "tax_inclusivity_mismatch": "Verhandeln Sie erneut mit dem Wert somut totalTaxAndDutyAmount oder totalAmountIncludedInTarget.",
+            "tax_exemption_not_supported": "Die Steuerbefreiungen werden in der aktuellen Verhandlungssitzung nicht unterstützt.",
+            "delivery_tax_exemption_not_supported": "Lieferleitungen sind derzeit von Steuerbefreiungen ausgeschlossen.",
+            "proposed_allocations_required": "Das Feld „Vorgeschlagene Zuweisungen“ fehlt.",
+            "merchandise_terms_must_be_defined": "Die Bedingungen für die Ware müssen definiert werden.",
+            "delivery_terms_must_be_defined": "Lieferbedingungen müssen definiert werden.",
+            "merchandise_discount_terms_must_be_defined": "Es müssen die Rabattbedingungen für Waren definiert werden.",
+            "delivery_discount_terms_must_be_defined": "Lieferungsrabattbedingungen müssen definiert werden.",
+            "allocated_required": "Das Feld \"Tahsis edildi\" fehlt.",
+            "value_required": "Das Feld „Wert“ fehlt.",
+            "line_splits_not_supported": "Das Feld „Zeilen“ sollte im Verkäuferangebot so aufgeteilt werden, dass jede Zeile eine einzelne Zeilenkomponente enthält."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Das Geschäft akzeptiert kein Trinkgeld.",
+            "only_one_tip_line_allowed": "Mehrere Trinkgeldzeilen werden nicht unterstützt.",
+            "tips_not_allowed_for_b2b": "In B2B-Geschäften sind Trinkgelder nicht erlaubt.",
+            "currency_change_reset": "Wegen der Währungsänderung wurde das Trinkgeld auf null gesetzt.",
+            "tips_not_allowed_for_deferred_purchase_options": "Für aufgeschobene Kaufoptionen werden Trinkgelder noch nicht unterstützt."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Dieser Entwurfsauftrag ist im aktuellen Geschäft nicht verfügbar.",
+            "staff_member_not_exist": "Dieses Personal ist im aktuellen Geschäft nicht verfügbar.",
+            "location_not_exist": "Dieser Standort ist im aktuellen Geschäft nicht verfügbar.",
+            "point_of_sale_device_not_exist": "Dieses Verkaufsstellen-Gerät ist im aktuellen Geschäft nicht verfügbar.",
+            "unresolvable_target_merchandise_lines": "Vorgeschlagene Verkaufszuordnungen können im aktuellen Verhandlungskontext nicht aufgelöst werden."
           }
         },
         "dropzone": {
           "dragged_over": "Die hochzuladende Datei per Drag & Drop hierher ziehen"
-        }
+        },
+        "page_title": "Zahlungsseite",
+        "pay_now_button_label": "Jetzt bezahlen",
+        "forwarding_indicator": {
+          "new_window": "In einem neuen Fenster öffnen.",
+          "external": "Öffnet eine externe Website.",
+          "external_and_new_window": "Externe Website in einem neuen Fenster öffnen."
+        },
+        "full_price": "Vollständiger Preis:",
+        "full_title": "{{pageTitle}} - {{shopName}} - Zahlungsseite",
+        "loading_title": "Zahlungsseite - {{shopName}}",
+        "processing": "Wird verarbeitet…",
+        "remove_item": "%{label} Etikett entfernen",
+        "remove_tag": "Etikett entfernen",
+        "map": {
+          "cluster_title": {
+            "one": "Menge mit {{number}} Markierungen",
+            "other": "Menge mit {{number}} Markierungen"
+          }
+        },
+        "loading": "Wird geladen…",
+        "remove_chip": "Produkt entfernen"
       }
     }
   }
