@@ -1558,7 +1558,8 @@
         "error_duties_tooltip": "Denne bestillingen sendes fra et annet land. Derfor kan det være nødvendig å betale toll og andre avgifter ved levering.",
         "deferred_total_due_date_label": "Totalt beløp som skal betales den {{date}}",
         "expand_component_information": {
-          "one": "Viser %{count} produkter"
+          "one": "Viser %{count} produkter",
+          "other": "Viser %{count} produkter"
         },
         "discount_discovery": {
           "add_code": "Legg til rabatt",
@@ -1591,7 +1592,62 @@
         "discount_code_replaced": "%{old_code} rabattkode er fjernet og %{code} er brukt",
         "discount_code_replaced_multiple": "Flere rabattkoder ble fjernet og %{code} ble brukt",
         "discount_applies_to_subscription_items_only": "Denne rabatten gjelder kun for abonnementprodukter",
-        "estimated_taxes_finalization_tooltip_content_short": "Skatten fastsettes etter betalingen"
+        "estimated_taxes_finalization_tooltip_content_short": "Skatten fastsettes etter betalingen",
+        "order_name_label": "%{name} bestilling",
+        "gift_card_title": "Gavekort",
+        "gift_card_label": "Gavekort",
+        "gift_card_placeholder": "Gavekort",
+        "gift_card_and_discount_title": "Rabattkode eller gavekort",
+        "gift_card_and_discount_label": "Rabattkode eller gavekort",
+        "gift_card_and_discount_placeholder": "Rabattkode eller gavekort",
+        "free_shipping_discount_label": "Gratis frakt",
+        "gift_card_has_been_applied": "Gavekort er brukt",
+        "gift_card_has_been_removed": "Gavekort fjernet",
+        "partial_total_label": "Totalt",
+        "free_total_label": "Gratis",
+        "free_shipping_total_label": "Gratis",
+        "paid_label": "Betalt",
+        "payment_due_label": "Innbetaling som kommer på forfall",
+        "gift_card_savings_notice": "etter %{gift_card_amount} gavekortet",
+        "expand_order_summary_short": "Vis",
+        "order_total_updated_label": "Oppdatert total",
+        "no_pickup_location": "Ingen tilgjengelig hentested.",
+        "information_estimated_taxes_label": "Skatter (anslått)",
+        "gift_card_ending": "gavekort som slutter med %{last_characters}",
+        "multiple_shipping_lines_label": "Frakt totalt",
+        "original_price": "Originalpris",
+        "gift_card_subscriptions_notice": "Gavekort gjelder kun ved din første betaling",
+        "payment_terms_totals": {
+          "due_later": "Totalt beløp som skal betales %{due_at}",
+          "due_later_checkout_to_draft": "Totalt beløp som skal betales senere",
+          "due_on_fulfillment": "Totalt beløp som skal betales ved levering",
+          "due_on_receipt": "Totalt beløp som skal betales ved utstedelse av kvittering",
+          "due_on_fulfillment_next": "Betales ved levering"
+        },
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> kunne ikke brukes med dine nåværende rabatter.",
+        "maximum_discount_code_limit_reached": "Du har nådd maks antall rabattkoder. Fjern en av de eksisterende kodene for å bruke koden <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "order_total_label": "Bestillingssum",
+        "may_be_charged_on_delivery": "Det kan påløpe en leveringsavgift",
+        "full_price": "Full pris: %{price}",
+        "group_title_label": "innenfor rammen av \"%{group_title}\"",
+        "gift_card_applied": "Gavekort er brukt",
+        "more_items_modal": {
+          "clear_search": "Tøm søket",
+          "empty_results": "Ingen resultater funnet for \"%{searchText}\". Kontroller at det ikke er noen skrivefeil, eller prøv et annet ord eller uttrykk.",
+          "number_items_shown": "%{shownNumber}/%{totalNumber} produkter",
+          "search_item": "Ara"
+        },
+        "number_items": {
+          "one": "%{count} produkter",
+          "other": "%{count} produkter"
+        },
+        "for_add_on": "For: %{group_title}",
+        "from_shop_heading": "fra %{shop_name}-butikken",
+        "from_other_stores_heading": "Andre butikker",
+        "order_discounts_apply_to_local_shop": "Bestillingsrabatter gjelder kun for produkter kjøpt i %{shop_name}-butikken",
+        "gift_cards_apply_to_local_shop": "Gavekort gjelder kun for produkter kjøpt i %{shop_name}-butikken",
+        "from_multiple_stores_heading": "Fra flere butikker",
+        "pay_merchant_label": "%{merchant_name} betaling"
       },
       "order_payment_collection": {
         "custom_line_item_description": "Beløpet som skal betales for %{order_name}-bestillingen",
