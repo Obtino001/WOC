@@ -1816,7 +1816,67 @@
         "bank_account_generic_error": "Bankkontoen kunne ikke legges til. Prøv igjen senere.",
         "add_payment_method": "Legg til betalingsmetode",
         "add_new_payment_method": "Legg til en ny betalingsmetode",
-        "alipay_label": "Alipay"
+        "alipay_label": "Alipay",
+        "card_number_label": "Kartnummer",
+        "card_number_placeholder": "Kartnummer",
+        "card_pay_with": "Betal med:",
+        "card_security_notice": "Alle transaksjoner er sikre og krypterte.",
+        "card_expiry_label": "Utløpsdato (MM/ÅÅ)",
+        "card_expiry_placeholder": "Utløpsdato (MM/ÅÅ)",
+        "card_verification_value_label": "Sikkerhetskode",
+        "card_verification_value_placeholder": "Sikkerhetskode",
+        "card_expiry_date_explanation": "Kartets utløpsdatoformat: måned, måned, år, år",
+        "card_verification_value_explanation": "3-sifret sikkerhetskode finnes vanligvis på baksiden av kortet ditt. American Express-kort har en 4-sifret kode på forsiden.",
+        "card_verification_value_explanation_amex": "Kortets 4-sifrede sikkerhetskode på forsiden",
+        "card_verification_value_explanation_other": "3-sifret sikkerhetskode på baksiden av kortet ditt",
+        "card_start_label": "Redigeringsdato (MM/ÅÅ)",
+        "card_start_placeholder": "Redigeringsdato (MM/ÅÅ)",
+        "card_issue_number_label": "Redigeringsnummer",
+        "card_issue_number_placeholder": "Redigeringsnummer",
+        "card_change_label": "Endre",
+        "billing_address_title": "Fakturaadresse",
+        "billing_address_description": "Velg adressen som samsvarer med kortet eller betalingsmetoden din.",
+        "billing_address_description_no_shipping_address": "Skriv inn adressen som samsvarer med kortet eller betalingsmetoden din.",
+        "card_fields_container_prefix": "Områdebeholder for dette:",
+        "card_fields_unavailable_html": {
+          "one": "Kreditt- og bankkortbetalinger er for øyeblikket utilgjengelige.<br><a href=\"%{current_url}\">Oppdater denne siden</a> eller prøv igjen senere.",
+          "other": "Kreditt- og bankkortbetalinger er for øyeblikket utilgjengelige.<br><a href=\"%{current_url}\">Oppdater denne siden</a> eller prøv en annen betalingsmetode."
+        },
+        "card_fields_processing_error": "Det oppstod et problem under behandlingen av betalingen. Prøv å oppdatere denne siden eller sjekk internettforbindelsen din.",
+        "bank_picker_label": "Bank",
+        "card_information_notice": "Alle transaksjoner er sikre og krypterte. Kredittkortinformasjon lagres aldri.",
+        "card_expiration_month_label": "Utløpsdato (måned)",
+        "card_expiration_year_label": "Utløpsdato (år)",
+        "billing_address_not_supported_for_payment_method_error": "Denne betalingsmetoden er ikke tilgjengelig for fakturaadressen og valutaen din. Prøv en annen betalingsmetode.",
+        "card_security_vault_notice": "Vi trenger informasjonen din for fremtidige betalinger. Alle transaksjoner er sikre og krypterte.",
+        "card_update_label": "Oppdater kortet",
+        "card_expired": "Tiden er ute",
+        "card_verification_confirm": "Skriv inn sikkerhetskoden på kortet ditt for verifisering.",
+        "billing_address_associated_with_mandate": "Bruk adressen knyttet til betalingsmetoden",
+        "billing_address_associated_with_mandate_info": "Hvis du vil endre fakturaadressen, fjern kredittkortinformasjonen og skriv den inn på nytt.",
+        "card_vaulted_company_location": "Kart ble lagret for denne posisjonen",
+        "billing_must_match_shipping_notice": "Betalingsmetoden din krever at fakturaadressen og leveringsadressen er den samme.",
+        "brand_not_available": "Denne butikken godtar ikke {{brand}}. Bruk et annet kort for å betale.",
+        "billing_address_invalid_phone": "Fortsett ved å oppdatere fakturaadressen til kortet som slutter på {{last_digits}} for {{label}}.",
+        "billing_address_invalid_phone_no_card": "Forny telefonnummeret på fakturaadressen din for å fortsette.",
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Angi en gyldig redigeringsdato",
+              "issue_number": "Skriv inn et gyldig redigeringsnummer"
+            },
+            "invalid": {
+              "verification_value": "Skriv inn en gyldig CVV- eller sikkerhetskode"
+            }
+          }
+        },
+        "business_customer_vaulting_payment_label": "Lagre denne betalingsmetoden på betalingsiden og gi %{company} tillatelse til å belaste denne betalingsmetoden for fremtidige kjøp på dette stedet. Alle personer som er tilknyttet dette stedet kan bruke denne betalingsmetoden.",
+        "cashapppay_label": "Cash App Betal",
+        "card_nickname_label": "Kallenavn (valgfritt)",
+        "blik_label": "BLIK",
+        "billing_address_rollup_accessibility_label": "Fakturaadressevalg",
+        "business_customer_with_bank_account_vaulting_payment_label": "Lagre denne betalingsmetoden ved betaling, og gi %{company} tillatelse til å belaste kontoen din for fremtidige kjøp godkjent for denne lokasjonen inntil du avbryter det. Alle personer tilknyttet denne lokasjonen kan bruke denne betalingsmetoden.",
+        "bank_account_vaulted_company_location": "Bankkonto er lagret for denne plasseringen"
       }
     }
   },
