@@ -1600,7 +1600,33 @@
           "rst": "آر إس تي",
           "qst": "QST",
           "vpt": "VPT"
-        }
+        },
+        "title": "ملخص الطلب",
+        "total_label": "الإجمالي",
+        "total_outstanding_label": "المبلغ المستحق الدفع",
+        "vat_label_html": "%{amount} شامل الضريبة",
+        "total_updated_label": "السعر الإجمالي المحدث:",
+        "total_already_paid_label": "المدفوع",
+        "unit_price": {
+          "per_item": {
+            "single": "كل واحد منها %{price}",
+            "one": "%{count} منتج %{price}",
+            "other": "%{count} منتج %{price}"
+          }
+        },
+        "total_updated_label_with_price": "السعر الإجمالي المحدث: %{totalPrice}",
+        "updated_shipping_method": "تم تحديث طريقة الشحن: %{shipping_method}",
+        "total_savings": "إجمالي التوفير",
+        "view_all_items": {
+          "one": "عرض %{count} منتجًا",
+          "other": "عرض جميع %{count} المنتجات"
+        },
+        "total_due_today_label": "إجمالي المبلغ المستحق اليوم",
+        "total_due_later_label": "المبلغ الإجمالي المستحق الدفع لاحقًا",
+        "total_due_label": "المجموع المستحق الدفع",
+        "total_price_label": "السعر الإجمالي",
+        "unconfirmed_label": "لم يتم الموافقة عليه",
+        "total_paid_label": "المجموع المدفوع"
       },
       "order_payment_collection": {
         "custom_line_item_description": "المبلغ الواجب دفعه لطلب %{order_name}",
@@ -1644,6 +1670,44 @@
             "signature_mismatch": "هناك تعارض في توقيع المنتج في السطر %{stable_id}."
           }
         }
+      },
+      "payment": {
+        "amazon_payments_label": "أمازون باي",
+        "amazon_payments_login_hint": "سيُطلب منك تسجيل الدخول باستخدام حساب أمازون الخاص بك.",
+        "amazon_payments_logout": "تسجيل الخروج من Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "تعذر استخدام طريقة الدفع المختارة. يرجى اختيار طريقة أخرى أو التواصل مع البنك أو جهة إصدار البطاقة الخاصة بك.",
+        "amazon_payments_abandoned_mfa_challenge": "لم تكتمل عملية الدفع. جرب طريقة دفع مختلفة أو تواصل مع مصرفك أو جهة إصدار بطاقتك.",
+        "amazon_payments_could_not_enqueue_authorize": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "amount_left_to_pay_label": "الدفعة الواردة من الخارج:",
+        "apply_gift_card_button_label": "تطبيق",
+        "bancontact_label": "بانكونتاكت",
+        "apple_pay_payment_error": "لم تكتمل عملية الدفع. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "apple": {
+          "connect": "انقر لربط حساب Apple Pay الخاص بك",
+          "not_available": "Apple Pay غير متاح في هذا المتصفح. لتوصيل حساب Apple Pay الخاص بك، يجب عليك استخدام متصفح Safari على جهاز Apple."
+        },
+        "account_connected": "تم ربط الحساب.",
+        "alternative_payment_currency_total_notice": "ملاحظة: سيتم تحصيل %{amount_due} منك.",
+        "add_credit_card_modal": {
+          "title": "أضف إلى العربة",
+          "cancel": "إلغاء",
+          "save": "حفظ"
+        },
+        "afterpay_label": "آفتر باي",
+        "alternative_payment_currency_total_manual_payment_notice": "ملاحظة: إجمالي %{amount_due} بعد التحويل.",
+        "bank_account_type": {
+          "checking": "حساب جاري",
+          "savings": "آجل"
+        },
+        "bank_account_choose": "اختر حسابًا لإكمال عملية الشراء بأمان",
+        "bank_account_connect_another": "اربط حساب بنك آخر",
+        "bank_account_connect": "اربط حساب البنك",
+        "bank_account_missing": "يجب ربط الحساب البنكي",
+        "bank_account_disclaimer": "قد تستغرق معالجة مدفوعات ACH ما يصل إلى 4 أيام عمل.",
+        "bank_account_generic_error": "تعذر إضافة حساب البنك. يرجى المحاولة مرة أخرى لاحقًا.",
+        "add_payment_method": "إضافة طريقة دفع",
+        "add_new_payment_method": "أضف طريقة دفع جديدة",
+        "alipay_label": "علي باي"
       }
     }
   },
