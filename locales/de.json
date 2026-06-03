@@ -286,13 +286,13 @@
     },
     "cart": {
       "title": "Dein Warenkorb",
-      "caption": "Artikel im Warenkorb",
+      "caption": "Warenkorbartikel",
       "remove_title": "{{ title }} entfernen",
       "note": "Spezielle Bestellanweisungen",
       "checkout": "Auschecken",
       "empty": "Dein Warenkorb ist leer",
-      "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-      "cart_quantity_error_html": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
+      "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "cart_quantity_error_html": "Sie können diesem Korb nur {{ quantity }} Stück dieses Produkts hinzufügen.",
       "headings": {
         "product": "Produkt",
         "price": "Preis",
@@ -356,7 +356,7 @@
       "next_announcement": "Nächste Ankündigung",
       "carousel": "Karussell",
       "announcement": "Ankündigung",
-      "announcement_bar": "Ankündigungsleiste"
+      "announcement_bar": "Benachrichtigungsleiste"
     },
     "quick_order_list": {
       "product_total": "Produktzwischensumme",
@@ -1387,7 +1387,75 @@
       },
       "offsite_payment_failed": {
         "payment_link_expired_title": "Die Ablaufzeit des Zahlungslinks ist abgelaufen",
-        "payment_link_expired_text": "Versuchen Sie, den QR-Code erneut zu scannen."
+        "payment_link_expired_text": "Versuchen Sie, den QR-Code erneut zu scannen.",
+        "payment_not_processed_title": "Die Zahlung ist fehlgeschlagen",
+        "payment_not_processed_text": "Versuchen Sie, den QR-Code erneut zu scannen. Wenn es immer noch nicht funktioniert, informieren Sie bitte unser Personal und probieren Sie eine andere Zahlungsmethode aus.",
+        "title": "Externe Zahlung ist fehlgeschlagen"
+      },
+      "order_summary": {
+        "add_discount_or_gift_card": "Rabattcode oder Geschenkkarte hinzufügen",
+        "applied_discount_message": "%{amount} Rabatt auf den Gesamtbestellwert",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Rabattcode ist für die Artikel in Ihrem Warenkorb nicht gültig",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Rabattcode kann derzeit nicht verwendet werden",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Rabattcode wurde bereits verwendet",
+        "cost_table_title": "Kostenübersicht",
+        "collapse_order_summary_short": "Verstecken",
+        "calculating_shipping": "Wird berechnet...",
+        "confirmation_number_label": "Bestätigung mit der Nummer %{confirmation_number}",
+        "amount_off_shipping": "%{amount} versandkostenfrei mit Rabatt",
+        "custom_discount": "Sonderrabatt",
+        "collapse_component_information": {
+          "one": "%{count} Produkte ausblenden",
+          "other": "%{count} Produkte ausblenden"
+        },
+        "component_quantity_title": "%{quantity} Stück %{product_title}",
+        "alternative_payment_currency_total": "%{amount_due} wurde eingezogen",
+        "calculating": "Wird berechnet...",
+        "deferred_balance_info": {
+          "title": "Die Zahlung des Saldos in Höhe von {{amount_due}} erfolgt am {{due_at}}.",
+          "due_on_fulfillment_title": "Die Zahlung des Guthabens in Höhe von {{amount_due}} erfolgt bei Versand der Bestellung."
+        },
+        "compare_at_sale": "Rabatt (%{sale_amount})",
+        "automatic_discount_tooltip": "Automatisch angewandte Rabatte können nicht entfernt werden"
+      },
+      "order_payment_collection": {
+        "changes_summary": {
+          "added": {
+            "other": "%{count} Stück hinzugefügt"
+          },
+          "subtracted": "%{count} Artikel wurden entfernt",
+          "returned": "%{count} Artikel wurden zurückgegeben",
+          "return_line_item_removed": "%{count} Artikel wurden aus der Rückgabe entfernt"
+        },
+        "additional_payment_requested": "Eine Zahlung in Höhe von %{total_outstanding} ist erforderlich",
+        "checkout_review_and_pay": "Ihre Bestellung mit dem Namen %{order_name} wurde aktualisiert. Überprüfen Sie diese Änderungen und zahlen Sie anschließend, um Ihre Bestellung zu bestätigen.",
+        "order_updated_on": "Ihre Bestellung wurde am %{last_edited_at} aktualisiert.",
+        "order_review_and_pay": "Ihre Bestellung wurde aktualisiert. Überprüfen Sie Ihre Bestellung und zahlen Sie, um sie zu bestätigen."
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Kaufen Sie das Produkt %{product_name}",
+          "one": "Kaufen Sie das Produkt %{product_name} und %{count} weitere Produkte",
+          "other": "Kaufen Sie das Produkt %{product_name} und %{count} weitere Produkte"
+        }
+      },
+      "order_errors": {
+        "creation_failure": "Bei der Erstellung Ihrer Bestellung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns für weitere Informationen.",
+        "network_failure": "Ihre Bestellung konnte aufgrund eines Netzwerkfehlers nicht gesendet werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+        "inventory_reservation_failure": "Einige Produkte sind nicht mehr verfügbar."
+      },
+      "online_store_chat": {
+        "title": "Haben Sie Fragen? Chatten Sie mit uns"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Der Wert der Geschenkkarte muss größer als 0 sein.",
+            "subtotal_limit_reached": "Der maximale Wert für das Zeilenelement wurde erreicht.",
+            "gift_card_price_must_not_exceed_limit": "Der Preis der Geschenkkarte darf %{gift_card_limit} nicht überschreiten.",
+            "signature_mismatch": "In der Zeile %{stable_id} gibt es eine Unstimmigkeit bei der Produktsignatur."
+          }
+        }
       }
     }
   }

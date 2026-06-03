@@ -286,13 +286,13 @@
     },
     "cart": {
       "title": "Ostoskorisi",
-      "caption": "Ostoskorin tuotteet",
+      "caption": "Ostoskori tuotteet",
       "remove_title": "Poista {{ title }}",
       "note": "Tilauksen erityisohjeet",
       "checkout": "Kassa",
       "empty": "Ostoskorisi on tyhjä",
-      "cart_error": "Ostoskorisi päivityksessä tapahtui virhe. Yritä uudelleen.",
-      "cart_quantity_error_html": "Voit lisätä ostoskoriisi vain {{ quantity }} kappaletta tätä tuotetta.",
+      "cart_error": "Ostoskoria päivittäessä tapahtui virhe. Yritä uudelleen.",
+      "cart_quantity_error_html": "Voit lisätä koriisi tästä tuotteesta vain {{ quantity }} kappaletta.",
       "headings": {
         "product": "Tuote",
         "price": "Hinta",
@@ -353,7 +353,7 @@
     },
     "announcements": {
       "previous_announcement": "Edellinen ilmoitus",
-      "next_announcement": "Ilmoitus",
+      "next_announcement": "Seuraava ilmoitus",
       "carousel": "Karuselli",
       "announcement": "Ilmoitus",
       "announcement_bar": "Ilmoituspalkki"
