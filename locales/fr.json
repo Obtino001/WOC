@@ -142,11 +142,11 @@
       },
       "share": "Partager ce produit",
       "sold_out": "Épuisé",
-      "unavailable": "Non disponible(s)",
-      "vendor": "Fournisseur",
-      "video_exit_message": "{{ title }} ouvre la vidéo en plein écran dans la même fenêtre.",
-      "xr_button": "Afficher dans son espace",
-      "xr_button_label": "Affichage dans votre espace, charge l'article dans une fenêtre de réalité augmentée",
+      "unavailable": "Hors service",
+      "vendor": "Vendeur",
+      "video_exit_message": "{{ title }} ouvre une vidéo en plein écran dans la même fenêtre.",
+      "xr_button": "Affichez dans votre propre espace",
+      "xr_button_label": "Votre produit s'affiche dans votre espace ; il se charge dans une fenêtre de réalité augmentée",
       "pickup_availability": {
         "view_store_info": "Afficher les informations du magasin",
         "check_other_stores": "Vérifiez la disponibilité en stock dans les autres magasins",
@@ -171,21 +171,21 @@
       "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a> est calculé à la page de paiement.",
       "choose_options": "Définir les options",
       "choose_product_options": "Sélectionnez les options pour {{ product_name }}",
-      "value_unavailable": "{{ option_value }} – indisponible",
-      "variant_sold_out_or_unavailable": "Variante épuisée ou indisponible",
+      "value_unavailable": "{{ option_value }} - Indisponible",
+      "variant_sold_out_or_unavailable": "La variation est épuisée ou indisponible",
       "inventory_in_stock": "En stock",
       "inventory_in_stock_show_count": "Il y a {{ quantity }} articles en stock",
       "inventory_low_stock": "Stock faible",
       "inventory_low_stock_show_count": "Stock faible : il ne reste que {{ quantity }} exemplaires",
-      "sku": "SKU",
+      "sku": "UGS",
       "inventory_out_of_stock": "Rupture de stock",
       "inventory_out_of_stock_continue_selling": "En stock",
       "volume_pricing": {
-        "title": "Tarification basée sur le volume",
-        "note": "La tarification basée sur le volume est disponible",
+        "title": "Tarification basée sur l'achat en gros",
+        "note": "La tarification basée sur l'achat en gros est disponible",
         "minimum": "{{ quantity }} ou plus",
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "à {{ price }}/pièce"
+        "price_at_each_html": "{{ price }}/pièce"
       },
       "taxes_included": "Taxes incluses.",
       "duties_included": "Taxes douanières incluses.",
@@ -533,19 +533,45 @@
   },
   "recipient": {
     "form": {
-      "checkbox": "Je veux envoyer ce produit comme cadeau",
-      "email_label": "E‑mail du destinataire",
-      "email": "E‑mail",
-      "name_label": "Nom du destinataire (facultatif)",
-      "name": "Nom",
+      "checkbox": "Je veux l'envoyer en cadeau",
+      "email_label": "Adresse e-mail de l'acheteur",
+      "email": "E-mail",
+      "name_label": "Nom de l'acheteur (facultatif)",
+      "name": "Annonce",
       "message_label": "Message (facultatif)",
       "message": "Message",
-      "max_characters": "{{ max_chars }} caractères au maximum",
-      "email_label_optional_for_no_js_behavior": "E‑mail du destinataire (facultatif)",
+      "max_characters": "Maximum {{ max_chars }} caractères",
+      "email_label_optional_for_no_js_behavior": "Adresse e-mail de l'acheteur (facultatif)",
       "send_on": "AAAA-MM-JJ",
-      "send_on_label": "Envoyer le (facultatif)",
-      "expanded": "Formulaire de destinataire de carte-cadeau agrandi",
-      "collapsed": "Formulaire de destinataire de carte-cadeau réduit"
+      "send_on_label": "Envoyer à cette date (optionnel)",
+      "expanded": "Le formulaire du destinataire de la carte cadeau a été étendu",
+      "collapsed": "Le formulaire du destinataire de la carte cadeau a été réduit"
+    }
+  },
+  "shopify": {
+    "attributes": {
+      "email": "courriel",
+      "password": "mot",
+      "password_confirmation": "Confirmation du mot de passe",
+      "first_name": "annonce",
+      "last_name": "nom de famille",
+      "body": "corps"
+    },
+    "addresses": {
+      "zip_code": "Code postal",
+      "pincode": "Code PIN",
+      "prefecture": "Sous-préfecture",
+      "province": "Île",
+      "state": "Éyalet",
+      "state_and_territory": "État/région",
+      "county": "District",
+      "confirm": "Êtes-vous sûr de vouloir supprimer cette adresse ?"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} remise appliquée"
+    },
+    "challenge": {
+      "message": "Veuillez confirmer que vous n'êtes pas un robot pour continuer."
     }
   }
 }
