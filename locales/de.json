@@ -1481,7 +1481,10 @@
           "due_later_checkout_to_draft": "Gesamtbetrag, der später zu zahlen ist",
           "due_on_fulfillment": "Gesamtbetrag, der bei Lieferung zu zahlen ist",
           "due_on_receipt": "Bei Ausstellung der Quittung zu zahlender Gesamtbetrag",
-          "due_on_fulfillment_next": "Bei Versand zu zahlen"
+          "due_on_fulfillment_next": "Bei Versand zu zahlen",
+          "due_today": "Heute zu zahlender Gesamtbetrag",
+          "total_paid": "Gesamtbetrag der Zahlung",
+          "due_today_next": "Das heutige Fälligkeitsdatum"
         },
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> konnte mit Ihren aktuellen Rabatten nicht verwendet werden.",
         "maximum_discount_code_limit_reached": "Sie haben die maximale Anzahl an Rabattcodes erreicht. Entfernen Sie einen der vorhandenen Codes, um den Code <strong style=\"text-transform:uppercase\">%{code}</strong> zu verwenden.",
@@ -1501,7 +1504,53 @@
         "order_discounts_apply_to_local_shop": "Bestellrabatte gelten nur für Produkte, die im %{shop_name}-Shop gekauft wurden.",
         "gift_cards_apply_to_local_shop": "Geschenkkarten sind nur für Produkte gültig, die im %{shop_name} Geschäft gekauft wurden.",
         "from_multiple_stores_heading": "Mehrere Geschäfte",
-        "pay_merchant_label": "%{merchant_name} Zahlung"
+        "pay_merchant_label": "%{merchant_name} Zahlung",
+        "shopping_cart_label": "Einkaufswagen",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> Rabattcode kann für Ihre Versandadresse nicht verwendet werden",
+        "subtotal_label": "Gesamtsumme",
+        "shipping_label": "Fracht",
+        "shipping_default_value": "Der nächste Schritt wird berechnet",
+        "shipping_pending_message": "Noch nicht verfügbar",
+        "shipping_policy_link": "Versandkosten",
+        "quantity_label": "Stück",
+        "scroll_order_summary": "Für mehr Produkte nach rechts wischen",
+        "pickup_label": "Im Geschäft abholen",
+        "sale_price": "Reduzierter Preis",
+        "recurring_subtotal_label": "Wiederholte Untermenge",
+        "recurring_total_label": "Gesamtwiederholungen",
+        "recurring_total_tooltip": "Versand, Steuern, Zollgebühren oder alle gültigen Rabatte ausgeschlossen.",
+        "percent_off_shipping": "%%{percent} Rabatt auf Versandkosten",
+        "subscriptions": "Abonnement",
+        "recurring_payments": "Wiederholte Zahlungen",
+        "recurring_total_multiple_label": "Bei dieser Bestellung gibt es wiederholte Gebühren für mehrere Produkte.",
+        "price_per_item": {
+          "accessibility_label": "Pro Artikel %{price}"
+        },
+        "return_restocking_fee_label": "Lagerauffüllungsgebühr",
+        "return_shipping_fee_label": "Rücksendungspaket",
+        "shipping_discount_title": "Versandkostenrabatt",
+        "subtotal_label_with_quantity": {
+          "one": "Gesamtbetrag · %{count} Artikel",
+          "other": "Gesamtbetrag · %{count} Artikel"
+        },
+        "product_image_quantity_label": "Stück",
+        "price_before_discount_aria_text": "Originalpreis",
+        "price_after_discount_aria_text": "Reduzierter Preis",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "An Adresse senden",
+          "ship_to_address_instead_html": "Verwenden Sie die Option %{link}"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Ihr Produkt ist in keinem Geschäft verfügbar.",
+          "other": "Es gibt kein Geschäft, in dem Ihre Produkte verfügbar sind."
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "In %{country} gibt es kein Geschäft, in dem Ihr Produkt verfügbar ist.",
+          "other": "In %{country} gibt es keinen Laden, in dem Ihre Produkte verfügbar sind."
+        },
+        "tax_line": {
+          "gst": "MwSt."
+        }
       },
       "order_payment_collection": {
         "changes_summary": {

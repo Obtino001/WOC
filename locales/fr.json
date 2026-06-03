@@ -1526,7 +1526,10 @@
           "due_later_checkout_to_draft": "Montant total à payer ensuite",
           "due_on_fulfillment": "Montant total à payer à la livraison",
           "due_on_receipt": "Le montant total à payer lors de l'émission du reçu",
-          "due_on_fulfillment_next": "À payer à la livraison"
+          "due_on_fulfillment_next": "À payer à la livraison",
+          "due_today": "Montant total à payer aujourd'hui",
+          "total_paid": "Montant total payé",
+          "due_today_next": "La date de paiement finale est aujourd'hui"
         },
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong>, ne peut pas être utilisé avec vos remises actuelles.",
         "maximum_discount_code_limit_reached": "Vous avez atteint le nombre maximum de codes de réduction. Supprimez un code existant pour utiliser le code <strong style=\"text-transform:uppercase\">%{code}</strong>.",
@@ -1549,7 +1552,52 @@
         "order_discounts_apply_to_local_shop": "Les remises sur les commandes s'appliquent uniquement aux produits achetés dans la boutique %{shop_name}",
         "gift_cards_apply_to_local_shop": "Les cartes cadeaux sont valables uniquement pour les produits achetés dans la boutique %{shop_name}",
         "from_multiple_stores_heading": "De plusieurs magasins",
-        "pay_merchant_label": "paiement %{merchant_name}"
+        "pay_merchant_label": "paiement %{merchant_name}",
+        "shopping_cart_label": "Panier d'achat",
+        "remove_gift_card_label": "Effacer ta carte cadeau",
+        "remove_discount_label": "Supprimer la réduction",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Le code de réduction <strong style=\"text-transform:uppercase\">%{code}</strong> ne peut pas être utilisé pour votre adresse de livraison",
+        "subtotal_label": "Total général",
+        "shipping_label": "Fret",
+        "shipping_default_value": "Le calcul sera effectué à l'étape suivante",
+        "shipping_policy_link": "Frais de port",
+        "scroll_order_summary": "Pour plus de produits, faites défiler",
+        "pickup_label": "Retrait en magasin",
+        "sale_price": "Prix réduit",
+        "recurring_total_tooltip": "Frais de port, taxes, droits de douane ou toutes remises applicables exclus.",
+        "percent_off_shipping": "Livraison avec %%{percent} de réduction",
+        "subscriptions": "Abonnement",
+        "recurring_total_multiple_label": "Cette commande comporte des frais répétés pour plusieurs produits.",
+        "price_per_item": {
+          "accessibility_label": "Par produit %{price}"
+        },
+        "return_restocking_fee_label": "Frais de réapprovisionnement des stocks",
+        "return_shipping_fee_label": "Retour de colis",
+        "shipping_discount_title": "Réduction de livraison",
+        "subtotal_label_with_quantity": {
+          "one": "Total général · %{count} produits",
+          "other": "Total général · %{count} produits"
+        },
+        "price_before_discount_aria_text": "Prix d'origine",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Envoyer à l'adresse",
+          "ship_to_address_instead_html": "Utilisez l'option %{link}"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "Il n'y a aucun magasin où votre produit est disponible.",
+          "other": "Il n'y a pas de magasin où vos produits sont disponibles"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Il n'y a pas de magasin où votre produit est disponible dans le pays %{country}",
+          "other": "Il n'y a pas de magasin où vos produits sont disponibles dans le pays %{country}"
+        },
+        "tax_line": {
+          "hst": "HST",
+          "gst": "TVA",
+          "pst": "PST",
+          "rst": "RST",
+          "vpt": "VPT"
+        }
       },
       "order_payment_collection": {
         "changes_summary": {

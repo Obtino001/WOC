@@ -1513,7 +1513,10 @@
           "due_later_checkout_to_draft": "المبلغ الإجمالي المستحق الدفع لاحقًا",
           "due_on_fulfillment": "المبلغ الإجمالي المستحق عند التسليم",
           "due_on_receipt": "المبلغ الإجمالي الذي سيتم دفعه عند إصدار الإيصال",
-          "due_on_fulfillment_next": "سيتم الدفع عند الشحن"
+          "due_on_fulfillment_next": "سيتم الدفع عند الشحن",
+          "due_today": "إجمالي المبلغ المستحق اليوم",
+          "total_paid": "المبلغ الإجمالي المدفوع",
+          "due_today_next": "تاريخ الاستحقاق النهائي هو اليوم"
         },
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong>، لا يمكن استخدامه مع الخصومات الحالية الخاصة بك.",
         "maximum_discount_code_limit_reached": "لقد وصلت إلى الحد الأقصى لعدد أكواد الخصم. لإستخدام كود <strong style=\"text-transform:uppercase\">%{code}</strong>، يرجى إزالة أحد الأكواد الحالية.",
@@ -1538,7 +1541,66 @@
         "order_discounts_apply_to_local_shop": "تخفيضات الطلبات صالحة فقط للمنتجات المشتراة من متجر %{shop_name}",
         "gift_cards_apply_to_local_shop": "بطاقات الهدايا صالحة فقط للمنتجات المشتراة من متجر %{shop_name}",
         "from_multiple_stores_heading": "من عدة متاجر",
-        "pay_merchant_label": "دفع %{merchant_name}"
+        "pay_merchant_label": "دفع %{merchant_name}",
+        "shopping_cart_label": "عربة التسوق",
+        "remove_gift_card_label": "امسح بطاقة الهدية",
+        "remove_discount_label": "إلغاء الخصم",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير متاح للاستخدام على عنوان الشحن الخاص بك",
+        "subtotal_label": "المجموع الكلي البديل",
+        "shipping_label": "الشحن",
+        "tip_label": "بقشيش",
+        "shipping_default_value": "يتم حسابها في الخطوة التالية",
+        "shipping_pending_message": "غير متاح بعد",
+        "shipping_policy_link": "تكاليف الشحن",
+        "taxes_label": "الضرائب",
+        "price_label": "السعر",
+        "quantity_label": "الكمية",
+        "product_change_label": "تغيير",
+        "product_image_label": "صورة المنتج",
+        "scroll_order_summary": "اسحب للمزيد من المنتجات",
+        "pickup_label": "استلام من المتجر",
+        "sale_price": "السعر المخفض",
+        "recurring_subtotal_label": "المجموع الفرعي المتكرر",
+        "recurring_total_label": "الإجمالي المتكرر",
+        "recurring_total_tooltip": "الشحن والضرائب والرسوم الجمركية أو جميع الخصومات السارية مستثناة.",
+        "percent_off_shipping": "شحن بخصم %%{percent}",
+        "subscriptions": "اشتراك",
+        "recurring_payments": "المدفوعات المتكررة",
+        "recurring_total_multiple_label": "هناك رسوم مكررة لعدة منتجات في هذا الطلب.",
+        "price_per_item": {
+          "accessibility_label": "لكل منتج %{price}",
+          "label": "%{price}/قطعة"
+        },
+        "return_restocking_fee_label": "رسوم تجديد المخزون",
+        "return_shipping_fee_label": "شحن الإرجاع",
+        "shipping_discount_title": "خصم الشحن",
+        "subtotal_label_with_quantity": {
+          "one": "المجموع الكلي · %{count} منتج",
+          "other": "المجموع الكلي · %{count} منتج"
+        },
+        "product_image_quantity_label": "الكمية",
+        "price_before_discount_aria_text": "السعر الأصلي",
+        "price_after_discount_aria_text": "السعر المخفض",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "أرسل إلى العنوان",
+          "ship_to_address_instead_html": "استخدم خيار %{link}"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "لا يوجد متجر يتوفر فيه منتجك حالياً",
+          "other": "لا يوجد متجر يتوفر فيه منتجاتك"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "لا توجد متجر يتوفر فيه منتجك في %{country}",
+          "other": "لا يوجد متجر يتوفر فيه منتجاتك في %{country}"
+        },
+        "tax_line": {
+          "hst": "HST",
+          "gst": "ضريبة السلع والخدمات",
+          "pst": "بي إس تي",
+          "rst": "آر إس تي",
+          "qst": "QST",
+          "vpt": "VPT"
+        }
       },
       "order_payment_collection": {
         "custom_line_item_description": "المبلغ الواجب دفعه لطلب %{order_name}",
