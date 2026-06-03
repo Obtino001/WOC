@@ -1153,7 +1153,86 @@
         },
         "loading": "Chargement…",
         "remove_chip": "Supprimer le produit",
-        "finalize_order_accessibility_label": "Terminer la commande"
+        "finalize_order_accessibility_label": "Terminer la commande",
+        "tooltip_accessibility_label": "Plus d'informations",
+        "title": "Page de paiement - {{shopName}}",
+        "submit_order_button_label": "Envoyer la commande",
+        "submit_for_review_button_label": "Envoyer pour examen",
+        "submit_for_review_notice_label": "Le paiement ne sera pas prélevé avant que votre commande ne soit examinée.",
+        "stepper": {
+          "increase": "Augmentation : {{type}}",
+          "decrease": "Baisse : {{type}}",
+          "minimum_reached": "Le minimum de {{value}} a été atteint",
+          "maximum_reached": "Valeur maximale de {{value}} atteinte"
+        },
+        "sheet": {
+          "expand": "Élargir"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Le produit est en stock dans %{count} emplacement(s) proche(s) de vous",
+          "other": "Le produit est en stock dans %{count} emplacement(s) proche(s) de vous"
+        },
+        "could_not_resolve_address": "L'emplacement de votre adresse n'a pas pu être trouvé. Veuillez réessayer ou utiliser une autre adresse.",
+        "all_stores_far_away": {
+          "title": "La distance jusqu'à l'emplacement le plus proche est de %{distance}",
+          "description": "Sélectionnez un emplacement ou %{ship_to_address_link}",
+          "ship_to_address_link": "livraison à l'adresse",
+          "change_location_link": "Changez votre position",
+          "title_with_specific_location": "L'emplacement le plus proche de votre produit est à %{distance} de %{location}",
+          "title_with_item": {
+            "one": "L'emplacement le plus proche de votre produit est à %{distance} de %{location}",
+            "other": "L'emplacement le plus proche où se trouvent vos produits est à %{distance} de %{location}"
+          }
+        },
+        "location_closest": "L'emplacement le plus proche où se trouve votre produit",
+        "location_information_far_away": {
+          "one": "Votre produit est disponible en %{count} emplacements",
+          "other": "Votre produit est disponible en %{count} emplacements"
+        },
+        "location_nearby": {
+          "one": "Votre produit est disponible dans %{count} emplacements à proximité",
+          "other": "Votre produit est disponible dans %{count} emplacements à proximité"
+        },
+        "location_nearby_short": {
+          "one": "Votre produit est disponible dans %{count} emplacements à proximité",
+          "other": "Votre produit est disponible dans %{count} emplacements à proximité"
+        },
+        "location_far_away": {
+          "one": "Votre produit est disponible à %{count} emplacements",
+          "other": "Votre produit est disponible à %{count} emplacements"
+        },
+        "location_closest_one_item": "L'emplacement le plus proche où se trouve votre produit",
+        "location_closest_other_items": "L'emplacement le plus proche où se trouvent vos produits",
+        "location_information_far_away_one_item": {
+          "one": "Votre produit est disponible en %{count} emplacement(s)",
+          "other": "Votre produit est disponible en %{count} emplacement(s)"
+        },
+        "location_information_far_away_other_items": {
+          "one": "Vous avez %{count} emplacements où se trouvent vos produits",
+          "other": "Vous avez %{count} emplacements où se trouvent vos produits"
+        },
+        "location_nearby_one_item": {
+          "one": "Votre produit est disponible dans %{count} emplacements proches",
+          "other": "Votre produit est disponible dans %{count} emplacements proches"
+        },
+        "location_nearby_other_items": {
+          "one": "Il y a %{count} emplacements proches où se trouvent vos produits",
+          "other": "Il y a %{count} emplacements proches où se trouvent vos produits"
+        },
+        "location_nearby_short_one_item": {
+          "one": "Votre produit se trouve dans %{count} emplacements proches",
+          "other": "Votre produit se trouve dans %{count} emplacements proches"
+        },
+        "location_far_away_one_item": {
+          "one": "Votre produit se trouve à %{count} emplacement(s)",
+          "other": "Votre produit se trouve à %{count} emplacement(s)"
+        },
+        "location_far_away_other_items": {
+          "one": "Les %{count} emplacements où se trouvent vos produits",
+          "other": "Les %{count} emplacements où se trouvent vos produits"
+        }
       }
     }
   }

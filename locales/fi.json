@@ -1110,7 +1110,82 @@
             "other": "{{number}} osoitinta sisältävä joukko"
           }
         },
-        "finalize_order_accessibility_label": "Vahvista tilaus"
+        "finalize_order_accessibility_label": "Vahvista tilaus",
+        "skip_to_content": "Siirry sisältöön",
+        "title": "Maksusivu - {{shopName}}",
+        "submit_for_review_button_label": "Lähetä tarkastettavaksi",
+        "submit_for_review_notice_label": "Maksua ei veloiteta ennen kuin tilauksesi on tarkastettu",
+        "stepper": {
+          "increase": "Kasvu: {{type}}",
+          "decrease": "Lasku: {{type}}",
+          "minimum_reached": "Vähimmäisarvo {{value}} saavutettu",
+          "maximum_reached": "Maksimiarvo {{value}} on saavutettu"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Tuote on varastossa %{count} lähelläsi olevassa myyntipisteessä",
+          "other": "Tuote on varastossa %{count} lähelläsi olevassa myyntipisteessä"
+        },
+        "could_not_resolve_address": "Osoitteesi sijaintia ei löytynyt. Yritä uudelleen tai käytä eri osoitetta.",
+        "all_stores_far_away": {
+          "title": "Lähimmän sijainnin etäisyys on yli %{distance}",
+          "description": "Valitse sijainti tai %{ship_to_address_link}",
+          "ship_to_address_link": "osoitteeseen toimitus",
+          "change_location_link": "Vaihda sijaintisi",
+          "title_with_specific_location": "Lähin sijainti, jossa tuotteesi on, on %{distance} kauempana kuin %{location}",
+          "title_with_item": {
+            "one": "Lähin sijainti, jossa tuotteesi on, on %{distance} kauempana kuin %{location}",
+            "other": "Lähin sijainti, jossa tuotteesi ovat, on %{distance} kauempana kuin %{location} sijainti"
+          }
+        },
+        "location_closest": "Lähin sijainti, jossa tuotteesi on saatavilla",
+        "location_information_far_away": {
+          "one": "Tuotteellasi on %{count} sijaintia",
+          "other": "Tuotteellasi on %{count} sijaintia"
+        },
+        "location_nearby": {
+          "one": "Tuotteellasi on lähellä %{count} sijaintia",
+          "other": "Tuotteellasi on lähellä %{count} sijaintia"
+        },
+        "location_nearby_short": {
+          "one": "Tuotteesi sijaitsee lähellä %{count} sijaintia",
+          "other": "Tuotteesi sijaitsee lähellä %{count} sijaintia"
+        },
+        "location_far_away": {
+          "one": "Tuotteesi sijaitsee %{count} paikassa",
+          "other": "Tuotteesi sijaitsee %{count} paikassa"
+        },
+        "location_closest_one_item": "Lähin sijainti, jossa tuotteesi on saatavilla",
+        "location_closest_other_items": "Lähin sijainti, jossa tuotteesi ovat",
+        "location_information_far_away_one_item": {
+          "one": "Tuotteellasi on %{count} sijaintia",
+          "other": "Tuotteellasi on %{count} sijaintia"
+        },
+        "location_information_far_away_other_items": {
+          "one": "Tuotteitasi on %{count} sijainnissa",
+          "other": "Tuotteitasi on %{count} sijainnissa"
+        },
+        "location_nearby_one_item": {
+          "one": "Tuotteellasi on %{count} lähellä olevaa sijaintia",
+          "other": "Tuotteellasi on %{count} lähellä olevaa sijaintia"
+        },
+        "location_nearby_other_items": {
+          "one": "Tuotteillasi on %{count} lähellä olevaa sijaintia",
+          "other": "Tuotteillasi on %{count} lähellä olevaa sijaintia"
+        },
+        "location_nearby_short_one_item": {
+          "one": "Tuotteesi sijaitsee %{count} lähellä olevassa sijainnissa",
+          "other": "Tuotteesi sijaitsee %{count} lähellä olevassa sijainnissa"
+        },
+        "location_far_away_one_item": {
+          "one": "Tuotteesi sijaitsee %{count} paikassa",
+          "other": "Tuotteesi sijaitsee %{count} paikassa"
+        },
+        "location_far_away_other_items": {
+          "one": "Tuotteidesi sijainti %{count} paikassa",
+          "other": "Tuotteidesi sijainti %{count} paikassa"
+        }
       }
     }
   }
