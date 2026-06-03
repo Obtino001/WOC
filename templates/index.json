@@ -172,7 +172,6 @@
         "partner_2": {
           "type": "partner",
           "settings": {
-            "logo": "shopify://shop_images/partner-monster-DsVxChaQ_1.webp",
             "name": "Samsung"
           }
         },
@@ -570,7 +569,7 @@
         "video_testimonial_Lb9q8m": {
           "type": "video_testimonial",
           "settings": {
-            "video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=VRJxrP_7wjk",
             "quote": "Baştan sona harika bir deneyim",
             "author": "Martin & Louise",
             "location_product": "Cosmos Masaj Koltuğu"
@@ -579,7 +578,7 @@
         "video_testimonial_368dgx": {
           "type": "video_testimonial",
           "settings": {
-            "video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=VRJxrP_7wjk",
             "quote": "Apollo'm şimdiye kadar yaptığım en iyi alışveriş",
             "author": "Henrik P.",
             "location_product": "Apollo Masaj Koltuğu"
@@ -588,7 +587,7 @@
         "video_testimonial_43nJbe": {
           "type": "video_testimonial",
           "settings": {
-            "video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=VRJxrP_7wjk",
             "quote": "Çalışanlarımız buna bayılıyor",
             "author": "Jesper M.",
             "location_product": "Kurumsal Çözüm"
@@ -597,7 +596,7 @@
         "video_testimonial_bKJgFb": {
           "type": "video_testimonial",
           "settings": {
-            "video_url": "",
+            "video_url": "https://www.youtube.com/watch?v=VRJxrP_7wjk",
             "quote": "Kalite kesinlikle birinci sınıf",
             "author": "Camilla & Anders",
             "location_product": "Cosmos Masaj Koltuğu"
