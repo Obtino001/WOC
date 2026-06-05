@@ -261,6 +261,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/sed-nefertiti-Dk_lSbcd.jpg",
             "tag": "AWARD WINNER",
             "title": "NEFERTITI",
             "subtitle": "NECKLIFT",
@@ -273,6 +274,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/sed-comfort-1-DPIpm6u4_1b7d2214-ad5f-4e93-86f2-8b34c4532990.jpg",
             "tag": "BESTSELLER",
             "title": "COMFORT CLEANER",
             "subtitle": "",
@@ -285,6 +287,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/sed-light-up-b7hh_c5P_179928b8-ffb0-443e-b9b5-569531d7e21a.jpg",
             "tag": "",
             "title": "LIGHT UP",
             "subtitle": "EYE LIFT",
@@ -297,6 +300,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/sed-eyepads-D8d7IeIa.jpg",
             "tag": "LUXURY",
             "title": "COLLAGEN 24K GOLD",
             "subtitle": "EYEPADS",
@@ -309,6 +313,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify://shop_images/sed-serum-set-1-Cf4y6gAK_ef582206-bdc3-4e40-992e-69440ee36e17.jpg",
             "tag": "NY",
             "title": "POWER SERUM SET",
             "subtitle": "",
@@ -326,6 +331,7 @@
         "p5",
         "p6"
       ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "",
         "collection": "",
@@ -623,6 +629,7 @@
         "d1": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-nefertiti-Dk_lSbcd.jpg",
             "title": "NEFERTITI",
             "product_url": "/products/nefertiti"
           }
@@ -630,6 +637,7 @@
         "d2": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-light-up-b7hh_c5P_179928b8-ffb0-443e-b9b5-569531d7e21a.jpg",
             "title": "LIGHT UP",
             "product_url": "/products/light-up"
           }
@@ -637,6 +645,7 @@
         "d3": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-lift-me-up-B9DL9V73_2.jpg",
             "title": "LIFT ME UP",
             "product_url": "/products/lift-me-up"
           }
@@ -644,6 +653,7 @@
         "d4": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-clean-my-soul-m-rV3p0I_2.jpg",
             "title": "CLEAN MY SOUL",
             "product_url": "/products/clean-my-soul"
           }
