@@ -214,13 +214,13 @@
     "promo_split": {
       "type": "sed-category-split",
       "blocks": {
-        "c1": {
+        "category_m6zHHb": {
           "type": "category",
           "settings": {
             "subtitle": "INNOVATIVE FORMULAS",
             "title": "HIGH-PERFORMANCE SKINCARE",
             "link_text": "SHOP SKINCARE",
-            "link": "#skincare-section"
+            "link": "shopify://collections/guzellik-teknolojisi"
           }
         },
         "c2": {
@@ -234,7 +234,7 @@
         }
       },
       "block_order": [
-        "c1",
+        "category_m6zHHb",
         "c2"
       ],
       "settings": {
