@@ -12,31 +12,107 @@
     "hero": {
       "type": "hw-hero",
       "settings": {
-        "heading": "Home Training &\n<span class=\"italic text-white/90\">Red Light</span>"
+        "color_scheme": "",
+        "image": "shopify://shop_images/hw-redlight-lifestyle-BsfeNHUZ.png",
+        "heading": "Home Workout &\n<span class=\"italic text-white/90\">Red Light</span>"
       }
     },
     "shop_grid": {
       "type": "hw-product-grid",
+      "blocks": {
+        "p1": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/hw-fitnessplate-xd-ChLGKbTX.webp",
+            "badge_1": "-20% Save £209",
+            "badge_2": "Bestseller",
+            "title": "FitnessPlate XD",
+            "subtitle": "Professional vibration plate with XD technology",
+            "features": "XD vibration technology with 3 motors, 7 auto-programs + manual control, Lymphatic drainage & blood circulation, Resistance bands & training mat incl.",
+            "price": "£825",
+            "compare_price": "£1,034"
+          }
+        },
+        "p2": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/hw-pilates-reformer-DNR7jzX_0659f987-c72d-462c-be22-421c65b9cf5b.webp",
+            "badge_1": "-36% Save £275",
+            "badge_2": "2026 Most Selling",
+            "title": "Home Pilates Reformer",
+            "subtitle": "Compact pilates reformer for home use",
+            "features": "100+ Pilates exercises, 5 resistance levels, Folds in seconds, Silent damping system",
+            "price": "£494",
+            "compare_price": "£769"
+          }
+        },
+        "p3": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/treadmill-product-new-CUPl2-or_c3ae59fb-e3d9-4211-b775-a678bc0b678e.png",
+            "badge_1": "",
+            "badge_2": "Compact",
+            "title": "Compact Treadmill Pro",
+            "subtitle": "Foldable treadmill for small spaces",
+            "features": "1-12 km/h speed range, Just 10.8 cm when folded, Up to 120 kg load capacity, LED display with speed & calories",
+            "price": "£715",
+            "compare_price": ""
+          }
+        },
+        "p4": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/red-light-panel-300-BDerkwzw_1c181743-2e0b-40c1-b881-2ba68d62029a.png",
+            "badge_1": "-20% Save £73",
+            "badge_2": "Bestseller",
+            "title": "WOC Red Light Panel 300 Two Waves",
+            "subtitle": "Compact red light panel with 660nm and 850nm wavelengths for targeted therapy.",
+            "features": "360° infrared heat, Chromotherapy, Bluetooth audio, 45 min timer",
+            "price": "£290",
+            "compare_price": "£363"
+          }
+        },
+        "p5": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/rl-panel-pro-product-BInCzdmz_e6435bed-0a23-4e89-8628-a05d740d7046.png",
+            "badge_1": "",
+            "badge_2": "Exclusive",
+            "title": "WOC Red Light Panel Pro",
+            "subtitle": "Full-size red light panel with 660nm and 850nm wavelengths for full-body therapy.",
+            "features": "660nm + 850nm wavelengths, Full-body coverage, Adjustable stand, Timer & dimmer",
+            "price": "£770",
+            "compare_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 80,
-        "heading": "Shop all products",
+        "heading": "Browse all products",
         "columns": 3
-      },
-      "blocks": {
-        "p1": { "type": "product_card", "settings": { "badge_1": "-20% Save £209", "badge_2": "Bestseller", "title": "FitnessPlate XD", "subtitle": "Professional vibration plate with XD technology", "features": "XD vibration technology with 3 motors, 7 auto-programs + manual control, Lymphatic drainage & blood circulation, Resistance bands & training mat incl.", "price": "£825", "compare_price": "£1,034" } },
-        "p2": { "type": "product_card", "settings": { "badge_1": "-36% Save £275", "badge_2": "2026 Most Selling", "title": "Home Pilates Reformer", "subtitle": "Compact pilates reformer for home use", "features": "100+ Pilates exercises, 5 resistance levels, Folds in seconds, Silent damping system", "price": "£494", "compare_price": "£769" } },
-        "p3": { "type": "product_card", "settings": { "badge_1": "", "badge_2": "Compact", "title": "Compact Treadmill Pro", "subtitle": "Foldable treadmill for small spaces", "features": "1-12 km/h speed range, Just 10.8 cm when folded, Up to 120 kg load capacity, LED display with speed & calories", "price": "£715", "compare_price": "" } },
-        "p4": { "type": "product_card", "settings": { "badge_1": "-20% Save £73", "badge_2": "Bestseller", "title": "WOC Red Light Panel 300 Two Waves", "subtitle": "Compact red light panel with 660nm and 850nm wavelengths for targeted therapy.", "features": "360° infrared heat, Chromotherapy, Bluetooth audio, 45 min timer", "price": "£290", "compare_price": "£363" } },
-        "p5": { "type": "product_card", "settings": { "badge_1": "", "badge_2": "Exclusive", "title": "WOC Red Light Panel Pro", "subtitle": "Full-size red light panel with 660nm and 850nm wavelengths for full-body therapy.", "features": "660nm + 850nm wavelengths, Full-body coverage, Adjustable stand, Timer & dimmer", "price": "£770", "compare_price": "" } }
-      },
-      "block_order": ["p1", "p2", "p3", "p4", "p5"]
+      }
     },
     "editorial": {
       "type": "hw-split-editorial",
       "settings": {
+        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
+        "image": "shopify://shop_images/hw-pilates-reformer-DNR7jzX_023fd184-4382-4ce5-a5f0-213bb45cd2f8.webp",
         "kicker": "Train At Home — On Your Terms",
         "heading": "No excuses. Just results.",
         "text": "<p>Dark mornings, long workdays, freezing winter days — there's always a reason to skip your workout. But with the right equipment at home, the barriers disappear. No driving to the gym. No waiting for machines. Just you, your home and 15 minutes that make a real difference.</p><p>Even a short daily session delivers noticeable results over time. Strength, balance, circulation, recovery — consistent training always beats one hard session a week. It's not about perfection — it's about consistency.</p><p>Our vibration plates, pilates reformers and compact treadmills are designed to fit into your home — not dominate it. Fold them away, slide them under the sofa or place them elegantly in your living room. They're ready when you are.</p><p>Combine with clinically documented red light therapy for optimal recovery and wellbeing. Free delivery, 30-day returns and a 2-year warranty on everything.</p>",
@@ -46,23 +122,55 @@
     },
     "guarantees": {
       "type": "hw-guarantees-bar",
+      "blocks": {
+        "g1": {
+          "type": "guarantee",
+          "settings": {
+            "title": "Free delivery",
+            "subtitle": "On all orders"
+          }
+        },
+        "g2": {
+          "type": "guarantee",
+          "settings": {
+            "title": "Easy returns",
+            "subtitle": "Free returns"
+          }
+        },
+        "g3": {
+          "type": "guarantee",
+          "settings": {
+            "title": "5-Year Warranty",
+            "subtitle": "On all products"
+          }
+        },
+        "g4": {
+          "type": "guarantee",
+          "settings": {
+            "title": "Expert advice",
+            "subtitle": "Book a free consultation"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 48,
         "padding_bottom": 48
-      },
-      "blocks": {
-        "g1": { "type": "guarantee", "settings": { "title": "Free delivery", "subtitle": "On all orders" } },
-        "g2": { "type": "guarantee", "settings": { "title": "Easy returns", "subtitle": "Free returns" } },
-        "g3": { "type": "guarantee", "settings": { "title": "5-Year Warranty", "subtitle": "On all products" } },
-        "g4": { "type": "guarantee", "settings": { "title": "Expert advice", "subtitle": "Book a free consultation" } }
-      },
-      "block_order": ["g1", "g2", "g3", "g4"]
+      }
     },
     "cta": {
       "type": "hw-cta-box",
       "settings": {
+        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
+        "product": "",
         "heading": "Ready to get started?",
         "description": "Order today with free delivery and 30-day satisfaction guarantee.",
         "btn_text": "Buy now",
@@ -71,24 +179,96 @@
     },
     "faq": {
       "type": "hw-faq",
+      "blocks": {
+        "f1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What home training products do you offer?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is red light therapy?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between Red Light Panel 300 and Pro?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are your red light panels FDA approved?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is FitnessPlate XD?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the Compact Treadmill Pro be folded?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you offer warranty?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you offer free delivery?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I try the products?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        },
+        "f10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>Content goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10"
+      ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 96,
         "heading": "Frequently asked questions"
-      },
-      "blocks": {
-        "f1": { "type": "faq_item", "settings": { "question": "What home training products do you offer?", "answer": "<p>Content goes here.</p>" } },
-        "f2": { "type": "faq_item", "settings": { "question": "What is red light therapy?", "answer": "<p>Content goes here.</p>" } },
-        "f3": { "type": "faq_item", "settings": { "question": "What is the difference between Red Light Panel 300 and Pro?", "answer": "<p>Content goes here.</p>" } },
-        "f4": { "type": "faq_item", "settings": { "question": "Are your red light panels FDA approved?", "answer": "<p>Content goes here.</p>" } },
-        "f5": { "type": "faq_item", "settings": { "question": "What is FitnessPlate XD?", "answer": "<p>Content goes here.</p>" } },
-        "f6": { "type": "faq_item", "settings": { "question": "Can the Compact Treadmill Pro be folded?", "answer": "<p>Content goes here.</p>" } },
-        "f7": { "type": "faq_item", "settings": { "question": "Do you offer warranty?", "answer": "<p>Content goes here.</p>" } },
-        "f8": { "type": "faq_item", "settings": { "question": "Do you offer free delivery?", "answer": "<p>Content goes here.</p>" } },
-        "f9": { "type": "faq_item", "settings": { "question": "Can I try the products?", "answer": "<p>Content goes here.</p>" } },
-        "f10": { "type": "faq_item", "settings": { "question": "What is your return policy?", "answer": "<p>Content goes here.</p>" } }
-      },
-      "block_order": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"]
+      }
     }
   },
   "order": [
