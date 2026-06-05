@@ -12,6 +12,7 @@
     "hero": {
       "type": "corporate-hero",
       "settings": {
+        "background_image": "shopify://shop_images/corporate-wellness-hero-new-SDz1rw_t.jpg",
         "subheading": "Workplace Wellness Experts",
         "heading": "Stress & Back Pain Cost Your Business Millions",
         "description": "<p>46% of all sick days in Denmark are due to stress and musculoskeletal disorders. We offer a <strong>free on-site APV assessment</strong> to identify risks and recommend solutions — completely non-binding.</p>",
@@ -51,6 +52,7 @@
         "subheading": "The problem is real",
         "heading": "From fatigue\n<i style=\"color:#a64030; font-weight: 300;\">to loss</i>",
         "avatar_text": "They trust prevention",
+        "image": "shopify://shop_images/corporate-problem-editorial-D-Rjw3US.jpg",
         "stat_number": "76%",
         "stat_text": "of Danish employees experience physical discomfort at the workplace"
       }
@@ -63,6 +65,9 @@
           "settings": {
             "title": "Your employees are tired",
             "subtitle": "You notice it too late",
+            "large_stat": "",
+            "stat_suffix": "",
+            "stat_label": "",
             "highlight": false
           }
         },
@@ -93,6 +98,9 @@
           "settings": {
             "title": "Absence is not inevitable.\nReplacement is not random.",
             "subtitle": "But it can be prevented",
+            "large_stat": "",
+            "stat_suffix": "",
+            "stat_label": "",
             "highlight": false
           }
         },
@@ -100,6 +108,7 @@
           "type": "insight",
           "settings": {
             "title": "Over 250 companies have chosen systematic prevention.",
+            "subtitle": "",
             "large_stat": "250",
             "stat_suffix": "+",
             "stat_label": "companies",
@@ -122,6 +131,8 @@
         "feat_1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Recovery",
             "text": "<p>WOC Balance Pro combines soothing massage with mental focus through mindfulness. Based on Carsten Rosendahl's research into the body's reaction to touch, rhythm, and warmth — a state we call active recovery.</p>"
           }
@@ -129,6 +140,8 @@
         "feat_2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Development",
             "text": "<p>Since 2015, we have collaborated with leading researchers in stress management, mindfulness, and recovery. We inspire every employee to take responsibility for their own well-being and contribute to the well-being of colleagues.</p>"
           }
@@ -136,6 +149,8 @@
         "feat_3": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Analysis",
             "text": "<p>Continuous follow-up and employee surveys ensure real impact. Sustainable routines become a natural part of everyday life — documented with measurable results per workplace.</p>"
           }
@@ -165,6 +180,8 @@
         "cost_1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "17.6 bn.",
             "text": "<p>DKK lost annually to stress in Denmark</p>"
           }
@@ -172,6 +189,8 @@
         "cost_2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "35,000",
             "text": "<p>DKK average per sick day per employee</p>"
           }
@@ -179,6 +198,8 @@
         "cost_3": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "46%",
             "text": "<p>Of all sick days due to stress & back pain</p>"
           }
@@ -186,6 +207,8 @@
         "cost_4": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "15",
             "text": "<p>Sick days per year per affected employee</p>"
           }
@@ -205,18 +228,24 @@
         "center_content": true,
         "subheading": "The Hidden Costs",
         "heading": "What Stress & Back Pain Costs Your Business",
-        "description": "The numbers are staggering. Musculoskeletal disorders and work-related stress are the leading causes of long-term sick leave in Scandinavia."
+        "description": "The numbers are staggering. Musculoskeletal disorders and work-related stress are the leading causes of long-term sick leave in Scandinavia.",
+        "button_text": "",
+        "button_link": ""
       }
     },
     "calculator": {
       "type": "corporate-calculator",
       "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
         "subheading": "ROI Calculator",
         "heading": "Calculate Your Savings",
         "description": "Our wellness solution costs only 1.500 kr./month. See how it pays for itself through reduced sick leave — or estimate daily usage for your team.",
+        "monthly_price": 1500,
         "price_text": "1.500 kr.",
         "button_text": "Get Your Custom Proposal",
-        "button_link": "#contact"
+        "button_link": "#contact",
+        "disclaimer": "These are estimates. We provide precise projections tailored to your company."
       }
     },
     "cases": {
@@ -225,6 +254,8 @@
         "case_1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Healthcare Sector",
             "text": "<p><em>\"Our absenteeism has fallen by 22% in the first year. The staff loves the recovery chair and uses it daily. An investment that has paid for itself many times over.\"</em></p><p><strong>HR Manager, regional hospital</strong></p>"
           }
@@ -232,6 +263,8 @@
         "case_2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Financial Sector",
             "text": "<p><em>\"We have seen a significant boost in employee well-being and productivity. Recovery breaks have become a natural part of our work culture.\"</em></p><p><strong>Wellbeing Manager, large Danish bank</strong></p>"
           }
@@ -239,6 +272,8 @@
         "case_3": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "Municipality",
             "text": "<p><em>\"Can we afford NOT to invest in prevention? The answer was clear. The physical and mental well-being of our employees is visibly better.\"</em></p><p><strong>Childcare Institution Manager</strong></p>"
           }
@@ -246,6 +281,8 @@
         "case_4": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
+            "step_number": "",
             "title": "IT & Tech",
             "text": "<p><em>\"We use the chair as a recruitment tool. Candidates notice it and it signals that we take employee health seriously. Brilliant investment.\"</em></p><p><strong>CTO, tech startup</strong></p>"
           }
@@ -265,7 +302,9 @@
         "center_content": false,
         "subheading": "Customer Cases",
         "heading": "How our customers experience it",
-        "description": "From hospitals to tech startups — workplace recovery creates measurable results across industries."
+        "description": "From hospitals to tech startups — workplace recovery creates measurable results across industries.",
+        "button_text": "",
+        "button_link": ""
       }
     },
     "steps": {
@@ -274,6 +313,7 @@
         "step_1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "step_number": "01",
             "title": "Book Your Free APV",
             "text": "<p>Fill out the form and we will schedule a suitable time to visit your workplace.</p>"
@@ -282,6 +322,7 @@
         "step_2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "step_number": "02",
             "title": "On-Site Assessment",
             "text": "<p>Our experts evaluate workstations, stress factors, and employee well-being on location.</p>"
@@ -290,6 +331,7 @@
         "step_3": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "step_number": "03",
             "title": "Customised Report",
             "text": "<p>Receive a detailed APV report with findings, product recommendations, and ROI projections.</p>"
@@ -298,6 +340,7 @@
         "step_4": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "step_number": "04",
             "title": "Implementation",
             "text": "<p>Choose to act on our recommendations — with flexible leasing from only 1,500 DKK/month.</p>"
@@ -318,62 +361,233 @@
         "center_content": true,
         "subheading": "How It Works",
         "heading": "From Idea to Installation in 4 Steps",
-        "description": ""
+        "description": "",
+        "button_text": "",
+        "button_link": ""
       }
     },
     "corporate_expertise": {
       "type": "corporate-expertise",
-      "settings": { "padding_top": 80, "padding_bottom": 80 },
       "blocks": {
-        "f1": { "type": "feature", "settings": { "title": "Free On-Site APV Assessment", "description": "Our ergonomics experts visit your workplace to conduct a full APV...", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"></rect><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path><path d=\"m9 14 2 2 4-4\"></path></svg>" } },
-        "f2": { "type": "feature", "settings": { "title": "Personalised Risk Analysis", "description": "We map musculoskeletal complaints, stress indicators...", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"8\"></circle><path d=\"m21 21-4.3-4.3\"></path></svg>" } },
-        "f3": { "type": "feature", "settings": { "title": "Tailored Recommendations", "description": "Receive a detailed report with product recommendations...", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>" } },
-        "f4": { "type": "feature", "settings": { "title": "Ongoing Wellness Partnership", "description": "Beyond the initial APV, we offer quarterly check-ins...", "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>" } }
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"></rect><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path><path d=\"m9 14 2 2 4-4\"></path></svg>",
+            "title": "Free On-Site APV Assessment",
+            "description": "Our ergonomics experts visit your workplace to conduct a full APV..."
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"8\"></circle><path d=\"m21 21-4.3-4.3\"></path></svg>",
+            "title": "Personalised Risk Analysis",
+            "description": "We map musculoskeletal complaints, stress indicators..."
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "title": "Tailored Recommendations",
+            "description": "Receive a detailed report with product recommendations..."
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "title": "Ongoing Wellness Partnership",
+            "description": "Beyond the initial APV, we offer quarterly check-ins..."
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3", "f4"]
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Our Expertise",
+        "heading": "Free APV — We Come to You",
+        "description": "As certified wellness consultants, we offer a free on-site workplace assessment (APV) to identify exactly how stress and ergonomic issues affect your team."
+      }
     },
     "corporate_steps": {
       "type": "corporate-steps",
-      "settings": { "padding_top": 80, "padding_bottom": 80 },
       "blocks": {
-        "s1": { "type": "step", "settings": { "number": "01", "title": "Book Your Free APV", "description": "Fill out the form and we will schedule a suitable time to visit your workplace." } },
-        "s2": { "type": "step", "settings": { "number": "02", "title": "On-Site Assessment", "description": "Our experts evaluate workstations, stress factors, and employee well-being on location." } },
-        "s3": { "type": "step", "settings": { "number": "03", "title": "Customised Report", "description": "Receive a detailed APV report with findings, product recommendations, and ROI projections." } },
-        "s4": { "type": "step", "settings": { "number": "04", "title": "Implementation", "description": "Choose to act on our recommendations — with flexible leasing from only 1,500 DKK/month." } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "title": "Book Your Free APV",
+            "description": "Fill out the form and we will schedule a suitable time to visit your workplace."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "On-Site Assessment",
+            "description": "Our experts evaluate workstations, stress factors, and employee well-being on location."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "Customised Report",
+            "description": "Receive a detailed APV report with findings, product recommendations, and ROI projections."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "title": "Implementation",
+            "description": "Choose to act on our recommendations — with flexible leasing from only 1,500 DKK/month."
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3", "s4"]
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "How It Works",
+        "heading": "From Idea to Installation in 4 Steps"
+      }
     },
     "corporate_trial": {
       "type": "corporate-free-trial",
-      "settings": { "padding_top": 96, "padding_bottom": 96, "btn_link": "#contact" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "text": "We deliver and install — with no obligation" } },
-        "b2": { "type": "benefit", "settings": { "text": "2 weeks free trial with full support" } },
-        "b3": { "type": "benefit", "settings": { "text": "Employee survey before and after" } },
-        "b4": { "type": "benefit", "settings": { "text": "No commitment — no hidden costs" } }
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "text": "We deliver and install — with no obligation"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "text": "2 weeks free trial with full support"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Employee survey before and after"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "text": "No commitment — no hidden costs"
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4"]
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "badge": "Free trial period",
+        "heading": "Try our recovery solution <br><span class=\"text-corporate\">2 weeks — completely free</span>",
+        "description": "Experience the difference for yourself. We deliver, install, and provide full support — so your employees can feel the effect of professional recovery. No commitment, no risk.",
+        "btn_text": "Book a free trial",
+        "btn_link": "#contact"
+      }
     },
     "corporate_testimonials": {
       "type": "corporate-testimonials",
-      "settings": { "padding_top": 80, "padding_bottom": 80 },
       "blocks": {
-        "t1": { "type": "testimonial", "settings": { "quote": "Our wellness lounge paid for itself in 8 months through reduced absence alone.", "author": "Maria Lindqvist", "title": "HR Director, Nordea Copenhagen" } },
-        "t2": { "type": "testimonial", "settings": { "quote": "Employees rank the recovery room as our #1 perk — above free lunch.", "author": "Thomas Berg", "title": "Facilities Manager, Ericsson Malmö" } }
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Our wellness lounge paid for itself in 8 months through reduced absence alone.",
+            "author": "Maria Lindqvist",
+            "title": "HR Director, Nordea Copenhagen"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Employees rank the recovery room as our #1 perk — above free lunch.",
+            "author": "Thomas Berg",
+            "title": "Facilities Manager, Ericsson Malmö"
+          }
+        }
       },
-      "block_order": ["t1", "t2"]
+      "block_order": [
+        "t1",
+        "t2"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
     },
     "corporate_booking": {
       "type": "corporate-booking-form",
-      "settings": { "padding_top": 80, "padding_bottom": 80 },
       "blocks": {
-        "l1": { "type": "bullet", "settings": { "text": "Free on-site workplace assessment (APV)" } },
-        "l2": { "type": "bullet", "settings": { "text": "Stress & ergonomic risk mapping" } },
-        "l3": { "type": "bullet", "settings": { "text": "Detailed report with product recommendations" } },
-        "l4": { "type": "bullet", "settings": { "text": "ROI projections — non-binding" } },
-        "l5": { "type": "bullet", "settings": { "text": "Solutions from only 1,500 DKK/month" } }
+        "l1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Free on-site workplace assessment (APV)"
+          }
+        },
+        "l2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Stress & ergonomic risk mapping"
+          }
+        },
+        "l3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Detailed report with product recommendations"
+          }
+        },
+        "l4": {
+          "type": "bullet",
+          "settings": {
+            "text": "ROI projections — non-binding"
+          }
+        },
+        "l5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Solutions from only 1,500 DKK/month"
+          }
+        }
       },
-      "block_order": ["l1", "l2", "l3", "l4", "l5"]
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Free Assessment",
+        "heading": "Book Your Free APV Visit",
+        "description": "Our wellness experts visit your workplace, assess stress and ergonomic risks, and provide a full APV report with actionable recommendations — completely free.",
+        "btn_text": "Book Free APV Visit",
+        "disclaimer": "100% free. No obligation. We typically respond within 24 hours."
+      }
     }
   },
   "order": [
