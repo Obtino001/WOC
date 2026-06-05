@@ -344,7 +344,8 @@
         "heading": "BOSS LADY: ALL-IN-ONE SKINCARE",
         "text": "<p>Boss Lady is a skincare device that helps lift, tighten, eliminate fine lines and wrinkles, relax muscles and boost blood circulation. Together with your serum range, it helps your skin contract and become more youthful.</p><p>The design is shaped to be used everywhere. It's fantastic under the eyes like the Light Up device and fantastic for neck and jawline like the Nefertiti device. That's why we believe this one has it all.</p>",
         "btn_text": "Buy Now",
-        "btn_link": "/products/boss-lady"
+        "btn_link": "/products/boss-lady",
+        "image": "shopify://shop_images/sed-boss-lady-lifestyle-BgSUPeis.jpg"
       }
     },
     "science_tabs": {
@@ -408,6 +409,8 @@
         "padding_bottom": 96,
         "heading": "Before & After",
         "subtitle": "Drag the slider to see the difference — real results after 8 weeks",
+        "image_before": "shopify://shop_images/ba-boss-lady-after-B_LmCUwN.png",
+        "image_after": "shopify://shop_images/ba-boss-lady-after-B_LmCUwN.png",
         "bottom_text": "Result after 8 weeks of daily use with Boss Lady"
       }
     },
