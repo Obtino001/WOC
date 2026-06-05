@@ -20,6 +20,7 @@
     "featured": {
       "type": "showrooms-featured",
       "settings": {
+        "image": "shopify://shop_images/showroom-fredericia-Nd0e262J_1.jpg",
         "badge": "Global Headquarters",
         "title": "Fredericia HQ & Showroom",
         "description": "Our global headquarters and Jutland showroom in Fredericia. A comprehensive space where you can try our most popular massage chairs and experience the SOVESYSTEM® body analysis in a relaxed, personal setting. This is also the home of our entire organisation.",
@@ -35,6 +36,7 @@
         "copenhagen": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-copenhagen-S0gzG1Mo_1.jpg",
             "country": "🇩🇰 Denmark",
             "title": "Copenhagen Flagship",
             "address": "Winghouse, Ørestads Boulevard 73, Copenhagen",
@@ -46,6 +48,7 @@
         "malmo": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-malmo-Cty06Plk_1.jpg",
             "country": "🇸🇪 Sweden",
             "title": "Malmö Showroom",
             "address": "Ymers Gata 25A, Malmö",
@@ -57,6 +60,7 @@
         "istanbul": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-turkey-CVcc0xOR_1.jpg",
             "country": "🇹🇷 Turkey",
             "title": "Istanbul Showroom",
             "address": "Bahçelievler Mah. Ali Reşat Paşa Sok. No:14 A, Istanbul",
@@ -68,6 +72,7 @@
         "ankara": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-ankara-tGvwu5nC.png",
             "country": "🇹🇷 Turkey",
             "title": "Ankara Showroom",
             "address": "Mesa Plaza AVM, Ankara",
@@ -79,6 +84,7 @@
         "antalya": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-antalya-gH5Pvv1V.png",
             "country": "🇹🇷 Turkey",
             "title": "Antalya Showroom",
             "address": "Molla Yusuf Mah. 1476. Sok., Antalya",
@@ -90,6 +96,7 @@
         "izmir": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-izmir-BVnWaSwT.png",
             "country": "🇹🇷 Turkey",
             "title": "Izmir Showroom",
             "address": "Yeni Mahalle Mah. 8041 Sok. No:43 D:43/A, Izmir",
@@ -101,6 +108,7 @@
         "gaziantep": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-gaziantep-CMFwyj2h.png",
             "country": "🇹🇷 Turkey",
             "title": "Gaziantep Showroom",
             "address": "Suburcu Mahallesi, Gaziler Caddesi No. 55, Gaziantep",
@@ -112,6 +120,7 @@
         "oslo": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-oslo-qHVqrVqf.png",
             "country": "🇳🇴 Norway",
             "title": "Oslo Showroom",
             "address": "Karl Johans gate 25, Oslo",
@@ -123,6 +132,7 @@
         "frankfurt": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-frankfurt-CeXrXEoj.png",
             "country": "🇩🇪 Germany",
             "title": "Frankfurt Showroom",
             "address": "Kaiserstraße 50, Frankfurt",
@@ -134,6 +144,7 @@
         "paris": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-paris-h8mHzSJF.png",
             "country": "🇫🇷 France",
             "title": "Paris Showroom",
             "address": "45 Avenue des Champs-Élysées, Paris",
@@ -145,6 +156,7 @@
         "amsterdam": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-amsterdam-DyK5VJ7F.png",
             "country": "🇳🇱 Netherlands",
             "title": "Amsterdam Showroom",
             "address": "Keizersgracht 120, Amsterdam",
