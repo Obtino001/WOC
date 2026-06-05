@@ -13,7 +13,7 @@
       "type": "sed-hero",
       "settings": {
         "color_scheme": "",
-        "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_1_02f183f7-8c2d-4c31-a350-ea71ddf9c339.jpg",
+        "image": "shopify://shop_images/sed-hero-DGXsUYgn.jpg",
         "heading_1": "REJUVENATE",
         "heading_2": "YOUR SKIN"
       }
@@ -33,7 +33,7 @@
         "c1": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_1_02f183f7-8c2d-4c31-a350-ea71ddf9c339.jpg",
+            "image": "shopify://shop_images/sed-serum-set-1-Cf4y6gAK_ef582206-bdc3-4e40-992e-69440ee36e17.jpg",
             "subtitle": "INNOVATIVE FORMULAS",
             "title": "HIGH-PERFORMANCE SKINCARE",
             "link_text": "SHOP SKINCARE",
@@ -75,6 +75,7 @@
       "settings": {
         "color_scheme": "",
         "image_position": "left",
+        "image": "shopify://shop_images/sed-nefertiti-model-BAh5_jEp.jpg",
         "kicker": "THE SCIENCE BEHIND",
         "heading": "The Science of LED Light",
         "description": "Our advanced LED technology uses specific wavelengths to stimulate collagen production, reduce inflammation and improve skin texture — clinically proven.",
@@ -87,6 +88,7 @@
       "settings": {
         "color_scheme": "",
         "image_position": "right",
+        "image": "shopify://shop_images/sed-boss-lady-model-BfkzxlKJ.jpg",
         "kicker": "BORN IN SCANDINAVIA",
         "heading": "Where Beauty\nBecomes Timeless",
         "description": "Séduisante is where craftsmanship, innovation, and science converge.\n\nAdvanced skincare, engineered for results. Defined by luxury.",
@@ -100,6 +102,7 @@
         "d1": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-light-up-b7hh_c5P_179928b8-ffb0-443e-b9b5-569531d7e21a.jpg",
             "title": "Anti-Aging & Wrinkles",
             "product_url": "/products/boss-lady"
           }
@@ -107,7 +110,7 @@
         "d2": {
           "type": "product",
           "settings": {
-            "title": "Firming & Lifting",
+            "title": "Sıkılaştırma ve Kaldırma",
             "product_url": "/products/nefertiti"
           }
         },
