@@ -217,6 +217,7 @@
         "category_m6zHHb": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/sed-serum-set-1-Cf4y6gAK_d840c91c-f8f7-437e-8920-e2c2faa2a749.jpg",
             "subtitle": "INNOVATIVE FORMULAS",
             "title": "HIGH-PERFORMANCE SKINCARE",
             "link_text": "SHOP SKINCARE",
@@ -226,6 +227,7 @@
         "c2": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/sed-boss-lady-BJjb4-P6_1.jpg",
             "subtitle": "CUTTING-EDGE TECHNOLOGY",
             "title": "ADVANCED BEAUTY DEVICES",
             "link_text": "SHOP DEVICES",
