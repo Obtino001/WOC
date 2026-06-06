@@ -1,49 +1,232 @@
-<div class="container mx-auto px-4 lg:px-8 pb-24">
-  <div class="max-w-6xl mx-auto">
-    {% for block in section.blocks %}
-      <div class="relative group" style="border-top: 1px solid #d4cbc4; {% if forloop.last %}border-bottom: 1px solid #d4cbc4;{% endif %}" {{ block.shopify_attributes }}>
-        
-        <div class="absolute left-0 top-0 bottom-0 w-[2px] origin-top transition-transform duration-700 ease-out scale-y-0 group-hover:scale-y-100 {% if block.settings.highlight %}scale-y-100{% endif %}" style="background-color: #a64030;"></div>
-        
-        <div class="grid grid-cols-12 gap-4 md:gap-8 items-center px-2 md:px-6 py-10 md:py-14">
-          <div class="col-span-2 md:col-span-1">
-            <span class="font-display text-4xl md:text-6xl font-light leading-none tracking-tight transition-colors duration-500 {% if block.settings.highlight %}text-[#a64030]{% endif %}">{{ forloop.index | prepend: '0' }}</span>
+<section class="relative overflow-hidden" style="background-color: #f7f4ed; color: #261d17;">
+  <div class="pointer-events-none absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full blur-3xl" style="background-color: rgba(198, 76, 57, 0.06);"></div>
+  <div class="pointer-events-none absolute top-1/3 -right-40 w-[600px] h-[600px] rounded-full blur-3xl" style="background-color: rgba(209, 154, 71, 0.07);"></div>
+
+  {%- comment -%} ── HERO HEADER ── {%- endcomment -%}
+  <div class="container mx-auto px-4 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-20 relative">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+      {%- comment -%} Left column — text {%- endcomment -%}
+      <div class="lg:col-span-7 order-2 lg:order-1">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-px w-12" style="background-color: #a64030;"></div>
+          <span class="font-body text-xs font-semibold tracking-[0.25em] uppercase" style="color: #a64030;">{{ section.settings.subheading }}</span>
+        </div>
+
+        <h2 class="font-display text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[1.02] tracking-tight" style="color: #261d17;">
+          {{ section.settings.heading | newline_to_br }}
+        </h2>
+
+        <div class="mt-10 flex items-center gap-6">
+          <div class="flex -space-x-2">
+            {% for block in section.blocks %}
+              {% if block.type == 'avatar' %}
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 100 | image_tag: class: 'w-9 h-9 rounded-full border-2 object-cover', style: 'border-color: #f7f4ed;' }}
+                {% else %}
+                  <div class="w-9 h-9 rounded-full border-2" style="border-color: #f7f4ed; background-color: #d4cbc4;"></div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           </div>
-          
-          <div class="col-span-10 {% if block.settings.large_stat != blank %}md:col-span-7{% else %}md:col-span-11{% endif %} min-w-0">
-            <h3 class="font-display text-2xl md:text-3xl lg:text-[34px] font-semibold leading-[1.15] tracking-tight whitespace-pre-line {% if block.settings.highlight %}text-[#a64030]{% else %}text-[#261d17]{% endif %}">{{ block.settings.title }}</h3>
-            {% if block.settings.subtitle != blank %}
-              <p class="font-body text-sm md:text-base mt-4 max-w-2xl leading-relaxed text-[#52463d]">{{ block.settings.subtitle }}</p>
-            {% endif %}
-          </div>
-          
-          {% if block.settings.large_stat != blank %}
-            <div class="col-span-12 md:col-span-4 flex items-center justify-start md:justify-end mt-4 md:mt-0">
-              <div class="hidden md:block w-px h-20 mr-8" style="background-color: #d4cbc4;"></div>
-              <div class="text-left md:text-right">
-                <span class="font-display text-6xl md:text-7xl lg:text-8xl font-light tabular-nums leading-none tracking-tight text-[#a64030]">
-                  <animated-counter value="{{ block.settings.large_stat }}" suffix="{{ block.settings.stat_suffix }}">
-                    {{ block.settings.large_stat }}
-                    {% if block.settings.stat_suffix != blank %}
-                      <span class="text-3xl md:text-4xl lg:text-5xl font-light ml-0.5 opacity-60 text-[#a64030]">{{ block.settings.stat_suffix }}</span>
-                    {% endif %}
-                  </animated-counter>
-                </span>
-                <p class="font-body text-[10px] tracking-[0.28em] uppercase mt-3 font-semibold text-[#7e7167]">{{ block.settings.stat_label }}</p>
-              </div>
-            </div>
-          {% endif %}
+          <p class="font-body text-sm max-w-xs" style="color: #52463d;">{{ section.settings.avatar_text }}</p>
         </div>
       </div>
-    {% endfor %}
+
+      {%- comment -%} Right column — image + floating stat {%- endcomment -%}
+      <div class="lg:col-span-5 order-1 lg:order-2 relative">
+        <div class="relative aspect-[4/5] overflow-hidden rounded-sm shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)]">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 1024 | image_tag: class: 'w-full h-full object-cover', loading: 'lazy' }}
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover bg-gray-200' }}
+          {% endif %}
+          <div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="absolute -bottom-6 -left-6 lg:-left-12 backdrop-blur-sm px-6 py-5 shadow-xl rounded-sm max-w-[220px]" style="background-color: rgba(255,255,255,0.97); border: 1px solid #d4cbc4;">
+          <p class="font-display text-3xl font-bold leading-none" style="color: #a64030;">{{ section.settings.stat_number }}</p>
+          <p class="font-body text-xs mt-2 leading-relaxed" style="color: #52463d;">{{ section.settings.stat_text }}</p>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
+
+  {%- comment -%} ── NUMBERED ROWS ── {%- endcomment -%}
+  <div class="container mx-auto px-4 lg:px-8 pb-24">
+    <div class="max-w-6xl mx-auto">
+      {% for block in section.blocks %}
+        {% if block.type == 'insight' %}
+          <div class="relative group" style="border-top: 1px solid #d4cbc4; {% if forloop.last %}border-bottom: 1px solid #d4cbc4;{% endif %}" {{ block.shopify_attributes }}>
+
+            <div class="absolute left-0 top-0 bottom-0 w-[2px] origin-top transition-transform duration-700 ease-out {% if block.settings.highlight %}scale-y-100{% else %}scale-y-0 group-hover:scale-y-100{% endif %}" style="background-color: #a64030;"></div>
+
+            <div class="grid grid-cols-12 gap-4 md:gap-8 items-center px-2 md:px-6 py-10 md:py-14">
+              <div class="col-span-2 md:col-span-1">
+                <span class="font-display text-4xl md:text-6xl font-light leading-none tracking-tight transition-colors duration-500{% if block.settings.highlight %}" style="color: #a64030; font-feature-settings: 'lnum';"{% else %}" style="font-feature-settings: 'lnum';"{% endif %}>{{ forloop.index | prepend: '0' }}</span>
+              </div>
+
+              <div class="col-span-10 {% if block.settings.large_stat != blank %}md:col-span-7{% else %}md:col-span-11{% endif %} min-w-0">
+                <h3 class="font-display text-2xl md:text-3xl lg:text-[34px] font-semibold leading-[1.15] tracking-tight whitespace-pre-line" style="color: {% if block.settings.highlight %}#a64030{% else %}#261d17{% endif %};">{{ block.settings.title }}</h3>
+                {% if block.settings.subtitle != blank %}
+                  <p class="font-body text-sm md:text-base mt-4 max-w-2xl leading-relaxed" style="color: #52463d;">{{ block.settings.subtitle }}</p>
+                {% endif %}
+              </div>
+
+              {% if block.settings.large_stat != blank %}
+                <div class="col-span-12 md:col-span-4 flex items-center justify-start md:justify-end mt-4 md:mt-0">
+                  <div class="hidden md:block w-px h-20 mr-8" style="background-color: #d4cbc4;"></div>
+                  <div class="text-left md:text-right">
+                    <span class="font-display text-6xl md:text-7xl lg:text-8xl font-light tabular-nums leading-none tracking-tight" style="color: #a64030;">
+                      {{ block.settings.large_stat }}{% if block.settings.stat_suffix != blank %}<span class="text-3xl md:text-4xl lg:text-5xl font-light ml-0.5" style="color: #a64030; opacity: 0.6;">{{ block.settings.stat_suffix }}</span>{% endif %}
+                    </span>
+                    <p class="font-body text-[10px] tracking-[0.28em] uppercase mt-3 font-semibold" style="color: #7e7167;">{{ block.settings.stat_label }}</p>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {%- comment -%} ── LOGO GRID ── {%- endcomment -%}
+  <div class="container mx-auto px-4 lg:px-8 pb-24 pt-16" style="border-top: 1px solid #d4cbc4;">
+    <p class="font-body text-[11px] font-semibold tracking-[0.3em] uppercase text-center mb-10" style="color: #7e7167;">{{ section.settings.logos_label }}</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-8 gap-y-10 items-center justify-items-center">
+
+      {%- comment -%} Loop through logo blocks {%- endcomment -%}
+      {% for block in section.blocks %}
+        {% if block.type == 'logo' %}
+          <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]" {{ block.shopify_attributes }}>
+            {% if block.settings.logo_image != blank %}
+              {{ block.settings.logo_image | image_url: width: 300 | image_tag: class: 'max-h-full max-w-full object-contain', loading: 'lazy', alt: block.settings.logo_alt }}
+            {% elsif block.settings.logo_url != blank %}
+              <img src="{{ block.settings.logo_url }}" alt="{{ block.settings.logo_alt }}" loading="lazy" class="max-h-full max-w-full object-contain">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {%- comment -%} Hardcoded fallback logos — always shown if no logo blocks are added {%- endcomment -%}
+      {% assign has_logo_blocks = false %}
+      {% for block in section.blocks %}
+        {% if block.type == 'logo' %}{% assign has_logo_blocks = true %}{% endif %}
+      {% endfor %}
+
+      {% unless has_logo_blocks %}
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'nordea.png' | asset_url }}" alt="Nordea" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'novo-nordisk.png' | asset_url }}" alt="Novo Nordisk" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'carlsberg.png' | asset_url }}" alt="Carlsberg" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'lego.png' | asset_url }}" alt="LEGO" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'danfoss.png' | asset_url }}" alt="Danfoss" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'ikea.png' | asset_url }}" alt="IKEA" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'seb.png' | asset_url }}" alt="SEB" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'telenor.png' | asset_url }}" alt="Telenor" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'hedin-bil.jpg' | asset_url }}" alt="Hedin Bil" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'rams.png' | asset_url }}" alt="RAMS" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'galatasaray.jpg' | asset_url }}" alt="Galatasaray" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="{{ 'man.jpg' | asset_url }}" alt="MAN" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="data:image/png;base64,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" alt="Maersk" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="flex h-20 w-40 items-center justify-center transition-all duration-300 hover:scale-[1.05]">
+          <img src="data:image/png;base64,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" alt="Volvo" loading="lazy" class="max-h-full max-w-full object-contain">
+        </div>
+      {% endunless %}
+
+    </div>
+  </div>
+
+</section>
 
 {% schema %}
 {
   "name": "Numbered Insights",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "The problem is real"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Use a newline to split into two lines. Wrap italic text in <i> tags.",
+      "default": "From fatigue\n<i>to loss</i>"
+    },
+    {
+      "type": "text",
+      "id": "avatar_text",
+      "label": "Avatar Caption",
+      "default": "They trust prevention"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "stat_number",
+      "label": "Floating Stat Number",
+      "default": "76%"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_text",
+      "label": "Floating Stat Text",
+      "default": "of Danish employees experience physical discomfort at the workplace"
+    },
+    {
+      "type": "text",
+      "id": "logos_label",
+      "label": "Logos Section Label",
+      "default": "They trust prevention"
+    }
+  ],
   "blocks": [
+    {
+      "type": "avatar",
+      "name": "Avatar Image",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Avatar Image"
+        }
+      ]
+    },
     {
       "type": "insight",
       "name": "Insight Row",
@@ -62,13 +245,13 @@
           "type": "text",
           "id": "large_stat",
           "label": "Large Statistic (Optional)",
-          "info": "e.g., 26"
+          "info": "e.g. 26"
         },
         {
           "type": "text",
           "id": "stat_suffix",
           "label": "Statistic Suffix (Optional)",
-          "info": "e.g., M or +"
+          "info": "e.g. M or +"
         },
         {
           "type": "text",
@@ -78,8 +261,29 @@
         {
           "type": "checkbox",
           "id": "highlight",
-          "label": "Highlight Row (Red Text/Line)",
+          "label": "Highlight Row (Red Text & Line)",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "url",
+          "id": "logo_url",
+          "label": "Logo URL (External, if not using image picker)"
+        },
+        {
+          "type": "text",
+          "id": "logo_alt",
+          "label": "Logo Alt Text"
         }
       ]
     }
