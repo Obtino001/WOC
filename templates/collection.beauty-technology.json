@@ -110,6 +110,7 @@
         "d2": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-nefertiti-Dk_lSbcd_1.jpg",
             "title": "Sıkılaştırma ve Kaldırma",
             "product_url": "/products/nefertiti"
           }
@@ -124,6 +125,7 @@
         "d4": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-clean-my-soul-m-rV3p0I_1.jpg",
             "title": "Brightening & Dark Circles",
             "product_url": "/products/clean-my-soul"
           }
