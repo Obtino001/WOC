@@ -110,7 +110,7 @@
   }
 {%- endstyle -%}
 
-<section id="calculator" class="section-{{ section.id }}-padding bg-background" id="WocCalculator-{{ section.id }}">
+<section id="WocCalculator-{{ section.id }}" class="section-{{ section.id }}-padding bg-background">
   <div class="container mx-auto px-4 lg:px-8">
     
     <div class="text-center mb-12">
@@ -155,7 +155,7 @@
                       <label class="font-body text-sm font-medium text-foreground">Number of Employees</label>
                       <span id="val-employees" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">50</span>
                     </div>
-                    <input type="range" id="slider-employees" min="1" max="1000" value="50" class="calc-slider">
+                    <input type="range" id="slider-employees" min="1" max="1000" value="50" class="calc-slider w-full block">
                     <div class="flex justify-between">
                       <span class="font-body text-xs text-muted-foreground">1</span>
                       <span class="font-body text-xs text-muted-foreground">1000</span>
@@ -168,7 +168,7 @@
                       <label class="font-body text-sm font-medium text-foreground">Average Monthly Salary (DKK)</label>
                       <span id="val-salary" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">35.000&nbsp;kr.</span>
                     </div>
-                    <input type="range" id="slider-salary" min="15000" max="80000" step="1000" value="35000" class="calc-slider">
+                    <input type="range" id="slider-salary" min="15000" max="80000" step="1000" value="35000" class="calc-slider w-full block">
                     <div class="flex justify-between">
                       <span class="font-body text-xs text-muted-foreground">15.000&nbsp;kr.</span>
                       <span class="font-body text-xs text-muted-foreground">80.000&nbsp;kr.</span>
@@ -181,7 +181,7 @@
                       <label class="font-body text-sm font-medium text-foreground">Current Sick Leave Percentage</label>
                       <span id="val-current-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">5 %</span>
                     </div>
-                    <input type="range" id="slider-current-sick" min="1" max="15" step="0.1" value="5" class="calc-slider">
+                    <input type="range" id="slider-current-sick" min="1" max="15" step="0.1" value="5" class="calc-slider w-full block">
                     <div class="flex justify-between">
                       <span class="font-body text-xs text-muted-foreground">1 %</span>
                       <span class="font-body text-xs text-muted-foreground">15 %</span>
@@ -195,7 +195,7 @@
                       <label class="font-body text-sm font-medium text-foreground">Target Sick Leave Percentage (after wellness program)</label>
                       <span id="val-target-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">3.5 %</span>
                     </div>
-                    <input type="range" id="slider-target-sick" min="0.5" max="15" step="0.1" value="3.5" class="calc-slider">
+                    <input type="range" id="slider-target-sick" min="0.5" max="15" step="0.1" value="3.5" class="calc-slider w-full block">
                     <div class="flex justify-between">
                       <span class="font-body text-xs text-muted-foreground">0.5 %</span>
                       <span class="font-body text-xs text-muted-foreground">15 %</span>
@@ -307,7 +307,7 @@
                       <label class="font-body text-sm font-medium text-foreground">Sessions Per Day</label>
                       <span id="val-sessions-per-day" class="font-display text-lg font-bold text-gold min-w-[100px] text-right">8</span>
                     </div>
-                    <input type="range" id="slider-sessions-per-day" min="1" max="32" value="8" class="calc-slider">
+                    <input type="range" id="slider-sessions-per-day" min="1" max="32" value="8" class="calc-slider w-full block">
                     <div class="flex justify-between">
                       <span class="font-body text-xs text-muted-foreground">1</span>
                       <span class="font-body text-xs text-muted-foreground">32</span>
