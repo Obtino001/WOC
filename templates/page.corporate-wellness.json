@@ -124,7 +124,14 @@
         "row_4",
         "row_5"
       ],
-      "settings": {}
+      "settings": {
+        "subheading": "The problem is real",
+        "heading": "From fatigue\n<i>to loss</i>",
+        "avatar_text": "They trust prevention",
+        "stat_number": "76%",
+        "stat_text": "of Danish employees experience physical discomfort at the workplace",
+        "logos_label": "They trust prevention"
+      }
     },
     "method": {
       "type": "corporate-features-grid",
@@ -173,6 +180,54 @@
         "description": "Sustainable performance through smart recovery. The WOC Method is built on science, experience, and humanity's natural need for recharging — proven since 2015 across industries and company sizes.",
         "button_text": "Learn more about the method",
         "button_link": "/pages/woc-metoden"
+      }
+    },
+    "expert_council_tHk8dp": {
+      "type": "expert-council",
+      "blocks": {
+        "expert_kNTGcA": {
+          "type": "expert",
+          "settings": {
+            "initials": "CR",
+            "name": "Carsten Rosendahl",
+            "age": "52 years",
+            "role": "Medically examined physical massage therapist & state-authorized podiatrist",
+            "bio": "14 years of experience as a medically examined massage therapist, both in workplaces and as self-employed. Researches the body's reaction to touch, rhythm, and warmth."
+          }
+        },
+        "expert_dVVfVG": {
+          "type": "expert",
+          "settings": {
+            "initials": "CR",
+            "name": "Carsten Rosendahl",
+            "age": "52 years",
+            "role": "Medically examined physical massage therapist & state-authorized podiatrist",
+            "bio": "14 years of experience as a medically examined massage therapist, both in workplaces and as self-employed. Researches the body's reaction to touch, rhythm, and warmth."
+          }
+        },
+        "expert_abXyDq": {
+          "type": "expert",
+          "settings": {
+            "initials": "CR",
+            "name": "Carsten Rosendahl",
+            "age": "52 years",
+            "role": "Medically examined physical massage therapist & state-authorized podiatrist",
+            "bio": "14 years of experience as a medically examined massage therapist, both in workplaces and as self-employed. Researches the body's reaction to touch, rhythm, and warmth."
+          }
+        }
+      },
+      "block_order": [
+        "expert_kNTGcA",
+        "expert_dVVfVG",
+        "expert_abXyDq"
+      ],
+      "name": "Expert Council",
+      "settings": {
+        "bg_color": "#f7f4ed",
+        "kicker": "WOC Expert Council",
+        "title": "Meet the specialists behind the WOC method",
+        "description": "An interdisciplinary council of medically examined massage therapists, nurses, psychotherapists, and business specialists — together more than 100 years of clinical and organizational experience.",
+        "footer_text": "The Expert Council continuously develops the WOC method in collaboration with leading researchers in stress management, mindfulness, and recovery."
       }
     },
     "hidden_costs": {
@@ -596,6 +651,7 @@
     "problem",
     "insights",
     "method",
+    "expert_council_tHk8dp",
     "hidden_costs",
     "calculator",
     "cases",
