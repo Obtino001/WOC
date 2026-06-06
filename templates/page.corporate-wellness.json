@@ -61,6 +61,13 @@
     "insights": {
       "type": "corporate-numbered-list",
       "blocks": {
+        "logo_C96pwq": {
+          "type": "logo",
+          "settings": {
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
         "row_1": {
           "type": "insight",
           "settings": {
@@ -118,6 +125,7 @@
         }
       },
       "block_order": [
+        "logo_C96pwq",
         "row_1",
         "row_2",
         "row_3",
