@@ -148,6 +148,7 @@
         "s1": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/discovery-story-BiknO7Oe.jpg",
             "title": "OUR STORY",
             "product_url": "/pages/our-story"
           }
@@ -155,6 +156,7 @@
         "s2": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/discovery-awards-CMfbpkkx.jpg",
             "title": "AWARDS",
             "product_url": "/pages/awards"
           }
@@ -162,6 +164,7 @@
         "s3": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/discovery-loved-DvRDSY88.png",
             "title": "LOVED BY",
             "product_url": "/pages/loved-by"
           }
