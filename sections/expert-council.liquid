@@ -1,0 +1,163 @@
+<section class="py-24" style="background-color: {{ section.settings.bg_color | default: 'rgb(247, 244, 237)' }};">
+  <div class="container mx-auto px-4 lg:px-8">
+    
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      {%- if section.settings.kicker != blank -%}
+        <span class="inline-block font-body text-xs font-semibold tracking-[0.25em] uppercase mb-4" style="color: rgb(166, 64, 48); opacity: 1; transform: none;">
+          {{ section.settings.kicker }}
+        </span>
+      {%- endif -%}
+      
+      {%- if section.settings.title != blank -%}
+        <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-5" style="color: rgb(38, 29, 23); opacity: 1; transform: none;">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+      
+      {%- if section.settings.description != blank -%}
+        <p class="font-body text-base md:text-lg leading-relaxed" style="color: rgb(103, 87, 76); opacity: 1; transform: none;">
+          {{ section.settings.description }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.image != blank -%}
+      <div class="max-w-3xl mx-auto mb-16" style="opacity: 1; transform: none;">
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'w-full h-auto', alt: section.settings.image.alt | escape }}
+      </div>
+    {%- endif -%}
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px max-w-6xl mx-auto" style="background-color: rgb(212, 203, 196);">
+      {%- for block in section.blocks -%}
+        <article class="p-8 lg:p-10 group" style="background-color: rgb(251, 250, 248); opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+          <div class="flex items-start gap-4 mb-5">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 font-display text-base font-semibold transition-transform duration-500 group-hover:scale-105" style="background-color: rgb(166, 64, 48); color: rgb(251, 250, 248);">
+              {{ block.settings.initials }}
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-display text-lg font-bold leading-tight" style="color: rgb(38, 29, 23);">
+                {{ block.settings.name }}
+              </h3>
+              {%- if block.settings.age != blank -%}
+                <p class="font-body text-xs uppercase tracking-wider mt-1" style="color: rgb(166, 64, 48);">
+                  {{ block.settings.age }}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
+          
+          {%- if block.settings.role != blank -%}
+            <p class="font-body text-sm font-semibold mb-3 leading-snug" style="color: rgb(38, 29, 23);">
+              {{ block.settings.role }}
+            </p>
+          {%- endif -%}
+          
+          {%- if block.settings.bio != blank -%}
+            <p class="font-body text-sm leading-relaxed" style="color: rgb(103, 87, 76);">
+              {{ block.settings.bio }}
+            </p>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.footer_text != blank -%}
+      <p class="font-body text-xs text-center mt-10 italic" style="color: rgb(103, 87, 76); opacity: 1;">
+        {{ section.settings.footer_text }}
+      </p>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Expert Council",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#f7f4ed"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker (Overline)",
+      "default": "WOC Expert Council"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Meet the specialists behind the WOC method"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "An interdisciplinary council of medically examined massage therapists, nurses, psychotherapists, and business specialists — together more than 100 years of clinical and organizational experience."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Group Image"
+    },
+    {
+      "type": "textarea",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "The Expert Council continuously develops the WOC method in collaboration with leading researchers in stress management, mindfulness, and recovery."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "expert",
+      "name": "Expert",
+      "settings": [
+        {
+          "type": "text",
+          "id": "initials",
+          "label": "Initials",
+          "default": "CR"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Carsten Rosendahl"
+        },
+        {
+          "type": "text",
+          "id": "age",
+          "label": "Age",
+          "default": "52 years"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role / Title",
+          "default": "Medically examined physical massage therapist & state-authorized podiatrist"
+        },
+        {
+          "type": "textarea",
+          "id": "bio",
+          "label": "Biography",
+          "default": "14 years of experience as a medically examined massage therapist, both in workplaces and as self-employed. Researches the body's reaction to touch, rhythm, and warmth."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Expert Council",
+      "blocks": [
+        { "type": "expert" },
+        { "type": "expert" },
+        { "type": "expert" }
+      ]
+    }
+  ]
+}
+{% endschema %}
