@@ -48,6 +48,7 @@
         "avatar_3",
         "avatar_4"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "The problem is real",
         "heading": "From fatigue\n<i style=\"color:#a64030; font-weight: 300;\">to loss</i>",
