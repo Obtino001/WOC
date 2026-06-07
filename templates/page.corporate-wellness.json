@@ -132,10 +132,10 @@
           "type": "insight",
           "settings": {
             "title": "Fatigue turns into absence",
-            "subtitle": "Actually 26 million sick days a year",
+            "subtitle": "In fact, 26 million sick leave days a year.",
             "large_stat": "26",
             "stat_suffix": "M",
-            "stat_label": "sick days / year",
+            "stat_label": "sick leave/year",
             "highlight": false
           }
         },
