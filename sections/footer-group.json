@@ -49,7 +49,7 @@
         "menu_legal": {
           "type": "menu",
           "settings": {
-            "title": "Legal",
+            "title": "Legal                                                               Privacy Policy Terms of Service Cookie Policy",
             "menu": "footer"
           }
         }
