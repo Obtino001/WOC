@@ -35,14 +35,14 @@
         "menu_company": {
           "type": "menu",
           "settings": {
-            "title": "Virksomheden",
+            "title": "Company About Us Showroomlar Institutional Communication",
             "menu": "footer"
           }
         },
         "menu_showrooms": {
           "type": "menu",
           "settings": {
-            "title": "Showrooms",
+            "title": "Our   showrooms Copenhagen, Fredericia, Malmö, Istanbul",
             "menu": "footer"
           }
         },
