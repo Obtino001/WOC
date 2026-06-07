@@ -17,9 +17,8 @@
         "brand_block": {
           "type": "brand",
           "settings": {
-            "logo": "shopify://shop_images/woc-logo-white_4ddf169e-2e01-4d82-9b5f-1b404584358b.webp",
             "title": "WORLD OF COMFORT",
-            "description": "Skandinaviens førende forhandler af premium velværeteknologi. Massagestole, smart-senge, beauty-teknologi og recovery. Altid 20+ showrooms og 5 års garanti.",
+            "description": "Scandinavia's leading destination for luxury wellness technology. Experience the pinnacle of comfort and rejuvenation.",
             "show_socials": true,
             "facebook_icon_svg": "",
             "instagram_icon_svg": "",
@@ -29,7 +28,7 @@
         "menu_products": {
           "type": "menu",
           "settings": {
-            "title": "Produkter",
+            "title": "Collections                                                                                                        Massage Chairs Smart Beds Exercise and Red Light Therapy Beauty Technology Massage Devices",
             "menu": "footer"
           }
         },
