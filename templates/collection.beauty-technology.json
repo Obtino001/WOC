@@ -261,15 +261,21 @@
       "blocks": {
         "a1": {
           "type": "award",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/sed-awards1-AD0KX5uf_1.jpg"
+          }
         },
         "a2": {
           "type": "award",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/sed-awards2-CRnln8l__1.jpg"
+          }
         },
         "a3": {
           "type": "award",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/sed-awards3-ve2GZRXE_1.jpg"
+          }
         }
       },
       "block_order": [
