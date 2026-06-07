@@ -102,7 +102,7 @@
         "d1": {
           "type": "product",
           "settings": {
-            "image": "shopify://shop_images/sed-light-up-b7hh_c5P_179928b8-ffb0-443e-b9b5-569531d7e21a.jpg",
+            "image": "shopify://shop_images/sed-boss-lady-product-CVzOBEzJ_2.jpg",
             "title": "Anti-Aging & Wrinkles",
             "product_url": "/products/boss-lady"
           }
@@ -118,6 +118,7 @@
         "d3": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/sed-eyepads-D8d7IeIa_1.jpg",
             "title": "Hydration & Radiance",
             "product_url": "/products/eyepads"
           }
