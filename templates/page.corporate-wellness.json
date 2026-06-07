@@ -119,6 +119,7 @@
         },
         "logo_6LqKtD": {
           "type": "logo",
+          "disabled": true,
           "settings": {
             "logo_image": "shopify://shop_images/download_2.png",
             "logo_url": "",
