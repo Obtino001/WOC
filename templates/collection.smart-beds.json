@@ -197,6 +197,20 @@
     "ai_mattress": {
       "type": "smart-beds-showcase",
       "blocks": {
+        "feature_mT9ah8": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
+        "feature_myFNWJ": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
         "feature_a9n7JU": {
           "type": "feature",
           "settings": {
@@ -225,6 +239,13 @@
             "text": ""
           }
         },
+        "feature_h9j867": {
+          "type": "feature",
+          "settings": {
+            "icon_svg": "",
+            "text": ""
+          }
+        },
         "feature_BBQWVx": {
           "type": "feature",
           "settings": {
@@ -234,10 +255,13 @@
         }
       },
       "block_order": [
+        "feature_mT9ah8",
+        "feature_myFNWJ",
         "feature_a9n7JU",
         "feature_JpX78a",
         "feature_8G9zEL",
         "feature_U7Mz9T",
+        "feature_h9j867",
         "feature_BBQWVx"
       ],
       "settings": {
