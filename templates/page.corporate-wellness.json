@@ -154,7 +154,7 @@
           "type": "insight",
           "settings": {
             "title": "Absence is not inevitable. Change is not accidental.",
-            "subtitle": "But it can be prevented",
+            "subtitle": "But it is preventable.",
             "large_stat": "",
             "stat_suffix": "",
             "stat_label": "",
@@ -164,9 +164,9 @@
         "row_5": {
           "type": "insight",
           "settings": {
-            "title": "Over 250 companies have chosen systematic prevention.",
+            "title": "More than 250 companies have opted for systematic prevention.",
             "subtitle": "",
-            "large_stat": "250",
+            "large_stat": "0",
             "stat_suffix": "+",
             "stat_label": "companies",
             "highlight": true
