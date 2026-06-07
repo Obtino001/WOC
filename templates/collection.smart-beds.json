@@ -11,7 +11,19 @@
   "sections": {
     "hero": {
       "type": "smart-beds-hero",
-      "settings": {}
+      "settings": {
+        "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
+        "kicker": "Bespoke Sleeping Systems",
+        "heading": "",
+        "subheading": "Why should your bed be mass-produced?",
+        "description": "",
+        "button_1_text": "Discover the Collection",
+        "button_1_link": "",
+        "button_2_text": "How it Works",
+        "button_2_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     },
     "philosophy": {
       "type": "smart-beds-philosophy",
@@ -230,7 +242,6 @@
         "layout": "right",
         "show_divider_top": true,
         "product": "synthera-ai-madras",
-        "image": "shopify://shop_images/synthera-ai-mattress-Csqof_UQ_130be841-a6cf-48ef-b202-3f10216bfbe4.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -322,7 +333,6 @@
         "layout": "left",
         "show_divider_top": true,
         "product": "",
-        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -414,7 +424,6 @@
         "layout": "right",
         "show_divider_top": true,
         "product": "",
-        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -506,7 +515,6 @@
         "layout": "left",
         "show_divider_top": true,
         "product": "",
-        "image": "shopify://shop_images/bed-sovesystem-Z1onoSTT_1.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -721,7 +729,9 @@
         "btn1_text": "Ücretsiz danışmanlık randevusu alın",
         "btn1_link": "",
         "btn2_text": "Mağazamızı Ziyaret Edin",
-        "btn2_link": ""
+        "btn2_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
