@@ -64,6 +64,7 @@
         "logo_C96pwq": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/nordea-tPf6D3gY_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -71,6 +72,7 @@
         "logo_RiFGwn": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/novo-nordisk-BRlqhs_b_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -78,6 +80,7 @@
         "logo_AJP3nM": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/carlsberg-DoXHeae3_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -85,6 +88,7 @@
         "logo_mmJnJp": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/lego-CqIcmfDP_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -92,6 +96,7 @@
         "logo_nF8XnH": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/danfoss-S7-2J_5X_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -99,6 +104,7 @@
         "logo_4niAwb": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/download.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -106,6 +112,7 @@
         "logo_P6TEEm": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -113,6 +120,7 @@
         "logo_6LqKtD": {
           "type": "logo",
           "settings": {
+            "logo_image": "shopify://shop_images/download_2.png",
             "logo_url": "",
             "logo_alt": ""
           }
