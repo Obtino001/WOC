@@ -41,7 +41,7 @@
         "cat_1": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/universal-beds-hero-DgL-15oK_1.png",
+            "image": "shopify://shop_images/sengebillede-1024x620.jpg",
             "title": "SOVESYSTEM®",
             "subtitle": "Orijinal Kişiye Özel Uyku Sistemi",
             "link": "#sovesystem",
@@ -54,6 +54,7 @@
         "cat_2": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/synthera-ai-mattress-Csqof_UQ_1_e4772345-5f99-4791-b052-145169ab86aa.jpg",
             "title": "SYNTHERA™ AI YATAK",
             "subtitle": "Yapay Zeka Destekli Sertlik. 5 Bölgeli Hava Masajı. Serinletici Konfor.",
             "link": "#ai-mattress",
@@ -66,6 +67,7 @@
         "cat_3": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/synthera-ai-topper-CCgK_j-D_1.png",
             "title": "SYNTHERA™ AI YATAK PEDİ",
             "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
             "link": "#ai-topper",
@@ -78,6 +80,7 @@
         "cat_4": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/universal-beds-hero-DgL-15oK_1.png",
             "title": "Evrensel Yataklar",
             "subtitle": "Her yaşam tarzı için kaliteli yataklar",
             "link": "#universal-beds",
@@ -90,6 +93,7 @@
         "cat_5": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/amsterdam-140x200-cm.jpg",
             "title": "Yorganlar ve Yastıklar",
             "subtitle": "Kendi markamızdan premium yatak aksesuarları",
             "link": "#duvets-pillows",
