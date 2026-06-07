@@ -143,9 +143,9 @@
           "type": "insight",
           "settings": {
             "title": "Absence is expensive.\nReplacement is more expensive.",
-            "subtitle": "850,000 resignations a year",
-            "large_stat": "850",
-            "stat_suffix": "k",
+            "subtitle": "850,000 resignations per year",
+            "large_stat": "0 bin",
+            "stat_suffix": "",
             "stat_label": "resignations / year",
             "highlight": false
           }
