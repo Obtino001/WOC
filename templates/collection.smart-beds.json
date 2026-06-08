@@ -125,28 +125,24 @@
         "feature_QJV4hX": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_nV4ztP": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "f1": {
           "type": "feature",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"></path><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"></path><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"></path><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"></path></svg>",
             "text": "Kişisel Vücut Taraması"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4\"></path><path d=\"M14 13.12c0 2.38 0 6.38-1 8.88\"></path><path d=\"M17.29 21.02c.12-.6.43-2.3.5-3.02\"></path><path d=\"M2 12a10 10 0 0 1 18-6\"></path><path d=\"M2 16h.01\"></path><path d=\"M21.8 16c.2-2 .131-5.354 0-6\"></path><path d=\"M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2\"></path><path d=\"M8.65 22c.21-.66.45-1.32.57-2\"></path><path d=\"M9 6.8a6 6 0 0 1 9 5.2v2\"></path></svg>",
             "text": "Birebir Özel Üretim"
           }
         }
@@ -163,6 +159,7 @@
         "layout": "left",
         "show_divider_top": false,
         "product": "",
+        "video": "shopify://files/videos/Sovesystemet-fra-World-of-Comfort_46a4a909-0d20-49f8-835f-b4dc74c67cba.mp4",
         "image_badge": "",
         "show_play_button": true,
         "show_process_box": true,
@@ -200,56 +197,48 @@
         "feature_mT9ah8": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_myFNWJ": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_a9n7JU": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_JpX78a": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_8G9zEL": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_U7Mz9T": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_h9j867": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_BBQWVx": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         }
@@ -307,42 +296,36 @@
         "feature_3jWV6m": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_tptMnj": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_PURnQe": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_UxJNUK": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_9W6n9J": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_XTVKLg": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         }
@@ -398,42 +381,36 @@
         "feature_AMT3ET": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_TDxwRT": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_btdD3B": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_qw4Mkz": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_JAbcUx": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_3iDVdV": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         }
@@ -489,42 +466,36 @@
         "feature_NK3qrk": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_FGJ9dJ": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_N4adqb": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_chthmT": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_Jhi9fq": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         },
         "feature_6ydzdW": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
             "text": ""
           }
         }
