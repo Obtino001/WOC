@@ -24,7 +24,6 @@
     <div class="max-w-6xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         
-        <!-- Text Column -->
         <div class="order-2 {% if section.settings.layout == 'right' %}lg:order-2{% else %}lg:order-1{% endif %}">
           {%- if section.settings.kicker != blank -%}
             <span class="inline-block font-body text-xs uppercase tracking-[0.3em] {% if section.settings.kicker_color == 'gold' %}text-gold bg-gold/10{% else %}text-forest bg-forest/10{% endif %} px-4 py-1.5 rounded-full mb-6">
@@ -60,8 +59,10 @@
               {%- for block in section.blocks -%}
                 {%- if block.type == 'feature' -%}
                   <div class="flex items-center gap-3" {{ block.shopify_attributes }}>
-                    <div class="w-8 h-8 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0 [&>svg]:w-4 [&>svg]:h-4 [&>svg]:text-forest">
-                      {{ block.settings.icon_svg }}
+                    <div class="w-8 h-8 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
+                      {%- if block.settings.icon_image != blank -%}
+                        {{ block.settings.icon_image | image_url: width: 32 | image_tag: class: 'w-4 h-4 object-contain' }}
+                      {%- endif -%}
                     </div>
                     <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
                   </div>
@@ -110,7 +111,7 @@
                   <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full disabled:opacity-50 disabled:cursor-not-allowed"
                     {% if current_variant.available == false %}disabled{% endif %}>
                     {% if section.settings.btn1_icon != blank %}
-                       <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
+                        <span class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:mr-2">{{ section.settings.btn1_icon }}</span>
                     {% endif %}
                     <span>
                       {%- if current_variant.available -%}
@@ -142,31 +143,33 @@
           </div>
         </div>
         
-        <!-- Media Column -->
         <div class="order-1 {% if section.settings.layout == 'right' %}lg:order-1{% else %}lg:order-2{% endif %}">
-          <div class="relative rounded-2xl overflow-hidden shadow-elevated {% if section.settings.show_play_button %}group cursor-pointer{% endif %} bg-charcoal">
-            {%- if section.settings.image != blank -%}
+          <div class="relative rounded-2xl overflow-hidden shadow-elevated {% if section.settings.show_play_button and section.settings.video == blank %}group cursor-pointer{% endif %} bg-charcoal">
+            
+            {%- if section.settings.video != blank -%}
+              {{ section.settings.video | video_tag: controls: true, autoplay: false, loop: false, class: 'w-full aspect-[16/10] object-cover' }}
+            {%- elsif section.settings.image != blank -%}
               {{ section.settings.image | image_url: width: 1200 | image_tag: class: 'w-full aspect-[16/10] object-cover', loading: 'lazy' }}
             {%- else -%}
               {{ 'lifestyle-1' | placeholder_svg_tag: 'w-full aspect-[16/10] object-cover bg-gray-800' }}
             {%- endif -%}
             
             {%- if section.settings.image_badge != blank -%}
-              <div class="absolute top-4 right-4 {% if section.settings.badge_text != blank %}bg-sale-red{% else %}bg-gold{% endif %} text-white font-body text-xs font-bold px-4 py-1.5 rounded-full">
+              <div class="absolute top-4 right-4 {% if section.settings.badge_text != blank %}bg-sale-red{% else %}bg-gold{% endif %} text-white font-body text-xs font-bold px-4 py-1.5 rounded-full pointer-events-none z-10">
                 {{ section.settings.image_badge }}
               </div>
             {%- endif -%}
- 
-            {%- if section.settings.show_play_button -%}
-              <div class="absolute inset-0 bg-charcoal/30 flex items-center justify-center group-hover:bg-charcoal/20 transition-colors">
+
+            {%- if section.settings.show_play_button and section.settings.video == blank -%}
+              <div class="absolute inset-0 bg-charcoal/30 flex items-center justify-center group-hover:bg-charcoal/20 transition-colors pointer-events-none">
                 <div class="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-background fill-background ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
                 </div>
               </div>
             {%- endif -%}
             
-            {%- if section.settings.video_label != blank -%}
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/60 to-transparent p-6">
+            {%- if section.settings.video_label != blank and section.settings.video == blank -%}
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/60 to-transparent p-6 pointer-events-none">
                 <p class="font-body text-xs uppercase tracking-widest text-secondary/80">{{ section.settings.video_label }}</p>
               </div>
             {%- endif -%}
@@ -265,6 +268,11 @@
       "label": "Product Image"
     },
     {
+      "type": "video",
+      "id": "video",
+      "label": "Shopify Hosted Video (Overrides Image)"
+    },
+    {
       "type": "text",
       "id": "image_badge",
       "label": "Image Badge (e.g. NEW 2026)"
@@ -273,6 +281,7 @@
       "type": "checkbox",
       "id": "show_play_button",
       "label": "Show Video Play Overlay",
+      "info": "Only applies if using an image instead of a native video.",
       "default": false
     },
     {
@@ -450,9 +459,9 @@
       "name": "Feature Item",
       "settings": [
         {
-          "type": "html",
-          "id": "icon_svg",
-          "label": "Icon SVG"
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
         },
         {
           "type": "text",
