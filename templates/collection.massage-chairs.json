@@ -221,8 +221,8 @@
         "filter_high_label": "90.000+",
         "filter_mid_label": "60–90.000",
         "filter_low_label": "60.000'den az",
-        "collection": "massage-chairs",
-        "products_to_show": 3,
+        "collection": "in-house-production-core-collection",
+        "products_to_show": 12,
         "products_per_row": "3"
       }
     },
