@@ -40,7 +40,7 @@
       {% assign collection = section.settings.collection %}
       {% for product in collection.products limit: section.settings.limit %}
         
-        <div class="color-{{ section.settings.card_color_scheme }} group flex flex-col border border-border rounded-xl overflow-hidden hover:border-gold/30 hover:shadow-gold transition-all duration-400 h-full">
+        <div class="color-{{ section.settings.card_color_scheme }} group flex flex-col bg-card border border-border rounded-xl overflow-hidden hover:border-gold/30 hover:shadow-gold transition-all duration-400 h-full">
           <a class="block" href="{{ product.url }}">
             <div class="relative aspect-square overflow-hidden" style="background-color: transparent;">
               {% if product.featured_image != blank %}
@@ -61,7 +61,7 @@
                  <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">{{ section.settings.badge_topseller_text | default: 'Top Seller' }}</span>
               {% endif %}
             </div>
-          </a>
+          </a
 
           {% if product.metafields.custom.promo_banner != blank %}
              <div class="bg-sale-red/10 border-t border-sale-red/20 px-4 py-2 text-center">
