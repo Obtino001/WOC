@@ -161,7 +161,7 @@
       "type": "massage-chairs-grid",
       "settings": {
         "bg_color": "warm",
-        "show_glow": false,
+        "show_glow": true,
         "kicker": "Dahili Üretim · Çekirdek Koleksiyon",
         "heading": "Bizim <i>Çekirdek Modellerimiz</i>",
         "description": "World of Comfort tarafından tasarlanan, geliştirilen ve üretilen bu dört model, terapötik sağlık teknolojisindeki uzmanlığımızın zirvesini temsil etmektedir.",
