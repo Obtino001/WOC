@@ -147,7 +147,7 @@
         "bg_color": "default",
         "show_glow": true,
         "kicker": "En popüler",
-        "heading": "Bizim Çok Satanlarımız",
+        "heading": "Bizim <i> Çok Satanlarımız </i>",
         "description": "Üstün konfor, gelişmiş teknoloji ve eşsiz kalite için seçilmiş, müşterilerimiz arasında en sevilen masaj koltukları.",
         "collection": "massage-chairs",
         "limit": 3,
