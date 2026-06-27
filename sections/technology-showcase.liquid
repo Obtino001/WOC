@@ -15,8 +15,8 @@
 <section class="relative overflow-hidden bg-[hsl(0,0%,3%)] section-{{ section.id }}-padding">
   <div class="absolute inset-0 opacity-[0.035]" style="background-image: radial-gradient(circle at 30% 20%, hsl(var(--gold)), transparent 45%), radial-gradient(circle at 70% 80%, hsl(var(--gold)), transparent 45%);"></div>
   <div class="absolute inset-0 opacity-[0.015]" style="background-image: linear-gradient(hsl(var(--gold) / 0.2) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--gold) / 0.2) 1px, transparent 1px); background-size: 80px 80px;"></div>
-  <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[hsl(0,0%,2%)] to-transparent"></div>
-  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[hsl(0,0%,2%)] to-transparent"></div>
+  <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[hsl(0,0%,2%)] to-transparent"> </div>
+  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[hsl(0,0%,2%)] to-transparent"> </div>
 
   <div class="container mx-auto px-4 lg:px-8 relative z-10">
     <div class="text-center mb-20 lg:mb-28">
@@ -30,8 +30,8 @@
 
     <div class="flex justify-center mb-20 lg:mb-28">
       <div class="relative">
-        <div class="absolute inset-0 rounded-full bg-gold/[0.07] blur-[80px] scale-[2]"></div>
-        <div class="absolute inset-0 rounded-full border border-gold/10 scale-[1.8] animate-pulse"></div>
+        <div class="absolute inset-0 rounded-full bg-gold/[0.07] blur-[80px] scale-[2]"> </div>
+        <div class="absolute inset-0 rounded-full border border-gold/10 scale-[1.8] animate-pulse"> </div>
         {% if section.settings.center_gif != blank %}
           <img src="{{ section.settings.center_gif | image_url: width: 600 }}" class="relative w-52 h-52 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain drop-shadow-[0_0_40px_hsl(var(--gold)/0.15)]" loading="lazy">
         {% else %}
