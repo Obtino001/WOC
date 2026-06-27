@@ -467,3 +467,7 @@ cart-drawer.active .drawer__inner {
     color: hsl(var(--foreground)) !important;
 }
 
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
