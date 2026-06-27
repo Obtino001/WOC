@@ -231,22 +231,12 @@
     "collection": {
       "type": "woc-collection-grid",
       "settings": {
-        "pre_title": "UDFORSK KOLLEKTIONEN",
+        "subtitle": "Koleksiyonumuz",
         "title": "Alle Massagestole",
         "description": "Find den massagestol der passer bedst til dine behov.",
-        "products_per_page": 12,
-        "save_label": "Spar",
-        "delivery_label": "Gratis levering",
-        "warranty_label": "5 års garanti",
-        "see_more_label": "Se mere",
-        "try_label": "Prøv stol",
-        "no_products_label": "No products found in this collection.",
-        "contact_card_title": "Er du i tvivl om valget?",
-        "contact_card_desc": "Tag vores 60-sekunders massagestols-quiz, og få skræddersyede anbefalinger baseret på din højde, dine smerter og dit budget.",
-        "contact_card_btn1": "Tag testen nu",
-        "contact_card_btn2": "Ring til os",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "collection": "massage-chairs",
+        "products_to_show": 3,
+        "products_per_row": "3"
       }
     },
     "financing": {
@@ -595,7 +585,7 @@
         "btn_subtext": "✓ Takes 60 seconds · ✓ No obligations · ✓ 100% free"
       }
     },
-"faq_training": {
+    "faq_training": {
       "type": "quiz-faq-comprehensive",
       "blocks": {
         "f1": {
