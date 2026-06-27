@@ -167,7 +167,7 @@
         "description": "World of Comfort tarafından tasarlanan, geliştirilen ve üretilen bu dört model, terapötik sağlık teknolojisindeki uzmanlığımızın zirvesini temsil etmektedir.",
         "collection": "massage-chairs",
         "limit": 3,
-        "desktop_columns": 3,
+        "desktop_columns": 4,
         "show_contact_card": false,
         "padding_top": 80,
         "padding_bottom": 80
