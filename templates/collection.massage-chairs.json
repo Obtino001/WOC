@@ -595,215 +595,215 @@
         "btn_subtext": "✓ Takes 60 seconds · ✓ No obligations · ✓ 100% free"
       }
     },
-    "faq_training": {
+"faq_training": {
       "type": "quiz-faq-comprehensive",
       "blocks": {
         "f1": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "What is the difference between 2D, 3D and 4D massage technology?",
-            "answer": "<p>2D rollers move up and down along the spine with fixed pressure...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "2D, 3D ve 4D masaj teknolojileri arasındaki fark nedir?",
+            "answer": "<p>2D silindirler omurga boyunca sabit bir basınçla yukarı ve aşağı hareket eder...</p>"
           }
         },
         "f2": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "How do I choose the right massage chair?",
-            "answer": "<p>Consider three factors...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Doğru masaj koltuğunu nasıl seçerim?",
+            "answer": "<p>Üç faktörü göz önünde bulundurun...</p>"
           }
         },
         "f3": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "What sets World of Comfort apart from brands like Komoder, IWAO, or Casada?",
-            "answer": "<p>Three things set us apart...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "World of Comfort'u Komoder, IWAO veya Casada gibi markalardan ayıran nedir?",
+            "answer": "<p>Bizi ayıran üç şey var...</p>"
           }
         },
         "f4": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "Is a massage chair actually worth the investment?",
-            "answer": "<p>Think about this...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Bir masaj koltuğu gerçekten bu yatırıma değer mi?",
+            "answer": "<p>Şunu düşünün...</p>"
           }
         },
         "f5": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "Can I try a massage chair before buying?",
-            "answer": "<p>Absolutely. We have showrooms in Copenhagen...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Satın almadan önce bir masaj koltuğunu deneyebilir miyim?",
+            "answer": "<p>Kesinlikle. Kopenhag'da showroomlarımız var...</p>"
           }
         },
         "f6": {
           "type": "question",
           "settings": {
-            "category": "Choosing a chair",
-            "question": "What height and weight ranges do your chairs support?",
-            "answer": "<p>Our chairs suit a wide range of body types...</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Koltuklarınız hangi boy ve kilo aralıklarını destekliyor?",
+            "answer": "<p>Koltuklarımız çok çeşitli vücut tiplerine uyar...</p>"
           }
         },
         "f7": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "What is XD Precision Engine™ technology?",
-            "answer": "<p>XD Precision Engine™ is our proprietary massage system...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "XD Precision Engine™ teknolojisi nedir?",
+            "answer": "<p>XD Precision Engine™ tescilli masaj sistemimizdir...</p>"
           }
         },
         "f8": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "What is the Zero Gravity position, and why is it important?",
-            "answer": "<p>The Zero Gravity position, inspired by NASA...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "Sıfır Yer Çekimi (Zero Gravity) pozisyonu nedir ve neden önemlidir?",
+            "answer": "<p>NASA'dan ilham alan Sıfır Yer Çekimi pozisyonu...</p>"
           }
         },
         "f9": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "Do the chairs have a heating function?",
-            "answer": "<p>Yes, all our chairs have infrared heat integrated...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltukların ısıtma fonksiyonu var mı?",
+            "answer": "<p>Evet, tüm koltuklarımıza entegre kızılötesi ısı...</p>"
           }
         },
         "f10": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "What is the difference between an SL-track and an L-track?",
-            "answer": "<p>The SL-track covers from the neck to the lower back...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "SL-Track ve L-Track arasındaki fark nedir?",
+            "answer": "<p>SL-Track boyundan belin alt kısmına kadar kapsar...</p>"
           }
         },
         "f11": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "Can the chair be connected to Bluetooth?",
-            "answer": "<p>Yes, our chairs have built-in Bluetooth speakers...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltuk Bluetooth'a bağlanabilir mi?",
+            "answer": "<p>Evet, koltuklarımızda dahili Bluetooth hoparlörler bulunur...</p>"
           }
         },
         "f12": {
           "type": "question",
           "settings": {
-            "category": "Technology & Features",
-            "question": "How noisy are the massage chairs?",
-            "answer": "<p>Our chairs typically operate at 40–50 dB...</p>"
+            "category": "Teknoloji ve Özellikler",
+            "question": "Masaj koltukları ne kadar gürültülü?",
+            "answer": "<p>Koltuklarımız tipik olarak 40–50 dB seviyesinde çalışır...</p>"
           }
         },
         "f13": {
           "type": "question",
           "settings": {
-            "category": "Delivery & Setup",
-            "question": "How does delivery work?",
-            "answer": "<p>We deliver with white-glove service directly to your desired room...</p>"
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat nasıl işliyor?",
+            "answer": "<p>İstediğiniz odaya doğrudan özel hizmetle (white-glove) teslimat yapıyoruz...</p>"
           }
         },
         "f14": {
           "type": "question",
           "settings": {
-            "category": "Delivery & Setup",
-            "question": "How long is the delivery time?",
-            "answer": "<p>Chairs in stock are delivered within 5–10 working days...</p>"
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat süresi ne kadardır?",
+            "answer": "<p>Stoktaki koltuklar 5–10 iş günü içinde teslim edilir...</p>"
           }
         },
         "f15": {
           "type": "question",
           "settings": {
-            "category": "Delivery & Setup",
-            "question": "Can the chair go up stairs?",
-            "answer": "<p>Yes, our delivery team handles stairs up to the 3rd floor as standard...</p>"
+            "category": "Teslimat ve Kurulum",
+            "question": "Koltuk merdivenlerden çıkarılabilir mi?",
+            "answer": "<p>Evet, teslimat ekibimiz standart olarak 3. kata kadar merdivenleri halleder...</p>"
           }
         },
         "f16": {
           "type": "question",
           "settings": {
-            "category": "Delivery & Setup",
-            "question": "How much space does a massage chair require?",
-            "answer": "<p>Our chairs typically require 70–90 cm from the wall...</p>"
+            "category": "Teslimat ve Kurulum",
+            "question": "Bir masaj koltuğu ne kadar alan gerektirir?",
+            "answer": "<p>Koltuklarımız duvardan tipik olarak 70–90 cm boşluk gerektirir...</p>"
           }
         },
         "f17": {
           "type": "question",
           "settings": {
-            "category": "Warranty & Service",
-            "question": "What does the warranty cover?",
-            "answer": "<p>Our 5-year warranty covers all mechanical and electronic components...</p>"
+            "category": "Garanti ve Servis",
+            "question": "Garanti neleri kapsar?",
+            "answer": "<p>5 yıllık garantimiz tüm mekanik ve elektronik bileşenleri kapsar...</p>"
           }
         },
         "f18": {
           "type": "question",
           "settings": {
-            "category": "Warranty & Service",
-            "question": "What happens if my chair needs repair?",
-            "answer": "<p>Call our Danish support line...</p>"
+            "category": "Garanti ve Servis",
+            "question": "Koltuğumun tamir edilmesi gerekirse ne olur?",
+            "answer": "<p>Danimarka destek hattımızı arayın...</p>"
           }
         },
         "f19": {
           "type": "question",
           "settings": {
-            "category": "Warranty & Service",
-            "question": "Do you offer service agreements after the warranty period?",
-            "answer": "<p>Yes, we offer extended service agreements...</p>"
+            "category": "Garanti ve Servis",
+            "question": "Garanti süresi bitiminden sonra servis anlaşmaları sunuyor musunuz?",
+            "answer": "<p>Evet, uzatılmış servis anlaşmaları sunuyoruz...</p>"
           }
         },
         "f20": {
           "type": "question",
           "settings": {
-            "category": "Warranty & Service",
-            "question": "Can I get spare parts for my chair?",
-            "answer": "<p>We carry a complete stock of spare parts...</p>"
+            "category": "Garanti ve Servis",
+            "question": "Koltuğum için yedek parça alabilir miyim?",
+            "answer": "<p>Eksiksiz bir yedek parça stoğu bulunduruyoruz...</p>"
           }
         },
         "f21": {
           "type": "question",
           "settings": {
-            "category": "Price & Financing",
-            "question": "Do you offer financing or instalment plans?",
-            "answer": "<p>Yes, we collaborate with leading financing partners...</p>"
+            "category": "Fiyat ve Finansman",
+            "question": "Finansman veya taksit planları sunuyor musunuz?",
+            "answer": "<p>Evet, önde gelen finansman ortaklarıyla işbirliği yapıyoruz...</p>"
           }
         },
         "f22": {
           "type": "question",
           "settings": {
-            "category": "Price & Financing",
-            "question": "Is there a price guarantee?",
-            "answer": "<p>Yes, we offer a 30-day price guarantee...</p>"
+            "category": "Fiyat ve Finansman",
+            "question": "Fiyat garantisi var mı?",
+            "answer": "<p>Evet, 30 günlük fiyat garantisi sunuyoruz...</p>"
           }
         },
         "f23": {
           "type": "question",
           "settings": {
-            "category": "Price & Financing",
-            "question": "Can companies lease massage chairs?",
-            "answer": "<p>Absolutely. We offer business leasing with tax benefits...</p>"
+            "category": "Fiyat ve Finansman",
+            "question": "Şirketler masaj koltuğu kiralayabilir mi?",
+            "answer": "<p>Kesinlikle. Vergi avantajlarıyla kurumsal kiralama sunuyoruz...</p>"
           }
         },
         "f24": {
           "type": "question",
           "settings": {
-            "category": "Care & Maintenance",
-            "question": "How do I maintain my massage chair?",
-            "answer": "<p>Wipe the chair with a damp cloth weekly...</p>"
+            "category": "Bakım ve Temizlik",
+            "question": "Masaj koltuğumun bakımını nasıl yaparım?",
+            "answer": "<p>Koltuğu haftada bir nemli bir bezle silin...</p>"
           }
         },
         "f25": {
           "type": "question",
           "settings": {
-            "category": "Care & Maintenance",
-            "question": "What is the lifespan of a massage chair?",
-            "answer": "<p>With proper maintenance, our chairs last 15–20 years...</p>"
+            "category": "Bakım ve Temizlik",
+            "question": "Bir masaj koltuğunun ömrü ne kadardır?",
+            "answer": "<p>Uygun bakımla koltuklarımız 15–20 yıl dayanır...</p>"
           }
         },
         "f26": {
           "type": "question",
           "settings": {
-            "category": "Care & Maintenance",
-            "question": "Can the chair be used by multiple family members?",
-            "answer": "<p>Yes, our chairs with AI memory can save up to 6 individual user profiles...</p>"
+            "category": "Bakım ve Temizlik",
+            "question": "Koltuk birden fazla aile üyesi tarafından kullanılabilir mi?",
+            "answer": "<p>Evet, yapay zeka hafızalı koltuklarımız 6 adede kadar bireysel kullanıcı profilini kaydedebilir...</p>"
           }
         }
       },
@@ -839,12 +839,12 @@
         "padding_top": 80,
         "padding_bottom": 96,
         "section_id": "faq",
-        "kicker": "Frequently Asked Questions",
-        "heading": "FAQ <span class=\"italic text-gold font-serif\">to know</span>",
-        "description": "We have answered the most common questions from over 5,000 customers in Scandinavia. Can't find what you're looking for? Our wellness experts are just a call away.",
-        "search_placeholder": "Search questions — e.g. 'warranty', 'delivery', 'zero gravity'...",
-        "contact_title": "Still have questions?",
-        "contact_text": "Call us on +45 XX XX XX XX or book a free showroom demo — our experts are ready to help."
+        "kicker": "Sıkça Sorulan Sorular",
+        "heading": "Bilinmesi Gereken <span class=\"italic text-gold font-serif\">SSS</span>",
+        "description": "İskandinavya'daki 5.000'den fazla müşterimizin en yaygın sorularını yanıtladık. Aradığınızı bulamadınız mı? Sağlık uzmanlarımız sadece bir telefon uzağınızda.",
+        "search_placeholder": "Sorularda arayın — örn. 'garanti', 'teslimat', 'sıfır yer çekimi'...",
+        "contact_title": "Hala sorularınız mı var?",
+        "contact_text": "Bizi +45 XX XX XX XX numaralı telefondan arayın veya ücretsiz bir showroom demosu ayırtın — uzmanlarımız yardıma hazır."
       }
     },
     "reviews_marquee": {
