@@ -196,16 +196,16 @@
 }
 
 .section-light-warm {
-    --background: 38 30% 95%;
-    --foreground: 0 0% 12%;
-    --card: 38 20% 92%;
-    --card-foreground: 0 0% 12%;
-    --muted: 38 15% 89%;
-    --muted-foreground: 0 0% 40%;
-    --border: 38 15% 85%;
-    --linen: 38 20% 92%;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    --woc-background: 38 30% 95%;
+    --woc-foreground: 0 0% 12%;
+    --woc-card: 38 30% 95%;
+    --woc-card-foreground: 0 0% 12%;
+    --woc-muted: 38 15% 89%;
+    --woc-muted-foreground: 0 0% 40%;
+    --woc-border: 38 15% 85%;
+    --woc-linen: 38 20% 92%;
+    background-color: #efece7 !important;
+    color: hsl(var(--woc-foreground)) !important;
 }
 
 /* Continuous Marquee Scrolling */
