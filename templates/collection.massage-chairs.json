@@ -262,7 +262,11 @@
             "description": "Fuld ejerskab fra dag et.",
             "features": "<p>5-års fuld garanti</p><p>Gratis levering & installation</p><p>14 dages returret</p><p>Livslang service support</p>",
             "price_label": "Fra",
-            "price": "24.999,-"
+            "price": "24.999,-",
+            "reference_product": "",
+            "price_divider": 1,
+            "round_price": true,
+            "price_suffix": ""
           }
         },
         "card_2": {
@@ -275,7 +279,11 @@
             "description": "Fuld ejerskab fra dag et med fleksible betalinger.",
             "features": "<p>0% i rente og gebyrer</p><p>0 kr. i udbetaling</p><p>Valgfri løbetid op til 60 mdr</p><p>Fast lav månedlig ydelse</p>",
             "price_label": "Fra kun",
-            "price": "249,- / md"
+            "price": "249,- / md",
+            "reference_product": "",
+            "price_divider": 1,
+            "round_price": true,
+            "price_suffix": ""
           }
         },
         "card_3": {
@@ -288,7 +296,11 @@
             "description": "Fuld ejerskab fra dag et for virksomheder.",
             "features": "<p>Fuldt skattefradrag</p><p>Ingen binding af likviditet</p><p>Levering & service inkluderet</p><p>Mulighed for frikøb efter leasing</p>",
             "price_label": "Fra",
-            "price": "1.250,- / md"
+            "price": "1.250,- / md",
+            "reference_product": "",
+            "price_divider": 1,
+            "round_price": true,
+            "price_suffix": ""
           }
         }
       },
@@ -501,6 +513,20 @@
             "button_link": ""
           }
         },
+        "feature_row_mYJa89": {
+          "type": "feature_row",
+          "settings": {
+            "image": "shopify://shop_images/xd-recline-system.jpg",
+            "kicker": "Vægtløs afslapning",
+            "heading": "Zero Gravity Recline",
+            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
+            "tag_1": "Op til 80% trykaflastning",
+            "tag_2": "NASA-inspireret",
+            "tag_3": "Forbedret cirkulation",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
         "feature_row_WRxEhA": {
           "type": "feature_row",
           "settings": {
@@ -515,16 +541,16 @@
             "button_link": ""
           }
         },
-        "feature_row_mYJa89": {
+        "feature_row_NyrtyK": {
           "type": "feature_row",
           "settings": {
-            "image": "shopify://shop_images/xd-recline-system.jpg",
-            "kicker": "Vægtløs afslapning",
-            "heading": "Zero Gravity Recline",
-            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
-            "tag_1": "Op til 80% trykaflastning",
-            "tag_2": "NASA-inspireret",
-            "tag_3": "Forbedret cirkulation",
+            "image": "shopify://shop_images/xd-infrared-heat-KKvQ7B5X.jpg",
+            "kicker": "Derinlemesine ısı tedavisi",
+            "heading": "Kızılötesi Isı Terapisi",
+            "description": "Stratejik olarak yerleştirilmiş kızılötesi ısıtma elemanları kaslara derinlemesine nüfuz eder ve kan dolaşımını artırır. Isı tedavisi, sert kasları gevşetir, iltihabı azaltır ve vücudu daha derin, daha etkili bir masaja hazırlar. XD masajı ve ısı tedavisinin birleşimi eşsizdir.",
+            "tag_1": "128-punkt scanning",
+            "tag_2": "Personlig profil",
+            "tag_3": "Artan Kan Dolaşımı",
             "button_label": "",
             "button_link": ""
           }
@@ -540,8 +566,9 @@
         "feat_3",
         "feature_row_WUhgBV",
         "feature_row_JxddAT",
+        "feature_row_mYJa89",
         "feature_row_WRxEhA",
-        "feature_row_mYJa89"
+        "feature_row_NyrtyK"
       ],
       "settings": {
         "badge": "Proprietary XD Technology",
