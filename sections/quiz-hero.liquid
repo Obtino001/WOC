@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 <section class="relative overflow-hidden section-{{ section.id }}-padding" style="background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);">
-  <div class="absolute inset-0 opacity-30" style="background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);"></div>
+  <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 30%, hsl(var(--gold) / 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 70%, hsl(var(--gold) / 0.1) 0%, transparent 50%);"></div>
   
   <div class="container mx-auto px-4 relative z-10">
     <div class="max-w-4xl mx-auto text-center">
@@ -59,12 +59,12 @@
   "settings": [
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 80 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
-    { "type": "text", "id": "badge_text", "label": "Badge Text", "default": "Personal recommendation" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Find your perfect massage chair in 60 seconds" },
-    { "type": "textarea", "id": "description", "label": "Description", "default": "Answer 6 quick questions — we'll match you with the exact chair among our 13 models that suits your needs, your body, and your budget." },
-    { "type": "text", "id": "btn_text", "label": "Button Text", "default": "Start free quiz" },
+    { "type": "text", "id": "badge_text", "label": "Badge Text", "default": "KİŞİSEL ÖNERİ" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Mükemmel masaj koltuğunuzu 60 saniyede bulun" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Altı hızlı soruyu yanıtlayın - 13 modelimiz arasından ihtiyaçlarınıza, vücudunuza ve bütçenize tam olarak uyan koltuğu sizin için bulalım." },
+    { "type": "text", "id": "btn_text", "label": "Button Text", "default": "Ücretsiz testi başlat" },
     { "type": "url", "id": "btn_link", "label": "Button Link" },
-    { "type": "text", "id": "btn_subtext", "label": "Button Subtext", "default": "✓ Takes 60 seconds · ✓ No obligations · ✓ 100% free" }
+    { "type": "text", "id": "btn_subtext", "label": "Button Subtext", "default": "✓ 60 saniye sürer · ✓ Bağlayıcılığı yoktur · ✓ %100 ücretsiz" }
   ],
   "blocks": [
     {
@@ -78,7 +78,14 @@
     }
   ],
   "presets": [
-    { "name": "Quiz Hero" }
+    {
+      "name": "Quiz Hero",
+      "blocks": [
+        { "type": "stat", "settings": { "value": "13", "label": "PREMİUM MODEL" } },
+        { "type": "stat", "settings": { "value": "6", "label": "SORU" } },
+        { "type": "stat", "settings": { "value": "60sn", "label": "SÜRE" } }
+      ]
+    }
   ]
 }
 {% endschema %}
