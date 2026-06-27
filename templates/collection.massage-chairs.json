@@ -530,13 +530,13 @@
         "feature_row_WRxEhA": {
           "type": "feature_row",
           "settings": {
-            "image": "shopify://shop_images/xd-ai-scan.jpg",
-            "kicker": "Præcision ned til millimeteren",
-            "heading": "AI Kropsscanning",
-            "description": "Den avancerede AI-kropsscanner kortlægger din unikke anatomi — rygsøjlens kurvatur, skulderbredde, trykpunkter og muskelspændinger. Hver massage er 100% skræddersyet til netop din krop. Systemet husker din profil og bliver bedre for hver session.",
-            "tag_1": "128-punkt scanning",
-            "tag_2": "Personlig profil",
-            "tag_3": "Adaptiv læring",
+            "image": "shopify://shop_images/xd-calf-rollers-DzttP_2F_f3d60a50-4cff-481b-a5f4-42247d60b70a.jpg",
+            "kicker": "Tüm vücut tedavisi",
+            "heading": "Ayak ve taban masajı silindirlerle",
+            "description": "Ayak ve baldır bölgelerindeki çift masaj silindirleri akupresür, kazıma tekniği ve hava basıncı masajını birleştirir. Silindirler ayak tabanlarının refleks noktalarını uyarır ve baldır kaslarındaki gerginliği giderir – çoğu rakibin hiç sunmadığı bir şeydir. Ayak uzunluğuna otomatik ayarlama, optimum konforu garanti eder.",
+            "tag_1": "Çift ayak silindirleri",
+            "tag_2": "Refleks bölgelerinin uyarılması",
+            "tag_3": "Otomatik ayarlama",
             "button_label": "",
             "button_link": ""
           }
