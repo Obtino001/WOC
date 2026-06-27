@@ -2,11 +2,11 @@
   # Determine the Tailwind grid class based on schema setting
   assign grid_class = 'lg:grid-cols-3'
   case section.settings.products_per_row
-    when 2
+    when '2'
       assign grid_class = 'lg:grid-cols-2'
-    when 3
+    when '3'
       assign grid_class = 'lg:grid-cols-3'
-    when 4
+    when '4'
       assign grid_class = 'lg:grid-cols-4'
   endcase
 -%}
