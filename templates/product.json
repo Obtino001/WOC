@@ -912,7 +912,7 @@
         "description": "Besøg et showroom for en personlig demonstration eller bestil online med gratis levering.",
         "buy_now_text": "Køb nu",
         "show_demo_button": true,
-        "demo_text": "Book Demo",
+        "demo_text": "Gösterim rezervasyonu yapın",
         "demo_link": "/pages/showrooms",
         "buy_icon_svg": "",
         "demo_icon_svg": ""

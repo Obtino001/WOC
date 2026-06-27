@@ -4,7 +4,7 @@
     id="woc-floating-trigger"
     type="button"
     class="fixed bottom-6 right-6 z-[999] flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-charcoal shadow-elevated hover:scale-105 transition-all duration-300 woc-floating-btn animate-bounce"
-    aria-label="Book demo"
+    aria-label="Gösterim rezervasyonu yapın"
   >
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
     <span class="hidden font-body text-xs font-semibold uppercase tracking-widest sm:inline">
@@ -102,7 +102,7 @@
             {{ section.settings.back_text }}
           </button>
           <div class="luxury-line mb-4"></div>
-          <h3 id="woc-form-title" class="font-display text-2xl font-light text-foreground mb-1">Book Demo</h3>
+          <h3 id="woc-form-title" class="font-display text-2xl font-light text-foreground mb-1">Gösterim rezervasyonu yapın</h3>
           <p class="font-body text-sm text-muted-foreground mb-6">{{ section.settings.form_desc }}</p>
 
           {% form 'contact', class: 'space-y-4 pb-2' %}
@@ -279,14 +279,14 @@
         }
       });
 
-      // Listen to clicks on any elements with text or class containing "Book Demo" or "Book a Demo"
+      // Listen to clicks on any elements with text or class containing "Gösterim rezervasyonu yapın" or "Book a Demo"
       document.addEventListener('click', function(e) {
         const target = e.target.closest('a, button, [role="button"]');
         if (!target) return;
         if (target.closest('#woc-demo-modal')) return;
         
         const text = target.textContent.trim().toLowerCase();
-        if (text.includes('book demo') || text.includes('book a demo') || target.classList.contains('book-demo-trigger')) {
+        if (text.includes('Gösterim rezervasyonu yapın') || text.includes('book a demo') || target.classList.contains('book-demo-trigger')) {
           if (target.id === 'woc-floating-trigger') return;
           
           e.preventDefault();
@@ -344,7 +344,7 @@
       "type": "text",
       "id": "trigger_text",
       "label": "Trigger Button Text",
-      "default": "Book Demo"
+      "default": "Gösterim rezervasyonu yapın"
     },
     {
       "type": "text",

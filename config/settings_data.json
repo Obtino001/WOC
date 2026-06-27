@@ -147,7 +147,7 @@
       "woc-floating-demo": {
         "type": "woc-floating-demo",
         "settings": {
-          "trigger_text": "Book Demo",
+          "trigger_text": "Gösterim rezervasyonu yapın",
           "modal_title": "Book en gratis demonstration",
           "modal_desc": "Vælg den type demonstration, der passer dig bedst. Det er helt uforpligtende.",
           "type1_title": "Hjemmedemonstration",

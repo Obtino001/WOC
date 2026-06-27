@@ -1,4 +1,4 @@
-﻿<section class="color-{{ section.settings.color_scheme }} gradient py-24 bg-charcoal border-t border-border relative overflow-hidden">
+<section class="color-{{ section.settings.color_scheme }} gradient py-24 bg-charcoal border-t border-border relative overflow-hidden">
   <!-- Subtle background glow -->
   <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 50% 50%, hsl(var(--gold)), transparent 60%);"></div>
 
@@ -44,7 +44,7 @@
             {%- endif -%}
           </button>
 
-          <!-- Secondary Book Demo Button -->
+          <!-- Secondary Gösterim rezervasyonu yapın Button -->
           {%- if section.settings.show_demo_button -%}
             <a 
               href="{{ section.settings.demo_link }}" 
@@ -106,7 +106,7 @@
       "type": "text",
       "id": "demo_text",
       "label": "Demo Button Text",
-      "default": "Book Demo"
+      "default": "Gösterim rezervasyonu yapın"
     },
     {
       "type": "url",
