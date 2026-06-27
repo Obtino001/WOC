@@ -3,14 +3,16 @@
   "name": "WOC Product Showcase",
   "settings": [
     {
-      "type": "select",
-      "id": "bg_style",
-      "label": "Background Style",
-      "options": [
-        { "value": "bg-charcoal", "label": "Dark Charcoal" },
-        { "value": "bg-charcoal/95", "label": "Lighter Dark" }
-      ],
-      "default": "bg-charcoal"
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "Section Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "card_color_scheme",
+      "label": "Card Color Scheme",
+      "default": "scheme-2"
     },
     {
       "type": "text",
@@ -157,7 +159,7 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<section class="py-20 lg:py-28 relative overflow-hidden {{ section.settings.bg_style }}">
+<section class="color-{{ section.settings.section_color_scheme }} gradient py-20 lg:py-28 relative overflow-hidden">
   <div class="container max-w-[1400px] mx-auto px-4 lg:px-8 relative">
     
     <!-- Header -->
@@ -168,14 +170,14 @@
           {{ section.settings.pre_title }}
         </p>
       {%- endif -%}
-      <h2 class="woc-display-font text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
+      <h2 class="woc-display-font text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
         {{ section.settings.title_line1 }}
         {%- if section.settings.title_line2 != blank -%}
           <span class="italic text-gold">{{ section.settings.title_line2 }}</span>
         {%- endif -%}
       </h2>
       {%- if section.settings.description != blank -%}
-        <p class="font-body text-sm text-foreground/70 mt-4 max-w-2xl mx-auto">
+        <p class="font-body text-sm mt-4 max-w-2xl mx-auto opacity-70">
           {{ section.settings.description }}
         </p>
       {%- endif -%}
@@ -185,11 +187,11 @@
     <div class="grid {{ grid_class }} gap-4 lg:gap-6">
       {%- for block in section.blocks -%}
         {%- assign prod = block.settings.product -%}
-        <div class="group relative bg-[#1c1c1c] border border-white/10 rounded-xl overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(216,178,97,0.15)] flex flex-col" {{ block.shopify_attributes }}>
+        <div class="color-{{ section.settings.card_color_scheme }} group relative border rounded-xl overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(216,178,97,0.15)] flex flex-col" {{ block.shopify_attributes }}>
           
           {%- if prod != blank -%}
             <!-- Image Area -->
-            <a href="{{ prod.url }}" class="block relative aspect-square bg-[#f5f5f0] overflow-hidden">
+            <a href="{{ prod.url }}" class="block relative aspect-square overflow-hidden" style="background-color: transparent;">
               {%- if prod.metafields.custom.product_tags != blank -%}
                 <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
                   {{ prod.metafields.custom.product_tags }}
@@ -226,7 +228,7 @@
                 {%- for i in (1..5) -%}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 {%- endfor -%}
-                <span class="font-body text-[10px] text-foreground/50 ml-1">
+                <span class="font-body text-[10px] ml-1 opacity-50">
                   {%- if prod.metafields.custom.reviews != blank -%}
                     {{ prod.metafields.custom.reviews }}
                   {%- else -%}
@@ -237,13 +239,13 @@
 
               <!-- Title -->
               <a href="{{ prod.url }}">
-                <h3 class="woc-display-font text-xl lg:text-2xl font-bold text-foreground mb-1 group-hover:text-gold transition-colors">
+                <h3 class="woc-display-font text-xl lg:text-2xl font-bold mb-1 group-hover:text-gold transition-colors">
                   {{ prod.title }}
                 </h3>
               </a>
               
               <!-- Tagline -->
-              <p class="font-body text-xs text-foreground/60 mb-4 line-clamp-2 leading-relaxed">
+              <p class="font-body text-xs mb-4 line-clamp-2 leading-relaxed opacity-60">
                 {%- if block.settings.tagline != blank -%}{{ block.settings.tagline }}{%- else -%}{{ prod.vendor }}{%- endif -%}
               </p>
 
@@ -254,7 +256,7 @@
                   {%- for f in feature_list -%}
                     <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-md px-2 py-1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                      <span class="font-body text-[10px] text-foreground/80 whitespace-nowrap">{{ f | strip }}</span>
+                      <span class="font-body text-[10px] opacity-80 whitespace-nowrap">{{ f | strip }}</span>
                     </div>
                   {%- endfor -%}
                 </div>
@@ -275,11 +277,11 @@
               <div class="mt-auto pt-4 border-t border-white/10">
                 <!-- Price -->
                 <div class="flex items-baseline gap-2 mb-1">
-                  <span class="woc-display-font text-2xl font-bold text-foreground">
+                  <span class="woc-display-font text-2xl font-bold">
                     {{ prod.price | money_without_trailing_zeros }}
                   </span>
                   {%- if prod.compare_at_price > prod.price -%}
-                    <span class="font-body text-sm text-foreground/50 line-through">
+                    <span class="font-body text-sm line-through opacity-50">
                       {{ prod.compare_at_price | money_without_trailing_zeros }}
                     </span>
                   {%- endif -%}
