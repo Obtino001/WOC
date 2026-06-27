@@ -104,7 +104,7 @@
 }
 
 .bg-linen {
-  background-color: rgb(239, 236, 231) !important;
+  background-color: #121212 !important;
 }
 
 .bg-charcoal {
@@ -467,6 +467,3 @@ cart-drawer.active .drawer__inner {
     color: hsl(var(--foreground)) !important;
 }
 
-i {
-    color: rgb(197, 131, 32);
-}
