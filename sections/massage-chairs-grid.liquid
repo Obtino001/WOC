@@ -76,21 +76,42 @@
             </p>
 
             <div class="flex flex-wrap gap-1.5 mb-3">
-              {% if product.metafields.custom.features != blank %}
-                {% assign features = product.metafields.custom.features.value %}
-                {% for feature in features limit: 6 %}
+              {% if product.metafields.custom.products_usps != blank %}
+                {% assign features = product.metafields.custom.products_usps.value %}
+                {% for feature in features %}
+                  {% assign usp_lower = feature | downcase %}
+                  {% assign icon_svg = '' %}
+
+                  {% if usp_lower contains 'zero gravity' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge w-3 h-3 text-gold flex-shrink-0"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'scan' or usp_lower contains 'air' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan w-3 h-3 text-gold flex-shrink-0"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'roller' or usp_lower contains 'xd massage' or usp_lower contains '3d massage' or usp_lower contains 'sl-track' or usp_lower contains 'dual-core' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves w-3 h-3 text-gold flex-shrink-0"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'stretch' or usp_lower contains 'footrest' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity w-3 h-3 text-gold flex-shrink-0"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'percussion' or usp_lower contains 'tissue' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-3 h-3 text-gold flex-shrink-0"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'heat' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-3 h-3 text-gold flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>{% endcapture %}
+                  {% elsif usp_lower contains 'bluetooth' or usp_lower contains 'sound' %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ear w-3 h-3 text-gold flex-shrink-0"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"></path><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"></path></svg>{% endcapture %}
+                  {% else %}
+                    {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>{% endcapture %}
+                  {% endif %}
+
                   <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    {{ icon_svg }}
                     <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">{{ feature }}</span>
                   </div>
                 {% endfor %}
               {% else %}
                  <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
                     <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">XD Massage Technology</span>
                  </div>
                  <div class="flex items-center gap-1.5 bg-muted/50 border border-border/50 rounded-md px-2 py-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 text-gold flex-shrink-0"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge w-3 h-3 text-gold flex-shrink-0"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
                     <span class="font-body text-[10px] text-foreground/70 whitespace-nowrap">Zero Gravity</span>
                  </div>
               {% endif %}
