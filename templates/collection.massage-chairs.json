@@ -198,6 +198,12 @@
         "subtitle": "Koleksiyonumuz",
         "title": "Alle Massagestole",
         "description": "Find den massagestol der passer bedst til dine behov.",
+        "center_heading": true,
+        "show_filter": false,
+        "filter_all_label": "Tümü",
+        "filter_high_label": "90.000+",
+        "filter_mid_label": "60–90.000",
+        "filter_low_label": "60.000'den az",
         "collection": "massage-chairs",
         "products_to_show": 3,
         "products_per_row": "3"
