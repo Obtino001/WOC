@@ -466,3 +466,7 @@ cart-drawer.active .drawer__inner {
 .text-foreground {
     color: hsl(var(--foreground)) !important;
 }
+
+i {
+    color: rgb(197, 131, 32);
+}
