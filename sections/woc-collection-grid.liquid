@@ -39,7 +39,7 @@
         <div class="group relative bg-card border border-border overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-gold flex flex-col rounded-xl">
           
           <a class="block" href="{{ product.url }}">
-            <div class="relative aspect-square bg-linen overflow-hidden">
+<div class="relative aspect-square bg-transparent overflow-hidden">
               <img src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title | escape }}" class="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105" loading="lazy">
               {% if product.tags.size > 0 %}
                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">{{ product.tags.first }}</span>
