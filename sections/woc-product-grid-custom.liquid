@@ -190,7 +190,11 @@
           {%- if prod != blank -%}
             <!-- Image Area -->
             <a href="{{ prod.url }}" class="block relative aspect-square bg-[#f5f5f0] overflow-hidden">
-              {%- if block.settings.badge != blank -%}
+              {%- if prod.metafields.custom.product_tags != blank -%}
+                <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
+                  {{ prod.metafields.custom.product_tags }}
+                </span>
+              {%- elsif block.settings.badge != blank -%}
                 <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
                   {{ block.settings.badge }}
                 </span>
@@ -222,7 +226,13 @@
                 {%- for i in (1..5) -%}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 {%- endfor -%}
-                <span class="font-body text-[10px] text-foreground/50 ml-1">{{ prod.metafields.reviews.rating.value | default: '5.0' }} ({{ prod.metafields.reviews.rating_count.value | default: '42' }})</span>
+                <span class="font-body text-[10px] text-foreground/50 ml-1">
+                  {%- if prod.metafields.custom.reviews != blank -%}
+                    {{ prod.metafields.custom.reviews }}
+                  {%- else -%}
+                    {{ prod.metafields.reviews.rating.value | default: '5.0' }} ({{ prod.metafields.reviews.rating_count.value | default: '42' }})
+                  {%- endif -%}
+                </span>
               </div>
 
               <!-- Title -->
