@@ -17,8 +17,9 @@
         "brand_block": {
           "type": "brand",
           "settings": {
+            "logo": "shopify://shop_images/woc-logo-white_4ddf169e-2e01-4d82-9b5f-1b404584358b_3.png",
             "title": "WORLD OF COMFORT",
-            "description": "Scandinavia's leading destination for luxury wellness technology. Experience the pinnacle of comfort and rejuvenation.",
+            "description": "Lüks sağlıklı yaşam teknolojisinde İskandinavya'nın lider adresi. Rahatlık ve yenilenmenin zirvesini deneyimleyin.",
             "show_socials": true,
             "facebook_icon_svg": "",
             "instagram_icon_svg": "",
