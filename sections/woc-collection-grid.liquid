@@ -1,5 +1,5 @@
 {%- liquid
-  # Determine the Tailwind grid class based on schema setting to ensure JIT compiler catches it
+  # Determine the Tailwind grid class based on schema setting
   assign grid_class = 'lg:grid-cols-3'
   case section.settings.products_per_row
     when 2
@@ -11,7 +11,23 @@
   endcase
 -%}
 
-<section id="collection" class="section-light py-20 lg:py-28">
+<style>
+  /* Dark Theme Variable Overrides */
+  .section-dark {
+    --background: 0 0% 8%; /* Very dark grey/black */
+    --foreground: 0 0% 98%; /* White text */
+    --card: 0 0% 12%; /* Slightly lighter dark for cards */
+    --card-foreground: 0 0% 98%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+    --border: 0 0% 20%; /* Dark border */
+    --linen: 0 0% 12%; /* Matching card bg or transparent */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+</style>
+
+<section id="collection" class="section-dark py-20 lg:py-28">
   <div class="container mx-auto px-4 lg:px-8">
     
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
@@ -39,7 +55,7 @@
         <div class="group relative bg-card border border-border overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-gold flex flex-col rounded-xl">
           
           <a class="block" href="{{ product.url }}">
-<div class="relative aspect-square bg-transparent overflow-hidden">
+            <div class="relative aspect-square bg-transparent overflow-hidden">
               <img src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title | escape }}" class="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105" loading="lazy">
               {% if product.tags.size > 0 %}
                 <span class="absolute top-4 left-4 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">{{ product.tags.first }}</span>
