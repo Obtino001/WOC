@@ -298,6 +298,12 @@
 </style>
 
 {%- style -%}
+  {%- if section.settings.invert_logo -%}
+    .header__heading-logo {
+      filter: invert(1) brightness(2);
+    }
+  {%- endif -%}
+
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 0.9375rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 0.9375rem;
   }
@@ -896,6 +902,13 @@
       "default": "middle-left",
       "label": "Desktop logo position",
       "info": "Position of the logo on desktop screens."
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_logo",
+      "default": false,
+      "label": "Invert logo color",
+      "info": "Check this to make the logo white when using a dark header background."
     },
     {
       "type": "select",
