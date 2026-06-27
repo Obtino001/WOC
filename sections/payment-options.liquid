@@ -48,6 +48,8 @@
             {% if block.settings.reference_product != blank %}
               {% assign div = block.settings.price_divider | default: 1 %}
               {% if div == 0 %}{% assign div = 1 %}{% endif %}
+              
+              {%- comment -%} Pulls natively from active Shopify Market presentment currency {%- endcomment -%}
               {% assign base_price_cents = block.settings.reference_product.price %}
               {% assign final_cents = base_price_cents | divided_by: div %}
               
@@ -56,10 +58,17 @@
               {% endif %}
 
               <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">
-                {{ final_cents | money_without_trailing_zeros }} {{ block.settings.price_suffix }}
+                <span class="money" data-product-id="{{ block.settings.reference_product.id }}" data-price="{{ final_cents }}">
+                  {{- final_cents | money_without_trailing_zeros -}}
+                </span>
+                {% if block.settings.price_suffix != blank %}
+                  <span class="text-lg font-normal ml-1">{{ block.settings.price_suffix }}</span>
+                {% endif %}
               </p>
             {% else %}
-              <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">{{ block.settings.price }}</p>
+              <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">
+                {{ block.settings.price }}
+              </p>
             {% endif %}
           </div>
         {% endfor %}
@@ -156,7 +165,8 @@
         {
           "type": "text",
           "id": "price_label",
-          "label": "Price Label"
+          "label": "Price Label",
+          "info": "E.g., 'From', 'Fra kun', etc. Translate via Translate & Adapt app."
         },
         {
           "type": "text",
@@ -191,7 +201,7 @@
           "type": "text",
           "id": "price_suffix",
           "label": "Price Suffix",
-          "info": "E.g. '/ md' to append after the dynamic price."
+          "info": "E.g. '/ md' or '/ mo' to append after the dynamic price. Translate via Translate & Adapt app."
         }
       ]
     }
