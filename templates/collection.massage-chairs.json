@@ -72,6 +72,7 @@
         "stat_3"
       ],
       "settings": {
+        "fallback_image": "shopify://shop_images/showroom-cta-hero-SWNcv-vT_1.jpg",
         "kicker": "FLAGSHIP COLLECTION",
         "heading": "Premium Massage Chairs\n<span class=\"italic text-gold\">For the Body</span>",
         "description": "Experience world-class massage chairs that combine Scandinavian design with ground-breaking wellness technology. From AI-driven precision to zero-gravity relaxation.",
