@@ -489,9 +489,9 @@
           "type": "feature_row",
           "settings": {
             "image": "shopify://shop_images/xd-ai-scan.jpg",
-            "kicker": "Præcision ned til millimeteren",
-            "heading": "AI Kropsscanning",
-            "description": "Den avancerede AI-kropsscanner kortlægger din unikke anatomi — rygsøjlens kurvatur, skulderbredde, trykpunkter og muskelspændinger. Hver massage er 100% skræddersyet til netop din krop. Systemet husker din profil og bliver bedre for hver session.",
+            "kicker": "Milimetrik doğruluk",
+            "heading": "Yapay zeka vücut taraması",
+            "description": "Gelişmiş Yapay Zeka vücut tarayıcısı, omurga eğriliği, omuz genişliği, basınç noktaları ve kas gerginlikleri dahil olmak üzere benzersiz anatomini haritalar. Her masaj %100 vücudunuza özel olarak uyarlanmıştır. Sistem profilinizi hatırlar ve her seansla gelişir.",
             "tag_1": "128-punkt scanning",
             "tag_2": "Personlig profil",
             "tag_3": "Adaptiv læring",
@@ -503,9 +503,9 @@
           "type": "feature_row",
           "settings": {
             "image": "shopify://shop_images/xd-recline-system.jpg",
-            "kicker": "Vægtløs afslapning",
-            "heading": "Zero Gravity Recline",
-            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
+            "kicker": "Ağırlıksız rahatlama",
+            "heading": "Ağırlıksız dinlenme pozisyonu",
+            "description": "NASA astronotlarının pozisyonundan ilham alan Zero Gravity (Sıfır Yerçekimi) modu, vücudunuzun ağırlığını eşit şekilde dağıtır, omurgaya binen baskıyı %80'e kadar azaltır ve kan dolaşımını önemli ölçüde iyileştirir. XD masaj sistemiyle birleştiğinde, başka hiçbir pozisyonda elde edemeyeceğiniz daha derin ve etkili bir tedaviye ulaşırsınız.\n\nBasınçta %80'e varan azalm",
             "tag_1": "Op til 80% trykaflastning",
             "tag_2": "NASA-inspireret",
             "tag_3": "Forbedret cirkulation",
@@ -516,13 +516,13 @@
         "feature_row_mYJa89": {
           "type": "feature_row",
           "settings": {
-            "image": "shopify://shop_images/xd-recline-system.jpg",
-            "kicker": "Vægtløs afslapning",
-            "heading": "Zero Gravity Recline",
-            "description": "Inspireret af NASA's astronaut-position fordeler Zero Gravity din kropsvægt jævnt, reducerer trykket på rygsøjlen med op til 80% og forbedrer blodcirkulationen markant. Kombineret med XD-massagesystemet opnår du en dybere og mere effektiv behandling.",
-            "tag_1": "Op til 80% trykaflastning",
-            "tag_2": "NASA-inspireret",
-            "tag_3": "Forbedret cirkulation",
+            "image": "shopify://shop_images/xd-roller-mechanism-DwYygb_b.jpg",
+            "kicker": "Dünya standartlarında mühendislik",
+            "heading": "Gelişmiş XD masaj silindirleri",
+            "description": "XD masaj silindirlerimiz, hiçbir rakibin ulaşamayacağı kadar çok boyutta hareket eder. 3D ve 4D sistemler basit yukarı/aşağı ve içeri/dışarı hareketlerle sınırlıyken, XD sistemi dönüşü, basıncı, hızı ve yönü, profesyonel bir masajcının ellerini doğru bir şekilde taklit eden akıcı bir harekette birleştirir.",
+            "tag_1": "Çok boyutlu hareket",
+            "tag_2": "Sessiz çalışma",
+            "tag_3": "Profesyonel doğruluk",
             "button_label": "",
             "button_link": ""
           }
