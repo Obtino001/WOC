@@ -44,7 +44,23 @@
             </div>
             
             <p class="font-body text-[10px] text-muted-foreground">{{ block.settings.price_label }}</p>
-            <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">{{ block.settings.price }}</p>
+            
+            {% if block.settings.reference_product != blank %}
+              {% assign div = block.settings.price_divider | default: 1 %}
+              {% if div == 0 %}{% assign div = 1 %}{% endif %}
+              {% assign base_price_cents = block.settings.reference_product.price %}
+              {% assign final_cents = base_price_cents | divided_by: div %}
+              
+              {% if block.settings.round_price %}
+                {% assign final_cents = final_cents | divided_by: 100.0 | round | times: 100 %}
+              {% endif %}
+
+              <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">
+                {{ final_cents | money_without_trailing_zeros }} {{ block.settings.price_suffix }}
+              </p>
+            {% else %}
+              <p class="font-display text-2xl font-bold {% if block.settings.highlight %}text-gold{% else %}text-foreground{% endif %}">{{ block.settings.price }}</p>
+            {% endif %}
           </div>
         {% endfor %}
       </div>
@@ -145,7 +161,37 @@
         {
           "type": "text",
           "id": "price",
-          "label": "Price Value"
+          "label": "Manual Price Value",
+          "info": "Use this for a hardcoded price. To use auto-converting dynamic pricing, fill out the Reference Product below instead."
+        },
+        {
+          "type": "header",
+          "content": "Dynamic Auto-Converting Price"
+        },
+        {
+          "type": "product",
+          "id": "reference_product",
+          "label": "Reference Product",
+          "info": "Select a product. Its price will automatically convert for other countries based on Shopify Markets."
+        },
+        {
+          "type": "number",
+          "id": "price_divider",
+          "label": "Divide Price By (Months)",
+          "default": 1,
+          "info": "E.g., enter 100 to show the price divided by 100 (for financing). Enter 1 for the full price."
+        },
+        {
+          "type": "checkbox",
+          "id": "round_price",
+          "label": "Round to nearest whole number",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "price_suffix",
+          "label": "Price Suffix",
+          "info": "E.g. '/ md' to append after the dynamic price."
         }
       ]
     }
