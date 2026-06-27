@@ -25,41 +25,33 @@
             "youtube_icon_svg": ""
           }
         },
-        "menu_products": {
-          "type": "menu",
-          "settings": {
-            "title": "Collections                                                                                                        Massage Chairs Smart Beds Exercise and Red Light Therapy Beauty Technology Massage Devices",
-            "menu": "footer"
-          }
-        },
-        "menu_company": {
-          "type": "menu",
-          "settings": {
-            "title": "Company About Us Showroomlar Institutional Communication",
-            "menu": "footer"
-          }
-        },
-        "menu_showrooms": {
-          "type": "menu",
-          "settings": {
-            "title": "Our   showrooms Copenhagen, Fredericia, Malmö, Istanbul",
-            "menu": "footer"
-          }
-        },
         "menu_legal": {
           "type": "menu",
           "settings": {
-            "title": "Legal                                                               Privacy Policy Terms of Service Cookie Policy",
-            "menu": "footer"
+            "title": "Kokoelmat",
+            "menu": "main-menu"
+          }
+        },
+        "menu_P9iKeL": {
+          "type": "menu",
+          "settings": {
+            "title": "Kokoelmat",
+            "menu": "main-menu"
+          }
+        },
+        "menu_6fVmQ8": {
+          "type": "menu",
+          "settings": {
+            "title": "Kokoelmat",
+            "menu": "main-menu"
           }
         }
       },
       "block_order": [
         "brand_block",
-        "menu_products",
-        "menu_company",
-        "menu_showrooms",
-        "menu_legal"
+        "menu_legal",
+        "menu_P9iKeL",
+        "menu_6fVmQ8"
       ],
       "settings": {
         "copyright_text": "World of Comfort. Alle rettigheder forbeholdes.",
