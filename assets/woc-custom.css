@@ -103,9 +103,6 @@
   background-color: #bf8f30 !important;
 }
 
-.bg-linen {
-  background-color: #121212 !important;
-}
 
 .bg-charcoal {
   background-color: #0a0a0a !important;
@@ -196,28 +193,16 @@
 }
 
 .section-light-warm {
-    --woc-background: 38 30% 95%;
-    --woc-foreground: 0 0% 12%;
-    --woc-card: 38 30% 95%;
-    --woc-card-foreground: 0 0% 12%;
-    --woc-muted: 38 15% 89%;
-    --woc-muted-foreground: 0 0% 40%;
-    --woc-border: 38 15% 85%;
-    --woc-linen: 38 20% 92%;
     --background: 38 30% 95%;
     --foreground: 0 0% 12%;
-    --card: 38 30% 95%;
+    --card: 38 20% 92%;
     --card-foreground: 0 0% 12%;
     --muted: 38 15% 89%;
     --muted-foreground: 0 0% 40%;
     --border: 38 15% 85%;
     --linen: 38 20% 92%;
-    background-color: #efece7 !important;
-    color: hsl(var(--foreground)) !important;
-}
-
-.section-light-warm .bg-card {
-    background-color: #efece7 !important;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
 }
 
 /* Continuous Marquee Scrolling */
