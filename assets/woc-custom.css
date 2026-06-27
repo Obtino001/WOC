@@ -3603,9 +3603,6 @@ h1,h2,h3,h4 {
     background-color: hsl(var(--border))
 }
 
-.bg-card {
-    background-color: hsl(var(--card))
-}
 
 .bg-card\/20 {
     background-color: hsl(var(--card) / .2)
