@@ -1,431 +1,94 @@
-{%- style -%}
-  #shopify-section-{{ section.id }} {
-    --bg-color: {{ section.settings.bg_color }};
-    --text-color: {{ section.settings.text_color }};
-    --muted-color: {{ section.settings.muted_text_color }};
-    --accent-color: {{ section.settings.accent_color }};
-    --card-bg: {{ section.settings.card_bg_color }};
-    --border-color: {{ section.settings.border_color }};
-    --card-hover-border: {{ section.settings.card_hover_border_color }};
-    --badge-bg: {{ section.settings.badge_bg_color }};
-    --badge-text: {{ section.settings.badge_text_color }};
-    --btn-primary-bg: {{ section.settings.btn_primary_bg }};
-    --btn-primary-text: {{ section.settings.btn_primary_text }};
-    --btn-primary-hover: {{ section.settings.btn_primary_hover }};
-    --btn-secondary-bg: {{ section.settings.btn_secondary_bg }};
-    --btn-secondary-border: {{ section.settings.btn_secondary_border }};
-    --btn-secondary-text: {{ section.settings.btn_secondary_text }};
-    --btn-secondary-hover-bg: {{ section.settings.btn_secondary_hover_bg }};
-    --feature-bg: {{ section.settings.feature_bg_color }};
-    
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
+{%- comment -%} Determine grid column class dynamically based on schema settings {%- endcomment -%}
+{%- assign col_class = 'md:grid-cols-2' -%}
+{%- case section.settings.columns_desktop -%}
+  {%- when 1 -%}{%- assign col_class = 'md:grid-cols-1' -%}
+  {%- when 2 -%}{%- assign col_class = 'md:grid-cols-2' -%}
+  {%- when 3 -%}{%- assign col_class = 'md:grid-cols-3' -%}
+  {%- when 4 -%}{%- assign col_class = 'md:grid-cols-4' -%}
+{%- endcase -%}
 
-  @media screen and (min-width: 750px) {
-    #shopify-section-{{ section.id }} {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
-  .luxury-section-container {
-    max-width: var(--page-width, 1200px);
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .luxury-header {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .luxury-line {
-    width: 2px;
-    height: 40px;
-    background-color: var(--accent-color);
-    margin: 0 auto 2rem;
-  }
-
-  .luxury-subheading {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-  }
-
-  .luxury-logo img {
-    height: 80px;
-    width: auto;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: 750px) {
-    .luxury-logo img {
-      height: 112px;
-    }
-  }
-
-  .luxury-description {
-    font-size: 1.4rem;
-    color: var(--muted-color);
-    margin-top: 1.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-  }
-
-  .luxury-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .luxury-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .luxury-card {
-    position: relative;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s ease;
-  }
-
-  .luxury-card:hover {
-    border-color: var(--card-hover-border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  }
-
-  .luxury-badge-brand {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    z-index: 10;
-    background-color: var(--badge-bg);
-    color: var(--badge-text);
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-radius: 4px;
-  }
-
-  .luxury-badge-tag {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    z-index: 10;
-    background-color: var(--accent-color);
-    color: var(--btn-primary-text);
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-radius: 4px;
-  }
-
-  .luxury-image-wrapper {
-    aspect-ratio: 4/3;
-    background-color: #ffffff;
-    overflow: hidden;
-    position: relative;
-    padding: 2rem;
-  }
-
-  .luxury-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.7s ease;
-  }
-
-  .luxury-card:hover .luxury-image {
-    transform: scale(1.05);
-  }
-
-  .luxury-content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .luxury-rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 1rem;
-  }
-
-  .luxury-rating svg {
-    width: 14px;
-    height: 14px;
-    fill: var(--accent-color);
-    color: var(--accent-color);
-  }
-
-  .luxury-rating-text {
-    font-size: 1.2rem;
-    color: var(--muted-color);
-    margin-left: 4px;
-  }
-
-  .luxury-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin: 0 0 0.5rem 0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .luxury-title:hover {
-    color: var(--accent-color);
-  }
-
-  .luxury-subtitle {
-    font-size: 1.4rem;
-    color: var(--muted-color);
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-  }
-
-  .luxury-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 2rem;
-  }
-
-  .luxury-feature-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: var(--feature-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    padding: 6px 10px;
-    font-size: 1.1rem;
-    color: var(--text-color);
-  }
-
-  .luxury-feature-item svg {
-    width: 14px;
-    height: 14px;
-    color: var(--accent-color);
-    flex-shrink: 0;
-  }
-
-  .luxury-footer {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .luxury-price {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .luxury-finance {
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .luxury-finance svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .luxury-actions {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .luxury-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    height: 40px;
-    padding: 0 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    gap: 6px;
-  }
-
-  .luxury-btn svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .luxury-btn--primary {
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-text);
-  }
-
-  .luxury-btn--primary:hover {
-    background-color: var(--btn-primary-hover);
-  }
-
-  .luxury-btn--secondary {
-    background-color: var(--btn-secondary-bg);
-    color: var(--btn-secondary-text);
-    border: 1px solid var(--btn-secondary-border);
-  }
-
-  .luxury-btn--secondary:hover {
-    background-color: var(--btn-secondary-hover-bg);
-    color: var(--accent-color);
-  }
-{%- endstyle -%}
-
-<div class="luxury-section-container">
-  {%- if section.settings.subheading != blank or section.settings.logo != blank or section.settings.description != blank -%}
-    <div class="luxury-header">
-      {%- if section.settings.show_line -%}
-        <div class="luxury-line"></div>
-      {%- endif -%}
+<section class="py-20 lg:py-28 bg-background relative overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="luxury-line mx-auto mb-8" style="opacity: 1; transform: none;"></div>
       
-      {%- if section.settings.subheading != blank -%}
-        <p class="luxury-subheading">{{ section.settings.subheading }}</p>
-      {%- endif -%}
+      {% if section.settings.subtitle != blank %}
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4" style="opacity: 1; transform: none;">
+          {{ section.settings.subtitle }}
+        </p>
+      {% endif %}
 
-      {%- if section.settings.logo != blank -%}
-        <div class="luxury-logo">
-          {{ section.settings.logo | image_url: width: 300 | image_tag: loading: 'lazy', alt: section.settings.logo.alt | escape }}
+      {% if section.settings.partner_logo %}
+        <div class="flex justify-center mb-4" style="opacity: 1; transform: none;">
+          <img src="{{ section.settings.partner_logo | img_url: 'master' }}" alt="{{ section.settings.partner_logo.alt | default: 'Partner Logo' }}" class="h-20 lg:h-28 w-auto">
         </div>
-      {%- endif -%}
+      {% endif %}
 
-      {%- if section.settings.description != blank -%}
-        <p class="luxury-description">{{ section.settings.description }}</p>
-      {%- endif -%}
+      {% if section.settings.description != blank %}
+        <p class="font-body text-sm text-muted-foreground mt-4 max-w-2xl mx-auto" style="opacity: 1; transform: none;">
+          {{ section.settings.description }}
+        </p>
+      {% endif %}
     </div>
-  {%- endif -%}
 
-  <div class="luxury-grid">
-    {%- for block in section.blocks -%}
-      {%- assign product = block.settings.product -%}
-      
-      <div class="luxury-card" {{ block.shopify_attributes }}>
-        
-        {%- if block.settings.badge_1 != blank -%}
-          <div class="luxury-badge-brand">{{ block.settings.badge_1 }}</div>
-        {%- endif -%}
-        
-        {%- if block.settings.badge_2 != blank -%}
-          <div class="luxury-badge-tag">{{ block.settings.badge_2 }}</div>
-        {%- endif -%}
-
-        <a href="{{ product.url | default: '#' }}" class="luxury-image-wrapper">
-          {%- assign image = block.settings.custom_image | default: product.featured_image -%}
-          {%- if image != blank -%}
-            {{ image | image_url: width: 600 | image_tag: class: 'luxury-image', loading: 'lazy', alt: image.alt | escape }}
-          {%- else -%}
-            {{ 'product-1' | placeholder_svg_tag: 'luxury-image placeholder-svg' }}
-          {%- endif -%}
-        </a>
-
-        <div class="luxury-content">
-          {%- if block.settings.show_rating -%}
-            <div class="luxury-rating">
-              {%- for i in (1..5) -%}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-              {%- endfor -%}
-              <span class="luxury-rating-text">{{ block.settings.rating_text }}</span>
-            </div>
-          {%- endif -%}
-
-          <a href="{{ product.url | default: '#' }}" class="luxury-title">
-            {{ block.settings.custom_title | default: product.title | default: 'Product Title' }}
-          </a>
+    <div class="grid {{ col_class }} gap-8">
+      {% for product in section.settings.product_list limit: section.settings.products_to_show %}
+        <div class="group relative bg-card border border-border rounded-xl overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-gold flex flex-col" style="opacity: 1; transform: none;">
           
-          <p class="luxury-subtitle">{{ block.settings.subtitle }}</p>
-
-          <div class="luxury-features">
-            {%- for i in (1..6) -%}
-              {%- assign feature_text_key = 'feature_' | append: i -%}
-              {%- assign feature_icon_key = 'feature_icon_' | append: i -%}
-              {%- assign feature_text = block.settings[feature_text_key] -%}
-              {%- assign feature_icon = block.settings[feature_icon_key] -%}
-              
-              {%- if feature_text != blank -%}
-                <div class="luxury-feature-item">
-                  {%- if feature_icon != blank -%}
-                    {{ feature_icon }}
-                  {%- else -%}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
-                  {%- endif -%}
-                  <span>{{ feature_text }}</span>
-                </div>
-              {%- endif -%}
-            {%- endfor -%}
+          <div class="absolute top-4 left-4 z-10 flex items-center gap-1.5 bg-charcoal/90 text-white px-3 py-1.5 rounded-sm shadow-lg backdrop-blur-sm">
+            <span class="font-body text-[9px] font-bold uppercase tracking-widest">{{ product.vendor | default: "Body Friend" }}</span>
           </div>
+          
+          {% comment %} Tag placeholder (Requires metafields for dynamic usage, kept static for layout preservation) {% endcomment %}
+          <span class="absolute top-4 right-4 z-10 bg-gold text-background font-body text-[10px] font-semibold px-3 py-1.5 uppercase tracking-widest rounded-sm">
+            Flagship
+          </span>
 
-          <div class="luxury-footer">
-            <p class="luxury-price">
-              {%- if product != blank -%}
-                {{ product.price | money }}
-              {%- else -%}
-                $9,999.00
-              {%- endif -%}
-            </p>
+          <a class="block" href="{{ product.url }}">
+            <div class="aspect-[4/3] bg-white overflow-hidden relative">
+              <img src="{{ product.featured_image | img_url: '800x' }}" alt="{{ product.title }}" class="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105">
+            </div>
+          </a>
+
+          <div class="p-8 flex flex-col flex-1">
+            <div class="flex items-center gap-1 mb-3">
+              <!-- 5 Stars SVG -->
+              {% for i in (1..5) %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-3 h-3 fill-gold text-gold"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+              {% endfor %}
+              <span class="font-body text-[10px] text-muted-foreground ml-1">4.7 (142)</span>
+            </div>
+
+            <a href="{{ product.url }}">
+              <h3 class="font-display text-2xl font-bold text-foreground mb-1 hover:text-gold transition-colors">{{ product.title }}</h3>
+            </a>
             
-            {%- if block.settings.finance_text != blank -%}
-              <p class="luxury-finance">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
-                {{ block.settings.finance_text }}
-              </p>
-            {%- endif -%}
+            <p class="font-body text-sm text-muted-foreground mb-4 leading-relaxed">
+              {{ product.description | strip_html | truncate: 100 }}
+            </p>
 
-            <div class="luxury-actions">
-              <a href="{{ product.url | default: '#' }}" class="luxury-btn luxury-btn--primary">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                {{ block.settings.btn_1_text | default: 'View Details' }}
-              </a>
+            <div class="mt-auto pt-4 border-t border-border/50">
+              <p class="font-display text-2xl font-bold text-foreground mb-3">{{ product.price | money }}</p>
               
-              {%- if block.settings.btn_2_link != blank -%}
-                <a href="{{ block.settings.btn_2_link }}" class="luxury-btn luxury-btn--secondary">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-                  {{ block.settings.btn_2_text | default: 'Book Trial' }}
+              <div class="flex gap-2">
+                <a class="inline-flex items-center justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase h-9 px-3 flex-1 gap-1.5 text-xs" href="{{ product.url }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg> See more
                 </a>
-              {%- endif -%}
+                <a class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-background h-9 px-3 gap-1.5 text-xs border-gold/30 text-gold hover:bg-gold/10 hover:text-gold" href="/pages/showrooms">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3.5 h-3.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg> Try it
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    {%- endfor -%}
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
 
 {% schema %}
 {
-  "name": "Luxury Product Grid",
+  "name": "Featured Product Grid",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -434,326 +97,55 @@
       "content": "Header Configuration"
     },
     {
-      "type": "checkbox",
-      "id": "show_line",
-      "label": "Show top decorative line",
-      "default": true
-    },
-    {
       "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
+      "id": "subtitle",
+      "label": "Subtitle",
       "default": "Official Distributor"
     },
     {
       "type": "image_picker",
-      "id": "logo",
-      "label": "Brand Logo"
+      "id": "partner_logo",
+      "label": "Partner Logo Image"
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Description",
-      "default": "We are proud to be the official distributor of the world's leading manufacturer of ultra-premium massage chairs."
+      "default": "We are proudly the official distributor of Body Friend, the world's leading manufacturer of ultra-premium massage chairs."
     },
     {
       "type": "header",
-      "content": "Color Configuration"
+      "content": "Product Grid Configuration"
     },
     {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Section Background",
-      "default": "#f8f9fa"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Main Text Color",
-      "default": "#1a1a1a"
-    },
-    {
-      "type": "color",
-      "id": "muted_text_color",
-      "label": "Muted Text Color",
-      "default": "#6b7280"
-    },
-    {
-      "type": "color",
-      "id": "accent_color",
-      "label": "Accent Color (Gold)",
-      "default": "#d4af37"
-    },
-    {
-      "type": "color",
-      "id": "card_bg_color",
-      "label": "Card Background",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "border_color",
-      "label": "Border Color",
-      "default": "#e5e7eb"
-    },
-    {
-      "type": "color",
-      "id": "card_hover_border_color",
-      "label": "Card Hover Border Color",
-      "default": "#d4af37"
-    },
-    {
-      "type": "color",
-      "id": "badge_bg_color",
-      "label": "Brand Badge Background",
-      "default": "#374151"
-    },
-    {
-      "type": "color",
-      "id": "badge_text_color",
-      "label": "Brand Badge Text",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "btn_primary_bg",
-      "label": "Primary Button Background",
-      "default": "#d4af37"
-    },
-    {
-      "type": "color",
-      "id": "btn_primary_text",
-      "label": "Primary Button Text",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "btn_primary_hover",
-      "label": "Primary Button Hover",
-      "default": "#b5952f"
-    },
-    {
-      "type": "color",
-      "id": "btn_secondary_bg",
-      "label": "Secondary Button Background",
-      "default": "transparent"
-    },
-    {
-      "type": "color",
-      "id": "btn_secondary_border",
-      "label": "Secondary Button Border",
-      "default": "#d4af37"
-    },
-    {
-      "type": "color",
-      "id": "btn_secondary_text",
-      "label": "Secondary Button Text",
-      "default": "#d4af37"
-    },
-    {
-      "type": "color",
-      "id": "btn_secondary_hover_bg",
-      "label": "Secondary Button Hover Background",
-      "default": "#fdfbf4"
-    },
-    {
-      "type": "color",
-      "id": "feature_bg_color",
-      "label": "Feature Item Background",
-      "default": "#f3f4f6"
-    },
-    {
-      "type": "header",
-      "content": "Section Padding"
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "info": "Select the products you want to display in this grid."
     },
     {
       "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 150,
-      "step": 5,
-      "unit": "px",
-      "label": "Padding Top",
-      "default": 100
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "Maximum products to show"
     },
     {
       "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 150,
-      "step": 5,
-      "unit": "px",
-      "label": "Padding Bottom",
-      "default": 100
-    }
-  ],
-  "blocks": [
-    {
-      "type": "product_card",
-      "name": "Product Card",
-      "settings": [
-        {
-          "type": "product",
-          "id": "product",
-          "label": "Select Product"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_image",
-          "label": "Custom Image (Optional)",
-          "info": "Overrides the default product image."
-        },
-        {
-          "type": "text",
-          "id": "badge_1",
-          "label": "Brand Badge Text",
-          "default": "Body Friend"
-        },
-        {
-          "type": "text",
-          "id": "badge_2",
-          "label": "Highlight Badge Text",
-          "default": "Flagship"
-        },
-        {
-          "type": "text",
-          "id": "custom_title",
-          "label": "Custom Title (Optional)",
-          "info": "Overrides product title."
-        },
-        {
-          "type": "textarea",
-          "id": "subtitle",
-          "label": "Subtitle / Short Description",
-          "default": "Ultimate Flagship with Bang & Olufsen Audio"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_rating",
-          "label": "Show Rating Stars",
-          "default": true
-        },
-        {
-          "type": "text",
-          "id": "rating_text",
-          "label": "Rating Text",
-          "default": "4.7 (142)"
-        },
-        {
-          "type": "header",
-          "content": "Features List"
-        },
-        {
-          "type": "paragraph",
-          "content": "Add up to 6 features. Leave text blank to hide. You can paste raw SVG code for custom icons."
-        },
-        {
-          "type": "text",
-          "id": "feature_1",
-          "label": "Feature 1 Text",
-          "default": "Bang & Olufsen Surround"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_1",
-          "label": "Feature 1 SVG Icon"
-        },
-        {
-          "type": "text",
-          "id": "feature_2",
-          "label": "Feature 2 Text",
-          "default": "4D Silicon Massage Rollers"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_2",
-          "label": "Feature 2 SVG Icon"
-        },
-        {
-          "type": "text",
-          "id": "feature_3",
-          "label": "Feature 3 Text",
-          "default": "81-Cell Air Compression"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_3",
-          "label": "Feature 3 SVG Icon"
-        },
-        {
-          "type": "text",
-          "id": "feature_4",
-          "label": "Feature 4 Text",
-          "default": "Infrared Heat Therapy"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_4",
-          "label": "Feature 4 SVG Icon"
-        },
-        {
-          "type": "text",
-          "id": "feature_5",
-          "label": "Feature 5 Text",
-          "default": "Zero Gravity Recline"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_5",
-          "label": "Feature 5 SVG Icon"
-        },
-        {
-          "type": "text",
-          "id": "feature_6",
-          "label": "Feature 6 Text",
-          "default": "Real Leather Upholstery"
-        },
-        {
-          "type": "html",
-          "id": "feature_icon_6",
-          "label": "Feature 6 SVG Icon"
-        },
-        {
-          "type": "header",
-          "content": "Footer & Buttons"
-        },
-        {
-          "type": "text",
-          "id": "finance_text",
-          "label": "Financing Text",
-          "default": "From $50 / week"
-        },
-        {
-          "type": "text",
-          "id": "btn_1_text",
-          "label": "Primary Button Text",
-          "default": "See More"
-        },
-        {
-          "type": "text",
-          "id": "btn_2_text",
-          "label": "Secondary Button Text",
-          "default": "Try It"
-        },
-        {
-          "type": "url",
-          "id": "btn_2_link",
-          "label": "Secondary Button Link"
-        }
-      ]
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2,
+      "label": "Number of columns on desktop"
     }
   ],
   "presets": [
     {
-      "name": "Luxury Product Grid",
-      "blocks": [
-        {
-          "type": "product_card"
-        },
-        {
-          "type": "product_card"
-        }
-      ]
+      "name": "Featured Product Grid",
+      "category": "Products"
     }
   ]
 }
