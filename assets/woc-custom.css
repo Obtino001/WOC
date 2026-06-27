@@ -1,3 +1,477 @@
+/* 
+  World of Comfort Premium Theme Variables and Overrides
+  Maps to the React style configurations in index.css
+*/
+
+:root {
+  /* Core palette - Ultra Luxury Dark */
+  --woc-background: 0 0% 4%;
+  --woc-foreground: 40 20% 95%;
+
+  --woc-card: 0 0% 7%;
+  --woc-card-foreground: 40 20% 95%;
+
+  --woc-popover: 0 0% 7%;
+  --woc-popover-foreground: 40 20% 95%;
+
+  --woc-primary: 40 20% 95%;
+  --woc-primary-foreground: 0 0% 4%;
+
+  --woc-secondary: 40 20% 95%;
+  --woc-secondary-foreground: 0 0% 4%;
+
+  --woc-muted: 0 0% 12%;
+  --woc-muted-foreground: 40 10% 55%;
+
+  --woc-accent: 38 60% 52%;
+  --woc-accent-foreground: 0 0% 4%;
+
+  --woc-border: 0 0% 14%;
+  --woc-input: 0 0% 14%;
+  --woc-ring: 38 60% 52%;
+
+  /* Custom tokens */
+  --woc-gold: 36 72% 45%;
+  --woc-gold-hover: 34 75% 38%;
+  --woc-gold-subtle: 36 45% 22%;
+  --woc-linen: 0 0% 7%;
+  --woc-forest: 145 55% 33%;
+  --woc-charcoal: 0 0% 4%;
+  --woc-cream: 40 20% 95%;
+  --woc-warm-gray: 30 5% 30%;
+  --woc-sale-red: 0 78% 55%;
+  --woc-sale-red-hover: 0 78% 48%;
+  --woc-copper: 25 80% 45%;
+  --woc-copper-hover: 25 80% 38%;
+  --woc-copper-light: 25 60% 92%;
+  --woc-corporate: 153 30% 48%;
+  --woc-corporate-dark: 160 25% 12%;
+  --woc-corporate-light: 153 25% 94%;
+
+  /* Gradients */
+  --woc-gradient-gold: linear-gradient(135deg, hsl(36 72% 45%), hsl(40 55% 55%));
+  --woc-gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 8%));
+  --woc-gradient-linen: linear-gradient(180deg, hsl(0 0% 7%), hsl(0 0% 4%));
+  --woc-gradient-fade: linear-gradient(180deg, transparent, hsl(0 0% 4%));
+
+  /* Shadows */
+  --woc-shadow-soft: 0 4px 30px -4px hsl(0 0% 0% / 0.4);
+  --woc-shadow-elevated: 0 20px 60px -12px hsl(0 0% 0% / 0.6);
+  --woc-shadow-gold: 0 4px 30px -4px hsl(38 60% 52% / 0.15);
+}
+
+/* Base resets & typography mapping */
+.woc-theme-wrapper {
+  font-family: 'Outfit', sans-serif !important;
+  background-color: hsl(var(--woc-background));
+  color: hsl(var(--woc-foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+.woc-theme-wrapper h1,
+.woc-theme-wrapper h2,
+.woc-theme-wrapper h3,
+.woc-theme-wrapper h4,
+.woc-display-font {
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+/* Custom scrollbar matching React app */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  border-radius: 3px;
+}
+
+/* Custom utility styles from React */
+.text-gold {
+  color: #bf8f30 !important;
+}
+
+.text-cream {
+  color: #f5f2eb !important;
+}
+
+.bg-gold {
+  background-color: #bf8f30 !important;
+}
+
+.bg-linen {
+  background-color: #121212 !important;
+}
+
+.bg-charcoal {
+  background-color: #0a0a0a !important;
+}
+
+.text-charcoal {
+  color: #0a0a0a !important;
+}
+
+.bg-forest {
+  background-color: #265935 !important;
+}
+
+.text-forest {
+  color: #265935 !important;
+}
+
+.bg-copper {
+  background-color: #d2542a !important;
+}
+
+.text-copper {
+  color: #d2542a !important;
+}
+
+.shadow-soft {
+  box-shadow: var(--woc-shadow-soft);
+}
+
+.shadow-elevated {
+  box-shadow: var(--woc-shadow-elevated);
+}
+
+.shadow-gold {
+  box-shadow: var(--woc-shadow-gold);
+}
+
+.gradient-gold {
+  background: var(--woc-gradient-gold);
+}
+
+.gradient-dark {
+  background: var(--woc-gradient-dark);
+}
+
+.gradient-linen {
+  background: var(--woc-gradient-linen);
+}
+
+.luxury-line {
+  width: 60px;
+  height: 1px;
+  background: #bf8f30;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.35em;
+}
+
+/* Light theme overrides for specific PDP/landing sections */
+.section-light {
+  --woc-background: 40 30% 97%;
+  --woc-foreground: 0 0% 12%;
+  --woc-card: 40 25% 95%;
+  --woc-card-foreground: 0 0% 12%;
+  --woc-muted: 40 15% 92%;
+  --woc-muted-foreground: 0 0% 40%;
+  --woc-border: 40 15% 88%;
+  --woc-linen: 40 25% 95%;
+}
+
+.section-flowlight {
+  --woc-background: 0 0% 100%;
+  --woc-foreground: 0 0% 12%;
+  --woc-card: 0 0% 100%;
+  --woc-card-foreground: 0 0% 12%;
+  --woc-popover: 0 0% 100%;
+  --woc-popover-foreground: 0 0% 12%;
+  --woc-secondary: 0 0% 97%;
+  --woc-secondary-foreground: 0 0% 12%;
+  --woc-muted: 0 0% 96%;
+  --woc-muted-foreground: 0 0% 42%;
+  --woc-border: 0 0% 90%;
+  --woc-input: 0 0% 90%;
+  --woc-linen: 0 0% 99%;
+  background-color: hsl(var(--woc-background)) !important;
+  color: hsl(var(--woc-foreground)) !important;
+}
+
+.section-light-warm {
+    --background: 38 30% 95%;
+    --foreground: 0 0% 12%;
+    --card: 38 20% 92%;
+    --card-foreground: 0 0% 12%;
+    --muted: 38 15% 89%;
+    --muted-foreground: 0 0% 40%;
+    --border: 38 15% 85%;
+    --linen: 38 20% 92%;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+}
+
+/* Continuous Marquee Scrolling */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 25s ease-out forwards;
+}
+
+/* Custom styling for floating CTA and quiz elements */
+.woc-quiz-option-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.woc-quiz-option-card:hover {
+  border-color: #bf8f30;
+  box-shadow: var(--woc-shadow-gold);
+  transform: translateY(-2px);
+}
+
+.woc-floating-btn {
+  box-shadow: 0 4px 20px rgba(191, 143, 48, 0.3);
+  transition: all 0.3s ease;
+}
+
+.woc-floating-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(191, 143, 48, 0.4);
+}
+
+/* WOC Header Dropdown Navigation Styling */
+.woc-nav-dropdown:hover .woc-dropdown-menu,
+.woc-nav-dropdown.is-open .woc-dropdown-menu {
+  display: block !important;
+}
+
+/* Pseudo-element bridge to prevent hover loss due to gap (top-full mt-1) */
+.woc-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
+/* SVG Arrow rotation */
+.woc-nav-dropdown:hover svg,
+.woc-nav-dropdown.is-open svg {
+  transform: rotate(180deg);
+}
+
+/* Mobile drawer sub-menu transition styles */
+.woc-mobile-sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.woc-mobile-sub-menu.is-open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Premium Animations */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-right {
+  opacity: 0;
+  animation: fadeInRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+/* Premium Cart Drawer Transitions */
+cart-drawer.drawer {
+  visibility: hidden;
+  transition: visibility 450ms ease !important;
+}
+
+cart-drawer.drawer.active {
+  visibility: visible;
+}
+
+#CartDrawer-Overlay {
+  background-color: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  transition: background-color 450ms cubic-bezier(0.16, 1, 0.3, 1), backdrop-filter 450ms ease !important;
+  pointer-events: none;
+}
+
+cart-drawer.active #CartDrawer-Overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  pointer-events: auto;
+}
+
+.drawer__inner {
+  transform: translate3d(100%, 0, 0) !important;
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+cart-drawer.active .drawer__inner {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* Fix Dawn grid layouts broken by Tailwind's global .grid reset */
+.grid:not([class*="grid-cols-"]):not([class*="grid-rows-"]):not([class*="grid-flow-"]) {
+  display: flex !important;
+}
+
+/* WOC Header Custom Buttons styling */
+.header__globe-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 1.25rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header__globe-language svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header__book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #bf8f30 !important;
+  background-color: transparent !important;
+  color: #bf8f30 !important;
+  border-radius: 9999px !important;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Outfit', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.75rem;
+}
+.header__book-demo-btn:hover {
+  background-color: rgba(191, 143, 48, 0.05) !important;
+  border-color: rgba(191, 143, 48, 0.8) !important;
+}
+
+.header__call-us-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none !important;
+  background-color: #bf8f30 !important;
+  color: #0a0a0a !important;
+  border-radius: 9999px !important;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Outfit', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+.header__call-us-btn:hover {
+  background-color: #a37622 !important;
+}
+
+/* Cart Icon Bubble Override */
+#cart-icon-bubble {
+  position: relative;
+}
+#cart-icon-bubble .cart-count-bubble {
+  background-color: #bf8f30 !important;
+  color: #0a0a0a !important;
+  border-radius: 50% !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  font-size: 0.6rem !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: -4px !important;
+  right: -4px !important;
+}
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 @import"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap";*,:before,:after {
     --tw-border-spacing-x: 0;
     --tw-border-spacing-y: 0;
