@@ -218,6 +218,7 @@
       "name": "Featured Product Grid",
       "settings": {
         "subtitle": "Official Distributor",
+        "partner_logo": "shopify://shop_images/partner-bodyfriend-Hbn1JxnG_1.png",
         "description": "We are proudly the official distributor of Body Friend, the world's leading manufacturer of ultra-premium massage chairs.",
         "product_list": [
           "pharaoh-neo",
