@@ -180,9 +180,9 @@
     "collection": {
       "type": "woc-collection-grid",
       "settings": {
-        "subtitle": "Koleksiyonumuz",
-        "title": "Alle Massagestole",
-        "description": "Find den massagestol der passer bedst til dine behov.",
+        "subtitle": "Dahili Üretim · Çekirdek Koleksiyon",
+        "title": "Bizim Çekirdek Modellerimiz",
+        "description": "World of Comfort tarafından tasarlanan, geliştirilen ve üretilen bu dört model, terapötik sağlık teknolojisindeki uzmanlığımızın zirvesini temsil etmektedir.",
         "center_heading": true,
         "show_filter": false,
         "filter_all_label": "Tümü",
