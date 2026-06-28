@@ -666,7 +666,7 @@
       ],
       "settings": {
         "kicker": "Sıkça Sorulan Sorular",
-        "heading": "Uyku Sistemleri Hakkında <span class=\"italic text-gold\">Bilmek İstediğiniz Her Şey</span>",
+        "heading": "Bilmek İstediğiniz Her Şey<span class=\"italic text-gold\">Uyku Sistemleri Hakkında</span>",
         "description": "",
         "contact_link": "",
         "cat_1_text": "Uyku ve Sağlık",
