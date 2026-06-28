@@ -1,8 +1,8 @@
-﻿<section class="color-{{ section.settings.color_scheme }} gradient relative py-28 lg:py-36 overflow-hidden" id="faq" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+<section class="color-{{ section.settings.color_scheme }} gradient relative py-28 lg:py-36 overflow-hidden" id="faq" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
   <div class="absolute inset-0 bg-gradient-to-b from-[hsl(var(--background))] via-[hsl(var(--card))] to-[hsl(var(--background))]"></div>
   <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 30% 20%, hsl(var(--gold)), transparent 50%);"></div>
   
-  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} relative mx-auto px-4 lg:px-8">
+  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}page-width{% endif %} relative mx-auto px-4 lg:px-8">
     
     <div class="text-center mb-16 max-w-3xl mx-auto">
       <div class="luxury-line mx-auto mb-8"></div>

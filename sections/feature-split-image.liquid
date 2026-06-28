@@ -1,4 +1,4 @@
-﻿{%- style -%}
+{%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 <section class="color-{{ section.settings.color_scheme }} gradient section-light-warm section-{{ section.id }}-padding">
-  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} mx-auto px-4 lg:px-8">
+  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}page-width{% endif %} mx-auto px-4 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
       
       <div>

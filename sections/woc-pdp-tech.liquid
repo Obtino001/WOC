@@ -1,4 +1,4 @@
-﻿<section class="color-{{ section.settings.color_scheme }} gradient py-20 bg-charcoal border-y border-border relative overflow-hidden">
+<section class="color-{{ section.settings.color_scheme }} gradient py-20 bg-charcoal border-y border-border relative overflow-hidden">
   <!-- Subtle background glow -->
   <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 50% 50%, hsl(var(--gold)), transparent 60%);"></div>
 
@@ -27,7 +27,7 @@
             class="bg-[#0F0F0F] border border-border/10 p-8 group hover:border-gold/20 transition-all duration-500"
             {{ block.shopify_attributes }}
           >
-            <!-- Icon {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} -->
+            <!-- Icon {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}page-width{% endif %} -->
             <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
               <span class="text-gold shrink-0 flex items-center justify-center">
                 {%- if block.settings.custom_icon_svg != blank -%}
