@@ -318,43 +318,43 @@
         "feature_3jWV6m": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-waves w-4 h-4 text-forest\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "text": "7 Massageprogrammer"
           }
         },
         "feature_tptMnj": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-flame w-4 h-4 text-forest\"><path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z\"></path></svg>",
+            "text": "3 Niveauer af Varme"
           }
         },
         "feature_PURnQe": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-brain-circuit w-4 h-4 text-forest\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M9 13a4.5 4.5 0 0 0 3-4\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M12 13h4\"></path><path d=\"M12 18h6a2 2 0 0 1 2 2v1\"></path><path d=\"M12 8h8\"></path><path d=\"M16 8V5a2 2 0 0 1 2-2\"></path><circle cx=\"16\" cy=\"13\" r=\".5\"></circle><circle cx=\"18\" cy=\"3\" r=\".5\"></circle><circle cx=\"20\" cy=\"21\" r=\".5\"></circle><circle cx=\"20\" cy=\"8\" r=\".5\"></circle></svg>",
+            "text": "AI Søvn Tracking"
           }
         },
         "feature_UxJNUK": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity w-4 h-4 text-forest\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "text": "Multi-Zone Luftmassage"
           }
         },
         "feature_9W6n9J": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-4 h-4 text-forest\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "text": "Passer til alle 90×200"
           }
         },
         "feature_XTVKLg": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-smartphone w-4 h-4 text-forest\"><rect width=\"14\" height=\"20\" x=\"5\" y=\"2\" rx=\"2\" ry=\"2\"></rect><path d=\"M12 18h.01\"></path></svg>",
+            "text": "Inkl. Fjernbetjening"
           }
         }
       },
@@ -371,7 +371,8 @@
         "bg_color": "warm",
         "layout": "left",
         "show_divider_top": true,
-        "product": "",
+        "product": "synthera™-yapay-zeka-yatak-pedi̇-1",
+        "image": "shopify://shop_images/synthera-ai-topper-CCgK_j-D_3.png",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -409,43 +410,43 @@
         "feature_AMT3ET": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-4 h-4 text-forest\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "text": "01 Nætters Prøvetid"
           }
         },
         "feature_TDxwRT": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-truck w-4 h-4 text-forest\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "text": "Gratis Levering"
           }
         },
         "feature_btdD3B": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-credit-card w-4 h-4 text-forest\"><rect width=\"20\" height=\"14\" x=\"2\" y=\"5\" rx=\"2\"></rect><line x1=\"2\" x2=\"22\" y1=\"10\" y2=\"10\"></line></svg>",
+            "text": "Gratis Finansiering"
           }
         },
         "feature_qw4Mkz": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-refresh-cw w-4 h-4 text-forest\"><path d=\"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8\"></path><path d=\"M21 3v5h-5\"></path><path d=\"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16\"></path><path d=\"M8 16H3v5\"></path></svg>",
+            "text": "Gratis Ombytning"
           }
         },
         "feature_JAbcUx": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-4 h-4 text-forest\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "text": "15 Års Garanti"
           }
         },
         "feature_3iDVdV": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-check w-4 h-4 text-forest\"><path d=\"M20 6 9 17l-5-5\"></path></svg>",
+            "text": "Dansk produceret"
           }
         }
       },
@@ -463,16 +464,17 @@
         "layout": "right",
         "show_divider_top": true,
         "product": "",
+        "image": "shopify://shop_images/universal-beds-hero-DgL-15oK_3.png",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
-        "kicker": "Uykunuzu Üst Seviyeye Taşıyın",
-        "title": "SYNTHERA™ AI YATAK PEDİ",
-        "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
-        "origin_emoji": "",
-        "origin_text": "",
-        "description": "<p>Mevcut yatağınızın üzerine yerleştirin; herhangi bir yeniliğe gerek yok. SYNTHERA™ AI Yatak Pedi, çok bölgeli hava sıkıştırması ve 3 kademeli rahatlatıcı ısı ile 7 ön ayarlı tüm vücut masaj programı sunar.</p>",
+        "kicker": "Evrensel Yataklar",
+        "title": "Evrensel Yataklar",
+        "subtitle": "Her Yaşam Tarzına Uygun Kaliteli Yataklar",
+        "origin_emoji": "DE",
+        "origin_text": "Made in Denmark",
+        "description": "<p>Ikke alle har brug for et personligt tilpasset søvnsystem. Vores Universalmadrasser kollektion tilbyder premium kvalitetsmadrasser med avancerede materialer fra memory skum til pocketfjedre — for ethvert budget og soveplads.<br/><br/></p>",
         "price_prefix": "90 × 200 cm",
         "price": "£550",
         "compare_price": "£660",
@@ -500,43 +502,29 @@
         "feature_NK3qrk": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-truck w-4 h-4 text-forest\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "text": "101 Nætters Prøvetid"
           }
         },
         "feature_FGJ9dJ": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-truck w-4 h-4 text-forest\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
+            "text": "Gratis Levering"
           }
         },
         "feature_N4adqb": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-check w-4 h-4 text-forest\"><path d=\"M20 6 9 17l-5-5\"></path></svg>",
+            "text": "Dansk produceret"
           }
         },
         "feature_chthmT": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
-            "text": ""
-          }
-        },
-        "feature_Jhi9fq": {
-          "type": "feature",
-          "settings": {
-            "icon_svg": "",
-            "text": ""
-          }
-        },
-        "feature_6ydzdW": {
-          "type": "feature",
-          "settings": {
-            "icon_svg": "",
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-4 h-4 text-forest\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "text": "15 Års Garanti"
           }
         }
       },
@@ -544,22 +532,21 @@
         "feature_NK3qrk",
         "feature_FGJ9dJ",
         "feature_N4adqb",
-        "feature_chthmT",
-        "feature_Jhi9fq",
-        "feature_6ydzdW"
+        "feature_chthmT"
       ],
       "settings": {
         "section_id": "duvets-pillows",
         "bg_color": "warm",
-        "layout": "left",
+        "layout": "right",
         "show_divider_top": true,
         "product": "",
+        "image": "shopify://shop_images/amsterdam-140x200-cm_9f731c7e-0ef2-4da0-9a96-43249e4a3001.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
         "kicker_color": "gold",
         "kicker": "Uykunuzu Üst Seviyeye Taşıyın",
-        "title": "SYNTHERA™ AI YATAK PEDİ",
+        "title": "Yorgan ve Yastıklar",
         "subtitle": "Her yatağı akıllı bir masaj ve ısı yüzeyine dönüştürün.",
         "origin_emoji": "",
         "origin_text": "",
@@ -569,18 +556,18 @@
         "compare_price": "£660",
         "price_suffix": "",
         "badge_text": "1.000 kr. Tasarruf Edin",
-        "btn1_text": "Sepete Ekle",
-        "btn1_icon": "",
+        "btn1_text": "Udforsk kollektion",
+        "btn1_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4 ml-2\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
         "btn1_link": "",
-        "btn2_text": "Ürünü İncele",
+        "btn2_text": "",
         "btn2_link": "",
         "video_label": "Videoyu İzle",
-        "process_heading": "Süreç",
-        "process_badge": "4 adım",
-        "process_step_1": "Ücretsiz vücut analizi için randevu alın",
-        "process_step_2": "Danışmanlık ve ihtiyaç analizi",
-        "process_step_3": "Vücut ölçümü ve taraması",
-        "process_step_4": "Kişisel öneri",
+        "process_heading": "",
+        "process_badge": "",
+        "process_step_1": "",
+        "process_step_2": "",
+        "process_step_3": "",
+        "process_step_4": "\\",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -642,7 +629,7 @@
         "padding_bottom": 52
       }
     },
-"faq_training": {
+    "faq_training": {
       "type": "quiz-faq-comprehensive",
       "blocks": {
         "f1": {
