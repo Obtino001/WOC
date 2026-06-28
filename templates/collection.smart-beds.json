@@ -9,6 +9,73 @@
  */
 {
   "sections": {
+    "woc_hero_WdztNp": {
+      "type": "woc-hero",
+      "blocks": {
+        "usp_a98aUa": {
+          "type": "usp",
+          "settings": {
+            "icon": "award",
+            "custom_icon_svg": "",
+            "text": "Nordic Wellness Leader"
+          }
+        },
+        "usp_wEbaHj": {
+          "type": "usp",
+          "settings": {
+            "icon": "cpu",
+            "custom_icon_svg": "",
+            "text": "Unique AI Technology"
+          }
+        },
+        "usp_Hy7BnN": {
+          "type": "usp",
+          "settings": {
+            "icon": "heart",
+            "custom_icon_svg": "",
+            "text": "Professionally Recommended"
+          }
+        },
+        "usp_Rgg4cX": {
+          "type": "usp",
+          "settings": {
+            "icon": "truck",
+            "custom_icon_svg": "",
+            "text": "White-Glove Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "usp_a98aUa",
+        "usp_wEbaHj",
+        "usp_Hy7BnN",
+        "usp_Rgg4cX"
+      ],
+      "name": "WOC Hero Banner",
+      "settings": {
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "hero_label": "",
+        "title_line1": "İki Vücut",
+        "title_line2": "Aynı Değildir",
+        "subtitle": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır — vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil.\n\nKoleksiyonu",
+        "show_reviews": false,
+        "btn1_text": "Koleksiyonu Keşfedin",
+        "btn1_url": "",
+        "btn2_text": "Nasıl Çalışır",
+        "btn2_url": "",
+        "btn3_text": "",
+        "btn3_url": "",
+        "expert_name": "Dr. Carsten Rosendahl",
+        "expert_title": "Chiropractor · Nordic Spine & Wellness",
+        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
+        "expert_badge_text": "Professionally recommended"
+      }
+    },
+    "hero": {
+      "type": "smart-beds-hero",
+      "settings": {}
+    },
     "philosophy": {
       "type": "smart-beds-philosophy",
       "settings": {
@@ -726,6 +793,8 @@
     }
   },
   "order": [
+    "woc_hero_WdztNp",
+    "hero",
     "philosophy",
     "categories",
     "sovesystem",
