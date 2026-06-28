@@ -1,6 +1,6 @@
 <section class="py-24 section-light-warm relative overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent pointer-events-none"></div>
-  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+  <div class="mx-auto px-4 lg:px-8 relative z-10 {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-5xl{% else %}container{% endif %}">
     
     <div class="text-center mb-16">
       <div class="flex items-center justify-center gap-3 mb-6">
@@ -30,6 +30,17 @@
 {
   "name": "USP Grid Features",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "standard"
+    },
     {
       "type": "text",
       "id": "subtitle",

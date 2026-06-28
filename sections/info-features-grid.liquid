@@ -1,5 +1,5 @@
 <section class="py-20 bg-background">
-  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+  <div class="mx-auto px-4 lg:px-8 {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-5xl{% else %}container{% endif %}">
     
     <div class="text-center mb-8">
       <p class="font-body text-sm uppercase tracking-[0.3em] text-gold mb-4">{{ section.settings.badge }}</p>
@@ -36,6 +36,17 @@
       "id": "badge",
       "label": "Badge",
       "default": "NEDEN ÖNEMLİ"
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "narrow"
     },
     {
       "type": "text",

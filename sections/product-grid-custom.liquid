@@ -1,5 +1,5 @@
 <section class="py-20 {% if section.settings.bg_style == 'warm' %}section-light-warm{% else %}section-light{% endif %}" id="{{ section.settings.section_id }}">
-  <div class="container mx-auto px-4 lg:px-8">
+  <div class="mx-auto px-4 lg:px-8 {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px]{% else %}container{% endif %}">
     
     <div class="text-center mb-14">
       <p class="font-body text-sm uppercase tracking-[0.25em] {% if section.settings.badge_color == 'forest' %}text-forest{% else %}text-gold{% endif %} mb-4">
@@ -54,16 +54,31 @@
 
               <!-- Bullets -->
               <ul class="space-y-1 mb-3 flex-1 min-h-[5.5rem]">
-                {% for i in (1..4) %}
-                  {% capture bullet_var %}bullet_{{ i }}{% endcapture %}
-                  {% assign bullet_text = block.settings[bullet_var] %}
-                  {% if bullet_text != blank %}
+                {% assign has_usps = false %}
+                {% if product != blank and product.metafields.custom.usps != blank %}
+                  {% assign has_usps = true %}
+                  {% assign usps_string = product.metafields.custom.usps.value | join: ',' | default: product.metafields.custom.usps.value %}
+                  {% assign usps_array = usps_string | split: ',' %}
+                  {% for usp in usps_array limit: 4 %}
                     <li class="flex items-start gap-1.5">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
-                      <span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">{{ bullet_text }}</span>
+                      <span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">{{ usp | strip }}</span>
                     </li>
-                  {% endif %}
-                {% endfor %}
+                  {% endfor %}
+                {% endif %}
+                
+                {% if has_usps == false %}
+                  {% for i in (1..4) %}
+                    {% capture bullet_var %}bullet_{{ i }}{% endcapture %}
+                    {% assign bullet_text = block.settings[bullet_var] %}
+                    {% if bullet_text != blank %}
+                      <li class="flex items-start gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">{{ bullet_text }}</span>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
               </ul>
 
               <!-- Stock & Button -->
@@ -116,6 +131,17 @@
         {"value": "forest", "label": "Forest Green"}
       ],
       "default": "gold"
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "standard"
     },
     {
       "type": "text",
