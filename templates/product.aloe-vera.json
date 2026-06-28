@@ -65,12 +65,6 @@
             "demo_link": ""
           }
         },
-        "custom_liquid_1": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"relative overflow-hidden rounded-2xl border-2 border-emerald-400/60 bg-gradient-to-r from-emerald-500/15 via-emerald-400/20 to-teal-400/15 p-5 mb-2 shadow-[0_0_24px_-6px_hsl(160,60%,45%,0.25)]\" bis_skin_checked=\"1\" style=\"opacity: 1; transform: none;\"><div class=\"absolute -right-8 -top-8 w-32 h-32 bg-emerald-400/15 rounded-full blur-3xl\" bis_skin_checked=\"1\"></div><div class=\"absolute -left-4 -bottom-4 w-20 h-20 bg-teal-300/10 rounded-full blur-2xl\" bis_skin_checked=\"1\"></div><div class=\"relative flex items-center gap-4\" bis_skin_checked=\"1\"><div class=\"flex-shrink-0 w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center\" bis_skin_checked=\"1\"><span class=\"text-3xl\">🎁</span></div><div bis_skin_checked=\"1\"><p class=\"font-display text-base font-extrabold text-emerald-300 tracking-tight\">🔥 2 tane al — 2. üründe %30 indirim!</p><p class=\"font-body text-sm text-foreground/80 mt-1\">Yorgan ve yastıkları dilediğin gibi karıştır ve eşleştir. İndirim otomatik olarak sepette düşer.</p></div></div></div>"
-          }
-        },
         "trust_badges_N7QkXf": {
           "type": "trust_badges",
           "settings": {
@@ -92,7 +86,6 @@
         "variant_picker",
         "feature_list_kNjYmM",
         "buy_buttons",
-        "custom_liquid_1",
         "trust_badges_N7QkXf"
       ],
       "settings": {
@@ -531,7 +524,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,

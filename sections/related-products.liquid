@@ -60,7 +60,7 @@
       >
         {% for recommendation in recommendations.products %}
           <li class="grid__item !w-full !max-w-none">
-            {% render 'woc-product-card-simple', product: recommendation, card_color_scheme: section.settings.color_scheme %}
+            {% render 'woc-product-card', product: recommendation, card_color_scheme: section.settings.color_scheme %}
           </li>
         {% endfor %}
       </ul>
