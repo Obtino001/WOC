@@ -56,7 +56,9 @@
         "trust_item_iDNiXH"
       ],
       "name": "WOC Trust Bar",
-      "settings": {}
+      "settings": {
+        "page_width": "narrow"
+      }
     },
     "main": {
       "type": "main-product",
@@ -205,7 +207,7 @@
     "brand_intro": {
       "type": "sed-brand-intro",
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-3xl",
         "padding_top": 112,
         "padding_bottom": 144,
         "text": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home"
@@ -240,7 +242,7 @@
         "c2"
       ],
       "settings": {
-        "color_scheme": ""
+        "page_width": "max-w-full"
       }
     },
     "carousel": {
@@ -249,6 +251,7 @@
         "p1": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-boss-lady-BJjb4-P6_1.jpg",
             "tag": "BESTSELLER",
@@ -262,6 +265,7 @@
         "p2": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-nefertiti-Dk_lSbcd.jpg",
             "tag": "AWARD WINNER",
@@ -275,6 +279,7 @@
         "p3": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-comfort-1-DPIpm6u4_1b7d2214-ad5f-4e93-86f2-8b34c4532990.jpg",
             "tag": "BESTSELLER",
@@ -288,6 +293,7 @@
         "p4": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-light-up-b7hh_c5P_179928b8-ffb0-443e-b9b5-569531d7e21a.jpg",
             "tag": "",
@@ -301,6 +307,7 @@
         "p5": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-eyepads-D8d7IeIa.jpg",
             "tag": "LUXURY",
@@ -314,6 +321,7 @@
         "p6": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "",
             "image": "shopify://shop_images/sed-serum-set-1-Cf4y6gAK_ef582206-bdc3-4e40-992e-69440ee36e17.jpg",
             "tag": "NY",
@@ -335,8 +343,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "color_scheme": "",
-        "collection": "",
+        "page_width": "max-w-full",
         "products_to_show": 8,
         "tab_1": "Best Sellers",
         "tab_2": "Trending Now",
@@ -346,7 +353,6 @@
     "routine_split": {
       "type": "sed-routine-split",
       "settings": {
-        "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 96,
         "kicker": "YOUR NEW ROUTINE",
@@ -668,7 +674,7 @@
         "d4"
       ],
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "section_id": "related-products",
         "kicker": "",
         "columns": 4
@@ -677,7 +683,6 @@
     "cta_final": {
       "type": "sed-experience-cta",
       "settings": {
-        "color_scheme": "",
         "heading": "Ready For Your Transformation?",
         "description": "Experience the difference with Boss Lady — your daily facelift in just 10 minutes.",
         "btn_text": "BUY NOW — £385",
@@ -688,6 +693,7 @@
       "type": "related-products",
       "settings": {
         "bg_color": "warm",
+        "page_width": "full",
         "kicker": "YOU MAY ALSO LIKE",
         "heading": "Du vil måske også syntes om",
         "heading_size": "h2",
