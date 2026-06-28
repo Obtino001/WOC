@@ -73,7 +73,7 @@
 .woc-theme-wrapper h3,
 .woc-theme-wrapper h4,
 .woc-display-font {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Outfit', sans-serif !important;
 }
 
 /* Custom scrollbar matching React app */
