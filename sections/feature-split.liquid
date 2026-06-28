@@ -2,69 +2,137 @@
   <div class="container mx-auto px-4 lg:px-8">
     <div class="max-w-6xl mx-auto">
       
-      {% if section.settings.alignment == 'center' %}
-        <div class="text-center mb-16">
-          {% if section.settings.badge != blank %}
-            <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
-          {% endif %}
-          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">{{ section.settings.title }}</h2>
-          <div class="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed text-lg">{{ section.settings.description }}</div>
-        </div>
-      {% endif %}
+      <!-- Top Header Area -->
+      <div class="text-center mb-16">
+        {% if section.settings.badge != blank %}
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">
+            {{ section.settings.badge }}
+          </div>
+        {% endif %}
+        
+        {% if section.settings.main_title != blank %}
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">
+            {{ section.settings.main_title }}
+          </h2>
+        {% endif %}
+        
+        {% if section.settings.main_description != blank %}
+          <div class="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed text-lg">
+            {{ section.settings.main_description }}
+          </div>
+        {% endif %}
+      </div>
 
+      <!-- Middle Split Area (Image & Text) -->
       <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
         
         <div class="rounded-2xl overflow-hidden shadow-elevated {% if section.settings.image_position == 'right' %}order-2{% else %}order-1{% endif %}">
           {% if section.settings.image %}
             {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full aspect-[4/3] object-cover' }}
+          {% else %}
+             <div class="w-full aspect-[4/3] bg-muted/20 flex items-center justify-center text-muted-foreground">Image Placeholder</div>
           {% endif %}
         </div>
 
         <div class="{% if section.settings.image_position == 'right' %}order-1{% else %}order-2{% endif %}">
-          {% if section.settings.alignment == 'left' %}
-             {% if section.settings.badge != blank %}
-              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
-             {% endif %}
-             <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6">{{ section.settings.title }}</h2>
-             <div class="font-body text-muted-foreground leading-relaxed mb-6">{{ section.settings.description }}</div>
+          {% if section.settings.content_title != blank %}
+             <h3 class="font-display text-2xl font-semibold text-foreground mb-4">{{ section.settings.content_title }}</h3>
+          {% endif %}
+          
+          {% if section.settings.content_text != blank %}
+             <div class="font-body text-muted-foreground leading-relaxed mb-6">{{ section.settings.content_text }}</div>
           {% endif %}
 
+          <!-- Main Feature List -->
           <div class="space-y-3">
             {% for block in section.blocks %}
-              <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
-                <div class="w-6 h-6 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-gold"><path d="M20 6 9 17l-5-5"></path></svg>
+              {% if block.type == 'check_item' %}
+                <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
+                  <div class="w-6 h-6 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-gold"><path d="M20 6 9 17l-5-5"></path></svg>
+                  </div>
+                  <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
                 </div>
-                <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
-              </div>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
         
       </div>
+
+      <!-- Bottom Comparison Area -->
+      {% if section.settings.show_comparison %}
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          
+          <!-- Pros Box -->
+          <div class="rounded-xl border border-gold/20 bg-gold/5 p-6">
+            <h4 class="font-display text-lg font-bold text-gold mb-3">{{ section.settings.pros_title }}</h4>
+            <ul class="space-y-2 font-body text-sm text-foreground">
+              {% for block in section.blocks %}
+                {% if block.type == 'pro_item' %}
+                  <li class="flex items-start gap-2" {{ block.shopify_attributes }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    {{ block.settings.text }}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          
+          <!-- Cons Box -->
+          <div class="rounded-xl border border-border bg-muted/30 p-6">
+            <h4 class="font-display text-lg font-bold text-muted-foreground mb-3">{{ section.settings.cons_title }}</h4>
+            <ul class="space-y-2 font-body text-sm text-muted-foreground">
+              {% for block in section.blocks %}
+                {% if block.type == 'con_item' %}
+                  <li class="flex items-start gap-2" {{ block.shopify_attributes }}>
+                    <span class="text-destructive mt-0.5 flex-shrink-0 text-xs">✗</span>
+                    {{ block.settings.text }}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+      {% endif %}
+
     </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Feature Split",
+  "name": "Feature Split Extended",
   "settings": [
     {
       "type": "checkbox",
       "id": "bg_light",
       "label": "Use Light Background Variant",
-      "default": false
+      "default": true
     },
     {
-      "type": "select",
-      "id": "alignment",
-      "label": "Header Alignment",
-      "options": [
-        {"value": "left", "label": "Left aligned (above text)"},
-        {"value": "center", "label": "Center aligned (above split)"}
-      ],
-      "default": "left"
+      "type": "header",
+      "content": "Top Header Settings"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge Text"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "main_description",
+      "label": "Main Description"
+    },
+    {
+      "type": "header",
+      "content": "Split Content Settings"
     },
     {
       "type": "select",
@@ -83,24 +151,63 @@
     },
     {
       "type": "text",
-      "id": "badge",
-      "label": "Badge Text"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading"
+      "id": "content_title",
+      "label": "Content Heading"
     },
     {
       "type": "richtext",
-      "id": "description",
-      "label": "Description text"
+      "id": "content_text",
+      "label": "Content Text"
+    },
+    {
+      "type": "header",
+      "content": "Comparison Boxes Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comparison",
+      "label": "Show Comparison Boxes",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "pros_title",
+      "label": "Pros Box Title",
+      "default": "✓ WOC Talalay Lateks"
+    },
+    {
+      "type": "text",
+      "id": "cons_title",
+      "label": "Cons Box Title",
+      "default": "✗ Standart Hafızalı Köpük"
     }
   ],
   "blocks": [
     {
       "type": "check_item",
-      "name": "List Item",
+      "name": "Main List Checkmark",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "pro_item",
+      "name": "Comparison Pro Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "con_item",
+      "name": "Comparison Con Item",
       "settings": [
         {
           "type": "text",
@@ -110,6 +217,46 @@
       ]
     }
   ],
-  "presets": [{"name": "Feature Split"}]
+  "presets": [
+    {
+      "name": "Feature Split Extended",
+      "settings": {
+        "bg_light": true,
+        "badge": "100% DOĞAL TALALAY LATEKS",
+        "main_title": "Kendine has bir üst şilte",
+        "main_description": "60 mm Talalay lateks üst şiltemiz standart bir üst şilte değildir — uzanabileceğiniz en gelişmiş uyku yüzeyidir. Doğal olarak antibakteriyel özelliklere, serinletici hava sirkülasyonuna ve benzersiz bir yaz/kış dönüştürme işlevine sahip, Danimarka iklimi için tasarlanmış bir üst şilte elde edersiniz.",
+        "image_position": "left",
+        "content_title": "Talalay Lateks Nedir?",
+        "content_text": "<p>Talalay lateks, sıvı lateksin bir kalıba döküldüğü, vakumla kapatıldığı ve -30°C'de dondurulduğu benzersiz, patentli bir işlemle üretilir. Bu, oluşturur milyonlarca mikroskobik hava kabarcığı — malzemeyi doğal olarak havalandıran, serin ve son derece dayanıklı kılan açık bir hücre yapısı.</p><p>Isıyı hapseden daha ucuz hafızalı köpükten farklı olarak, Talalay lateks ısı ve nemi aktif olarak uzaklaştırır. Dünyadaki uyku klinikleri ve fizyoterapistler tarafından tercih edilen bir malzemedir.</p>",
+        "show_comparison": true,
+        "pros_title": "✓ WOC Talalay Lateks",
+        "cons_title": "✗ Standart Hafızalı Köpük"
+      },
+      "blocks": [
+        { "type": "check_item", "settings": { "text": "100% doğal Talalay lateks 60mm çekirdek" } },
+        { "type": "check_item", "settings": { "text": "Doğal olarak antibakteriyel — toz akarlarına, küflere ve bakterilere karşı dirençli" } },
+        { "type": "check_item", "settings": { "text": "Serinletici açık hücreler — hafızalı köpükten 7 kat daha iyi hava sirkülasyonu" } },
+        { "type": "check_item", "settings": { "text": "Pamuklu yaz tarafı + yünlü kış tarafı" } },
+        { "type": "check_item", "settings": { "text": "Bambu elyafı ve kaşmir kaplama — OEKO-TEX® sertifikalı" } },
+        { "type": "check_item", "settings": { "text": "GREENFIRST® antitoz akarı işlemi — yıkanabilir" } },
+        { "type": "check_item", "settings": { "text": "Eklem ve kaslardaki baskıyı ve ağrıyı hafifletir" } },
+        { "type": "check_item", "settings": { "text": "Çökmeden 10-15 yıl formunu korur" } },
+        
+        { "type": "pro_item", "settings": { "text": "Doğal olarak serinletici" } },
+        { "type": "pro_item", "settings": { "text": "Doğası gereği antibakteriyel" } },
+        { "type": "pro_item", "settings": { "text": "Açık hücre yapısı → nem uzaklaştırılır" } },
+        { "type": "pro_item", "settings": { "text": "15+ yıl şeklini korur" } },
+        { "type": "pro_item", "settings": { "text": "Anında tepkisel — 'batma' hissi yok" } },
+        { "type": "pro_item", "settings": { "text": "Hip alerjenik ve OEKO-TEX® sertifikalı" } },
+        
+        { "type": "con_item", "settings": { "text": "Isıyı tutar — sıcak uyutur" } },
+        { "type": "con_item", "settings": { "text": "Sentetik — alerjileri tetikleyebilir" } },
+        { "type": "con_item", "settings": { "text": "Kapalı hücre yapısı → kötü havalandırma" } },
+        { "type": "con_item", "settings": { "text": "3-5 yıl sonra şeklini kaybeder" } },
+        { "type": "con_item", "settings": { "text": "Yavaş uyum — 'yapışkan' hissettirir" } },
+        { "type": "con_item", "settings": { "text": "Genellikle kimyasal koku (gaz çıkışı)" } }
+      ]
+    }
+  ]
 }
 {% endschema %}
