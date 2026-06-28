@@ -1,0 +1,38 @@
+<section class="bg-muted border-y border-border">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex flex-wrap justify-center gap-x-8 gap-y-3">
+      {% for block in section.blocks %}
+        <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
+          <span class="text-gold w-4 h-4">{{ block.settings.svg_code }}</span>
+          <span class="font-body text-xs uppercase tracking-wider text-muted-foreground">{{ block.settings.title }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust Badges",
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg_code",
+          "label": "SVG Icon Code"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Text",
+          "default": "101 gece deneme süresi"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Trust Badges"}]
+}
+{% endschema %}
