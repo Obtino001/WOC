@@ -12,7 +12,7 @@
     "hero": {
       "type": "sed-hero",
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-4xl",
         "image": "shopify://shop_images/sed-hero-DGXsUYgn.jpg",
         "heading_1": "REJUVENATE",
         "heading_2": "YOUR SKIN"
@@ -21,7 +21,7 @@
     "brand_intro": {
       "type": "sed-brand-intro",
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-3xl",
         "padding_top": 112,
         "padding_bottom": 144,
         "text": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home"
@@ -56,13 +56,43 @@
         "c2"
       ],
       "settings": {
-        "color_scheme": ""
+        "page_width": "max-w-full"
       }
     },
     "carousel": {
       "type": "sed-product-carousel",
+      "blocks": {
+        "product_FrnewH": {
+          "type": "product",
+          "settings": {
+            "product": "boss-lady-facelift",
+            "tag": "",
+            "title": "",
+            "subtitle": "",
+            "compare_price": "",
+            "price": "",
+            "product_url": ""
+          }
+        },
+        "product_hXp9E6": {
+          "type": "product",
+          "settings": {
+            "product": "boss-lady-facelift",
+            "tag": "",
+            "title": "",
+            "subtitle": "",
+            "compare_price": "",
+            "price": "",
+            "product_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_FrnewH",
+        "product_hXp9E6"
+      ],
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "collection": "guzellik-teknolojisi",
         "products_to_show": 8,
         "tab_1": "Best Sellers",
@@ -73,7 +103,7 @@
     "science_split": {
       "type": "sed-image-text-split",
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "image_position": "left",
         "image": "shopify://shop_images/sed-nefertiti-model-BAh5_jEp.jpg",
         "kicker": "THE SCIENCE BEHIND",
@@ -86,7 +116,7 @@
     "story_split": {
       "type": "sed-image-text-split",
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "image_position": "right",
         "image": "shopify://shop_images/sed-boss-lady-model-BfkzxlKJ.jpg",
         "kicker": "BORN IN SCANDINAVIA",
@@ -139,7 +169,7 @@
         "d4"
       ],
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "section_id": "devices-section",
         "kicker": "CUTTING-EDGE TECHNOLOGY",
         "columns": 3
@@ -179,7 +209,7 @@
         "s3"
       ],
       "settings": {
-        "color_scheme": "",
+        "page_width": "max-w-full",
         "section_id": "skincare-section",
         "kicker": "HIGH PERFORMANCE SKINCARE",
         "columns": 3
