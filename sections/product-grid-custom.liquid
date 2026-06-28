@@ -1,3 +1,5 @@
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 <section class="py-20 {% if section.settings.bg_style == 'warm' %}section-light-warm{% else %}section-light{% endif %}" id="{{ section.settings.section_id }}">
   <div class="mx-auto px-4 lg:px-8 {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px]{% else %}page-width{% endif %}">
     
@@ -96,7 +98,7 @@
                 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
                 <product-form>
                   {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" class="product-variant-id" disabled>
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" class="product-variant-id">
                     <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-500 px-4 w-full bg-copper hover:bg-copper-hover text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider"
                       {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                       <span>
