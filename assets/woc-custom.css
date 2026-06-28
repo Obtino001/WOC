@@ -3542,10 +3542,6 @@ h1,h2,h3,h4 {
     background-color: rgb(180 83 9 / var(--tw-bg-opacity, 1))
 }
 
-.bg-background {
-    background-color: hsl(var(--background))
-}
-
 .bg-background\/10 {
     background-color: hsl(var(--background) / .1)
 }
