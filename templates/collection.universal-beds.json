@@ -9,27 +9,18 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "woc-hero",
-      "settings": {
-        "title_line1": "Universal Senge",
-        "title_line2": "Design & Komfort i Særklasse",
-        "subtitle": "Oplev Universal Beds — skræddersyet ergonomisk støtte kombineret med tidløst design, skabt til at forbedre din livskvalitet.",
-        "btn1_text": "Se udvalget",
-        "btn2_text": "Læs mere"
-      }
-    },
     "why_us": {
       "type": "woc-why-us",
       "settings": {
         "label": "UNIVERSAL BEDS",
         "title": "Senge i verdensklasse",
-        "description": "Få den ultimative søvnoplevelse med senge, der er designet til at støtte din krops unikke behov og sikre uforstyrret nattesøvn."
+        "description": "Få den ultimative søvnoplevelse med senge, der er designet til at støtte din krops unikke behov og sikre uforstyrret nattesøvn.",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "hero",
     "why_us"
   ]
 }
