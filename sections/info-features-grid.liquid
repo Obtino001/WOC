@@ -1,0 +1,77 @@
+<section class="py-20 bg-background">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    
+    <div class="text-center mb-8">
+      <p class="font-body text-sm uppercase tracking-[0.3em] text-gold mb-4">{{ section.settings.badge }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">{{ section.settings.title }}</h2>
+    </div>
+    
+    <div class="space-y-5 mb-14 max-w-3xl mx-auto font-body text-muted-foreground leading-relaxed [&>p]:mb-4">
+      {{ section.settings.main_content }}
+    </div>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for block in section.blocks %}
+        <div class="bg-card rounded-xl p-6 border border-border/40 hover:shadow-md transition-shadow" {{ block.shopify_attributes }}>
+          <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+            <span class="text-gold w-5 h-5 flex items-center justify-center">
+              {{ block.settings.svg_icon }}
+            </span>
+          </div>
+          <h3 class="font-display text-base font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Info & Features Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge",
+      "default": "NEDEN ÖNEMLİ"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Hayatınızın üçte birini yatakta geçiriyorsunuz. Bunu en iyi üçte birlik bölüm yapın."
+    },
+    {
+      "type": "richtext",
+      "id": "main_content",
+      "label": "Main Content Paragraphs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Box",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "SVG Icon Code"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Box Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Box Description"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Info & Features Grid"}]
+}
+{% endschema %}
