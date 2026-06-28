@@ -20,9 +20,14 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.bg_color == 'warm' %}related-products-section{% endif %} page-width">
+{%- assign container_class = 'page-width' -%}
+{%- if section.settings.page_width == 'full' -%}
+  {%- assign container_class = 'w-full px-4 md:px-8 lg:px-12 max-w-none' -%}
+{%- endif -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.bg_color == 'warm' %}related-products-section{% endif %}">
   <product-recommendations
-    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="related-products {{ container_class }} section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
@@ -87,6 +92,22 @@
         }
       ],
       "default": "warm"
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full Width"
+        },
+        {
+          "value": "standard",
+          "label": "Standard Width"
+        }
+      ],
+      "default": "full"
     },
     {
       "type": "text",
