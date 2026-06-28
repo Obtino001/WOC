@@ -9,22 +9,6 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "smart-beds-hero",
-      "settings": {
-        "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
-        "kicker": "Bespoke Sleeping Systems",
-        "heading": "",
-        "subheading": "Why should your bed be mass-produced?",
-        "description": "",
-        "button_1_text": "Discover the Collection",
-        "button_1_link": "",
-        "button_2_text": "How it Works",
-        "button_2_link": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "philosophy": {
       "type": "smart-beds-philosophy",
       "settings": {
@@ -742,7 +726,6 @@
     }
   },
   "order": [
-    "hero",
     "philosophy",
     "categories",
     "sovesystem",
