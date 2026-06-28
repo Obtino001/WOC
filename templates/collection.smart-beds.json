@@ -319,42 +319,42 @@
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "7 Massageprogrammer"
           }
         },
         "feature_tptMnj": {
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "3 Niveauer af Varme"
           }
         },
         "feature_PURnQe": {
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "AI Søvn Tracking"
           }
         },
         "feature_UxJNUK": {
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "Multi-Zone Luftmassage"
           }
         },
         "feature_9W6n9J": {
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "Passer til alle 90×200"
           }
         },
         "feature_XTVKLg": {
           "type": "feature",
           "settings": {
             "icon_svg": "",
-            "text": ""
+            "text": "Inkl. Fjernbetjening"
           }
         }
       },
@@ -642,7 +642,7 @@
         "padding_bottom": 52
       }
     },
-"faq_training": {
+    "faq_training": {
       "type": "quiz-faq-comprehensive",
       "blocks": {
         "f1": {
