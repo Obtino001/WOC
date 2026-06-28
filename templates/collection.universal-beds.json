@@ -64,7 +64,7 @@
         "bed_1": {
           "type": "product_card",
           "settings": {
-            "highlight": false,
+            "product_ref": "woc-supreme-kontinental",
             "badge": "Çok Satanlar",
             "title": "WOC Supreme Kontinental",
             "description": "Erteleme düğmesini karşı konulmaz yapın",
@@ -74,7 +74,7 @@
         "bed_2": {
           "type": "product_card",
           "settings": {
-            "highlight": true,
+            "product_ref": "woc-supreme-opbevaringsseng",
             "badge": "Premium",
             "title": "WOC Supreme Elevation",
             "description": "Sizi yedinci cennete taşıyor",
@@ -84,7 +84,7 @@
         "bed_3": {
           "type": "product_card",
           "settings": {
-            "highlight": false,
+            "product_ref": "woc-supreme-opbevaringsseng",
             "badge": "Akıllı seçim",
             "title": "WOC Supreme Depolama Yatağı",
             "description": "Özel konfor akıllı depolamayla buluşuyor",
@@ -99,7 +99,10 @@
       ],
       "settings": {
         "subtitle": "Yatak tipinizi seçin",
-        "title": "Üç tip, tek kalite"
+        "title": "Üç tip, tek kalite",
+        "from_text": "ŞURADAN",
+        "configure_text": "Yapılandır",
+        "installment_text": "Eller ₺7.530/md. i 10 mdr."
       }
     },
     "feature_split_z8yNGB": {
