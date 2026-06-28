@@ -1,0 +1,76 @@
+<section class="py-24 section-light overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">{{ section.settings.title }}</h2>
+        <p class="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed">{{ section.settings.description }}</p>
+      </div>
+
+      <div class="mb-12">
+        {% if section.settings.image %}
+          {{ section.settings.image | image_url: width: 1200 | image_tag: class: 'w-full rounded-2xl shadow-elevated' }}
+        {% endif %}
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        {% for block in section.blocks %}
+          <div class="text-center p-6 rounded-xl bg-background border border-border" {{ block.shopify_attributes }}>
+            <h4 class="font-display text-lg font-bold text-foreground mb-2">{{ block.settings.title }}</h4>
+            <p class="font-body text-sm text-muted-foreground">{{ block.settings.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ergonomic Zones",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "zone",
+      "name": "Zone Detail",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Zone Name"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Ergonomic Zones"}]
+}
+{% endschema %}
