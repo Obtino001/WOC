@@ -134,36 +134,42 @@
         "feature_QJV4hX": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-scan w-4 h-4 text-forest\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"></path><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"></path><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"></path><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"></path></svg>",
             "text": "Kişisel Vücut Tarama"
           }
         },
         "feature_nV4ztP": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-fingerprint w-4 h-4 text-forest\"><path d=\"M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4\"></path><path d=\"M14 13.12c0 2.38 0 6.38-1 8.88\"></path><path d=\"M17.29 21.02c.12-.6.43-2.3.5-3.02\"></path><path d=\"M2 12a10 10 0 0 1 18-6\"></path><path d=\"M2 16h.01\"></path><path d=\"M21.8 16c.2-2 .131-5.354 0-6\"></path><path d=\"M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2\"></path><path d=\"M8.65 22c.21-.66.45-1.32.57-2\"></path><path d=\"M9 6.8a6 6 0 0 1 9 5.2v2\"></path></svg>",
             "text": "1:1 Özel Yapım"
           }
         },
         "feature_3KhTiC": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-waves w-4 h-4 text-forest\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
             "text": "Salınım Masajı"
           }
         },
         "f1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-4 h-4 text-forest\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
             "text": "Salınım Masajı"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart w-4 h-4 text-forest\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "text": "Gümüş Antibakteriyel"
           }
         },
         "feature_AtJ8Ag": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-4 h-4 text-forest\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
             "text": "Hipoalerjenik Malzemeler"
           }
         }
@@ -220,61 +226,53 @@
         "feature_mT9ah8": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-brain w-4 h-4 text-forest\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
+            "text": "AI Justerbar Hårdhed (1-10)"
           }
         },
         "feature_myFNWJ": {
           "type": "feature",
           "settings": {
-            "text": ""
-          }
-        },
-        "feature_a9n7JU": {
-          "type": "feature",
-          "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-waves w-4 h-4 text-forest\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "text": "5 Zoners Luftmassage"
           }
         },
         "feature_JpX78a": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-cpu w-4 h-4 text-forest\"><rect width=\"16\" height=\"16\" x=\"4\" y=\"4\" rx=\"2\"></rect><rect width=\"6\" height=\"6\" x=\"9\" y=\"9\" rx=\"1\"></rect><path d=\"M15 2v2\"></path><path d=\"M15 20v2\"></path><path d=\"M2 15h2\"></path><path d=\"M2 9h2\"></path><path d=\"M20 15h2\"></path><path d=\"M20 9h2\"></path><path d=\"M9 2v2\"></path><path d=\"M9 20v2\"></path></svg>",
+            "text": "4 Massageprogrammer"
           }
         },
         "feature_8G9zEL": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity w-4 h-4 text-forest\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "text": "3 Intensitet Niveauer"
           }
         },
         "feature_U7Mz9T": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer-sun w-4 h-4 text-forest\"><path d=\"M12 9a4 4 0 0 0-2 7.5\"></path><path d=\"M12 3v2\"></path><path d=\"m6.6 18.4-1.4 1.4\"></path><path d=\"M20 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path><path d=\"M4 13H2\"></path><path d=\"M6.34 7.34 4.93 5.93\"></path></svg>",
+            "text": "Is Silke med Cool Touch"
           }
         },
         "feature_h9j867": {
           "type": "feature",
           "settings": {
-            "text": ""
-          }
-        },
-        "feature_BBQWVx": {
-          "type": "feature",
-          "settings": {
-            "text": ""
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-moon w-4 h-4 text-forest\"><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\"></path></svg>",
+            "text": "Langsom Respons Memory Skum"
           }
         }
       },
       "block_order": [
         "feature_mT9ah8",
         "feature_myFNWJ",
-        "feature_a9n7JU",
         "feature_JpX78a",
         "feature_8G9zEL",
         "feature_U7Mz9T",
-        "feature_h9j867",
-        "feature_BBQWVx"
+        "feature_h9j867"
       ],
       "settings": {
         "section_id": "ai-mattress",
@@ -320,36 +318,42 @@
         "feature_3jWV6m": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_tptMnj": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_PURnQe": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_UxJNUK": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_9W6n9J": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_XTVKLg": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -405,36 +409,42 @@
         "feature_AMT3ET": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_TDxwRT": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_btdD3B": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_qw4Mkz": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_JAbcUx": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_3iDVdV": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -490,36 +500,42 @@
         "feature_NK3qrk": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_FGJ9dJ": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_N4adqb": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_chthmT": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_Jhi9fq": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_6ydzdW": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -626,40 +642,274 @@
         "padding_bottom": 52
       }
     },
-    "faq": {
-      "type": "smart-beds-faq",
+"faq_training": {
+      "type": "quiz-faq-comprehensive",
       "blocks": {
-        "q1": {
-          "type": "faq",
+        "f1": {
+          "type": "question",
           "settings": {
-            "question": "Doğru yatak sağlığım için neden bu kadar önemli?",
-            "answer": "<p>Hayatınızın yaklaşık üçte birini yatakta geçirirsiniz. Vücudunuza uymayan bir yatak sırt ağrısı, boyun ağrısı, düşük uyku kalitesine neden olabilir ve hatta ruh halinizi, enerji seviyenizi ve bağışıklık sisteminizi bile etkileyebilir.</p>"
+            "category": "Sandalye Seçimi",
+            "question": "2D, 3D ve 4D masaj teknolojileri arasındaki fark nedir?",
+            "answer": "<p>2D silindirler omurga boyunca sabit bir basınçla yukarı ve aşağı hareket eder...</p>"
           }
         },
-        "q2": {
-          "type": "faq",
+        "f2": {
+          "type": "question",
           "settings": {
-            "question": "Yapay zeka (AI) yatak nedir ve nasıl çalışır?",
-            "answer": "<p>Bir AI yatak, vücudunuzu analiz etmek ve desteği otomatik olarak ayarlamak için sensörler ve akıllı yazılımlar kullanır. Yapay zeka yataklarımız, vücudunuzun basınç dağılımını tarar ve sertliği bağımsız birkaç bölgede uyarlar.</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Doğru masaj koltuğunu nasıl seçerim?",
+            "answer": "<p>Üç faktörü göz önünde bulundurun...</p>"
+          }
+        },
+        "f3": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "World of Comfort'u Komoder, IWAO veya Casada gibi markalardan ayıran nedir?",
+            "answer": "<p>Bizi ayıran üç şey var...</p>"
+          }
+        },
+        "f4": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Bir masaj koltuğu gerçekten bu yatırıma değer mi?",
+            "answer": "<p>Şunu düşünün...</p>"
+          }
+        },
+        "f5": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Satın almadan önce bir masaj koltuğunu deneyebilir miyim?",
+            "answer": "<p>Kesinlikle. Kopenhag'da showroomlarımız var...</p>"
+          }
+        },
+        "f6": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Koltuklarınız hangi boy ve kilo aralıklarını destekliyor?",
+            "answer": "<p>Koltuklarımız çok çeşitli vücut tiplerine uyar...</p>"
+          }
+        },
+        "f7": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "XD Precision Engine™ teknolojisi nedir?",
+            "answer": "<p>XD Precision Engine™ tescilli masaj sistemimizdir...</p>"
+          }
+        },
+        "f8": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Sıfır Yer Çekimi (Zero Gravity) pozisyonu nedir ve neden önemlidir?",
+            "answer": "<p>NASA'dan ilham alan Sıfır Yer Çekimi pozisyonu...</p>"
+          }
+        },
+        "f9": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltukların ısıtma fonksiyonu var mı?",
+            "answer": "<p>Evet, tüm koltuklarımıza entegre kızılötesi ısı...</p>"
+          }
+        },
+        "f10": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "SL-Track ve L-Track arasındaki fark nedir?",
+            "answer": "<p>SL-Track boyundan belin alt kısmına kadar kapsar...</p>"
+          }
+        },
+        "f11": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltuk Bluetooth'a bağlanabilir mi?",
+            "answer": "<p>Evet, koltuklarımızda dahili Bluetooth hoparlörler bulunur...</p>"
+          }
+        },
+        "f12": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Masaj koltukları ne kadar gürültülü?",
+            "answer": "<p>Koltuklarımız tipik olarak 40–50 dB seviyesinde çalışır...</p>"
+          }
+        },
+        "f13": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat nasıl işliyor?",
+            "answer": "<p>İstediğiniz odaya doğrudan özel hizmetle (white-glove) teslimat yapıyoruz...</p>"
+          }
+        },
+        "f14": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat süresi ne kadardır?",
+            "answer": "<p>Stoktaki koltuklar 5–10 iş günü içinde teslim edilir...</p>"
+          }
+        },
+        "f15": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Koltuk merdivenlerden çıkarılabilir mi?",
+            "answer": "<p>Evet, teslimat ekibimiz standart olarak 3. kata kadar merdivenleri halleder...</p>"
+          }
+        },
+        "f16": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Bir masaj koltuğu ne kadar alan gerektirir?",
+            "answer": "<p>Koltuklarımız duvardan tipik olarak 70–90 cm boşluk gerektirir...</p>"
+          }
+        },
+        "f17": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Garanti neleri kapsar?",
+            "answer": "<p>5 yıllık garantimiz tüm mekanik ve elektronik bileşenleri kapsar...</p>"
+          }
+        },
+        "f18": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Koltuğumun tamir edilmesi gerekirse ne olur?",
+            "answer": "<p>Destek hattımızı arayın...</p>"
+          }
+        },
+        "f19": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Garanti süresi bitiminden sonra servis anlaşmaları sunuyor musunuz?",
+            "answer": "<p>Evet, uzatılmış servis anlaşmaları sunuyoruz...</p>"
+          }
+        },
+        "f20": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Koltuğum için yedek parça alabilir miyim?",
+            "answer": "<p>Eksiksiz bir yedek parça stoğu bulunduruyoruz...</p>"
+          }
+        },
+        "f21": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Finansman veya taksit planları sunuyor musunuz?",
+            "answer": "<p>Evet, önde gelen finansman ortaklarıyla işbirliği yapıyoruz...</p>"
+          }
+        },
+        "f22": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Fiyat garantisi var mı?",
+            "answer": "<p>Evet, 30 günlük fiyat garantisi sunuyoruz...</p>"
+          }
+        },
+        "f23": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Şirketler masaj koltuğu kiralayabilir mi?",
+            "answer": "<p>Kesinlikle. Vergi avantajlarıyla kurumsal kiralama sunuyoruz...</p>"
+          }
+        },
+        "f24": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Masaj koltuğumun bakımını nasıl yaparım?",
+            "answer": "<p>Koltuğu haftada bir nemli bir bezle silin...</p>"
+          }
+        },
+        "f25": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Bir masaj koltuğunun ömrü ne kadardır?",
+            "answer": "<p>Uygun bakımla koltuklarımız 15–20 yıl dayanır...</p>"
+          }
+        },
+        "f26": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Koltuk birden fazla aile üyesi tarafından kullanılabilir mi?",
+            "answer": "<p>Evet, yapay zeka hafızalı koltuklarımız 6 adede kadar bireysel kullanıcı profilini kaydedebilir...</p>"
+          }
+        },
+        "f27": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Yatağımın bakımını nasıl yapmalıyım?",
+            "answer": "<p>Cevap buraya eklenecek...</p>"
+          }
+        },
+        "f28": {
+          "type": "question",
+          "settings": {
+            "category": "Uyku ve Sağlık",
+            "question": "Yatağımı ne zaman değiştirmeliyim?",
+            "answer": "<p>Cevap buraya eklenecek...</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2"
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26",
+        "f27",
+        "f28"
       ],
       "settings": {
+        "padding_top": 80,
+        "padding_bottom": 96,
+        "section_id": "faq",
         "kicker": "Sıkça Sorulan Sorular",
-        "heading": "Uyku Sistemleri Hakkında <span class=\"italic text-gold\">Bilmek İstediğiniz Her Şey</span>",
-        "description": "",
-        "contact_link": "",
-        "cat_1_text": "Uyku ve Sağlık",
-        "cat_2_text": "Malzemeler ve Kalite",
-        "cat_3_text": "Teknoloji",
-        "contact_heading": "Hala sorularınız mı var?",
-        "contact_subheading": "Uyku uzmanlarımız size yardımcı olmaya hazır.",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "heading": "Bilmek İstediğiniz Her Şey <span class=\"italic text-gold\">Uyku Sistemleri Hakkında</span>",
+        "description": "Kişiye özel uyku sistemlerimiz, malzemelerimiz ve sipariş sürecimiz hakkında en sık sorulan soruların yanıtlarını bulun.",
+        "search_placeholder": "Sorularda arayın...",
+        "contact_title": "Hala sorularınız mı var?",
+        "contact_text": "Uyku uzmanlarımız size yardımcı olmaya hazır."
       }
     },
     "testimonials": {
@@ -747,14 +997,14 @@
       "type": "smart-beds-bottom-cta",
       "settings": {
         "kicker": "Kişiye Özel Deneyim",
-        "heading": "Vücudunuz\n<span class=\"italic text-gold\">Ortalamadan Daha İyisini Hak Ediyor</span>",
+        "heading": "Din Krop Fortjener Det\n<span class=\"italic text-gold\">Bedre end Gennemsnittet</span>",
         "description": "",
-        "btn1_text": "Ücretsiz danışmanlık randevusu alın",
+        "btn1_text": "Få en gratis konsultation",
         "btn1_link": "",
-        "btn2_text": "Mağazamızı Ziyaret Edin",
+        "btn2_text": "Besøg Showroomet",
         "btn2_link": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
@@ -769,7 +1019,7 @@
     "smart_beds_showcase_KWPbNk",
     "smart_beds_showcase_PxEB3g",
     "comparison",
-    "faq",
+    "faq_training",
     "testimonials",
     "features",
     "bottom_cta"
