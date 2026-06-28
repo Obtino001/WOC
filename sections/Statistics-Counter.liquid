@@ -1,0 +1,151 @@
+<section class="bg-corporate-dark py-6 border-y border-corporate/20" id="statistics-counter-{{ section.id }}">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      
+      {% for block in section.blocks %}
+        <div class="text-center" {{ block.shopify_attributes }}>
+          <p class="font-display text-3xl md:text-4xl font-bold text-corporate">
+            <span class="stat-counter" data-target="{{ block.settings.number }}">0</span><span>{{ block.settings.suffix }}</span>
+          </p>
+          <p class="font-body text-xs md:text-sm text-white/60 mt-1">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const section = document.getElementById('statistics-counter-{{ section.id }}');
+    const counters = section.querySelectorAll('.stat-counter');
+    const animationDuration = 2000; // Animation duration in milliseconds
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const frameRate = 16; // Roughly 60fps
+        const totalFrames = animationDuration / frameRate;
+        const increment = target / totalFrames;
+        
+        let current = 0;
+        
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.innerText = Math.ceil(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        
+        updateCounter();
+      });
+    };
+
+    // Use Intersection Observer to trigger animation only when section is visible
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.3 // Triggers when 30% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, observerOptions);
+
+    if (section) {
+      observer.observe(section);
+    }
+  });
+
+  // Support for Shopify Theme Editor (re-run animation when section is reloaded in editor)
+  document.addEventListener('shopify:section:load', function(event) {
+    if (event.detail.sectionId === '{{ section.id }}') {
+      const section = document.getElementById('statistics-counter-{{ section.id }}');
+      const counters = section.querySelectorAll('.stat-counter');
+      counters.forEach(counter => {
+        counter.innerText = counter.getAttribute('data-target');
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Statistics Counter",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "number",
+          "id": "number",
+          "label": "Target Number",
+          "default": 100,
+          "info": "The number to count up to."
+        },
+        {
+          "type": "text",
+          "id": "suffix",
+          "label": "Suffix (Optional)",
+          "info": "E.g., '%', '+', or 'M'"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Statistics Counter",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "number": 85,
+            "suffix": "%",
+            "description": "WOC ErgoPro ile daha az stres yaşıyor"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": 500,
+            "suffix": "",
+            "description": "WOC araştırmasına verilen yanıt"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": 65,
+            "suffix": "+",
+            "description": "iş yeri etkiyi belgeliyor"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": 10,
+            "suffix": "+",
+            "description": "yıllık araştırma temelli deneyim"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
