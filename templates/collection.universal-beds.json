@@ -343,6 +343,127 @@
     },
     "comparison_table": {
       "type": "comparison-table",
+      "blocks": {
+        "row_ARV4hE": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_xWrHLz": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_aWiQiN": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_Cfcmaa": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_Wdg4fk": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_fAGkkd": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_7aFpfJ": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_bmUKYP": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_wCkz3M": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_tUhfTF": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_f4FHQM": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_PmhCac": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        },
+        "row_PwpTbq": {
+          "type": "row",
+          "settings": {
+            "feature": "Ekstra yatak malzemesi",
+            "woc_val": "60mm %100 Talalay lateks",
+            "comp_val": "Soğuk köpük / hafızalı köpük"
+          }
+        }
+      },
+      "block_order": [
+        "row_ARV4hE",
+        "row_xWrHLz",
+        "row_aWiQiN",
+        "row_Cfcmaa",
+        "row_Wdg4fk",
+        "row_fAGkkd",
+        "row_7aFpfJ",
+        "row_bmUKYP",
+        "row_wCkz3M",
+        "row_tUhfTF",
+        "row_f4FHQM",
+        "row_PmhCac",
+        "row_PwpTbq"
+      ],
       "settings": {
         "badge": "Dürüst karşılaştırma",
         "title": "Neden WOC Supreme'i Seçmelisiniz?",
