@@ -23,7 +23,7 @@
         "p1": {
           "type": "product_card",
           "settings": {
-            "product": "",
+            "product": "fitnessplate-xd",
             "image": "shopify://shop_images/hw-fitnessplate-xd-ChLGKbTX.webp",
             "badge_1": "-20% Save £209",
             "badge_2": "Bestseller",
@@ -37,7 +37,7 @@
         "p2": {
           "type": "product_card",
           "settings": {
-            "product": "",
+            "product": "home-pilates-reformer",
             "image": "shopify://shop_images/hw-pilates-reformer-DNR7jzX_0659f987-c72d-462c-be22-421c65b9cf5b.webp",
             "badge_1": "-36% Save £275",
             "badge_2": "2026 Most Selling",
@@ -51,7 +51,7 @@
         "p3": {
           "type": "product_card",
           "settings": {
-            "product": "",
+            "product": "compact-treadmill-pro-1",
             "image": "shopify://shop_images/treadmill-product-new-CUPl2-or_c3ae59fb-e3d9-4211-b775-a678bc0b678e.png",
             "badge_1": "",
             "badge_2": "Compact",
@@ -65,7 +65,7 @@
         "p4": {
           "type": "product_card",
           "settings": {
-            "product": "",
+            "product": "gulvstativ-med-hjul-til-red-light-panel-pro",
             "image": "shopify://shop_images/red-light-panel-300-BDerkwzw_1c181743-2e0b-40c1-b881-2ba68d62029a.png",
             "badge_1": "-20% Save £73",
             "badge_2": "Bestseller",
@@ -79,7 +79,7 @@
         "p5": {
           "type": "product_card",
           "settings": {
-            "product": "",
+            "product": "gulvstativ-med-hjul-til-red-light-panel-pro",
             "image": "shopify://shop_images/rl-panel-pro-product-BInCzdmz_e6435bed-0a23-4e89-8628-a05d740d7046.png",
             "badge_1": "",
             "badge_2": "Exclusive",
@@ -99,7 +99,6 @@
         "p5"
       ],
       "settings": {
-        "color_scheme": "scheme-2",
         "padding_top": 64,
         "padding_bottom": 80,
         "heading": "Tüm ürünleri inceleyin",
@@ -109,7 +108,6 @@
     "editorial": {
       "type": "hw-split-editorial",
       "settings": {
-        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
         "image": "shopify://shop_images/hw-pilates-reformer-DNR7jzX_023fd184-4382-4ce5-a5f0-213bb45cd2f8.webp",
@@ -159,7 +157,6 @@
         "g4"
       ],
       "settings": {
-        "color_scheme": "",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -167,7 +164,6 @@
     "cta": {
       "type": "hw-cta-box",
       "settings": {
-        "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
         "product": "",
