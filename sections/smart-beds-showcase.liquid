@@ -59,11 +59,11 @@
               {%- for block in section.blocks -%}
                 {%- if block.type == 'feature' -%}
                   <div class="flex items-center gap-3" {{ block.shopify_attributes }}>
-                    <div class="flex-shrink-0 flex items-center justify-center">
+                    <div class="w-8 h-8 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
                       {%- if block.settings.icon_svg != blank -%}
-                        <span class="w-5 h-5 flex items-center justify-center text-forest [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-[1.5]">{{ block.settings.icon_svg }}</span>
+                        <span class="w-4 h-4 flex items-center justify-center text-forest [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-[1.5]">{{ block.settings.icon_svg }}</span>
                       {%- elsif block.settings.icon_image != blank -%}
-                        {{ block.settings.icon_image | image_url: width: 32 | image_tag: class: 'w-5 h-5 object-contain' }}
+                        {{ block.settings.icon_image | image_url: width: 32 | image_tag: class: 'w-4 h-4 object-contain' }}
                       {%- endif -%}
                     </div>
                     <span class="font-body text-xs text-foreground">{{ block.settings.text }}</span>
@@ -74,20 +74,24 @@
           {%- endif -%}
           
           <div class="flex items-center gap-6 mb-8">
-            <div>
-              {%- if section.settings.price_prefix != blank -%}
-                <span class="font-body text-xs text-muted-foreground">{{ section.settings.price_prefix }}</span>
-              {%- endif -%}
-              <div class="flex items-baseline gap-3">
-                {%- if section.settings.compare_price != blank -%}
-                  <span class="font-body text-sm text-muted-foreground line-through">{{ section.settings.compare_price }}</span>
+            {%- if section.settings.product != blank -%}
+              {%- assign showcase_product = section.settings.product -%}
+              {%- assign current_variant = showcase_product.selected_or_first_available_variant -%}
+              <div>
+                {%- if current_variant.title != 'Default Title' -%}
+                  <span class="font-body text-xs text-muted-foreground">{{ current_variant.title }}</span>
                 {%- endif -%}
-                <p class="font-display text-3xl font-normal text-foreground">{{ section.settings.price }}</p>
+                <div class="flex items-baseline gap-3">
+                  {%- if current_variant.compare_at_price > current_variant.price -%}
+                    <span class="font-body text-sm text-muted-foreground line-through">{{ current_variant.compare_at_price | money }}</span>
+                  {%- endif -%}
+                  <p class="font-display text-3xl font-normal text-foreground">{{ current_variant.price | money }}</p>
+                </div>
+                {%- if section.settings.price_suffix != blank -%}
+                  <p class="font-body text-xs text-gold mt-1">{{ section.settings.price_suffix }}</p>
+                {%- endif -%}
               </div>
-              {%- if section.settings.price_suffix != blank -%}
-                <p class="font-body text-xs text-gold mt-1">{{ section.settings.price_suffix }}</p>
-              {%- endif -%}
-            </div>
+            {%- endif -%}
             
             {%- if section.settings.show_stars -%}
               <div class="flex items-center gap-1">
@@ -379,21 +383,7 @@
       "id": "description",
       "label": "Description"
     },
-    {
-      "type": "text",
-      "id": "price_prefix",
-      "label": "Price Prefix (e.g. From)"
-    },
-    {
-      "type": "text",
-      "id": "price",
-      "label": "Main Price"
-    },
-    {
-      "type": "text",
-      "id": "compare_price",
-      "label": "Compare at Price"
-    },
+
     {
       "type": "text",
       "id": "price_suffix",
