@@ -9,67 +9,24 @@
  */
 {
   "sections": {
-    "woc_hero_WdztNp": {
-      "type": "woc-hero",
-      "blocks": {
-        "usp_a98aUa": {
-          "type": "usp",
-          "settings": {
-            "icon": "award",
-            "custom_icon_svg": "",
-            "text": "Nordic Wellness Leader"
-          }
-        },
-        "usp_wEbaHj": {
-          "type": "usp",
-          "settings": {
-            "icon": "cpu",
-            "custom_icon_svg": "",
-            "text": "Unique AI Technology"
-          }
-        },
-        "usp_Hy7BnN": {
-          "type": "usp",
-          "settings": {
-            "icon": "heart",
-            "custom_icon_svg": "",
-            "text": "Professionally Recommended"
-          }
-        },
-        "usp_Rgg4cX": {
-          "type": "usp",
-          "settings": {
-            "icon": "truck",
-            "custom_icon_svg": "",
-            "text": "White-Glove Delivery"
-          }
-        }
-      },
-      "block_order": [
-        "usp_a98aUa",
-        "usp_wEbaHj",
-        "usp_Hy7BnN",
-        "usp_Rgg4cX"
-      ],
-      "name": "WOC Hero Banner",
+    "custom_hero_banner_YGUCGa": {
+      "type": "custom-hero-banner",
+      "name": "Split Content Hero",
       "settings": {
-        "overlay_color": "#000000",
-        "overlay_opacity": 40,
-        "hero_label": "",
-        "title_line1": "İki Vücut",
-        "title_line2": "Aynı Değildir",
-        "subtitle": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır — vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil.\n\nKoleksiyonu",
-        "show_reviews": false,
-        "btn1_text": "Koleksiyonu Keşfedin",
-        "btn1_url": "",
-        "btn2_text": "Nasıl Çalışır",
-        "btn2_url": "",
-        "btn3_text": "",
-        "btn3_url": "",
-        "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Chiropractor · Nordic Spine & Wellness",
-        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
-        "expert_badge_text": "Professionally recommended"
+        "bg_image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
+        "subtitle": "KİŞİYE ÖZEL UYKU SİSTEMLERİ",
+        "subtitle_color": "#d19f54",
+        "title": "İki VücutAynı Değildir",
+        "title_color": "#ffffff",
+        "text": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır - vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil.",
+        "text_color": "#e0e0e0",
+        "btn_1_text": "KOLEKSİYONU KEŞFEDİN",
+        "btn_1_url": "",
+        "btn_1_bg": "#c69c51",
+        "btn_1_text_color": "#1a1a1a",
+        "btn_2_text": "NASIL ÇALIŞIR",
+        "btn_2_url": "",
+        "btn_2_color": "#ffffff"
       }
     },
     "hero": {
@@ -793,7 +750,7 @@
     }
   },
   "order": [
-    "woc_hero_WdztNp",
+    "custom_hero_banner_YGUCGa",
     "hero",
     "philosophy",
     "categories",
