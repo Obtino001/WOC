@@ -19,7 +19,7 @@
           </thead>
           <tbody class="font-body text-sm">
             {% for block in section.blocks %}
-              <tr class="{% cycle 'bg-muted/20', '' %}" {{ block.shopify_attributes }}>
+              <tr class="" {{ block.shopify_attributes }}>
                 <td class="py-3.5 px-4 font-medium text-foreground">{{ block.settings.feature }}</td>
                 <td class="py-3.5 px-4 text-center bg-gold/5 font-semibold text-foreground">{{ block.settings.woc_val }}</td>
                 <td class="py-3.5 px-4 text-center text-muted-foreground">{{ block.settings.comp_val }}</td>
