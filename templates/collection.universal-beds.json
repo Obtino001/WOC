@@ -102,39 +102,6 @@
         "title": "Üç tip, tek kalite"
       }
     },
-    "feature_split_talalay": {
-      "type": "feature-split",
-      "blocks": {
-        "check_item_zq6Taz": {
-          "type": "check_item",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "check_item_zq6Taz"
-      ],
-      "settings": {
-        "bg_light": true,
-        "alignment": "center",
-        "image_position": "left",
-        "badge": "100% Doğal Talalay Lateks",
-        "title": "Kendine has bir üst şilte",
-        "description": "<p>60 mm Talalay lateks üst şiltemiz standart bir üst şilte değildir — uzanabileceğiniz en gelişmiş uyku yüzeyidir. Doğal olarak antibakteriyel özelliklere, serinletici hava sirkülasyonuna ve benzersiz bir yaz/kış dönüştürme işlevine sahip, Danimarka iklimi için tasarlanmış bir üst şilte elde edersiniz.<br/><br/></p>"
-      }
-    },
-    "feature_split_springs": {
-      "type": "feature-split",
-      "settings": {
-        "bg_light": false,
-        "alignment": "left",
-        "image_position": "left",
-        "badge": "Tüm 3 modelde standarttır",
-        "title": "Bireysel olarak kaplanmış torba yaylar",
-        "description": "<p>Yataklarımızdaki her yay, kendi kumaş torbasında ayrı ayrı kapsüllenmiştir. Bu, aşağıdaki anlama gelir: <strong>her yay bağımsız çalışır</strong> — böylece yatak, geleneksel bonel yaylardaki gibi \"bir bütün\" olmak yerine vücudunuzun benzersiz hatlarına nokta nokta uyum sağlar.</p><p>Şu kadar ile <strong>m² başına 220 torba yay</strong> olağanüstü nokta esnekliğine sahip bir yatak elde edersiniz. Bu, hareket transferini ortadan kaldırır — eşiniz döndüğünde, siz <em>hiçbir şey</em>.</p><p>Torba yaylar, bir katman <strong>doğal lateks</strong>ile birleştirilmiştir ve sürekli nefes alabilirlik ve sıcaklık düzenlemesi sağlar. Sonuç olarak, gece boyunca, yıl boyunca destekleyen, havalandıran ve esnekliğini koruyan bir yatak elde edilir — şuna kadar: <strong>15 yıl garanti</strong>.</p>"
-      }
-    },
     "hardness_guide": {
       "type": "feature-hardness",
       "settings": {
@@ -149,11 +116,15 @@
       "type": "feature-split",
       "settings": {
         "bg_light": false,
-        "alignment": "left",
-        "image_position": "right",
         "badge": "Doğal olarak antibakteriyel",
-        "title": "Daha sağlıklı uyuyun — her gece",
-        "description": ""
+        "main_title": "",
+        "main_description": "",
+        "image_position": "right",
+        "content_title": "",
+        "content_text": "",
+        "show_comparison": true,
+        "pros_title": "✓ WOC Talalay Lateks",
+        "cons_title": "✗ Standart Hafızalı Köpük"
       }
     },
     "ergonomic_zones": {
@@ -168,11 +139,15 @@
       "type": "feature-split",
       "settings": {
         "bg_light": false,
-        "alignment": "left",
-        "image_position": "left",
         "badge": "Danimarka el işçiliği",
-        "title": "Tutku ve hassasiyetle üretilmiştir",
-        "description": ""
+        "main_title": "",
+        "main_description": "",
+        "image_position": "left",
+        "content_title": "",
+        "content_text": "",
+        "show_comparison": true,
+        "pros_title": "✓ WOC Talalay Lateks",
+        "cons_title": "✗ Standart Hafızalı Köpük"
       }
     },
     "comparison_table": {
@@ -190,11 +165,15 @@
       "type": "feature-split",
       "settings": {
         "bg_light": false,
-        "alignment": "center",
-        "image_position": "left",
         "badge": "",
-        "title": "Tüm ayarlanabilir yataklarda Danimarka LINAK® motoru",
-        "description": ""
+        "main_title": "",
+        "main_description": "",
+        "image_position": "left",
+        "content_title": "",
+        "content_text": "",
+        "show_comparison": true,
+        "pros_title": "✓ WOC Talalay Lateks",
+        "cons_title": "✗ Standart Hafızalı Köpük"
       }
     },
     "cta_banner": {
@@ -211,8 +190,6 @@
     "hero_banner",
     "trust_badges",
     "product_selector",
-    "feature_split_talalay",
-    "feature_split_springs",
     "hardness_guide",
     "feature_split_antibacterial",
     "ergonomic_zones",
