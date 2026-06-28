@@ -642,40 +642,274 @@
         "padding_bottom": 52
       }
     },
-    "faq": {
-      "type": "smart-beds-faq",
+"faq_training": {
+      "type": "quiz-faq-comprehensive",
       "blocks": {
-        "q1": {
-          "type": "faq",
+        "f1": {
+          "type": "question",
           "settings": {
-            "question": "Doğru yatak sağlığım için neden bu kadar önemli?",
-            "answer": "<p>Hayatınızın yaklaşık üçte birini yatakta geçirirsiniz. Vücudunuza uymayan bir yatak sırt ağrısı, boyun ağrısı, düşük uyku kalitesine neden olabilir ve hatta ruh halinizi, enerji seviyenizi ve bağışıklık sisteminizi bile etkileyebilir.</p>"
+            "category": "Sandalye Seçimi",
+            "question": "2D, 3D ve 4D masaj teknolojileri arasındaki fark nedir?",
+            "answer": "<p>2D silindirler omurga boyunca sabit bir basınçla yukarı ve aşağı hareket eder...</p>"
           }
         },
-        "q2": {
-          "type": "faq",
+        "f2": {
+          "type": "question",
           "settings": {
-            "question": "Yapay zeka (AI) yatak nedir ve nasıl çalışır?",
-            "answer": "<p>Bir AI yatak, vücudunuzu analiz etmek ve desteği otomatik olarak ayarlamak için sensörler ve akıllı yazılımlar kullanır. Yapay zeka yataklarımız, vücudunuzun basınç dağılımını tarar ve sertliği bağımsız birkaç bölgede uyarlar.</p>"
+            "category": "Sandalye Seçimi",
+            "question": "Doğru masaj koltuğunu nasıl seçerim?",
+            "answer": "<p>Üç faktörü göz önünde bulundurun...</p>"
+          }
+        },
+        "f3": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "World of Comfort'u Komoder, IWAO veya Casada gibi markalardan ayıran nedir?",
+            "answer": "<p>Bizi ayıran üç şey var...</p>"
+          }
+        },
+        "f4": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Bir masaj koltuğu gerçekten bu yatırıma değer mi?",
+            "answer": "<p>Şunu düşünün...</p>"
+          }
+        },
+        "f5": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Satın almadan önce bir masaj koltuğunu deneyebilir miyim?",
+            "answer": "<p>Kesinlikle. Kopenhag'da showroomlarımız var...</p>"
+          }
+        },
+        "f6": {
+          "type": "question",
+          "settings": {
+            "category": "Sandalye Seçimi",
+            "question": "Koltuklarınız hangi boy ve kilo aralıklarını destekliyor?",
+            "answer": "<p>Koltuklarımız çok çeşitli vücut tiplerine uyar...</p>"
+          }
+        },
+        "f7": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "XD Precision Engine™ teknolojisi nedir?",
+            "answer": "<p>XD Precision Engine™ tescilli masaj sistemimizdir...</p>"
+          }
+        },
+        "f8": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Sıfır Yer Çekimi (Zero Gravity) pozisyonu nedir ve neden önemlidir?",
+            "answer": "<p>NASA'dan ilham alan Sıfır Yer Çekimi pozisyonu...</p>"
+          }
+        },
+        "f9": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltukların ısıtma fonksiyonu var mı?",
+            "answer": "<p>Evet, tüm koltuklarımıza entegre kızılötesi ısı...</p>"
+          }
+        },
+        "f10": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "SL-Track ve L-Track arasındaki fark nedir?",
+            "answer": "<p>SL-Track boyundan belin alt kısmına kadar kapsar...</p>"
+          }
+        },
+        "f11": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Koltuk Bluetooth'a bağlanabilir mi?",
+            "answer": "<p>Evet, koltuklarımızda dahili Bluetooth hoparlörler bulunur...</p>"
+          }
+        },
+        "f12": {
+          "type": "question",
+          "settings": {
+            "category": "Teknoloji ve Özellikler",
+            "question": "Masaj koltukları ne kadar gürültülü?",
+            "answer": "<p>Koltuklarımız tipik olarak 40–50 dB seviyesinde çalışır...</p>"
+          }
+        },
+        "f13": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat nasıl işliyor?",
+            "answer": "<p>İstediğiniz odaya doğrudan özel hizmetle (white-glove) teslimat yapıyoruz...</p>"
+          }
+        },
+        "f14": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Teslimat süresi ne kadardır?",
+            "answer": "<p>Stoktaki koltuklar 5–10 iş günü içinde teslim edilir...</p>"
+          }
+        },
+        "f15": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Koltuk merdivenlerden çıkarılabilir mi?",
+            "answer": "<p>Evet, teslimat ekibimiz standart olarak 3. kata kadar merdivenleri halleder...</p>"
+          }
+        },
+        "f16": {
+          "type": "question",
+          "settings": {
+            "category": "Teslimat ve Kurulum",
+            "question": "Bir masaj koltuğu ne kadar alan gerektirir?",
+            "answer": "<p>Koltuklarımız duvardan tipik olarak 70–90 cm boşluk gerektirir...</p>"
+          }
+        },
+        "f17": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Garanti neleri kapsar?",
+            "answer": "<p>5 yıllık garantimiz tüm mekanik ve elektronik bileşenleri kapsar...</p>"
+          }
+        },
+        "f18": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Koltuğumun tamir edilmesi gerekirse ne olur?",
+            "answer": "<p>Destek hattımızı arayın...</p>"
+          }
+        },
+        "f19": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Garanti süresi bitiminden sonra servis anlaşmaları sunuyor musunuz?",
+            "answer": "<p>Evet, uzatılmış servis anlaşmaları sunuyoruz...</p>"
+          }
+        },
+        "f20": {
+          "type": "question",
+          "settings": {
+            "category": "Garanti ve Servis",
+            "question": "Koltuğum için yedek parça alabilir miyim?",
+            "answer": "<p>Eksiksiz bir yedek parça stoğu bulunduruyoruz...</p>"
+          }
+        },
+        "f21": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Finansman veya taksit planları sunuyor musunuz?",
+            "answer": "<p>Evet, önde gelen finansman ortaklarıyla işbirliği yapıyoruz...</p>"
+          }
+        },
+        "f22": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Fiyat garantisi var mı?",
+            "answer": "<p>Evet, 30 günlük fiyat garantisi sunuyoruz...</p>"
+          }
+        },
+        "f23": {
+          "type": "question",
+          "settings": {
+            "category": "Fiyat ve Finansman",
+            "question": "Şirketler masaj koltuğu kiralayabilir mi?",
+            "answer": "<p>Kesinlikle. Vergi avantajlarıyla kurumsal kiralama sunuyoruz...</p>"
+          }
+        },
+        "f24": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Masaj koltuğumun bakımını nasıl yaparım?",
+            "answer": "<p>Koltuğu haftada bir nemli bir bezle silin...</p>"
+          }
+        },
+        "f25": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Bir masaj koltuğunun ömrü ne kadardır?",
+            "answer": "<p>Uygun bakımla koltuklarımız 15–20 yıl dayanır...</p>"
+          }
+        },
+        "f26": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Koltuk birden fazla aile üyesi tarafından kullanılabilir mi?",
+            "answer": "<p>Evet, yapay zeka hafızalı koltuklarımız 6 adede kadar bireysel kullanıcı profilini kaydedebilir...</p>"
+          }
+        },
+        "f27": {
+          "type": "question",
+          "settings": {
+            "category": "Bakım",
+            "question": "Yatağımın bakımını nasıl yapmalıyım?",
+            "answer": "<p>Cevap buraya eklenecek...</p>"
+          }
+        },
+        "f28": {
+          "type": "question",
+          "settings": {
+            "category": "Uyku ve Sağlık",
+            "question": "Yatağımı ne zaman değiştirmeliyim?",
+            "answer": "<p>Cevap buraya eklenecek...</p>"
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2"
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26",
+        "f27",
+        "f28"
       ],
       "settings": {
+        "padding_top": 80,
+        "padding_bottom": 96,
+        "section_id": "faq",
         "kicker": "Sıkça Sorulan Sorular",
-        "heading": "Bilmek İstediğiniz Her Şey<span class=\"italic text-gold\">Uyku Sistemleri Hakkında</span>",
-        "description": "",
-        "contact_link": "",
-        "cat_1_text": "Uyku ve Sağlık",
-        "cat_2_text": "Malzemeler ve Kalite",
-        "cat_3_text": "Teknoloji",
-        "contact_heading": "Hala sorularınız mı var?",
-        "contact_subheading": "Uyku uzmanlarımız size yardımcı olmaya hazır.",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "heading": "Bilmek İstediğiniz Her Şey <span class=\"italic text-gold\">Uyku Sistemleri Hakkında</span>",
+        "description": "Kişiye özel uyku sistemlerimiz, malzemelerimiz ve sipariş sürecimiz hakkında en sık sorulan soruların yanıtlarını bulun.",
+        "search_placeholder": "Sorularda arayın...",
+        "contact_title": "Hala sorularınız mı var?",
+        "contact_text": "Uyku uzmanlarımız size yardımcı olmaya hazır."
       }
     },
     "testimonials": {
@@ -785,7 +1019,7 @@
     "smart_beds_showcase_KWPbNk",
     "smart_beds_showcase_PxEB3g",
     "comparison",
-    "faq",
+    "faq_training",
     "testimonials",
     "features",
     "bottom_cta"
