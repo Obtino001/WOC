@@ -185,8 +185,8 @@
     "about": {
       "type": "about-collection",
       "settings": {
-        "heading": "Om vores massageapparater",
-        "text": "<p>Vores mission er at gøre professionel massage tilgængelig for alle. Vi har cuttet dyre mellemled og leverer direkte til den kvalitetsbevidste forbruger, som ikke ønsker at betale overpris.</p><p>Hvor kvalitet og pris går hånd i hånd ❤️</p><p>Vi tilbyder en tilfredshedsgaranti på alle vores produkter. Vi ønsker, at du skal føle dig tryg ved dit køb, og derfor giver vi dig mulighed for at prøve produktet. Hvis du mod forventning ikke er fuldt ud tilfreds, kan du returnere det og få pengene tilbage.</p>"
+        "heading": "Masaj cihazlarımız hakkında",
+        "text": "<p>Misyonumuz profesyonel masajı herkes için erişilebilir kılmak. Pahalı aracıları kaldırıyor ve kalite odaklı müşterilere doğrudan teslimat yapıyoruz.</p><p>Kalite ve fiyatın el ele verdiği yer ❤️</p><p>Tüm ürünlerimizde memnuniyet garantisi sunuyoruz. Satın alımınızda kendinizi güvende hissetmenizi istiyoruz; bu yüzden ürünü deneme imkânı veriyoruz. Beklentilerinizi karşılamazsa iade edip paranızı geri alabilirsini</p>"
       }
     },
     "contact_help": {
@@ -231,7 +231,7 @@
       "settings": {
         "section_id": "products",
         "heading": "ALLE PRODUKTER",
-        "collection": "massage-devices",
+        "collection": "masaj-aletleri",
         "limit": 12,
         "show_filters": true,
         "show_discount_banner": true,
