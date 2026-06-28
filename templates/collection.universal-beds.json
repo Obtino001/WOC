@@ -105,6 +105,74 @@
         "installment_text": "Eller ₺7.530/md. i 10 mdr."
       }
     },
+    "universal_image_with_text_HE8EwH": {
+      "type": "universal-image-with-text",
+      "blocks": {
+        "check_item_VacakC": {
+          "type": "check_item",
+          "settings": {
+            "text": "Sıfır hareket transferi"
+          }
+        },
+        "check_item_NgQkX3": {
+          "type": "check_item",
+          "settings": {
+            "text": "M² başına 220 yaya kadar"
+          }
+        },
+        "check_item_ULVUxt": {
+          "type": "check_item",
+          "settings": {
+            "text": "Doğal lateks ile birleştirilmiş"
+          }
+        },
+        "check_item_QcY9Vk": {
+          "type": "check_item",
+          "settings": {
+            "text": "15 yıla kadar garanti"
+          }
+        },
+        "check_item_MYh83P": {
+          "type": "check_item",
+          "settings": {
+            "text": "Optimal nokta esnekliği"
+          }
+        },
+        "check_item_PUYbxi": {
+          "type": "check_item",
+          "settings": {
+            "text": "Bonnell yaylardan daha iyi"
+          }
+        }
+      },
+      "block_order": [
+        "check_item_VacakC",
+        "check_item_NgQkX3",
+        "check_item_ULVUxt",
+        "check_item_QcY9Vk",
+        "check_item_MYh83P",
+        "check_item_PUYbxi"
+      ],
+      "name": "Feature Split Dark",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify://shop_images/pocket-springs-QdfUZdpd.jpg",
+        "badge": "TÜM 3 MODELDE STANDARTTIR",
+        "title": "Bireysel olarak kaplanmış torba yaylar",
+        "description": "<p>Yataklarımızdaki her yay, kendi kumaş torbasında ayrı ayrı kapsüllenmiştir. Bu, aşağıdaki anlama gelir: her yay bağımsız çalışır — böylece yatak, geleneksel bonel yaylardaki gibi \"bir bütün\" olmak yerine vücudunuzun benzersiz hatlarına nokta nokta uyum sağlar.</p><p>Şu kadar ile m² başına 220 torba yay olağanüstü nokta esnekliğine sahip bir yatak elde edersiniz. Bu, hareket transferini ortadan kaldırır — eşiniz döndüğünde, siz <em>hiçbir şey</em>.</p><p>Torba yaylar, bir katman <strong>doğal lateks</strong> ile birleştirilmiştir ve sürekli nefes alabilirlik ve sıcaklık düzenlemesi sağlar. Sonuç olarak, gece boyunca, yıl boyunca destekleyen, havalandıran ve esnekliğini koruyan bir yatak elde edilir — şuna kadar: 15 yıl garanti.</p>"
+      }
+    },
+    "universal_image_with_text_YJPqn4": {
+      "type": "universal-image-with-text",
+      "name": "Feature Split Dark",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify://shop_images/craftsmanship-sewing-C6n-9o8.webp",
+        "badge": "🇩🇰 Danimarka el işçiliği",
+        "title": "Tutku ve hassasiyetle üretilmiştir",
+        "description": "<p>Her bir yatak, Danimarka'da uzun ömürlü kaliteyle el yapımıdır. Premium kılıfların dikiminden her katmanın titizlikle bir araya getirilmesine kadar — hiçbir şey tesadüfe bırakılmaz.</p><p>Zanaatkarlarımız lateks, bambu ve yün gibi doğal malzemelerle çalışır ve onlarca yıllık deneyimin modern tekniklerle birleşimi, uzun yıllar dayanacak bir yatak almanızı sağlar.</p>"
+      }
+    },
     "feature_split_z8yNGB": {
       "type": "feature-split",
       "blocks": {
@@ -307,6 +375,63 @@
         "tip_text": "120 cm ve üzeri tüm yataklar için seçim yapabilirsiniz sol ve sağ tarafta farklı sertlik. Böylece ikiniz de bireysel vücut ağırlığınıza uygun bir yatakta hiçbir taviz vermeden uyuyabilirsiniz."
       }
     },
+    "universal_image_with_text_left_H8DrAc": {
+      "type": "universal-image-with-text-left",
+      "blocks": {
+        "check_item_UNtFVR": {
+          "type": "check_item",
+          "settings": {
+            "text": "Doğal lateks, toz akarlarına ve küfe karşı doğal olarak dirençlidir"
+          }
+        },
+        "check_item_GGAp6W": {
+          "type": "check_item",
+          "settings": {
+            "text": "GREENFIRST® bitkisel bazlı anti-akar tedavisi"
+          }
+        },
+        "check_item_jEbBXY": {
+          "type": "check_item",
+          "settings": {
+            "text": "OEKO-TEX® Standard 100 sertifikalı — zararlı maddeler için test edilmiştir"
+          }
+        },
+        "check_item_KhJxDm": {
+          "type": "check_item",
+          "settings": {
+            "text": "Nefes alabilen hücre yapısı nem birikimini önler"
+          }
+        },
+        "check_item_fTmwHg": {
+          "type": "check_item",
+          "settings": {
+            "text": "Alerjisi ve astımı olanlar için idealdir"
+          }
+        },
+        "check_item_bhYmFe": {
+          "type": "check_item",
+          "settings": {
+            "text": "Kılıf çıkarılabilir ve yıkanabilir"
+          }
+        }
+      },
+      "block_order": [
+        "check_item_UNtFVR",
+        "check_item_GGAp6W",
+        "check_item_jEbBXY",
+        "check_item_KhJxDm",
+        "check_item_fTmwHg",
+        "check_item_bhYmFe"
+      ],
+      "name": "Feature Dark (Eco/Health)",
+      "settings": {
+        "image_position": "right",
+        "image": "shopify://shop_images/topmadras-latex-feet-Df7bD5RP.jpg",
+        "badge": "DOĞAL OLARAK ANTİBAKTERİYEL",
+        "title": "Daha sağlıklı uyuyun — her gece",
+        "description": "<p>Yataklarımız sağlığınız düşünülerek tasarlanmıştır. Lateks doğal olarak antibakteriyel ve hipoalerjeniktir — toz akarları, bakteriler ve küflerin yaşayamadığı bir ortam yaratır.</p><p>Ayrıca, tüm yatak örtülerimiz GREENFIRST® — sitronella, lavanta ve okaliptüsten elde edilen bitkisel bazlı bir anti-akar tedavisidir. Kimyasal yok, taviz yok — sadece daha sağlıklı bir uyku ortamı.</p>"
+      }
+    },
     "ergonomic_zones": {
       "type": "feature-zones",
       "blocks": {
@@ -490,9 +615,12 @@
     "hero_banner",
     "trust_badges",
     "product_selector",
+    "universal_image_with_text_HE8EwH",
     "feature_split_z8yNGB",
     "hardness_guide",
+    "universal_image_with_text_left_H8DrAc",
     "ergonomic_zones",
+    "universal_image_with_text_YJPqn4",
     "comparison_table",
     "cta_banner"
   ]
