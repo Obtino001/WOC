@@ -3,8 +3,8 @@
 <section class="bg-white py-20">
   <div class="container mx-auto px-4 {{ section.settings.page_width | default: 'max-w-full' }}">
     <div class="flex items-center justify-center gap-8 mb-4">
-      <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-900 border-zinc-900">{{ section.settings.tab_1 }}</button>
-      <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-500 border-transparent hover:text-zinc-800">{{ section.settings.tab_2 }}</button>
+      <button onclick="filterCarousel_{{ section.id | replace: '-', '_' }}('1', this)" class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-900 border-zinc-900">{{ section.settings.tab_1 }}</button>
+      <button onclick="filterCarousel_{{ section.id | replace: '-', '_' }}('2', this)" class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-500 border-transparent hover:text-zinc-800">{{ section.settings.tab_2 }}</button>
     </div>
     <p class="text-center font-body text-sm text-zinc-500 mb-10">{{ section.settings.subtitle }}</p>
     
@@ -13,61 +13,28 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-zinc-700"><path d="m15 18-6-6 6-6"></path></svg>
       </button>
       
-      <div class="flex gap-px bg-zinc-100 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
+      <div id="carousel-{{ section.id }}" class="flex gap-px bg-zinc-100 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
         {%- assign products_to_display = section.blocks -%}
-        {%- assign is_collection = false -%}
-        
-        {%- if section.settings.collection != blank -%}
-          {%- assign coll = section.settings.collection -%}
-          {%- if coll.products and coll.products.size > 0 -%}
-            {%- assign products_to_display = coll.products -%}
-            {%- assign is_collection = true -%}
-          {%- elsif collections[coll].products.size > 0 -%}
-            {%- assign products_to_display = collections[coll].products -%}
-            {%- assign is_collection = true -%}
-          {%- endif -%}
-        {%- endif -%}
+        {%- assign products_to_display = section.blocks -%}
 
         {%- for item in products_to_display limit: section.settings.products_to_show -%}
-          {%- if is_collection -%}
-            {%- assign product = item -%}
-            {%- assign target_url = product.url -%}
-            {%- assign image_to_show = product.featured_image -%}
-            {%- assign tag_to_show = "" -%}
-            {%- if product.compare_at_price > product.price -%}
-              {%- assign tag_to_show = "Sale" -%}
-            {%- else -%}
-              {%- for tag in product.tags -%}
-                {%- if tag == 'BESTSELLER' or tag == 'Bestseller' or tag == 'bestseller' -%}
-                  {%- assign tag_to_show = "Bestseller" -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-            {%- assign title_to_show = product.title -%}
-            {%- assign subtitle_to_show = product.metafields.custom.subtitle | default: product.type -%}
+          {%- assign product = item.settings.product -%}
+          {%- assign target_url = product.url | default: item.settings.product_url -%}
+          {%- assign image_to_show = item.settings.image | default: product.featured_image -%}
+          {%- assign tag_to_show = item.settings.tag -%}
+          {%- assign title_to_show = item.settings.title | default: product.title -%}
+          {%- assign subtitle_to_show = item.settings.subtitle -%}
+          {%- assign compare_price_to_show = item.settings.compare_price -%}
+          {%- if compare_price_to_show == blank and product != blank and product.compare_at_price > product.price -%}
             {%- assign compare_price_to_show = product.compare_at_price | money -%}
-            {%- assign price_to_show = product.price | money -%}
-            {%- assign item_shopify_attributes = "" -%}
-          {%- else -%}
-            {%- assign product = item.settings.product -%}
-            {%- assign target_url = product.url | default: item.settings.product_url -%}
-            {%- assign image_to_show = item.settings.image | default: product.featured_image -%}
-            {%- assign tag_to_show = item.settings.tag -%}
-            {%- assign title_to_show = item.settings.title | default: product.title -%}
-            {%- assign subtitle_to_show = item.settings.subtitle -%}
-            {%- assign compare_price_to_show = item.settings.compare_price -%}
-            {%- if compare_price_to_show == blank and product != blank and product.compare_at_price > product.price -%}
-              {%- assign compare_price_to_show = product.compare_at_price | money -%}
-            {%- endif -%}
-            {%- assign price_to_show = item.settings.price -%}
-            {%- if price_to_show == blank and product != blank -%}
-              {%- assign price_to_show = product.price | money -%}
-            {%- endif -%}
-            {%- assign item_shopify_attributes = item.shopify_attributes -%}
           {%- endif -%}
+          {%- assign price_to_show = item.settings.price -%}
+          {%- if price_to_show == blank and product != blank -%}
+            {%- assign price_to_show = product.price | money -%}
+          {%- endif -%}
+          {%- assign item_shopify_attributes = item.shopify_attributes -%}
 
-          <div class="min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-white group h-full flex flex-col relative" {{ item_shopify_attributes }}>
+          <div data-tab="{{ item.settings.tab }}" class="carousel-item min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-white group h-full flex flex-col relative" {{ item_shopify_attributes }}>
             <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
               <a href="{{ target_url }}" class="absolute inset-0 z-0"></a>
               {% if image_to_show != blank %}
@@ -121,7 +88,7 @@
               <div class="flex items-center justify-center gap-2 mt-2.5">
                 {% if product.compare_at_price > product.price or compare_price_to_show != blank %}
                   <span class="font-body text-[12px] text-zinc-500 line-through">
-                    {% if is_collection %}{{ product.compare_at_price | money }}{% else %}{{ compare_price_to_show }}{% endif %}
+                    {{ compare_price_to_show }}
                   </span>
                 {% endif %}
                 
@@ -141,6 +108,31 @@
   </div>
 </section>
 
+<script>
+function filterCarousel_{{ section.id | replace: '-', '_' }}(tabId, btn) {
+  const container = document.getElementById('carousel-{{ section.id }}');
+  if(!container) return;
+  const items = container.querySelectorAll('.carousel-item');
+  items.forEach(item => {
+    if(item.dataset.tab === tabId) {
+      item.style.display = 'flex';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+  if(btn) {
+    const parent = btn.parentElement;
+    parent.querySelectorAll('button').forEach(b => {
+      b.className = 'font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-500 border-transparent hover:text-zinc-800';
+    });
+    btn.className = 'font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-900 border-zinc-900';
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  filterCarousel_{{ section.id | replace: '-', '_' }}('1', null);
+});
+</script>
+
 {% schema %}
 {
   "name": "SED Product Carousel",
@@ -157,7 +149,6 @@
       ],
       "default": "max-w-full" 
     },
-    { "type": "collection", "id": "collection", "label": "Select Collection (Optional - Overrides manual blocks below)" },
     { "type": "range", "id": "products_to_show", "min": 2, "max": 12, "step": 1, "default": 8, "label": "Products to Show" },
     { "type": "text", "id": "tab_1", "label": "Tab 1 Title", "default": "Best Sellers" },
     { "type": "text", "id": "tab_2", "label": "Tab 2 Title", "default": "Trending Now" },
@@ -168,6 +159,7 @@
       "type": "product",
       "name": "Product Slide",
       "settings": [
+        { "type": "select", "id": "tab", "label": "Assign to Tab", "options": [ { "value": "1", "label": "Tab 1" }, { "value": "2", "label": "Tab 2" } ], "default": "1" },
         { "type": "product", "id": "product", "label": "Select Product (Enables Add to Cart)" },
         { "type": "image_picker", "id": "image", "label": "Image Override (Optional)" },
         { "type": "text", "id": "tag", "label": "Badge Tag (e.g. BESTSELLER)" },

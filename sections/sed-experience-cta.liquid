@@ -1,4 +1,4 @@
-<section class="color-{{ section.settings.color_scheme }} gradient py-28">
+<section class="bg-white py-28">
   <div class="container mx-auto px-4 text-center max-w-xl">
     <div>
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="mx-auto">
@@ -11,13 +11,13 @@
         <path d="M38 10L29 21L27 20L28 18L38 10Z" fill="hsl(36 72% 45%)" opacity="0.5"></path>
         <path d="M10 38L19 27L21 28L20 30L10 38Z" fill="hsl(36 72% 45%)" opacity="0.5"></path>
       </svg>
-      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mt-8 mb-6">
+      <h2 class="font-display text-3xl md:text-4xl font-light text-zinc-900 mt-8 mb-6">
         {{ section.settings.heading }}
       </h2>
-      <p class="font-body text-sm text-muted-foreground leading-[1.9] mb-10">
+      <p class="font-body text-sm text-zinc-500 leading-[1.9] mb-10">
         {{ section.settings.description }}
       </p>
-      <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 py-2 bg-foreground hover:bg-foreground/90 text-background uppercase tracking-[0.15em] text-[11px] rounded-none px-10 h-12" href="{{ section.settings.btn_link }}">
+      <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 py-2 bg-zinc-900 hover:bg-zinc-800 text-white uppercase tracking-[0.15em] text-[11px] rounded-none px-10 h-12" href="{{ section.settings.btn_link }}">
         {{ section.settings.btn_text }}
       </a>
     </div>
@@ -28,7 +28,6 @@
 {
   "name": "SED Experience CTA",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Experience in person" },
     { "type": "textarea", "id": "description", "label": "Description", "default": "Visit one of our showrooms and experience Séduisante products in real life. Our experts will guide you to the perfect solution." },
     { "type": "text", "id": "btn_text", "label": "Button Text", "default": "FIND YOUR SHOWROOM" },
