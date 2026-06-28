@@ -109,9 +109,9 @@
       "settings": {
         "page_width": "standard",
         "color_scheme": "scheme-1",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "Product Overview",
+        "padding_top": 64,
+        "padding_bottom": 72,
+        "kicker": "Ürün Genel Bakışı",
         "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs. Features include ankle twisting therapy, cool air venting, deep tissue percussion, and 8-point postural stretching — all controlled via a seamless touch screen or intelligent voice commands."
       }
     },
@@ -161,12 +161,12 @@
         "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
-        "padding_bottom": 112,
+        "padding_bottom": 40,
         "bg_color": "light",
         "card_style": "bordered",
         "columns": 4,
-        "kicker": "Ideal For",
-        "heading": "Who is this for?"
+        "kicker": "İçin İdeal",
+        "heading": "Bu Kimin İçin?"
       }
     },
     "highlights": {
