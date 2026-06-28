@@ -134,31 +134,37 @@
         "feature_QJV4hX": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "Kişisel Vücut Tarama"
           }
         },
         "feature_nV4ztP": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "1:1 Özel Yapım"
           }
         },
         "feature_3KhTiC": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "Salınım Masajı"
           }
         },
         "f1": {
           "type": "feature",
           "settings": {
-            "text": "Kişisel Vücut Taraması"
+            "text": "Salınım Masajı"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
-            "text": "Birebir Özel Üretim"
+            "text": "Gümüş Antibakteriyel"
+          }
+        },
+        "feature_AtJ8Ag": {
+          "type": "feature",
+          "settings": {
+            "text": "Hipoalerjenik Malzemeler"
           }
         }
       },
@@ -167,14 +173,15 @@
         "feature_nV4ztP",
         "feature_3KhTiC",
         "f1",
-        "f2"
+        "f2",
+        "feature_AtJ8Ag"
       ],
       "settings": {
         "section_id": "sovesystem",
         "bg_color": "warm",
         "layout": "left",
         "show_divider_top": false,
-        "product": "",
+        "product": "sovesystem®",
         "video": "shopify://files/videos/Sovesystemet-fra-World-of-Comfort_46a4a909-0d20-49f8-835f-b4dc74c67cba.mp4",
         "image_badge": "",
         "show_play_button": true,
