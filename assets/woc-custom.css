@@ -460,7 +460,7 @@ cart-drawer.active .drawer__inner {
   align-items: center !important;
   justify-content: center !important;
   position: absolute !important;
-  top: -4px !important;
+  top: 14px !important;
   right: -4px !important;
 }
 .text-foreground {
