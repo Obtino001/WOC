@@ -22,41 +22,50 @@
         "button_2_link": "#calculator"
       }
     },
-    "problem": {
-      "type": "corporate-problem",
+    "statistics_counter_GddLBy": {
+      "type": "Statistics-Counter",
       "blocks": {
-        "avatar_1": {
-          "type": "avatar",
-          "settings": {}
+        "stat_EJRFXE": {
+          "type": "stat",
+          "settings": {
+            "number": 85,
+            "suffix": "%",
+            "description": "WOC ErgoPro ile daha az stres yaşıyor"
+          }
         },
-        "avatar_2": {
-          "type": "avatar",
-          "settings": {}
+        "stat_fqbgbA": {
+          "type": "stat",
+          "settings": {
+            "number": 500,
+            "suffix": "",
+            "description": "WOC araştırmasına verilen yanıt"
+          }
         },
-        "avatar_3": {
-          "type": "avatar",
-          "settings": {}
+        "stat_7Yg3ie": {
+          "type": "stat",
+          "settings": {
+            "number": 65,
+            "suffix": "+",
+            "description": "iş yeri etkiyi belgeliyor"
+          }
         },
-        "avatar_4": {
-          "type": "avatar",
-          "settings": {}
+        "stat_43tBaw": {
+          "type": "stat",
+          "settings": {
+            "number": 10,
+            "suffix": "+",
+            "description": "yıllık araştırma temelli deneyim"
+          }
         }
       },
       "block_order": [
-        "avatar_1",
-        "avatar_2",
-        "avatar_3",
-        "avatar_4"
+        "stat_EJRFXE",
+        "stat_fqbgbA",
+        "stat_7Yg3ie",
+        "stat_43tBaw"
       ],
-      "disabled": true,
-      "settings": {
-        "subheading": "The problem is real",
-        "heading": "From fatigue\n<i style=\"color:#a64030; font-weight: 300;\">to loss</i>",
-        "avatar_text": "They trust prevention",
-        "image": "shopify://shop_images/corporate-problem-editorial-D-Rjw3US.jpg",
-        "stat_number": "76%",
-        "stat_text": "of Danish employees experience physical discomfort at the workplace"
-      }
+      "name": "Statistics Counter",
+      "settings": {}
     },
     "insights": {
       "type": "corporate-numbered-list",
@@ -110,6 +119,54 @@
           }
         },
         "logo_P6TEEm": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_CGdjwP": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_VtxfTb": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_3eRHbj": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_RfT8Ky": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_KCY4CL": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_A4eaNL": {
           "type": "logo",
           "settings": {
             "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
@@ -190,6 +247,12 @@
         "logo_nF8XnH",
         "logo_4niAwb",
         "logo_P6TEEm",
+        "logo_CGdjwP",
+        "logo_VtxfTb",
+        "logo_3eRHbj",
+        "logo_RfT8Ky",
+        "logo_KCY4CL",
+        "logo_A4eaNL",
         "logo_6LqKtD",
         "row_1",
         "row_2",
@@ -213,7 +276,7 @@
         "feat_1": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart w-9 h-9\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "step_number": "",
             "title": "Recovery",
             "text": "<p>WOC Balance Pro combines soothing massage with mental focus through mindfulness. Based on Carsten Rosendahl's research into the body's reaction to touch, rhythm, and warmth — a state we call active recovery.</p>"
@@ -222,7 +285,7 @@
         "feat_2": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-9 h-9\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>",
             "step_number": "",
             "title": "Development",
             "text": "<p>Since 2015, we have collaborated with leading researchers in stress management, mindfulness, and recovery. We inspire every employee to take responsibility for their own well-being and contribute to the well-being of colleagues.</p>"
@@ -231,7 +294,7 @@
         "feat_3": {
           "type": "feature",
           "settings": {
-            "icon_svg": "",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-chart-column w-9 h-9\"><path d=\"M3 3v16a2 2 0 0 0 2 2h16\"></path><path d=\"M18 17V9\"></path><path d=\"M13 17V5\"></path><path d=\"M8 17v-3\"></path></svg>",
             "step_number": "",
             "title": "Analysis",
             "text": "<p>Continuous follow-up and employee surveys ensure real impact. Sustainable routines become a natural part of everyday life — documented with measurable results per workplace.</p>"
@@ -723,7 +786,7 @@
   },
   "order": [
     "hero",
-    "problem",
+    "statistics_counter_GddLBy",
     "insights",
     "method",
     "expert_council_tHk8dp",
