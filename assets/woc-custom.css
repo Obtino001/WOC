@@ -3540,7 +3540,9 @@ h1,h2,h3,h4 {
     --tw-bg-opacity: 1;
     background-color: rgb(245 158 11 / var(--tw-bg-opacity, 1))
 }
-
+.bg-muted {
+    background-color: rgb(245, 245, 245) !important;
+}
 .bg-amber-700 {
     --tw-bg-opacity: 1;
     background-color: rgb(180 83 9 / var(--tw-bg-opacity, 1))
