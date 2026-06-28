@@ -55,9 +55,9 @@
               <!-- Bullets -->
               <ul class="space-y-1 mb-3 flex-1 min-h-[5.5rem]">
                 {% assign has_usps = false %}
-                {% if product != blank and product.metafields.custom.usps != blank %}
+                {% if product != blank and product.metafields.custom.products_usps != blank %}
                   {% assign has_usps = true %}
-                  {% assign usps_string = product.metafields.custom.usps.value | join: ',' | default: product.metafields.custom.usps.value %}
+                  {% assign usps_string = product.metafields.custom.products_usps.value | join: ',' | default: product.metafields.custom.products_usps.value %}
                   {% assign usps_array = usps_string | split: ',' %}
                   {% for usp in usps_array limit: 4 %}
                     <li class="flex items-start gap-1.5">
