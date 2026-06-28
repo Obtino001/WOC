@@ -245,46 +245,42 @@
         "bundle_1": {
           "type": "bundle",
           "settings": {
-            "savings_text": "Spar 15%",
             "title": "Komplet Afslapningspakke",
             "subtitle": "Massagestol + Nakke & Skulder Massageapparat",
-            "item_1_name": "Nakke & Skulder Massageapparat",
-            "item_2_name": "",
-            "item_3_name": "",
-            "price": "£200",
-            "compare_price": "£235",
-            "button_text": "Tilføj pakke",
-            "button_link": ""
+            "product_list": [
+              "ai-smart-topper",
+              "amsterdam-pude-60x63-cm",
+              "amsterdam-dyne-140x200-cm"
+            ],
+            "discount_percentage": 15,
+            "button_text": "Tilføj pakke"
           }
         },
         "bundle_2": {
           "type": "bundle",
           "settings": {
-            "savings_text": "Spar 10%",
             "title": "Recovery Pro Pakke",
             "subtitle": "Massagepistol Elite + Recovery Kompressions-kit",
-            "item_1_name": "Pro Massagepistol Elite",
-            "item_2_name": "Recovery Kompressions-kit",
-            "item_3_name": "",
-            "price": "£44",
-            "compare_price": "£49",
-            "button_text": "Tilføj pakke",
-            "button_link": ""
+            "product_list": [
+              "ai-sovesystem-pro",
+              "ai-smart-topper",
+              "amsterdam-pude-60x63-cm"
+            ],
+            "discount_percentage": 15,
+            "button_text": "Tilføj pakke"
           }
         },
         "bundle_3": {
           "type": "bundle",
           "settings": {
-            "savings_text": "Spar 20%",
             "title": "Hjemme-spa Pakke",
             "subtitle": "Fodmassageapparat + Øjenmassageapparat + LED Ansigtsmaske",
-            "item_1_name": "Fodmassageapparat Pro",
-            "item_2_name": "Øjenmassageapparat Deluxe",
-            "item_3_name": "LED Ansigtsmaske Pro",
-            "price": "£7",
-            "compare_price": "£9",
-            "button_text": "Tilføj pakke",
-            "button_link": ""
+            "product_list": [
+              "aloe-vera-pude-60x63-cm",
+              "amsterdam-dyne-140x200-cm"
+            ],
+            "discount_percentage": 15,
+            "button_text": "Tilføj pakke"
           }
         }
       },
