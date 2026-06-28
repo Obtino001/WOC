@@ -1,0 +1,77 @@
+<section class="py-24 section-light-warm relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent pointer-events-none"></div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-2 h-2 rounded-full bg-gold"></div>
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold">{{ section.settings.subtitle }}</p>
+      </div>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">{{ section.settings.title }}</h2>
+      <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">{{ section.settings.description }}</p>
+    </div>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px]">
+      {% for block in section.blocks %}
+        <div class="bg-background p-10 group hover:bg-gold/[0.04] transition-colors duration-700" {{ block.shopify_attributes }}>
+          <span class="w-5 h-5 text-gold mb-6 block">
+            {{ block.settings.svg_icon }}
+          </span>
+          <h3 class="font-display text-lg font-light text-foreground mb-3">{{ block.settings.title }}</h3>
+          <p class="font-body text-xs font-light text-muted-foreground leading-[1.8]">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "USP Grid Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Neden World of Comfort"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Bizi Benzersiz Kılan Şey"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Biz sadece bir satıcı değiliz — showroomları, kişisel danışmanlığı ve başka hiçbir yerde bulamayacağınız ürünleriyle İskandinavya'nın önde gelen sağlıklı yaşam uzmanıyız."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "USP Item",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "SVG Icon Code"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "USP Grid Features"}]
+}
+{% endschema %}
