@@ -1,0 +1,110 @@
+<section class="py-16">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.subtitle }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">{{ section.settings.title }}</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+      {% for block in section.blocks %}
+        <button class="relative group rounded-2xl overflow-hidden border-2 transition-all duration-500 text-left flex flex-col {% if block.settings.highlight %}border-gold shadow-[0_0_40px_rgba(212,175,55,0.25)] scale-[1.02]{% else %}border-border/60 hover:border-gold/40 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]{% endif %}" {{ block.shopify_attributes }}>
+          {% if block.settings.badge != blank %}
+            <div class="absolute top-4 left-4 z-10">
+              <span class="font-body text-[10px] font-semibold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full backdrop-blur-md {% if block.settings.highlight %}bg-gold text-background{% else %}bg-background/70 text-gold border border-gold/30{% endif %}">{{ block.settings.badge }}</span>
+            </div>
+          {% endif %}
+          
+          <div class="aspect-[4/3] overflow-hidden relative">
+            {% if block.settings.image %}
+              {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105' }}
+            {% endif %}
+            <div class="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60"></div>
+          </div>
+          
+          <div class="p-6 bg-card flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-foreground mb-1.5">{{ block.settings.title }}</h3>
+              <p class="font-body text-sm text-muted-foreground mb-4 italic">{{ block.settings.description }}</p>
+            </div>
+            <div class="flex items-end justify-between">
+              <div>
+                <p class="font-body text-[10px] uppercase tracking-widest text-muted-foreground mb-0.5">Şuradan</p>
+                <p class="font-display text-2xl font-bold text-gold">{{ block.settings.price }}</p>
+              </div>
+              <div class="flex items-center gap-1.5 font-body text-xs font-medium transition-colors {% if block.settings.highlight %}text-gold{% else %}text-muted-foreground group-hover:text-gold{% endif %}">
+                Yapılandır 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3.5 h-3.5"><path d="m9 18 6-6-6-6"></path></svg>
+              </div>
+            </div>
+          </div>
+          {% if block.settings.highlight %}
+            <div class="h-1 w-full bg-gradient-to-r from-gold/0 via-gold to-gold/0"></div>
+          {% endif %}
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Selector",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Yatak tipinizi seçin"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Üç tip, tek kalite"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Bed Type Card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight this card (Gold border)",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge Text",
+          "default": "Çok Satanlar"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bed Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Bed Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Short Description"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Starting Price",
+          "default": "₺40.160"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Product Selector"}]
+}
+{% endschema %}
