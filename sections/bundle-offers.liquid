@@ -47,29 +47,106 @@
                 <div class="flex items-center gap-3 p-2 bg-muted/50 rounded-lg">
                   <div class="w-10 h-10 rounded-lg bg-linen flex-shrink-0 flex items-center justify-center">
                     <svg class="w-4 h-4 text-muted-foreground/30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg>
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <p class="font-body text-xs font-medium text-foreground line-clamp-1">{{ block.settings.item_3_name }}</p>
-                  </div>
-                </div>
+          {% assign product_list = block.settings.product_list %}
+          {% if product_list != blank %}
+            {% assign total_price = 0 %}
+            {% assign variant_ids = '' %}
+            
+            <div class="bg-copper px-4 py-2 text-center">
+              {% if block.settings.discount_percentage > 0 %}
+                <span class="font-body text-xs font-bold text-white uppercase tracking-wider">TASARRUF %{{ block.settings.discount_percentage }}</span>
+              {% else %}
+                <span class="font-body text-xs font-bold text-white uppercase tracking-wider">PAKET FIRSATI</span>
               {% endif %}
             </div>
-
-            <div class="flex items-baseline gap-2 mb-4 mt-auto">
-              <span class="font-display text-2xl font-bold text-foreground">{{ block.settings.price }}</span>
-              <span class="font-body text-sm text-muted-foreground line-through">{{ block.settings.compare_price }}</span>
-            </div>
             
-            <a href="{{ block.settings.button_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm bg-copper hover:bg-copper-hover text-white font-body font-semibold h-10 px-4 py-2 w-full transition-all duration-500 rounded-md">
-              {{ block.settings.button_text }} 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-display text-lg font-bold text-foreground mb-2" style="font-family: 'Outfit', sans-serif !important;">{{ block.settings.title }}</h3>
+              <p class="font-body text-xs text-muted-foreground mb-4">{{ block.settings.subtitle }}</p>
+              
+              <div class="space-y-2 mb-4 flex-1">
+                {% for prod in product_list %}
+                  {% assign total_price = total_price | plus: prod.price %}
+                  {% assign variant_ids = variant_ids | append: prod.selected_or_first_available_variant.id | append: ',' %}
+                  
+                  <div class="flex items-center gap-3 p-2 bg-muted/50 rounded-lg">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-border flex-shrink-0 flex items-center justify-center overflow-hidden">
+                      {% if prod.featured_image %}
+                        {{ prod.featured_image | image_url: width: 80 | image_tag: class: 'w-full h-full object-contain p-1' }}
+                      {% else %}
+                        <svg class="w-4 h-4 text-muted-foreground/30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg>
+                      {% endif %}
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-body text-xs font-medium text-foreground line-clamp-1">{{ prod.title }}</p>
+                      <p class="font-body text-[10px] text-muted-foreground">{{ prod.price | money }}</p>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+
+              {% assign discount_multiplier = 100 | minus: block.settings.discount_percentage | divided_by: 100.0 %}
+              {% assign discounted_price = total_price | times: discount_multiplier %}
+
+              <div class="flex items-baseline gap-2 mb-4 mt-auto">
+                <span class="font-display text-2xl font-bold text-foreground">{{ discounted_price | money }}</span>
+                {% if block.settings.discount_percentage > 0 %}
+                  <span class="font-body text-sm text-muted-foreground line-through">{{ total_price | money }}</span>
+                {% endif %}
+              </div>
+              
+              <button type="button" 
+                      onclick="addBundleToCart('{{ variant_ids }}')"
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm bg-copper hover:bg-copper-hover text-white font-body font-semibold h-10 px-4 py-2 w-full transition-all duration-500 rounded-md">
+                {{ block.settings.button_text | default: 'Paketi Ekle' }} 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          {% else %}
+            <div class="p-5 text-center flex flex-col justify-center h-full">
+              <p class="font-body text-sm text-muted-foreground">Lütfen paket ürünlerini seçin</p>
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
+<script>
+  function addBundleToCart(variantIdsString) {
+    const ids = variantIdsString.split(',').filter(id => id.trim() !== '');
+    if (ids.length === 0) return;
+
+    const items = ids.map(id => ({
+      id: parseInt(id),
+      quantity: 1
+    }));
+
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ items: items })
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Optional: trigger theme's native cart drawer update here
+      if (document.querySelector('cart-drawer')) {
+        document.querySelector('cart-drawer').classList.remove('is-empty');
+        // A simple reload is most reliable if the theme doesn't expose a global drawer function
+        window.location.href = window.Shopify.routes.root + 'cart';
+      } else {
+        window.location.href = window.Shopify.routes.root + 'cart';
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Der opstod en fejl ved tilføjelse til kurv.');
+    });
+  }
+</script>
 
 {% schema %}
 {
@@ -100,9 +177,31 @@
       "name": "Bundle",
       "settings": [
         {
-          "type": "product",
-          "id": "bundle_product",
-          "label": "Bundle Product"
+          "type": "text",
+          "id": "title",
+          "label": "Bundle Title",
+          "default": "Komple Rahatlama Paketi"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Bundle Subtitle",
+          "default": "Masaj Koltuğu + Boyun ve Omuz Masajer"
+        },
+        {
+          "type": "product_list",
+          "id": "product_list",
+          "label": "Select Products for Bundle"
+        },
+        {
+          "type": "range",
+          "id": "discount_percentage",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "%",
+          "label": "Discount Percentage",
+          "default": 15
         },
         {
           "type": "text",
