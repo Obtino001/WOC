@@ -9,39 +9,59 @@
  */
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "disabled": true,
+    "hero": {
+      "type": "hero-banner-duvets",
+      "settings": {}
+    },
+    "features_grid": {
+      "type": "info-features-grid",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "badge": "NEDEN ÖNEMLİ",
+        "title": "Hayatınızın üçte birini yatakta geçiriyorsunuz. Bunu en iyi üçte birlik bölüm yapın."
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
-      "disabled": true,
+    "discount_banner": {
+      "type": "discount-banner-simple",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Adet indirimi",
+        "condition_text": "Satın al 2+",
+        "discount_text": "-15%"
+      }
+    },
+    "duvet_collection": {
+      "type": "product-grid-custom",
+      "settings": {
+        "section_id": "shop",
+        "bg_style": "warm",
+        "badge": "Yorganlar",
+        "title": "Doğal Dolgulu Yorganlar",
+        "description": "Yorganlarımız, en iyi Avrupa misk ve kaz tüyleri ile doldurulmuştur. Hipoalerjenik, OEKO-TEX® sertifikalı ve 5 yıl garantili olarak Danimarka'da üretilmiştir."
+      }
+    },
+    "pillow_collection": {
+      "type": "product-grid-custom",
+      "settings": {
+        "bg_style": "light",
+        "badge_color": "forest",
+        "badge": "Yastıklar",
+        "title": "Kaz Tüyü Yastıklar",
+        "description": "Avrupa kaz tüyü premium dolgulu 3 katmanlı kaz tüyü yastıklar. Nomite sertifikalı hipoalerjenik ve Danimarka üretimi kalitesi."
+      }
+    },
+    "usp_footer": {
+      "type": "usp-grid-features",
+      "settings": {
+        "subtitle": "Neden World of Comfort",
+        "title": "Bizi Benzersiz Kılan Şey"
       }
     }
   },
   "order": [
-    "banner",
-    "product-grid"
+    "hero",
+    "features_grid",
+    "discount_banner",
+    "duvet_collection",
+    "pillow_collection",
+    "usp_footer"
   ]
 }
