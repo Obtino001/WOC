@@ -1,0 +1,41 @@
+{%- comment -%}
+  Accepts:
+  - product: {Object} Product Liquid object
+  - card_color_scheme: {String} Color scheme ID (optional)
+{%- endcomment -%}
+
+{%- assign product_badge = nil -%}
+{%- for tag in product.tags -%}
+  {%- if tag == 'Flagship' or tag == 'Amiral Gemisi' or tag == 'Designer' or tag == 'Tasarımcı' or tag == 'Most Advanced' or tag == 'En Gelişmiş' or tag == 'New' or tag == 'Yeni' or tag == 'Bestseller' -%}
+    {%- assign product_badge = tag -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="color-{{ card_color_scheme | default: 'scheme-2' }} group flex flex-col rounded-[12px] overflow-hidden bg-[#f4f2ee] p-3.5 h-full">
+  <a class="block relative w-full aspect-square bg-white rounded-lg overflow-hidden flex items-center justify-center" href="{{ product.url }}">
+    {%- if product_badge -%}
+      <span class="absolute top-3 left-3 z-10 bg-[#cd8e25] text-white font-body text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full">{{ product_badge }}</span>
+    {%- endif -%}
+    
+    {% if product.featured_image != blank %}
+      {{ product.featured_image | image_url: width: 600 | image_tag: class: 'w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105', loading: 'lazy' }}
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-contain p-6 bg-gray-50' }}
+    {% endif %}
+  </a>
+
+  <div class="pt-5 pb-3 px-1 flex flex-col flex-1">
+    <a href="{{ product.url }}" class="block">
+      <h3 class="font-display text-base lg:text-[17px] font-medium mb-1.5 text-[#2c2c2c] group-hover:text-[#cd8e25] transition-colors">{{ product.title }}</h3>
+    </a>
+    
+    <p class="font-body text-[11px] lg:text-xs mb-4 line-clamp-1 opacity-60 text-[#4a4a4a]">
+      {{ product.metafields.custom.short_description | default: product.description | strip_html | truncatewords: 8 }}
+    </p>
+
+    <div class="mt-auto">
+      <span class="font-display text-[15px] font-semibold text-[#2c2c2c]">{{ product.price | money }}</span>
+    </div>
+  </div>
+</div>
