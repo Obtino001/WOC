@@ -60,7 +60,7 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
-            "show_demo_button": false,
+            "show_demo_button": true,
             "demo_text": "Book a Demo",
             "demo_link": ""
           }
