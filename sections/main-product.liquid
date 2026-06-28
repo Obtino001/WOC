@@ -340,12 +340,19 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{- block.settings.text -}}
-                </p>
+                {%- if block.settings.text_style == 'uppercase' -%}
+                  <div class="luxury-line mb-4"></div>
+                  <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-2" {{ block.shopify_attributes }}>
+                    {{- block.settings.text -}}
+                  </p>
+                {%- else -%}
+                  <p
+                    class="product__text inline-richtext{% if block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- block.settings.text -}}
+                  </p>
+                {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title mb-2" {{ block.shopify_attributes }}>
                   <h1 class="woc-display-font text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight">{{ product.title | escape }}</h1>
@@ -754,8 +761,15 @@
                 -%}
               {%- when 'feature_list' -%}
                 <div class="product__feature-list my-6" {{ block.shopify_attributes }}>
-                  {%- if block.settings.features != blank -%}
-                    {%- assign features = block.settings.features | split: ',' -%}
+                  {%- assign features_str = '' -%}
+                  {%- if product != blank and product.metafields.custom.products_usps != blank -%}
+                    {%- assign features_str = product.metafields.custom.products_usps.value | join: ',' | default: product.metafields.custom.products_usps.value -%}
+                  {%- elsif block.settings.features != blank -%}
+                    {%- assign features_str = block.settings.features -%}
+                  {%- endif -%}
+
+                  {%- if features_str != blank -%}
+                    {%- assign features = features_str | split: ',' -%}
                     <ul class="space-y-3 font-body text-xs text-foreground font-semibold">
                       {%- for feature in features -%}
                         <li class="flex items-start gap-3">
