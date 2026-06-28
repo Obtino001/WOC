@@ -1,0 +1,115 @@
+<section class="py-24 {% if section.settings.bg_light %}section-light{% else %}bg-background{% endif %} overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      {% if section.settings.alignment == 'center' %}
+        <div class="text-center mb-16">
+          {% if section.settings.badge != blank %}
+            <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
+          {% endif %}
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">{{ section.settings.title }}</h2>
+          <div class="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed text-lg">{{ section.settings.description }}</div>
+        </div>
+      {% endif %}
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        
+        <div class="rounded-2xl overflow-hidden shadow-elevated {% if section.settings.image_position == 'right' %}order-2{% else %}order-1{% endif %}">
+          {% if section.settings.image %}
+            {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full aspect-[4/3] object-cover' }}
+          {% endif %}
+        </div>
+
+        <div class="{% if section.settings.image_position == 'right' %}order-1{% else %}order-2{% endif %}">
+          {% if section.settings.alignment == 'left' %}
+             {% if section.settings.badge != blank %}
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
+             {% endif %}
+             <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6">{{ section.settings.title }}</h2>
+             <div class="font-body text-muted-foreground leading-relaxed mb-6">{{ section.settings.description }}</div>
+          {% endif %}
+
+          <div class="space-y-3">
+            {% for block in section.blocks %}
+              <div class="flex items-start gap-3" {{ block.shopify_attributes }}>
+                <div class="w-6 h-6 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-gold"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <span class="font-body text-sm text-foreground">{{ block.settings.text }}</span>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature Split",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "bg_light",
+      "label": "Use Light Background Variant",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Header Alignment",
+      "options": [
+        {"value": "left", "label": "Left aligned (above text)"},
+        {"value": "center", "label": "Center aligned (above split)"}
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {"value": "left", "label": "Left"},
+        {"value": "right", "label": "Right"}
+      ],
+      "default": "left"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "check_item",
+      "name": "List Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Feature Split"}]
+}
+{% endschema %}
