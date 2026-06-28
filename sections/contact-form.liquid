@@ -1,7 +1,7 @@
 <section class="py-20">
   <div class="container mx-auto px-4 lg:px-8">
     <div class="max-w-3xl mx-auto">
-      <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
+      <div class="rounded-none border bg-card text-card-foreground shadow-sm p-8 border-border">
         
         <div class="mb-6">
           <h2 class="font-display text-2xl font-bold text-foreground mb-2">{{ section.settings.heading }}</h2>
@@ -11,11 +11,11 @@
         {% form 'contact', class: 'space-y-5' %}
           
           {%- if form.posted_successfully? -%}
-            <div class="p-4 mb-4 text-sm text-emerald-800 rounded-md border border-emerald-200 bg-emerald-50">
+            <div class="p-4 mb-4 text-sm text-emerald-800 rounded-none border border-emerald-200 bg-emerald-50">
               Thank you! We have received your request and will contact you shortly.
             </div>
           {%- elsif form.errors -%}
-            <div class="p-4 mb-4 text-sm text-red-800 rounded-md border border-red-200 bg-red-50">
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-none border border-red-200 bg-red-50">
               {{ form.errors | default_errors }}
             </div>
           {%- endif -%}
@@ -23,34 +23,34 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Name <span class="text-destructive">*</span></label>
-              <input type="text" name="contact[name]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="100" placeholder="Name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+              <input type="text" name="contact[name]" class="flex h-10 w-full rounded-none border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="100" placeholder="Name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
             </div>
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Phone <span class="text-destructive">*</span></label>
-              <input type="tel" name="contact[phone]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="20" placeholder="+45 XX XX XX XX" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              <input type="tel" name="contact[phone]" class="flex h-10 w-full rounded-none border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="20" placeholder="+45 XX XX XX XX" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
             </div>
           </div>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Email</label>
-              <input type="email" name="contact[email]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="255" placeholder="you@email.com" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              <input type="email" name="contact[email]" class="flex h-10 w-full rounded-none border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="255" placeholder="you@email.com" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
             </div>
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Postcode <span class="text-destructive">*</span></label>
-              <input type="text" name="contact[postcode]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="10" placeholder="e.g. 1620">
+              <input type="text" name="contact[postcode]" class="flex h-10 w-full rounded-none border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" required maxlength="10" placeholder="e.g. 1620">
             </div>
           </div>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Company Name</label>
-              <input type="text" name="contact[company]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="100" placeholder="Optional">
+              <input type="text" name="contact[company]" class="flex h-10 w-full rounded-none border border-input bg-background px-3 py-2 text-base md:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="100" placeholder="Optional">
             </div>
             <div>
               <label class="font-body text-sm font-medium text-foreground mb-1.5 block">I am Interested in <span class="text-destructive">*</span></label>
               <div class="relative">
-                <select name="contact[interested_in]" required class="flex h-10 w-full appearance-none items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gold">
+                <select name="contact[interested_in]" required class="flex h-10 w-full appearance-none items-center justify-between rounded-none border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gold">
                   <option value="" disabled selected>Select a product</option>
                   <option value="Massage Chairs">Massage Chairs</option>
                   <option value="SOVESYSTEM® (Bespoke Bed)">SOVESYSTEM® (Bespoke Bed)</option>
@@ -68,7 +68,7 @@
           <div>
             <label class="font-body text-sm font-medium text-foreground mb-1.5 block">How Did You Find Us?</label>
             <div class="relative">
-              <select name="contact[how_did_you_find_us]" class="flex h-10 w-full appearance-none items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gold">
+              <select name="contact[how_did_you_find_us]" class="flex h-10 w-full appearance-none items-center justify-between rounded-none border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gold">
                 <option value="" disabled selected>Select an option</option>
                 <option value="Google / Search Engine">Google / Search Engine</option>
                 <option value="Recommended by a Friend">Recommended by a Friend</option>
@@ -85,7 +85,7 @@
           
           <div>
             <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Message</label>
-            <textarea name="contact[body]" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="1000" rows="4" placeholder="Tell us what you are looking for — home visit, showroom appointment, product questions..."></textarea>
+            <textarea name="contact[body]" class="flex min-h-[80px] w-full rounded-none border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold" maxlength="1000" rows="4" placeholder="Tell us what you are looking for — home visit, showroom appointment, product questions..."></textarea>
           </div>
           
           <p class="font-body text-xs text-muted-foreground leading-relaxed">{{ section.settings.disclaimer }}</p>

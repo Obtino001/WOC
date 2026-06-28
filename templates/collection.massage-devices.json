@@ -55,7 +55,8 @@
         "cat_1": {
           "type": "category",
           "settings": {
-            "title": "All Products",
+            "image": "shopify://shop_images/deep-tissue-back-relief-pro_1.jpg",
+            "title": "Tüm Ürünler",
             "link": "",
             "is_active": true
           }
@@ -63,7 +64,8 @@
         "cat_2": {
           "type": "category",
           "settings": {
-            "title": "Neck & Shoulder",
+            "image": "shopify://shop_images/woc-product-3_1.webp",
+            "title": "Boyun & Omuz",
             "link": "",
             "is_active": false
           }
@@ -71,7 +73,8 @@
         "cat_3": {
           "type": "category",
           "settings": {
-            "title": "Eye Care",
+            "image": "shopify://shop_images/woc-product-11_1.webp",
+            "title": "Göz Bakımı",
             "link": "",
             "is_active": false
           }
@@ -79,7 +82,8 @@
         "cat_4": {
           "type": "category",
           "settings": {
-            "title": "Foot Massage",
+            "image": "shopify://shop_images/wocfeet-main-v3_1.png",
+            "title": "Ayak Masajı",
             "link": "",
             "is_active": false
           }
@@ -87,7 +91,8 @@
         "cat_5": {
           "type": "category",
           "settings": {
-            "title": "Portable",
+            "image": "shopify://shop_images/massagegun-pro-real-DDsmm2TZ_1.webp",
+            "title": "Taşınabilir",
             "link": "",
             "is_active": false
           }
@@ -95,7 +100,8 @@
         "cat_6": {
           "type": "category",
           "settings": {
-            "title": "Infrarød",
+            "image": "shopify://shop_images/md-infrared-circle-B3Rxy4wq_1.png",
+            "title": "Kızılötesi",
             "link": "",
             "is_active": false
           }
@@ -115,12 +121,12 @@
       "type": "collection-hero",
       "settings": {
         "background_image": "shopify://shop_images/massage-devices-hero-v2.jpg",
-        "rating_text": "4,9/5 baseret på +1.100 anmeldelser",
-        "heading": "Massage Devices",
-        "subheading": "+30.000 glade kunder",
-        "button_1_text": "SE ALLE PRODUKTER 👉",
+        "rating_text": "4,9/5 · 1.100+ yoruma göre",
+        "heading": "Masaj Cihazları",
+        "subheading": "+30.000 mutlu müşteri",
+        "button_1_text": "TÜM ÜRÜNLERİ GÖR 👉",
         "button_1_link": "#products",
-        "button_2_text": "BESTSELLERS 👉",
+        "button_2_text": "EN ÇOK SATANLAR 👉",
         "button_2_link": "#bestsellers",
         "guarantee_1": "🛡️ Prøv risikofrit",
         "guarantee_2": "🚀 Lynhurtig levering"
@@ -133,24 +139,24 @@
           "type": "step",
           "settings": {
             "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"8\" cy=\"21\" r=\"1\"></circle><circle cx=\"19\" cy=\"21\" r=\"1\"></circle><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"></path></svg>",
-            "title": "1. Bestil dit produkt",
-            "text": "Bestil dit produkt her på vores hjemmeside. Du kan betale 100% sikkert med alle kort og MobilePay."
+            "title": "1. Ürününüzü sipariş edin",
+            "text": "Ürününüzü web sitemizden sipariş edin. Tüm kartlar ve MobilePay ile %100 güvenli ödeme yapabilirsiniz."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
             "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\"></path><path d=\"M15 18H9\"></path><path d=\"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14\"></path><circle cx=\"17\" cy=\"18\" r=\"2\"></circle><circle cx=\"7\" cy=\"18\" r=\"2\"></circle></svg>",
-            "title": "2. Vi sender straks",
-            "text": "Vi står klar til at sende dit produkt dag-til-dag fra vores lager i Skandinavien."
+            "title": "2. Hemen gönderiyoru",
+            "text": "Ürününüzü İskandinavya depomuzdan aynı gün göndermeye hazırız."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
             "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "3. Du modtager produktet",
-            "text": "Nu er det bare at nyde dit produkt. Du har 30 dage fra modtagelse til at afprøve produktet."
+            "title": "3. Ürününüz size ulaşır",
+            "text": "Şimdi ürününüzün keyfini çıkarma zamanı. Teslim aldıktan sonra ürünü denemek için 30 gününüz var."
           }
         }
       },
@@ -160,15 +166,15 @@
         "step_3"
       ],
       "settings": {
-        "heading": "Hvordan gør jeg?"
+        "heading": "Nasıl çalışır?"
       }
     },
     "bestsellers_grid": {
       "type": "featured-collection-grid",
       "settings": {
         "section_id": "bestsellers",
-        "heading": "Bedst sælgende produkter",
-        "collection": "massage-devices",
+        "heading": "En çok satan ürünler",
+        "collection": "masaj-aletleri",
         "limit": 4,
         "show_filters": false,
         "show_discount_banner": false,
@@ -179,8 +185,8 @@
     "about": {
       "type": "about-collection",
       "settings": {
-        "heading": "Om vores massageapparater",
-        "text": "<p>Vores mission er at gøre professionel massage tilgængelig for alle. Vi har cuttet dyre mellemled og leverer direkte til den kvalitetsbevidste forbruger, som ikke ønsker at betale overpris.</p><p>Hvor kvalitet og pris går hånd i hånd ❤️</p><p>Vi tilbyder en tilfredshedsgaranti på alle vores produkter. Vi ønsker, at du skal føle dig tryg ved dit køb, og derfor giver vi dig mulighed for at prøve produktet. Hvis du mod forventning ikke er fuldt ud tilfreds, kan du returnere det og få pengene tilbage.</p>"
+        "heading": "Masaj cihazlarımız hakkında",
+        "text": "<p>Misyonumuz profesyonel masajı herkes için erişilebilir kılmak. Pahalı aracıları kaldırıyor ve kalite odaklı müşterilere doğrudan teslimat yapıyoruz.</p><p>Kalite ve fiyatın el ele verdiği yer ❤️</p><p>Tüm ürünlerimizde memnuniyet garantisi sunuyoruz. Satın alımınızda kendinizi güvende hissetmenizi istiyoruz; bu yüzden ürünü deneme imkânı veriyoruz. Beklentilerinizi karşılamazsa iade edip paranızı geri alabilirsini</p>"
       }
     },
     "contact_help": {
@@ -225,7 +231,7 @@
       "settings": {
         "section_id": "products",
         "heading": "ALLE PRODUKTER",
-        "collection": "massage-devices",
+        "collection": "masaj-aletleri",
         "limit": 12,
         "show_filters": true,
         "show_discount_banner": true,

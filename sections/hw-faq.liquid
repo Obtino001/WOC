@@ -17,7 +17,7 @@
     
     <div class="max-w-3xl mx-auto space-y-3">
       {% for block in section.blocks %}
-        <div class="border border-border rounded-lg px-5 group/item transition-colors hover:border-foreground/20 bg-card" {{ block.shopify_attributes }}>
+        <div class="border border-border rounded-none px-5 group/item transition-colors hover:border-foreground/20 bg-card" {{ block.shopify_attributes }}>
           <details class="group marker:hidden">
             <summary class="flex flex-1 items-center justify-between transition-all hover:underline font-body text-sm font-semibold text-foreground py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
               {{ block.settings.question }}

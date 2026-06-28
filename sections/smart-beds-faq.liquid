@@ -40,7 +40,7 @@
 
     <div class="max-w-3xl mx-auto space-y-3">
       {% for block in section.blocks %}
-        <details class="group border rounded-lg transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/30 [&_svg]:open:-rotate-180" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
+        <details class="group border rounded-none transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/30 [&_svg]:open:-rotate-180" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" {{ block.shopify_attributes }}>
           <summary class="flex cursor-pointer items-start justify-between w-full text-left px-6 py-5 gap-4 outline-none [&::-webkit-details-marker]:hidden">
             <h3 class="font-display text-base font-semibold leading-snug transition-colors text-foreground" itemprop="name">{{ block.settings.question }}</h3>
             <span class="mt-0.5 shrink-0 transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="m6 9 6 6 6-6"></path></svg></span>

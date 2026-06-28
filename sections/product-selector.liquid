@@ -94,7 +94,7 @@
                 {% if product != blank and product.images.size > 1 %}
                   <div class="flex gap-2 mb-8 overflow-x-auto pb-2">
                     {% for image in product.images limit: 4 %}
-                      <button class="flex-shrink-0 w-20 h-16 rounded-md bg-[#111] border {% if forloop.first %}border-[#d4af37]{% else %}border-[#333] hover:border-[#666]{% endif %} transition-colors overflow-hidden">
+                      <button class="flex-shrink-0 w-20 h-16 rounded-none bg-[#111] border {% if forloop.first %}border-[#d4af37]{% else %}border-[#333] hover:border-[#666]{% endif %} transition-colors overflow-hidden">
                         {{ image | image_url: width: 150 | image_tag: class: 'w-full h-full object-cover' }}
                       </button>
                     {% endfor %}
@@ -126,7 +126,7 @@
                 </div>
                 
                 <!-- Promo Line -->
-                <div class="border border-[#d4af37]/30 rounded-lg h-12 mb-6 flex items-center justify-center">
+                <div class="border border-[#d4af37]/30 rounded-none h-12 mb-6 flex items-center justify-center">
                    <span class="text-[#d4af37] font-body text-xs font-semibold uppercase tracking-widest">Yatak Başlığı ve Ped Yatak Dahil</span>
                 </div>
                 
@@ -136,17 +136,17 @@
                 <div class="mb-6">
                   <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">STØRRELSE</p>
                   <div class="flex flex-wrap gap-2">
-                    <button class="px-5 py-2 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">80×200</button>
-                    <button class="px-5 py-2 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">90×200</button>
-                    <button class="px-5 py-2 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">120×200</button>
+                    <button class="px-5 py-2 rounded-none border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">80×200</button>
+                    <button class="px-5 py-2 rounded-none border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">90×200</button>
+                    <button class="px-5 py-2 rounded-none border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">120×200</button>
                   </div>
                 </div>
                 
                 <div class="mb-6">
                   <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">HÅRDHED</p>
                   <div class="space-y-2">
-                    <button class="w-full text-left px-4 py-3 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">Medium — anbefales til person u. 75 kg</button>
-                    <button class="w-full text-left px-4 py-3 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Fast — anbefales til person o. 95 kg</button>
+                    <button class="w-full text-left px-4 py-3 rounded-none border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">Medium — anbefales til person u. 75 kg</button>
+                    <button class="w-full text-left px-4 py-3 rounded-none border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Fast — anbefales til person o. 95 kg</button>
                   </div>
                 </div>
 
@@ -155,10 +155,10 @@
                   {% form 'product', product %}
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                     <div class="flex flex-col gap-3 mt-8">
-                      <button type="submit" class="w-full flex items-center justify-center h-12 rounded-lg bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                      <button type="submit" class="w-full flex items-center justify-center h-12 rounded-none bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
                         Sepete Ekle
                       </button>
-                      <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-lg bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                      <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-none bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
                         Gösterim Rezervasyonu Yapın
                       </button>
@@ -166,10 +166,10 @@
                   {% endform %}
                 {% else %}
                   <div class="flex flex-col gap-3 mt-8">
-                    <button type="button" class="w-full flex items-center justify-center h-12 rounded-lg bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                    <button type="button" class="w-full flex items-center justify-center h-12 rounded-none bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
                       Yapılandır & Satın Al
                     </button>
-                    <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-lg bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                    <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-none bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
                       Gösterim Rezervasyonu Yapın
                     </button>

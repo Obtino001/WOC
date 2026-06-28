@@ -21,9 +21,9 @@
 
     <div dir="ltr" data-orientation="horizontal" class="w-full">
       
-      <div role="tablist" aria-orientation="horizontal" class="items-center justify-center text-muted-foreground w-full grid grid-cols-4 bg-white border border-neutral-200 rounded-lg h-auto p-1" tabindex="0" data-orientation="horizontal" style="outline: none;">
+      <div role="tablist" aria-orientation="horizontal" class="items-center justify-center text-muted-foreground w-full grid grid-cols-4 bg-white border border-neutral-200 rounded-none h-auto p-1" tabindex="0" data-orientation="horizontal" style="outline: none;">
         {% for block in section.blocks %}
-          <button type="button" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="radix-{{ section.id }}-content-{{ forloop.index }}" data-state="{% if forloop.first %}active{% else %}inactive{% endif %}" id="radix-{{ section.id }}-trigger-{{ forloop.index }}" class="inline-flex items-center justify-center whitespace-nowrap px-3 font-medium ring-offset-background transition-all data-[state=active]:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-xs tracking-wider uppercase py-3 data-[state=active]:bg-neutral-900 data-[state=active]:text-white data-[state=inactive]:text-neutral-500 rounded-md" tabindex="-1" data-orientation="horizontal" data-radix-collection-item="" style="font-family: system-ui, sans-serif;" {{ block.shopify_attributes }}>
+          <button type="button" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="radix-{{ section.id }}-content-{{ forloop.index }}" data-state="{% if forloop.first %}active{% else %}inactive{% endif %}" id="radix-{{ section.id }}-trigger-{{ forloop.index }}" class="inline-flex items-center justify-center whitespace-nowrap px-3 font-medium ring-offset-background transition-all data-[state=active]:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-xs tracking-wider uppercase py-3 data-[state=active]:bg-neutral-900 data-[state=active]:text-white data-[state=inactive]:text-neutral-500 rounded-none" tabindex="-1" data-orientation="horizontal" data-radix-collection-item="" style="font-family: system-ui, sans-serif;" {{ block.shopify_attributes }}>
             {{ block.settings.tab_name }}
           </button>
         {% endfor %}
@@ -33,9 +33,9 @@
         <div data-state="{% if forloop.first %}active{% else %}inactive{% endif %}" data-orientation="horizontal" role="tabpanel" aria-labelledby="radix-{{ section.id }}-trigger-{{ forloop.index }}" id="radix-{{ section.id }}-content-{{ forloop.index }}" tabindex="0" class="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mt-8 {% unless forloop.first %}hidden{% endunless %}">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             {% if block.settings.image != blank %}
-              {{ block.settings.image | image_url: width: 800 | image_tag: class: 'rounded-lg w-full', loading: 'lazy' }}
+              {{ block.settings.image | image_url: width: 800 | image_tag: class: 'rounded-none w-full', loading: 'lazy' }}
             {% else %}
-              {{ 'product-2' | placeholder_svg_tag: 'rounded-lg w-full bg-gray-200' }}
+              {{ 'product-2' | placeholder_svg_tag: 'rounded-none w-full bg-gray-200' }}
             {% endif %}
             
             <div>

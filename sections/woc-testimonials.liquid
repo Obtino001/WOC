@@ -19,7 +19,7 @@
       {%- for block in section.blocks -%}
         {%- if block.type == 'video_review' -%}
           
-          <div class="group relative rounded-lg border border-border bg-card overflow-hidden shadow-soft flex flex-col" {{ block.shopify_attributes }}>
+          <div class="group relative rounded-none border border-border bg-card overflow-hidden shadow-soft flex flex-col" {{ block.shopify_attributes }}>
             <!-- Video Container -->
             <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
               {%- if block.settings.youtube_id != blank -%}
