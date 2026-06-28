@@ -24,12 +24,12 @@
       
       <div class="flex flex-col sm:flex-row gap-3 mb-6">
         {% if section.settings.button_1_text != blank %}
-          <a href="{{ section.settings.button_1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-copper hover:bg-copper-hover text-white font-body font-bold text-sm px-8 py-4 h-auto uppercase tracking-[0.15em] rounded-lg transition-all duration-500">
+          <a href="{{ section.settings.button_1_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-copper hover:bg-copper-hover text-white font-body font-bold text-sm px-8 py-4 h-auto uppercase tracking-[0.15em] rounded-none transition-all duration-500">
             {{ section.settings.button_1_text }}
           </a>
         {% endif %}
         {% if section.settings.button_2_text != blank %}
-          <a href="{{ section.settings.button_2_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 font-body font-bold text-sm px-8 py-4 h-auto uppercase tracking-[0.15em] rounded-lg transition-all duration-500">
+          <a href="{{ section.settings.button_2_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 font-body font-bold text-sm px-8 py-4 h-auto uppercase tracking-[0.15em] rounded-none transition-all duration-500">
             {{ section.settings.button_2_text }}
           </a>
         {% endif %}

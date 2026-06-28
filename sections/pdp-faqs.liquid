@@ -1,4 +1,4 @@
-﻿{%- style -%}
+{%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -31,7 +31,7 @@
         {%- if block.type == 'faq' -%}
           
           <details
-            class="group border border-neutral-200 rounded-lg bg-white overflow-hidden transition-all duration-300"
+            class="group border border-neutral-200 rounded-none bg-white overflow-hidden transition-all duration-300"
             {{ block.shopify_attributes }}
           >
             <summary class="flex justify-between items-center p-4 font-body text-xs font-bold text-neutral-800 uppercase cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">

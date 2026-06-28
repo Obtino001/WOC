@@ -13,7 +13,7 @@
 {%- endfor -%}
 
 <div class="color-{{ card_color_scheme | default: 'scheme-2' }} group flex flex-col rounded-[12px] overflow-hidden bg-[#f4f2ee] p-3.5 h-full">
-  <a class="block relative w-full aspect-square bg-white rounded-lg overflow-hidden flex items-center justify-center" href="{{ product.url }}">
+  <a class="block relative w-full aspect-square bg-white rounded-none overflow-hidden flex items-center justify-center" href="{{ product.url }}">
     {%- if product_badge -%}
       <span class="absolute top-3 left-3 z-10 bg-[#cd8e25] text-white font-body text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full">{{ product_badge }}</span>
     {%- endif -%}

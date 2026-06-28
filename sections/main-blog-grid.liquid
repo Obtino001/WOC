@@ -18,7 +18,7 @@
     {% for article in blog.articles %}
       <article class="group relative">
         <a class="block" href="{{ article.url }}">
-          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-muted/40 mb-5 relative">
+          <div class="aspect-[4/3] overflow-hidden rounded-none bg-muted/40 mb-5 relative">
             {% if article.image %}
               {{ article.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105', loading: 'lazy' }}
             {% else %}

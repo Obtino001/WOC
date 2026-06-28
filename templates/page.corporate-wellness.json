@@ -353,7 +353,7 @@
       ],
       "settings": {
         "background_color": "bg-card",
-        "card_style": "rounded-lg border border-border bg-card shadow-sm hover:border-corporate/30",
+        "card_style": "rounded-none border border-border bg-card shadow-sm hover:border-corporate/30",
         "columns_md": 2,
         "columns_lg": 4,
         "center_content": true,
@@ -427,7 +427,7 @@
       ],
       "settings": {
         "background_color": "bg-white",
-        "card_style": "rounded-lg border border-neutral-200 bg-white shadow-sm hover:border-corporate/30",
+        "card_style": "rounded-none border border-neutral-200 bg-white shadow-sm hover:border-corporate/30",
         "columns_md": 2,
         "columns_lg": 2,
         "center_content": false,

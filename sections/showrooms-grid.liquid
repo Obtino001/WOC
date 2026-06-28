@@ -4,7 +4,7 @@
       {% for block in section.blocks %}
         <div {{ block.shopify_attributes }}>
           <a class="block group" href="{{ block.settings.link }}">
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden border-border hover:border-gold/30 transition-all duration-500 hover:shadow-elevated">
+            <div class="rounded-none border bg-card text-card-foreground shadow-sm overflow-hidden border-border hover:border-gold/30 transition-all duration-500 hover:shadow-elevated">
               
               <div class="relative aspect-[16/10] overflow-hidden">
                 {% if block.settings.image != blank %}

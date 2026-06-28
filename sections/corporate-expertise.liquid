@@ -22,9 +22,9 @@
     
     <div class="grid md:grid-cols-2 gap-8">
       {%- for block in section.blocks -%}
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 h-full border-border hover:border-corporate/30 transition-colors group" {{ block.shopify_attributes }}>
+        <div class="rounded-none border bg-card text-card-foreground shadow-sm p-8 h-full border-border hover:border-corporate/30 transition-colors group" {{ block.shopify_attributes }}>
           <div class="p-0 flex gap-5">
-            <div class="w-12 h-12 rounded-lg bg-corporate/10 flex items-center justify-center flex-shrink-0 group-hover:bg-corporate/20 transition-colors [&>svg]:w-6 [&>svg]:h-6 [&>svg]:text-corporate">
+            <div class="w-12 h-12 rounded-none bg-corporate/10 flex items-center justify-center flex-shrink-0 group-hover:bg-corporate/20 transition-colors [&>svg]:w-6 [&>svg]:h-6 [&>svg]:text-corporate">
               {{ block.settings.icon_svg }}
             </div>
             <div>
