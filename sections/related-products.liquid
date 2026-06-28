@@ -27,7 +27,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.bg_color == 'warm' %}related-products-section{% endif %}">
   <product-recommendations
-    class="related-products {{ container_class }} section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="related-products section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
@@ -55,7 +55,7 @@
         endif
       -%}
       <ul
-        class="grid gap-x-6 gap-y-10 grid-cols-{{ columns_mobile }} {{ grid_cols_tablet }} lg:grid-cols-{{ columns_desktop }}"
+        class="{{ container_class }} grid gap-x-6 gap-y-10 grid-cols-{{ columns_mobile }} {{ grid_cols_tablet }} lg:grid-cols-{{ columns_desktop }}"
         role="list"
       >
         {% for recommendation in recommendations.products %}
