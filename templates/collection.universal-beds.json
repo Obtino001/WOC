@@ -24,24 +24,28 @@
         "badge_1": {
           "type": "badge",
           "settings": {
+            "svg_code": "",
             "title": "101 gece deneme süresi"
           }
         },
         "badge_2": {
           "type": "badge",
           "settings": {
+            "svg_code": "",
             "title": "Ücretsiz teslimat"
           }
         },
         "badge_3": {
           "type": "badge",
           "settings": {
+            "svg_code": "",
             "title": "Ücretsiz finansman"
           }
         },
         "badge_4": {
           "type": "badge",
           "settings": {
+            "svg_code": "",
             "title": "15 yıl garanti"
           }
         }
@@ -53,16 +57,6 @@
         "badge_4"
       ],
       "settings": {}
-    },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {
-        "label": "UNIVERSAL BEDS",
-        "title": "Senge i verdensklasse",
-        "description": "Få den ultimative søvnoplevelse med senge, der er designet til at støtte din krops unikke behov og sikre uforstyrret nattesøvn.",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     },
     "product_selector": {
       "type": "product-selector",
@@ -110,12 +104,24 @@
     },
     "feature_split_talalay": {
       "type": "feature-split",
+      "blocks": {
+        "check_item_zq6Taz": {
+          "type": "check_item",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "check_item_zq6Taz"
+      ],
       "settings": {
         "bg_light": true,
         "alignment": "center",
         "image_position": "left",
         "badge": "100% Doğal Talalay Lateks",
-        "title": "Kendine has bir üst şilte"
+        "title": "Kendine has bir üst şilte",
+        "description": "<p>60 mm Talalay lateks üst şiltemiz standart bir üst şilte değildir — uzanabileceğiniz en gelişmiş uyku yüzeyidir. Doğal olarak antibakteriyel özelliklere, serinletici hava sirkülasyonuna ve benzersiz bir yaz/kış dönüştürme işlevine sahip, Danimarka iklimi için tasarlanmış bir üst şilte elde edersiniz.<br/><br/></p>"
       }
     },
     "feature_split_springs": {
@@ -125,7 +131,8 @@
         "alignment": "left",
         "image_position": "left",
         "badge": "Tüm 3 modelde standarttır",
-        "title": "Bireysel olarak kaplanmış torba yaylar"
+        "title": "Bireysel olarak kaplanmış torba yaylar",
+        "description": "<p>Yataklarımızdaki her yay, kendi kumaş torbasında ayrı ayrı kapsüllenmiştir. Bu, aşağıdaki anlama gelir: <strong>her yay bağımsız çalışır</strong> — böylece yatak, geleneksel bonel yaylardaki gibi \"bir bütün\" olmak yerine vücudunuzun benzersiz hatlarına nokta nokta uyum sağlar.</p><p>Şu kadar ile <strong>m² başına 220 torba yay</strong> olağanüstü nokta esnekliğine sahip bir yatak elde edersiniz. Bu, hareket transferini ortadan kaldırır — eşiniz döndüğünde, siz <em>hiçbir şey</em>.</p><p>Torba yaylar, bir katman <strong>doğal lateks</strong>ile birleştirilmiştir ve sürekli nefes alabilirlik ve sıcaklık düzenlemesi sağlar. Sonuç olarak, gece boyunca, yıl boyunca destekleyen, havalandıran ve esnekliğini koruyan bir yatak elde edilir — şuna kadar: <strong>15 yıl garanti</strong>.</p>"
       }
     },
     "hardness_guide": {
@@ -133,7 +140,9 @@
       "settings": {
         "badge": "Kişiselleştirilmiş uyum",
         "title": "Vücut ağırlığınıza göre sertlik seçin",
-        "tip_title": "💡 Çift kişilik yatak mı? Bireysel sertlik seçin!"
+        "description": "",
+        "tip_title": "💡 Çift kişilik yatak mı? Bireysel sertlik seçin!",
+        "tip_text": ""
       }
     },
     "feature_split_antibacterial": {
@@ -143,14 +152,16 @@
         "alignment": "left",
         "image_position": "right",
         "badge": "Doğal olarak antibakteriyel",
-        "title": "Daha sağlıklı uyuyun — her gece"
+        "title": "Daha sağlıklı uyuyun — her gece",
+        "description": ""
       }
     },
     "ergonomic_zones": {
       "type": "feature-zones",
       "settings": {
         "badge": "Ergonomik hassasiyet",
-        "title": "Ergonomik 9 bölgeli yatak"
+        "title": "Ergonomik 9 bölgeli yatak",
+        "description": ""
       }
     },
     "feature_split_craftsmanship": {
@@ -160,7 +171,8 @@
         "alignment": "left",
         "image_position": "left",
         "badge": "Danimarka el işçiliği",
-        "title": "Tutku ve hassasiyetle üretilmiştir"
+        "title": "Tutku ve hassasiyetle üretilmiştir",
+        "description": ""
       }
     },
     "comparison_table": {
@@ -168,7 +180,10 @@
       "settings": {
         "badge": "Dürüst karşılaştırma",
         "title": "Neden WOC Supreme'i Seçmelisiniz?",
-        "btn_text": "Yatağınızı şimdi yapılandırın"
+        "description": "",
+        "footer_text": "",
+        "btn_text": "Yatağınızı şimdi yapılandırın",
+        "btn_link": ""
       }
     },
     "feature_split_linak": {
@@ -177,7 +192,9 @@
         "bg_light": false,
         "alignment": "center",
         "image_position": "left",
-        "title": "Tüm ayarlanabilir yataklarda Danimarka LINAK® motoru"
+        "badge": "",
+        "title": "Tüm ayarlanabilir yataklarda Danimarka LINAK® motoru",
+        "description": ""
       }
     },
     "cta_banner": {
@@ -185,14 +202,14 @@
       "settings": {
         "title": "Daha iyi bir uyku. Daha iyi bir günlük yaşam.",
         "description": "İyi bir uyku, iyi bir yaşamın temelidir. Doğru yatakla daha fazla enerji, daha iyi bir ruh hali ve önemli olan her şeye hazır bir bedenle uyanırsınız.",
-        "btn_text": "Hayalinizdeki yatağı yapılandırın"
+        "btn_text": "Hayalinizdeki yatağı yapılandırın",
+        "btn_link": ""
       }
     }
   },
   "order": [
     "hero_banner",
     "trust_badges",
-    "why_us",
     "product_selector",
     "feature_split_talalay",
     "feature_split_springs",
