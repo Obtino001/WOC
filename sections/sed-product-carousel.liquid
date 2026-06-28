@@ -46,7 +46,7 @@
           {%- endif -%}
           {%- assign item_shopify_attributes = item.shopify_attributes -%}
 
-          <div data-tab="{{ item.settings.tab }}" class="carousel-item min-w-[260px] sm:min-w-[280px] flex-shrink-0 bg-white group h-full flex flex-col relative" {{ item_shopify_attributes }}>
+          <div data-tab="{{ item.settings.tab }}" class="carousel-item w-[70vw] sm:w-[280px] flex-shrink-0 bg-white group h-full flex flex-col relative" {{ item_shopify_attributes }}>
             <div class="relative aspect-square overflow-hidden bg-[#f5f5f3]">
               <a href="{{ target_url }}" class="absolute inset-0 z-0"></a>
               {% if image_to_show != blank %}
