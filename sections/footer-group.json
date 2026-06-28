@@ -30,21 +30,28 @@
           "type": "menu",
           "settings": {
             "title": "Kokoelmat",
-            "menu": "main-menu"
+            "menu": "footer"
           }
         },
         "menu_P9iKeL": {
           "type": "menu",
           "settings": {
-            "title": "Kokoelmat",
-            "menu": "main-menu"
+            "title": "Şirket",
+            "menu": "i-rket"
           }
         },
         "menu_6fVmQ8": {
           "type": "menu",
           "settings": {
-            "title": "Kokoelmat",
-            "menu": "main-menu"
+            "title": "SHOWROOMLARIMIZ",
+            "menu": "showroomlarimiz"
+          }
+        },
+        "menu_FYNhcL": {
+          "type": "menu",
+          "settings": {
+            "title": "YASAL",
+            "menu": "yasal"
           }
         }
       },
@@ -52,7 +59,8 @@
         "brand_block",
         "menu_legal",
         "menu_P9iKeL",
-        "menu_6fVmQ8"
+        "menu_6fVmQ8",
+        "menu_FYNhcL"
       ],
       "settings": {
         "copyright_text": "World of Comfort. Alle rettigheder forbeholdes.",
