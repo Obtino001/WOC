@@ -1,4 +1,4 @@
-<section class="py-16 bg-[#0a0a0a] text-[#e5e5e5]" id="woc-product-configurator-{{ section.id }}">
+<section class="py-16 bg-[#0a0a0a] text-[#e5e5e5]" id="woc-product-configurator-{{ section.id }}" data-section-id="{{ section.id }}">
   <div class="container mx-auto px-4 lg:px-8">
     
     <!-- Top Header -->
@@ -7,30 +7,28 @@
       <h2 class="font-display text-3xl md:text-4xl font-bold text-white">{{ section.settings.title }}</h2>
     </div>
     
-    <!-- 3 Bed Type Cards -->
+    <!-- 3 Bed Type Cards (Tabs) -->
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
       {% for block in section.blocks %}
         {% if block.type == 'product_card' %}
           {% assign product = block.settings.product_ref %}
           
           <button type="button" 
-                  class="woc-card-selector relative group rounded-2xl overflow-hidden border-2 transition-all duration-500 text-left flex flex-col {% if block.settings.highlight %}border-[#d4af37] shadow-[0_0_40px_rgba(212,175,55,0.15)] scale-[1.02]{% else %}border-[#333] hover:border-[#d4af37]/40{% endif %}" 
+                  class="woc-card-selector relative group rounded-2xl overflow-hidden border-2 transition-all duration-500 text-left flex flex-col {% if forloop.first %}border-[#d4af37] shadow-[0_0_40px_rgba(212,175,55,0.15)] scale-[1.02] is-active{% else %}border-[#333] hover:border-[#d4af37]/40{% endif %}" 
                   data-target-id="{{ block.id }}"
                   {{ block.shopify_attributes }}>
             
             {% if block.settings.badge != blank %}
               <div class="absolute top-4 left-4 z-10">
-                <span class="font-body text-[10px] font-semibold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full backdrop-blur-md {% if block.settings.highlight %}bg-[#d4af37] text-black{% else %}bg-black/70 text-[#d4af37] border border-[#d4af37]/30{% endif %}">
+                <span class="woc-card-badge font-body text-[10px] font-semibold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full backdrop-blur-md {% if forloop.first %}bg-[#d4af37] text-black{% else %}bg-black/70 text-[#d4af37] border border-[#d4af37]/30{% endif %}">
                   {{ block.settings.badge }}
                 </span>
               </div>
             {% endif %}
             
-            {% if block.settings.highlight %}
-              <div class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-[#d4af37] flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-black"><path d="M20 6 9 17l-5-5"></path></svg>
-              </div>
-            {% endif %}
+            <div class="woc-card-checkmark absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-[#d4af37] flex items-center justify-center" style="display: {% if forloop.first %}flex{% else %}none{% endif %};">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-black"><path d="M20 6 9 17l-5-5"></path></svg>
+            </div>
             
             <div class="aspect-[4/3] overflow-hidden relative bg-[#111]">
               {% if block.settings.image != blank %}
@@ -46,7 +44,7 @@
             <div class="p-6 bg-[#111] flex-1 flex flex-col justify-between">
               <div>
                 <h3 class="font-display text-xl font-bold text-white mb-1.5">
-                  {% if product != blank %}{{ product.title }}{% else %}{{ block.settings.title }}{% endif %}
+                  {% if block.settings.title != blank %}{{ block.settings.title }}{% elsif product != blank %}{{ product.title }}{% else %}Ürün Adı{% endif %}
                 </h3>
                 <p class="font-body text-sm text-[#888] mb-4 italic">{{ block.settings.description }}</p>
               </div>
@@ -57,147 +55,126 @@
                     {% if product != blank %}{{ product.price | money }}{% else %}{{ block.settings.price }}{% endif %}
                   </p>
                 </div>
-                <div class="flex items-center gap-1.5 font-body text-xs font-medium transition-colors {% if block.settings.highlight %}text-[#d4af37]{% else %}text-[#888] group-hover:text-[#d4af37]{% endif %}">
+                <div class="woc-card-btn flex items-center gap-1.5 font-body text-xs font-medium transition-colors {% if forloop.first %}text-[#d4af37]{% else %}text-[#888] group-hover:text-[#d4af37]{% endif %}">
                   {{ section.settings.configure_text }} 
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="m9 18 6-6-6-6"></path></svg>
                 </div>
               </div>
             </div>
-            {% if block.settings.highlight %}
-              <div class="h-1 w-full bg-gradient-to-r from-[#d4af37]/0 via-[#d4af37] to-[#d4af37]/0"></div>
-            {% endif %}
+            <div class="woc-card-highlight h-1 w-full bg-gradient-to-r from-[#d4af37]/0 via-[#d4af37] to-[#d4af37]/0" style="display: {% if forloop.first %}block{% else %}none{% endif %};"></div>
           </button>
         {% endif %}
       {% endfor %}
     </div>
 
-    <!-- Main Configurator Area -->
+    <!-- Main Configurator Area (Dynamic Bottom Section) -->
     <div class="max-w-6xl mx-auto">
       
-      <!-- We create a wrapper for the dynamic configurator data -->
       <div id="woc-configurator-wrapper">
         {% for block in section.blocks %}
           {% if block.type == 'product_card' %}
             {% assign product = block.settings.product_ref %}
             
-            <div class="woc-configurator-panel grid lg:grid-cols-2 gap-12 {% if forloop.first %}block{% else %}hidden{% endif %}" data-panel-id="{{ block.id }}">
+            <div class="woc-configurator-panel {% if forloop.first %}grid{% else %}hidden{% endif %} lg:grid-cols-2 gap-12" data-panel-id="{{ block.id }}">
               
-              <!-- Configurator Left (Gallery) -->
+              <!-- Configurator Left (Gallery & Title) -->
               <div>
                 <!-- Image Gallery Main -->
                 <div class="relative rounded-xl overflow-hidden mb-3 bg-[#111] aspect-[4/3] border border-[#222] flex items-center justify-center">
                   {% if product != blank and product.featured_image %}
                     {{ product.featured_image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover' }}
+                  {% elsif block.settings.image != blank %}
+                     {{ block.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover' }}
                   {% else %}
-                    <h2 class="font-display text-4xl text-[#d4af37] font-bold">Gallery Main</h2>
+                    <h2 class="font-display text-2xl text-[#555] font-bold">Görsel Yok</h2>
                   {% endif %}
-                  
-                  <button class="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-[#333] flex items-center justify-center hover:border-[#d4af37] transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-white"><path d="m15 18-6-6 6-6"></path></svg>
-                  </button>
-                  <button class="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-[#333] flex items-center justify-center hover:border-[#d4af37] transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-white"><path d="m9 18 6-6-6-6"></path></svg>
-                  </button>
                 </div>
                 
-                <!-- Gallery Thumbnails -->
-                <div class="flex gap-2 mb-8 overflow-x-auto pb-2">
-                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#333] flex items-center justify-center text-[#888] font-body text-xs hover:border-[#666] transition-colors">
-                    Th1
-                  </button>
-                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-body text-xs">
-                    Th2
-                  </button>
-                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#333] flex items-center justify-center text-[#888] font-body text-xs hover:border-[#666] transition-colors">
-                    Th3
-                  </button>
+                <!-- Gallery Thumbnails (Optional: Loop through real product images) -->
+                {% if product != blank and product.images.size > 1 %}
+                  <div class="flex gap-2 mb-8 overflow-x-auto pb-2">
+                    {% for image in product.images limit: 4 %}
+                      <button class="flex-shrink-0 w-20 h-16 rounded-md bg-[#111] border {% if forloop.first %}border-[#d4af37]{% else %}border-[#333] hover:border-[#666]{% endif %} transition-colors overflow-hidden">
+                        {{ image | image_url: width: 150 | image_tag: class: 'w-full h-full object-cover' }}
+                      </button>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                <div class="mt-8">
+                   <h3 class="font-display text-2xl font-bold text-white mb-2">
+                     {% if block.settings.title != blank %}{{ block.settings.title }}{% elsif product != blank %}{{ product.title }}{% else %}Ürün Adı{% endif %}
+                   </h3>
+                   <p class="font-body text-[#888] text-sm leading-relaxed mb-4">
+                     {% if product != blank %}{{ product.description | strip_html | truncatewords: 30 }}{% else %}{{ block.settings.description }}{% endif %}
+                   </p>
                 </div>
               </div>
 
-              <!-- Configurator Right (Form & Price) matching image_fce65f.png exactly -->
+              <!-- Configurator Right (Form & Price) -->
               <div class="bg-[#0f0f0f] rounded-xl border border-[#222] p-6 lg:p-8">
                 
                 <!-- Price -->
                 <div class="flex items-baseline justify-between mb-6">
                   <div>
-                    <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-1">DIN PRIS</p>
+                    <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-1">DİN PRİS</p>
                     <p class="font-display text-3xl font-bold text-[#d4af37] tracking-tight">
-                      {% if product != blank %}{{ product.price | money }}{% else %}{{ section.settings.config_price }}{% endif %}
+                      {% if product != blank %}{{ product.price | money }}{% else %}{{ block.settings.price }}{% endif %}
                     </p>
                   </div>
                   <p class="font-body text-xs text-[#888]">{{ section.settings.installment_text }}</p>
                 </div>
                 
-                <!-- Promo Box -->
-                <div class="border border-[#d4af37] rounded-lg h-12 mb-6"></div>
-                
-                <!-- LINAK Box -->
-                <div class="bg-[#1a1a1a] border border-[#222] rounded-lg p-3.5 mb-8 flex items-center gap-4">
-                  <div class="w-16 h-8 flex-shrink-0 bg-[#1268B3] rounded flex items-center justify-center text-white font-bold text-[10px] tracking-widest">LINAK</div>
+                <!-- Promo Line -->
+                <div class="border border-[#d4af37]/30 rounded-lg h-12 mb-6 flex items-center justify-center">
+                   <span class="text-[#d4af37] font-body text-xs font-semibold uppercase tracking-widest">Yatak Başlığı ve Ped Yatak Dahil</span>
                 </div>
                 
                 <div class="shrink-0 bg-[#222] h-[1px] w-full mb-6"></div>
                 
-                <!-- Størrelse (Size) Selector -->
+                <!-- Dummy Selectors (Size, Hardness, Color) -->
                 <div class="mb-6">
                   <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">STØRRELSE</p>
                   <div class="flex flex-wrap gap-2">
-                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">80×200</button>
-                    <button class="px-5 py-2.5 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">90×200</button>
-                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">120×200</button>
-                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">140×200</button>
-                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">160×200</button>
-                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">180×200</button>
+                    <button class="px-5 py-2 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">80×200</button>
+                    <button class="px-5 py-2 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">90×200</button>
+                    <button class="px-5 py-2 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">120×200</button>
                   </div>
                 </div>
                 
-                <!-- Hårdhed (Hardness) Selector -->
                 <div class="mb-6">
                   <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">HÅRDHED</p>
                   <div class="space-y-2">
-                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Blød — anbefales til person u. 75 kg</button>
-                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">Medium — anbefales til person u. 75 kg</button>
-                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Medium — anbefales til person 75-95 kg</button>
-                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Fast — anbefales til person o. 95 kg</button>
+                    <button class="w-full text-left px-4 py-3 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">Medium — anbefales til person u. 75 kg</button>
+                    <button class="w-full text-left px-4 py-3 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Fast — anbefales til person o. 95 kg</button>
                   </div>
                 </div>
-                
-                <!-- Farve (Color) Selector -->
-                <div class="mb-6">
-                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">FARVE</p>
-                  <div class="flex gap-4">
-                    <button class="flex flex-col items-center gap-2 group">
-                      <div class="w-8 h-8 rounded-full border border-[#d4af37] p-[2px]">
-                         <div class="w-full h-full rounded-full" style="background-color: #8b8b8b;"></div>
-                      </div>
-                      <span class="font-body text-[10px] text-[#d4af37]">Grå</span>
+
+                <!-- ADD TO CART FORM -->
+                {% if product != blank %}
+                  {% form 'product', product %}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <div class="flex flex-col gap-3 mt-8">
+                      <button type="submit" class="w-full flex items-center justify-center h-12 rounded-lg bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                        Sepete Ekle
+                      </button>
+                      <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-lg bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                        Gösterim Rezervasyonu Yapın
+                      </button>
+                    </div>
+                  {% endform %}
+                {% else %}
+                  <div class="flex flex-col gap-3 mt-8">
+                    <button type="button" class="w-full flex items-center justify-center h-12 rounded-lg bg-[#d4af37] hover:bg-[#d4af37]/90 text-black font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                      Yapılandır & Satın Al
                     </button>
-                    <button class="flex flex-col items-center gap-2 group">
-                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
-                         <div class="w-full h-full rounded-full" style="background-color: #3c3c3c;"></div>
-                      </div>
-                      <span class="font-body text-[10px] text-[#888]">Antracit</span>
-                    </button>
-                    <button class="flex flex-col items-center gap-2 group">
-                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
-                         <div class="w-full h-full rounded-full" style="background-color: #1a1a1a;"></div>
-                      </div>
-                      <span class="font-body text-[10px] text-[#888]">Sort</span>
-                    </button>
-                    <button class="flex flex-col items-center gap-2 group">
-                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
-                         <div class="w-full h-full rounded-full" style="background-color: #e5d3b3;"></div>
-                      </div>
-                      <span class="font-body text-[10px] text-[#888]">Beige</span>
+                    <button type="button" class="w-full flex items-center justify-center gap-2 h-12 rounded-lg bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 font-body text-sm font-bold uppercase tracking-wider transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                      Gösterim Rezervasyonu Yapın
                     </button>
                   </div>
-                </div>
-                
-                <!-- Ben (Legs) Header (from bottom of screenshot) -->
-                <div class="mb-2">
-                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">BEN (GRATIS)</p>
-                  <div class="w-full h-10 rounded-lg border border-[#d4af37] bg-[#1a1a1a]"></div>
-                </div>
+                {% endif %}
 
               </div>
             </div>
@@ -210,57 +187,87 @@
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  function initWocConfigurator() {
     const selectors = document.querySelectorAll('#woc-product-configurator-{{ section.id }} .woc-card-selector');
     const panels = document.querySelectorAll('#woc-product-configurator-{{ section.id }} .woc-configurator-panel');
 
+    if (!selectors.length || !panels.length) return;
+
     selectors.forEach(selector => {
-      selector.addEventListener('click', function() {
-        // Remove highlight from all cards
-        selectors.forEach(s => {
-          s.classList.remove('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]');
+      // Remove old listeners to prevent duplicates in Theme Editor
+      const newSelector = selector.cloneNode(true);
+      selector.parentNode.replaceChild(newSelector, selector);
+      
+      newSelector.addEventListener('click', function() {
+        // 1. Reset all cards
+        document.querySelectorAll('#woc-product-configurator-{{ section.id }} .woc-card-selector').forEach(s => {
+          s.classList.remove('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]', 'is-active');
           s.classList.add('border-[#333]');
           
-          // Reset badge colors
-          const badge = s.querySelector('.absolute.top-4.left-4 span');
+          const badge = s.querySelector('.woc-card-badge');
           if(badge) {
             badge.classList.remove('bg-[#d4af37]', 'text-black');
             badge.classList.add('bg-black/70', 'text-[#d4af37]', 'border', 'border-[#d4af37]/30');
           }
           
-          // Hide checkmark icon
-          const checkmark = s.querySelector('.absolute.top-4.right-4');
+          const checkmark = s.querySelector('.woc-card-checkmark');
           if(checkmark) checkmark.style.display = 'none';
+
+          const highlight = s.querySelector('.woc-card-highlight');
+          if(highlight) highlight.style.display = 'none';
+
+          const btnText = s.querySelector('.woc-card-btn');
+          if(btnText) {
+             btnText.classList.remove('text-[#d4af37]');
+             btnText.classList.add('text-[#888]');
+          }
         });
 
-        // Add highlight to clicked card
+        // 2. Highlight clicked card
         this.classList.remove('border-[#333]');
-        this.classList.add('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]');
+        this.classList.add('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]', 'is-active');
         
-        // Update badge on clicked card
-        const badge = this.querySelector('.absolute.top-4.left-4 span');
+        const badge = this.querySelector('.woc-card-badge');
         if(badge) {
           badge.classList.remove('bg-black/70', 'text-[#d4af37]', 'border', 'border-[#d4af37]/30');
           badge.classList.add('bg-[#d4af37]', 'text-black');
         }
 
-        // Show checkmark icon
-        const checkmark = this.querySelector('.absolute.top-4.right-4');
+        const checkmark = this.querySelector('.woc-card-checkmark');
         if(checkmark) checkmark.style.display = 'flex';
 
-        // Switch Configurator Panel
+        const highlight = this.querySelector('.woc-card-highlight');
+        if(highlight) highlight.style.display = 'block';
+
+        const btnText = this.querySelector('.woc-card-btn');
+        if(btnText) {
+            btnText.classList.remove('text-[#888]');
+            btnText.classList.add('text-[#d4af37]');
+        }
+
+        // 3. Switch Bottom Panels
         const targetId = this.getAttribute('data-target-id');
         panels.forEach(panel => {
           if (panel.getAttribute('data-panel-id') === targetId) {
             panel.classList.remove('hidden');
-            panel.classList.add('block');
+            panel.classList.add('grid');
           } else {
-            panel.classList.remove('block');
+            panel.classList.remove('grid');
             panel.classList.add('hidden');
           }
         });
       });
     });
+  }
+
+  // Initialize on normal page load
+  document.addEventListener('DOMContentLoaded', initWocConfigurator);
+  
+  // Re-initialize inside Shopify Theme Editor when section updates
+  document.addEventListener('shopify:section:load', function(event) {
+    if (event.detail.sectionId === '{{ section.id }}') {
+      initWocConfigurator();
+    }
   });
 </script>
 
@@ -294,12 +301,6 @@
     },
     {
       "type": "text",
-      "id": "config_price",
-      "label": "Fallback Form Price",
-      "default": "₺75.300"
-    },
-    {
-      "type": "text",
       "id": "installment_text",
       "label": "Installment Text",
       "default": "Eller ₺7.530/md. i 10 mdr."
@@ -317,16 +318,10 @@
           "label": "Select Backend Product"
         },
         {
-          "type": "checkbox",
-          "id": "highlight",
-          "label": "Highlight initially?",
-          "default": false
-        },
-        {
           "type": "text",
           "id": "badge",
           "label": "Badge Text",
-          "default": "ÇOK SATANLAR"
+          "default": "AKILLI SEÇİM"
         },
         {
           "type": "image_picker",
@@ -342,13 +337,13 @@
           "type": "text",
           "id": "description",
           "label": "Short Description",
-          "default": "Sizi yedinci cennete taşıyor"
+          "default": "Özel konfor akıllı depolamayla buluşuyor"
         },
         {
           "type": "text",
           "id": "price",
           "label": "Fallback Price (If no product)",
-          "default": "₺40.160"
+          "default": "₺27.605"
         }
       ]
     }
@@ -360,31 +355,28 @@
         {
           "type": "product_card",
           "settings": {
-            "highlight": false,
             "badge": "ÇOK SATANLAR",
-            "title": "WOC Supreme Kontinental",
+            "title": "AI Smart Topper",
             "description": "Erteleme düğmesini karşı konulmaz yapın",
-            "price": "₺40.160"
+            "price": "2,499.00TL"
           }
         },
         {
           "type": "product_card",
           "settings": {
-            "highlight": true,
             "badge": "PREMIUM",
-            "title": "WOC Supreme Elevation",
+            "title": "BOSS LADY Facelift",
             "description": "Sizi yedinci cennete taşıyor",
-            "price": "₺75.300"
+            "price": "3,499.00TL"
           }
         },
         {
           "type": "product_card",
           "settings": {
-            "highlight": false,
             "badge": "AKILLI SEÇİM",
-            "title": "WOC Supreme Depolama Yatağı",
+            "title": "CardioFlex",
             "description": "Özel konfor akıllı depolamayla buluşuyor",
-            "price": "₺27.605"
+            "price": "502,000.00TL"
           }
         }
       ]
