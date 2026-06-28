@@ -23,14 +23,59 @@
         "feature_6FPMHp": {
           "type": "feature",
           "settings": {
-            "svg_icon": "",
-            "title": "",
-            "description": ""
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
+          }
+        },
+        "feature_jycUQe": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
+          }
+        },
+        "feature_LxQby8": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
+          }
+        },
+        "feature_DzNB7e": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
+          }
+        },
+        "feature_FDqE9G": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
+          }
+        },
+        "feature_mniJga": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-thermometer w-5 h-5 text-gold\"><path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"></path></svg>",
+            "title": "Sıcaklık Düzenlemesi",
+            "description": "Doğal tüy gece boyunca nefes alır ve ısıyı düzenler. Yazın serin, kışın sıcak uyursunuz — terli uyanmadan"
           }
         }
       },
       "block_order": [
-        "feature_6FPMHp"
+        "feature_6FPMHp",
+        "feature_jycUQe",
+        "feature_LxQby8",
+        "feature_DzNB7e",
+        "feature_FDqE9G",
+        "feature_mniJga"
       ],
       "settings": {
         "badge": "NEDEN ÖNEMLİ",
