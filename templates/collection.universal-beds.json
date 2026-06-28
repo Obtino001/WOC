@@ -265,27 +265,43 @@
     },
     "hardness_guide": {
       "type": "feature-hardness",
+      "blocks": {
+        "card_nfbm7M": {
+          "type": "card",
+          "settings": {
+            "title": "Yumuşak",
+            "weight": "75 kg altı",
+            "text": "Daha hafif kişiler ve yan yatış için idealdir. Derin basınç tahliyesi sağlar ve omuz ve kalçanın yeterince içeri batmasına izin verir."
+          }
+        },
+        "card_fzeRfX": {
+          "type": "card",
+          "settings": {
+            "title": "Yumuşak",
+            "weight": "75 kg altı",
+            "text": "Daha hafif kişiler ve yan yatış için idealdir. Derin basınç tahliyesi sağlar ve omuz ve kalçanın yeterince içeri batmasına izin verir."
+          }
+        },
+        "card_kRN8md": {
+          "type": "card",
+          "settings": {
+            "title": "Yumuşak",
+            "weight": "75 kg altı",
+            "text": "Daha hafif kişiler ve yan yatış için idealdir. Derin basınç tahliyesi sağlar ve omuz ve kalçanın yeterince içeri batmasına izin verir."
+          }
+        }
+      },
+      "block_order": [
+        "card_nfbm7M",
+        "card_fzeRfX",
+        "card_kRN8md"
+      ],
       "settings": {
         "badge": "Kişiselleştirilmiş uyum",
         "title": "Vücut ağırlığınıza göre sertlik seçin",
-        "description": "",
+        "description": "Doğru sertlik, omurganın doğru desteği için çok önemlidir. Yataklarımız üç farklı sertlikte mevcuttur — ve çift kişilik yataklar için her iki tarafta farklı sertlikseçebilirsiniz, böylece her iki taraf da en iyi şekilde uyur.",
         "tip_title": "💡 Çift kişilik yatak mı? Bireysel sertlik seçin!",
-        "tip_text": ""
-      }
-    },
-    "feature_split_antibacterial": {
-      "type": "feature-split",
-      "settings": {
-        "bg_light": false,
-        "badge": "Doğal olarak antibakteriyel",
-        "main_title": "",
-        "main_description": "",
-        "image_position": "right",
-        "content_title": "",
-        "content_text": "",
-        "show_comparison": true,
-        "pros_title": "✓ WOC Talalay Lateks",
-        "cons_title": "✗ Standart Hafızalı Köpük"
+        "tip_text": "120 cm ve üzeri tüm yataklar için seçim yapabilirsiniz sol ve sağ tarafta farklı sertlik. Böylece ikiniz de bireysel vücut ağırlığınıza uygun bir yatakta hiçbir taviz vermeden uyuyabilirsiniz."
       }
     },
     "ergonomic_zones": {
@@ -294,21 +310,6 @@
         "badge": "Ergonomik hassasiyet",
         "title": "Ergonomik 9 bölgeli yatak",
         "description": ""
-      }
-    },
-    "feature_split_craftsmanship": {
-      "type": "feature-split",
-      "settings": {
-        "bg_light": false,
-        "badge": "Danimarka el işçiliği",
-        "main_title": "",
-        "main_description": "",
-        "image_position": "left",
-        "content_title": "",
-        "content_text": "",
-        "show_comparison": true,
-        "pros_title": "✓ WOC Talalay Lateks",
-        "cons_title": "✗ Standart Hafızalı Köpük"
       }
     },
     "comparison_table": {
@@ -353,9 +354,7 @@
     "product_selector",
     "feature_split_z8yNGB",
     "hardness_guide",
-    "feature_split_antibacterial",
     "ergonomic_zones",
-    "feature_split_craftsmanship",
     "comparison_table",
     "feature_split_linak",
     "cta_banner"
