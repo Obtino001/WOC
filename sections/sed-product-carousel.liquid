@@ -18,8 +18,14 @@
         {%- assign is_collection = false -%}
         
         {%- if section.settings.collection != blank -%}
-          {%- assign products_to_display = section.settings.collection.products -%}
-          {%- assign is_collection = true -%}
+          {%- assign coll = section.settings.collection -%}
+          {%- if coll.products and coll.products.size > 0 -%}
+            {%- assign products_to_display = coll.products -%}
+            {%- assign is_collection = true -%}
+          {%- elsif collections[coll].products.size > 0 -%}
+            {%- assign products_to_display = collections[coll].products -%}
+            {%- assign is_collection = true -%}
+          {%- endif -%}
         {%- endif -%}
 
         {%- for item in products_to_display limit: section.settings.products_to_show -%}
@@ -84,7 +90,7 @@
                     </div>
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                       <input type="hidden" name="id" value="{{ current_variant.id }}" class="product-variant-id" disabled>
-                      <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-foreground hover:bg-foreground/90 text-background text-[10px] uppercase tracking-[0.15em] rounded-none h-10 disabled:opacity-50 disabled:cursor-not-allowed"
+                      <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-zinc-900 hover:bg-zinc-800 text-white text-[10px] uppercase tracking-[0.15em] rounded-none h-10 disabled:opacity-50 disabled:cursor-not-allowed"
                         {% if current_variant.available == false %}disabled{% endif %}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
                         <span>
@@ -99,7 +105,7 @@
                     {%- endform -%}
                   </product-form>
                 {%- else -%}
-                  <a href="{{ target_url }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-foreground hover:bg-foreground/90 text-background text-[10px] uppercase tracking-[0.15em] rounded-none h-10">
+                  <a href="{{ target_url }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-3 w-full bg-zinc-900 hover:bg-zinc-800 text-white text-[10px] uppercase tracking-[0.15em] rounded-none h-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg> Add to Basket
                   </a>
                 {%- endif -%}
