@@ -9,55 +9,6 @@
  */
 {
   "sections": {
-    "woc_trust_bar_km4wNG": {
-      "type": "woc-trust-bar",
-      "blocks": {
-        "trust_item_YaeDFb": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "truck",
-            "custom_icon_svg": "",
-            "label": "Gratis Levering",
-            "sub": "I hele Skandinavien"
-          }
-        },
-        "trust_item_RNdYJD": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "shield",
-            "custom_icon_svg": "",
-            "label": "5 Års Garanti",
-            "sub": "På alle modeller"
-          }
-        },
-        "trust_item_jNHzdN": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "award",
-            "custom_icon_svg": "",
-            "label": "Prisvindende",
-            "sub": "Skandinavisk Design"
-          }
-        },
-        "trust_item_iDNiXH": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "creditcard",
-            "custom_icon_svg": "",
-            "label": "0% Rente",
-            "sub": "Finansiering tilbydes"
-          }
-        }
-      },
-      "block_order": [
-        "trust_item_YaeDFb",
-        "trust_item_RNdYJD",
-        "trust_item_jNHzdN",
-        "trust_item_iDNiXH"
-      ],
-      "name": "WOC Trust Bar",
-      "settings": {}
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -158,9 +109,9 @@
       "settings": {
         "page_width": "standard",
         "color_scheme": "scheme-1",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "Product Overview",
+        "padding_top": 64,
+        "padding_bottom": 72,
+        "kicker": "Ürün Genel Bakışı",
         "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs. Features include ankle twisting therapy, cool air venting, deep tissue percussion, and 8-point postural stretching — all controlled via a seamless touch screen or intelligent voice commands."
       }
     },
@@ -210,12 +161,12 @@
         "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
-        "padding_bottom": 112,
+        "padding_bottom": 40,
         "bg_color": "light",
         "card_style": "bordered",
         "columns": 4,
-        "kicker": "Ideal For",
-        "heading": "Who is this for?"
+        "kicker": "İçin İdeal",
+        "heading": "Bu Kimin İçin?"
       }
     },
     "highlights": {
@@ -268,27 +219,39 @@
       "blocks": {
         "i1": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-hero-1-hjhxEcc.jpg"
+          }
         },
         "i2": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-hero-2-B2H61FAO.jpg"
+          }
         },
         "i3": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-posture-DppyiadB.jpg"
+          }
         },
         "i4": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-recovery-BSIYTqcF.jpg"
+          }
         },
         "i5": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-sleep-MOfk8iQ1.jpg"
+          }
         },
         "i6": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-percussion-CC_gHNML.jpg"
+          }
         }
       },
       "block_order": [
@@ -310,33 +273,13 @@
     },
     "specs": {
       "type": "product-specifications",
-      "blocks": {
-        "s1": {
-          "type": "spec",
-          "settings": {
-            "label": "Weight",
-            "value": "120 kg"
-          }
-        },
-        "s2": {
-          "type": "spec",
-          "settings": {
-            "label": "Dimensions",
-            "value": "150 x 80 x 120 cm"
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2"
-      ],
       "settings": {
         "page_width": "standard",
         "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "kicker": "Specifications",
-        "heading": "Everything you need to know",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "kicker": "Özellikler",
+        "heading": "Bilmeniz Gereken Her Şey",
         "half_limit": 4
       }
     },
@@ -449,7 +392,8 @@
         "padding_bottom": 112,
         "kicker": "Clinically Proven",
         "heading": "Health Benefits <span class=\"italic text-gold\">Benefits</span>",
-        "description": "Backed by research and endorsed by healthcare professionals across Scandinavia."
+        "description": "Backed by research and endorsed by healthcare professionals across Scandinavia.",
+        "image": "shopify://shop_images/therapeutic-dual-pro_1.png"
       }
     },
     "pricing_plans": {
@@ -608,334 +552,6 @@
         "btn2_link": "/pages/showrooms"
       }
     },
-    "tech": {
-      "type": "woc-pdp-tech",
-      "blocks": {
-        "tech_1": {
-          "type": "feature",
-          "settings": {
-            "icon": "brain",
-            "custom_icon_svg": "",
-            "title": "AI Kropsscanning",
-            "desc": "Intelligente sensorer kortlægger din kropskontur for en personlig oplevelse."
-          }
-        },
-        "tech_2": {
-          "type": "feature",
-          "settings": {
-            "icon": "activity",
-            "custom_icon_svg": "",
-            "title": "Zero Gravity position",
-            "desc": "NASA-inspireret liggestilling fordeler vægten jævnt for at mindske tryk."
-          }
-        },
-        "tech_3": {
-          "type": "feature",
-          "settings": {
-            "icon": "flame",
-            "custom_icon_svg": "",
-            "title": "Infrarød varmeterapi",
-            "desc": "Dybdegående varme trænger dybt ind i musklerne og fremmer restitution."
-          }
-        },
-        "tech_4": {
-          "type": "feature",
-          "settings": {
-            "icon": "waves",
-            "custom_icon_svg": "",
-            "title": "Dual-Core Mekanisme",
-            "desc": "Avanceret ryg- og lændebehandling for optimal afslapning."
-          }
-        }
-      },
-      "block_order": [
-        "tech_1",
-        "tech_2",
-        "tech_3",
-        "tech_4"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "label": "AVANCERET TEKNOLOGI",
-        "title": "Udviklet til perfektion"
-      }
-    },
-    "health": {
-      "type": "woc-pdp-health",
-      "blocks": {
-        "health_1": {
-          "type": "benefit",
-          "settings": {
-            "text": "Reducerer kroniske rygsmerter og nakkespændinger",
-            "custom_icon_svg": ""
-          }
-        },
-        "health_2": {
-          "type": "benefit",
-          "settings": {
-            "text": "Forbedrer blodcirkulationen med op til 30%",
-            "custom_icon_svg": ""
-          }
-        },
-        "health_3": {
-          "type": "benefit",
-          "settings": {
-            "text": "Sænker kortisolniveauet og mindsker stress",
-            "custom_icon_svg": ""
-          }
-        },
-        "health_4": {
-          "type": "benefit",
-          "settings": {
-            "text": "Fremmer dybere og mere restituerende søvn",
-            "custom_icon_svg": ""
-          }
-        },
-        "health_5": {
-          "type": "benefit",
-          "settings": {
-            "text": "Øger ledmobilitet og smidighed i hele kroppen",
-            "custom_icon_svg": ""
-          }
-        },
-        "health_6": {
-          "type": "benefit",
-          "settings": {
-            "text": "Accelererer muskelrestitution efter træning",
-            "custom_icon_svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "health_1",
-        "health_2",
-        "health_3",
-        "health_4",
-        "health_5",
-        "health_6"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "label": "KLINISK DOKUMENTERET",
-        "title": "Reelle Sundhedsfordele",
-        "description": "Støttet af klinisk forskning og godkendt af fysioterapeuter samt sundhedsfaglige eksperter i Skandinavien."
-      }
-    },
-    "video": {
-      "type": "woc-pdp-video",
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "label": "SE PRODUKTET I AKTION",
-        "title": "Oplev produktet",
-        "video_url": "",
-        "play_icon_svg": ""
-      }
-    },
-    "whats_included": {
-      "type": "pdp-whats-included",
-      "blocks": {
-        "item_1": {
-          "type": "item",
-          "settings": {
-            "name": "Standard komfortenhed",
-            "detail": "Kvalitetskomponent med fuld funktionalitet",
-            "custom_icon_svg": ""
-          }
-        },
-        "item_2": {
-          "type": "item",
-          "settings": {
-            "name": "Trådløs betjening",
-            "detail": "Fjernbetjening eller app-styring medfølger",
-            "custom_icon_svg": ""
-          }
-        },
-        "gift_1": {
-          "type": "gift",
-          "settings": {
-            "name": "E-bog & Vejledning",
-            "desc": "Komplet guide til dit wellnessprodukt.",
-            "value": "Gratis (Værdi 299,-)",
-            "custom_icon_svg": ""
-          }
-        },
-        "spec_1": {
-          "type": "spec",
-          "settings": {
-            "key": "Strømforsyning",
-            "value": "Standard 220-240V stik"
-          }
-        },
-        "spec_2": {
-          "type": "spec",
-          "settings": {
-            "key": "Garanti",
-            "value": "3-års udvidet fabriksgaranti"
-          }
-        }
-      },
-      "block_order": [
-        "item_1",
-        "item_2",
-        "gift_1",
-        "spec_1",
-        "spec_2"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "included_title": "Hvad følger med i kassen?",
-        "gifts_title": "INKLUDEREDE GRATIS GAVER:",
-        "specs_title": "Tekniske Specifikationer"
-      }
-    },
-    "comparison": {
-      "type": "pdp-comparison",
-      "blocks": {
-        "row_1": {
-          "type": "row",
-          "settings": {
-            "feature": "3-års fuld garanti",
-            "woc_val": true,
-            "comp_val": false
-          }
-        },
-        "row_2": {
-          "type": "row",
-          "settings": {
-            "feature": "Skandinavisk support & showrooms",
-            "woc_val": true,
-            "comp_val": false
-          }
-        },
-        "row_3": {
-          "type": "row",
-          "settings": {
-            "feature": "Premium finish & materialer",
-            "woc_val": true,
-            "comp_val": true
-          }
-        }
-      },
-      "block_order": [
-        "row_1",
-        "row_2",
-        "row_3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "subtitle": "SAMMENLIGN DETALJER",
-        "title": "Hvorfor vælge os?",
-        "th_feature": "Funktioner",
-        "th_woc": "World of Comfort",
-        "th_comp": "Andre mærker",
-        "check_icon_svg": "",
-        "cross_icon_svg": ""
-      }
-    },
-    "financing": {
-      "type": "woc-pdp-financing",
-      "blocks": {
-        "opt_1": {
-          "type": "option",
-          "settings": {
-            "title": "Betal på én gang",
-            "months": 1,
-            "down_payment_percent": 0,
-            "desc": "Fuld betaling — ingen ekstra omkostninger"
-          }
-        },
-        "opt_2": {
-          "type": "option",
-          "settings": {
-            "title": "24 måneder",
-            "months": 24,
-            "down_payment_percent": 0,
-            "desc": "0% udbetaling og 0% renter"
-          }
-        },
-        "opt_3": {
-          "type": "option",
-          "settings": {
-            "title": "60 måneder",
-            "months": 60,
-            "down_payment_percent": 20,
-            "desc": "20% udbetaling og lave månedlige rater"
-          }
-        }
-      },
-      "block_order": [
-        "opt_1",
-        "opt_2",
-        "opt_3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "label": "FLEXIBEL BETALING",
-        "title": "Invester i dit velvære",
-        "description": "Gør velvære tilgængeligt med vores fleksible finansieringsmuligheder. Start din wellnessrejse i dag."
-      }
-    },
-    "faqs": {
-      "type": "pdp-faqs",
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvad er garantien på produktet?",
-            "answer": "Der ydes en omfattende 3-års fabriksgaranti, som dækker både reservedele og arbejdskraft."
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Hvordan leveres produktet?",
-            "answer": "Vi tilbyder gratis levering direkte til din dør i hele Danmark og Skandinavien."
-          }
-        },
-        "faq_3": {
-          "type": "faq",
-          "settings": {
-            "question": "Kan jeg prøve produktet før køb?",
-            "answer": "Ja, du er altid velkommen til at besøge et af vores showrooms for at opleve produktet fysisk."
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "subtitle": "OFTE STILLEDE SPØRGSMÅL",
-        "title": "Spørgsmål & Svar",
-        "accordion_icon_svg": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "bottom_cta": {
-      "type": "woc-pdp-bottom-cta",
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "title": "Klar til at opleve [product]?",
-        "description": "Besøg et showroom for en personlig demonstration eller bestil online med gratis levering.",
-        "buy_now_text": "Køb nu",
-        "show_demo_button": true,
-        "demo_text": "Gösterim rezervasyonu yapın",
-        "demo_link": "/pages/showrooms",
-        "buy_icon_svg": "",
-        "demo_icon_svg": ""
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -958,7 +574,6 @@
     }
   },
   "order": [
-    "woc_trust_bar_km4wNG",
     "main",
     "overview",
     "ideal_for",
@@ -970,14 +585,6 @@
     "pricing_plans",
     "faq",
     "cta",
-    "tech",
-    "health",
-    "video",
-    "whats_included",
-    "comparison",
-    "financing",
-    "faqs",
-    "bottom_cta",
     "related-products"
   ]
 }
