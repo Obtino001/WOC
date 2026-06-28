@@ -1,11 +1,11 @@
-<section class="color-{{ section.settings.color_scheme }} gradient border-y border-border">
+<section class="bg-white border-y border-zinc-200">
   <div class="container mx-auto px-4 py-8 flex flex-wrap justify-center gap-10 md:gap-16">
     {% for block in section.blocks %}
       <div class="flex items-center gap-2.5" {{ block.shopify_attributes }}>
-        <div class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:text-muted-foreground/60">
+        <div class="[&>svg]:w-4 [&>svg]:h-4 [&>svg]:text-zinc-400">
           {{ block.settings.icon_svg }}
         </div>
-        <span class="font-body text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{{ block.settings.text }}</span>
+        <span class="font-body text-[10px] uppercase tracking-[0.2em] text-zinc-500">{{ block.settings.text }}</span>
       </div>
     {% endfor %}
   </div>
@@ -15,7 +15,6 @@
 {
   "name": "SED Guarantees Bar",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" }
   ],
   "blocks": [
     {
