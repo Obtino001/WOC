@@ -63,7 +63,7 @@
                   {% assign usps_string = product.metafields.custom.products_usps.value | join: ',' | default: product.metafields.custom.products_usps.value %}
                   {% assign usps_array = usps_string | split: ',' %}
                   {% for usp in usps_array limit: 4 %}
-                    <div class="flex items-center gap-1.5 bg-neutral-100/50 border border-neutral-200/50 rounded-md px-2 py-1">
+                    <div class="flex items-center gap-1.5 bg-neutral-100/50 border border-neutral-200/50 rounded-none px-2 py-1">
                       {% render 'usp-icon', keyword: usp %}
                       <span class="font-body text-[10px] text-neutral-600 leading-tight">{{ usp | strip }}</span>
                     </div>
@@ -75,7 +75,7 @@
                     {% capture bullet_var %}bullet_{{ i }}{% endcapture %}
                     {% assign bullet_text = block.settings[bullet_var] %}
                     {% if bullet_text != blank %}
-                      <div class="flex items-center gap-1.5 bg-neutral-100/50 border border-neutral-200/50 rounded-md px-2 py-1">
+                      <div class="flex items-center gap-1.5 bg-neutral-100/50 border border-neutral-200/50 rounded-none px-2 py-1">
                         {% render 'usp-icon', keyword: bullet_text %}
                         <span class="font-body text-[10px] text-neutral-600 leading-tight">{{ bullet_text }}</span>
                       </div>

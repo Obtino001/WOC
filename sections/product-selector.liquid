@@ -94,7 +94,7 @@
                 {% if product != blank and product.images.size > 1 %}
                   <div class="flex gap-2 mb-8 overflow-x-auto pb-2">
                     {% for image in product.images limit: 4 %}
-                      <button class="flex-shrink-0 w-20 h-16 rounded-md bg-[#111] border {% if forloop.first %}border-[#d4af37]{% else %}border-[#333] hover:border-[#666]{% endif %} transition-colors overflow-hidden">
+                      <button class="flex-shrink-0 w-20 h-16 rounded-none bg-[#111] border {% if forloop.first %}border-[#d4af37]{% else %}border-[#333] hover:border-[#666]{% endif %} transition-colors overflow-hidden">
                         {{ image | image_url: width: 150 | image_tag: class: 'w-full h-full object-cover' }}
                       </button>
                     {% endfor %}

@@ -187,20 +187,136 @@
     <div class="grid {{ grid_class }} gap-4 lg:gap-6">
       {%- for block in section.blocks -%}
         {%- assign prod = block.settings.product -%}
-        <div class="h-full" {{ block.shopify_attributes }}>
+        <div class="color-{{ section.settings.card_color_scheme }} group relative border rounded-xl overflow-hidden hover:border-gold/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(216,178,97,0.15)] flex flex-col" {{ block.shopify_attributes }}>
+          
           {%- if prod != blank -%}
-            {% render 'woc-product-card', 
-                 product: prod, 
-                 card_color_scheme: section.settings.card_color_scheme,
-                 badge_override: block.settings.badge,
-                 status_label_override: block.settings.status_label,
-                 tagline_override: block.settings.tagline,
-                 features_override: block.settings.features
-            %}
-          {%- else -%}
-            <div class="color-{{ section.settings.card_color_scheme }} border rounded-xl overflow-hidden flex flex-col items-center justify-center h-full p-10 text-center opacity-50">
-              Select a product to preview layout.
+            <!-- Image Area -->
+            <a href="{{ prod.url }}" class="block relative aspect-square overflow-hidden" style="background-color: transparent;">
+              {%- if prod.metafields.custom.product_tags != blank -%}
+                <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
+                  {{ prod.metafields.custom.product_tags }}
+                </span>
+              {%- elsif block.settings.badge != blank -%}
+                <span class="absolute top-4 left-4 z-10 bg-gold text-charcoal font-body text-[10px] font-bold px-3 py-1.5 uppercase tracking-widest rounded-sm">
+                  {{ block.settings.badge }}
+                </span>
+              {%- endif -%}
+              
+              {%- if prod.compare_at_price > prod.price -%}
+                {%- assign save_amount = prod.compare_at_price | minus: prod.price | money_without_trailing_zeros -%}
+                <span class="absolute top-4 right-4 z-10 bg-red-600 text-white font-body text-[10px] font-bold px-2.5 py-1.5 rounded-sm">
+                  {{ section.settings.badge_save_text | default: 'Spar' }} {{ save_amount }}
+                </span>
+              {%- endif -%}
+
+              <img src="{{ prod.featured_image | image_url: width: 600 }}" alt="{{ prod.title }}" class="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105">
+            </a>
+
+            <!-- Status Banner -->
+            {%- if block.settings.status_label != blank -%}
+              <div class="bg-red-900/20 border-t border-red-900/30 px-4 py-2 text-center">
+                <span class="font-body text-[11px] font-semibold text-red-500">
+                  {{ block.settings.status_label }}
+                </span>
+              </div>
+            {%- endif -%}
+
+            <!-- Content -->
+            <div class="p-5 lg:p-6 flex flex-col flex-1">
+              <!-- Rating -->
+              <div class="flex items-center gap-1 mb-2">
+                {%- for i in (1..5) -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {%- endfor -%}
+                <span class="font-body text-[10px] ml-1 opacity-50">
+                  {%- if prod.metafields.custom.reviews != blank -%}
+                    {{ prod.metafields.custom.reviews }}
+                  {%- else -%}
+                    {{ prod.metafields.reviews.rating.value | default: '5.0' }} ({{ prod.metafields.reviews.rating_count.value | default: '42' }})
+                  {%- endif -%}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <a href="{{ prod.url }}">
+                <h3 class="woc-display-font text-xl lg:text-2xl font-bold mb-1 group-hover:text-gold transition-colors">
+                  {{ prod.title }}
+                </h3>
+              </a>
+              
+              <!-- Tagline -->
+              <p class="font-body text-xs mb-4 line-clamp-2 leading-relaxed opacity-60">
+                {%- if block.settings.tagline != blank -%}{{ block.settings.tagline }}{%- else -%}{{ prod.vendor }}{%- endif -%}
+              </p>
+
+              <!-- Features (Custom CSV) -->
+              {%- if block.settings.features != blank -%}
+                {%- assign feature_list = block.settings.features | split: ',' -%}
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                  {%- for f in feature_list -%}
+                    <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-none px-2 py-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span class="font-body text-[10px] opacity-80 whitespace-nowrap">{{ f | strip }}</span>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+
+              <!-- Fixed USPs -->
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <div class="flex items-center gap-1.5 bg-green-900/20 border border-green-900/30 rounded-none px-2 py-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                  <span class="font-body text-[10px] text-green-500 font-medium whitespace-nowrap">{{ section.settings.delivery_text | default: 'Gratis levering' }}</span>
+                </div>
+                <div class="flex items-center gap-1.5 bg-gold/10 border border-gold/20 rounded-none px-2 py-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 11 2 2 4-4"></path></svg>
+                  <span class="font-body text-[10px] text-gold font-medium whitespace-nowrap">{{ section.settings.warranty_text | default: '5 års garanti' }}</span>
+                </div>
+              </div>
+
+              <div class="mt-auto pt-4 border-t border-white/10">
+                <!-- Price -->
+                <div class="flex items-baseline gap-2 mb-1">
+                  <span class="woc-display-font text-2xl font-bold">
+                    {{ prod.price | money_without_trailing_zeros }}
+                  </span>
+                  {%- if prod.compare_at_price > prod.price -%}
+                    <span class="font-body text-sm line-through opacity-50">
+                      {{ prod.compare_at_price | money_without_trailing_zeros }}
+                    </span>
+                  {%- endif -%}
+                </div>
+                
+                <p class="font-body text-[11px] text-gold mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline mr-1"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                  {%- assign monthly_price = prod.price | divided_by: 60 -%}
+                  {{ section.settings.price_from_text | default: 'Eller fra' }} {{ monthly_price | money_without_trailing_zeros }} {{ section.settings.price_per_month_text | default: '/ md' }}
+                </p>
+
+                <!-- Stock Pulse -->
+                <div class="flex items-center gap-1.5 mb-4">
+                  <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  <span class="font-body text-[10px] text-green-500 font-medium">{{ section.settings.stock_text | default: 'På lager' }}</span>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex gap-2">
+                  <a href="{{ prod.url }}" class="flex-1 inline-flex items-center justify-center bg-gold text-charcoal font-body text-xs font-semibold px-3 py-2 rounded gap-1.5 hover:bg-gold-hover transition-colors">
+                    {{ section.settings.btn_see_more_text | default: 'Se mere' }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+                  <a href="/pages/showrooms" class="inline-flex items-center justify-center border border-gold/30 text-gold hover:bg-gold/10 font-body text-xs font-semibold px-3 py-2 rounded gap-1.5 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    {{ section.settings.btn_try_text | default: 'Prøv stol' }}
+                  </a>
+                </div>
+              </div>
             </div>
+          {%- else -%}
+            <div class="p-10 text-center text-white/50">Select a product to preview layout.</div>
           {%- endif -%}
         </div>
       {%- endfor -%}
