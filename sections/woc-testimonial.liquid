@@ -1,0 +1,48 @@
+<section class="py-24 md:py-32" style="background: rgb(9, 63, 63);">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div class="text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-12 h-12 mx-auto mb-8" style="color: rgb(194, 139, 36);"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+      <blockquote class="font-display text-2xl md:text-4xl font-medium leading-tight text-white mb-10 italic">"{{ section.settings.quote }}"</blockquote>
+      <div class="flex items-center justify-center gap-4">
+        <div class="text-left">
+          <div class="font-body font-semibold text-white">{{ section.settings.author_role }}</div>
+          <div class="font-body text-sm text-white/60">{{ section.settings.author_company }}</div>
+        </div>
+      </div>
+      <div class="mt-16 pt-12 border-t border-white/10 grid grid-cols-3 gap-8">
+        <div>
+          <div class="font-display text-3xl md:text-4xl font-bold mb-1" style="color: rgb(194, 139, 36);">{{ section.settings.stat_1_val }}</div>
+          <div class="font-body text-xs text-white/60 uppercase tracking-wider">{{ section.settings.stat_1_label }}</div>
+        </div>
+        <div>
+          <div class="font-display text-3xl md:text-4xl font-bold mb-1" style="color: rgb(194, 139, 36);">{{ section.settings.stat_2_val }}</div>
+          <div class="font-body text-xs text-white/60 uppercase tracking-wider">{{ section.settings.stat_2_label }}</div>
+        </div>
+        <div>
+          <div class="font-display text-3xl md:text-4xl font-bold mb-1" style="color: rgb(194, 139, 36);">{{ section.settings.stat_3_val }}</div>
+          <div class="font-body text-xs text-white/60 uppercase tracking-wider">{{ section.settings.stat_3_label }}</div>
+        </div>
+      </div>
+      <p class="font-body text-xs text-white/40 mt-6 italic">{{ section.settings.disclaimer }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Testimonial",
+  "settings": [
+    { "type": "textarea", "id": "quote", "label": "Quote", "default": "WOC yöntemi iş yerimizi dönüştürdü..." },
+    { "type": "text", "id": "author_role", "label": "Author Role", "default": "İK Direktörü" },
+    { "type": "text", "id": "author_company", "label": "Author Company", "default": "Fortune 500 şirketi" },
+    { "type": "text", "id": "stat_1_val", "label": "Stat 1 Value", "default": "10 yıl" },
+    { "type": "text", "id": "stat_1_label", "label": "Stat 1 Label", "default": "Araştırma" },
+    { "type": "text", "id": "stat_2_val", "label": "Stat 2 Value", "default": "65+" },
+    { "type": "text", "id": "stat_2_label", "label": "Stat 2 Label", "default": "İş yeri" },
+    { "type": "text", "id": "stat_3_val", "label": "Stat 3 Value", "default": "85%" },
+    { "type": "text", "id": "stat_3_label", "label": "Stat 3 Label", "default": "Daha az stres" },
+    { "type": "text", "id": "disclaimer", "label": "Disclaimer Text", "default": "* 65 farklı iş yerinden 500 yanıt baz alınmıştır." }
+  ],
+  "presets": [{ "name": "WOC Testimonial" }]
+}
+{% endschema %}

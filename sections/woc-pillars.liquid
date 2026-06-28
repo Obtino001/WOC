@@ -1,0 +1,76 @@
+<section class="py-24 md:py-32" style="background: rgb(239, 232, 218);">
+  <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <div class="text-center mb-20">
+      <span class="inline-block font-body text-xs font-semibold tracking-widest uppercase mb-4" style="color: rgb(14, 92, 92);">{{ section.settings.badge_text }}</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight" style="color: rgb(15, 31, 46);">{{ section.settings.title }}</h2>
+    </div>
+    <div class="space-y-8">
+      {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+          <div class="rounded-lg bg-card text-card-foreground overflow-hidden border-0 shadow-xl" style="background: white;">
+            <div class="grid lg:grid-cols-12 {% cycle '', 'lg:[direction:rtl]', '' %}">
+              <div class="lg:col-span-4 p-10 md:p-14 flex flex-col justify-center [direction:ltr]" style="background: rgb(15, 31, 46);">
+                <div class="font-display text-7xl md:text-8xl font-bold mb-6 leading-none" style="color: rgb(194, 139, 36);">{{ block.settings.number }}</div>
+                <div class="lucide-icon mb-4" style="color: rgb(194, 139, 36); width: 40px; height: 40px;">
+                  {{ block.settings.svg_icon }}
+                </div>
+                <h3 class="font-display text-3xl md:text-4xl font-bold text-white mb-2">{{ block.settings.title }}</h3>
+                <p class="font-body text-sm text-white/60 italic">{{ block.settings.subtitle }}</p>
+              </div>
+              <div class="lg:col-span-8 p-10 md:p-14 [direction:ltr]">
+                <p class="font-body text-base md:text-lg leading-relaxed text-neutral-700 mb-8">{{ block.settings.description }}</p>
+                <div class="space-y-3">
+                  {% if block.settings.check_1 != blank %}
+                  <div class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 flex-shrink-0 mt-0.5" style="color: rgb(14, 92, 92);"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                    <span class="font-body text-sm md:text-base text-neutral-800">{{ block.settings.check_1 }}</span>
+                  </div>
+                  {% endif %}
+                  {% if block.settings.check_2 != blank %}
+                  <div class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 flex-shrink-0 mt-0.5" style="color: rgb(14, 92, 92);"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                    <span class="font-body text-sm md:text-base text-neutral-800">{{ block.settings.check_2 }}</span>
+                  </div>
+                  {% endif %}
+                  {% if block.settings.check_3 != blank %}
+                  <div class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 flex-shrink-0 mt-0.5" style="color: rgb(14, 92, 92);"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                    <span class="font-body text-sm md:text-base text-neutral-800">{{ block.settings.check_3 }}</span>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Pillars",
+  "settings": [
+    { "type": "text", "id": "badge_text", "label": "Badge Text", "default": "Model" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Üç sütun. Tek bütünsel yöntem." }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Pillar Block",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number (e.g. 01)" },
+        { "type": "html", "id": "svg_icon", "label": "SVG Icon Code" },
+        { "type": "text", "id": "title", "label": "Heading" },
+        { "type": "text", "id": "subtitle", "label": "Subheading / Italic text" },
+        { "type": "textarea", "id": "description", "label": "Description" },
+        { "type": "text", "id": "check_1", "label": "Checkmark 1" },
+        { "type": "text", "id": "check_2", "label": "Checkmark 2" },
+        { "type": "text", "id": "check_3", "label": "Checkmark 3" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "WOC Pillars" }]
+}
+{% endschema %}

@@ -1,0 +1,23 @@
+<section class="py-24 md:py-32" style="background: rgb(248, 245, 238);">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div class="text-center">
+      <span class="inline-block font-body text-xs font-semibold tracking-widest uppercase mb-4" style="color: rgb(14, 92, 92);">{{ section.settings.badge_text }}</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-8" style="color: rgb(15, 31, 46);">{{ section.settings.title }}</h2>
+      <p class="font-body text-lg md:text-xl leading-relaxed text-neutral-700 mb-6">{{ section.settings.paragraph_1 }}</p>
+      <p class="font-body text-lg leading-relaxed text-neutral-600">{{ section.settings.paragraph_2 }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WOC Intro Text",
+  "settings": [
+    { "type": "text", "id": "badge_text", "label": "Badge Text", "default": "Neden WOC yöntemi" },
+    { "type": "textarea", "id": "title", "label": "Heading", "default": "Dinlenme, gözden kaçan süper güçtür<br>modern iş hayatında" },
+    { "type": "textarea", "id": "paragraph_1", "label": "Paragraph 1" },
+    { "type": "textarea", "id": "paragraph_2", "label": "Paragraph 2" }
+  ],
+  "presets": [{ "name": "WOC Intro Text" }]
+}
+{% endschema %}
