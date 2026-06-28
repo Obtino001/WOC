@@ -20,7 +20,7 @@
   assign product_form_id = 'product-form-' | append: section.id
   assign is_color = false
   assign downcased_option = option.name | downcase
-  if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'farve'
+  if downcased_option contains 'color' or downcased_option contains 'colour' or downcased_option contains 'farve' or downcased_option contains 'renk'
     assign is_color = true
   endif
 -%}
@@ -99,12 +99,12 @@
       {% endif %}
       {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
+    <label for="{{ input_id }}" class="flex items-center gap-2 cursor-pointer variant-label-{{ option.name | handle }}">
       {%- if is_color -%}
         {%- assign color_hex = '#ffffff' -%}
         {%- assign color_name_downcase = value | downcase -%}
         {%- if color_name_downcase == 'latte' -%}
-          {%- assign color_hex = '#dcc5a1' -%}
+          {%- assign color_hex = '#77624c' -%}
         {%- elsif color_name_downcase == 'onyx' -%}
           {%- assign color_hex = '#1c1c1c' -%}
         {%- elsif color_name_downcase == 'black' -%}
@@ -116,9 +116,9 @@
         {%- elsif color_name_downcase == 'gray' or color_name_downcase == 'grey' -%}
           {%- assign color_hex = '#808080' -%}
         {%- endif -%}
-        <span class="color-swatch-dot" style="background-color: {{ color_hex }};"></span>
+        <span class="color-swatch-dot w-6 h-6 rounded-full border border-white/20 shadow-sm relative flex items-center justify-center after:content-[''] after:absolute after:inset-[-4px] after:rounded-full after:border-2 after:border-transparent transition-all" style="background-color: {{ color_hex }};"></span>
       {%- endif -%}
-      {{ value -}}
+      <span class="font-body text-sm font-semibold transition-colors">{{ value -}}</span>
       {{ label_unavailable }}
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}

@@ -55,49 +55,7 @@
       >
         {% for recommendation in recommendations.products %}
           <li class="grid__item !w-full !max-w-none">
-            {%- assign product_badge = nil -%}
-            {%- for tag in recommendation.tags -%}
-              {%- if tag == 'Flagship' or tag == 'Designer' or tag == 'Most Advanced' or tag == 'New' or tag == 'Bestseller' -%}
-                {%- assign product_badge = tag -%}
-                {%- break -%}
-              {%- endif -%}
-            {%- endfor -%}
-            
-            <a href="{{ recommendation.url }}" class="related-product-card">
-              {%- if product_badge -%}
-                <span class="related-product-badge">{{ product_badge }}</span>
-              {%- endif -%}
-              
-              <div class="related-product-image-box">
-                {%- if recommendation.featured_media != blank -%}
-                  <img
-                    srcset="
-                      {%- if recommendation.featured_media.width >= 165 -%}{{ recommendation.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-                      {%- if recommendation.featured_media.width >= 360 -%}{{ recommendation.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-                      {%- if recommendation.featured_media.width >= 533 -%}{{ recommendation.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-                      {{ recommendation.featured_media | image_url: width: 720 }} 720w
-                    "
-                    src="{{ recommendation.featured_media | image_url: width: 533 }}"
-                    sizes="(min-width: 1200px) calc((1200px - 100px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 100px) / 3), calc((100vw - 30px) / 2)"
-                    alt="{{ recommendation.featured_media.alt | escape }}"
-                    class="related-product-image"
-                    loading="lazy"
-                    width="{{ recommendation.featured_media.width }}"
-                    height="{{ recommendation.featured_media.height }}"
-                  >
-                {%- else -%}
-                  {{ 'product-1' | placeholder_svg_tag: 'related-product-image bg-gray-100' }}
-                {%- endif -%}
-              </div>
-              
-              <div class="related-product-info">
-                <h3 class="related-product-title">{{ recommendation.title | escape }}</h3>
-                <p class="related-product-subtitle">
-                  {{ recommendation.metafields.custom.short_description | default: recommendation.description | strip_html | truncatewords: 8 }}
-                </p>
-                <span class="related-product-price">{{ recommendation.price | money }}</span>
-              </div>
-            </a>
+            {% render 'woc-product-card', product: recommendation, card_color_scheme: section.settings.color_scheme %}
           </li>
         {% endfor %}
       </ul>

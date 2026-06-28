@@ -12,8 +12,27 @@
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
-    {{ block.shopify_attributes }}
   >
+    <style>
+      .product-form__input--pill input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+      }
+      .product-form__input--pill input[type="radio"]:checked + label .color-swatch-dot::after {
+        border-color: #c78b30 !important; /* Gold border */
+      }
+      .product-form__input--pill input[type="radio"]:checked + label span.transition-colors {
+        color: #ffffff; /* Brighter white for selected text */
+      }
+      .product-form__input--pill input[type="radio"]:not(:checked) + label span.transition-colors {
+        color: rgba(255, 255, 255, 0.6); /* Dimmer white for unselected text */
+      }
+      .product-form__input--pill legend.float-left {
+        float: left;
+      }
+    </style>
     {%- for option in product.options_with_values -%}
       {%- liquid
         assign swatch_count = option.values | map: 'swatch' | compact | size
@@ -43,14 +62,16 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class="js product-form__input product-form__input--pill">
-          <legend class="form__label">{{ option.name }}</legend>
-          {% render 'product-variant-options',
-            product: product,
-            option: option,
-            block: block,
-            picker_type: picker_type
-          %}
+        <fieldset class="js product-form__input product-form__input--pill flex items-center gap-4 mb-4 border-0 p-0 m-0">
+          <legend class="form__label font-body text-sm font-bold text-gold uppercase tracking-wider mb-0 w-auto float-left mr-2 pt-1">{{ option.name }}:</legend>
+          <div class="flex items-center gap-4">
+            {% render 'product-variant-options',
+              product: product,
+              option: option,
+              block: block,
+              picker_type: picker_type
+            %}
+          </div>
         </fieldset>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">

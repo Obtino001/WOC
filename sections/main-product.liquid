@@ -759,6 +759,10 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'custom_liquid' -%}
+                <div class="product__custom-liquid my-4" {{ block.shopify_attributes }}>
+                  {{ block.settings.custom_liquid }}
+                </div>
               {%- when 'feature_list' -%}
                 <div class="product__feature-list my-6" {{ block.shopify_attributes }}>
                   {%- assign features_str = '' -%}
@@ -2514,6 +2518,17 @@
           "type": "html",
           "id": "icon_3_svg",
           "label": "Icon SVG"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "Custom Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom Liquid"
         }
       ]
     }
