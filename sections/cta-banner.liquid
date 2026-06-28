@@ -1,0 +1,52 @@
+<section class="relative py-24 overflow-hidden">
+  <div class="absolute inset-0">
+    {% if section.settings.bg_image %}
+      {{ section.settings.bg_image | image_url: width: 1920 | image_tag: class: 'w-full h-full object-cover' }}
+    {% endif %}
+    <div class="absolute inset-0 bg-charcoal/60"></div>
+  </div>
+  <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-3xl">
+    <div>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-6">{{ section.settings.title }}</h2>
+      <p class="font-body text-secondary/80 text-lg leading-relaxed mb-8">{{ section.settings.description }}</p>
+      <a href="{{ section.settings.btn_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10">
+        {{ section.settings.btn_text }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [{"name": "CTA Banner"}]
+}
+{% endschema %}
