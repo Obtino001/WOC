@@ -143,8 +143,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
@@ -156,6 +156,7 @@
     "overview": {
       "type": "product-overview",
       "settings": {
+        "page_width": "standard",
         "color_scheme": "scheme-1",
         "padding_top": 80,
         "padding_bottom": 80,
@@ -206,6 +207,7 @@
         "b4"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
@@ -250,6 +252,7 @@
         "h3"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
@@ -297,6 +300,7 @@
         "i6"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
@@ -327,6 +331,7 @@
         "s2"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 64,
         "padding_bottom": 64,
@@ -378,6 +383,7 @@
         "t4"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
@@ -437,6 +443,7 @@
         "b6"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
@@ -482,6 +489,7 @@
         "p3"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
@@ -577,6 +585,7 @@
         "q10"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 112,
@@ -588,6 +597,7 @@
     "cta": {
       "type": "simple-cta-banner",
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "padding_top": 96,
         "padding_bottom": 96,
@@ -645,6 +655,7 @@
         "tech_4"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "label": "AVANCERET TEKNOLOGI",
         "title": "Udviklet til perfektion"
@@ -705,6 +716,7 @@
         "health_6"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "label": "KLINISK DOKUMENTERET",
         "title": "Reelle Sundhedsfordele",
@@ -714,6 +726,7 @@
     "video": {
       "type": "woc-pdp-video",
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "label": "SE PRODUKTET I AKTION",
         "title": "Oplev produktet",
@@ -772,6 +785,7 @@
         "spec_2"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "included_title": "Hvad følger med i kassen?",
         "gifts_title": "INKLUDEREDE GRATIS GAVER:",
@@ -812,6 +826,7 @@
         "row_3"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "subtitle": "SAMMENLIGN DETALJER",
         "title": "Hvorfor vælge os?",
@@ -859,6 +874,7 @@
         "opt_3"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "label": "FLEXIBEL BETALING",
         "title": "Invester i dit velvære",
@@ -896,6 +912,7 @@
         "faq_3"
       ],
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "subtitle": "OFTE STILLEDE SPØRGSMÅL",
         "title": "Spørgsmål & Svar",
@@ -907,6 +924,7 @@
     "bottom_cta": {
       "type": "woc-pdp-bottom-cta",
       "settings": {
+        "page_width": "standard",
         "color_scheme": "",
         "title": "Klar til at opleve [product]?",
         "description": "Besøg et showroom for en personlig demonstration eller bestil online med gratis levering.",
