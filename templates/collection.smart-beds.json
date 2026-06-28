@@ -134,36 +134,42 @@
         "feature_QJV4hX": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-scan w-4 h-4 text-forest\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"></path><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"></path><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"></path><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"></path></svg>",
             "text": "Kişisel Vücut Tarama"
           }
         },
         "feature_nV4ztP": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-fingerprint w-4 h-4 text-forest\"><path d=\"M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4\"></path><path d=\"M14 13.12c0 2.38 0 6.38-1 8.88\"></path><path d=\"M17.29 21.02c.12-.6.43-2.3.5-3.02\"></path><path d=\"M2 12a10 10 0 0 1 18-6\"></path><path d=\"M2 16h.01\"></path><path d=\"M21.8 16c.2-2 .131-5.354 0-6\"></path><path d=\"M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2\"></path><path d=\"M8.65 22c.21-.66.45-1.32.57-2\"></path><path d=\"M9 6.8a6 6 0 0 1 9 5.2v2\"></path></svg>",
             "text": "1:1 Özel Yapım"
           }
         },
         "feature_3KhTiC": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-waves w-4 h-4 text-forest\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
             "text": "Salınım Masajı"
           }
         },
         "f1": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-4 h-4 text-forest\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
             "text": "Salınım Masajı"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart w-4 h-4 text-forest\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "text": "Gümüş Antibakteriyel"
           }
         },
         "feature_AtJ8Ag": {
           "type": "feature",
           "settings": {
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-4 h-4 text-forest\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
             "text": "Hipoalerjenik Malzemeler"
           }
         }
@@ -220,48 +226,56 @@
         "feature_mT9ah8": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_myFNWJ": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_a9n7JU": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_JpX78a": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_8G9zEL": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_U7Mz9T": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_h9j867": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_BBQWVx": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -320,36 +334,42 @@
         "feature_3jWV6m": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_tptMnj": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_PURnQe": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_UxJNUK": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_9W6n9J": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_XTVKLg": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -405,36 +425,42 @@
         "feature_AMT3ET": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_TDxwRT": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_btdD3B": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_qw4Mkz": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_JAbcUx": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_3iDVdV": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
@@ -490,36 +516,42 @@
         "feature_NK3qrk": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_FGJ9dJ": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_N4adqb": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_chthmT": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_Jhi9fq": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         },
         "feature_6ydzdW": {
           "type": "feature",
           "settings": {
+            "icon_svg": "",
             "text": ""
           }
         }
