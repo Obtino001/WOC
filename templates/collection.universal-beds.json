@@ -473,21 +473,6 @@
         "btn_link": ""
       }
     },
-    "feature_split_linak": {
-      "type": "feature-split",
-      "settings": {
-        "bg_light": false,
-        "badge": "",
-        "main_title": "",
-        "main_description": "",
-        "image_position": "left",
-        "content_title": "",
-        "content_text": "",
-        "show_comparison": true,
-        "pros_title": "✓ WOC Talalay Lateks",
-        "cons_title": "✗ Standart Hafızalı Köpük"
-      }
-    },
     "cta_banner": {
       "type": "cta-banner",
       "settings": {
@@ -506,7 +491,6 @@
     "hardness_guide",
     "ergonomic_zones",
     "comparison_table",
-    "feature_split_linak",
     "cta_banner"
   ]
 }
