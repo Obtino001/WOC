@@ -22,7 +22,7 @@
     
     <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-7xl mx-auto">
       {% for block in section.blocks %}
-        <div class="group relative rounded-2xl overflow-hidden border border-border/10 bg-background shadow-subtle hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col" {{ block.shopify_attributes }}>
+        <div class="group relative rounded-2xl overflow-hidden border border-border/10 shadow-subtle hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col" {{ block.shopify_attributes }}>
           <a href="{{ block.settings.link }}" class="block flex flex-col h-full">
             <div class="h-48 bg-charcoal/5 overflow-hidden flex-shrink-0">
               {% if block.settings.image != blank %}

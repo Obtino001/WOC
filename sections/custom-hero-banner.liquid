@@ -1,0 +1,269 @@
+{%- style -%}
+  .custom-hero-banner-{{ section.id }} {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    {% if section.settings.bg_image %}
+      background-image: url('{{ section.settings.bg_image | image_url: width: 2400 }}');
+    {% endif %}
+  }
+
+  /* Gradient overlay to ensure text readability over the background image */
+  .custom-hero-banner-{{ section.id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+  }
+
+  .custom-hero-content-{{ section.id }} {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    padding: 20px;
+    margin-left: 8%;
+  }
+
+  .custom-hero-subtitle-{{ section.id }} {
+    color: {{ section.settings.subtitle_color }};
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .custom-hero-title-{{ section.id }} {
+    color: {{ section.settings.title_color }};
+    font-size: 52px;
+    font-family: var(--font-heading-family), serif;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+
+  .custom-hero-text-{{ section.id }} {
+    color: {{ section.settings.text_color }};
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    white-space: pre-wrap; /* Allows formatting from textarea */
+  }
+
+  .custom-hero-buttons-{{ section.id }} {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .custom-btn-primary-{{ section.id }} {
+    display: inline-block;
+    background-color: {{ section.settings.btn_1_bg }};
+    color: {{ section.settings.btn_1_text_color }};
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid {{ section.settings.btn_1_bg }};
+    transition: all 0.3s ease;
+  }
+
+  .custom-btn-primary-{{ section.id }}:hover {
+    opacity: 0.85;
+  }
+
+  .custom-btn-secondary-{{ section.id }} {
+    display: inline-block;
+    background-color: transparent;
+    color: {{ section.settings.btn_2_color }};
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid {{ section.settings.btn_2_color }};
+    transition: all 0.3s ease;
+  }
+
+  .custom-btn-secondary-{{ section.id }}:hover {
+    background-color: {{ section.settings.btn_2_color }};
+    color: #111;
+  }
+
+  @media screen and (max-width: 768px) {
+    .custom-hero-banner-{{ section.id }} {
+      min-height: 70vh;
+      align-items: flex-end;
+      padding-bottom: 40px;
+    }
+    .custom-hero-banner-{{ section.id }}::before {
+       background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+    .custom-hero-content-{{ section.id }} {
+      margin-left: 0;
+      padding: 20px;
+      width: 100%;
+    }
+    .custom-hero-title-{{ section.id }} {
+      font-size: 38px;
+    }
+    .custom-hero-buttons-{{ section.id }} {
+      flex-direction: column;
+      width: 100%;
+    }
+    .custom-hero-buttons-{{ section.id }} a {
+      text-align: center;
+      width: 100%;
+    }
+  }
+{%- endstyle -%}
+
+<div class="custom-hero-banner-{{ section.id }}">
+  <div class="custom-hero-content-{{ section.id }}">
+    {%- if section.settings.subtitle != blank -%}
+      <div class="custom-hero-subtitle-{{ section.id }}">{{ section.settings.subtitle }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.title != blank -%}
+      <h2 class="custom-hero-title-{{ section.id }}">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+      <div class="custom-hero-text-{{ section.id }}">{{ section.settings.text }}</div>
+    {%- endif -%}
+
+    <div class="custom-hero-buttons-{{ section.id }}">
+      {%- if section.settings.btn_1_text != blank -%}
+        <a href="{{ section.settings.btn_1_url | default: '#' }}" class="custom-btn-primary-{{ section.id }}">
+          {{ section.settings.btn_1_text }}
+        </a>
+      {%- endif -%}
+
+      {%- if section.settings.btn_2_text != blank -%}
+        <a href="{{ section.settings.btn_2_url | default: '#' }}" class="custom-btn-secondary-{{ section.id }}">
+          {{ section.settings.btn_2_text }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Split Content Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image",
+      "info": "Upload the bed image here."
+    },
+    {
+      "type": "header",
+      "content": "Text Content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "KİŞİYE ÖZEL UYKU SİSTEMLERİ"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle Color",
+      "default": "#d19f54"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "İki Vücut\nAynı Değildir"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Heading Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Body Text",
+      "default": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır - vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil."
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body Text Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "text",
+      "id": "btn_1_text",
+      "label": "Primary Button Text",
+      "default": "KOLEKSİYONU KEŞFEDİN"
+    },
+    {
+      "type": "url",
+      "id": "btn_1_url",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "color",
+      "id": "btn_1_bg",
+      "label": "Primary Button Background",
+      "default": "#c69c51"
+    },
+    {
+      "type": "color",
+      "id": "btn_1_text_color",
+      "label": "Primary Button Text Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "text",
+      "id": "btn_2_text",
+      "label": "Secondary Button Text",
+      "default": "NASIL ÇALIŞIR"
+    },
+    {
+      "type": "url",
+      "id": "btn_2_url",
+      "label": "Secondary Button Link"
+    },
+    {
+      "type": "color",
+      "id": "btn_2_color",
+      "label": "Secondary Button Color (Text/Border)",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split Content Hero",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

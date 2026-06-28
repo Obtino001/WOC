@@ -9,25 +9,34 @@
  */
 {
   "sections": {
+    "custom_hero_banner_YGUCGa": {
+      "type": "custom-hero-banner",
+      "name": "Split Content Hero",
+      "settings": {
+        "bg_image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
+        "subtitle": "KİŞİYE ÖZEL UYKU SİSTEMLERİ",
+        "subtitle_color": "#d19f54",
+        "title": "İki VücutAynı Değildir",
+        "title_color": "#ffffff",
+        "text": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır - vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil.",
+        "text_color": "#e0e0e0",
+        "btn_1_text": "KOLEKSİYONU KEŞFEDİN",
+        "btn_1_url": "",
+        "btn_1_bg": "#c69c51",
+        "btn_1_text_color": "#1a1a1a",
+        "btn_2_text": "NASIL ÇALIŞIR",
+        "btn_2_url": "",
+        "btn_2_color": "#ffffff"
+      }
+    },
     "hero": {
       "type": "smart-beds-hero",
-      "settings": {
-        "image": "shopify://shop_images/smart-beds-hero-Dm-LxR88_1.jpg",
-        "kicker": "Bespoke Sleeping Systems",
-        "heading": "",
-        "subheading": "Why should your bed be mass-produced?",
-        "description": "",
-        "button_1_text": "Discover the Collection",
-        "button_1_link": "",
-        "button_2_text": "How it Works",
-        "button_2_link": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
+      "settings": {}
     },
     "philosophy": {
       "type": "smart-beds-philosophy",
       "settings": {
+        "max_width": 750,
         "kicker": "Felsefemiz",
         "heading": "Bir yatak,\n<span class=\"italic text-forest\">içinde uyuyan kişi kadar eşsiz olmalıdır.</span>",
         "content": "<p>Seri üretim yataklar ortalama bir vücut için tasarlanır. Ancak ortalama vücut diye bir şey yoktur. Omurga eğriliğiniz, ağırlık dağılımınız, omuz genişliğiniz ve uyku pozisyonunuz tamamen size özgüdür.</p><p>Bu yüzden her uyku sistemini kişisel bir vücut analizinin ardından üretiyoruz; tek bir bileşen bile seçilmeden önce ölçüyor, tarıyor ve danışmanlık veriyoruz. Sonuç olarak size uyan bir yatak ortaya çıkıyor, tam tersi değil.</p>",
@@ -125,31 +134,37 @@
         "feature_QJV4hX": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "Kişisel Vücut Tarama"
           }
         },
         "feature_nV4ztP": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "1:1 Özel Yapım"
           }
         },
         "feature_3KhTiC": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "text": "Salınım Masajı"
           }
         },
         "f1": {
           "type": "feature",
           "settings": {
-            "text": "Kişisel Vücut Taraması"
+            "text": "Salınım Masajı"
           }
         },
         "f2": {
           "type": "feature",
           "settings": {
-            "text": "Birebir Özel Üretim"
+            "text": "Gümüş Antibakteriyel"
+          }
+        },
+        "feature_AtJ8Ag": {
+          "type": "feature",
+          "settings": {
+            "text": "Hipoalerjenik Malzemeler"
           }
         }
       },
@@ -158,14 +173,15 @@
         "feature_nV4ztP",
         "feature_3KhTiC",
         "f1",
-        "f2"
+        "f2",
+        "feature_AtJ8Ag"
       ],
       "settings": {
         "section_id": "sovesystem",
         "bg_color": "warm",
         "layout": "left",
         "show_divider_top": false,
-        "product": "",
+        "product": "sovesystem®",
         "video": "shopify://files/videos/Sovesystemet-fra-World-of-Comfort_46a4a909-0d20-49f8-835f-b4dc74c67cba.mp4",
         "image_badge": "",
         "show_play_button": true,
@@ -266,6 +282,7 @@
         "layout": "right",
         "show_divider_top": true,
         "product": "synthera-ai-madras",
+        "image": "shopify://shop_images/synthera-ai-mattress-Csqof_UQ_3.jpg",
         "image_badge": "YENİ 2026",
         "show_play_button": false,
         "show_process_box": false,
@@ -742,6 +759,7 @@
     }
   },
   "order": [
+    "custom_hero_banner_YGUCGa",
     "hero",
     "philosophy",
     "categories",
