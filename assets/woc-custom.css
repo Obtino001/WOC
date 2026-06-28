@@ -2986,7 +2986,7 @@ h1,h2,h3,h4 {
     border-radius: var(--radius)
 }
 
-.rounded-md {
+rounded-none {
     border-radius: calc(var(--radius) - 2px)
 }
 
