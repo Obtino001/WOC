@@ -1,7 +1,7 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<section class="color-{{ section.settings.color_scheme }} gradient py-20">
-  <div class="container mx-auto px-4">
+<section class="bg-background py-20">
+  <div class="container mx-auto px-4 {{ section.settings.page_width | default: 'max-w-full' }}">
     <div class="flex items-center justify-center gap-8 mb-4">
       <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-foreground border-foreground">{{ section.settings.tab_1 }}</button>
       <button class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-muted-foreground border-transparent hover:text-foreground/80">{{ section.settings.tab_2 }}</button>
@@ -139,7 +139,18 @@
 {
   "name": "SED Product Carousel",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { 
+      "type": "select", 
+      "id": "page_width", 
+      "label": "Page Width", 
+      "options": [
+        { "value": "max-w-4xl", "label": "Small" },
+        { "value": "max-w-6xl", "label": "Medium" },
+        { "value": "max-w-7xl", "label": "Large" },
+        { "value": "max-w-full", "label": "Full Width" }
+      ],
+      "default": "max-w-full" 
+    },
     { "type": "collection", "id": "collection", "label": "Select Collection (Optional - Overrides manual blocks below)" },
     { "type": "range", "id": "products_to_show", "min": 2, "max": 12, "step": 1, "default": 8, "label": "Products to Show" },
     { "type": "text", "id": "tab_1", "label": "Tab 1 Title", "default": "Best Sellers" },

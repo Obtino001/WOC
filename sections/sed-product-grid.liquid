@@ -1,4 +1,4 @@
-<section id="{{ section.settings.section_id }}" class="color-{{ section.settings.color_scheme }} gradient py-10">
+<section id="{{ section.settings.section_id }}" class="bg-background py-10">
   {% if section.settings.kicker != blank %}
     <div class="container mx-auto px-4">
       <div class="flex items-center gap-2 mb-10">
@@ -8,7 +8,7 @@
     </div>
   {% endif %}
   
-  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-border/20">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-border/20 {{ section.settings.page_width | default: 'max-w-full' }} mx-auto">
     {% for block in section.blocks %}
       <a class="relative group overflow-hidden aspect-[3/4] bg-background block" href="{{ block.settings.product_url }}" {{ block.shopify_attributes }}>
         {% if block.settings.image != blank %}
@@ -31,7 +31,18 @@
 {
   "name": "SED Product Grid",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { 
+      "type": "select", 
+      "id": "page_width", 
+      "label": "Page Width", 
+      "options": [
+        { "value": "max-w-4xl", "label": "Small" },
+        { "value": "max-w-6xl", "label": "Medium" },
+        { "value": "max-w-7xl", "label": "Large" },
+        { "value": "max-w-full", "label": "Full Width" }
+      ],
+      "default": "max-w-full" 
+    },
     { "type": "text", "id": "section_id", "label": "Section ID (for anchor links)" },
     { "type": "text", "id": "kicker", "label": "Header Kicker (Optional)" },
     { "type": "range", "id": "columns", "min": 2, "max": 4, "step": 1, "label": "Desktop Columns", "default": 3 }

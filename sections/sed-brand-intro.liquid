@@ -11,8 +11,8 @@
   }
 {%- endstyle -%}
 
-<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  <div class="container mx-auto px-4 max-w-3xl text-center">
+<section class="bg-background section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 {{ section.settings.page_width | default: 'max-w-3xl' }} text-center">
     <div>
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="mx-auto">
         <path d="M24 4L26 20L24 22L22 20L24 4Z" fill="hsl(36 72% 45%)" opacity="0.8"></path>
@@ -35,7 +35,19 @@
 {
   "name": "SED Brand Intro",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
+    { 
+      "type": "select", 
+      "id": "page_width", 
+      "label": "Page Width", 
+      "options": [
+        { "value": "max-w-3xl", "label": "Small" },
+        { "value": "max-w-4xl", "label": "Medium" },
+        { "value": "max-w-6xl", "label": "Large" },
+        { "value": "max-w-7xl", "label": "Extra Large" },
+        { "value": "max-w-full", "label": "Full Width" }
+      ],
+      "default": "max-w-3xl" 
+    },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 112 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 144 },
     { "type": "textarea", "id": "text", "label": "Text", "default": "For over a decade, Séduisante has redefined luxury skincare through pioneering devices and award-winning formulations, trusted in clinics and loved at home" }
