@@ -1,6 +1,6 @@
-<section class="color-{{ section.settings.color_scheme }} gradient py-20">
+<section class="bg-white py-20">
   <div class="container mx-auto px-4 text-center">
-    <p class="font-body text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground mb-12">{{ section.settings.kicker }}</p>
+    <p class="font-body text-[10px] font-medium uppercase tracking-[0.3em] text-zinc-500 mb-12">{{ section.settings.kicker }}</p>
     <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 max-w-4xl mx-auto">
       {% for block in section.blocks %}
         {% if block.settings.image != blank %}
@@ -15,7 +15,6 @@
 {
   "name": "SED Awards",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "text", "id": "kicker", "label": "Kicker", "default": "AWARD-WINNING PRODUCTS" }
   ],
   "blocks": [
