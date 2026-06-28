@@ -1,7 +1,7 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <section class="bg-white py-20">
-  <div class="container mx-auto px-4 {{ section.settings.page_width | default: 'max-w-full' }}">
+  <div class="page-width mx-auto px-4 {{ section.settings.page_width | default: 'max-w-full' }}">
     <div class="flex items-center justify-center gap-8 mb-4">
       <button onclick="filterCarousel_{{ section.id | replace: '-', '_' }}('1', this)" class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-900 border-zinc-900">{{ section.settings.tab_1 }}</button>
       <button onclick="filterCarousel_{{ section.id | replace: '-', '_' }}('2', this)" class="font-display text-lg md:text-xl font-light uppercase tracking-[0.1em] pb-2 border-b-2 transition-colors duration-300 text-zinc-500 border-transparent hover:text-zinc-800">{{ section.settings.tab_2 }}</button>
