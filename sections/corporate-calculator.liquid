@@ -14,380 +14,517 @@
   #WocCalculator-{{ section.id }} {
     --color-gold: #d8b261;
     --color-gold-hover: #c59b4f;
-    --color-charcoal: #0b0f19;
-  }
-
-  #WocCalculator-{{ section.id }} .bg-muted {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  
-  #WocCalculator-{{ section.id }} .text-muted-foreground {
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  #WocCalculator-{{ section.id }} .bg-charcoal {
-    background-color: #0b0f19;
-  }
-
-  #WocCalculator-{{ section.id }} .bg-accent\/5 {
-    background-color: rgba(216, 178, 97, 0.05);
-  }
-
-  #WocCalculator-{{ section.id }} .border-gold\/30 {
-    border-color: rgba(216, 178, 97, 0.3);
-  }
-
-  #WocCalculator-{{ section.id }} .border-border {
-    border-color: rgba(255, 255, 255, 0.1);
-  }
-
-  #WocCalculator-{{ section.id }} .bg-card {
-    background-color: #121824;
+    --color-bg-main: #0a0a0a;
+    --color-bg-card: #121212;
+    --color-border: #2a2a2a;
+    --color-text-main: #ffffff;
+    --color-text-muted: #888888;
   }
 
   #WocCalculator-{{ section.id }} .tab-trigger {
     cursor: pointer;
     transition: all 0.2s ease;
+    border: 1px solid transparent;
   }
 
   #WocCalculator-{{ section.id }} .tab-trigger[data-state="active"] {
-    background-color: #121824;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-border);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+  }
+
+  #WocCalculator-{{ section.id }} .tab-trigger[data-state="inactive"] {
+    color: var(--color-text-muted);
+  }
+
+  #WocCalculator-{{ section.id }} .tab-trigger[data-state="inactive"]:hover {
+    color: var(--color-text-main);
   }
 
   /* Custom Range Slider Styling */
   #WocCalculator-{{ section.id }} .calc-slider {
     -webkit-appearance: none;
     width: 100%;
-    height: 8px;
+    height: 4px;
     border-radius: 9999px;
-    background: #374151;
+    background: #333333; /* Fallback */
     outline: none;
     cursor: pointer;
-    margin: 12px 0;
+    margin: 16px 0;
   }
 
   #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-runnable-track {
     width: 100%;
-    height: 8px;
+    height: 4px;
     border-radius: 9999px;
   }
 
   #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    border: 2px solid var(--color-gold);
-    background: #0b0f19;
+    border: 3px solid var(--color-gold);
+    background: var(--color-bg-main);
     cursor: pointer;
-    margin-top: -6px;
-    box-shadow: 0 0 10px rgba(216, 178, 97, 0.3);
-    transition: transform 0.15s ease, background-color 0.15s ease;
+    margin-top: -7px;
+    transition: transform 0.1s ease;
   }
 
   #WocCalculator-{{ section.id }} .calc-slider::-webkit-slider-thumb:hover {
     transform: scale(1.15);
-    background: var(--color-gold);
   }
 
   #WocCalculator-{{ section.id }} .calc-slider::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    border: 2px solid var(--color-gold);
-    background: #0b0f19;
+    border: 3px solid var(--color-gold);
+    background: var(--color-bg-main);
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(216, 178, 97, 0.3);
-    transition: transform 0.15s ease, background-color 0.15s ease;
+    transition: transform 0.1s ease;
   }
 
   #WocCalculator-{{ section.id }} .calc-slider::-moz-range-thumb:hover {
     transform: scale(1.15);
-    background: var(--color-gold);
   }
 {%- endstyle -%}
 
-<section id="WocCalculator-{{ section.id }}" class="section-{{ section.id }}-padding bg-background">
+<section id="WocCalculator-{{ section.id }}" class="section-{{ section.id }}-padding" style="background-color: var(--color-bg-main);">
   <div class="container mx-auto px-4 lg:px-8">
     
+    <!-- Top Headers -->
     <div class="text-center mb-12">
-      <span class="font-body text-sm font-semibold tracking-widest uppercase text-gold">{{ section.settings.subheading }}</span>
-      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">{{ section.settings.heading }}</h2>
-      <p class="font-body text-muted-foreground max-w-2xl mx-auto">{{ section.settings.description }}</p>
+      <span class="font-body text-[10px] font-bold tracking-[0.15em] uppercase" style="color: var(--color-gold);">{{ section.settings.subheading }}</span>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-white mt-3 mb-4">{{ section.settings.heading }}</h2>
+      <p class="font-body text-sm md:text-base max-w-2xl mx-auto leading-relaxed" style="color: var(--color-text-muted);">{{ section.settings.description }}</p>
     </div>
 
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto" data-monthly-price="{{ section.settings.monthly_price | default: 1500 }}">
       
-      <!-- Wrap whole calculator in custom Web Component -->
-      <roi-calculator monthly-price="{{ section.settings.monthly_price | default: 1500 }}">
-        
-        <!-- Tabs Control List -->
-        <div role="tablist" aria-orientation="horizontal" class="h-10 items-center justify-center rounded-none bg-muted p-1 text-muted-foreground grid w-full max-w-md mx-auto grid-cols-2 mb-8" style="outline: none;">
-          <button type="button" role="tab" aria-selected="true" aria-controls="panel-sick-leave" data-state="active" id="trigger-sick-leave" class="tab-trigger inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 font-medium transition-all font-body text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank w-4 h-4 mr-2"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
-            Sick Leave Savings
-          </button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="panel-sessions" data-state="inactive" id="trigger-sessions" class="tab-trigger inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 font-medium transition-all font-body text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-armchair w-4 h-4 mr-2"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
-            Calculate Sessions
-          </button>
-        </div>
+      <!-- Tabs Control List -->
+      <div role="tablist" class="flex items-center justify-center gap-2 mb-10 w-full max-w-md mx-auto">
+        <button type="button" role="tab" data-state="active" data-target="panel-sick-leave" class="woc-tab-btn flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-md px-4 py-3 font-body text-xs font-semibold uppercase tracking-wider">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
+          Hastalık İzni Tasarrufları
+        </button>
+        <button type="button" role="tab" data-state="inactive" data-target="panel-sessions" class="woc-tab-btn flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-md px-4 py-3 font-body text-xs font-semibold uppercase tracking-wider">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
+          Oturumları Hesapla
+        </button>
+      </div>
 
-        <!-- Tab Panel 1: Sick Leave Savings -->
-        <div id="panel-sick-leave" class="tab-panel active" data-state="active" role="tabpanel" aria-labelledby="trigger-sick-leave">
-          <div class="grid lg:grid-cols-5 gap-8 items-start">
-            
-            <div class="lg:col-span-3">
-              <div class="rounded-none border bg-card text-card-foreground shadow-sm p-8 border-border">
-                <div class="p-0 space-y-8">
-                  
-                  <div class="flex items-center gap-3 mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-5 h-5 text-gold"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
-                    <h3 class="font-display text-lg font-semibold text-foreground">Your Company Details</h3>
+      <!-- Tab Panel 1: Sick Leave Savings -->
+      <div id="panel-sick-leave" class="woc-tab-panel block">
+        <div class="grid lg:grid-cols-12 gap-6 items-start">
+          
+          <!-- Left Column (Inputs) -->
+          <div class="lg:col-span-7">
+            <div class="rounded-lg p-8 h-full" style="background-color: var(--color-bg-card); border: 1px solid var(--color-border);">
+              
+              <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" style="color: var(--color-gold);"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                <h3 class="font-display text-lg font-bold text-white">Şirketinizin Detayları</h3>
+              </div>
+
+              <div class="space-y-8">
+                <!-- Slider 1: Employees -->
+                <div>
+                  <div class="flex justify-between items-end mb-2">
+                    <label class="font-body text-sm font-semibold text-white">Çalışan Sayısı</label>
+                    <span id="val-employees" class="font-body text-sm font-bold text-white">50</span>
                   </div>
-
-                  <!-- Slider 1: Employees -->
-                  <div class="space-y-3">
-                    <div class="flex justify-between items-center">
-                      <label class="font-body text-sm font-medium text-foreground">Number of Employees</label>
-                      <span id="val-employees" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">50</span>
-                    </div>
-                    <input type="range" id="slider-employees" min="1" max="1000" value="50" class="calc-slider w-full block">
-                    <div class="flex justify-between">
-                      <span class="font-body text-xs text-muted-foreground">1</span>
-                      <span class="font-body text-xs text-muted-foreground">1000</span>
-                    </div>
+                  <input type="range" id="slider-employees" min="1" max="1000" value="50" class="calc-slider w-full block">
+                  <div class="flex justify-between mt-1">
+                    <span class="font-body text-[10px] text-[#555]">1</span>
+                    <span class="font-body text-[10px] text-[#555]">1000</span>
                   </div>
+                </div>
 
-                  <!-- Slider 2: Average Monthly Salary -->
-                  <div class="space-y-3">
-                    <div class="flex justify-between items-center">
-                      <label class="font-body text-sm font-medium text-foreground">Average Monthly Salary (DKK)</label>
-                      <span id="val-salary" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">35.000&nbsp;kr.</span>
-                    </div>
-                    <input type="range" id="slider-salary" min="15000" max="80000" step="1000" value="35000" class="calc-slider w-full block">
-                    <div class="flex justify-between">
-                      <span class="font-body text-xs text-muted-foreground">15.000&nbsp;kr.</span>
-                      <span class="font-body text-xs text-muted-foreground">80.000&nbsp;kr.</span>
-                    </div>
+                <!-- Slider 2: Average Monthly Salary -->
+                <div>
+                  <div class="flex justify-between items-end mb-2">
+                    <label class="font-body text-sm font-semibold text-white">Ortalama Aylık Maaş (DKK)</label>
+                    <span id="val-salary" class="font-body text-sm font-bold text-white">35.000 kr.</span>
                   </div>
-
-                  <!-- Slider 3: Current Sick Leave Percentage -->
-                  <div class="space-y-3">
-                    <div class="flex justify-between items-center">
-                      <label class="font-body text-sm font-medium text-foreground">Current Sick Leave Percentage</label>
-                      <span id="val-current-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">5 %</span>
-                    </div>
-                    <input type="range" id="slider-current-sick" min="1" max="15" step="0.1" value="5" class="calc-slider w-full block">
-                    <div class="flex justify-between">
-                      <span class="font-body text-xs text-muted-foreground">1 %</span>
-                      <span class="font-body text-xs text-muted-foreground">15 %</span>
-                    </div>
-                    <p class="font-body text-xs text-muted-foreground italic">The national average in Denmark is ~4.5%</p>
+                  <input type="range" id="slider-salary" min="15000" max="80000" step="1000" value="35000" class="calc-slider w-full block">
+                  <div class="flex justify-between mt-1">
+                    <span class="font-body text-[10px] text-[#555]">15.000 kr.</span>
+                    <span class="font-body text-[10px] text-[#555]">80.000 kr.</span>
                   </div>
+                </div>
 
-                  <!-- Slider 4: Target Sick Leave Percentage -->
-                  <div class="space-y-3">
-                    <div class="flex justify-between items-center">
-                      <label class="font-body text-sm font-medium text-foreground">Target Sick Leave Percentage (after wellness program)</label>
-                      <span id="val-target-sick" class="font-display text-lg font-bold text-foreground min-w-[100px] text-right">3.5 %</span>
-                    </div>
-                    <input type="range" id="slider-target-sick" min="0.5" max="15" step="0.1" value="3.5" class="calc-slider w-full block">
-                    <div class="flex justify-between">
-                      <span class="font-body text-xs text-muted-foreground">0.5 %</span>
-                      <span class="font-body text-xs text-muted-foreground">15 %</span>
-                    </div>
-                    <p class="font-body text-xs text-muted-foreground italic">Our clients typically see a 20–35% reduction</p>
+                <!-- Slider 3: Current Sick Leave Percentage -->
+                <div>
+                  <div class="flex justify-between items-end mb-2">
+                    <label class="font-body text-sm font-semibold text-white">Mevcut Hastalık İzni Oranı</label>
+                    <span id="val-current-sick" class="font-body text-sm font-bold text-white">5 %</span>
                   </div>
-
-                  <!-- Info Box: WOC Solution Cost -->
-                  <div class="rounded-none border border-gold/30 bg-accent/5 p-4 flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-gold"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
-                      <div>
-                        <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
-                        <p class="font-body text-xs text-muted-foreground">Full massage chair program, maintenance &amp; support included</p>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <p class="font-display text-2xl font-bold text-gold">{{ section.settings.price_text }}</p>
-                      <p class="font-body text-xs text-muted-foreground">per month</p>
-                    </div>
+                  <input type="range" id="slider-current-sick" min="1" max="15" step="0.1" value="5" class="calc-slider w-full block">
+                  <div class="flex justify-between mt-1">
+                    <span class="font-body text-[10px] text-[#555]">1 %</span>
+                    <span class="font-body text-[10px] text-[#555]">15 %</span>
                   </div>
+                  <p class="font-body text-[11px] mt-2 italic" style="color: var(--color-text-muted);">Danimarka'da ulusal ortalama - %4.5'tir</p>
+                </div>
 
+                <!-- Slider 4: Target Sick Leave Percentage -->
+                <div>
+                  <div class="flex justify-between items-end mb-2">
+                    <label class="font-body text-sm font-semibold text-white">Hedef Hastalık İzni Oranı <span class="font-normal text-[#888]">(sağlık programı sonrası)</span></label>
+                    <span id="val-target-sick" class="font-body text-sm font-bold text-white">3.5 %</span>
+                  </div>
+                  <input type="range" id="slider-target-sick" min="0.5" max="15" step="0.1" value="3.5" class="calc-slider w-full block">
+                  <div class="flex justify-between mt-1">
+                    <span class="font-body text-[10px] text-[#555]">0.5 %</span>
+                    <span class="font-body text-[10px] text-[#555]">15 %</span>
+                  </div>
+                  <p class="font-body text-[11px] mt-2 italic" style="color: var(--color-text-muted);">Müşterilerimiz tipik olarak %20-35 azalma görmektedir</p>
                 </div>
               </div>
-            </div>
 
-            <!-- Sticky Results Column -->
-            <div class="lg:col-span-2 sticky top-24">
-              <div class="rounded-none border bg-card text-card-foreground shadow-sm border-gold/30 overflow-hidden">
-                <div class="bg-charcoal p-6">
-                  <h3 class="font-display text-lg font-semibold text-white">Your Annual Results</h3>
-                  <p class="font-body text-sm text-white/60 mt-1">Based on your inputs</p>
+              <!-- Info Box: WOC Solution Cost -->
+              <div class="mt-10 rounded-lg p-5 flex items-center justify-between" style="background-color: rgba(216, 178, 97, 0.05); border: 1px solid rgba(216, 178, 97, 0.2);">
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-0.5" style="color: var(--color-gold);"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                  <div>
+                    <p class="font-body text-sm font-bold text-white mb-0.5">Sağlık Çözümümüz</p>
+                    <p class="font-body text-xs" style="color: var(--color-text-muted);">Tam masaj koltuğu programı, bakım ve destek dahil</p>
+                  </div>
                 </div>
-                <div class="p-6 space-y-5">
-                  
-                  <div class="flex justify-between items-center">
-                    <div class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down w-4 h-4 text-muted-foreground"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>
-                      <span class="font-body text-sm text-muted-foreground">Current Sick Leave Cost</span>
-                    </div>
-                    <span id="out-current-cost" class="font-display text-lg font-bold text-foreground">1.050.000&nbsp;kr.</span>
-                  </div>
-
-                  <div class="flex justify-between items-center">
-                    <div class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-muted-foreground"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                    <span class="font-body text-sm text-muted-foreground">New Sick Leave Cost</span>
-                    </div>
-                    <span id="out-new-cost" class="font-display text-lg font-bold text-foreground">735.000&nbsp;kr.</span>
-                  </div>
-
-                  <div class="border-t border-border"></div>
-
-                  <div class="flex justify-between items-center">
-                    <div class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank w-4 h-4 text-gold"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
-                      <span class="font-body text-sm text-muted-foreground">Gross Annual Savings</span>
-                    </div>
-                    <span id="out-gross-save" class="font-display text-lg font-bold text-gold">315.000&nbsp;kr.</span>
-                  </div>
-
-                  <div class="bg-card rounded-none p-4 space-y-3 border border-border">
-                    <div class="flex justify-between items-center">
-                      <span class="font-body text-sm text-muted-foreground">Our Solution (annual)</span>
-                      <span id="out-annual-price" class="font-body text-sm font-semibold text-foreground">18.000&nbsp;kr.</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <span class="font-body text-sm font-semibold text-foreground">Net Annual Savings</span>
-                      <span id="out-net-save" class="font-display text-xl font-bold text-gold">297.000&nbsp;kr.</span>
-                    </div>
-                    <div class="border-t border-border pt-3 flex justify-between items-center">
-                      <span class="font-body text-sm text-muted-foreground">Return on Investment</span>
-                      <span id="out-roi" class="font-display text-lg font-bold text-gold">1750%</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <span class="font-body text-sm text-muted-foreground">Payback Period</span>
-                      <span id="out-payback" class="font-display text-lg font-bold text-gold">1 month</span>
-                    </div>
-                  </div>
-
-                  <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full rounded">
-                    {{ section.settings.button_text }}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  </a>
-                  <p class="font-body text-xs text-muted-foreground text-center">{{ section.settings.disclaimer }}</p>
+                <div class="text-right pl-4">
+                  <p class="font-display text-xl font-bold" style="color: var(--color-gold);">{{ section.settings.price_text }}</p>
+                  <p class="font-body text-[10px] uppercase tracking-wider" style="color: var(--color-text-muted);">aylık</p>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
-        </div>
 
-        <!-- Tab Panel 2: Calculate Sessions -->
-        <div id="panel-sessions" class="tab-panel" data-state="inactive" role="tabpanel" aria-labelledby="trigger-sessions" hidden>
-          <div class="grid lg:grid-cols-5 gap-8 items-start">
-            
-            <div class="lg:col-span-3">
-              <div class="rounded-none border bg-card text-card-foreground shadow-sm p-8 border-border">
-                <div class="p-0 space-y-8">
-                  
-                  <div class="flex items-center gap-3 mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-5 h-5 text-gold"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    <h3 class="font-display text-lg font-semibold text-foreground">Calculate Usage</h3>
-                  </div>
-
-                  <!-- Slider: Sessions per day -->
-                  <div class="space-y-3">
-                    <div class="flex justify-between items-center">
-                      <label class="font-body text-sm font-medium text-foreground">Sessions Per Day</label>
-                      <span id="val-sessions-per-day" class="font-display text-lg font-bold text-gold min-w-[100px] text-right">8</span>
-                    </div>
-                    <input type="range" id="slider-sessions-per-day" min="1" max="32" value="8" class="calc-slider w-full block">
-                    <div class="flex justify-between">
-                      <span class="font-body text-xs text-muted-foreground">1</span>
-                      <span class="font-body text-xs text-muted-foreground">32</span>
-                    </div>
-                    <p class="font-body text-xs text-muted-foreground italic">Based on average work day hours and chair capacity</p>
-                  </div>
-
-                  <!-- Minutes per day display -->
-                  <div class="rounded-none border border-border bg-muted/30 p-4 flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-5 h-5 text-muted-foreground"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                      <p class="font-body text-sm text-foreground">Minutes per day</p>
-                    </div>
-                    <p id="out-minutes-per-day" class="font-display text-xl font-bold text-foreground">120 min</p>
-                  </div>
-
-                  <!-- Info Box: WOC Solution Cost -->
-                  <div class="rounded-none border border-gold/30 bg-accent/5 p-4 flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-gold"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
-                      <div>
-                        <p class="font-body text-sm font-semibold text-foreground">Our Wellness Solution</p>
-                        <p class="font-body text-xs text-muted-foreground">Full massage chair program, maintenance &amp; support included</p>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <p class="font-display text-2xl font-bold text-gold">{{ section.settings.price_text }}</p>
-                      <p class="font-body text-xs text-muted-foreground">per month</p>
-                    </div>
-                  </div>
-
-                </div>
+          <!-- Right Column (Results) -->
+          <div class="lg:col-span-5 sticky top-24">
+            <div class="rounded-lg h-full flex flex-col" style="background-color: var(--color-bg-card); border: 1px solid var(--color-border);">
+              
+              <div class="p-8">
+                <h3 class="font-display text-xl font-bold text-white mb-1">Yıllık Sonuçlarınız</h3>
+                <p class="font-body text-xs" style="color: var(--color-text-muted);">Girdilerinize göre</p>
               </div>
-            </div>
 
-            <!-- Sticky Results Column -->
-            <div class="lg:col-span-2 sticky top-24">
-              <div class="rounded-none border bg-card text-card-foreground shadow-sm border-gold/30 overflow-hidden">
-                <div class="bg-charcoal p-6 text-center py-8">
-                  <p class="font-body text-sm text-muted-foreground mb-2">Cost Per Session</p>
-                  <p id="out-cost-per-session-header" class="font-display text-5xl font-bold text-gold">9&nbsp;kr.</p>
-                  <p class="font-body text-xs text-muted-foreground mt-2">pr. session (15 min)</p>
-                </div>
-                <div class="p-6 space-y-5">
-                  
-                  <div class="bg-card rounded-none p-4 space-y-3 border border-border">
-                    <div class="flex justify-between items-center">
-                      <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4 text-gold"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        <span class="font-body text-sm text-muted-foreground">Sessions Per Day</span>
-                      </div>
-                      <span id="out-sess-per-day-detail" class="font-display text-lg font-bold text-foreground">8</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <span class="font-body text-sm text-muted-foreground">Sessions Per Month</span>
-                      <span id="out-sess-per-month-detail" class="font-display text-lg font-bold text-foreground">176</span>
-                    </div>
-                    <div class="border-t border-border pt-3 flex justify-between items-center">
-                      <span class="font-body text-sm text-muted-foreground">Per Month Cost</span>
-                      <span id="out-sess-monthly-cost-detail" class="font-display text-lg font-bold text-gold">{{ section.settings.price_text }}</span>
-                    </div>
+              <div class="p-8 pt-0 space-y-6">
+                
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" style="color: var(--color-text-muted);"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>
+                    <span class="font-body text-sm" style="color: var(--color-text-muted);">Mevcut Hastalık İzni Maliyeti</span>
                   </div>
-
-                  <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full rounded">
-                    {{ section.settings.button_text }}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  </a>
-                  <p class="font-body text-xs text-muted-foreground text-center">Beregnet ud fra 22 arbejdsdage pr. måned.</p>
+                  <span id="out-current-cost" class="font-body text-sm font-bold text-white">1.050.000 kr.</span>
                 </div>
-              </div>
-            </div>
 
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" style="color: var(--color-text-muted);"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    <span class="font-body text-sm" style="color: var(--color-text-muted);">Yeni Hastalık İzni Maliyeti</span>
+                  </div>
+                  <span id="out-new-cost" class="font-body text-sm font-bold text-white">735.000 kr.</span>
+                </div>
+
+                <div class="border-t" style="border-color: var(--color-border);"></div>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" style="color: var(--color-gold);"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z"></path><path d="M2 9v1c0 1.1.9 2 2 2h1"></path><path d="M16 11h.01"></path></svg>
+                    <span class="font-body text-sm" style="color: var(--color-text-muted);">Brüt Yıllık Tasarruf</span>
+                  </div>
+                  <span id="out-gross-save" class="font-body text-sm font-bold" style="color: var(--color-gold);">315.000 kr.</span>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                  <span class="font-body text-sm" style="color: var(--color-text-muted);">Çözümümüz (yıllık)</span>
+                  <span id="out-annual-price" class="font-body text-sm font-bold text-white">18.000 kr.</span>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm font-bold text-white">Net Yıllık Tasarruf</span>
+                  <span id="out-net-save" class="font-body text-base font-bold" style="color: var(--color-gold);">297.000 kr.</span>
+                </div>
+
+                <div class="border-t" style="border-color: var(--color-border);"></div>
+
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm" style="color: var(--color-text-muted);">Yatırım Getirisi</span>
+                  <span id="out-roi" class="font-body text-sm font-bold" style="color: var(--color-gold);">1750%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm" style="color: var(--color-text-muted);">Geri Ödeme Süresi</span>
+                  <span id="out-payback" class="font-body text-sm font-bold" style="color: var(--color-gold);">1 ay</span>
+                </div>
+
+              </div>
+
+              <div class="p-8 pt-2 mt-auto">
+                <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-xs font-bold uppercase tracking-wider h-12 px-8 w-full rounded-sm transition-all duration-300" style="background-color: var(--color-gold); color: #000;">
+                  {{ section.settings.button_text }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <p class="font-body text-[10px] text-center mt-4 leading-relaxed max-w-[250px] mx-auto" style="color: var(--color-text-muted);">{{ section.settings.disclaimer }}</p>
+              </div>
+
+            </div>
           </div>
-        </div>
 
-      </roi-calculator>
+        </div>
+      </div>
+
+      <!-- Tab Panel 2: Calculate Sessions -->
+      <div id="panel-sessions" class="woc-tab-panel hidden">
+        <div class="grid lg:grid-cols-12 gap-6 items-start">
+          
+          <div class="lg:col-span-7">
+            <div class="rounded-lg p-8 h-full" style="background-color: var(--color-bg-card); border: 1px solid var(--color-border);">
+              <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" style="color: var(--color-gold);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <h3 class="font-display text-lg font-bold text-white">Kullanımı Hesapla</h3>
+              </div>
+
+              <div class="space-y-8">
+                <!-- Slider: Sessions per day -->
+                <div>
+                  <div class="flex justify-between items-end mb-2">
+                    <label class="font-body text-sm font-semibold text-white">Günlük Oturum Sayısı</label>
+                    <span id="val-sessions-per-day" class="font-body text-sm font-bold" style="color: var(--color-gold);">8</span>
+                  </div>
+                  <input type="range" id="slider-sessions-per-day" min="1" max="32" value="8" class="calc-slider w-full block">
+                  <div class="flex justify-between mt-1">
+                    <span class="font-body text-[10px] text-[#555]">1</span>
+                    <span class="font-body text-[10px] text-[#555]">32</span>
+                  </div>
+                  <p class="font-body text-[11px] mt-2 italic" style="color: var(--color-text-muted);">Ortalama iş günü saatleri ve koltuk kapasitesine dayanmaktadır</p>
+                </div>
+
+                <!-- Minutes per day display -->
+                <div class="rounded-lg border p-4 flex items-center justify-between" style="background-color: rgba(255,255,255,0.02); border-color: var(--color-border);">
+                  <div class="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" style="color: var(--color-text-muted);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <p class="font-body text-sm text-white">Günlük dakika</p>
+                  </div>
+                  <p id="out-minutes-per-day" class="font-display text-xl font-bold text-white">120 dk</p>
+                </div>
+
+                <!-- Info Box: WOC Solution Cost -->
+                <div class="mt-10 rounded-lg p-5 flex items-center justify-between" style="background-color: rgba(216, 178, 97, 0.05); border: 1px solid rgba(216, 178, 97, 0.2);">
+                  <div class="flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-0.5" style="color: var(--color-gold);"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                    <div>
+                      <p class="font-body text-sm font-bold text-white mb-0.5">Sağlık Çözümümüz</p>
+                      <p class="font-body text-xs" style="color: var(--color-text-muted);">Tam masaj koltuğu programı, bakım ve destek dahil</p>
+                    </div>
+                  </div>
+                  <div class="text-right pl-4">
+                    <p class="font-display text-xl font-bold" style="color: var(--color-gold);">{{ section.settings.price_text }}</p>
+                    <p class="font-body text-[10px] uppercase tracking-wider" style="color: var(--color-text-muted);">aylık</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 sticky top-24">
+            <div class="rounded-lg h-full flex flex-col overflow-hidden" style="background-color: var(--color-bg-card); border: 1px solid var(--color-border);">
+              
+              <div class="p-8 text-center" style="background-color: #0d0d0d; border-bottom: 1px solid var(--color-border);">
+                <p class="font-body text-sm mb-2" style="color: var(--color-text-muted);">Oturum Başına Maliyet</p>
+                <p id="out-cost-per-session-header" class="font-display text-5xl font-bold" style="color: var(--color-gold);">9 kr.</p>
+                <p class="font-body text-xs mt-2" style="color: var(--color-text-muted);">oturum başına (15 dk)</p>
+              </div>
+
+              <div class="p-8 space-y-6">
+                
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" style="color: var(--color-text-muted);"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span class="font-body text-sm" style="color: var(--color-text-muted);">Günlük Oturum</span>
+                  </div>
+                  <span id="out-sess-per-day-detail" class="font-body text-sm font-bold text-white">8</span>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm" style="color: var(--color-text-muted);">Aylık Oturum</span>
+                  <span id="out-sess-per-month-detail" class="font-body text-sm font-bold text-white">176</span>
+                </div>
+
+                <div class="border-t" style="border-color: var(--color-border);"></div>
+
+                <div class="flex justify-between items-center">
+                  <span class="font-body text-sm" style="color: var(--color-text-muted);">Aylık Toplam Maliyet</span>
+                  <span id="out-sess-monthly-cost-detail" class="font-body text-sm font-bold" style="color: var(--color-gold);">{{ section.settings.price_text }}</span>
+                </div>
+              </div>
+
+              <div class="p-8 pt-2 mt-auto">
+                <a href="{{ section.settings.button_link | default: '#contact' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-xs font-bold uppercase tracking-wider h-12 px-8 w-full rounded-sm transition-all duration-300" style="background-color: var(--color-gold); color: #000;">
+                  {{ section.settings.button_text }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <p class="font-body text-[10px] text-center mt-4 leading-relaxed max-w-[250px] mx-auto" style="color: var(--color-text-muted);">Beregnet ud fra 22 arbejdsdage pr. måned.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
       
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const section = document.getElementById('WocCalculator-{{ section.id }}');
+    if(!section) return;
+
+    const formatter = new Intl.NumberFormat('tr-TR', { maximumFractionDigits: 0 });
+    const monthlyPrice = parseInt(section.querySelector('.max-w-5xl').getAttribute('data-monthly-price')) || 1500;
+
+    // --- Tab Switching ---
+    const tabBtns = section.querySelectorAll('.woc-tab-btn');
+    const tabPanels = section.querySelectorAll('.woc-tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.setAttribute('data-state', 'inactive'));
+        btn.setAttribute('data-state', 'active');
+        
+        const targetId = btn.getAttribute('data-target');
+        tabPanels.forEach(panel => {
+          if(panel.id === targetId) {
+            panel.classList.remove('hidden');
+            panel.classList.add('block');
+          } else {
+            panel.classList.remove('block');
+            panel.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // --- Slider Fill Background Function ---
+    function updateSliderFill(slider) {
+      const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+      slider.style.background = `linear-gradient(to right, #d8b261 ${value}%, #333333 ${value}%)`;
+    }
+
+    // --- Tab 1: Sick Leave Logic ---
+    const sEmployees = section.querySelector('#slider-employees');
+    const sSalary = section.querySelector('#slider-salary');
+    const sSick = section.querySelector('#slider-current-sick');
+    const sTarget = section.querySelector('#slider-target-sick');
+
+    const dEmployees = section.querySelector('#val-employees');
+    const dSalary = section.querySelector('#val-salary');
+    const dSick = section.querySelector('#val-current-sick');
+    const dTarget = section.querySelector('#val-target-sick');
+
+    const outCurrent = section.querySelector('#out-current-cost');
+    const outNew = section.querySelector('#out-new-cost');
+    const outGross = section.querySelector('#out-gross-save');
+    const outNet = section.querySelector('#out-net-save');
+    const outRoi = section.querySelector('#out-roi');
+    const outPayback = section.querySelector('#out-payback');
+
+    function calculateSickLeave() {
+      const employees = parseInt(sEmployees.value);
+      const salary = parseInt(sSalary.value);
+      const sickRate = parseFloat(sSick.value);
+      let targetRate = parseFloat(sTarget.value);
+
+      // Prevent target being higher than current logically
+      if(targetRate >= sickRate) {
+        targetRate = sickRate - 0.1;
+        sTarget.value = targetRate;
+        updateSliderFill(sTarget);
+      }
+
+      dEmployees.textContent = employees;
+      dSalary.textContent = formatter.format(salary) + " kr.";
+      dSick.textContent = sickRate.toFixed(1) + " %";
+      dTarget.textContent = targetRate.toFixed(1) + " %";
+
+      const annualSalary = salary * 12;
+      const currentCost = employees * annualSalary * (sickRate / 100);
+      const newCost = employees * annualSalary * (targetRate / 100);
+      const grossSavings = currentCost - newCost;
+      const annualSolutionCost = monthlyPrice * 12;
+      const netSavings = grossSavings - annualSolutionCost;
+
+      outCurrent.textContent = formatter.format(currentCost) + " kr.";
+      outNew.textContent = formatter.format(newCost) + " kr.";
+      outGross.textContent = formatter.format(grossSavings) + " kr.";
+      
+      section.querySelector('#out-annual-price').textContent = formatter.format(annualSolutionCost) + " kr.";
+      outNet.textContent = formatter.format(netSavings) + " kr.";
+
+      if (annualSolutionCost > 0) {
+        const roi = (netSavings / annualSolutionCost) * 100;
+        outRoi.textContent = formatter.format(roi) + "%";
+        
+        if (grossSavings > 0) {
+          const paybackMonths = (annualSolutionCost / grossSavings) * 12;
+          const monthsRounded = Math.max(1, Math.round(paybackMonths));
+          outPayback.textContent = monthsRounded + (monthsRounded === 1 ? " ay" : " ay");
+        } else {
+          outPayback.textContent = "-";
+        }
+      }
+    }
+
+    [sEmployees, sSalary, sSick, sTarget].forEach(el => {
+      if(el) {
+        updateSliderFill(el);
+        el.addEventListener('input', () => {
+          updateSliderFill(el);
+          calculateSickLeave();
+        });
+      }
+    });
+
+    // --- Tab 2: Sessions Logic ---
+    const sSess = section.querySelector('#slider-sessions-per-day');
+    const dSess = section.querySelector('#val-sessions-per-day');
+    const outMins = section.querySelector('#out-minutes-per-day');
+    
+    const outCostHeader = section.querySelector('#out-cost-per-session-header');
+    const outSessDayDetail = section.querySelector('#out-sess-per-day-detail');
+    const outSessMonthDetail = section.querySelector('#out-sess-per-month-detail');
+
+    function calculateSessions() {
+      const sessPerDay = parseInt(sSess.value);
+      dSess.textContent = sessPerDay;
+      outMins.textContent = (sessPerDay * 15) + " dk";
+
+      const workDaysPerMonth = 22;
+      const sessPerMonth = sessPerDay * workDaysPerMonth;
+      const costPerSess = monthlyPrice / sessPerMonth;
+
+      outCostHeader.innerHTML = formatter.format(costPerSess) + "&nbsp;kr.";
+      outSessDayDetail.textContent = sessPerDay;
+      outSessMonthDetail.textContent = sessPerMonth;
+    }
+
+    if(sSess) {
+      updateSliderFill(sSess);
+      sSess.addEventListener('input', () => {
+        updateSliderFill(sSess);
+        calculateSessions();
+      });
+    }
+
+    // Initial Run
+    calculateSickLeave();
+    calculateSessions();
+  });
+</script>
 
 {% schema %}
 {
@@ -417,19 +554,19 @@
       "type": "text",
       "id": "subheading",
       "label": "Subheading",
-      "default": "ROI Calculator"
+      "default": "YG HESAPLAYICI"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Calculate Your Savings"
+      "default": "Tasarrufunuzu Hesaplayın"
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Description",
-      "default": "Our wellness solution costs only 1.500 kr./month. See how it pays for itself through reduced sick leave — or estimate daily usage for your team."
+      "default": "Sağlık çözümümüz ayda sadece 1.500 kr. maliyetlidir. Azalan hastalık izinleriyle kendini nasıl amorti ettiğini veya ekibiniz için günlük kullanımı nasıl tahmin ettiğinizi görün."
     },
     {
       "type": "number",
@@ -447,7 +584,7 @@
       "type": "text",
       "id": "button_text",
       "label": "Button Text",
-      "default": "Get Your Custom Proposal"
+      "default": "SİZE ÖZEL TEKLİFİNİZİ ALIN"
     },
     {
       "type": "url",
@@ -458,7 +595,7 @@
       "type": "text",
       "id": "disclaimer",
       "label": "Disclaimer text",
-      "default": "These are estimates. We provide precise projections tailored to your company."
+      "default": "Bunlar tahminlerdir. Şirketinize özel kesin projeksiyonlar sunuyoruz."
     }
   ],
   "presets": [
