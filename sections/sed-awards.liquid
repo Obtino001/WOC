@@ -1,10 +1,10 @@
 <section class="bg-white py-20">
   <div class="container mx-auto px-4 text-center">
     <p class="font-body text-[10px] font-medium uppercase tracking-[0.3em] text-zinc-500 mb-12">{{ section.settings.kicker }}</p>
-    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 max-w-4xl mx-auto">
+    <div class="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 md:gap-12 w-full mx-auto">
       {% for block in section.blocks %}
         {% if block.settings.image != blank %}
-          {{ block.settings.image | image_url: width: 300 | image_tag: class: 'h-16 md:h-20 object-contain opacity-50 hover:opacity-100 transition-opacity duration-500', loading: 'lazy' }}
+          {{ block.settings.image | image_url: width: 300 | image_tag: class: 'h-auto max-h-[100px] w-auto object-contain transition-transform duration-500 hover:scale-105', loading: 'lazy' }}
         {% endif %}
       {% endfor %}
     </div>
