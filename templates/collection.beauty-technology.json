@@ -75,10 +75,36 @@
             "product_url": ""
           }
         },
-        "product_hXp9E6": {
+        "product_8NAqVA": {
           "type": "product",
           "settings": {
             "tab": "1",
+            "product": "boss-lady-facelift",
+            "tag": "",
+            "title": "",
+            "subtitle": "",
+            "compare_price": "",
+            "price": "",
+            "product_url": ""
+          }
+        },
+        "product_hXp9E6": {
+          "type": "product",
+          "settings": {
+            "tab": "2",
+            "product": "boss-lady-facelift",
+            "tag": "",
+            "title": "",
+            "subtitle": "",
+            "compare_price": "",
+            "price": "",
+            "product_url": ""
+          }
+        },
+        "product_M3dgmG": {
+          "type": "product",
+          "settings": {
+            "tab": "2",
             "product": "boss-lady-facelift",
             "tag": "",
             "title": "",
@@ -91,7 +117,9 @@
       },
       "block_order": [
         "product_FrnewH",
-        "product_hXp9E6"
+        "product_8NAqVA",
+        "product_hXp9E6",
+        "product_M3dgmG"
       ],
       "settings": {
         "page_width": "max-w-6xl",
@@ -313,7 +341,6 @@
         "a3"
       ],
       "settings": {
-        "color_scheme": "",
         "kicker": "AWARD-WINNING PRODUCTS"
       }
     },
