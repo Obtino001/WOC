@@ -518,6 +518,7 @@
       "type": "related-products",
       "settings": {
         "bg_color": "warm",
+        "page_width": "standard",
         "kicker": "YOU MAY ALSO LIKE",
         "heading": "Du vil måske også syntes om",
         "heading_size": "h2",
