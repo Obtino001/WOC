@@ -79,7 +79,20 @@
           "type": "product",
           "settings": {
             "tab": "1",
-            "product": "boss-lady-facelift",
+            "product": "nefertiti-necklift",
+            "tag": "",
+            "title": "",
+            "subtitle": "",
+            "compare_price": "",
+            "price": "",
+            "product_url": ""
+          }
+        },
+        "product_33DUaj": {
+          "type": "product",
+          "settings": {
+            "tab": "1",
+            "product": "comfort-cleaner",
             "tag": "",
             "title": "",
             "subtitle": "",
@@ -92,7 +105,7 @@
           "type": "product",
           "settings": {
             "tab": "2",
-            "product": "boss-lady-facelift",
+            "product": "light-up-eye-lift",
             "tag": "",
             "title": "",
             "subtitle": "",
@@ -118,6 +131,7 @@
       "block_order": [
         "product_FrnewH",
         "product_8NAqVA",
+        "product_33DUaj",
         "product_hXp9E6",
         "product_M3dgmG"
       ],
