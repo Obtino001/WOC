@@ -306,10 +306,39 @@
     },
     "ergonomic_zones": {
       "type": "feature-zones",
+      "blocks": {
+        "zone_4wRXH4": {
+          "type": "zone",
+          "settings": {
+            "title": "Omuz ve Kalça",
+            "text": "Ağırlık noktalarının batmasını sağlayarak basınç bölgelerini rahatlatan yumuşak bölgeler"
+          }
+        },
+        "zone_jdTNe7": {
+          "type": "zone",
+          "settings": {
+            "title": "Bel ve Sırt",
+            "text": "Daha sert destek, omurgayı nötr tutar ve ağrılı 'hamak' etkisini önler"
+          }
+        },
+        "zone_7pt3XL": {
+          "type": "zone",
+          "settings": {
+            "title": "Bacaklar ve Ayaklar",
+            "text": "Kan dolaşımını destekleyen ve bacaklardaki huzursuzluğu azaltan özel bölge"
+          }
+        }
+      },
+      "block_order": [
+        "zone_4wRXH4",
+        "zone_jdTNe7",
+        "zone_7pt3XL"
+      ],
       "settings": {
         "badge": "Ergonomik hassasiyet",
         "title": "Ergonomik 9 bölgeli yatak",
-        "description": ""
+        "description": "Yatağın her bölgesi farklı sertliğe sahiptir — baş, boyun, omuz, üst sırt, bel, kalça, uyluk, diz ve ayaklara doğru desteği sağlamak için hassas bir şekilde kalibre edilmiştir. Bu, sizin omurganızın doğal eğrisini korumasını sağlar sırt üstü, yan veya karın üstü yatmanız fark etmeksizin.",
+        "image": "shopify://shop_images/9-zone-mattress-BVwoHhYy.png"
       }
     },
     "comparison_table": {
