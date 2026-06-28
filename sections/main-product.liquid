@@ -51,13 +51,15 @@
     
 
     /* Square Main Product Image Box & Off-White/Beige Background */
-    .product__media-wrapper .product-media-container {
+    .product__media-wrapper .product-media-container,
+    .product__media-wrapper .product__media-item {
       background-color: #F5F4F0 !important;
       border: none !important;
       border-radius: 0 !important;
       box-shadow: none !important;
-      overflow: visible !important;
+      overflow: hidden !important;
       position: relative !important;
+      aspect-ratio: 1 / 1 !important;
     }
     .product__media-wrapper img, 
     .product__media-wrapper .media img {
@@ -69,6 +71,9 @@
     }
     .product__media-item {
       position: relative !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
 
     /* "New" Badge style inside active slide container */
