@@ -1,57 +1,70 @@
-<section class="py-16 bg-background">
+<section class="py-16 bg-[#0a0a0a] text-[#e5e5e5]" id="woc-product-configurator-{{ section.id }}">
   <div class="container mx-auto px-4 lg:px-8">
     
     <!-- Top Header -->
     <div class="text-center mb-12">
-      <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.subtitle }}</p>
-      <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">{{ section.settings.title }}</h2>
+      <p class="font-body text-sm uppercase tracking-[0.25em] text-[#d4af37] mb-4">{{ section.settings.subtitle }}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white">{{ section.settings.title }}</h2>
     </div>
     
     <!-- 3 Bed Type Cards -->
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
       {% for block in section.blocks %}
         {% if block.type == 'product_card' %}
-          <button class="relative group rounded-2xl overflow-hidden border-2 transition-all duration-500 text-left flex flex-col {% if block.settings.highlight %}border-gold shadow-[0_0_40px_rgba(212,175,55,0.25)] scale-[1.02]{% else %}border-border/60 hover:border-gold/40 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]{% endif %}" {{ block.shopify_attributes }}>
+          {% assign product = block.settings.product_ref %}
+          
+          <button type="button" 
+                  class="woc-card-selector relative group rounded-2xl overflow-hidden border-2 transition-all duration-500 text-left flex flex-col {% if block.settings.highlight %}border-[#d4af37] shadow-[0_0_40px_rgba(212,175,55,0.15)] scale-[1.02]{% else %}border-[#333] hover:border-[#d4af37]/40{% endif %}" 
+                  data-target-id="{{ block.id }}"
+                  {{ block.shopify_attributes }}>
+            
             {% if block.settings.badge != blank %}
               <div class="absolute top-4 left-4 z-10">
-                <span class="font-body text-[10px] font-semibold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full backdrop-blur-md {% if block.settings.highlight %}bg-gold text-background{% else %}bg-background/70 text-gold border border-gold/30{% endif %}">
+                <span class="font-body text-[10px] font-semibold uppercase tracking-[0.15em] px-3 py-1.5 rounded-full backdrop-blur-md {% if block.settings.highlight %}bg-[#d4af37] text-black{% else %}bg-black/70 text-[#d4af37] border border-[#d4af37]/30{% endif %}">
                   {{ block.settings.badge }}
                 </span>
               </div>
             {% endif %}
+            
             {% if block.settings.highlight %}
-              <div class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-gold flex items-center justify-center shadow-gold">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-background"><path d="M20 6 9 17l-5-5"></path></svg>
+              <div class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-[#d4af37] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-black"><path d="M20 6 9 17l-5-5"></path></svg>
               </div>
             {% endif %}
             
-            <div class="aspect-[4/3] overflow-hidden relative">
+            <div class="aspect-[4/3] overflow-hidden relative bg-[#111]">
               {% if block.settings.image != blank %}
                 {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105' }}
+              {% elsif product != blank and product.featured_image %}
+                {{ product.featured_image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105' }}
               {% else %}
-                 <img src="{{ 'cont-grey-HJTU4eIC.jpg' | asset_url }}" alt="{{ block.settings.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x450/1a1a1a/D4AF37?text=Yatak'">
+                 <div class="w-full h-full flex items-center justify-center text-[#555]">Görsel Yok</div>
               {% endif %}
-              <div class="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-90"></div>
             </div>
             
-            <div class="p-6 bg-card flex-1 flex flex-col justify-between">
+            <div class="p-6 bg-[#111] flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="font-display text-xl font-bold text-foreground mb-1.5">{{ block.settings.title }}</h3>
-                <p class="font-body text-sm text-muted-foreground mb-4 italic">{{ block.settings.description }}</p>
+                <h3 class="font-display text-xl font-bold text-white mb-1.5">
+                  {% if product != blank %}{{ product.title }}{% else %}{{ block.settings.title }}{% endif %}
+                </h3>
+                <p class="font-body text-sm text-[#888] mb-4 italic">{{ block.settings.description }}</p>
               </div>
               <div class="flex items-end justify-between">
                 <div>
-                  <p class="font-body text-[10px] uppercase tracking-widest text-muted-foreground mb-0.5">{{ section.settings.from_text }}</p>
-                  <p class="font-display text-2xl font-bold text-gold">{{ block.settings.price }}</p>
+                  <p class="font-body text-[10px] uppercase tracking-widest text-[#666] mb-0.5">{{ section.settings.from_text }}</p>
+                  <p class="font-display text-2xl font-bold text-[#d4af37]">
+                    {% if product != blank %}{{ product.price | money }}{% else %}{{ block.settings.price }}{% endif %}
+                  </p>
                 </div>
-                <div class="flex items-center gap-1.5 font-body text-xs font-medium transition-colors {% if block.settings.highlight %}text-gold{% else %}text-muted-foreground group-hover:text-gold{% endif %}">
+                <div class="flex items-center gap-1.5 font-body text-xs font-medium transition-colors {% if block.settings.highlight %}text-[#d4af37]{% else %}text-[#888] group-hover:text-[#d4af37]{% endif %}">
                   {{ section.settings.configure_text }} 
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="m9 18 6-6-6-6"></path></svg>
                 </div>
               </div>
             </div>
             {% if block.settings.highlight %}
-              <div class="h-1 w-full bg-gradient-to-r from-gold/0 via-gold to-gold/0"></div>
+              <div class="h-1 w-full bg-gradient-to-r from-[#d4af37]/0 via-[#d4af37] to-[#d4af37]/0"></div>
             {% endif %}
           </button>
         {% endif %}
@@ -59,241 +72,230 @@
     </div>
 
     <!-- Main Configurator Area -->
-    <div class="max-w-5xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-12">
-        
-        <!-- Configurator Left (Gallery & Info) -->
-        <div>
-          <!-- Image Gallery -->
-          <div class="relative rounded-xl overflow-hidden mb-3 shadow-elevated">
-            <img src="https://placehold.co/800x600/1a1a1a/D4AF37?text=Gallery+Main" alt="WOC Supreme Elevation 2" class="w-full aspect-[4/3] object-cover">
-            <button class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center hover:bg-background transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-foreground"><path d="m15 18-6-6 6-6"></path></svg>
-            </button>
-            <button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center hover:bg-background transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-foreground"><path d="m9 18 6-6-6-6"></path></svg>
-            </button>
-          </div>
-          <div class="flex gap-2 mb-6 overflow-x-auto pb-1">
-            <button class="flex-shrink-0 w-16 h-12 rounded-md overflow-hidden border-2 transition-colors border-transparent opacity-60 hover:opacity-100">
-              <img src="https://placehold.co/100x80/1a1a1a/D4AF37?text=Th1" alt="Thumb 1" class="w-full h-full object-cover">
-            </button>
-            <button class="flex-shrink-0 w-16 h-12 rounded-md overflow-hidden border-2 transition-colors border-gold">
-              <img src="https://placehold.co/100x80/1a1a1a/D4AF37?text=Th2" alt="Thumb 2" class="w-full h-full object-cover">
-            </button>
-            <button class="flex-shrink-0 w-16 h-12 rounded-md overflow-hidden border-2 transition-colors border-transparent opacity-60 hover:opacity-100">
-              <img src="https://placehold.co/100x80/1a1a1a/D4AF37?text=Th3" alt="Thumb 3" class="w-full h-full object-cover">
-            </button>
-          </div>
-
-          <!-- Info Details -->
-          <h3 class="font-display text-2xl font-bold text-foreground mb-2">{{ section.settings.config_title }}</h3>
-          <p class="font-body text-muted-foreground leading-relaxed mb-4">{{ section.settings.config_desc }}</p>
-          
-          <!-- Accordions -->
-          <div class="mb-5">
-            {% for block in section.blocks %}
-              {% if block.type == 'accordion' %}
-                <div class="border-b border-border/50" {{ block.shopify_attributes }}>
-                  <h3 class="flex">
-                    <button type="button" aria-expanded="false" class="flex flex-1 items-center justify-between transition-all font-display text-sm font-semibold text-foreground hover:no-underline py-3">
-                      {{ block.settings.title }}
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
-                    </button>
-                  </h3>
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- We create a wrapper for the dynamic configurator data -->
+      <div id="woc-configurator-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'product_card' %}
+            {% assign product = block.settings.product_ref %}
+            
+            <div class="woc-configurator-panel grid lg:grid-cols-2 gap-12 {% if forloop.first %}block{% else %}hidden{% endif %}" data-panel-id="{{ block.id }}">
+              
+              <!-- Configurator Left (Gallery) -->
+              <div>
+                <!-- Image Gallery Main -->
+                <div class="relative rounded-xl overflow-hidden mb-3 bg-[#111] aspect-[4/3] border border-[#222] flex items-center justify-center">
+                  {% if product != blank and product.featured_image %}
+                    {{ product.featured_image | image_url: width: 800 | image_tag: class: 'w-full h-full object-cover' }}
+                  {% else %}
+                    <h2 class="font-display text-4xl text-[#d4af37] font-bold">Gallery Main</h2>
+                  {% endif %}
+                  
+                  <button class="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-[#333] flex items-center justify-center hover:border-[#d4af37] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-white"><path d="m15 18-6-6 6-6"></path></svg>
+                  </button>
+                  <button class="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-[#333] flex items-center justify-center hover:border-[#d4af37] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-white"><path d="m9 18 6-6-6-6"></path></svg>
+                  </button>
                 </div>
-              {% endif %}
-            {% endfor %}
-          </div>
+                
+                <!-- Gallery Thumbnails -->
+                <div class="flex gap-2 mb-8 overflow-x-auto pb-2">
+                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#333] flex items-center justify-center text-[#888] font-body text-xs hover:border-[#666] transition-colors">
+                    Th1
+                  </button>
+                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#d4af37] flex items-center justify-center text-[#d4af37] font-body text-xs">
+                    Th2
+                  </button>
+                  <button class="flex-shrink-0 w-16 h-12 rounded-md bg-[#111] border border-[#333] flex items-center justify-center text-[#888] font-body text-xs hover:border-[#666] transition-colors">
+                    Th3
+                  </button>
+                </div>
+              </div>
 
-          <!-- Feature Tags -->
-          <div class="flex flex-wrap gap-2">
-            {% assign tags = section.settings.feature_tags | split: ',' %}
-            {% for tag in tags %}
-              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-gold/30 text-gold">{{ tag | strip }}</div>
-            {% endfor %}
-            {% assign green_tags = section.settings.green_tags | split: ',' %}
-            {% for tag in green_tags %}
-               <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-forest/30 text-forest">{{ tag | strip }}</div>
-            {% endfor %}
-          </div>
-        </div>
+              <!-- Configurator Right (Form & Price) matching image_fce65f.png exactly -->
+              <div class="bg-[#0f0f0f] rounded-xl border border-[#222] p-6 lg:p-8">
+                
+                <!-- Price -->
+                <div class="flex items-baseline justify-between mb-6">
+                  <div>
+                    <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-1">DIN PRIS</p>
+                    <p class="font-display text-3xl font-bold text-[#d4af37] tracking-tight">
+                      {% if product != blank %}{{ product.price | money }}{% else %}{{ section.settings.config_price }}{% endif %}
+                    </p>
+                  </div>
+                  <p class="font-body text-xs text-[#888]">{{ section.settings.installment_text }}</p>
+                </div>
+                
+                <!-- Promo Box -->
+                <div class="border border-[#d4af37] rounded-lg h-12 mb-6"></div>
+                
+                <!-- LINAK Box -->
+                <div class="bg-[#1a1a1a] border border-[#222] rounded-lg p-3.5 mb-8 flex items-center gap-4">
+                  <div class="w-16 h-8 flex-shrink-0 bg-[#1268B3] rounded flex items-center justify-center text-white font-bold text-[10px] tracking-widest">LINAK</div>
+                </div>
+                
+                <div class="shrink-0 bg-[#222] h-[1px] w-full mb-6"></div>
+                
+                <!-- Størrelse (Size) Selector -->
+                <div class="mb-6">
+                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">STØRRELSE</p>
+                  <div class="flex flex-wrap gap-2">
+                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">80×200</button>
+                    <button class="px-5 py-2.5 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">90×200</button>
+                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">120×200</button>
+                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">140×200</button>
+                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">160×200</button>
+                    <button class="px-5 py-2.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">180×200</button>
+                  </div>
+                </div>
+                
+                <!-- Hårdhed (Hardness) Selector -->
+                <div class="mb-6">
+                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">HÅRDHED</p>
+                  <div class="space-y-2">
+                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Blød — anbefales til person u. 75 kg</button>
+                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#d4af37] bg-[#1a1a1a] text-[#ddd] font-body text-xs">Medium — anbefales til person u. 75 kg</button>
+                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Medium — anbefales til person 75-95 kg</button>
+                    <button class="w-full text-left px-4 py-3.5 rounded-lg border border-[#333] bg-transparent text-[#aaa] font-body text-xs hover:border-[#555] transition-colors">Fast — anbefales til person o. 95 kg</button>
+                  </div>
+                </div>
+                
+                <!-- Farve (Color) Selector -->
+                <div class="mb-6">
+                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">FARVE</p>
+                  <div class="flex gap-4">
+                    <button class="flex flex-col items-center gap-2 group">
+                      <div class="w-8 h-8 rounded-full border border-[#d4af37] p-[2px]">
+                         <div class="w-full h-full rounded-full" style="background-color: #8b8b8b;"></div>
+                      </div>
+                      <span class="font-body text-[10px] text-[#d4af37]">Grå</span>
+                    </button>
+                    <button class="flex flex-col items-center gap-2 group">
+                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
+                         <div class="w-full h-full rounded-full" style="background-color: #3c3c3c;"></div>
+                      </div>
+                      <span class="font-body text-[10px] text-[#888]">Antracit</span>
+                    </button>
+                    <button class="flex flex-col items-center gap-2 group">
+                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
+                         <div class="w-full h-full rounded-full" style="background-color: #1a1a1a;"></div>
+                      </div>
+                      <span class="font-body text-[10px] text-[#888]">Sort</span>
+                    </button>
+                    <button class="flex flex-col items-center gap-2 group">
+                      <div class="w-8 h-8 rounded-full border border-transparent p-[2px] group-hover:border-[#555] transition-colors">
+                         <div class="w-full h-full rounded-full" style="background-color: #e5d3b3;"></div>
+                      </div>
+                      <span class="font-body text-[10px] text-[#888]">Beige</span>
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- Ben (Legs) Header (from bottom of screenshot) -->
+                <div class="mb-2">
+                  <p class="font-body text-[10px] uppercase tracking-widest text-[#888] mb-3">BEN (GRATIS)</p>
+                  <div class="w-full h-10 rounded-lg border border-[#d4af37] bg-[#1a1a1a]"></div>
+                </div>
 
-        <!-- Configurator Right (Form & Price) -->
-        <div class="bg-card rounded-xl border border-border p-6 lg:p-8">
-          
-          <!-- Price -->
-          <div class="flex items-baseline justify-between mb-6">
-            <div>
-              <p class="font-body text-xs uppercase tracking-widest text-muted-foreground mb-1">{{ section.settings.your_price_label }}</p>
-              <p class="font-display text-3xl font-bold text-gold">{{ section.settings.config_price }}</p>
+              </div>
             </div>
-            <p class="font-body text-sm text-muted-foreground">{{ section.settings.installment_text }}</p>
-          </div>
-          
-          <!-- Banners -->
-          <div class="bg-gold/10 border-2 border-gold rounded-lg p-4 mb-6 text-center">
-            <p class="font-display text-lg md:text-xl font-bold text-gold uppercase tracking-wide">{{ section.settings.promo_title }}</p>
-            <p class="font-body text-sm text-muted-foreground mt-1">{{ section.settings.promo_sub }}</p>
-          </div>
-          <div class="bg-muted rounded-lg p-4 mb-6 flex items-center gap-4">
-            <div class="w-16 h-8 flex-shrink-0 bg-[#1268B3] rounded p-1.5 flex items-center justify-center text-white font-bold text-xs tracking-widest">LINAK</div>
-            <div class="flex-1">
-              <p class="font-display text-sm font-bold text-foreground">{{ section.settings.linak_title }}</p>
-              <p class="font-body text-xs text-muted-foreground">{{ section.settings.linak_sub }}</p>
-            </div>
-          </div>
-          
-          <div class="shrink-0 bg-border h-[1px] w-full mb-6"></div>
-          
-          <!-- Size Selector -->
-          <div class="mb-6">
-            <p class="font-body text-xs uppercase tracking-widest text-muted-foreground mb-3">Størrelse</p>
-            <div class="flex flex-wrap gap-2">
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-gold bg-gold/10 text-foreground">80×200</button>
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">90×200</button>
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">120×200</button>
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">140×200</button>
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">160×200</button>
-              <button class="px-4 py-2 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">180×200</button>
-            </div>
-          </div>
-          
-          <!-- Hardness Selector -->
-          <div class="mb-6">
-            <p class="font-body text-xs uppercase tracking-widest text-muted-foreground mb-3">Hårdhed</p>
-            <div class="space-y-2">
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Blød — anbefales til person u. 75 kg</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-gold bg-gold/10 text-foreground">Medium — anbefales til person u. 75 kg</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Medium — anbefales til person 75-95 kg</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Fast — anbefales til person o. 95 kg</button>
-            </div>
-          </div>
-          
-          <!-- Color Selector -->
-          <div class="mb-6">
-            <p class="font-body text-xs uppercase tracking-widest text-muted-foreground mb-3">Farve</p>
-            <div class="flex gap-3">
-              <button class="flex flex-col items-center gap-2 group"><div class="w-10 h-10 rounded-full border-2 transition-all border-gold scale-110 shadow-[0_0_12px_rgba(212,175,55,0.4)]" style="background-color: rgb(139, 139, 139);"></div><span class="font-body text-xs text-gold">Grå</span></button>
-              <button class="flex flex-col items-center gap-2 group"><div class="w-10 h-10 rounded-full border-2 transition-all border-border group-hover:border-gold/40" style="background-color: rgb(60, 60, 60);"></div><span class="font-body text-xs text-muted-foreground">Antracit</span></button>
-              <button class="flex flex-col items-center gap-2 group"><div class="w-10 h-10 rounded-full border-2 transition-all border-border group-hover:border-gold/40" style="background-color: rgb(26, 26, 26);"></div><span class="font-body text-xs text-muted-foreground">Sort</span></button>
-              <button class="flex flex-col items-center gap-2 group"><div class="w-10 h-10 rounded-full border-2 transition-all border-border group-hover:border-gold/40" style="background-color: rgb(200, 184, 154);"></div><span class="font-body text-xs text-muted-foreground">Beige</span></button>
-            </div>
-          </div>
-          
-          <!-- Legs Selector -->
-          <div class="mb-6">
-            <p class="font-body text-xs uppercase tracking-widest text-muted-foreground mb-3">Ben (gratis)</p>
-            <div class="space-y-2">
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-gold bg-gold/10 text-foreground">Champagne ben — 20 cm</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Champagne ben — 12 cm</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Stålben — 22 cm</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Stålben — 16 cm</button>
-              <button class="w-full text-left px-4 py-3 rounded-lg border transition-all font-body text-sm border-border text-muted-foreground hover:border-gold/40">Runde egeben — 22 cm</button>
-            </div>
-          </div>
-          
-          <div class="shrink-0 bg-border h-[1px] w-full my-6"></div>
-          
-          <!-- Summary box -->
-          <div class="bg-muted rounded-lg p-4 mb-6 space-y-1">
-            <p class="font-body text-xs text-muted-foreground uppercase tracking-wider mb-2">Din konfiguration</p>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Type</span><span class="font-body text-sm text-foreground">WOC Supreme Elevation</span></div>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Størrelse</span><span class="font-body text-sm text-foreground">80×200</span></div>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Hårdhed</span><span class="font-body text-sm text-foreground">Medium</span></div>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Farve</span><span class="font-body text-sm text-foreground">Grå</span></div>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Ben</span><span class="font-body text-sm text-foreground">Champagne ben — 20 cm</span></div>
-            <div class="flex justify-between"><span class="font-body text-sm text-muted-foreground">Gavl</span><span class="font-body text-sm text-foreground">Uden gavl</span></div>
-          </div>
-          
-          <!-- Action Buttons -->
-          <div class="flex flex-col sm:flex-row gap-3">
-            <button class="inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-all duration-500 h-12 px-10 flex-1 gap-2 bg-gold hover:bg-gold/90 text-charcoal font-body text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-              {{ section.settings.btn_buy_text }}
-            </button>
-            <button class="inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-all duration-500 h-12 px-10 flex-1 gap-2 bg-foreground hover:bg-foreground/90 text-background font-body text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-              {{ section.settings.btn_demo_text }}
-            </button>
-          </div>
-          
-        </div>
-        
+          {% endif %}
+        {% endfor %}
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const selectors = document.querySelectorAll('#woc-product-configurator-{{ section.id }} .woc-card-selector');
+    const panels = document.querySelectorAll('#woc-product-configurator-{{ section.id }} .woc-configurator-panel');
+
+    selectors.forEach(selector => {
+      selector.addEventListener('click', function() {
+        // Remove highlight from all cards
+        selectors.forEach(s => {
+          s.classList.remove('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]');
+          s.classList.add('border-[#333]');
+          
+          // Reset badge colors
+          const badge = s.querySelector('.absolute.top-4.left-4 span');
+          if(badge) {
+            badge.classList.remove('bg-[#d4af37]', 'text-black');
+            badge.classList.add('bg-black/70', 'text-[#d4af37]', 'border', 'border-[#d4af37]/30');
+          }
+          
+          // Hide checkmark icon
+          const checkmark = s.querySelector('.absolute.top-4.right-4');
+          if(checkmark) checkmark.style.display = 'none';
+        });
+
+        // Add highlight to clicked card
+        this.classList.remove('border-[#333]');
+        this.classList.add('border-[#d4af37]', 'shadow-[0_0_40px_rgba(212,175,55,0.15)]', 'scale-[1.02]');
+        
+        // Update badge on clicked card
+        const badge = this.querySelector('.absolute.top-4.left-4 span');
+        if(badge) {
+          badge.classList.remove('bg-black/70', 'text-[#d4af37]', 'border', 'border-[#d4af37]/30');
+          badge.classList.add('bg-[#d4af37]', 'text-black');
+        }
+
+        // Show checkmark icon
+        const checkmark = this.querySelector('.absolute.top-4.right-4');
+        if(checkmark) checkmark.style.display = 'flex';
+
+        // Switch Configurator Panel
+        const targetId = this.getAttribute('data-target-id');
+        panels.forEach(panel => {
+          if (panel.getAttribute('data-panel-id') === targetId) {
+            panel.classList.remove('hidden');
+            panel.classList.add('block');
+          } else {
+            panel.classList.remove('block');
+            panel.classList.add('hidden');
+          }
+        });
+      });
+    });
+  });
+</script>
+
 {% schema %}
 {
-  "name": "Product Configurator",
+  "name": "Configurator Dynamic",
   "settings": [
-    {
-      "type": "header",
-      "content": "Section Header"
-    },
     {
       "type": "text",
       "id": "subtitle",
-      "label": "Subtitle"
+      "label": "Subtitle",
+      "default": "YATAK TİPİNİZİ SEÇİN"
     },
     {
       "type": "text",
       "id": "title",
-      "label": "Title"
+      "label": "Title",
+      "default": "Üç tip, tek kalite"
     },
     {
       "type": "text",
       "id": "from_text",
       "label": "'From' Text",
-      "default": "Şuradan"
+      "default": "ŞURADAN"
     },
     {
       "type": "text",
       "id": "configure_text",
-      "label": "Configure Button Text",
+      "label": "Configure Text",
       "default": "Yapılandır"
-    },
-    {
-      "type": "header",
-      "content": "Configurator Info (Left)"
-    },
-    {
-      "type": "text",
-      "id": "config_title",
-      "label": "Product Title"
-    },
-    {
-      "type": "textarea",
-      "id": "config_desc",
-      "label": "Product Description"
-    },
-    {
-      "type": "text",
-      "id": "feature_tags",
-      "label": "Gold Tags (comma separated)"
-    },
-    {
-      "type": "text",
-      "id": "green_tags",
-      "label": "Green Tags (comma separated)"
-    },
-    {
-      "type": "header",
-      "content": "Configurator Form (Right)"
-    },
-    {
-      "type": "text",
-      "id": "your_price_label",
-      "label": "Your Price Label",
-      "default": "Din pris"
     },
     {
       "type": "text",
       "id": "config_price",
-      "label": "Price Display",
+      "label": "Fallback Form Price",
       "default": "₺75.300"
     },
     {
@@ -301,112 +303,59 @@
       "id": "installment_text",
       "label": "Installment Text",
       "default": "Eller ₺7.530/md. i 10 mdr."
-    },
-    {
-      "type": "text",
-      "id": "promo_title",
-      "label": "Promo Banner Title"
-    },
-    {
-      "type": "text",
-      "id": "promo_sub",
-      "label": "Promo Banner Subtitle"
-    },
-    {
-      "type": "text",
-      "id": "linak_title",
-      "label": "LINAK Banner Title"
-    },
-    {
-      "type": "text",
-      "id": "linak_sub",
-      "label": "LINAK Banner Subtitle"
-    },
-    {
-      "type": "text",
-      "id": "btn_buy_text",
-      "label": "Buy Button Text",
-      "default": "Şimdi satın al"
-    },
-    {
-      "type": "text",
-      "id": "btn_demo_text",
-      "label": "Demo Button Text",
-      "default": "Demo Rezervasyonu Yapın"
     }
   ],
   "blocks": [
     {
       "type": "product_card",
-      "name": "Bed Card",
+      "name": "Bed Card (Dynamic)",
       "limit": 3,
       "settings": [
         {
+          "type": "product",
+          "id": "product_ref",
+          "label": "Select Backend Product"
+        },
+        {
           "type": "checkbox",
           "id": "highlight",
-          "label": "Highlight Card (Gold Border)"
+          "label": "Highlight initially?",
+          "default": false
         },
         {
           "type": "text",
           "id": "badge",
-          "label": "Badge Text"
+          "label": "Badge Text",
+          "default": "ÇOK SATANLAR"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Bed Image"
+          "label": "Card Image Override (Optional)"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Bed Name"
+          "label": "Title Override (Optional)"
         },
         {
           "type": "text",
           "id": "description",
-          "label": "Short Description"
+          "label": "Short Description",
+          "default": "Sizi yedinci cennete taşıyor"
         },
         {
           "type": "text",
           "id": "price",
-          "label": "Starting Price"
-        }
-      ]
-    },
-    {
-      "type": "accordion",
-      "name": "Accordion Item",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Accordion Title"
+          "label": "Fallback Price (If no product)",
+          "default": "₺40.160"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Product Configurator",
-      "settings": {
-        "subtitle": "YATAK TİPİNİZİ SEÇİN",
-        "title": "Üç tip, tek kalite",
-        "from_text": "ŞURADAN",
-        "configure_text": "Yapılandır",
-        "config_title": "WOC Supreme Elevation",
-        "config_desc": "Dünya standartlarında ayarlanabilir yatak. Doğal lateksli 9 konfor bölgesi, bambu lifli ve kaşmirli 60 mm Talalay lateks ped — yaz ve kış için çift taraflı. Danimarka yapımı kaliteli motorla donatılmış ve tam OEKO-TEX® sertifikalıdır. GREENFIRST® anti-akar işlemi ve Breeze Cooling teknolojisi en iyi iç mekan iklimini sağlar.",
-        "feature_tags": "9 komfortzoner, Naturlatex, 60mm Talalay topmadras, ØEKO-TEX®, Breeze Cooling, 30 dages prøve, Danskproduceret",
-        "green_tags": "15 års garanti, Dansk kvalitetsmotor, 5 års motorgaranti",
-        "your_price_label": "FİYATINIZ",
-        "config_price": "₺75.300",
-        "installment_text": "Veya ₺7.530/ay 10 ay boyunca",
-        "promo_title": "YATAK BAŞLIĞI VE PED YATAK HER ZAMAN FİYATA DAHİLDİR",
-        "promo_sub": "Tüm ayaklar da ücretsizdir — gizli ek ücret yok",
-        "linak_title": "Danimarka LINAK® motoru",
-        "linak_sub": "Dünyanın önde gelen aktüatör teknolojisi. Kablosuz kontrol, uygulama yönetimi, Under Bed Light ve mekanik acil durum indirme. Kapsamlı testlerden geçmiştir — her motor teslimattan önce kalite kontrolünden geçirilir.",
-        "btn_buy_text": "Şimdi satın al",
-        "btn_demo_text": "Demo Rezervasyonu Yapın"
-      },
+      "name": "Configurator Dynamic",
       "blocks": [
         {
           "type": "product_card",
@@ -436,24 +385,6 @@
             "title": "WOC Supreme Depolama Yatağı",
             "description": "Özel konfor akıllı depolamayla buluşuyor",
             "price": "₺27.605"
-          }
-        },
-        {
-          "type": "accordion",
-          "settings": {
-            "title": "Hepsinden üstün yatak pedi"
-          }
-        },
-        {
-          "type": "accordion",
-          "settings": {
-            "title": "Sadece iyi \"hissettirmeyen\" yatak"
-          }
-        },
-        {
-          "type": "accordion",
-          "settings": {
-            "title": "İyi bir uykunun temeli"
           }
         }
       ]
