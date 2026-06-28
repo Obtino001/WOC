@@ -56,7 +56,7 @@
         "c2"
       ],
       "settings": {
-        "page_width": "max-w-full"
+        "page_width": "max-w-7xl"
       }
     },
     "carousel": {
@@ -65,6 +65,7 @@
         "product_FrnewH": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "boss-lady-facelift",
             "tag": "",
             "title": "",
@@ -77,6 +78,7 @@
         "product_hXp9E6": {
           "type": "product",
           "settings": {
+            "tab": "1",
             "product": "boss-lady-facelift",
             "tag": "",
             "title": "",
@@ -92,8 +94,7 @@
         "product_hXp9E6"
       ],
       "settings": {
-        "page_width": "max-w-full",
-        "collection": "in-house-production-core-collection",
+        "page_width": "max-w-6xl",
         "products_to_show": 8,
         "tab_1": "Best Sellers",
         "tab_2": "Trending Now",
@@ -218,7 +219,6 @@
     "newsletter": {
       "type": "sed-newsletter",
       "settings": {
-        "color_scheme": "",
         "heading": "Luxury in your inbox.",
         "description": "Be the first to know about new collections, innovations, exclusive events and more.",
         "placeholder": "E-mail",
@@ -281,7 +281,6 @@
         "b7"
       ],
       "settings": {
-        "color_scheme": "",
         "heading": "In the World's Finest Hands",
         "description": "Our award-winning devices and skincare are a signature of luxury in spas and clinics worldwide"
       }
@@ -378,9 +377,7 @@
         "t5",
         "t6"
       ],
-      "settings": {
-        "color_scheme": ""
-      }
+      "settings": {}
     },
     "guarantees": {
       "type": "sed-guarantees-bar",
@@ -420,14 +417,11 @@
         "g3",
         "g4"
       ],
-      "settings": {
-        "color_scheme": ""
-      }
+      "settings": {}
     },
     "experience": {
       "type": "sed-experience-cta",
       "settings": {
-        "color_scheme": "",
         "heading": "Experience in person",
         "description": "Visit one of our showrooms and experience Séduisante products in real life. Our experts will guide you to the perfect solution.",
         "btn_text": "FIND YOUR SHOWROOM",
