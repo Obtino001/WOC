@@ -3531,7 +3531,9 @@ h1,h2,h3,h4 {
     --tw-bg-opacity: 1;
     background-color: rgb(255 251 235 / var(--tw-bg-opacity, 1))
 }
-
+.text-background {
+    color: hsl(var(--background)) !important;
+}
 .bg-amber-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(245 158 11 / var(--tw-bg-opacity, 1))
