@@ -81,20 +81,41 @@
                   {% endfor %}
                 {% endif %}
               </div>
+            </a>
 
-              <!-- Stock & Button -->
-              <div class="flex items-center gap-1.5 mb-3">
+            <div class="mt-auto pt-3 flex flex-col gap-3">
+              <!-- Stock -->
+              <div class="flex items-center gap-1.5">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span class="font-body text-xs font-semibold text-emerald-600">{{ section.settings.stock_text }}</span>
+                <span class="font-body text-[11px] font-semibold text-emerald-600">{{ section.settings.stock_text }}</span>
               </div>
-              
-              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-500 px-4 w-full bg-copper hover:bg-copper-hover text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider mt-auto">
-                {{ section.settings.btn_text }}
-              </button>
-            {%- endif -%}
+              {%- if product != blank -%}
+                {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
+                <product-form>
+                  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" class="product-variant-id" disabled>
+                    <button type="submit" name="add" class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-500 px-4 w-full bg-copper hover:bg-copper-hover text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider"
+                      {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                      <span>
+                        {%- if product.selected_or_first_available_variant.available -%}
+                          {{ section.settings.btn_text }}
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t | default: 'Sold Out' }}
+                        {%- endif -%}
+                      </span>
+                      {%- render 'loading-spinner' -%}
+                    </button>
+                  {%- endform -%}
+                </product-form>
+              {%- else -%}
+                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-500 px-4 w-full bg-copper hover:bg-copper-hover text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider">
+                  {{ section.settings.btn_text }}
+                </button>
+              {%- endif -%}
+            </div>
           </div>
         </div>
       {% endfor %}

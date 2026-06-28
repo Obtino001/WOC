@@ -60,6 +60,25 @@
   {%- endif -%}
   
   @media screen and (max-width: 989px) {
+    .shopify-section.section-header .header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding-left: 1rem !important;
+      padding-right: 0.5rem !important;
+      gap: 1rem;
+    }
+    .shopify-section.section-header .header__heading {
+      margin: 0 !important;
+      text-align: left !important;
+      flex: 0 1 auto !important;
+    }
+    .shopify-section.section-header .header__icons {
+      justify-content: flex-end !important;
+      flex: 1 1 auto !important;
+      width: auto !important;
+      padding-right: 0 !important;
+    }
     .shopify-section.section-header .header__book-demo-btn {
       display: none !important;
     }
