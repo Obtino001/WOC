@@ -147,6 +147,7 @@
         "section_color_scheme": "",
         "card_color_scheme": "scheme-1",
         "show_glow": true,
+        "page_width": "standard",
         "kicker": "En popüler",
         "heading": "Bizim <i> Çok Satanlarımız </i>",
         "description": "Üstün konfor, gelişmiş teknoloji ve eşsiz kalite için seçilmiş, müşterilerimiz arasında en sevilen masaj koltukları.",
@@ -181,6 +182,7 @@
       "type": "woc-collection-grid",
       "settings": {
         "subtitle": "Dahili Üretim · Çekirdek Koleksiyon",
+        "page_width": "standard",
         "title": "Bizim Çekirdek Modellerimiz",
         "description": "World of Comfort tarafından tasarlanan, geliştirilen ve üretilen bu dört model, terapötik sağlık teknolojisindeki uzmanlığımızın zirvesini temsil etmektedir.",
         "center_heading": true,
@@ -198,6 +200,7 @@
       "type": "custom-luxury-products",
       "name": "Featured Product Grid",
       "settings": {
+        "page_width": "standard",
         "subtitle": "Official Distributor",
         "partner_logo": "shopify://shop_images/partner-bodyfriend-Hbn1JxnG_1.png",
         "description": "We are proudly the official distributor of Body Friend, the world's leading manufacturer of ultra-premium massage chairs.",
@@ -213,6 +216,7 @@
       "type": "woc-collection-grid",
       "settings": {
         "subtitle": "Koleksiyonumuz",
+        "page_width": "standard",
         "title": "Alle Massagestole",
         "description": "Find den massagestol der passer bedst til dine behov.",
         "center_heading": false,
@@ -290,13 +294,14 @@
         "kicker": "Fleksibel betaling",
         "heading": "Køb, lej, eller<br><span class=\"italic text-gold\">finansier din stol</span>",
         "description": "Vi tilbyder flere forskellige måder at få din drømmestol hjem på. Vælg den løsning, der passer bedst til din økonomi.",
-        "padding_top": 96,
-        "padding_bottom": 96
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "endorsement": {
       "type": "expert-recommendation",
       "settings": {
+        "page_width": "full",
         "kicker": "LÆGEFAGLIGT ANBEFALET",
         "heading": "Din ryg fortjener <span class=\"italic text-gold\">ekspertise</span>",
         "quote": "Som kiropraktor gennem 30 år kan jeg bekræfte, at World of Comfort's massagestole leverer en yderst effektiv, dybdegående og terapeutisk korrekt behandling. Den kunstige intelligens sikrer, at trykket tilpasses individuelt til rygsøjlen – præcis som ved en professionel behandling.",
@@ -527,7 +532,7 @@
         "bars_heading": "XD vs. Konkurrenterne",
         "comparison_note": "XD = eXtended Dimension — vores patenterede massagesystem med fuld bevægelsesfrihed på tværs af alle akser, dybder og hastigheder samtidigt.",
         "footer_quote": "Teknologi der ikke bare masserer — men forstår dig",
-        "padding_top": 80,
+        "padding_top": 0,
         "padding_bottom": 80
       }
     },
@@ -562,6 +567,7 @@
         "s3"
       ],
       "settings": {
+        "page_width": "full",
         "padding_top": 80,
         "padding_bottom": 96,
         "badge_text": "Personal recommendation",
