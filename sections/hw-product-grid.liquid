@@ -91,14 +91,17 @@
                 {%- assign current_variant = product.selected_or_first_available_variant -%}
                 <product-form class="flex-1">
                   {%- form 'product', product, id: product_form_id, class: 'form h-full', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                    <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+                    <input type="hidden" name="id" value="{{ current_variant.id }}">
                     <button type="submit" name="add" class="flex w-full items-center justify-center gap-2 rounded-full bg-zinc-900 px-4 py-3 font-body text-xs font-semibold uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90 disabled:opacity-50" {% if current_variant.available == false %}disabled{% endif %}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide lucide-shopping-bag h-3.5 w-3.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                      {%- if current_variant.available -%}
-                        Buy now
-                      {%- else -%}
-                        {{ 'products.product.sold_out' | t | default: 'Sold out' }}
-                      {%- endif -%}
+                      <span>
+                        {%- if current_variant.available -%}
+                          Buy now
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t | default: 'Sold out' }}
+                        {%- endif -%}
+                      </span>
+                      {%- render 'loading-spinner' -%}
                     </button>
                   {%- endform -%}
                 </product-form>
