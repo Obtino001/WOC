@@ -36,7 +36,7 @@
     "philosophy": {
       "type": "smart-beds-philosophy",
       "settings": {
-        "max_width": "max-w-5xl",
+        "max_width": 750,
         "kicker": "Felsefemiz",
         "heading": "Bir yatak,\n<span class=\"italic text-forest\">içinde uyuyan kişi kadar eşsiz olmalıdır.</span>",
         "content": "<p>Seri üretim yataklar ortalama bir vücut için tasarlanır. Ancak ortalama vücut diye bir şey yoktur. Omurga eğriliğiniz, ağırlık dağılımınız, omuz genişliğiniz ve uyku pozisyonunuz tamamen size özgüdür.</p><p>Bu yüzden her uyku sistemini kişisel bir vücut analizinin ardından üretiyoruz; tek bir bileşen bile seçilmeden önce ölçüyor, tarıyor ve danışmanlık veriyoruz. Sonuç olarak size uyan bir yatak ortaya çıkıyor, tam tersi değil.</p>",
