@@ -15,7 +15,7 @@
 
 <section id="shop" class="bg-white border-t border-zinc-200 section-{{ section.id }}-padding">
   <div id="products" class="container mx-auto px-6 lg:px-12">
-    <h2 class="mb-10 font-display text-3xl font-semibold text-zinc-900 md:text-4xl">{{ section.settings.heading }}</h2>
+    <h2 class="mb-10 text-3xl font-semibold text-zinc-900 md:text-4xl" style="font-family: 'Outfit', sans-serif !important;">{{ section.settings.heading }}</h2>
     
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} lg:gap-8">
       {% for block in section.blocks %}
@@ -53,7 +53,7 @@
           </a>
 
           <div class="flex flex-1 flex-col px-2">
-            <h3 class="mb-1 font-body text-sm font-semibold leading-snug text-zinc-900">{{ product.title | default: block.settings.title }}</h3>
+            <h3 class="mb-1 text-sm font-semibold leading-snug text-zinc-900" style="font-family: 'Outfit', sans-serif !important;">{{ product.title | default: block.settings.title }}</h3>
             <p class="mb-3 font-body text-xs leading-relaxed text-zinc-500">{{ block.settings.subtitle }}</p>
             
             {% if block.settings.features != blank %}
