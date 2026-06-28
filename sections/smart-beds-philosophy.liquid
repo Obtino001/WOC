@@ -4,6 +4,13 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  /* Custom Max Width applied from the range slider */
+  .custom-max-w-{{ section.id }} {
+    max-width: {{ section.settings.max_width }}px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -14,7 +21,7 @@
 
 <section class="section-light-warm relative section-{{ section.id }}-padding">
   <div class="absolute inset-0 bg-gradient-to-br from-forest/[0.03] to-transparent pointer-events-none"></div>
-  <div class="container mx-auto px-4 lg:px-8 {{ section.settings.max_width }} text-center relative z-10">
+  <div class="custom-max-w-{{ section.id }} px-4 lg:px-8 text-center relative z-10">
     <div class="flex items-center justify-center gap-3 mb-6">
       <div class="w-2 h-2 rounded-full bg-forest"></div>
       <p class="font-body text-sm uppercase tracking-[0.25em] text-forest">{{ section.settings.kicker }}</p>
@@ -33,36 +40,14 @@
   "name": "Philosophy Block",
   "settings": [
     {
-      "type": "select",
+      "type": "range",
       "id": "max_width",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "unit": "px",
       "label": "Content Max Width",
-      "options": [
-        {
-          "value": "max-w-xl",
-          "label": "Extra Small (xl)"
-        },
-        {
-          "value": "max-w-2xl",
-          "label": "Small (2xl)"
-        },
-        {
-          "value": "max-w-3xl",
-          "label": "Medium (3xl)"
-        },
-        {
-          "value": "max-w-4xl",
-          "label": "Large (4xl)"
-        },
-        {
-          "value": "max-w-5xl",
-          "label": "Extra Large (5xl)"
-        },
-        {
-          "value": "max-w-full",
-          "label": "Full Width"
-        }
-      ],
-      "default": "max-w-3xl"
+      "default": 400
     },
     {
       "type": "text",
