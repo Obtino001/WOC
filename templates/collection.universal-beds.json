@@ -102,6 +102,167 @@
         "title": "Üç tip, tek kalite"
       }
     },
+    "feature_split_z8yNGB": {
+      "type": "feature-split",
+      "blocks": {
+        "check_item_eeXb8P": {
+          "type": "check_item",
+          "settings": {
+            "text": "100% doğal Talalay lateks 60mm çekirdek"
+          }
+        },
+        "check_item_9RUVBz": {
+          "type": "check_item",
+          "settings": {
+            "text": "Doğal olarak antibakteriyel — toz akarlarına, küflere ve bakterilere karşı dirençli"
+          }
+        },
+        "check_item_DyFkVw": {
+          "type": "check_item",
+          "settings": {
+            "text": "Serinletici açık hücreler — hafızalı köpükten 7 kat daha iyi hava sirkülasyonu"
+          }
+        },
+        "check_item_eFMxmG": {
+          "type": "check_item",
+          "settings": {
+            "text": "Pamuklu yaz tarafı + yünlü kış tarafı"
+          }
+        },
+        "check_item_GNNfVa": {
+          "type": "check_item",
+          "settings": {
+            "text": "Bambu elyafı ve kaşmir kaplama — OEKO-TEX® sertifikalı"
+          }
+        },
+        "check_item_rtCCV8": {
+          "type": "check_item",
+          "settings": {
+            "text": "GREENFIRST® antitoz akarı işlemi — yıkanabilir"
+          }
+        },
+        "check_item_J948ir": {
+          "type": "check_item",
+          "settings": {
+            "text": "Eklem ve kaslardaki baskıyı ve ağrıyı hafifletir"
+          }
+        },
+        "check_item_7YdzEi": {
+          "type": "check_item",
+          "settings": {
+            "text": "Çökmeden 10-15 yıl formunu korur"
+          }
+        },
+        "pro_item_WFnthU": {
+          "type": "pro_item",
+          "settings": {
+            "text": "Doğal olarak serinletici"
+          }
+        },
+        "pro_item_JhrHLc": {
+          "type": "pro_item",
+          "settings": {
+            "text": "Doğası gereği antibakteriyel"
+          }
+        },
+        "pro_item_ETxXdC": {
+          "type": "pro_item",
+          "settings": {
+            "text": "Açık hücre yapısı → nem uzaklaştırılır"
+          }
+        },
+        "pro_item_MtBEab": {
+          "type": "pro_item",
+          "settings": {
+            "text": "15+ yıl şeklini korur"
+          }
+        },
+        "pro_item_fUwXPm": {
+          "type": "pro_item",
+          "settings": {
+            "text": "Anında tepkisel — 'batma' hissi yok"
+          }
+        },
+        "pro_item_YjJJEW": {
+          "type": "pro_item",
+          "settings": {
+            "text": "Hip alerjenik ve OEKO-TEX® sertifikalı"
+          }
+        },
+        "con_item_a3FVqC": {
+          "type": "con_item",
+          "settings": {
+            "text": "Isıyı tutar — sıcak uyutur"
+          }
+        },
+        "con_item_kthiMq": {
+          "type": "con_item",
+          "settings": {
+            "text": "Sentetik — alerjileri tetikleyebilir"
+          }
+        },
+        "con_item_MAH4PP": {
+          "type": "con_item",
+          "settings": {
+            "text": "Kapalı hücre yapısı → kötü havalandırma"
+          }
+        },
+        "con_item_RattTQ": {
+          "type": "con_item",
+          "settings": {
+            "text": "3-5 yıl sonra şeklini kaybeder"
+          }
+        },
+        "con_item_BMnyj8": {
+          "type": "con_item",
+          "settings": {
+            "text": "Yavaş uyum — 'yapışkan' hissettirir"
+          }
+        },
+        "con_item_egGAAa": {
+          "type": "con_item",
+          "settings": {
+            "text": "Genellikle kimyasal koku (gaz çıkışı)"
+          }
+        }
+      },
+      "block_order": [
+        "check_item_eeXb8P",
+        "check_item_9RUVBz",
+        "check_item_DyFkVw",
+        "check_item_eFMxmG",
+        "check_item_GNNfVa",
+        "check_item_rtCCV8",
+        "check_item_J948ir",
+        "check_item_7YdzEi",
+        "pro_item_WFnthU",
+        "pro_item_JhrHLc",
+        "pro_item_ETxXdC",
+        "pro_item_MtBEab",
+        "pro_item_fUwXPm",
+        "pro_item_YjJJEW",
+        "con_item_a3FVqC",
+        "con_item_kthiMq",
+        "con_item_MAH4PP",
+        "con_item_RattTQ",
+        "con_item_BMnyj8",
+        "con_item_egGAAa"
+      ],
+      "name": "Feature Split Extended",
+      "settings": {
+        "bg_light": true,
+        "badge": "100% DOĞAL TALALAY LATEKS",
+        "main_title": "Kendine has bir üst şilte",
+        "main_description": "60 mm Talalay lateks üst şiltemiz standart bir üst şilte değildir — uzanabileceğiniz en gelişmiş uyku yüzeyidir. Doğal olarak antibakteriyel özelliklere, serinletici hava sirkülasyonuna ve benzersiz bir yaz/kış dönüştürme işlevine sahip, Danimarka iklimi için tasarlanmış bir üst şilte elde edersiniz.",
+        "image_position": "left",
+        "image": "shopify://shop_images/topmadras-talalay-B5_8tXzT.jpg",
+        "content_title": "Talalay Lateks Nedir?",
+        "content_text": "<p>Talalay lateks, sıvı lateksin bir kalıba döküldüğü, vakumla kapatıldığı ve -30°C'de dondurulduğu benzersiz, patentli bir işlemle üretilir. Bu, oluşturur milyonlarca mikroskobik hava kabarcığı — malzemeyi doğal olarak havalandıran, serin ve son derece dayanıklı kılan açık bir hücre yapısı.</p><p>Isıyı hapseden daha ucuz hafızalı köpükten farklı olarak, Talalay lateks ısı ve nemi aktif olarak uzaklaştırır. Dünyadaki uyku klinikleri ve fizyoterapistler tarafından tercih edilen bir malzemedir.</p>",
+        "show_comparison": true,
+        "pros_title": "✓ WOC Talalay Lateks",
+        "cons_title": "✗ Standart Hafızalı Köpük"
+      }
+    },
     "hardness_guide": {
       "type": "feature-hardness",
       "settings": {
@@ -190,6 +351,7 @@
     "hero_banner",
     "trust_badges",
     "product_selector",
+    "feature_split_z8yNGB",
     "hardness_guide",
     "feature_split_antibacterial",
     "ergonomic_zones",
