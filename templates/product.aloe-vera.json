@@ -9,55 +9,6 @@
  */
 {
   "sections": {
-    "woc_trust_bar_km4wNG": {
-      "type": "woc-trust-bar",
-      "blocks": {
-        "trust_item_YaeDFb": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "truck",
-            "custom_icon_svg": "",
-            "label": "Gratis Levering",
-            "sub": "I hele Skandinavien"
-          }
-        },
-        "trust_item_RNdYJD": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "shield",
-            "custom_icon_svg": "",
-            "label": "5 Års Garanti",
-            "sub": "På alle modeller"
-          }
-        },
-        "trust_item_jNHzdN": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "award",
-            "custom_icon_svg": "",
-            "label": "Prisvindende",
-            "sub": "Skandinavisk Design"
-          }
-        },
-        "trust_item_iDNiXH": {
-          "type": "trust_item",
-          "settings": {
-            "icon": "creditcard",
-            "custom_icon_svg": "",
-            "label": "0% Rente",
-            "sub": "Finansiering tilbydes"
-          }
-        }
-      },
-      "block_order": [
-        "trust_item_YaeDFb",
-        "trust_item_RNdYJD",
-        "trust_item_jNHzdN",
-        "trust_item_iDNiXH"
-      ],
-      "name": "WOC Trust Bar",
-      "settings": {}
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -940,7 +891,6 @@
     }
   },
   "order": [
-    "woc_trust_bar_km4wNG",
     "main",
     "overview",
     "ideal_for",
