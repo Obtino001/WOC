@@ -1,7 +1,19 @@
 {% schema %}
 {
   "name": "WOC Trust Bar",
-  "settings": [],
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "standard"
+    }
+  ],
   "blocks": [
     {
       "type": "trust_item",
@@ -58,7 +70,7 @@
   class="bg-charcoal border-y border-white/10 overflow-hidden transition-all duration-500"
   style="max-height: 200px; opacity: 1;"
 >
-  <div class="container mx-auto px-4 py-2 flex items-center gap-3">
+  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container mx-auto{% endif %} px-4 py-2 flex items-center gap-3">
     <div class="flex-1 min-w-0">
       <ul
         class="grid grid-cols-2 lg:grid-cols-4 gap-2"
