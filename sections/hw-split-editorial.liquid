@@ -11,7 +11,7 @@
   }
 {%- endstyle -%}
 
-<section class="color-{{ section.settings.color_scheme }} gradient border-t border-border section-{{ section.id }}-padding">
+<section class="border-t border-border bg-background section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 lg:px-12">
     <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
       
@@ -45,7 +45,6 @@
 {
   "name": "HW Split Editorial",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
     { "type": "image_picker", "id": "image", "label": "Image" },

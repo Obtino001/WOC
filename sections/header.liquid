@@ -38,53 +38,64 @@
   {%- endif -%}
   
   @media screen and (max-width: 989px) {
-    #shopify-section-header .header {
+    .shopify-section.section-header .header {
       display: flex !important;
       justify-content: space-between !important;
       align-items: center !important;
       padding-left: 1rem !important;
       padding-right: 0.5rem !important;
     }
-    #shopify-section-header .header__heading,
-    #shopify-section-header .header__heading-link {
+    .shopify-section.section-header .header__heading,
+    .shopify-section.section-header .header__heading-link {
       margin: 0 !important;
       justify-self: start !important;
       flex: 1 1 auto !important;
       text-align: left !important;
       grid-area: auto !important;
+      max-width: 40% !important; /* give logo space */
     }
-    #shopify-section-header .header__icons {
+    .shopify-section.section-header .header__icons {
       justify-content: flex-end !important;
       flex: 0 0 auto !important;
-      gap: 0.5rem !important;
+      gap: 0.25rem !important;
       grid-area: auto !important;
       width: auto !important;
     }
-    #shopify-section-header header-drawer {
+    .shopify-section.section-header header-drawer {
       margin-left: 0 !important;
       justify-self: auto !important;
       grid-area: auto !important;
     }
-    #shopify-section-header .header__book-demo-btn {
+    .shopify-section.section-header .header__book-demo-btn {
       display: none !important;
     }
-    #shopify-section-header .header__call-us-btn {
+    .shopify-section.section-header .header__call-us-btn {
       background: transparent !important;
-      padding: 0 !important;
+      padding: 0 0.5rem !important;
       color: inherit !important;
       border: none !important;
       box-shadow: none !important;
     }
-    #shopify-section-header .header__call-us-btn span {
+    .shopify-section.section-header .header__call-us-btn span {
       display: none !important;
     }
-    #shopify-section-header .header__call-us-btn svg {
+    .shopify-section.section-header .header__call-us-btn svg {
       width: 20px !important;
       height: 20px !important;
     }
-    #shopify-section-header .desktop-localization-wrapper,
-    #shopify-section-header .localization-form {
+    .shopify-section.section-header .desktop-localization-wrapper,
+    .shopify-section.section-header .localization-form {
       display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    /* Hide the text in the language and country selectors on mobile, just show icon */
+    .shopify-section.section-header .localization-form .disclosure__button {
+      padding: 0 0.5rem !important;
+    }
+    .shopify-section.section-header .localization-form .disclosure__button span,
+    .shopify-section.section-header .localization-form .disclosure__button svg.icon-caret {
+      display: none !important;
     }
   }
 

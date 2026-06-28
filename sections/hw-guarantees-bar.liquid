@@ -11,7 +11,7 @@
   }
 {%- endstyle -%}
 
-<section class="color-{{ section.settings.color_scheme }} gradient border-y border-border section-{{ section.id }}-padding">
+<section class="bg-card border-y border-border section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 lg:px-12">
     <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
       {% for block in section.blocks %}
@@ -28,7 +28,6 @@
 {
   "name": "HW Guarantees Bar",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 48 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 48 }
   ],

@@ -1,4 +1,4 @@
-<section class="color-{{ section.settings.color_scheme }} gradient relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end overflow-hidden">
+<section class="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end overflow-hidden">
   {% if section.settings.image != blank %}
     {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center', loading: 'eager' }}
   {% else %}
@@ -17,8 +17,6 @@
 {% schema %}
 {
   "name": "HW Hero",
-  "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "image_picker", "id": "image", "label": "Background Image" },
     { "type": "textarea", "id": "heading", "label": "Heading", "default": "Home Training &\n<span class=\"italic text-white/90\">Red Light</span>" }
   ],

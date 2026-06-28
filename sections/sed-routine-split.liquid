@@ -11,7 +11,7 @@
   }
 {%- endstyle -%}
 
-<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<section class="border-t border-border bg-background section-{{ section.id }}-padding">
   <div class="container mx-auto px-4 max-w-6xl">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       
@@ -35,11 +35,13 @@
       </div>
       
       <div>
-        {% if section.settings.image != blank %}
-          {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full rounded-lg shadow-lg', loading: 'lazy' }}
-        {% else %}
-          {{ 'product-1' | placeholder_svg_tag: 'w-full rounded-lg shadow-lg bg-gray-200' }}
-        {% endif %}
+        <div class="overflow-hidden rounded-[2rem] border border-border bg-card shadow-soft">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 800 | image_tag: class: 'aspect-[4/5] w-full object-cover', loading: 'lazy' }}
+          {% else %}
+            {{ 'product-1' | placeholder_svg_tag: 'aspect-[4/5] w-full object-cover bg-gray-200' }}
+          {% endif %}
+        </div>
       </div>
       
     </div>
@@ -50,7 +52,6 @@
 {
   "name": "SED Routine Split",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 64 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
     { "type": "text", "id": "kicker", "label": "Kicker", "default": "YOUR NEW ROUTINE" },

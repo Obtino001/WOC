@@ -15,7 +15,7 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<section class="bg-background section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 text-center lg:px-12">
     <div class="mx-auto max-w-2xl rounded-[2rem] border border-border bg-card px-8 py-12 shadow-soft md:px-12">
       <h2 class="mb-6 font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
@@ -57,7 +57,6 @@
 {
   "name": "HW CTA Box",
   "settings": [
-    { "type": "color_scheme", "id": "color_scheme", "label": "Color Scheme", "default": "scheme-1" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Top", "default": 96 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 8, "unit": "px", "label": "Padding Bottom", "default": 96 },
     { "type": "product", "id": "product", "label": "Select Product (Enables Add to Cart)" },
