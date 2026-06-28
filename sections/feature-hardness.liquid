@@ -1,0 +1,88 @@
+<section class="py-24 section-light overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none bg-gold/10 text-gold border-gold/20 mb-4 text-xs uppercase tracking-widest">{{ section.settings.badge }}</div>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">{{ section.settings.title }}</h2>
+        <p class="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">{{ section.settings.description }}</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        {% for block in section.blocks %}
+          <div class="relative rounded-2xl border p-8 text-center {% if forloop.index == 1 %}border-blue-200 bg-gradient-to-b from-blue-50 to-blue-100{% elsif forloop.index == 2 %}border-gold/30 bg-gradient-to-b from-gold/5 to-gold/10{% else %}border-amber-200 bg-gradient-to-b from-amber-50 to-orange-50{% endif %}" {{ block.shopify_attributes }}>
+            <h3 class="font-display text-2xl font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+            <p class="font-body text-lg font-semibold text-gold mb-4">{{ block.settings.weight }}</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if section.settings.tip_title != blank %}
+        <div class="bg-gold/5 border border-gold/20 rounded-2xl p-6 md:p-8 text-center">
+          <p class="font-body text-foreground font-semibold mb-2">{{ section.settings.tip_title }}</p>
+          <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto">{{ section.settings.tip_text }}</p>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hardness Guide",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tip_title",
+      "label": "Tip Box Title"
+    },
+    {
+      "type": "textarea",
+      "id": "tip_text",
+      "label": "Tip Box Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Hardness Card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "weight",
+          "label": "Weight Range"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [{"name": "Hardness Guide"}]
+}
+{% endschema %}
