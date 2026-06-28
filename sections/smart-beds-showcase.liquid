@@ -60,7 +60,9 @@
                 {%- if block.type == 'feature' -%}
                   <div class="flex items-center gap-3" {{ block.shopify_attributes }}>
                     <div class="w-8 h-8 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
-                      {%- if block.settings.icon_image != blank -%}
+                      {%- if block.settings.icon_svg != blank -%}
+                        <span class="w-4 h-4 flex items-center justify-center text-forest [&>svg]:w-full [&>svg]:h-full">{{ block.settings.icon_svg }}</span>
+                      {%- elsif block.settings.icon_image != blank -%}
                         {{ block.settings.icon_image | image_url: width: 32 | image_tag: class: 'w-4 h-4 object-contain' }}
                       {%- endif -%}
                     </div>
@@ -160,17 +162,17 @@
               </div>
             {%- endif -%}
 
-            {%- if section.settings.show_play_button and section.settings.video == blank -%}
-              <div class="absolute inset-0 bg-charcoal/30 flex items-center justify-center group-hover:bg-charcoal/20 transition-colors pointer-events-none">
+            {%- if section.settings.show_play_button -%}
+              <div class="absolute inset-0 bg-charcoal/30 flex items-center justify-center group-hover:bg-charcoal/20 transition-all duration-500 pointer-events-none woc-video-overlay">
                 <div class="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-background fill-background ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-7 h-7 text-background fill-background ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
                 </div>
               </div>
             {%- endif -%}
             
-            {%- if section.settings.video_label != blank and section.settings.video == blank -%}
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/60 to-transparent p-6 pointer-events-none">
-                <p class="font-body text-xs uppercase tracking-widest text-secondary/80">{{ section.settings.video_label }}</p>
+            {%- if section.settings.video_label != blank -%}
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/60 to-transparent p-6 pointer-events-none woc-video-overlay transition-all duration-500">
+                <p class="font-body text-[11px] font-semibold uppercase tracking-widest text-white">{{ section.settings.video_label }}</p>
               </div>
             {%- endif -%}
           </div>
@@ -205,10 +207,51 @@
           {%- endif -%}
         </div>
 
-      </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section.settings.section_id }}' !== '' ? '{{ section.settings.section_id }}' : 'shopify-section-{{ section.id }}';
+    let section = document.getElementById(sectionId);
+    if (!section) section = document.querySelector('#shopify-section-{{ section.id }}');
+    if (!section) return;
+    
+    const video = section.querySelector('video');
+    const overlays = section.querySelectorAll('.woc-video-overlay');
+    
+    if (video && overlays.length > 0) {
+      // Allow clicking the overlay to play the video by removing pointer-events-none
+      overlays.forEach(o => {
+        o.classList.remove('pointer-events-none');
+        o.classList.add('cursor-pointer');
+        o.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+
+      video.addEventListener('play', () => {
+        overlays.forEach(o => {
+          o.style.opacity = '0';
+          o.style.pointerEvents = 'none';
+        });
+      });
+      
+      video.addEventListener('pause', () => {
+        overlays.forEach(o => {
+          o.style.opacity = '1';
+          o.style.pointerEvents = 'auto';
+        });
+      });
+    }
+  });
+</script>
 
 {% schema %}
 {
@@ -462,6 +505,11 @@
           "type": "image_picker",
           "id": "icon_image",
           "label": "Icon Image"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "HTML SVG Icon"
         },
         {
           "type": "text",
