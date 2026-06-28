@@ -1,16 +1,16 @@
-<section id="{{ section.settings.section_id }}" class="bg-background py-10">
+<section id="{{ section.settings.section_id }}" class="bg-white py-10">
   {% if section.settings.kicker != blank %}
     <div class="container mx-auto px-4">
       <div class="flex items-center gap-2 mb-10">
         <span class="w-2.5 h-2.5 rounded-full bg-foreground"></span>
-        <span class="font-body text-[13px] uppercase tracking-[0.15em] text-foreground font-light">{{ section.settings.kicker }}</span>
+        <span class="font-body text-[13px] uppercase tracking-[0.15em] text-zinc-900 font-light">{{ section.settings.kicker }}</span>
       </div>
     </div>
   {% endif %}
   
-  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-border/20 {{ section.settings.page_width | default: 'max-w-full' }} mx-auto">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-{{ section.settings.columns }} gap-px bg-zinc-100 {{ section.settings.page_width | default: 'max-w-full' }} mx-auto">
     {% for block in section.blocks %}
-      <a class="relative group overflow-hidden aspect-[3/4] bg-background block" href="{{ block.settings.product_url }}" {{ block.shopify_attributes }}>
+      <a class="relative group overflow-hidden aspect-[3/4] bg-white block" href="{{ block.settings.product_url }}" {{ block.shopify_attributes }}>
         {% if block.settings.image != blank %}
           {{ block.settings.image | image_url: width: 800 | image_tag: class: 'absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[2s] group-hover:scale-105', loading: 'lazy' }}
         {% else %}

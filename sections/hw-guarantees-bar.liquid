@@ -11,13 +11,13 @@
   }
 {%- endstyle -%}
 
-<section class="bg-card border-y border-border section-{{ section.id }}-padding">
+<section class="bg-white border-y border-zinc-200 section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 lg:px-12">
     <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
       {% for block in section.blocks %}
         <div {{ block.shopify_attributes }}>
-          <p class="font-body text-sm font-bold tracking-wide text-foreground">{{ block.settings.title }}</p>
-          <p class="mt-1 font-body text-xs text-muted-foreground">{{ block.settings.subtitle }}</p>
+          <p class="font-body text-sm font-bold tracking-wide text-zinc-900">{{ block.settings.title }}</p>
+          <p class="mt-1 font-body text-xs text-zinc-500">{{ block.settings.subtitle }}</p>
         </div>
       {% endfor %}
     </div>

@@ -15,11 +15,11 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<section class="bg-background section-{{ section.id }}-padding">
+<section class="bg-white section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 text-center lg:px-12">
-    <div class="mx-auto max-w-2xl rounded-[2rem] border border-border bg-card px-8 py-12 shadow-soft md:px-12">
-      <h2 class="mb-6 font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
-      <p class="mb-10 font-body text-lg text-muted-foreground">{{ section.settings.description }}</p>
+    <div class="mx-auto max-w-2xl rounded-[2rem] border border-zinc-200 bg-white px-8 py-12 shadow-soft md:px-12">
+      <h2 class="mb-6 font-display text-3xl font-semibold text-zinc-900 md:text-4xl">{{ section.settings.heading }}</h2>
+      <p class="mb-10 font-body text-lg text-zinc-500">{{ section.settings.description }}</p>
       <div class="flex justify-center">
         {%- if section.settings.product != blank -%}
           {%- assign product = section.settings.product -%}

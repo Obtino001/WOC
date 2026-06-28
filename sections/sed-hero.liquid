@@ -1,4 +1,4 @@
-<section class="relative h-screen flex items-center justify-center overflow-hidden bg-background">
+<section class="relative h-screen flex items-center justify-center overflow-hidden bg-white">
   <div class="absolute inset-0">
     {% if section.settings.image != blank %}
       {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}

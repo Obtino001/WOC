@@ -11,12 +11,12 @@
   }
 {%- endstyle -%}
 
-<section class="border-t border-border bg-background section-{{ section.id }}-padding">
+<section class="border-t border-zinc-200 bg-white section-{{ section.id }}-padding">
   <div class="container mx-auto px-6 lg:px-12">
     <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
       
       <div>
-        <div class="overflow-hidden rounded-[2rem] border border-border bg-card shadow-soft">
+        <div class="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white shadow-soft">
           {% if section.settings.image != blank %}
             {{ section.settings.image | image_url: width: 1000 | image_tag: class: 'aspect-[4/5] w-full object-cover', loading: 'lazy' }}
           {% else %}
@@ -26,12 +26,12 @@
       </div>
       
       <div class="max-w-xl">
-        <p class="mb-4 font-body text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">{{ section.settings.kicker }}</p>
-        <h2 class="mb-6 font-display text-3xl font-semibold leading-tight text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
-        <div class="font-body text-base leading-relaxed text-muted-foreground space-y-5 mb-8">
+        <p class="mb-4 font-body text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500">{{ section.settings.kicker }}</p>
+        <h2 class="mb-6 font-display text-3xl font-semibold leading-tight text-zinc-900 md:text-4xl">{{ section.settings.heading }}</h2>
+        <div class="font-body text-base leading-relaxed text-zinc-500 space-y-5 mb-8">
           {{ section.settings.text }}
         </div>
-        <a href="{{ section.settings.btn_link }}" class="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-foreground transition-colors hover:bg-muted">
+        <a href="{{ section.settings.btn_link }}" class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.18em] text-zinc-900 transition-colors hover:bg-muted">
           {{ section.settings.btn_text }}
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide lucide-arrow-right h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </a>

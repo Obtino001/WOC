@@ -1,4 +1,4 @@
-<section class="bg-background relative overflow-hidden mt-10">
+<section class="bg-white relative overflow-hidden mt-10">
   <div class="grid lg:grid-cols-2 {% if section.settings.image_position == 'right' %}lg:flex-row-reverse{% endif %} min-h-[50vh] lg:min-h-[70vh] {{ section.settings.page_width | default: 'max-w-full' }} mx-auto">
     
     <div class="{% if section.settings.image_position == 'right' %}lg:order-2{% endif %} relative aspect-video lg:aspect-auto overflow-hidden">
@@ -12,13 +12,13 @@
     
     <div class="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 lg:py-20 {% if section.settings.image_position == 'right' %}lg:order-1{% endif %}">
       <div>
-        <p class="font-body text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-6">
+        <p class="font-body text-[10px] uppercase tracking-[0.25em] text-zinc-500 mb-6">
           {{ section.settings.kicker }}
         </p>
-        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight mb-6">
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-zinc-900 leading-tight mb-6">
           {{ section.settings.heading | newline_to_br }}
         </h2>
-        <p class="font-body text-sm text-foreground/80 leading-[1.9] mb-8 max-w-md">
+        <p class="font-body text-sm text-zinc-800 leading-[1.9] mb-8 max-w-md">
           {{ section.settings.description | newline_to_br }}
         </p>
         {% if section.settings.btn_text != blank %}
