@@ -11,13 +11,31 @@
   "sections": {
     "hero": {
       "type": "hero-banner-duvets",
-      "settings": {}
+      "settings": {
+        "badge": "Danimarka Kalitesi",
+        "title": "Dünya Standartlarında Yorganlar ve Yastıklar",
+        "description": "Danimarka'da tasarlanmış doğal dolgulu yorganlar ve kaz tüyü yastıklar. Hipoalerjenik, OEKO-TEX® sertifikalı ve en iyi Avrupa kaz tüyleri ile üretilmiştir."
+      }
     },
     "features_grid": {
       "type": "info-features-grid",
+      "blocks": {
+        "feature_6FPMHp": {
+          "type": "feature",
+          "settings": {
+            "svg_icon": "",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_6FPMHp"
+      ],
       "settings": {
         "badge": "NEDEN ÖNEMLİ",
-        "title": "Hayatınızın üçte birini yatakta geçiriyorsunuz. Bunu en iyi üçte birlik bölüm yapın."
+        "title": "Hayatınızın üçte birini yatakta geçiriyorsunuz. Bunu en iyi üçte birlik bölüm yapın.",
+        "main_content": ""
       }
     },
     "discount_banner": {
@@ -30,29 +48,152 @@
     },
     "duvet_collection": {
       "type": "product-grid-custom",
+      "blocks": {
+        "product_card_TiBUhG": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_bXwQwT": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_aVtNJk": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_eQhwXq": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_7VA6bK": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_mjTax7": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        },
+        "product_card_YkPWWc": {
+          "type": "product_card",
+          "settings": {
+            "product_ref": "amsterdam-dyne-140x200-cm",
+            "link": "",
+            "card_badge": "",
+            "title": "",
+            "price": "",
+            "review_text": "4.7 üzerinden 210 yorumlar",
+            "bullet_1": "",
+            "bullet_2": "",
+            "bullet_3": "",
+            "bullet_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_card_TiBUhG",
+        "product_card_bXwQwT",
+        "product_card_aVtNJk",
+        "product_card_eQhwXq",
+        "product_card_7VA6bK",
+        "product_card_mjTax7",
+        "product_card_YkPWWc"
+      ],
       "settings": {
         "section_id": "shop",
         "bg_style": "warm",
+        "badge_color": "gold",
         "badge": "Yorganlar",
         "title": "Doğal Dolgulu Yorganlar",
-        "description": "Yorganlarımız, en iyi Avrupa misk ve kaz tüyleri ile doldurulmuştur. Hipoalerjenik, OEKO-TEX® sertifikalı ve 5 yıl garantili olarak Danimarka'da üretilmiştir."
+        "description": "Yorganlarımız, en iyi Avrupa misk ve kaz tüyleri ile doldurulmuştur. Hipoalerjenik, OEKO-TEX® sertifikalı ve 5 yıl garantili olarak Danimarka'da üretilmiştir.",
+        "stock_text": "Stokta · Bugün gönderilir",
+        "btn_text": "BURADAN SATIN AL"
       }
     },
     "pillow_collection": {
       "type": "product-grid-custom",
       "settings": {
+        "section_id": "",
         "bg_style": "light",
         "badge_color": "forest",
         "badge": "Yastıklar",
         "title": "Kaz Tüyü Yastıklar",
-        "description": "Avrupa kaz tüyü premium dolgulu 3 katmanlı kaz tüyü yastıklar. Nomite sertifikalı hipoalerjenik ve Danimarka üretimi kalitesi."
+        "description": "Avrupa kaz tüyü premium dolgulu 3 katmanlı kaz tüyü yastıklar. Nomite sertifikalı hipoalerjenik ve Danimarka üretimi kalitesi.",
+        "stock_text": "Stokta · Bugün gönderilir",
+        "btn_text": "BURADAN SATIN AL"
       }
     },
     "usp_footer": {
       "type": "usp-grid-features",
       "settings": {
         "subtitle": "Neden World of Comfort",
-        "title": "Bizi Benzersiz Kılan Şey"
+        "title": "Bizi Benzersiz Kılan Şey",
+        "description": "Biz sadece bir satıcı değiliz — showroomları, kişisel danışmanlığı ve başka hiçbir yerde bulamayacağınız ürünleriyle İskandinavya'nın önde gelen sağlıklı yaşam uzmanıyız."
       }
     }
   },
