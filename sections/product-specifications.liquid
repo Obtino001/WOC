@@ -1,4 +1,4 @@
-﻿{%- style -%}
+{%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 <section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding section-light-warm">
-  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} mx-auto px-4 lg:px-8 max-w-5xl">
+  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}page-width{% endif %} mx-auto px-4 lg:px-8 max-w-5xl">
     <div class="text-center mb-10">
       <div class="luxury-line mx-auto mb-6"></div>
       <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
