@@ -26,7 +26,7 @@
         <div 
           class="relative w-full h-full group cursor-pointer"
           onclick="
-            const container = this;
+            const {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} = this;
             {%- if video_provider == 'youtube' -%}
               container.innerHTML = `<iframe src='https://www.youtube.com/embed/{{ video_id }}?autoplay=1&rel=0&modestbranding=1' class='absolute inset-0 w-full h-full' allow='autoplay; encrypted-media' allowfullscreen frameborder='0'></iframe>`;
             {%- else -%}
@@ -81,6 +81,17 @@
   "name": "WOC PDP Video",
   "settings": [
     {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "standard"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color Scheme",
@@ -110,7 +121,7 @@
       "type": "image_picker",
       "id": "cover_image",
       "label": "Lazy-Load Cover Image",
-      "info": "Upload an image to overlay the video container before it plays. Recommended for page performance."
+      "info": "Upload an image to overlay the video {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} before it plays. Recommended for page performance."
     },
     {
       "type": "html",

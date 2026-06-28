@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 <section class="color-{{ section.settings.color_scheme }} gradient gradient-dark section-{{ section.id }}-padding">
-  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+  <div class="{% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px] mx-auto{% else %}container{% endif %} mx-auto px-4 lg:px-8 max-w-4xl">
     <div class="text-center">
       <div class="luxury-line mx-auto mb-8"></div>
       <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-4">{{ section.settings.kicker }}</p>
@@ -45,6 +45,17 @@
 {
   "name": "Flexible Pricing Plans",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
+        {"value": "full", "label": "Full Width"},
+        {"value": "standard", "label": "Standard Width"},
+        {"value": "narrow", "label": "Narrow Width"}
+      ],
+      "default": "standard"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
