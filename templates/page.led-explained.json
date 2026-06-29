@@ -18,72 +18,46 @@
       }
     },
     "led_explained_cHJRq7": {
-      "type": "led-explained",
+        "type": "led-explained",
       "blocks": {
-        "benefit_XJfzV3": {
-          "type": "benefit",
-          "settings": {
-            "title": "",
-            "content": ""
-          }
-        },
-        "mode_8Jx6Dk": {
-          "type": "mode",
-          "settings": {
-            "id": "",
-            "color": "",
-            "title": "",
-            "spec": "",
-            "content": "",
-            "benefits_list": ""
-          }
-        },
-        "product_RejPdA": {
-          "type": "product",
-          "settings": {
-            "title": "",
-            "url": ""
-          }
-        },
-        "faq_mXq6bA": {
-          "type": "faq",
-          "settings": {
-            "question": "",
-            "answer": ""
-          }
-        }
+        "benefit_1": { "type": "benefit", "settings": { "title": "Tüm Cilt Tipleri İçin Uygun", "content": "LED terapisi, çeşitli cilt tiplerinde etkili bir şekilde çalışır." } },
+        "benefit_2": { "type": "benefit", "settings": { "title": "Kişiye Özel Cilt Bakım Rejimi", "content": "LED ışık terapisi, her gün harika bir cilde ulaşmak için mükemmel bir temel oluşturabilir." } },
+        "benefit_3": { "type": "benefit", "settings": { "title": "Cilt Sağlığı", "content": "Dolgunlaştırma · Kaldırma · Aydınlatma · Parlaklık · Nemlendirme · Onarım · Yenilenme" } },
+        "benefit_4": { "type": "benefit", "settings": { "title": "Cilt Sorunları", "content": "Akne · Rozasea · Cilt Tonu · Lekeler · Pigmentasyon · Yatıştırıcı · Anti-Enflamatuar" } },
+        "benefit_5": { "type": "benefit", "settings": { "title": "Sağlığınıza", "content": "Sres Giderici · Ruh Halini İyileştirici · Ağrı Giderici · Enerji Verici" } },
+        "benefit_6": { "type": "benefit", "settings": { "title": "İnvaziv Olmayan", "content": "İğne yok, iyileşme süreci yok, rahatsızlık yok. Sadece sonuçlar." } },
+        "mode_1": { "type": "mode", "settings": { "id": "led-red", "color": "#dc2626", "title": "YAŞLANMA KARŞITI", "spec": "KIRMIZI LED IŞIK · 620–750 nm", "content": "Kırmızı LED ışık, cildin görünümünü iyileştirmeye ve yaşlanma belirtileriyle savaşmaya yardımcı olur.", "benefits_list": "<ul><li>Yaşlanma belirtilerini azaltma</li><li>Cilt dokusunu iyileştirme</li><li>Ağrı kesiciye yardımcı olma</li></ul>" } },
+        "mode_2": { "type": "mode", "settings": { "id": "led-yellow", "color": "#eab308", "title": "ENERJİ VERME", "spec": "SARI LED IŞIK · 570–590 nm", "content": "Sarı LED ışık terapisi, cilde nazik ve yatıştırıcı sarı ışık dalga boylarını kullanarak sakinleştirici ve aydınlatıcı bir deneyim sunar.", "benefits_list": "<ul><li>Cilt parlaklığını artırabilir</li><li>Gelişmiş cilt hidrasyonu</li><li>Cildi potansiyel olarak yatıştırır</li></ul>" } },
+        "mode_3": { "type": "mode", "settings": { "id": "led-green", "color": "#22c55e", "title": "EŞİT TON", "spec": "YEŞİL LED IŞIK · 495–570 nm", "content": "Yeşil LED ışık terapisi, pigmentasyon sorunlarını, güneş lekelerini ve kızarıklığı nazikçe gideren belirli bir dalga boyu kullanır.", "benefits_list": "<ul><li>Tahriş olmuş cildi yatıştırır</li><li>Cilt tonunu eşitlemeye yardımcı olur</li><li>Serinletici bir etki sağlar</li></ul>" } },
+        "mode_4": { "type": "mode", "settings": { "id": "led-blue", "color": "#3b82f6", "title": "LEKE KARŞITI", "spec": "MAVİ LED IŞIK · 415–495 nm", "content": "Mavi LED ışık terapisi, yüzeyin altındaki sorunlu cildin görünümünü iyileştirebilecek belirli dalga boylarını kullanır.", "benefits_list": "<ul><li>Çeşitli cilt kusurlarını giderir</li><li>Daha şeffaf ve dengeli bir cilt</li><li>İltihaplanma görünümünü azaltır</li></ul>" } },
+        "product_1": { "type": "product", "settings": { "title": "Boss Lady", "url": "/tr/beauty-technology/boss-lady" } },
+        "product_2": { "type": "product", "settings": { "title": "Nefertiti", "url": "/tr/beauty-technology/nefertiti" } },
+        "product_3": { "type": "product", "settings": { "title": "Light Up", "url": "/tr/beauty-technology/light-up" } },
+        "faq_1": { "type": "faq", "settings": { "question": "LED ışık terapi tedavisi benim için uygun mu?", "answer": "LED terapi, çeşitli cilt rahatsızlıklarının görünümünü iyileştirmek isteyen çoğu kişiye veya genel olarak cildin ışıltısını geri kazandırmak isteyen herkese faydalı olabilir." } },
+        "faq_2": { "type": "faq", "settings": { "question": "LED terapi acıtır mı?", "answer": "Hayır, LED Terapi tamamen ağrısızdır. İğne veya rahatsızlık olmadan ışık enerjisi verir." } }
       },
-      "block_order": [
-        "benefit_XJfzV3",
-        "mode_8Jx6Dk",
-        "product_RejPdA",
-        "faq_mXq6bA"
-      ],
-      "name": "LED Therapy Page",
+      "block_order": ["benefit_1", "benefit_2", "benefit_3", "benefit_4", "benefit_5", "benefit_6", "mode_1", "mode_2", "mode_3", "mode_4", "product_1", "product_2", "product_3", "faq_1", "faq_2"],
       "settings": {
-        "hero_title": "LED Açıklandı",
+        "hero_title": "LED AÇIKLANDI",
         "hero_subtitle": "NEDEN IŞIK YOLU DOĞRU YOL?",
         "led_title_span": "LED",
         "led_title": "AÇIKLANDI",
-        "led_content": "",
+        "led_content": "<p>LED, Işık Yayan Diyot anlamına gelir. Görünür ışığın renk dalga boylarını kullanır. LED'ler, cilt hücrelerini enerji vermek, kolajen ve elastin üretimini teşvik etmek için terapötik dalga boylarında ışık enerjisi yayar.</p>",
         "ir_title_span": "KIZILÖTESİ",
         "ir_title": "AÇIKLANDI",
-        "ir_content": "",
+        "ir_content": "<p>Kırmızı ve kızılötesi ışık (NIR), cilde neredeyse diğer tüm ışık dalga boylarından daha derinlemesine nüfuz edebilir. Kas ağrısı ve yara iyileşmesi için etkilidir.</p>",
         "penetration_title": "LED IŞIK NÜFUZ DERİNLİĞİ",
-        "penetration_desc": "",
+        "penetration_desc": "Kırmızı ve kızılötesi ışık, cilde diğer ışık dalga boylarından daha derinden nüfuz edebilir.",
         "benefits_title": "FAYDALARI LED TERAPİSİ",
         "modes_title": "NEDEN KULLANMALI LED TERAPİSİ",
-        "modes_desc": "",
-        "products_title": "",
-        "products_desc": "",
-        "products_btn_text": "",
-        "products_btn_url": "",
-        "faq_title": ""
+        "modes_desc": "Yaşlanan cildi gençleştirmek için etkili ve invaziv olmayan bir yol.",
+        "products_title": "GÜZELLİĞİNİZİ LED İLE AYDINLATIN",
+        "products_desc": "Evde profesyonel sonuçlar için tasarlanmış ödüllü LED güzellik cihazlarımızı keşfedin.",
+        "products_btn_text": "TÜM CİHAZLARI İNCELE",
+        "products_btn_url": "/tr/beauty-technology",
+        "faq_title": "LED IŞIK TERAPİSİ HAKKINDA DAHA FAZLA BİLGİ EDİNİN"
       }
     }
   },
-  "order": [
-    "main",
-    "led_explained_cHJRq7"
-  ]
+  "order": ["main", "led_explained_cHJRq7"]
 }
