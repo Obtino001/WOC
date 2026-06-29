@@ -83,10 +83,10 @@ cart-items .title-wrapper-with-link {
   width: 100%;
   height: 100%;
 }
-
 .cart-item__name {
-  text-decoration: none;
-  display: block;
+    text-decoration: none;
+    display: block;
+    font-family: 'Outfit';
 }
 
 .cart-item__name:hover {
