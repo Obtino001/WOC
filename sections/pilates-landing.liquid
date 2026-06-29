@@ -1,0 +1,444 @@
+{% schema %}
+{
+  "name": "Pilates Landing",
+  "settings": [
+    { "type": "header", "content": "Intro Section" },
+    { "type": "text", "id": "intro_kicker", "label": "Kicker", "default": "ANTRENMANLARINIZI ERTELEMEYİ KESİN" },
+    { "type": "text", "id": "intro_title", "label": "Title", "default": "Neden evde antrenman kazanır" },
+    { "type": "textarea", "id": "intro_text", "label": "Text", "default": "Motivasyonun düşük olduğu günleri hepimiz biliriz. Karanlık sabahlar, yağmurlu hava veya sadece uzun bir gün. Evinizdeki Pilates Reformer'ınızla tüm bahaneleri ortadan kaldırırsınız — ve kendi şartlarınızda antrenman yaparsınız." },
+    { "type": "textarea", "id": "intro_quote", "label": "Quote", "default": "\"Mesele zamana sahip olmak değil, engelleri ortadan kaldırmaktır. Ekipman evdeyken, antrenman yaparsın.\"" },
+
+    { "type": "header", "content": "Benefits Section" },
+    { "type": "text", "id": "benefits_kicker", "label": "Kicker", "default": "MÜKEMMEL PİLATES İÇİN İHTİYACINIZ OLAN HER ŞEY" },
+    { "type": "text", "id": "benefits_title", "label": "Title", "default": "Pilates Reformer'ımız neden?" },
+
+    { "type": "header", "content": "How it works Section" },
+    { "type": "text", "id": "how_title", "label": "Title", "default": "Nasıl çalışır" },
+
+    { "type": "header", "content": "Split Feature Section" },
+    { "type": "text", "id": "split_title", "label": "Title", "default": "Eksiksiz Pilates Reformer deneyimi" },
+    { "type": "textarea", "id": "split_text", "label": "Text", "default": "Bir Pilates reformer'dan tüm hareketleri çok daha düşük bir fiyata tekrarlayın. Tüm vücut için çok yönlü antrenman ve kas geliştirme egzersizleri." },
+    { "type": "image_picker", "id": "split_image", "label": "Image" },
+    { "type": "url", "id": "split_image_url", "label": "Fallback Image URL" },
+
+    { "type": "header", "content": "Exercise Guide Section" },
+    { "type": "text", "id": "ex_kicker", "label": "Kicker", "default": "100'DEN FAZLA EGZERSİZ MÜMKÜN" },
+    { "type": "text", "id": "ex_title", "label": "Title", "default": "Egzersiz Rehberi" },
+    { "type": "textarea", "id": "ex_text", "label": "Text", "default": "Home Pilates Reformer'ınızla yapabileceğiniz birçok egzersizden bir seçkiyi keşfedin." },
+
+    { "type": "header", "content": "Disciplines Section" },
+    { "type": "text", "id": "disc_kicker", "label": "Kicker", "default": "BEDENİ, ZİHNİ VE RUHU BİRLEŞTİRİR" },
+    { "type": "text", "id": "disc_title", "label": "Title", "default": "Üç disiplin – tek bir tahta" },
+
+    { "type": "header", "content": "Effects Section" },
+    { "type": "text", "id": "eff_title", "label": "Title", "default": "Kanıtlanmış 5 etki" },
+    { "type": "text", "id": "eff_subtitle", "label": "Subtitle", "default": "Sadece birkaç haftada gözle görülür fark" },
+
+    { "type": "header", "content": "Results Section" },
+    { "type": "text", "id": "res_title", "label": "Title", "default": "Bekleyebileceğiniz sonuçlar" },
+    { "type": "text", "id": "res_subtitle", "label": "Subtitle", "default": "sadece birkaç hafta içinde" }
+  ],
+  "blocks": [
+    {
+      "type": "intro_feature",
+      "name": "Intro Feature",
+      "settings": [
+        { "type": "html", "id": "icon", "label": "SVG Icon" },
+        { "type": "text", "id": "value", "label": "Value (e.g. 15 dakika)" },
+        { "type": "text", "id": "subvalue", "label": "Subvalue (e.g. yeterli)" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "grid_image",
+      "name": "Gallery Image",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "image_url", "label": "Fallback Image URL" }
+      ]
+    },
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        { "type": "html", "id": "icon", "label": "SVG Icon" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "how_step",
+      "name": "How it works step",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "image_url", "label": "Fallback Image URL" },
+        { "type": "text", "id": "step_num", "label": "Step Number" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "split_item",
+      "name": "Split Feature Bullet",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "exercise",
+      "name": "Exercise",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "image_url", "label": "Fallback Image URL" },
+        { "type": "text", "id": "category", "label": "Category" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "discipline",
+      "name": "Discipline",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "image_url", "label": "Fallback Image URL" },
+        { "type": "html", "id": "icon", "label": "SVG Icon" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "effect",
+      "name": "Effect",
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "title", "label": "Title" }
+      ]
+    },
+    {
+      "type": "result",
+      "name": "Result",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "image_url", "label": "Fallback Image URL" },
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Pilates Landing" }]
+}
+{% endschema %}
+
+{% assign intro_blocks = section.blocks | where: "type", "intro_feature" %}
+{% assign image_blocks = section.blocks | where: "type", "grid_image" %}
+{% assign benefit_blocks = section.blocks | where: "type", "benefit" %}
+{% assign how_blocks = section.blocks | where: "type", "how_step" %}
+{% assign split_blocks = section.blocks | where: "type", "split_item" %}
+{% assign ex_blocks = section.blocks | where: "type", "exercise" %}
+{% assign disc_blocks = section.blocks | where: "type", "discipline" %}
+{% assign eff_blocks = section.blocks | where: "type", "effect" %}
+{% assign res_blocks = section.blocks | where: "type", "result" %}
+
+<!-- 1. Intro Section -->
+<section class="bg-card py-16 md:py-20 border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">
+        {{ section.settings.intro_kicker }}
+      </p>
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">
+        {{ section.settings.intro_title }}
+      </h2>
+      <p class="mt-4 font-body text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        {{ section.settings.intro_text }}
+      </p>
+    </div>
+    {% if intro_blocks.size > 0 %}
+    <div class="grid md:grid-cols-3 gap-6">
+      {% for block in intro_blocks %}
+      <div class="rounded-2xl border border-border bg-background p-8 hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center flex-shrink-0">
+            {{ block.settings.icon }}
+          </div>
+          <div>
+            <span class="font-display text-2xl font-bold text-foreground">{{ block.settings.value }}</span><span class="font-body text-xs text-muted-foreground ml-1.5">{{ block.settings.subvalue }}</span>
+          </div>
+        </div>
+        <h3 class="font-display text-lg font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+        <p class="font-body text-sm text-muted-foreground leading-relaxed">
+          {{ block.settings.text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if section.settings.intro_quote != blank %}
+    <div class="mt-10 text-center">
+      <p class="font-body text-sm text-muted-foreground italic max-w-lg mx-auto">
+        {{ section.settings.intro_quote }}
+      </p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 2. Image Grid -->
+{% if image_blocks.size > 0 %}
+<section class="overflow-hidden">
+  <div class="grid grid-cols-4 gap-0">
+    {% for block in image_blocks %}
+    <div class="overflow-hidden" {{ block.shopify_attributes }}>
+      {% if block.settings.image != blank %}
+        {{ block.settings.image | image_url: width: 800 | image_tag: class: 'aspect-[4/3] w-full object-cover hover:scale-105 transition-transform duration-700', loading: 'lazy' }}
+      {% elsif block.settings.image_url != blank %}
+        <img src="{{ block.settings.image_url }}" alt="" class="aspect-[4/3] w-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<!-- 3. Benefits Section -->
+<section class="bg-foreground py-16 md:py-20">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-background/50 mb-3">
+        {{ section.settings.benefits_kicker }}
+      </p>
+      <h2 class="font-display text-3xl font-semibold text-background md:text-4xl">
+        {{ section.settings.benefits_title }}
+      </h2>
+    </div>
+    {% if benefit_blocks.size > 0 %}
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for block in benefit_blocks %}
+      <div class="rounded-2xl bg-background/5 border border-background/10 p-6 hover:bg-background/10 transition-colors" {{ block.shopify_attributes }}>
+        <div class="w-12 h-12 rounded-xl bg-background/10 flex items-center justify-center mb-4 text-background">
+          {{ block.settings.icon }}
+        </div>
+        <h3 class="font-display text-lg font-bold text-background mb-2">{{ block.settings.title }}</h3>
+        <p class="font-body text-sm text-background/60 leading-relaxed">
+          {{ block.settings.text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 4. How it works -->
+<section class="bg-card py-16 md:py-20 border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl font-bold text-foreground md:text-4xl">
+        {{ section.settings.how_title }}
+      </h2>
+    </div>
+    {% if how_blocks.size > 0 %}
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for block in how_blocks %}
+      <div class="text-center" {{ block.shopify_attributes }}>
+        <div class="overflow-hidden rounded-2xl border border-border bg-background mb-6 shadow-soft">
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 800 | image_tag: class: 'aspect-[4/3] w-full object-cover', loading: 'lazy' }}
+          {% elsif block.settings.image_url != blank %}
+            <img src="{{ block.settings.image_url }}" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+          {% endif %}
+        </div>
+        <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-background font-display text-lg font-bold">
+          {{ block.settings.step_num }}
+        </div>
+        <h3 class="font-display text-xl font-bold text-foreground mb-2">{{ block.settings.title }}</h3>
+        <p class="font-body text-sm text-muted-foreground">
+          {{ block.settings.text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 5. Split Section -->
+<section class="bg-foreground py-16 md:py-20">
+  <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="font-display text-3xl font-bold text-background md:text-4xl mb-4">
+          {{ section.settings.split_title }}
+        </h2>
+        <p class="font-body text-base text-background/70 leading-relaxed mb-8">
+          {{ section.settings.split_text }}
+        </p>
+        {% if split_blocks.size > 0 %}
+        <div class="grid grid-cols-2 gap-x-8 gap-y-3">
+          {% for block in split_blocks %}
+          <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
+            <span class="w-2 h-2 rounded-full bg-gold flex-shrink-0"></span><span class="font-body text-sm text-background">{{ block.settings.text }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div>
+        <div class="overflow-hidden rounded-2xl">
+          {% if section.settings.split_image != blank %}
+            {{ section.settings.split_image | image_url: width: 800 | image_tag: class: 'w-full aspect-square object-cover', loading: 'lazy' }}
+          {% elsif section.settings.split_image_url != blank %}
+            <img src="{{ section.settings.split_image_url }}" class="w-full aspect-square object-cover" loading="lazy" />
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Exercise Guide -->
+<section class="bg-card py-16 md:py-20 border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
+    <div class="text-center mb-10">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">
+        {{ section.settings.ex_kicker }}
+      </p>
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">
+        {{ section.settings.ex_title }}
+      </h2>
+      <p class="mt-3 font-body text-base text-muted-foreground max-w-xl mx-auto">
+        {{ section.settings.ex_text }}
+      </p>
+    </div>
+    {% if ex_blocks.size > 0 %}
+    <div class="flex flex-wrap justify-center gap-2 mb-10">
+      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-foreground text-background">
+        Tüm egzersizler
+      </button>
+      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
+        Karın
+      </button>
+      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
+        Güç
+      </button>
+      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
+        Esneklik
+      </button>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for block in ex_blocks %}
+      <div class="group rounded-2xl border border-border bg-background overflow-hidden hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+        <div class="overflow-hidden bg-muted aspect-[4/3] flex items-center justify-center">
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500', loading: 'lazy' }}
+          {% elsif block.settings.image_url != blank %}
+            <img src="{{ block.settings.image_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          {% endif %}
+        </div>
+        <div class="p-5">
+          <span class="inline-block rounded-full bg-foreground/5 px-3 py-1 font-body text-[10px] font-medium uppercase tracking-wider text-muted-foreground mb-2">{{ block.settings.category }}</span>
+          <h3 class="font-display text-lg font-bold text-foreground mb-1">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-muted-foreground leading-relaxed">
+            {{ block.settings.text }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 7. Disciplines -->
+<section class="bg-card py-16 md:py-20 border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">
+        {{ section.settings.disc_kicker }}
+      </p>
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">
+        {{ section.settings.disc_title }}
+      </h2>
+    </div>
+    {% if disc_blocks.size > 0 %}
+    <div class="grid md:grid-cols-3 gap-6">
+      {% for block in disc_blocks %}
+      <div class="rounded-2xl border border-border bg-background overflow-hidden hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+        <div class="overflow-hidden">
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 600 | image_tag: class: 'aspect-[4/3] w-full object-cover', loading: 'lazy' }}
+          {% elsif block.settings.image_url != blank %}
+            <img src="{{ block.settings.image_url }}" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+          {% endif %}
+        </div>
+        <div class="p-8 text-center">
+          <div class="mx-auto w-14 h-14 rounded-2xl bg-foreground/5 flex items-center justify-center mb-5">
+            {{ block.settings.icon }}
+          </div>
+          <h3 class="font-display text-xl font-bold text-foreground mb-3">{{ block.settings.title }}</h3>
+          <p class="font-body text-sm text-muted-foreground leading-relaxed">
+            {{ block.settings.text }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 8. Effects Grid -->
+<section class="bg-foreground py-16 md:py-20">
+  <div class="container mx-auto px-6 lg:px-12 max-w-4xl">
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl font-semibold text-background md:text-4xl">
+        {{ section.settings.eff_title }}
+      </h2>
+      <p class="mt-3 font-body text-base text-background/60">
+        {{ section.settings.eff_subtitle }}
+      </p>
+    </div>
+    {% if eff_blocks.size > 0 %}
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      {% for block in eff_blocks %}
+      <div class="rounded-xl bg-background/5 border border-background/10 p-5 text-center" {{ block.shopify_attributes }}>
+        <span class="text-2xl mb-2 block">{{ block.settings.emoji }}</span>
+        <p class="font-body text-sm font-semibold text-background">{{ block.settings.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- 9. Results -->
+<section class="bg-card py-16 md:py-20">
+  <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
+    <div class="text-center mb-4">
+      <h2 class="font-display text-3xl font-bold text-foreground md:text-4xl">
+        {{ section.settings.res_title }}
+      </h2>
+    </div>
+    <p class="text-center font-body text-base text-muted-foreground italic mb-12">
+      {{ section.settings.res_subtitle }}
+    </p>
+    {% if res_blocks.size > 0 %}
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+      {% for block in res_blocks %}
+      <div class="group" {{ block.shopify_attributes }}>
+        <div class="overflow-hidden rounded-2xl border border-border bg-background shadow-soft mb-4">
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 600 | image_tag: class: 'aspect-[3/4] w-full object-cover group-hover:scale-105 transition-transform duration-500', loading: 'lazy' }}
+          {% elsif block.settings.image_url != blank %}
+            <img src="{{ block.settings.image_url }}" class="aspect-[3/4] w-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          {% endif %}
+        </div>
+        <p class="font-body text-sm font-semibold text-foreground text-center">
+          {{ block.settings.text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
