@@ -104,6 +104,344 @@
         "padding_bottom": 12
       }
     },
+    "overview": {
+      "type": "product-overview",
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "scheme-1",
+        "padding_top": 64,
+        "padding_bottom": 72,
+        "kicker": "Ürün Genel Bakışı",
+        "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs. Features include ankle twisting therapy, cool air venting, deep tissue percussion, and 8-point postural stretching — all controlled via a seamless touch screen or intelligent voice commands."
+      }
+    },
+    "ideal_for": {
+      "type": "icon-feature-grid",
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
+            "title": "Chronic Pain Relief",
+            "description": "3D heated rollers and AI scanning relieve persistent back, neck, and shoulder pain with precise deep tissue massage."
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "title": "Improved Mobility",
+            "description": "Targeted programs focus on joint flexibility and muscle relaxation for those with stiffness or limited mobility."
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "title": "Circulatory Support",
+            "description": "Integrated air compression and heat therapy promote blood circulation, benefiting individuals with circulatory issues."
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
+            "title": "Stress & Fatigue Relief",
+            "description": "Zero Gravity positioning and surround sound reduce stress levels and combat fatigue for better sleep quality."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 40,
+        "bg_color": "light",
+        "card_style": "bordered",
+        "columns": 4,
+        "kicker": "İçin İdeal",
+        "heading": "Bu Kimin İçin?"
+      }
+    },
+    "highlights": {
+      "type": "icon-feature-grid",
+      "blocks": {
+        "h1": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
+            "title": "therapeutic.highlight1Title",
+            "description": "therapeutic.highlight1Desc"
+          }
+        },
+        "h2": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
+            "title": "therapeutic.highlight2Title",
+            "description": "therapeutic.highlight2Desc"
+          }
+        },
+        "h3": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "title": "therapeutic.highlight3Title",
+            "description": "therapeutic.highlight3Desc"
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "bg_color": "dark",
+        "card_style": "dark_box",
+        "columns": 3,
+        "kicker": "",
+        "heading": ""
+      }
+    },
+    "gallery": {
+      "type": "image-grid-gallery",
+      "blocks": {
+        "i1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-hero-1-hjhxEcc.jpg"
+          }
+        },
+        "i2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-hero-2-B2H61FAO.jpg"
+          }
+        },
+        "i3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-posture-DppyiadB.jpg"
+          }
+        },
+        "i4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-recovery-BSIYTqcF.jpg"
+          }
+        },
+        "i5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-sleep-MOfk8iQ1.jpg"
+          }
+        },
+        "i6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/therapeutic-percussion-CC_gHNML.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "kicker": "Technology in detail",
+        "heading": "Beneath the surface"
+      }
+    },
+    "specs": {
+      "type": "product-specifications",
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "kicker": "Özellikler",
+        "heading": "Bilmeniz Gereken Her Şey",
+        "half_limit": 4
+      }
+    },
+    "advanced_tech": {
+      "type": "icon-feature-grid",
+      "blocks": {
+        "t1": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
+            "title": "AI Body Scanning",
+            "description": "Intelligent sensors map your body profile for a 100% personalised massage experience"
+          }
+        },
+        "t2": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "title": "Zero Gravity Function",
+            "description": "NASA-inspired position distributes weight evenly and provides maximum spinal relief"
+          }
+        },
+        "t3": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
+            "title": "Infrared Heat Therapy",
+            "description": "Targeted heat penetrates deep into the musculature for deeper relaxation and recovery"
+          }
+        },
+        "t4": {
+          "type": "card",
+          "settings": {
+            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+            "title": "8XD Dual-Core Mechanism",
+            "description": "Proprietary 8XD Dual Core massage system with two independent motors for full-body relief"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "bg_color": "dark",
+        "card_style": "flat",
+        "columns": 4,
+        "kicker": "Advanced Technology",
+        "heading": "Engineered for <span class=\"italic text-gold\">Perfection</span>"
+      }
+    },
+    "health_benefits": {
+      "type": "feature-split-image",
+      "blocks": {
+        "b1": {
+          "type": "bullet",
+          "settings": {
+            "text": "Reduces chronic back and neck pain"
+          }
+        },
+        "b2": {
+          "type": "bullet",
+          "settings": {
+            "text": "Improves blood circulation by up to 30%"
+          }
+        },
+        "b3": {
+          "type": "bullet",
+          "settings": {
+            "text": "Lowers cortisol levels and reduces stress"
+          }
+        },
+        "b4": {
+          "type": "bullet",
+          "settings": {
+            "text": "Promotes deeper, more restorative sleep"
+          }
+        },
+        "b5": {
+          "type": "bullet",
+          "settings": {
+            "text": "Increases joint mobility and range of motion"
+          }
+        },
+        "b6": {
+          "type": "bullet",
+          "settings": {
+            "text": "Accelerates muscle recovery after exercise"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 112,
+        "kicker": "Clinically Proven",
+        "heading": "Health Benefits <span class=\"italic text-gold\">Benefits</span>",
+        "description": "Backed by research and endorsed by healthcare professionals across Scandinavia.",
+        "image": "shopify://shop_images/therapeutic-dual-pro_1.png"
+      }
+    },
+    "pricing_plans": {
+      "type": "flexible-pricing-plans",
+      "blocks": {
+        "p1": {
+          "type": "plan",
+          "settings": {
+            "title": "Pay Once",
+            "price": "£6,600",
+            "price_suffix": "",
+            "subtitle": "Full payment — no extra cost"
+          }
+        },
+        "p2": {
+          "type": "plan",
+          "settings": {
+            "title": "24 Months",
+            "price": "£275",
+            "price_suffix": "/md.",
+            "subtitle": "0% down payment"
+          }
+        },
+        "p3": {
+          "type": "plan",
+          "settings": {
+            "title": "60 Months",
+            "price": "£88",
+            "price_suffix": "/md.",
+            "subtitle": "20% down payment"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "kicker": "Flexible Payment",
+        "heading": "Invest in Your <span class=\"italic text-gold\">Wellbeing</span>",
+        "description": "Make wellness accessible with our flexible financing options. Start your wellness journey today."
+      }
+    },
     "faq": {
       "type": "faq-interactive",
       "blocks": {
@@ -200,6 +538,20 @@
         "description": ""
       }
     },
+    "cta": {
+      "type": "simple-cta-banner",
+      "settings": {
+        "page_width": "standard",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "heading": "Ready to Experience<br><span class=\"block italic text-gold\">Therapeutic Dual-Pro®?</span>",
+        "description": "Visit a showroom for a personal demonstration or order online with free delivery.",
+        "btn1_text": "Buy Now — £6,600",
+        "btn2_text": "Book a Demo",
+        "btn2_link": "/pages/showrooms"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -224,7 +576,16 @@
   },
   "order": [
     "main",
+    "overview",
+    "ideal_for",
+    "highlights",
+    "gallery",
+    "specs",
+    "advanced_tech",
+    "health_benefits",
+    "pricing_plans",
     "faq",
+    "cta",
     "related-products"
   ]
 }
