@@ -29,6 +29,58 @@
     },
     "awards_marquee": {
       "type": "awards-marquee",
+      "blocks": {
+        "award_qjYzfm": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        },
+        "award_xNVmTz": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        },
+        "award_q3t674": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        },
+        "award_PVCCFn": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        },
+        "award_UxJQkH": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        },
+        "award_WBwCVp": {
+          "type": "award",
+          "settings": {
+            "title": "Güzellik Ödülü 2024",
+            "subtitle": "Altın Kazanan"
+          }
+        }
+      },
+      "block_order": [
+        "award_qjYzfm",
+        "award_xNVmTz",
+        "award_q3t674",
+        "award_PVCCFn",
+        "award_UxJQkH",
+        "award_WBwCVp"
+      ],
       "settings": {}
     },
     "image_text_cta": {
