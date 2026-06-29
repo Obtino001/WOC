@@ -1,7 +1,3 @@
-{% style %}
-  .gradient-gold { background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%); }
-{% endstyle %}
-
 <section class="relative min-h-[60vh] flex items-end overflow-hidden">
   <div class="absolute inset-0">
     {% if section.settings.hero_image != blank %}
@@ -9,71 +5,71 @@
     {% else %}
       <img src="https://via.placeholder.com/1920x1080" alt="{{ section.settings.hero_title }}" class="w-full h-full object-cover">
     {% endif %}
-    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/30 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/30 to-transparent"></div>
   </div>
   
   <div class="container mx-auto px-4 lg:px-8 relative z-10 pb-16 pt-32">
-    <a class="inline-flex items-center gap-1 font-body text-sm text-white/60 hover:text-[#d4af37] transition-colors mb-6" href="{{ section.settings.back_link }}">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m15 18-6-6 6-6"></path></svg> 
+    <a class="inline-flex items-center gap-1 font-body text-sm text-secondary/60 hover:text-gold transition-colors mb-6" href="{{ section.settings.back_link }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-4 h-4"><path d="m15 18-6-6 6-6"></path></svg> 
       {{ section.settings.back_label }}
     </a>
     
     <div>
-      <span class="font-body text-sm uppercase tracking-[0.3em] text-[#d4af37] mb-3 block">{{ section.settings.hero_subtitle }}</span>
-      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">{{ section.settings.hero_title }}</h1>
-      <p class="font-body text-lg text-white/60 max-w-2xl">{{ section.settings.hero_description }}</p>
+      <span class="font-body text-sm uppercase tracking-[0.3em] text-gold mb-3 block">{{ section.settings.hero_subtitle }}</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-4">{{ section.settings.hero_title }}</h1>
+      <p class="font-body text-lg text-secondary/60 max-w-2xl">{{ section.settings.hero_description }}</p>
     </div>
   </div>
 </section>
 
-<section class="py-20">
+<section class="py-20 bg-background">
   <div class="container mx-auto px-4 lg:px-8">
     <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-12 items-start">
       
       <div class="lg:col-span-2 space-y-6">
         
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-gray-200">
-          <div class="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-border">
+          <div class="p-0 flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-gold flex-shrink-0 mt-0.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
             <div>
-              <h3 class="font-body text-sm font-semibold mb-1">{{ section.settings.address_title }}</h3>
-              <p class="font-body text-sm text-gray-500">{{ section.settings.address_line_1 }}</p>
-              <p class="font-body text-sm text-gray-500">{{ section.settings.address_line_2 }}</p>
-              <p class="font-body text-sm text-gray-500">{{ section.settings.address_line_3 }}</p>
+              <h3 class="font-body text-sm font-semibold text-foreground mb-1">{{ section.settings.address_title }}</h3>
+              <p class="font-body text-sm text-muted-foreground">{{ section.settings.address_line_1 }}</p>
+              <p class="font-body text-sm text-muted-foreground">{{ section.settings.address_line_2 }}</p>
+              <p class="font-body text-sm text-muted-foreground">{{ section.settings.address_line_3 }}</p>
             </div>
           </div>
         </div>
 
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-gray-200">
-          <div class="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-border">
+          <div class="p-0 flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-gold flex-shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             <div>
-              <h3 class="font-body text-sm font-semibold mb-1">{{ section.settings.phone_title }}</h3>
-              <a href="tel:{{ section.settings.phone_number | replace: ' ', '' }}" class="font-body text-sm text-[#d4af37] hover:underline">{{ section.settings.phone_number }}</a>
+              <h3 class="font-body text-sm font-semibold text-foreground mb-1">{{ section.settings.phone_title }}</h3>
+              <a href="tel:{{ section.settings.phone_number | replace: ' ', '' }}" class="font-body text-sm text-gold hover:underline">{{ section.settings.phone_number }}</a>
             </div>
           </div>
         </div>
 
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-gray-200">
-          <div class="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-border">
+          <div class="p-0 flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-gold flex-shrink-0 mt-0.5"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
             <div>
-              <h3 class="font-body text-sm font-semibold mb-1">{{ section.settings.email_title }}</h3>
-              <a href="mailto:{{ section.settings.email_address }}" class="font-body text-sm text-[#d4af37] hover:underline">{{ section.settings.email_address }}</a>
+              <h3 class="font-body text-sm font-semibold text-foreground mb-1">{{ section.settings.email_title }}</h3>
+              <a href="mailto:{{ section.settings.email_address }}" class="font-body text-sm text-gold hover:underline">{{ section.settings.email_address }}</a>
             </div>
           </div>
         </div>
 
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-gray-200">
-          <div class="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 border-border">
+          <div class="p-0 flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-5 h-5 text-gold flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             <div class="w-full">
-              <h3 class="font-body text-sm font-semibold mb-2">{{ section.settings.hours_title }}</h3>
+              <h3 class="font-body text-sm font-semibold text-foreground mb-2">{{ section.settings.hours_title }}</h3>
               {% for block in section.blocks %}
                 {% if block.type == 'working_hour' %}
                   <div class="flex justify-between gap-4 font-body text-sm mb-1" {{ block.shopify_attributes }}>
-                    <span class="text-gray-500">{{ block.settings.day }}</span>
-                    <span class="font-medium">{{ block.settings.time }}</span>
+                    <span class="text-muted-foreground">{{ block.settings.day }}</span>
+                    <span class="text-foreground font-medium">{{ block.settings.time }}</span>
                   </div>
                 {% endif %}
               {% endfor %}
@@ -81,84 +77,89 @@
           </div>
         </div>
 
-        <div class="rounded-lg border shadow-sm p-6 border-[#d4af37]/20 bg-[#d4af37]/5">
-          <h3 class="font-body text-sm font-semibold mb-3">{{ section.settings.features_title }}</h3>
-          <div class="space-y-2">
-            {% for block in section.blocks %}
-              {% if block.type == 'feature' %}
-                <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-[#d4af37] flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
-                  <span class="font-body text-sm">{{ block.settings.feature_text }}</span>
-                </div>
-              {% endif %}
-            {% endfor %}
+        <div class="rounded-lg border text-card-foreground shadow-sm p-6 border-gold/20 bg-gold/5">
+          <div class="p-0">
+            <h3 class="font-body text-sm font-semibold text-foreground mb-3">{{ section.settings.features_title }}</h3>
+            <div class="space-y-2">
+              {% for block in section.blocks %}
+                {% if block.type == 'feature' %}
+                  <div class="flex items-center gap-2" {{ block.shopify_attributes }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <span class="font-body text-sm text-foreground">{{ block.settings.feature_text }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
 
       <div class="lg:col-span-3 space-y-8">
         
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-gray-200">
-          <h2 class="font-display text-2xl font-bold mb-2">{{ section.settings.form_title }}</h2>
-          <p class="font-body text-sm text-gray-500 mb-6">{{ section.settings.form_subtitle }}</p>
-          
-          {% form 'contact', class: 'space-y-4' %}
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="font-body text-sm font-medium mb-1.5 block">Ad <span class="text-red-500">*</span></label>
-                <input type="text" name="contact[name]" required class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]" placeholder="Adınız Soyadınız">
-              </div>
-              <div>
-                <label class="font-body text-sm font-medium mb-1.5 block">Telefon <span class="text-red-500">*</span></label>
-                <input type="tel" name="contact[phone]" required class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]" placeholder="+45 ...">
-              </div>
-            </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-8 border-border">
+          <div class="p-0">
+            <h2 class="font-display text-2xl font-bold text-foreground mb-2">{{ section.settings.form_title }}</h2>
+            <p class="font-body text-sm text-muted-foreground mb-6">{{ section.settings.form_subtitle }}</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="font-body text-sm font-medium mb-1.5 block">E-posta</label>
-                <input type="email" name="contact[email]" class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]" placeholder="you@email.com">
+            {% form 'contact', class: 'space-y-4' %}
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Ad <span class="text-destructive">*</span></label>
+                  <input type="text" name="contact[name]" required maxlength="100" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" placeholder="Adınız Soyadınız">
+                </div>
+                <div>
+                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Telefon <span class="text-destructive">*</span></label>
+                  <input type="tel" name="contact[phone]" required maxlength="20" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" placeholder="+45 ...">
+                </div>
               </div>
-              <div>
-                <label class="font-body text-sm font-medium mb-1.5 block">Tercih Edilen Tarih</label>
-                <input type="date" name="contact[date]" class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">E-posta</label>
+                  <input type="email" name="contact[email]" maxlength="255" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" placeholder="you@email.com">
+                </div>
+                <div>
+                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Tercih Edilen Tarih</label>
+                  <input type="date" name="contact[date]" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm">
+                </div>
               </div>
-            </div>
-            
-            <div>
-              <label class="font-body text-sm font-medium mb-1.5 block">Denemek İstiyorum <span class="text-red-500">*</span></label>
-              <select name="contact[product]" required class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]">
-                <option value="massage-chairs">Masaj Koltukları</option>
-                <option value="sovesystem">SOVESYSTEM® (Özel Yatak)</option>
-                <option value="synthera-ai-bed">SYNTHERA™ AI Yatak</option>
-                <option value="sports-recovery">Spor İyileşmesi</option>
-                <option value="beauty-technology">Güzellik Teknolojisi</option>
-                <option value="full-tour">Tam Showroom Turu</option>
-              </select>
-            </div>
-            
-            <div>
-              <label class="font-body text-sm font-medium mb-1.5 block">Mesaj</label>
-              <textarea name="contact[body]" rows="3" class="flex min-h-[80px] w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4af37]" placeholder="Özel istekleriniz veya sorularınız var mı?"></textarea>
-            </div>
-            
-            <button type="submit" class="inline-flex items-center justify-center gap-2 bg-[#d4af37] text-white font-medium hover:opacity-90 transition-all duration-300 tracking-widest uppercase text-xs h-12 px-10 w-full rounded-md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
-              Ücretsiz Demo Rezervasyonu Yap
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </button>
-            <p class="font-body text-xs text-gray-500 text-center">Ücretsiz ve yükümlülüksüz. 1 iş günü içinde onaylayacağız.</p>
-          {% endform %}
+              
+              <div>
+                <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Denemek İstiyorum <span class="text-destructive">*</span></label>
+                <select name="contact[product]" required class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1">
+                  <option value="" disabled selected hidden>Bir ürün seçin</option>
+                  <option value="Masaj Koltukları">Masaj Koltukları</option>
+                  <option value="SOVESYSTEM® (Özel Yatak)">SOVESYSTEM® (Özel Yatak)</option>
+                  <option value="SYNTHERA™ AI Yatak">SYNTHERA™ AI Yatak</option>
+                  <option value="Spor İyileşmesi">Spor İyileşmesi</option>
+                  <option value="Güzellik Teknolojisi">Güzellik Teknolojisi</option>
+                  <option value="Tam Showroom Turu">Tam Showroom Turu</option>
+                </select>
+              </div>
+              
+              <div>
+                <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Mesaj</label>
+                <textarea name="contact[body]" maxlength="500" rows="3" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Özel istekleriniz veya sorularınız var mı?"></textarea>
+              </div>
+              
+              <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gold text-background font-medium hover:bg-gold-hover transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check w-4 h-4 mr-2"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
+                Ücretsiz Demo Rezervasyonu Yap
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+              <p class="font-body text-xs text-muted-foreground text-center">Ücretsiz ve yükümlülüksüz. 1 iş günü içinde onaylayacağız.</p>
+            {% endform %}
+          </div>
         </div>
 
         <div>
-          <div class="rounded-lg border bg-card overflow-hidden border-gray-200">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden border-border">
             <div class="aspect-[16/9]">
-              <iframe src="{{ section.settings.map_url }}" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map" style="border: 0px;"></iframe>
+              {{ section.settings.map_embed_code }}
             </div>
           </div>
-          <p class="font-body text-xs text-gray-500 text-center mt-3">
-            <a href="{{ section.settings.map_link }}" target="_blank" rel="noopener noreferrer" class="hover:text-[#d4af37] transition-colors">Google Haritalar'da Aç →</a>
+          <p class="font-body text-xs text-muted-foreground text-center mt-3">
+            <a href="{{ section.settings.map_link }}" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">Google Haritalar'da Aç →</a>
           </p>
         </div>
 
@@ -294,10 +295,11 @@
       "content": "Map Settings"
     },
     {
-      "type": "url",
-      "id": "map_url",
-      "label": "Google Maps Iframe Embed URL",
-      "info": "Paste the embed URL here"
+      "type": "html",
+      "id": "map_embed_code",
+      "label": "Map HTML Embed Code",
+      "info": "Paste the complete <iframe> code from Google Maps here",
+      "default": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1134.423075253503!2d9.757041!3d55.570183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c929a007f3ea7%3A0x6b0934e8a151bfa7!2sKringsvej%204%2C%207000%20Fredericia%2C%20Denmark!5e0!3m2!1sen!2sus!4v1714152541285!5m2!1sen!2sus\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     {
       "type": "url",
