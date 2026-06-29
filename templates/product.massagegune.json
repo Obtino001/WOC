@@ -10,35 +10,51 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-message",
       "blocks": {
-        "text_cxx9Wc": {
-          "type": "text",
-          "settings": {
-            "text": "Metin bloku",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
         },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "fallback_rating": "4.9",
+            "fallback_review_count": "22",
+            "reviews_label": "yorumlar"
+          }
+        },
+        "tagline": {
+          "type": "tagline",
+          "settings": {
+            "text": "Profesyonel derin doku masajı – her yerde"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
-            "subprice_text": "or from £22/week"
+            "show_save_badge": true,
+            "save_label": "İNDİRİM -[percent]%",
+            "tax_note": "",
+            "show_installments": false
           }
         },
-        "rating_98edkt": {
-          "type": "rating",
-          "settings": {}
-        },
-        "inventory_6kC3UY": {
-          "type": "inventory",
+        "feature_list": {
+          "type": "feature_list",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "features": "Akıllı Basınç Teknolojisi, 3200 vuruş/dk, 12 mm vuruş uzunluğu, 5 hız seviyesi, 5 masaj başlığı",
+            "max_items": 5
+          }
+        },
+        "status_badges": {
+          "type": "status_badges",
+          "settings": {
+            "show_warranty_badge": false,
+            "warranty_text": "",
+            "warranty_icon": "shield",
+            "show_stock_badge": true,
+            "in_stock_text": "Stokta var: 1-3 günde teslimat",
+            "out_of_stock_text": "Geçici olarak stokta yok"
           }
         },
         "variant_picker": {
@@ -48,49 +64,95 @@
             "swatch_shape": "circle"
           }
         },
-        "feature_list_kNjYmM": {
-          "type": "feature_list",
+        "purchase_row": {
+          "type": "purchase_row",
           "settings": {
-            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
+            "show_quantity_selector": false,
+            "button_label": "SEPETE EKLE →",
+            "button_icon": "none",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "review_strip": {
+          "type": "review_strip",
+          "settings": {
+            "label": "Mükemmel",
+            "payment_image": "",
+            "payment_image_alt": "Kabul edilen ödeme yöntemleri"
+          }
+        },
+        "trust_grid": {
+          "type": "trust_grid",
+          "settings": {
+            "aria_label": "Güvence rozetleri",
+            "label_1": "Ücretsiz teslimat",
+            "sub_1": "1-3 gün",
+            "icon_1": "truck",
+            "label_2": "Risksiz deneyin",
+            "sub_2": "30 gün",
+            "icon_2": "shield",
+            "label_3": "Danimarka tasarımı",
+            "sub_3": "Yüksek kalite",
+            "icon_3": "target",
             "custom_icon_svg": ""
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "accordion_specs": {
+          "type": "collapsible_tab",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "show_demo_button": true,
-            "demo_text": "Book a Demo",
-            "demo_link": ""
+            "heading": "TEKNİK ÖZELLİKLER",
+            "icon": "none",
+            "content_style": "richtext",
+            "content": "<p><strong>Motor:</strong> 3200 RPM<br><strong>Vuruş uzunluğu:</strong> 12 mm<br><strong>Hız seviyeleri:</strong> 5<br><strong>Masaj başlıkları:</strong> 5<br><strong>Güç:</strong> 25W<br><strong>Voltaj:</strong> 5V<br><strong>Batarya:</strong> 1200 mAh<br><strong>Boyut:</strong> 135 × 85 × 48 mm<br><strong>Ağırlık:</strong> 405g</p>",
+            "steps": "",
+            "page": "",
+            "open_by_default": false
           }
         },
-        "trust_badges_N7QkXf": {
-          "type": "trust_badges",
+        "accordion_included": {
+          "type": "collapsible_tab",
           "settings": {
-            "text_1": "Free White-Glove Delivery",
-            "icon_1_svg": "",
-            "text_2": "5-Year Warranty",
-            "icon_2_svg": "",
-            "text_3": "Flexible Monthly Payments",
-            "icon_3_svg": ""
+            "heading": "KUTUDA NE VAR?",
+            "icon": "none",
+            "content_style": "checklist",
+            "content": "",
+            "steps": "1x Masaj Silahı X\n5x Masaj başlığı\n1x USB-C şarj kablosu\n1x Taşıma çantası\n1x Kullanım kılavuzu",
+            "page": "",
+            "open_by_default": false
           }
         }
       },
       "block_order": [
-        "text_cxx9Wc",
         "title",
+        "rating",
+        "tagline",
         "price",
-        "rating_98edkt",
-        "inventory_6kC3UY",
+        "feature_list",
+        "status_badges",
         "variant_picker",
-        "feature_list_kNjYmM",
-        "buy_buttons",
-        "trust_badges_N7QkXf"
+        "purchase_row",
+        "review_strip",
+        "trust_grid",
+        "accordion_specs",
+        "accordion_included"
       ],
       "settings": {
+        "show_breadcrumbs": false,
+        "breadcrumb_home_label": "Ana Sayfa",
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "show_sale_badge": true,
+        "sale_badge_prefix": "-",
+        "background_color": "#ffffff",
+        "text_color": "#171717",
+        "gallery_background": "#ffffff",
+        "sale_badge_background": "#e67e22",
+        "sale_badge_text_color": "#ffffff",
+        "save_badge_background": "#d35400",
+        "save_badge_text_color": "#ffffff",
+        "atc_background": "#d35400",
+        "atc_hover_background": "#e67e22",
+        "atc_text_color": "#ffffff",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -572,6 +634,277 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "massage_gun_landing": {
+      "type": "massage-gun-landing",
+      "blocks": {
+        "sp_0": {
+          "type": "smart_pressure",
+          "settings": {
+            "title": "Seviye 1",
+            "rpm": "1600 → 2000 RPM",
+            "desc": "Hafif masaj – ısınma"
+          }
+        },
+        "sp_1": {
+          "type": "smart_pressure",
+          "settings": {
+            "title": "Seviye 2",
+            "rpm": "2000 → 2400 RPM",
+            "desc": "Orta – günlük kullanım"
+          }
+        },
+        "sp_2": {
+          "type": "smart_pressure",
+          "settings": {
+            "title": "Seviye 3",
+            "rpm": "2600 → 3000 RPM",
+            "desc": "Yoğun – derin doku"
+          }
+        },
+        "sp_3": {
+          "type": "smart_pressure",
+          "settings": {
+            "title": "Seviye 4",
+            "rpm": "3200 RPM",
+            "desc": "Maksimum – spor masajı"
+          }
+        },
+        "sp_4": {
+          "type": "smart_pressure",
+          "settings": {
+            "title": "Seviye 5",
+            "rpm": "Otomatik",
+            "desc": "Seviyeler arasında otomatik dönüş"
+          }
+        },
+        "feat_0": {
+          "type": "feature",
+          "settings": {
+            "title": "12 mm vuruş uzunluğu",
+            "desc": "Etkili derin doku masajı için derinlemesine nüfuz",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-target w-7 h-7 text-rose-500'><circle cx='12' cy='12' r='10'></circle><circle cx='12' cy='12' r='6'></circle><circle cx='12' cy='12' r='2'></circle></svg>",
+            "icon_color": "#f43f5e",
+            "bg_color": "#ffe4e6"
+          }
+        },
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "3200 vuruş/dk",
+            "desc": "Zarif alüminyum gövdede güçlü motor",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-zap w-7 h-7 text-amber-500'><path d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'></path></svg>",
+            "icon_color": "#f59e0b",
+            "bg_color": "#fef3c7"
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Gürültü azaltma",
+            "desc": "Sessiz masaj – ofis ve yatak odası için mükemmel",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-volume2 w-7 h-7 text-violet-500'><path d='M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z'></path><path d='M16 9a5 5 0 0 1 0 6'></path><path d='M19.364 18.364a9 9 0 0 0 0-12.728'></path></svg>",
+            "icon_color": "#8b5cf6",
+            "bg_color": "#ede9fe"
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "1200mAh pil",
+            "desc": "Tek şarjla saatlerce masaj",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-battery w-7 h-7 text-emerald-500'><rect width='16' height='10' x='2' y='7' rx='2' ry='2'></rect><line x1='22' x2='22' y1='11' y2='13'></line></svg>",
+            "icon_color": "#10b981",
+            "bg_color": "#d1fae5"
+          }
+        },
+        "feat_4": {
+          "type": "feature",
+          "settings": {
+            "title": "5 hız",
+            "desc": "Nazik ısınmadan yoğun spor masajına",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-gauge w-7 h-7 text-sky-500'><path d='m12 14 4-4'></path><path d='M3.34 19a10 10 0 1 1 17.32 0'></path></svg>",
+            "icon_color": "#0ea5e9",
+            "bg_color": "#e0f2fe"
+          }
+        },
+        "feat_5": {
+          "type": "feature",
+          "settings": {
+            "title": "Sadece 405g",
+            "desc": "Ultra kompakt ve seyahat dostu",
+            "icon_svg": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-shield w-7 h-7 text-copper'><path d='M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z'></path></svg>",
+            "icon_color": "#d35400",
+            "bg_color": "#fef3c7"
+          }
+        },
+        "spec_0": {
+          "type": "spec",
+          "settings": {
+            "label": "Motor",
+            "value": "3200 RPM"
+          }
+        },
+        "spec_1": {
+          "type": "spec",
+          "settings": {
+            "label": "Vuruş uzunluğu",
+            "value": "12 mm"
+          }
+        },
+        "spec_2": {
+          "type": "spec",
+          "settings": {
+            "label": "Hızlar",
+            "value": "5"
+          }
+        },
+        "spec_3": {
+          "type": "spec",
+          "settings": {
+            "label": "Masaj başlıkları",
+            "value": "5"
+          }
+        },
+        "spec_4": {
+          "type": "spec",
+          "settings": {
+            "label": "Güç",
+            "value": "25W"
+          }
+        },
+        "spec_5": {
+          "type": "spec",
+          "settings": {
+            "label": "Voltaj",
+            "value": "5V"
+          }
+        },
+        "spec_6": {
+          "type": "spec",
+          "settings": {
+            "label": "Batarya",
+            "value": "1200 mAh"
+          }
+        },
+        "spec_7": {
+          "type": "spec",
+          "settings": {
+            "label": "Boyut",
+            "value": "135 × 85 × 48 mm"
+          }
+        },
+        "spec_8": {
+          "type": "spec",
+          "settings": {
+            "label": "Ağırlık",
+            "value": "405g"
+          }
+        },
+        "faq_0": {
+          "type": "faq",
+          "settings": {
+            "question": "Akıllı Basınç Teknolojisi Nedir?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Kaç adet masaj başlığı dahildir?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Massage Gun X seyahat dostu mu?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Batarya ne kadar dayanır?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Massage Gun X gürültülü mü?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Massage Gun X kimler içindir?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "5 hız seviyesi arasındaki fark nedir?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "question": "Massage Gun X antrenman sonrası kas ağrısına yardımcı olabilir mi?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_8": {
+          "type": "faq",
+          "settings": {
+            "question": "12 mm vuruş uzunluğu nedir ve neden önemlidir?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        },
+        "faq_9": {
+          "type": "faq",
+          "settings": {
+            "question": "World of Comfort, Massage Gun X için garanti sunuyor mu?",
+            "answer": "<p>Cevabı buraya giriniz.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "sp_0",
+        "sp_1",
+        "sp_2",
+        "sp_3",
+        "sp_4",
+        "feat_0",
+        "feat_1",
+        "feat_2",
+        "feat_3",
+        "feat_4",
+        "feat_5",
+        "spec_0",
+        "spec_1",
+        "spec_2",
+        "spec_3",
+        "spec_4",
+        "spec_5",
+        "spec_6",
+        "spec_7",
+        "spec_8",
+        "faq_0",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "faq_9"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -586,6 +919,7 @@
     "pricing_plans",
     "faq",
     "cta",
+    "massage_gun_landing",
     "related-products"
   ]
 }
