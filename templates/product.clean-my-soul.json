@@ -422,6 +422,138 @@
     },
     "faq_clean": {
       "type": "faq-accordion",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "How do electronic beauty devices work? (Elektronik güzellik cihazları nasıl çalışır?)",
+            "answer": "<p>Our electronic beauty devices use advanced technologies like microcurrents, LED light therapy, and sonic vibrations to safely penetrate the skin's layers, stimulating collagen production and enhancing product absorption.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Which device is suitable for my skin type? (Hangi cihaz benim cilt tipime uygun?)",
+            "answer": "<p>Our devices are designed to be safe and effective for all skin types. If you have sensitive skin, we recommend starting on the lowest intensity setting and gradually increasing as your skin builds tolerance.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Is LED light therapy safe for home use? (LED ışık terapisi evde kullanım için güvenli mi?)",
+            "answer": "<p>Yes. Our LED devices are rigorously tested and utilize UV-free, non-thermal light wavelengths that are completely safe for daily at-home treatments.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the difference between EMS microcurrent and RF technology? (EMS mikro akım ve RF teknolojisi arasındaki fark nedir?)",
+            "answer": "<p>EMS (Electrical Muscle Stimulation) targets facial muscles to lift and tone, acting like a workout for your face. RF (Radio Frequency) uses gentle heat to stimulate collagen deep within the dermis for skin tightening and wrinkle reduction.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "How soon can I see results? (Ne kadar sürede sonuçları görebilirim?)",
+            "answer": "<p>Many users notice a healthy, radiant glow immediately after the first use. Significant lifting and firming results typically appear after 4 to 6 weeks of consistent routine use.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use the devices with my own skincare products? (Cihazları kendi cilt bakım ürünlerimle kullanabilir miyim?)",
+            "answer": "<p>Absolutely. Our devices are designed to enhance the absorption of your favorite water-based serums and moisturizers. We recommend avoiding oil-based products when using microcurrent devices, as oil can block the electrical currents.</p>"
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "question": "Can the products be used during pregnancy? (Ürünler hamilelik sırasında kullanılabilir mi?)",
+            "answer": "<p>While our topical skincare formulations are generally safe, we recommend avoiding EMS/microcurrent and RF devices during pregnancy. Always consult your healthcare provider before introducing new treatments.</p>"
+          }
+        },
+        "faq_8": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the difference between Clean My Soul and Comfort Cleaner? (Clean My Soul ve Comfort Cleaner arasındaki fark nedir?)",
+            "answer": "<p>Clean My Soul offers a deep, invigorating sonic cleanse ideal for oily or combination skin. The Comfort Cleaner uses ultra-soft silicone bristles specifically tailored for sensitive or easily irritated skin.</p>"
+          }
+        },
+        "faq_9": {
+          "type": "faq",
+          "settings": {
+            "question": "What are Collagen 24K Gold Eyepads? (Collagen 24K Gold Eyepads nedir?)",
+            "answer": "<p>They are deeply hydrating hydrogel under-eye patches infused with actual 24K gold and collagen. They are formulated to reduce puffiness, lighten dark circles, and smooth out fine lines.</p>"
+          }
+        },
+        "faq_10": {
+          "type": "faq",
+          "settings": {
+            "question": "What is included in the Power Serum Set? (Power Serum Set'e neler dahildir?)",
+            "answer": "<p>The set includes our trio of highly concentrated best-sellers: the Hyaluronic Acid Hydration Serum, the Vitamin C Brightening Serum, and the Retinol Night Repair Serum.</p>"
+          }
+        },
+        "faq_11": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Séduisante products tested on animals? (Séduisante ürünleri hayvanlar üzerinde test ediliyor mu?)",
+            "answer": "<p>No. Séduisante is proudly 100% cruelty-free. We never test our devices or skincare formulations on animals.</p>"
+          }
+        },
+        "faq_12": {
+          "type": "faq",
+          "settings": {
+            "question": "Where is Séduisante located and can I test the products? (Séduisante nerede bulunuyor ve ürünleri test edebilir miyim?)",
+            "answer": "<p>We are primarily an online beauty brand, allowing us to ship directly to you. However, we occasionally host pop-up events and retail partnerships. Sign up for our newsletter for updates on locations near you.</p>"
+          }
+        },
+        "faq_13": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes Séduisante different from other beauty brands? (Séduisante'ı diğer güzellik markalarından farklı kılan nedir?)",
+            "answer": "<p>We bridge the gap between professional clinic treatments and at-home care. We offer premium, clinically proven technology combined with luxurious skincare formulations at an accessible price point.</p>"
+          }
+        },
+        "faq_14": {
+          "type": "faq",
+          "settings": {
+            "question": "Is there a warranty on the products? (Ürünlerde garanti var mı?)",
+            "answer": "<p>Yes, all of our electronic beauty devices come with a standard 1-year warranty covering any manufacturing defects.</p>"
+          }
+        },
+        "faq_15": {
+          "type": "faq",
+          "settings": {
+            "question": "When can I expect delivery? (Teslimatı ne zaman bekleyebilirim?)",
+            "answer": "<p>Standard shipping usually takes 3-5 business days. Express delivery options are available at checkout and typically take 1-2 business days.</p>"
+          }
+        },
+        "faq_16": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I return a product? (Bir ürünü nasıl iade edebilirim?)",
+            "answer": "<p>We offer a hassle-free 30-day return policy. Simply contact our support team with your order number to initiate a return, and we will provide you with a return shipping label.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "faq_9",
+        "faq_10",
+        "faq_11",
+        "faq_12",
+        "faq_13",
+        "faq_14",
+        "faq_15",
+        "faq_16"
+      ],
       "settings": {
         "title": "FAQ"
       }
