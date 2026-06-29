@@ -1,0 +1,212 @@
+{% schema %}
+{
+  "name": "Massage Gun Landing",
+  "settings": [
+    { "type": "header", "content": "Video Section" },
+    { "type": "text", "id": "video_title", "label": "Video Title", "default": "Massage Gun X'i çalışırken görün" },
+    { "type": "url", "id": "video_url", "label": "Video URL (MP4)" },
+    
+    { "type": "header", "content": "Smart Pressure Section" },
+    { "type": "text", "id": "sp_title", "label": "Title", "default": "Akıllı Basınç Teknolojisi" },
+    { "type": "textarea", "id": "sp_subtitle", "label": "Subtitle", "default": "İlk 3 hız seviyesi, vücuda bastırdığınızda RPM'yi otomatik olarak ayarlar – böylece her zaman mükemmel yoğunluğu elde edersiniz." },
+    
+    { "type": "header", "content": "Features Section" },
+    { "type": "text", "id": "features_title", "label": "Title", "default": "Olağanüstü Özellikler" },
+    
+    { "type": "header", "content": "Specs Section" },
+    { "type": "text", "id": "specs_title", "label": "Title", "default": "Teknik Özellikler" },
+    
+    { "type": "header", "content": "FAQ Section" },
+    { "type": "text", "id": "faq_title", "label": "Title", "default": "Sık sorulan sorular" },
+    
+    { "type": "header", "content": "CTA Section" },
+    { "type": "text", "id": "cta_title", "label": "Title", "default": "Profesyonel masaja hazır mısınız?" },
+    { "type": "text", "id": "cta_subtitle", "label": "Subtitle", "default": "₺5.522 ücretsiz teslimat dahildir" },
+    { "type": "text", "id": "cta_btn_text", "label": "Button Text", "default": "Şimdi satın al" },
+    { "type": "url", "id": "cta_btn_link", "label": "Button Link" }
+  ],
+  "blocks": [
+    {
+      "type": "smart_pressure",
+      "name": "Pressure Level",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Level Name", "default": "Seviye 1" },
+        { "type": "text", "id": "rpm", "label": "RPM Text", "default": "1600 → 2000 RPM" },
+        { "type": "text", "id": "desc", "label": "Description", "default": "Hafif masaj – ısınma" }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Feature Title" },
+        { "type": "text", "id": "desc", "label": "Description", "default": "Feature description" },
+        { "type": "html", "id": "icon_svg", "label": "Icon SVG" },
+        { "type": "color", "id": "icon_color", "label": "Icon Color (Tailwind equivalent)", "default": "#f43f5e" },
+        { "type": "color", "id": "bg_color", "label": "Icon Background", "default": "#ffe4e6" }
+      ]
+    },
+    {
+      "type": "spec",
+      "name": "Specification",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Motor" },
+        { "type": "text", "id": "value", "label": "Value", "default": "3200 RPM" }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "Question?" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Massage Gun Landing" }]
+}
+{% endschema %}
+
+{% assign sp_blocks = section.blocks | where: "type", "smart_pressure" %}
+{% assign feature_blocks = section.blocks | where: "type", "feature" %}
+{% assign spec_blocks = section.blocks | where: "type", "spec" %}
+{% assign faq_blocks = section.blocks | where: "type", "faq" %}
+
+<!-- 1. Video -->
+{% if section.settings.video_title != blank or section.settings.video_url != blank %}
+<section class="py-16 bg-neutral-50">
+  <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    {% if section.settings.video_title != blank %}
+    <h2 class="font-body text-2xl md:text-3xl font-bold text-neutral-900 text-center mb-8">
+      {{ section.settings.video_title }}
+    </h2>
+    {% endif %}
+    {% if section.settings.video_url != blank %}
+    <div class="aspect-video rounded-2xl overflow-hidden bg-neutral-900">
+      <video
+        src="{{ section.settings.video_url }}"
+        controls
+        playsinline
+        preload="metadata"
+        class="w-full h-full object-contain"
+      ></video>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<!-- 2. Smart Pressure -->
+{% if sp_blocks.size > 0 %}
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <div class="text-center mb-12">
+      <h2 class="font-body text-2xl md:text-3xl font-bold text-neutral-900 mb-4">
+        {{ section.settings.sp_title }}
+      </h2>
+      <p class="font-body text-neutral-600 max-w-2xl mx-auto">
+        {{ section.settings.sp_subtitle }}
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      {% for block in sp_blocks %}
+      <div class="bg-neutral-50 rounded-xl p-5 text-center border border-neutral-100" {{ block.shopify_attributes }}>
+        <div class="w-14 h-14 bg-gradient-to-br from-copper/20 to-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-copper"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+        </div>
+        <p class="font-body text-sm font-bold text-neutral-900 mb-1">{{ block.settings.title }}</p>
+        <p class="font-body text-xs text-copper font-semibold mb-1">{{ block.settings.rpm }}</p>
+        <p class="font-body text-xs text-neutral-500">{{ block.settings.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- 3. Features -->
+{% if feature_blocks.size > 0 %}
+<section class="py-16 bg-neutral-50">
+  <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <h2 class="font-body text-2xl md:text-3xl font-bold text-neutral-900 text-center mb-10">
+      {{ section.settings.features_title }}
+    </h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for block in feature_blocks %}
+      <div class="bg-white rounded-xl p-6 border border-neutral-100 hover:shadow-lg transition-all duration-300" {{ block.shopify_attributes }}>
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-4" style="background-color: {{ block.settings.bg_color }}; color: {{ block.settings.icon_color }};">
+          {% if block.settings.icon_svg != blank %}
+            {{ block.settings.icon_svg }}
+          {% else %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          {% endif %}
+        </div>
+        <h3 class="font-body text-base font-bold text-neutral-900 mb-1">{{ block.settings.title }}</h3>
+        <p class="font-body text-sm text-neutral-500">{{ block.settings.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- 4. Specs -->
+{% if spec_blocks.size > 0 %}
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+    <h2 class="font-body text-2xl md:text-3xl font-bold text-neutral-900 text-center mb-8">
+      {{ section.settings.specs_title }}
+    </h2>
+    <div class="bg-neutral-50 rounded-2xl overflow-hidden border border-neutral-100">
+      {% for block in spec_blocks %}
+      <div class="flex justify-between items-center px-6 py-4 {% unless forloop.last %}border-b border-neutral-100{% endunless %}" {{ block.shopify_attributes }}>
+        <span class="font-body text-sm text-neutral-600">{{ block.settings.label }}</span>
+        <span class="font-body text-sm font-semibold text-neutral-900">{{ block.settings.value }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- 5. FAQ -->
+{% if faq_blocks.size > 0 %}
+<section class="py-16 bg-neutral-50">
+  <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+    <h2 class="font-body text-2xl md:text-3xl font-bold text-neutral-900 text-center mb-8">
+      {{ section.settings.faq_title }}
+    </h2>
+    <div class="space-y-3">
+      {% for block in faq_blocks %}
+      <details class="bg-white rounded-xl border border-neutral-100 px-6 group" {{ block.shopify_attributes }}>
+        <summary class="flex flex-1 items-center justify-between font-body text-sm font-semibold text-neutral-900 hover:no-underline py-4 cursor-pointer list-none marker:hidden">
+          {{ block.settings.question }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 group-open:rotate-180"><path d="m6 9 6 6 6-6"></path></svg>
+        </summary>
+        <div class="overflow-hidden text-sm text-neutral-600 pb-4">
+          {{ block.settings.answer }}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- 6. CTA -->
+{% if section.settings.cta_title != blank %}
+<section class="py-20 bg-neutral-900 relative overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8 text-center max-w-2xl relative z-10">
+    <h2 class="font-body text-3xl md:text-4xl font-bold text-white mb-4">
+      {{ section.settings.cta_title }}
+    </h2>
+    <p class="font-body text-white/50 mb-8">
+      {{ section.settings.cta_subtitle }}
+    </p>
+    <a href="{{ section.settings.cta_btn_link | default: '#' }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-copper hover:bg-copper-hover text-white font-body font-bold text-sm px-10 py-5 h-auto uppercase tracking-[0.15em] rounded-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag w-4 h-4 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      {{ section.settings.cta_btn_text }}
+    </a>
+  </div>
+</section>
+{% endif %}
