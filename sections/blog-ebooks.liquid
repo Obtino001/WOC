@@ -1,66 +1,35 @@
 <section class="container mx-auto px-4 lg:px-8 mt-24">
-  <div class="text-center max-w-2xl mx-auto mb-12" bis_skin_checked="1">
+  <div class="text-center max-w-2xl mx-auto mb-12">
     <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-4">{{ section.settings.subheading }}</p>
     <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-4">{{ section.settings.heading }}</h2>
     <p class="font-body text-sm text-muted-foreground">{{ section.settings.description }}</p>
   </div>
   
-  <div class="grid md:grid-cols-3 gap-6" bis_skin_checked="1">
+  <div class="grid md:grid-cols-3 gap-6">
     {% for block in section.blocks %}
-      
-      {% assign theme_class = '' %}
-      {% if block.settings.color_scheme == 'gold' %}
-        {% assign theme_class = 'from-gold/20 to-gold/5 border-gold/30' %}
-      {% elsif block.settings.color_scheme == 'primary' %}
-        {% assign theme_class = 'from-primary/20 to-primary/5 border-primary/30' %}
-      {% elsif block.settings.color_scheme == 'accent' %}
-        {% assign theme_class = 'from-accent/20 to-accent/5 border-accent/30' %}
-      {% endif %}
-
-      <div class="relative rounded-xl border bg-gradient-to-br {{ theme_class }} p-8 backdrop-blur-sm flex flex-col" bis_skin_checked="1" {{ block.shopify_attributes }}>
-        
-        <!-- Icon -->
-        <div class="w-6 h-6 text-gold mb-4 [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-[1.5]">
-          {{ block.settings.icon_svg }}
+      <div class="relative rounded-xl border {{ block.settings.color_scheme }} p-8 backdrop-blur-sm" {{ block.shopify_attributes }}>
+        <div class="w-6 h-6 text-gold mb-4 [&>svg]:w-full [&>svg]:h-full">
+           {{ block.settings.icon_svg }}
         </div>
-        
         <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-2">{{ block.settings.kicker }}</p>
         <h3 class="font-display text-2xl font-light text-foreground mb-3">{{ block.settings.title }}</h3>
-        <p class="font-body text-sm text-muted-foreground leading-relaxed mb-6 flex-1">{{ block.settings.description }}</p>
+        <p class="font-body text-sm text-muted-foreground leading-relaxed mb-6">{{ block.settings.description }}</p>
         
-        <!-- Form Integration -->
         {% assign form_id = 'ebook_form_' | append: block.id %}
-        {% form 'customer', id: form_id, class: 'space-y-3 mt-auto' %}
-          
+        {% form 'customer', id: form_id, class: 'space-y-3' %}
           {% if form.posted_successfully? %}
-            <div class="bg-emerald-500/10 border border-emerald-500/30 p-5 rounded-md text-center">
-              <p class="font-body text-sm text-emerald-600 dark:text-emerald-400 mb-4 font-medium">Thank you! Your e-book is ready.</p>
-              {% if block.settings.pdf_url != blank %}
-                <a href="{{ block.settings.pdf_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-500 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-2 w-full rounded-md">
-                  Download PDF
-                </a>
-              {% else %}
-                <p class="font-body text-xs text-muted-foreground">PDF is currently unavailable.</p>
-              {% endif %}
-            </div>
+            <p class="font-body text-sm text-emerald-600 bg-emerald-50 p-3 rounded-none">Check your email for the download link!</p>
           {% else %}
-            <!-- Hidden inputs to track submission type -->
             <input type="hidden" name="contact[tags]" value="newsletter, ebook-request, {{ block.settings.title | handleize }}">
-            
-            {{ form.errors | default_errors }}
-
-            <input type="text" name="contact[first_name]" class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background/60" placeholder="First name (optional)">
-            
-            <input type="email" name="contact[email]" class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background/60" placeholder="Your email" required="">
-            
-            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full rounded-md" type="submit">
+            <input type="text" name="contact[first_name]" class="flex h-10 w-full rounded-none border border-input px-3 py-2 text-base md:text-sm bg-background/60 focus-visible:ring-gold" placeholder="First name (optional)">
+            <input type="email" name="contact[email]" required class="flex h-10 w-full rounded-none border border-input px-3 py-2 text-base md:text-sm bg-background/60 focus-visible:ring-gold" placeholder="Your email">
+            <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all duration-500 bg-foreground text-background hover:bg-foreground/90 h-10 px-4 py-2 w-full rounded-none">
               {{ section.settings.button_text }}
             </button>
-            
-            <p class="text-[10px] text-muted-foreground/70 leading-relaxed">{{ section.settings.disclaimer }}</p>
+            {{ form.errors | default_errors }}
           {% endif %}
+          <p class="text-[10px] text-muted-foreground/70 leading-relaxed">{{ section.settings.disclaimer }}</p>
         {% endform %}
-
       </div>
     {% endfor %}
   </div>
@@ -68,7 +37,7 @@
 
 {% schema %}
 {
-  "name": "E-Book Guides",
+  "name": "Blog E-Books",
   "settings": [
     {
       "type": "text",
@@ -105,84 +74,45 @@
     {
       "type": "ebook",
       "name": "E-Book",
-      "limit": 3,
       "settings": [
-        {
-          "type": "select",
-          "id": "color_scheme",
-          "label": "Card Gradient Color",
-          "options": [
-            { "value": "gold", "label": "Gold" },
-            { "value": "primary", "label": "Primary" },
-            { "value": "accent", "label": "Accent" }
-          ],
-          "default": "gold"
-        },
-        {
-          "type": "url",
-          "id": "pdf_url",
-          "label": "PDF Download Link",
-          "info": "Upload your PDF to Shopify (Content > Files), then copy the link and paste it here."
-        },
+       {
+  "type": "select",
+  "id": "color_scheme",
+  "label": "Card Color Theme",
+  "options": [
+    { "value": "gold", "label": "Gold" },
+    { "value": "forest", "label": "Forest" },
+    { "value": "copper", "label": "Copper" }
+  ],
+  "default": "gold"
+},
         {
           "type": "html",
           "id": "icon_svg",
           "label": "Icon SVG",
-          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>"
+          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>"
         },
         {
           "type": "text",
           "id": "kicker",
-          "label": "Kicker/Tagline",
-          "default": "How to choose the right massage chair"
+          "label": "Kicker/Tagline"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Book Title",
-          "default": "The Massage Chair Guide"
+          "label": "Book Title"
         },
         {
           "type": "textarea",
           "id": "description",
-          "label": "Book Description",
-          "default": "50+ page guide on XD technology, health effects, financing, and what to look for."
+          "label": "Book Description"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "E-Book Guides",
-      "blocks": [
-        {
-          "type": "ebook",
-          "settings": {
-            "color_scheme": "gold",
-            "kicker": "How to choose the right massage chair",
-            "title": "The Massage Chair Guide",
-            "description": "50+ page guide on XD technology, health effects, financing, and what to look for."
-          }
-        },
-        {
-          "type": "ebook",
-          "settings": {
-            "color_scheme": "primary",
-            "kicker": "AI Sleep Technology Explained",
-            "title": "Smart Sleep Guide",
-            "description": "Complete introduction to SOVESYSTEM, SYNTHERA AI, and how to design the perfect sleep environment."
-          }
-        },
-        {
-          "type": "ebook",
-          "settings": {
-            "color_scheme": "accent",
-            "kicker": "Anti-aging at home",
-            "title": "LED Beauty Guide",
-            "description": "The science behind red, yellow, and infrared LED light — and how to achieve clinic-level results."
-          }
-        }
-      ]
+      "name": "Blog E-Books"
     }
   ]
 }
