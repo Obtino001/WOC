@@ -20,6 +20,20 @@
     "seduissante_story_hero": {
       "type": "page-about-seduissante",
       "blocks": {
+        "region_yK8QgG": {
+          "type": "region",
+          "settings": {
+            "region_title": "İskandinavya ve Avrupa",
+            "countries": "Danimarka, İsveç, Norveç, Finlandiya, Almanya, Hollanda, Birleşik Krallık, Fransa, İspanya, İtalya, İsviçre, Avusturya, Belçika"
+          }
+        },
+        "region_dMB8LM": {
+          "type": "region",
+          "settings": {
+            "region_title": "Orta Doğu ve Ötesi",
+            "countries": "Birleşik Arap Emirlikleri, Suudi Arabistan, Katar, Kuveyt, Türkiye, İsrail, Ürdün, Lübnan"
+          }
+        },
         "mission_1": {
           "type": "mission_card",
           "settings": {
@@ -71,6 +85,8 @@
         }
       },
       "block_order": [
+        "region_yK8QgG",
+        "region_dMB8LM",
         "mission_1",
         "mission_2",
         "mission_3",
@@ -87,7 +103,10 @@
         "story_title": "HİKAYEMİZ",
         "story_content": "<p>Séduisante, müşteri odaklı yaklaşımı ve devrim niteliğindeki bilimsel atılımlarıyla gururla tanınan ünlü bir İskandinav yüksek teknolojili güzellik markasıdır. Güzellik endüstrisinde altın standartları belirleyen dönüştürücü tedaviler ve en son teknolojiler sunuyoruz. Genel merkezi Danimarka'da bulunan ve İskandinavya genelinde varlığını sürdüren Séduisante, Avrupa'daki önde gelen klinikler, kaplıcalar ve özel perakendecilerle işbirliği yapmıştır.</p><p>Önde gelen bir yenilikçi olarak Séduisante, hem profesyonel hem de ev kullanımı için yenilikçi, çözüm odaklı cilt bakım ürünlerini ustaca geliştirmektedir. Tüm cilt tiplerinin daha sıkı, genç, parlak ve ışıltılı görünmesine yardımcı olmak için tasarlanmış kullanımı kolay cihazlara ve cilt bakım formülasyonlarına öncülük ediyoruz.</p><p>Formüllerimiz, klinik olarak test edilmiş, özel içeriklere dayanmakta olup, başka hiçbir yerde bulunmayan benzersiz ve tescilli ürünler sunmaktadır. Séduisante'nin etkili ürünleri, günlük cilt bakımı için özel olarak formüle edilmiştir. Güzellik salonları, kaplıcalar ve estetik kliniklerdeki profesyoneller tarafından güvenle kullanılmaktadır.</p><p>Eski güzellik standartlarını yeniden tanımlayarak, Séduisante bilimin ve teknolojinin yeniden icat ettiği ve zamana meydan okuyan ürünleri tutarlı bir şekilde sunar. Taahhüdümüz, tüm cilt tipleri için pratik, ulaşılabilir sonuçlar sağlamaktır.</p>",
         "stats_pretitle": "KLİNİK ÇALIŞMALAR",
-        "stats_title": "Kanıtlanmış Sonuçlar"
+        "stats_title": "Kanıtlanmış Sonuçlar",
+        "pretitle": "KÜRESEL VARLIK",
+        "title": "BİZİ FARKLI KILAN NE — İNOVASYON VE GÜVENLİĞE BAĞLILIK",
+        "description": ""
       }
     },
     "features_grid_awards_k638pX": {
