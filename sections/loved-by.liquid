@@ -1,5 +1,4 @@
-<main class="section-{{ section.id }}">
-  <!-- Hero Section -->
+
   <section class="relative min-h-[55vh] md:min-h-[65vh] flex items-center justify-center overflow-hidden">
     {% if section.settings.hero_image != blank %}
       {{ section.settings.hero_image | image_url: width: 2000 | image_tag: class: 'absolute inset-0 w-full h-full object-cover', loading: 'eager' }}
@@ -51,6 +50,17 @@
     </div>
   </section>
 
+  <!-- Spa/Clinic Section (image_af6b12.jpg eklendi) -->
+  <section class="py-24 md:py-28 bg-background">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-light text-foreground italic mb-6">{{ section.settings.spa_title }}</h2>
+      <p class="font-body text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">{{ section.settings.spa_desc }}</p>
+      {% if section.settings.spa_image != blank %}
+        {{ section.settings.spa_image | image_url: width: 1200 | image_tag: class: 'w-full max-w-3xl mx-auto rounded-sm', loading: 'lazy' }}
+      {% endif %}
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="py-20 bg-neutral-900">
     <div class="container mx-auto px-4 max-w-2xl text-center">
@@ -58,17 +68,21 @@
       <a class="inline-block bg-white hover:bg-neutral-100 text-neutral-900 uppercase tracking-[0.15em] text-[11px] px-10 py-4 transition-colors" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
     </div>
   </section>
-</main>
 
 {% schema %}
 {
   "name": "Loved By Page",
   "settings": [
     { "type": "image_picker", "id": "hero_image", "label": "Hero Image" },
-    { "type": "text", "id": "hero_title", "label": "Hero Title", "default": "Sevilen" },
-    { "type": "text", "id": "hero_title_suffix", "label": "Hero Suffix", "default": "Tarafından" },
+    { "type": "text", "id": "hero_title", "label": "Hero Title" },
+    { "type": "text", "id": "hero_title_suffix", "label": "Hero Suffix" },
     { "type": "text", "id": "intro_heading", "label": "Intro Heading" },
     { "type": "text", "id": "intro_subtext", "label": "Intro Subtext" },
+    { "type": "header", "content": "Spa/Clinic Section" },
+    { "type": "text", "id": "spa_title", "label": "Title", "default": "Dünyanın En İyi Ellerinde" },
+    { "type": "textarea", "id": "spa_desc", "label": "Description" },
+    { "type": "image_picker", "id": "spa_image", "label": "Spa Image" },
+    { "type": "header", "content": "CTA" },
     { "type": "text", "id": "cta_heading", "label": "CTA Heading" },
     { "type": "text", "id": "cta_text", "label": "CTA Button Text" },
     { "type": "url", "id": "cta_url", "label": "CTA Link" }
