@@ -1,0 +1,42 @@
+{% schema %}
+{
+  "name": "Before & After",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Önce & Sonra" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Gerçek müşterilerden gerçek sonuçlar" }
+  ],
+  "blocks": [
+    {
+      "type": "image_item",
+      "name": "Image Item",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "caption", "label": "Caption", "default": "4 haftalık günlük kullanımdan sonraki sonuç" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Before & After" }]
+}
+{% endschema %}
+
+<section class="bg-white py-16 lg:py-24">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-light tracking-wider mb-2 text-neutral-900" style="color: #171717;">{{ section.settings.title }}</h2>
+      <p class="text-sm text-neutral-600" style="font-family: system-ui, sans-serif; color: #525252;">{{ section.settings.subtitle }}</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      {% for block in section.blocks %}
+      <div {{ block.shopify_attributes }}>
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt | escape }}" class="w-full rounded-lg shadow-md" loading="lazy">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'w-full aspect-[4/3] rounded-lg shadow-md bg-neutral-200' }}
+        {% endif %}
+        <p class="text-center text-xs text-neutral-600 mt-3" style="font-family: system-ui, sans-serif; color: #525252;">{{ block.settings.caption }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

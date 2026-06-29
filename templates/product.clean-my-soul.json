@@ -420,6 +420,31 @@
         "description": "Ürünün sizin için işe yarayıp yaramayacağından emin değil misiniz? Elektronik ürünlerimizde ömür boyu garanti ve %100 memnuniyet garantisi sunuyoruz."
       }
     },
+    "before_after": {
+      "type": "before-after",
+      "blocks": {
+        "item_1": {
+          "type": "image_item",
+          "settings": {
+            "caption": "4 haftalık günlük kullanımdan sonraki sonuç"
+          }
+        },
+        "item_2": {
+          "type": "image_item",
+          "settings": {
+            "caption": "8 haftalık günlük kullanımdan sonraki sonuç"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2"
+      ],
+      "settings": {
+        "title": "Önce & Sonra",
+        "subtitle": "Gerçek müşterilerden gerçek sonuçlar"
+      }
+    },
     "faq_clean": {
       "type": "faq-accordion",
       "blocks": {
@@ -595,6 +620,7 @@
     "image_text_cta",
     "science_tabs",
     "custom_testimonials",
+    "before_after",
     "guarantees_grid",
     "faq_clean",
     "bottom_cta",
