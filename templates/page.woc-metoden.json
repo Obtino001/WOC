@@ -1,97 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero": {
-      "type": "woc-hero",
-      "settings": {},
-      "blocks": {
-        "stat_1": {
-          "type": "stat",
-          "settings": {
-            "value": "-27%",
-            "label": "Azalan kortizol",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-trending-down\"><polyline points=\"22 17 13.5 8.5 8.5 13.5 2 7\"/><polyline points=\"16 17 22 17 22 11\"/></svg>"
-          }
-        },
-        "stat_2": {
-          "type": "stat",
-          "settings": {
-            "value": "+32%",
-            "label": "Artan verimlilik",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-trending-up\"><polyline points=\"22 7 13.5 15.5 8.5 10.5 2 17\"/><polyline points=\"16 7 22 7 22 13\"/></svg>"
-          }
-        },
-        "stat_3": {
-          "type": "stat",
-          "settings": {
-            "value": "15dk",
-            "label": "Optimum seans",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-clock\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>"
-          }
-        },
-        "stat_4": {
-          "type": "stat",
-          "settings": {
-            "value": "98%",
-            "label": "Memnuniyet",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"/></svg>"
-          }
-        }
-      },
-      "block_order": [
-        "stat_1",
-        "stat_2",
-        "stat_3",
-        "stat_4"
-      ]
+    "woc_hero_meta_Tzejen": {
+      "type": "woc-hero-meta",
+      "name": "WOC Hero meta",
+      "settings": {
+        "badge_text": "WOC Yöntemi®",
+        "title": "Sürdürülebilir performans<br>ile <span class=\"italic\" style=\"color: rgb(194, 139, 36);\">akıllı dinlenme</span>",
+        "subtitle": "2015'ten beri geliştirilen bilimsel bir yöntem...",
+        "btn_1_text": "Demo ayırtın",
+        "btn_1_url": "",
+        "btn_2_text": "Tasarrufu hesapla",
+        "btn_2_url": ""
+      }
     },
     "intro": {
       "type": "woc-intro",
       "settings": {
+        "badge_text": "Neden WOC yöntemi",
+        "title": "Dinlenme, gözden kaçan süper güçtür<br>modern iş hayatında",
         "paragraph_1": "Dinlenme sadece bir mola değildir; performansı yeniden şarj eden, zihinsel berraklığı artıran ve uzun vadeli başarıyı garantileyen temel bir araçtır.",
         "paragraph_2": "WOC yöntemi, çalışanlarınızın sadece çalışırken değil, aynı zamanda dinlenirken de en iyi şekilde desteklenmesini sağlar. Bilimsel olarak kanıtlanmış yöntemlerimizle iş yerinizi dönüştürün."
       }
     },
     "pillars": {
       "type": "woc-pillars",
-      "settings": {},
       "blocks": {
         "pillar_1": {
           "type": "pillar",
           "settings": {
             "number": "01",
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path></svg>",
             "title": "Ergonomi",
             "subtitle": "Fiziksel destek",
             "description": "Vücudun doğal duruşunu destekleyerek fiziksel stresi azaltır.",
             "check_1": "Kişiselleştirilebilir ayarlar",
             "check_2": "Omurga hizalaması",
-            "check_3": "Kas gerginliğini azaltma",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/></svg>"
+            "check_3": "Kas gerginliğini azaltma"
           }
         },
         "pillar_2": {
           "type": "pillar",
           "settings": {
             "number": "02",
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-zap\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon></svg>",
             "title": "Masaj",
             "subtitle": "Aktif rahatlama",
             "description": "Hedeflenen masaj teknikleri ile kan dolaşımını artırır ve kasları gevşetir.",
             "check_1": "Derin doku masajı",
             "check_2": "Isıtmalı terapi",
-            "check_3": "Özelleştirilebilir yoğunluk",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-zap\"><polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>"
+            "check_3": "Özelleştirilebilir yoğunluk"
           }
         },
         "pillar_3": {
           "type": "pillar",
           "settings": {
             "number": "03",
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-brain\"><path d=\"M9.5 2A2.5 2.5 0 0 0 7 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-.08 2.5 2.5 0 0 0 2.08 0 2.5 2.5 0 0 0 2.96.08 2.5 2.5 0 0 0 4.96-.44v-15a2.5 2.5 0 0 0-2.5-2.5h-10z\"></path><path d=\"M13 2v20\"></path></svg>",
             "title": "Zihinsel Mola",
             "subtitle": "Bilişsel yenilenme",
             "description": "Zihni sakinleştirerek odaklanmayı ve yaratıcılığı artırır.",
             "check_1": "Sıfır yerçekimi pozisyonu",
             "check_2": "Ses yalıtımı",
-            "check_3": "Görsel dinlenme",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-brain\"><path d=\"M9.5 2A2.5 2.5 0 0 0 7 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-.08 2.5 2.5 0 0 0 2.08 0 2.5 2.5 0 0 0 2.96.08 2.5 2.5 0 0 0 4.96-.44v-15a2.5 2.5 0 0 0-2.5-2.5h-10z\"/><path d=\"M13 2v20\"/></svg>"
+            "check_3": "Görsel dinlenme"
           }
         }
       },
@@ -99,42 +78,45 @@
         "pillar_1",
         "pillar_2",
         "pillar_3"
-      ]
+      ],
+      "settings": {
+        "badge_text": "Model",
+        "title": "Üç sütun. Tek bütünsel yöntem."
+      }
     },
     "principles": {
       "type": "woc-principles",
-      "settings": {},
       "blocks": {
         "principle_1": {
           "type": "principle",
           "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-microscope\"><path d=\"M6 18h8\"></path><path d=\"M3 22h18\"></path><path d=\"M14 22a7 7 0 1 0 0-14h-1\"></path><path d=\"M9 14h2\"></path><path d=\"M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z\"></path><path d=\"M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3\"></path></svg>",
             "title": "Bilimsel Yaklaşım",
-            "description": "Her yöntemimiz güncel araştırmalara ve kanıtlara dayanır.",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-microscope\"><path d=\"M6 18h8\"/><path d=\"M3 22h18\"/><path d=\"M14 22a7 7 0 1 0 0-14h-1\"/><path d=\"M9 14h2\"/><path d=\"M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z\"/><path d=\"M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3\"/></svg>"
+            "description": "Her yöntemimiz güncel araştırmalara ve kanıtlara dayanır."
           }
         },
         "principle_2": {
           "type": "principle",
           "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"></polygon><polyline points=\"2 12 12 17 22 12\"></polyline><polyline points=\"2 17 12 22 22 17\"></polyline></svg>",
             "title": "Bütünsel Tasarım",
-            "description": "Sadece bir sorunu değil, genel iyiliği hedefleriz.",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>"
+            "description": "Sadece bir sorunu değil, genel iyiliği hedefleriz."
           }
         },
         "principle_3": {
           "type": "principle",
           "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-settings\"><path d=\"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
             "title": "Kişiselleştirme",
-            "description": "Her bireyin ihtiyacına uygun çözümler sunarız.",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-settings\"><path d=\"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>"
+            "description": "Her bireyin ihtiyacına uygun çözümler sunarız."
           }
         },
         "principle_4": {
           "type": "principle",
           "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-leaf\"><path d=\"M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z\"></path><path d=\"M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12\"></path></svg>",
             "title": "Sürdürülebilirlik",
-            "description": "Uzun vadeli sağlık ve performans iyileştirmesi sağlarız.",
-            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-leaf\"><path d=\"M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z\"/><path d=\"M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12\"/></svg>"
+            "description": "Uzun vadeli sağlık ve performans iyileştirmesi sağlarız."
           }
         }
       },
@@ -143,19 +125,41 @@
         "principle_2",
         "principle_3",
         "principle_4"
-      ]
+      ],
+      "settings": {
+        "badge_text": "Temelimiz",
+        "title": "Fark yaratan dört ilke"
+      }
     },
     "testimonial": {
       "type": "woc-testimonial",
-      "settings": {}
+      "settings": {
+        "quote": "WOC yöntemi iş yerimizi dönüştürdü...",
+        "author_role": "İK Direktörü",
+        "author_company": "Fortune 500 şirketi",
+        "stat_1_val": "10 yıl",
+        "stat_1_label": "Araştırma",
+        "stat_2_val": "65+",
+        "stat_2_label": "İş yeri",
+        "stat_3_val": "85%",
+        "stat_3_label": "Daha az stres",
+        "disclaimer": "* 65 farklı iş yerinden 500 yanıt baz alınmıştır."
+      }
     },
     "cta": {
       "type": "woc-cta",
-      "settings": {}
+      "settings": {
+        "title": "WOC yöntemini uygulamaya hazır mısınız?",
+        "description": "Bağlayıcı olmayan bir demo ayırtın; yöntemin şirketinizde nasıl uygulanabileceğini...",
+        "btn_1_text": "Demo ayırtın",
+        "btn_1_url": "",
+        "btn_2_text": "ROI hesapla",
+        "btn_2_url": ""
+      }
     }
   },
   "order": [
-    "hero",
+    "woc_hero_meta_Tzejen",
     "intro",
     "pillars",
     "principles",
