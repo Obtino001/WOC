@@ -1,60 +1,394 @@
-<section class="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32" style="background: rgb(15, 31, 46);">
-  <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full blur-3xl opacity-20" style="background: radial-gradient(circle, rgb(14, 92, 92) 0%, transparent 70%);"></div>
-  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full blur-3xl opacity-15" style="background: radial-gradient(circle, rgb(194, 139, 36) 0%, transparent 70%);"></div>
-  <div class="relative container mx-auto px-4 lg:px-8 max-w-6xl">
-    <div class="text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 border" style="border-color: rgba(194, 139, 36, 0.4); background: rgba(194, 139, 36, 0.08);">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3.5 h-3.5" style="color: rgb(194, 139, 36);"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
-        <span class="font-body text-xs font-semibold tracking-widest uppercase" style="color: rgb(194, 139, 36);">{{ section.settings.badge_text }}</span>
-      </div>
-      <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white mb-6">{{ section.settings.title }}</h1>
-      <p class="font-body text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10">{{ section.settings.subtitle }}</p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 font-body text-sm font-semibold px-8 py-6 h-auto rounded-full uppercase tracking-wider text-white" href="{{ section.settings.btn_1_url }}" style="background: rgb(194, 139, 36);">
-          {{ section.settings.btn_1_text }} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-        </a>
-        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background font-body text-sm font-semibold px-8 py-6 h-auto rounded-full uppercase tracking-wider border-white/30 text-white hover:bg-white/10 hover:text-white" href="{{ section.settings.btn_2_url }}">
-          {{ section.settings.btn_2_text }}
-        </a>
-      </div>
-    </div>
-    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
-      {% for block in section.blocks %}
-        <div class="text-center p-6 rounded-2xl border border-white/10 backdrop-blur-sm" style="background: rgba(255, 255, 255, 0.03);" {{ block.shopify_attributes }}>
-          <div class="lucide-icon mx-auto mb-3" style="color: rgb(194, 139, 36); width: 20px; height: 20px;">
-            {{ block.settings.svg_icon }}
-          </div>
-          <div class="font-display text-3xl md:text-4xl font-bold text-white mb-1">{{ block.settings.value }}</div>
-          <div class="font-body text-xs text-white/60 uppercase tracking-wider">{{ block.settings.label }}</div>
-        </div>
+<section class="relative h-screen flex flex-col overflow-hidden bg-charcoal">
+<div class="absolute inset-0 z-1">
+  {%- if section.settings.video_url != blank -%}
+<video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      class="w-full h-full object-cover animate-slow-zoom"
+      style="width: 100%; height: 100%; object-fit: cover;"
+      {% if section.settings.fallback_image != blank %}poster="{{ section.settings.fallback_image | image_url: width: 1920 }}"{% endif %}
+    >
+      {%- assign high_quality_sources = section.settings.video_url.sources | where: 'format', 'mp4' | sort: 'height' | reverse -%}
+      
+      {% for source in high_quality_sources %}
+        <source src="{{ source.url }}" type="{{ source.mime_type }}">
       {% endfor %}
+    </video>
+  {%- elsif section.settings.fallback_image != blank -%}
+    <img
+      src="{{ section.settings.fallback_image | image_url: width: 1920 }}"
+      alt="Hero Background"
+      class="w-full h-full object-cover"
+      style="width: 100%; height: 100%; object-fit: cover;"
+      loading="eager"
+    >
+  {%- endif -%}
+
+  <div
+    class="absolute inset-0"
+    style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"
+  ></div>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-transparent to-transparent"></div>
+</div>
+
+  <!-- Content Container -->
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full pt-40">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 w-full">
+      <div class="max-w-3xl">
+        <div class="luxury-line mb-8"></div>
+        
+        {%- if section.settings.hero_label != blank -%}
+          <p class="font-body text-[10px] font-medium uppercase tracking-[0.2em] text-gold mb-6">
+            {{ section.settings.hero_label }}
+          </p>
+        {%- endif -%}
+
+        <h1 class="woc-display-font text-4xl md:text-5xl lg:text-7xl font-light text-foreground leading-[1.05] mb-6">
+          {{ section.settings.title_line1 }}
+          {%- if section.settings.title_line2 != blank -%}
+            <br/><span class="italic text-gold font-light mt-2">{{ section.settings.title_line2 }}</span>
+          {%- endif -%}
+        </h1>
+        
+        <p class="font-body text-base md:text-lg text-foreground/70 leading-relaxed mb-8 max-w-xl">
+          {{ section.settings.subtitle }}
+        </p>
+
+        {%- if section.settings.show_reviews -%}
+          <div class="flex items-center gap-6 mb-10">
+            <div class="flex items-center gap-2">
+              <div class="flex">
+                {%- for i in (1..5) -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {%- endfor -%}
+              </div>
+              <span class="font-display text-2xl font-bold text-white">4.9</span>
+              <span class="font-body text-xs text-white/50">/5</span>
+            </div>
+            <div class="h-6 w-px bg-white/20"></div>
+            <div class="flex items-center gap-3">
+              <span class="font-body text-[10px] text-white/60 uppercase tracking-wider">Google Reviews</span>
+              <span class="font-body text-[10px] text-white/60">·</span>
+              <span class="font-body text-[10px] text-white/60 uppercase tracking-wider">Trustpilot</span>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 flex-wrap">
+            {%- if section.settings.btn1_text != blank -%}
+              <a
+                href="{{ section.settings.btn1_url }}"
+                class="inline-flex items-center justify-center px-8 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)] animate-pulse-subtle gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                {{ section.settings.btn1_text }}
+              </a>
+            {%- endif -%}
+            {%- if section.settings.btn2_text != blank -%}
+              <a
+                href="{{ section.settings.btn2_url }}"
+                class="inline-flex items-center justify-center px-10 py-3.5 bg-gold hover:bg-gold-hover text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded shadow-[0_0_15px_rgba(216,178,97,0.3)]"
+              >
+                {{ section.settings.btn2_text }}
+              </a>
+            {%- endif -%}
+          </div>
+          {%- if section.settings.btn3_text != blank -%}
+            <div class="flex">
+              <a
+                href="{{ section.settings.btn3_url }}"
+                class="inline-flex items-center justify-center px-8 py-3.5 border border-gold/50 text-gold hover:bg-gold hover:text-charcoal font-body text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded gap-2 max-w-max bg-transparent"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                {{ section.settings.btn3_text }}
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      {%- if section.settings.expert_name != blank -%}
+        <div class="hidden md:block max-w-xs animate-fade-in-right delay-500">
+          <div class="bg-charcoal/60 backdrop-blur-md border border-white/10 rounded-xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border border-gold/30 shrink-0">
+                {%- if section.settings.expert_image != blank -%}
+                  <img src="{{ section.settings.expert_image | image_url: width: 100 }}" alt="{{ section.settings.expert_name }}" class="w-full h-full object-cover">
+                {%- else -%}
+                  <div class="w-full h-full bg-white/10"></div>
+                {%- endif -%}
+              </div>
+              <div>
+                <p class="font-body text-xs font-semibold text-white">{{ section.settings.expert_name }}</p>
+                <p class="font-body text-[10px] text-white/50">{{ section.settings.expert_title }}</p>
+              </div>
+            </div>
+            <p class="font-display text-sm italic text-white/80 leading-relaxed">
+              "{{ section.settings.expert_quote }}"
+            </p>
+            <div class="flex items-center gap-1 mt-3">
+              {%- for i in (1..5) -%}
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="#d8b261" stroke="#d8b261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              {%- endfor -%}
+              <span class="font-body text-[9px] text-white/40 ml-1">{{ section.settings.expert_badge_text | default: "Professionally recommended" }}</span>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <!-- Stats row underneath -->
+    {%- assign stats_blocks = section.blocks | where: 'type', 'stat' -%}
+    {%- if stats_blocks.size > 0 -%}
+      <div class="mt-12 flex items-center gap-8 animate-fade-in delay-700">
+        {%- for block in stats_blocks -%}
+          <div class="text-center" {{ block.shopify_attributes }}>
+            <p class="font-display text-xl font-bold text-gold">{{ block.settings.stat_value }}</p>
+            <p class="font-body text-[9px] text-white/50 uppercase tracking-wider">{{ block.settings.stat_label }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- Bottom USP Bar -->
+  <div class="relative z-10 border-t border-gold/15 bg-background/60 backdrop-blur-md py-4 lg:py-5">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        
+        {%- for block in section.blocks -%}
+          <div class="flex items-center gap-2.5" {{ block.shopify_attributes }}>
+            {%- if forloop.index > 1 -%}
+              <div class="hidden lg:block w-px h-5 bg-gold/20 mr-4"></div>
+            {%- endif -%}
+            
+            <!-- Icon Render -->
+            <span class="text-gold shrink-0">
+              {%- if block.settings.custom_icon_svg != blank -%}
+                {{ block.settings.custom_icon_svg }}
+              {%- else -%}
+                {%- case block.settings.icon -%}
+                  {%- when 'award' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                  {%- when 'cpu' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+                  {%- when 'heart' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                  {%- when 'truck' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                {%- endcase -%}
+              {%- endif -%}
+            </span>
+
+            <span class="font-body text-[10px] lg:text-xs font-medium uppercase tracking-[0.15em] text-foreground/75">
+              {{ block.settings.text }}
+            </span>
+          </div>
+        {%- endfor -%}
+
+      </div>
     </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "WOC Hero",
+  "name": "WOC Hero Banner",
+  "max_blocks": 4,
   "settings": [
-    { "type": "text", "id": "badge_text", "label": "Badge Text", "default": "WOC Yöntemi®" },
-    { "type": "textarea", "id": "title", "label": "Heading", "default": "Sürdürülebilir performans<br>ile <span class=\"italic\" style=\"color: rgb(194, 139, 36);\">akıllı dinlenme</span>" },
-    { "type": "textarea", "id": "subtitle", "label": "Subheading", "default": "2015'ten beri geliştirilen bilimsel bir yöntem..." },
-    { "type": "text", "id": "btn_1_text", "label": "Button 1 Text", "default": "Demo ayırtın" },
-    { "type": "url", "id": "btn_1_url", "label": "Button 1 URL" },
-    { "type": "text", "id": "btn_2_text", "label": "Button 2 Text", "default": "Tasarrufu hesapla" },
-    { "type": "url", "id": "btn_2_url", "label": "Button 2 URL" }
+    {
+      "type": "video",
+      "id": "video_url",
+      "label": "Shopify-hosted Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "fallback_image",
+      "label": "Fallback Background Image"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "text",
+      "id": "hero_label",
+      "label": "Hero Label (Tiny text above title)",
+      "default": "FLAGSHIP COLLECTION"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Title Line 1",
+      "default": "Premium Massage Chairs"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Title Line 2 (Italic Gold)",
+      "default": "For the Body"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Hero Subtitle",
+      "default": "Experience world-class massage chairs that combine Scandinavian design with ground-breaking wellness technology. From AI-driven precision to zero-gravity relaxation."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews",
+      "label": "Show 4.9/5 Reviews Badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "text",
+      "id": "btn1_text",
+      "label": "Button 1 Text",
+      "default": "Find your perfect chair — 60 sec"
+    },
+    {
+      "type": "url",
+      "id": "btn1_url",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "btn2_text",
+      "label": "Button 2 Text",
+      "default": "VIEW ALL MODELS"
+    },
+    {
+      "type": "url",
+      "id": "btn2_url",
+      "label": "Button 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "btn3_text",
+      "label": "Button 3 Text",
+      "default": "BOOK A DEMO"
+    },
+    {
+      "type": "url",
+      "id": "btn3_url",
+      "label": "Button 3 Link"
+    },
+    {
+      "type": "header",
+      "content": "Expert Endorsement Card (Optional)"
+    },
+    {
+      "type": "image_picker",
+      "id": "expert_image",
+      "label": "Expert Image"
+    },
+    {
+      "type": "text",
+      "id": "expert_name",
+      "label": "Expert Name",
+      "default": "Dr. Carsten Rosendahl"
+    },
+    {
+      "type": "text",
+      "id": "expert_title",
+      "label": "Expert Title",
+      "default": "Chiropractor · Nordic Spine & Wellness"
+    },
+    {
+      "type": "textarea",
+      "id": "expert_quote",
+      "label": "Expert Quote",
+      "default": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks."
+    },
+    {
+      "type": "text",
+      "id": "expert_badge_text",
+      "label": "Expert Badge Text",
+      "default": "Professionally recommended"
+    }
   ],
   "blocks": [
+    {
+      "type": "usp",
+      "name": "USP Indicator",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon Type",
+          "options": [
+            { "value": "award", "label": "Award Medal" },
+            { "value": "cpu", "label": "AI Microchip" },
+            { "value": "heart", "label": "Heart Pulse" },
+            { "value": "truck", "label": "Delivery Truck" }
+          ],
+          "default": "award"
+        },
+        {
+          "type": "html",
+          "id": "custom_icon_svg",
+          "label": "Custom SVG Icon",
+          "info": "Paste raw SVG XML code here to override the dropdown icon selection."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "USP Label",
+          "default": "Nordic Wellness Leader"
+        }
+      ]
+    },
     {
       "type": "stat",
       "name": "Stat Item",
       "settings": [
-        { "type": "html", "id": "svg_icon", "label": "SVG Icon Code" },
-        { "type": "text", "id": "value", "label": "Value (e.g. -27%)" },
-        { "type": "text", "id": "label", "label": "Label (e.g. Azalan kortizol)" }
+        {
+          "type": "text",
+          "id": "stat_value",
+          "label": "Stat Value (e.g. 50.000+)",
+          "default": "50.000+"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Stat Label",
+          "default": "SATISFIED CUSTOMERS"
+        }
       ]
     }
   ],
-  "presets": [{ "name": "WOC Hero" }]
+  "presets": [
+    {
+      "name": "WOC Hero Banner",
+      "blocks": [
+        { "type": "usp", "settings": { "icon": "award", "text": "Nordic Wellness Leader" } },
+        { "type": "usp", "settings": { "icon": "cpu", "text": "Unique AI Technology" } },
+        { "type": "usp", "settings": { "icon": "heart", "text": "Professionally Recommended" } },
+        { "type": "usp", "settings": { "icon": "truck", "text": "White-Glove Delivery" } }
+      ]
+    }
+  ]
 }
 {% endschema %}
