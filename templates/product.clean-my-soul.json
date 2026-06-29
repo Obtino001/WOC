@@ -19,27 +19,49 @@
     },
     "image_text_cta": {
       "type": "image-with-text-cta",
-      "settings": {}
+      "settings": {
+        "pretitle": "YENİ RUTİNİNİZ",
+        "title": "CLEAN MY SOUL: PROFESYONEL DERİN TEMİZLİK",
+        "text_1": "",
+        "text_2": "",
+        "button_text": "Şimdi Satın Al",
+        "button_link": ""
+      }
     },
     "science_tabs": {
       "type": "science-tabs",
-      "settings": {}
+      "settings": {
+        "title": "CLEAN MY SOUL'un Arkasındaki Bilim"
+      }
     },
     "custom_testimonials": {
       "type": "custom-testimonials",
-      "settings": {}
+      "settings": {
+        "subtitle": "4,7 üzerinden 5",
+        "title": "Birçok Mutlu Müşterimiz Var!"
+      }
     },
     "guarantees_grid": {
       "type": "guarantees-grid",
-      "settings": {}
+      "settings": {
+        "title": "Ödül Kazanan Ürünler",
+        "description": ""
+      }
     },
     "faq_clean": {
       "type": "faq-accordion",
-      "settings": {}
+      "settings": {
+        "title": "FAQ"
+      }
     },
     "bottom_cta": {
       "type": "bottom-cta",
-      "settings": {}
+      "settings": {
+        "title": "Dönüşümünüze Hazır mısınız?",
+        "text": "",
+        "button_text": "HEMEN AL — ₺13.052",
+        "button_link": ""
+      }
     },
     "overview": {
       "type": "product-overview",
