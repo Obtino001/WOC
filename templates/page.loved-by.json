@@ -10,14 +10,31 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "loved-by",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
+        "hero_title": "Sevilen",
+        "hero_title_suffix": "Tarafından",
+        "intro_heading": "Sonuçlar kendini gösterdiğinde, herkes tarafından sevilmek kolaydır",
+        "intro_subtext": "Müşteriler ve güzellik uzmanları tarafından sevildi — çünkü herkes ilgi odağı olmayı hak eder",
+        "cta_heading": "Neden 45.000'den fazla kişinin Séduisante'ı sevdiğini keşfedin",
+        "cta_text": "TÜM ÜRÜNLERİ GÖRÜN",
+        "cta_url": "/tr/beauty-technology"
+      },
+      "blocks": {
+        "caroline": { "type": "influencer", "settings": { "name": "CAROLINE M.", "role": "Güzellik Uzmanı" } },
+        "sophia": { "type": "influencer", "settings": { "name": "SOPHIA L.", "role": "TV Sunucusu" } },
+        "emma": { "type": "influencer", "settings": { "name": "EMMA K.", "role": "Influencer ve Blogger" } },
+        "astrid": { "type": "influencer", "settings": { "name": "ASTRID N.", "role": "Model" } },
+        "mette": { "type": "influencer", "settings": { "name": "DR. METTE R.", "role": "Dermatolog" } },
+        "isabelle": { "type": "influencer", "settings": { "name": "ISABELLE T.", "role": "Güzellik Blogger'ı" } },
+        "christian": { "type": "influencer", "settings": { "name": "CHRISTIAN B.", "role": "Ünlü Kuaför" } },
+        "julie": { "type": "influencer", "settings": { "name": "JULIE H.", "role": "Fitness Influencer'ı" } },
+        "birgitte": { "type": "influencer", "settings": { "name": "BIRGITTE S.", "role": "Girişimci" } }
+      },
+      "block_order": [
+        "caroline", "sophia", "emma", "astrid", "mette", "isabelle", "christian", "julie", "birgitte"
+      ]
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
