@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -20,69 +11,223 @@
     "quiz_step_one_cTMhwT": {
       "type": "quiz-step-one",
       "blocks": {
-        "option_MzJeF6": {
-          "type": "option",
+        "q1": {
+          "type": "question",
           "settings": {
-            "emoji": "🩺",
-            "title": "Back and neck pain relief",
-            "subtitle": "Deep medical massage",
-            "internal_value": "pain_relief"
+            "step_text": "1 / 6 Soru",
+            "progress": 17,
+            "question_title": "Birincil hedefiniz nedir?",
+            "question_subtitle": "Size en önemli geleni seçin",
+            "opt1_emoji": "🧘",
+            "opt1_title": "Stres Azaltma",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "💆",
+            "opt2_title": "Sırt Ağrısı Giderme",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "💪",
+            "opt3_title": "İyileşme ve Performans",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "✨",
+            "opt4_title": "Genel İyilik Hali",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
           }
         },
-        "option_qhyKQq": {
-          "type": "option",
+        "q2": {
+          "type": "question",
           "settings": {
-            "emoji": "🧘",
-            "title": "Stress and anxiety reduction",
-            "subtitle": "Relaxation and mental well-being",
-            "internal_value": "stress_reduction"
+            "step_text": "2 / 6 Soru",
+            "progress": 33,
+            "question_title": "En çok nerede rahatsızlık hissediyorsunuz?",
+            "question_subtitle": "Sizi en çok rahatsız eden bölgeyi seçin",
+            "opt1_emoji": "🧍",
+            "opt1_title": "Bel",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "👤",
+            "opt2_title": "Boyun ve Omuzlar",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "🦵",
+            "opt3_title": "Bacaklar ve Ayaklar",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "🛌",
+            "opt4_title": "Tüm Vücut Yorgunluğu",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
           }
         },
-        "option_HbxmXV": {
-          "type": "option",
+        "q3": {
+          "type": "question",
           "settings": {
-            "emoji": "💪",
-            "title": "Sports recovery & circulation",
-            "subtitle": "Faster recovery after training",
-            "internal_value": "sports_recovery"
+            "step_text": "3 / 6 Soru",
+            "progress": 50,
+            "question_title": "Ana kullanıcının boyu kaç?",
+            "question_subtitle": "Sandalyelerimiz vücut oranlarına uyum sağlar.",
+            "opt1_emoji": "📏",
+            "opt1_title": "165 cm altı",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "📏",
+            "opt2_title": "165 - 180 cm",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "📏",
+            "opt3_title": "180 - 195 cm",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "📏",
+            "opt4_title": "195 cm üzeri",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
           }
         },
-        "option_83R8QG": {
-          "type": "option",
+        "q4": {
+          "type": "question",
           "settings": {
-            "emoji": "✨",
-            "title": "Premium relaxation at home",
-            "subtitle": "Daily luxury and well-being",
-            "internal_value": "premium_relaxation"
+            "step_text": "4 / 6 Soru",
+            "progress": 66,
+            "question_title": "Günde ne kadar zaman oturarak geçiriyorsunuz?",
+            "question_subtitle": "Ortalama oturma sürenizi tahmin edin",
+            "opt1_emoji": "⏳",
+            "opt1_title": "2 saatten az",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "⌛",
+            "opt2_title": "2 - 4 saat",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "🕰️",
+            "opt3_title": "4 - 6 saat",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "📅",
+            "opt4_title": "6+ saat",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
           }
         },
-        "option_ethtxP": {
-          "type": "option",
+        "q5": {
+          "type": "question",
           "settings": {
-            "emoji": "👴",
-            "title": "Mobility & elder care",
-            "subtitle": "Gentle therapy for seniors",
-            "internal_value": "elder_care"
+            "step_text": "5 / 6 Soru",
+            "progress": 83,
+            "question_title": "Tercih ettiğiniz masaj yoğunluğu nedir?",
+            "question_subtitle": "Rahatlık seviyenizi seçin",
+            "opt1_emoji": "🍃",
+            "opt1_title": "Nazik ve Rahatlatıcı",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "⚖️",
+            "opt2_title": "Orta Baskı",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "🔥",
+            "opt3_title": "Derin Doku / Yoğun",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "🔄",
+            "opt4_title": "Değişken Yoğunluk",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "step_text": "6 / 6 Soru",
+            "progress": 100,
+            "question_title": "Showroom'umuzu ziyaret etmek ister misiniz?",
+            "question_subtitle": "Karar vermeden önce koltuğunuzu deneyimleyin",
+            "opt1_emoji": "🏬",
+            "opt1_title": "Evet, kesinlikle",
+            "opt1_subtitle": "",
+            "opt1_val": "",
+            "opt2_emoji": "🗓️",
+            "opt2_title": "Belki daha sonra",
+            "opt2_subtitle": "",
+            "opt2_val": "",
+            "opt3_emoji": "💻",
+            "opt3_title": "Hayır, çevrimiçi karar vereceğim",
+            "opt3_subtitle": "",
+            "opt3_val": "",
+            "opt4_emoji": "",
+            "opt4_title": "",
+            "opt4_subtitle": "",
+            "opt4_val": "",
+            "opt5_emoji": "",
+            "opt5_title": "",
+            "opt5_subtitle": "",
+            "opt5_val": "",
+            "opt6_emoji": "",
+            "opt6_title": "",
+            "opt6_subtitle": "",
+            "opt6_val": ""
           }
         }
       },
       "block_order": [
-        "option_MzJeF6",
-        "option_qhyKQq",
-        "option_HbxmXV",
-        "option_83R8QG",
-        "option_ethtxP"
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
       ],
-      "name": "Quiz Step",
+      "name": "Quiz - Single Page App",
       "settings": {
-        "badge_text": "Personal Chair Recommendation",
-        "title": "Find your perfect massage chair",
-        "step_text": "Question 1 of 6",
-        "progress_percentage": 17,
-        "question_title": "What is your primary need?",
-        "question_subtitle": "Choose what matters most to you — this guides our recommendation.",
-        "question_key": "primary_need",
-        "next_step_url": ""
+        "badge_text": "Kişisel sandalye tavsiyesi",
+        "title": "Mükemmel masaj koltuğunuzu bulun",
+        "form_step_label": "NEREDEYSE BİTTİ",
+        "form_heading": "Önerinizi Alın",
+        "form_subheading": "Detaylarınızı girin, size özel eşleşmeyi gönderelim.",
+        "form_button_text": "ÖNERİMİ AL",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
