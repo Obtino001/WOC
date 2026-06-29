@@ -964,7 +964,7 @@
         "heading": "Not Sure Which Chair<br><span class=\"italic text-gold\">is Right for You?</span>",
         "description": "Take our 2-minute quiz or book a free showroom demo to experience the difference yourself.",
         "button_text": "Start the Quiz",
-        "button_link": "",
+        "button_link": "shopify://pages/quiz",
         "padding_top": 96,
         "padding_bottom": 96
       }
