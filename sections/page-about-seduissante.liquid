@@ -66,6 +66,33 @@
     </div>
   </section>
 
+  <section class="py-24 bg-white">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div style="opacity: 1; transform: none;">
+      <p class="font-body text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-6">{{ section.settings.pretitle }}</p>
+      <h2 class="font-display text-2xl md:text-3xl font-light text-neutral-800 mb-4">
+        {{ section.settings.title }}
+      </h2>
+      <p class="font-body text-sm text-neutral-500 leading-[1.9] mb-12">
+        {{ section.settings.description }}
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-8 mt-8">
+      {% for block in section.blocks %}
+        <div class="border border-neutral-100 p-8" {{ block.shopify_attributes }}>
+          <h3 class="font-display text-base font-semibold text-neutral-800 uppercase tracking-[0.08em] mb-3">
+            {{ block.settings.region_title }}
+          </h3>
+          <p class="font-body text-xs text-neutral-500 leading-relaxed">
+            {{ block.settings.countries }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 
 {% schema %}
 {
@@ -78,11 +105,22 @@
     { "type": "text", "id": "story_title", "label": "Story Title", "default": "HİKAYEMİZ" },
     { "type": "richtext", "id": "story_content", "label": "Story Content" },
     { "type": "text", "id": "stats_pretitle", "label": "Stats Pre-title" },
-    { "type": "text", "id": "stats_title", "label": "Stats Title" }
+    { "type": "text", "id": "stats_title", "label": "Stats Title" },
+    { "type": "text", "id": "pretitle", "label": "Pre-title", "default": "KÜRESEL VARLIK" },
+    { "type": "text", "id": "title", "label": "Title", "default": "BİZİ FARKLI KILAN NE — İNOVASYON VE GÜVENLİĞE BAĞLILIK" },
+    { "type": "textarea", "id": "description", "label": "Description" }
   ],
   "blocks": [
     { "type": "mission_card", "name": "Mission Card", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }] },
-    { "type": "stat", "name": "Stat", "settings": [{ "type": "text", "id": "stat_value", "label": "Value" }, { "type": "text", "id": "stat_label", "label": "Label" }] }
+    { "type": "stat", "name": "Stat", "settings": [{ "type": "text", "id": "stat_value", "label": "Value" }, { "type": "text", "id": "stat_label", "label": "Label" }] },
+    {
+      "type": "region",
+      "name": "Region Card",
+      "settings": [
+        { "type": "text", "id": "region_title", "label": "Region Title" },
+        { "type": "textarea", "id": "countries", "label": "Countries/Locations" }
+      ]
+    },
   ],
   "presets": [{ "name": "About Séduisante Section" }]
 }
