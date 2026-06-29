@@ -5,7 +5,7 @@
   }
 {% endstyle %}
 
-  <div class="container mx-auto px-4 max-w-3xl section-{{ section.id }}-padding">
+  <div class="container mx-auto px-4 max-w-3xl section-{{ section.id }}-padding woc-quiz-step-section">
     
     <div class="text-center mb-10 mt-4">
       <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-4 border" style="border-color: hsl(var(--gold) / 0.3); background: hsl(var(--gold) / 0.08);">
@@ -48,41 +48,93 @@
           </button>
         {% endfor %}
       </div>
+      
+      <!-- Previous Question Button -->
+      <button class="btn-prev-quiz mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+        Previous question
+      </button>
+
     </div>
 
   </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('#quiz-options-{{ section.id }} .quiz-option-btn');
-    const nextUrl = "{{ section.settings.next_step_url }}";
-    const questionKey = "{{ section.settings.question_key }}"; // e.g., 'primary_need'
+    const currentSection = document.getElementById('shopify-section-{{ section.id }}');
+    if (!currentSection) return;
     
+    // 1. Check if there is a previous quiz step section on this page
+    let prevSection = currentSection.previousElementSibling;
+    let hasPrevQuiz = false;
+    while (prevSection) {
+      if (prevSection.querySelector('.woc-quiz-step-section')) {
+        hasPrevQuiz = true;
+        break;
+      }
+      prevSection = prevSection.previousElementSibling;
+    }
+    
+    // 2. Hide this section initially if it's NOT the first quiz step
+    if (hasPrevQuiz) {
+      currentSection.style.display = 'none';
+    }
+    
+    const buttons = currentSection.querySelectorAll('.quiz-option-btn');
+    const nextUrl = "{{ section.settings.next_step_url }}";
+    const questionKey = "{{ section.settings.question_key }}";
+    
+    // 3. Handle Option Clicks
     buttons.forEach(button => {
       button.addEventListener('click', function(e) {
         e.preventDefault();
         
-        // 1. Get the value of the clicked option
         const selectedValue = this.getAttribute('data-value');
-        
-        // 2. Save it to sessionStorage so it persists across pages
         let quizData = JSON.parse(sessionStorage.getItem('woc_quiz_data') || '{}');
         quizData[questionKey] = selectedValue;
         sessionStorage.setItem('woc_quiz_data', JSON.stringify(quizData));
         
-        // 3. Add a slight visual feedback (fade out slightly to indicate loading)
-        this.style.opacity = '0.6';
+        // Find if there is another quiz step section AFTER this one
+        let nextSection = currentSection.nextElementSibling;
+        let hasNextQuiz = false;
+        while (nextSection) {
+          if (nextSection.querySelector('.woc-quiz-step-section')) {
+            hasNextQuiz = true;
+            break;
+          }
+          nextSection = nextSection.nextElementSibling;
+        }
         
-        // 4. Redirect to the next step
-        if (nextUrl && nextUrl !== '') {
-          window.location.href = nextUrl;
+        // Auto-advance to the next section if it exists on the same page!
+        if (hasNextQuiz) {
+           currentSection.style.display = 'none';
+           nextSection.style.display = 'block';
+           window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (nextUrl && nextUrl !== '') {
+           // Otherwise, navigate to the URL
+           window.location.href = nextUrl;
         } else {
-          console.warn("Next Step URL is not configured in the theme editor.");
-          alert("Choice saved! Please configure a Next URL in the Theme Editor to proceed.");
-          this.style.opacity = '1'; // Revert opacity if no redirect
+           alert("Choice saved! Please configure a Next URL in the Theme Editor for the final step.");
         }
       });
     });
+    
+    // 4. Handle Previous Button
+    const prevBtn = currentSection.querySelector('.btn-prev-quiz');
+    if (prevBtn) {
+       if (!hasPrevQuiz) {
+         prevBtn.style.display = 'none'; // Hide button if it's the first step
+       } else {
+         prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (prevSection) {
+               currentSection.style.display = 'none';
+               prevSection.style.display = 'block';
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+         });
+       }
+    }
   });
 </script>
 
