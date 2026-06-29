@@ -90,106 +90,6 @@
         "stats_title": "Kanıtlanmış Sonuçlar"
       }
     },
-    "story_split": {
-      "type": "sed-image-text-split",
-      "settings": {
-        "image_position": "right",
-        "kicker": "BORN IN SCANDINAVIA",
-        "heading": "Where Beauty\nBecomes Timeless",
-        "description": "Séduisante is where craftsmanship, innovation, and science converge.\n\nAdvanced skincare, engineered for results. Defined by luxury.",
-        "btn_text": "DISCOVER OUR STORY",
-        "btn_link": "/pages/our-story"
-      }
-    },
-    "devices_grid": {
-      "type": "sed-product-grid",
-      "blocks": {
-        "d1": {
-          "type": "product",
-          "settings": {
-            "title": "Anti-Aging & Wrinkles",
-            "product_url": "/products/boss-lady"
-          }
-        },
-        "d2": {
-          "type": "product",
-          "settings": {
-            "title": "Firming & Lifting",
-            "product_url": "/products/nefertiti"
-          }
-        },
-        "d3": {
-          "type": "product",
-          "settings": {
-            "title": "Hydration & Radiance",
-            "product_url": "/products/eyepads"
-          }
-        },
-        "d4": {
-          "type": "product",
-          "settings": {
-            "title": "Brightening & Dark Circles",
-            "product_url": "/products/clean-my-soul"
-          }
-        }
-      },
-      "block_order": [
-        "d1",
-        "d2",
-        "d3",
-        "d4"
-      ],
-      "settings": {
-        "section_id": "devices-section",
-        "kicker": "CUTTING-EDGE TECHNOLOGY",
-        "columns": 3
-      }
-    },
-    "skincare_grid": {
-      "type": "sed-product-grid",
-      "blocks": {
-        "s1": {
-          "type": "product",
-          "settings": {
-            "title": "OUR STORY",
-            "product_url": "/pages/our-story"
-          }
-        },
-        "s2": {
-          "type": "product",
-          "settings": {
-            "title": "AWARDS",
-            "product_url": "/pages/awards"
-          }
-        },
-        "s3": {
-          "type": "product",
-          "settings": {
-            "title": "LOVED BY",
-            "product_url": "/pages/loved-by"
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ],
-      "settings": {
-        "section_id": "skincare-section",
-        "kicker": "HIGH PERFORMANCE SKINCARE",
-        "columns": 3
-      }
-    },
-    "newsletter": {
-      "type": "sed-newsletter",
-      "settings": {
-        "heading": "Luxury in your inbox.",
-        "description": "Be the first to know about new collections, innovations, exclusive events and more.",
-        "placeholder": "E-mail",
-        "btn_text": "Subscribe"
-      }
-    },
     "trusted_by": {
       "type": "sed-trusted-by",
       "blocks": {
@@ -390,10 +290,6 @@
   "order": [
     "main",
     "seduissante_story_hero",
-    "story_split",
-    "devices_grid",
-    "skincare_grid",
-    "newsletter",
     "trusted_by",
     "awards",
     "testimonials",
