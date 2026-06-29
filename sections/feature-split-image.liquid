@@ -40,9 +40,9 @@
       <div class="relative">
         <div class="aspect-square bg-card rounded-sm overflow-hidden border border-border">
           {% if section.settings.image != blank %}
-             {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-contain p-10', loading: 'lazy' }}
+             {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full h-full object-contain', loading: 'lazy' }}
           {% else %}
-             {{ 'product-2' | placeholder_svg_tag: 'w-full h-full object-contain p-10 bg-gray-100' }}
+             {{ 'product-2' | placeholder_svg_tag: 'w-full h-full object-contain  bg-gray-100' }}
           {% endif %}
         </div>
         <div class="absolute -top-3 -right-3 w-16 h-16 border-t-2 border-r-2 border-gold/30"></div>
