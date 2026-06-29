@@ -16,9 +16,78 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "quiz_step_one_cTMhwT": {
+      "type": "quiz-step-one",
+      "blocks": {
+        "option_MzJeF6": {
+          "type": "option",
+          "settings": {
+            "emoji": "🩺",
+            "title": "Back and neck pain relief",
+            "subtitle": "Deep medical massage",
+            "internal_value": "pain_relief"
+          }
+        },
+        "option_qhyKQq": {
+          "type": "option",
+          "settings": {
+            "emoji": "🧘",
+            "title": "Stress and anxiety reduction",
+            "subtitle": "Relaxation and mental well-being",
+            "internal_value": "stress_reduction"
+          }
+        },
+        "option_HbxmXV": {
+          "type": "option",
+          "settings": {
+            "emoji": "💪",
+            "title": "Sports recovery & circulation",
+            "subtitle": "Faster recovery after training",
+            "internal_value": "sports_recovery"
+          }
+        },
+        "option_83R8QG": {
+          "type": "option",
+          "settings": {
+            "emoji": "✨",
+            "title": "Premium relaxation at home",
+            "subtitle": "Daily luxury and well-being",
+            "internal_value": "premium_relaxation"
+          }
+        },
+        "option_ethtxP": {
+          "type": "option",
+          "settings": {
+            "emoji": "👴",
+            "title": "Mobility & elder care",
+            "subtitle": "Gentle therapy for seniors",
+            "internal_value": "elder_care"
+          }
+        }
+      },
+      "block_order": [
+        "option_MzJeF6",
+        "option_qhyKQq",
+        "option_HbxmXV",
+        "option_83R8QG",
+        "option_ethtxP"
+      ],
+      "name": "Quiz Step",
+      "settings": {
+        "badge_text": "Personal Chair Recommendation",
+        "title": "Find your perfect massage chair",
+        "step_text": "Question 1 of 6",
+        "progress_percentage": 17,
+        "question_title": "What is your primary need?",
+        "question_subtitle": "Choose what matters most to you — this guides our recommendation.",
+        "question_key": "primary_need",
+        "next_step_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "quiz_step_one_cTMhwT"
   ]
 }
