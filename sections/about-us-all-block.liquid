@@ -1,55 +1,6 @@
 
   <!-- Breadcrumbs -->
-  <nav aria-label="İçerik Haritası" class="container mx-auto px-4 lg:px-8 py-3" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-    <ol class="flex items-center gap-1.5 font-body text-[11px] text-muted-foreground">
-      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="flex items-center gap-1.5">
-        <a itemprop="item" class="flex items-center gap-1 hover:text-foreground transition-colors" href="{{ routes.root_url }}">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
-          <span itemprop="name">{{ section.settings.home_text | default: 'Ana Sayfa' }}</span>
-        </a>
-        <meta itemprop="position" content="1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 text-muted-foreground/50"><path d="m9 18 6-6-6-6"></path></svg>
-      </li>
-      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="flex items-center">
-        <span itemprop="name" class="text-foreground font-medium">{{ section.settings.current_page_text | default: page.title }}</span>
-        <link itemprop="item" href="{{ request.path }}">
-        <meta itemprop="position" content="2">
-      </li>
-    </ol>
-  </nav>
 
-  <!-- Hero Section -->
-  <header class="relative min-h-[80vh] flex items-center overflow-hidden" role="banner">
-    <div class="absolute inset-0" bis_skin_checked="1">
-      {% if section.settings.hero_image != blank %}
-        {{ section.settings.hero_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}
-      {% else %}
-        <img src="/assets/about-hero-DjV7g7iK.jpg" alt="World of Comfort premium wellness showroom" class="w-full h-full object-cover" loading="eager">
-      {% endif %}
-      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-transparent" bis_skin_checked="1"></div>
-    </div>
-    <div class="container mx-auto px-4 lg:px-8 relative z-10 py-24" bis_skin_checked="1">
-      <div class="max-w-2xl" bis_skin_checked="1" style="opacity: 1; transform: none;">
-        <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-6">{{ section.settings.hero_preheading }}</p>
-        <h1 class="font-display text-4xl md:text-5xl lg:text-7xl font-light text-secondary leading-[1.05] mb-6">
-          {{ section.settings.hero_heading }}
-        </h1>
-        <p class="font-body text-lg text-secondary/70 mb-10 max-w-xl leading-relaxed">{{ section.settings.hero_text }}</p>
-        
-        <div class="flex flex-col sm:flex-row gap-4" bis_skin_checked="1">
-          {% if section.settings.hero_btn_1_text != blank %}
-            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 gradient-gold text-charcoal font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10 py-6" href="{{ section.settings.hero_btn_1_link }}">{{ section.settings.hero_btn_1_text }}</a>
-          {% endif %}
-          {% if section.settings.hero_btn_2_text != blank %}
-            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border-2 font-semibold hover:border-gold transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 border-secondary/30 text-secondary hover:bg-secondary hover:text-charcoal" href="{{ section.settings.hero_btn_2_link }}">{{ section.settings.hero_btn_2_text }}</a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary/40" bis_skin_checked="1" style="transform: translateY(7.64723px);">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-6 h-6"><path d="m6 9 6 6 6-6"></path></svg>
-    </div>
-  </header>
 
   <!-- Statistics Section (Blocks) -->
   <section class="py-16 bg-linen border-b border-border" aria-label="Temel istatistikler" itemscope="" itemtype="https://schema.org/Organization">
