@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "main": {
+  "main": {
       "type": "main-product-wellness",
       "blocks": {
         "rating": {
