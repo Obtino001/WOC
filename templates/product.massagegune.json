@@ -137,11 +137,11 @@
         "accordion_included"
       ],
       "settings": {
-        "show_breadcrumbs": false,
+        "show_breadcrumbs": true,
         "breadcrumb_home_label": "Ana Sayfa",
         "enable_sticky_info": true,
         "show_sale_badge": true,
-        "sale_badge_prefix": "-",
+        "sale_badge_prefix": "",
         "background_color": "#ffffff",
         "text_color": "#171717",
         "gallery_background": "#ffffff",
