@@ -10,12 +10,29 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "disabled": true,
+      "type": "awards-seduissante",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
+        "hero_title": "Tanındı, Kutlandı ve Ödüllendirildi",
+        "hero_subtext": "Mükemmellik sicilimiz",
+        "intro_pretitle": "ÖDÜLLÜ YOLCULUĞUMUZ",
+        "intro_text": "Ödüllü, gelişmiş cilt bakımı teknolojilerimizle güzelliğin geleceğini deneyimleyin — nasıl göründüğünüz ve hissettiğinizi iyileştirmek ve dönüştürmek için tasarlandı.",
+        "cta_pretitle": "KOLEKSİYONUMUZU KEŞFEDİN",
+        "cta_title": "Ödüllü ürünleri kendiniz deneyimleyin",
+        "btn_1_text": "TÜM ÜRÜNLERİ GÖRÜN",
+        "btn_1_url": "/tr/beauty-technology",
+        "btn_2_text": "SHOWROOM'U ZİYARET EDİN",
+        "btn_2_url": "/tr/showrooms"
+      },
+      "blocks": {
+        "year_2025": { "type": "year_group", "settings": { "year": "2025" } },
+        "year_2024": { "type": "year_group", "settings": { "year": "2024" } },
+        "year_2023": { "type": "year_group", "settings": { "year": "2023" } }
+      },
+      "block_order": [
+        "year_2025",
+        "year_2024",
+        "year_2023"
+      ]
     }
   },
   "order": [
