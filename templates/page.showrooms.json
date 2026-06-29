@@ -66,7 +66,7 @@
             "address": "Bahçelievler Mah. Ali Reşat Paşa Sok. No:14 A, Istanbul",
             "hours": "Monday – Saturday: 10:00 – 20:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/turkey"
+            "link": "shopify://pages/turkey"
           }
         },
         "ankara": {
