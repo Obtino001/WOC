@@ -282,23 +282,26 @@
           "settings": {
             "tab_title": "Ultrasonik",
             "heading": "Ultrasonik Teknoloji",
-            "text": ""
+            "text": "Clean My Soul uses Ultrasonic technology — a high-frequency vibration technology created through sound waves. The device helps open pores so dirt and impurities are vibrated and scrubbed away with rapid movements. Ultrasonic is also known from the medical world — used in scans and dental treatments to remove bacteria and tartar.\n\n24,000 vibrations/second\nOpens pores\nRemoves impurities and dirt",
+            "image": "shopify://shop_images/sed-clean-my-soul-feature1-Ce8zlaEr.jpg"
           }
         },
         "tab_UAQyBL": {
           "type": "tab",
           "settings": {
-            "tab_title": "Ultrasonik",
-            "heading": "Ultrasonik Teknoloji",
-            "text": ""
+            "tab_title": "Kullanım",
+            "heading": "1 Cihazda 3 Yöntem",
+            "text": "Clean My Soul'un 3 farklı yöntemi vardır. Cihazı ürünle veya ürünsüz kullanabilirsiniz, ancak cildiniz daima suyla yıkanmış olmalıdır. Ürün 3 basit adımdan oluşur: Temizler, Nemlendirir ve Kaldırır. Derinlemesine temizlemeye, serumu cilde derinlemesine nüfuz ettirmeye ve cildi kaldırmaya ve sıkılaştırmaya yardımcı olur.\n\nTemizleme – derinlemesine temizlik\nNem – serum nüfuzu\nKaldırma – cilt sıkılaştırma",
+            "image": "shopify://shop_images/sed-clean-my-soul-product-BuPHupDT.jpg"
           }
         },
         "tab_cCmbp9": {
           "type": "tab",
           "settings": {
-            "tab_title": "Ultrasonik",
-            "heading": "Ultrasonik Teknoloji",
-            "text": ""
+            "tab_title": "Temizleme",
+            "heading": "Cleansing Method",
+            "text": "We recommend using the cleansing method 2-3 times per week. Your skin needs rest too, so no need for deep cleansing every day. You can still use the moisture and lifting functions daily. Wash your face with lukewarm water. Use the device with the spatula forming a triangle pointing upward. Let the device work on its own with light pressure.",
+            "image": "shopify://shop_images/sed-clean-my-soul-m-rV3p0I_3.jpg"
           }
         }
       },
@@ -317,8 +320,8 @@
         "review_zhLEd8": {
           "type": "review",
           "settings": {
-            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
-            "author": "LUTFIYE KALELI"
+            "quote": "\"Harika ve yetkin müşteri hizmetleri. Aradığımda çok naziktiler — kesinlikle tavsiye ederim.\"",
+            "author": "Tine Bjerregaard"
           }
         },
         "review_tC8LRH": {
@@ -331,21 +334,21 @@
         "review_QYbi4x": {
           "type": "review",
           "settings": {
-            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
-            "author": "LUTFIYE KALELI"
+            "quote": "\"Hemen sonuç verdi\"",
+            "author": "Anne-Sofie Nielsen"
           }
         },
         "review_AfDXAh": {
           "type": "review",
           "settings": {
-            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
-            "author": "LUTFIYE KALELI"
+            "quote": "\"Çok memnunum\"",
+            "author": "Josefine"
           }
         },
         "review_NW7bHN": {
           "type": "review",
           "settings": {
-            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "quote": "ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
             "author": "LUTFIYE KALELI"
           }
         },
