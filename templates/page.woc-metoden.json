@@ -11,6 +11,46 @@
   "sections": {
     "woc_hero_meta_Tzejen": {
       "type": "woc-hero-meta",
+      "blocks": {
+        "stat_EjP8nz": {
+          "type": "stat",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-brain w-5 h-5 mx-auto mb-3\" style=\"color: rgb(194, 139, 36);\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
+            "value": "−27%",
+            "label": "Azalan kortizol"
+          }
+        },
+        "stat_NDBzf3": {
+          "type": "stat",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart-pulse w-5 h-5 mx-auto mb-3\" style=\"color: rgb(194, 139, 36);\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
+            "value": "−12%",
+            "label": "Daha düşük dinlenik nabız"
+          }
+        },
+        "stat_tzqFxF": {
+          "type": "stat",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity w-5 h-5 mx-auto mb-3\" style=\"color: rgb(194, 139, 36);\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
+            "value": "−21%",
+            "label": "Daha az devamsızlık"
+          }
+        },
+        "stat_DGBKFQ": {
+          "type": "stat",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-trending-down w-5 h-5 mx-auto mb-3\" style=\"color: rgb(194, 139, 36);\"><polyline points=\"22 17 13.5 8.5 8.5 13.5 2 7\"></polyline><polyline points=\"16 17 22 17 22 11\"></polyline></svg>",
+            "value": "−27%",
+            "label": "Azalan kortizol"
+          }
+        }
+      },
+      "block_order": [
+        "stat_EjP8nz",
+        "stat_NDBzf3",
+        "stat_tzqFxF",
+        "stat_DGBKFQ"
+      ],
       "name": "WOC Hero meta",
       "settings": {
         "badge_text": "WOC Yöntemi®",
