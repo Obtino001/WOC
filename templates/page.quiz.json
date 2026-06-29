@@ -1,4 +1,13 @@
-﻿{
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -20,7 +29,9 @@
             "option_1": "Stres Azaltma",
             "option_2": "Sırt Ağrısı Giderme",
             "option_3": "İyileşme ve Performans",
-            "option_4": "Genel İyilik Hali"
+            "option_4": "Genel İyilik Hali",
+            "option_5": "",
+            "option_6": ""
           }
         },
         "q2": {
@@ -32,7 +43,9 @@
             "option_1": "Bel",
             "option_2": "Boyun ve Omuzlar",
             "option_3": "Bacaklar ve Ayaklar",
-            "option_4": "Tüm Vücut Yorgunluğu"
+            "option_4": "Tüm Vücut Yorgunluğu",
+            "option_5": "",
+            "option_6": ""
           }
         },
         "q3": {
@@ -44,7 +57,9 @@
             "option_1": "165 cm altı",
             "option_2": "165 - 180 cm",
             "option_3": "180 - 188 cm",
-            "option_4": "188 cm üstü"
+            "option_4": "188 cm üstü",
+            "option_5": "",
+            "option_6": ""
           }
         },
         "q4": {
@@ -56,7 +71,9 @@
             "option_1": "2 saatten az",
             "option_2": "2 - 4 saat",
             "option_3": "4 - 6 saat",
-            "option_4": "6+ saat"
+            "option_4": "6+ saat",
+            "option_5": "",
+            "option_6": ""
           }
         },
         "q5": {
@@ -68,7 +85,9 @@
             "option_1": "Nazik ve Rahatlatıcı",
             "option_2": "Orta Baskı",
             "option_3": "Derin Doku / Yoğun",
-            "option_4": "Değişken Yoğunluk"
+            "option_4": "Değişken Yoğunluk",
+            "option_5": "",
+            "option_6": ""
           }
         },
         "q6": {
@@ -80,7 +99,9 @@
             "option_1": "Evet, kesinlikle",
             "option_2": "Belki daha sonra",
             "option_3": "Hayır, çevrimiçi karar vereceğim",
-            "option_4": ""
+            "option_4": "",
+            "option_5": "",
+            "option_6": ""
           }
         }
       },
@@ -94,7 +115,6 @@
       ],
       "name": "Multi-Step Quiz",
       "settings": {
-        "form_step_label": "NEREDEYSE BİTTİ",
         "form_heading": "Önerinizi Alın",
         "form_subheading": "Detaylarınızı girin, size özel eşleşmeyi gönderelim.",
         "form_button_text": "ÖNERİMİ AL"
