@@ -1,0 +1,205 @@
+
+  <section class="relative h-[80vh] min-h-[500px] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      {% if section.settings.hero_image != blank %}
+        {{ section.settings.hero_image | image_url: width: 1920 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}
+      {% endif %}
+      <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/30 via-neutral-900/10 to-neutral-900/60"></div>
+    </div>
+    <div class="relative z-10 container mx-auto px-4">
+      <div class="max-w-xl ml-auto text-center lg:text-right">
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-[0.08em]">{{ section.settings.hero_title }}</h1>
+        <div class="my-6 flex justify-center lg:justify-end">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none"><path d="M24 4L26 20L24 22L22 20L24 4Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M24 44L22 28L24 26L26 28L24 44Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M4 24L20 22L22 24L20 26L4 24Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M44 24L28 26L26 24L28 22L44 24Z" fill="hsl(36 72% 45%)" opacity="0.8"></path></svg>
+        </div>
+        <h2 class="font-display text-2xl md:text-3xl font-light text-white uppercase tracking-[0.06em]">{{ section.settings.hero_subtitle }}</h2>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-white/40 animate-bounce"><path d="m6 9 6 6 6-6"></path></svg>
+    </div>
+  </section>
+
+  <!-- Explanations -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="mb-20">
+        <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 mb-8"><span class="font-semibold">{{ section.settings.led_title_span }}</span> {{ section.settings.led_title }}</h2>
+        <div class="space-y-5 font-body text-sm text-neutral-600 leading-[1.9]">
+          {{ section.settings.led_content }}
+        </div>
+      </div>
+      <div>
+        <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 mb-8"><span class="font-semibold">{{ section.settings.ir_title_span }}</span> {{ section.settings.ir_title }}</h2>
+        <div class="space-y-5 font-body text-sm text-neutral-600 leading-[1.9]">
+          {{ section.settings.ir_content }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Penetration Diagram -->
+  <section class="py-20 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="font-display text-2xl md:text-3xl font-light text-neutral-800 mb-4 uppercase tracking-[0.06em]">{{ section.settings.penetration_title }}</h2>
+      <p class="font-body text-sm text-neutral-500 mb-12 max-w-xl mx-auto leading-relaxed">{{ section.settings.penetration_desc }}</p>
+      {% if section.settings.penetration_image != blank %}
+        {{ section.settings.penetration_image | image_url: width: 1200 | image_tag: class: 'w-full max-w-3xl mx-auto rounded-lg', loading: 'lazy' }}
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Benefits Grid -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 uppercase tracking-[0.06em]">{{ section.settings.benefits_title }}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-neutral-100">
+        {% for block in section.blocks %}
+          {% if block.type == 'benefit' %}
+            <div class="bg-white p-8 md:p-10" {{ block.shopify_attributes }}>
+              <h3 class="font-display text-base font-semibold text-neutral-800 uppercase tracking-[0.08em] mb-3">{{ block.settings.title }}</h3>
+              <p class="font-body text-sm text-neutral-500 leading-[1.8]">{{ block.settings.content }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Color/Mode Section -->
+  <section class="py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="text-center mb-20">
+        <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 uppercase tracking-[0.06em] mb-6">{{ section.settings.modes_title }}</h2>
+        <p class="font-body text-sm text-neutral-500 max-w-xl mx-auto leading-relaxed">{{ section.settings.modes_desc }}</p>
+      </div>
+      
+      <div class="flex justify-center gap-4 md:gap-8 mb-16">
+        {% for block in section.blocks %}
+          {% if block.type == 'mode' %}
+            <a href="#{{ block.settings.id }}" class="text-center group">
+              <div class="w-10 h-10 md:w-14 md:h-14 rounded-full mx-auto mb-2 transition-transform group-hover:scale-110 ring-2 ring-offset-2 ring-transparent group-hover:ring-current" style="background-color: {{ block.settings.color }};"></div>
+              <span class="font-body text-[10px] uppercase tracking-[0.15em] text-neutral-500">{{ block.settings.title }}</span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="space-y-20">
+        {% for block in section.blocks %}
+          {% if block.type == 'mode' %}
+            <div id="{{ block.settings.id }}" class="scroll-mt-24">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-3 h-3 rounded-full" style="background-color: {{ block.settings.color }};"></div>
+                <div>
+                  <h3 class="font-display text-2xl font-light text-neutral-800">{{ block.settings.title }}</h3>
+                  <p class="font-body text-[11px] uppercase tracking-[0.2em] text-neutral-400">{{ block.settings.spec }}</p>
+                </div>
+              </div>
+              <p class="font-body text-sm text-neutral-600 leading-[1.9] mb-6">{{ block.settings.content }}</p>
+              <div class="pl-4 border-l-2" style="border-color: {{ block.settings.color }};">
+                <p class="font-body text-[11px] uppercase tracking-[0.15em] text-neutral-400 mb-3">Faydaları şunlardır:</p>
+                <ul class="space-y-2">
+                  {{ block.settings.benefits_list }}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+      <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 mb-4 uppercase tracking-[0.06em]">{{ section.settings.products_title }}</h2>
+      <p class="font-body text-sm text-neutral-500 mb-10 max-w-lg mx-auto leading-relaxed">{{ section.settings.products_desc }}</p>
+      <div class="grid grid-cols-3 gap-px bg-neutral-100 max-w-2xl mx-auto mb-12">
+        {% for block in section.blocks %}
+          {% if block.type == 'product' %}
+            <a class="bg-white group" href="{{ block.settings.url }}">
+              <div class="aspect-square bg-[#f5f5f3] overflow-hidden">
+                {{ block.settings.image | image_url: width: 400 | image_tag: class: 'w-full h-full object-contain p-6 transition-transform duration-[2s] group-hover:scale-105', loading: 'lazy' }}
+              </div>
+              <p class="font-display text-[11px] uppercase tracking-[0.12em] text-neutral-700 py-3 text-center">{{ block.settings.title }}</p>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <a class="inline-flex items-center justify-center py-2 bg-neutral-900 hover:bg-neutral-800 text-white uppercase tracking-[0.15em] text-[11px] rounded-none px-12 h-12" href="{{ section.settings.products_btn_url }}">
+        {{ section.settings.products_btn_text }}
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-2xl md:text-3xl font-light text-neutral-800 uppercase tracking-[0.06em]">{{ section.settings.faq_title }}</h2>
+      </div>
+      <div class="space-y-px bg-neutral-200">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq' %}
+            <details class="bg-white group">
+              <summary class="px-6 md:px-8 py-5 cursor-pointer flex items-center justify-between font-display text-sm font-light text-neutral-800 uppercase tracking-[0.06em] list-none">
+                {{ block.settings.question }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-4 h-4 text-neutral-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4"><path d="m6 9 6 6 6-6"></path></svg>
+              </summary>
+              <div class="px-6 md:px-8 pb-6">
+                <p class="font-body text-sm text-neutral-600 leading-[1.9]">{{ block.settings.answer }}</p>
+              </div>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+
+{% schema %}
+{
+  "name": "LED Therapy Content",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    { "type": "image_picker", "id": "hero_image", "label": "Image" },
+    { "type": "text", "id": "hero_title", "label": "Title", "default": "LED Açıklandı" },
+    { "type": "text", "id": "hero_subtitle", "label": "Subtitle", "default": "NEDEN IŞIK YOLU DOĞRU YOL?" },
+    { "type": "header", "content": "Explanations" },
+    { "type": "text", "id": "led_title_span", "label": "LED Title Bold Part", "default": "LED" },
+    { "type": "text", "id": "led_title", "label": "LED Title", "default": "AÇIKLANDI" },
+    { "type": "richtext", "id": "led_content", "label": "LED Content" },
+    { "type": "text", "id": "ir_title_span", "label": "IR Title Bold Part", "default": "KIZILÖTESİ" },
+    { "type": "text", "id": "ir_title", "label": "IR Title", "default": "AÇIKLANDI" },
+    { "type": "richtext", "id": "ir_content", "label": "IR Content" },
+    { "type": "header", "content": "Penetration" },
+    { "type": "text", "id": "penetration_title", "label": "Title", "default": "LED IŞIK NÜFUZ DERİNLİĞİ" },
+    { "type": "textarea", "id": "penetration_desc", "label": "Description" },
+    { "type": "image_picker", "id": "penetration_image", "label": "Diagram Image" },
+    { "type": "header", "content": "Benefits" },
+    { "type": "text", "id": "benefits_title", "label": "Title", "default": "FAYDALARI LED TERAPİSİ" },
+    { "type": "header", "content": "Modes" },
+    { "type": "text", "id": "modes_title", "label": "Title", "default": "NEDEN KULLANMALI LED TERAPİSİ" },
+    { "type": "textarea", "id": "modes_desc", "label": "Description" },
+    { "type": "header", "content": "Products" },
+    { "type": "text", "id": "products_title", "label": "Title" },
+    { "type": "textarea", "id": "products_desc", "label": "Description" },
+    { "type": "text", "id": "products_btn_text", "label": "Button Text" },
+    { "type": "url", "id": "products_btn_url", "label": "Button URL" },
+    { "type": "header", "content": "FAQ" },
+    { "type": "text", "id": "faq_title", "label": "FAQ Section Title" }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Benefit", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "textarea", "id": "content", "label": "Content" }] },
+    { "type": "mode", "name": "Mode/Color", "settings": [{ "type": "text", "id": "id", "label": "HTML ID (e.g. led-red)" }, { "type": "color", "id": "color", "label": "Color" }, { "type": "text", "id": "title", "label": "Title" }, { "type": "text", "id": "spec", "label": "Specification" }, { "type": "textarea", "id": "content", "label": "Description" }, { "type": "richtext", "id": "benefits_list", "label": "Benefits List (Use UL)" }] },
+    { "type": "product", "name": "Product", "settings": [{ "type": "image_picker", "id": "image", "label": "Image" }, { "type": "text", "id": "title", "label": "Title" }, { "type": "url", "id": "url", "label": "URL" }] },
+    { "type": "faq", "name": "FAQ Item", "settings": [{ "type": "text", "id": "question", "label": "Question" }, { "type": "textarea", "id": "answer", "label": "Answer" }] }
+  ],
+  "presets": [{ "name": "LED Therapy Page", "blocks": [
+    { "type": "benefit" }, { "type": "mode" }, { "type": "product" }, { "type": "faq" }
+  ]}]
+}
+{% endschema %}
