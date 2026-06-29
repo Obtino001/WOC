@@ -35,9 +35,9 @@
 {% endif %}
       {% for product in target_collection.products limit: section.settings.limit %}
         
-        <a class="block h-full" href="{{ product.url }}">
-          <div class="group bg-white rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 relative border border-neutral-100 h-full flex flex-col">
-            
+        <div class="group bg-white rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 relative border border-neutral-100 h-full flex flex-col">
+          
+          <a href="{{ product.url }}" class="block relative z-10">
             <div class="absolute top-3 left-3 z-10 flex gap-1.5">
               {% if product.metafields.custom.product_tags != blank %}
                 <span class="bg-neutral-900 text-white font-body text-[10px] font-bold px-2.5 py-1 rounded-sm uppercase tracking-wide">{{ product.metafields.custom.product_tags }}</span>
@@ -45,7 +45,7 @@
                 <span class="bg-neutral-900 text-white font-body text-[10px] font-bold px-2.5 py-1 rounded-sm uppercase tracking-wide">BESTSELLER</span>
               {% endif %}
               {% if product.compare_at_price > product.price %}
-                <span class="bg-copper text-white font-body text-[10px] font-bold px-2.5 py-1 rounded-sm">Tilbud</span>
+                <span class="bg-[#d97736] text-white font-body text-[10px] font-bold px-2.5 py-1 rounded-sm">Offer</span>
               {% endif %}
             </div>
 
@@ -56,64 +56,76 @@
                 {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-contain p-4' }}
               {% endif %}
             </div>
+          </a>
 
-            <div class="p-4 bg-white flex flex-col flex-1">
+          <div class="p-4 bg-white flex flex-col flex-1">
+            <a href="{{ product.url }}" class="block hover:opacity-80 transition-opacity">
               <div class="flex items-center gap-1 mb-2">
                 {% for i in (1..5) %}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 fill-copper text-copper"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 fill-[#d97736] text-[#d97736]"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
                 {% endfor %}
                 <span class="font-body text-[11px] text-neutral-500 ml-1">
                   {% if product.metafields.custom.reviews != blank %}
                     {{ product.metafields.custom.reviews }}
                   {% else %}
-                    {{ product.metafields.reviews.rating.value | default: '4.7' }} ({{ product.metafields.reviews.rating_count.value | default: '102' }} reviews)
+                    {{ product.metafields.reviews.rating.value | default: '4.7' }} out of {{ product.metafields.reviews.rating_count.value | default: '102' }} reviews
                   {% endif %}
                 </span>
               </div>
               
-              <h3 class="font-body text-base font-bold text-neutral-900 mb-1 line-clamp-2 leading-tight min-h-[2.5rem]">{{ product.title | default: 'Product Title' }}</h3>
+              <h3 class="font-body text-sm font-bold text-neutral-900 mb-1 line-clamp-2 leading-tight min-h-[2.5rem]">{{ product.title | default: 'Product Title' }}</h3>
               
               <div class="flex items-baseline gap-2 mb-2">
-                <span class="font-body text-lg font-bold text-neutral-900">{{ product.price | default: 12100 | money }}</span>
+                <span class="font-body text-base font-bold text-neutral-900">{{ product.price | default: 12100 | money }}</span>
                 {% if product.compare_at_price > product.price %}
-                  <span class="font-body text-sm text-neutral-400 line-through">{{ product.compare_at_price | money }}</span>
+                  <span class="font-body text-xs text-neutral-400 line-through">{{ product.compare_at_price | money }}</span>
                   {% assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round %}
-                  <span class="font-body text-xs font-semibold text-copper">Spar {{ savings }}%</span>
+                  <span class="font-body text-[10px] font-semibold text-[#d97736]">Save {{ savings }}%</span>
                 {% endif %}
               </div>
-              
-              <ul class="space-y-1 mb-3 flex-1 min-h-[5.5rem]">
-                {% assign features_string = product.metafields.custom.products_usps.value | join: ',' | default: product.metafields.custom.products_usps.value %}
-                {% if features_string != blank %}
-                  {% assign features = features_string | split: ',' %}
-                  {% for feature in features limit: 4 %}
-                    <li class="flex items-start gap-1.5">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
-                      <span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">{{ feature | strip }}</span>
-                    </li>
-                  {% endfor %}
-                {% else %}
-                  <li class="flex items-start gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">Smart Pressure Technology</span></li>
-                  <li class="flex items-start gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="font-body text-[11px] text-neutral-600 leading-tight line-clamp-1">3200 strokes/min</span></li>
-                {% endif %}
-              </ul>
-              
-              {% if product.available != false %}
-                <div class="flex items-center gap-1.5 mb-3">
-                  <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span>
-                  <span class="font-body text-xs font-semibold text-emerald-600">På lager · Sendes i dag</span>
-                </div>
-                <button class="w-full bg-copper hover:bg-copper-hover text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider mt-auto transition-all duration-300">KØB HER</button>
+            </a>
+            
+            <ul class="space-y-1 mb-3 flex-1 min-h-[5.5rem]">
+              {% assign features_string = product.metafields.custom.products_usps.value | join: ',' | default: product.metafields.custom.products_usps.value %}
+              {% if features_string != blank %}
+                {% assign features = features_string | split: ',' %}
+                {% for feature in features limit: 4 %}
+                  <li class="flex items-start gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-[#d97736] flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <span class="font-body text-[10px] text-neutral-600 leading-tight line-clamp-1">{{ feature | strip }}</span>
+                  </li>
+                {% endfor %}
               {% else %}
-                <div class="flex items-center gap-1.5 mb-3">
-                  <span class="relative flex h-2 w-2"><span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span></span>
-                  <span class="font-body text-xs font-semibold text-amber-600">Midlertidigt udsolgt</span>
-                </div>
-                <button class="w-full border border-neutral-300 text-neutral-600 font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider mt-auto" disabled>UDSOLGT</button>
+                <li class="flex items-start gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-[#d97736] flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="font-body text-[10px] text-neutral-600 leading-tight line-clamp-1">Smart Pressure Technology</span></li>
+                <li class="flex items-start gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 text-[#d97736] flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="font-body text-[10px] text-neutral-600 leading-tight line-clamp-1">3200 strokes/min</span></li>
               {% endif %}
-            </div>
+            </ul>
+            
+            {% if product.available != false %}
+              <div class="flex items-center gap-1.5 mb-3">
+                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span>
+                <span class="font-body text-xs font-semibold text-emerald-600">På lager · Sendes i dag</span>
+              </div>
+              <a href="{{ product.url }}" class="w-full bg-[#d97736] hover:bg-[#c2682e] text-white font-body text-sm font-bold py-2.5 rounded-lg h-auto uppercase tracking-wider mt-auto transition-all duration-300 text-center block">KØB HER</a>
+            {% else %}
+              <div class="flex items-center gap-1.5 mb-3">
+                <span class="relative flex h-2 w-2"><span class="relative inline-flex rounded-full h-2 w-2 bg-[#d97736]"></span></span>
+                <span class="font-body text-[11px] font-bold text-[#d97736]">Temporarily out of stock</span>
+              </div>
+              {% assign form_id = 'notify-' | append: product.id %}
+              {% form 'contact', id: form_id, class: 'flex w-full mt-auto' %}
+                <input type="hidden" name="contact[tags]" value="prospect, stock-notification"/>
+                <input type="hidden" name="contact[note]" value="Notify me when {{ product.title }} is back in stock." />
+                
+                <input type="email" name="contact[email]" placeholder="Your email" class="flex-1 bg-neutral-950 text-white text-[11px] px-3 py-2 outline-none border-none placeholder-neutral-400 m-0 w-full min-w-0" required>
+                <button type="submit" class="bg-[#d97736] hover:bg-[#c2682e] text-white text-[10px] font-bold px-3 py-2 flex items-center justify-center gap-1.5 uppercase tracking-wide transition-colors m-0 border-none flex-shrink-0 whitespace-nowrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  NOTIFY ME
+                </button>
+              {% endform %}
+            {% endif %}
           </div>
-        </a>
+        </div>
       {% else %}
         {% for i in (1..4) %}
            <div class="group bg-white rounded-xl overflow-hidden border border-neutral-100 h-full flex flex-col p-4 text-center">
