@@ -27,7 +27,7 @@
         "address": "Kringsvej 4, 7000 Fredericia",
         "hours": "Monday – Friday: 10:00 – 17:30",
         "button_text": "Book a Free Demo",
-        "link": "/pages/fredericia"
+        "link": "shopify://pages/fredericia"
       }
     },
     "grid": {
@@ -42,7 +42,7 @@
             "address": "Winghouse, Ørestads Boulevard 73, Copenhagen",
             "hours": "Monday – Friday: 10:00 – 18:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/copenhagen"
+            "link": "shopify://pages/copenhagen"
           }
         },
         "malmo": {
@@ -54,7 +54,7 @@
             "address": "Ymers Gata 25A, Malmö",
             "hours": "Monday – Friday: 10:00 – 18:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/malmo"
+            "link": "shopify://pages/malmo"
           }
         },
         "istanbul": {
@@ -66,7 +66,7 @@
             "address": "Bahçelievler Mah. Ali Reşat Paşa Sok. No:14 A, Istanbul",
             "hours": "Monday – Saturday: 10:00 – 20:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/turkey"
+            "link": "shopify://pages/turkey"
           }
         },
         "ankara": {
@@ -78,7 +78,7 @@
             "address": "Mesa Plaza AVM, Ankara",
             "hours": "Monday – Saturday: 10:00 – 22:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/ankara"
+            "link": "shopify://pages/ankara"
           }
         },
         "antalya": {
@@ -90,7 +90,7 @@
             "address": "Molla Yusuf Mah. 1476. Sok., Antalya",
             "hours": "Monday – Saturday: 10:00 – 21:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/antalya"
+            "link": "shopify://pages/antalya"
           }
         },
         "izmir": {
@@ -102,7 +102,7 @@
             "address": "Yeni Mahalle Mah. 8041 Sok. No:43 D:43/A, Izmir",
             "hours": "Monday – Saturday: 10:00 – 20:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/izmir"
+            "link": "shopify://pages/izmir"
           }
         },
         "gaziantep": {
@@ -114,7 +114,7 @@
             "address": "Suburcu Mahallesi, Gaziler Caddesi No. 55, Gaziantep",
             "hours": "Monday – Saturday: 10:00 – 20:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/gaziantep"
+            "link": "shopify://pages/gaziantep"
           }
         },
         "oslo": {
@@ -126,7 +126,7 @@
             "address": "Karl Johans gate 25, Oslo",
             "hours": "Monday – Friday: 10:00 – 18:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/oslo"
+            "link": "shopify://pages/oslo"
           }
         },
         "frankfurt": {
@@ -138,7 +138,7 @@
             "address": "Kaiserstraße 50, Frankfurt",
             "hours": "Monday – Friday: 10:00 – 19:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/frankfurt"
+            "link": "shopify://pages/frankfurt"
           }
         },
         "paris": {
@@ -150,7 +150,7 @@
             "address": "45 Avenue des Champs-Élysées, Paris",
             "hours": "Monday – Friday: 10:00 – 19:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/paris"
+            "link": "shopify://pages/paris"
           }
         },
         "amsterdam": {
@@ -162,7 +162,7 @@
             "address": "Keizersgracht 120, Amsterdam",
             "hours": "Monday – Friday: 10:00 – 18:00",
             "button_text": "Book a Free Demo",
-            "link": "/pages/amsterdam"
+            "link": "shopify://pages/amsterdam"
           }
         }
       },

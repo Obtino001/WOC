@@ -61,35 +61,76 @@
       }
     },
     "main": {
-      "type": "main-product",
+      "type": "main-product-wellness",
       "blocks": {
-        "text_cxx9Wc": {
-          "type": "text",
+        "rating": {
+          "type": "rating",
           "settings": {
-            "text": "Metin bloku",
-            "text_style": "body"
+            "fallback_rating": "4.9",
+            "fallback_review_count": "847",
+            "reviews_label": "yorumlar"
           }
         },
         "title": {
           "type": "title",
           "settings": {}
         },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {
+            "text": "Yoga, Pilates ve Vücut Ağırlığı için birinci sınıf doğal ahşaptan Pilates Tahtası"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Bir fitness cihazından daha fazlası — tam vücut antrenmanı, bilinçli molalar ve yeni enerji için kişisel rehberiniz. Etkili, şık ve kurulum gerektirmeden hazır. Pilates, Yoga ve Vücut Ağırlığı antrenmanlarını tek bir tahtada yapın.</p>"
+          }
+        },
+        "feature_list": {
+          "type": "feature_list",
+          "settings": {
+            "features": "Pilates, Yoga ve Vücut Ağırlığı — hepsi bir tahtada, Tam vücut antrenmanı — güç, tonlama ve mobilite, Saniyeler içinde katlanır — yatak altında saklayın, Sessiz ve eklem dostu — daireler için mükemmel, Premium doğal ahşap tasarım — her eve uyar, Uygulama ile rehberli antrenmanlar, Kurulum gerektirmez — kablo yok, montaj yok",
+            "max_items": 7
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
-            "subprice_text": "or from £22/week"
+            "show_save_badge": true,
+            "save_label": "[amount] tasarruf",
+            "tax_note": "",
+            "show_installments": false
           }
         },
-        "rating_98edkt": {
-          "type": "rating",
-          "settings": {}
-        },
-        "inventory_6kC3UY": {
-          "type": "inventory",
+        "status_badges": {
+          "type": "status_badges",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "show_warranty_badge": false,
+            "warranty_text": "",
+            "warranty_icon": "shield",
+            "show_stock_badge": true,
+            "in_stock_text": "Stokta var · Bugün gönderilir",
+            "out_of_stock_text": "Geçici olarak stokta yok"
+          }
+        },
+        "promotion_banner": {
+          "type": "promotion_banner",
+          "settings": {
+            "text": "2 tane al — ikincisine %50 indirim!",
+            "subtext": "2 tanesi ₺45.080 yerine sadece ₺33.810 — ₺11.270 tasarruf edin",
+            "show_icon": true,
+            "background_color": "#ecfdf5",
+            "text_color": "#166534",
+            "border_color": "#bbf7d0"
+          }
+        },
+        "inline_trust": {
+          "type": "inline_trust",
+          "settings": {
+            "text_1": "30 günlük memnuniyet garantisi",
+            "text_2": "Kadroda ömür boyu garanti",
+            "text_3": "Ücretsiz teslimat ve kurulum"
           }
         },
         "variant_picker": {
@@ -99,60 +140,73 @@
             "swatch_shape": "circle"
           }
         },
-        "feature_list_kNjYmM": {
-          "type": "feature_list",
+        "purchase_row": {
+          "type": "purchase_row",
           "settings": {
-            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
-            "custom_icon_svg": ""
+            "show_quantity_selector": false,
+            "button_label": "ŞİMDİ SATIN AL — [price]",
+            "button_icon": "bag",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "trust_footer": {
+          "type": "trust_footer",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "show_demo_button": true,
-            "demo_text": "Book a Demo",
-            "demo_link": ""
-          }
-        },
-        "trust_badges_N7QkXf": {
-          "type": "trust_badges",
-          "settings": {
-            "text_1": "Free White-Glove Delivery",
-            "icon_1_svg": "",
-            "text_2": "5-Year Warranty",
-            "icon_2_svg": "",
-            "text_3": "Flexible Monthly Payments",
-            "icon_3_svg": ""
+            "aria_label": "Güvence rozetleri",
+            "label_1": "Ücretsiz teslimat",
+            "icon_1": "truck",
+            "label_2": "Ömür boyu kadro garantisi",
+            "icon_2": "shield",
+            "label_3": "30 gün içinde iade",
+            "icon_3": "return"
           }
         }
       },
       "block_order": [
-        "text_cxx9Wc",
+        "rating",
         "title",
+        "subtitle",
+        "description",
+        "feature_list",
         "price",
-        "rating_98edkt",
-        "inventory_6kC3UY",
+        "status_badges",
+        "promotion_banner",
+        "inline_trust",
         "variant_picker",
-        "feature_list_kNjYmM",
-        "buy_buttons",
-        "trust_badges_N7QkXf"
+        "purchase_row",
+        "trust_footer"
       ],
       "settings": {
+        "show_breadcrumbs": true,
+        "breadcrumb_home_label": "Ana sayfa",
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "show_sale_badge": true,
+        "sale_badge_format": "amount",
+        "sale_badge_prefix": "İNDİRİM",
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "title_color": "#d4c5a9",
+        "muted_text_color": "#a3a3a3",
+        "gallery_background": "#171717",
+        "sale_badge_background": "#dc2626",
+        "sale_badge_text_color": "#ffffff",
+        "save_badge_background": "#dc2626",
+        "save_badge_text_color": "#ffffff",
+        "atc_background": "#f5f0e8",
+        "atc_hover_background": "#ebe4d8",
+        "atc_text_color": "#171717",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "simple_features": {
@@ -405,6 +459,47 @@
         "kicker": "OVER 100 EXERCISES POSSIBLE",
         "heading": "Exercise Guide",
         "description": "Explore a selection of the many exercises you can do with your Home Pilates Reformer."
+      }
+    },
+    "three_disciplines": {
+      "type": "fp-three-disciplines",
+      "blocks": {
+        "discipline_1": {
+          "type": "discipline",
+          "settings": {
+            "image": "shopify://shop_images/pilates-lifestyle-warrior-OsPIoTyB_1.jpg",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-7 h-7 text-foreground\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
+            "title": "Yoga",
+            "text": "Daha fazla esneklik, dinginlik ve iç denge için akıcı hareketleri ve bilinçli nefes alıp vermeyi deneyimleyin."
+          }
+        },
+        "discipline_2": {
+          "type": "discipline",
+          "settings": {
+            "image": "shopify://shop_images/pilates-lifestyle-pushup-B3f3xNw6_1.jpg",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-target w-7 h-7 text-foreground\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle></svg>",
+            "title": "Pilates",
+            "text": "Hedefli karın egzersizleri, bilinçli hareketler ve sürdürülebilir vücut kontrolü ile 'güç merkezinizi' güçlendirin."
+          }
+        },
+        "discipline_3": {
+          "type": "discipline",
+          "settings": {
+            "image": "shopify://shop_images/pilates-lifestyle-seated-CRASQ1Y4_1.jpg",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-dumbbell w-7 h-7 text-foreground\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>",
+            "title": "Vücut Ağırlığı",
+            "text": "Güç, denge ve hareketlilik için fonksiyonel egzersizlerle her yerde, her zaman antrenman yapın."
+          }
+        }
+      },
+      "block_order": [
+        "discipline_1",
+        "discipline_2",
+        "discipline_3"
+      ],
+      "settings": {
+        "kicker": "BEDENİ, ZİHNİ VE RUHU BİRLEŞTİRİR",
+        "heading": "Üç disiplin – tek bir tahta"
       }
     },
     "emoji_stats": {
@@ -829,55 +924,17 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "three_disciplines": {
-      "type": "fp-three-disciplines",
-      "blocks": {
-        "discipline_1": {
-          "type": "discipline",
-          "settings": {
-            "title": "Yoga",
-            "text": "Daha fazla esneklik, dinginlik ve iç denge için akıcı hareketleri ve bilinçli nefes alıp vermeyi deneyimleyin.",
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-7 h-7 text-foreground\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>"
-          }
-        },
-        "discipline_2": {
-          "type": "discipline",
-          "settings": {
-            "title": "Pilates",
-            "text": "Hedefli karın egzersizleri, bilinçli hareketler ve sürdürülebilir vücut kontrolü ile 'güç merkezinizi' güçlendirin.",
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-target w-7 h-7 text-foreground\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle></svg>"
-          }
-        },
-        "discipline_3": {
-          "type": "discipline",
-          "settings": {
-            "title": "Vücut Ağırlığı",
-            "text": "Güç, denge ve hareketlilik için fonksiyonel egzersizlerle her yerde, her zaman antrenman yapın.",
-            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-dumbbell w-7 h-7 text-foreground\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>"
-          }
-        }
-      },
-      "block_order": [
-        "discipline_1",
-        "discipline_2",
-        "discipline_3"
-      ],
-      "settings": {
-        "kicker": "BEDENİ, ZİHNİ VE RUHU BİRLEŞTİRİR",
-        "heading": "Üç disiplin – tek bir tahta"
-      }
     }
   },
   "order": [
     "woc_trust_bar_km4wNG",
     "main",
-    "three_disciplines",
     "simple_features",
     "gallery",
     "how_it_works",
     "split_overview",
     "exercise_guide",
+    "three_disciplines",
     "emoji_stats",
     "results_grid",
     "whats_included",

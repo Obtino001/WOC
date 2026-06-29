@@ -166,7 +166,7 @@
         "partner_1": {
           "type": "partner",
           "settings": {
-            "logo": "shopify://shop_images/partner-disney-CjO3HXR9_1.png",
+            "logo": "shopify://shop_images/partner-monster-DsVxChaQ_3.webp",
             "name": "Disney"
           }
         },
@@ -224,7 +224,7 @@
             "image": "shopify://shop_images/category-massage-chairs-BjHE5OGd_1.jpg",
             "title": "Masaj Koltukları",
             "subtitle": "ÖZEL SAĞLIK",
-            "link": "/collections/massage-chairs"
+            "link": "shopify://collections/massage-chairs"
           }
         },
         "cat_2": {
@@ -233,7 +233,7 @@
             "image": "shopify://shop_images/category-smart-beds-CPye7zsK_1.jpg",
             "title": "Akıllı Yataklar",
             "subtitle": "AKILLI UYKU SİSTEMİ",
-            "link": "/collections/smart-beds"
+            "link": "shopify://collections/smart-beds"
           }
         },
         "cat_3": {
@@ -242,7 +242,7 @@
             "image": "shopify://shop_images/category-sports-recovery-DG6PePS4_1.jpg",
             "title": "Spor İyileşmesi",
             "subtitle": "SPOR & İYİLEŞME",
-            "link": "/collections/home-wellness"
+            "link": "shopify://pages/kurumsal"
           }
         },
         "cat_4": {
@@ -251,7 +251,7 @@
             "image": "shopify://shop_images/category-massage-devices-CZxd1d3T_1.jpg",
             "title": "Masaj Cihazı",
             "subtitle": "EL TERAPİSİ",
-            "link": "/collections/massage-devices"
+            "link": "shopify://collections/masaj-aletleri"
           }
         },
         "cat_5": {
@@ -260,7 +260,7 @@
             "image": "shopify://shop_images/category-beauty-tech-l6P8aZTl_1.jpg",
             "title": "Güzellik Teknolojisi",
             "subtitle": "KLİNİK CİLT BAKIMI",
-            "link": "/collections/beauty-technology"
+            "link": "shopify://collections/guzellik-teknolojisi"
           }
         }
       },
