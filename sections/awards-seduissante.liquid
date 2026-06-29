@@ -1,7 +1,8 @@
-
+<main class="section-{{ section.id }}">
+  <!-- Hero Section -->
   <section class="relative min-h-[80vh] grid lg:grid-cols-2">
     <div class="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-20 bg-[#f0eae4]">
-      <div style="opacity: 1; transform: none;">
+      <div>
         <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-light text-neutral-800 leading-tight uppercase tracking-[0.05em]">
           {{ section.settings.hero_title }}
         </h1>
@@ -24,8 +25,8 @@
       {% for i in (1..3) %}
         <div class="flex items-center gap-12 mx-6">
           {% for block in section.blocks %}
-            {% if block.type == 'award_logo' %}
-              {{ block.settings.logo | image_url: width: 200 | image_tag: class: 'h-16 md:h-20 object-contain opacity-60' }}
+            {% if block.type == 'award_badge' %}
+              {{ block.settings.badge | image_url: width: 150 | image_tag: class: 'h-16 md:h-20 object-contain opacity-60' }}
             {% endif %}
           {% endfor %}
         </div>
@@ -41,7 +42,7 @@
     </div>
   </section>
 
-  <!-- Yearly Awards Container -->
+  <!-- Yearly Awards -->
   {% for block in section.blocks %}
     {% if block.type == 'year_group' %}
       <section class="py-20 {% cycle 'bg-[#f8f7f4]', 'bg-white' %}">
@@ -51,7 +52,24 @@
             <p class="font-body text-[11px] uppercase tracking-[0.2em] text-gold mt-2">ÖDÜLLER</p>
           </div>
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {% comment %} Logic to pull specific awards would go here via child blocks or nested metafields {% endcomment %}
+            {% for child in section.blocks %}
+              {% if child.type == 'award_card' and child.settings.parent_year == block.settings.year %}
+                <div class="bg-white border border-neutral-100 rounded-xl p-8 hover:shadow-lg transition-shadow duration-500 group">
+                  <div class="text-4xl mb-5">{{ child.settings.emoji }}</div>
+                  <p class="font-body text-[10px] uppercase tracking-[0.2em] text-neutral-400 mb-2">{{ child.settings.award_name }}</p>
+                  <h3 class="font-display text-lg font-light text-neutral-800 mb-4 leading-snug">{{ child.settings.award_title }}</h3>
+                  
+                  {% if child.settings.link_text != blank %}
+                    <a class="inline-flex items-center gap-1.5 font-body text-[11px] uppercase tracking-[0.15em] text-gold hover:text-neutral-800 transition-colors" href="{{ child.settings.link_url }}">
+                      {{ child.settings.link_text }} 
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  {% else %}
+                    <span class="font-body text-[11px] uppercase tracking-[0.15em] text-neutral-400">{{ child.settings.brand }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </section>
@@ -69,10 +87,11 @@
       </div>
     </div>
   </section>
+</main>
 
 {% schema %}
 {
-  "name": "Awards Page",
+  "name": "Awards Layout",
   "settings": [
     { "type": "image_picker", "id": "hero_image", "label": "Hero Image" },
     { "type": "text", "id": "hero_title", "label": "Title", "default": "Tanındı, Kutlandı ve Ödüllendirildi" },
@@ -87,9 +106,17 @@
     { "type": "url", "id": "btn_2_url", "label": "Button 2 Link" }
   ],
   "blocks": [
-    { "type": "award_logo", "name": "Award Logo", "settings": [{ "type": "image_picker", "id": "logo", "label": "Logo" }] },
-    { "type": "year_group", "name": "Year Group", "settings": [{ "type": "text", "id": "year", "label": "Year" }] }
-  ],
-  "presets": [{ "name": "Awards Page Section" }]
+    { "type": "award_badge", "name": "Marquee Badge", "settings": [{ "type": "image_picker", "id": "logo", "label": "Badge Image" }] },
+    { "type": "year_group", "name": "Year Heading", "settings": [{ "type": "text", "id": "year", "label": "Year (e.g. 2025)" }] },
+    { "type": "award_card", "name": "Award Card", "settings": [
+      { "type": "text", "id": "parent_year", "label": "Parent Year (Must match Year Heading exactly)" },
+      { "type": "text", "id": "emoji", "label": "Emoji/Icon", "default": "🏆" },
+      { "type": "text", "id": "award_name", "label": "Category" },
+      { "type": "text", "id": "award_title", "label": "Award Title" },
+      { "type": "text", "id": "link_text", "label": "Link Text" },
+      { "type": "url", "id": "link_url", "label": "Link URL" },
+      { "type": "text", "id": "brand", "label": "Static Brand Name (if no link)" }
+    ]}
+  ]
 }
 {% endschema %}
