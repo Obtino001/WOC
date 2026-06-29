@@ -90,6 +90,63 @@
         "stats_title": "Kanıtlanmış Sonuçlar"
       }
     },
+    "features_grid_awards_k638pX": {
+      "type": "features-grid-awards",
+      "blocks": {
+        "feature_KeB3Ww": {
+          "type": "feature",
+          "settings": {
+            "number": "01",
+            "image": "shopify://shop_images/sed-boss-lady-model-BfkzxlKJ_2.jpg",
+            "title": "Cilt Sağlığı",
+            "description": "Işıltılı bir cilt, pozitif bir zihin yaratır ve genel refahınızı etkiler. Séduisante olarak, cildin daha sıkı, genç, parlak ve daha güzel olmasını sağlayan ürünler yaratmak için en son bilimsel ve teknolojik gelişmeleri kullanıyoruz.",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "feature_CiVrec": {
+          "type": "feature",
+          "settings": {
+            "number": "02",
+            "image": "shopify://shop_images/sed-serum-set-1-Cf4y6gAK_1.jpg",
+            "title": "Güçlü Mükemmel Ürünler",
+            "description": "Ürünlerimiz günlük cilt bakımı için özel olarak formüle edilmiştir ve sert çevresel etkenlerden kaynaklanan hasarı düzeltmek ve yaşlanma belirtilerine yardımcı olmak için kullanılabilir. Hak ettiğiniz cilde kavuşmanızı ve genç, ışıltılı bir parlaklığı geri kazandırmayı hedefliyoruz.",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "feature_jRBWnG": {
+          "type": "feature",
+          "settings": {
+            "number": "03",
+            "image": "shopify://shop_images/sed-nefertiti-Dk_lSbcd_3.jpg",
+            "title": "Bilimsel Cilt Bakımı",
+            "description": "Séduisante, bilimsel yenilikleri etkili cilt bakım çözümlerine dönüştürerek, cildinizi gençleştirmek ve bakımını yapmak için bilimsel çözümler sunma konusunda benzersiz bir konumdayız.",
+            "btn_text": "CİLT BAKIMINI KEŞFEDİN",
+            "btn_url": "shopify://collections/guzellik-teknolojisi"
+          }
+        },
+        "feature_9FN8Kk": {
+          "type": "feature",
+          "settings": {
+            "number": "04",
+            "image": "shopify://shop_images/sed-boss-lady-model-BfkzxlKJ_2.jpg",
+            "title": "Son Teknoloji",
+            "description": "Séduisante, yüksek kaliteli teknolojiye sahip devrim niteliğinde profesyonel ve evde kullanım cihazları yaratma konusunda öncü olmuştur. Çığır açan ürünlerimize son derece güveniyoruz, bu nedenle tüm cihazlarımız ömür boyu garanti ile birlikte gelir.",
+            "btn_text": "CİHAZLARI KEŞFEDİN",
+            "btn_url": "shopify://collections/guzellik-teknolojisi"
+          }
+        }
+      },
+      "block_order": [
+        "feature_KeB3Ww",
+        "feature_CiVrec",
+        "feature_jRBWnG",
+        "feature_9FN8Kk"
+      ],
+      "name": "Feature Grid awards",
+      "settings": {}
+    },
     "trusted_by": {
       "type": "sed-trusted-by",
       "blocks": {
@@ -290,6 +347,7 @@
   "order": [
     "main",
     "seduissante_story_hero",
+    "features_grid_awards_k638pX",
     "trusted_by",
     "awards",
     "testimonials",
