@@ -383,7 +383,7 @@
         "btn1_icon": "",
         "btn1_link": "",
         "btn2_text": "Ürünü İncele",
-        "btn2_link": "",
+        "btn2_link": "shopify://products/synthera-ai-topper",
         "video_label": "Videoyu İzle",
         "process_heading": "Süreç",
         "process_badge": "4 adım",
