@@ -211,6 +211,58 @@
     },
     "custom_testimonials": {
       "type": "custom-testimonials",
+      "blocks": {
+        "review_zhLEd8": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        },
+        "review_tC8LRH": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        },
+        "review_QYbi4x": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        },
+        "review_AfDXAh": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        },
+        "review_NW7bHN": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        },
+        "review_6kBzh7": {
+          "type": "review",
+          "settings": {
+            "quote": "Clean My Soul gerçekten çok ayrıntılı ve ilk denediğim andan itibaren bir fark hissettim. Benden 5 üzerinden 5 yıldız.\"",
+            "author": "LUTFIYE KALELI"
+          }
+        }
+      },
+      "block_order": [
+        "review_zhLEd8",
+        "review_tC8LRH",
+        "review_QYbi4x",
+        "review_AfDXAh",
+        "review_NW7bHN",
+        "review_6kBzh7"
+      ],
       "settings": {
         "subtitle": "4,7 üzerinden 5",
         "title": "Birçok Mutlu Müşterimiz Var!"
