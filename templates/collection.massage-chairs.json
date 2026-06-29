@@ -78,7 +78,7 @@
         "description": "Experience world-class massage chairs that combine Scandinavian design with ground-breaking wellness technology. From AI-driven precision to zero-gravity relaxation.",
         "rating_score": "4.9",
         "btn1_text": "Find din perfekte stol — 60 sek",
-        "btn1_link": "/pages/quiz",
+        "btn1_link": "shopify://pages/find-your-chair",
         "btn2_text": "Se alle modeller",
         "btn2_link": "#collection",
         "btn3_text": "Gösterim rezervasyonu yapın",
