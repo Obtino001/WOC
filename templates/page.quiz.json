@@ -20,85 +20,85 @@
     "custom_quiz_jpTEnw": {
       "type": "custom-quiz",
       "blocks": {
-        "question_39cwaK": {
+        "q1": {
           "type": "question",
           "settings": {
-            "step_label": "Question x of 6",
-            "heading": "What is your primary goal?",
-            "subheading": "Choose what is most important to you",
-            "option_1": "",
-            "option_2": "",
-            "option_3": "",
-            "option_4": "",
+            "step_label": "1 / 6 Soru",
+            "heading": "Birincil hedefiniz nedir?",
+            "subheading": "Size en önemli geleni seçin",
+            "option_1": "Stres Azaltma",
+            "option_2": "Sırt Ağrısı Giderme",
+            "option_3": "İyileşme ve Performans",
+            "option_4": "Genel İyilik Hali",
             "option_5": "",
             "option_6": ""
           }
         },
-        "question_xpYPNK": {
+        "q2": {
           "type": "question",
           "settings": {
-            "step_label": "Question x of 6",
-            "heading": "What is your primary goal?",
-            "subheading": "Choose what is most important to you",
-            "option_1": "",
-            "option_2": "",
-            "option_3": "",
-            "option_4": "",
+            "step_label": "2 / 6 Soru",
+            "heading": "En çok nerede rahatsızlık hissediyorsunuz?",
+            "subheading": "Sizi en çok rahatsız eden bölgeyi seçin",
+            "option_1": "Bel",
+            "option_2": "Boyun ve Omuzlar",
+            "option_3": "Bacaklar ve Ayaklar",
+            "option_4": "Tüm Vücut Yorgunluğu",
             "option_5": "",
             "option_6": ""
           }
         },
-        "question_CbtJBr": {
+        "q3": {
           "type": "question",
           "settings": {
-            "step_label": "Question x of 6",
-            "heading": "What is your primary goal?",
-            "subheading": "Choose what is most important to you",
-            "option_1": "",
-            "option_2": "",
-            "option_3": "",
-            "option_4": "",
+            "step_label": "3 / 6 Soru",
+            "heading": "Boyunuz kaç?",
+            "subheading": "Bu, doğru koltuk boyutunu bulmamıza yardımcı olur",
+            "option_1": "165 cm altı",
+            "option_2": "165 - 180 cm",
+            "option_3": "180 - 188 cm",
+            "option_4": "188 cm üstü",
             "option_5": "",
             "option_6": ""
           }
         },
-        "question_K6tmLc": {
+        "q4": {
           "type": "question",
           "settings": {
-            "step_label": "Question x of 6",
-            "heading": "What is your primary goal?",
-            "subheading": "Choose what is most important to you",
-            "option_1": "",
-            "option_2": "",
-            "option_3": "",
-            "option_4": "",
+            "step_label": "4 / 6 Soru",
+            "heading": "Günde ne kadar zaman oturarak geçiriyorsunuz?",
+            "subheading": "Ortalama oturma sürenizi tahmin edin",
+            "option_1": "2 saatten az",
+            "option_2": "2 - 4 saat",
+            "option_3": "4 - 6 saat",
+            "option_4": "6+ saat",
             "option_5": "",
             "option_6": ""
           }
         },
-        "question_UMxWcn": {
+        "q5": {
           "type": "question",
           "settings": {
-            "step_label": "Question 1 of 6",
-            "heading": "What is your primary goal?",
-            "subheading": "Choose what is most important to you",
-            "option_1": "Stress Reduction",
-            "option_2": "Back Pain Relief",
-            "option_3": "Recovery & Performance",
-            "option_4": "General Wellbeing",
+            "step_label": "5 / 6 Soru",
+            "heading": "Tercih ettiğiniz masaj yoğunluğu nedir?",
+            "subheading": "Rahatlık seviyenizi seçin",
+            "option_1": "Nazik ve Rahatlatıcı",
+            "option_2": "Orta Baskı",
+            "option_3": "Derin Doku / Yoğun",
+            "option_4": "Değişken Yoğunluk",
             "option_5": "",
             "option_6": ""
           }
         },
-        "question_AgKxeD": {
+        "q6": {
           "type": "question",
           "settings": {
-            "step_label": "Question 6 of 6",
-            "heading": "Would you like to visit a showroom?",
-            "subheading": "Experience your chair before you decide",
-            "option_1": "Yes, definitely",
-            "option_2": "Maybe later",
-            "option_3": "No, I will decide online",
+            "step_label": "6 / 6 Soru",
+            "heading": "Showroom'umuzu ziyaret etmek ister misiniz?",
+            "subheading": "Karar vermeden önce koltuğunuzu deneyimleyin",
+            "option_1": "Evet, kesinlikle",
+            "option_2": "Belki daha sonra",
+            "option_3": "Hayır, çevrimiçi karar vereceğim",
             "option_4": "",
             "option_5": "",
             "option_6": ""
@@ -106,18 +106,18 @@
         }
       },
       "block_order": [
-        "question_39cwaK",
-        "question_xpYPNK",
-        "question_CbtJBr",
-        "question_K6tmLc",
-        "question_UMxWcn",
-        "question_AgKxeD"
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
       ],
       "name": "Multi-Step Quiz",
       "settings": {
-        "form_heading": "Get Your Recommendation",
-        "form_subheading": "Enter your details and we will send your personal match.",
-        "form_button_text": "GET MY RECOMMENDATION"
+        "form_heading": "Önerinizi Alın",
+        "form_subheading": "Detaylarınızı girin, size özel eşleşmeyi gönderelim.",
+        "form_button_text": "ÖNERİMİ AL"
       }
     }
   },
