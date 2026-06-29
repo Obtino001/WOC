@@ -506,19 +506,19 @@
           "type": "text",
           "id": "fallback_rating",
           "label": "Fallback rating",
-          "default": "4.7"
+          "default": "4.9"
         },
         {
           "type": "text",
           "id": "fallback_review_count",
           "label": "Fallback review count",
-          "default": "198"
+          "default": "847"
         },
         {
           "type": "text",
           "id": "reviews_label",
           "label": "Reviews label",
-          "default": "Reviews"
+          "default": "yorumlar"
         }
       ]
     },
@@ -559,7 +559,7 @@
           "type": "text",
           "id": "in_stock_text",
           "label": "In stock text",
-          "default": "In stock — ships today"
+          "default": "Stokta var · Bugün gönderilir"
         },
         {
           "type": "text",
@@ -672,12 +672,18 @@
           "type": "text",
           "id": "text",
           "label": "Banner text",
-          "default": "25% off your 2nd item!"
+          "default": "2 tane al — ikincisine %50 indirim!"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext",
+          "label": "Subtext",
+          "default": "2 tanesi ₺45.080 yerine sadece ₺33.810 — ₺11.270 tasarruf edin"
         },
         {
           "type": "checkbox",
           "id": "show_icon",
-          "label": "Show icon",
+          "label": "Show emoji icon",
           "default": true
         },
         {
@@ -690,13 +696,13 @@
           "type": "color",
           "id": "text_color",
           "label": "Text color",
-          "default": "#065f46"
+          "default": "#166534"
         },
         {
           "type": "color",
           "id": "border_color",
           "label": "Border color",
-          "default": "#a7f3d0"
+          "default": "#bbf7d0"
         }
       ]
     },
@@ -709,13 +715,14 @@
           "type": "checkbox",
           "id": "show_quantity_selector",
           "label": "Show quantity selector",
-          "default": true
+          "default": false
         },
         {
           "type": "text",
           "id": "button_label",
           "label": "Button label",
-          "info": "Leave blank to use theme translation."
+          "default": "ŞİMDİ SATIN AL — [price]",
+          "info": "Use [price] to show the current variant price."
         },
         {
           "type": "select",
@@ -739,6 +746,60 @@
           "id": "show_gift_card_recipient",
           "label": "Show gift card recipient form",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "inline_trust",
+      "name": "Inline trust badges",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text_1", "label": "Item 1", "default": "30 günlük memnuniyet garantisi" },
+        { "type": "text", "id": "text_2", "label": "Item 2", "default": "Kadroda ömür boyu garanti" },
+        { "type": "text", "id": "text_3", "label": "Item 3", "default": "Ücretsiz teslimat ve kurulum" }
+      ]
+    },
+    {
+      "type": "trust_footer",
+      "name": "Trust footer row",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "aria_label", "label": "Accessibility label", "default": "Güvence rozetleri" },
+        { "type": "text", "id": "label_1", "label": "Item 1 label", "default": "Ücretsiz teslimat" },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Item 1 icon",
+          "options": [
+            { "value": "truck", "label": "Truck" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "return", "label": "Package" }
+          ],
+          "default": "truck"
+        },
+        { "type": "text", "id": "label_2", "label": "Item 2 label", "default": "Ömür boyu kadro garantisi" },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Item 2 icon",
+          "options": [
+            { "value": "truck", "label": "Truck" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "return", "label": "Package" }
+          ],
+          "default": "shield"
+        },
+        { "type": "text", "id": "label_3", "label": "Item 3 label", "default": "30 gün içinde iade" },
+        {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Item 3 icon",
+          "options": [
+            { "value": "truck", "label": "Truck" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "return", "label": "Package" }
+          ],
+          "default": "return"
         }
       ]
     },
@@ -949,13 +1010,13 @@
       "type": "checkbox",
       "id": "show_breadcrumbs",
       "label": "Show breadcrumbs",
-      "default": false
+      "default": true
     },
     {
       "type": "text",
       "id": "breadcrumb_home_label",
       "label": "Breadcrumb home label",
-      "default": "Home"
+      "default": "Ana sayfa"
     },
     {
       "type": "checkbox",
