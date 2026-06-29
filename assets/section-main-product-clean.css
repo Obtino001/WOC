@@ -143,6 +143,8 @@
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
+.mpc-breadcrumbs {
   padding: 0.75rem 0 0;
   margin-bottom: 0;
   font-family: var(--font-body-family, 'Outfit', system-ui, sans-serif);
@@ -169,20 +171,6 @@
 .mpc-breadcrumbs__sep {
   color: #d4d4d4;
   font-size: 0.625rem;
-}
-
-.mpc-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-@media screen and (min-width: 990px) {
-  .mpc-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
 }
 
 /* ── Gallery ── */
