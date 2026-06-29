@@ -4,7 +4,7 @@
   "settings": [
     { "type": "header", "content": "Video Section" },
     { "type": "text", "id": "video_title", "label": "Video Title", "default": "Massage Gun X'i çalışırken görün" },
-    { "type": "url", "id": "video_url", "label": "Video URL (MP4)" },
+    { "type": "video", "id": "video", "label": "Shopify Hosted Video" },
     
     { "type": "header", "content": "Smart Pressure Section" },
     { "type": "text", "id": "sp_title", "label": "Title", "default": "Akıllı Basınç Teknolojisi" },
@@ -73,7 +73,7 @@
 {% assign faq_blocks = section.blocks | where: "type", "faq" %}
 
 <!-- 1. Video -->
-{% if section.settings.video_title != blank or section.settings.video_url != blank %}
+{% if section.settings.video_title != blank or section.settings.video != blank %}
 <section class="py-16 bg-neutral-50">
   <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
     {% if section.settings.video_title != blank %}
@@ -81,15 +81,9 @@
       {{ section.settings.video_title }}
     </h2>
     {% endif %}
-    {% if section.settings.video_url != blank %}
+    {% if section.settings.video != blank %}
     <div class="aspect-video rounded-2xl overflow-hidden bg-neutral-900">
-      <video
-        src="{{ section.settings.video_url }}"
-        controls
-        playsinline
-        preload="metadata"
-        class="w-full h-full object-contain"
-      ></video>
+      {{ section.settings.video | video_tag: class: 'w-full h-full object-contain', controls: true, playsinline: true, preload: 'metadata' }}
     </div>
     {% endif %}
   </div>
