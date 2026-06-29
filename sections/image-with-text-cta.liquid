@@ -1,0 +1,38 @@
+{% schema %}
+{
+  "name": "Image with Text CTA",
+  "settings": [
+    { "type": "text", "id": "pretitle", "label": "Pretitle", "default": "YENİ RUTİNİNİZ" },
+    { "type": "text", "id": "title", "label": "Title", "default": "CLEAN MY SOUL: PROFESYONEL DERİN TEMİZLİK" },
+    { "type": "textarea", "id": "text_1", "label": "Paragraph 1" },
+    { "type": "textarea", "id": "text_2", "label": "Paragraph 2" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Şimdi Satın Al" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "image_picker", "id": "image", "label": "Image" }
+  ],
+  "presets": [{ "name": "Image with Text CTA" }]
+}
+{% endschema %}
+
+<section class="bg-white">
+  <div class="container mx-auto px-4 py-16 lg:py-24">
+    <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div>
+        <p class="text-xs tracking-[0.4em] uppercase text-neutral-400 mb-3" style="font-family: system-ui, sans-serif">{{ section.settings.pretitle }}</p>
+        <h2 class="text-3xl md:text-4xl font-light tracking-wider mb-6">{{ section.settings.title }}</h2>
+        <p class="text-sm text-neutral-600 leading-relaxed mb-4" style="font-family: system-ui, sans-serif">{{ section.settings.text_1 }}</p>
+        <p class="text-sm text-neutral-600 leading-relaxed mb-4" style="font-family: system-ui, sans-serif">{{ section.settings.text_2 }}</p>
+        
+        <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center gap-2 py-2 bg-neutral-900 hover:bg-neutral-800 text-white rounded-sm h-11 text-xs tracking-[0.2em] uppercase px-8 transition-colors" style="font-family: system-ui, sans-serif">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+      <div>
+        {% if section.settings.image %}
+          {{ section.settings.image | image_url: width: 800 | image_tag: class: 'w-full rounded-lg shadow-lg' }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,49 +1,25 @@
-<section class="py-20 bg-neutral-900 relative overflow-hidden">
-  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-1 flex flex-col justify-end pb-12 lg:pb-16 w-full pt-10">
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="font-body text-3xl md:text-4xl font-bold text-white mb-4">{{ section.settings.heading | newline_to_br }}</h2>
-      <p class="font-body text-white/50 mb-8">{{ section.settings.text }}</p>
-      <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-copper hover:bg-copper-hover text-white font-body font-bold px-8 py-5 text-sm uppercase tracking-[0.15em] h-auto rounded-none transition-all duration-500" href="{{ section.settings.button_link }}">
-        {{ section.settings.button_text }} 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
 {% schema %}
 {
   "name": "Bottom CTA",
   "settings": [
-    {
-      "type": "textarea",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Explore Our Full-Body <span class=\"text-copper\">Massage Chairs</span>",
-      "info": "Use HTML like <span class='text-copper'> for highlighting."
-    },
-    {
-      "type": "textarea",
-      "id": "text",
-      "label": "Text",
-      "default": "For the ultimate relaxation experience, discover our premium massage chair collection with AI-driven technology."
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "View Massage Chairs"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    }
+    { "type": "text", "id": "title", "label": "Title", "default": "Dönüşümünüze Hazır mısınız?" },
+    { "type": "textarea", "id": "text", "label": "Text" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "HEMEN AL — ₺13.052" },
+    { "type": "url", "id": "button_link", "label": "Button Link" }
   ],
-  "presets": [
-    {
-      "name": "Bottom CTA"
-    }
-  ]
+  "presets": [{ "name": "Bottom CTA" }]
 }
 {% endschema %}
+
+<section class="bg-neutral-900 text-white">
+  <div class="container mx-auto px-4 py-16 lg:py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-light tracking-wider mb-4">{{ section.settings.title }}</h2>
+    <p class="text-neutral-400 text-sm mb-8 max-w-lg mx-auto" style="font-family: system-ui, sans-serif">
+      {{ section.settings.text }}
+    </p>
+    <a href="{{ section.settings.button_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-white text-neutral-900 hover:bg-neutral-100 rounded-sm tracking-[0.2em] uppercase h-12 px-10" style="font-family: system-ui, sans-serif">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      {{ section.settings.button_text }}
+    </a>
+  </div>
+</section>

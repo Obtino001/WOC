@@ -10,99 +10,31 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
-      "blocks": {
-        "text_cxx9Wc": {
-          "type": "text",
-          "settings": {
-            "text": "Metin bloku",
-            "text_style": "body"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "subprice_text": "or from £22/week"
-          }
-        },
-        "rating_98edkt": {
-          "type": "rating",
-          "settings": {}
-        },
-        "inventory_6kC3UY": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "feature_list_kNjYmM": {
-          "type": "feature_list",
-          "settings": {
-            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
-            "custom_icon_svg": ""
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "show_demo_button": true,
-            "demo_text": "Book a Demo",
-            "demo_link": ""
-          }
-        },
-        "trust_badges_N7QkXf": {
-          "type": "trust_badges",
-          "settings": {
-            "text_1": "Free White-Glove Delivery",
-            "icon_1_svg": "",
-            "text_2": "5-Year Warranty",
-            "icon_2_svg": "",
-            "text_3": "Flexible Monthly Payments",
-            "icon_3_svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_cxx9Wc",
-        "title",
-        "price",
-        "rating_98edkt",
-        "inventory_6kC3UY",
-        "variant_picker",
-        "feature_list_kNjYmM",
-        "buy_buttons",
-        "trust_badges_N7QkXf"
-      ],
+      "type": "main-product-clean",
       "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "thumbnail_slider",
-        "mobile_thumbnails": "show",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "subtitle": "CİLT TEMİZLEYİCİ"
       }
+    },
+    "awards_marquee": {
+      "type": "awards-marquee"
+    },
+    "image_text_cta": {
+      "type": "image-with-text-cta"
+    },
+    "science_tabs": {
+      "type": "science-tabs"
+    },
+    "custom_testimonials": {
+      "type": "custom-testimonials"
+    },
+    "guarantees_grid": {
+      "type": "guarantees-grid"
+    },
+    "faq_clean": {
+      "type": "faq-accordion"
+    },
+    "bottom_cta": {
+      "type": "bottom-cta"
     },
     "overview": {
       "type": "product-overview",
@@ -576,6 +508,13 @@
   },
   "order": [
     "main",
+    "awards_marquee",
+    "image_text_cta",
+    "science_tabs",
+    "custom_testimonials",
+    "guarantees_grid",
+    "faq_clean",
+    "bottom_cta",
     "overview",
     "ideal_for",
     "highlights",

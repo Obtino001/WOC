@@ -1,0 +1,51 @@
+{% schema %}
+{
+  "name": "Testimonials Slider",
+  "settings": [
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "4,7 üzerinden 5" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Birçok Mutlu Müşterimiz Var!" }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Review Quote" },
+        { "type": "text", "id": "author", "label": "Author Name" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Testimonials Slider" }]
+}
+{% endschema %}
+
+<section class="bg-neutral-50 border-y border-neutral-100 py-16 lg:py-24 overflow-hidden">
+  <div class="container mx-auto px-4 max-w-5xl text-center mb-12">
+    <div class="flex items-center justify-center gap-1 mb-3">
+      {% for i in (1..5) %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 fill-amber-400 text-amber-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+      {% endfor %}
+    </div>
+    <p class="text-sm text-neutral-500 mb-2" style="font-family: system-ui, sans-serif">{{ section.settings.subtitle }}</p>
+    <h2 class="text-3xl md:text-4xl font-light tracking-wider">{{ section.settings.title }}</h2>
+  </div>
+
+  <div class="w-full flex gap-6 px-4 pb-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar">
+    {% for block in section.blocks %}
+      <div class="flex-shrink-0 w-[300px] bg-white rounded-lg p-6 border border-neutral-100 shadow-sm snap-center" {{ block.shopify_attributes }}>
+        <div class="flex items-center gap-1 mb-3">
+          {% for i in (1..5) %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+          {% endfor %}
+        </div>
+        <p class="text-sm text-neutral-600 mb-3 italic leading-relaxed" style="font-family: system-ui, sans-serif">"{{ block.settings.quote }}"</p>
+        <p class="text-xs font-semibold tracking-wider uppercase text-neutral-800" style="font-family: system-ui, sans-serif">{{ block.settings.author }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

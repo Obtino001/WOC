@@ -1,0 +1,40 @@
+{% schema %}
+{
+  "name": "Guarantees Grid",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Ödül Kazanan Ürünler" },
+    { "type": "textarea", "id": "description", "label": "Description" }
+  ],
+  "blocks": [
+    {
+      "type": "guarantee",
+      "name": "Guarantee Item",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Emoji Icon (e.g. 🏅)", "default": "🏅" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Guarantees Grid" }]
+}
+{% endschema %}
+
+<section class="bg-white">
+  <div class="container mx-auto px-4 py-16 lg:py-20 max-w-4xl text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 mx-auto mb-4 text-amber-500"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+    <h2 class="text-3xl md:text-4xl font-light tracking-wider mb-4">{{ section.settings.title }}</h2>
+    <p class="text-sm text-neutral-600 leading-relaxed max-w-2xl mx-auto mb-8" style="font-family: system-ui, sans-serif">{{ section.settings.description }}</p>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {% for block in section.blocks %}
+      <div class="text-center" {{ block.shopify_attributes }}>
+        <span class="text-3xl mb-2 block">{{ block.settings.emoji }}</span>
+        <p class="text-sm font-bold" style="font-family: system-ui, sans-serif">{{ block.settings.title }}</p>
+        <p class="text-xs text-neutral-500" style="font-family: system-ui, sans-serif">{{ block.settings.subtitle }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
