@@ -11,7 +11,163 @@
   "sections": {
     "main": {
       "type": "awards-seduissante",
+      "blocks": {
+        "year_2025": {
+          "type": "year_group",
+          "settings": {
+            "year": "2025"
+          }
+        },
+        "award_2025_1": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2025",
+            "emoji": "🏆",
+            "award_name": "Global Wellness Innovation Award",
+            "award_title": "En İyi Non-İnvaziv Güzellik Cihazı",
+            "link_text": "BOSS LADY",
+            "link_url": "/tr/beauty-technology/boss-lady",
+            "brand": ""
+          }
+        },
+        "award_2025_2": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2025",
+            "emoji": "🥇",
+            "award_name": "Scandinavian Business Awards",
+            "award_title": "En İyi Lüks Güzellik Markası — İskandinavya",
+            "link_text": "",
+            "link_url": "",
+            "brand": "SÉDUISANTE"
+          }
+        },
+        "award_2025_3": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2025",
+            "emoji": "🏆",
+            "award_name": "Pure Beauty Global Ödülleri",
+            "award_title": "En İyi Yeni Güzellik Aracı",
+            "link_text": "NEFERTITI",
+            "link_url": "/tr/beauty-technology/nefertiti",
+            "brand": ""
+          }
+        },
+        "year_2024": {
+          "type": "year_group",
+          "settings": {
+            "year": "2024"
+          }
+        },
+        "award_2024_1": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2024",
+            "emoji": "🥇",
+            "award_name": "Børsen Gazelle 2024",
+            "award_title": "En Hızlı Büyüyen Şirket — Danimarka",
+            "link_text": "",
+            "link_url": "",
+            "brand": "SÉDUISANTE"
+          }
+        },
+        "award_2024_2": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2024",
+            "emoji": "🏆",
+            "award_name": "Healthcare & Pharmaceutical Awards",
+            "award_title": "En İyi Güzellik Teknolojisi Yenilikçisi",
+            "link_text": "CLEAN MY SOUL",
+            "link_url": "/tr/beauty-technology/clean-my-soul",
+            "brand": ""
+          }
+        },
+        "award_2024_3": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2024",
+            "emoji": "🥈",
+            "award_name": "CorporateLiveWire",
+            "award_title": "İnovasyon ve Mükemmellik — Güzellik Cihazları",
+            "link_text": "LIGHT UP",
+            "link_url": "/tr/beauty-technology/light-up",
+            "brand": ""
+          }
+        },
+        "award_2024_4": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2024",
+            "emoji": "🏆",
+            "award_name": "İskandinav Güzellik Ödülleri",
+            "award_title": "En İyi Yaşlanma Karşıtı Cihaz",
+            "link_text": "BOSS LADY",
+            "link_url": "/tr/beauty-technology/boss-lady",
+            "brand": ""
+          }
+        },
+        "year_2023": {
+          "type": "year_group",
+          "settings": {
+            "year": "2023"
+          }
+        },
+        "award_2023_1": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2023",
+            "emoji": "🏆",
+            "award_name": "Nordic Wellness Ödülleri",
+            "award_title": "En İyi Yükselen Güzellik Markası",
+            "link_text": "",
+            "link_url": "",
+            "brand": "SÉDUISANTE"
+          }
+        },
+        "award_2023_2": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2023",
+            "emoji": "🥇",
+            "award_name": "Avrupa Güzellik İnovasyonu",
+            "award_title": "En İyi LED Teknoloji Cihazı",
+            "link_text": "LIGHT UP",
+            "link_url": "/tr/beauty-technology/light-up",
+            "brand": ""
+          }
+        },
+        "award_2023_3": {
+          "type": "award_card",
+          "settings": {
+            "parent_year": "2023",
+            "emoji": "🥉",
+            "award_name": "Global Güzellik Ödülleri",
+            "award_title": "En İyi Lüks Cilt Bakım Seti",
+            "link_text": "POWER SERUM SETİ",
+            "link_url": "/tr/beauty-technology/serum-set",
+            "brand": ""
+          }
+        }
+      },
+      "block_order": [
+        "year_2025",
+        "award_2025_1",
+        "award_2025_2",
+        "award_2025_3",
+        "year_2024",
+        "award_2024_1",
+        "award_2024_2",
+        "award_2024_3",
+        "award_2024_4",
+        "year_2023",
+        "award_2023_1",
+        "award_2023_2",
+        "award_2023_3"
+      ],
       "settings": {
+        "hero_image": "shopify://shop_images/discovery-awards-CMfbpkkx_1.jpg",
         "hero_title": "Tanındı, Kutlandı ve Ödüllendirildi",
         "hero_subtext": "Mükemmellik sicilimiz",
         "intro_pretitle": "ÖDÜLLÜ YOLCULUĞUMUZ",
@@ -19,33 +175,13 @@
         "cta_pretitle": "KOLEKSİYONUMUZU KEŞFEDİN",
         "cta_title": "Ödüllü ürünleri kendiniz deneyimleyin",
         "btn_1_text": "TÜM ÜRÜNLERİ GÖRÜN",
-        "btn_1_url": "/tr/beauty-technology",
+        "btn_1_url": "shopify://collections/guzellik-teknolojisi",
         "btn_2_text": "SHOWROOM'U ZİYARET EDİN",
-        "btn_2_url": "/tr/showrooms"
-      },
-      "blocks": {
-        "year_2025": { "type": "year_group", "settings": { "year": "2025" } },
-        "award_2025_1": { "type": "award_card", "settings": { "parent_year": "2025", "emoji": "🏆", "award_name": "Global Wellness Innovation Award", "award_title": "En İyi Non-İnvaziv Güzellik Cihazı", "link_text": "BOSS LADY", "link_url": "/tr/beauty-technology/boss-lady" } },
-        "award_2025_2": { "type": "award_card", "settings": { "parent_year": "2025", "emoji": "🥇", "award_name": "Scandinavian Business Awards", "award_title": "En İyi Lüks Güzellik Markası — İskandinavya", "brand": "SÉDUISANTE" } },
-        "award_2025_3": { "type": "award_card", "settings": { "parent_year": "2025", "emoji": "🏆", "award_name": "Pure Beauty Global Ödülleri", "award_title": "En İyi Yeni Güzellik Aracı", "link_text": "NEFERTITI", "link_url": "/tr/beauty-technology/nefertiti" } },
-        
-        "year_2024": { "type": "year_group", "settings": { "year": "2024" } },
-        "award_2024_1": { "type": "award_card", "settings": { "parent_year": "2024", "emoji": "🥇", "award_name": "Børsen Gazelle 2024", "award_title": "En Hızlı Büyüyen Şirket — Danimarka", "brand": "SÉDUISANTE" } },
-        "award_2024_2": { "type": "award_card", "settings": { "parent_year": "2024", "emoji": "🏆", "award_name": "Healthcare & Pharmaceutical Awards", "award_title": "En İyi Güzellik Teknolojisi Yenilikçisi", "link_text": "CLEAN MY SOUL", "link_url": "/tr/beauty-technology/clean-my-soul" } },
-        "award_2024_3": { "type": "award_card", "settings": { "parent_year": "2024", "emoji": "🥈", "award_name": "CorporateLiveWire", "award_title": "İnovasyon ve Mükemmellik — Güzellik Cihazları", "link_text": "LIGHT UP", "link_url": "/tr/beauty-technology/light-up" } },
-        "award_2024_4": { "type": "award_card", "settings": { "parent_year": "2024", "emoji": "🏆", "award_name": "İskandinav Güzellik Ödülleri", "award_title": "En İyi Yaşlanma Karşıtı Cihaz", "link_text": "BOSS LADY", "link_url": "/tr/beauty-technology/boss-lady" } },
-        
-        "year_2023": { "type": "year_group", "settings": { "year": "2023" } },
-        "award_2023_1": { "type": "award_card", "settings": { "parent_year": "2023", "emoji": "🏆", "award_name": "Nordic Wellness Ödülleri", "award_title": "En İyi Yükselen Güzellik Markası", "brand": "SÉDUISANTE" } },
-        "award_2023_2": { "type": "award_card", "settings": { "parent_year": "2023", "emoji": "🥇", "award_name": "Avrupa Güzellik İnovasyonu", "award_title": "En İyi LED Teknoloji Cihazı", "link_text": "LIGHT UP", "link_url": "/tr/beauty-technology/light-up" } },
-        "award_2023_3": { "type": "award_card", "settings": { "parent_year": "2023", "emoji": "🥉", "award_name": "Global Güzellik Ödülleri", "award_title": "En İyi Lüks Cilt Bakım Seti", "link_text": "POWER SERUM SETİ", "link_url": "/tr/beauty-technology/serum-set" } }
-      },
-      "block_order": [
-        "year_2025", "award_2025_1", "award_2025_2", "award_2025_3",
-        "year_2024", "award_2024_1", "award_2024_2", "award_2024_3", "award_2024_4",
-        "year_2023", "award_2023_1", "award_2023_2", "award_2023_3"
-      ]
+        "btn_2_url": "shopify://pages/showrooms"
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
