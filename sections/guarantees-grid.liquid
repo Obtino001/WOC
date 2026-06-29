@@ -31,8 +31,8 @@
       {% for block in section.blocks %}
       <div class="text-center" {{ block.shopify_attributes }}>
         <span class="text-3xl mb-2 block">{{ block.settings.emoji }}</span>
-        <p class="text-sm font-bold" style="font-family: system-ui, sans-serif">{{ block.settings.title }}</p>
-        <p class="text-xs text-neutral-500" style="font-family: system-ui, sans-serif">{{ block.settings.subtitle }}</p>
+        <p class="text-sm font-bold text-neutral-900" style="font-family: system-ui, sans-serif; color: #171717;">{{ block.settings.title }}</p>
+        <p class="text-xs text-neutral-600" style="font-family: system-ui, sans-serif; color: #525252;">{{ block.settings.subtitle }}</p>
       </div>
       {% endfor %}
     </div>
