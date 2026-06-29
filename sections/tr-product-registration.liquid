@@ -1,0 +1,247 @@
+<section class="bg-neutral-50 border-b border-neutral-100 py-16 md:py-24">
+  <div class="container mx-auto px-4 text-center">
+    <div>
+      {% if section.settings.kicker != blank %}
+        <p class="text-xs tracking-[0.3em] uppercase text-neutral-400 mb-4" style="font-family: system-ui, sans-serif;">{{ section.settings.kicker }}</p>
+      {% endif %}
+      
+      <h1 class="text-4xl md:text-6xl font-light tracking-wider mb-4">{{ section.settings.heading }}</h1>
+      
+      {% if section.settings.description != blank %}
+        <div class="text-sm text-neutral-500 max-w-xl mx-auto" style="font-family: system-ui, sans-serif;">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-16 md:py-24">
+  <div class="container mx-auto px-4 max-w-2xl">
+    {% form 'contact', id: 'TRProductRegistrationForm', class: 'space-y-8' %}
+      
+      {%- if form.posted_successfully? -%}
+        <div class="p-4 mb-8 text-sm text-green-800 rounded-sm border border-green-200 bg-green-50" style="font-family: system-ui, sans-serif;">
+          {{ section.settings.success_message }}
+        </div>
+      {%- elsif form.errors -%}
+        <div class="p-4 mb-8 text-sm text-red-800 rounded-sm border border-red-200 bg-red-50" style="font-family: system-ui, sans-serif;">
+          {{ form.errors | default_errors }}
+        </div>
+      {%- endif -%}
+
+      <input type="hidden" name="contact[tags]" value="product-registration, warranty, turkey">
+
+      <div>
+        <h2 class="text-xl text-amber-600 font-light tracking-wider mb-2">{{ section.settings.form_heading }}</h2>
+        
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-6 mt-8" style="font-family: system-ui, sans-serif;">{{ section.settings.customer_details_title }}</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="contact[first_name]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_firstname }}" required maxlength="100" style="font-family: system-ui, sans-serif;">
+          <input type="text" name="contact[last_name]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_lastname }}" required maxlength="100" style="font-family: system-ui, sans-serif;">
+        </div>
+        
+        <input type="email" name="contact[email]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_email }}" required maxlength="255" style="font-family: system-ui, sans-serif;">
+        
+        <input type="text" name="contact[address]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_address }}" maxlength="300" style="font-family: system-ui, sans-serif;">
+        
+        <select name="contact[country]" required class="flex h-10 w-full items-center justify-between border bg-background px-3 py-2 text-sm rounded-sm border-neutral-300 mt-4 focus:outline-none focus:ring-2 focus:ring-neutral-400" style="font-family: system-ui, sans-serif;">
+          <option value="" disabled selected>{{ section.settings.placeholder_country }}</option>
+          <option value="Danmark">Danimarka</option>
+          <option value="Norge">Norveç</option>
+          <option value="Sverige">İsveç</option>
+          <option value="Finland">Finlandiya</option>
+          <option value="Deutschland">Almanya</option>
+          <option value="United Kingdom">Birleşik Krallık</option>
+          <option value="France">Fransa</option>
+          <option value="Nederland">Hollanda</option>
+          <option value="Türkiye">Türkiye</option>
+          <option value="العربية">Arapça</option>
+        </select>
+        
+        <input type="tel" name="contact[phone]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_phone }}" maxlength="20" style="font-family: system-ui, sans-serif;">
+        
+        <input type="text" name="contact[dob]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_dob }}" maxlength="10" style="font-family: system-ui, sans-serif;">
+      </div>
+
+      <div>
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-4 mt-8" style="font-family: system-ui, sans-serif;">{{ section.settings.product_details_title }}</p>
+        <p class="text-sm text-neutral-600 mb-4" style="font-family: system-ui, sans-serif;">{{ section.settings.product_details_subtitle }}</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {% for block in section.blocks %}
+            {% assign input_name = 'contact[product_' | append: forloop.index | append: ']' %}
+            <label class="flex items-center gap-3 cursor-pointer text-sm text-neutral-700 hover:text-neutral-900 transition-colors" style="font-family: system-ui, sans-serif;" {{ block.shopify_attributes }}>
+              <input type="checkbox" name="{{ input_name }}" value="{{ block.settings.title }}" class="h-4 w-4 shrink-0 rounded-sm border-neutral-300 text-neutral-900 focus:ring-neutral-900 focus:ring-offset-2">
+              {{ block.settings.title }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs tracking-[0.2em] uppercase text-neutral-800 font-bold mb-4 mt-8" style="font-family: system-ui, sans-serif;">{{ section.settings.receipt_number_title }}</p>
+        <input type="text" name="contact[receipt_number]" class="flex h-10 w-full border bg-background px-3 py-2 text-base md:text-sm rounded-sm border-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400" placeholder="{{ section.settings.placeholder_receipt }}" required maxlength="100" style="font-family: system-ui, sans-serif;">
+      </div>
+
+      <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all duration-500 px-4 py-2 w-full bg-neutral-900 hover:bg-neutral-800 text-white rounded-sm h-12 text-sm tracking-[0.2em] uppercase mt-8" style="font-family: system-ui, sans-serif;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+        {{ section.settings.button_text }}
+      </button>
+      
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "TR Product Registration",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Settings"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "● ÜRÜNÜMÜ KAYDET"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Hero Heading",
+      "default": "ÖMÜR BOYU GARANTİ"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Hero Description",
+      "default": "<p><strong>NOT:</strong> Lütfen fatura numarası farklı olan her ürün için ayrı bir garanti kaydı gönderin.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Form Settings"
+    },
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "Form Heading",
+      "default": "Ürününüzü Kaydedin"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "Teşekkürler! Ömür boyu garantiniz başarıyla etkinleştirildi."
+    },
+    {
+      "type": "text",
+      "id": "customer_details_title",
+      "label": "Customer Details Title",
+      "default": "MÜŞTERİ BİLGİLERİ"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_firstname",
+      "label": "First Name Placeholder",
+      "default": "Adınız*"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_lastname",
+      "label": "Last Name Placeholder",
+      "default": "Soyadınız*"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_email",
+      "label": "Email Placeholder",
+      "default": "E-posta*"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_address",
+      "label": "Address Placeholder",
+      "default": "Adres"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_country",
+      "label": "Country Placeholder",
+      "default": "Ülke*"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_phone",
+      "label": "Phone Placeholder",
+      "default": "Telefon"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_dob",
+      "label": "DOB Placeholder",
+      "default": "Doğum Tarihi (GG/AA/YYYY)"
+    },
+    {
+      "type": "text",
+      "id": "product_details_title",
+      "label": "Product Details Title",
+      "default": "ÜRÜN DETAYLARI"
+    },
+    {
+      "type": "text",
+      "id": "product_details_subtitle",
+      "label": "Product Details Subtitle",
+      "default": "Lütfen ürün(lerinizi) seçin*"
+    },
+    {
+      "type": "text",
+      "id": "receipt_number_title",
+      "label": "Receipt Number Title",
+      "default": "Fatura Numarası"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_receipt",
+      "label": "Receipt Number Placeholder",
+      "default": "Fatura Numaranız*"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Ömür Boyu Garanti’yi Etkinleştir"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Product Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "TR Product Registration",
+      "blocks": [
+        { "type": "product", "settings": { "title": "BOSS LADY" } },
+        { "type": "product", "settings": { "title": "NEFERTITI" } },
+        { "type": "product", "settings": { "title": "CLEAN MY SOUL" } },
+        { "type": "product", "settings": { "title": "COMFORT CLEANER" } },
+        { "type": "product", "settings": { "title": "LIFT ME UP" } },
+        { "type": "product", "settings": { "title": "LIGHT UP" } },
+        { "type": "product", "settings": { "title": "GÖZ PEDLERİ" } },
+        { "type": "product", "settings": { "title": "SERUM SETİ" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

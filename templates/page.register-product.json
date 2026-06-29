@@ -9,20 +9,27 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "register-product-hero",
+    "tr_registration": {
+      "type": "tr-product-registration",
       "settings": {
-        "kicker": "● REGISTER MY PRODUCT",
-        "heading": "LIFETIME WARRANTY",
-        "description": "<p><strong>NOTE:</strong> Please submit a separate warranty registration for each product where the receipt number used is different.</p>"
-      }
-    },
-    "form": {
-      "type": "register-product-form",
-      "settings": {
-        "heading": "Register Your Product",
-        "success_message": "Thank you! Your lifetime warranty has been successfully activated. We will contact you if we need further information.",
-        "button_text": "Activate Lifetime Warranty"
+        "kicker": "● ÜRÜNÜMÜ KAYDET",
+        "heading": "ÖMÜR BOYU GARANTİ",
+        "description": "<p><strong>NOT:</strong> Lütfen fatura numarası farklı olan her ürün için ayrı bir garanti kaydı gönderin.</p>",
+        "form_heading": "Ürününüzü Kaydedin",
+        "success_message": "Teşekkürler! Ömür boyu garantiniz başarıyla etkinleştirildi.",
+        "customer_details_title": "MÜŞTERİ BİLGİLERİ",
+        "placeholder_firstname": "Adınız*",
+        "placeholder_lastname": "Soyadınız*",
+        "placeholder_email": "E-posta*",
+        "placeholder_address": "Adres",
+        "placeholder_country": "Ülke*",
+        "placeholder_phone": "Telefon",
+        "placeholder_dob": "Doğum Tarihi (GG/AA/YYYY)",
+        "product_details_title": "ÜRÜN DETAYLARI",
+        "product_details_subtitle": "Lütfen ürün(lerinizi) seçin*",
+        "receipt_number_title": "Fatura Numarası",
+        "placeholder_receipt": "Fatura Numaranız*",
+        "button_text": "Ömür Boyu Garanti’yi Etkinleştir"
       },
       "blocks": {
         "prod_1": { "type": "product", "settings": { "title": "BOSS LADY" } },
@@ -31,8 +38,8 @@
         "prod_4": { "type": "product", "settings": { "title": "COMFORT CLEANER" } },
         "prod_5": { "type": "product", "settings": { "title": "LIFT ME UP" } },
         "prod_6": { "type": "product", "settings": { "title": "LIGHT UP" } },
-        "prod_7": { "type": "product", "settings": { "title": "EYEPADS" } },
-        "prod_8": { "type": "product", "settings": { "title": "SERUM SET" } }
+        "prod_7": { "type": "product", "settings": { "title": "GÖZ PEDLERİ" } },
+        "prod_8": { "type": "product", "settings": { "title": "SERUM SETİ" } }
       },
       "block_order": [
         "prod_1",
@@ -47,7 +54,6 @@
     }
   },
   "order": [
-    "hero",
-    "form"
+    "tr_registration"
   ]
 }
