@@ -1,0 +1,61 @@
+{% comment %}
+  Clean beauty PDP price display.
+  Accepts:
+  - product: {Object}
+  - block: {Object}
+  - section_id: {String}
+{% endcomment %}
+{%- liquid
+  assign target = product.selected_or_first_available_variant
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price
+  assign available = target.available
+
+  if settings.currency_code_enabled
+    assign money_price = price | money_with_currency
+    assign money_compare = compare_at_price | money_with_currency
+  else
+    assign money_price = price | money
+    assign money_compare = compare_at_price | money
+  endif
+
+  assign has_discount = false
+  if compare_at_price > price
+    assign has_discount = true
+    assign discount_amount = compare_at_price | minus: price
+    assign discount_pct = discount_amount | times: 100.0 | divided_by: compare_at_price | round
+  endif
+
+  assign save_label = block.settings.save_label
+  if save_label contains '[percent]'
+    assign save_label = save_label | replace: '[percent]', discount_pct
+  endif
+-%}
+
+<div id="price-{{ section_id }}" class="mpc-price-block" role="status" {{ block.shopify_attributes }}>
+  {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+
+  <div class="mpc-price-row">
+    {%- if has_discount -%}
+      <span class="mpc-price-compare" data-compare-price>{{ money_compare }}</span>
+    {%- endif -%}
+    <span class="mpc-price-current" data-current-price>{{ money_price }}</span>
+    {%- if has_discount and block.settings.show_save_badge -%}
+      <span class="mpc-price-save" data-save-badge>{{ save_label }}</span>
+    {%- endif -%}
+  </div>
+
+  {%- if block.settings.tax_note != blank -%}
+    <p class="mpc-price-tax">{{ block.settings.tax_note }}</p>
+  {%- endif -%}
+
+  {%- if block.settings.show_installments -%}
+    <div class="mpc-price-installments">
+      {%- assign product_form_installment_id = 'product-form-installment-' | append: section_id -%}
+      {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        {{ form | payment_terms }}
+      {%- endform -%}
+    </div>
+  {%- endif -%}
+</div>
