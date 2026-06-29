@@ -45,7 +45,7 @@
         "stat_yVp8Bt": {
           "type": "stat",
           "settings": {
-            "svg_icon": "",
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-users w-5 h-5 text-gold mx-auto mb-3\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path></svg>",
             "number": "250+",
             "label": "Kurumsal Müşteriler"
           }
@@ -53,41 +53,57 @@
         "stat_gYVMcU": {
           "type": "stat",
           "settings": {
-            "svg_icon": "",
-            "number": "250+",
-            "label": "Kurumsal Müşteriler"
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-map-pin w-5 h-5 text-gold mx-auto mb-3\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"></path><circle cx=\"12\" cy=\"10\" r=\"3\"></circle></svg>",
+            "number": "7",
+            "label": "4 Ülkede Showroomlar"
           }
         },
         "stat_wUEzGH": {
           "type": "stat",
           "settings": {
-            "svg_icon": "",
-            "number": "250+",
-            "label": "Kurumsal Müşteriler"
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-award w-5 h-5 text-gold mx-auto mb-3\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
+            "number": "6",
+            "label": "Uluslararası Ödüller"
           }
         },
         "stat_iiwir6": {
           "type": "stat",
           "settings": {
-            "svg_icon": "",
-            "number": "250+",
-            "label": "Kurumsal Müşteriler"
-          }
-        },
-        "value_4MHnAg": {
-          "type": "value",
-          "settings": {
-            "svg_icon": "",
-            "title": "Wellness Tutkusu",
-            "description": ""
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-star w-5 h-5 text-gold mx-auto mb-3\"><path d=\"M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z\"></path></svg>",
+            "number": "10",
+            "label": "Diller ve Piyasalar"
           }
         },
         "value_C9WQwi": {
           "type": "value",
           "settings": {
-            "svg_icon": "",
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart w-6 h-6 text-gold mx-auto mb-6\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
             "title": "Wellness Tutkusu",
-            "description": ""
+            "description": "Uyku, iyileşme ve rahatlama alanındaki yenilikler aracılığıyla insanların yaşam kalitesini artırma konusunda tutkuluyuz. Ürünlerimiz kiropraktörler ve fizyoterapistler tarafından sağlık profesyonelleri tarafından önerilmektedir."
+          }
+        },
+        "value_4MHnAg": {
+          "type": "value",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield w-6 h-6 text-gold mx-auto mb-6\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
+            "title": "Ödünsüz",
+            "description": "Yalnızca kalite, dayanıklılık ve kanıtlanmış etki açısından en yüksek standartları karşılayan ürünleri seçiyoruz. Bu nedenle, sektördeki en güçlü garantiyi sunuyoruz: tüm ana ürünlerde 5 yıl tam garanti."
+          }
+        },
+        "value_UhT9pk": {
+          "type": "value",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-zap w-6 h-6 text-gold mx-auto mb-6\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
+            "title": "Kişisel Hizmet",
+            "description": "Robot yanıtı yok. Uzmanlarımız size danışmanlık, vücut analizi ve ürün demoları ile gelir — ücretsiz. Kopenhag, Fredericia, Malmö ve Türkiye'deki 7 showroomumuzdan birinde deneyimleyin."
+          }
+        },
+        "value_PPzVUc": {
+          "type": "value",
+          "settings": {
+            "svg_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-globe w-6 h-6 text-gold mx-auto mb-6\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20\"></path><path d=\"M2 12h20\"></path></svg>",
+            "title": "İskandinav Yaklaşımı",
+            "description": "Robot yanıtı yok. Uzmanlarımız size danışmanlık, vücut analizi ve ürün demoları ile gelir — ücretsiz. Kopenhag, Fredericia, Malmö ve Türkiye'deki 7 showroomumuzdan birinde deneyimleyin.\n\nİskandinav Yaklaşımı"
           }
         },
         "timeline_BwLWjd": {
@@ -95,36 +111,101 @@
           "settings": {
             "year": "2018",
             "title": "Kuruluş",
-            "description": ""
+            "description": "World of Comfort, Fredericia'daki ilk showroomunu, profesyonel wellness teknolojisini İskandinavya'ya getirme vizyonuyla açtı. İlk günden itibaren, sağlık uzmanlığı kalitesine ve kişisel danışmanlığa odaklandık."
           }
         },
         "timeline_Ga7D4r": {
           "type": "timeline",
           "settings": {
-            "year": "2018",
-            "title": "Kuruluş",
-            "description": ""
+            "year": "2019",
+            "title": "Kopenhag Showroom",
+            "description": "Kopenhag'daki showroomumuz açıldı ve hızla 30'dan fazla ürünle masaj koltukları ve wellness teknolojisi için İskandinavya'nın en büyük sergi alanı haline geldi."
+          }
+        },
+        "timeline_GUCKh6": {
+          "type": "timeline",
+          "settings": {
+            "year": "2021",
+            "title": "Ticari Genişleme",
+            "description": "Kurumsal programımızı başlattık ve ilk 50 şirkete işyerinde sağlık çözümlerini entegre etmelerinde yardımcı olduk. Program devamsızlığı %35'e kadar azaltıyor."
+          }
+        },
+        "timeline_eeYCBx": {
+          "type": "timeline",
+          "settings": {
+            "year": "2023",
+            "title": "Uluslararası Genişleme",
+            "description": "Yeni showroom'lar ve yerel uzman ekiplerle İsveç (Malmö) ve Türkiye'ye genişleme. World of Comfort artık 4 ülkede ve 10 dilde uzmanlıkla hizmet vermektedir."
+          }
+        },
+        "timeline_gmd6pA": {
+          "type": "timeline",
+          "settings": {
+            "year": "2024",
+            "title": "SOVESYSTEM® ve Ödüllü",
+            "description": "Kişiye özel SOVESYSTEM®'imizi başlattık — Almanya'da bireysel vücut analiziyle el yapımı. Aynı yıl Børsen Gazelle, Scandinavian Business Awards ve Healthcare & Pharmaceutical Awards ödüllerini aldık."
+          }
+        },
+        "timeline_rjgzi4": {
+          "type": "timeline",
+          "settings": {
+            "year": "2026",
+            "title": "SYNTHERA™ AI ve 7 Showroom",
+            "description": "Gerçek zamanlı vücut taraması özellikli dünyanın ilk yapay zeka destekli yatağının lansmanı. Bugün World of Comfort, 4 ülkede 7 showroom, 250'den fazla kurumsal müşteri ve 6 uluslararası ödülle İskandinavya'nın önde gelen sağlık teknolojisi merkezidir."
           }
         },
         "tech_Vr6zDG": {
           "type": "tech",
           "settings": {
             "number_text": "01",
-            "title": "",
-            "description": ""
+            "title": "XD Precision Engine™ AI Masajı",
+            "description": "Masaj koltuklarımız, omurganızı gerçek zamanlı olarak haritalandırmak ve tamamen kişiselleştirilmiş, kiropraktik seviyeli bir masaj sunmak için yapay zeka vücut taramalı özel XD Precision Engine™'imizi kullanır."
           }
         },
         "tech_XhkweG": {
           "type": "tech",
           "settings": {
-            "number_text": "01",
-            "title": "",
-            "description": ""
+            "number_text": "02",
+            "title": "SOVESYSTEM® Özel Üretim Yatak",
+            "description": "Bir Alman uyku profesörü tarafından geliştirildi — her SOVESYSTEM®, antibakteriyel gümüş uygulamaları, Talalay lateks ve entegre osilasyon masajı ile hassas bir vücut analizine göre inşa edilir."
+          }
+        },
+        "tech_cbAHEH": {
+          "type": "tech",
+          "settings": {
+            "number_text": "03",
+            "title": "SYNTHERA™ AI Akıllı Yatak",
+            "description": "Yatak\nBir Alman uyku profesörü tarafından geliştirildi — her SOVESYSTEM®, antibakteriyel gümüş uygulamaları, Talalay lateks ve entegre osilasyon masajı ile hassas bir vücut analizine göre inşa edilir.\n\n03\nSYNTHERA™ AI Akıllı Yatak"
+          }
+        },
+        "tech_bwV3Km": {
+          "type": "tech",
+          "settings": {
+            "number_text": "04",
+            "title": "LED & RF Güzellik Teknolojisi",
+            "description": "Evde kullanım için profesyonel dermatolojik tedaviler — özel SED Beauty serimizden LED ışık terapisi, mikro akım ve radyofrekans cihazları."
+          }
+        },
+        "tech_q3YcbB": {
+          "type": "tech",
+          "settings": {
+            "number_text": "05",
+            "title": "Kırmızı Işık Terapisi ve İyileşme",
+            "description": "Evde kullanım için profesyonel dermatolojik tedaviler — özel SED Beauty serimizden LED ışık terapisi, mikro akım ve radyofrekans cihazları.\n\n05\nKırmızı Işık Terapisi ve İyileşme"
+          }
+        },
+        "tech_CFUYJ9": {
+          "type": "tech",
+          "settings": {
+            "number_text": "06",
+            "title": "250+ Ticari Kurulum",
+            "description": "Özel ticari programlarımız, devamsızlığı %35'e kadar azaltır. Ücretsiz APV değerlendirmeleri, ROI analizleri ve White-Glove kurulum hizmetleri sunuyoruz."
           }
         },
         "showroom_bNAJ8G": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-copenhagen-S0gzG1Mo.jpg",
             "subtitle": "Danimarka",
             "title": "Kopenhag"
           }
@@ -132,8 +213,25 @@
         "showroom_Ug8Ezg": {
           "type": "showroom",
           "settings": {
+            "image": "shopify://shop_images/showroom-fredericia-Nd0e262J.jpg",
             "subtitle": "Danimarka",
             "title": "Kopenhag"
+          }
+        },
+        "showroom_YetKD3": {
+          "type": "showroom",
+          "settings": {
+            "image": "shopify://shop_images/showroom-malmo-Cty06Plk.jpg",
+            "subtitle": "4 Şehir",
+            "title": "Malmö"
+          }
+        },
+        "showroom_cRkhdG": {
+          "type": "showroom",
+          "settings": {
+            "image": "shopify://shop_images/showroom-turkey-CVcc0xOR.jpg",
+            "subtitle": "4 Şehir",
+            "title": "Türkiye"
           }
         },
         "partner_yDFDzL": {
@@ -150,14 +248,26 @@
         "stat_gYVMcU",
         "stat_wUEzGH",
         "stat_iiwir6",
-        "value_4MHnAg",
         "value_C9WQwi",
+        "value_4MHnAg",
+        "value_UhT9pk",
+        "value_PPzVUc",
         "timeline_BwLWjd",
         "timeline_Ga7D4r",
+        "timeline_GUCKh6",
+        "timeline_eeYCBx",
+        "timeline_gmd6pA",
+        "timeline_rjgzi4",
         "tech_Vr6zDG",
         "tech_XhkweG",
+        "tech_cbAHEH",
+        "tech_bwV3Km",
+        "tech_q3YcbB",
+        "tech_CFUYJ9",
         "showroom_bNAJ8G",
         "showroom_Ug8Ezg",
+        "showroom_YetKD3",
+        "showroom_cRkhdG",
         "partner_yDFDzL",
         "partner_mXcWAn"
       ],
@@ -165,6 +275,7 @@
       "settings": {
         "home_text": "Ana Sayfa",
         "current_page_text": "Hakkımızda",
+        "hero_image": "shopify://shop_images/about-team-BsZX4yg7.jpg",
         "hero_preheading": "World of Comfort Hakkında",
         "hero_heading": "İskandinavya'nın Lider<br><span class=\"italic text-gold\">Sağlık Destinasyonu</span>",
         "hero_text": "2018'deki ilk showroomumuzdan Kuzey Avrupa'nın en çok ödül kazanan wellness teknoloji şirketine kadar...",
@@ -177,6 +288,7 @@
         "mission_text_1": "World of Comfort, 2018 yılında basit bir inançla kuruldu...",
         "mission_text_2": "Biz bir çevrimiçi pazar yeri değiliz. Biz sağlık uzmanlarıyız...",
         "mission_text_3": "İskandinavya'daki birçok önde gelen markanın gururlu özel distribütörleriyiz...",
+        "mission_image": "shopify://shop_images/about-team-BsZX4yg7.jpg",
         "values_preheading": "Değerlerimiz",
         "values_heading": "Savunduğumuz Şey",
         "timeline_preheading": "Yolculuğumuz",

@@ -11,13 +11,79 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "led_explained_cHJRq7": {
+      "type": "led-explained",
+      "blocks": {
+        "benefit_XJfzV3": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "mode_8Jx6Dk": {
+          "type": "mode",
+          "settings": {
+            "id": "",
+            "color": "",
+            "title": "",
+            "spec": "",
+            "content": "",
+            "benefits_list": ""
+          }
+        },
+        "product_RejPdA": {
+          "type": "product",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "faq_mXq6bA": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "benefit_XJfzV3",
+        "mode_8Jx6Dk",
+        "product_RejPdA",
+        "faq_mXq6bA"
+      ],
+      "name": "LED Therapy Page",
+      "settings": {
+        "hero_title": "LED Açıklandı",
+        "hero_subtitle": "NEDEN IŞIK YOLU DOĞRU YOL?",
+        "led_title_span": "LED",
+        "led_title": "AÇIKLANDI",
+        "led_content": "",
+        "ir_title_span": "KIZILÖTESİ",
+        "ir_title": "AÇIKLANDI",
+        "ir_content": "",
+        "penetration_title": "LED IŞIK NÜFUZ DERİNLİĞİ",
+        "penetration_desc": "",
+        "benefits_title": "FAYDALARI LED TERAPİSİ",
+        "modes_title": "NEDEN KULLANMALI LED TERAPİSİ",
+        "modes_desc": "",
+        "products_title": "",
+        "products_desc": "",
+        "products_btn_text": "",
+        "products_btn_url": "",
+        "faq_title": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "led_explained_cHJRq7"
   ]
 }
