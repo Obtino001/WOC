@@ -1,0 +1,113 @@
+<section class="bg-card py-16 md:py-20 border-b border-border">
+  <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="font-body text-[10px] font-medium uppercase tracking-[0.25em] text-muted-foreground mb-3">{{ section.settings.kicker }}</p>
+      <h2 class="font-display text-3xl font-semibold text-foreground md:text-4xl">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      {% for block in section.blocks %}
+        <div class="rounded-2xl border border-border bg-background overflow-hidden hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+          <div class="overflow-hidden">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt | default: block.settings.title | escape }}" class="aspect-[4/3] w-full object-cover" loading="lazy">
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'aspect-[4/3] w-full object-cover bg-muted' }}
+            {% endif %}
+          </div>
+          <div class="p-8 text-center">
+            <div class="mx-auto w-14 h-14 rounded-2xl bg-foreground/5 flex items-center justify-center mb-5">
+              {{ block.settings.icon_svg }}
+            </div>
+            <h3 class="font-display text-xl font-bold text-foreground mb-3">{{ block.settings.title }}</h3>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.text }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Three Disciplines",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "BEDENİ, ZİHNİ VE RUHU BİRLEŞTİRİR"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Üç disiplin – tek bir tahta"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "discipline",
+      "name": "Discipline",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG",
+          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-7 h-7 text-foreground\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Yoga"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Daha fazla esneklik, dinginlik ve iç denge için akıcı hareketleri ve bilinçli nefes alıp vermeyi deneyimleyin."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three Disciplines",
+      "blocks": [
+        {
+          "type": "discipline",
+          "settings": {
+            "title": "Yoga",
+            "text": "Daha fazla esneklik, dinginlik ve iç denge için akıcı hareketleri ve bilinçli nefes alıp vermeyi deneyimleyin.",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-7 h-7 text-foreground\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>"
+          }
+        },
+        {
+          "type": "discipline",
+          "settings": {
+            "title": "Pilates",
+            "text": "Hedefli karın egzersizleri, bilinçli hareketler ve sürdürülebilir vücut kontrolü ile 'güç merkezinizi' güçlendirin.",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-target w-7 h-7 text-foreground\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle></svg>"
+          }
+        },
+        {
+          "type": "discipline",
+          "settings": {
+            "title": "Vücut Ağırlığı",
+            "text": "Güç, denge ve hareketlilik için fonksiyonel egzersizlerle her yerde, her zaman antrenman yapın.",
+            "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-dumbbell w-7 h-7 text-foreground\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
