@@ -1,16 +1,10 @@
 {% schema %}
 {
-  "name": "Multi-Step Quiz",
+  "name": "6-Step Quiz",
   "settings": [
     {
       "type": "header",
-      "content": "Final Form Step Settings"
-    },
-    {
-      "type": "text",
-      "id": "form_step_label",
-      "label": "Form Step Label",
-      "default": "ALMOST DONE"
+      "content": "Final Form Settings"
     },
     {
       "type": "text",
@@ -27,21 +21,21 @@
     {
       "type": "text",
       "id": "form_button_text",
-      "label": "Form Button Text",
+      "label": "Button Text",
       "default": "GET MY RECOMMENDATION"
     }
   ],
   "blocks": [
     {
       "type": "question",
-      "name": "Quiz Question",
+      "name": "Question Step",
       "limit": 6,
       "settings": [
         {
           "type": "text",
           "id": "step_label",
-          "label": "Step Label",
-          "default": "Question 1 of 6"
+          "label": "Step Label (e.g., Question 1 of 6)",
+          "default": "Question x of 6"
         },
         {
           "type": "text",
@@ -80,7 +74,7 @@
   ],
   "presets": [
     {
-      "name": "Multi-Step Quiz",
+      "name": "6-Step Quiz",
       "blocks": [
         {
           "type": "question",
@@ -97,9 +91,57 @@
         {
           "type": "question",
           "settings": {
+            "step_label": "Question 2 of 6",
+            "heading": "Where do you experience the most discomfort?",
+            "subheading": "Select the area that bothers you most",
+            "option_1": "Lower Back",
+            "option_2": "Neck & Shoulders",
+            "option_3": "Legs & Feet",
+            "option_4": "Full Body Fatigue"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "step_label": "Question 3 of 6",
+            "heading": "How tall are you?",
+            "subheading": "This helps us find the right chair size",
+            "option_1": "Under 5'5\"",
+            "option_2": "5'5\" - 5'10\"",
+            "option_3": "5'11\" - 6'2\"",
+            "option_4": "Over 6'2\""
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "step_label": "Question 4 of 6",
+            "heading": "How much time do you spend sitting daily?",
+            "subheading": "Estimate your average sitting hours",
+            "option_1": "Less than 2 hours",
+            "option_2": "2 - 4 hours",
+            "option_3": "4 - 6 hours",
+            "option_4": "6+ hours"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "step_label": "Question 5 of 6",
+            "heading": "What is your preferred massage intensity?",
+            "subheading": "Choose your comfort level",
+            "option_1": "Gentle & Relaxing",
+            "option_2": "Medium Pressure",
+            "option_3": "Deep Tissue / Intense",
+            "option_4": "Variable Intensity"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
             "step_label": "Question 6 of 6",
             "heading": "Would you like to visit a showroom?",
-            "subheading": "Experience your chair before you decide",
+            "subheading": "Experience it before you decide",
             "option_1": "Yes, definitely",
             "option_2": "Maybe later",
             "option_3": "No, I will decide online",
@@ -112,107 +154,106 @@
 }
 {% endschema %}
 
-<main class="pt-20 min-h-screen flex items-center justify-center bg-[#0a0a0a] text-white" id="quiz-section-{{ section.id }}">
+<main class="pt-20 min-h-screen flex items-center justify-center" id="quiz-container-{{ section.id }}">
   <div class="container mx-auto px-4 py-12 max-w-2xl">
     
-    {% form 'contact', id: 'quiz-form' %}
+    {% form 'contact', id: 'custom-quiz-form' %}
       
-      <div id="quiz-hidden-inputs">
+      <!-- Hidden Inputs to Store Answers -->
+      <div id="hidden-quiz-answers">
         {% for block in section.blocks %}
-          <input type="hidden" name="contact[{{ block.settings.heading | escape }}]" id="hidden-answer-{{ forloop.index }}" value="">
+          <input type="hidden" name="contact[{{ block.settings.heading | escape }}]" id="answer-{{ forloop.index }}" value="">
         {% endfor %}
       </div>
 
+      <!-- Progress Header -->
       <div class="mb-12">
         <div class="flex justify-between items-center mb-3">
-          <span id="progress-label" class="font-body text-xs text-gray-400 uppercase tracking-wider">
-            </span>
-          <span id="progress-percentage" class="font-body text-xs text-[#d4af37] font-semibold">
-            </span>
+          <span id="quiz-step-text" class="font-body text-xs text-muted-foreground uppercase tracking-wider">
+            <!-- Populated via JS -->
+          </span>
+          <span id="quiz-progress-text" class="font-body text-xs text-gold font-semibold">
+            <!-- Populated via JS -->
+          </span>
         </div>
-        <div class="h-1 bg-gray-800 rounded-full overflow-hidden">
-          <div id="progress-bar-fill" class="h-full bg-[#d4af37] rounded-full transition-all duration-500" style="width: 0%;"></div>
+        <div class="h-1 bg-muted rounded-full overflow-hidden">
+          <div id="quiz-progress-bar" class="h-full bg-gold rounded-full transition-all duration-300" style="width: 0%;"></div>
         </div>
       </div>
 
+      <!-- The 6 Question Steps -->
       {% for block in section.blocks %}
-        <div class="quiz-step hidden opacity-0 transition-opacity duration-300" data-step="{{ forloop.index }}" data-label="{{ block.settings.step_label }}" {{ block.shopify_attributes }}>
-          <h2 class="font-display text-3xl md:text-4xl font-bold mb-2 font-serif">
+        <div class="quiz-step hidden" data-step="{{ forloop.index }}" data-label="{{ block.settings.step_label }}" {{ block.shopify_attributes }}>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
             {{ block.settings.heading }}
           </h2>
-          <p class="font-body text-gray-400 mb-10">
+          <p class="font-body text-muted-foreground mb-10">
             {{ block.settings.subheading }}
           </p>
 
           <div class="space-y-3">
             {% if block.settings.option_1 != blank %}
-              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border border-gray-800 font-body text-base font-medium transition-all duration-200 hover:border-[#d4af37] focus:border-[#d4af37] text-white bg-transparent" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_1 | escape }}">
+              <button type="button" class="quiz-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step="{{ forloop.index }}" data-val="{{ block.settings.option_1 | escape }}">
                 {{ block.settings.option_1 }}
               </button>
             {% endif %}
             {% if block.settings.option_2 != blank %}
-              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border border-gray-800 font-body text-base font-medium transition-all duration-200 hover:border-[#d4af37] focus:border-[#d4af37] text-white bg-transparent" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_2 | escape }}">
+              <button type="button" class="quiz-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step="{{ forloop.index }}" data-val="{{ block.settings.option_2 | escape }}">
                 {{ block.settings.option_2 }}
               </button>
             {% endif %}
             {% if block.settings.option_3 != blank %}
-              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border border-gray-800 font-body text-base font-medium transition-all duration-200 hover:border-[#d4af37] focus:border-[#d4af37] text-white bg-transparent" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_3 | escape }}">
+              <button type="button" class="quiz-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step="{{ forloop.index }}" data-val="{{ block.settings.option_3 | escape }}">
                 {{ block.settings.option_3 }}
               </button>
             {% endif %}
             {% if block.settings.option_4 != blank %}
-              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border border-gray-800 font-body text-base font-medium transition-all duration-200 hover:border-[#d4af37] focus:border-[#d4af37] text-white bg-transparent" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_4 | escape }}">
+              <button type="button" class="quiz-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step="{{ forloop.index }}" data-val="{{ block.settings.option_4 | escape }}">
                 {{ block.settings.option_4 }}
               </button>
             {% endif %}
           </div>
 
           {% if forloop.index > 1 %}
-            <button type="button" class="mt-8 text-sm text-gray-400 hover:text-white flex items-center transition-colors btn-prev">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-              Previous question
+            <button type="button" class="btn-back mt-8 text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center">
+              &larr; Previous question
             </button>
           {% endif %}
         </div>
       {% endfor %}
 
-      {% assign total_questions = section.blocks.size %}
-      {% assign final_step = total_questions | plus: 1 %}
-      
-      <div class="quiz-step hidden opacity-0 transition-opacity duration-300" data-step="{{ final_step }}" data-label="{{ section.settings.form_step_label }}">
-        <h2 class="font-display text-3xl md:text-4xl font-bold mb-2 font-serif">
+      <!-- Step 7: Final Lead Capture Form -->
+      {% assign final_step = section.blocks.size | plus: 1 %}
+      <div class="quiz-step hidden" data-step="{{ final_step }}" data-label="ALMOST DONE">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
           {{ section.settings.form_heading }}
         </h2>
-        <p class="font-body text-gray-400 mb-10">
+        <p class="font-body text-muted-foreground mb-10">
           {{ section.settings.form_subheading }}
         </p>
 
         <div class="space-y-4">
-          <div>
-            <input type="text" name="contact[name]" placeholder="Full Name" required class="w-full px-6 py-4 bg-transparent border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#d4af37] transition-colors">
-          </div>
-          <div>
-            <input type="email" name="contact[email]" placeholder="Email Address" required class="w-full px-6 py-4 bg-transparent border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#d4af37] transition-colors">
-          </div>
-          <div>
-            <input type="tel" name="contact[phone]" placeholder="Phone (Optional)" class="w-full px-6 py-4 bg-transparent border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#d4af37] transition-colors">
-          </div>
+          <input type="text" name="contact[name]" placeholder="Full Name" required class="w-full px-6 py-4 bg-transparent border-2 border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-gold transition-colors font-body">
           
-          <button type="submit" class="w-full mt-4 bg-[#c89b3c] hover:bg-[#b88c36] text-black font-semibold py-4 px-6 rounded-lg transition-colors tracking-wide">
+          <input type="email" name="contact[email]" placeholder="Email Address" required class="w-full px-6 py-4 bg-transparent border-2 border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-gold transition-colors font-body">
+          
+          <input type="tel" name="contact[phone]" placeholder="Phone (Optional)" class="w-full px-6 py-4 bg-transparent border-2 border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-gold transition-colors font-body">
+          
+          <button type="submit" class="w-full mt-4 bg-gold hover:bg-gold/90 text-background font-bold py-4 px-6 rounded-lg transition-colors font-body tracking-wider uppercase">
             {{ section.settings.form_button_text }}
           </button>
         </div>
 
-        <button type="button" class="mt-8 text-sm text-gray-400 hover:text-white flex items-center transition-colors btn-prev">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-          Back to questions
+        <button type="button" class="btn-back mt-8 text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center">
+          &larr; Back to questions
         </button>
       </div>
 
+      <!-- Success Message -->
       {% if form.posted_successfully? %}
-        <div class="absolute inset-0 bg-[#0a0a0a] flex flex-col items-center justify-center z-50 text-center px-4">
-          <h2 class="text-4xl font-serif font-bold text-white mb-4">Thank You!</h2>
-          <p class="text-gray-400">Your recommendation request has been sent successfully. We will be in touch shortly.</p>
+        <div class="absolute inset-0 bg-background flex flex-col items-center justify-center z-50 text-center px-4">
+          <h2 class="font-display text-4xl font-bold text-foreground mb-4">Thank You!</h2>
+          <p class="font-body text-muted-foreground">Your details have been received.</p>
         </div>
       {% endif %}
 
@@ -221,88 +262,85 @@
 </main>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const totalSteps = {{ section.blocks.size | plus: 1 }};
+  document.addEventListener('DOMContentLoaded', () => {
     const totalQuestions = {{ section.blocks.size }};
+    const totalSteps = totalQuestions + 1; // Includes the final form
     let currentStep = 1;
 
     const steps = document.querySelectorAll('.quiz-step');
-    const progressLabel = document.getElementById('progress-label');
-    const progressPercentage = document.getElementById('progress-percentage');
-    const progressBarFill = document.getElementById('progress-bar-fill');
-    
-    function updateUI() {
-      // Hide all steps
+    const stepText = document.getElementById('quiz-step-text');
+    const progressText = document.getElementById('quiz-progress-text');
+    const progressBar = document.getElementById('quiz-progress-bar');
+
+    function renderStep() {
+      // Hide all steps completely
       steps.forEach(step => {
         step.classList.add('hidden');
-        step.classList.remove('opacity-100');
-        step.classList.add('opacity-0');
+        step.style.opacity = '0';
       });
 
-      // Show current step
+      // Show the active step
       const activeStep = document.querySelector(`.quiz-step[data-step="${currentStep}"]`);
-      if(activeStep) {
+      if (activeStep) {
         activeStep.classList.remove('hidden');
-        // Slight delay for fade-in effect
+        // Simple fade effect
         setTimeout(() => {
-          activeStep.classList.remove('opacity-0');
-          activeStep.classList.add('opacity-100');
-        }, 50);
-        
-        // Update Progress Bar
-        const stepLabel = activeStep.getAttribute('data-label');
-        progressLabel.textContent = stepLabel;
-        
+          activeStep.style.opacity = '1';
+          activeStep.style.transition = 'opacity 0.3s ease';
+        }, 10);
+
+        // Update progress UI
+        const label = activeStep.getAttribute('data-label');
+        stepText.textContent = label;
+
         let percentage = Math.round((currentStep / totalSteps) * 100);
-        if (currentStep === totalSteps) percentage = 100; // Force 100% on final form step
-        
-        progressPercentage.textContent = `${percentage}%`;
-        progressBarFill.style.width = `${percentage}%`;
+        if (currentStep === totalSteps) percentage = 100;
+
+        progressText.textContent = `${percentage}%`;
+        progressBar.style.width = `${percentage}%`;
       }
     }
 
-    // Handle Option Selection
-    const optionButtons = document.querySelectorAll('.quiz-option-btn');
-    optionButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const stepIndex = this.getAttribute('data-step-index');
-        const value = this.getAttribute('data-value');
-        
-        // Save to hidden input
-        const hiddenInput = document.getElementById(`hidden-answer-${stepIndex}`);
-        if(hiddenInput) hiddenInput.value = value;
+    // Handle selecting an option
+    document.querySelectorAll('.quiz-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const stepNum = this.getAttribute('data-step');
+        const val = this.getAttribute('data-val');
 
-        // Visual feedback on the button before moving on
-        const siblings = this.closest('.space-y-3').querySelectorAll('.quiz-option-btn');
-        siblings.forEach(btn => {
-          btn.classList.remove('border-[#d4af37]');
-          btn.classList.add('border-gray-800');
+        // Populate hidden input for Shopify Form
+        document.getElementById(`answer-${stepNum}`).value = val;
+
+        // Visual selection styling
+        const siblings = this.parentElement.querySelectorAll('.quiz-btn');
+        siblings.forEach(sibling => {
+          sibling.classList.remove('border-gold', 'bg-gold/10');
+          sibling.classList.add('border-border');
         });
-        this.classList.remove('border-gray-800');
-        this.classList.add('border-[#d4af37]');
+        
+        this.classList.remove('border-border');
+        this.classList.add('border-gold', 'bg-gold/10');
 
-        // Proceed to next step automatically
+        // Automatically move to next step after 300ms
         setTimeout(() => {
           if (currentStep < totalSteps) {
             currentStep++;
-            updateUI();
+            renderStep();
           }
-        }, 250); // Small delay to let user see their selection
+        }, 300);
       });
     });
 
-    // Handle Previous Buttons
-    const prevButtons = document.querySelectorAll('.btn-prev');
-    prevButtons.forEach(button => {
-      button.addEventListener('click', function() {
+    // Handle 'Previous' or 'Back' buttons
+    document.querySelectorAll('.btn-back').forEach(btn => {
+      btn.addEventListener('click', () => {
         if (currentStep > 1) {
           currentStep--;
-          updateUI();
+          renderStep();
         }
       });
     });
 
-    // Initialize first step
-    updateUI();
+    // Initialize the first step on load
+    renderStep();
   });
 </script>
