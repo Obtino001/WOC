@@ -12,6 +12,30 @@
     "main": {
       "type": "awards-seduissante",
       "blocks": {
+        "award_badge_ryqRTx": {
+          "type": "award_badge",
+          "settings": {
+            "logo": "shopify://shop_images/sed-awards2-CRnln8l__1_62260ed7-74da-412d-b6aa-44f69c1ae9e7.jpg"
+          }
+        },
+        "award_badge_iDaweg": {
+          "type": "award_badge",
+          "settings": {
+            "logo": "shopify://shop_images/sed-awards2-CRnln8l__1_62260ed7-74da-412d-b6aa-44f69c1ae9e7.jpg"
+          }
+        },
+        "award_badge_ccWaA6": {
+          "type": "award_badge",
+          "settings": {
+            "logo": "shopify://shop_images/sed-awards1-AD0KX5uf_1_4a133c2c-b35a-46dd-9748-ab62afdab09c.jpg"
+          }
+        },
+        "award_badge_3bbkaJ": {
+          "type": "award_badge",
+          "settings": {
+            "logo": "shopify://shop_images/sed-awards2-CRnln8l__1_62260ed7-74da-412d-b6aa-44f69c1ae9e7.jpg"
+          }
+        },
         "year_2025": {
           "type": "year_group",
           "settings": {
@@ -152,6 +176,10 @@
         }
       },
       "block_order": [
+        "award_badge_ryqRTx",
+        "award_badge_iDaweg",
+        "award_badge_ccWaA6",
+        "award_badge_3bbkaJ",
         "year_2025",
         "award_2025_1",
         "award_2025_2",
