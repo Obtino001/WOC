@@ -5,207 +5,226 @@
   }
 {% endstyle %}
 
-  <div class="container mx-auto px-4 max-w-3xl section-{{ section.id }}-padding woc-quiz-step-section">
-    
-    <div class="text-center mb-10 mt-4">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-4 border" style="border-color: hsl(var(--gold) / 0.3); background: hsl(var(--gold) / 0.08);">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3" style="color: hsl(var(--gold));">
-          <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
-          <path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path>
-        </svg>
-        <span class="text-[11px] font-semibold uppercase tracking-widest" style="color: hsl(var(--gold));">{{ section.settings.badge_text }}</span>
-      </div>
-      <h1 class="font-display text-2xl md:text-3xl font-bold text-foreground">{{ section.settings.title }}</h1>
+<div class="container mx-auto px-4 max-w-3xl section-{{ section.id }}-padding woc-quiz-step-section" id="quiz-container-{{ section.id }}">
+  
+  <div class="text-center mb-10 mt-4">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-4 border" style="border-color: hsl(var(--gold) / 0.3); background: hsl(var(--gold) / 0.08);">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3" style="color: hsl(var(--gold));">
+        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+        <path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path>
+      </svg>
+      <span class="text-[11px] font-semibold uppercase tracking-widest" style="color: hsl(var(--gold));">{{ section.settings.badge_text }}</span>
     </div>
+    <h1 class="font-display text-2xl md:text-3xl font-bold text-foreground">{{ section.settings.title }}</h1>
+  </div>
 
+  <!-- QUESTIONS -->
+  <div id="quiz-questions-{{ section.id }}">
+    {% for block in section.blocks %}
+      {% if block.type == 'question' %}
+        <div class="quiz-question-block {% if forloop.index > 1 %}hidden{% endif %}" data-step="{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="mb-10">
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ block.settings.step_text }}</span>
+              <span class="font-body text-xs font-semibold" style="color: hsl(var(--gold));">{{ block.settings.progress }}%</span>
+            </div>
+            <div class="h-1.5 bg-muted rounded-full overflow-hidden">
+              <div class="h-full rounded-full transition-all duration-500" style="background: hsl(var(--gold)); width: {{ block.settings.progress }}%;"></div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">{{ block.settings.question_title }}</h2>
+            <p class="text-muted-foreground mb-8">{{ block.settings.question_subtitle }}</p>
+            
+            <div class="space-y-3">
+              {% for i in (1..6) %}
+                {% capture opt_emoji_key %}opt{{ i }}_emoji{% endcapture %}
+                {% capture opt_title_key %}opt{{ i }}_title{% endcapture %}
+                {% capture opt_sub_key %}opt{{ i }}_subtitle{% endcapture %}
+                {% capture opt_val_key %}opt{{ i }}_val{% endcapture %}
+                
+                {% assign opt_emoji = block.settings[opt_emoji_key] %}
+                {% assign opt_title = block.settings[opt_title_key] %}
+                {% assign opt_sub = block.settings[opt_sub_key] %}
+                {% assign opt_val = block.settings[opt_val_key] %}
+
+                {% if opt_title != blank %}
+                  <button type="button" data-question="{{ block.settings.question_title | escape }}" data-value="{{ opt_val | escape | default: opt_title }}" class="quiz-option-btn w-full text-left p-5 rounded-xl border-2 transition-all duration-200 group border-border hover:border-[hsl(var(--gold)/0.5)] hover:bg-muted/30">
+                    <div class="flex items-start gap-4">
+                      {% if opt_emoji != blank %}
+                        <span class="text-2xl flex-shrink-0">{{ opt_emoji }}</span>
+                      {% endif %}
+                      <div class="flex-1">
+                        <div class="font-semibold text-foreground">{{ opt_title }}</div>
+                        {% if opt_sub != blank %}
+                          <div class="text-sm text-muted-foreground mt-0.5">{{ opt_sub }}</div>
+                        {% endif %}
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 mt-1 flex-shrink-0 transition-all text-muted-foreground group-hover:translate-x-1">
+                        <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                  </button>
+                {% endif %}
+              {% endfor %}
+            </div>
+            
+            {% if forloop.index > 1 %}
+              <button type="button" class="btn-prev-quiz mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                Önceki soru
+              </button>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- FORM -->
+  <div id="quiz-form-{{ section.id }}" class="hidden">
     <div class="mb-10">
       <div class="flex justify-between items-center mb-3">
-        <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ section.settings.step_text }}</span>
-        <span class="font-body text-xs font-semibold" style="color: hsl(var(--gold));">{{ section.settings.progress_percentage }}%</span>
+        <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ section.settings.form_step_label | default: "NEREDEYSE BİTTİ" }}</span>
+        <span class="font-body text-xs font-semibold" style="color: hsl(var(--gold));">100%</span>
       </div>
       <div class="h-1.5 bg-muted rounded-full overflow-hidden">
-        <div class="h-full rounded-full" style="background: hsl(var(--gold)); width: {{ section.settings.progress_percentage }}%;"></div>
+        <div class="h-full rounded-full transition-all duration-500" style="background: hsl(var(--gold)); width: 100%;"></div>
       </div>
     </div>
-
-    <div>
-      <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">{{ section.settings.question_title }}</h2>
-      <p class="text-muted-foreground mb-8">{{ section.settings.question_subtitle }}</p>
+    
+    <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">{{ section.settings.form_heading | default: "Önerinizi Alın" }}</h2>
+    <p class="text-muted-foreground mb-8">{{ section.settings.form_subheading | default: "Detaylarınızı girin, size özel eşleşmeyi gönderelim." }}</p>
+    
+    {% form 'contact', id: 'quiz-contact-form' %}
+      <div id="hidden-quiz-inputs-{{ section.id }}"></div>
       
-      <div class="space-y-3" id="quiz-options-{{ section.id }}">
-        {% for block in section.blocks %}
-          <button type="button" data-value="{{ block.settings.internal_value }}" class="quiz-option-btn w-full text-left p-5 rounded-xl border-2 transition-all duration-200 group border-border hover:border-[hsl(var(--gold)/0.5)] hover:bg-muted/30" {{ block.shopify_attributes }}>
-            <div class="flex items-start gap-4">
-              <span class="text-2xl flex-shrink-0">{{ block.settings.emoji }}</span>
-              <div class="flex-1">
-                <div class="font-semibold text-foreground">{{ block.settings.title }}</div>
-                <div class="text-sm text-muted-foreground mt-0.5">{{ block.settings.subtitle }}</div>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 mt-1 flex-shrink-0 transition-all text-muted-foreground group-hover:translate-x-1">
-                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </div>
-          </button>
-        {% endfor %}
+      <div class="space-y-4">
+        <div>
+          <input type="text" name="contact[name]" placeholder="İsim Soyisim *" required class="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-[hsl(var(--gold)/0.5)] focus:outline-none transition-colors text-foreground">
+        </div>
+        <div>
+          <input type="email" name="contact[email]" placeholder="E-posta Adresi *" required class="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-[hsl(var(--gold)/0.5)] focus:outline-none transition-colors text-foreground">
+        </div>
+        <div>
+          <input type="tel" name="contact[phone]" placeholder="Telefon (İsteğe bağlı)" class="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-[hsl(var(--gold)/0.5)] focus:outline-none transition-colors text-foreground">
+        </div>
+        <button type="submit" class="w-full p-4 rounded-xl bg-gold text-charcoal font-bold mt-4 hover:opacity-90 transition-opacity">
+          {{ section.settings.form_button_text | default: "ÖNERİMİ AL" }}
+        </button>
       </div>
-      
-      <!-- Previous Question Button -->
-      <button class="btn-prev-quiz mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-        Previous question
-      </button>
-
-    </div>
-
+    {% endform %}
+    
+    <button type="button" class="btn-prev-quiz-form mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+      Önceki soru
+    </button>
   </div>
+
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const currentSection = document.getElementById('shopify-section-{{ section.id }}');
-    if (!currentSection) return;
+    const container = document.getElementById('quiz-container-{{ section.id }}');
+    if (!container) return;
     
-    // 1. Check if there is a previous quiz step section on this page
-    let prevSection = currentSection.previousElementSibling;
-    let hasPrevQuiz = false;
-    while (prevSection) {
-      if (prevSection.querySelector('.woc-quiz-step-section')) {
-        hasPrevQuiz = true;
-        break;
-      }
-      prevSection = prevSection.previousElementSibling;
-    }
+    const questions = Array.from(container.querySelectorAll('.quiz-question-block'));
+    const formBlock = document.getElementById('quiz-form-{{ section.id }}');
+    const hiddenInputsContainer = document.getElementById('hidden-quiz-inputs-{{ section.id }}');
+    let currentStepIndex = 0;
+    let answers = {};
     
-    // 2. Hide this section initially if it's NOT the first quiz step
-    if (hasPrevQuiz) {
-      currentSection.style.display = 'none';
-    }
-    
-    const buttons = currentSection.querySelectorAll('.quiz-option-btn');
-    const nextUrl = "{{ section.settings.next_step_url }}";
-    const questionKey = "{{ section.settings.question_key }}";
-    
-    // 3. Handle Option Clicks
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const selectedValue = this.getAttribute('data-value');
-        let quizData = JSON.parse(sessionStorage.getItem('woc_quiz_data') || '{}');
-        quizData[questionKey] = selectedValue;
-        sessionStorage.setItem('woc_quiz_data', JSON.stringify(quizData));
-        
-        // Find if there is another quiz step section AFTER this one
-        let nextSection = currentSection.nextElementSibling;
-        let hasNextQuiz = false;
-        while (nextSection) {
-          if (nextSection.querySelector('.woc-quiz-step-section')) {
-            hasNextQuiz = true;
-            break;
-          }
-          nextSection = nextSection.nextElementSibling;
-        }
-        
-        // Auto-advance to the next section if it exists on the same page!
-        if (hasNextQuiz) {
-           currentSection.style.display = 'none';
-           nextSection.style.display = 'block';
-           window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (nextUrl && nextUrl !== '') {
-           // Otherwise, navigate to the URL
-           window.location.href = nextUrl;
+    function showStep(index) {
+      questions.forEach((q, i) => {
+        if(i === index) {
+          q.classList.remove('hidden');
         } else {
-           alert("Choice saved! Please configure a Next URL in the Theme Editor for the final step.");
+          q.classList.add('hidden');
         }
+      });
+      if(index >= questions.length && questions.length > 0) {
+        formBlock.classList.remove('hidden');
+        // populate hidden inputs
+        hiddenInputsContainer.innerHTML = '';
+        for (const [q, a] of Object.entries(answers)) {
+           const input = document.createElement('input');
+           input.type = 'hidden';
+           input.name = `contact[${q}]`;
+           input.value = a;
+           hiddenInputsContainer.appendChild(input);
+        }
+      } else {
+        formBlock.classList.add('hidden');
+      }
+      window.scrollTo({ top: container.offsetTop - 50, behavior: 'smooth' });
+    }
+    
+    container.querySelectorAll('.quiz-option-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const questionName = this.getAttribute('data-question');
+        const val = this.getAttribute('data-value');
+        answers[questionName] = val;
+        
+        currentStepIndex++;
+        showStep(currentStepIndex);
       });
     });
     
-    // 4. Handle Previous Button
-    const prevBtn = currentSection.querySelector('.btn-prev-quiz');
-    if (prevBtn) {
-       if (!hasPrevQuiz) {
-         prevBtn.style.display = 'none'; // Hide button if it's the first step
-       } else {
-         prevBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (prevSection) {
-               currentSection.style.display = 'none';
-               prevSection.style.display = 'block';
-               window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-         });
-       }
-    }
+    container.querySelectorAll('.btn-prev-quiz, .btn-prev-quiz-form').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if(currentStepIndex > 0) {
+          currentStepIndex--;
+          showStep(currentStepIndex);
+        }
+      });
+    });
   });
 </script>
 
 {% schema %}
 {
-  "name": "Quiz Step",
+  "name": "Single Page Quiz",
   "settings": [
-    {
-      "type": "header",
-      "content": "Page Header"
-    },
     {
       "type": "text",
       "id": "badge_text",
       "label": "Badge Text",
-      "default": "Personal Chair Recommendation"
+      "default": "Kişisel sandalye tavsiyesi"
     },
     {
       "type": "text",
       "id": "title",
-      "label": "Main Title",
-      "default": "Find your perfect massage chair"
+      "label": "Title",
+      "default": "Mükemmel masaj koltuğunuzu bulun"
     },
     {
       "type": "header",
-      "content": "Progress Settings"
+      "content": "Form Settings"
     },
     {
       "type": "text",
-      "id": "step_text",
-      "label": "Step Counter Text",
-      "default": "Question 1 of 6"
-    },
-    {
-      "type": "range",
-      "id": "progress_percentage",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Progress Percentage",
-      "default": 17
-    },
-    {
-      "type": "header",
-      "content": "Question Configuration"
+      "id": "form_step_label",
+      "label": "Form Step Label",
+      "default": "NEREDEYSE BİTTİ"
     },
     {
       "type": "text",
-      "id": "question_title",
-      "label": "Question Title",
-      "default": "What is your primary need?"
-    },
-    {
-      "type": "textarea",
-      "id": "question_subtitle",
-      "label": "Question Subtitle",
-      "default": "Choose what matters most to you — this guides our recommendation."
+      "id": "form_heading",
+      "label": "Form Heading",
+      "default": "Önerinizi Alın"
     },
     {
       "type": "text",
-      "id": "question_key",
-      "label": "Data Key (Used for Saving Data)",
-      "default": "primary_need",
-      "info": "This is the invisible key used to save the customer's answer in the browser's storage."
+      "id": "form_subheading",
+      "label": "Form Subheading",
+      "default": "Detaylarınızı girin, size özel eşleşmeyi gönderelim."
     },
     {
-      "type": "url",
-      "id": "next_step_url",
-      "label": "Next Step URL",
-      "info": "Where should the user be redirected after clicking an option?"
+      "type": "text",
+      "id": "form_button_text",
+      "label": "Form Button Text",
+      "default": "ÖNERİMİ AL"
     },
     {
       "type": "header",
@@ -234,87 +253,76 @@
   ],
   "blocks": [
     {
-      "type": "option",
-      "name": "Quiz Option",
+      "type": "question",
+      "name": "Question Step",
       "settings": [
         {
           "type": "text",
-          "id": "emoji",
-          "label": "Emoji / Icon",
-          "default": "🩺"
+          "id": "step_text",
+          "label": "Step Counter Text",
+          "default": "1 / 6 Soru"
+        },
+        {
+          "type": "range",
+          "id": "progress",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Progress %",
+          "default": 17
         },
         {
           "type": "text",
-          "id": "title",
-          "label": "Option Title",
-          "default": "Back and neck pain relief"
+          "id": "question_title",
+          "label": "Question Heading"
         },
         {
           "type": "text",
-          "id": "subtitle",
-          "label": "Option Subtitle",
-          "default": "Deep medical massage"
+          "id": "question_subtitle",
+          "label": "Question Subheading"
         },
-        {
-          "type": "text",
-          "id": "internal_value",
-          "label": "Internal Value (Data to Save)",
-          "default": "pain_relief",
-          "info": "The data saved behind the scenes when a user selects this option."
-        }
+        { "type": "header", "content": "Option 1" },
+        { "type": "text", "id": "opt1_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt1_title", "label": "Title" },
+        { "type": "text", "id": "opt1_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt1_val", "label": "Internal Value (optional)" },
+        
+        { "type": "header", "content": "Option 2" },
+        { "type": "text", "id": "opt2_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt2_title", "label": "Title" },
+        { "type": "text", "id": "opt2_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt2_val", "label": "Internal Value (optional)" },
+        
+        { "type": "header", "content": "Option 3" },
+        { "type": "text", "id": "opt3_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt3_title", "label": "Title" },
+        { "type": "text", "id": "opt3_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt3_val", "label": "Internal Value (optional)" },
+        
+        { "type": "header", "content": "Option 4" },
+        { "type": "text", "id": "opt4_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt4_title", "label": "Title" },
+        { "type": "text", "id": "opt4_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt4_val", "label": "Internal Value (optional)" },
+        
+        { "type": "header", "content": "Option 5" },
+        { "type": "text", "id": "opt5_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt5_title", "label": "Title" },
+        { "type": "text", "id": "opt5_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt5_val", "label": "Internal Value (optional)" },
+        
+        { "type": "header", "content": "Option 6" },
+        { "type": "text", "id": "opt6_emoji", "label": "Emoji/Icon" },
+        { "type": "text", "id": "opt6_title", "label": "Title" },
+        { "type": "text", "id": "opt6_subtitle", "label": "Subtitle" },
+        { "type": "text", "id": "opt6_val", "label": "Internal Value (optional)" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Quiz Step",
-      "blocks": [
-        {
-          "type": "option",
-          "settings": {
-            "emoji": "🩺",
-            "title": "Back and neck pain relief",
-            "subtitle": "Deep medical massage",
-            "internal_value": "pain_relief"
-          }
-        },
-        {
-          "type": "option",
-          "settings": {
-            "emoji": "🧘",
-            "title": "Stress and anxiety reduction",
-            "subtitle": "Relaxation and mental well-being",
-            "internal_value": "stress_reduction"
-          }
-        },
-        {
-          "type": "option",
-          "settings": {
-            "emoji": "💪",
-            "title": "Sports recovery & circulation",
-            "subtitle": "Faster recovery after training",
-            "internal_value": "sports_recovery"
-          }
-        },
-        {
-          "type": "option",
-          "settings": {
-            "emoji": "✨",
-            "title": "Premium relaxation at home",
-            "subtitle": "Daily luxury and well-being",
-            "internal_value": "premium_relaxation"
-          }
-        },
-        {
-          "type": "option",
-          "settings": {
-            "emoji": "👴",
-            "title": "Mobility & elder care",
-            "subtitle": "Gentle therapy for seniors",
-            "internal_value": "elder_care"
-          }
-        }
-      ]
+      "name": "Quiz - Single Page App"
     }
   ]
 }
