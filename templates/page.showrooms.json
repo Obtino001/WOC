@@ -27,7 +27,7 @@
         "address": "Kringsvej 4, 7000 Fredericia",
         "hours": "Monday – Friday: 10:00 – 17:30",
         "button_text": "Book a Free Demo",
-        "link": "/pages/fredericia"
+        "link": "shopify://pages/fredericia"
       }
     },
     "grid": {
