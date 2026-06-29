@@ -15,6 +15,7 @@
         "caroline": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-1-DRvT2fo5.jpg",
             "name": "CAROLINE M.",
             "role": "Güzellik Uzmanı"
           }
@@ -22,6 +23,7 @@
         "sophia": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-2-C44QKlQ5.jpg",
             "name": "SOPHIA L.",
             "role": "TV Sunucusu"
           }
@@ -29,6 +31,7 @@
         "emma": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-3-UoBjsSf8.jpg",
             "name": "EMMA K.",
             "role": "Influencer ve Blogger"
           }
@@ -36,7 +39,7 @@
         "astrid": {
           "type": "influencer",
           "settings": {
-            "image": "shopify://shop_images/showroom-copenhagen-S0gzG1Mo.jpg",
+            "image": "shopify://shop_images/loved-influencer-4-kUi_1Qrc.jpg",
             "name": "ASTRID N.",
             "role": "Model"
           }
@@ -44,6 +47,7 @@
         "mette": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-5-wYKwalwG.jpg",
             "name": "DR. METTE R.",
             "role": "Dermatolog"
           }
@@ -51,6 +55,7 @@
         "isabelle": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-6-PI1iQeJ.jpg",
             "name": "ISABELLE T.",
             "role": "Güzellik Blogger'ı"
           }
@@ -58,6 +63,7 @@
         "christian": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-7-71zJ8J8c.jpg",
             "name": "CHRISTIAN B.",
             "role": "Ünlü Kuaför"
           }
@@ -65,6 +71,7 @@
         "julie": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-8-7hYjC3aF.jpg",
             "name": "JULIE H.",
             "role": "Fitness Influencer'ı"
           }
@@ -72,6 +79,7 @@
         "birgitte": {
           "type": "influencer",
           "settings": {
+            "image": "shopify://shop_images/loved-influencer-9-CDfHwxHi.jpg",
             "name": "BIRGITTE S.",
             "role": "Girişimci"
           }
@@ -89,13 +97,14 @@
         "birgitte"
       ],
       "settings": {
+        "hero_image": "shopify://shop_images/loved-by-hero-mosaic-CEq7hQT2.jpg",
         "hero_title": "Sevilen",
         "hero_title_suffix": "Tarafından",
         "intro_heading": "Sonuçlar kendini gösterdiğinde, herkes tarafından sevilmek kolaydır",
         "intro_subtext": "Müşteriler ve güzellik uzmanları tarafından sevildi — çünkü herkes ilgi odağı olmayı hak eder",
         "cta_heading": "Neden 45.000'den fazla kişinin Séduisante'ı sevdiğini keşfedin",
         "cta_text": "TÜM ÜRÜNLERİ GÖRÜN",
-        "cta_url": "/tr/beauty-technology"
+        "cta_url": "shopify://collections/guzellik-teknolojisi"
       }
     }
   },
