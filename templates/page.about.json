@@ -9,54 +9,28 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "woc-hero",
+    "custom_hero_banner_HmGh8F": {
+      "type": "custom-hero-banner",
+      "name": "Split Content Hero",
       "settings": {
-        "fallback_image": "shopify://shop_images/about-hero-DjV7g7iK.jpg",
-        "overlay_color": "#000000",
-        "overlay_opacity": 40,
-        "hero_label": "FLAGSHIP COLLECTION",
-        "title_line1": "Skaberen af Nordisk",
-        "title_line2": "Hjemme-Wellness",
-        "subtitle": "Historien bag World of Comfort — fra en enkelt idé om bedre smertelindring til over 20 showrooms på tværs af Europa og 50.000 glade kunder.",
-        "show_reviews": true,
-        "btn1_text": "Læs Vores Historie",
-        "btn1_url": "",
-        "btn2_text": "Find Showroom",
-        "btn2_url": "",
-        "btn3_text": "BOOK A DEMO",
-        "btn3_url": "",
-        "expert_name": "Dr. Carsten Rosendahl",
-        "expert_title": "Chiropractor · Nordic Spine & Wellness",
-        "expert_quote": "Daily use of a therapeutic massage chair can reduce chronic back pain by up to 60% in 8 weeks.",
-        "expert_badge_text": "Professionally recommended"
-      }
-    },
-    "trust": {
-      "type": "woc-trust",
-      "settings": {
-        "google_score": "4.9",
-        "google_count": "1.200",
-        "google_url": "https://google.com",
-        "trustpilot_score": "4.7",
-        "trustpilot_count": "1.400",
-        "trustpilot_url": "https://trustpilot.com"
-      }
-    },
-    "why_us": {
-      "type": "woc-why-us",
-      "settings": {
-        "label": "MISSION & VISION",
-        "title": "Hvad vi kæmper for hver dag",
-        "description": "Vores mission er at gøre avanceret, terapeutisk wellness-teknologi tilgængelig i ethvert skandinavisk hjem.",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "bg_image": "shopify://shop_images/about-hero-DjV7g7iK_93a92318-1101-42c9-b70e-5a9402cd2430.jpg",
+        "subtitle": "World of Comfort Hakkında",
+        "subtitle_color": "#d19f54",
+        "title": "İskandinavya'nın Lider Sağlık Destinasyonu",
+        "title_color": "#ffffff",
+        "text": "2018'deki ilk showroomumuzdan Kuzey Avrupa'nın en çok ödül kazanan wellness teknoloji şirketine kadar — wellbeing'inize yatırım yapmanın ne anlama geldiğini yeniden tanımlıyoruz.",
+        "text_color": "#e0e0e0",
+        "btn_1_text": "Showroom'u Ziyaret EtU",
+        "btn_1_url": "",
+        "btn_1_bg": "#c69c51",
+        "btn_1_text_color": "#1a1a1a",
+        "btn_2_text": "Uzman Tavsiyesi Alın",
+        "btn_2_url": "",
+        "btn_2_color": "#ffffff"
       }
     }
   },
   "order": [
-    "hero",
-    "trust",
-    "why_us"
+    "custom_hero_banner_HmGh8F"
   ]
 }
