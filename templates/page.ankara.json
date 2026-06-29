@@ -11,110 +11,13 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "showroom_details_WahXGV": {
-      "type": "showroom-details",
-      "blocks": {
-        "working_hour_XYxHPk": {
-          "type": "working_hour",
-          "settings": {
-            "day": "Pazartesi – Cuma",
-            "time": "10:00 – 17:30"
-          }
-        },
-        "working_hour_hgQtdb": {
-          "type": "working_hour",
-          "settings": {
-            "day": "Cumartesi",
-            "time": "10:00 – 14:00"
-          }
-        },
-        "working_hour_tiEPeL": {
-          "type": "working_hour",
-          "settings": {
-            "day": "Pazar",
-            "time": "Kapalı"
-          }
-        },
-        "feature_PnDzwx": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "World of Comfort Global Headquarters"
-          }
-        },
-        "feature_6NTnz7": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "Özenle seçilmiş masaj koltuğu seçenekleri (6+ model)"
-          }
-        },
-        "feature_EFxHhM": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "SOVESYSTEM® vücut tarama istasyonu"
-          }
-        },
-        "feature_cwFHHp": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "Kişisel 1'e 1 danışmanlık"
-          }
-        },
-        "feature_aywTWX": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "E20/E45 otoyolundan kolay erişim"
-          }
-        },
-        "feature_QU9mrf": {
-          "type": "feature",
-          "settings": {
-            "feature_text": "Kapıda ücretsiz otopark"
-          }
-        }
-      },
-      "block_order": [
-        "working_hour_XYxHPk",
-        "working_hour_hgQtdb",
-        "working_hour_tiEPeL",
-        "feature_PnDzwx",
-        "feature_6NTnz7",
-        "feature_EFxHhM",
-        "feature_cwFHHp",
-        "feature_aywTWX",
-        "feature_QU9mrf"
-      ],
-      "name": "Showroom Details",
-      "settings": {
-        "hero_image": "shopify://shop_images/showroom-fredericia-Nd0e262J.jpg",
-        "hero_subtitle": "🇩🇰 Danimarka",
-        "hero_title": "Fredericia Genel Merkez ve Showroom",
-        "hero_description": "Fredericia'daki küresel genel merkezimiz ve Jutland showroom'umuz. En popüler masaj koltuklarımızı deneyebileceğiniz ve SOVESYSTEM® vücut analizini rahat, kişisel bir ortamda deneyimleyebileceğiniz kapsamlı bir alan. Burası aynı zamanda tüm organizasyonumuzun da evidir.",
-        "back_label": "Tüm Showroomlar",
-        "back_link": "",
-        "address_title": "Adres",
-        "address_line_1": "Kringsvej 4",
-        "address_line_2": "7000 Fredericia",
-        "address_line_3": "Danimarka",
-        "phone_title": "Telefon",
-        "phone_number": "+45 70 20 30 41",
-        "email_title": "E-posta",
-        "email_address": "fredericia@worldofcomfort.dk",
-        "hours_title": "Çalışma Saatleri",
-        "features_title": "Burada Neler Bulacaksınız",
-        "form_title": "Ücretsiz Demo Rezervasyonu Yapın",
-        "form_subtitle": "Satın almadan önce deneyin. Tercih ettiğiniz ürünleri kişisel bir tanıtım için hazırlayacağız.",
-        "map_link": ""
-      }
     }
   },
   "order": [
-    "main",
-    "showroom_details_WahXGV"
+    "main"
   ]
 }
