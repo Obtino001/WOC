@@ -12,7 +12,10 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "seduissante_story_hero": {
       "type": "page-about-seduissante",
@@ -77,6 +80,7 @@
         "stat_4"
       ],
       "settings": {
+        "hero_image": "shopify://shop_images/sed-our-story-hero-B7iDeCXg.jpg",
         "hero_pretitle": "ÖDÜLLÜ",
         "hero_title": "CİLT BAKIM TEKNOLOJİSİ",
         "hero_desc": "Güzelliğin İnovasyonla Buluştuğu Yer",
