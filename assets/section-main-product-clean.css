@@ -8,7 +8,15 @@
 .mpc-section .page-width {
   max-width: var(--page-width, 1200px);
 }
+.mpc-info.product__info-wrapper.grid__item.product__column-sticky {
+    width: 100%;
+    max-width: 100%;
+}
 
+.mpc-media.grid__item.product__media-wrapper {
+    width: 100%;
+    max-width: 100%;
+}
 .mpc-breadcrumbs {
   padding: 0.75rem 0 0;
   margin-bottom: 0;
