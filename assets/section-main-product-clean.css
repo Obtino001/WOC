@@ -23,17 +23,126 @@
 
 .mpc-section .page-width {
   max-width: var(--page-width, 1200px);
-}
-.mpc-info.product__info-wrapper.grid__item.product__column-sticky {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.mpc-media.grid__item.product__media-wrapper {
-    width: 100%;
-    max-width: 100%;
+.mpc-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-.mpc-breadcrumbs {
+
+.mpc-section .mpc-grid.product {
+  gap: 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .mpc-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+  }
+
+  .mpc-section .mpc-grid.product {
+    gap: 4rem;
+  }
+}
+
+/* Override Dawn product column width rules */
+.mpc-section .mpc-media,
+.mpc-section .mpc-info,
+.mpc-section .product__media-wrapper,
+.mpc-section .product__info-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+.mpc-section .product--large:not(.product--no-media) .product__media-wrapper,
+.mpc-section .product--large:not(.product--no-media) .product__info-wrapper,
+.mpc-section .product--medium:not(.product--no-media) .product__media-wrapper,
+.mpc-section .product--medium:not(.product--no-media) .product__info-wrapper,
+.mpc-section .product--small:not(.product--no-media) .product__media-wrapper,
+.mpc-section .product--small:not(.product--no-media) .product__info-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.mpc-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.mpc-section .product__info-container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.mpc-section .mpc-promo,
+.mpc-section .mpc-purchase-block,
+.mpc-section .mpc-purchase-row,
+.mpc-section .mpc-trust-rail,
+.mpc-section .mpc-info-boxes,
+.mpc-section .mpc-price-block,
+.mpc-section product-form,
+.mpc-section .product-form {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.mpc-section .mpc-purchase-row {
+  flex-wrap: nowrap;
+}
+
+.mpc-section .mpc-atc-button {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.mpc-section .mpc-promo {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.mpc-section .mpc-title {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.mpc-section .mpc-trust-rail__item {
+  min-width: 0;
+}
+
+.mpc-section .mpc-trust-rail__label,
+.mpc-section .mpc-trust-rail__sub {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.mpc-section .mpc-info-box {
+  min-width: 0;
+}
+
+.mpc-section .mpc-info-box__title,
+.mpc-section .mpc-info-box__sub {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
   padding: 0.75rem 0 0;
   margin-bottom: 0;
   font-family: var(--font-body-family, 'Outfit', system-ui, sans-serif);

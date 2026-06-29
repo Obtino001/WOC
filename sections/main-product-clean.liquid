@@ -94,7 +94,7 @@
     {%- endif -%}
 
     <div class="mpc-grid product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }}{% if product.media.size == 0 %} product--no-media{% endif %}">
-      <div class="mpc-media grid__item product__media-wrapper">
+      <div class="mpc-media product__media-wrapper">
         {%- if section.settings.show_sale_badge -%}
           <span id="SaleBadge-{{ section.id }}" class="mpc-sale-badge" data-sale-badge{% unless show_sale_badge %} style="display:none"{% endunless %}>
             {%- if show_sale_badge -%}
@@ -109,7 +109,7 @@
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
 
-      <div class="mpc-info product__info-wrapper grid__item{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
+      <div class="mpc-info product__info-wrapper{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}">
         <section id="ProductInfo-{{ section.id }}" class="product__info-container">
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
