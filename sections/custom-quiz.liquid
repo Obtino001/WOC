@@ -227,7 +227,7 @@
       {% assign total_questions = section.blocks.size %}
       {% assign final_step = total_questions | plus: 1 %}
       
-      <div class="quiz-step hidden opacity-0 transition-opacity duration-300" data-step="{{ final_step }}" data-label="ALMOST DONE">
+      <div class="quiz-step hidden opacity-0 transition-opacity duration-300" data-step="{{ final_step }}" data-label="{{ section.settings.form_step_label | escape | default: 'ALMOST DONE' }}">
         <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
           {{ section.settings.form_heading }}
         </h2>
@@ -315,11 +315,11 @@
 
         const siblings = this.closest('.space-y-3').querySelectorAll('.quiz-option-btn');
         siblings.forEach(btn => {
-          btn.classList.remove('border-gold');
+          btn.classList.remove('border-gold', 'bg-gold/5');
           btn.classList.add('border-border');
         });
         this.classList.remove('border-border');
-        this.classList.add('border-gold');
+        this.classList.add('border-gold', 'bg-gold/5');
 
         setTimeout(() => {
           if (currentStep < totalSteps) {
