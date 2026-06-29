@@ -68,6 +68,16 @@
           "type": "text",
           "id": "option_4",
           "label": "Option 4"
+        },
+        {
+          "type": "text",
+          "id": "option_5",
+          "label": "Option 5"
+        },
+        {
+          "type": "text",
+          "id": "option_6",
+          "label": "Option 6"
         }
       ]
     }
@@ -210,6 +220,16 @@
             {% if block.settings.option_4 != blank %}
               <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_4 | escape }}">
                 {{ block.settings.option_4 }}
+              </button>
+            {% endif %}
+            {% if block.settings.option_5 != blank %}
+              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_5 | escape }}">
+                {{ block.settings.option_5 }}
+              </button>
+            {% endif %}
+            {% if block.settings.option_6 != blank %}
+              <button type="button" class="quiz-option-btn w-full text-left px-6 py-5 rounded-lg border-2 font-body text-base font-medium transition-all duration-200 border-border hover:border-gold/50 text-foreground" data-step-index="{{ forloop.index }}" data-value="{{ block.settings.option_6 | escape }}">
+                {{ block.settings.option_6 }}
               </button>
             {% endif %}
           </div>
