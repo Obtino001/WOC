@@ -474,7 +474,7 @@
 
 {% schema %}
 {
-  "name": "main product (Wellness)",
+  "name": "Main product (Wellness)",
   "tag": "section",
   "class": "section",
   "blocks": [
@@ -646,8 +646,8 @@
           "type": "text",
           "id": "save_label",
           "label": "Savings label",
-          "default": "SAVE [percent]%",
-          "info": "Use [percent] for the calculated discount."
+          "default": "[amount] tasarruf",
+          "info": "Use [amount] for the discount amount or [percent] for the percentage."
         },
         {
           "type": "text",
@@ -1031,36 +1031,58 @@
       "default": true
     },
     {
+      "type": "select",
+      "id": "sale_badge_format",
+      "label": "Sale badge format",
+      "options": [
+        { "value": "amount", "label": "Currency amount" },
+        { "value": "percent", "label": "Percentage" }
+      ],
+      "default": "amount"
+    },
+    {
       "type": "text",
       "id": "sale_badge_prefix",
       "label": "Sale badge prefix",
-      "default": "-",
-      "info": "Shown before the discount percentage."
+      "default": "İNDİRİM",
+      "info": "Shown before the discount amount or percentage."
     },
     { "type": "header", "content": "Colors" },
     {
       "type": "color",
       "id": "background_color",
       "label": "Background",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "color",
       "id": "text_color",
       "label": "Text",
-      "default": "#171717"
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#d4c5a9"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Muted text",
+      "default": "#a3a3a3"
     },
     {
       "type": "color",
       "id": "gallery_background",
       "label": "Gallery background",
-      "default": "#fafafa"
+      "default": "#171717"
     },
     {
       "type": "color",
       "id": "sale_badge_background",
       "label": "Sale badge background",
-      "default": "#ef4444"
+      "default": "#dc2626"
     },
     {
       "type": "color",
@@ -1072,31 +1094,31 @@
       "type": "color",
       "id": "save_badge_background",
       "label": "Savings badge background",
-      "default": "#fef2f2"
+      "default": "#dc2626"
     },
     {
       "type": "color",
       "id": "save_badge_text_color",
       "label": "Savings badge text",
-      "default": "#dc2626"
+      "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "atc_background",
       "label": "Add to cart background",
-      "default": "#171717"
+      "default": "#f5f0e8"
     },
     {
       "type": "color",
       "id": "atc_hover_background",
       "label": "Add to cart hover",
-      "default": "#262626"
+      "default": "#ebe4d8"
     },
     {
       "type": "color",
       "id": "atc_text_color",
       "label": "Add to cart text",
-      "default": "#ffffff"
+      "default": "#171717"
     },
     { "type": "header", "content": "Media" },
     {

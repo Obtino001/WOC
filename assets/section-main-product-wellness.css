@@ -1,16 +1,16 @@
-/* Main Product Clean — Beauty PDP light layout */
+/* Main Product Wellness — Dark home wellness PDP */
 
 .mpw-section {
-  background-color: rgb(var(--mpw-bg, 255 255 255));
-  color: rgb(var(--mpw-text, 23 23 23));
-  color-scheme: light;
+  background-color: rgb(var(--mpw-bg, 0 0 0));
+  color: rgb(var(--mpw-text, 255 255 255));
+  color-scheme: dark;
 
   /* Reset Dawn theme tokens inside this section */
-  --color-background: 255, 255, 255;
-  --color-foreground: 23, 23, 23;
+  --color-background: 0, 0, 0;
+  --color-foreground: 255, 255, 255;
   --color-shadow: 0, 0, 0;
-  --color-button: 23, 23, 23;
-  --color-button-text: 255, 255, 255;
+  --color-button: 245, 240, 232;
+  --color-button-text: 23, 23, 23;
   --inputs-radius: 4px;
   --inputs-radius-outset: 4px;
   --inputs-border-width: 1px;
@@ -1105,4 +1105,211 @@
 
 .mpw-section .global-media-settings::after {
   display: none !important;
+}
+
+/* ── Wellness dark layout overrides ── */
+.mpw-breadcrumbs {
+  color: rgb(var(--mpw-muted, 163 163 163));
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.mpw-breadcrumbs a {
+  color: rgb(var(--mpw-muted, 163 163 163));
+  text-decoration: none;
+}
+
+.mpw-breadcrumbs a:hover {
+  color: rgb(var(--mpw-text, 255 255 255));
+}
+
+.mpw-breadcrumbs__sep {
+  color: rgb(var(--mpw-muted, 163 163 163));
+}
+
+.mpw-section .product-media-container,
+.mpw-section .product__media-item .global-media-settings {
+  border-radius: 2rem;
+  overflow: hidden;
+  background: rgb(var(--mpw-gallery-bg, 23 23 23));
+}
+
+.mpw-sale-badge {
+  border-radius: 9999px;
+  padding: 0.375rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.mpw-title {
+  font-family: var(--font-heading-family, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: rgb(var(--mpw-title, 212 197 169));
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+.mpw-subtitle {
+  font-family: var(--font-body-family, 'Outfit', system-ui, sans-serif);
+  font-size: 0.875rem;
+  color: rgb(var(--mpw-title, 212 197 169));
+  opacity: 0.85;
+  margin: 0 0 1rem;
+}
+
+.mpw-description {
+  color: rgb(var(--mpw-muted, 163 163 163));
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.mpw-rating__stars svg {
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.mpw-rating__text {
+  color: rgb(var(--mpw-muted, 163 163 163));
+  font-size: 0.875rem;
+}
+
+.mpw-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.mpw-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgb(var(--mpw-text, 255 255 255));
+  margin-bottom: 0.5rem;
+}
+
+.mpw-features li svg {
+  width: 1rem;
+  height: 1rem;
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.mpw-price-current {
+  font-family: var(--font-heading-family, 'Cormorant Garamond', Georgia, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(var(--mpw-text, 255 255 255));
+}
+
+.mpw-price-compare {
+  color: rgb(var(--mpw-muted, 163 163 163));
+}
+
+.mpw-price-save--pill {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgb(var(--mpw-save-bg, 220 38 38));
+}
+
+.mpw-stock-badge--in {
+  color: #4ade80;
+}
+
+.mpw-promo--deal {
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.mpw-promo__headline {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.mpw-promo__subtext {
+  font-size: 0.75rem;
+  margin: 0.375rem 0 0;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.mpw-inline-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.mpw-inline-trust li {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  color: rgb(var(--mpw-muted, 163 163 163));
+}
+
+.mpw-inline-trust li svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.mpw-purchase-row--full .mpw-atc-button {
+  width: 100%;
+  border-radius: 9999px;
+  min-height: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+.mpw-trust-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 1.5rem 0 0;
+  margin: 1.5rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mpw-trust-footer__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(var(--mpw-muted, 163 163 163));
+}
+
+.mpw-trust-footer__icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mpw-trust-footer__label {
+  font-size: 0.75rem;
+}
+
+.mpw-section .thumbnail.global-media-settings {
+  background: rgb(var(--mpw-gallery-bg, 23 23 23));
+}
+
+@media screen and (max-width: 749px) {
+  .mpw-trust-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
