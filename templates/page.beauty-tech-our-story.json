@@ -12,13 +12,83 @@
     "main": {
       "type": "main-page",
       "disabled": true,
+      "settings": {}
+    },
+    "seduissante_story_hero": {
+      "type": "page-about-seduissante",
+      "blocks": {
+        "mission_1": {
+          "type": "mission_card",
+          "settings": {
+            "title": "MİSYONUMUZ",
+            "text": "Séduisante, en son cilt bakım teknolojisini bireysel cilt ihtiyaçlarına derin bir saygıyla birleştiren yenilikçi güzellik ürünleri ve cihazları geliştirir."
+          }
+        },
+        "mission_2": {
+          "type": "mission_card",
+          "settings": {
+            "title": "VİZYONUMUZ",
+            "text": "Gerçek güzelliğin yalnızca dış görünüşle değil, içsel güven ve dışsal bakımın sinerjisiyle tanımlandığına inanıyoruz."
+          }
+        },
+        "mission_3": {
+          "type": "mission_card",
+          "settings": {
+            "title": "HEDEFİMİZ",
+            "text": "Séduisante, bireyselliği kutlayan pratik, ulaşılabilir sonuçları teşvik ederek gerçekçi olmayan endüstri standartlarından kurtulmayı hedeflemektedir."
+          }
+        },
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "97%",
+            "stat_label": "Kırışıklıkların gözle görülür şekilde azaldığı fark edildi"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "95%",
+            "stat_label": "Cildin daha elastik göründüğü fark edildi"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "95%",
+            "stat_label": "Cildin daha ışıltılı göründüğü fark edildi"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "92%",
+            "stat_label": "Cildin gözle görülür şekilde daha dolgun göründüğü fark edildi"
+          }
+        }
+      },
+      "block_order": [
+        "mission_1",
+        "mission_2",
+        "mission_3",
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "hero_pretitle": "ÖDÜLLÜ",
+        "hero_title": "CİLT BAKIM TEKNOLOJİSİ",
+        "hero_desc": "Güzelliğin İnovasyonla Buluştuğu Yer",
+        "story_title": "HİKAYEMİZ",
+        "story_content": "<p>Séduisante, müşteri odaklı yaklaşımı ve devrim niteliğindeki bilimsel atılımlarıyla gururla tanınan ünlü bir İskandinav yüksek teknolojili güzellik markasıdır. Güzellik endüstrisinde altın standartları belirleyen dönüştürücü tedaviler ve en son teknolojiler sunuyoruz.</p><p>Séduisante, hem profesyonel hem de ev kullanımı için yenilikçi, çözüm odaklı cilt bakım ürünlerini ustaca geliştirmektedir. Tüm cilt tiplerinin daha sıkı, genç, parlak ve ışıltılı görünmesine yardımcı olmak için tasarlanmış kullanımı kolay cihazlara ve cilt bakım formülasyonlarına öncülük ediyoruz.</p>",
+        "stats_pretitle": "KLİNİK ÇALIŞMALAR",
+        "stats_title": "Kanıtlanmış Sonuçlar"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "seduissante_story_hero"
   ]
 }
