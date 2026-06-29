@@ -16,9 +16,50 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_quiz_jpTEnw": {
+      "type": "custom-quiz",
+      "blocks": {
+        "question_UMxWcn": {
+          "type": "question",
+          "settings": {
+            "step_label": "Question 1 of 6",
+            "heading": "What is your primary goal?",
+            "subheading": "Choose what is most important to you",
+            "option_1": "Stress Reduction",
+            "option_2": "Back Pain Relief",
+            "option_3": "Recovery & Performance",
+            "option_4": "General Wellbeing"
+          }
+        },
+        "question_AgKxeD": {
+          "type": "question",
+          "settings": {
+            "step_label": "Question 6 of 6",
+            "heading": "Would you like to visit a showroom?",
+            "subheading": "Experience your chair before you decide",
+            "option_1": "Yes, definitely",
+            "option_2": "Maybe later",
+            "option_3": "No, I will decide online",
+            "option_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_UMxWcn",
+        "question_AgKxeD"
+      ],
+      "name": "Multi-Step Quiz",
+      "settings": {
+        "form_step_label": "ALMOST DONE",
+        "form_heading": "Get Your Recommendation",
+        "form_subheading": "Enter your details and we will send your personal match.",
+        "form_button_text": "GET MY RECOMMENDATION"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_quiz_jpTEnw"
   ]
 }
