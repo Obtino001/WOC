@@ -1,49 +1,94 @@
-<section class="container mx-auto px-4 lg:px-8 mt-24">
-  <div class="text-center max-w-2xl mx-auto mb-12">
-    <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-4">{{ section.settings.subheading }}</p>
-    <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-4">{{ section.settings.heading }}</h2>
-    <p class="font-body text-sm text-muted-foreground">{{ section.settings.description }}</p>
-  </div>
-  
-  <div class="grid md:grid-cols-3 gap-6">
-    {% for block in section.blocks %}
-      <div class="relative rounded-xl border {{ block.settings.color_scheme }} p-8 backdrop-blur-sm" {{ block.shopify_attributes }}>
-        <div class="w-6 h-6 text-gold mb-4 [&>svg]:w-full [&>svg]:h-full">
-           {{ block.settings.icon_svg }}
-        </div>
-        <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-2">{{ block.settings.kicker }}</p>
-        <h3 class="font-display text-2xl font-light text-foreground mb-3">{{ block.settings.title }}</h3>
-        <p class="font-body text-sm text-muted-foreground leading-relaxed mb-6">{{ block.settings.description }}</p>
+<section class="bg-[#0a0a0a] py-24 md:py-32">
+  <div class="container mx-auto px-4 lg:px-8">
+    
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="font-body text-[10px] uppercase tracking-[0.2em] text-[#c28b24] mb-4">{{ section.settings.subheading }}</p>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-[#f5f5f0] mb-5">{{ section.settings.heading }}</h2>
+      <p class="font-body text-sm text-[#999]">{{ section.settings.description }}</p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      {% for block in section.blocks %}
         
-        {% assign form_id = 'ebook_form_' | append: block.id %}
-        {% form 'customer', id: form_id, class: 'space-y-3' %}
-          {% if form.posted_successfully? %}
-            <p class="font-body text-sm text-emerald-600 bg-emerald-50 p-3 rounded-none">Check your email for the download link!</p>
-          {% else %}
-            <input type="hidden" name="contact[tags]" value="newsletter, ebook-request, {{ block.settings.title | handleize }}">
-            <input type="text" name="contact[first_name]" class="flex h-10 w-full rounded-none border border-input px-3 py-2 text-base md:text-sm bg-background/60 focus-visible:ring-gold" placeholder="First name (optional)">
-            <input type="email" name="contact[email]" required class="flex h-10 w-full rounded-none border border-input px-3 py-2 text-base md:text-sm bg-background/60 focus-visible:ring-gold" placeholder="Your email">
-            <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all duration-500 bg-foreground text-background hover:bg-foreground/90 h-10 px-4 py-2 w-full rounded-none">
-              {{ section.settings.button_text }}
-            </button>
-            {{ form.errors | default_errors }}
-          {% endif %}
-          <p class="text-[10px] text-muted-foreground/70 leading-relaxed">{{ section.settings.disclaimer }}</p>
-        {% endform %}
-      </div>
-    {% endfor %}
+        {% assign theme_class = '' %}
+        {% assign accent_color = '' %}
+        
+        {% if block.settings.color_scheme == 'gold' %}
+          {% assign theme_class = 'bg-gradient-to-b from-[#c28b24]/10 to-[#151515] border-[#c28b24]/20' %}
+          {% assign accent_color = 'text-[#c28b24]' %}
+        {% elsif block.settings.color_scheme == 'silver' %}
+          {% assign theme_class = 'bg-gradient-to-b from-[#a0a0a0]/15 to-[#151515] border-[#a0a0a0]/20' %}
+          {% assign accent_color = 'text-[#a0a0a0]' %}
+        {% endif %}
+
+        <div class="rounded-xl border {{ theme_class }} p-8 flex flex-col h-full" {{ block.shopify_attributes }}>
+          
+          <!-- Icon -->
+          <div class="w-6 h-6 {{ accent_color }} mb-5 [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-[1.5]">
+            {{ block.settings.icon_svg }}
+          </div>
+          
+          <!-- Kicker -->
+          <p class="font-body text-[10px] uppercase tracking-[0.15em] {{ accent_color }} mb-3">{{ block.settings.kicker }}</p>
+          
+          <!-- Title -->
+          <h3 class="font-display text-2xl font-light text-[#f5f5f0] mb-4">{{ block.settings.title }}</h3>
+          
+          <!-- Description -->
+          <p class="font-body text-sm text-[#999] leading-relaxed mb-8 flex-1">{{ block.settings.description }}</p>
+          
+          <!-- Form -->
+          {% assign form_id = 'ebook_form_' | append: block.id %}
+          {% form 'customer', id: form_id, class: 'mt-auto' %}
+            
+            {% if form.posted_successfully? %}
+              <!-- Success State / Download Link -->
+              <div class="bg-[#111] border border-emerald-900/50 p-6 rounded-md text-center">
+                <p class="font-body text-sm text-emerald-500 mb-4">Teşekkürler! E-kitabınız hazır.</p>
+                {% if block.settings.pdf_url != blank %}
+                  <a href="{{ block.settings.pdf_url }}" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#d9d9d9] hover:bg-white text-[#111] font-medium text-sm py-3 px-6 rounded-sm transition-colors">
+                    PDF'yi İndir
+                  </a>
+                {% else %}
+                  <p class="font-body text-xs text-[#999]">Dosya şu anda kullanılamıyor.</p>
+                {% endif %}
+              </div>
+            {% else %}
+              <div class="space-y-3">
+                <input type="hidden" name="contact[tags]" value="newsletter, ebook-request, {{ block.settings.title | handleize }}">
+                
+                <input type="text" name="contact[first_name]" class="w-full h-12 bg-[#111] border border-[#2a2a2a] rounded-sm px-4 py-2 font-body text-sm text-[#f5f5f0] placeholder:text-[#666] focus:outline-none focus:border-[#666] transition-colors" placeholder="First name (optional)">
+                
+                <input type="email" name="contact[email]" required class="w-full h-12 bg-[#111] border border-[#2a2a2a] rounded-sm px-4 py-2 font-body text-sm text-[#f5f5f0] placeholder:text-[#666] focus:outline-none focus:border-[#666] transition-colors" placeholder="Your email">
+                
+                <button type="submit" class="w-full h-12 mt-1 bg-[#d9d9d9] hover:bg-white text-[#111] font-body font-medium text-sm px-4 rounded-sm transition-colors flex items-center justify-center">
+                  {{ section.settings.button_text }}
+                </button>
+                
+                {{ form.errors | default_errors }}
+              </div>
+            {% endif %}
+            
+            <!-- Disclaimer -->
+            <p class="font-body text-[9px] text-[#666] leading-relaxed mt-5">{{ section.settings.disclaimer }}</p>
+            
+          {% endform %}
+        </div>
+      {% endfor %}
+    </div>
+    
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Blog E-Books",
+  "name": "Blog E-Books (Dark)",
   "settings": [
     {
       "type": "text",
       "id": "subheading",
       "label": "Subheading",
-      "default": "Free e-books"
+      "default": "FREE E-BOOKS"
     },
     {
       "type": "text",
@@ -74,45 +119,83 @@
     {
       "type": "ebook",
       "name": "E-Book",
+      "limit": 3,
       "settings": [
-       {
-  "type": "select",
-  "id": "color_scheme",
-  "label": "Card Color Theme",
-  "options": [
-    { "value": "gold", "label": "Gold" },
-    { "value": "forest", "label": "Forest" },
-    { "value": "copper", "label": "Copper" }
-  ],
-  "default": "gold"
-},
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Card Theme",
+          "options": [
+            { "value": "gold", "label": "Gold/Bronze" },
+            { "value": "silver", "label": "Silver/Grey" }
+          ],
+          "default": "gold"
+        },
+        {
+          "type": "url",
+          "id": "pdf_url",
+          "label": "PDF File URL",
+          "info": "Upload your PDF to Settings > Files in Shopify, then paste the link here. This link appears after the user submits their email."
+        },
         {
           "type": "html",
           "id": "icon_svg",
           "label": "Icon SVG",
-          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>"
+          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20\"></path></svg>"
         },
         {
           "type": "text",
           "id": "kicker",
-          "label": "Kicker/Tagline"
+          "label": "Kicker/Tagline",
+          "default": "HOW TO CHOOSE THE RIGHT MASSAGE CHAIR"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Book Title"
+          "label": "Book Title",
+          "default": "The Massage Chair Guide"
         },
         {
           "type": "textarea",
           "id": "description",
-          "label": "Book Description"
+          "label": "Book Description",
+          "default": "50+ page guide on XD technology, health effects, financing, and what to look for."
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Blog E-Books"
+      "name": "Blog E-Books (Dark)",
+      "blocks": [
+        {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "gold",
+            "kicker": "HOW TO CHOOSE THE RIGHT MASSAGE CHAIR",
+            "title": "The Massage Chair Guide",
+            "description": "50+ page guide on XD technology, health effects, financing, and what to look for."
+          }
+        },
+        {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "silver",
+            "kicker": "AI SLEEP TECHNOLOGY EXPLAINED",
+            "title": "Smart Sleep Guide",
+            "description": "Complete introduction to SOVESYSTEM, SYNTHERA AI, and how to design the perfect sleep environment."
+          }
+        },
+        {
+          "type": "ebook",
+          "settings": {
+            "color_scheme": "gold",
+            "kicker": "ANTI-AGING AT HOME",
+            "title": "LED Beauty Guide",
+            "description": "The science behind red, yellow, and infrared LED light — and how to achieve clinic-level results."
+          }
+        }
+      ]
     }
   ]
 }
