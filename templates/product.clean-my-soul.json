@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-     "main": {
+    "main": {
       "type": "main-product",
       "blocks": {
         "text_cxx9Wc": {
@@ -165,14 +165,46 @@
       "settings": {
         "pretitle": "YENİ RUTİNİNİZ",
         "title": "CLEAN MY SOUL: PROFESYONEL DERİN TEMİZLİK",
-        "text_1": "",
-        "text_2": "",
+        "text_1": "Clean My Soul, cilde zarar vermeden derinlemesine yüz temizliği için özel olarak tasarlanmıştır. Ultrasonik titreşimlerin işi yapmasına izin verin - iğneler veya diğer sert aletlerle bastırma veya ovma yok.",
+        "text_2": "Ürün, kolay hareket halindeyken şarj etmek için bir USB şarj cihazıyla birlikte gelir. Kablosuz tasarımı, çantanızda taşımayı kolaylaştırır. Küçük, düz tasarımı, çok fazla yer kaplamamasını sağlar.",
         "button_text": "Şimdi Satın Al",
-        "button_link": ""
+        "button_link": "",
+        "image": "shopify://shop_images/sed-clean-my-soul-feature1-Ce8zlaEr.jpg"
       }
     },
     "science_tabs": {
       "type": "science-tabs",
+      "blocks": {
+        "tab_JwGydj": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Ultrasonik",
+            "heading": "Ultrasonik Teknoloji",
+            "text": ""
+          }
+        },
+        "tab_UAQyBL": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Ultrasonik",
+            "heading": "Ultrasonik Teknoloji",
+            "text": ""
+          }
+        },
+        "tab_cCmbp9": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Ultrasonik",
+            "heading": "Ultrasonik Teknoloji",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_JwGydj",
+        "tab_UAQyBL",
+        "tab_cCmbp9"
+      ],
       "settings": {
         "title": "CLEAN MY SOUL'un Arkasındaki Bilim"
       }
