@@ -10,11 +10,31 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "showroom-details",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
+        "title": "Fredericia Genel Merkez ve Showroom",
+        "description": "Fredericia'daki küresel genel merkezimiz ve Jutland showroom'umuz. En popüler masaj koltuklarını deneyebileceğiniz ve SOVESYSTEM® vücut analizini rahat, kişisel bir ortamda deneyimleyebileceğiniz kapsamlı bir alan.",
+        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.0!2d9.751!3d55.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDMzJzU3LjYiTiA5wrA0NScwMy42IkU!5e0!3m2!1sen!2sdk!4v1"
+      },
+      "blocks": {
+        "address": {
+          "type": "info_card",
+          "settings": {
+            "icon_svg": "<svg>...</svg>",
+            "heading": "Adres",
+            "content": "<p>Kringsvej 4<br>7000 Fredericia<br>Danimarka</p>"
+          }
+        },
+        "phone": {
+          "type": "info_card",
+          "settings": {
+            "icon_svg": "<svg>...</svg>",
+            "heading": "Telefon",
+            "content": "<p>+45 70 20 30 41</p>"
+          }
+        }
+      },
+      "block_order": ["address", "phone"]
     }
   },
   "order": [
