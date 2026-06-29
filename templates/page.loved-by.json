@@ -11,6 +11,83 @@
   "sections": {
     "main": {
       "type": "loved-by",
+      "blocks": {
+        "caroline": {
+          "type": "influencer",
+          "settings": {
+            "name": "CAROLINE M.",
+            "role": "Güzellik Uzmanı"
+          }
+        },
+        "sophia": {
+          "type": "influencer",
+          "settings": {
+            "name": "SOPHIA L.",
+            "role": "TV Sunucusu"
+          }
+        },
+        "emma": {
+          "type": "influencer",
+          "settings": {
+            "name": "EMMA K.",
+            "role": "Influencer ve Blogger"
+          }
+        },
+        "astrid": {
+          "type": "influencer",
+          "settings": {
+            "image": "shopify://shop_images/showroom-copenhagen-S0gzG1Mo.jpg",
+            "name": "ASTRID N.",
+            "role": "Model"
+          }
+        },
+        "mette": {
+          "type": "influencer",
+          "settings": {
+            "name": "DR. METTE R.",
+            "role": "Dermatolog"
+          }
+        },
+        "isabelle": {
+          "type": "influencer",
+          "settings": {
+            "name": "ISABELLE T.",
+            "role": "Güzellik Blogger'ı"
+          }
+        },
+        "christian": {
+          "type": "influencer",
+          "settings": {
+            "name": "CHRISTIAN B.",
+            "role": "Ünlü Kuaför"
+          }
+        },
+        "julie": {
+          "type": "influencer",
+          "settings": {
+            "name": "JULIE H.",
+            "role": "Fitness Influencer'ı"
+          }
+        },
+        "birgitte": {
+          "type": "influencer",
+          "settings": {
+            "name": "BIRGITTE S.",
+            "role": "Girişimci"
+          }
+        }
+      },
+      "block_order": [
+        "caroline",
+        "sophia",
+        "emma",
+        "astrid",
+        "mette",
+        "isabelle",
+        "christian",
+        "julie",
+        "birgitte"
+      ],
       "settings": {
         "hero_title": "Sevilen",
         "hero_title_suffix": "Tarafından",
@@ -19,22 +96,10 @@
         "cta_heading": "Neden 45.000'den fazla kişinin Séduisante'ı sevdiğini keşfedin",
         "cta_text": "TÜM ÜRÜNLERİ GÖRÜN",
         "cta_url": "/tr/beauty-technology"
-      },
-      "blocks": {
-        "caroline": { "type": "influencer", "settings": { "name": "CAROLINE M.", "role": "Güzellik Uzmanı" } },
-        "sophia": { "type": "influencer", "settings": { "name": "SOPHIA L.", "role": "TV Sunucusu" } },
-        "emma": { "type": "influencer", "settings": { "name": "EMMA K.", "role": "Influencer ve Blogger" } },
-        "astrid": { "type": "influencer", "settings": { "name": "ASTRID N.", "role": "Model" } },
-        "mette": { "type": "influencer", "settings": { "name": "DR. METTE R.", "role": "Dermatolog" } },
-        "isabelle": { "type": "influencer", "settings": { "name": "ISABELLE T.", "role": "Güzellik Blogger'ı" } },
-        "christian": { "type": "influencer", "settings": { "name": "CHRISTIAN B.", "role": "Ünlü Kuaför" } },
-        "julie": { "type": "influencer", "settings": { "name": "JULIE H.", "role": "Fitness Influencer'ı" } },
-        "birgitte": { "type": "influencer", "settings": { "name": "BIRGITTE S.", "role": "Girişimci" } }
-      },
-      "block_order": [
-        "caroline", "sophia", "emma", "astrid", "mette", "isabelle", "christian", "julie", "birgitte"
-      ]
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
