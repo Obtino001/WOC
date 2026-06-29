@@ -375,9 +375,49 @@
     },
     "guarantees_grid": {
       "type": "guarantees-grid",
+      "blocks": {
+        "guarantee_3NETNx": {
+          "type": "guarantee",
+          "settings": {
+            "emoji": "🏅",
+            "title": "100 Gün",
+            "subtitle": "Memnuniyet garantisi"
+          }
+        },
+        "guarantee_DwCAbC": {
+          "type": "guarantee",
+          "settings": {
+            "emoji": "🛡️",
+            "title": "Ömür boyu",
+            "subtitle": "Servis ve garanti"
+          }
+        },
+        "guarantee_PD76ML": {
+          "type": "guarantee",
+          "settings": {
+            "emoji": "🚚",
+            "title": "Ücretsiz",
+            "subtitle": "Kargo ve iadeler"
+          }
+        },
+        "guarantee_aVYGKV": {
+          "type": "guarantee",
+          "settings": {
+            "emoji": "✅",
+            "title": "CE Onaylı",
+            "subtitle": "Danimarka mevzuatı"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_3NETNx",
+        "guarantee_DwCAbC",
+        "guarantee_PD76ML",
+        "guarantee_aVYGKV"
+      ],
       "settings": {
         "title": "Ödül Kazanan Ürünler",
-        "description": ""
+        "description": "Ürünün sizin için işe yarayıp yaramayacağından emin değil misiniz? Elektronik ürünlerimizde ömür boyu garanti ve %100 memnuniyet garantisi sunuyoruz."
       }
     },
     "faq_clean": {
