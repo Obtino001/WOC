@@ -80,6 +80,7 @@
 
     <div class="grid sm:grid-cols-2 gap-8 mt-8">
       {% for block in section.blocks %}
+                {% if block.type == 'region' %}
         <div class="border border-neutral-100 p-8" {{ block.shopify_attributes }}>
           <h3 class="font-display text-base font-semibold text-neutral-800 uppercase tracking-[0.08em] mb-3">
             {{ block.settings.region_title }}
@@ -88,6 +89,7 @@
             {{ block.settings.countries }}
           </p>
         </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
