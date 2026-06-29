@@ -10,76 +10,35 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-wellness",
+      "type": "main-product",
       "blocks": {
-        "rating": {
-          "type": "rating",
+        "text_cxx9Wc": {
+          "type": "text",
           "settings": {
-            "fallback_rating": "4.9",
-            "fallback_review_count": "847",
-            "reviews_label": "yorumlar"
+            "text": "Metin bloku",
+            "text_style": "body"
           }
         },
         "title": {
           "type": "title",
           "settings": {}
         },
-        "subtitle": {
-          "type": "subtitle",
-          "settings": {
-            "text": "Yoga, Pilates ve Vücut Ağırlığı için birinci sınıf doğal ahşaptan Pilates Tahtası"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "text": "<p>Bir fitness cihazından daha fazlası — tam vücut antrenmanı, bilinçli molalar ve yeni enerji için kişisel rehberiniz. Etkili, şık ve kurulum gerektirmeden hazır. Pilates, Yoga ve Vücut Ağırlığı antrenmanlarını tek bir tahtada yapın.</p>"
-          }
-        },
-        "feature_list": {
-          "type": "feature_list",
-          "settings": {
-            "features": "Pilates, Yoga ve Vücut Ağırlığı — hepsi bir tahtada, Tam vücut antrenmanı — güç, tonlama ve mobilite, Saniyeler içinde katlanır — yatak altında saklayın, Sessiz ve eklem dostu — daireler için mükemmel, Premium doğal ahşap tasarım — her eve uyar, Uygulama ile rehberli antrenmanlar, Kurulum gerektirmez — kablo yok, montaj yok",
-            "max_items": 7
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
-            "show_save_badge": true,
-            "save_label": "[amount] tasarruf",
-            "tax_note": "",
-            "show_installments": false
+            "subprice_text": "or from £22/week"
           }
         },
-        "status_badges": {
-          "type": "status_badges",
-          "settings": {
-            "show_warranty_badge": false,
-            "warranty_text": "",
-            "warranty_icon": "shield",
-            "show_stock_badge": true,
-            "in_stock_text": "Stokta var · Bugün gönderilir",
-            "out_of_stock_text": "Geçici olarak stokta yok"
-          }
+        "rating_98edkt": {
+          "type": "rating",
+          "settings": {}
         },
-        "promotion_banner": {
-          "type": "promotion_banner",
+        "inventory_6kC3UY": {
+          "type": "inventory",
           "settings": {
-            "text": "2 tane al — ikincisine %50 indirim!",
-            "subtext": "2 tanesi ₺45.080 yerine sadece ₺33.810 — ₺11.270 tasarruf edin",
-            "show_icon": true,
-            "background_color": "#ecfdf5",
-            "text_color": "#166534",
-            "border_color": "#bbf7d0"
-          }
-        },
-        "inline_trust": {
-          "type": "inline_trust",
-          "settings": {
-            "text_1": "30 günlük memnuniyet garantisi",
-            "text_2": "Kadroda ömür boyu garanti",
-            "text_3": "Ücretsiz teslimat ve kurulum"
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "variant_picker": {
@@ -89,62 +48,49 @@
             "swatch_shape": "circle"
           }
         },
-        "purchase_row": {
-          "type": "purchase_row",
+        "feature_list_kNjYmM": {
+          "type": "feature_list",
           "settings": {
-            "show_quantity_selector": false,
-            "button_label": "ŞİMDİ SATIN AL — [price]",
-            "button_icon": "bag",
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
+            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
+            "custom_icon_svg": ""
           }
         },
-        "trust_footer": {
-          "type": "trust_footer",
+        "buy_buttons": {
+          "type": "buy_buttons",
           "settings": {
-            "aria_label": "Güvence rozetleri",
-            "label_1": "Ücretsiz teslimat",
-            "icon_1": "truck",
-            "label_2": "Ömür boyu kadro garantisi",
-            "icon_2": "shield",
-            "label_3": "30 gün içinde iade",
-            "icon_3": "return"
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "show_demo_button": true,
+            "demo_text": "Book a Demo",
+            "demo_link": ""
+          }
+        },
+        "trust_badges_N7QkXf": {
+          "type": "trust_badges",
+          "settings": {
+            "text_1": "Free White-Glove Delivery",
+            "icon_1_svg": "",
+            "text_2": "5-Year Warranty",
+            "icon_2_svg": "",
+            "text_3": "Flexible Monthly Payments",
+            "icon_3_svg": ""
           }
         }
       },
       "block_order": [
-        "rating",
+        "text_cxx9Wc",
         "title",
-        "subtitle",
-        "description",
-        "feature_list",
         "price",
-        "status_badges",
-        "promotion_banner",
-        "inline_trust",
+        "rating_98edkt",
+        "inventory_6kC3UY",
         "variant_picker",
-        "purchase_row",
-        "trust_footer"
+        "feature_list_kNjYmM",
+        "buy_buttons",
+        "trust_badges_N7QkXf"
       ],
       "settings": {
-        "show_breadcrumbs": true,
-        "breadcrumb_home_label": "Ana sayfa",
         "enable_sticky_info": true,
-        "show_sale_badge": true,
-        "sale_badge_format": "amount",
-        "sale_badge_prefix": "İNDİRİM",
-        "background_color": "#000000",
-        "text_color": "#ffffff",
-        "title_color": "#d4c5a9",
-        "muted_text_color": "#a3a3a3",
-        "gallery_background": "#171717",
-        "sale_badge_background": "#dc2626",
-        "sale_badge_text_color": "#ffffff",
-        "save_badge_background": "#dc2626",
-        "save_badge_text_color": "#ffffff",
-        "atc_background": "#f5f0e8",
-        "atc_hover_background": "#ebe4d8",
-        "atc_text_color": "#171717",
+        "color_scheme": "scheme-1",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -154,346 +100,8 @@
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "overview": {
-      "type": "product-overview",
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "scheme-1",
-        "padding_top": 64,
-        "padding_bottom": 72,
-        "kicker": "Ürün Genel Bakışı",
-        "text": "Your partner in progress. The Therapeutic Dual-Pro® embeds health enhancement into your lifestyle with dual system rollers, AI-powered body scanning, and transformative stretch technology. Six independent rollers harmonise together to redefine full-body massage, while advanced AI detects areas of localised fatigue to craft a bespoke experience tailored to your body's real-time needs. Features include ankle twisting therapy, cool air venting, deep tissue percussion, and 8-point postural stretching — all controlled via a seamless touch screen or intelligent voice commands."
-      }
-    },
-    "ideal_for": {
-      "type": "icon-feature-grid",
-      "blocks": {
-        "b1": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>",
-            "title": "Chronic Pain Relief",
-            "description": "3D heated rollers and AI scanning relieve persistent back, neck, and shoulder pain with precise deep tissue massage."
-          }
-        },
-        "b2": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "Improved Mobility",
-            "description": "Targeted programs focus on joint flexibility and muscle relaxation for those with stiffness or limited mobility."
-          }
-        },
-        "b3": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "Circulatory Support",
-            "description": "Integrated air compression and heat therapy promote blood circulation, benefiting individuals with circulatory issues."
-          }
-        },
-        "b4": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path><path d=\"M17.599 6.5a3 3 0 0 0 .399-1.375\"></path><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\"></path><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\"></path><path d=\"M19.938 10.5a4 4 0 0 1 .585.396\"></path><path d=\"M6 18a4 4 0 0 1-1.967-.516\"></path><path d=\"M19.967 17.484A4 4 0 0 1 18 18\"></path></svg>",
-            "title": "Stress & Fatigue Relief",
-            "description": "Zero Gravity positioning and surround sound reduce stress levels and combat fatigue for better sleep quality."
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 40,
-        "bg_color": "light",
-        "card_style": "bordered",
-        "columns": 4,
-        "kicker": "İçin İdeal",
-        "heading": "Bu Kimin İçin?"
-      }
-    },
-    "highlights": {
-      "type": "icon-feature-grid",
-      "blocks": {
-        "h1": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"></path></svg>",
-            "title": "therapeutic.highlight1Title",
-            "description": "therapeutic.highlight1Desc"
-          }
-        },
-        "h2": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path><path d=\"M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4\"></path></svg>",
-            "title": "therapeutic.highlight2Title",
-            "description": "therapeutic.highlight2Desc"
-          }
-        },
-        "h3": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "therapeutic.highlight3Title",
-            "description": "therapeutic.highlight3Desc"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "bg_color": "dark",
-        "card_style": "dark_box",
-        "columns": 3,
-        "kicker": "",
-        "heading": ""
-      }
-    },
-    "gallery": {
-      "type": "image-grid-gallery",
-      "blocks": {
-        "i1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-hero-1-hjhxEcc.jpg"
-          }
-        },
-        "i2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-hero-2-B2H61FAO.jpg"
-          }
-        },
-        "i3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-posture-DppyiadB.jpg"
-          }
-        },
-        "i4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-recovery-BSIYTqcF.jpg"
-          }
-        },
-        "i5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-sleep-MOfk8iQ1.jpg"
-          }
-        },
-        "i6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/therapeutic-percussion-CC_gHNML.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5",
-        "i6"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "kicker": "Technology in detail",
-        "heading": "Beneath the surface"
-      }
-    },
-    "specs": {
-      "type": "product-specifications",
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "kicker": "Özellikler",
-        "heading": "Bilmeniz Gereken Her Şey",
-        "half_limit": 4
-      }
-    },
-    "advanced_tech": {
-      "type": "icon-feature-grid",
-      "blocks": {
-        "t1": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\"></path><path d=\"M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z\"></path></svg>",
-            "title": "AI Body Scanning",
-            "description": "Intelligent sensors map your body profile for a 100% personalised massage experience"
-          }
-        },
-        "t2": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg>",
-            "title": "Zero Gravity Function",
-            "description": "NASA-inspired position distributes weight evenly and provides maximum spinal relief"
-          }
-        },
-        "t3": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "Infrared Heat Therapy",
-            "description": "Targeted heat penetrates deep into the musculature for deeper relaxation and recovery"
-          }
-        },
-        "t4": {
-          "type": "card",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"></path></svg>",
-            "title": "8XD Dual-Core Mechanism",
-            "description": "Proprietary 8XD Dual Core massage system with two independent motors for full-body relief"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "bg_color": "dark",
-        "card_style": "flat",
-        "columns": 4,
-        "kicker": "Advanced Technology",
-        "heading": "Engineered for <span class=\"italic text-gold\">Perfection</span>"
-      }
-    },
-    "health_benefits": {
-      "type": "feature-split-image",
-      "blocks": {
-        "b1": {
-          "type": "bullet",
-          "settings": {
-            "text": "Reduces chronic back and neck pain"
-          }
-        },
-        "b2": {
-          "type": "bullet",
-          "settings": {
-            "text": "Improves blood circulation by up to 30%"
-          }
-        },
-        "b3": {
-          "type": "bullet",
-          "settings": {
-            "text": "Lowers cortisol levels and reduces stress"
-          }
-        },
-        "b4": {
-          "type": "bullet",
-          "settings": {
-            "text": "Promotes deeper, more restorative sleep"
-          }
-        },
-        "b5": {
-          "type": "bullet",
-          "settings": {
-            "text": "Increases joint mobility and range of motion"
-          }
-        },
-        "b6": {
-          "type": "bullet",
-          "settings": {
-            "text": "Accelerates muscle recovery after exercise"
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 112,
-        "kicker": "Clinically Proven",
-        "heading": "Health Benefits <span class=\"italic text-gold\">Benefits</span>",
-        "description": "Backed by research and endorsed by healthcare professionals across Scandinavia.",
-        "image": "shopify://shop_images/therapeutic-dual-pro_1.png"
-      }
-    },
-    "pricing_plans": {
-      "type": "flexible-pricing-plans",
-      "blocks": {
-        "p1": {
-          "type": "plan",
-          "settings": {
-            "title": "Pay Once",
-            "price": "£6,600",
-            "price_suffix": "",
-            "subtitle": "Full payment — no extra cost"
-          }
-        },
-        "p2": {
-          "type": "plan",
-          "settings": {
-            "title": "24 Months",
-            "price": "£275",
-            "price_suffix": "/md.",
-            "subtitle": "0% down payment"
-          }
-        },
-        "p3": {
-          "type": "plan",
-          "settings": {
-            "title": "60 Months",
-            "price": "£88",
-            "price_suffix": "/md.",
-            "subtitle": "20% down payment"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "kicker": "Flexible Payment",
-        "heading": "Invest in Your <span class=\"italic text-gold\">Wellbeing</span>",
-        "description": "Make wellness accessible with our flexible financing options. Start your wellness journey today."
+        "padding_top": 36,
+        "padding_bottom": 12
       }
     },
     "faq": {
@@ -592,20 +200,6 @@
         "description": ""
       }
     },
-    "cta": {
-      "type": "simple-cta-banner",
-      "settings": {
-        "page_width": "standard",
-        "color_scheme": "",
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "heading": "Ready to Experience<br><span class=\"block italic text-gold\">Therapeutic Dual-Pro®?</span>",
-        "description": "Visit a showroom for a personal demonstration or order online with free delivery.",
-        "btn1_text": "Buy Now — £6,600",
-        "btn2_text": "Book a Demo",
-        "btn2_link": "/pages/showrooms"
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -626,380 +220,11 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "pilates_landing": {
-      "type": "pilates-landing",
-      "settings": {
-        "split_image_url": "/assets/pilates-lifestyle-lunge-DvNB3Tdh.jpg"
-      },
-      "blocks": {
-        "intro1": {
-          "type": "intro_feature",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-cloud-rain w-6 h-6 text-foreground\"><path d=\"M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242\"></path><path d=\"M16 14v6\"></path><path d=\"M8 14v6\"></path><path d=\"M12 16v6\"></path></svg>",
-            "value": "15 dakika",
-            "subvalue": "yeterli",
-            "title": "Tembel günlerde bile",
-            "text": "İş çıkışı yok, soyunma odası yok, bekleme yok. Tahtanızı açın, 15 dakika antrenman yapın ve farkı hissedin. Tembel günlerde bile kısa bir seans, hiçbir şey yapmamaktan iyidir — ve ekipman tam orada olduğunda düşündüğünüzden daha kolaydır."
-          }
-        },
-        "intro2": {
-          "type": "intro_feature",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-piggy-bank w-6 h-6 text-foreground\"><path d=\"M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z\"></path><path d=\"M2 9v1c0 1.1.9 2 2 2h1\"></path><path d=\"M16 11h.01\"></path></svg>",
-            "value": "10×",
-            "subvalue": "daha ucuz",
-            "title": "Maliyetin bir kısmı",
-            "text": "Bir spor salonu aylık 30-50 Sterlin tutar. Pilates Reformer'ınız 10 aydan kısa sürede kendini amorti eder — ve yıllarca dayanır. Sözleşme yok, aylık ücret yok, sürpriz yok."
-          }
-        },
-        "intro3": {
-          "type": "intro_feature",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-trending-up w-6 h-6 text-foreground\"><polyline points=\"22 7 13.5 15.5 8.5 10.5 2 17\"></polyline><polyline points=\"16 7 22 7 22 13\"></polyline></svg>",
-            "value": "87%",
-            "subvalue": "daha sık antrenman yapın",
-            "title": "Kalıcı sonuçlar",
-            "text": "Tutarlılık yoğunluğu yener. Kısa, düzenli seanslar zamanla güç oluşturur, duruşu iyileştirir ve stresi azaltır. Tahta her zaman elinizin altında olduğu için daha sık antrenman yaparsınız ve sonuçlar da gelir."
-          }
-        },
-        "img1": {
-          "type": "grid_image",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-warrior-OsPIoTyB.jpg"
-          }
-        },
-        "img2": {
-          "type": "grid_image",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-plank-DKNSwzk1.jpg"
-          }
-        },
-        "img3": {
-          "type": "grid_image",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-squat-p1jlpq1B.jpg"
-          }
-        },
-        "img4": {
-          "type": "grid_image",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-seated-CRASQ1Y4.jpg"
-          }
-        },
-        "ben1": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 w-6 h-6 text-background\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg>",
-            "title": "Kompakt ve Taşınabilir",
-            "text": "Saniyeler içinde katlayın ve yatağın altına kolayca saklayın. Alet yok, kablo yok – saniyeler içinde başlayın."
-          }
-        },
-        "ben2": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-volume2 w-6 h-6 text-background\"><path d=\"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z\"></path><path d=\"M16 9a5 5 0 0 1 0 6\"></path><path d=\"M19.364 18.364a9 9 0 0 0 0-12.728\"></path></svg>",
-            "title": "Tamamen sessiz",
-            "text": "Gelişmiş sabitleme sistemi antrenmanı sessiz hale getirir — kimseyi rahatsız etmeden sabah erken saatlerde egzersiz yapın."
-          }
-        },
-        "ben3": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-dumbbell w-6 h-6 text-background\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>",
-            "title": "Pilates, Yoga ve Vücut Ağırlığı",
-            "text": "Her şey için tek bir tahta: Pilates Flow, çekirdek denge, yoga, fonksiyonel antrenman ve vücut ağırlığı egzersizleri."
-          }
-        },
-        "ben4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-tree-pine w-6 h-6 text-background\"><path d=\"m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z\"></path><path d=\"M12 22v-3\"></path></svg>",
-            "title": "Premium doğal ahşap",
-            "text": "Doğal hissi ve güvenli tutuşu olan gerçek ahşap. Her eve güzelce uyan minimalist tasarım."
-          }
-        },
-        "ben5": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-smartphone w-6 h-6 text-background\"><rect width=\"14\" height=\"20\" x=\"5\" y=\"2\" rx=\"2\" ry=\"2\"></rect><path d=\"M12 18h.01\"></path></svg>",
-            "title": "Uygulama aracılığıyla rehberli antrenmanlar",
-            "text": "Profesyonel talimatlarla yapılandırılmış programlar. Pilates Flow, Fonksiyonel Antrenman ve Core arasından seçim yapın."
-          }
-        },
-        "ben6": {
-          "type": "benefit",
-          "settings": {
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart w-6 h-6 text-background\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "title": "Tüm seviyeler için",
-            "text": "Yoğunluğu ve tempoyu esnek bir şekilde ayarlayın — yeni başlayanlar, geri dönenler ve ileri düzeyler için idealdir. Eklemler için dostane ve sağlamdır."
-          }
-        },
-        "how1": {
-          "type": "how_step",
-          "settings": {
-            "image_url": "/assets/pilates-howto-1-BRSrWKUn.jpg",
-            "step_num": "1",
-            "title": "Açın ve sabitleyin",
-            "text": "Alet yok, delme yok — saniyeler içinde kurun."
-          }
-        },
-        "how2": {
-          "type": "how_step",
-          "settings": {
-            "image_url": "/assets/pilates-howto-2-D-HsGwK-.png",
-            "step_num": "2",
-            "title": "Direnci takın",
-            "text": "Üst vücut, alt vücut ve karın bölgesi için gerginliği ayarlayın."
-          }
-        },
-        "how3": {
-          "type": "how_step",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-seated-CRASQ1Y4.jpg",
-            "step_num": "3",
-            "title": "Ve antrenman yapın!",
-            "text": "Hareketler arasında zahmetsizce geçiş yapın."
-          }
-        },
-        "split1": {
-          "type": "split_item",
-          "settings": {
-            "text": "Planklar"
-          }
-        },
-        "split2": {
-          "type": "split_item",
-          "settings": {
-            "text": "Squatlar"
-          }
-        },
-        "split3": {
-          "type": "split_item",
-          "settings": {
-            "text": "Bisiklet bacakları"
-          }
-        },
-        "split4": {
-          "type": "split_item",
-          "settings": {
-            "text": "U-şekli – boyun ve topuk"
-          }
-        },
-        "split5": {
-          "type": "split_item",
-          "settings": {
-            "text": "Düz baş – tüm vücut masajı"
-          }
-        },
-        "split6": {
-          "type": "split_item",
-          "settings": {
-            "text": "Çatal – omurga ve tendonlar"
-          }
-        },
-        "ex1": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-plank-full-D9jZ6jcK.jpg",
-            "category": "Karın",
-            "title": "Tam Plank",
-            "text": "Tahta üzerinde ellerinizle plank pozisyonunda başlayın. Vücudunuzu baştan ayağa düz bir çizgide tutun."
-          }
-        },
-        "ex2": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-bicycle-full-CthqiuiG.jpg",
-            "category": "Karın",
-            "title": "Dirençli Bisiklet",
-            "text": "Sırt üstü uzanın, bantlar ayaklarınıza takılı olsun. Bisiklet çevirir gibi bacaklarınızı bir düz bir bükülü şekilde hareket ettirin."
-          }
-        },
-        "ex3": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-v-flexion-X7TfG03e.jpg",
-            "category": "Karın",
-            "title": "V-Esnetme",
-            "text": "Denge için iki elinizle destek alın. Dizlerinizi başlangıçta bükün, nefes verin ve V şeklinde uzayın."
-          }
-        },
-        "ex4": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-v-flexion-X7TfG03e.jpg",
-            "category": "Esneklik",
-            "title": "Kalça Fleksiyonu",
-            "text": "Bant takılıyken kalçalarınızı sabit tutun ve bacaklarınızı yerden 0 ila 90 derece arasında açıyla uzatın."
-          }
-        },
-        "ex5": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-hip-extension-67KQqBz_.jpg",
-            "category": "Güç",
-            "title": "Kalça Ekstansiyonu",
-            "text": "Bandı ayağınıza sabitleyin. Dört ayak üzerinde durarak kalçalarınızı sabit tutarak bacağınızı yukarı doğru uzatın."
-          }
-        },
-        "ex6": {
-          "type": "exercise",
-          "settings": {
-            "image_url": "/assets/pilates-ex-side-abduction-Cs1L7M0j.jpg",
-            "category": "Güç",
-            "title": "Yan Abdüksiyon",
-            "text": "Bantla yan yatın. Dış kalça ve kalça kası antrenmanı için bacağınızı kontrollü bir şekilde kaldırın."
-          }
-        },
-        "disc1": {
-          "type": "discipline",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-warrior-OsPIoTyB.jpg",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles w-7 h-7 text-foreground\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
-            "title": "Yoga",
-            "text": "Daha fazla esneklik, dinginlik ve iç denge için akıcı hareketleri ve bilinçli nefes alıp vermeyi deneyimleyin."
-          }
-        },
-        "disc2": {
-          "type": "discipline",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-pushup-B3f3xNw6.jpg",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-target w-7 h-7 text-foreground\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle></svg>",
-            "title": "Pilates",
-            "text": "Hedefli karın egzersizleri, bilinçli hareketler ve sürdürülebilir vücut kontrolü ile 'güç merkezinizi' güçlendirin."
-          }
-        },
-        "disc3": {
-          "type": "discipline",
-          "settings": {
-            "image_url": "/assets/pilates-lifestyle-row-CINyXpLG.jpg",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-dumbbell w-7 h-7 text-foreground\"><path d=\"M14.4 14.4 9.6 9.6\"></path><path d=\"M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z\"></path><path d=\"m21.5 21.5-1.4-1.4\"></path><path d=\"M3.9 3.9 2.5 2.5\"></path><path d=\"M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z\"></path></svg>",
-            "title": "Vücut Ağırlığı",
-            "text": "Güç, denge ve hareketlilik için fonksiyonel egzersizlerle her yerde, her zaman antrenman yapın."
-          }
-        },
-        "eff1": {
-          "type": "effect",
-          "settings": {
-            "emoji": "💪",
-            "title": "Daha fazla vücut gerginliği"
-          }
-        },
-        "eff2": {
-          "type": "effect",
-          "settings": {
-            "emoji": "🧍",
-            "title": "Daha iyi duruş"
-          }
-        },
-        "eff3": {
-          "type": "effect",
-          "settings": {
-            "emoji": "🤸",
-            "title": "Geliştirilmiş hareketlilik"
-          }
-        },
-        "eff4": {
-          "type": "effect",
-          "settings": {
-            "emoji": "🏋️",
-            "title": "Daha güçlü kaslar"
-          }
-        },
-        "eff5": {
-          "type": "effect",
-          "settings": {
-            "emoji": "🧘",
-            "title": "Azalan stres"
-          }
-        },
-        "res1": {
-          "type": "result",
-          "settings": {
-            "image_url": "/assets/pilates-result-1-wBkaksoc.png",
-            "text": "Daha fazla vücut gerginliği ve daha iyi duruş"
-          }
-        },
-        "res2": {
-          "type": "result",
-          "settings": {
-            "image_url": "/assets/pilates-result-2-DpMSJz7D.png",
-            "text": "Artan esneklik ve hareketlilik"
-          }
-        },
-        "res3": {
-          "type": "result",
-          "settings": {
-            "image_url": "/assets/pilates-result-3-placeholder.png",
-            "text": "Daha güçlü kaslar"
-          }
-        },
-        "res4": {
-          "type": "result",
-          "settings": {
-            "image_url": "/assets/pilates-result-4-placeholder.png",
-            "text": "Azalan stres seviyesi"
-          }
-        }
-      },
-      "block_order": [
-        "intro1",
-        "intro2",
-        "intro3",
-        "img1",
-        "img2",
-        "img3",
-        "img4",
-        "ben1",
-        "ben2",
-        "ben3",
-        "ben4",
-        "ben5",
-        "ben6",
-        "how1",
-        "how2",
-        "how3",
-        "split1",
-        "split2",
-        "split3",
-        "split4",
-        "split5",
-        "split6",
-        "ex1",
-        "ex2",
-        "ex3",
-        "ex4",
-        "ex5",
-        "ex6",
-        "disc1",
-        "disc2",
-        "disc3",
-        "eff1",
-        "eff2",
-        "eff3",
-        "eff4",
-        "eff5",
-        "res1",
-        "res2",
-        "res3",
-        "res4"
-      ]
     }
   },
   "order": [
     "main",
-    "pilates_landing",
-    "overview",
-    "ideal_for",
-    "highlights",
-    "gallery",
-    "specs",
-    "advanced_tech",
-    "health_benefits",
-    "pricing_plans",
     "faq",
-    "cta",
     "related-products"
   ]
 }
