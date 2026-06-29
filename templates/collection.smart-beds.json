@@ -21,11 +21,11 @@
         "text": "Yatağınız neden seri üretim olsun ki?\n\nHer World of Comfort uyku sistemi sıfırdan yapılır - vücudunuza, uyku alışkanlıklarınıza ve yaşam tarzınıza uyacak şekilde. Avrupa'da el yapımı. Asla raf ürünü değil.",
         "text_color": "#e0e0e0",
         "btn_1_text": "KOLEKSİYONU KEŞFEDİN",
-        "btn_1_url": "",
+        "btn_1_url": "#collection",
         "btn_1_bg": "#c69c51",
         "btn_1_text_color": "#1a1a1a",
         "btn_2_text": "NASIL ÇALIŞIR",
-        "btn_2_url": "",
+        "btn_2_url": "#how-it-works",
         "btn_2_color": "#ffffff"
       }
     },
