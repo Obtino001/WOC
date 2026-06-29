@@ -56,7 +56,9 @@
         "trust_item_iDNiXH"
       ],
       "name": "WOC Trust Bar",
-      "settings": {}
+      "settings": {
+        "page_width": "standard"
+      }
     },
     "main": {
       "type": "main-product-wellness",
@@ -261,6 +263,7 @@
         "i1": {
           "type": "image_card",
           "settings": {
+            "image": "shopify://shop_images/treadmill-folded-DOJethtH_1.jpg",
             "title": "Just 10 cm when folded",
             "subtitle": "Manual folding with rotating armrests"
           }
@@ -268,6 +271,7 @@
         "i2": {
           "type": "image_card",
           "settings": {
+            "image": "shopify://shop_images/treadmill-under-sofa-C5Q-4B28_1.jpg",
             "title": "Store under the sofa",
             "subtitle": "Out of sight in 10 seconds"
           }
@@ -291,7 +295,8 @@
         "padding_top": 64,
         "padding_bottom": 96,
         "kicker": "SEE IT IN ACTION",
-        "heading": "Designed for your home"
+        "heading": "Designed for your home",
+        "image": "shopify://shop_images/treadmill-lifestyle-gallery-DHVvwzot_1.png"
       }
     },
     "split_rows": {
@@ -300,6 +305,7 @@
         "r1": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/treadmill-lifestyle-livingroom-CPp-RpVz_1.jpg",
             "title": "Sub-zero temps, sub-zero motivation",
             "text": "It's not your legs that stop you — it's the weather. Good habits can't be built under bad conditions. With the WOC Compact Treadmill Pro, you train regardless of season."
           }
@@ -307,6 +313,7 @@
         "r2": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/treadmill-walking-pad-desk-Dz2kzz23_1.jpg",
             "title": "From snooze to sparkling energy",
             "text": "Unfold in seconds, walk for minutes, enjoy energy all day. Easy, quiet and space-saving."
           }
@@ -314,6 +321,7 @@
         "r3": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/treadmill-morning-energy-BecJZNXP_1.jpg",
             "title": "Easy to fold, easy to use",
             "text": "From under the sofa to under your feet in an instant. Walk while you stream, and let the habit build your fitness."
           }
@@ -321,6 +329,7 @@
         "r4": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/treadmill-detail-belt-UzHK7tv7_1.jpg",
             "title": "Exercise without the exercise feeling",
             "text": "Walk through your episodes — your body works, but you only feel the cosiness. It's exercise disguised as relaxation."
           }
@@ -797,6 +806,7 @@
       "type": "related-products",
       "settings": {
         "bg_color": "warm",
+        "page_width": "full",
         "kicker": "YOU MAY ALSO LIKE",
         "heading": "Du vil måske også syntes om",
         "heading_size": "h2",
