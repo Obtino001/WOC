@@ -85,7 +85,7 @@
         "hero_title": "CİLT BAKIM TEKNOLOJİSİ",
         "hero_desc": "Güzelliğin İnovasyonla Buluştuğu Yer",
         "story_title": "HİKAYEMİZ",
-        "story_content": "<p>Séduisante, müşteri odaklı yaklaşımı ve devrim niteliğindeki bilimsel atılımlarıyla gururla tanınan ünlü bir İskandinav yüksek teknolojili güzellik markasıdır. Güzellik endüstrisinde altın standartları belirleyen dönüştürücü tedaviler ve en son teknolojiler sunuyoruz.</p><p>Séduisante, hem profesyonel hem de ev kullanımı için yenilikçi, çözüm odaklı cilt bakım ürünlerini ustaca geliştirmektedir. Tüm cilt tiplerinin daha sıkı, genç, parlak ve ışıltılı görünmesine yardımcı olmak için tasarlanmış kullanımı kolay cihazlara ve cilt bakım formülasyonlarına öncülük ediyoruz.</p>",
+        "story_content": "<p>Séduisante, müşteri odaklı yaklaşımı ve devrim niteliğindeki bilimsel atılımlarıyla gururla tanınan ünlü bir İskandinav yüksek teknolojili güzellik markasıdır. Güzellik endüstrisinde altın standartları belirleyen dönüştürücü tedaviler ve en son teknolojiler sunuyoruz. Genel merkezi Danimarka'da bulunan ve İskandinavya genelinde varlığını sürdüren Séduisante, Avrupa'daki önde gelen klinikler, kaplıcalar ve özel perakendecilerle işbirliği yapmıştır.</p><p>Önde gelen bir yenilikçi olarak Séduisante, hem profesyonel hem de ev kullanımı için yenilikçi, çözüm odaklı cilt bakım ürünlerini ustaca geliştirmektedir. Tüm cilt tiplerinin daha sıkı, genç, parlak ve ışıltılı görünmesine yardımcı olmak için tasarlanmış kullanımı kolay cihazlara ve cilt bakım formülasyonlarına öncülük ediyoruz.</p><p>Formüllerimiz, klinik olarak test edilmiş, özel içeriklere dayanmakta olup, başka hiçbir yerde bulunmayan benzersiz ve tescilli ürünler sunmaktadır. Séduisante'nin etkili ürünleri, günlük cilt bakımı için özel olarak formüle edilmiştir. Güzellik salonları, kaplıcalar ve estetik kliniklerdeki profesyoneller tarafından güvenle kullanılmaktadır.</p><p>Eski güzellik standartlarını yeniden tanımlayarak, Séduisante bilimin ve teknolojinin yeniden icat ettiği ve zamana meydan okuyan ürünleri tutarlı bir şekilde sunar. Taahhüdümüz, tüm cilt tipleri için pratik, ulaşılabilir sonuçlar sağlamaktır.</p>",
         "stats_pretitle": "KLİNİK ÇALIŞMALAR",
         "stats_title": "Kanıtlanmış Sonuçlar"
       }
@@ -130,7 +130,7 @@
           "type": "feature",
           "settings": {
             "number": "04",
-            "image": "shopify://shop_images/sed-boss-lady-model-BfkzxlKJ_2.jpg",
+            "image": "shopify://shop_images/sed-boss-lady-BJjb4-P6_2.jpg",
             "title": "Son Teknoloji",
             "description": "Séduisante, yüksek kaliteli teknolojiye sahip devrim niteliğinde profesyonel ve evde kullanım cihazları yaratma konusunda öncü olmuştur. Çığır açan ürünlerimize son derece güveniyoruz, bu nedenle tüm cihazlarımız ömür boyu garanti ile birlikte gelir.",
             "btn_text": "CİHAZLARI KEŞFEDİN",
@@ -146,6 +146,37 @@
       ],
       "name": "Feature Grid awards",
       "settings": {}
+    },
+    "awards": {
+      "type": "sed-awards",
+      "blocks": {
+        "a1": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/sed-awards1-AD0KX5uf_2.jpg"
+          }
+        },
+        "a2": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/sed-awards2-CRnln8l__1_62260ed7-74da-412d-b6aa-44f69c1ae9e7.jpg"
+          }
+        },
+        "a3": {
+          "type": "award",
+          "settings": {
+            "image": "shopify://shop_images/sed-awards3-ve2GZRXE_1_86f0fe1c-3dcf-4e3e-b48f-d565d75d147d.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "kicker": "AWARD-WINNING PRODUCTS"
+      }
     },
     "trusted_by": {
       "type": "sed-trusted-by",
@@ -207,133 +238,6 @@
         "description": "Our award-winning devices and skincare are a signature of luxury in spas and clinics worldwide"
       }
     },
-    "awards": {
-      "type": "sed-awards",
-      "blocks": {
-        "a1": {
-          "type": "award",
-          "settings": {}
-        },
-        "a2": {
-          "type": "award",
-          "settings": {}
-        },
-        "a3": {
-          "type": "award",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "a1",
-        "a2",
-        "a3"
-      ],
-      "settings": {
-        "kicker": "AWARD-WINNING PRODUCTS"
-      }
-    },
-    "testimonials": {
-      "type": "sed-testimonials-grid",
-      "blocks": {
-        "t1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The chair fits perfectly in our living room. It looks luxurious and feels even better. My back thanks me every day.",
-            "author": "Peter Andersen",
-            "product": "Copenhagen · 4D Massage Chair"
-          }
-        },
-        "t2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The zero-gravity function is magical. It feels like floating. Perfect after a stressful day at work.",
-            "author": "Lone Kristensen",
-            "product": "Aarhus · Zero-Gravity Chair"
-          }
-        },
-        "t3": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "We chose the most expensive model and regret nothing. The quality is noticeable in every single program.",
-            "author": "Susanne Lund",
-            "product": "Vejle · Luxury Massage Chair"
-          }
-        },
-        "t4": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The AI program always finds the right spots. It's like having a personal masseur in the home.",
-            "author": "Lars Thomsen",
-            "product": "Roskilde · Smart Massage Chair"
-          }
-        },
-        "t5": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The delivery was professional. They placed the chair exactly where we wanted it and explained everything.",
-            "author": "Christian Bech",
-            "product": "Malmö · 4D Massage Chair"
-          }
-        },
-        "t6": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "The whole family uses it. From grandma with arthritis to the teenager after football. Best gift ever.",
-            "author": "Helle Damgaard",
-            "product": "Helsingborg · Full Body Chair"
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4",
-        "t5",
-        "t6"
-      ],
-      "settings": {}
-    },
-    "guarantees": {
-      "type": "sed-guarantees-bar",
-      "blocks": {
-        "g1": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path></svg>",
-            "text": "30 Day Returns"
-          }
-        },
-        "g2": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg>",
-            "text": "Lifetime Service"
-          }
-        },
-        "g3": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>",
-            "text": "CE Certified"
-          }
-        },
-        "g4": {
-          "type": "guarantee",
-          "settings": {
-            "icon_svg": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path></svg>",
-            "text": "Loved by +45,000"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3",
-        "g4"
-      ],
-      "settings": {}
-    },
     "experience": {
       "type": "sed-experience-cta",
       "settings": {
@@ -348,10 +252,8 @@
     "main",
     "seduissante_story_hero",
     "features_grid_awards_k638pX",
-    "trusted_by",
     "awards",
-    "testimonials",
-    "guarantees",
+    "trusted_by",
     "experience"
   ]
 }
