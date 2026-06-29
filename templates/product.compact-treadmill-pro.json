@@ -59,35 +59,76 @@
       "settings": {}
     },
     "main": {
-      "type": "main-product",
+      "type": "main-product-wellness",
       "blocks": {
-        "text_cxx9Wc": {
-          "type": "text",
+        "rating": {
+          "type": "rating",
           "settings": {
-            "text": "Metin bloku",
-            "text_style": "body"
+            "fallback_rating": "4.9",
+            "fallback_review_count": "847",
+            "reviews_label": "yorumlar"
           }
         },
         "title": {
           "type": "title",
           "settings": {}
         },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {
+            "text": "Yoga, Pilates ve Vücut Ağırlığı için birinci sınıf doğal ahşaptan Pilates Tahtası"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Bir fitness cihazından daha fazlası — tam vücut antrenmanı, bilinçli molalar ve yeni enerji için kişisel rehberiniz. Etkili, şık ve kurulum gerektirmeden hazır. Pilates, Yoga ve Vücut Ağırlığı antrenmanlarını tek bir tahtada yapın.</p>"
+          }
+        },
+        "feature_list": {
+          "type": "feature_list",
+          "settings": {
+            "features": "Pilates, Yoga ve Vücut Ağırlığı — hepsi bir tahtada, Tam vücut antrenmanı — güç, tonlama ve mobilite, Saniyeler içinde katlanır — yatak altında saklayın, Sessiz ve eklem dostu — daireler için mükemmel, Premium doğal ahşap tasarım — her eve uyar, Uygulama ile rehberli antrenmanlar, Kurulum gerektirmez — kablo yok, montaj yok",
+            "max_items": 7
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
-            "subprice_text": "or from £22/week"
+            "show_save_badge": true,
+            "save_label": "[amount] tasarruf",
+            "tax_note": "",
+            "show_installments": false
           }
         },
-        "rating_98edkt": {
-          "type": "rating",
-          "settings": {}
-        },
-        "inventory_6kC3UY": {
-          "type": "inventory",
+        "status_badges": {
+          "type": "status_badges",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "show_warranty_badge": false,
+            "warranty_text": "",
+            "warranty_icon": "shield",
+            "show_stock_badge": true,
+            "in_stock_text": "Stokta var · Bugün gönderilir",
+            "out_of_stock_text": "Geçici olarak stokta yok"
+          }
+        },
+        "promotion_banner": {
+          "type": "promotion_banner",
+          "settings": {
+            "text": "2 tane al — ikincisine %50 indirim!",
+            "subtext": "2 tanesi ₺45.080 yerine sadece ₺33.810 — ₺11.270 tasarruf edin",
+            "show_icon": true,
+            "background_color": "#ecfdf5",
+            "text_color": "#166534",
+            "border_color": "#bbf7d0"
+          }
+        },
+        "inline_trust": {
+          "type": "inline_trust",
+          "settings": {
+            "text_1": "30 günlük memnuniyet garantisi",
+            "text_2": "Kadroda ömür boyu garanti",
+            "text_3": "Ücretsiz teslimat ve kurulum"
           }
         },
         "variant_picker": {
@@ -97,49 +138,62 @@
             "swatch_shape": "circle"
           }
         },
-        "feature_list_kNjYmM": {
-          "type": "feature_list",
+        "purchase_row": {
+          "type": "purchase_row",
           "settings": {
-            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
-            "custom_icon_svg": ""
+            "show_quantity_selector": false,
+            "button_label": "ŞİMDİ SATIN AL — [price]",
+            "button_icon": "bag",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "trust_footer": {
+          "type": "trust_footer",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "show_demo_button": true,
-            "demo_text": "Book a Demo",
-            "demo_link": ""
-          }
-        },
-        "trust_badges_N7QkXf": {
-          "type": "trust_badges",
-          "settings": {
-            "text_1": "Free White-Glove Delivery",
-            "icon_1_svg": "",
-            "text_2": "5-Year Warranty",
-            "icon_2_svg": "",
-            "text_3": "Flexible Monthly Payments",
-            "icon_3_svg": ""
+            "aria_label": "Güvence rozetleri",
+            "label_1": "Ücretsiz teslimat",
+            "icon_1": "truck",
+            "label_2": "Ömür boyu kadro garantisi",
+            "icon_2": "shield",
+            "label_3": "30 gün içinde iade",
+            "icon_3": "return"
           }
         }
       },
       "block_order": [
-        "text_cxx9Wc",
+        "rating",
         "title",
+        "subtitle",
+        "description",
+        "feature_list",
         "price",
-        "rating_98edkt",
-        "inventory_6kC3UY",
+        "status_badges",
+        "promotion_banner",
+        "inline_trust",
         "variant_picker",
-        "feature_list_kNjYmM",
-        "buy_buttons",
-        "trust_badges_N7QkXf"
+        "purchase_row",
+        "trust_footer"
       ],
       "settings": {
+        "show_breadcrumbs": true,
+        "breadcrumb_home_label": "Ana sayfa",
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "show_sale_badge": true,
+        "sale_badge_format": "amount",
+        "sale_badge_prefix": "İNDİRİM",
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "title_color": "#d4c5a9",
+        "muted_text_color": "#a3a3a3",
+        "gallery_background": "#171717",
+        "sale_badge_background": "#dc2626",
+        "sale_badge_text_color": "#ffffff",
+        "save_badge_background": "#dc2626",
+        "save_badge_text_color": "#ffffff",
+        "atc_background": "#f5f0e8",
+        "atc_hover_background": "#ebe4d8",
+        "atc_text_color": "#171717",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -149,8 +203,8 @@
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "stats": {
@@ -730,7 +784,6 @@
     "cta": {
       "type": "hw-cta-box",
       "settings": {
-        "color_scheme": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "product": "",
