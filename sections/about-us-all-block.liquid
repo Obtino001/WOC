@@ -1,0 +1,739 @@
+<main class="pt-20 section-{{ section.id }}" role="main">
+  <!-- Breadcrumbs -->
+  <nav aria-label="İçerik Haritası" class="container mx-auto px-4 lg:px-8 py-3" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+    <ol class="flex items-center gap-1.5 font-body text-[11px] text-muted-foreground">
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="flex items-center gap-1.5">
+        <a itemprop="item" class="flex items-center gap-1 hover:text-foreground transition-colors" href="{{ routes.root_url }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span itemprop="name">{{ section.settings.home_text | default: 'Ana Sayfa' }}</span>
+        </a>
+        <meta itemprop="position" content="1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 text-muted-foreground/50"><path d="m9 18 6-6-6-6"></path></svg>
+      </li>
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="flex items-center">
+        <span itemprop="name" class="text-foreground font-medium">{{ section.settings.current_page_text | default: page.title }}</span>
+        <link itemprop="item" href="{{ request.path }}">
+        <meta itemprop="position" content="2">
+      </li>
+    </ol>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-[80vh] flex items-center overflow-hidden" role="banner">
+    <div class="absolute inset-0" bis_skin_checked="1">
+      {% if section.settings.hero_image != blank %}
+        {{ section.settings.hero_image | image_url: width: 2000 | image_tag: class: 'w-full h-full object-cover', loading: 'eager' }}
+      {% else %}
+        <img src="/assets/about-hero-DjV7g7iK.jpg" alt="World of Comfort premium wellness showroom" class="w-full h-full object-cover" loading="eager">
+      {% endif %}
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-transparent" bis_skin_checked="1"></div>
+    </div>
+    <div class="container mx-auto px-4 lg:px-8 relative z-10 py-24" bis_skin_checked="1">
+      <div class="max-w-2xl" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <p class="font-body text-sm uppercase tracking-[0.35em] text-gold mb-6">{{ section.settings.hero_preheading }}</p>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-7xl font-light text-secondary leading-[1.05] mb-6">
+          {{ section.settings.hero_heading }}
+        </h1>
+        <p class="font-body text-lg text-secondary/70 mb-10 max-w-xl leading-relaxed">{{ section.settings.hero_text }}</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4" bis_skin_checked="1">
+          {% if section.settings.hero_btn_1_text != blank %}
+            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 gradient-gold text-charcoal font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10 py-6" href="{{ section.settings.hero_btn_1_link }}">{{ section.settings.hero_btn_1_text }}</a>
+          {% endif %}
+          {% if section.settings.hero_btn_2_text != blank %}
+            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border-2 font-semibold hover:border-gold transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 border-secondary/30 text-secondary hover:bg-secondary hover:text-charcoal" href="{{ section.settings.hero_btn_2_link }}">{{ section.settings.hero_btn_2_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary/40" bis_skin_checked="1" style="transform: translateY(7.64723px);">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-6 h-6"><path d="m6 9 6 6 6-6"></path></svg>
+    </div>
+  </header>
+
+  <!-- Statistics Section (Blocks) -->
+  <section class="py-16 bg-linen border-b border-border" aria-label="Temel istatistikler" itemscope="" itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="{{ shop.name }}">
+    <meta itemprop="url" content="{{ shop.url }}">
+    <div class="container mx-auto px-4 lg:px-8" bis_skin_checked="1">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8" bis_skin_checked="1">
+        {% for block in section.blocks %}
+          {% if block.type == 'stat' %}
+            <div class="text-center" bis_skin_checked="1" style="opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+              <div class="w-5 h-5 text-gold mx-auto mb-3 [&>svg]:w-full [&>svg]:h-full">
+                {{ block.settings.svg_icon }}
+              </div>
+              <p class="font-display text-3xl md:text-4xl font-light text-foreground mb-1">{{ block.settings.number }}</p>
+              <p class="font-body text-xs text-muted-foreground uppercase tracking-widest">{{ block.settings.label }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Story -->
+  <article class="py-28 bg-background" aria-label="Misyonumuz ve hikayemiz" itemscope="" itemtype="https://schema.org/Article">
+    <div class="container mx-auto px-4 lg:px-8" bis_skin_checked="1">
+      <div class="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto" bis_skin_checked="1">
+        <div bis_skin_checked="1" style="opacity: 1; transform: none;">
+          <div class="flex items-center gap-3 mb-6" bis_skin_checked="1">
+            <div class="w-2 h-2 rounded-full bg-gold" bis_skin_checked="1"></div>
+            <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold">{{ section.settings.mission_preheading }}</p>
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-8 leading-[1.1]">{{ section.settings.mission_heading }}</h2>
+          <div class="space-y-5" itemprop="articleBody" bis_skin_checked="1">
+            <p class="font-body text-muted-foreground leading-relaxed">{{ section.settings.mission_text_1 }}</p>
+            <p class="font-body text-muted-foreground leading-relaxed">{{ section.settings.mission_text_2 }}</p>
+            <p class="font-body text-muted-foreground leading-relaxed">{{ section.settings.mission_text_3 }}</p>
+          </div>
+        </div>
+        <div bis_skin_checked="1" style="opacity: 1; transform: none;">
+          {% if section.settings.mission_image != blank %}
+            {{ section.settings.mission_image | image_url: width: 800 | image_tag: class: 'w-full rounded-xl shadow-elevated', loading: 'lazy' }}
+          {% else %}
+            <img src="/assets/about-team-BsZX4yg7.jpg" alt="Uzman ekibi" class="w-full rounded-xl shadow-elevated" loading="lazy" itemprop="image">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Core Values Section (Blocks) -->
+  <section class="py-24 bg-linen relative" aria-label="Temel değerlerimiz" itemscope="" itemtype="https://schema.org/ItemList">
+    <div class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent pointer-events-none" bis_skin_checked="1"></div>
+    <div class="container mx-auto px-4 lg:px-8 relative z-10" bis_skin_checked="1">
+      <div class="text-center mb-16" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ section.settings.values_preheading }}</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground">{{ section.settings.values_heading }}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-[1px] max-w-5xl mx-auto" bis_skin_checked="1">
+        {% for block in section.blocks %}
+          {% if block.type == 'value' %}
+            <div class="bg-background p-10 text-center group hover:bg-gold/[0.04] transition-colors duration-700" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" bis_skin_checked="1" style="opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+              <meta itemprop="position" content="{{ forloop.index }}">
+              <div class="w-6 h-6 text-gold mx-auto mb-6 [&>svg]:w-full [&>svg]:h-full">
+                {{ block.settings.svg_icon }}
+              </div>
+              <h3 class="font-display text-lg font-light text-foreground mb-3" itemprop="name">{{ block.settings.title }}</h3>
+              <p class="font-body text-xs font-light text-muted-foreground leading-[1.8]" itemprop="description">{{ block.settings.description }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section (Blocks) -->
+  <section class="py-28 bg-background" aria-label="Şirket geçmişi ve kilometre taşları" itemscope="" itemtype="https://schema.org/ItemList">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl" bis_skin_checked="1">
+      <div class="text-center mb-20" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-gold mb-6">{{ section.settings.timeline_preheading }}</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground">{{ section.settings.timeline_heading }}</h2>
+      </div>
+      <div class="relative" bis_skin_checked="1">
+        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border" bis_skin_checked="1"></div>
+        
+        {% assign timeline_count = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'timeline' %}
+            {% assign timeline_count = timeline_count | plus: 1 %}
+            {% assign is_even = timeline_count | modulo: 2 %}
+            
+            <div class="relative flex items-start gap-6 mb-12 {% if is_even == 0 %}md:flex-row-reverse{% else %}md:flex-row{% endif %}" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" bis_skin_checked="1" style="opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+              <meta itemprop="position" content="{{ timeline_count }}">
+              
+              <!-- Desktop View -->
+              <div class="hidden md:block md:w-1/2 {% if is_even == 0 %}text-left pl-12{% else %}text-right pr-12{% endif %}" bis_skin_checked="1">
+                <p class="font-display text-2xl font-light text-gold mb-2">{{ block.settings.year }}</p>
+                <h3 class="font-display text-xl font-light text-foreground mb-2" itemprop="name">{{ block.settings.title }}</h3>
+                <p class="font-body text-sm text-muted-foreground leading-relaxed" itemprop="description">{{ block.settings.description }}</p>
+              </div>
+              
+              <!-- Center Dot -->
+              <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-gold border-4 border-background z-10" bis_skin_checked="1"></div>
+              
+              <!-- Mobile View -->
+              <div class="md:hidden pl-12" bis_skin_checked="1">
+                <p class="font-display text-2xl font-light text-gold mb-2">{{ block.settings.year }}</p>
+                <h3 class="font-display text-xl font-light text-foreground mb-2">{{ block.settings.title }}</h3>
+                <p class="font-body text-sm text-muted-foreground leading-relaxed">{{ block.settings.description }}</p>
+              </div>
+              
+              <!-- Empty spacer for desktop -->
+              <div class="hidden md:block md:w-1/2" bis_skin_checked="1"></div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Proprietary Tech (Blocks) -->
+  <section class="py-24 gradient-dark overflow-hidden" aria-label="Tescilli teknoloji ve özel ürünler" itemscope="" itemtype="https://schema.org/ItemList">
+    <div class="container mx-auto px-4 lg:px-8" bis_skin_checked="1">
+      <div class="text-center mb-16" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <p class="font-body text-sm uppercase tracking-[0.25em] text-gold mb-4">{{ section.settings.tech_preheading }}</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-4">{{ section.settings.tech_heading }}</h2>
+        <p class="font-body text-secondary/50 max-w-2xl mx-auto">{{ section.settings.tech_desc }}</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto" bis_skin_checked="1">
+        {% assign tech_index = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'tech' %}
+            {% assign tech_index = tech_index | plus: 1 %}
+            <div class="border border-border/20 p-8 group hover:border-gold/30 transition-colors duration-500" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" bis_skin_checked="1" style="opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+              <meta itemprop="position" content="{{ tech_index }}">
+              <span class="font-display text-4xl font-light text-gold/30 group-hover:text-gold/60 transition-colors">{{ block.settings.number_text }}</span>
+              <h3 class="font-display text-lg font-light text-secondary mt-4 mb-3" itemprop="name">{{ block.settings.title }}</h3>
+              <p class="font-body text-sm text-secondary/50 leading-relaxed" itemprop="description">{{ block.settings.description }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Showrooms (Blocks) -->
+  <section class="py-24 bg-background" aria-label="İskandinavya ve Avrupa’daki showroom konumları" itemscope="" itemtype="https://schema.org/ItemList">
+    <div class="container mx-auto px-4 lg:px-8" bis_skin_checked="1">
+      <div class="text-center mb-16" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <div class="flex items-center justify-center gap-3 mb-6" bis_skin_checked="1">
+          <div class="w-2 h-2 rounded-full bg-forest" bis_skin_checked="1"></div>
+          <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-forest">{{ section.settings.showrooms_preheading }}</p>
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground">{{ section.settings.showrooms_heading }}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" bis_skin_checked="1">
+        {% assign showroom_index = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'showroom' %}
+            {% assign showroom_index = showroom_index | plus: 1 %}
+            <div class="group relative aspect-[3/4] overflow-hidden" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" bis_skin_checked="1" style="opacity: 1; transform: none;" {{ block.shopify_attributes }}>
+              <meta itemprop="position" content="{{ showroom_index }}">
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105', loading: 'lazy' }}
+              {% else %}
+                <div class="w-full h-full bg-gray-200 transition-transform duration-[1.5s] group-hover:scale-105"></div>
+              {% endif %}
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent" bis_skin_checked="1"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6" bis_skin_checked="1">
+                <p class="font-body text-[10px] uppercase tracking-luxury text-gold mb-1">{{ block.settings.subtitle }}</p>
+                <h3 class="font-display text-xl font-light text-secondary" itemprop="name">{{ block.settings.title }}</h3>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      {% if section.settings.showrooms_btn_text != blank %}
+      <div class="text-center mt-10" bis_skin_checked="1">
+        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-gold text-gold font-medium hover:bg-gold hover:text-background transition-all duration-500 tracking-widest uppercase text-xs h-12 px-10" href="{{ section.settings.showrooms_btn_link }}">
+          {{ section.settings.showrooms_btn_text }} 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Partners Section (Blocks) -->
+  <section class="py-20 bg-linen relative" aria-label="Küresel marka ortaklıkları ve güven sinyalleri">
+    <div class="absolute inset-0 bg-gradient-to-t from-forest/[0.02] to-transparent pointer-events-none" bis_skin_checked="1"></div>
+    <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center" bis_skin_checked="1">
+      <div bis_skin_checked="1" style="opacity: 1;">
+        <div class="flex items-center justify-center gap-3 mb-6" bis_skin_checked="1">
+          <div class="w-2 h-2 rounded-full bg-forest" bis_skin_checked="1"></div>
+          <p class="font-body text-[10px] font-medium uppercase tracking-luxury text-forest">{{ section.settings.partners_preheading }}</p>
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl font-light text-foreground mb-6">{{ section.settings.partners_heading }}</h2>
+        <p class="font-body text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">{{ section.settings.partners_desc }}</p>
+        <div class="flex flex-wrap items-center justify-center gap-8 lg:gap-12 bg-white rounded-xl py-10 px-10 mx-auto max-w-5xl shadow-sm" bis_skin_checked="1">
+          {% for block in section.blocks %}
+            {% if block.type == 'partner' %}
+              <div {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 300 | image_tag: class: 'h-8 lg:h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity', loading: 'lazy' }}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation CTA -->
+  <section class="py-28 gradient-dark" aria-label="Ücretsiz bir sağlıklı yaşam danışmanlığı randevusu alın">
+    <div class="container mx-auto px-4 lg:px-8 text-center" bis_skin_checked="1">
+      <div class="max-w-2xl mx-auto" bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <div class="luxury-line mx-auto mb-10" bis_skin_checked="1"></div>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-6 leading-[1.1]">{{ section.settings.consult_heading }}</h2>
+        <p class="font-body text-lg text-secondary/50 mb-10 max-w-xl mx-auto">{{ section.settings.consult_text }}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center" bis_skin_checked="1">
+          {% if section.settings.consult_btn_1_text != blank %}
+            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 gradient-gold text-charcoal font-semibold hover:opacity-90 transition-all duration-500 tracking-[0.25em] uppercase text-xs shadow-gold h-12 px-10 py-6" href="{{ section.settings.consult_btn_1_link }}">{{ section.settings.consult_btn_1_text }}</a>
+          {% endif %}
+          {% if section.settings.consult_btn_2_text != blank %}
+            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border-2 font-semibold hover:border-gold transition-all duration-500 tracking-[0.25em] uppercase text-xs h-12 px-10 py-6 border-secondary/30 text-secondary hover:bg-secondary hover:text-charcoal" href="{{ section.settings.consult_btn_2_link }}">{{ section.settings.consult_btn_2_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner With Us CTA -->
+  <section class="py-20 lg:py-28 bg-card border-t border-border">
+    <div class="container mx-auto px-4 lg:px-8 max-w-3xl text-center" bis_skin_checked="1">
+      <div bis_skin_checked="1" style="opacity: 1; transform: none;">
+        <div class="luxury-line mx-auto mb-8" bis_skin_checked="1"></div>
+        <p class="font-body text-[10px] font-semibold uppercase tracking-[0.4em] text-gold mb-4">{{ section.settings.partner_cta_preheading }}</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight mb-6">{{ section.settings.partner_cta_heading }}</h2>
+        <p class="font-body text-base text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">{{ section.settings.partner_cta_desc }}</p>
+        {% if section.settings.partner_cta_btn_text != blank %}
+          <a href="{{ section.settings.partner_cta_btn_link }}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gold hover:bg-gold/90 text-charcoal font-body font-semibold px-10 py-5 h-auto rounded-full text-sm uppercase tracking-wider">
+            {{ section.settings.partner_cta_btn_text }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% schema %}
+{
+  "name": "About Custom Page",
+  "tag": "section",
+  "class": "section-about-custom",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Breadcrumbs"
+    },
+    {
+      "type": "text",
+      "id": "home_text",
+      "label": "Home Link Text",
+      "default": "Ana Sayfa"
+    },
+    {
+      "type": "text",
+      "id": "current_page_text",
+      "label": "Current Page Text",
+      "default": "Hakkımızda"
+    },
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_preheading",
+      "label": "Pre-Heading",
+      "default": "World of Comfort Hakkında"
+    },
+    {
+      "type": "html",
+      "id": "hero_heading",
+      "label": "Heading",
+      "default": "İskandinavya'nın Lider<br><span class=\"italic text-gold\">Sağlık Destinasyonu</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_text",
+      "label": "Description",
+      "default": "2018'deki ilk showroomumuzdan Kuzey Avrupa'nın en çok ödül kazanan wellness teknoloji şirketine kadar..."
+    },
+    {
+      "type": "text",
+      "id": "hero_btn_1_text",
+      "label": "Primary Button Text",
+      "default": "Showroom'u Ziyaret Et"
+    },
+    {
+      "type": "url",
+      "id": "hero_btn_1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "hero_btn_2_text",
+      "label": "Secondary Button Text",
+      "default": "Uzman Tavsiyesi Alın"
+    },
+    {
+      "type": "url",
+      "id": "hero_btn_2_link",
+      "label": "Secondary Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Mission Section"
+    },
+    {
+      "type": "text",
+      "id": "mission_preheading",
+      "label": "Pre-Heading",
+      "default": "Misyonumuz"
+    },
+    {
+      "type": "text",
+      "id": "mission_heading",
+      "label": "Heading",
+      "default": "Wellness'ın bir yatırım olduğuna inanıyoruz — bir harcama değil"
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text_1",
+      "label": "Paragraph 1",
+      "default": "World of Comfort, 2018 yılında basit bir inançla kuruldu..."
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text_2",
+      "label": "Paragraph 2",
+      "default": "Biz bir çevrimiçi pazar yeri değiliz. Biz sağlık uzmanlarıyız..."
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text_3",
+      "label": "Paragraph 3",
+      "default": "İskandinavya'daki birçok önde gelen markanın gururlu özel distribütörleriyiz..."
+    },
+    {
+      "type": "image_picker",
+      "id": "mission_image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Core Values Settings"
+    },
+    {
+      "type": "text",
+      "id": "values_preheading",
+      "label": "Pre-Heading",
+      "default": "Değerlerimiz"
+    },
+    {
+      "type": "text",
+      "id": "values_heading",
+      "label": "Heading",
+      "default": "Savunduğumuz Şey"
+    },
+    {
+      "type": "header",
+      "content": "Timeline Settings"
+    },
+    {
+      "type": "text",
+      "id": "timeline_preheading",
+      "label": "Pre-Heading",
+      "default": "Yolculuğumuz"
+    },
+    {
+      "type": "text",
+      "id": "timeline_heading",
+      "label": "Heading",
+      "default": "Vizyondan Gerçekliğe"
+    },
+    {
+      "type": "header",
+      "content": "Tech Settings"
+    },
+    {
+      "type": "text",
+      "id": "tech_preheading",
+      "label": "Pre-Heading",
+      "default": "Benzersiz Teknolojimiz"
+    },
+    {
+      "type": "text",
+      "id": "tech_heading",
+      "label": "Heading",
+      "default": "Başka Hiçbir Yerde Bulamayacağınız Ürünler"
+    },
+    {
+      "type": "textarea",
+      "id": "tech_desc",
+      "label": "Description",
+      "default": "İskandinavya'daki birçok önde gelen markanın tek distribütörleri olarak..."
+    },
+    {
+      "type": "header",
+      "content": "Showrooms Settings"
+    },
+    {
+      "type": "text",
+      "id": "showrooms_preheading",
+      "label": "Pre-Heading",
+      "default": "Varlığımız"
+    },
+    {
+      "type": "text",
+      "id": "showrooms_heading",
+      "label": "Heading",
+      "default": "Şahsen Deneyimleyin"
+    },
+    {
+      "type": "text",
+      "id": "showrooms_btn_text",
+      "label": "Button Text",
+      "default": "Tüm Showroom'ları Gör"
+    },
+    {
+      "type": "url",
+      "id": "showrooms_btn_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Partners Settings"
+    },
+    {
+      "type": "text",
+      "id": "partners_preheading",
+      "label": "Pre-Heading",
+      "default": "Ortaklarımız"
+    },
+    {
+      "type": "text",
+      "id": "partners_heading",
+      "label": "Heading",
+      "default": "Dünyanın Önde Gelen Markalarının Güvendiği"
+    },
+    {
+      "type": "textarea",
+      "id": "partners_desc",
+      "label": "Description",
+      "default": "Dünyanın önde gelen sağlık teknolojisi üreticileriyle işbirliği yapıyoruz..."
+    },
+    {
+      "type": "header",
+      "content": "Consultation CTA Section"
+    },
+    {
+      "type": "html",
+      "id": "consult_heading",
+      "label": "Heading",
+      "default": "Deneyime Hazır mısınız?<br><span class=\"italic text-gold\">Farkı?</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "consult_text",
+      "label": "Description",
+      "default": "7 showroom'umuzdan birinde veya evinizde ücretsiz bir danışmanlık randevusu alın..."
+    },
+    {
+      "type": "text",
+      "id": "consult_btn_1_text",
+      "label": "Primary Button Text",
+      "default": "Ücretsiz Danışmanlık Randevusu Alın"
+    },
+    {
+      "type": "url",
+      "id": "consult_btn_1_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "consult_btn_2_text",
+      "label": "Secondary Button Text",
+      "default": "Showroom'u Ziyaret Et"
+    },
+    {
+      "type": "url",
+      "id": "consult_btn_2_link",
+      "label": "Secondary Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Partner CTA Section"
+    },
+    {
+      "type": "text",
+      "id": "partner_cta_preheading",
+      "label": "Pre-Heading",
+      "default": "Ortaklık"
+    },
+    {
+      "type": "html",
+      "id": "partner_cta_heading",
+      "label": "Heading",
+      "default": "Ortak Olun <span class=\"italic text-gold\">Showroom</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "partner_cta_desc",
+      "label": "Description",
+      "default": "Bir mağazanız var ve müşterilerinize olağanüstü bir şey sunmak mı istiyorsunuz?"
+    },
+    {
+      "type": "text",
+      "id": "partner_cta_btn_text",
+      "label": "Button Text",
+      "default": "Bize ulaşın"
+    },
+    {
+      "type": "url",
+      "id": "partner_cta_btn_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "SVG Icon HTML",
+          "info": "Paste SVG code here"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "250+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Kurumsal Müşteriler"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "name": "Core Value",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "SVG Icon HTML"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Wellness Tutkusu"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Year",
+          "default": "2018"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Kuruluş"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "tech",
+      "name": "Technology Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number_text",
+          "label": "Number Text",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "showroom",
+      "name": "Showroom Location",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Location Image"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Country/Subtitle",
+          "default": "Danimarka"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "City/Title",
+          "default": "Kopenhag"
+        }
+      ]
+    },
+    {
+      "type": "partner",
+      "name": "Partner Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Partner Logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Complete About Page",
+      "category": "Custom Pages",
+      "blocks": [
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "value" },
+        { "type": "value" },
+        { "type": "timeline" },
+        { "type": "timeline" },
+        { "type": "tech" },
+        { "type": "tech" },
+        { "type": "showroom" },
+        { "type": "showroom" },
+        { "type": "partner" },
+        { "type": "partner" }
+      ]
+    }
+  ]
+}
+{% endschema %}
