@@ -11,30 +11,35 @@
   "sections": {
     "main": {
       "type": "main-product-clean",
-      "settings": {
-        "subtitle": "CİLT TEMİZLEYİCİ"
-      }
+      "settings": {}
     },
     "awards_marquee": {
-      "type": "awards-marquee"
+      "type": "awards-marquee",
+      "settings": {}
     },
     "image_text_cta": {
-      "type": "image-with-text-cta"
+      "type": "image-with-text-cta",
+      "settings": {}
     },
     "science_tabs": {
-      "type": "science-tabs"
+      "type": "science-tabs",
+      "settings": {}
     },
     "custom_testimonials": {
-      "type": "custom-testimonials"
+      "type": "custom-testimonials",
+      "settings": {}
     },
     "guarantees_grid": {
-      "type": "guarantees-grid"
+      "type": "guarantees-grid",
+      "settings": {}
     },
     "faq_clean": {
-      "type": "faq-accordion"
+      "type": "faq-accordion",
+      "settings": {}
     },
     "bottom_cta": {
-      "type": "bottom-cta"
+      "type": "bottom-cta",
+      "settings": {}
     },
     "overview": {
       "type": "product-overview",
