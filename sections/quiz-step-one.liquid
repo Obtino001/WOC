@@ -1,0 +1,240 @@
+<main class="pt-24 pb-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    
+    <div class="text-center mb-10 mt-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-4 border" style="border-color: hsl(var(--gold) / 0.3); background: hsl(var(--gold) / 0.08);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3 h-3" style="color: hsl(var(--gold));">
+          <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+          <path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path>
+        </svg>
+        <span class="text-[11px] font-semibold uppercase tracking-widest" style="color: hsl(var(--gold));">{{ section.settings.badge_text }}</span>
+      </div>
+      <h1 class="font-display text-2xl md:text-3xl font-bold text-foreground">{{ section.settings.title }}</h1>
+    </div>
+
+    <div class="mb-10">
+      <div class="flex justify-between items-center mb-3">
+        <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ section.settings.step_text }}</span>
+        <span class="font-body text-xs font-semibold" style="color: hsl(var(--gold));">{{ section.settings.progress_percentage }}%</span>
+      </div>
+      <div class="h-1.5 bg-muted rounded-full overflow-hidden">
+        <div class="h-full rounded-full" style="background: hsl(var(--gold)); width: {{ section.settings.progress_percentage }}%;"></div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">{{ section.settings.question_title }}</h2>
+      <p class="text-muted-foreground mb-8">{{ section.settings.question_subtitle }}</p>
+      
+      <div class="space-y-3" id="quiz-options-{{ section.id }}">
+        {% for block in section.blocks %}
+          <button type="button" data-value="{{ block.settings.internal_value }}" class="quiz-option-btn w-full text-left p-5 rounded-xl border-2 transition-all duration-200 group border-border hover:border-[hsl(var(--gold)/0.5)] hover:bg-muted/30" {{ block.shopify_attributes }}>
+            <div class="flex items-start gap-4">
+              <span class="text-2xl flex-shrink-0">{{ block.settings.emoji }}</span>
+              <div class="flex-1">
+                <div class="font-semibold text-foreground">{{ block.settings.title }}</div>
+                <div class="text-sm text-muted-foreground mt-0.5">{{ block.settings.subtitle }}</div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 mt-1 flex-shrink-0 transition-all text-muted-foreground group-hover:translate-x-1">
+                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </div>
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('#quiz-options-{{ section.id }} .quiz-option-btn');
+    const nextUrl = "{{ section.settings.next_step_url }}";
+    const questionKey = "{{ section.settings.question_key }}"; // e.g., 'primary_need'
+    
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // 1. Get the value of the clicked option
+        const selectedValue = this.getAttribute('data-value');
+        
+        // 2. Save it to sessionStorage so it persists across pages
+        let quizData = JSON.parse(sessionStorage.getItem('woc_quiz_data') || '{}');
+        quizData[questionKey] = selectedValue;
+        sessionStorage.setItem('woc_quiz_data', JSON.stringify(quizData));
+        
+        // 3. Add a slight visual feedback (fade out slightly to indicate loading)
+        this.style.opacity = '0.6';
+        
+        // 4. Redirect to the next step
+        if (nextUrl && nextUrl !== '') {
+          window.location.href = nextUrl;
+        } else {
+          console.warn("Next Step URL is not configured in the theme editor.");
+          alert("Choice saved! Please configure a Next URL in the Theme Editor to proceed.");
+          this.style.opacity = '1'; // Revert opacity if no redirect
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Quiz Step",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Page Header"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Personal Chair Recommendation"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Main Title",
+      "default": "Find your perfect massage chair"
+    },
+    {
+      "type": "header",
+      "content": "Progress Settings"
+    },
+    {
+      "type": "text",
+      "id": "step_text",
+      "label": "Step Counter Text",
+      "default": "Question 1 of 6"
+    },
+    {
+      "type": "range",
+      "id": "progress_percentage",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Progress Percentage",
+      "default": 17
+    },
+    {
+      "type": "header",
+      "content": "Question Configuration"
+    },
+    {
+      "type": "text",
+      "id": "question_title",
+      "label": "Question Title",
+      "default": "What is your primary need?"
+    },
+    {
+      "type": "textarea",
+      "id": "question_subtitle",
+      "label": "Question Subtitle",
+      "default": "Choose what matters most to you — this guides our recommendation."
+    },
+    {
+      "type": "text",
+      "id": "question_key",
+      "label": "Data Key (Used for Saving Data)",
+      "default": "primary_need",
+      "info": "This is the invisible key used to save the customer's answer in the browser's storage."
+    },
+    {
+      "type": "url",
+      "id": "next_step_url",
+      "label": "Next Step URL",
+      "info": "Where should the user be redirected after clicking an option?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "option",
+      "name": "Quiz Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "emoji",
+          "label": "Emoji / Icon",
+          "default": "🩺"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Option Title",
+          "default": "Back and neck pain relief"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Option Subtitle",
+          "default": "Deep medical massage"
+        },
+        {
+          "type": "text",
+          "id": "internal_value",
+          "label": "Internal Value (Data to Save)",
+          "default": "pain_relief",
+          "info": "The data saved behind the scenes when a user selects this option."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quiz Step",
+      "blocks": [
+        {
+          "type": "option",
+          "settings": {
+            "emoji": "🩺",
+            "title": "Back and neck pain relief",
+            "subtitle": "Deep medical massage",
+            "internal_value": "pain_relief"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "emoji": "🧘",
+            "title": "Stress and anxiety reduction",
+            "subtitle": "Relaxation and mental well-being",
+            "internal_value": "stress_reduction"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "emoji": "💪",
+            "title": "Sports recovery & circulation",
+            "subtitle": "Faster recovery after training",
+            "internal_value": "sports_recovery"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "emoji": "✨",
+            "title": "Premium relaxation at home",
+            "subtitle": "Daily luxury and well-being",
+            "internal_value": "premium_relaxation"
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "emoji": "👴",
+            "title": "Mobility & elder care",
+            "subtitle": "Gentle therapy for seniors",
+            "internal_value": "elder_care"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
