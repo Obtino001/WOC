@@ -1,0 +1,90 @@
+<main class="section-{{ section.id }}">
+  <!-- Hero Section -->
+  <section class="relative h-[80vh] min-h-[500px] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="grid lg:grid-cols-2 h-full">
+        <div class="relative overflow-hidden">
+          {% if section.settings.hero_image != blank %}
+            {{ section.settings.hero_image | image_url: width: 1920 | image_tag: class: 'w-full h-full object-cover' }}
+          {% endif %}
+        </div>
+        <div class="hidden lg:block bg-[#f0ede8]"></div>
+      </div>
+    </div>
+    <div class="relative z-10 container mx-auto px-4">
+      <div class="max-w-xl ml-auto text-center lg:text-left lg:pr-12">
+        <p class="font-display text-3xl md:text-4xl lg:text-5xl font-light text-neutral-400 uppercase tracking-[0.06em]">{{ section.settings.hero_pretitle }}</p>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-light text-neutral-800 uppercase tracking-[0.06em] mt-2">{{ section.settings.hero_title }}</h1>
+        <div class="my-6 flex justify-center lg:justify-start">
+           <svg width="40" height="40" viewBox="0 0 48 48" fill="none"><path d="M24 4L26 20L24 22L22 20L24 4Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M24 44L22 28L24 26L26 28L24 44Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M4 24L20 22L22 24L20 26L4 24Z" fill="hsl(36 72% 45%)" opacity="0.8"></path><path d="M44 24L28 26L26 24L28 22L44 24Z" fill="hsl(36 72% 45%)" opacity="0.8"></path></svg>
+        </div>
+        <p class="font-body text-sm text-neutral-500 italic">{{ section.settings.hero_desc }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story & Mission -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="font-display text-3xl md:text-4xl font-light text-neutral-800 mb-10 uppercase tracking-[0.06em]">{{ section.settings.story_title }}</h2>
+      <div class="space-y-6 font-body text-sm text-neutral-600 leading-[1.9]">
+        {{ section.settings.story_content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission/Vision Grid -->
+  <section class="bg-neutral-50">
+    <div class="grid lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200">
+      {% for block in section.blocks %}
+        {% if block.type == 'mission_card' %}
+        <div class="p-10 md:p-14 lg:p-16">
+          <p class="font-body text-[10px] uppercase tracking-[0.25em] text-neutral-400 mb-6">{{ block.settings.title }}</p>
+          <p class="font-body text-sm text-neutral-600 leading-[1.9]">{{ block.settings.text }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Stats Grid -->
+  <section class="py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="text-center mb-16">
+        <p class="font-body text-[10px] uppercase tracking-[0.3em] text-neutral-400 mb-6">{{ section.settings.stats_pretitle }}</p>
+        <h2 class="font-display text-2xl md:text-3xl font-light text-neutral-800 mb-6">{{ section.settings.stats_title }}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {% for block in section.blocks %}
+           {% if block.type == 'stat' %}
+           <div class="text-center">
+             <span class="font-display text-4xl md:text-5xl font-light text-neutral-800">{{ block.settings.stat_value }}</span>
+             <p class="font-body text-xs text-neutral-500 mt-3 leading-relaxed">{{ block.settings.stat_label }}</p>
+           </div>
+           {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% schema %}
+{
+  "name": "About Séduisante",
+  "settings": [
+    { "type": "image_picker", "id": "hero_image", "label": "Hero Image" },
+    { "type": "text", "id": "hero_pretitle", "label": "Pre-title", "default": "ÖDÜLLÜ" },
+    { "type": "text", "id": "hero_title", "label": "Title", "default": "CİLT BAKIM TEKNOLOJİSİ" },
+    { "type": "text", "id": "hero_desc", "label": "Description" },
+    { "type": "text", "id": "story_title", "label": "Story Title", "default": "HİKAYEMİZ" },
+    { "type": "richtext", "id": "story_content", "label": "Story Content" },
+    { "type": "text", "id": "stats_pretitle", "label": "Stats Pre-title" },
+    { "type": "text", "id": "stats_title", "label": "Stats Title" }
+  ],
+  "blocks": [
+    { "type": "mission_card", "name": "Mission Card", "settings": [{ "type": "text", "id": "title", "label": "Title" }, { "type": "textarea", "id": "text", "label": "Text" }] },
+    { "type": "stat", "name": "Stat", "settings": [{ "type": "text", "id": "stat_value", "label": "Value" }, { "type": "text", "id": "stat_label", "label": "Label" }] }
+  ],
+  "presets": [{ "name": "About Séduisante Section" }]
+}
+{% endschema %}
