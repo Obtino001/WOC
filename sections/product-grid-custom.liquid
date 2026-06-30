@@ -1,6 +1,6 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<section class="py-20 {% if section.settings.bg_style == 'warm' %}section-light-warm{% else %}section-light{% endif %}" id="{{ section.settings.section_id }}">
+<section class="woc-section-py {% if section.settings.bg_style == 'warm' %}section-light-warm{% else %}section-light{% endif %}" id="{{ section.settings.section_id }}">
   <div class="mx-auto px-4 lg:px-8 {% if section.settings.page_width == 'full' %}w-full{% elsif section.settings.page_width == 'narrow' %}max-w-[1000px]{% else %}page-width{% endif %}">
     
     <div class="text-center mb-14">
