@@ -20,96 +20,96 @@
     "showroom_details_WahXGV": {
       "type": "showroom-details",
       "blocks": {
-        "working_hour_XYxHPk": {
+        "working_hour_1": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazartesi – Cuma",
-            "time": "10:00 – 17:30"
+            "day": "Monday – Friday",
+            "time": "10:00 – 19:00"
           }
         },
-        "working_hour_hgQtdb": {
+        "working_hour_2": {
           "type": "working_hour",
           "settings": {
-            "day": "Cumartesi",
-            "time": "10:00 – 14:00"
+            "day": "Saturday",
+            "time": "10:00 – 16:00"
           }
         },
-        "working_hour_tiEPeL": {
+        "working_hour_3": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazar",
-            "time": "Kapalı"
+            "day": "Sunday",
+            "time": "Closed"
           }
         },
-        "feature_PnDzwx": {
+        "feature_1": {
           "type": "feature",
           "settings": {
-            "feature_text": "World of Comfort Global Headquarters"
+            "feature_text": "Complete product collection"
           }
         },
-        "feature_6NTnz7": {
+        "feature_2": {
           "type": "feature",
           "settings": {
-            "feature_text": "Özenle seçilmiş masaj koltuğu seçenekleri (6+ model)"
+            "feature_text": "SOVESYSTEM® body scanning station"
           }
         },
-        "feature_EFxHhM": {
+        "feature_3": {
           "type": "feature",
           "settings": {
-            "feature_text": "SOVESYSTEM® vücut tarama istasyonu"
+            "feature_text": "AI Smart Bed private demo suite"
           }
         },
-        "feature_cwFHHp": {
+        "feature_4": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kişisel 1'e 1 danışmanlık"
+            "feature_text": "German-speaking wellness experts"
           }
         },
-        "feature_aywTWX": {
+        "feature_5": {
           "type": "feature",
           "settings": {
-            "feature_text": "E20/E45 otoyolundan kolay erişim"
+            "feature_text": "Central Kaiserstraße location"
           }
         },
-        "feature_QU9mrf": {
+        "feature_6": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kapıda ücretsiz otopark"
+            "feature_text": "Complimentary beverages"
           }
         }
       },
       "block_order": [
-        "working_hour_XYxHPk",
-        "working_hour_hgQtdb",
-        "working_hour_tiEPeL",
-        "feature_PnDzwx",
-        "feature_6NTnz7",
-        "feature_EFxHhM",
-        "feature_cwFHHp",
-        "feature_aywTWX",
-        "feature_QU9mrf"
+        "working_hour_1",
+        "working_hour_2",
+        "working_hour_3",
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6"
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "shopify://shop_images/showroom-fredericia-Nd0e262J.jpg",
-        "hero_subtitle": "🇩🇰 Danimarka",
-        "hero_title": "Fredericia Genel Merkez ve Showroom",
-        "hero_description": "Fredericia'daki küresel genel merkezimiz ve Jutland showroom'umuz. En popüler masaj koltuklarımızı deneyebileceğiniz ve SOVESYSTEM® vücut analizini rahat, kişisel bir ortamda deneyimleyebileceğiniz kapsamlı bir alan. Burası aynı zamanda tüm organizasyonumuzun da evidir.",
-        "back_label": "Tüm Showroomlar",
-        "back_link": "",
-        "address_title": "Adres",
-        "address_line_1": "Kringsvej 4",
-        "address_line_2": "7000 Fredericia",
-        "address_line_3": "Danimarka",
-        "phone_title": "Telefon",
-        "phone_number": "+45 70 20 30 41",
-        "email_title": "E-posta",
-        "email_address": "fredericia@worldofcomfort.dk",
-        "hours_title": "Çalışma Saatleri",
-        "features_title": "Burada Neler Bulacaksınız",
-        "form_title": "Ücretsiz Demo Rezervasyonu Yapın",
-        "form_subtitle": "Satın almadan önce deneyin. Tercih ettiğiniz ürünleri kişisel bir tanıtım için hazırlayacağız.",
-        "map_link": ""
+        "hero_image": "",
+        "hero_subtitle": "🇩🇪 Germany",
+        "hero_title": "Frankfurt Showroom",
+        "hero_description": "Our German showroom in the heart of Frankfurt's financial district. A sophisticated space on Kaiserstraße showcasing our full range with German-language support and EUR pricing — serving Germany's business capital.",
+        "back_label": "All Showrooms",
+        "back_link": "/showrooms",
+        "address_title": "Address",
+        "address_line_1": "Kaiserstraße 50",
+        "address_line_2": "60329 Frankfurt am Main",
+        "address_line_3": "Germany",
+        "phone_title": "Phone",
+        "phone_number": "+49 69 123 4567",
+        "email_title": "Email",
+        "email_address": "frankfurt@worldofcomfort.de",
+        "hours_title": "Opening Hours",
+        "features_title": "What You'll Find Here",
+        "form_title": "Book a Free Demo",
+        "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0!2d8.68!3d50.11!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA2JzM2LjAiTiA4wrA0MCc0OC4wIkU!5e0!3m2!1sen!2sde!4v1"
       }
     }
   },
