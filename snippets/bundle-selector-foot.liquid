@@ -1,0 +1,94 @@
+{% comment %}
+  Foot massager bundle / variant selector cards.
+  Accepts:
+  - product: {Object}
+  - block: {Object}
+  - product_form_id: {String}
+  - section_id: {String}
+{% endcomment %}
+{%- if product.variants.size > 0 -%}
+  <div class="mpf-bundle" data-bundle-selector {{ block.shopify_attributes }}>
+    {%- if block.settings.heading != blank -%}
+      <p class="mpf-bundle__heading">{{ block.settings.heading }}</p>
+    {%- endif -%}
+
+    <fieldset class="mpf-bundle__options">
+      <legend class="visually-hidden">{{ block.settings.heading | default: 'Product options' }}</legend>
+
+      {%- for variant in product.variants limit: 2 -%}
+        {%- liquid
+          assign option_index = forloop.index
+          assign thumb_image = variant.featured_image
+          assign option_subtitle = ''
+
+          if option_index == 1
+            if block.settings.image_1 != blank
+              assign thumb_image = block.settings.image_1
+            endif
+            assign option_subtitle = block.settings.subtitle_1
+          elsif option_index == 2
+            if block.settings.image_2 != blank
+              assign thumb_image = block.settings.image_2
+            endif
+            assign option_subtitle = block.settings.subtitle_2
+          endif
+
+          assign has_discount = false
+          assign discount_pct = 0
+          if variant.compare_at_price > variant.price
+            assign has_discount = true
+            assign discount_amount = variant.compare_at_price | minus: variant.price
+            assign discount_pct = discount_amount | times: 100.0 | divided_by: variant.compare_at_price | round
+          endif
+
+          if settings.currency_code_enabled
+            assign money_price = variant.price | money_with_currency
+            assign money_compare = variant.compare_at_price | money_with_currency
+          else
+            assign money_price = variant.price | money
+            assign money_compare = variant.compare_at_price | money
+          endif
+        -%}
+
+        <label class="mpf-bundle__option{% if variant.id == product.selected_or_first_available_variant.id %} is-selected{% endif %}{% unless variant.available %} is-unavailable{% endunless %}">
+          <input
+            type="radio"
+            name="bundle-variant-{{ section_id }}"
+            id="BundleVariant-{{ section_id }}-{{ variant.id }}"
+            value="{{ variant.id }}"
+            class="mpf-bundle__input visually-hidden"
+            data-variant-id="{{ variant.id }}"
+            {% if variant.id == product.selected_or_first_available_variant.id %}checked{% endif %}
+            {% unless variant.available %}disabled{% endunless %}
+          >
+          <span class="mpf-bundle__check" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+
+          {%- if thumb_image != blank -%}
+            {{ thumb_image | image_url: width: 120 | image_tag: class: 'mpf-bundle__thumb', alt: variant.title, loading: 'lazy', widths: '60, 120' }}
+          {%- else -%}
+            <span class="mpf-bundle__thumb mpf-bundle__thumb--placeholder" aria-hidden="true"></span>
+          {%- endif -%}
+
+          <span class="mpf-bundle__content">
+            <span class="mpf-bundle__title">{{ variant.title }}</span>
+            {%- if option_subtitle != blank -%}
+              <span class="mpf-bundle__subtitle">{{ option_subtitle }}</span>
+            {%- endif -%}
+            <span class="mpf-bundle__prices">
+              <span class="mpf-bundle__price">{{ money_price }}</span>
+              {%- if has_discount -%}
+                <span class="mpf-bundle__compare">{{ money_compare }}</span>
+              {%- endif -%}
+            </span>
+          </span>
+
+          {%- if has_discount -%}
+            <span class="mpf-bundle__save">{{ block.settings.save_label }}</span>
+          {%- endif -%}
+        </label>
+      {%- endfor -%}
+    </fieldset>
+  </div>
+{%- endif -%}
