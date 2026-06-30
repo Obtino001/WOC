@@ -450,3 +450,21 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-drawer .cart__note textarea {
   font-size: 13px !important;
 }
+
+/* Fix for oversized quantity selector in cart drawer */
+.cart-drawer .quantity {
+  width: 100px !important;
+  min-height: 36px !important;
+  height: 36px !important;
+}
+
+.cart-drawer .quantity__button {
+  width: 32px !important;
+  height: 36px !important;
+  font-size: 16px !important;
+}
+
+.cart-drawer .quantity__input {
+  font-size: 14px !important;
+}
+

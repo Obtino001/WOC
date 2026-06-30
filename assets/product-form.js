@@ -32,15 +32,36 @@ if (!customElements.get('product-form')) {
         delete config.headers['Content-Type'];
 
         const formData = new FormData(this.form);
-        if (this.cart) {
-          formData.append(
-            'sections',
-            this.cart.getSectionsToRender().map((section) => section.id)
-          );
-          formData.append('sections_url', window.location.pathname);
-          this.cart.setActiveElement(document.activeElement);
+        const addonCheckbox = this.form.querySelector('[data-addon-checkbox]');
+        let requestBody;
+        
+        if (addonCheckbox && addonCheckbox.checked) {
+          const items = [
+            { id: parseInt(formData.get('id')), quantity: parseInt(formData.get('quantity') || 1) },
+            { id: parseInt(addonCheckbox.value), quantity: 1 }
+          ];
+          const payload = {
+            items: items,
+            sections_url: window.location.pathname
+          };
+          if (this.cart) {
+            payload.sections = this.cart.getSectionsToRender().map((section) => section.id);
+            this.cart.setActiveElement(document.activeElement);
+          }
+          requestBody = JSON.stringify(payload);
+          config.headers['Content-Type'] = 'application/json';
+        } else {
+          if (this.cart) {
+            formData.append(
+              'sections',
+              this.cart.getSectionsToRender().map((section) => section.id)
+            );
+            formData.append('sections_url', window.location.pathname);
+            this.cart.setActiveElement(document.activeElement);
+          }
+          requestBody = formData;
         }
-        config.body = formData;
+        config.body = requestBody;
 
         fetch(`${routes.cart_add_url}`, config)
           .then((response) => response.json())
