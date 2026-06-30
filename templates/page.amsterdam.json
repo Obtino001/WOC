@@ -23,58 +23,58 @@
         "working_hour_XYxHPk": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazartesi – Cuma",
-            "time": "10:00 – 17:30"
+            "day": "Monday – Friday",
+            "time": "10:00 – 18:00"
           }
         },
         "working_hour_hgQtdb": {
           "type": "working_hour",
           "settings": {
-            "day": "Cumartesi",
-            "time": "10:00 – 14:00"
+            "day": "Saturday",
+            "time": "10:00 – 17:00"
           }
         },
         "working_hour_tiEPeL": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazar",
-            "time": "Kapalı"
+            "day": "Sunday",
+            "time": "Closed"
           }
         },
         "feature_PnDzwx": {
           "type": "feature",
           "settings": {
-            "feature_text": "World of Comfort Global Headquarters"
+            "feature_text": "Full product range on display"
           }
         },
         "feature_6NTnz7": {
           "type": "feature",
           "settings": {
-            "feature_text": "Özenle seçilmiş masaj koltuğu seçenekleri (6+ model)"
+            "feature_text": "SOVESYSTEM® body scanning station"
           }
         },
         "feature_EFxHhM": {
           "type": "feature",
           "settings": {
-            "feature_text": "SOVESYSTEM® vücut tarama istasyonu"
+            "feature_text": "Dutch-speaking wellness consultants"
           }
         },
         "feature_cwFHHp": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kişisel 1'e 1 danışmanlık"
+            "feature_text": "EUR pricing"
           }
         },
         "feature_aywTWX": {
           "type": "feature",
           "settings": {
-            "feature_text": "E20/E45 otoyolundan kolay erişim"
+            "feature_text": "Historic Keizersgracht canal location"
           }
         },
         "feature_QU9mrf": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kapıda ücretsiz otopark"
+            "feature_text": "Complimentary Dutch coffee & treats"
           }
         }
       },
@@ -91,25 +91,25 @@
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "shopify://shop_images/showroom-fredericia-Nd0e262J.jpg",
-        "hero_subtitle": "🇩🇰 Danimarka",
-        "hero_title": "Fredericia Genel Merkez ve Showroom",
-        "hero_description": "Fredericia'daki küresel genel merkezimiz ve Jutland showroom'umuz. En popüler masaj koltuklarımızı deneyebileceğiniz ve SOVESYSTEM® vücut analizini rahat, kişisel bir ortamda deneyimleyebileceğiniz kapsamlı bir alan. Burası aynı zamanda tüm organizasyonumuzun da evidir.",
-        "back_label": "Tüm Showroomlar",
+        "hero_image": "",
+        "hero_subtitle": "🇳🇱 Netherlands",
+        "hero_title": "Amsterdam Showroom",
+        "hero_description": "Our Dutch showroom on Amsterdam's historic Keizersgracht canal. A stylish canal-house setting featuring our full range with Dutch-language support and EUR pricing.",
+        "back_label": "All Showrooms",
         "back_link": "",
-        "address_title": "Adres",
-        "address_line_1": "Kringsvej 4",
-        "address_line_2": "7000 Fredericia",
-        "address_line_3": "Danimarka",
-        "phone_title": "Telefon",
-        "phone_number": "+45 70 20 30 41",
-        "email_title": "E-posta",
-        "email_address": "fredericia@worldofcomfort.dk",
-        "hours_title": "Çalışma Saatleri",
-        "features_title": "Burada Neler Bulacaksınız",
-        "form_title": "Ücretsiz Demo Rezervasyonu Yapın",
-        "form_subtitle": "Satın almadan önce deneyin. Tercih ettiğiniz ürünleri kişisel bir tanıtım için hazırlayacağız.",
-        "map_link": ""
+        "address_title": "Address",
+        "address_line_1": "Keizersgracht 120",
+        "address_line_2": "1015 CW Amsterdam",
+        "address_line_3": "Netherlands",
+        "phone_title": "Phone",
+        "phone_number": "+31 20 123 4567",
+        "email_title": "Email",
+        "email_address": "amsterdam@worldofcomfort.nl",
+        "hours_title": "Opening Hours",
+        "features_title": "What You'll Find Here",
+        "form_title": "Book a Free Demo",
+        "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0!2d4.89!3d52.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDIyJzEyLjAiTiA0wrA1Myc0OC4wIkU!5e0!3m2!1sen!2snl!4v1"
       }
     }
   },
