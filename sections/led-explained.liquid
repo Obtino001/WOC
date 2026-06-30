@@ -101,9 +101,9 @@
               <p class="font-body text-sm text-neutral-600 leading-[1.9] mb-6">{{ block.settings.content }}</p>
               <div class="pl-4 border-l-2" style="border-color: {{ block.settings.color }};">
                 <p class="font-body text-[11px] uppercase tracking-[0.15em] text-neutral-400 mb-3">Faydaları şunlardır:</p>
-                <ul class="space-y-2">
+                <div class="text-sm text-neutral-600 [&_ul]:space-y-2 [&_li]:text-neutral-600">
                   {{ block.settings.benefits_list }}
-                </ul>
+                </div>
               </div>
             </div>
           {% endif %}
