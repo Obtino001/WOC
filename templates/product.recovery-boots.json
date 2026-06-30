@@ -215,16 +215,15 @@
           "settings": {
             "title": "Teknoloji ve özellikler",
             "subtitle": "Kablosuz kontrol cihazından hassas 8 odacıklı kompresyona – sporcular ve günlük kullanıcılar için tasarlandı.",
-            "feature_1_img": "shopify:\/\/shop_images\/recovery-boots-pro-01-BqStoFjR.jpg",
+            "feature_1_img": "shopify://shop_images/recovery-boots-pro-01-BqStoFjR_0edca52b-1602-4c71-98c2-fbe2a28abdd9.png",
             "feature_1_title": "Kablosuz kontrol cihazı",
             "feature_1_text": "Entegre pil – kablosuz.",
-            "feature_2_img": "shopify:\/\/shop_images\/recovery-boots-pro-02-controller-D-1lJBb7.jpg",
+            "feature_2_img": "shopify://shop_images/recovery-boots-pro-02-controller-D-1lJBb7.png",
             "feature_2_title": "Net renkli ekran",
             "feature_2_text": "Zaman, basınç, mod ve pil – bir bakışta.",
-            "feature_3_img": "shopify:\/\/shop_images\/recovery-boots-pro-04-controller-detail-BgMDyPLk.jpg",
+            "feature_3_img": "shopify://shop_images/recovery-boots-pro-05-bag-C_VdqXXZ.png",
             "feature_3_title": "USB-C şarj",
             "feature_3_text": "Hızlı şarj · şarj ederken kullanın.",
-            "feature_4_img": "shopify:\/\/shop_images\/recovery-boots-pro-05-bag-C_VdqXXZ.jpg",
             "feature_4_title": "Premium taşıma çantası",
             "feature_4_text": "Botları her yere götürün."
           }
@@ -286,7 +285,7 @@
           "type": "text_content",
           "settings": {
             "title": "Profesyonel iyileşme çözümü",
-            "text": "<p><strong>WOC Recovery Boots Pro<\/strong> , antrenman sonrası daha hızlı iyileşme, uzun ve yorucu günler veya ağır, şiş bacakları rahatlatmak için profesyonel çözümdür. Her bir botta <strong>8 hava haznesi<\/strong>, elit sporcuların müsabakalar arasında daha hızlı dönmek için kullandığı aynı teknoloji olan hassas sıralı kompresyon masajı sunarlar.<\/p><p>Bu botları benzersiz kılan şey, <strong>%100 kablosuz<\/strong> olmalarıdır. Batarya, kompakt kontrolöre doğrudan entegre edilmiştir, böylece onları antrenman sonrası arabada, soyunma odasında, kanepede veya yatakta dilediğiniz her yerde özgürce kullanabilirsiniz. Kablo yok, sınır yok.<\/p><p>Şunlar arasından seçim yapın: <strong>6 önceden programlanmış masaj modu<\/strong> ve basıncı 0 ila 260 mmHg arasında 8 seviyede hassas bir şekilde ayarlayın. Şeffaf renkli ekran zamanı, basıncı, modu ve pili gösterir – kolay ve sezgisel kontroller.<\/p><p>İle <strong>4 saate kadar pil ömrüyle<\/strong> ve sadece 1 kg ağırlığıyla kontrol cihazı her yere sizinle birlikte seyahat etmek için üretilmiştir. Şarj olurken de kullanılabilir. Dahil olan birinci sınıf taşıma çantası, botları antrenman kampına, maça veya tatile götürmeyi kolaylaştırır.<\/p><p>Hem günlük sporcular hem de elit sporcular için üretilmiştir – triatletlerden ve bisikletçilerden, uzun bir günün ardından rahatlamaya ihtiyaç duyan yoğun ayaklara kadar.<\/p>"
+            "text": "<p><strong>WOC Recovery Boots Pro</strong> , antrenman sonrası daha hızlı iyileşme, uzun ve yorucu günler veya ağır, şiş bacakları rahatlatmak için profesyonel çözümdür. Her bir botta <strong>8 hava haznesi</strong>, elit sporcuların müsabakalar arasında daha hızlı dönmek için kullandığı aynı teknoloji olan hassas sıralı kompresyon masajı sunarlar.</p><p>Bu botları benzersiz kılan şey, <strong>%100 kablosuz</strong> olmalarıdır. Batarya, kompakt kontrolöre doğrudan entegre edilmiştir, böylece onları antrenman sonrası arabada, soyunma odasında, kanepede veya yatakta dilediğiniz her yerde özgürce kullanabilirsiniz. Kablo yok, sınır yok.</p><p>Şunlar arasından seçim yapın: <strong>6 önceden programlanmış masaj modu</strong> ve basıncı 0 ila 260 mmHg arasında 8 seviyede hassas bir şekilde ayarlayın. Şeffaf renkli ekran zamanı, basıncı, modu ve pili gösterir – kolay ve sezgisel kontroller.</p><p>İle <strong>4 saate kadar pil ömrüyle</strong> ve sadece 1 kg ağırlığıyla kontrol cihazı her yere sizinle birlikte seyahat etmek için üretilmiştir. Şarj olurken de kullanılabilir. Dahil olan birinci sınıf taşıma çantası, botları antrenman kampına, maça veya tatile götürmeyi kolaylaştırır.</p><p>Hem günlük sporcular hem de elit sporcular için üretilmiştir – triatletlerden ve bisikletçilerden, uzun bir günün ardından rahatlamaya ihtiyaç duyan yoğun ayaklara kadar.</p>"
           }
         },
         "how_it_works": {
@@ -332,7 +331,7 @@
           "type": "advantages",
           "settings": {
             "title": "Avantajlarımız",
-            "adv_img_left": "shopify:\/\/shop_images\/recovery-boots-pro-01-BqStoFjR.jpg",
+            "adv_img_left": "shopify://shop_images/recovery-boots-pro-01-BqStoFjR_0edca52b-1602-4c71-98c2-fbe2a28abdd9.png",
             "adv_title_left": "Bizim",
             "adv_li_left_1": "Basınç Sensörü",
             "adv_li_left_2": "8 bağımsız hava haznesi",
@@ -361,7 +360,7 @@
             "spec_label_3": "Basınç aralığı",
             "spec_val_3": "0 – 260 mmHg",
             "spec_label_4": "Zamanlayıcı",
-            "spec_val_4": "10 \/ 20 \/ 30 dakika",
+            "spec_val_4": "10 / 20 / 30 dakika",
             "spec_label_5": "Pil ömrü",
             "spec_val_5": "4 saate kadar",
             "spec_label_6": "Şarj süresi",
@@ -482,7 +481,7 @@
   },
   "order": [
     "main",
-    "related-products",
-        "landing_page"
+    "landing_page",
+    "related-products"
   ]
 }
