@@ -23,65 +23,64 @@
         "working_hour_XYxHPk": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazartesi – Cuma",
-            "time": "10:00 – 17:30"
+            "day": "Monday – Saturday",
+            "time": "10:00 – 20:00"
           }
         },
         "working_hour_hgQtdb": {
           "type": "working_hour",
           "settings": {
-            "day": "Cumartesi",
-            "time": "10:00 – 14:00"
+            "day": "Sunday",
+            "time": "12:00 – 18:00"
           }
         },
         "working_hour_tiEPeL": {
           "type": "working_hour",
           "settings": {
-            "day": "Pazar",
-            "time": "Kapalı"
+            "day": "",
+            "time": ""
           }
         },
         "feature_PnDzwx": {
           "type": "feature",
           "settings": {
-            "feature_text": "World of Comfort Global Headquarters"
+            "feature_text": "Complete collection (all categories)"
           }
         },
         "feature_6NTnz7": {
           "type": "feature",
           "settings": {
-            "feature_text": "Özenle seçilmiş masaj koltuğu seçenekleri (6+ model)"
+            "feature_text": "Turkish-speaking wellness experts"
           }
         },
         "feature_EFxHhM": {
           "type": "feature",
           "settings": {
-            "feature_text": "SOVESYSTEM® vücut tarama istasyonu"
+            "feature_text": "SOVESYSTEM® & AI Smart Bed suites"
           }
         },
         "feature_cwFHHp": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kişisel 1'e 1 danışmanlık"
+            "feature_text": "VIP private consultation rooms"
           }
         },
         "feature_aywTWX": {
           "type": "feature",
           "settings": {
-            "feature_text": "E20/E45 otoyolundan kolay erişim"
+            "feature_text": "Complimentary Turkish tea & coffee"
           }
         },
         "feature_QU9mrf": {
           "type": "feature",
           "settings": {
-            "feature_text": "Kapıda ücretsiz otopark"
+            "feature_text": "Weekend hours including Sunday"
           }
         }
       },
       "block_order": [
         "working_hour_XYxHPk",
         "working_hour_hgQtdb",
-        "working_hour_tiEPeL",
         "feature_PnDzwx",
         "feature_6NTnz7",
         "feature_EFxHhM",
@@ -91,25 +90,25 @@
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "shopify://shop_images/showroom-fredericia-Nd0e262J.jpg",
-        "hero_subtitle": "🇩🇰 Danimarka",
-        "hero_title": "Fredericia Genel Merkez ve Showroom",
-        "hero_description": "Fredericia'daki küresel genel merkezimiz ve Jutland showroom'umuz. En popüler masaj koltuklarımızı deneyebileceğiniz ve SOVESYSTEM® vücut analizini rahat, kişisel bir ortamda deneyimleyebileceğiniz kapsamlı bir alan. Burası aynı zamanda tüm organizasyonumuzun da evidir.",
-        "back_label": "Tüm Showroomlar",
+        "hero_image": "",
+        "hero_subtitle": "🇹🇷 Turkey",
+        "hero_title": "Istanbul Showroom",
+        "hero_description": "Our Istanbul showroom in the Bahçelievler district. A welcoming space featuring our complete collection with Turkish-language support and TRY pricing — blending Scandinavian wellness with Turkish hospitality.",
+        "back_label": "All Showrooms",
         "back_link": "",
-        "address_title": "Adres",
-        "address_line_1": "Kringsvej 4",
-        "address_line_2": "7000 Fredericia",
-        "address_line_3": "Danimarka",
-        "phone_title": "Telefon",
-        "phone_number": "+45 70 20 30 41",
-        "email_title": "E-posta",
-        "email_address": "fredericia@worldofcomfort.dk",
-        "hours_title": "Çalışma Saatleri",
-        "features_title": "Burada Neler Bulacaksınız",
-        "form_title": "Ücretsiz Demo Rezervasyonu Yapın",
-        "form_subtitle": "Satın almadan önce deneyin. Tercih ettiğiniz ürünleri kişisel bir tanıtım için hazırlayacağız.",
-        "map_link": ""
+        "address_title": "Address",
+        "address_line_1": "Bahçelievler Mah. Ali Reşat Paşa Sok. No:14 A",
+        "address_line_2": "Bahçelievler, Istanbul",
+        "address_line_3": "Turkey",
+        "phone_title": "Phone",
+        "phone_number": "+90 216 123 4567",
+        "email_title": "Email",
+        "email_address": "istanbul@worldofcomfort.com",
+        "hours_title": "Opening Hours",
+        "features_title": "What You'll Find Here",
+        "form_title": "Book a Free Demo",
+        "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.0!2d28.85!3d41.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzAwLjAiTiAyOMKwNTEnMDAuMCJF!5e0!3m2!1sen!2str!4v1"
       }
     }
   },
