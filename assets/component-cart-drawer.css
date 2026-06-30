@@ -17,7 +17,7 @@
 
 .drawer__inner {
   height: 100%;
-  width: 350px;
+  width: 450px;
   max-width: calc(100vw - 18.75px);
   padding: 0 9.375px;
   border: 0.625px solid rgba(var(--color-foreground), 0.2);
@@ -411,4 +411,42 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   .cart-drawer .cart-item__error {
     margin-left: 0;
   }
+}
+
+/* Fix for cart drawer typography size due to custom base font sizes */
+.cart-drawer .drawer__heading {
+  font-size: 20px !important;
+}
+
+.cart-drawer .cart-item__name {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+}
+
+.cart-drawer .cart-item__old-price,
+.cart-drawer .cart-item__final-price,
+.cart-drawer .price,
+.cart-drawer .product-option,
+.cart-drawer .cart-item__error-text,
+.cart-drawer .discounts__discount {
+  font-size: 14px !important;
+}
+
+.cart-drawer .woc-subtotal-row span,
+.cart-drawer .totals__total {
+  font-size: 16px !important;
+}
+
+.cart-drawer .woc-subtotal-row span:last-child,
+.cart-drawer .totals__total-value {
+  font-size: 18px !important;
+}
+
+.cart-drawer .tax-note {
+  font-size: 12px !important;
+}
+
+.cart-drawer .cart__note label,
+.cart-drawer .cart__note textarea {
+  font-size: 13px !important;
 }
