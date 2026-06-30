@@ -11,6 +11,7 @@
   "sections": {
     "custom_doctor_quote": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"bg-neutral-900 text-white\"><div class=\"max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center\"><div class=\"w-14 h-14 rounded-full bg-neutral-700 flex-shrink-0 flex items-center justify-center\"><span class=\"font-heading text-lg text-copper font-bold\">DR</span></div><div class=\"text-center sm:text-left\"><p class=\"font-body text-sm text-neutral-300 italic leading-relaxed\">\"Ayak masajı kan dolaşımını iyileştirebilir ve kas gerginliğini azaltabilir. NordicSole™, shiatsu, yoğurma, hava kompresyonu ve ısının birleşimiyle günlük zindeliğe iyi bir destektir.\"</p><p class=\"font-body text-xs font-bold text-copper mt-1\">Dr. Carsten Rosendahl</p><p class=\"font-body text-[10px] text-neutral-400\">Doktor ve Sağlık Uzmanı</p></div></div></div>",
         "color_scheme": "scheme-1",
@@ -250,13 +251,9 @@
           "settings": {
             "title": "Her yerde kullanın",
             "subtitle": "NordicSole™, nerede olursanız olun günlük hayatınıza uyacak şekilde tasarlanmıştır.",
-            "image_1": "shopify://shop_images/foot-massager-cf-215-BXpL0c0d.jpg",
             "label_1": "Oturma odasında kendinizi şımartın",
-            "image_2": "shopify://shop_images/foot-massager-cf-217-psesVBfl.jpg",
             "label_2": "Masanın altında",
-            "image_3": "shopify://shop_images/foot-massager-cf-222-B-uKuSx6.jpg",
             "label_3": "İyi bir kitapla rahatlayın",
-            "image_4": "shopify://shop_images/foot-massager-cf-218-CqCwqMal.jpg",
             "label_4": "Koltukta sağlık"
           }
         },
@@ -272,11 +269,9 @@
           "settings": {
             "title": "Teknoloji ve özellikler",
             "subtitle": "NordicSole™'un neler yapabileceğini görün – masaj tekniklerinden uzaktan kumandaya ve 360° ayarlanabilir standa kadar.",
-            "image_1": "shopify://shop_images/nordicsole-info-01-rnYtnDd9.jpg",
             "image_2": "shopify://shop_images/nordicsole-info-02-CNYq7iLd.jpg",
             "image_3": "shopify://shop_images/nordicsole-info-03-CAcxWl7e.jpg",
             "image_4": "shopify://shop_images/nordicsole-info-04-WmDLxbw3.jpg",
-            "image_5": "shopify://shop_images/nordicsole-info-05-B50b4Mmr.jpg",
             "image_6": "shopify://shop_images/nordicsole-info-06-BsZHnjnp.jpg"
           }
         },
@@ -284,11 +279,7 @@
           "type": "product_details",
           "settings": {
             "title": "Ürün detayları",
-            "subtitle": "Ürünü her açıdan görün",
-            "image_1": "shopify://shop_images/foot-massager-cf-216-EZQpJkQL.jpg",
-            "image_2": "shopify://shop_images/foot-massager-cf-217-psesVBfl.jpg",
-            "image_3": "shopify://shop_images/foot-massager-cf-218-CqCwqMal.jpg",
-            "image_4": "shopify://shop_images/foot-massager-cf-220-4EVReEKA.jpg"
+            "subtitle": "Ürünü her açıdan görün"
           }
         },
         "how_it_works": {
