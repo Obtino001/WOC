@@ -27,11 +27,11 @@
         <div class="absolute inset-0 w-full h-full bg-gray-200"></div>
       {% endif %}
 
-      <div class="before-container absolute inset-y-0 left-0 overflow-hidden" style="width: 50%;">
+      <div class="before-container absolute inset-0 w-full h-full pointer-events-none" style="clip-path: inset(0 50% 0 0); -webkit-clip-path: inset(0 50% 0 0);">
         {% if section.settings.image_before != blank %}
-          {{ section.settings.image_before | image_url: width: 800 | image_tag: class: 'absolute inset-0 h-full object-cover', style: 'width: 100vw; max-width: none;' }}
+          {{ section.settings.image_before | image_url: width: 800 | image_tag: class: 'absolute inset-0 w-full h-full object-cover' }}
         {% else %}
-          <div class="absolute inset-0 h-full bg-gray-400" style="width: 100vw; max-width: none;"></div>
+          <div class="absolute inset-0 w-full h-full bg-gray-400"></div>
         {% endif %}
       </div>
 
@@ -69,7 +69,8 @@
       let percentage = ((x - rect.left) / rect.width) * 100;
       if (percentage < 0) percentage = 0;
       if (percentage > 100) percentage = 100;
-      beforeContainer.style.width = percentage + '%';
+      beforeContainer.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+      beforeContainer.style.webkitClipPath = `inset(0 ${100 - percentage}% 0 0)`;
       handle.style.left = percentage + '%';
     }
     
