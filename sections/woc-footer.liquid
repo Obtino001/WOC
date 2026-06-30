@@ -107,6 +107,10 @@
                   <p class="text-forest text-[11px] font-body mt-2">
                     {{ block.settings.success_text }}
                   </p>
+                {%- elsif form.errors -%}
+                  <p class="text-red-500 text-[11px] font-body mt-2">
+                    {{ form.errors | default_errors }}
+                  </p>
                 {%- endif -%}
               {%- endform -%}
             </div>

@@ -22,6 +22,10 @@
         <div class="p-4 bg-forest/20 text-forest border border-forest/30 rounded-md text-sm font-body mb-4">
           Thank you! We've received your request and will be in touch shortly.
         </div>
+      {%- elsif form.errors -%}
+        <div class="p-3 bg-red-900/20 border border-red-900/50 text-red-200 text-xs rounded mb-4">
+          {{ form.errors | default_errors }}
+        </div>
       {%- else -%}
         <input type="email" name="contact[email]" class="flex w-full rounded-md border border-border bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold focus-visible:ring-offset-2 md:text-sm h-12 text-foreground" placeholder="Your email" required="">
         

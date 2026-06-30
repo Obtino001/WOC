@@ -154,6 +154,8 @@
           <input type="hidden" name="contact[tags]" value="quiz, chair-recommendation">
           <input type="hidden" id="woc-quiz-ans-field" name="contact[quiz_result]" value="">
           <input type="hidden" id="woc-quiz-body-field" name="contact[body]" value="">
+
+          {%- if form.posted_successfully? -%}
             <div class="py-8 text-center" id="woc-quiz-success-view">
               <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-forest/10 mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#265935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
@@ -173,13 +175,12 @@
             </div>
             <script>
               document.addEventListener("DOMContentLoaded", function() {
-                // Ensure form progress state is updated to 100 on post success
                 document.getElementById('woc-quiz-progress-container').classList.add('hidden');
                 document.getElementById('woc-quiz-steps').classList.add('hidden');
-                document.getElementById('woc-quiz-success-view').parentNode.classList.remove('hidden');
+                document.getElementById('woc-quiz-lead').classList.remove('hidden');
               });
             </script>
-          {%- endif -%}
+          {%- else -%}
 
           {%- if form.errors -%}
             <div class="p-3 bg-red-900/20 border border-red-900/50 text-red-200 text-xs rounded">
@@ -187,8 +188,7 @@
             </div>
           {%- endif -%}
 
-          <!-- Hidden inputs saving quiz answers -->
-          {%- if form.posted_successfully? -%}
+          <div>
             <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">Fulde Navn *</label>
             <input
               type="text"
@@ -223,6 +223,7 @@
           >
             Få Min Anbefaling
           </button>
+          {%- endif -%}
         {% endform %}
 
         <button type="button" onclick="backToWocQuizQuestions()" class="mt-6 flex items-center gap-2 font-body text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors">
@@ -279,8 +280,16 @@
         answersSummary += `Spørgsmål ${key}: ${userQuizAnswers[key]}; `;
       }
       document.getElementById('woc-quiz-ans-field').value = answersSummary;
+      const bodyField = document.getElementById('woc-quiz-body-field');
+      if (bodyField) bodyField.value = answersSummary;
     }
   }
+
+  document.querySelector('#woc-quiz-lead form')?.addEventListener('submit', function() {
+    const ansField = document.getElementById('woc-quiz-ans-field');
+    const bodyField = document.getElementById('woc-quiz-body-field');
+    if (ansField && bodyField && !bodyField.value) bodyField.value = ansField.value;
+  });
 
   function prevWocQuizStep() {
     if (currentQuizStep > 1) {

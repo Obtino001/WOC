@@ -6,6 +6,7 @@
 {% endstyle %}
 
 <div class="container mx-auto px-4 max-w-3xl section-{{ section.id }}-padding woc-quiz-step-section" id="quiz-container-{{ section.id }}">
+  {% assign quiz_form_success = request.query_params.contact_posted %}
   
   <div class="text-center mb-10 mt-4">
     <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-4 border" style="border-color: hsl(var(--gold) / 0.3); background: hsl(var(--gold) / 0.08);">
@@ -19,7 +20,7 @@
   </div>
 
   <!-- QUESTIONS -->
-  <div id="quiz-questions-{{ section.id }}"{% if form.posted_successfully? %} class="hidden"{% endif %}>
+  <div id="quiz-questions-{{ section.id }}"{% if quiz_form_success %} class="hidden"{% endif %}>
     {% for block in section.blocks %}
       {% if block.type == 'question' %}
         <div class="quiz-question-block {% if forloop.index > 1 %}hidden{% endif %}" data-step="{{ forloop.index }}" {{ block.shopify_attributes }}>
@@ -83,7 +84,7 @@
   </div>
 
   <!-- FORM -->
-  <div id="quiz-form-{{ section.id }}" class="{% unless form.posted_successfully? %}hidden{% endunless %}">
+  <div id="quiz-form-{{ section.id }}" class="{% unless quiz_form_success %}hidden{% endunless %}">
     <div class="mb-10">
       <div class="flex justify-between items-center mb-3">
         <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ section.settings.form_step_label | default: "NEREDEYSE BİTTİ" }}</span>
