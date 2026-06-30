@@ -34,13 +34,6 @@
             "time": "12:00 – 20:00"
           }
         },
-        "working_hour_tiEPeL": {
-          "type": "working_hour",
-          "settings": {
-            "day": "",
-            "time": ""
-          }
-        },
         "feature_PnDzwx": {
           "type": "feature",
           "settings": {
@@ -90,24 +83,25 @@
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "",
+        "hero_image": "shopify://shop_images/showroom-gaziantep-CMFwyj2h_8306e6a3-2e2b-4870-8be9-9bf1cd66e5a3.png",
         "hero_subtitle": "🇹🇷 Turkey",
-        "hero_title": "Ankara Showroom",
-        "hero_description": "Our Ankara showroom inside Mesa Plaza in the Bahçelievler district. A welcoming in-mall space showcasing our complete massage chair collection, SOVESYSTEM® sleep studio, and AI Smart Bed demos — easily accessible with ample parking.",
+        "hero_title": "Gaziantep Showroom",
+        "hero_description": "Our southeastern showroom in the heart of Gaziantep — Turkey's culinary and cultural capital. A warm, welcoming space bringing Scandinavian wellness to the region, with VIP consultation services and local hospitality.",
         "back_label": "All Showrooms",
         "back_link": "",
         "address_title": "Address",
-        "address_line_1": "Mesa Plaza AVM",
-        "address_line_2": "Bahçelievler, Ankara",
-        "address_line_3": "Turkey",
+        "address_line_1": "Suburcu Mahallesi, Gaziler Caddesi No. 55",
+        "address_line_2": "Şehitkamil, Gaziantep",
+        "address_line_3": "Gaziantep, Turkey",
         "phone_title": "Phone",
-        "phone_number": "+90 312 456 7890",
+        "phone_number": "90 342 678 9012",
         "email_title": "Email",
-        "email_address": "ankara@worldofcomfort.com",
+        "email_address": "gaziantep@worldofcomfort.com",
         "hours_title": "Opening Hours",
         "features_title": "What You'll Find Here",
         "form_title": "Book a Free Demo",
         "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_embed_code": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1134.423075253503!2d9.757041!3d55.570183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c929a007f3ea7%3A0x6b0934e8a151bfa7!2sKringsvej%204%2C%207000%20Fredericia%2C%20Denmark!5e0!3m2!1sen!2sus!4v1714152541285!5m2!1sen!2sus\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.0!2d32.86!3d39.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU1JzEyLjAiTiAzMsKwNTEnMzYuMCJF!5e0!3m2!1sen!2str!4v1"
       }
     },
@@ -177,7 +171,6 @@
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "",
         "hero_subtitle": "🇹🇷 Turkey",
         "hero_title": "Gaziantep Showroom",
         "hero_description": "Our southeastern showroom in the heart of Gaziantep — Turkey's culinary and cultural capital. A warm, welcoming space bringing Scandinavian wellness to the region, with VIP consultation services and local hospitality.",
@@ -195,6 +188,7 @@
         "features_title": "What You'll Find Here",
         "form_title": "Book a Free Demo",
         "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_embed_code": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1134.423075253503!2d9.757041!3d55.570183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c929a007f3ea7%3A0x6b0934e8a151bfa7!2sKringsvej%204%2C%207000%20Fredericia%2C%20Denmark!5e0!3m2!1sen!2sus!4v1714152541285!5m2!1sen!2sus\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.0!2d37.38!3d37.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAzJzM2LjAiTiAzN8KwMjInNDguMCJF!5e0!3m2!1sen!2str!4v1"
       }
     }
