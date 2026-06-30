@@ -73,6 +73,23 @@
             "out_of_stock_text": "Geçici olarak stokta yok"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "purchase_row": {
+          "type": "purchase_row",
+          "settings": {
+            "show_quantity_selector": false,
+            "button_label": "SEPETE EKLE",
+            "button_icon": "bag",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
         "back_in_stock": {
           "type": "back_in_stock",
           "settings": {
@@ -151,6 +168,8 @@
         "feature_list",
         "bundle_selector",
         "status_badges",
+        "variant_picker",
+        "purchase_row",
         "back_in_stock",
         "review_strip",
         "trust_grid",

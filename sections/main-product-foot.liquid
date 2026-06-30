@@ -243,7 +243,9 @@
                 {%- endif -%}
 
               {%- when 'variant_picker' -%}
-                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                <div class="mpf-hidden-variant-picker" aria-hidden="true">
+                  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                </div>
 
               {%- when 'bundle_selector' -%}
                 {% render 'bundle-selector-foot', block: block, product: product, product_form_id: product_form_id, section_id: section.id %}
@@ -318,7 +320,7 @@
                 </div>
 
               {%- when 'price' -%}
-                {% render 'price-message', product: product, block: block, section_id: section.id %}
+                {% render 'price-foot', product: product, block: block, section_id: section.id %}
 
               {%- when 'promotion_banner' -%}
                 {%- if block.settings.text != blank -%}
