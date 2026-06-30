@@ -92,12 +92,13 @@
                         <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient {% if item.parent_relationship.parent == null %}global-media-settings{% endif %}">
                           <img
-                            src="{{ item.image | image_url: width: 300 }}"
+                            src="{{ item.image | image_url: width: 300, height: 300, crop: 'center' }}"
                             class="cart-item__image {% if item.parent_relationship.parent != null %}global-media-settings{% endif %}"
                             alt="{{ item.image.alt | escape }}"
                             loading="lazy"
                             width="150"
-                            height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            height="150"
+                            style="object-fit: cover; aspect-ratio: 1/1;"
                           >
                         </div>
                       {% endif %}
@@ -110,13 +111,24 @@
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
 
-                      {%- if item.original_price != item.final_price -%}
+                      {%- liquid
+                        assign has_discount = false
+                        assign compare_at_price = item.variant.compare_at_price
+                        if compare_at_price > item.final_price
+                          assign has_discount = true
+                          assign old_price = compare_at_price
+                        elsif item.original_price > item.final_price
+                          assign has_discount = true
+                          assign old_price = item.original_price
+                        endif
+                      -%}
+                      {%- if has_discount -%}
                         <div class="cart-item__discounted-prices">
                           <span class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
                           </span>
                           <s class="cart-item__old-price product-option">
-                            {{- item.original_price | money -}}
+                            {{- old_price | money -}}
                           </s>
                           <span class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
@@ -180,14 +192,25 @@
                     <td class="cart-item__totals right medium-hide large-up-hide">
                       {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
-                        {%- if item.original_line_price != item.final_line_price -%}
+                        {%- liquid
+                          assign has_line_discount = false
+                          assign compare_at_line_price = item.variant.compare_at_price | times: item.quantity
+                          if compare_at_line_price > item.final_line_price
+                            assign has_line_discount = true
+                            assign old_line_price = compare_at_line_price
+                          elsif item.original_line_price > item.final_line_price
+                            assign has_line_discount = true
+                            assign old_line_price = item.original_line_price
+                          endif
+                        -%}
+                        {%- if has_line_discount -%}
                           <dl class="cart-item__discounted-prices">
                             <dt class="visually-hidden">
                               {{ 'products.product.price.regular_price' | t }}
                             </dt>
                             <dd>
                               <s class="cart-item__old-price price price--end">
-                                {{ item.original_line_price | money }}
+                                {{ old_line_price | money }}
                               </s>
                             </dd>
                             <dt class="visually-hidden">
