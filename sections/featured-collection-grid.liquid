@@ -113,15 +113,22 @@
                 <span class="font-body text-[11px] font-bold text-[#d97736]">Temporarily out of stock</span>
               </div>
               {% assign form_id = 'notify-' | append: product.id %}
-              {% form 'contact', id: form_id, class: 'flex w-full mt-auto' %}
+              {% form 'contact', id: form_id, class: 'w-full mt-auto' %}
                 <input type="hidden" name="contact[tags]" value="prospect, stock-notification"/>
                 <input type="hidden" name="contact[note]" value="Notify me when {{ product.title }} is back in stock." />
-                
+                {% if form.posted_successfully? %}
+                  <p class="text-[10px] text-emerald-500 font-bold uppercase tracking-wide py-2">Thanks! We'll notify you.</p>
+                {% elsif form.errors %}
+                  <p class="text-[10px] text-red-400 py-2">{{ form.errors | default_errors }}</p>
+                {% else %}
+                <div class="flex w-full">
                 <input type="email" name="contact[email]" placeholder="Your email" class="flex-1 bg-neutral-950 text-white text-[11px] px-3 py-2 outline-none border-none placeholder-neutral-400 m-0 w-full min-w-0" required>
                 <button type="submit" class="bg-[#d97736] hover:bg-[#c2682e] text-white text-[10px] font-bold px-3 py-2 flex items-center justify-center gap-1.5 uppercase tracking-wide transition-colors m-0 border-none flex-shrink-0 whitespace-nowrap">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                   NOTIFY ME
                 </button>
+                </div>
+                {% endif %}
               {% endform %}
             {% endif %}
           </div>

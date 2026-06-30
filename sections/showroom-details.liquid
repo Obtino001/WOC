@@ -102,6 +102,8 @@
             <p class="font-body text-sm text-muted-foreground mb-6">{{ section.settings.form_subtitle }}</p>
             
             {% form 'contact', class: 'space-y-4' %}
+              <input type="hidden" name="contact[tags]" value="showroom-demo, booking">
+              {% render 'form-feedback', success_message: 'Teşekkürler! Demo talebiniz alındı. 1 iş günü içinde onaylayacağız.' %}
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Ad <span class="text-destructive">*</span></label>
@@ -115,8 +117,8 @@
               
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">E-posta</label>
-                  <input type="email" name="contact[email]" maxlength="255" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" placeholder="you@email.com">
+                  <label class="font-body text-sm font-medium text-foreground mb-1.5 block">E-posta <span class="text-destructive">*</span></label>
+                  <input type="email" name="contact[email]" required maxlength="255" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" placeholder="you@email.com">
                 </div>
                 <div>
                   <label class="font-body text-sm font-medium text-foreground mb-1.5 block">Tercih Edilen Tarih</label>

@@ -19,7 +19,7 @@
   </div>
 
   <!-- QUESTIONS -->
-  <div id="quiz-questions-{{ section.id }}">
+  <div id="quiz-questions-{{ section.id }}"{% if form.posted_successfully? %} class="hidden"{% endif %}>
     {% for block in section.blocks %}
       {% if block.type == 'question' %}
         <div class="quiz-question-block {% if forloop.index > 1 %}hidden{% endif %}" data-step="{{ forloop.index }}" {{ block.shopify_attributes }}>
@@ -83,7 +83,7 @@
   </div>
 
   <!-- FORM -->
-  <div id="quiz-form-{{ section.id }}" class="hidden">
+  <div id="quiz-form-{{ section.id }}" class="{% unless form.posted_successfully? %}hidden{% endunless %}">
     <div class="mb-10">
       <div class="flex justify-between items-center mb-3">
         <span class="font-body text-xs text-muted-foreground uppercase tracking-wider">{{ section.settings.form_step_label | default: "NEREDEYSE BİTTİ" }}</span>
@@ -98,8 +98,13 @@
     <p class="text-muted-foreground mb-8">{{ section.settings.form_subheading | default: "Detaylarınızı girin, size özel eşleşmeyi gönderelim." }}</p>
     
     {% form 'contact', id: 'quiz-contact-form' %}
+      <input type="hidden" name="contact[tags]" value="quiz, chair-recommendation">
+      <input type="hidden" name="contact[body]" id="quiz-body-field-{{ section.id }}" value="">
       <div id="hidden-quiz-inputs-{{ section.id }}"></div>
-      
+
+      {% render 'form-feedback', success_message: 'Teşekkürler! Öneri talebiniz başarıyla gönderildi.' %}
+
+      {% unless form.posted_successfully? %}
       <div class="space-y-4">
         <div>
           <input type="text" name="contact[name]" placeholder="İsim Soyisim *" required class="w-full p-4 rounded-xl border-2 border-border bg-background focus:border-[hsl(var(--gold)/0.5)] focus:outline-none transition-colors text-foreground">
@@ -114,6 +119,7 @@
           {{ section.settings.form_button_text | default: "ÖNERİMİ AL" }}
         </button>
       </div>
+      {% endunless %}
     {% endform %}
     
     <button type="button" class="btn-prev-quiz-form mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -147,13 +153,17 @@
         formBlock.classList.remove('hidden');
         // populate hidden inputs
         hiddenInputsContainer.innerHTML = '';
+        const bodyParts = [];
         for (const [q, a] of Object.entries(answers)) {
            const input = document.createElement('input');
            input.type = 'hidden';
-           input.name = `contact[${q}]`;
+           input.name = `contact[quiz_${q.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}]`;
            input.value = a;
            hiddenInputsContainer.appendChild(input);
+           bodyParts.push(`${q}: ${a}`);
         }
+        const bodyField = document.getElementById('quiz-body-field-{{ section.id }}');
+        if (bodyField) bodyField.value = bodyParts.join('\n');
       } else {
         formBlock.classList.add('hidden');
       }

@@ -1,0 +1,18 @@
+{% comment %}
+  Shopify form success/error feedback.
+  Accepts:
+  - success_message: {String}
+  - error_prefix: {String} optional
+{% endcomment %}
+{%- if form.posted_successfully? -%}
+  <div class="p-4 mb-4 text-sm text-emerald-800 border border-emerald-200 bg-emerald-50 rounded" role="status">
+    {{ success_message | default: 'Thank you! Your submission was received.' }}
+  </div>
+{%- elsif form.errors -%}
+  <div class="p-4 mb-4 text-sm text-red-800 border border-red-200 bg-red-50 rounded" role="alert">
+    {%- if error_prefix != blank -%}
+      <p class="font-medium mb-1">{{ error_prefix }}</p>
+    {%- endif -%}
+    {{ form.errors | default_errors }}
+  </div>
+{%- endif -%}

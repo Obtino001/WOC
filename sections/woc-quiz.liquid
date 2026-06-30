@@ -151,7 +151,9 @@
         <p class="font-body text-sm text-muted-foreground mb-8">Indtast dine oplysninger og vi sender dit personlige match.</p>
         
         {% form 'contact', class: 'space-y-4' %}
-          {%- if form.posted_successfully? -%}
+          <input type="hidden" name="contact[tags]" value="quiz, chair-recommendation">
+          <input type="hidden" id="woc-quiz-ans-field" name="contact[quiz_result]" value="">
+          <input type="hidden" id="woc-quiz-body-field" name="contact[body]" value="">
             <div class="py-8 text-center" id="woc-quiz-success-view">
               <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-forest/10 mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#265935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
@@ -186,9 +188,7 @@
           {%- endif -%}
 
           <!-- Hidden inputs saving quiz answers -->
-          <input type="hidden" id="woc-quiz-ans-field" name="contact[Quiz Result]" value="">
-
-          <div>
+          {%- if form.posted_successfully? -%}
             <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">Fulde Navn *</label>
             <input
               type="text"

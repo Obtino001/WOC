@@ -168,16 +168,28 @@
   <div class="container mx-auto px-4 py-12 max-w-2xl">
     
     {% form 'contact', id: 'quiz-form' %}
-      
-      <!-- Hidden inputs to store quiz answers -->
+      <input type="hidden" name="contact[tags]" value="quiz, chair-recommendation">
+      <input type="hidden" name="contact[body]" id="quiz-body-field" value="">
+
+      {% if form.errors %}
+        {% render 'form-feedback', success_message: '' %}
+      {% endif %}
+
+      <!-- Hidden inputs to store quiz answers (safe indexed field names) -->
       <div id="quiz-hidden-inputs">
         {% for block in section.blocks %}
-          <input type="hidden" name="contact[{{ block.settings.heading | escape }}]" id="hidden-answer-{{ forloop.index }}" value="">
+          <input type="hidden" name="contact[{{ block.settings.heading | handleize | prepend: 'quiz_' }}]" id="hidden-answer-{{ forloop.index }}" value="" data-question="{{ block.settings.heading | escape }}">
         {% endfor %}
       </div>
 
-      <!-- Progress Bar (Kept exactly as your original code) -->
-      <div class="mb-12">
+      {% if form.posted_successfully? %}
+        <div class="py-12 text-center">
+          <h2 class="font-display text-4xl font-bold text-foreground mb-4">Teşekkürler!</h2>
+          <p class="font-body text-muted-foreground">Öneri talebiniz başarıyla gönderildi.</p>
+        </div>
+      {% else %}
+      <!-- Progress Bar -->
+      <div class="mb-12" id="quiz-progress-wrap">
         <div class="flex justify-between items-center mb-3">
           <span id="progress-label" class="font-body text-xs text-muted-foreground uppercase tracking-wider">
             <!-- Updated by JS -->
@@ -243,7 +255,6 @@
         </div>
       {% endfor %}
 
-      <!-- Final Form Step (Using exact classes from your screenshot) -->
       {% assign total_questions = section.blocks.size %}
       {% assign final_step = total_questions | plus: 1 %}
       
@@ -276,12 +287,6 @@
           Back to questions
         </button>
       </div>
-
-      {% if form.posted_successfully? %}
-        <div class="absolute inset-0 bg-background flex flex-col items-center justify-center z-50 text-center px-4">
-          <h2 class="font-display text-4xl font-bold text-foreground mb-4">Thank You!</h2>
-          <p class="font-body text-muted-foreground">Your recommendation request has been sent successfully.</p>
-        </div>
       {% endif %}
 
     {% endform %}
@@ -361,5 +366,17 @@
     });
 
     updateUI();
+  });
+
+  document.getElementById('quiz-form')?.addEventListener('submit', function() {
+    const bodyField = document.getElementById('quiz-body-field');
+    if (!bodyField) return;
+    const parts = [];
+    document.querySelectorAll('#quiz-hidden-inputs input[type="hidden"]').forEach((input) => {
+      if (!input.value) return;
+      const question = input.dataset.question || input.name;
+      parts.push(`${question}: ${input.value}`);
+    });
+    bodyField.value = parts.join('\n');
   });
 </script>

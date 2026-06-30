@@ -263,6 +263,8 @@
                     {%- form 'contact', id: 'BisForm-' | append: section.id, class: 'mpf-bis__form' -%}
                       <input type="hidden" name="contact[tags]" value="prospect, stock-notification">
                       <input type="hidden" name="contact[note]" value="Notify when {{ product.title }} is back in stock.">
+                      {% render 'form-feedback', success_message: 'Teşekkürler! Ürün stoğa girdiğinde sizi bilgilendireceğiz.' %}
+                      {% unless form.posted_successfully? %}
                       <input
                         type="email"
                         name="contact[email]"
@@ -272,6 +274,7 @@
                         autocomplete="email"
                       >
                       <button type="submit" class="mpf-bis__button">{{ block.settings.button_label }}</button>
+                      {% endunless %}
                     {%- endform -%}
                   </div>
                 {%- endunless -%}

@@ -4,12 +4,17 @@
       <h2 class="font-display text-2xl md:text-3xl font-light text-zinc-900 mb-4">{{ section.settings.heading }}</h2>
       <p class="font-body text-sm text-zinc-500 mb-8">{{ section.settings.description }}</p>
       
-      {% form 'customer', class: 'flex gap-0 border border-zinc-200' %}
+      {% form 'customer', class: 'space-y-3' %}
         <input type="hidden" name="contact[tags]" value="newsletter">
+        {% render 'form-feedback', success_message: 'Thank you for subscribing!' %}
+        {% unless form.posted_successfully? %}
+        <div class="flex gap-0 border border-zinc-200">
         <input type="email" name="contact[email]" placeholder="{{ section.settings.placeholder }}" class="flex-1 px-4 py-3 font-body text-sm bg-transparent text-zinc-900 placeholder:text-zinc-400 focus:outline-none" required>
         <button type="submit" class="px-6 py-3 bg-zinc-900 text-white font-body text-[11px] uppercase tracking-[0.15em] hover:opacity-90 transition-opacity">
           {{ section.settings.btn_text }}
         </button>
+        </div>
+        {% endunless %}
       {% endform %}
     </div>
   </div>

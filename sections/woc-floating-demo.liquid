@@ -106,6 +106,7 @@
           <p class="font-body text-sm text-muted-foreground mb-6">{{ section.settings.form_desc }}</p>
 
           {% form 'contact', class: 'space-y-4 pb-2' %}
+            <input type="hidden" name="contact[tags]" value="demo-booking, floating-widget">
             {%- if form.posted_successfully? -%}
               <div class="py-4 text-center">
                 <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-forest/10">
@@ -131,7 +132,7 @@
             {%- endif -%}
 
             <!-- Hidden input to save selected booking type -->
-            <input type="hidden" id="woc-input-type" name="contact[Booking Type]" value="General Request">
+            <input type="hidden" id="woc-input-type" name="contact[booking_type]" value="General Request">
 
             <div>
               <label class="font-body text-[10px] uppercase tracking-widest text-muted-foreground block mb-1">
@@ -177,7 +178,7 @@
               <input
                 type="text"
                 id="woc-input-address"
-                name="contact[Address]"
+                name="contact[address]"
                 class="w-full h-10 px-3 rounded border border-border bg-background text-sm text-foreground focus:border-gold focus:outline-none"
                 placeholder="{{ section.settings.placeholder_address }}"
               >
@@ -190,7 +191,7 @@
               </label>
               <select
                 id="woc-input-showroom"
-                name="contact[Preferred Showroom]"
+                name="contact[preferred_showroom]"
                 class="w-full h-10 px-3 rounded border border-border bg-background text-sm text-foreground focus:border-gold focus:outline-none"
               >
                 <option value="">{{ section.settings.select_showroom }}</option>
@@ -206,7 +207,7 @@
                 {{ section.settings.label_time }}
               </label>
               <select
-                name="contact[Preferred Time]"
+                name="contact[preferred_time]"
                 class="w-full h-10 px-3 rounded border border-border bg-background text-sm text-foreground focus:border-gold focus:outline-none"
               >
                 <option value="">{{ section.settings.select_time }}</option>
