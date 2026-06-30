@@ -108,8 +108,10 @@
         "inline_testimonials": {
           "type": "inline_testimonials",
           "settings": {
+            "avatar_1": "shopify://shop_images/ba-boss-lady-after-B_LmCUwN_1.png",
             "author_1": "Anne-Sofie N.",
             "quote_1": "Boss Lady için en sıcak tavsiyelerim! Daha keskin bir çene hattı elde etmeme yardımcı oldu.",
+            "avatar_2": "shopify://shop_images/ba-boss-lady-before-Dy522Phy_1.jpg",
             "author_2": "Charlotte W.",
             "quote_2": "Favorim! HEMEN sonuç aldım."
           }
@@ -494,7 +496,7 @@
         "t4"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 64,
         "padding_bottom": 96,
         "heading": "The Science Behind Boss Lady"
@@ -503,7 +505,7 @@
     "before_after": {
       "type": "sed-before-after",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 64,
         "padding_bottom": 96,
         "heading": "Before & After",
@@ -513,58 +515,48 @@
         "bottom_text": "Result after 8 weeks of daily use with Boss Lady"
       }
     },
-    "reviews_horizontal": {
-      "type": "sed-reviews-horizontal",
+    "custom_testimonials_U79EgH": {
+      "type": "custom-testimonials",
       "blocks": {
-        "r1": {
+        "review_7iNch3": {
           "type": "review",
           "settings": {
-            "quote": "Super practical because it can be used on so many different areas. And it just feels luxurious after a long day.",
-            "author": "Josefine"
+            "quote": "",
+            "author": ""
           }
         },
-        "r2": {
+        "review_UqDPyw": {
           "type": "review",
           "settings": {
-            "quote": "My warmest recommendations for Boss Lady! It helped me achieve an even sharper jawline.",
-            "author": "Anne-Sofie Nielsen"
+            "quote": "",
+            "author": ""
           }
         },
-        "r3": {
+        "review_YefdRY": {
           "type": "review",
           "settings": {
-            "quote": "Love love love it! FANTASTIC!",
-            "author": "Lotte Nielsen"
+            "quote": "",
+            "author": ""
           }
         },
-        "r4": {
+        "review_HiqDzU": {
           "type": "review",
           "settings": {
-            "quote": "Fantastic product — easy to take on the go, and makes a big difference with my lines around the eyes — and my sometimes swollen eyes 🙏",
-            "author": "Nancy"
-          }
-        },
-        "r5": {
-          "type": "review",
-          "settings": {
-            "quote": "Lovely competent customer service. Highly recommended.",
-            "author": "Tine Bjerregaard"
+            "quote": "",
+            "author": ""
           }
         }
       },
       "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5"
+        "review_7iNch3",
+        "review_UqDPyw",
+        "review_YefdRY",
+        "review_HiqDzU"
       ],
+      "name": "Testimonials Slider",
       "settings": {
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 96,
-        "rating_text": "4,7 out of 5",
-        "heading": "We Have Many Happy Customers!"
+        "subtitle": "4,7 üzerinden 5",
+        "title": "Birçok Mutlu Müşterimiz Var!"
       }
     },
     "faq_training": {
@@ -805,7 +797,7 @@
     "routine_split",
     "science_tabs",
     "before_after",
-    "reviews_horizontal",
+    "custom_testimonials_U79EgH",
     "faq_training",
     "related_grid",
     "cta_final",
