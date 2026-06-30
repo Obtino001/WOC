@@ -61,87 +61,171 @@
       }
     },
     "main": {
-      "type": "main-product",
+      "type": "main-product-lady",
       "blocks": {
-        "text_cxx9Wc": {
-          "type": "text",
-          "settings": {
-            "text": "Metin bloku",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
         },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {
+            "text": "YÜZ GERME"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "fallback_rating": "5.0",
+            "fallback_review_count": "312",
+            "reviews_label": "Yorumlar"
+          }
+        },
+        "status_badges": {
+          "type": "status_badges",
+          "settings": {
+            "show_warranty_badge": true,
+            "warranty_text": "ÖMÜR BOYU GARANTİ",
+            "warranty_icon": "shield",
+            "show_stock_badge": true,
+            "in_stock_text": "Stokta var - Bugün gönderilir",
+            "out_of_stock_text": "Geçici olarak stokta yok"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Boss Lady, yüzünüzü kaldırmaya, sıkılaştırmaya, ince çizgileri ve kırışıklıkları gidermeye, kasları gevşetmeye ve kan dolaşımını hızlandırmaya yardımcı olan bir cilt bakım cihazıdır. Serumlarınızla birlikte cildinizin daha genç ve sıkı görünmesine yardımcı olur.</p>"
+          }
+        },
+        "feature_list": {
+          "type": "feature_list",
+          "settings": {
+            "features": "Kollajen üretimini artırmaya ve cilt bariyerinizi desteklemeye yardımcı olur, Cildinize doğal bir ışıltı kazandırır, Göz altı ve yüz şişkinliğini giderir, Kan dolaşımını hızlandırır, Çene hattını belirginleştirir ve yüzünüzü sıkılaştırır, Gözenekleri açmaya ve derinlemesine temizlemeye yardımcı olur",
+            "max_items": 6
+          }
+        },
+        "inline_testimonials": {
+          "type": "inline_testimonials",
+          "settings": {
+            "author_1": "Anne-Sofie N.",
+            "quote_1": "Boss Lady için en sıcak tavsiyelerim! Daha keskin bir çene hattı elde etmeme yardımcı oldu.",
+            "author_2": "Charlotte W.",
+            "quote_2": "Favorim! HEMEN sonuç aldım."
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
-            "subprice_text": "or from £22/week"
+            "show_save_badge": true,
+            "save_label": "%[percent] İNDİRİM",
+            "tax_note": "KDV dahil",
+            "show_installments": false
           }
         },
-        "rating_98edkt": {
-          "type": "rating",
-          "settings": {}
-        },
-        "inventory_6kC3UY": {
-          "type": "inventory",
+        "promotion_banner": {
+          "type": "promotion_banner",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "text": "2. üründe %25 İndirim!",
+            "show_icon": true,
+            "background_color": "#ecfdf5",
+            "text_color": "#065f46",
+            "border_color": "#a7f3d0"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "purchase_row": {
+          "type": "purchase_row",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "show_quantity_selector": true,
+            "button_label": "SEPETE EKLE",
+            "button_icon": "bag",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
-        "feature_list_kNjYmM": {
-          "type": "feature_list",
+        "accordion_benefits": {
+          "type": "collapsible_tab",
           "settings": {
-            "features": "Dual System Rollers, Advanced 3D Massage, AI Body Scanning",
-            "custom_icon_svg": ""
+            "heading": "AVANTAJLAR",
+            "icon": "none",
+            "content_style": "checklist",
+            "content": "",
+            "steps": "Yüz kaslarını sıkılaştırır ve kaldırır\nİnce çizgi ve kırışıklıkları azaltır\nKan dolaşımını hızlandırır\nÇene hattını belirginleştirir\nGöz altı şişkinliğini giderir\nKollajen üretimini destekler",
+            "page": "",
+            "open_by_default": false
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "accordion_technology": {
+          "type": "collapsible_tab",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "show_demo_button": true,
-            "demo_text": "Book a Demo",
-            "demo_link": ""
+            "heading": "TEKNOLOJİ",
+            "icon": "none",
+            "content_style": "richtext",
+            "content": "<p>Boss Lady, EMS mikro akım, LED ışık terapisi ve sonik titreşim teknolojilerini bir araya getirir. EMS yüz kaslarını sıkılaştırır ve kaldırır, LED kollajen üretimini destekler, sonik titreşim serum emilimini artırır.</p><p>Cihaz, göz altı, yanak, çene hattı ve boyun gibi birçok bölgede kullanılabilir — hepsi tek bir cihazda.</p>",
+            "steps": "",
+            "page": "",
+            "open_by_default": false
           }
         },
-        "trust_badges_N7QkXf": {
-          "type": "trust_badges",
+        "accordion_howto": {
+          "type": "collapsible_tab",
           "settings": {
-            "text_1": "Free White-Glove Delivery",
-            "icon_1_svg": "",
-            "text_2": "5-Year Warranty",
-            "icon_2_svg": "",
-            "text_3": "Flexible Monthly Payments",
-            "icon_3_svg": ""
+            "heading": "NASIL KULLANILIR",
+            "icon": "none",
+            "content_style": "steps",
+            "content": "",
+            "steps": "Yüzünüzü temizleyin ve favori serumunuzu uygulayın.\nBoss Lady'yi düşük yoğunlukta başlatın ve yüzünüzde yukarı doğru hareketlerle kullanın.\nGöz altı, yanak, çene hattı ve boyun bölgelerinde 5-10 dakika kullanın.\nGünlük kullanımda en iyi sonuçları 4-8 hafta içinde görürsünüz.",
+            "page": "",
+            "open_by_default": false
+          }
+        },
+        "info_boxes": {
+          "type": "info_boxes",
+          "settings": {
+            "box_1_title": "Hızlı Teslimat",
+            "box_1_subtitle": "Stokta var - Bugün gönderilir",
+            "box_1_icon": "truck",
+            "box_2_title": "Ömür Boyu Garanti",
+            "box_2_subtitle": "Ürün kaydı gerekli",
+            "box_2_icon": "shield",
+            "box_background": "#fffbeb",
+            "box_border": "#fde68a",
+            "box_icon_color": "#d97706"
           }
         }
       },
       "block_order": [
-        "text_cxx9Wc",
         "title",
+        "subtitle",
+        "rating",
+        "status_badges",
+        "description",
+        "feature_list",
+        "inline_testimonials",
         "price",
-        "rating_98edkt",
-        "inventory_6kC3UY",
-        "variant_picker",
-        "feature_list_kNjYmM",
-        "buy_buttons",
-        "trust_badges_N7QkXf"
+        "promotion_banner",
+        "purchase_row",
+        "accordion_benefits",
+        "accordion_technology",
+        "accordion_howto",
+        "info_boxes"
       ],
       "settings": {
+        "show_breadcrumbs": false,
+        "breadcrumb_home_label": "Ana Sayfa",
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "show_sale_badge": true,
+        "sale_badge_prefix": "-",
+        "background_color": "#ffffff",
+        "text_color": "#171717",
+        "gallery_background": "#fafafa",
+        "sale_badge_background": "#ef4444",
+        "sale_badge_text_color": "#ffffff",
+        "save_badge_background": "#fef2f2",
+        "save_badge_text_color": "#dc2626",
+        "atc_background": "#171717",
+        "atc_hover_background": "#262626",
+        "atc_text_color": "#ffffff",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -151,8 +235,8 @@
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "awards_marquee": {
