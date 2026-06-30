@@ -121,7 +121,7 @@
         "logo_P6TEEm": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_image": "shopify://shop_images/telenor-Cc-TBVYW.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -129,7 +129,7 @@
         "logo_CGdjwP": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_image": "shopify://shop_images/danfoss-S7-2J_5X_0bc7a439-e5c9-40a8-afa3-126c8288018c.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -137,15 +137,7 @@
         "logo_VtxfTb": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
-            "logo_url": "",
-            "logo_alt": ""
-          }
-        },
-        "logo_3eRHbj": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_image": "shopify://shop_images/rams-CdIoZqQI.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -153,7 +145,7 @@
         "logo_RfT8Ky": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_image": "shopify://shop_images/seb-L0b67_JG.png",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -161,7 +153,7 @@
         "logo_KCY4CL": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify://shop_images/ikea-DLahI5of_1.png",
+            "logo_image": "shopify://shop_images/hedin-bil-C-VjOnXp.jpg",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -176,9 +168,16 @@
         },
         "logo_6LqKtD": {
           "type": "logo",
-          "disabled": true,
           "settings": {
             "logo_image": "shopify://shop_images/download_2.png",
+            "logo_url": "",
+            "logo_alt": ""
+          }
+        },
+        "logo_8npKxC": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/galatasaray-DxtHo7gU_8fece962-27e2-4b59-b707-f6c7321f2a30.jpg",
             "logo_url": "",
             "logo_alt": ""
           }
@@ -249,11 +248,11 @@
         "logo_P6TEEm",
         "logo_CGdjwP",
         "logo_VtxfTb",
-        "logo_3eRHbj",
         "logo_RfT8Ky",
         "logo_KCY4CL",
         "logo_A4eaNL",
         "logo_6LqKtD",
+        "logo_8npKxC",
         "row_1",
         "row_2",
         "row_3",
