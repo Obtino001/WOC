@@ -1,0 +1,127 @@
+{% if section.settings.enable_popup %}
+<div id="woc-welcome-popup" class="fixed inset-0 z-[60] bg-background/85 backdrop-blur-lg hidden items-center justify-center p-4 transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="exit-intent-title">
+  <div class="relative w-full max-w-lg bg-card border border-gold/30 rounded-2xl p-8 md:p-10 shadow-2xl transform transition-transform duration-300 scale-95 opacity-0 popup-content">
+    <button type="button" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-background/60 hover:bg-background flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
+    
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gold"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+      </div>
+      <span class="font-body text-[10px] uppercase tracking-luxury text-gold">Before you go</span>
+    </div>
+    
+    <h2 id="exit-intent-title" class="font-display text-2xl md:text-3xl font-light text-foreground mb-3">Get a free expert recommendation</h2>
+    <p class="font-body text-sm text-muted-foreground leading-relaxed mb-6">Tell us where to send it and our wellness experts will match you with the right product — no obligation.</p>
+    
+    {%- form 'customer', class: 'space-y-3' -%}
+      <input type="hidden" name="contact[tags]" value="newsletter, expert-recommendation">
+      
+      {%- if form.posted_successfully? -%}
+        <div class="p-4 bg-forest/20 text-forest border border-forest/30 rounded-md text-sm font-body mb-4">
+          Thank you! We've received your request and will be in touch shortly.
+        </div>
+      {%- else -%}
+        <input type="email" name="contact[email]" class="flex w-full rounded-md border border-border bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold focus-visible:ring-offset-2 md:text-sm h-12 text-foreground" placeholder="Your email" required="">
+        
+        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 h-12 px-10 w-full bg-gold hover:bg-gold-hover text-background font-bold uppercase tracking-wider" type="submit">
+          Send my recommendation
+        </button>
+      {%- endif -%}
+    {%- endform -%}
+    
+    <div class="mt-6 grid grid-cols-2 gap-3 text-[11px] text-muted-foreground">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-gold shrink-0"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        <span>0% interest for 24 months</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-gold shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Personal advice</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('woc-welcome-popup');
+    if (!popup) return;
+    
+    const popupContent = popup.querySelector('.popup-content');
+    const closeBtn = popup.querySelector('button[aria-label="Close"]');
+    
+    // Determine if form was just submitted successfully
+    const isFormSuccess = popup.querySelector('.bg-forest\\/20') !== null;
+    
+    // Function to close popup
+    const closePopup = () => {
+      popupContent.classList.remove('scale-100', 'opacity-100');
+      popupContent.classList.add('scale-95', 'opacity-0');
+      
+      setTimeout(() => {
+        popup.classList.add('hidden');
+        popup.classList.remove('flex');
+      }, 300);
+      
+      localStorage.setItem('woc_welcome_popup_seen', 'true');
+    };
+    
+    // Function to open popup
+    const openPopup = () => {
+      popup.classList.remove('hidden');
+      popup.classList.add('flex');
+      
+      // Trigger reflow
+      void popup.offsetWidth;
+      
+      popupContent.classList.remove('scale-95', 'opacity-0');
+      popupContent.classList.add('scale-100', 'opacity-100');
+    };
+    
+    // Show popup logic
+    if (isFormSuccess) {
+      // If form just submitted, show it immediately so they see the success message
+      openPopup();
+      // Auto close after 4 seconds
+      setTimeout(closePopup, 4000);
+      localStorage.setItem('woc_welcome_popup_seen', 'true');
+    } else if (!localStorage.getItem('woc_welcome_popup_seen')) {
+      // Show popup after 5 seconds for new users
+      setTimeout(openPopup, 5000);
+    }
+    
+    // Close events
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closePopup);
+    }
+    
+    // Close on overlay click
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        closePopup();
+      }
+    });
+  });
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "WOC Welcome Popup",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_popup",
+      "label": "Enable Welcome Popup",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOC Welcome Popup"
+    }
+  ]
+}
+{% endschema %}
