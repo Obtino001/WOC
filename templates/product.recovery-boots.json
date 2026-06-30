@@ -207,6 +207,257 @@
         "padding_bottom": 32
       }
     },
+    "landing_page": {
+      "type": "recovery-boots-landing",
+      "blocks": {
+        "tech_features": {
+          "type": "tech_features",
+          "settings": {
+            "title": "Teknoloji ve özellikler",
+            "subtitle": "Kablosuz kontrol cihazından hassas 8 odacıklı kompresyona – sporcular ve günlük kullanıcılar için tasarlandı.",
+            "feature_1_img": "shopify:\/\/shop_images\/recovery-boots-pro-01-BqStoFjR.jpg",
+            "feature_1_title": "Kablosuz kontrol cihazı",
+            "feature_1_text": "Entegre pil – kablosuz.",
+            "feature_2_img": "shopify:\/\/shop_images\/recovery-boots-pro-02-controller-D-1lJBb7.jpg",
+            "feature_2_title": "Net renkli ekran",
+            "feature_2_text": "Zaman, basınç, mod ve pil – bir bakışta.",
+            "feature_3_img": "shopify:\/\/shop_images\/recovery-boots-pro-04-controller-detail-BgMDyPLk.jpg",
+            "feature_3_title": "USB-C şarj",
+            "feature_3_text": "Hızlı şarj · şarj ederken kullanın.",
+            "feature_4_img": "shopify:\/\/shop_images\/recovery-boots-pro-05-bag-C_VdqXXZ.jpg",
+            "feature_4_title": "Premium taşıma çantası",
+            "feature_4_text": "Botları her yere götürün."
+          }
+        },
+        "recovery_benefits": {
+          "type": "recovery_benefits",
+          "settings": {
+            "title": "Recovery Boots neden kullanılır?",
+            "subtitle": "Sıralı pnömatik kompresyon, dünya çapındaki elit sporcular tarafından klinik olarak tanınır ve kullanılır.",
+            "benefit_1_title": "Daha hızlı iyileşme",
+            "benefit_1_text": "Yoğun antrenman sonrası laktik asit atılımını ve iyileşmeyi hızlandırır.",
+            "benefit_2_title": "Daha iyi dolaşım",
+            "benefit_2_text": "Sıralı sıkıştırma, kanı kalbe doğru iter; bu, yorgun bacaklar için idealdir.",
+            "benefit_3_title": "Lenfatik drenaj",
+            "benefit_3_text": "Özellikle uzun günlerin ardından şişliği ve sıvı tutulumunu azaltır.",
+            "benefit_4_title": "Ağrıyı yatıştırır",
+            "benefit_4_text": "Zorlu antrenman sonrası DOMS'u (gecikmeli başlangıçlı kas ağrısı) azaltır.",
+            "benefit_5_title": "Kablosuz özgürlük",
+            "benefit_5_text": "Arabada, kanepede, yatakta kullanın; kablo yok.",
+            "benefit_6_title": "Stresi azaltır",
+            "benefit_6_text": "Çizmelerle 20-30 dakika profesyonel bir dinlenme spa'sı gibi hissettirir.",
+            "benefit_7_title": "Daha iyi uyku",
+            "benefit_7_text": "Daha hafif, daha rahat bacaklar ve daha derin uyku için yatmadan önce kullanın.",
+            "benefit_8_title": "4 saate kadar",
+            "benefit_8_text": "Uzun pil ömrü – tek şarjla 8-12 seans için yeterli."
+          }
+        },
+        "therapeutic_benefits": {
+          "type": "therapeutic_benefits",
+          "settings": {
+            "kicker": "Terapötik faydaları",
+            "title": "Sakatlıkları önler · Ağrıyı giderir · Formu geri kazandırır",
+            "tb_1_title": "Sakatlıkları önler",
+            "tb_1_text": "Antrenman öncesi ve sonrası optimum dolaşım sayesinde bacak sağlığını destekler ve sporla ilgili sakatlanma riskini azaltır.",
+            "tb_2_title": "Ağrı ve gerginliği giderir",
+            "tb_2_text": "Siyatik, kaval kemiği ağrısı, kas zorlanmaları ve kronik bacak gerginliği gibi sorunları hassas kompresyon terapisiyle hedefler.",
+            "tb_3_title": "Kas ağrısını azaltır",
+            "tb_3_text": "DOMS'u (gecikmeli başlangıçlı kas ağrısı) etkili bir şekilde ortadan kaldırır ve seanslar arasındaki iyileşmeyi önemli ölçüde hızlandırır."
+          }
+        },
+        "massage_modes": {
+          "type": "massage_modes",
+          "settings": {
+            "kicker": "3 masaj modu",
+            "title": "Kişiye özel iyileşme",
+            "subtitle": "Vücudun doğal kan ve lenfatik akışını taklit eden üç akıllı program.",
+            "mode_1_title": "Sıralı Mod",
+            "mode_1_text": "Ayaktan uyluğa kadar bölmeleri kan ve lenfatik akışı taklit eden dalga hareketleriyle şişirir. Uzun bir gün veya ağır bir antrenmandan sonra nazik, yenileyici iyileşme için idealdir.",
+            "mode_2_title": "Dolaşım Modu",
+            "mode_2_text": "Baldırlar ve uyluklar gibi belirli bölgeler arasında sıkıştırmayı değiştirir. Yerel kan akışını iyileştirir ve şişliği azaltır; kaval kemiği ağrısı ve gergin kaslar için mükemmeldir.",
+            "mode_3_title": "Kombinasyon Modu",
+            "mode_3_text": "Tüm bölmelere aynı anda eş zamanlı sıkıştırma sağlar. Kapsamlı kas rahatlaması ve kronik durumlar için derin, tutarlı terapötik basınç.",
+            "pressure_kicker": "Ayarlanabilir yoğunluk",
+            "pressure_val": "0 — 260 mmHg",
+            "pressure_desc": "Her seansı kişiselleştirin; nazik basınçtan derin terapiye kadar. Çizmeler, sizin özel iyileşme ihtiyaçlarınıza uyum sağlar."
+          }
+        },
+        "text_content": {
+          "type": "text_content",
+          "settings": {
+            "title": "Profesyonel iyileşme çözümü",
+            "text": "<p><strong>WOC Recovery Boots Pro<\/strong> , antrenman sonrası daha hızlı iyileşme, uzun ve yorucu günler veya ağır, şiş bacakları rahatlatmak için profesyonel çözümdür. Her bir botta <strong>8 hava haznesi<\/strong>, elit sporcuların müsabakalar arasında daha hızlı dönmek için kullandığı aynı teknoloji olan hassas sıralı kompresyon masajı sunarlar.<\/p><p>Bu botları benzersiz kılan şey, <strong>%100 kablosuz<\/strong> olmalarıdır. Batarya, kompakt kontrolöre doğrudan entegre edilmiştir, böylece onları antrenman sonrası arabada, soyunma odasında, kanepede veya yatakta dilediğiniz her yerde özgürce kullanabilirsiniz. Kablo yok, sınır yok.<\/p><p>Şunlar arasından seçim yapın: <strong>6 önceden programlanmış masaj modu<\/strong> ve basıncı 0 ila 260 mmHg arasında 8 seviyede hassas bir şekilde ayarlayın. Şeffaf renkli ekran zamanı, basıncı, modu ve pili gösterir – kolay ve sezgisel kontroller.<\/p><p>İle <strong>4 saate kadar pil ömrüyle<\/strong> ve sadece 1 kg ağırlığıyla kontrol cihazı her yere sizinle birlikte seyahat etmek için üretilmiştir. Şarj olurken de kullanılabilir. Dahil olan birinci sınıf taşıma çantası, botları antrenman kampına, maça veya tatile götürmeyi kolaylaştırır.<\/p><p>Hem günlük sporcular hem de elit sporcular için üretilmiştir – triatletlerden ve bisikletçilerden, uzun bir günün ardından rahatlamaya ihtiyaç duyan yoğun ayaklara kadar.<\/p>"
+          }
+        },
+        "how_it_works": {
+          "type": "how_it_works",
+          "settings": {
+            "title": "Nasıl çalışır",
+            "step_1_title": "Giymek",
+            "step_1_text": "Botları antrenman kıyafetlerinizin veya çıplak bacaklarınızın üzerine çekin. Ayak bileğinizden uyluğunuza kadar fermuarını çekin – hem erkeklere hem de kadınlara uyar.",
+            "step_2_title": "Programınızı seçin",
+            "step_2_text": "Kontrol cihazını açın, 6 programdan birini seçin, basıncı ayarlayın (0-260 mmHg) ve zamanlayıcıyı ayarlayın (10-30 dk).",
+            "step_3_title": "Daha hızlı iyileşin",
+            "step_3_text": "Arkanıza yaslanın ve 8 odacığın çalışmasına izin verin. Sıralı kompresyon, daha hızlı iyileşme için kanı ve lenfi bacaklardan yukarı doğru iter."
+          }
+        },
+        "comparison_table": {
+          "type": "comparison_table",
+          "settings": {
+            "title": "WOC Recovery Boots Pro",
+            "subtitle": "vs. diğer kompresyon çizmeleri",
+            "comp_1": "8 hava haznesi",
+            "has_it_1": false,
+            "comp_2": "100% kablosuz (entegre pil)",
+            "has_it_2": false,
+            "comp_3": "260 mmHg'ye kadar ayarlanabilir basınç",
+            "has_it_3": false,
+            "comp_4": "6 masaj programı",
+            "has_it_4": false,
+            "comp_5": "4 saate kadar pil ömrü",
+            "has_it_5": false,
+            "comp_6": "Şarj olurken kullanın",
+            "has_it_6": false,
+            "comp_7": "Premium taşıma çantası dahildir",
+            "has_it_7": false,
+            "comp_8": "Sadece 1 kg ağırlığında",
+            "has_it_8": false,
+            "comp_9": "30 günlük memnuniyet garantisi",
+            "has_it_9": false,
+            "comp_10": "3 yıla kadar garanti",
+            "has_it_10": false
+          }
+        },
+        "advantages": {
+          "type": "advantages",
+          "settings": {
+            "title": "Avantajlarımız",
+            "adv_img_left": "shopify:\/\/shop_images\/recovery-boots-pro-01-BqStoFjR.jpg",
+            "adv_title_left": "Bizim",
+            "adv_li_left_1": "Basınç Sensörü",
+            "adv_li_left_2": "8 bağımsız hava haznesi",
+            "adv_li_left_3": "LCD dokunmatik ekran",
+            "adv_li_left_4": "Ultra-Sessiz teknoloji",
+            "adv_li_left_5": "Batarya 5200 mAh",
+            "adv_li_left_6": "360° tam sarma, üst üste binmiş",
+            "adv_img_right_text": "Standart kompresyon botları",
+            "adv_title_right": "Diğer",
+            "adv_li_right_1": "Basınç Sensörü",
+            "adv_li_right_2": "Sıradan Hazneler",
+            "adv_li_right_3": "LCD dokunmatik ekran",
+            "adv_li_right_4": "Standart Mekanik Gürültü",
+            "adv_li_right_5": "Batarya 2500 mAh",
+            "adv_li_right_6": "Kumaş, üst üste binmeyen"
+          }
+        },
+        "tech_specs": {
+          "type": "tech_specs",
+          "settings": {
+            "title": "Teknik Özellikler",
+            "spec_label_1": "Her bottaki odacık sayısı",
+            "spec_val_1": "8 hava odası",
+            "spec_label_2": "Programlar",
+            "spec_val_2": "6 masaj modu",
+            "spec_label_3": "Basınç aralığı",
+            "spec_val_3": "0 – 260 mmHg",
+            "spec_label_4": "Zamanlayıcı",
+            "spec_val_4": "10 \/ 20 \/ 30 dakika",
+            "spec_label_5": "Pil ömrü",
+            "spec_val_5": "4 saate kadar",
+            "spec_label_6": "Şarj süresi",
+            "spec_val_6": "2-3 saat (USB-C)",
+            "spec_label_7": "Ağırlık (kontrolör)",
+            "spec_val_7": "Yaklaşık 1 kg",
+            "spec_label_8": "Boyutlar (kontrolör)",
+            "spec_val_8": "27 × 11 × 11 cm",
+            "spec_label_9": "Bacak uzunluğu (M beden)",
+            "spec_val_9": "85 cm – üst çevre 70 cm",
+            "spec_label_10": "Bacak uzunluğu (L beden)",
+            "spec_val_10": "100 cm – üst çevre 75 cm"
+          }
+        },
+        "testimonials": {
+          "type": "testimonials",
+          "settings": {
+            "title": "+1.000 sporcu ve meraklısı",
+            "rating_text": "4.8 üzerinden 5",
+            "quote_1": "Bir triatlet olarak uzun antrenmanlardan sonraki gün her zaman kas ağrılarım olurdu. Artık bitti. Onları neredeyse her gün kullanıyorum ve ilk yarım Ironman'imden sonra bile dinlenmiş bacaklarım var.",
+            "author_1": "Michael, Triatlon 🏊‍♂️🚴🏃",
+            "quote_2": "Gerçekten harika bir ürün, kullanımı kolay. Mükemmel çalışıyor ve uzun bir iş gününden veya koşudan sonra harika hissettiriyor.",
+            "author_2": "Klaus, Koşucu 🏃",
+            "quote_3": "Hızlı teslimat, birinci sınıf takip. Oğlum ağır bacak sorunu yaşıyor ve bunlar gerçekten yardımcı oldu. Ben de bisiklete bindikten sonra kendim kullanıyorum. Dünya klasında.",
+            "author_3": "Brian, Bisiklet 🚴",
+            "quote_4": "Kablosuz olmaları oyunun kurallarını değiştiriyor. Kanepeye uzanıp TV izlerken kullanıyorum – kablo karmaşası yok.",
+            "author_4": "Anne L.",
+            "quote_5": "Gün boyu garson olarak ayaktayım. Recovery Boots, akşamları ağırlaşan bacaklarım için çok büyük bir fark yarattı.",
+            "author_5": "Jens H.",
+            "quote_6": "Hamilelik sonrası şişliklere yardımcı olması için satın aldım. Harika çalışıyor – ve pil uzun süre dayanıyor.",
+            "author_6": "Sofie K."
+          }
+        },
+        "faq": {
+          "type": "faq",
+          "settings": {
+            "title": "Sık sorulan sorular",
+            "faq_q_1": "8 hazneli ve 4-6 hazneli arasında ne fark var?",
+            "faq_a_1": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_2": "Batarya ne kadar dayanır?",
+            "faq_a_2": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_3": "Hangi bedenler mevcut?",
+            "faq_a_3": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_4": "6 program arasındaki fark ne?",
+            "faq_a_4": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_5": "Gürültülü mü?",
+            "faq_a_5": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_6": "Ağır bacaklara ve şişliğe yardımcı olabilirler mi?",
+            "faq_a_6": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_7": "Kimler kullanmamalı?",
+            "faq_a_7": "<p>Cevabı buraya ekleyin.</p>",
+            "faq_q_8": "Etkiyi ne kadar sürede hissedersiniz?",
+            "faq_a_8": "<p>Cevabı buraya ekleyin.</p>"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Yardıma mı ihtiyacınız var?",
+            "email_label": "E-posta",
+            "email_val": "info@worldofcomfort.dk",
+            "chat_label": "Canlı sohbet",
+            "chat_val": "Günlük kullanılabilir",
+            "phone_label": "Telefon",
+            "phone_val": "+45 70 60 83 03"
+          }
+        },
+        "cta_footer": {
+          "type": "cta_footer",
+          "settings": {
+            "title": "Profesyoneller gibi iyileşin",
+            "text": "8 hazneli, %100 kablosuz ve 260 mmHg'ye kadar WOC Recovery Boots Pro. Ücretsiz kargo, 30 günlük memnuniyet garantisi ve 3 yıla kadar garanti.",
+            "btn_text": "Şimdi satın al · ₺17.565",
+            "trust_1": "Ücretsiz kargo",
+            "trust_2": "30 günlük iade hakkı",
+            "trust_3": "3 yıla kadar garanti"
+          }
+        }
+      },
+      "block_order": [
+        "tech_features",
+        "recovery_benefits",
+        "therapeutic_benefits",
+        "massage_modes",
+        "text_content",
+        "how_it_works",
+        "comparison_table",
+        "advantages",
+        "tech_specs",
+        "testimonials",
+        "faq",
+        "contact",
+        "cta_footer"
+      ],
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -231,6 +482,7 @@
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+        "landing_page"
   ]
 }
