@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "custom_doctor_quote": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"bg-neutral-900 text-white\"><div class=\"max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center\"><div class=\"w-14 h-14 rounded-full bg-neutral-700 flex-shrink-0 flex items-center justify-center\"><span class=\"font-heading text-lg text-copper font-bold\">DR</span></div><div class=\"text-center sm:text-left\"><p class=\"font-body text-sm text-neutral-300 italic leading-relaxed\">\"Ayak masajı kan dolaşımını iyileştirebilir ve kas gerginliğini azaltabilir. NordicSole™, shiatsu, yoğurma, hava kompresyonu ve ısının birleşimiyle günlük zindeliğe iyi bir destektir.\"</p><p class=\"font-body text-xs font-bold text-copper mt-1\">Dr. Carsten Rosendahl</p><p class=\"font-body text-[10px] text-neutral-400\">Doktor ve Sağlık Uzmanı</p></div></div></div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "main-product-foot",
       "blocks": {
@@ -230,6 +239,7 @@
     }
   },
   "order": [
+    "custom_doctor_quote",
     "main",
     "related-products"
   ]

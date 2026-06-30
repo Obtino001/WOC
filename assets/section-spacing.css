@@ -1,0 +1,184 @@
+/**
+ * WOC Global Section Spacing
+ * Mobile: tighter (48px) | Desktop: comfortable (80px)
+ * Applies to section roots inside .shopify-section
+ */
+
+:root {
+  --woc-section-py-mobile: 3rem;       /* 48px */
+  --woc-section-py-desktop: 5rem;      /* 80px */
+  --woc-section-py-compact-mobile: 2.5rem;  /* 40px */
+  --woc-section-py-compact-desktop: 3.5rem; /* 56px */
+  --woc-section-py-product-mobile: 1.5rem;  /* 24px — PDP */
+  --woc-section-py-product-desktop: 2.5rem; /* 40px */
+}
+
+/* Reusable utility classes for new / refactored sections */
+.woc-section-py {
+  padding-top: var(--woc-section-py-mobile);
+  padding-bottom: var(--woc-section-py-mobile);
+}
+
+.woc-section-py-sm {
+  padding-top: var(--woc-section-py-compact-mobile);
+  padding-bottom: var(--woc-section-py-compact-mobile);
+}
+
+@media screen and (min-width: 750px) {
+  .woc-section-py {
+    padding-top: var(--woc-section-py-desktop);
+    padding-bottom: var(--woc-section-py-desktop);
+  }
+
+  .woc-section-py-sm {
+    padding-top: var(--woc-section-py-compact-desktop);
+    padding-bottom: var(--woc-section-py-compact-desktop);
+  }
+}
+
+/* Skip override when explicitly marked */
+.woc-section-skip-spacing {
+  padding-top: revert-layer !important;
+  padding-bottom: revert-layer !important;
+}
+
+/* ── Product pages: tighter vertical padding ── */
+product-info[class*='-padding'],
+.mpc-section[class*='-padding'],
+.mpm-section[class*='-padding'],
+.mpw-section[class*='-padding'],
+.mpf-section[class*='-padding'] {
+  padding-top: var(--woc-section-py-product-mobile) !important;
+  padding-bottom: var(--woc-section-py-product-mobile) !important;
+}
+
+@media screen and (min-width: 750px) {
+  product-info[class*='-padding'],
+  .mpc-section[class*='-padding'],
+  .mpm-section[class*='-padding'],
+  .mpw-section[class*='-padding'],
+  .mpf-section[class*='-padding'] {
+    padding-top: var(--woc-section-py-product-desktop) !important;
+    padding-bottom: var(--woc-section-py-product-desktop) !important;
+  }
+}
+
+/* ── Dawn schema padding (section-{id}-padding) ── */
+@media screen and (max-width: 749px) {
+  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(product-info) {
+    padding-top: var(--woc-section-py-mobile) !important;
+    padding-bottom: var(--woc-section-py-mobile) !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(product-info) {
+    padding-top: var(--woc-section-py-desktop) !important;
+    padding-bottom: var(--woc-section-py-desktop) !important;
+  }
+}
+
+/* ── Tailwind py-* on direct section roots ── */
+@media screen and (max-width: 749px) {
+  .shopify-section > section.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-14:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-16:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-20:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-24:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-28:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-32:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-36:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-12 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-12']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-14 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-14']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-16 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-16']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-20 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-20']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-24 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-24']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-28 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-28']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-32 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-32']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-12']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-14']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-16']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-20']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-24']:not(.woc-section-skip-spacing) {
+    padding-top: var(--woc-section-py-mobile) !important;
+    padding-bottom: var(--woc-section-py-mobile) !important;
+  }
+
+  /* py-12 alone = slightly compact on mobile */
+  .shopify-section > section.py-12:not(.woc-section-skip-spacing) {
+    padding-top: var(--woc-section-py-compact-mobile) !important;
+    padding-bottom: var(--woc-section-py-compact-mobile) !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .shopify-section > section.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-14:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-16:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-20:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-24:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-28:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-32:not(.woc-section-skip-spacing),
+  .shopify-section > section.py-36:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-12 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-12']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-14 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-14']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-16 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-16']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-20 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-20']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-24 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-24']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-28 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-28']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='py-32 ']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*=' py-32']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='lg:py-16']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='lg:py-20']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='lg:py-24']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='lg:py-28']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='lg:py-32']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='md:py-24']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='md:py-28']:not(.woc-section-skip-spacing),
+  .shopify-section > section[class*='md:py-32']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-12']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-14']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-16']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-20']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='py-24']:not(.woc-section-skip-spacing),
+  .shopify-section > div.woc-theme-wrapper[class*='lg:py-']:not(.woc-section-skip-spacing) {
+    padding-top: var(--woc-section-py-desktop) !important;
+    padding-bottom: var(--woc-section-py-desktop) !important;
+  }
+}
+
+/* Footer inner spacing — keep slightly compact */
+footer .py-16,
+footer .lg\:py-20 {
+  padding-top: var(--woc-section-py-compact-mobile) !important;
+  padding-bottom: var(--woc-section-py-compact-mobile) !important;
+}
+
+@media screen and (min-width: 750px) {
+  footer .py-16,
+  footer .lg\:py-20 {
+    padding-top: var(--woc-section-py-compact-desktop) !important;
+    padding-bottom: var(--woc-section-py-compact-desktop) !important;
+  }
+}
+
+/* Consistent section heading bottom margin on mobile */
+@media screen and (max-width: 749px) {
+  .shopify-section .mb-20,
+  .shopify-section .mb-16 {
+    margin-bottom: 2.5rem !important;
+  }
+}

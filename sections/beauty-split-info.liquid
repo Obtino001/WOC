@@ -2,7 +2,7 @@
   <div class="grid lg:grid-cols-2 min-h-[{% if section.settings.height == 'tall' %}70vh{% else %}50vh{% endif %}]">
     
     {% capture text_content %}
-      <div class="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 lg:py-20">
+      <div class="flex flex-col justify-center px-8 md:px-16 lg:px-20 woc-section-py">
         <div>
           {% if section.settings.kicker != blank %}
             {% if section.settings.theme == 'light' and section.settings.show_kicker_dot %}

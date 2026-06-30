@@ -1,0 +1,36 @@
+{% comment %}
+  Standard responsive section padding.
+  Usage:
+    {% render 'section-padding', section: section %}
+    <section class="section-{{ section.id }}-padding ...">
+
+  Optional: compact: true for marquees / trust bars
+{% endcomment %}
+{%- liquid
+  assign pad_top = section.settings.padding_top | default: 80
+  assign pad_bottom = section.settings.padding_bottom | default: 80
+  if compact
+    assign mobile_top = 40
+    assign mobile_bottom = 40
+    assign desktop_top = 56
+    assign desktop_bottom = 56
+  else
+    assign mobile_top = 48
+    assign mobile_bottom = 48
+    assign desktop_top = pad_top | at_most: 80
+    assign desktop_bottom = pad_bottom | at_most: 80
+  endif
+-%}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ mobile_top }}px;
+    padding-bottom: {{ mobile_bottom }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ desktop_top }}px;
+      padding-bottom: {{ desktop_bottom }}px;
+    }
+  }
+{%- endstyle -%}
