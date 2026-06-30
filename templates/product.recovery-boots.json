@@ -53,15 +53,6 @@
             "max_items": 8
           }
         },
-        "bundle_selector": {
-          "type": "bundle_selector",
-          "settings": {
-            "heading": "BU ÜRÜNE YOĞUN İLGİ GÖRÜYORUZ ❤️",
-            "save_label": "Save",
-            "subtitle_1": "",
-            "subtitle_2": "Sevdiğiniz biriyle neşeyi paylaşın"
-          }
-        },
         "status_badges": {
           "type": "status_badges",
           "settings": {
@@ -166,7 +157,6 @@
         "rating",
         "price",
         "feature_list",
-        "bundle_selector",
         "status_badges",
         "variant_picker",
         "purchase_row",
