@@ -1,22 +1,8 @@
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-<section class="bg-card border-y border-border section-{{ section.id }}-padding section-{{ section.id }}-padding">
-  <div class="container mx-auto px-4 lg:px-8">
+<section class="woc-section-bar bg-card border-y border-border">
+  <div class="container mx-auto px-4 lg:px-8 w-full">
     <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
       {% for block in section.blocks %}
-        <div class="flex items-center gap-3 py-5 px-4 justify-center" {{ block.shopify_attributes }}>
+        <div class="flex items-center gap-3 px-4 py-1 justify-center" {{ block.shopify_attributes }}>
           <div class="w-5 h-5 text-gold flex-shrink-0 [&>svg]:w-full [&>svg]:h-full">
             {{ block.settings.icon_svg }}
           </div>

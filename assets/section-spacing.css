@@ -11,10 +11,13 @@
   --woc-section-py-compact-desktop: 3.5rem; /* 56px */
   --woc-section-py-product-mobile: 1.5rem;  /* 24px — PDP */
   --woc-section-py-product-desktop: 2.5rem; /* 40px */
+  --woc-section-bar-y-mobile: 1.25rem; /* 20px — awards / trust strips */
+  --woc-section-bar-y-desktop: 1.75rem; /* 28px */
 }
 
 /* Reusable utility classes for new / refactored sections */
-.woc-section-py {
+.woc-section-py,
+article.woc-section-py {
   padding-top: var(--woc-section-py-mobile);
   padding-bottom: var(--woc-section-py-mobile);
 }
@@ -24,8 +27,29 @@
   padding-bottom: var(--woc-section-py-compact-mobile);
 }
 
+/* Thin horizontal bands: awards marquee, trust bars, logo strips */
+.woc-section-bar {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: var(--woc-section-bar-y-mobile) !important;
+  padding-bottom: var(--woc-section-bar-y-mobile) !important;
+}
+
+.woc-section-bar > * {
+  width: 100%;
+}
+
 @media screen and (min-width: 750px) {
-  .woc-section-py {
+  .woc-section-bar {
+    padding-top: var(--woc-section-bar-y-desktop) !important;
+    padding-bottom: var(--woc-section-bar-y-desktop) !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .woc-section-py,
+  article.woc-section-py {
     padding-top: var(--woc-section-py-desktop);
     padding-bottom: var(--woc-section-py-desktop);
   }
@@ -38,8 +62,8 @@
 
 /* Skip override when explicitly marked */
 .woc-section-skip-spacing {
-  padding-top: revert-layer !important;
-  padding-bottom: revert-layer !important;
+  padding-top: unset !important;
+  padding-bottom: unset !important;
 }
 
 /* ── Product pages: tighter vertical padding ── */
@@ -65,14 +89,14 @@ product-info[class*='-padding'],
 
 /* ── Dawn schema padding (section-{id}-padding) ── */
 @media screen and (max-width: 749px) {
-  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(product-info) {
+  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(.woc-section-bar):not(product-info) {
     padding-top: var(--woc-section-py-mobile) !important;
     padding-bottom: var(--woc-section-py-mobile) !important;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(product-info) {
+  .shopify-section [class*='section-'][class*='-padding']:not(.woc-section-skip-spacing):not(.woc-section-bar):not(product-info) {
     padding-top: var(--woc-section-py-desktop) !important;
     padding-bottom: var(--woc-section-py-desktop) !important;
   }
@@ -81,6 +105,8 @@ product-info[class*='-padding'],
 /* ── Tailwind py-* on direct section roots ── */
 @media screen and (max-width: 749px) {
   .shopify-section > section.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > article.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > article.woc-section-py:not(.woc-section-skip-spacing),
   .shopify-section > section.py-14:not(.woc-section-skip-spacing),
   .shopify-section > section.py-16:not(.woc-section-skip-spacing),
   .shopify-section > section.py-20:not(.woc-section-skip-spacing),
@@ -120,6 +146,8 @@ product-info[class*='-padding'],
 
 @media screen and (min-width: 750px) {
   .shopify-section > section.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > article.py-12:not(.woc-section-skip-spacing),
+  .shopify-section > article.woc-section-py:not(.woc-section-skip-spacing),
   .shopify-section > section.py-14:not(.woc-section-skip-spacing),
   .shopify-section > section.py-16:not(.woc-section-skip-spacing),
   .shopify-section > section.py-20:not(.woc-section-skip-spacing),
@@ -160,16 +188,14 @@ product-info[class*='-padding'],
   }
 }
 
-/* Footer inner spacing — keep slightly compact */
-footer .py-16,
-footer .lg\:py-20 {
+/* Footer inner spacing — compact */
+footer .woc-section-py-sm {
   padding-top: var(--woc-section-py-compact-mobile) !important;
   padding-bottom: var(--woc-section-py-compact-mobile) !important;
 }
 
 @media screen and (min-width: 750px) {
-  footer .py-16,
-  footer .lg\:py-20 {
+  footer .woc-section-py-sm {
     padding-top: var(--woc-section-py-compact-desktop) !important;
     padding-bottom: var(--woc-section-py-compact-desktop) !important;
   }
