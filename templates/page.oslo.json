@@ -11,13 +11,110 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "showroom_details_WahXGV": {
+      "type": "showroom-details",
+      "blocks": {
+        "working_hour_XYxHPk": {
+          "type": "working_hour",
+          "settings": {
+            "day": "Monday – Friday",
+            "time": "10:00 – 18:00"
+          }
+        },
+        "working_hour_hgQtdb": {
+          "type": "working_hour",
+          "settings": {
+            "day": "Saturday",
+            "time": "10:00 – 16:00"
+          }
+        },
+        "working_hour_tiEPeL": {
+          "type": "working_hour",
+          "settings": {
+            "day": "Sunday",
+            "time": "Closed"
+          }
+        },
+        "feature_PnDzwx": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Full massage chair collection"
+          }
+        },
+        "feature_6NTnz7": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "SOVESYSTEM® & AI Smart Bed demos"
+          }
+        },
+        "feature_EFxHhM": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Norwegian-speaking wellness consultants"
+          }
+        },
+        "feature_cwFHHp": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "NOK pricing"
+          }
+        },
+        "feature_aywTWX": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Central Karl Johans gate location"
+          }
+        },
+        "feature_QU9mrf": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Complimentary coffee & refreshments"
+          }
+        }
+      },
+      "block_order": [
+        "working_hour_XYxHPk",
+        "working_hour_hgQtdb",
+        "working_hour_tiEPeL",
+        "feature_PnDzwx",
+        "feature_6NTnz7",
+        "feature_EFxHhM",
+        "feature_cwFHHp",
+        "feature_aywTWX",
+        "feature_QU9mrf"
+      ],
+      "name": "Showroom Details",
+      "settings": {
+        "hero_image": "",
+        "hero_subtitle": "🇳🇴 Norway",
+        "hero_title": "Oslo Showroom",
+        "hero_description": "Our Norwegian showroom on Oslo's iconic Karl Johans gate. A modern Scandinavian space featuring our complete collection of massage chairs, SOVESYSTEM® sleep studio, and AI Smart Bed demos — with Norwegian-language support and NOK pricing.",
+        "back_label": "All Showrooms",
+        "back_link": "/showrooms",
+        "address_title": "Address",
+        "address_line_1": "Karl Johans gate 25",
+        "address_line_2": "0159 Oslo",
+        "address_line_3": "Norway",
+        "phone_title": "Phone",
+        "phone_number": "+47 22 33 44 55",
+        "email_title": "Email",
+        "email_address": "oslo@worldofcomfort.no",
+        "hours_title": "Opening Hours",
+        "features_title": "What You'll Find Here",
+        "form_title": "Book a Free Demo",
+        "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0!2d10.74!3d59.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU0JzM2LjAiTiAxMMKwNDQnMjQuMCJF!5e0!3m2!1sen!2sno!4v1"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "showroom_details_WahXGV"
   ]
 }
