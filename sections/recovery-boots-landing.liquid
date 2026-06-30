@@ -1,0 +1,717 @@
+{% comment %}
+  Section: Recovery Boots Landing Page Mega Section
+{% endcomment %}
+
+<div class="recovery-boots-landing-wrapper" id="section-{{ section.id }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      
+      {% comment %} 1. TECH FEATURES {% endcomment %}
+      {% when 'tech_features' %}
+        <section class="py-16 bg-neutral-50" {{ block.shopify_attributes }}>
+          <div class="max-w-5xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-3 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <p class="font-body text-neutral-500 text-center mb-10 max-w-xl mx-auto">{{ block.settings.subtitle | escape }}</p>
+            <div class="grid md:grid-cols-2 gap-6">
+              {% for i in (1..4) %}
+                {% assign title_key = 'feature_' | append: i | append: '_title' %}
+                {% assign text_key = 'feature_' | append: i | append: '_text' %}
+                {% assign img_key = 'feature_' | append: i | append: '_img' %}
+                
+                {% if block.settings[title_key] != blank %}
+                  <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-neutral-100">
+                    <div class="aspect-square bg-neutral-50">
+                      {% if block.settings[img_key] != blank %}
+                        <img src="{{ block.settings[img_key] | image_url: width: 600 }}" alt="{{ block.settings[title_key] | escape }}" loading="lazy" class="w-full h-full object-contain p-6" />
+                      {% else %}
+                        {% assign default_img = '/assets/recovery-boots-pro-01-BqStoFjR.jpg' %}
+                        {% if i == 2 %}{% assign default_img = '/assets/recovery-boots-pro-02-controller-D-1lJBb7.jpg' %}{% endif %}
+                        {% if i == 3 %}{% assign default_img = '/assets/recovery-boots-pro-04-controller-detail-BgMDyPLk.jpg' %}{% endif %}
+                        {% if i == 4 %}{% assign default_img = '/assets/recovery-boots-pro-05-bag-C_VdqXXZ.jpg' %}{% endif %}
+                        <img src="{{ default_img }}" alt="{{ block.settings[title_key] | escape }}" loading="lazy" class="w-full h-full object-contain p-6" />
+                      {% endif %}
+                    </div>
+                    <div class="p-5">
+                      <h3 class="font-heading text-lg font-bold text-neutral-900 mb-1 uppercase">{{ block.settings[title_key] | escape }}</h3>
+                      <p class="font-body text-sm text-neutral-500">{{ block.settings[text_key] | escape }}</p>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 2. RECOVERY BENEFITS {% endcomment %}
+      {% when 'recovery_benefits' %}
+        <section class="py-16 bg-white" {{ block.shopify_attributes }}>
+          <div class="max-w-5xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-3 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <p class="font-body text-neutral-500 text-center mb-12 max-w-2xl mx-auto">{{ block.settings.subtitle | escape }}</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {% for i in (1..8) %}
+                {% assign title_key = 'benefit_' | append: i | append: '_title' %}
+                {% assign text_key = 'benefit_' | append: i | append: '_text' %}
+                {% if block.settings[title_key] != blank %}
+                  <div class="flex flex-col items-center text-center p-5 rounded-xl bg-neutral-50 border border-neutral-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-copper/10 flex items-center justify-center mb-3">
+                      {% case i %}
+                        {% when 1 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                        {% when 2 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                        {% when 3 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
+                        {% when 4 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                        {% when 5 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path><path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg>
+                        {% when 6 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>
+                        {% when 7 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                        {% when 8 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect><line x1="22" x2="22" y1="11" y2="13"></line></svg>
+                      {% endcase %}
+                    </div>
+                    <h3 class="font-body text-sm font-bold text-neutral-800 mb-1.5">{{ block.settings[title_key] | escape }}</h3>
+                    <p class="font-body text-xs text-neutral-500 leading-relaxed">{{ block.settings[text_key] | escape }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 3. THERAPEUTIC BENEFITS {% endcomment %}
+      {% when 'therapeutic_benefits' %}
+        <section class="py-16 bg-neutral-900 text-white" {{ block.shopify_attributes }}>
+          <div class="max-w-5xl mx-auto px-4">
+            <p class="font-body text-xs uppercase tracking-[0.2em] text-copper text-center mb-3">{{ block.settings.kicker | escape }}</p>
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold mb-12 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              {% for i in (1..3) %}
+                {% assign title_key = 'tb_' | append: i | append: '_title' %}
+                {% assign text_key = 'tb_' | append: i | append: '_text' %}
+                {% if block.settings[title_key] != blank %}
+                  <div class="flex flex-col p-7 rounded-xl bg-neutral-800/60 border border-neutral-700 hover:border-copper/40 transition-colors">
+                    <div class="w-12 h-12 rounded-full bg-copper/15 flex items-center justify-center mb-4">
+                      {% case i %}
+                        {% when 1 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        {% when 2 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                        {% when 3 %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                      {% endcase %}
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">{{ block.settings[title_key] | escape }}</h3>
+                    <p class="font-body text-sm text-neutral-300 leading-relaxed">{{ block.settings[text_key] | escape }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 4. MASSAGE MODES {% endcomment %}
+      {% when 'massage_modes' %}
+        <section class="py-16 bg-white" {{ block.shopify_attributes }}>
+          <div class="max-w-6xl mx-auto px-4">
+            <p class="font-body text-xs uppercase tracking-[0.2em] text-copper text-center mb-3">{{ block.settings.kicker | escape }}</p>
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-3 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <p class="font-body text-neutral-500 text-center mb-12 max-w-2xl mx-auto">{{ block.settings.subtitle | escape }}</p>
+            <div class="grid md:grid-cols-3 gap-6">
+              {% for i in (1..3) %}
+                {% assign title_key = 'mode_' | append: i | append: '_title' %}
+                {% assign text_key = 'mode_' | append: i | append: '_text' %}
+                {% if block.settings[title_key] != blank %}
+                  <div class="flex flex-col p-7 rounded-xl bg-neutral-50 border border-neutral-200 hover:border-copper/50 hover:shadow-lg transition-all">
+                    <span class="font-heading text-3xl font-bold text-copper mb-3">0{{ i }}</span>
+                    <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2 uppercase">{{ block.settings[title_key] | escape }}</h3>
+                    <p class="font-body text-sm text-neutral-600 leading-relaxed">{{ block.settings[text_key] | escape }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="mt-10 rounded-xl border border-copper/30 bg-copper/5 p-6 text-center">
+              <p class="font-body text-xs uppercase tracking-widest text-copper font-bold mb-2">{{ block.settings.pressure_kicker | escape }}</p>
+              <p class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900">{{ block.settings.pressure_val | escape }}</p>
+              <p class="font-body text-sm text-neutral-600 mt-2 max-w-xl mx-auto">{{ block.settings.pressure_desc | escape }}</p>
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 5. TEXT CONTENT {% endcomment %}
+      {% when 'text_content' %}
+        <section class="py-16" {{ block.shopify_attributes }}>
+          <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-6 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="font-body text-neutral-600 text-base leading-relaxed space-y-4">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 6. HOW IT WORKS {% endcomment %}
+      {% when 'how_it_works' %}
+        <section class="bg-neutral-900 text-white py-16" {{ block.shopify_attributes }}>
+          <div class="max-w-5xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold mb-12 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+              {% for i in (1..3) %}
+                {% assign step_title = 'step_' | append: i | append: '_title' %}
+                {% assign step_text = 'step_' | append: i | append: '_text' %}
+                {% if block.settings[step_title] != blank %}
+                  <div class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-copper/20 flex items-center justify-center mx-auto mb-4">
+                      <span class="font-heading text-2xl font-bold text-copper">{{ i }}</span>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-3 uppercase">{{ block.settings[step_title] | escape }}</h3>
+                    <p class="font-body text-sm text-neutral-300 leading-relaxed">{{ block.settings[step_text] | escape }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 7. COMPARISON TABLE {% endcomment %}
+      {% when 'comparison_table' %}
+        <section class="py-16" {{ block.shopify_attributes }}>
+          <div class="max-w-3xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-3 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <p class="font-body text-center text-neutral-500 mb-8">{{ block.settings.subtitle | escape }}</p>
+            <div class="rounded-xl overflow-hidden border border-neutral-200">
+              <div class="grid grid-cols-3 bg-neutral-100">
+                <div class="p-4 font-body text-sm font-semibold text-neutral-500"></div>
+                <div class="p-4 font-body text-sm font-bold text-center text-copper">WOC</div>
+                <div class="p-4 font-body text-sm font-semibold text-center text-neutral-400">Diğer</div>
+              </div>
+              {% for i in (1..10) %}
+                {% assign feature_key = 'comp_' | append: i %}
+                {% assign has_it_key = 'has_it_' | append: i %}
+                {% if block.settings[feature_key] != blank %}
+                  {% assign row_bg = 'bg-white' %}
+                  {% assign is_even = i | modulo: 2 %}
+                  {% if is_even == 0 %}{% assign row_bg = 'bg-neutral-50' %}{% endif %}
+                  <div class="grid grid-cols-3 {{ row_bg }}">
+                    <div class="p-4 font-body text-sm text-neutral-700">{{ block.settings[feature_key] | escape }}</div>
+                    <div class="p-4 flex justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-emerald-500"><path d="M20 6 9 17l-5-5"></path></svg>
+                    </div>
+                    <div class="p-4 flex justify-center">
+                      {% if block.settings[has_it_key] %}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-emerald-500"><path d="M20 6 9 17l-5-5"></path></svg>
+                      {% else %}
+                        <span class="w-5 h-5 rounded-full border-2 border-neutral-300 flex items-center justify-center text-neutral-300 text-xs">✕</span>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 8. ADVANTAGES {% endcomment %}
+      {% when 'advantages' %}
+        <section class="py-16 bg-white" {{ block.shopify_attributes }}>
+          <div class="max-w-6xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-copper italic mb-10 text-center">{{ block.settings.title | escape }}</h2>
+            <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+              
+              <div class="rounded-2xl border border-copper/30 bg-copper/5 p-6 lg:p-8 flex flex-col">
+                <div class="aspect-square bg-white rounded-xl overflow-hidden mb-6 flex items-center justify-center">
+                  {% if block.settings.adv_img_left != blank %}
+                    <img src="{{ block.settings.adv_img_left | image_url: width: 600 }}" alt="{{ block.settings.adv_title_left | escape }}" class="w-full h-full object-contain p-4" />
+                  {% else %}
+                    <img src="/assets/recovery-boots-pro-01-BqStoFjR.jpg" alt="WOC Recovery Boots Pro" class="w-full h-full object-contain p-4" />
+                  {% endif %}
+                </div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-9 h-9 rounded-md border-2 border-copper flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-copper"><path d="M20 6 9 17l-5-5"></path></svg>
+                  </div>
+                  <h3 class="font-heading text-2xl font-bold text-neutral-900">{{ block.settings.adv_title_left | escape }}</h3>
+                </div>
+                <ul class="space-y-3 font-body text-sm text-neutral-800">
+                  {% for i in (1..6) %}
+                    {% assign li_key = 'adv_li_left_' | append: i %}
+                    {% if block.settings[li_key] != blank %}
+                      <li class="flex items-start justify-between gap-3 border-b border-copper/10 pb-2 last:border-0">
+                        <span class="flex-1">› {{ block.settings[li_key] | escape }}</span>
+                        {% if i == 1 or i == 3 %}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-copper flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
+                        {% endif %}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="rounded-2xl border border-neutral-200 bg-neutral-100 p-6 lg:p-8 flex flex-col">
+                <div class="aspect-square bg-neutral-200/60 rounded-xl overflow-hidden mb-6 flex items-center justify-center">
+                  <div class="text-neutral-400 font-body text-xs uppercase tracking-widest text-center px-6">
+                    {{ block.settings.adv_img_right_text | escape }}
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-9 h-9 rounded-md border-2 border-neutral-500 flex items-center justify-center">
+                    <span class="font-heading text-xl font-bold text-neutral-700 leading-none">×</span>
+                  </div>
+                  <h3 class="font-heading text-2xl font-bold text-neutral-700">{{ block.settings.adv_title_right | escape }}</h3>
+                </div>
+                <ul class="space-y-3 font-body text-sm text-neutral-600">
+                  {% for i in (1..6) %}
+                    {% assign li_key = 'adv_li_right_' | append: i %}
+                    {% if block.settings[li_key] != blank %}
+                      <li class="flex items-start justify-between gap-3 border-b border-neutral-300/60 pb-2 last:border-0">
+                        <span class="flex-1">› {{ block.settings[li_key] | escape }}</span>
+                        {% if i == 1 or i == 3 %}
+                          <span class="font-heading text-base font-bold text-neutral-500 leading-none flex-shrink-0">×</span>
+                        {% endif %}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 9. TECH SPECS (Using same design style as previous version) {% endcomment %}
+      {% when 'tech_specs' %}
+        <section class="py-16" {{ block.shopify_attributes }}>
+          <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-8 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+              {% for i in (1..10) %}
+                {% assign label_key = 'spec_label_' | append: i %}
+                {% assign val_key = 'spec_val_' | append: i %}
+                {% if block.settings[label_key] != blank %}
+                  <div class="flex justify-between items-center p-4 bg-neutral-50 rounded-lg border border-neutral-100 gap-3">
+                    <span class="font-body text-sm font-semibold text-neutral-700">{{ block.settings[label_key] | escape }}</span>
+                    <span class="font-body text-sm text-neutral-500 text-right">{{ block.settings[val_key] | escape }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 10. TESTIMONIALS {% endcomment %}
+      {% when 'testimonials' %}
+        <section class="py-16 bg-neutral-50" {{ block.shopify_attributes }}>
+          <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-10">
+              <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 uppercase mb-2">{{ block.settings.title | escape }}</h2>
+              <div class="flex items-center justify-center gap-2">
+                <div class="flex gap-0.5">
+                  {% for i in (1..5) %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 fill-copper text-copper"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                  {% endfor %}
+                </div>
+                <span class="font-body text-sm text-neutral-500">{{ block.settings.rating_text | escape }}</span>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+              {% for i in (1..3) %}
+                {% assign quote_key = 'quote_' | append: i %}
+                {% assign author_key = 'author_' | append: i %}
+                {% if block.settings[quote_key] != blank %}
+                  <div class="bg-white p-6 rounded-xl shadow-sm border border-neutral-100">
+                    <div class="flex gap-0.5 mb-3">
+                      {% for j in (1..5) %}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 fill-copper text-copper"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                      {% endfor %}
+                    </div>
+                    <p class="font-body text-sm text-neutral-600 leading-relaxed mb-4 italic">"{{ block.settings[quote_key] | escape }}"</p>
+                    <p class="font-body text-sm font-bold text-neutral-800">{{ block.settings[author_key] | escape }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 11. FAQ {% endcomment %}
+      {% when 'faq' %}
+        <section class="py-16 bg-neutral-50" {{ block.shopify_attributes }}>
+          <div class="max-w-3xl mx-auto px-4">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold text-neutral-900 mb-8 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="space-y-2 faq-accordion-container">
+              {% for i in (1..8) %}
+                {% assign q_key = 'faq_q_' | append: i %}
+                {% assign a_key = 'faq_a_' | append: i %}
+                {% if block.settings[q_key] != blank %}
+                  <div class="border border-neutral-200 rounded-lg px-4 bg-white faq-item">
+                    <button class="flex w-full items-center justify-between transition-all font-body text-sm font-semibold text-neutral-800 py-4 hover:no-underline text-left faq-trigger">
+                      {{ block.settings[q_key] | escape }}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200 faq-icon"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <div class="overflow-hidden text-sm transition-all h-0 faq-content-wrapper">
+                      <div class="pb-4 pt-0 font-body text-neutral-600 faq-content">
+                        {{ block.settings[a_key] }}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 12. CONTACT {% endcomment %}
+      {% when 'contact' %}
+        <section class="bg-neutral-100 py-12" {{ block.shopify_attributes }}>
+          <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-heading text-xl lg:text-2xl font-bold text-neutral-900 mb-8 text-center uppercase">{{ block.settings.title | escape }}</h2>
+            <div class="grid sm:grid-cols-3 gap-6">
+              {% if block.settings.email_val != blank %}
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border border-neutral-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper mb-3"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <p class="font-body text-xs font-bold text-neutral-700 mb-1">{{ block.settings.email_label | escape }}</p>
+                  <p class="font-body text-xs text-neutral-500">{{ block.settings.email_val | escape }}</p>
+                </div>
+              {% endif %}
+              {% if block.settings.chat_val != blank %}
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border border-neutral-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper mb-3"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                  <p class="font-body text-xs font-bold text-neutral-700 mb-1">{{ block.settings.chat_label | escape }}</p>
+                  <p class="font-body text-xs text-neutral-500">{{ block.settings.chat_val | escape }}</p>
+                </div>
+              {% endif %}
+              {% if block.settings.phone_val != blank %}
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl border border-neutral-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-copper mb-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <p class="font-body text-xs font-bold text-neutral-700 mb-1">{{ block.settings.phone_label | escape }}</p>
+                  <p class="font-body text-xs text-neutral-500">{{ block.settings.phone_val | escape }}</p>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </section>
+
+      {% comment %} 13. CTA FOOTER {% endcomment %}
+      {% when 'cta_footer' %}
+        <section class="relative py-20 overflow-hidden" {{ block.shopify_attributes }}>
+          <div class="absolute inset-0 bg-neutral-900"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(184,115,51,0.15),transparent_70%)]"></div>
+          <div class="relative max-w-2xl mx-auto px-4 text-center text-white">
+            <h2 class="font-heading text-2xl lg:text-3xl font-bold mb-4 uppercase">{{ block.settings.title | escape }}</h2>
+            <p class="font-body text-neutral-300 mb-8 leading-relaxed">{{ block.settings.text | escape }}</p>
+            
+            <form action="/cart/add" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 py-2 h-14 px-12 text-base font-bold uppercase tracking-widest bg-copper hover:bg-copper/90 text-white rounded-xl shadow-lg">
+                {{ block.settings.btn_text | escape }}
+              </button>
+            </form>
+
+            <div class="flex flex-wrap items-center justify-center gap-6 mt-6 text-neutral-400 font-body text-xs">
+              <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg> {{ block.settings.trust_1 | escape }}</span>
+              <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg> {{ block.settings.trust_2 | escape }}</span>
+              <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> {{ block.settings.trust_3 | escape }}</span>
+            </div>
+          </div>
+        </section>
+
+    {% endcase %}
+  {% endfor %}
+</div>
+
+<style>
+  :root { --color-copper: #b87333; }
+  .text-copper { color: var(--color-copper); }
+  .bg-copper { background-color: var(--color-copper); }
+  .fill-copper { fill: var(--color-copper); }
+  .faq-icon.open { transform: rotate(180deg); }
+  .bg-copper\/5 { background-color: rgba(184,115,51,0.05); }
+  .bg-copper\/10 { background-color: rgba(184,115,51,0.10); }
+  .bg-copper\/15 { background-color: rgba(184,115,51,0.15); }
+  .border-copper\/30 { border-color: rgba(184,115,51,0.30); }
+  .border-copper\/10 { border-color: rgba(184,115,51,0.10); }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const triggers = document.querySelectorAll('.faq-trigger');
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const wrapper = this.nextElementSibling;
+        const icon = this.querySelector('.faq-icon');
+        const content = wrapper.querySelector('.faq-content');
+        const isOpen = wrapper.style.height !== '0px' && wrapper.style.height !== '';
+        document.querySelectorAll('.faq-content-wrapper').forEach(w => { w.style.height = '0px'; });
+        document.querySelectorAll('.faq-icon').forEach(i => { i.classList.remove('open'); });
+        if (!isOpen) {
+          wrapper.style.height = content.offsetHeight + 'px';
+          icon.classList.add('open');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "WOC Recovery Boots",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tech_features",
+      "name": "Tech Features Grid",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Teknoloji ve özellikler" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Kablosuz kontrol cihazından hassas 8 odacıklı kompresyona – sporcular ve günlük kullanıcılar için tasarlandı." },
+        { "type": "image_picker", "id": "feature_1_img", "label": "Image 1" },
+        { "type": "text", "id": "feature_1_title", "label": "Title 1", "default": "Kablosuz kontrol cihazı" },
+        { "type": "text", "id": "feature_1_text", "label": "Text 1", "default": "Entegre pil – kablosuz." },
+        { "type": "image_picker", "id": "feature_2_img", "label": "Image 2" },
+        { "type": "text", "id": "feature_2_title", "label": "Title 2", "default": "Net renkli ekran" },
+        { "type": "text", "id": "feature_2_text", "label": "Text 2", "default": "Zaman, basınç, mod ve pil – bir bakışta." },
+        { "type": "image_picker", "id": "feature_3_img", "label": "Image 3" },
+        { "type": "text", "id": "feature_3_title", "label": "Title 3", "default": "USB-C şarj" },
+        { "type": "text", "id": "feature_3_text", "label": "Text 3", "default": "Hızlı şarj · şarj ederken kullanın." },
+        { "type": "image_picker", "id": "feature_4_img", "label": "Image 4" },
+        { "type": "text", "id": "feature_4_title", "label": "Title 4", "default": "Premium taşıma çantası" },
+        { "type": "text", "id": "feature_4_text", "label": "Text 4", "default": "Botları her yere götürün." }
+      ]
+    },
+    {
+      "type": "recovery_benefits",
+      "name": "Recovery Benefits",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Recovery Boots neden kullanılır?" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Sıralı pnömatik kompresyon, dünya çapındaki elit sporcular tarafından klinik olarak tanınır ve kullanılır." },
+        { "type": "text", "id": "benefit_1_title", "label": "Title 1", "default": "Daha hızlı iyileşme" },
+        { "type": "text", "id": "benefit_1_text", "label": "Text 1", "default": "Yoğun antrenman sonrası laktik asit atılımını ve iyileşmeyi hızlandırır." },
+        { "type": "text", "id": "benefit_2_title", "label": "Title 2", "default": "Daha iyi dolaşım" },
+        { "type": "text", "id": "benefit_2_text", "label": "Text 2", "default": "Sıralı sıkıştırma, kanı kalbe doğru iter; bu, yorgun bacaklar için idealdir." },
+        { "type": "text", "id": "benefit_3_title", "label": "Title 3", "default": "Lenfatik drenaj" },
+        { "type": "text", "id": "benefit_3_text", "label": "Text 3", "default": "Özellikle uzun günlerin ardından şişliği ve sıvı tutulumunu azaltır." },
+        { "type": "text", "id": "benefit_4_title", "label": "Title 4", "default": "Ağrıyı yatıştırır" },
+        { "type": "text", "id": "benefit_4_text", "label": "Text 4", "default": "Zorlu antrenman sonrası DOMS'u (gecikmeli başlangıçlı kas ağrısı) azaltır." },
+        { "type": "text", "id": "benefit_5_title", "label": "Title 5", "default": "Kablosuz özgürlük" },
+        { "type": "text", "id": "benefit_5_text", "label": "Text 5", "default": "Arabada, kanepede, yatakta kullanın; kablo yok." },
+        { "type": "text", "id": "benefit_6_title", "label": "Title 6", "default": "Stresi azaltır" },
+        { "type": "text", "id": "benefit_6_text", "label": "Text 6", "default": "Çizmelerle 20-30 dakika profesyonel bir dinlenme spa'sı gibi hissettirir." },
+        { "type": "text", "id": "benefit_7_title", "label": "Title 7", "default": "Daha iyi uyku" },
+        { "type": "text", "id": "benefit_7_text", "label": "Text 7", "default": "Daha hafif, daha rahat bacaklar ve daha derin uyku için yatmadan önce kullanın." },
+        { "type": "text", "id": "benefit_8_title", "label": "Title 8", "default": "4 saate kadar" },
+        { "type": "text", "id": "benefit_8_text", "label": "Text 8", "default": "Uzun pil ömrü – tek şarjla 8-12 seans için yeterli." }
+      ]
+    },
+    {
+      "type": "therapeutic_benefits",
+      "name": "Therapeutic Benefits",
+      "settings": [
+        { "type": "text", "id": "kicker", "label": "Kicker", "default": "Terapötik faydaları" },
+        { "type": "text", "id": "title", "label": "Heading", "default": "Sakatlıkları önler · Ağrıyı giderir · Formu geri kazandırır" },
+        { "type": "text", "id": "tb_1_title", "label": "Title 1", "default": "Sakatlıkları önler" },
+        { "type": "text", "id": "tb_1_text", "label": "Text 1", "default": "Antrenman öncesi ve sonrası optimum dolaşım sayesinde bacak sağlığını destekler ve sporla ilgili sakatlanma riskini azaltır." },
+        { "type": "text", "id": "tb_2_title", "label": "Title 2", "default": "Ağrı ve gerginliği giderir" },
+        { "type": "text", "id": "tb_2_text", "label": "Text 2", "default": "Siyatik, kaval kemiği ağrısı, kas zorlanmaları ve kronik bacak gerginliği gibi sorunları hassas kompresyon terapisiyle hedefler." },
+        { "type": "text", "id": "tb_3_title", "label": "Title 3", "default": "Kas ağrısını azaltır" },
+        { "type": "text", "id": "tb_3_text", "label": "Text 3", "default": "DOMS'u (gecikmeli başlangıçlı kas ağrısı) etkili bir şekilde ortadan kaldırır ve seanslar arasındaki iyileşmeyi önemli ölçüde hızlandırır." }
+      ]
+    },
+    {
+      "type": "massage_modes",
+      "name": "Massage Modes",
+      "settings": [
+        { "type": "text", "id": "kicker", "label": "Kicker", "default": "3 masaj modu" },
+        { "type": "text", "id": "title", "label": "Heading", "default": "Kişiye özel iyileşme" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Vücudun doğal kan ve lenfatik akışını taklit eden üç akıllı program." },
+        { "type": "text", "id": "mode_1_title", "label": "Mode 1 Title", "default": "Sıralı Mod" },
+        { "type": "text", "id": "mode_1_text", "label": "Mode 1 Text", "default": "Ayaktan uyluğa kadar bölmeleri kan ve lenfatik akışı taklit eden dalga hareketleriyle şişirir. Uzun bir gün veya ağır bir antrenmandan sonra nazik, yenileyici iyileşme için idealdir." },
+        { "type": "text", "id": "mode_2_title", "label": "Mode 2 Title", "default": "Dolaşım Modu" },
+        { "type": "text", "id": "mode_2_text", "label": "Mode 2 Text", "default": "Baldırlar ve uyluklar gibi belirli bölgeler arasında sıkıştırmayı değiştirir. Yerel kan akışını iyileştirir ve şişliği azaltır; kaval kemiği ağrısı ve gergin kaslar için mükemmeldir." },
+        { "type": "text", "id": "mode_3_title", "label": "Mode 3 Title", "default": "Kombinasyon Modu" },
+        { "type": "text", "id": "mode_3_text", "label": "Mode 3 Text", "default": "Tüm bölmelere aynı anda eş zamanlı sıkıştırma sağlar. Kapsamlı kas rahatlaması ve kronik durumlar için derin, tutarlı terapötik basınç." },
+        { "type": "text", "id": "pressure_kicker", "label": "Pressure Kicker", "default": "Ayarlanabilir yoğunluk" },
+        { "type": "text", "id": "pressure_val", "label": "Pressure Value", "default": "0 — 260 mmHg" },
+        { "type": "text", "id": "pressure_desc", "label": "Pressure Desc", "default": "Her seansı kişiselleştirin; nazik basınçtan derin terapiye kadar. Çizmeler, sizin özel iyileşme ihtiyaçlarınıza uyum sağlar." }
+      ]
+    },
+    {
+      "type": "text_content",
+      "name": "Rich Text Content",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Profesyonel iyileşme çözümü" },
+        { "type": "richtext", "id": "text", "label": "Content", "default": "<p><strong>WOC Recovery Boots Pro</strong> , antrenman sonrası daha hızlı iyileşme, uzun ve yorucu günler veya ağır, şiş bacakları rahatlatmak için profesyonel çözümdür. Her bir botta <strong>8 hava haznesi</strong>, elit sporcuların müsabakalar arasında daha hızlı dönmek için kullandığı aynı teknoloji olan hassas sıralı kompresyon masajı sunarlar.</p><p>Bu botları benzersiz kılan şey, <strong>%100 kablosuz</strong> olmalarıdır. Batarya, kompakt kontrolöre doğrudan entegre edilmiştir, böylece onları antrenman sonrası arabada, soyunma odasında, kanepede veya yatakta dilediğiniz her yerde özgürce kullanabilirsiniz. Kablo yok, sınır yok.</p><p>Şunlar arasından seçim yapın: <strong>6 önceden programlanmış masaj modu</strong> ve basıncı 0 ila 260 mmHg arasında 8 seviyede hassas bir şekilde ayarlayın. Şeffaf renkli ekran zamanı, basıncı, modu ve pili gösterir – kolay ve sezgisel kontroller.</p><p>İle <strong>4 saate kadar pil ömrüyle</strong> ve sadece 1 kg ağırlığıyla kontrol cihazı her yere sizinle birlikte seyahat etmek için üretilmiştir. Şarj olurken de kullanılabilir. Dahil olan birinci sınıf taşıma çantası, botları antrenman kampına, maça veya tatile götürmeyi kolaylaştırır.</p><p>Hem günlük sporcular hem de elit sporcular için üretilmiştir – triatletlerden ve bisikletçilerden, uzun bir günün ardından rahatlamaya ihtiyaç duyan yoğun ayaklara kadar.</p>" }
+      ]
+    },
+    {
+      "type": "how_it_works",
+      "name": "How It Works",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Nasıl çalışır" },
+        { "type": "text", "id": "step_1_title", "label": "Step 1", "default": "Giymek" },
+        { "type": "text", "id": "step_1_text", "label": "Text 1", "default": "Botları antrenman kıyafetlerinizin veya çıplak bacaklarınızın üzerine çekin. Ayak bileğinizden uyluğunuza kadar fermuarını çekin – hem erkeklere hem de kadınlara uyar." },
+        { "type": "text", "id": "step_2_title", "label": "Step 2", "default": "Programınızı seçin" },
+        { "type": "text", "id": "step_2_text", "label": "Text 2", "default": "Kontrol cihazını açın, 6 programdan birini seçin, basıncı ayarlayın (0-260 mmHg) ve zamanlayıcıyı ayarlayın (10-30 dk)." },
+        { "type": "text", "id": "step_3_title", "label": "Step 3", "default": "Daha hızlı iyileşin" },
+        { "type": "text", "id": "step_3_text", "label": "Text 3", "default": "Arkanıza yaslanın ve 8 odacığın çalışmasına izin verin. Sıralı kompresyon, daha hızlı iyileşme için kanı ve lenfi bacaklardan yukarı doğru iter." }
+      ]
+    },
+    {
+      "type": "comparison_table",
+      "name": "Comparison Table",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "WOC Recovery Boots Pro" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "vs. diğer kompresyon çizmeleri" },
+        { "type": "text", "id": "comp_1", "label": "Feature 1", "default": "8 hava haznesi" },
+        { "type": "checkbox", "id": "has_it_1", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_2", "label": "Feature 2", "default": "100% kablosuz (entegre pil)" },
+        { "type": "checkbox", "id": "has_it_2", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_3", "label": "Feature 3", "default": "260 mmHg'ye kadar ayarlanabilir basınç" },
+        { "type": "checkbox", "id": "has_it_3", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_4", "label": "Feature 4", "default": "6 masaj programı" },
+        { "type": "checkbox", "id": "has_it_4", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_5", "label": "Feature 5", "default": "4 saate kadar pil ömrü" },
+        { "type": "checkbox", "id": "has_it_5", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_6", "label": "Feature 6", "default": "Şarj olurken kullanın" },
+        { "type": "checkbox", "id": "has_it_6", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_7", "label": "Feature 7", "default": "Premium taşıma çantası dahildir" },
+        { "type": "checkbox", "id": "has_it_7", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_8", "label": "Feature 8", "default": "Sadece 1 kg ağırlığında" },
+        { "type": "checkbox", "id": "has_it_8", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_9", "label": "Feature 9", "default": "30 günlük memnuniyet garantisi" },
+        { "type": "checkbox", "id": "has_it_9", "label": "Others have it?", "default": false },
+        { "type": "text", "id": "comp_10", "label": "Feature 10", "default": "3 yıla kadar garanti" },
+        { "type": "checkbox", "id": "has_it_10", "label": "Others have it?", "default": false }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "name": "Testimonials",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "+1.000 sporcu ve meraklısı" },
+        { "type": "text", "id": "rating_text", "label": "Rating Text", "default": "4.8 üzerinden 5" },
+        { "type": "text", "id": "quote_1", "label": "Quote 1", "default": "Bir triatlet olarak uzun antrenmanlardan sonraki gün her zaman kas ağrılarım olurdu. Artık bitti. Onları neredeyse her gün kullanıyorum ve ilk yarım Ironman'imden sonra bile dinlenmiş bacaklarım var." },
+        { "type": "text", "id": "author_1", "label": "Author 1", "default": "Michael, Triatlon 🏊‍♂️🚴🏃" },
+        { "type": "text", "id": "quote_2", "label": "Quote 2", "default": "Gerçekten harika bir ürün, kullanımı kolay. Mükemmel çalışıyor ve uzun bir iş gününden veya koşudan sonra harika hissettiriyor." },
+        { "type": "text", "id": "author_2", "label": "Author 2", "default": "Klaus, Koşucu 🏃" },
+        { "type": "text", "id": "quote_3", "label": "Quote 3", "default": "Hızlı teslimat, birinci sınıf takip. Oğlum ağır bacak sorunu yaşıyor ve bunlar gerçekten yardımcı oldu. Ben de bisiklete bindikten sonra kendim kullanıyorum. Dünya klasında." },
+        { "type": "text", "id": "author_3", "label": "Author 3", "default": "Brian, Bisiklet 🚴" },
+        { "type": "text", "id": "quote_4", "label": "Quote 4", "default": "Kablosuz olmaları oyunun kurallarını değiştiriyor. Kanepeye uzanıp TV izlerken kullanıyorum – kablo karmaşası yok." },
+        { "type": "text", "id": "author_4", "label": "Author 4", "default": "Anne L." },
+        { "type": "text", "id": "quote_5", "label": "Quote 5", "default": "Gün boyu garson olarak ayaktayım. Recovery Boots, akşamları ağırlaşan bacaklarım için çok büyük bir fark yarattı." },
+        { "type": "text", "id": "author_5", "label": "Author 5", "default": "Jens H." },
+        { "type": "text", "id": "quote_6", "label": "Quote 6", "default": "Hamilelik sonrası şişliklere yardımcı olması için satın aldım. Harika çalışıyor – ve pil uzun süre dayanıyor." },
+        { "type": "text", "id": "author_6", "label": "Author 6", "default": "Sofie K." }
+      ]
+    },
+    {
+      "type": "tech_specs",
+      "name": "Tech Specs",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Teknik Özellikler" },
+        { "type": "text", "id": "spec_label_1", "label": "Label 1", "default": "Her bottaki odacık sayısı" },
+        { "type": "text", "id": "spec_val_1", "label": "Value 1", "default": "8 hava odası" },
+        { "type": "text", "id": "spec_label_2", "label": "Label 2", "default": "Programlar" },
+        { "type": "text", "id": "spec_val_2", "label": "Value 2", "default": "6 masaj modu" },
+        { "type": "text", "id": "spec_label_3", "label": "Label 3", "default": "Basınç aralığı" },
+        { "type": "text", "id": "spec_val_3", "label": "Value 3", "default": "0 – 260 mmHg" },
+        { "type": "text", "id": "spec_label_4", "label": "Label 4", "default": "Zamanlayıcı" },
+        { "type": "text", "id": "spec_val_4", "label": "Value 4", "default": "10 / 20 / 30 dakika" },
+        { "type": "text", "id": "spec_label_5", "label": "Label 5", "default": "Pil ömrü" },
+        { "type": "text", "id": "spec_val_5", "label": "Value 5", "default": "4 saate kadar" },
+        { "type": "text", "id": "spec_label_6", "label": "Label 6", "default": "Şarj süresi" },
+        { "type": "text", "id": "spec_val_6", "label": "Value 6", "default": "2-3 saat (USB-C)" },
+        { "type": "text", "id": "spec_label_7", "label": "Label 7", "default": "Ağırlık (kontrolör)" },
+        { "type": "text", "id": "spec_val_7", "label": "Value 7", "default": "Yaklaşık 1 kg" },
+        { "type": "text", "id": "spec_label_8", "label": "Label 8", "default": "Boyutlar (kontrolör)" },
+        { "type": "text", "id": "spec_val_8", "label": "Value 8", "default": "27 × 11 × 11 cm" },
+        { "type": "text", "id": "spec_label_9", "label": "Label 9", "default": "Bacak uzunluğu (M beden)" },
+        { "type": "text", "id": "spec_val_9", "label": "Value 9", "default": "85 cm – üst çevre 70 cm" },
+        { "type": "text", "id": "spec_label_10", "label": "Label 10", "default": "Bacak uzunluğu (L beden)" },
+        { "type": "text", "id": "spec_val_10", "label": "Value 10", "default": "100 cm – üst çevre 75 cm" }
+      ]
+    },
+    {
+      "type": "advantages",
+      "name": "Advantages",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Avantajlarımız" },
+        { "type": "image_picker", "id": "adv_img_left", "label": "Left Image" },
+        { "type": "text", "id": "adv_title_left", "label": "Left Title", "default": "Bizim" },
+        { "type": "text", "id": "adv_li_left_1", "label": "Left Bullet 1", "default": "Basınç Sensörü" },
+        { "type": "text", "id": "adv_li_left_2", "label": "Left Bullet 2", "default": "8 bağımsız hava haznesi" },
+        { "type": "text", "id": "adv_li_left_3", "label": "Left Bullet 3", "default": "LCD dokunmatik ekran" },
+        { "type": "text", "id": "adv_li_left_4", "label": "Left Bullet 4", "default": "Ultra-Sessiz teknoloji" },
+        { "type": "text", "id": "adv_li_left_5", "label": "Left Bullet 5", "default": "Batarya 5200 mAh" },
+        { "type": "text", "id": "adv_li_left_6", "label": "Left Bullet 6", "default": "360° tam sarma, üst üste binmiş" },
+        { "type": "text", "id": "adv_img_right_text", "label": "Right Top Text", "default": "Standart kompresyon botları" },
+        { "type": "text", "id": "adv_title_right", "label": "Right Title", "default": "Diğer" },
+        { "type": "text", "id": "adv_li_right_1", "label": "Right Bullet 1", "default": "Basınç Sensörü" },
+        { "type": "text", "id": "adv_li_right_2", "label": "Right Bullet 2", "default": "Sıradan Hazneler" },
+        { "type": "text", "id": "adv_li_right_3", "label": "Right Bullet 3", "default": "LCD dokunmatik ekran" },
+        { "type": "text", "id": "adv_li_right_4", "label": "Right Bullet 4", "default": "Standart Mekanik Gürültü" },
+        { "type": "text", "id": "adv_li_right_5", "label": "Right Bullet 5", "default": "Batarya 2500 mAh" },
+        { "type": "text", "id": "adv_li_right_6", "label": "Right Bullet 6", "default": "Kumaş, üst üste binmeyen" }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ Section",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Sık sorulan sorular" },
+        { "type": "text", "id": "faq_q_1", "label": "Question 1", "default": "8 hazneli ve 4-6 hazneli arasında ne fark var?" },
+        { "type": "richtext", "id": "faq_a_1", "label": "Answer 1", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_2", "label": "Question 2", "default": "Batarya ne kadar dayanır?" },
+        { "type": "richtext", "id": "faq_a_2", "label": "Answer 2", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_3", "label": "Question 3", "default": "Hangi bedenler mevcut?" },
+        { "type": "richtext", "id": "faq_a_3", "label": "Answer 3", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_4", "label": "Question 4", "default": "6 program arasındaki fark ne?" },
+        { "type": "richtext", "id": "faq_a_4", "label": "Answer 4", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_5", "label": "Question 5", "default": "Gürültülü mü?" },
+        { "type": "richtext", "id": "faq_a_5", "label": "Answer 5", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_6", "label": "Question 6", "default": "Ağır bacaklara ve şişliğe yardımcı olabilirler mi?" },
+        { "type": "richtext", "id": "faq_a_6", "label": "Answer 6", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_7", "label": "Question 7", "default": "Kimler kullanmamalı?" },
+        { "type": "richtext", "id": "faq_a_7", "label": "Answer 7", "default": "<p>Açıklamayı buraya ekleyin.</p>" },
+        { "type": "text", "id": "faq_q_8", "label": "Question 8", "default": "Etkiyi ne kadar sürede hissedersiniz?" },
+        { "type": "richtext", "id": "faq_a_8", "label": "Answer 8", "default": "<p>Açıklamayı buraya ekleyin.</p>" }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "Contact Section",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Yardıma mı ihtiyacınız var?" },
+        { "type": "text", "id": "email_label", "label": "Email Label", "default": "E-posta" },
+        { "type": "text", "id": "email_val", "label": "Email Value", "default": "info@worldofcomfort.dk" },
+        { "type": "text", "id": "chat_label", "label": "Chat Label", "default": "Canlı sohbet" },
+        { "type": "text", "id": "chat_val", "label": "Chat Value", "default": "Günlük kullanılabilir" },
+        { "type": "text", "id": "phone_label", "label": "Phone Label", "default": "Telefon" },
+        { "type": "text", "id": "phone_val", "label": "Phone Value", "default": "+45 70 60 83 03" }
+      ]
+    },
+    {
+      "type": "cta_footer",
+      "name": "CTA Footer",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Profesyoneller gibi iyileşin" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "8 hazneli, %100 kablosuz ve 260 mmHg'ye kadar WOC Recovery Boots Pro. Ücretsiz kargo, 30 günlük memnuniyet garantisi ve 3 yıla kadar garanti." },
+        { "type": "text", "id": "btn_text", "label": "Button Text", "default": "Şimdi satın al · ₺17.565" },
+        { "type": "text", "id": "trust_1", "label": "Trust Text 1", "default": "Ücretsiz kargo" },
+        { "type": "text", "id": "trust_2", "label": "Trust Text 2", "default": "30 günlük iade hakkı" },
+        { "type": "text", "id": "trust_3", "label": "Trust Text 3", "default": "3 yıla kadar garanti" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recovery Boots Landing",
+      "blocks": [
+        { "type": "tech_features" },
+        { "type": "recovery_benefits" },
+        { "type": "therapeutic_benefits" },
+        { "type": "massage_modes" },
+        { "type": "text_content" },
+        { "type": "how_it_works" },
+        { "type": "comparison_table" },
+        { "type": "advantages" },
+        { "type": "tech_specs" },
+        { "type": "testimonials" },
+        { "type": "faq" },
+        { "type": "contact" },
+        { "type": "cta_footer" }
+      ]
+    }
+  ]
+}
+{% endschema %}
