@@ -91,7 +91,7 @@
       ],
       "name": "Showroom Details",
       "settings": {
-        "hero_image": "",
+        "hero_image": "shopify://shop_images/showroom-malmo-Cty06Plk_1_015853b4-7ef1-48f1-8d95-9d716c083c14.jpg",
         "hero_subtitle": "🇸🇪 Sweden",
         "hero_title": "Malmö Showroom",
         "hero_description": "Our Swedish showroom in the Hyllie district of Malmö, just 30 minutes from Copenhagen via the Øresund Bridge. A modern space showcasing our full range with Swedish-language support and SEK pricing.",
@@ -109,6 +109,7 @@
         "features_title": "What You'll Find Here",
         "form_title": "Book a Free Demo",
         "form_subtitle": "Try before you buy. We'll prepare your preferred products for a personal demonstration.",
+        "map_embed_code": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1134.423075253503!2d9.757041!3d55.570183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c929a007f3ea7%3A0x6b0934e8a151bfa7!2sKringsvej%204%2C%207000%20Fredericia%2C%20Denmark!5e0!3m2!1sen!2sus!4v1714152541285!5m2!1sen!2sus\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.0!2d13.0007!3d55.606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDM2JzIxLjYiTiAxM8KwMDAnMDIuNSJF!5e0!3m2!1sen!2sse!4v1"
       }
     }
