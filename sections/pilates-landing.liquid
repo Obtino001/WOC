@@ -311,23 +311,33 @@
       </p>
     </div>
     {% if ex_blocks.size > 0 %}
-    <div class="flex flex-wrap justify-center gap-2 mb-10">
-      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-foreground text-background">
+    {% assign unique_categories = "" %}
+    {% for block in ex_blocks %}
+      {% assign cat = block.settings.category | strip %}
+      {% if cat != blank %}
+        {% assign cat_with_delim = cat | append: "|||" %}
+        {% unless unique_categories contains cat_with_delim %}
+          {% assign unique_categories = unique_categories | append: cat_with_delim %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% assign categories = unique_categories | split: "|||" %}
+
+    <div class="flex flex-wrap justify-center gap-2 mb-10" id="ExerciseTabs">
+      <button data-filter="all" class="ex-tab-btn rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors border border-transparent bg-foreground text-background">
         Tüm egzersizler
       </button>
-      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
-        Karın
-      </button>
-      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
-        Güç
-      </button>
-      <button class="rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors bg-background border border-border text-muted-foreground hover:text-foreground">
-        Esneklik
-      </button>
+      {% for category in categories %}
+        {% if category != blank %}
+          <button data-filter="{{ category | downcase | escape }}" class="ex-tab-btn rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors border border-border bg-background text-muted-foreground hover:text-foreground">
+            {{ category }}
+          </button>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {% for block in ex_blocks %}
-      <div class="group rounded-2xl border border-border bg-background overflow-hidden hover:border-foreground/20 transition-colors" {{ block.shopify_attributes }}>
+      <div class="ex-item group rounded-2xl border border-border bg-background overflow-hidden hover:border-foreground/20 transition-colors" data-category="{{ block.settings.category | strip | downcase | escape }}" {{ block.shopify_attributes }}>
         <div class="overflow-hidden bg-muted aspect-[4/3] flex items-center justify-center">
           {% if block.settings.image != blank %}
             {{ block.settings.image | image_url: width: 600 | image_tag: class: 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500', loading: 'lazy' }}
@@ -348,6 +358,41 @@
     {% endif %}
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.ex-tab-btn');
+    const items = document.querySelectorAll('.ex-item');
+
+    if(tabs.length === 0 || items.length === 0) return;
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active states
+        tabs.forEach(t => {
+          t.classList.remove('border-transparent', 'bg-foreground', 'text-background');
+          t.classList.add('border-border', 'bg-background', 'text-muted-foreground', 'hover:text-foreground');
+        });
+        tab.classList.remove('border-border', 'bg-background', 'text-muted-foreground', 'hover:text-foreground');
+        tab.classList.add('border-transparent', 'bg-foreground', 'text-background');
+
+        const filter = tab.getAttribute('data-filter');
+
+        items.forEach(item => {
+          if (filter === 'all') {
+            item.style.display = '';
+          } else {
+            if (item.getAttribute('data-category') === filter) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
 
 <!-- 7. Disciplines -->
 <section class="bg-card py-16 md:py-20 border-b border-border">
