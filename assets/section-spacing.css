@@ -11,8 +11,8 @@
   --woc-section-py-compact-desktop: 3.5rem; /* 56px */
   --woc-section-py-product-mobile: 1.5rem;  /* 24px — PDP */
   --woc-section-py-product-desktop: 2.5rem; /* 40px */
-  --woc-section-bar-y-mobile: 1.25rem; /* 20px — awards / trust strips */
-  --woc-section-bar-y-desktop: 1.75rem; /* 28px */
+  --woc-section-bar-y-mobile: 0.25rem; /* 20px — awards / trust strips */
+  --woc-section-bar-y-desktop: 0.75rem; /* 28px */
 }
 
 /* Reusable utility classes for new / refactored sections */
@@ -32,20 +32,20 @@ article.woc-section-py {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  /* padding-top: var(--woc-section-bar-y-mobile) !important;
-  padding-bottom: var(--woc-section-bar-y-mobile) !important; */
+  padding-top: var(--woc-section-bar-y-mobile) !important;
+  padding-bottom: var(--woc-section-bar-y-mobile) !important;
 }
 
 .woc-section-bar > * {
   width: 100%;
 }
 
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .woc-section-bar {
     padding-top: var(--woc-section-bar-y-desktop) !important;
     padding-bottom: var(--woc-section-bar-y-desktop) !important;
   }
-} */
+}
 
 @media screen and (min-width: 750px) {
   .woc-section-py,
