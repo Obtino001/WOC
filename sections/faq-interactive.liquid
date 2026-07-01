@@ -14,7 +14,7 @@
     <div class="max-w-xl mx-auto mb-12">
       <div class="relative">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
-        <input type="text" placeholder="Search questions..." class="w-full pl-11 pr-4 py-3.5 bg-card border border-border rounded-none font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/40 transition-colors">
+        <input type="text" id="faq-search" placeholder="Search questions..." class="w-full pl-11 pr-4 py-3.5 bg-card border border-border rounded-none font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/40 transition-colors">
       </div>
     </div>
 
@@ -31,15 +31,15 @@
     </div>
 
     <div class="max-w-3xl mx-auto">
-      <div class="space-y-3">
+      <div class="space-y-3" id="faq-list">
         {% for block in section.blocks %}
           {% if block.type == 'faq_item' %}
-            <div class="border rounded-none transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/10" {{ block.shopify_attributes }}>
-              <button class="flex items-start justify-between w-full text-left px-6 py-5 gap-4">
-                <h3 class="font-display text-base font-semibold leading-snug transition-colors text-foreground">{{ block.settings.question }}</h3>
-                <span class="mt-0.5 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-muted-foreground"><path d="m6 9 6 6 6-6"></path></svg></span>
+            <div class="faq-item border rounded-none transition-all duration-300 overflow-hidden bg-card/50 border-border hover:border-gold/10" {{ block.shopify_attributes }}>
+              <button class="faq-button flex items-start justify-between w-full text-left px-6 py-5 gap-4">
+                <h3 class="faq-question font-display text-base font-semibold leading-snug transition-colors text-foreground">{{ block.settings.question }}</h3>
+                <span class="mt-0.5 shrink-0 transition-transform duration-300 faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-muted-foreground"><path d="m6 9 6 6 6-6"></path></svg></span>
               </button>
-              <div class="hidden px-6 pb-5 pt-0 text-sm text-muted-foreground font-body leading-relaxed">
+              <div class="faq-answer hidden px-6 pb-5 pt-0 text-sm text-muted-foreground font-body leading-relaxed">
                 {{ block.settings.answer }}
               </div>
             </div>
@@ -60,6 +60,61 @@
 
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqSection = document.getElementById('faq');
+    if (!faqSection) return;
+
+    // Search Functionality
+    const searchInput = document.getElementById('faq-search');
+    const faqItems = faqSection.querySelectorAll('.faq-item');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        faqItems.forEach(item => {
+          const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
+          const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+          
+          if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Accordion Functionality
+    const faqButtons = faqSection.querySelectorAll('.faq-button');
+    
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isExpanded = !answer.classList.contains('hidden');
+
+        // Close all other FAQs (optional - remove if you want multiple open at once)
+        /*
+        faqItems.forEach(item => {
+          item.querySelector('.faq-answer').classList.add('hidden');
+          item.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        });
+        */
+
+        if (isExpanded) {
+          answer.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          answer.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
