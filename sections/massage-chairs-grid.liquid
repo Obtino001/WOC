@@ -33,15 +33,7 @@
       <p class="font-body text-sm mt-4 max-w-2xl mx-auto opacity-80">{{ section.settings.description }}</p>
     </div>
 
-    {%- assign cols = section.settings.desktop_columns -%}
-    {%- capture grid_class -%}
-      {%- if cols == 2 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-2
-      {%- elsif cols == 3 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
-      {%- elsif cols == 4 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-      {%- else -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
-      {%- endif -%}
-    {%- endcapture -%}
-    <div class="grid {{ grid_class }} gap-3 lg:gap-6">
+    <div class="grid gap-3 lg:gap-6" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
       {% assign collection = section.settings.collection %}
       {% for product in collection.products limit: section.settings.limit %}
         
@@ -75,7 +67,11 @@
           {% endif %}
 
           <div class="p-5 flex flex-col flex-1">
-            <div class="flex items-center gap-1 mb-2">
+            <a href="{{ product.url }}">
+              <h3 class="font-display text-lg lg:text-2xl font-bold mb-1 hover:text-gold transition-colors">{{ product.title }}</h3>
+            </a>
+
+            <div class="flex items-center gap-1 mb-4">
               {% for i in (1..5) %}
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3 h-3 fill-gold text-gold"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
               {% endfor %}
@@ -87,16 +83,8 @@
                 {% endif %}
               </span>
             </div>
-            
-            <a href="{{ product.url }}">
-              <h3 class="font-display text-lg lg:text-2xl font-bold mb-1 hover:text-gold transition-colors">{{ product.title }}</h3>
-            </a>
-            
-            <p class="font-body text-xs lg:text-sm mb-3 line-clamp-2 leading-relaxed opacity-80">
-              {{ product.metafields.custom.short_description | default: product.description | strip_html | truncatewords: 8 }}
-            </p>
 
-            <div class="flex flex-wrap gap-1.5 mb-3">
+            <div class="grid grid-cols-2 gap-1.5 mb-4">
               {% if product.metafields.custom.products_usps != blank %}
                 {% assign features = product.metafields.custom.products_usps.value %}
                 {% for feature in features %}
@@ -121,19 +109,19 @@
                     {% capture icon_svg %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>{% endcapture %}
                   {% endif %}
 
-                  <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1">
+                  <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1.5 overflow-hidden">
                     {{ icon_svg }}
-                    <span class="font-body text-[10px] text-muted-foreground leading-tight">{{ feature }}</span>
+                    <span class="font-body text-[10px] text-muted-foreground leading-tight truncate" title="{{ feature | strip | escape }}">{{ feature | strip }}</span>
                   </div>
                 {% endfor %}
               {% else %}
-                 <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1">
+                 <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1.5 overflow-hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-3 h-3 text-gold flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
-                    <span class="font-body text-[10px] text-muted-foreground leading-tight">{{ section.settings.fallback_feature_1 | default: 'XD Massage Technology' }}</span>
+                    <span class="font-body text-[10px] text-muted-foreground leading-tight truncate">{{ section.settings.fallback_feature_1 | default: 'XD Massage Technology' }}</span>
                  </div>
-                 <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1">
+                 <div class="flex items-center gap-1.5 border border-border/50 rounded-none px-2 py-1.5 overflow-hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge w-3 h-3 text-gold flex-shrink-0"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
-                    <span class="font-body text-[10px] text-muted-foreground leading-tight">{{ section.settings.fallback_feature_2 | default: 'Zero Gravity' }}</span>
+                    <span class="font-body text-[10px] text-muted-foreground leading-tight truncate">{{ section.settings.fallback_feature_2 | default: 'Zero Gravity' }}</span>
                  </div>
               {% endif %}
             </div>

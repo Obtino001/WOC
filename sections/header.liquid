@@ -471,7 +471,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset flex items-center gap-4">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
             {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
@@ -530,6 +530,8 @@
         {%- else -%}
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
+        
+        <div class="hidden [@media(min-width:1500px)]:flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/10 shadow-[0_0_12px_rgba(212,175,55,0.15)]"><span class="text-base">🇩🇰</span><span class="font-body text-[10px] font-semibold uppercase tracking-[0.12em] whitespace-nowrap text-gold">Danimarka Şirketi</span></div>
       </a>
       {%- if request.page_type == 'index' -%}
         </h1>
@@ -550,7 +552,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset flex items-center gap-4">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
             {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
@@ -609,6 +611,8 @@
         {%- else -%}
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
+
+        <div class="hidden [@media(min-width:1500px)]:flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/10 shadow-[0_0_12px_rgba(212,175,55,0.15)]"><span class="text-base">🇩🇰</span><span class="font-body text-[10px] font-semibold uppercase tracking-[0.12em] whitespace-nowrap text-gold">Danimarka Şirketi</span></div>
       </a>
       {%- if request.page_type == 'index' -%}
         </h1>
