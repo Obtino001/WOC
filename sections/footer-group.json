@@ -65,10 +65,10 @@
       "settings": {
         "copyright_text": "World of Comfort. Alle rettigheder forbeholdes.",
         "regions_text": "Danmark · Sverige · Norge · Tyskland",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false
       }
     }
   },
