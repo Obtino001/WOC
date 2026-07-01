@@ -35,10 +35,10 @@
 
     {%- assign cols = section.settings.desktop_columns -%}
     {%- capture grid_class -%}
-      {%- if cols == 2 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-2
-      {%- elsif cols == 3 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
-      {%- elsif cols == 4 -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-      {%- else -%}grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+      {%- if cols == 2 -%}grid-cols-1 md:grid-cols-2
+      {%- elsif cols == 3 -%}grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+      {%- elsif cols == 4 -%}grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+      {%- else -%}grid-cols-1 md:grid-cols-2 lg:grid-cols-3
       {%- endif -%}
     {%- endcapture -%}
     <div class="grid {{ grid_class }} gap-3 lg:gap-6">

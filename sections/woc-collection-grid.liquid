@@ -3,11 +3,11 @@
   assign grid_class = 'lg:grid-cols-3'
   case section.settings.products_per_row
     when '2'
-      assign grid_class = 'lg:grid-cols-2'
+      assign grid_class = 'grid-cols-1 md:grid-cols-2'
     when '3'
-      assign grid_class = 'lg:grid-cols-3'
+      assign grid_class = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
     when '4'
-      assign grid_class = 'lg:grid-cols-4'
+      assign grid_class = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
   endcase
 -%}
 
@@ -59,7 +59,7 @@
       {% endif %}
     </div>
 
-    <div class="grid md:grid-cols-2 {{ grid_class }} gap-6" style="opacity: 1;">
+    <div class="grid {{ grid_class }} gap-6" style="opacity: 1;">
       
       {%- assign collection = collections[section.settings.collection] -%}
       
