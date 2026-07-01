@@ -32,20 +32,20 @@ article.woc-section-py {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding-top: var(--woc-section-bar-y-mobile) !important;
-  padding-bottom: var(--woc-section-bar-y-mobile) !important;
+  /* padding-top: var(--woc-section-bar-y-mobile) !important;
+  padding-bottom: var(--woc-section-bar-y-mobile) !important; */
 }
 
 .woc-section-bar > * {
   width: 100%;
 }
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .woc-section-bar {
     padding-top: var(--woc-section-bar-y-desktop) !important;
     padding-bottom: var(--woc-section-bar-y-desktop) !important;
   }
-}
+} */
 
 @media screen and (min-width: 750px) {
   .woc-section-py,
